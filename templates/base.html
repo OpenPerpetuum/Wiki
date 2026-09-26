@@ -9,9 +9,13 @@
             try {
                 if (localStorage.getItem("wiki-theme") === "light")
                     document.documentElement.setAttribute("data-theme", "light");
-            } catch (e) { /* storage unavailable: stay on the default (dark) */ }
+                var p = localStorage.getItem("wiki-palette");
+                if (p && p !== "cyan")
+                    document.documentElement.setAttribute("data-palette", p);
+            } catch (e) { /* storage unavailable: stay on the defaults */ }
         })();
     </script>
+    <link rel="icon" type="image/png" href="/favicon-32.png">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
     {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
@@ -21,9 +25,20 @@
 </head>
 <body>
 <header class="topbar">
-    <a class="brand" href="/">{{ config.title }}</a>
-    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">☾</button>
-    <input type="search" id="wiki-search" placeholder="Search the wiki…" autocomplete="off" spellcheck="false">
+    <a class="brand" href="/"><img class="brand-logo" src="/logo.png" alt="">{{ config.title }}</a>
+    <div class="palette-wrap">
+        <button id="palette-toggle" class="palette-toggle" type="button" aria-label="Choose accent color" title="Accent color" aria-haspopup="true" aria-expanded="false">
+            <span class="palette-swatch"></span>
+        </button>
+        <div id="palette-menu" class="palette-menu" role="menu">
+            <button type="button" role="menuitem" data-palette="cyan" aria-pressed="true"><span class="palette-dot" style="background:#41d3ff"></span>Cyan</button>
+            <button type="button" role="menuitem" data-palette="violet" aria-pressed="false"><span class="palette-dot" style="background:#a78bfa"></span>Violet</button>
+            <button type="button" role="menuitem" data-palette="green" aria-pressed="false"><span class="palette-dot" style="background:#4ade80"></span>Phosphor</button>
+            <button type="button" role="menuitem" data-palette="amber" aria-pressed="false"><span class="palette-dot" style="background:#fbbf24"></span>Amber</button>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">☾</button>
+    </div>
+    <input type="search" id="wiki-search" placeholder="Search the wiki…  (Ctrl+F)" autocomplete="off" spellcheck="false">
 </header>
 <div id="search-results" class="search-results" hidden></div>
 <nav class="sidenav">
@@ -35,22 +50,32 @@
         <li><a href="/features/combat/">Combat</a></li>
         <li><a href="/features/missions/">Missions</a></li>
         <li><a href="/features/movement/">Movement &amp; zones</a></li>
+        <li><a href="/features/npcs/">NPCs &amp; PVE hunting</a></li>
+        <li><a href="/features/exploration/">Exploration</a></li>
         <li><a href="/features/probes/">Proximity probes</a></li>
         <li class="nav-group">Industry &amp; progress</li>
         <li><a href="/features/robots/">Robots &amp; fitting</a></li>
         <li><a href="/features/production/">Production</a></li>
         <li><a href="/features/research/">Research</a></li>
         <li><a href="/features/items/">Items &amp; inventory</a></li>
+        <li><a href="/features/modules/">Modules &amp; fitting</a></li>
+        <li><a href="/features/sparks/">Sparks</a></li>
         <li class="nav-group">Trade &amp; economy</li>
         <li><a href="/features/market/">Market &amp; trade</a></li>
         <li><a href="/features/transport/">Transport</a></li>
         <li><a href="/content/shop/">Item shop</a></li>
         <li class="nav-group">Big play</li>
         <li><a href="/features/pbs/">Power base stations</a></li>
+        <li><a href="/features/outposts/">Outposts &amp; SAP</a></li>
         <li><a href="/features/intrusion/">Intrusion</a></li>
         <li class="nav-group">With others</li>
         <li><a href="/features/groups/">Groups</a></li>
         <li><a href="/features/social/">Social</a></li>
+        <li class="nav-group">Knowledge</li>
+        <li><a href="/features/faq/">FAQ</a></li>
+        <li><a href="/features/abbreviations/">Abbreviations</a></li>
+        <li><a href="/features/lore/">Lore</a></li>
+        <li><a href="/features/client-setup/">Client &amp; PC setup</a></li>
         <li class="nav-group">Data reference</li>
         <li><a href="/content/">Content tables</a></li>
         <li><a href="/zones/">Zones</a></li>
@@ -72,8 +97,20 @@
         <a href="/zones/" data-section="zones">Zones</a>
         <a href="/formats/" data-section="formats">Formats (dev)</a>
     </nav>
+    <div class="footlinks">
+        <a href="https://github.com/OpenPerpetuum" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+        </a>
+        <a href="https://x.com/openperpetuum" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41Z"/></svg>
+            @openperpetuum
+        </a>
+    </div>
     <p class="footcredit">Open Perpetuum wiki — generated with <a href="https://www.getzola.org/">Zola</a>. Content tables are
-    generated from the live game database (<code>tools/generate</code>).</p>
+    generated from the live game database (<code>tools/generate</code>).
+    <span class="attr">Wiki content is licensed under the Apache License 2.0, except where noted.</span>
+    </p>
 </footer>
 <script>
     // Light/dark toggle: the whole site (chrome + content) switches.
@@ -90,6 +127,64 @@
             try { localStorage.setItem("wiki-theme", isLight() ? "light" : "dark"); } catch (e) {}
             btn.textContent = isLight() ? "☀" : "☾";
             refreshMermaid(isLight() ? "neutral" : "dark");
+        });
+    })();
+    // Accent palette: pick one of four sci-fi accents (cyan is the default).
+    (function () {
+        var btn = document.getElementById("palette-toggle");
+        var menu = document.getElementById("palette-menu");
+        if (!btn || !menu) return;
+        var root = document.documentElement;
+        var items = Array.prototype.slice.call(menu.querySelectorAll("button[data-palette]"));
+        function current() {
+            var p = root.getAttribute("data-palette") || "cyan";
+            items.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-palette") === p ? "true" : "false"); });
+            return p;
+        }
+        function setOpen(open) {
+            menu.classList.toggle("open", open);
+            btn.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+        btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            setOpen(!menu.classList.contains("open"));
+            current();
+        });
+        items.forEach(function (b) {
+            b.addEventListener("click", function () {
+                var p = b.getAttribute("data-palette");
+                if (p === "cyan") root.removeAttribute("data-palette");
+                else root.setAttribute("data-palette", p);
+                try { localStorage.setItem("wiki-palette", p); } catch (e2) {}
+                current();
+                setOpen(false);
+            });
+        });
+        document.addEventListener("click", function (e) {
+            if (menu.contains(e.target) || e.target === btn) return;
+            setOpen(false);
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") setOpen(false);
+        });
+        current();
+    })();
+    // Keyboard: Ctrl+F / Cmd+F focuses the wiki search; Esc unfocuses it.
+    (function () {
+        var input = document.getElementById("wiki-search");
+        var box = document.getElementById("search-results");
+        if (!input) return;
+        document.addEventListener("keydown", function (e) {
+            if ((e.ctrlKey || e.metaKey) && !e.shiftKey && !e.altKey &&
+                (e.key === "f" || e.key === "F")) {
+                e.preventDefault();
+                input.focus();
+                input.select();
+            } else if (e.key === "Escape" && document.activeElement === input) {
+                input.blur();
+                input.value = "";
+                if (box) { box.hidden = true; box.innerHTML = ""; }
+            }
         });
     })();
     // Re-render the transport diagrams with the theme matching the content area.
