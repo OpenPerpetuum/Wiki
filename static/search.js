@@ -1,6 +1,8 @@
-// Lightweight wiki search over the Zola-rendered /search_index.json
+// Lightweight wiki search over the /search_index.json
 // (title + description + URL per page). Debounced; shows a result count.
-(function () {
+// This file is loaded from <head>, so wait for the body to exist before
+// binding the input.
+function wikiSearchInit() {
     var input = document.getElementById('wiki-search');
     var box = document.getElementById('search-results');
     if (!input || !box) return;
@@ -100,6 +102,11 @@
             box.hidden = true;
             box.innerHTML = '';
             input.blur();
+        } else if (e.key === 'Enter') {
+            // Enter follows the top result; with nothing shown, clear the box.
+            var first = box.hidden ? null : box.querySelector('a');
+            if (first) { window.location.href = first.getAttribute('href'); }
+            else { input.value = ''; box.hidden = true; box.innerHTML = ''; }
         }
     });
 
@@ -108,4 +115,9 @@
         if (box.contains(e.target) || e.target === input) return;
         box.hidden = true;
     });
-})();
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', wikiSearchInit);
+} else {
+    wikiSearchInit();
+}
