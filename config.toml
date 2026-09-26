@@ -1,3 +1,7 @@
+# i18n: default language. Adding a language = add a [translations.<lang>]
+# block (or per-locale content under content/<lang>/), fill ui.* for that
+# locale, and regenerate the search index for it (see generator README).
+default_language = "en"
 title = "Open Perpetuum Wiki"
 description = "Player and developer reference for the Open Perpetuum server: what you can do in the game, entity stats, zone generation, and stat field semantics."
 # GitHub Pages: set the repo Pages URL once the site is published, e.g.
@@ -15,3 +19,75 @@ smart_punctuation = false
 
 [extra]
 # reserved (e.g. server name, build date injected by CI)
+
+# UI strings live here so the templates contain no hardcoded copy — the
+# i18n seam. A new language adds a parallel ui_<lang> table (or moves this
+# into Zola [translations]); the chrome reads `config.extra.ui`, and the
+# inline JS receives it via window.WIKI_UI.
+[extra.ui]
+nav_new_here = "New here"
+nav_in_the_field = "In the field"
+nav_industry = "Industry & progress"
+nav_trade = "Trade & economy"
+nav_big_play = "Big play"
+nav_with_others = "With others"
+nav_knowledge = "Knowledge"
+nav_data_reference = "Data reference"
+nav_getting_started = "Getting started"
+nav_gathering = "Gathering"
+nav_combat = "Combat"
+nav_missions = "Missions"
+nav_movement = "Movement & zones"
+nav_npcs = "NPCs & PVE hunting"
+nav_exploration = "Exploration"
+nav_probes = "Proximity probes"
+nav_robots = "Robots & fitting"
+nav_production = "Production"
+nav_research = "Research"
+nav_items = "Items & inventory"
+nav_modules = "Modules & fitting"
+nav_sparks = "Sparks"
+nav_market = "Market & trade"
+nav_transport = "Transport"
+nav_shop = "Item shop"
+nav_pbs = "Power base stations"
+nav_outposts = "Outposts & SAP"
+nav_intrusion = "Intrusion"
+nav_groups = "Groups"
+nav_social = "Social"
+nav_faq = "FAQ"
+nav_abbreviations = "Abbreviations"
+nav_lore = "Lore"
+nav_client_setup = "Client & PC setup"
+nav_content = "Content tables"
+nav_zones = "Zones"
+nav_all_features = "All features"
+nav_server = "Server & reference"
+nav_formats = "Formats (dev)"
+search_placeholder = "Search the wiki…  (Ctrl+F)"
+search_no_results = "No pages match"
+search_unavailable = "Search is unavailable"
+search_pages_found_one = "1 page found"
+search_pages_found_many = "{n} pages found"
+aria_theme_toggle = "Toggle light/dark mode"
+aria_palette = "Choose accent color"
+aria_language = "Choose language"
+menu_palette_group = "Accent"
+menu_cb_group = "Colorblind"
+cb_default = "Default"
+cb_deutan = "Deuteranopia"
+cb_protan = "Protanopia"
+cb_tritan = "Tritanopia"
+cb_achro = "Grayscale"
+palette_cyan = "Cyan"
+palette_violet = "Violet"
+palette_phosphor = "Phosphor"
+palette_amber = "Amber"
+foot_home = "Home"
+foot_features = "Features"
+foot_content = "Content"
+foot_zones = "Zones"
+foot_formats = "Formats (dev)"
+# These two are raw HTML (rendered with `| safe`); keep the links when translating.
+foot_credit = "Open Perpetuum wiki — generated with <a href=\"https://www.getzola.org/\">Zola</a>. Content tables are generated from the live game database (<code>tools/generate</code>)."
+foot_attribution = "Wiki content is licensed under the Apache License 2.0, except where noted."

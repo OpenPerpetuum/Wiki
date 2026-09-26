@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ config.default_language | default(value="en") }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,73 +27,86 @@
     <script src="/mermaid.min.js" defer></script>
 </head>
 <body>
+<div id="wiki-ui-strings" hidden
+    data-search-no-results="{{ config.extra.ui.search_no_results }}"
+    data-search-unavailable="{{ config.extra.ui.search_unavailable }}"
+    data-pages-found-one="{{ config.extra.ui.search_pages_found_one }}"
+    data-pages-found-many="{{ config.extra.ui.search_pages_found_many }}"></div>
 <header class="topbar">
     <a class="brand" href="/"><img class="brand-logo" src="/logo.png" alt="">{{ config.title }}</a>
     <div class="palette-wrap">
-        <button id="palette-toggle" class="palette-toggle" type="button" aria-label="Choose accent color" title="Accent color" aria-haspopup="true" aria-expanded="false">
+        <button id="lang-toggle" class="palette-toggle" type="button" aria-label="{{ config.extra.ui.aria_language }}" title="{{ config.extra.ui.aria_language }}" aria-haspopup="true" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.4 3.8 5.6 3.8 9S14.5 18.6 12 21c-2.5-2.4-3.8-5.6-3.8-9S9.5 5.4 12 3Z"/></svg>
+        </button>
+        <div id="lang-menu" class="palette-menu" role="menu">
+            <button type="button" role="menuitem" data-lang="en" aria-pressed="true">English</button>
+        </div>
+        <button id="palette-toggle" class="palette-toggle" type="button" aria-label="{{ config.extra.ui.aria_palette }}" title="{{ config.extra.ui.aria_palette }}" aria-haspopup="true" aria-expanded="false">
             <span class="palette-swatch"></span>
         </button>
         <div id="palette-menu" class="palette-menu" role="menu">
-            <div class="palette-group">Accent</div>
-            <button type="button" role="menuitem" data-palette="cyan" aria-pressed="true"><span class="palette-dot" aria-hidden="true" style="background:#41d3ff"></span>Cyan</button>
-            <button type="button" role="menuitem" data-palette="violet" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#a78bfa"></span>Violet</button>
-            <button type="button" role="menuitem" data-palette="green" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#4ade80"></span>Phosphor</button>
-            <button type="button" role="menuitem" data-palette="amber" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#fbbf24"></span>Amber</button>
-            <div class="palette-group">Colorblind</div>
-            <button type="button" role="menuitem" data-cb="none" aria-pressed="true">Default</button>
-            <button type="button" role="menuitem" data-cb="deutan">Deuteranopia</button>
-            <button type="button" role="menuitem" data-cb="protan">Protanopia</button>
-            <button type="button" role="menuitem" data-cb="tritan">Tritanopia</button>
-            <button type="button" role="menuitem" data-cb="achro">Grayscale</button>
+            <div class="palette-group">{{ config.extra.ui.menu_palette_group }}</div>
+            <button type="button" role="menuitem" data-palette="cyan" aria-pressed="true"><span class="palette-dot" aria-hidden="true" style="background:#41d3ff"></span>{{ config.extra.ui.palette_cyan }}</button>
+            <button type="button" role="menuitem" data-palette="violet" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#a78bfa"></span>{{ config.extra.ui.palette_violet }}</button>
+            <button type="button" role="menuitem" data-palette="green" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#4ade80"></span>{{ config.extra.ui.palette_phosphor }}</button>
+            <button type="button" role="menuitem" data-palette="amber" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#fbbf24"></span>{{ config.extra.ui.palette_amber }}</button>
+            <div class="palette-group">{{ config.extra.ui.menu_cb_group }}</div>
+            <button type="button" role="menuitem" data-cb="none" aria-pressed="true">{{ config.extra.ui.cb_default }}</button>
+            <button type="button" role="menuitem" data-cb="deutan">{{ config.extra.ui.cb_deutan }}</button>
+            <button type="button" role="menuitem" data-cb="protan">{{ config.extra.ui.cb_protan }}</button>
+            <button type="button" role="menuitem" data-cb="tritan">{{ config.extra.ui.cb_tritan }}</button>
+            <button type="button" role="menuitem" data-cb="achro">{{ config.extra.ui.cb_achro }}</button>
         </div>
-        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">☾</button>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="{{ config.extra.ui.aria_theme_toggle }}" title="{{ config.extra.ui.aria_theme_toggle }}">☾</button>
     </div>
-    <input type="search" id="wiki-search" placeholder="Search the wiki…  (Ctrl+F)" autocomplete="off" spellcheck="false">
+    <input type="search" id="wiki-search" placeholder="{{ config.extra.ui.search_placeholder }}" autocomplete="off" spellcheck="false">
 </header>
 <div id="search-results" class="search-results" hidden></div>
+<div class="layout">
 <nav class="sidenav">
     <ul>
-        <li class="nav-group">New here</li>
-        <li><a href="/features/getting-started/">Getting started</a></li>
-        <li class="nav-group">In the field</li>
-        <li><a href="/features/gathering/">Gathering</a></li>
-        <li><a href="/features/combat/">Combat</a></li>
-        <li><a href="/features/missions/">Missions</a></li>
-        <li><a href="/features/movement/">Movement &amp; zones</a></li>
-        <li><a href="/features/npcs/">NPCs &amp; PVE hunting</a></li>
-        <li><a href="/features/exploration/">Exploration</a></li>
-        <li><a href="/features/probes/">Proximity probes</a></li>
-        <li class="nav-group">Industry &amp; progress</li>
-        <li><a href="/features/robots/">Robots &amp; fitting</a></li>
-        <li><a href="/features/production/">Production</a></li>
-        <li><a href="/features/research/">Research</a></li>
-        <li><a href="/features/items/">Items &amp; inventory</a></li>
-        <li><a href="/features/modules/">Modules &amp; fitting</a></li>
-        <li><a href="/features/sparks/">Sparks</a></li>
-        <li class="nav-group">Trade &amp; economy</li>
-        <li><a href="/features/market/">Market &amp; trade</a></li>
-        <li><a href="/features/transport/">Transport</a></li>
-        <li><a href="/content/shop/">Item shop</a></li>
-        <li class="nav-group">Big play</li>
-        <li><a href="/features/pbs/">Power base stations</a></li>
-        <li><a href="/features/outposts/">Outposts &amp; SAP</a></li>
-        <li><a href="/features/intrusion/">Intrusion</a></li>
-        <li class="nav-group">With others</li>
-        <li><a href="/features/groups/">Groups</a></li>
-        <li><a href="/features/social/">Social</a></li>
-        <li class="nav-group">Knowledge</li>
-        <li><a href="/features/faq/">FAQ</a></li>
-        <li><a href="/features/abbreviations/">Abbreviations</a></li>
-        <li><a href="/features/lore/">Lore</a></li>
-        <li><a href="/features/client-setup/">Client &amp; PC setup</a></li>
-        <li class="nav-group">Data reference</li>
-        <li><a href="/content/">Content tables</a></li>
-        <li><a href="/zones/">Zones</a></li>
-        <li><a href="/features/">All features</a></li>
-        <li><a href="/features/server/">Server &amp; reference</a></li>
-        <li><a href="/formats/">Formats (dev)</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_new_here }}</li>
+        <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_in_the_field }}</li>
+        <li><a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a></li>
+        <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
+        <li><a href="/features/missions/">{{ config.extra.ui.nav_missions }}</a></li>
+        <li><a href="/features/movement/">{{ config.extra.ui.nav_movement }}</a></li>
+        <li><a href="/features/npcs/">{{ config.extra.ui.nav_npcs }}</a></li>
+        <li><a href="/features/exploration/">{{ config.extra.ui.nav_exploration }}</a></li>
+        <li><a href="/features/probes/">{{ config.extra.ui.nav_probes }}</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_industry }}</li>
+        <li><a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a></li>
+        <li><a href="/features/production/">{{ config.extra.ui.nav_production }}</a></li>
+        <li><a href="/features/research/">{{ config.extra.ui.nav_research }}</a></li>
+        <li><a href="/features/items/">{{ config.extra.ui.nav_items }}</a></li>
+        <li><a href="/features/modules/">{{ config.extra.ui.nav_modules }}</a></li>
+        <li><a href="/features/sparks/">{{ config.extra.ui.nav_sparks }}</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_trade }}</li>
+        <li><a href="/features/market/">{{ config.extra.ui.nav_market }}</a></li>
+        <li><a href="/features/transport/">{{ config.extra.ui.nav_transport }}</a></li>
+        <li><a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_big_play }}</li>
+        <li><a href="/features/pbs/">{{ config.extra.ui.nav_pbs }}</a></li>
+        <li><a href="/features/outposts/">{{ config.extra.ui.nav_outposts }}</a></li>
+        <li><a href="/features/intrusion/">{{ config.extra.ui.nav_intrusion }}</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_with_others }}</li>
+        <li><a href="/features/groups/">{{ config.extra.ui.nav_groups }}</a></li>
+        <li><a href="/features/social/">{{ config.extra.ui.nav_social }}</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_knowledge }}</li>
+        <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
+        <li><a href="/features/abbreviations/">{{ config.extra.ui.nav_abbreviations }}</a></li>
+        <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
+        <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
+        <li class="nav-group">{{ config.extra.ui.nav_data_reference }}</li>
+        <li><a href="/content/">{{ config.extra.ui.nav_content }}</a></li>
+        <li><a href="/zones/">{{ config.extra.ui.nav_zones }}</a></li>
+        <li><a href="/features/">{{ config.extra.ui.nav_all_features }}</a></li>
+        <li><a href="/features/server/">{{ config.extra.ui.nav_server }}</a></li>
+        <li><a href="/formats/">{{ config.extra.ui.nav_formats }}</a></li>
     </ul>
 </nav>
+<div class="content-col">
 <main>
     {% block content %}{% endblock content %}
 </main>
@@ -101,11 +114,11 @@
     <!-- Bottom section: static links; the JS at the end of the body marks the
          section this page belongs to (bold section name + page title in parentheses). -->
     <nav class="footnav">
-        <a href="/">Home</a>
-        <a href="/features/" data-section="features">Features</a>
-        <a href="/content/" data-section="content">Content</a>
-        <a href="/zones/" data-section="zones">Zones</a>
-        <a href="/formats/" data-section="formats">Formats (dev)</a>
+        <a href="/">{{ config.extra.ui.foot_home }}</a>
+        <a href="/features/" data-section="features">{{ config.extra.ui.foot_features }}</a>
+        <a href="/content/" data-section="content">{{ config.extra.ui.foot_content }}</a>
+        <a href="/zones/" data-section="zones">{{ config.extra.ui.foot_zones }}</a>
+        <a href="/formats/" data-section="formats">{{ config.extra.ui.foot_formats }}</a>
     </nav>
     <div class="footlinks">
         <a href="https://github.com/OpenPerpetuum" target="_blank" rel="noopener">
@@ -116,13 +129,33 @@
             <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41Z"/></svg>
             @openperpetuum
         </a>
+        <a href="https://www.youtube.com/@openperpetuumproject583" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z"/></svg>
+            YouTube
+        </a>
     </div>
-    <p class="footcredit">Open Perpetuum wiki — generated with <a href="https://www.getzola.org/">Zola</a>. Content tables are
-    generated from the live game database (<code>tools/generate</code>).
-    <span class="attr">Wiki content is licensed under the Apache License 2.0, except where noted.</span>
+    <p class="footcredit">{{ config.extra.ui.foot_credit | safe }}
+    <span class="attr">{{ config.extra.ui.foot_attribution | safe }}</span>
     </p>
 </footer>
+</div>
+</div>
 <script>
+    // i18n seam: UI strings for the client-side code (search results).
+    // Collected from the #wiki-ui-strings element in the body (one
+    // data-<key> attribute per string; Zola 0.23 has no JSON filter).
+    window.WIKI_UI = (function () {
+            var el = document.getElementById("wiki-ui-strings");
+            if (!el) return {};
+            var out = {};
+            for (var i = 0; i < el.attributes.length; i++) {
+                var a = el.attributes[i];
+                if (a.name.indexOf("data-") === 0)
+                    out[a.name.slice(5).replace(/-([a-z])/g, function (m, c) { return c.toUpperCase(); })] = a.value;
+            }
+            return out;
+        })();
+    </script>
     // Light/dark toggle: the whole site (chrome + content) switches.
     // The icon shows the currently selected mode.
     (function () {

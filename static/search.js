@@ -71,11 +71,15 @@ function wikiSearchInit() {
     function render(q) {
         loadIndex().then(function () {
             var hits = search(q);
+            var ui = window.WIKI_UI || {};
             if (!hits.length) {
-                box.innerHTML = '<div class="no-results">No pages match “' + escapeHtml(q) + '”.</div>';
+                box.innerHTML = '<div class="no-results">' + escapeHtml(ui.search_no_results || 'No pages match') + ' “' + escapeHtml(q) + '”.</div>';
             } else {
+                var count = hits.length === 1
+                    ? (ui.search_pages_found_one || '1 page found')
+                    : (ui.search_pages_found_many || '{n} pages found').replace('{n}', hits.length);
                 box.innerHTML =
-                    '<div class="result-count">' + hits.length + ' page' + (hits.length > 1 ? 's' : '') + ' found</div>' +
+                    '<div class="result-count">' + escapeHtml(count) + '</div>' +
                     hits.map(function (p) {
                         return '<a href="' + escapeHtml(p.u) + '"><strong>' + escapeHtml(p.t) + '</strong>' +
                             (p.d ? '<span class="result-desc"> — ' + escapeHtml(p.d.length > 100 ? p.d.slice(0, 100) + '…' : p.d) + '</span>' : '') +
@@ -84,7 +88,7 @@ function wikiSearchInit() {
             }
             box.hidden = false;
         }).catch(function () {
-            box.innerHTML = '<div class="no-results">Search is unavailable.</div>';
+            box.innerHTML = '<div class="no-results">' + escapeHtml((window.WIKI_UI || {}).search_unavailable || 'Search is unavailable') + '</div>';
             box.hidden = false;
         });
     }

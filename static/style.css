@@ -172,9 +172,14 @@ pre code { background: none; padding: 0; }
 .search-results .result-count { font-size: 0.8rem; border-bottom: 1px solid var(--neon-faint); border-radius: 6px 6px 0 0; padding-bottom: 0.4rem; }
 
 /* ============ chrome: side menu ============ */
+.layout {
+    display: flex; align-items: flex-start; gap: 1.2rem;
+    margin: 1.4rem 1.2rem 1.6rem;
+}
+.content-col { flex: 1; min-width: 0; }
 .sidenav {
     position: sticky; top: 52px;
-    float: left; width: 210px; margin: 1.4rem 0 2rem 1.2rem;
+    flex: 0 0 210px;
     max-height: calc(100vh - 70px); overflow-y: auto;
     background: linear-gradient(180deg, var(--chrome-bg2), var(--chrome-bg));
     border: 1px solid var(--neon-dim);
@@ -201,7 +206,7 @@ pre code { background: none; padding: 0; }
 
 /* ============ content panel (dark, lighter than chrome) ============ */
 main {
-    margin: 1.4rem 1.2rem 2rem 240px;
+    margin: 0;
     max-width: 1050px;
     background:
         linear-gradient(var(--grid-line) 1px, transparent 1px),
@@ -414,6 +419,8 @@ html[data-theme="light"] {
     --th-bg: #bcd7ec;
     --th-fg: #0d3a5c;
     --th-edge: rgba(13, 111, 174, 0.6);
+    --bg-top: #f7fbfe;
+    --bg-bottom: #eaf3fa;
     --fg: var(--light-fg);
     --muted: var(--light-muted);
     --accent: var(--light-accent);
@@ -531,6 +538,19 @@ html[data-theme="light"][data-cb="achro"] {
 .zonemap a circle:hover, .zonemap circle:hover { stroke: var(--neon); stroke-width: 1.6; cursor: pointer; }
 .mapdot { display: inline-block; width: 0.7em; height: 0.7em; border-radius: 50%; margin-right: 0.35em; vertical-align: baseline; }
 
+/* feature-page images */
+.feat-icon { height: 2.2em; width: auto; vertical-align: -0.5em; }
+img[src^="/img/outpostrelic"], img[src^="/img/nia-small"] {
+    display: block; max-width: 100%; max-height: 260px;
+    border: 1px solid var(--border); border-radius: 8px;
+    margin: 0.8rem 0;
+}
+
+/* home menu group icons: outline-only shapes (transparent inside) that blend
+   into the page; shapes echo the OPP community wiki's category icons */
+.menuhead { white-space: nowrap; }
+.menuhead .menuicon { vertical-align: -0.25em; margin-right: 0.4rem; color: var(--accent); }
+
 /* robot model icons (robots page) */
 .robot-icon {
     height: 2.6em; width: auto;
@@ -575,10 +595,10 @@ html[data-theme="light"][data-cb="achro"] {
 }
 
 /* ============ chrome: bottom section ============ */
-/* same left offset + width as main, so the (sticky) sidenav never overlaps it */
+/* inside the content column, under main */
 footer {
     clear: both;
-    margin: 0 1.2rem 1.6rem 240px;
+    margin: 1.6rem 0 0;
     max-width: 1050px;
     padding: 0.9rem 1.2rem 1.6rem;
     background:

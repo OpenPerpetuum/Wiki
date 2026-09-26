@@ -30,7 +30,10 @@ TTY_FLAG        := $(shell [ -t 0 ] && echo -it || echo -i)
 
 all: build
 
-# Build the static site with the pinned official Zola container (no local install).
+# Build the static site with the pinned official Zola container (no local
+# install). The container runs as root (the image has no alpine coreutils),
+# so if a build is ever interrupted and leaves root-owned files in public/,
+# `make clean` removes them via a container.
 build:
 	docker run --rm \
 		-v "$$PWD:/src" \
@@ -39,6 +42,7 @@ build:
 # Local live-reload server: http://localhost:$(WIKI_PORT)
 serve:
 	docker run --rm $(TTY_FLAG) \
+		-u "$$(id -u):$$(id -g)" \
 		-p "$(WIKI_PORT):1111" \
 		-v "$$PWD:/src" \
 		$(ZOLA_IMAGE) -r /src serve -i 0.0.0.0 --no-port-append -u "http://localhost:$(WIKI_PORT)/"
@@ -58,4 +62,5 @@ generate:
 		--zones-out content/zones
 
 clean:
-	rm -rf public
+	rm -rf public 2>/dev/null || true
+	if [ -d public ]; then docker run --rm -v "$$PWD/public:/out" alpine:3.20 sh -c "rm -rf /out/*"; rm -rf public; fi
