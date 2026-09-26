@@ -402,6 +402,8 @@ A rare heavy platform class.
 
 **Scarab**
 
+<img class="robot-icon" src="/img/robots/scarab.png" alt="Scarab">
+
 | Robot | Size |
 |---|---|
 | Scarab | 213 |

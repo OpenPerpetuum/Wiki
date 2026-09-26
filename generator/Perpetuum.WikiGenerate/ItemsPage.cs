@@ -106,7 +106,12 @@ public static class ItemsPage
             sb.Append($"## {cat} ({rows.Count})\n\n{blurb}\n\n");
             foreach (var sub in subs)
             {
-                var subRows = rows.Where(r => r.CS.Sub == sub).ToList();
+                // Tier first (0-5, untyped last), then name: the listing order is
+            // the progression order, not alphabetical.
+                var subRows = rows.Where(r => r.CS.Sub == sub)
+                    .OrderBy(r => TierSortKey(r.D))
+                    .ThenBy(r => r.D.Name, StringComparer.Ordinal)
+                    .ToList();
                 if (subRows.Count == 0) continue;
                 sb.Append($"### {sub} ({subRows.Count})\n\n");
                 Md.WriteTable(sb, new[] { "Item", "Tier" },
@@ -122,6 +127,9 @@ public static class ItemsPage
         pages.Insert(0, ("items/_index.md", sb.ToString()));
         return pages;
     }
+
+    /// <summary>Sort key for catalog listings: tier 0-5 ascending, untyped items last.</summary>
+    private static int TierSortKey(DefRow d) => d.TierType == 0 || d.TierLevel is null ? int.MaxValue : d.TierLevel.Value;
 
     private static bool IsItem(DefRow d)
     {

@@ -164,7 +164,8 @@ public static class RobotsPage
     private static string FamilyKey(DefRow d) => d.Name.Replace("_mk2", "").Replace("_reward1", "");
 
     /// <summary>Display name -> static icon file (static/img/robots/), sourced from
-    /// the Open Perpetuum community wiki.</summary>
+    /// the Open Perpetuum community wiki;
+    /// Scarab is missing there and was extracted from the client archive instead.</summary>
     private static readonly Dictionary<string, string> RobotIcons = new(StringComparer.OrdinalIgnoreCase)
     {
         ["Arbalest"] = "arbalest.png", ["Argano"] = "argano.png", ["Artemis"] = "artemis.png",
@@ -178,7 +179,7 @@ public static class RobotsPage
         ["Riveler"] = "riveler.png", ["Sequer"] = "sequer.png", ["Seth"] = "seth.png",
         ["Symbiont"] = "symbiont.png", ["Termis"] = "termis.png", ["Troiar"] = "troiar.png",
         ["Tyrannos"] = "tyrannos.png", ["Vektor"] = "vektor.png", ["Waspish"] = "waspish.png",
-        ["Yagel"] = "yagel.png",
+        ["Yagel"] = "yagel.png", ["Scarab"] = "scarab.png",
     };
 
     /// <summary>Class by priority (higher classes set the lower class bits too).</summary>

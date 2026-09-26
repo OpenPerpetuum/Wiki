@@ -18,52 +18,51 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 
 | Item | Tier |
 |---|---|
-| [Archer Named4 Missile Launcher](/content/items/archer-named4-missile-launcher/) | 5 |
-| [Elitet4 Gamma Longrange Medium Autocannon](/content/items/elitet4-gamma-longrange-medium-autocannon/) | 4 |
-| [Elitet4 Gamma Longrange Medium Autocannon (CT capsule)](/content/items/elitet4-gamma-longrange-medium-autocannon-ct-capsule/) | 4 |
-| [Elitet4 Gamma Longrange Medium Autocannon Cprg](/content/items/elitet4-gamma-longrange-medium-autocannon-cprg/) | 4 |
-| [Elitet4 Gamma Longrange Medium Laser](/content/items/elitet4-gamma-longrange-medium-laser/) | 4 |
-| [Elitet4 Gamma Longrange Medium Laser (CT capsule)](/content/items/elitet4-gamma-longrange-medium-laser-ct-capsule/) | 4 |
-| [Elitet4 Gamma Longrange Medium Laser Cprg](/content/items/elitet4-gamma-longrange-medium-laser-cprg/) | 4 |
-| [Elitet4 Gamma Longrange Medium Railgun](/content/items/elitet4-gamma-longrange-medium-railgun/) | 4 |
-| [Elitet4 Gamma Longrange Medium Railgun (CT capsule)](/content/items/elitet4-gamma-longrange-medium-railgun-ct-capsule/) | 4 |
-| [Elitet4 Gamma Longrange Medium Railgun Cprg](/content/items/elitet4-gamma-longrange-medium-railgun-cprg/) | 4 |
-| [Elitet4 Gamma Medium Autocannon](/content/items/elitet4-gamma-medium-autocannon/) | 4 |
-| [Elitet4 Gamma Medium Autocannon (CT capsule)](/content/items/elitet4-gamma-medium-autocannon-ct-capsule/) | 4 |
-| [Elitet4 Gamma Medium Autocannon Cprg](/content/items/elitet4-gamma-medium-autocannon-cprg/) | 4 |
-| [Elitet4 Gamma Medium Laser](/content/items/elitet4-gamma-medium-laser/) | 4 |
-| [Elitet4 Gamma Medium Laser (CT capsule)](/content/items/elitet4-gamma-medium-laser-ct-capsule/) | 4 |
-| [Elitet4 Gamma Medium Laser Cprg](/content/items/elitet4-gamma-medium-laser-cprg/) | 4 |
-| [Elitet4 Gamma Medium Railgun](/content/items/elitet4-gamma-medium-railgun/) | 4 |
-| [Elitet4 Gamma Medium Railgun (CT capsule)](/content/items/elitet4-gamma-medium-railgun-ct-capsule/) | 4 |
-| [Elitet4 Gamma Medium Railgun Cprg](/content/items/elitet4-gamma-medium-railgun-cprg/) | 4 |
-| [Elitet4 Gamma Missile Launcher](/content/items/elitet4-gamma-missile-launcher/) | 4 |
-| [Elitet4 Gamma Missile Launcher (CT capsule)](/content/items/elitet4-gamma-missile-launcher-ct-capsule/) | 4 |
-| [Elitet4 Gamma Missile Launcher Cprg](/content/items/elitet4-gamma-missile-launcher-cprg/) | 4 |
-| [Elitet4 Gamma Rocket Launcher](/content/items/elitet4-gamma-rocket-launcher/) | 4 |
-| [Elitet4 Gamma Rocket Launcher (CT capsule)](/content/items/elitet4-gamma-rocket-launcher-ct-capsule/) | 4 |
-| [Elitet4 Gamma Rocket Launcher Cprg](/content/items/elitet4-gamma-rocket-launcher-cprg/) | 4 |
-| [Elitet4 Gamma Small Autocannon](/content/items/elitet4-gamma-small-autocannon/) | 4 |
-| [Elitet4 Gamma Small Autocannon (CT capsule)](/content/items/elitet4-gamma-small-autocannon-ct-capsule/) | 4 |
-| [Elitet4 Gamma Small Autocannon Cprg](/content/items/elitet4-gamma-small-autocannon-cprg/) | 4 |
-| [Elitet4 Gamma Small Laser](/content/items/elitet4-gamma-small-laser/) | 4 |
-| [Elitet4 Gamma Small Laser (CT capsule)](/content/items/elitet4-gamma-small-laser-ct-capsule/) | 4 |
-| [Elitet4 Gamma Small Laser Cprg](/content/items/elitet4-gamma-small-laser-cprg/) | 4 |
-| [Elitet4 Gamma Small Railgun](/content/items/elitet4-gamma-small-railgun/) | 4 |
-| [Elitet4 Gamma Small Railgun (CT capsule)](/content/items/elitet4-gamma-small-railgun-ct-capsule/) | 4 |
-| [Elitet4 Gamma Small Railgun Cprg](/content/items/elitet4-gamma-small-railgun-cprg/) | 4 |
+| [Syn-tec light autocannon](/content/items/noob-small-autocannon/) | – |
 | [Longrange Standard Large Laser](/content/items/longrange-standard-large-laser/) | 1 |
 | [Longrange Standard Large Laser Cprg](/content/items/longrange-standard-large-laser-cprg/) | 1 |
-| [Longrange Standard Large Laser Pr](/content/items/longrange-standard-large-laser-pr/) | – |
 | [Longrange Standard Large Railgun](/content/items/longrange-standard-large-railgun/) | 1 |
 | [Longrange Standard Large Railgun Cprg](/content/items/longrange-standard-large-railgun-cprg/) | 1 |
-| [Longrange Standard Large Railgun Pr](/content/items/longrange-standard-large-railgun-pr/) | – |
 | [Standard medium autocannon](/content/items/longrange-standard-medium-autocannon/) | 1 |
 | [Standard medium autocannon CT](/content/items/longrange-standard-medium-autocannon-cprg/) | 1 |
 | [Standard medium HCL laser](/content/items/longrange-standard-medium-laser/) | 1 |
 | [Standard medium HCL laser CT](/content/items/longrange-standard-medium-laser-cprg/) | 1 |
 | [Standard medium EM-gun](/content/items/longrange-standard-medium-railgun/) | 1 |
 | [Standard medium EM-gun CT](/content/items/longrange-standard-medium-railgun-cprg/) | 1 |
+| [Standard heavy missile launcher](/content/items/standard-cruisemissile-launcher/) | 1 |
+| [Standard Cruisemissile Launcher Cprg](/content/items/standard-cruisemissile-launcher-cprg/) | 1 |
+| [Standard laser tuning](/content/items/standard-damage-mod-laser/) | 1 |
+| [Standard laser tuning CT](/content/items/standard-damage-mod-laser-cprg/) | 1 |
+| [Standard magnetic weapon tuning](/content/items/standard-damage-mod-railgun/) | 1 |
+| [Standard magnetic weapon tuning CT](/content/items/standard-damage-mod-railgun-cprg/) | 1 |
+| [Standard Hell Cannon](/content/items/standard-hell-cannon/) | 1 |
+| [Standard Hell Cannon Cprg](/content/items/standard-hell-cannon-cprg/) | 1 |
+| [Standard Hell Cannon Pr](/content/items/standard-hell-cannon-pr/) | 1 |
+| [Standard heavy LCL laser](/content/items/standard-large-laser/) | 1 |
+| [Standard Large Laser Cprg](/content/items/standard-large-laser-cprg/) | 1 |
+| [Standard heavy Gauss gun](/content/items/standard-large-railgun/) | 1 |
+| [Standard Large Railgun Cprg](/content/items/standard-large-railgun-cprg/) | 1 |
+| [Standard medium machine gun](/content/items/standard-medium-autocannon/) | 1 |
+| [Standard medium machine gun CT](/content/items/standard-medium-autocannon-cprg/) | 1 |
+| [Standard medium LCL laser](/content/items/standard-medium-laser/) | 1 |
+| [Standard medium LCL laser CT](/content/items/standard-medium-laser-cprg/) | 1 |
+| [Standard medium Gauss gun](/content/items/standard-medium-railgun/) | 1 |
+| [Standard medium Gauss gun CT](/content/items/standard-medium-railgun-cprg/) | 1 |
+| [Standard medium missile launcher](/content/items/standard-missile-launcher/) | 1 |
+| [Standard medium missile launcher CT](/content/items/standard-missile-launcher-cprg/) | 1 |
+| [Standard Raven Cannon](/content/items/standard-raven-cannon/) | 1 |
+| [Standard Raven Cannon Cprg](/content/items/standard-raven-cannon-cprg/) | 1 |
+| [Standard Raven Cannon Pr](/content/items/standard-raven-cannon-pr/) | 1 |
+| [Standard light missile launcher](/content/items/standard-rocket-launcher/) | 1 |
+| [Standard light missile launcher CT](/content/items/standard-rocket-launcher-cprg/) | 1 |
+| [Standard light autocannon](/content/items/standard-small-autocannon/) | 1 |
+| [Standard light autocannon CT](/content/items/standard-small-autocannon-cprg/) | 1 |
+| [Standard light HCL laser](/content/items/standard-small-laser/) | 1 |
+| [Standard light HCL laser CT](/content/items/standard-small-laser-cprg/) | 1 |
+| [Standard light EM-gun](/content/items/standard-small-railgun/) | 1 |
+| [Standard light EM-gun CT](/content/items/standard-small-railgun-cprg/) | 1 |
+| [Standard weapon stabilizer](/content/items/standard-weapon-stabilizer/) | 1 |
+| [Standard weapon stabilizer CT](/content/items/standard-weapon-stabilizer-cprg/) | 1 |
 | [Aqwit Imperator heavy missile launcher](/content/items/named1-cruisemissile-launcher/) | 2 |
 | [Named1 Cruisemissile Launcher Cprg](/content/items/named1-cruisemissile-launcher-cprg/) | 2 |
 | [Named1 Cruisemissile Launcher Pr](/content/items/named1-cruisemissile-launcher-pr/) | 2 |
@@ -190,6 +189,39 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Sharpsy weapon stabilizer](/content/items/named2-weapon-stabilizer/) | 3 |
 | [Sharpsy weapon stabilizer CT](/content/items/named2-weapon-stabilizer-cprg/) | 3 |
 | [Sharpsy weapon stabilizer prototype](/content/items/named2-weapon-stabilizer-pr/) | 3 |
+| [Elitet4 Gamma Longrange Medium Autocannon](/content/items/elitet4-gamma-longrange-medium-autocannon/) | 4 |
+| [Elitet4 Gamma Longrange Medium Autocannon (CT capsule)](/content/items/elitet4-gamma-longrange-medium-autocannon-ct-capsule/) | 4 |
+| [Elitet4 Gamma Longrange Medium Autocannon Cprg](/content/items/elitet4-gamma-longrange-medium-autocannon-cprg/) | 4 |
+| [Elitet4 Gamma Longrange Medium Laser](/content/items/elitet4-gamma-longrange-medium-laser/) | 4 |
+| [Elitet4 Gamma Longrange Medium Laser (CT capsule)](/content/items/elitet4-gamma-longrange-medium-laser-ct-capsule/) | 4 |
+| [Elitet4 Gamma Longrange Medium Laser Cprg](/content/items/elitet4-gamma-longrange-medium-laser-cprg/) | 4 |
+| [Elitet4 Gamma Longrange Medium Railgun](/content/items/elitet4-gamma-longrange-medium-railgun/) | 4 |
+| [Elitet4 Gamma Longrange Medium Railgun (CT capsule)](/content/items/elitet4-gamma-longrange-medium-railgun-ct-capsule/) | 4 |
+| [Elitet4 Gamma Longrange Medium Railgun Cprg](/content/items/elitet4-gamma-longrange-medium-railgun-cprg/) | 4 |
+| [Elitet4 Gamma Medium Autocannon](/content/items/elitet4-gamma-medium-autocannon/) | 4 |
+| [Elitet4 Gamma Medium Autocannon (CT capsule)](/content/items/elitet4-gamma-medium-autocannon-ct-capsule/) | 4 |
+| [Elitet4 Gamma Medium Autocannon Cprg](/content/items/elitet4-gamma-medium-autocannon-cprg/) | 4 |
+| [Elitet4 Gamma Medium Laser](/content/items/elitet4-gamma-medium-laser/) | 4 |
+| [Elitet4 Gamma Medium Laser (CT capsule)](/content/items/elitet4-gamma-medium-laser-ct-capsule/) | 4 |
+| [Elitet4 Gamma Medium Laser Cprg](/content/items/elitet4-gamma-medium-laser-cprg/) | 4 |
+| [Elitet4 Gamma Medium Railgun](/content/items/elitet4-gamma-medium-railgun/) | 4 |
+| [Elitet4 Gamma Medium Railgun (CT capsule)](/content/items/elitet4-gamma-medium-railgun-ct-capsule/) | 4 |
+| [Elitet4 Gamma Medium Railgun Cprg](/content/items/elitet4-gamma-medium-railgun-cprg/) | 4 |
+| [Elitet4 Gamma Missile Launcher](/content/items/elitet4-gamma-missile-launcher/) | 4 |
+| [Elitet4 Gamma Missile Launcher (CT capsule)](/content/items/elitet4-gamma-missile-launcher-ct-capsule/) | 4 |
+| [Elitet4 Gamma Missile Launcher Cprg](/content/items/elitet4-gamma-missile-launcher-cprg/) | 4 |
+| [Elitet4 Gamma Rocket Launcher](/content/items/elitet4-gamma-rocket-launcher/) | 4 |
+| [Elitet4 Gamma Rocket Launcher (CT capsule)](/content/items/elitet4-gamma-rocket-launcher-ct-capsule/) | 4 |
+| [Elitet4 Gamma Rocket Launcher Cprg](/content/items/elitet4-gamma-rocket-launcher-cprg/) | 4 |
+| [Elitet4 Gamma Small Autocannon](/content/items/elitet4-gamma-small-autocannon/) | 4 |
+| [Elitet4 Gamma Small Autocannon (CT capsule)](/content/items/elitet4-gamma-small-autocannon-ct-capsule/) | 4 |
+| [Elitet4 Gamma Small Autocannon Cprg](/content/items/elitet4-gamma-small-autocannon-cprg/) | 4 |
+| [Elitet4 Gamma Small Laser](/content/items/elitet4-gamma-small-laser/) | 4 |
+| [Elitet4 Gamma Small Laser (CT capsule)](/content/items/elitet4-gamma-small-laser-ct-capsule/) | 4 |
+| [Elitet4 Gamma Small Laser Cprg](/content/items/elitet4-gamma-small-laser-cprg/) | 4 |
+| [Elitet4 Gamma Small Railgun](/content/items/elitet4-gamma-small-railgun/) | 4 |
+| [Elitet4 Gamma Small Railgun (CT capsule)](/content/items/elitet4-gamma-small-railgun-ct-capsule/) | 4 |
+| [Elitet4 Gamma Small Railgun Cprg](/content/items/elitet4-gamma-small-railgun-cprg/) | 4 |
 | [Pelistec-TR500 heavy missile launcher](/content/items/named3-cruisemissile-launcher/) | 4 |
 | [Named3 Cruisemissile Launcher Cprg](/content/items/named3-cruisemissile-launcher-cprg/) | 4 |
 | [Named3 Cruisemissile Launcher Pr](/content/items/named3-cruisemissile-launcher-pr/) | 4 |
@@ -253,59 +285,18 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Kobel 300-XZ weapon stabilizer](/content/items/named3-weapon-stabilizer/) | 4 |
 | [Kobel 300-XZ weapon stabilizer CT](/content/items/named3-weapon-stabilizer-cprg/) | 4 |
 | [Kobel 300-XZ weapon stabilizer prototype](/content/items/named3-weapon-stabilizer-pr/) | 4 |
-| [Syn-tec light autocannon](/content/items/noob-small-autocannon/) | – |
-| [Standard heavy missile launcher](/content/items/standard-cruisemissile-launcher/) | 1 |
-| [Standard Cruisemissile Launcher Cprg](/content/items/standard-cruisemissile-launcher-cprg/) | 1 |
-| [Standard Cruisemissile Launcher Pr](/content/items/standard-cruisemissile-launcher-pr/) | – |
-| [Standard laser tuning](/content/items/standard-damage-mod-laser/) | 1 |
-| [Standard laser tuning CT](/content/items/standard-damage-mod-laser-cprg/) | 1 |
-| [Standard magnetic weapon tuning](/content/items/standard-damage-mod-railgun/) | 1 |
-| [Standard magnetic weapon tuning CT](/content/items/standard-damage-mod-railgun-cprg/) | 1 |
-| [Standard Hell Cannon](/content/items/standard-hell-cannon/) | 1 |
-| [Standard Hell Cannon Cprg](/content/items/standard-hell-cannon-cprg/) | 1 |
-| [Standard Hell Cannon Pr](/content/items/standard-hell-cannon-pr/) | 1 |
-| [Standard heavy LCL laser](/content/items/standard-large-laser/) | 1 |
-| [Standard Large Laser Cprg](/content/items/standard-large-laser-cprg/) | 1 |
-| [Standard Large Laser Pr](/content/items/standard-large-laser-pr/) | – |
-| [Standard heavy Gauss gun](/content/items/standard-large-railgun/) | 1 |
-| [Standard Large Railgun Cprg](/content/items/standard-large-railgun-cprg/) | 1 |
-| [Standard Large Railgun Pr](/content/items/standard-large-railgun-pr/) | – |
-| [Standard medium machine gun](/content/items/standard-medium-autocannon/) | 1 |
-| [Standard medium machine gun CT](/content/items/standard-medium-autocannon-cprg/) | 1 |
-| [Standard medium LCL laser](/content/items/standard-medium-laser/) | 1 |
-| [Standard medium LCL laser CT](/content/items/standard-medium-laser-cprg/) | 1 |
-| [Standard medium Gauss gun](/content/items/standard-medium-railgun/) | 1 |
-| [Standard medium Gauss gun CT](/content/items/standard-medium-railgun-cprg/) | 1 |
-| [Standard medium missile launcher](/content/items/standard-missile-launcher/) | 1 |
-| [Standard medium missile launcher CT](/content/items/standard-missile-launcher-cprg/) | 1 |
-| [Standard Raven Cannon](/content/items/standard-raven-cannon/) | 1 |
-| [Standard Raven Cannon Cprg](/content/items/standard-raven-cannon-cprg/) | 1 |
-| [Standard Raven Cannon Pr](/content/items/standard-raven-cannon-pr/) | 1 |
-| [Standard light missile launcher](/content/items/standard-rocket-launcher/) | 1 |
-| [Standard light missile launcher CT](/content/items/standard-rocket-launcher-cprg/) | 1 |
-| [Standard light autocannon](/content/items/standard-small-autocannon/) | 1 |
-| [Standard light autocannon CT](/content/items/standard-small-autocannon-cprg/) | 1 |
-| [Standard light HCL laser](/content/items/standard-small-laser/) | 1 |
-| [Standard light HCL laser CT](/content/items/standard-small-laser-cprg/) | 1 |
-| [Standard light EM-gun](/content/items/standard-small-railgun/) | 1 |
-| [Standard light EM-gun CT](/content/items/standard-small-railgun-cprg/) | 1 |
-| [Standard weapon stabilizer](/content/items/standard-weapon-stabilizer/) | 1 |
-| [Standard weapon stabilizer CT](/content/items/standard-weapon-stabilizer-cprg/) | 1 |
+| [Archer Named4 Missile Launcher](/content/items/archer-named4-missile-launcher/) | 5 |
 | [Weasel Named4 Small Railgun](/content/items/weasel-named4-small-railgun/) | 5 |
+| [Longrange Standard Large Laser Pr](/content/items/longrange-standard-large-laser-pr/) | – |
+| [Longrange Standard Large Railgun Pr](/content/items/longrange-standard-large-railgun-pr/) | – |
+| [Standard Cruisemissile Launcher Pr](/content/items/standard-cruisemissile-launcher-pr/) | – |
+| [Standard Large Laser Pr](/content/items/standard-large-laser-pr/) | – |
+| [Standard Large Railgun Pr](/content/items/standard-large-railgun-pr/) | – |
 
 ### Turrets (19)
 
 | Item | Tier |
 |---|---|
-| [Named1 Industrial Turret Driller](/content/items/named1-industrial-turret-driller/) | 2 |
-| [Named1 Industrial Turret Harvester](/content/items/named1-industrial-turret-harvester/) | 2 |
-| [Named1 Sentry Turret Gun](/content/items/named1-sentry-turret-gun/) | 2 |
-| [Named2 Industrial Turret Driller](/content/items/named2-industrial-turret-driller/) | 3 |
-| [Named2 Industrial Turret Harvester](/content/items/named2-industrial-turret-harvester/) | 3 |
-| [Named2 Sentry Turret Gun](/content/items/named2-sentry-turret-gun/) | 3 |
-| [Named3 Industrial Turret Driller](/content/items/named3-industrial-turret-driller/) | 4 |
-| [Named3 Industrial Turret Harvester](/content/items/named3-industrial-turret-harvester/) | 4 |
-| [Named3 Sentry Turret Gun](/content/items/named3-sentry-turret-gun/) | 4 |
 | [Standart Industrial Turret Driller](/content/items/standart-industrial-turret-driller/) | 1 |
 | [Standart Industrial Turret Harvester](/content/items/standart-industrial-turret-harvester/) | 1 |
 | [Standart Sentry Turret Gun](/content/items/standart-sentry-turret-gun/) | 1 |
@@ -316,18 +307,39 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Turret-mounted sensor suppressor](/content/items/turret-sensor-dampener/) | 1 |
 | [Turret-mounted ECM](/content/items/turret-sensor-jammer/) | 1 |
 | [Turret-mounted demobilizer](/content/items/turret-webber/) | 1 |
+| [Named1 Industrial Turret Driller](/content/items/named1-industrial-turret-driller/) | 2 |
+| [Named1 Industrial Turret Harvester](/content/items/named1-industrial-turret-harvester/) | 2 |
+| [Named1 Sentry Turret Gun](/content/items/named1-sentry-turret-gun/) | 2 |
+| [Named2 Industrial Turret Driller](/content/items/named2-industrial-turret-driller/) | 3 |
+| [Named2 Industrial Turret Harvester](/content/items/named2-industrial-turret-harvester/) | 3 |
+| [Named2 Sentry Turret Gun](/content/items/named2-sentry-turret-gun/) | 3 |
+| [Named3 Industrial Turret Driller](/content/items/named3-industrial-turret-driller/) | 4 |
+| [Named3 Industrial Turret Harvester](/content/items/named3-industrial-turret-harvester/) | 4 |
+| [Named3 Sentry Turret Gun](/content/items/named3-sentry-turret-gun/) | 4 |
 
 ### Sensors & scanning (86)
 
 | Item | Tier |
 |---|---|
-| [Archer Named4 Sensor Booster](/content/items/archer-named4-sensor-booster/) | 5 |
+| [Syn-tec chassis scanner](/content/items/noob-chassis-scanner/) | – |
+| [Syn-tec sensor amplifier](/content/items/noob-sensor-booster/) | – |
+| [Standard cargo scanner](/content/items/standard-cargo-scanner/) | 1 |
+| [Standard cargo scanner CT](/content/items/standard-cargo-scanner-cprg/) | 1 |
+| [Standard chassis scanner](/content/items/standard-chassis-scanner/) | 1 |
+| [Standard chassis scanner CT](/content/items/standard-chassis-scanner-cprg/) | 1 |
+| [Standard remote sensor amplifier](/content/items/standard-remote-sensor-booster/) | 1 |
+| [Standard remote sensor amplifier CT](/content/items/standard-remote-sensor-booster-cprg/) | 1 |
+| [Standard sensor amplifier](/content/items/standard-sensor-booster/) | 1 |
+| [Standard sensor amplifier CT](/content/items/standard-sensor-booster-cprg/) | 1 |
+| [Standard sensor suppressor](/content/items/standard-sensor-dampener/) | 1 |
+| [Standard sensor suppressor CT](/content/items/standard-sensor-dampener-cprg/) | 1 |
+| [Standard ECM](/content/items/standard-sensor-jammer/) | 1 |
+| [Standard ECM CT](/content/items/standard-sensor-jammer-cprg/) | 1 |
+| [Standard sensor suppressor tuning](/content/items/standard-sensor-supressor-booster/) | 1 |
+| [Standard sensor suppressor tuning CT](/content/items/standard-sensor-supressor-booster-cprg/) | 1 |
 | [Elitet2 70 Sensor Booster](/content/items/elitet2-70-sensor-booster/) | 2 |
 | [Elitet2 70 Sensor Booster (CT capsule)](/content/items/elitet2-70-sensor-booster-ct-capsule/) | 2 |
 | [Elitet2 70 Sensor Booster Cprg](/content/items/elitet2-70-sensor-booster-cprg/) | 2 |
-| [Elitet4 70 Sensor Booster](/content/items/elitet4-70-sensor-booster/) | 4 |
-| [Elitet4 70 Sensor Booster (CT capsule)](/content/items/elitet4-70-sensor-booster-ct-capsule/) | 4 |
-| [Elitet4 70 Sensor Booster Cprg](/content/items/elitet4-70-sensor-booster-cprg/) | 4 |
 | [Spurt-Singular cargo scanner](/content/items/named1-cargo-scanner/) | 2 |
 | [Spurt-Singular cargo scanner CT](/content/items/named1-cargo-scanner-cprg/) | 2 |
 | [Spurt-Singular cargo scanner prototype](/content/items/named1-cargo-scanner-pr/) | 2 |
@@ -370,6 +382,9 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Radiocor sensor suppressor tuning](/content/items/named2-sensor-supressor-booster/) | 3 |
 | [Radiocor sensor suppressor tuning CT](/content/items/named2-sensor-supressor-booster-cprg/) | 3 |
 | [Radiocor sensor suppressor tuning prototype](/content/items/named2-sensor-supressor-booster-pr/) | 3 |
+| [Elitet4 70 Sensor Booster](/content/items/elitet4-70-sensor-booster/) | 4 |
+| [Elitet4 70 Sensor Booster (CT capsule)](/content/items/elitet4-70-sensor-booster-ct-capsule/) | 4 |
+| [Elitet4 70 Sensor Booster Cprg](/content/items/elitet4-70-sensor-booster-cprg/) | 4 |
 | [Visioner cargo scanner](/content/items/named3-cargo-scanner/) | 4 |
 | [Visioner cargo scanner CT](/content/items/named3-cargo-scanner-cprg/) | 4 |
 | [Visioner cargo scanner prototype](/content/items/named3-cargo-scanner-pr/) | 4 |
@@ -391,28 +406,30 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [DDX700-Mist sensor suppressor tuning](/content/items/named3-sensor-supressor-booster/) | 4 |
 | [DDX700-Mist sensor suppressor tuning CT](/content/items/named3-sensor-supressor-booster-cprg/) | 4 |
 | [DDX700-Mist sensor suppressor tuning prototype](/content/items/named3-sensor-supressor-booster-pr/) | 4 |
-| [Syn-tec chassis scanner](/content/items/noob-chassis-scanner/) | – |
-| [Syn-tec sensor amplifier](/content/items/noob-sensor-booster/) | – |
-| [Standard cargo scanner](/content/items/standard-cargo-scanner/) | 1 |
-| [Standard cargo scanner CT](/content/items/standard-cargo-scanner-cprg/) | 1 |
-| [Standard chassis scanner](/content/items/standard-chassis-scanner/) | 1 |
-| [Standard chassis scanner CT](/content/items/standard-chassis-scanner-cprg/) | 1 |
-| [Standard remote sensor amplifier](/content/items/standard-remote-sensor-booster/) | 1 |
-| [Standard remote sensor amplifier CT](/content/items/standard-remote-sensor-booster-cprg/) | 1 |
-| [Standard sensor amplifier](/content/items/standard-sensor-booster/) | 1 |
-| [Standard sensor amplifier CT](/content/items/standard-sensor-booster-cprg/) | 1 |
-| [Standard sensor suppressor](/content/items/standard-sensor-dampener/) | 1 |
-| [Standard sensor suppressor CT](/content/items/standard-sensor-dampener-cprg/) | 1 |
-| [Standard ECM](/content/items/standard-sensor-jammer/) | 1 |
-| [Standard ECM CT](/content/items/standard-sensor-jammer-cprg/) | 1 |
-| [Standard sensor suppressor tuning](/content/items/standard-sensor-supressor-booster/) | 1 |
-| [Standard sensor suppressor tuning CT](/content/items/standard-sensor-supressor-booster-cprg/) | 1 |
+| [Archer Named4 Sensor Booster](/content/items/archer-named4-sensor-booster/) | 5 |
 
 ### Shield (127)
 
 | Item | Tier |
 |---|---|
-| [Archer Named4 Medium Shield Generator](/content/items/archer-named4-medium-shield-generator/) | 5 |
+| [Standard shield NEXUS module](/content/items/standard-gang-assist-shield-calculation-module/) | 1 |
+| [Standard shield NEXUS module CT](/content/items/standard-gang-assist-shield-calculation-module-cprg/) | 1 |
+| [Standard large shield generator](/content/items/standard-large-shield-generator/) | 1 |
+| [Standard Large Shield Generator Cprg](/content/items/standard-large-shield-generator-cprg/) | 1 |
+| [Standard medium energy neutralizer](/content/items/standard-medium-energy-neutralizer/) | 1 |
+| [Standard medium energy neutralizer CT](/content/items/standard-medium-energy-neutralizer-cprg/) | 1 |
+| [Standard medium energy drainer](/content/items/standard-medium-energy-vampire/) | 1 |
+| [Standard medium energy drainer CT](/content/items/standard-medium-energy-vampire-cprg/) | 1 |
+| [Standard medium shield generator](/content/items/standard-medium-shield-generator/) | 1 |
+| [Standard medium shield generator CT](/content/items/standard-medium-shield-generator-cprg/) | 1 |
+| [Standard shield hardener](/content/items/standard-shield-hardener/) | 1 |
+| [Standard shield hardener CT](/content/items/standard-shield-hardener-cprg/) | 1 |
+| [Standard small energy neutralizer](/content/items/standard-small-energy-neutralizer/) | 1 |
+| [Standard small energy neutralizer CT](/content/items/standard-small-energy-neutralizer-cprg/) | 1 |
+| [Standard small energy drainer](/content/items/standard-small-energy-vampire/) | 1 |
+| [Standard small energy drainer CT](/content/items/standard-small-energy-vampire-cprg/) | 1 |
+| [Standard small shield generator](/content/items/standard-small-shield-generator/) | 1 |
+| [Standard small shield generator CT](/content/items/standard-small-shield-generator-cprg/) | 1 |
 | [Elite2 Cultist Nox Shield Negator](/content/items/elite2-cultist-nox-shield-negator/) | 2 |
 | [Elitet2 70 Medium Shield Generator](/content/items/elitet2-70-medium-shield-generator/) | 2 |
 | [Elitet2 70 Medium Shield Generator (CT capsule)](/content/items/elitet2-70-medium-shield-generator-ct-capsule/) | 2 |
@@ -426,18 +443,6 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Elitet2 71 Small Shield Generator](/content/items/elitet2-71-small-shield-generator/) | 2 |
 | [Elitet2 71 Small Shield Generator (CT capsule)](/content/items/elitet2-71-small-shield-generator-ct-capsule/) | 2 |
 | [Elitet2 71 Small Shield Generator Cprg](/content/items/elitet2-71-small-shield-generator-cprg/) | 2 |
-| [Elitet4 70 Medium Shield Generator](/content/items/elitet4-70-medium-shield-generator/) | 4 |
-| [Elitet4 70 Medium Shield Generator (CT capsule)](/content/items/elitet4-70-medium-shield-generator-ct-capsule/) | 4 |
-| [Elitet4 70 Medium Shield Generator Cprg](/content/items/elitet4-70-medium-shield-generator-cprg/) | 4 |
-| [Elitet4 70 Small Shield Generator](/content/items/elitet4-70-small-shield-generator/) | 4 |
-| [Elitet4 70 Small Shield Generator (CT capsule)](/content/items/elitet4-70-small-shield-generator-ct-capsule/) | 4 |
-| [Elitet4 70 Small Shield Generator Cprg](/content/items/elitet4-70-small-shield-generator-cprg/) | 4 |
-| [Elitet4 71 Medium Shield Generator](/content/items/elitet4-71-medium-shield-generator/) | 4 |
-| [Elitet4 71 Medium Shield Generator (CT capsule)](/content/items/elitet4-71-medium-shield-generator-ct-capsule/) | 4 |
-| [Elitet4 71 Medium Shield Generator Cprg](/content/items/elitet4-71-medium-shield-generator-cprg/) | 4 |
-| [Elitet4 71 Small Shield Generator](/content/items/elitet4-71-small-shield-generator/) | 4 |
-| [Elitet4 71 Small Shield Generator (CT capsule)](/content/items/elitet4-71-small-shield-generator-ct-capsule/) | 4 |
-| [Elitet4 71 Small Shield Generator Cprg](/content/items/elitet4-71-small-shield-generator-cprg/) | 4 |
 | [Bomitar I. shield NEXUS module](/content/items/named1-gang-assist-shield-calculation-module/) | 2 |
 | [Bomitar I. shield NEXUS module CT](/content/items/named1-gang-assist-shield-calculation-module-cprg/) | 2 |
 | [Bomitar I. shield NEXUS module prototype](/content/items/named1-gang-assist-shield-calculation-module-pr/) | 2 |
@@ -492,6 +497,18 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Ovostec-Yellowray small shield generator](/content/items/named2-small-shield-generator/) | 3 |
 | [Ovostec-Yellowray small shield generator CT](/content/items/named2-small-shield-generator-cprg/) | 3 |
 | [Ovostec-Yellowray small shield generator prototype](/content/items/named2-small-shield-generator-pr/) | 3 |
+| [Elitet4 70 Medium Shield Generator](/content/items/elitet4-70-medium-shield-generator/) | 4 |
+| [Elitet4 70 Medium Shield Generator (CT capsule)](/content/items/elitet4-70-medium-shield-generator-ct-capsule/) | 4 |
+| [Elitet4 70 Medium Shield Generator Cprg](/content/items/elitet4-70-medium-shield-generator-cprg/) | 4 |
+| [Elitet4 70 Small Shield Generator](/content/items/elitet4-70-small-shield-generator/) | 4 |
+| [Elitet4 70 Small Shield Generator (CT capsule)](/content/items/elitet4-70-small-shield-generator-ct-capsule/) | 4 |
+| [Elitet4 70 Small Shield Generator Cprg](/content/items/elitet4-70-small-shield-generator-cprg/) | 4 |
+| [Elitet4 71 Medium Shield Generator](/content/items/elitet4-71-medium-shield-generator/) | 4 |
+| [Elitet4 71 Medium Shield Generator (CT capsule)](/content/items/elitet4-71-medium-shield-generator-ct-capsule/) | 4 |
+| [Elitet4 71 Medium Shield Generator Cprg](/content/items/elitet4-71-medium-shield-generator-cprg/) | 4 |
+| [Elitet4 71 Small Shield Generator](/content/items/elitet4-71-small-shield-generator/) | 4 |
+| [Elitet4 71 Small Shield Generator (CT capsule)](/content/items/elitet4-71-small-shield-generator-ct-capsule/) | 4 |
+| [Elitet4 71 Small Shield Generator Cprg](/content/items/elitet4-71-small-shield-generator-cprg/) | 4 |
 | [Bomitar II. shield NEXUS module](/content/items/named3-gang-assist-shield-calculation-module/) | 4 |
 | [Bomitar II. shield NEXUS module CT](/content/items/named3-gang-assist-shield-calculation-module-cprg/) | 4 |
 | [Bomitar II. shield NEXUS module prototype](/content/items/named3-gang-assist-shield-calculation-module-pr/) | 4 |
@@ -519,31 +536,29 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [SBA-200 Forebrace small shield generator](/content/items/named3-small-shield-generator/) | 4 |
 | [SBA-200 Forebrace small shield generator CT](/content/items/named3-small-shield-generator-cprg/) | 4 |
 | [SBA-200 Forebrace small shield generator prototype](/content/items/named3-small-shield-generator-pr/) | 4 |
-| [Standard shield NEXUS module](/content/items/standard-gang-assist-shield-calculation-module/) | 1 |
-| [Standard shield NEXUS module CT](/content/items/standard-gang-assist-shield-calculation-module-cprg/) | 1 |
-| [Standard large shield generator](/content/items/standard-large-shield-generator/) | 1 |
-| [Standard Large Shield Generator Cprg](/content/items/standard-large-shield-generator-cprg/) | 1 |
-| [Standard Large Shield Generator Pr](/content/items/standard-large-shield-generator-pr/) | – |
-| [Standard medium energy neutralizer](/content/items/standard-medium-energy-neutralizer/) | 1 |
-| [Standard medium energy neutralizer CT](/content/items/standard-medium-energy-neutralizer-cprg/) | 1 |
-| [Standard medium energy drainer](/content/items/standard-medium-energy-vampire/) | 1 |
-| [Standard medium energy drainer CT](/content/items/standard-medium-energy-vampire-cprg/) | 1 |
-| [Standard medium shield generator](/content/items/standard-medium-shield-generator/) | 1 |
-| [Standard medium shield generator CT](/content/items/standard-medium-shield-generator-cprg/) | 1 |
-| [Standard shield hardener](/content/items/standard-shield-hardener/) | 1 |
-| [Standard shield hardener CT](/content/items/standard-shield-hardener-cprg/) | 1 |
-| [Standard small energy neutralizer](/content/items/standard-small-energy-neutralizer/) | 1 |
-| [Standard small energy neutralizer CT](/content/items/standard-small-energy-neutralizer-cprg/) | 1 |
-| [Standard small energy drainer](/content/items/standard-small-energy-vampire/) | 1 |
-| [Standard small energy drainer CT](/content/items/standard-small-energy-vampire-cprg/) | 1 |
-| [Standard small shield generator](/content/items/standard-small-shield-generator/) | 1 |
-| [Standard small shield generator CT](/content/items/standard-small-shield-generator-cprg/) | 1 |
 | ["The Wall" shield hardener](/content/items/tux-shield-hardener-reward/) | 4 |
+| [Archer Named4 Medium Shield Generator](/content/items/archer-named4-medium-shield-generator/) | 5 |
+| [Standard Large Shield Generator Pr](/content/items/standard-large-shield-generator-pr/) | – |
 
 ### Armor (79)
 
 | Item | Tier |
 |---|---|
+| [Syn-tec light armor plate](/content/items/noob-small-armor-plate/) | – |
+| [Standard chemical armor](/content/items/standard-chm-armor-hardener/) | 1 |
+| [Standard chemical armor CT](/content/items/standard-chm-armor-hardener-cprg/) | 1 |
+| [Standard seismic armor](/content/items/standard-exp-armor-hardener/) | 1 |
+| [Standard seismic armor CT](/content/items/standard-exp-armor-hardener-cprg/) | 1 |
+| [Standard kinetic armor](/content/items/standard-kin-armor-hardener/) | 1 |
+| [Standard kinetic armor CT](/content/items/standard-kin-armor-hardener-cprg/) | 1 |
+| [Standard large armor plate](/content/items/standard-large-armor-plate/) | 1 |
+| [Standard Large Armor Plate Cprg](/content/items/standard-large-armor-plate-cprg/) | 1 |
+| [Standard medium armor plate](/content/items/standard-medium-armor-plate/) | 1 |
+| [Standard medium armor plate CT](/content/items/standard-medium-armor-plate-cprg/) | 1 |
+| [Standard light armor plate](/content/items/standard-small-armor-plate/) | 1 |
+| [Standard light armor plate CT](/content/items/standard-small-armor-plate-cprg/) | 1 |
+| [Standard thermal armor](/content/items/standard-thrm-armor-hardener/) | 1 |
+| [Standard thermal armor CT](/content/items/standard-thrm-armor-hardener-cprg/) | 1 |
 | [Delloy s2s chemical armor](/content/items/named1-chm-armor-hardener/) | 2 |
 | [Delloy s2s chemical armor CT](/content/items/named1-chm-armor-hardener-cprg/) | 2 |
 | [Delloy s2s chemical armor prototype](/content/items/named1-chm-armor-hardener-pr/) | 2 |
@@ -607,29 +622,22 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Hephaistos-TSS thermal armor](/content/items/named3-thrm-armor-hardener/) | 4 |
 | [Hephaistos-TSS thermal armor CT](/content/items/named3-thrm-armor-hardener-cprg/) | 4 |
 | [Hephaistos-TSS thermal armor prototype](/content/items/named3-thrm-armor-hardener-pr/) | 4 |
-| [Syn-tec light armor plate](/content/items/noob-small-armor-plate/) | – |
-| [Standard chemical armor](/content/items/standard-chm-armor-hardener/) | 1 |
-| [Standard chemical armor CT](/content/items/standard-chm-armor-hardener-cprg/) | 1 |
-| [Standard seismic armor](/content/items/standard-exp-armor-hardener/) | 1 |
-| [Standard seismic armor CT](/content/items/standard-exp-armor-hardener-cprg/) | 1 |
-| [Standard kinetic armor](/content/items/standard-kin-armor-hardener/) | 1 |
-| [Standard kinetic armor CT](/content/items/standard-kin-armor-hardener-cprg/) | 1 |
-| [Standard large armor plate](/content/items/standard-large-armor-plate/) | 1 |
-| [Standard Large Armor Plate Cprg](/content/items/standard-large-armor-plate-cprg/) | 1 |
 | [Standard Large Armor Plate Pr](/content/items/standard-large-armor-plate-pr/) | – |
-| [Standard medium armor plate](/content/items/standard-medium-armor-plate/) | 1 |
-| [Standard medium armor plate CT](/content/items/standard-medium-armor-plate-cprg/) | 1 |
-| [Standard light armor plate](/content/items/standard-small-armor-plate/) | 1 |
-| [Standard light armor plate CT](/content/items/standard-small-armor-plate-cprg/) | 1 |
-| [Standard thermal armor](/content/items/standard-thrm-armor-hardener/) | 1 |
-| [Standard thermal armor CT](/content/items/standard-thrm-armor-hardener-cprg/) | 1 |
 
 ### Power (59)
 
 | Item | Tier |
 |---|---|
-| [Archer Named4 Core Recharger](/content/items/archer-named4-core-recharger/) | 5 |
-| [Archer Named4 Medium Core Battery](/content/items/archer-named4-medium-core-battery/) | 5 |
+| [Standard accumulator recharger](/content/items/standard-core-recharger/) | 1 |
+| [Standard accumulator recharger CT](/content/items/standard-core-recharger-cprg/) | 1 |
+| [Standard large auxiliary accumulator](/content/items/standard-large-core-battery/) | 1 |
+| [Standard Large Core Battery Cprg](/content/items/standard-large-core-battery-cprg/) | 1 |
+| [Standard medium auxiliary accumulator](/content/items/standard-medium-core-battery/) | 1 |
+| [Standard medium auxiliary accumulator CT](/content/items/standard-medium-core-battery-cprg/) | 1 |
+| [Standard coreactor](/content/items/standard-powergrid-upgrades/) | 1 |
+| [Standard coreactor CT](/content/items/standard-powergrid-upgrades-cprg/) | 1 |
+| [Standard small auxiliary accumulator](/content/items/standard-small-core-battery/) | 1 |
+| [Standard small auxiliary accumulator CT](/content/items/standard-small-core-battery-cprg/) | 1 |
 | [Basis Ionostator accumulator recharger](/content/items/named1-core-recharger/) | 2 |
 | [Basis Ionostator accumulator recharger CT](/content/items/named1-core-recharger-cprg/) | 2 |
 | [Basis Ionostator accumulator recharger prototype](/content/items/named1-core-recharger-pr/) | 2 |
@@ -675,23 +683,28 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Pheter Charge-S small auxiliary accumulator](/content/items/named3-small-core-battery/) | 4 |
 | [Pheter Charge-S small auxiliary accumulator CT](/content/items/named3-small-core-battery-cprg/) | 4 |
 | [Pheter Charge-S small auxiliary accumulator prototype](/content/items/named3-small-core-battery-pr/) | 4 |
-| [Standard accumulator recharger](/content/items/standard-core-recharger/) | 1 |
-| [Standard accumulator recharger CT](/content/items/standard-core-recharger-cprg/) | 1 |
-| [Standard large auxiliary accumulator](/content/items/standard-large-core-battery/) | 1 |
-| [Standard Large Core Battery Cprg](/content/items/standard-large-core-battery-cprg/) | 1 |
-| [Standard Large Core Battery Pr](/content/items/standard-large-core-battery-pr/) | – |
-| [Standard medium auxiliary accumulator](/content/items/standard-medium-core-battery/) | 1 |
-| [Standard medium auxiliary accumulator CT](/content/items/standard-medium-core-battery-cprg/) | 1 |
-| [Standard coreactor](/content/items/standard-powergrid-upgrades/) | 1 |
-| [Standard coreactor CT](/content/items/standard-powergrid-upgrades-cprg/) | 1 |
-| [Standard small auxiliary accumulator](/content/items/standard-small-core-battery/) | 1 |
-| [Standard small auxiliary accumulator CT](/content/items/standard-small-core-battery-cprg/) | 1 |
+| [Archer Named4 Core Recharger](/content/items/archer-named4-core-recharger/) | 5 |
+| [Archer Named4 Medium Core Battery](/content/items/archer-named4-medium-core-battery/) | 5 |
 | [Weasel Named4 Core Recharger](/content/items/weasel-named4-core-recharger/) | 5 |
+| [Standard Large Core Battery Pr](/content/items/standard-large-core-battery-pr/) | – |
 
 ### Repair (94)
 
 | Item | Tier |
 |---|---|
+| [Syn-tec small armor repairer](/content/items/noob-small-armor-repairer/) | – |
+| [Standard armor repairer tuning](/content/items/standard-armor-repairer-upgrade/) | 1 |
+| [Standard armor repairer tuning CT](/content/items/standard-armor-repairer-upgrade-cprg/) | 1 |
+| [Standard large armor repairer](/content/items/standard-large-armor-repairer/) | 1 |
+| [Standard Large Armor Repairer Cprg](/content/items/standard-large-armor-repairer-cprg/) | 1 |
+| [Standard medium armor repairer](/content/items/standard-medium-armor-repairer/) | 1 |
+| [Standard medium armor repairer CT](/content/items/standard-medium-armor-repairer-cprg/) | 1 |
+| [Standard medium remote armor repairer](/content/items/standard-medium-remote-armor-repairer/) | 1 |
+| [Standard medium remote armor repairer CT](/content/items/standard-medium-remote-armor-repairer-cprg/) | 1 |
+| [Standard small armor repairer](/content/items/standard-small-armor-repairer/) | 1 |
+| [Standard small armor repairer CT](/content/items/standard-small-armor-repairer-cprg/) | 1 |
+| [Standard small remote armor repairer](/content/items/standard-small-remote-armor-repairer/) | 1 |
+| [Standard small remote armor repairer CT](/content/items/standard-small-remote-armor-repairer-cprg/) | 1 |
 | [Elite2 Cultist Nox Repair Negator](/content/items/elite2-cultist-nox-repair-negator/) | 2 |
 | [Elitet2 70 Medium Armor Repairer](/content/items/elitet2-70-medium-armor-repairer/) | 2 |
 | [Elitet2 70 Medium Armor Repairer (CT capsule)](/content/items/elitet2-70-medium-armor-repairer-ct-capsule/) | 2 |
@@ -705,18 +718,6 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Elitet2 72 Small Armor Repairer](/content/items/elitet2-72-small-armor-repairer/) | 2 |
 | [Elitet2 72 Small Armor Repairer (CT capsule)](/content/items/elitet2-72-small-armor-repairer-ct-capsule/) | 2 |
 | [Elitet2 72 Small Armor Repairer Cprg](/content/items/elitet2-72-small-armor-repairer-cprg/) | 2 |
-| [Elitet4 70 Medium Armor Repairer](/content/items/elitet4-70-medium-armor-repairer/) | 4 |
-| [Elitet4 70 Medium Armor Repairer (CT capsule)](/content/items/elitet4-70-medium-armor-repairer-ct-capsule/) | 4 |
-| [Elitet4 70 Medium Armor Repairer Cprg](/content/items/elitet4-70-medium-armor-repairer-cprg/) | 4 |
-| [Elitet4 70 Small Armor Repairer](/content/items/elitet4-70-small-armor-repairer/) | 4 |
-| [Elitet4 70 Small Armor Repairer (CT capsule)](/content/items/elitet4-70-small-armor-repairer-ct-capsule/) | 4 |
-| [Elitet4 70 Small Armor Repairer Cprg](/content/items/elitet4-70-small-armor-repairer-cprg/) | 4 |
-| [Elitet4 72 Medium Armor Repairer](/content/items/elitet4-72-medium-armor-repairer/) | 4 |
-| [Elitet4 72 Medium Armor Repairer (CT capsule)](/content/items/elitet4-72-medium-armor-repairer-ct-capsule/) | 4 |
-| [Elitet4 72 Medium Armor Repairer Cprg](/content/items/elitet4-72-medium-armor-repairer-cprg/) | 4 |
-| [Elitet4 72 Small Armor Repairer](/content/items/elitet4-72-small-armor-repairer/) | 4 |
-| [Elitet4 72 Small Armor Repairer (CT capsule)](/content/items/elitet4-72-small-armor-repairer-ct-capsule/) | 4 |
-| [Elitet4 72 Small Armor Repairer Cprg](/content/items/elitet4-72-small-armor-repairer-cprg/) | 4 |
 | [Diaptes armor repairer tuning](/content/items/named1-armor-repairer-upgrade/) | 2 |
 | [Diaptes armor repairer tuning CT](/content/items/named1-armor-repairer-upgrade-cprg/) | 2 |
 | [Diaptes armor repairer tuning prototype](/content/items/named1-armor-repairer-upgrade-pr/) | 2 |
@@ -753,6 +754,18 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Iuviar small remote armor repairer](/content/items/named2-small-remote-armor-repairer/) | 3 |
 | [Iuviar small remote armor repairer CT](/content/items/named2-small-remote-armor-repairer-cprg/) | 3 |
 | [Iuviar small remote armor repairer prototype](/content/items/named2-small-remote-armor-repairer-pr/) | 3 |
+| [Elitet4 70 Medium Armor Repairer](/content/items/elitet4-70-medium-armor-repairer/) | 4 |
+| [Elitet4 70 Medium Armor Repairer (CT capsule)](/content/items/elitet4-70-medium-armor-repairer-ct-capsule/) | 4 |
+| [Elitet4 70 Medium Armor Repairer Cprg](/content/items/elitet4-70-medium-armor-repairer-cprg/) | 4 |
+| [Elitet4 70 Small Armor Repairer](/content/items/elitet4-70-small-armor-repairer/) | 4 |
+| [Elitet4 70 Small Armor Repairer (CT capsule)](/content/items/elitet4-70-small-armor-repairer-ct-capsule/) | 4 |
+| [Elitet4 70 Small Armor Repairer Cprg](/content/items/elitet4-70-small-armor-repairer-cprg/) | 4 |
+| [Elitet4 72 Medium Armor Repairer](/content/items/elitet4-72-medium-armor-repairer/) | 4 |
+| [Elitet4 72 Medium Armor Repairer (CT capsule)](/content/items/elitet4-72-medium-armor-repairer-ct-capsule/) | 4 |
+| [Elitet4 72 Medium Armor Repairer Cprg](/content/items/elitet4-72-medium-armor-repairer-cprg/) | 4 |
+| [Elitet4 72 Small Armor Repairer](/content/items/elitet4-72-small-armor-repairer/) | 4 |
+| [Elitet4 72 Small Armor Repairer (CT capsule)](/content/items/elitet4-72-small-armor-repairer-ct-capsule/) | 4 |
+| [Elitet4 72 Small Armor Repairer Cprg](/content/items/elitet4-72-small-armor-repairer-cprg/) | 4 |
 | [Apogenion armor repairer tuning](/content/items/named3-armor-repairer-upgrade/) | 4 |
 | [Apogenion armor repairer tuning CT](/content/items/named3-armor-repairer-upgrade-cprg/) | 4 |
 | [Apogenion armor repairer tuning prototype](/content/items/named3-armor-repairer-upgrade-pr/) | 4 |
@@ -771,26 +784,25 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [PPDT-Apadisiator small remote armor repairer](/content/items/named3-small-remote-armor-repairer/) | 4 |
 | [PPDT-Apadisiator small remote armor repairer CT](/content/items/named3-small-remote-armor-repairer-cprg/) | 4 |
 | [PPDT-Apadisiator small remote armor repairer prototype](/content/items/named3-small-remote-armor-repairer-pr/) | 4 |
-| [Syn-tec small armor repairer](/content/items/noob-small-armor-repairer/) | – |
-| [Standard armor repairer tuning](/content/items/standard-armor-repairer-upgrade/) | 1 |
-| [Standard armor repairer tuning CT](/content/items/standard-armor-repairer-upgrade-cprg/) | 1 |
-| [Standard large armor repairer](/content/items/standard-large-armor-repairer/) | 1 |
-| [Standard Large Armor Repairer Cprg](/content/items/standard-large-armor-repairer-cprg/) | 1 |
-| [Standard Large Armor Repairer Pr](/content/items/standard-large-armor-repairer-pr/) | – |
-| [Standard medium armor repairer](/content/items/standard-medium-armor-repairer/) | 1 |
-| [Standard medium armor repairer CT](/content/items/standard-medium-armor-repairer-cprg/) | 1 |
-| [Standard medium remote armor repairer](/content/items/standard-medium-remote-armor-repairer/) | 1 |
-| [Standard medium remote armor repairer CT](/content/items/standard-medium-remote-armor-repairer-cprg/) | 1 |
-| [Standard small armor repairer](/content/items/standard-small-armor-repairer/) | 1 |
-| [Standard small armor repairer CT](/content/items/standard-small-armor-repairer-cprg/) | 1 |
-| [Standard small remote armor repairer](/content/items/standard-small-remote-armor-repairer/) | 1 |
-| [Standard small remote armor repairer CT](/content/items/standard-small-remote-armor-repairer-cprg/) | 1 |
 | [Weasel Named4 Small Armor Repairer](/content/items/weasel-named4-small-armor-repairer/) | 5 |
+| [Standard Large Armor Repairer Pr](/content/items/standard-large-armor-repairer-pr/) | – |
 
 ### Remote control (66)
 
 | Item | Tier |
 |---|---|
+| [Standard Assault Remote Controller](/content/items/standard-assault-remote-controller/) | 1 |
+| [Standard Assault Remote Controller Cprg](/content/items/standard-assault-remote-controller-cprg/) | 1 |
+| [Standard Hunter Remote Controller](/content/items/standard-hunter-remote-controller/) | 1 |
+| [Standard Hunter Remote Controller Cprg](/content/items/standard-hunter-remote-controller-cprg/) | 1 |
+| [Standard Industrial Remote Controller](/content/items/standard-industrial-remote-controller/) | 1 |
+| [Standard Industrial Remote Controller Cprg](/content/items/standard-industrial-remote-controller-cprg/) | 1 |
+| [Standard Remote Command Translator](/content/items/standard-remote-command-translator/) | 1 |
+| [Standard Remote Command Translator Cprg](/content/items/standard-remote-command-translator-cprg/) | 1 |
+| [Standard Support Remote Controller](/content/items/standard-support-remote-controller/) | 1 |
+| [Standard Support Remote Controller Cprg](/content/items/standard-support-remote-controller-cprg/) | 1 |
+| [Standard Tactical Remote Controller](/content/items/standard-tactical-remote-controller/) | 1 |
+| [Standard Tactical Remote Controller Cprg](/content/items/standard-tactical-remote-controller-cprg/) | 1 |
 | [Named1 Assault Remote Controller](/content/items/named1-assault-remote-controller/) | 2 |
 | [Named1 Assault Remote Controller Cprg](/content/items/named1-assault-remote-controller-cprg/) | 2 |
 | [Named1 Assault Remote Controller Pr](/content/items/named1-assault-remote-controller-pr/) | 2 |
@@ -845,29 +857,20 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Named3 Tactical Remote Controller](/content/items/named3-tactical-remote-controller/) | 4 |
 | [Named3 Tactical Remote Controller Cprg](/content/items/named3-tactical-remote-controller-cprg/) | 4 |
 | [Named3 Tactical Remote Controller Pr](/content/items/named3-tactical-remote-controller-pr/) | 4 |
-| [Standard Assault Remote Controller](/content/items/standard-assault-remote-controller/) | 1 |
-| [Standard Assault Remote Controller Cprg](/content/items/standard-assault-remote-controller-cprg/) | 1 |
-| [Standard Hunter Remote Controller](/content/items/standard-hunter-remote-controller/) | 1 |
-| [Standard Hunter Remote Controller Cprg](/content/items/standard-hunter-remote-controller-cprg/) | 1 |
-| [Standard Industrial Remote Controller](/content/items/standard-industrial-remote-controller/) | 1 |
-| [Standard Industrial Remote Controller Cprg](/content/items/standard-industrial-remote-controller-cprg/) | 1 |
-| [Standard Remote Command Translator](/content/items/standard-remote-command-translator/) | 1 |
-| [Standard Remote Command Translator Cprg](/content/items/standard-remote-command-translator-cprg/) | 1 |
-| [Standard Support Remote Controller](/content/items/standard-support-remote-controller/) | 1 |
-| [Standard Support Remote Controller Cprg](/content/items/standard-support-remote-controller-cprg/) | 1 |
-| [Standard Tactical Remote Controller](/content/items/standard-tactical-remote-controller/) | 1 |
-| [Standard Tactical Remote Controller Cprg](/content/items/standard-tactical-remote-controller-cprg/) | 1 |
 
 ### Harvesting (51)
 
 | Item | Tier |
 |---|---|
-| [Elitet4 Gamma Medium Harvester](/content/items/elitet4-gamma-medium-harvester/) | 4 |
-| [Elitet4 Gamma Medium Harvester (CT capsule)](/content/items/elitet4-gamma-medium-harvester-ct-capsule/) | 4 |
-| [Elitet4 Gamma Medium Harvester Cprg](/content/items/elitet4-gamma-medium-harvester-cprg/) | 4 |
-| [Elitet4 Gamma Small Harvester](/content/items/elitet4-gamma-small-harvester/) | 4 |
-| [Elitet4 Gamma Small Harvester (CT capsule)](/content/items/elitet4-gamma-small-harvester-ct-capsule/) | 4 |
-| [Elitet4 Gamma Small Harvester Cprg](/content/items/elitet4-gamma-small-harvester-cprg/) | 4 |
+| [Syn-tec small harvester](/content/items/noob-small-harvester/) | – |
+| [Standard Excavator Module](/content/items/standard-excavator-module/) | 1 |
+| [Standard Excavator Module Cprg](/content/items/standard-excavator-module-cprg/) | 1 |
+| [Standard Large Harvester](/content/items/standard-large-harvester/) | 1 |
+| [Standard Large Harvester Cprg](/content/items/standard-large-harvester-cprg/) | 1 |
+| [Standard medium harvester](/content/items/standard-medium-harvester/) | 1 |
+| [Standard medium harvester CT](/content/items/standard-medium-harvester-cprg/) | 1 |
+| [Standard small harvester](/content/items/standard-small-harvester/) | 1 |
+| [Standard small harvester CT](/content/items/standard-small-harvester-cprg/) | 1 |
 | [Named1 Excavator Module](/content/items/named1-excavator-module/) | 2 |
 | [Named1 Excavator Module Cprg](/content/items/named1-excavator-module-cprg/) | 2 |
 | [Named1 Excavator Module Pr](/content/items/named1-excavator-module-pr/) | 2 |
@@ -892,6 +895,12 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Agraar-I small harvester](/content/items/named2-small-harvester/) | 3 |
 | [Agraar-I small harvester CT](/content/items/named2-small-harvester-cprg/) | 3 |
 | [Agraar-I small harvester prototype](/content/items/named2-small-harvester-pr/) | 3 |
+| [Elitet4 Gamma Medium Harvester](/content/items/elitet4-gamma-medium-harvester/) | 4 |
+| [Elitet4 Gamma Medium Harvester (CT capsule)](/content/items/elitet4-gamma-medium-harvester-ct-capsule/) | 4 |
+| [Elitet4 Gamma Medium Harvester Cprg](/content/items/elitet4-gamma-medium-harvester-cprg/) | 4 |
+| [Elitet4 Gamma Small Harvester](/content/items/elitet4-gamma-small-harvester/) | 4 |
+| [Elitet4 Gamma Small Harvester (CT capsule)](/content/items/elitet4-gamma-small-harvester-ct-capsule/) | 4 |
+| [Elitet4 Gamma Small Harvester Cprg](/content/items/elitet4-gamma-small-harvester-cprg/) | 4 |
 | [Named3 Excavator Module](/content/items/named3-excavator-module/) | 4 |
 | [Named3 Excavator Module Cprg](/content/items/named3-excavator-module-cprg/) | 4 |
 | [Named3 Excavator Module Pr](/content/items/named3-excavator-module-pr/) | 4 |
@@ -904,23 +913,118 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Protrim FDV-30 small harvester](/content/items/named3-small-harvester/) | 4 |
 | [Protrim FDV-30 small harvester CT](/content/items/named3-small-harvester-cprg/) | 4 |
 | [Protrim FDV-30 small harvester prototype](/content/items/named3-small-harvester-pr/) | 4 |
-| [Syn-tec small harvester](/content/items/noob-small-harvester/) | – |
-| [Standard Excavator Module](/content/items/standard-excavator-module/) | 1 |
-| [Standard Excavator Module Cprg](/content/items/standard-excavator-module-cprg/) | 1 |
-| [Standard Large Harvester](/content/items/standard-large-harvester/) | 1 |
-| [Standard Large Harvester Cprg](/content/items/standard-large-harvester-cprg/) | 1 |
-| [Standard medium harvester](/content/items/standard-medium-harvester/) | 1 |
-| [Standard medium harvester CT](/content/items/standard-medium-harvester-cprg/) | 1 |
-| [Standard small harvester](/content/items/standard-small-harvester/) | 1 |
-| [Standard small harvester CT](/content/items/standard-small-harvester-cprg/) | 1 |
 
 ### Enhancements (614)
 
 | Item | Tier |
 |---|---|
-| [Archer Named4 Damage Mod Missile](/content/items/archer-named4-damage-mod-missile/) | 5 |
-| [Archer Named4 Tracking Upgrade](/content/items/archer-named4-tracking-upgrade/) | 5 |
+| [Syn-tec geoscanner](/content/items/noob-mining-probe-module/) | – |
+| [Syn-tec small miner module](/content/items/noob-small-driller/) | – |
 | [Terraformer beacon charger module](/content/items/buoy-charger-module/) | 1 |
+| [Standard construction module](/content/items/pbs-construction-module/) | 1 |
+| [Specimen Sap Item (CT capsule)](/content/items/specimen-sap-item-ct-capsule/) | 1 |
+| [Standard Adaptive Alloy](/content/items/standard-adaptive-alloy/) | 1 |
+| [Standard Adaptive Alloy Cprg](/content/items/standard-adaptive-alloy-cprg/) | 1 |
+| [Standard camouflage module CT](/content/items/standard-aggrorange-decreaser-cprg/) | 1 |
+| [Standard Battle Stance Modul Cprg](/content/items/standard-battle-stance-modul-cprg/) | 1 |
+| [Standard Blinder](/content/items/standard-blinder/) | 1 |
+| [Standard interference module](/content/items/standard-blob-emission-modulator/) | 1 |
+| [Standard interference module CT](/content/items/standard-blob-emission-modulator-cprg/) | 1 |
+| [Standard coprocessor](/content/items/standard-cpu-upgrade/) | 1 |
+| [Standard coprocessor CT](/content/items/standard-cpu-upgrade-cprg/) | 1 |
+| [Standard missile launcher tuning](/content/items/standard-damage-mod-missile/) | 1 |
+| [Standard missile launcher tuning CT](/content/items/standard-damage-mod-missile-cprg/) | 1 |
+| [Standard firearm tuning](/content/items/standard-damage-mod-projectile/) | 1 |
+| [Standard firearm tuning CT](/content/items/standard-damage-mod-projectile-cprg/) | 1 |
+| [Standard signal detector](/content/items/standard-detection-modul/) | 1 |
+| [Standard signal detector CT](/content/items/standard-detection-modul-cprg/) | 1 |
+| [Standard Dreadnought Module](/content/items/standard-dreadnought-module/) | 1 |
+| [Standard Dreadnought Module Cprg](/content/items/standard-dreadnought-module-cprg/) | 1 |
+| [Standard ECCM](/content/items/standard-eccm/) | 1 |
+| [Standard ECCM CT](/content/items/standard-eccm-cprg/) | 1 |
+| [Standard ECM tuning](/content/items/standard-ecm-booster/) | 1 |
+| [Standard ECM tuning CT](/content/items/standard-ecm-booster-cprg/) | 1 |
+| [Standard EnWar upgrade](/content/items/standard-energy-warfare-upgrade/) | 1 |
+| [Standard EnWar upgrade CT](/content/items/standard-energy-warfare-upgrade-cprg/) | 1 |
+| [Standard seismic ERP](/content/items/standard-explosive-kers/) | 1 |
+| [Standard seismic ERP CT](/content/items/standard-explosive-kers-cprg/) | 1 |
+| [Standard evasive NEXUS module](/content/items/standard-gang-assist-coordinated-maneuvering-module/) | 1 |
+| [Standard evasive NEXUS module CT](/content/items/standard-gang-assist-coordinated-maneuvering-module-cprg/) | 1 |
+| [Standard recharger NEXUS module](/content/items/standard-gang-assist-core-management-module/) | 1 |
+| [Standard recharger NEXUS module CT](/content/items/standard-gang-assist-core-management-module-cprg/) | 1 |
+| [Standard armor NEXUS module](/content/items/standard-gang-assist-defense-module/) | 1 |
+| [Standard armor NEXUS module CT](/content/items/standard-gang-assist-defense-module-cprg/) | 1 |
+| [Standard Gang Assist Devastating Module](/content/items/standard-gang-assist-devastating-module/) | 1 |
+| [Standard Gang Assist Devastating Module Cprg](/content/items/standard-gang-assist-devastating-module-cprg/) | 1 |
+| [Standard EW NEXUS module](/content/items/standard-gang-assist-ewar-range-module/) | 1 |
+| [Standard EW NEXUS module CT](/content/items/standard-gang-assist-ewar-range-module-cprg/) | 1 |
+| [Standard fast extractor NEXUS module](/content/items/standard-gang-assist-fast-extraction-module/) | 1 |
+| [Standard fast extractor NEXUS module CT](/content/items/standard-gang-assist-fast-extraction-module-cprg/) | 1 |
+| [Standard industrial NEXUS module](/content/items/standard-gang-assist-industry-module/) | 1 |
+| [Standard industrial NEXUS module CT](/content/items/standard-gang-assist-industry-module-cprg/) | 1 |
+| [Standard farlock NEXUS module](/content/items/standard-gang-assist-information-module/) | 1 |
+| [Standard farlock NEXUS module CT](/content/items/standard-gang-assist-information-module-cprg/) | 1 |
+| [Standard repairer NEXUS module](/content/items/standard-gang-assist-maintance-module/) | 1 |
+| [Standard repairer NEXUS module CT](/content/items/standard-gang-assist-maintance-module-cprg/) | 1 |
+| [Standard critical hit NEXUS module](/content/items/standard-gang-assist-precision-firing-module/) | 1 |
+| [Standard critical hit NEXUS module CT](/content/items/standard-gang-assist-precision-firing-module-cprg/) | 1 |
+| [Standard Gang Assist Resilience Module](/content/items/standard-gang-assist-resilience-module/) | 1 |
+| [Standard Gang Assist Resilience Module Cprg](/content/items/standard-gang-assist-resilience-module-cprg/) | 1 |
+| [Standard lock booster NEXUS module](/content/items/standard-gang-assist-shared-dataprocessing-module/) | 1 |
+| [Standard lock booster NEXUS module CT](/content/items/standard-gang-assist-shared-dataprocessing-module-cprg/) | 1 |
+| [Standard assault NEXUS module](/content/items/standard-gang-assist-siege-module/) | 1 |
+| [Standard assault NEXUS module CT](/content/items/standard-gang-assist-siege-module-cprg/) | 1 |
+| [Standard velocity NEXUS module](/content/items/standard-gang-assist-speed-module/) | 1 |
+| [Standard velocity NEXUS module CT](/content/items/standard-gang-assist-speed-module-cprg/) | 1 |
+| [Standard kinetic ERP](/content/items/standard-kinetic-kers/) | 1 |
+| [Standard kinetic ERP CT](/content/items/standard-kinetic-kers-cprg/) | 1 |
+| [Standard large energy injector](/content/items/standard-large-core-booster/) | 1 |
+| [Standard Large Core Booster Cprg](/content/items/standard-large-core-booster-cprg/) | 1 |
+| [Standard large miner module](/content/items/standard-large-driller/) | 1 |
+| [Standard Large Driller Cprg](/content/items/standard-large-driller-cprg/) | 1 |
+| [Standard L-demobilizer](/content/items/standard-longrange-webber/) | 1 |
+| [Standard L-demobilizer CT](/content/items/standard-longrange-webber-cprg/) | 1 |
+| [Standard evasive module](/content/items/standard-maneuvering-upgrade/) | 1 |
+| [Standard evasive module CT](/content/items/standard-maneuvering-upgrade-cprg/) | 1 |
+| [Standard lightweight frame](/content/items/standard-mass-reductor/) | 1 |
+| [Standard lightweight frame CT](/content/items/standard-mass-reductor-cprg/) | 1 |
+| [Standard medium energy injector](/content/items/standard-medium-core-booster/) | 1 |
+| [Standard medium energy injector CT](/content/items/standard-medium-core-booster-cprg/) | 1 |
+| [Standard medium miner module](/content/items/standard-medium-driller/) | 1 |
+| [Standard medium miner module CT](/content/items/standard-medium-driller-cprg/) | 1 |
+| [Standard medium energy transferer](/content/items/standard-medium-energy-transfer/) | 1 |
+| [Standard medium energy transferer CT](/content/items/standard-medium-energy-transfer-cprg/) | 1 |
+| [Standard geoscanner](/content/items/standard-mining-probe-module/) | 1 |
+| [Standard geoscanner CT](/content/items/standard-mining-probe-module-cprg/) | 1 |
+| [Standard industrial tuning](/content/items/standard-mining-upgrade/) | 1 |
+| [Standard industrial tuning CT](/content/items/standard-mining-upgrade-cprg/) | 1 |
+| [Standard reactor sealing](/content/items/standard-reactor-sealing/) | 1 |
+| [Standard reactor sealing CT](/content/items/standard-reactor-sealing-cprg/) | 1 |
+| [Standard universal armor](/content/items/standard-resistant-plating/) | 1 |
+| [Standard universal armor CT](/content/items/standard-resistant-plating-cprg/) | 1 |
+| [Standard Self Destruct Module](/content/items/standard-self-destruct-module/) | 1 |
+| [Standard Self Destruct Module Cprg](/content/items/standard-self-destruct-module-cprg/) | 1 |
+| [Standard small energy injector](/content/items/standard-small-core-booster/) | 1 |
+| [Standard small energy injector CT](/content/items/standard-small-core-booster-cprg/) | 1 |
+| [Standard small miner module](/content/items/standard-small-driller/) | 1 |
+| [Standard small miner module CT](/content/items/standard-small-driller-cprg/) | 1 |
+| [Standard small energy transferer](/content/items/standard-small-energy-transfer/) | 1 |
+| [Standard small energy transferer CT](/content/items/standard-small-energy-transfer-cprg/) | 1 |
+| [Standard small PSG launcher CT](/content/items/standard-small-industrial-aoe-tile-cprg/) | 1 |
+| [Standard signal masker](/content/items/standard-stealth-modul/) | 1 |
+| [Standard signal masker CT](/content/items/standard-stealth-modul-cprg/) | 1 |
+| [Standard target marker](/content/items/standard-target-painter/) | 1 |
+| [Standard target marker CT](/content/items/standard-target-painter-cprg/) | 1 |
+| [Standard terraformer CT](/content/items/standard-terraformer-cprg/) | 1 |
+| [Standard thermal ERP](/content/items/standard-thermal-kers/) | 1 |
+| [Standard thermal ERP CT](/content/items/standard-thermal-kers-cprg/) | 1 |
+| [Standard range extender](/content/items/standard-tracking-upgrade/) | 1 |
+| [Standard range extender CT](/content/items/standard-tracking-upgrade-cprg/) | 1 |
+| [Standard wall compiler module](/content/items/standard-wall-builder/) | 1 |
+| [Standard S-demobilizer](/content/items/standard-webber/) | 1 |
+| [Standard S-demobilizer CT](/content/items/standard-webber-cprg/) | 1 |
+| [Standart Landmine Detector](/content/items/standart-landmine-detector/) | 1 |
+| [Standart Landmine Detector Cprg](/content/items/standart-landmine-detector-cprg/) | 1 |
 | [Elite2 Cultist Nox Teleport Negator](/content/items/elite2-cultist-nox-teleport-negator/) | 2 |
 | [Elite2 Cultist Scorcher](/content/items/elite2-cultist-scorcher/) | 2 |
 | [Elitet2 70 Eccm](/content/items/elitet2-70-eccm/) | 2 |
@@ -950,39 +1054,6 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Elitet2 72 Mass Reductor](/content/items/elitet2-72-mass-reductor/) | 2 |
 | [Elitet2 72 Mass Reductor (CT capsule)](/content/items/elitet2-72-mass-reductor-ct-capsule/) | 2 |
 | [Elitet2 72 Mass Reductor Cprg](/content/items/elitet2-72-mass-reductor-cprg/) | 2 |
-| [Elitet4 70 Eccm](/content/items/elitet4-70-eccm/) | 4 |
-| [Elitet4 70 Eccm (CT capsule)](/content/items/elitet4-70-eccm-ct-capsule/) | 4 |
-| [Elitet4 70 Eccm Cprg](/content/items/elitet4-70-eccm-cprg/) | 4 |
-| [Elitet4 70 Medium Core Booster](/content/items/elitet4-70-medium-core-booster/) | 4 |
-| [Elitet4 70 Medium Core Booster (CT capsule)](/content/items/elitet4-70-medium-core-booster-ct-capsule/) | 4 |
-| [Elitet4 70 Medium Core Booster Cprg](/content/items/elitet4-70-medium-core-booster-cprg/) | 4 |
-| [Elitet4 70 Small Core Booster](/content/items/elitet4-70-small-core-booster/) | 4 |
-| [Elitet4 70 Small Core Booster (CT capsule)](/content/items/elitet4-70-small-core-booster-ct-capsule/) | 4 |
-| [Elitet4 70 Small Core Booster Cprg](/content/items/elitet4-70-small-core-booster-cprg/) | 4 |
-| [Elitet4 70 Tracking Upgrade](/content/items/elitet4-70-tracking-upgrade/) | 4 |
-| [Elitet4 70 Tracking Upgrade (CT capsule)](/content/items/elitet4-70-tracking-upgrade-ct-capsule/) | 4 |
-| [Elitet4 70 Tracking Upgrade Cprg](/content/items/elitet4-70-tracking-upgrade-cprg/) | 4 |
-| [Elitet4 70 Webber](/content/items/elitet4-70-webber/) | 4 |
-| [Elitet4 70 Webber (CT capsule)](/content/items/elitet4-70-webber-ct-capsule/) | 4 |
-| [Elitet4 70 Webber Cprg](/content/items/elitet4-70-webber-cprg/) | 4 |
-| [Elitet4 71 Maneuvering Upgrade](/content/items/elitet4-71-maneuvering-upgrade/) | 4 |
-| [Elitet4 71 Maneuvering Upgrade (CT capsule)](/content/items/elitet4-71-maneuvering-upgrade-ct-capsule/) | 4 |
-| [Elitet4 71 Maneuvering Upgrade Cprg](/content/items/elitet4-71-maneuvering-upgrade-cprg/) | 4 |
-| [Elitet4 71 Mining Probe Module](/content/items/elitet4-71-mining-probe-module/) | 4 |
-| [Elitet4 71 Mining Probe Module (CT capsule)](/content/items/elitet4-71-mining-probe-module-ct-capsule/) | 4 |
-| [Elitet4 71 Mining Probe Module Cprg](/content/items/elitet4-71-mining-probe-module-cprg/) | 4 |
-| [Elitet4 72 Damage Mod Projectile](/content/items/elitet4-72-damage-mod-projectile/) | 4 |
-| [Elitet4 72 Damage Mod Projectile (CT capsule)](/content/items/elitet4-72-damage-mod-projectile-ct-capsule/) | 4 |
-| [Elitet4 72 Damage Mod Projectile Cprg](/content/items/elitet4-72-damage-mod-projectile-cprg/) | 4 |
-| [Elitet4 72 Mass Reductor](/content/items/elitet4-72-mass-reductor/) | 4 |
-| [Elitet4 72 Mass Reductor (CT capsule)](/content/items/elitet4-72-mass-reductor-ct-capsule/) | 4 |
-| [Elitet4 72 Mass Reductor Cprg](/content/items/elitet4-72-mass-reductor-cprg/) | 4 |
-| [Elitet4 Gamma Medium Driller](/content/items/elitet4-gamma-medium-driller/) | 4 |
-| [Elitet4 Gamma Medium Driller (CT capsule)](/content/items/elitet4-gamma-medium-driller-ct-capsule/) | 4 |
-| [Elitet4 Gamma Medium Driller Cprg](/content/items/elitet4-gamma-medium-driller-cprg/) | 4 |
-| [Elitet4 Gamma Small Driller](/content/items/elitet4-gamma-small-driller/) | 4 |
-| [Elitet4 Gamma Small Driller (CT capsule)](/content/items/elitet4-gamma-small-driller-ct-capsule/) | 4 |
-| [Elitet4 Gamma Small Driller Cprg](/content/items/elitet4-gamma-small-driller-cprg/) | 4 |
 | [Named1 Adaptive Alloy](/content/items/named1-adaptive-alloy/) | 2 |
 | [Named1 Adaptive Alloy Cprg](/content/items/named1-adaptive-alloy-cprg/) | 2 |
 | [Named1 Adaptive Alloy Pr](/content/items/named1-adaptive-alloy-pr/) | 2 |
@@ -1271,6 +1342,39 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [NNt. IX S-demobilizer](/content/items/named2-webber/) | 3 |
 | [NNt. IX S-demobilizer CT](/content/items/named2-webber-cprg/) | 3 |
 | [NNt. IX S-demobilizer prototype](/content/items/named2-webber-pr/) | 3 |
+| [Elitet4 70 Eccm](/content/items/elitet4-70-eccm/) | 4 |
+| [Elitet4 70 Eccm (CT capsule)](/content/items/elitet4-70-eccm-ct-capsule/) | 4 |
+| [Elitet4 70 Eccm Cprg](/content/items/elitet4-70-eccm-cprg/) | 4 |
+| [Elitet4 70 Medium Core Booster](/content/items/elitet4-70-medium-core-booster/) | 4 |
+| [Elitet4 70 Medium Core Booster (CT capsule)](/content/items/elitet4-70-medium-core-booster-ct-capsule/) | 4 |
+| [Elitet4 70 Medium Core Booster Cprg](/content/items/elitet4-70-medium-core-booster-cprg/) | 4 |
+| [Elitet4 70 Small Core Booster](/content/items/elitet4-70-small-core-booster/) | 4 |
+| [Elitet4 70 Small Core Booster (CT capsule)](/content/items/elitet4-70-small-core-booster-ct-capsule/) | 4 |
+| [Elitet4 70 Small Core Booster Cprg](/content/items/elitet4-70-small-core-booster-cprg/) | 4 |
+| [Elitet4 70 Tracking Upgrade](/content/items/elitet4-70-tracking-upgrade/) | 4 |
+| [Elitet4 70 Tracking Upgrade (CT capsule)](/content/items/elitet4-70-tracking-upgrade-ct-capsule/) | 4 |
+| [Elitet4 70 Tracking Upgrade Cprg](/content/items/elitet4-70-tracking-upgrade-cprg/) | 4 |
+| [Elitet4 70 Webber](/content/items/elitet4-70-webber/) | 4 |
+| [Elitet4 70 Webber (CT capsule)](/content/items/elitet4-70-webber-ct-capsule/) | 4 |
+| [Elitet4 70 Webber Cprg](/content/items/elitet4-70-webber-cprg/) | 4 |
+| [Elitet4 71 Maneuvering Upgrade](/content/items/elitet4-71-maneuvering-upgrade/) | 4 |
+| [Elitet4 71 Maneuvering Upgrade (CT capsule)](/content/items/elitet4-71-maneuvering-upgrade-ct-capsule/) | 4 |
+| [Elitet4 71 Maneuvering Upgrade Cprg](/content/items/elitet4-71-maneuvering-upgrade-cprg/) | 4 |
+| [Elitet4 71 Mining Probe Module](/content/items/elitet4-71-mining-probe-module/) | 4 |
+| [Elitet4 71 Mining Probe Module (CT capsule)](/content/items/elitet4-71-mining-probe-module-ct-capsule/) | 4 |
+| [Elitet4 71 Mining Probe Module Cprg](/content/items/elitet4-71-mining-probe-module-cprg/) | 4 |
+| [Elitet4 72 Damage Mod Projectile](/content/items/elitet4-72-damage-mod-projectile/) | 4 |
+| [Elitet4 72 Damage Mod Projectile (CT capsule)](/content/items/elitet4-72-damage-mod-projectile-ct-capsule/) | 4 |
+| [Elitet4 72 Damage Mod Projectile Cprg](/content/items/elitet4-72-damage-mod-projectile-cprg/) | 4 |
+| [Elitet4 72 Mass Reductor](/content/items/elitet4-72-mass-reductor/) | 4 |
+| [Elitet4 72 Mass Reductor (CT capsule)](/content/items/elitet4-72-mass-reductor-ct-capsule/) | 4 |
+| [Elitet4 72 Mass Reductor Cprg](/content/items/elitet4-72-mass-reductor-cprg/) | 4 |
+| [Elitet4 Gamma Medium Driller](/content/items/elitet4-gamma-medium-driller/) | 4 |
+| [Elitet4 Gamma Medium Driller (CT capsule)](/content/items/elitet4-gamma-medium-driller-ct-capsule/) | 4 |
+| [Elitet4 Gamma Medium Driller Cprg](/content/items/elitet4-gamma-medium-driller-cprg/) | 4 |
+| [Elitet4 Gamma Small Driller](/content/items/elitet4-gamma-small-driller/) | 4 |
+| [Elitet4 Gamma Small Driller (CT capsule)](/content/items/elitet4-gamma-small-driller-ct-capsule/) | 4 |
+| [Elitet4 Gamma Small Driller Cprg](/content/items/elitet4-gamma-small-driller-cprg/) | 4 |
 | [Named3 Adaptive Alloy](/content/items/named3-adaptive-alloy/) | 4 |
 | [Named3 Adaptive Alloy Cprg](/content/items/named3-adaptive-alloy-cprg/) | 4 |
 | [Named3 Adaptive Alloy Pr](/content/items/named3-adaptive-alloy-pr/) | 4 |
@@ -1415,121 +1519,17 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [NNt. IY S-demobilizer](/content/items/named3-webber/) | 4 |
 | [NNt. IY S-demobilizer CT](/content/items/named3-webber-cprg/) | 4 |
 | [NNt. IY S-demobilizer prototype](/content/items/named3-webber-pr/) | 4 |
-| [Syn-tec geoscanner](/content/items/noob-mining-probe-module/) | – |
-| [Syn-tec small miner module](/content/items/noob-small-driller/) | – |
-| [Standard construction module](/content/items/pbs-construction-module/) | 1 |
 | ["Perpetuum 500" lightweight frame](/content/items/purgatory-mass-reductor-reward/) | 4 |
-| [SAP hacking module](/content/items/siege-hack-module/) | – |
-| [Specimen Sap Item (CT capsule)](/content/items/specimen-sap-item-ct-capsule/) | 1 |
-| [Standard Adaptive Alloy](/content/items/standard-adaptive-alloy/) | 1 |
-| [Standard Adaptive Alloy Cprg](/content/items/standard-adaptive-alloy-cprg/) | 1 |
-| [Standard camouflage module CT](/content/items/standard-aggrorange-decreaser-cprg/) | 1 |
-| [Standard Battle Stance Modul Cprg](/content/items/standard-battle-stance-modul-cprg/) | 1 |
-| [Standard Blinder](/content/items/standard-blinder/) | 1 |
-| [Standard interference module](/content/items/standard-blob-emission-modulator/) | 1 |
-| [Standard interference module CT](/content/items/standard-blob-emission-modulator-cprg/) | 1 |
-| [Standard coprocessor](/content/items/standard-cpu-upgrade/) | 1 |
-| [Standard coprocessor CT](/content/items/standard-cpu-upgrade-cprg/) | 1 |
-| [Standard missile launcher tuning](/content/items/standard-damage-mod-missile/) | 1 |
-| [Standard missile launcher tuning CT](/content/items/standard-damage-mod-missile-cprg/) | 1 |
-| [Standard firearm tuning](/content/items/standard-damage-mod-projectile/) | 1 |
-| [Standard firearm tuning CT](/content/items/standard-damage-mod-projectile-cprg/) | 1 |
-| [Standard signal detector](/content/items/standard-detection-modul/) | 1 |
-| [Standard signal detector CT](/content/items/standard-detection-modul-cprg/) | 1 |
-| [Standard Dreadnought Module](/content/items/standard-dreadnought-module/) | 1 |
-| [Standard Dreadnought Module Cprg](/content/items/standard-dreadnought-module-cprg/) | 1 |
-| [Standard ECCM](/content/items/standard-eccm/) | 1 |
-| [Standard ECCM CT](/content/items/standard-eccm-cprg/) | 1 |
-| [Standard ECM tuning](/content/items/standard-ecm-booster/) | 1 |
-| [Standard ECM tuning CT](/content/items/standard-ecm-booster-cprg/) | 1 |
-| [Standard EnWar upgrade](/content/items/standard-energy-warfare-upgrade/) | 1 |
-| [Standard EnWar upgrade CT](/content/items/standard-energy-warfare-upgrade-cprg/) | 1 |
-| [Standard seismic ERP](/content/items/standard-explosive-kers/) | 1 |
-| [Standard seismic ERP CT](/content/items/standard-explosive-kers-cprg/) | 1 |
-| [Standard evasive NEXUS module](/content/items/standard-gang-assist-coordinated-maneuvering-module/) | 1 |
-| [Standard evasive NEXUS module CT](/content/items/standard-gang-assist-coordinated-maneuvering-module-cprg/) | 1 |
-| [Standard recharger NEXUS module](/content/items/standard-gang-assist-core-management-module/) | 1 |
-| [Standard recharger NEXUS module CT](/content/items/standard-gang-assist-core-management-module-cprg/) | 1 |
-| [Standard armor NEXUS module](/content/items/standard-gang-assist-defense-module/) | 1 |
-| [Standard armor NEXUS module CT](/content/items/standard-gang-assist-defense-module-cprg/) | 1 |
-| [Standard Gang Assist Devastating Module](/content/items/standard-gang-assist-devastating-module/) | 1 |
-| [Standard Gang Assist Devastating Module Cprg](/content/items/standard-gang-assist-devastating-module-cprg/) | 1 |
-| [Standard EW NEXUS module](/content/items/standard-gang-assist-ewar-range-module/) | 1 |
-| [Standard EW NEXUS module CT](/content/items/standard-gang-assist-ewar-range-module-cprg/) | 1 |
-| [Standard fast extractor NEXUS module](/content/items/standard-gang-assist-fast-extraction-module/) | 1 |
-| [Standard fast extractor NEXUS module CT](/content/items/standard-gang-assist-fast-extraction-module-cprg/) | 1 |
-| [Standard industrial NEXUS module](/content/items/standard-gang-assist-industry-module/) | 1 |
-| [Standard industrial NEXUS module CT](/content/items/standard-gang-assist-industry-module-cprg/) | 1 |
-| [Standard farlock NEXUS module](/content/items/standard-gang-assist-information-module/) | 1 |
-| [Standard farlock NEXUS module CT](/content/items/standard-gang-assist-information-module-cprg/) | 1 |
-| [Standard repairer NEXUS module](/content/items/standard-gang-assist-maintance-module/) | 1 |
-| [Standard repairer NEXUS module CT](/content/items/standard-gang-assist-maintance-module-cprg/) | 1 |
-| [Standard critical hit NEXUS module](/content/items/standard-gang-assist-precision-firing-module/) | 1 |
-| [Standard critical hit NEXUS module CT](/content/items/standard-gang-assist-precision-firing-module-cprg/) | 1 |
-| [Standard Gang Assist Resilience Module](/content/items/standard-gang-assist-resilience-module/) | 1 |
-| [Standard Gang Assist Resilience Module Cprg](/content/items/standard-gang-assist-resilience-module-cprg/) | 1 |
-| [Standard lock booster NEXUS module](/content/items/standard-gang-assist-shared-dataprocessing-module/) | 1 |
-| [Standard lock booster NEXUS module CT](/content/items/standard-gang-assist-shared-dataprocessing-module-cprg/) | 1 |
-| [Standard assault NEXUS module](/content/items/standard-gang-assist-siege-module/) | 1 |
-| [Standard assault NEXUS module CT](/content/items/standard-gang-assist-siege-module-cprg/) | 1 |
-| [Standard velocity NEXUS module](/content/items/standard-gang-assist-speed-module/) | 1 |
-| [Standard velocity NEXUS module CT](/content/items/standard-gang-assist-speed-module-cprg/) | 1 |
-| [Standard kinetic ERP](/content/items/standard-kinetic-kers/) | 1 |
-| [Standard kinetic ERP CT](/content/items/standard-kinetic-kers-cprg/) | 1 |
-| [Standard large energy injector](/content/items/standard-large-core-booster/) | 1 |
-| [Standard Large Core Booster Cprg](/content/items/standard-large-core-booster-cprg/) | 1 |
-| [Standard Large Core Booster Pr](/content/items/standard-large-core-booster-pr/) | – |
-| [Standard large miner module](/content/items/standard-large-driller/) | 1 |
-| [Standard Large Driller Cprg](/content/items/standard-large-driller-cprg/) | 1 |
-| [Standard L-demobilizer](/content/items/standard-longrange-webber/) | 1 |
-| [Standard L-demobilizer CT](/content/items/standard-longrange-webber-cprg/) | 1 |
-| [Standard evasive module](/content/items/standard-maneuvering-upgrade/) | 1 |
-| [Standard evasive module CT](/content/items/standard-maneuvering-upgrade-cprg/) | 1 |
-| [Standard lightweight frame](/content/items/standard-mass-reductor/) | 1 |
-| [Standard lightweight frame CT](/content/items/standard-mass-reductor-cprg/) | 1 |
-| [Standard medium energy injector](/content/items/standard-medium-core-booster/) | 1 |
-| [Standard medium energy injector CT](/content/items/standard-medium-core-booster-cprg/) | 1 |
-| [Standard medium miner module](/content/items/standard-medium-driller/) | 1 |
-| [Standard medium miner module CT](/content/items/standard-medium-driller-cprg/) | 1 |
-| [Standard medium energy transferer](/content/items/standard-medium-energy-transfer/) | 1 |
-| [Standard medium energy transferer CT](/content/items/standard-medium-energy-transfer-cprg/) | 1 |
-| [Standard geoscanner](/content/items/standard-mining-probe-module/) | 1 |
-| [Standard geoscanner CT](/content/items/standard-mining-probe-module-cprg/) | 1 |
-| [Standard industrial tuning](/content/items/standard-mining-upgrade/) | 1 |
-| [Standard industrial tuning CT](/content/items/standard-mining-upgrade-cprg/) | 1 |
-| [Standard Neuralyzer](/content/items/standard-neuralyzer/) | – |
-| [Standard reactor sealing](/content/items/standard-reactor-sealing/) | 1 |
-| [Standard reactor sealing CT](/content/items/standard-reactor-sealing-cprg/) | 1 |
-| [Standard universal armor](/content/items/standard-resistant-plating/) | 1 |
-| [Standard universal armor CT](/content/items/standard-resistant-plating-cprg/) | 1 |
-| [Standard Self Destruct Module](/content/items/standard-self-destruct-module/) | 1 |
-| [Standard Self Destruct Module Cprg](/content/items/standard-self-destruct-module-cprg/) | 1 |
-| [Standard small energy injector](/content/items/standard-small-core-booster/) | 1 |
-| [Standard small energy injector CT](/content/items/standard-small-core-booster-cprg/) | 1 |
-| [Standard small miner module](/content/items/standard-small-driller/) | 1 |
-| [Standard small miner module CT](/content/items/standard-small-driller-cprg/) | 1 |
-| [Standard small energy transferer](/content/items/standard-small-energy-transfer/) | 1 |
-| [Standard small energy transferer CT](/content/items/standard-small-energy-transfer-cprg/) | 1 |
-| [Standard small PSG launcher CT](/content/items/standard-small-industrial-aoe-tile-cprg/) | 1 |
-| [Standard signal masker](/content/items/standard-stealth-modul/) | 1 |
-| [Standard signal masker CT](/content/items/standard-stealth-modul-cprg/) | 1 |
-| [Standard target marker](/content/items/standard-target-painter/) | 1 |
-| [Standard target marker CT](/content/items/standard-target-painter-cprg/) | 1 |
-| [Standard terraformer CT](/content/items/standard-terraformer-cprg/) | 1 |
-| [Standard thermal ERP](/content/items/standard-thermal-kers/) | 1 |
-| [Standard thermal ERP CT](/content/items/standard-thermal-kers-cprg/) | 1 |
-| [Standard range extender](/content/items/standard-tracking-upgrade/) | 1 |
-| [Standard range extender CT](/content/items/standard-tracking-upgrade-cprg/) | 1 |
-| [Standard wall compiler module](/content/items/standard-wall-builder/) | 1 |
-| [Standard S-demobilizer](/content/items/standard-webber/) | 1 |
-| [Standard S-demobilizer CT](/content/items/standard-webber-cprg/) | 1 |
-| [Standart Landmine Detector](/content/items/standart-landmine-detector/) | 1 |
-| [Standart Landmine Detector Cprg](/content/items/standart-landmine-detector-cprg/) | 1 |
-| [Terraformer module](/content/items/terraform-multi-module/) | – |
+| [Archer Named4 Damage Mod Missile](/content/items/archer-named4-damage-mod-missile/) | 5 |
+| [Archer Named4 Tracking Upgrade](/content/items/archer-named4-tracking-upgrade/) | 5 |
 | [Weasel Named4 Adaptive Alloy](/content/items/weasel-named4-adaptive-alloy/) | 5 |
 | [Weasel Named4 Eccm](/content/items/weasel-named4-eccm/) | 5 |
 | [Weasel Named4 Mass Reductor](/content/items/weasel-named4-mass-reductor/) | 5 |
 | [Weasel Named4 Stealth Modul](/content/items/weasel-named4-stealth-modul/) | 5 |
+| [SAP hacking module](/content/items/siege-hack-module/) | – |
+| [Standard Large Core Booster Pr](/content/items/standard-large-core-booster-pr/) | – |
+| [Standard Neuralyzer](/content/items/standard-neuralyzer/) | – |
+| [Terraformer module](/content/items/terraform-multi-module/) | – |
 | [The Eraser](/content/items/zmall-railg00n/) | – |
 | [super light something](/content/items/zupalight/) | – |
 
@@ -1716,6 +1716,7 @@ Ammunition for active weapon modules.
 
 | Item | Tier |
 |---|---|
+| [Ammo Medium Lasercrystal Pbs Turret](/content/items/ammo-medium-lasercrystal-pbs-turret/) | 2 |
 | [Large chemoactive energy cell](/content/items/ammo-large-lasercrystal-a/) | – |
 | [Ammo Large Lasercrystal A Cprg](/content/items/ammo-large-lasercrystal-a-cprg/) | – |
 | [Ammo Large Lasercrystal A Pr](/content/items/ammo-large-lasercrystal-a-pr/) | – |
@@ -1737,7 +1738,6 @@ Ammunition for active weapon modules.
 | [Medium photokinetic energy cell CT](/content/items/ammo-medium-lasercrystal-c-cprg/) | – |
 | [Medium thermic energy cell](/content/items/ammo-medium-lasercrystal-d/) | – |
 | [Medium thermic energy cell CT](/content/items/ammo-medium-lasercrystal-d-cprg/) | – |
-| [Ammo Medium Lasercrystal Pbs Turret](/content/items/ammo-medium-lasercrystal-pbs-turret/) | 2 |
 | [Medium 'Apocalypse' energy cell](/content/items/ammo-medium-lasercrystal-rewa/) | – |
 | [Medium 'Crypto' energy cell](/content/items/ammo-medium-lasercrystal-rewb/) | – |
 | [Small chemoactive energy cell](/content/items/ammo-small-lasercrystal-a/) | – |
@@ -1755,6 +1755,7 @@ Ammunition for active weapon modules.
 
 | Item | Tier |
 |---|---|
+| [Ammo Medium Railgun Pbs Turret](/content/items/ammo-medium-railgun-pbs-turret/) | 2 |
 | [Ammo Hell Cannon A](/content/items/ammo-hell-cannon-a/) | – |
 | [Ammo Hell Cannon A Cprg](/content/items/ammo-hell-cannon-a-cprg/) | – |
 | [Ammo Hell Cannon A Pr](/content/items/ammo-hell-cannon-a-pr/) | – |
@@ -1791,7 +1792,6 @@ Ammunition for active weapon modules.
 | [Medium liquidcore slug CT](/content/items/ammo-medium-railgun-c-cprg/) | – |
 | [Medium compositecore slug](/content/items/ammo-medium-railgun-d/) | – |
 | [Medium compositecore slug CT](/content/items/ammo-medium-railgun-d-cprg/) | – |
-| [Ammo Medium Railgun Pbs Turret](/content/items/ammo-medium-railgun-pbs-turret/) | 2 |
 | [Medium UDC slug](/content/items/ammo-medium-railgun-rewa/) | – |
 | [Medium 'Magnedart' slug](/content/items/ammo-medium-railgun-rewb/) | – |
 | [Ammo Raven Cannon A](/content/items/ammo-raven-cannon-a/) | – |
@@ -1978,6 +1978,124 @@ Raw and processed materials used in production. (Ores have their own page.)
 
 | Item | Tier |
 |---|---|
+| [Construction Module Ammo T1 Cprg](/content/items/construction-module-ammo-t1-cprg/) | 1 |
+| [Standard energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-small-capsule-cprg/) | 1 |
+| [Standard repair node foundation CT](/content/items/pbs-armor-repairer-small-capsule-cprg/) | 1 |
+| [Standard Aura emitter foundation CT](/content/items/pbs-aura-emitter-small-capsule-cprg/) | 1 |
+| [Standard calibration lab foundation CT](/content/items/pbs-calibration-forge-small-capsule-cprg/) | 1 |
+| [Standard command relay foundation CT](/content/items/pbs-control-tower-small-capsule-cprg/) | 1 |
+| [Standard energy battery foundation CT](/content/items/pbs-core-battery-small-capsule-cprg/) | 1 |
+| [Standard energy transmitter node foundation CT](/content/items/pbs-core-transmitter-small-capsule-cprg/) | 1 |
+| [Standard main terminal foundation CT](/content/items/pbs-docking-base-small-capsule-cprg/) | 1 |
+| [Standard booster node foundation CT](/content/items/pbs-effect-supplier-small-capsule-cprg/) | 1 |
+| [Standard energy well foundation CT](/content/items/pbs-energywell-small-capsule-cprg/) | 1 |
+| [Standard accelerator strip foundation CT](/content/items/pbs-highwaynode-small-capsule-cprg/) | 1 |
+| [Standard masker foundation CT](/content/items/pbs-maskertower-small-capsule-cprg/) | 1 |
+| [Standard factory foundation CT](/content/items/pbs-mill-small-capsule-cprg/) | 1 |
+| [Standard mining outpost foundation CT](/content/items/pbs-mining-tower-small-capsule-cprg/) | 1 |
+| [Standard facility upgrade foundation CT](/content/items/pbs-production-upgrade-small-capsule-cprg/) | 1 |
+| [Standard prototype facility foundation CT](/content/items/pbs-prototyper-small-capsule-cprg/) | 1 |
+| [Standard reactor foundation CT](/content/items/pbs-reactor-small-capsule-cprg/) | 1 |
+| [Standard refinery foundation CT](/content/items/pbs-refinery-small-capsule-cprg/) | 1 |
+| [Standard repair shop foundation CT](/content/items/pbs-repair-small-capsule-cprg/) | 1 |
+| [Standard recycling plant foundation CT](/content/items/pbs-reprocessor-small-capsule-cprg/) | 1 |
+| [Standard decoder lab foundation CT](/content/items/pbs-research-kit-forge-small-capsule-cprg/) | 1 |
+| [Standard reverse engineering foundation CT](/content/items/pbs-research-lab-small-capsule-cprg/) | 1 |
+| [Standard EW turret foundation CT](/content/items/pbs-turret-ew-small-capsule-cprg/) | 1 |
+| [Standard laser turret foundation CT](/content/items/pbs-turret-laser-small-capsule-cprg/) | 1 |
+| [Standard missile turret foundation CT](/content/items/pbs-turret-missile-small-capsule-cprg/) | 1 |
+| [Standard EM-turret foundation CT](/content/items/pbs-turret-rail-small-capsule-cprg/) | 1 |
+| [Energy storage cell](/content/items/reactor-booster-a/) | 1 |
+| [Energy storage cell CT](/content/items/reactor-booster-a-cprg/) | 1 |
+| [Reactor Booster A Pr](/content/items/reactor-booster-a-pr/) | 1 |
+| [Specimen Sap Item](/content/items/specimen-sap-item/) | 1 |
+| [Standard Hunter Drone Rcu Pve Cprg](/content/items/standard-hunter-drone-rcu-pve-cprg/) | 1 |
+| [Standard Hunter Drone Rcu Pvp Cprg](/content/items/standard-hunter-drone-rcu-pvp-cprg/) | 1 |
+| [Standard Small Industrial Aoe Tile Ammo A Cprg](/content/items/standard-small-industrial-aoe-tile-ammo-a-cprg/) | 1 |
+| [Standart Harvesting Turret Unit Cprg](/content/items/standart-harvesting-turret-unit-cprg/) | 1 |
+| [Standart Mining Turret Unit Cprg](/content/items/standart-mining-turret-unit-cprg/) | 1 |
+| [Standart Nuimqol Combat Drone Unit Cprg](/content/items/standart-nuimqol-combat-drone-unit-cprg/) | 1 |
+| [Standart Pelistal Combat Drone Unit Cprg](/content/items/standart-pelistal-combat-drone-unit-cprg/) | 1 |
+| [Standart Sentry Turret Unit Cprg](/content/items/standart-sentry-turret-unit-cprg/) | 1 |
+| [Standart Thelodica Combat Drone Unit Cprg](/content/items/standart-thelodica-combat-drone-unit-cprg/) | 1 |
+| [Construction Module Ammo T2 Cprg](/content/items/construction-module-ammo-t2-cprg/) | 2 |
+| [Named1 Harvesting Turret Unit Cprg](/content/items/named1-harvesting-turret-unit-cprg/) | 2 |
+| [Named1 Mining Turret Unit Cprg](/content/items/named1-mining-turret-unit-cprg/) | 2 |
+| [Named1 Nuimqol Combat Drone Unit Cprg](/content/items/named1-nuimqol-combat-drone-unit-cprg/) | 2 |
+| [Named1 Pelistal Combat Drone Unit Cprg](/content/items/named1-pelistal-combat-drone-unit-cprg/) | 2 |
+| [Named1 Sentry Turret Unit Cprg](/content/items/named1-sentry-turret-unit-cprg/) | 2 |
+| [Named1 Thelodica Combat Drone Unit Cprg](/content/items/named1-thelodica-combat-drone-unit-cprg/) | 2 |
+| [Advanced energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-medium-capsule-cprg/) | 2 |
+| [Advanced repair node foundation CT](/content/items/pbs-armor-repairer-medium-capsule-cprg/) | 2 |
+| [Advanced Aura emitter foundation CT](/content/items/pbs-aura-emitter-medium-capsule-cprg/) | 2 |
+| [Advanced calibration lab foundation CT](/content/items/pbs-calibration-forge-medium-capsule-cprg/) | 2 |
+| [Advanced command relay foundation CT](/content/items/pbs-control-tower-medium-capsule-cprg/) | 2 |
+| [Advanced energy battery foundation CT](/content/items/pbs-core-battery-medium-capsule-cprg/) | 2 |
+| [Advanced energy transmitter node foundation CT](/content/items/pbs-core-transmitter-medium-capsule-cprg/) | 2 |
+| [Advanced main terminal foundation CT](/content/items/pbs-docking-base-medium-capsule-cprg/) | 2 |
+| [Advanced booster node foundation CT](/content/items/pbs-effect-supplier-medium-capsule-cprg/) | 2 |
+| [Advanced energy well foundation CT](/content/items/pbs-energywell-medium-capsule-cprg/) | 2 |
+| [Advanced accelerator strip foundation CT](/content/items/pbs-highwaynode-medium-capsule-cprg/) | 2 |
+| [Advanced masker foundation CT](/content/items/pbs-maskertower-medium-capsule-cprg/) | 2 |
+| [Advanced factory foundation CT](/content/items/pbs-mill-medium-capsule-cprg/) | 2 |
+| [Advanced mining outpost foundation CT](/content/items/pbs-mining-tower-medium-capsule-cprg/) | 2 |
+| [Advanced facility upgrade foundation CT](/content/items/pbs-production-upgrade-medium-capsule-cprg/) | 2 |
+| [Advanced prototype facility foundation CT](/content/items/pbs-prototyper-medium-capsule-cprg/) | 2 |
+| [Advanced reactor foundation CT](/content/items/pbs-reactor-medium-capsule-cprg/) | 2 |
+| [Advanced refinery foundation CT](/content/items/pbs-refinery-medium-capsule-cprg/) | 2 |
+| [Advanced repair shop foundation CT](/content/items/pbs-repair-medium-capsule-cprg/) | 2 |
+| [Advanced recycling plant foundation CT](/content/items/pbs-reprocessor-medium-capsule-cprg/) | 2 |
+| [Advanced decoder lab foundation CT](/content/items/pbs-research-kit-forge-medium-capsule-cprg/) | 2 |
+| [Advanced reverse engineering foundation CT](/content/items/pbs-research-lab-medium-capsule-cprg/) | 2 |
+| [Advanced EW turret foundation CT](/content/items/pbs-turret-ew-medium-capsule-cprg/) | 2 |
+| [Advanced laser turret foundation CT](/content/items/pbs-turret-laser-medium-capsule-cprg/) | 2 |
+| [Advanced missile turret foundation CT](/content/items/pbs-turret-missile-medium-capsule-cprg/) | 2 |
+| [Advanced EM-turret foundation CT](/content/items/pbs-turret-rail-medium-capsule-cprg/) | 2 |
+| [Reactor Booster B](/content/items/reactor-booster-b/) | 2 |
+| [Reactor Booster B Cprg](/content/items/reactor-booster-b-cprg/) | 2 |
+| [Reactor Booster B Pr](/content/items/reactor-booster-b-pr/) | 2 |
+| [Construction Module Ammo T3 Cprg](/content/items/construction-module-ammo-t3-cprg/) | 3 |
+| [Named2 Harvesting Turret Unit Cprg](/content/items/named2-harvesting-turret-unit-cprg/) | 3 |
+| [Named2 Mining Turret Unit Cprg](/content/items/named2-mining-turret-unit-cprg/) | 3 |
+| [Named2 Nuimqol Combat Drone Unit Cprg](/content/items/named2-nuimqol-combat-drone-unit-cprg/) | 3 |
+| [Named2 Pelistal Combat Drone Unit Cprg](/content/items/named2-pelistal-combat-drone-unit-cprg/) | 3 |
+| [Named2 Sentry Turret Unit Cprg](/content/items/named2-sentry-turret-unit-cprg/) | 3 |
+| [Named2 Thelodica Combat Drone Unit Cprg](/content/items/named2-thelodica-combat-drone-unit-cprg/) | 3 |
+| [Hi-tech energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-large-capsule-cprg/) | 3 |
+| [Hi-tech repair node foundation CT](/content/items/pbs-armor-repairer-large-capsule-cprg/) | 3 |
+| [Hi-tech Aura emitter foundation CT](/content/items/pbs-aura-emitter-large-capsule-cprg/) | 3 |
+| [Hi-tech calibration lab foundation CT](/content/items/pbs-calibration-forge-large-capsule-cprg/) | 3 |
+| [Hi-tech command relay foundation CT](/content/items/pbs-control-tower-large-capsule-cprg/) | 3 |
+| [Hi-tech energy battery foundation CT](/content/items/pbs-core-battery-large-capsule-cprg/) | 3 |
+| [Hi-tech energy transmitter node foundation CT](/content/items/pbs-core-transmitter-large-capsule-cprg/) | 3 |
+| [Hi-tech main terminal foundation CT](/content/items/pbs-docking-base-large-capsule-cprg/) | 3 |
+| [Hi-tech booster node foundation CT](/content/items/pbs-effect-supplier-large-capsule-cprg/) | 3 |
+| [Hi-tech energy well foundation CT](/content/items/pbs-energywell-large-capsule-cprg/) | 3 |
+| [Hi-tech accelerator strip foundation CT](/content/items/pbs-highwaynode-large-capsule-cprg/) | 3 |
+| [Hi-tech masker foundation CT](/content/items/pbs-maskertower-large-capsule-cprg/) | 3 |
+| [Hi-tech factory foundation CT](/content/items/pbs-mill-large-capsule-cprg/) | 3 |
+| [Hi-tech mining outpost foundation CT](/content/items/pbs-mining-tower-large-capsule-cprg/) | 3 |
+| [Hi-tech facility upgrade foundation CT](/content/items/pbs-production-upgrade-large-capsule-cprg/) | 3 |
+| [Hi-tech prototype facility foundation CT](/content/items/pbs-prototyper-large-capsule-cprg/) | 3 |
+| [Hi-tech reactor foundation CT](/content/items/pbs-reactor-large-capsule-cprg/) | 3 |
+| [Hi-tech refinery foundation CT](/content/items/pbs-refinery-large-capsule-cprg/) | 3 |
+| [Hi-tech repair shop foundation CT](/content/items/pbs-repair-large-capsule-cprg/) | 3 |
+| [Hi-tech recycling plant foundation CT](/content/items/pbs-reprocessor-large-capsule-cprg/) | 3 |
+| [Hi-tech decoder lab foundation CT](/content/items/pbs-research-kit-forge-large-capsule-cprg/) | 3 |
+| [Hi-tech reverse engineering foundation CT](/content/items/pbs-research-lab-large-capsule-cprg/) | 3 |
+| [Hi-tech EW turret foundation CT](/content/items/pbs-turret-ew-large-capsule-cprg/) | 3 |
+| [Hi-tech laser turret foundation CT](/content/items/pbs-turret-laser-large-capsule-cprg/) | 3 |
+| [Hi-tech missile turret foundation CT](/content/items/pbs-turret-missile-large-capsule-cprg/) | 3 |
+| [Hi-tech EM-turret foundation CT](/content/items/pbs-turret-rail-large-capsule-cprg/) | 3 |
+| [Reactor Booster C](/content/items/reactor-booster-c/) | 3 |
+| [Reactor Booster C Cprg](/content/items/reactor-booster-c-cprg/) | 3 |
+| [Reactor Booster C Pr](/content/items/reactor-booster-c-pr/) | 3 |
+| [Named3 Harvesting Turret Unit Cprg](/content/items/named3-harvesting-turret-unit-cprg/) | 4 |
+| [Named3 Mining Turret Unit Cprg](/content/items/named3-mining-turret-unit-cprg/) | 4 |
+| [Named3 Nuimqol Combat Drone Unit Cprg](/content/items/named3-nuimqol-combat-drone-unit-cprg/) | 4 |
+| [Named3 Pelistal Combat Drone Unit Cprg](/content/items/named3-pelistal-combat-drone-unit-cprg/) | 4 |
+| [Named3 Sentry Turret Unit Cprg](/content/items/named3-sentry-turret-unit-cprg/) | 4 |
+| [Named3 Thelodica Combat Drone Unit Cprg](/content/items/named3-thelodica-combat-drone-unit-cprg/) | 4 |
 | [Admin Trashcan](/content/items/admin-trashcan/) | – |
 | [Alligior](/content/items/alligior/) | – |
 | [Arbalest CT](/content/items/arbalest-bot-cprg/) | – |
@@ -1999,9 +2117,6 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Common Energy Core Medium](/content/items/common-energy-core-medium/) | – |
 | [Common reactor plasma](/content/items/common-reactor-plasma/) | – |
 | [Construction block CT](/content/items/construction-module-ammo-normal-cprg/) | – |
-| [Construction Module Ammo T1 Cprg](/content/items/construction-module-ammo-t1-cprg/) | 1 |
-| [Construction Module Ammo T2 Cprg](/content/items/construction-module-ammo-t2-cprg/) | 2 |
-| [Construction Module Ammo T3 Cprg](/content/items/construction-module-ammo-t3-cprg/) | 3 |
 | [Standard energy injector charge CT](/content/items/corebooster-ammo-cprg/) | – |
 | [Storage folder](/content/items/corporate-hangar-folder/) | – |
 | [Corporation storage](/content/items/corporate-hangar-standard/) | – |
@@ -2086,24 +2201,6 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Mesmer CT](/content/items/mesmer-bot-cprg/) | – |
 | [Metachropin](/content/items/metachropin/) | – |
 | [Mining Industrial Drone Unit Cprg](/content/items/mining-industrial-drone-unit-cprg/) | – |
-| [Named1 Harvesting Turret Unit Cprg](/content/items/named1-harvesting-turret-unit-cprg/) | 2 |
-| [Named1 Mining Turret Unit Cprg](/content/items/named1-mining-turret-unit-cprg/) | 2 |
-| [Named1 Nuimqol Combat Drone Unit Cprg](/content/items/named1-nuimqol-combat-drone-unit-cprg/) | 2 |
-| [Named1 Pelistal Combat Drone Unit Cprg](/content/items/named1-pelistal-combat-drone-unit-cprg/) | 2 |
-| [Named1 Sentry Turret Unit Cprg](/content/items/named1-sentry-turret-unit-cprg/) | 2 |
-| [Named1 Thelodica Combat Drone Unit Cprg](/content/items/named1-thelodica-combat-drone-unit-cprg/) | 2 |
-| [Named2 Harvesting Turret Unit Cprg](/content/items/named2-harvesting-turret-unit-cprg/) | 3 |
-| [Named2 Mining Turret Unit Cprg](/content/items/named2-mining-turret-unit-cprg/) | 3 |
-| [Named2 Nuimqol Combat Drone Unit Cprg](/content/items/named2-nuimqol-combat-drone-unit-cprg/) | 3 |
-| [Named2 Pelistal Combat Drone Unit Cprg](/content/items/named2-pelistal-combat-drone-unit-cprg/) | 3 |
-| [Named2 Sentry Turret Unit Cprg](/content/items/named2-sentry-turret-unit-cprg/) | 3 |
-| [Named2 Thelodica Combat Drone Unit Cprg](/content/items/named2-thelodica-combat-drone-unit-cprg/) | 3 |
-| [Named3 Harvesting Turret Unit Cprg](/content/items/named3-harvesting-turret-unit-cprg/) | 4 |
-| [Named3 Mining Turret Unit Cprg](/content/items/named3-mining-turret-unit-cprg/) | 4 |
-| [Named3 Nuimqol Combat Drone Unit Cprg](/content/items/named3-nuimqol-combat-drone-unit-cprg/) | 4 |
-| [Named3 Pelistal Combat Drone Unit Cprg](/content/items/named3-pelistal-combat-drone-unit-cprg/) | 4 |
-| [Named3 Sentry Turret Unit Cprg](/content/items/named3-sentry-turret-unit-cprg/) | 4 |
-| [Named3 Thelodica Combat Drone Unit Cprg](/content/items/named3-thelodica-combat-drone-unit-cprg/) | 4 |
 | [Nuimqol Assault Drone Unit Cprg](/content/items/nuimqol-assault-drone-unit-cprg/) | – |
 | [Nuimqol Attack Drone Unit Cprg](/content/items/nuimqol-attack-drone-unit-cprg/) | – |
 | [Nuimqol Energy Core High](/content/items/nuimqol-energy-core-high/) | – |
@@ -2111,84 +2208,6 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Nuimqol Energy Core Medium](/content/items/nuimqol-energy-core-medium/) | – |
 | [Nuimqol reactor plasma](/content/items/nuimqol-reactor-plasma/) | – |
 | [Onyx Bot Cprg](/content/items/onyx-bot-cprg/) | – |
-| [Hi-tech energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-large-capsule-cprg/) | 3 |
-| [Advanced energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-medium-capsule-cprg/) | 2 |
-| [Standard energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-small-capsule-cprg/) | 1 |
-| [Hi-tech repair node foundation CT](/content/items/pbs-armor-repairer-large-capsule-cprg/) | 3 |
-| [Advanced repair node foundation CT](/content/items/pbs-armor-repairer-medium-capsule-cprg/) | 2 |
-| [Standard repair node foundation CT](/content/items/pbs-armor-repairer-small-capsule-cprg/) | 1 |
-| [Hi-tech Aura emitter foundation CT](/content/items/pbs-aura-emitter-large-capsule-cprg/) | 3 |
-| [Advanced Aura emitter foundation CT](/content/items/pbs-aura-emitter-medium-capsule-cprg/) | 2 |
-| [Standard Aura emitter foundation CT](/content/items/pbs-aura-emitter-small-capsule-cprg/) | 1 |
-| [Hi-tech calibration lab foundation CT](/content/items/pbs-calibration-forge-large-capsule-cprg/) | 3 |
-| [Advanced calibration lab foundation CT](/content/items/pbs-calibration-forge-medium-capsule-cprg/) | 2 |
-| [Standard calibration lab foundation CT](/content/items/pbs-calibration-forge-small-capsule-cprg/) | 1 |
-| [Hi-tech command relay foundation CT](/content/items/pbs-control-tower-large-capsule-cprg/) | 3 |
-| [Advanced command relay foundation CT](/content/items/pbs-control-tower-medium-capsule-cprg/) | 2 |
-| [Standard command relay foundation CT](/content/items/pbs-control-tower-small-capsule-cprg/) | 1 |
-| [Hi-tech energy battery foundation CT](/content/items/pbs-core-battery-large-capsule-cprg/) | 3 |
-| [Advanced energy battery foundation CT](/content/items/pbs-core-battery-medium-capsule-cprg/) | 2 |
-| [Standard energy battery foundation CT](/content/items/pbs-core-battery-small-capsule-cprg/) | 1 |
-| [Hi-tech energy transmitter node foundation CT](/content/items/pbs-core-transmitter-large-capsule-cprg/) | 3 |
-| [Advanced energy transmitter node foundation CT](/content/items/pbs-core-transmitter-medium-capsule-cprg/) | 2 |
-| [Standard energy transmitter node foundation CT](/content/items/pbs-core-transmitter-small-capsule-cprg/) | 1 |
-| [Hi-tech main terminal foundation CT](/content/items/pbs-docking-base-large-capsule-cprg/) | 3 |
-| [Advanced main terminal foundation CT](/content/items/pbs-docking-base-medium-capsule-cprg/) | 2 |
-| [Standard main terminal foundation CT](/content/items/pbs-docking-base-small-capsule-cprg/) | 1 |
-| [Hi-tech booster node foundation CT](/content/items/pbs-effect-supplier-large-capsule-cprg/) | 3 |
-| [Advanced booster node foundation CT](/content/items/pbs-effect-supplier-medium-capsule-cprg/) | 2 |
-| [Standard booster node foundation CT](/content/items/pbs-effect-supplier-small-capsule-cprg/) | 1 |
-| [Hi-tech energy well foundation CT](/content/items/pbs-energywell-large-capsule-cprg/) | 3 |
-| [Advanced energy well foundation CT](/content/items/pbs-energywell-medium-capsule-cprg/) | 2 |
-| [Standard energy well foundation CT](/content/items/pbs-energywell-small-capsule-cprg/) | 1 |
-| [Hi-tech accelerator strip foundation CT](/content/items/pbs-highwaynode-large-capsule-cprg/) | 3 |
-| [Advanced accelerator strip foundation CT](/content/items/pbs-highwaynode-medium-capsule-cprg/) | 2 |
-| [Standard accelerator strip foundation CT](/content/items/pbs-highwaynode-small-capsule-cprg/) | 1 |
-| [Hi-tech masker foundation CT](/content/items/pbs-maskertower-large-capsule-cprg/) | 3 |
-| [Advanced masker foundation CT](/content/items/pbs-maskertower-medium-capsule-cprg/) | 2 |
-| [Standard masker foundation CT](/content/items/pbs-maskertower-small-capsule-cprg/) | 1 |
-| [Hi-tech factory foundation CT](/content/items/pbs-mill-large-capsule-cprg/) | 3 |
-| [Advanced factory foundation CT](/content/items/pbs-mill-medium-capsule-cprg/) | 2 |
-| [Standard factory foundation CT](/content/items/pbs-mill-small-capsule-cprg/) | 1 |
-| [Hi-tech mining outpost foundation CT](/content/items/pbs-mining-tower-large-capsule-cprg/) | 3 |
-| [Advanced mining outpost foundation CT](/content/items/pbs-mining-tower-medium-capsule-cprg/) | 2 |
-| [Standard mining outpost foundation CT](/content/items/pbs-mining-tower-small-capsule-cprg/) | 1 |
-| [Hi-tech facility upgrade foundation CT](/content/items/pbs-production-upgrade-large-capsule-cprg/) | 3 |
-| [Advanced facility upgrade foundation CT](/content/items/pbs-production-upgrade-medium-capsule-cprg/) | 2 |
-| [Standard facility upgrade foundation CT](/content/items/pbs-production-upgrade-small-capsule-cprg/) | 1 |
-| [Hi-tech prototype facility foundation CT](/content/items/pbs-prototyper-large-capsule-cprg/) | 3 |
-| [Advanced prototype facility foundation CT](/content/items/pbs-prototyper-medium-capsule-cprg/) | 2 |
-| [Standard prototype facility foundation CT](/content/items/pbs-prototyper-small-capsule-cprg/) | 1 |
-| [Hi-tech reactor foundation CT](/content/items/pbs-reactor-large-capsule-cprg/) | 3 |
-| [Advanced reactor foundation CT](/content/items/pbs-reactor-medium-capsule-cprg/) | 2 |
-| [Standard reactor foundation CT](/content/items/pbs-reactor-small-capsule-cprg/) | 1 |
-| [Hi-tech refinery foundation CT](/content/items/pbs-refinery-large-capsule-cprg/) | 3 |
-| [Advanced refinery foundation CT](/content/items/pbs-refinery-medium-capsule-cprg/) | 2 |
-| [Standard refinery foundation CT](/content/items/pbs-refinery-small-capsule-cprg/) | 1 |
-| [Hi-tech repair shop foundation CT](/content/items/pbs-repair-large-capsule-cprg/) | 3 |
-| [Advanced repair shop foundation CT](/content/items/pbs-repair-medium-capsule-cprg/) | 2 |
-| [Standard repair shop foundation CT](/content/items/pbs-repair-small-capsule-cprg/) | 1 |
-| [Hi-tech recycling plant foundation CT](/content/items/pbs-reprocessor-large-capsule-cprg/) | 3 |
-| [Advanced recycling plant foundation CT](/content/items/pbs-reprocessor-medium-capsule-cprg/) | 2 |
-| [Standard recycling plant foundation CT](/content/items/pbs-reprocessor-small-capsule-cprg/) | 1 |
-| [Hi-tech decoder lab foundation CT](/content/items/pbs-research-kit-forge-large-capsule-cprg/) | 3 |
-| [Advanced decoder lab foundation CT](/content/items/pbs-research-kit-forge-medium-capsule-cprg/) | 2 |
-| [Standard decoder lab foundation CT](/content/items/pbs-research-kit-forge-small-capsule-cprg/) | 1 |
-| [Hi-tech reverse engineering foundation CT](/content/items/pbs-research-lab-large-capsule-cprg/) | 3 |
-| [Advanced reverse engineering foundation CT](/content/items/pbs-research-lab-medium-capsule-cprg/) | 2 |
-| [Standard reverse engineering foundation CT](/content/items/pbs-research-lab-small-capsule-cprg/) | 1 |
-| [Hi-tech EW turret foundation CT](/content/items/pbs-turret-ew-large-capsule-cprg/) | 3 |
-| [Advanced EW turret foundation CT](/content/items/pbs-turret-ew-medium-capsule-cprg/) | 2 |
-| [Standard EW turret foundation CT](/content/items/pbs-turret-ew-small-capsule-cprg/) | 1 |
-| [Hi-tech laser turret foundation CT](/content/items/pbs-turret-laser-large-capsule-cprg/) | 3 |
-| [Advanced laser turret foundation CT](/content/items/pbs-turret-laser-medium-capsule-cprg/) | 2 |
-| [Standard laser turret foundation CT](/content/items/pbs-turret-laser-small-capsule-cprg/) | 1 |
-| [Hi-tech missile turret foundation CT](/content/items/pbs-turret-missile-large-capsule-cprg/) | 3 |
-| [Advanced missile turret foundation CT](/content/items/pbs-turret-missile-medium-capsule-cprg/) | 2 |
-| [Standard missile turret foundation CT](/content/items/pbs-turret-missile-small-capsule-cprg/) | 1 |
-| [Hi-tech EM-turret foundation CT](/content/items/pbs-turret-rail-large-capsule-cprg/) | 3 |
-| [Advanced EM-turret foundation CT](/content/items/pbs-turret-rail-medium-capsule-cprg/) | 2 |
-| [Standard EM-turret foundation CT](/content/items/pbs-turret-rail-small-capsule-cprg/) | 1 |
 | [Pelistal Assault Drone Unit Cprg](/content/items/pelistal-assault-drone-unit-cprg/) | – |
 | [Pelistal Attack Drone Unit Cprg](/content/items/pelistal-attack-drone-unit-cprg/) | – |
 | [Pelistal reactor plasma](/content/items/pelistal-reactor-plasma/) | – |
@@ -2207,15 +2226,6 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Private Corporation Storage](/content/items/private-corporation-storage/) | – |
 | [Prometheus CT](/content/items/prometheus-bot-cprg/) | – |
 | [Corporation storages](/content/items/public-corporate-hangars-storage/) | – |
-| [Energy storage cell](/content/items/reactor-booster-a/) | 1 |
-| [Energy storage cell CT](/content/items/reactor-booster-a-cprg/) | 1 |
-| [Reactor Booster A Pr](/content/items/reactor-booster-a-pr/) | 1 |
-| [Reactor Booster B](/content/items/reactor-booster-b/) | 2 |
-| [Reactor Booster B Cprg](/content/items/reactor-booster-b-cprg/) | 2 |
-| [Reactor Booster B Pr](/content/items/reactor-booster-b-pr/) | 2 |
-| [Reactor Booster C](/content/items/reactor-booster-c/) | 3 |
-| [Reactor Booster C Cprg](/content/items/reactor-booster-c-cprg/) | 3 |
-| [Reactor Booster C Pr](/content/items/reactor-booster-c-pr/) | 3 |
 | [Niani assault robot CPU cortex](/content/items/reactore-core-assault/) | – |
 | [Niani heavy mech CPU cortex](/content/items/reactore-core-heavymech/) | – |
 | [Niani mech CPU cortex](/content/items/reactore-core-mech/) | – |
@@ -2253,18 +2263,8 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Silgit (PL-40)](/content/items/silgium-rare-medium/) | – |
 | [Silgit (PL-10)](/content/items/silgium-rare-small/) | – |
 | [soil](/content/items/soil/) | – |
-| [Specimen Sap Item](/content/items/specimen-sap-item/) | 1 |
 | [Specimen Sap Item Flux](/content/items/specimen-sap-item-flux/) | – |
 | [Spectator Bot Cprg](/content/items/spectator-bot-cprg/) | – |
-| [Standard Hunter Drone Rcu Pve Cprg](/content/items/standard-hunter-drone-rcu-pve-cprg/) | 1 |
-| [Standard Hunter Drone Rcu Pvp Cprg](/content/items/standard-hunter-drone-rcu-pvp-cprg/) | 1 |
-| [Standard Small Industrial Aoe Tile Ammo A Cprg](/content/items/standard-small-industrial-aoe-tile-ammo-a-cprg/) | 1 |
-| [Standart Harvesting Turret Unit Cprg](/content/items/standart-harvesting-turret-unit-cprg/) | 1 |
-| [Standart Mining Turret Unit Cprg](/content/items/standart-mining-turret-unit-cprg/) | 1 |
-| [Standart Nuimqol Combat Drone Unit Cprg](/content/items/standart-nuimqol-combat-drone-unit-cprg/) | 1 |
-| [Standart Pelistal Combat Drone Unit Cprg](/content/items/standart-pelistal-combat-drone-unit-cprg/) | 1 |
-| [Standart Sentry Turret Unit Cprg](/content/items/standart-sentry-turret-unit-cprg/) | 1 |
-| [Standart Thelodica Combat Drone Unit Cprg](/content/items/standart-thelodica-combat-drone-unit-cprg/) | 1 |
 | [Statichnol](/content/items/statichnol/) | – |
 | [Stermid (PL-90)](/content/items/stermonit-rare-large/) | – |
 | [Stermid (PL-40)](/content/items/stermonit-rare-medium/) | – |
@@ -3351,6 +3351,66 @@ Artifact items.
 
 | Item | Tier |
 |---|---|
+| [Flawed armor repairer tuning](/content/items/artifact-damaged-armor-repairer-upgrade/) | – |
+| [Flawed interference module](/content/items/artifact-damaged-blob-emission-modulator/) | – |
+| [Flawed cargo scanner](/content/items/artifact-damaged-cargo-scanner/) | – |
+| [Flawed chassis scanner](/content/items/artifact-damaged-chassis-scanner/) | – |
+| [Flawed chemical armor](/content/items/artifact-damaged-chm-armor-hardener/) | – |
+| [Flawed accumulator recharger](/content/items/artifact-damaged-core-recharger/) | – |
+| [Flawed coprocessor](/content/items/artifact-damaged-cpu-upgrade/) | – |
+| [Flawed laser tuning](/content/items/artifact-damaged-damage-mod-laser/) | – |
+| [Flawed missile launcher tuning](/content/items/artifact-damaged-damage-mod-missile/) | – |
+| [Flawed magnetic weapon tuning](/content/items/artifact-damaged-damage-mod-railgun/) | – |
+| [Flawed signal detector](/content/items/artifact-damaged-detection-modul/) | – |
+| [Flawed ECCM](/content/items/artifact-damaged-eccm/) | – |
+| [Flawed seismic armor](/content/items/artifact-damaged-exp-armor-hardener/) | – |
+| [Flawed kinetic armor](/content/items/artifact-damaged-kin-armor-hardener/) | – |
+| [Flawed medium HCL laser](/content/items/artifact-damaged-longrange-medium-laser/) | – |
+| [Flawed medium EM-gun](/content/items/artifact-damaged-longrange-medium-railgun/) | – |
+| [Flawed evasive module](/content/items/artifact-damaged-maneuvering-upgrade/) | – |
+| [Flawed lightweight frame](/content/items/artifact-damaged-mass-reductor/) | – |
+| [Flawed medium armor plate](/content/items/artifact-damaged-medium-armor-plate/) | – |
+| [Flawed medium armor repairer](/content/items/artifact-damaged-medium-armor-repairer/) | – |
+| [Flawed medium auxiliary accumulator](/content/items/artifact-damaged-medium-core-battery/) | – |
+| [Flawed medium energy injector](/content/items/artifact-damaged-medium-core-booster/) | – |
+| [Flawed medium miner module](/content/items/artifact-damaged-medium-driller/) | – |
+| [Flawed medium energy neutralizer](/content/items/artifact-damaged-medium-energy-neutralizer/) | – |
+| [Flawed medium energy transferer](/content/items/artifact-damaged-medium-energy-transfer/) | – |
+| [Flawed medium energy drainer](/content/items/artifact-damaged-medium-energy-vampire/) | – |
+| [Flawed medium harvester](/content/items/artifact-damaged-medium-harvester/) | – |
+| [Flawed medium LCL laser](/content/items/artifact-damaged-medium-laser/) | – |
+| [Flawed medium Gauss gun](/content/items/artifact-damaged-medium-railgun/) | – |
+| [Flawed medium remote armor repairer](/content/items/artifact-damaged-medium-remote-armor-repairer/) | – |
+| [Flawed medium shield generator](/content/items/artifact-damaged-medium-shield-generator/) | – |
+| [Flawed geoscanner](/content/items/artifact-damaged-mining-probe-module/) | – |
+| [Flawed industrial tuning](/content/items/artifact-damaged-mining-upgrade/) | – |
+| [Flawed medium missile launcher](/content/items/artifact-damaged-missile-launcher/) | – |
+| [Flawed coreactor](/content/items/artifact-damaged-powergrid-upgrades/) | – |
+| [Flawed remote sensor amplifier](/content/items/artifact-damaged-remote-sensor-booster/) | – |
+| [Flawed universal armor](/content/items/artifact-damaged-resistant-plating/) | – |
+| [Flawed light missile launcher](/content/items/artifact-damaged-rocket-launcher/) | – |
+| [Flawed sensor amplifier](/content/items/artifact-damaged-sensor-booster/) | – |
+| [Flawed sensor suppressor](/content/items/artifact-damaged-sensor-dampener/) | – |
+| [Flawed ECM](/content/items/artifact-damaged-sensor-jammer/) | – |
+| [Flawed shield hardener](/content/items/artifact-damaged-shield-hardener/) | – |
+| [Flawed light armor plate](/content/items/artifact-damaged-small-armor-plate/) | – |
+| [Flawed small armor repairer](/content/items/artifact-damaged-small-armor-repairer/) | – |
+| [Flawed small auxiliary accumulator](/content/items/artifact-damaged-small-core-battery/) | – |
+| [Flawed small energy injector](/content/items/artifact-damaged-small-core-booster/) | – |
+| [Flawed small miner module](/content/items/artifact-damaged-small-driller/) | – |
+| [Flawed small energy neutralizer](/content/items/artifact-damaged-small-energy-neutralizer/) | – |
+| [Flawed small energy transferer](/content/items/artifact-damaged-small-energy-transfer/) | – |
+| [Flawed small energy drainer](/content/items/artifact-damaged-small-energy-vampire/) | – |
+| [Flawed small harvester](/content/items/artifact-damaged-small-harvester/) | – |
+| [Flawed light HCL laser](/content/items/artifact-damaged-small-laser/) | – |
+| [Flawed light EM-gun](/content/items/artifact-damaged-small-railgun/) | – |
+| [Flawed small remote armor repairer](/content/items/artifact-damaged-small-remote-armor-repairer/) | – |
+| [Flawed small shield generator](/content/items/artifact-damaged-small-shield-generator/) | – |
+| [Flawed signal masker](/content/items/artifact-damaged-stealth-modul/) | – |
+| [Flawed target marker](/content/items/artifact-damaged-target-painter/) | – |
+| [Flawed thermal armor](/content/items/artifact-damaged-thrm-armor-hardener/) | – |
+| [Flawed range extender](/content/items/artifact-damaged-tracking-upgrade/) | – |
+| [Flawed S-demobilizer](/content/items/artifact-damaged-webber/) | – |
 | [Niani armor repairer tuning](/content/items/artifact-a-armor-repairer-upgrade/) | 3 |
 | [Niani interference module](/content/items/artifact-a-blob-emission-modulator/) | 3 |
 | [Niani cargo scanner](/content/items/artifact-a-cargo-scanner/) | 3 |
@@ -3412,66 +3472,6 @@ Artifact items.
 | [Niani range extender](/content/items/artifact-a-tracking-upgrade/) | 3 |
 | [Niani S-demobilizer](/content/items/artifact-a-webber/) | 3 |
 | [Artifact Collectible Item](/content/items/artifact-collectible-item/) | – |
-| [Flawed armor repairer tuning](/content/items/artifact-damaged-armor-repairer-upgrade/) | – |
-| [Flawed interference module](/content/items/artifact-damaged-blob-emission-modulator/) | – |
-| [Flawed cargo scanner](/content/items/artifact-damaged-cargo-scanner/) | – |
-| [Flawed chassis scanner](/content/items/artifact-damaged-chassis-scanner/) | – |
-| [Flawed chemical armor](/content/items/artifact-damaged-chm-armor-hardener/) | – |
-| [Flawed accumulator recharger](/content/items/artifact-damaged-core-recharger/) | – |
-| [Flawed coprocessor](/content/items/artifact-damaged-cpu-upgrade/) | – |
-| [Flawed laser tuning](/content/items/artifact-damaged-damage-mod-laser/) | – |
-| [Flawed missile launcher tuning](/content/items/artifact-damaged-damage-mod-missile/) | – |
-| [Flawed magnetic weapon tuning](/content/items/artifact-damaged-damage-mod-railgun/) | – |
-| [Flawed signal detector](/content/items/artifact-damaged-detection-modul/) | – |
-| [Flawed ECCM](/content/items/artifact-damaged-eccm/) | – |
-| [Flawed seismic armor](/content/items/artifact-damaged-exp-armor-hardener/) | – |
-| [Flawed kinetic armor](/content/items/artifact-damaged-kin-armor-hardener/) | – |
-| [Flawed medium HCL laser](/content/items/artifact-damaged-longrange-medium-laser/) | – |
-| [Flawed medium EM-gun](/content/items/artifact-damaged-longrange-medium-railgun/) | – |
-| [Flawed evasive module](/content/items/artifact-damaged-maneuvering-upgrade/) | – |
-| [Flawed lightweight frame](/content/items/artifact-damaged-mass-reductor/) | – |
-| [Flawed medium armor plate](/content/items/artifact-damaged-medium-armor-plate/) | – |
-| [Flawed medium armor repairer](/content/items/artifact-damaged-medium-armor-repairer/) | – |
-| [Flawed medium auxiliary accumulator](/content/items/artifact-damaged-medium-core-battery/) | – |
-| [Flawed medium energy injector](/content/items/artifact-damaged-medium-core-booster/) | – |
-| [Flawed medium miner module](/content/items/artifact-damaged-medium-driller/) | – |
-| [Flawed medium energy neutralizer](/content/items/artifact-damaged-medium-energy-neutralizer/) | – |
-| [Flawed medium energy transferer](/content/items/artifact-damaged-medium-energy-transfer/) | – |
-| [Flawed medium energy drainer](/content/items/artifact-damaged-medium-energy-vampire/) | – |
-| [Flawed medium harvester](/content/items/artifact-damaged-medium-harvester/) | – |
-| [Flawed medium LCL laser](/content/items/artifact-damaged-medium-laser/) | – |
-| [Flawed medium Gauss gun](/content/items/artifact-damaged-medium-railgun/) | – |
-| [Flawed medium remote armor repairer](/content/items/artifact-damaged-medium-remote-armor-repairer/) | – |
-| [Flawed medium shield generator](/content/items/artifact-damaged-medium-shield-generator/) | – |
-| [Flawed geoscanner](/content/items/artifact-damaged-mining-probe-module/) | – |
-| [Flawed industrial tuning](/content/items/artifact-damaged-mining-upgrade/) | – |
-| [Flawed medium missile launcher](/content/items/artifact-damaged-missile-launcher/) | – |
-| [Flawed coreactor](/content/items/artifact-damaged-powergrid-upgrades/) | – |
-| [Flawed remote sensor amplifier](/content/items/artifact-damaged-remote-sensor-booster/) | – |
-| [Flawed universal armor](/content/items/artifact-damaged-resistant-plating/) | – |
-| [Flawed light missile launcher](/content/items/artifact-damaged-rocket-launcher/) | – |
-| [Flawed sensor amplifier](/content/items/artifact-damaged-sensor-booster/) | – |
-| [Flawed sensor suppressor](/content/items/artifact-damaged-sensor-dampener/) | – |
-| [Flawed ECM](/content/items/artifact-damaged-sensor-jammer/) | – |
-| [Flawed shield hardener](/content/items/artifact-damaged-shield-hardener/) | – |
-| [Flawed light armor plate](/content/items/artifact-damaged-small-armor-plate/) | – |
-| [Flawed small armor repairer](/content/items/artifact-damaged-small-armor-repairer/) | – |
-| [Flawed small auxiliary accumulator](/content/items/artifact-damaged-small-core-battery/) | – |
-| [Flawed small energy injector](/content/items/artifact-damaged-small-core-booster/) | – |
-| [Flawed small miner module](/content/items/artifact-damaged-small-driller/) | – |
-| [Flawed small energy neutralizer](/content/items/artifact-damaged-small-energy-neutralizer/) | – |
-| [Flawed small energy transferer](/content/items/artifact-damaged-small-energy-transfer/) | – |
-| [Flawed small energy drainer](/content/items/artifact-damaged-small-energy-vampire/) | – |
-| [Flawed small harvester](/content/items/artifact-damaged-small-harvester/) | – |
-| [Flawed light HCL laser](/content/items/artifact-damaged-small-laser/) | – |
-| [Flawed light EM-gun](/content/items/artifact-damaged-small-railgun/) | – |
-| [Flawed small remote armor repairer](/content/items/artifact-damaged-small-remote-armor-repairer/) | – |
-| [Flawed small shield generator](/content/items/artifact-damaged-small-shield-generator/) | – |
-| [Flawed signal masker](/content/items/artifact-damaged-stealth-modul/) | – |
-| [Flawed target marker](/content/items/artifact-damaged-target-painter/) | – |
-| [Flawed thermal armor](/content/items/artifact-damaged-thrm-armor-hardener/) | – |
-| [Flawed range extender](/content/items/artifact-damaged-tracking-upgrade/) | – |
-| [Flawed S-demobilizer](/content/items/artifact-damaged-webber/) | – |
 | [Ancient data console](/content/items/artifact-spark-unlock/) | – |
 
 ## Decorations (339)
@@ -3850,203 +3850,578 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | Item | Tier |
 |---|---|
 | [Arbalest MK2 A (CT capsule)](/content/items/arbalest-mk2-a-ct-capsule/) | 1 |
+| [Argano MK2 A (CT capsule)](/content/items/argano-mk2-a-ct-capsule/) | 1 |
+| [Artemis MK2 A (CT capsule)](/content/items/artemis-mk2-a-ct-capsule/) | 1 |
+| [Baphomet MK2 A (CT capsule)](/content/items/baphomet-mk2-a-ct-capsule/) | 1 |
+| [Cameleon MK2 A (CT capsule)](/content/items/cameleon-mk2-a-ct-capsule/) | 1 |
+| [Castel MK2 A (CT capsule)](/content/items/castel-mk2-a-ct-capsule/) | 1 |
+| [Gargoyle MK2 A (CT capsule)](/content/items/gargoyle-mk2-a-ct-capsule/) | 1 |
+| [Gropho MK2 A (CT capsule)](/content/items/gropho-mk2-a-ct-capsule/) | 1 |
+| [Ictus MK2 A (CT capsule)](/content/items/ictus-mk2-a-ct-capsule/) | 1 |
+| [Intakt MK2 A (CT capsule)](/content/items/intakt-mk2-a-ct-capsule/) | 1 |
+| [Kain MK2 A (CT capsule)](/content/items/kain-mk2-a-ct-capsule/) | 1 |
+| [Laird MK2 A (CT capsule)](/content/items/laird-mk2-a-ct-capsule/) | 1 |
+| [Lithus MK2 A (CT capsule)](/content/items/lithus-mk2-a-ct-capsule/) | 1 |
+| [Mesmer MK2 A (CT capsule)](/content/items/mesmer-mk2-a-ct-capsule/) | 1 |
+| [Prometheus MK2 A (CT capsule)](/content/items/prometheus-mk2-a-ct-capsule/) | 1 |
+| [Riveler MK2 A (CT capsule)](/content/items/riveler-mk2-a-ct-capsule/) | 1 |
+| [Scarab MK2 A (CT capsule)](/content/items/scarab-mk2-a-ct-capsule/) | 1 |
+| [Sequer MK2 A (CT capsule)](/content/items/sequer-mk2-a-ct-capsule/) | 1 |
+| [Seth MK2 A (CT capsule)](/content/items/seth-mk2-a-ct-capsule/) | 1 |
+| [Specimen Sap Item Dynamic Cprg](/content/items/specimen-sap-item-dynamic-cprg/) | 1 |
+| [Spectator Mk3 A (CT capsule)](/content/items/spectator-mk3-a-ct-capsule/) | 1 |
+| [Symbiont MK2 A (CT capsule)](/content/items/symbiont-mk2-a-ct-capsule/) | 1 |
+| [Termis MK2 A (CT capsule)](/content/items/termis-mk2-a-ct-capsule/) | 1 |
+| [Troiar MK2 A (CT capsule)](/content/items/troiar-mk2-a-ct-capsule/) | 1 |
+| [Tyrannos MK2 A (CT capsule)](/content/items/tyrannos-mk2-a-ct-capsule/) | 1 |
+| [Vagabond MK2 A (CT capsule)](/content/items/vagabond-mk2-a-ct-capsule/) | 1 |
+| [Waspish MK2 A (CT capsule)](/content/items/waspish-mk2-a-ct-capsule/) | 1 |
+| [Yagel MK2 A (CT capsule)](/content/items/yagel-mk2-a-ct-capsule/) | 1 |
+| [Zenith MK2 A (CT capsule)](/content/items/zenith-mk2-a-ct-capsule/) | 1 |
 | [Arbalest MK2 A Dynamic Cprg](/content/items/arbalest-mk2-a-dynamic-cprg/) | 2 |
 | [Arbalest MK2 B (CT capsule)](/content/items/arbalest-mk2-b-ct-capsule/) | 2 |
 | [Arbalest MK2 B Dynamic Cprg](/content/items/arbalest-mk2-b-dynamic-cprg/) | 2 |
-| [Arbalest MK2 C (CT capsule)](/content/items/arbalest-mk2-c-ct-capsule/) | 3 |
 | [Arbalest MK2 C Dynamic Cprg](/content/items/arbalest-mk2-c-dynamic-cprg/) | 2 |
-| [Argano MK2 A (CT capsule)](/content/items/argano-mk2-a-ct-capsule/) | 1 |
 | [Argano MK2 A Dynamic Cprg](/content/items/argano-mk2-a-dynamic-cprg/) | 2 |
 | [Argano MK2 B (CT capsule)](/content/items/argano-mk2-b-ct-capsule/) | 2 |
 | [Argano MK2 B Dynamic Cprg](/content/items/argano-mk2-b-dynamic-cprg/) | 2 |
-| [Argano MK2 C (CT capsule)](/content/items/argano-mk2-c-ct-capsule/) | 3 |
 | [Argano MK2 C Dynamic Cprg](/content/items/argano-mk2-c-dynamic-cprg/) | 2 |
-| [Artemis MK2 A (CT capsule)](/content/items/artemis-mk2-a-ct-capsule/) | 1 |
 | [Artemis MK2 A Dynamic Cprg](/content/items/artemis-mk2-a-dynamic-cprg/) | 2 |
 | [Artemis MK2 B (CT capsule)](/content/items/artemis-mk2-b-ct-capsule/) | 2 |
 | [Artemis MK2 B Dynamic Cprg](/content/items/artemis-mk2-b-dynamic-cprg/) | 2 |
-| [Artemis MK2 C (CT capsule)](/content/items/artemis-mk2-c-ct-capsule/) | 3 |
 | [Artemis MK2 C Dynamic Cprg](/content/items/artemis-mk2-c-dynamic-cprg/) | 2 |
-| [Baphomet MK2 A (CT capsule)](/content/items/baphomet-mk2-a-ct-capsule/) | 1 |
 | [Baphomet MK2 A Dynamic Cprg](/content/items/baphomet-mk2-a-dynamic-cprg/) | 2 |
 | [Baphomet MK2 B (CT capsule)](/content/items/baphomet-mk2-b-ct-capsule/) | 2 |
 | [Baphomet MK2 B Dynamic Cprg](/content/items/baphomet-mk2-b-dynamic-cprg/) | 2 |
-| [Baphomet MK2 C (CT capsule)](/content/items/baphomet-mk2-c-ct-capsule/) | 3 |
 | [Baphomet MK2 C Dynamic Cprg](/content/items/baphomet-mk2-c-dynamic-cprg/) | 2 |
-| [Callisto Bot (CT capsule)](/content/items/callisto-bot-ct-capsule/) | – |
-| [Callisto Bot Cprg](/content/items/callisto-bot-cprg/) | – |
-| [Cameleon MK2 A (CT capsule)](/content/items/cameleon-mk2-a-ct-capsule/) | 1 |
 | [Cameleon MK2 A Dynamic Cprg](/content/items/cameleon-mk2-a-dynamic-cprg/) | 2 |
 | [Cameleon MK2 B (CT capsule)](/content/items/cameleon-mk2-b-ct-capsule/) | 2 |
 | [Cameleon MK2 B Dynamic Cprg](/content/items/cameleon-mk2-b-dynamic-cprg/) | 2 |
-| [Cameleon MK2 C (CT capsule)](/content/items/cameleon-mk2-c-ct-capsule/) | 3 |
 | [Cameleon MK2 C Dynamic Cprg](/content/items/cameleon-mk2-c-dynamic-cprg/) | 2 |
-| [Castel MK2 A (CT capsule)](/content/items/castel-mk2-a-ct-capsule/) | 1 |
 | [Castel MK2 A Dynamic Cprg](/content/items/castel-mk2-a-dynamic-cprg/) | 2 |
 | [Castel MK2 B (CT capsule)](/content/items/castel-mk2-b-ct-capsule/) | 2 |
 | [Castel MK2 B Dynamic Cprg](/content/items/castel-mk2-b-dynamic-cprg/) | 2 |
-| [Castel MK2 C (CT capsule)](/content/items/castel-mk2-c-ct-capsule/) | 3 |
 | [Castel MK2 C Dynamic Cprg](/content/items/castel-mk2-c-dynamic-cprg/) | 2 |
+| [Gargoyle MK2 A Dynamic Cprg](/content/items/gargoyle-mk2-a-dynamic-cprg/) | 2 |
+| [Gargoyle MK2 B (CT capsule)](/content/items/gargoyle-mk2-b-ct-capsule/) | 2 |
+| [Gargoyle MK2 B Dynamic Cprg](/content/items/gargoyle-mk2-b-dynamic-cprg/) | 2 |
+| [Gargoyle MK2 C Dynamic Cprg](/content/items/gargoyle-mk2-c-dynamic-cprg/) | 2 |
+| [Gropho MK2 A Dynamic Cprg](/content/items/gropho-mk2-a-dynamic-cprg/) | 2 |
+| [Gropho MK2 B (CT capsule)](/content/items/gropho-mk2-b-ct-capsule/) | 2 |
+| [Gropho MK2 B Dynamic Cprg](/content/items/gropho-mk2-b-dynamic-cprg/) | 2 |
+| [Gropho MK2 C Dynamic Cprg](/content/items/gropho-mk2-c-dynamic-cprg/) | 2 |
+| [Ictus MK2 A Dynamic Cprg](/content/items/ictus-mk2-a-dynamic-cprg/) | 2 |
+| [Ictus MK2 B (CT capsule)](/content/items/ictus-mk2-b-ct-capsule/) | 2 |
+| [Ictus MK2 B Dynamic Cprg](/content/items/ictus-mk2-b-dynamic-cprg/) | 2 |
+| [Ictus MK2 C Dynamic Cprg](/content/items/ictus-mk2-c-dynamic-cprg/) | 2 |
+| [Intakt MK2 A Dynamic Cprg](/content/items/intakt-mk2-a-dynamic-cprg/) | 2 |
+| [Intakt MK2 B (CT capsule)](/content/items/intakt-mk2-b-ct-capsule/) | 2 |
+| [Intakt MK2 B Dynamic Cprg](/content/items/intakt-mk2-b-dynamic-cprg/) | 2 |
+| [Intakt MK2 C Dynamic Cprg](/content/items/intakt-mk2-c-dynamic-cprg/) | 2 |
+| [Kain MK2 A Dynamic Cprg](/content/items/kain-mk2-a-dynamic-cprg/) | 2 |
+| [Kain MK2 B (CT capsule)](/content/items/kain-mk2-b-ct-capsule/) | 2 |
+| [Kain MK2 B Dynamic Cprg](/content/items/kain-mk2-b-dynamic-cprg/) | 2 |
+| [Kain MK2 C Dynamic Cprg](/content/items/kain-mk2-c-dynamic-cprg/) | 2 |
+| [Laird MK2 A Dynamic Cprg](/content/items/laird-mk2-a-dynamic-cprg/) | 2 |
+| [Laird MK2 B (CT capsule)](/content/items/laird-mk2-b-ct-capsule/) | 2 |
+| [Laird MK2 B Dynamic Cprg](/content/items/laird-mk2-b-dynamic-cprg/) | 2 |
+| [Laird MK2 C Dynamic Cprg](/content/items/laird-mk2-c-dynamic-cprg/) | 2 |
+| [Lithus MK2 A Dynamic Cprg](/content/items/lithus-mk2-a-dynamic-cprg/) | 2 |
+| [Lithus MK2 B (CT capsule)](/content/items/lithus-mk2-b-ct-capsule/) | 2 |
+| [Lithus MK2 B Dynamic Cprg](/content/items/lithus-mk2-b-dynamic-cprg/) | 2 |
+| [Lithus MK2 C Dynamic Cprg](/content/items/lithus-mk2-c-dynamic-cprg/) | 2 |
+| [Mesmer MK2 A Dynamic Cprg](/content/items/mesmer-mk2-a-dynamic-cprg/) | 2 |
+| [Mesmer MK2 B (CT capsule)](/content/items/mesmer-mk2-b-ct-capsule/) | 2 |
+| [Mesmer MK2 B Dynamic Cprg](/content/items/mesmer-mk2-b-dynamic-cprg/) | 2 |
+| [Mesmer MK2 C Dynamic Cprg](/content/items/mesmer-mk2-c-dynamic-cprg/) | 2 |
+| [Prometheus MK2 A Dynamic Cprg](/content/items/prometheus-mk2-a-dynamic-cprg/) | 2 |
+| [Prometheus MK2 B (CT capsule)](/content/items/prometheus-mk2-b-ct-capsule/) | 2 |
+| [Prometheus MK2 B Dynamic Cprg](/content/items/prometheus-mk2-b-dynamic-cprg/) | 2 |
+| [Prometheus MK2 C Dynamic Cprg](/content/items/prometheus-mk2-c-dynamic-cprg/) | 2 |
+| [Riveler MK2 A Dynamic Cprg](/content/items/riveler-mk2-a-dynamic-cprg/) | 2 |
+| [Riveler MK2 B (CT capsule)](/content/items/riveler-mk2-b-ct-capsule/) | 2 |
+| [Riveler MK2 B Dynamic Cprg](/content/items/riveler-mk2-b-dynamic-cprg/) | 2 |
+| [Riveler MK2 C Dynamic Cprg](/content/items/riveler-mk2-c-dynamic-cprg/) | 2 |
+| [Scarab MK2 A Dynamic Cprg](/content/items/scarab-mk2-a-dynamic-cprg/) | 2 |
+| [Scarab MK2 B (CT capsule)](/content/items/scarab-mk2-b-ct-capsule/) | 2 |
+| [Scarab MK2 B Dynamic Cprg](/content/items/scarab-mk2-b-dynamic-cprg/) | 2 |
+| [Scarab MK2 C Dynamic Cprg](/content/items/scarab-mk2-c-dynamic-cprg/) | 2 |
+| [Sequer MK2 A Dynamic Cprg](/content/items/sequer-mk2-a-dynamic-cprg/) | 2 |
+| [Sequer MK2 B (CT capsule)](/content/items/sequer-mk2-b-ct-capsule/) | 2 |
+| [Sequer MK2 B Dynamic Cprg](/content/items/sequer-mk2-b-dynamic-cprg/) | 2 |
+| [Sequer MK2 C Dynamic Cprg](/content/items/sequer-mk2-c-dynamic-cprg/) | 2 |
+| [Seth MK2 A Dynamic Cprg](/content/items/seth-mk2-a-dynamic-cprg/) | 2 |
+| [Seth MK2 B (CT capsule)](/content/items/seth-mk2-b-ct-capsule/) | 2 |
+| [Seth MK2 B Dynamic Cprg](/content/items/seth-mk2-b-dynamic-cprg/) | 2 |
+| [Seth MK2 C Dynamic Cprg](/content/items/seth-mk2-c-dynamic-cprg/) | 2 |
+| [Symbiont MK2 A Dynamic Cprg](/content/items/symbiont-mk2-a-dynamic-cprg/) | 2 |
+| [Symbiont MK2 B (CT capsule)](/content/items/symbiont-mk2-b-ct-capsule/) | 2 |
+| [Symbiont MK2 B Dynamic Cprg](/content/items/symbiont-mk2-b-dynamic-cprg/) | 2 |
+| [Symbiont MK2 C Dynamic Cprg](/content/items/symbiont-mk2-c-dynamic-cprg/) | 2 |
+| [Termis MK2 A Dynamic Cprg](/content/items/termis-mk2-a-dynamic-cprg/) | 2 |
+| [Termis MK2 B (CT capsule)](/content/items/termis-mk2-b-ct-capsule/) | 2 |
+| [Termis MK2 B Dynamic Cprg](/content/items/termis-mk2-b-dynamic-cprg/) | 2 |
+| [Termis MK2 C Dynamic Cprg](/content/items/termis-mk2-c-dynamic-cprg/) | 2 |
+| [Troiar MK2 A Dynamic Cprg](/content/items/troiar-mk2-a-dynamic-cprg/) | 2 |
+| [Troiar MK2 B (CT capsule)](/content/items/troiar-mk2-b-ct-capsule/) | 2 |
+| [Troiar MK2 B Dynamic Cprg](/content/items/troiar-mk2-b-dynamic-cprg/) | 2 |
+| [Troiar MK2 C Dynamic Cprg](/content/items/troiar-mk2-c-dynamic-cprg/) | 2 |
+| [Tyrannos MK2 A Dynamic Cprg](/content/items/tyrannos-mk2-a-dynamic-cprg/) | 2 |
+| [Tyrannos MK2 B (CT capsule)](/content/items/tyrannos-mk2-b-ct-capsule/) | 2 |
+| [Tyrannos MK2 B Dynamic Cprg](/content/items/tyrannos-mk2-b-dynamic-cprg/) | 2 |
+| [Tyrannos MK2 C Dynamic Cprg](/content/items/tyrannos-mk2-c-dynamic-cprg/) | 2 |
+| [Vagabond MK2 A Dynamic Cprg](/content/items/vagabond-mk2-a-dynamic-cprg/) | 2 |
+| [Vagabond MK2 B (CT capsule)](/content/items/vagabond-mk2-b-ct-capsule/) | 2 |
+| [Vagabond MK2 B Dynamic Cprg](/content/items/vagabond-mk2-b-dynamic-cprg/) | 2 |
+| [Vagabond MK2 C Dynamic Cprg](/content/items/vagabond-mk2-c-dynamic-cprg/) | 2 |
+| [Waspish MK2 A Dynamic Cprg](/content/items/waspish-mk2-a-dynamic-cprg/) | 2 |
+| [Waspish MK2 B (CT capsule)](/content/items/waspish-mk2-b-ct-capsule/) | 2 |
+| [Waspish MK2 B Dynamic Cprg](/content/items/waspish-mk2-b-dynamic-cprg/) | 2 |
+| [Waspish MK2 C Dynamic Cprg](/content/items/waspish-mk2-c-dynamic-cprg/) | 2 |
+| [Yagel MK2 A Dynamic Cprg](/content/items/yagel-mk2-a-dynamic-cprg/) | 2 |
+| [Yagel MK2 B (CT capsule)](/content/items/yagel-mk2-b-ct-capsule/) | 2 |
+| [Yagel MK2 B Dynamic Cprg](/content/items/yagel-mk2-b-dynamic-cprg/) | 2 |
+| [Yagel MK2 C Dynamic Cprg](/content/items/yagel-mk2-c-dynamic-cprg/) | 2 |
+| [Zenith MK2 A Dynamic Cprg](/content/items/zenith-mk2-a-dynamic-cprg/) | 2 |
+| [Zenith MK2 B (CT capsule)](/content/items/zenith-mk2-b-ct-capsule/) | 2 |
+| [Zenith MK2 B Dynamic Cprg](/content/items/zenith-mk2-b-dynamic-cprg/) | 2 |
+| [Zenith MK2 C Dynamic Cprg](/content/items/zenith-mk2-c-dynamic-cprg/) | 2 |
+| [Arbalest MK2 C (CT capsule)](/content/items/arbalest-mk2-c-ct-capsule/) | 3 |
+| [Argano MK2 C (CT capsule)](/content/items/argano-mk2-c-ct-capsule/) | 3 |
+| [Artemis MK2 C (CT capsule)](/content/items/artemis-mk2-c-ct-capsule/) | 3 |
+| [Baphomet MK2 C (CT capsule)](/content/items/baphomet-mk2-c-ct-capsule/) | 3 |
+| [Cameleon MK2 C (CT capsule)](/content/items/cameleon-mk2-c-ct-capsule/) | 3 |
+| [Castel MK2 C (CT capsule)](/content/items/castel-mk2-c-ct-capsule/) | 3 |
+| [Gargoyle MK2 C (CT capsule)](/content/items/gargoyle-mk2-c-ct-capsule/) | 3 |
+| [Gropho MK2 C (CT capsule)](/content/items/gropho-mk2-c-ct-capsule/) | 3 |
+| [Ictus MK2 C (CT capsule)](/content/items/ictus-mk2-c-ct-capsule/) | 3 |
+| [Intakt MK2 C (CT capsule)](/content/items/intakt-mk2-c-ct-capsule/) | 3 |
+| [Kain MK2 C (CT capsule)](/content/items/kain-mk2-c-ct-capsule/) | 3 |
+| [Laird MK2 C (CT capsule)](/content/items/laird-mk2-c-ct-capsule/) | 3 |
+| [Lithus MK2 C (CT capsule)](/content/items/lithus-mk2-c-ct-capsule/) | 3 |
+| [Mesmer MK2 C (CT capsule)](/content/items/mesmer-mk2-c-ct-capsule/) | 3 |
+| [Prometheus MK2 C (CT capsule)](/content/items/prometheus-mk2-c-ct-capsule/) | 3 |
+| [Riveler MK2 C (CT capsule)](/content/items/riveler-mk2-c-ct-capsule/) | 3 |
+| [Scarab MK2 C (CT capsule)](/content/items/scarab-mk2-c-ct-capsule/) | 3 |
+| [Sequer MK2 C (CT capsule)](/content/items/sequer-mk2-c-ct-capsule/) | 3 |
+| [Seth MK2 C (CT capsule)](/content/items/seth-mk2-c-ct-capsule/) | 3 |
+| [Spectator Bot A Dynamic Cprg](/content/items/spectator-bot-a-dynamic-cprg/) | 3 |
+| [Symbiont MK2 C (CT capsule)](/content/items/symbiont-mk2-c-ct-capsule/) | 3 |
+| [Termis MK2 C (CT capsule)](/content/items/termis-mk2-c-ct-capsule/) | 3 |
+| [Troiar MK2 C (CT capsule)](/content/items/troiar-mk2-c-ct-capsule/) | 3 |
+| [Tyrannos MK2 C (CT capsule)](/content/items/tyrannos-mk2-c-ct-capsule/) | 3 |
+| [Vagabond MK2 C (CT capsule)](/content/items/vagabond-mk2-c-ct-capsule/) | 3 |
+| [Waspish MK2 C (CT capsule)](/content/items/waspish-mk2-c-ct-capsule/) | 3 |
+| [Yagel MK2 C (CT capsule)](/content/items/yagel-mk2-c-ct-capsule/) | 3 |
+| [Zenith MK2 C (CT capsule)](/content/items/zenith-mk2-c-ct-capsule/) | 3 |
+| [Callisto Bot (CT capsule)](/content/items/callisto-bot-ct-capsule/) | – |
+| [Callisto Bot Cprg](/content/items/callisto-bot-cprg/) | – |
 | [Cronus Bot (CT capsule)](/content/items/cronus-bot-ct-capsule/) | – |
 | [Cronus Bot Cprg](/content/items/cronus-bot-cprg/) | – |
 | [Daidalos Bot (CT capsule)](/content/items/daidalos-bot-ct-capsule/) | – |
 | [Daidalos CT](/content/items/daidalos-bot-cprg/) | – |
 | [Echelon Bot (CT capsule)](/content/items/echelon-bot-ct-capsule/) | – |
 | [Echelon Bot Cprg](/content/items/echelon-bot-cprg/) | – |
-| [Gargoyle MK2 A (CT capsule)](/content/items/gargoyle-mk2-a-ct-capsule/) | 1 |
-| [Gargoyle MK2 A Dynamic Cprg](/content/items/gargoyle-mk2-a-dynamic-cprg/) | 2 |
-| [Gargoyle MK2 B (CT capsule)](/content/items/gargoyle-mk2-b-ct-capsule/) | 2 |
-| [Gargoyle MK2 B Dynamic Cprg](/content/items/gargoyle-mk2-b-dynamic-cprg/) | 2 |
-| [Gargoyle MK2 C (CT capsule)](/content/items/gargoyle-mk2-c-ct-capsule/) | 3 |
-| [Gargoyle MK2 C Dynamic Cprg](/content/items/gargoyle-mk2-c-dynamic-cprg/) | 2 |
-| [Gropho MK2 A (CT capsule)](/content/items/gropho-mk2-a-ct-capsule/) | 1 |
-| [Gropho MK2 A Dynamic Cprg](/content/items/gropho-mk2-a-dynamic-cprg/) | 2 |
-| [Gropho MK2 B (CT capsule)](/content/items/gropho-mk2-b-ct-capsule/) | 2 |
-| [Gropho MK2 B Dynamic Cprg](/content/items/gropho-mk2-b-dynamic-cprg/) | 2 |
-| [Gropho MK2 C (CT capsule)](/content/items/gropho-mk2-c-ct-capsule/) | 3 |
-| [Gropho MK2 C Dynamic Cprg](/content/items/gropho-mk2-c-dynamic-cprg/) | 2 |
 | [Helix Bot (CT capsule)](/content/items/helix-bot-ct-capsule/) | – |
 | [Helix Bot Cprg](/content/items/helix-bot-cprg/) | – |
 | [Hermes Bot (CT capsule)](/content/items/hermes-bot-ct-capsule/) | – |
 | [Hermes Bot Cprg](/content/items/hermes-bot-cprg/) | – |
-| [Ictus MK2 A (CT capsule)](/content/items/ictus-mk2-a-ct-capsule/) | 1 |
-| [Ictus MK2 A Dynamic Cprg](/content/items/ictus-mk2-a-dynamic-cprg/) | 2 |
-| [Ictus MK2 B (CT capsule)](/content/items/ictus-mk2-b-ct-capsule/) | 2 |
-| [Ictus MK2 B Dynamic Cprg](/content/items/ictus-mk2-b-dynamic-cprg/) | 2 |
-| [Ictus MK2 C (CT capsule)](/content/items/ictus-mk2-c-ct-capsule/) | 3 |
-| [Ictus MK2 C Dynamic Cprg](/content/items/ictus-mk2-c-dynamic-cprg/) | 2 |
 | [Ikarus Bot (CT capsule)](/content/items/ikarus-bot-ct-capsule/) | – |
 | [Ikarus Bot Cprg](/content/items/ikarus-bot-cprg/) | – |
-| [Intakt MK2 A (CT capsule)](/content/items/intakt-mk2-a-ct-capsule/) | 1 |
-| [Intakt MK2 A Dynamic Cprg](/content/items/intakt-mk2-a-dynamic-cprg/) | 2 |
-| [Intakt MK2 B (CT capsule)](/content/items/intakt-mk2-b-ct-capsule/) | 2 |
-| [Intakt MK2 B Dynamic Cprg](/content/items/intakt-mk2-b-dynamic-cprg/) | 2 |
-| [Intakt MK2 C (CT capsule)](/content/items/intakt-mk2-c-ct-capsule/) | 3 |
-| [Intakt MK2 C Dynamic Cprg](/content/items/intakt-mk2-c-dynamic-cprg/) | 2 |
-| [Kain MK2 A (CT capsule)](/content/items/kain-mk2-a-ct-capsule/) | 1 |
-| [Kain MK2 A Dynamic Cprg](/content/items/kain-mk2-a-dynamic-cprg/) | 2 |
-| [Kain MK2 B (CT capsule)](/content/items/kain-mk2-b-ct-capsule/) | 2 |
-| [Kain MK2 B Dynamic Cprg](/content/items/kain-mk2-b-dynamic-cprg/) | 2 |
-| [Kain MK2 C (CT capsule)](/content/items/kain-mk2-c-ct-capsule/) | 3 |
-| [Kain MK2 C Dynamic Cprg](/content/items/kain-mk2-c-dynamic-cprg/) | 2 |
-| [Laird MK2 A (CT capsule)](/content/items/laird-mk2-a-ct-capsule/) | 1 |
-| [Laird MK2 A Dynamic Cprg](/content/items/laird-mk2-a-dynamic-cprg/) | 2 |
-| [Laird MK2 B (CT capsule)](/content/items/laird-mk2-b-ct-capsule/) | 2 |
-| [Laird MK2 B Dynamic Cprg](/content/items/laird-mk2-b-dynamic-cprg/) | 2 |
-| [Laird MK2 C (CT capsule)](/content/items/laird-mk2-c-ct-capsule/) | 3 |
-| [Laird MK2 C Dynamic Cprg](/content/items/laird-mk2-c-dynamic-cprg/) | 2 |
 | [Legatus Bot (CT capsule)](/content/items/legatus-bot-ct-capsule/) | – |
 | [Legatus Bot Cprg](/content/items/legatus-bot-cprg/) | – |
-| [Lithus MK2 A (CT capsule)](/content/items/lithus-mk2-a-ct-capsule/) | 1 |
-| [Lithus MK2 A Dynamic Cprg](/content/items/lithus-mk2-a-dynamic-cprg/) | 2 |
-| [Lithus MK2 B (CT capsule)](/content/items/lithus-mk2-b-ct-capsule/) | 2 |
-| [Lithus MK2 B Dynamic Cprg](/content/items/lithus-mk2-b-dynamic-cprg/) | 2 |
-| [Lithus MK2 C (CT capsule)](/content/items/lithus-mk2-c-ct-capsule/) | 3 |
-| [Lithus MK2 C Dynamic Cprg](/content/items/lithus-mk2-c-dynamic-cprg/) | 2 |
 | [Locust Bot (CT capsule)](/content/items/locust-bot-ct-capsule/) | – |
 | [Locust Bot Cprg](/content/items/locust-bot-cprg/) | – |
-| [Mesmer MK2 A (CT capsule)](/content/items/mesmer-mk2-a-ct-capsule/) | 1 |
-| [Mesmer MK2 A Dynamic Cprg](/content/items/mesmer-mk2-a-dynamic-cprg/) | 2 |
-| [Mesmer MK2 B (CT capsule)](/content/items/mesmer-mk2-b-ct-capsule/) | 2 |
-| [Mesmer MK2 B Dynamic Cprg](/content/items/mesmer-mk2-b-dynamic-cprg/) | 2 |
-| [Mesmer MK2 C (CT capsule)](/content/items/mesmer-mk2-c-ct-capsule/) | 3 |
-| [Mesmer MK2 C Dynamic Cprg](/content/items/mesmer-mk2-c-dynamic-cprg/) | 2 |
 | [Metis Bot (CT capsule)](/content/items/metis-bot-ct-capsule/) | – |
 | [Metis Bot Cprg](/content/items/metis-bot-cprg/) | – |
-| [Prometheus MK2 A (CT capsule)](/content/items/prometheus-mk2-a-ct-capsule/) | 1 |
-| [Prometheus MK2 A Dynamic Cprg](/content/items/prometheus-mk2-a-dynamic-cprg/) | 2 |
-| [Prometheus MK2 B (CT capsule)](/content/items/prometheus-mk2-b-ct-capsule/) | 2 |
-| [Prometheus MK2 B Dynamic Cprg](/content/items/prometheus-mk2-b-dynamic-cprg/) | 2 |
-| [Prometheus MK2 C (CT capsule)](/content/items/prometheus-mk2-c-ct-capsule/) | 3 |
-| [Prometheus MK2 C Dynamic Cprg](/content/items/prometheus-mk2-c-dynamic-cprg/) | 2 |
-| [Riveler MK2 A (CT capsule)](/content/items/riveler-mk2-a-ct-capsule/) | 1 |
-| [Riveler MK2 A Dynamic Cprg](/content/items/riveler-mk2-a-dynamic-cprg/) | 2 |
-| [Riveler MK2 B (CT capsule)](/content/items/riveler-mk2-b-ct-capsule/) | 2 |
-| [Riveler MK2 B Dynamic Cprg](/content/items/riveler-mk2-b-dynamic-cprg/) | 2 |
-| [Riveler MK2 C (CT capsule)](/content/items/riveler-mk2-c-ct-capsule/) | 3 |
-| [Riveler MK2 C Dynamic Cprg](/content/items/riveler-mk2-c-dynamic-cprg/) | 2 |
-| [Scarab MK2 A (CT capsule)](/content/items/scarab-mk2-a-ct-capsule/) | 1 |
-| [Scarab MK2 A Dynamic Cprg](/content/items/scarab-mk2-a-dynamic-cprg/) | 2 |
-| [Scarab MK2 B (CT capsule)](/content/items/scarab-mk2-b-ct-capsule/) | 2 |
-| [Scarab MK2 B Dynamic Cprg](/content/items/scarab-mk2-b-dynamic-cprg/) | 2 |
-| [Scarab MK2 C (CT capsule)](/content/items/scarab-mk2-c-ct-capsule/) | 3 |
-| [Scarab MK2 C Dynamic Cprg](/content/items/scarab-mk2-c-dynamic-cprg/) | 2 |
-| [Sequer MK2 A (CT capsule)](/content/items/sequer-mk2-a-ct-capsule/) | 1 |
-| [Sequer MK2 A Dynamic Cprg](/content/items/sequer-mk2-a-dynamic-cprg/) | 2 |
-| [Sequer MK2 B (CT capsule)](/content/items/sequer-mk2-b-ct-capsule/) | 2 |
-| [Sequer MK2 B Dynamic Cprg](/content/items/sequer-mk2-b-dynamic-cprg/) | 2 |
-| [Sequer MK2 C (CT capsule)](/content/items/sequer-mk2-c-ct-capsule/) | 3 |
-| [Sequer MK2 C Dynamic Cprg](/content/items/sequer-mk2-c-dynamic-cprg/) | 2 |
-| [Seth MK2 A (CT capsule)](/content/items/seth-mk2-a-ct-capsule/) | 1 |
-| [Seth MK2 A Dynamic Cprg](/content/items/seth-mk2-a-dynamic-cprg/) | 2 |
-| [Seth MK2 B (CT capsule)](/content/items/seth-mk2-b-ct-capsule/) | 2 |
-| [Seth MK2 B Dynamic Cprg](/content/items/seth-mk2-b-dynamic-cprg/) | 2 |
-| [Seth MK2 C (CT capsule)](/content/items/seth-mk2-c-ct-capsule/) | 3 |
-| [Seth MK2 C Dynamic Cprg](/content/items/seth-mk2-c-dynamic-cprg/) | 2 |
-| [Specimen Sap Item Dynamic Cprg](/content/items/specimen-sap-item-dynamic-cprg/) | 1 |
-| [Spectator Bot A Dynamic Cprg](/content/items/spectator-bot-a-dynamic-cprg/) | 3 |
-| [Spectator Mk3 A (CT capsule)](/content/items/spectator-mk3-a-ct-capsule/) | 1 |
-| [Symbiont MK2 A (CT capsule)](/content/items/symbiont-mk2-a-ct-capsule/) | 1 |
-| [Symbiont MK2 A Dynamic Cprg](/content/items/symbiont-mk2-a-dynamic-cprg/) | 2 |
-| [Symbiont MK2 B (CT capsule)](/content/items/symbiont-mk2-b-ct-capsule/) | 2 |
-| [Symbiont MK2 B Dynamic Cprg](/content/items/symbiont-mk2-b-dynamic-cprg/) | 2 |
-| [Symbiont MK2 C (CT capsule)](/content/items/symbiont-mk2-c-ct-capsule/) | 3 |
-| [Symbiont MK2 C Dynamic Cprg](/content/items/symbiont-mk2-c-dynamic-cprg/) | 2 |
-| [Termis MK2 A (CT capsule)](/content/items/termis-mk2-a-ct-capsule/) | 1 |
-| [Termis MK2 A Dynamic Cprg](/content/items/termis-mk2-a-dynamic-cprg/) | 2 |
-| [Termis MK2 B (CT capsule)](/content/items/termis-mk2-b-ct-capsule/) | 2 |
-| [Termis MK2 B Dynamic Cprg](/content/items/termis-mk2-b-dynamic-cprg/) | 2 |
-| [Termis MK2 C (CT capsule)](/content/items/termis-mk2-c-ct-capsule/) | 3 |
-| [Termis MK2 C Dynamic Cprg](/content/items/termis-mk2-c-dynamic-cprg/) | 2 |
-| [Troiar MK2 A (CT capsule)](/content/items/troiar-mk2-a-ct-capsule/) | 1 |
-| [Troiar MK2 A Dynamic Cprg](/content/items/troiar-mk2-a-dynamic-cprg/) | 2 |
-| [Troiar MK2 B (CT capsule)](/content/items/troiar-mk2-b-ct-capsule/) | 2 |
-| [Troiar MK2 B Dynamic Cprg](/content/items/troiar-mk2-b-dynamic-cprg/) | 2 |
-| [Troiar MK2 C (CT capsule)](/content/items/troiar-mk2-c-ct-capsule/) | 3 |
-| [Troiar MK2 C Dynamic Cprg](/content/items/troiar-mk2-c-dynamic-cprg/) | 2 |
-| [Tyrannos MK2 A (CT capsule)](/content/items/tyrannos-mk2-a-ct-capsule/) | 1 |
-| [Tyrannos MK2 A Dynamic Cprg](/content/items/tyrannos-mk2-a-dynamic-cprg/) | 2 |
-| [Tyrannos MK2 B (CT capsule)](/content/items/tyrannos-mk2-b-ct-capsule/) | 2 |
-| [Tyrannos MK2 B Dynamic Cprg](/content/items/tyrannos-mk2-b-dynamic-cprg/) | 2 |
-| [Tyrannos MK2 C (CT capsule)](/content/items/tyrannos-mk2-c-ct-capsule/) | 3 |
-| [Tyrannos MK2 C Dynamic Cprg](/content/items/tyrannos-mk2-c-dynamic-cprg/) | 2 |
-| [Vagabond MK2 A (CT capsule)](/content/items/vagabond-mk2-a-ct-capsule/) | 1 |
-| [Vagabond MK2 A Dynamic Cprg](/content/items/vagabond-mk2-a-dynamic-cprg/) | 2 |
-| [Vagabond MK2 B (CT capsule)](/content/items/vagabond-mk2-b-ct-capsule/) | 2 |
-| [Vagabond MK2 B Dynamic Cprg](/content/items/vagabond-mk2-b-dynamic-cprg/) | 2 |
-| [Vagabond MK2 C (CT capsule)](/content/items/vagabond-mk2-c-ct-capsule/) | 3 |
-| [Vagabond MK2 C Dynamic Cprg](/content/items/vagabond-mk2-c-dynamic-cprg/) | 2 |
 | [Vektor Bot (CT capsule)](/content/items/vektor-bot-ct-capsule/) | – |
 | [Vektor Bot Cprg](/content/items/vektor-bot-cprg/) | – |
-| [Waspish MK2 A (CT capsule)](/content/items/waspish-mk2-a-ct-capsule/) | 1 |
-| [Waspish MK2 A Dynamic Cprg](/content/items/waspish-mk2-a-dynamic-cprg/) | 2 |
-| [Waspish MK2 B (CT capsule)](/content/items/waspish-mk2-b-ct-capsule/) | 2 |
-| [Waspish MK2 B Dynamic Cprg](/content/items/waspish-mk2-b-dynamic-cprg/) | 2 |
-| [Waspish MK2 C (CT capsule)](/content/items/waspish-mk2-c-ct-capsule/) | 3 |
-| [Waspish MK2 C Dynamic Cprg](/content/items/waspish-mk2-c-dynamic-cprg/) | 2 |
-| [Yagel MK2 A (CT capsule)](/content/items/yagel-mk2-a-ct-capsule/) | 1 |
-| [Yagel MK2 A Dynamic Cprg](/content/items/yagel-mk2-a-dynamic-cprg/) | 2 |
-| [Yagel MK2 B (CT capsule)](/content/items/yagel-mk2-b-ct-capsule/) | 2 |
-| [Yagel MK2 B Dynamic Cprg](/content/items/yagel-mk2-b-dynamic-cprg/) | 2 |
-| [Yagel MK2 C (CT capsule)](/content/items/yagel-mk2-c-ct-capsule/) | 3 |
-| [Yagel MK2 C Dynamic Cprg](/content/items/yagel-mk2-c-dynamic-cprg/) | 2 |
-| [Zenith MK2 A (CT capsule)](/content/items/zenith-mk2-a-ct-capsule/) | 1 |
-| [Zenith MK2 A Dynamic Cprg](/content/items/zenith-mk2-a-dynamic-cprg/) | 2 |
-| [Zenith MK2 B (CT capsule)](/content/items/zenith-mk2-b-ct-capsule/) | 2 |
-| [Zenith MK2 B Dynamic Cprg](/content/items/zenith-mk2-b-dynamic-cprg/) | 2 |
-| [Zenith MK2 C (CT capsule)](/content/items/zenith-mk2-c-ct-capsule/) | 3 |
-| [Zenith MK2 C Dynamic Cprg](/content/items/zenith-mk2-c-dynamic-cprg/) | 2 |
 
 ### Miscellaneous (668)
 
 | Item | Tier |
 |---|---|
+| [Boost Ep T0](/content/items/boost-ep-t0/) | – |
+| [Construction Module Ammo T0](/content/items/construction-module-ammo-t0/) | – |
+| [Pbs Expiring Docking Base](/content/items/pbs-expiring-docking-base/) | – |
+| [Pbs Expiring Docking Base Capsule](/content/items/pbs-expiring-docking-base-capsule/) | – |
+| [Pbs Expiring Docking Base Object](/content/items/pbs-expiring-docking-base-object/) | – |
+| [Server Wide Ep Booster T0](/content/items/server-wide-ep-booster-t0/) | – |
+| [Boost Ep T1](/content/items/boost-ep-t1/) | 1 |
+| [Construction Module Ammo T1](/content/items/construction-module-ammo-t1/) | 1 |
+| [Construction Module Ammo T1 Pr](/content/items/construction-module-ammo-t1-pr/) | 1 |
+| [Outpost Decay](/content/items/outpost-decay/) | 1 |
+| [Standard energy backbone node](/content/items/pbs-xl-core-transmitter-small/) | 1 |
+| [Pbs XL Core Transmitter Small Capsule](/content/items/pbs-xl-core-transmitter-small-capsule/) | 1 |
+| [Pbs XL Core Transmitter Small Capsule Pr](/content/items/pbs-xl-core-transmitter-small-capsule-pr/) | 1 |
+| [Pbs XL Core Transmitter Small Object](/content/items/pbs-xl-core-transmitter-small-object/) | 1 |
+| [Standard repair node](/content/items/pbs-armor-repairer-small/) | 1 |
+| [Standard repair node foundation](/content/items/pbs-armor-repairer-small-object/) | 1 |
+| [Hi-tech Aura emitter](/content/items/pbs-aura-emitter-large/) | 1 |
+| [Pbs Aura Emitter Large Object](/content/items/pbs-aura-emitter-large-object/) | 1 |
+| [Advanced Aura emitter](/content/items/pbs-aura-emitter-medium/) | 1 |
+| [Pbs Aura Emitter Medium Object](/content/items/pbs-aura-emitter-medium-object/) | 1 |
+| [Standard Aura emitter](/content/items/pbs-aura-emitter-small/) | 1 |
+| [Pbs Aura Emitter Small Capsule](/content/items/pbs-aura-emitter-small-capsule/) | 1 |
+| [Pbs Aura Emitter Small Capsule Pr](/content/items/pbs-aura-emitter-small-capsule-pr/) | 1 |
+| [Pbs Aura Emitter Small Object](/content/items/pbs-aura-emitter-small-object/) | 1 |
+| [Standard calibration lab](/content/items/pbs-calibration-forge-small/) | 1 |
+| [Pbs Calibration Forge Small Capsule](/content/items/pbs-calibration-forge-small-capsule/) | 1 |
+| [Pbs Calibration Forge Small Capsule Pr](/content/items/pbs-calibration-forge-small-capsule-pr/) | 1 |
+| [Pbs Calibration Forge Small Object](/content/items/pbs-calibration-forge-small-object/) | 1 |
+| [Standard command relay](/content/items/pbs-control-tower-small/) | 1 |
+| [Pbs Control Tower Small Capsule](/content/items/pbs-control-tower-small-capsule/) | 1 |
+| [Pbs Control Tower Small Capsule Pr](/content/items/pbs-control-tower-small-capsule-pr/) | 1 |
+| [Pbs Control Tower Small Object](/content/items/pbs-control-tower-small-object/) | 1 |
+| [Standard energy battery](/content/items/pbs-core-battery-small/) | 1 |
+| [Pbs Core Battery Small Capsule](/content/items/pbs-core-battery-small-capsule/) | 1 |
+| [Pbs Core Battery Small Capsule Pr](/content/items/pbs-core-battery-small-capsule-pr/) | 1 |
+| [Pbs Core Battery Small Object](/content/items/pbs-core-battery-small-object/) | 1 |
+| [Standard energy transmitter node](/content/items/pbs-core-transmitter-small/) | 1 |
+| [Pbs Core Transmitter Small Capsule](/content/items/pbs-core-transmitter-small-capsule/) | 1 |
+| [Pbs Core Transmitter Small Capsule Pr](/content/items/pbs-core-transmitter-small-capsule-pr/) | 1 |
+| [Pbs Core Transmitter Small Object](/content/items/pbs-core-transmitter-small-object/) | 1 |
+| [Standard main terminal](/content/items/pbs-docking-base-small/) | 1 |
+| [Pbs Docking Base Small Capsule](/content/items/pbs-docking-base-small-capsule/) | 1 |
+| [Pbs Docking Base Small Capsule Pr](/content/items/pbs-docking-base-small-capsule-pr/) | 1 |
+| [Pbs Docking Base Small Object](/content/items/pbs-docking-base-small-object/) | 1 |
+| [Standard booster node](/content/items/pbs-effect-supplier-small/) | 1 |
+| [Standard booster node foundation](/content/items/pbs-effect-supplier-small-object/) | 1 |
+| [Standard energy well](/content/items/pbs-energywell-small/) | 1 |
+| [Pbs Energywell Small Capsule](/content/items/pbs-energywell-small-capsule/) | 1 |
+| [Pbs Energywell Small Capsule Pr](/content/items/pbs-energywell-small-capsule-pr/) | 1 |
+| [Pbs Energywell Small Object](/content/items/pbs-energywell-small-object/) | 1 |
+| [Standard accelerator strip](/content/items/pbs-highwaynode-small/) | 1 |
+| [Pbs Highwaynode Small Capsule](/content/items/pbs-highwaynode-small-capsule/) | 1 |
+| [Pbs Highwaynode Small Capsule Pr](/content/items/pbs-highwaynode-small-capsule-pr/) | 1 |
+| [Pbs Highwaynode Small Object](/content/items/pbs-highwaynode-small-object/) | 1 |
+| [Standard masker](/content/items/pbs-maskertower-small/) | 1 |
+| [Pbs Maskertower Small Capsule](/content/items/pbs-maskertower-small-capsule/) | 1 |
+| [Pbs Maskertower Small Capsule Pr](/content/items/pbs-maskertower-small-capsule-pr/) | 1 |
+| [Pbs Maskertower Small Object](/content/items/pbs-maskertower-small-object/) | 1 |
+| [Standard factory](/content/items/pbs-mill-small/) | 1 |
+| [Pbs Mill Small Capsule](/content/items/pbs-mill-small-capsule/) | 1 |
+| [Pbs Mill Small Capsule Pr](/content/items/pbs-mill-small-capsule-pr/) | 1 |
+| [Pbs Mill Small Object](/content/items/pbs-mill-small-object/) | 1 |
+| [Standard mining outpost](/content/items/pbs-mining-tower-small/) | 1 |
+| [Pbs Mining Tower Small Capsule](/content/items/pbs-mining-tower-small-capsule/) | 1 |
+| [Pbs Mining Tower Small Capsule Pr](/content/items/pbs-mining-tower-small-capsule-pr/) | 1 |
+| [Pbs Mining Tower Small Object](/content/items/pbs-mining-tower-small-object/) | 1 |
+| [Standard facility upgrade](/content/items/pbs-production-upgrade-small/) | 1 |
+| [Pbs Production Upgrade Small Capsule](/content/items/pbs-production-upgrade-small-capsule/) | 1 |
+| [Pbs Production Upgrade Small Capsule Pr](/content/items/pbs-production-upgrade-small-capsule-pr/) | 1 |
+| [Pbs Production Upgrade Small Object](/content/items/pbs-production-upgrade-small-object/) | 1 |
+| [Standard prototype facility](/content/items/pbs-prototyper-small/) | 1 |
+| [Pbs Prototyper Small Capsule](/content/items/pbs-prototyper-small-capsule/) | 1 |
+| [Pbs Prototyper Small Capsule Pr](/content/items/pbs-prototyper-small-capsule-pr/) | 1 |
+| [Pbs Prototyper Small Object](/content/items/pbs-prototyper-small-object/) | 1 |
+| [Standard reactor](/content/items/pbs-reactor-small/) | 1 |
+| [Pbs Reactor Small Capsule](/content/items/pbs-reactor-small-capsule/) | 1 |
+| [Pbs Reactor Small Capsule Pr](/content/items/pbs-reactor-small-capsule-pr/) | 1 |
+| [Pbs Reactor Small Object](/content/items/pbs-reactor-small-object/) | 1 |
+| [Standard refinery](/content/items/pbs-refinery-small/) | 1 |
+| [Pbs Refinery Small Capsule](/content/items/pbs-refinery-small-capsule/) | 1 |
+| [Pbs Refinery Small Capsule Pr](/content/items/pbs-refinery-small-capsule-pr/) | 1 |
+| [Pbs Refinery Small Object](/content/items/pbs-refinery-small-object/) | 1 |
+| [Standard repair shop](/content/items/pbs-repair-small/) | 1 |
+| [Pbs Repair Small Capsule](/content/items/pbs-repair-small-capsule/) | 1 |
+| [Pbs Repair Small Capsule Pr](/content/items/pbs-repair-small-capsule-pr/) | 1 |
+| [Pbs Repair Small Object](/content/items/pbs-repair-small-object/) | 1 |
+| [Standard recycling plant](/content/items/pbs-reprocessor-small/) | 1 |
+| [Pbs Reprocessor Small Capsule](/content/items/pbs-reprocessor-small-capsule/) | 1 |
+| [Pbs Reprocessor Small Capsule Pr](/content/items/pbs-reprocessor-small-capsule-pr/) | 1 |
+| [Pbs Reprocessor Small Object](/content/items/pbs-reprocessor-small-object/) | 1 |
+| [Standard decoder lab](/content/items/pbs-research-kit-forge-small/) | 1 |
+| [Pbs Research Kit Forge Small Capsule](/content/items/pbs-research-kit-forge-small-capsule/) | 1 |
+| [Pbs Research Kit Forge Small Capsule Pr](/content/items/pbs-research-kit-forge-small-capsule-pr/) | 1 |
+| [Pbs Research Kit Forge Small Object](/content/items/pbs-research-kit-forge-small-object/) | 1 |
+| [Standard reverse engineering](/content/items/pbs-research-lab-small/) | 1 |
+| [Pbs Research Lab Small Capsule](/content/items/pbs-research-lab-small-capsule/) | 1 |
+| [Pbs Research Lab Small Capsule Pr](/content/items/pbs-research-lab-small-capsule-pr/) | 1 |
+| [Pbs Research Lab Small Object](/content/items/pbs-research-lab-small-object/) | 1 |
+| [Standard EW turret](/content/items/pbs-turret-ew-small/) | 1 |
+| [Pbs Turret Ew Small Capsule](/content/items/pbs-turret-ew-small-capsule/) | 1 |
+| [Pbs Turret Ew Small Capsule Pr](/content/items/pbs-turret-ew-small-capsule-pr/) | 1 |
+| [Pbs Turret Ew Small Object](/content/items/pbs-turret-ew-small-object/) | 1 |
+| [Standard laser turret](/content/items/pbs-turret-laser-small/) | 1 |
+| [Pbs Turret Laser Small Capsule](/content/items/pbs-turret-laser-small-capsule/) | 1 |
+| [Pbs Turret Laser Small Capsule Pr](/content/items/pbs-turret-laser-small-capsule-pr/) | 1 |
+| [Pbs Turret Laser Small Object](/content/items/pbs-turret-laser-small-object/) | 1 |
+| [Standard missile turret](/content/items/pbs-turret-missile-small/) | 1 |
+| [Pbs Turret Missile Small Capsule](/content/items/pbs-turret-missile-small-capsule/) | 1 |
+| [Pbs Turret Missile Small Capsule Pr](/content/items/pbs-turret-missile-small-capsule-pr/) | 1 |
+| [Pbs Turret Missile Small Object](/content/items/pbs-turret-missile-small-object/) | 1 |
+| [Standard EM-turret](/content/items/pbs-turret-rail-small/) | 1 |
+| [Pbs Turret Rail Small Capsule](/content/items/pbs-turret-rail-small-capsule/) | 1 |
+| [Pbs Turret Rail Small Capsule Pr](/content/items/pbs-turret-rail-small-capsule-pr/) | 1 |
+| [Pbs Turret Rail Small Object](/content/items/pbs-turret-rail-small-object/) | 1 |
+| [Server Wide Ep Booster T1](/content/items/server-wide-ep-booster-t1/) | 1 |
+| [Standard Hunter Drone Pve](/content/items/standard-hunter-drone-pve/) | 1 |
+| [Standard Hunter Drone Pvp](/content/items/standard-hunter-drone-pvp/) | 1 |
+| [Standard Hunter Drone Rcu Pve](/content/items/standard-hunter-drone-rcu-pve/) | 1 |
+| [Standard Hunter Drone Rcu Pvp](/content/items/standard-hunter-drone-rcu-pvp/) | 1 |
+| [Standart Harvesting Turret](/content/items/standart-harvesting-turret/) | 1 |
+| [Standart Harvesting Turret Unit](/content/items/standart-harvesting-turret-unit/) | 1 |
+| [Standart Mining Turret](/content/items/standart-mining-turret/) | 1 |
+| [Standart Mining Turret Unit](/content/items/standart-mining-turret-unit/) | 1 |
+| [Standart Nuimqol Combat Drone](/content/items/standart-nuimqol-combat-drone/) | 1 |
+| [Standart Nuimqol Combat Drone Unit](/content/items/standart-nuimqol-combat-drone-unit/) | 1 |
+| [Standart Pelistal Combat Drone](/content/items/standart-pelistal-combat-drone/) | 1 |
+| [Standart Pelistal Combat Drone Unit](/content/items/standart-pelistal-combat-drone-unit/) | 1 |
+| [Standart Sentry Turret](/content/items/standart-sentry-turret/) | 1 |
+| [Standart Sentry Turret Unit](/content/items/standart-sentry-turret-unit/) | 1 |
+| [Standart Thelodica Combat Drone](/content/items/standart-thelodica-combat-drone/) | 1 |
+| [Standart Thelodica Combat Drone Unit](/content/items/standart-thelodica-combat-drone-unit/) | 1 |
+| [Wall Bomb A](/content/items/wall-bomb-a/) | 1 |
+| [Wall Bomb A Capsule](/content/items/wall-bomb-a-capsule/) | 1 |
+| [Arkhe2 Bot Pink](/content/items/arkhe2-bot-pink/) | 2 |
+| [Boost Ep T2](/content/items/boost-ep-t2/) | 2 |
+| [Construction Module Ammo T2](/content/items/construction-module-ammo-t2/) | 2 |
+| [Construction Module Ammo T2 Pr](/content/items/construction-module-ammo-t2-pr/) | 2 |
+| [Named1 Harvesting Turret](/content/items/named1-harvesting-turret/) | 2 |
+| [Named1 Harvesting Turret Unit](/content/items/named1-harvesting-turret-unit/) | 2 |
+| [Named1 Mining Turret](/content/items/named1-mining-turret/) | 2 |
+| [Named1 Mining Turret Unit](/content/items/named1-mining-turret-unit/) | 2 |
+| [Named1 Nuimqol Combat Drone](/content/items/named1-nuimqol-combat-drone/) | 2 |
+| [Named1 Nuimqol Combat Drone Unit](/content/items/named1-nuimqol-combat-drone-unit/) | 2 |
+| [Named1 Pelistal Combat Drone](/content/items/named1-pelistal-combat-drone/) | 2 |
+| [Named1 Pelistal Combat Drone Unit](/content/items/named1-pelistal-combat-drone-unit/) | 2 |
+| [Named1 Sentry Turret](/content/items/named1-sentry-turret/) | 2 |
+| [Named1 Sentry Turret Unit](/content/items/named1-sentry-turret-unit/) | 2 |
+| [Named1 Thelodica Combat Drone](/content/items/named1-thelodica-combat-drone/) | 2 |
+| [Named1 Thelodica Combat Drone Unit](/content/items/named1-thelodica-combat-drone-unit/) | 2 |
+| [Advanced energy backbone node](/content/items/pbs-xl-core-transmitter-medium/) | 2 |
+| [Pbs XL Core Transmitter Medium Capsule](/content/items/pbs-xl-core-transmitter-medium-capsule/) | 2 |
+| [Pbs XL Core Transmitter Medium Capsule Pr](/content/items/pbs-xl-core-transmitter-medium-capsule-pr/) | 2 |
+| [Pbs XL Core Transmitter Medium Object](/content/items/pbs-xl-core-transmitter-medium-object/) | 2 |
+| [Advanced repair node](/content/items/pbs-armor-repairer-medium/) | 2 |
+| [Advanced repair node foundation](/content/items/pbs-armor-repairer-medium-object/) | 2 |
+| [Pbs Aura Emitter Medium Capsule](/content/items/pbs-aura-emitter-medium-capsule/) | 2 |
+| [Pbs Aura Emitter Medium Capsule Pr](/content/items/pbs-aura-emitter-medium-capsule-pr/) | 2 |
+| [Advanced calibration lab](/content/items/pbs-calibration-forge-medium/) | 2 |
+| [Pbs Calibration Forge Medium Capsule](/content/items/pbs-calibration-forge-medium-capsule/) | 2 |
+| [Pbs Calibration Forge Medium Capsule Pr](/content/items/pbs-calibration-forge-medium-capsule-pr/) | 2 |
+| [Pbs Calibration Forge Medium Object](/content/items/pbs-calibration-forge-medium-object/) | 2 |
+| [Advanced command relay](/content/items/pbs-control-tower-medium/) | 2 |
+| [Pbs Control Tower Medium Capsule](/content/items/pbs-control-tower-medium-capsule/) | 2 |
+| [Pbs Control Tower Medium Capsule Pr](/content/items/pbs-control-tower-medium-capsule-pr/) | 2 |
+| [Pbs Control Tower Medium Object](/content/items/pbs-control-tower-medium-object/) | 2 |
+| [Advanced energy battery](/content/items/pbs-core-battery-medium/) | 2 |
+| [Pbs Core Battery Medium Capsule](/content/items/pbs-core-battery-medium-capsule/) | 2 |
+| [Pbs Core Battery Medium Capsule Pr](/content/items/pbs-core-battery-medium-capsule-pr/) | 2 |
+| [Pbs Core Battery Medium Object](/content/items/pbs-core-battery-medium-object/) | 2 |
+| [Advanced energy transmitter node](/content/items/pbs-core-transmitter-medium/) | 2 |
+| [Pbs Core Transmitter Medium Capsule](/content/items/pbs-core-transmitter-medium-capsule/) | 2 |
+| [Pbs Core Transmitter Medium Capsule Pr](/content/items/pbs-core-transmitter-medium-capsule-pr/) | 2 |
+| [Pbs Core Transmitter Medium Object](/content/items/pbs-core-transmitter-medium-object/) | 2 |
+| [Advanced main terminal](/content/items/pbs-docking-base-medium/) | 2 |
+| [Pbs Docking Base Medium Capsule](/content/items/pbs-docking-base-medium-capsule/) | 2 |
+| [Pbs Docking Base Medium Capsule Pr](/content/items/pbs-docking-base-medium-capsule-pr/) | 2 |
+| [Pbs Docking Base Medium Object](/content/items/pbs-docking-base-medium-object/) | 2 |
+| [Advanced booster node](/content/items/pbs-effect-supplier-medium/) | 2 |
+| [Advanced booster node foundation](/content/items/pbs-effect-supplier-medium-object/) | 2 |
+| [Advanced energy well](/content/items/pbs-energywell-medium/) | 2 |
+| [Pbs Energywell Medium Capsule](/content/items/pbs-energywell-medium-capsule/) | 2 |
+| [Pbs Energywell Medium Capsule Pr](/content/items/pbs-energywell-medium-capsule-pr/) | 2 |
+| [Pbs Energywell Medium Object](/content/items/pbs-energywell-medium-object/) | 2 |
+| [Advanced accelerator strip](/content/items/pbs-highwaynode-medium/) | 2 |
+| [Pbs Highwaynode Medium Capsule](/content/items/pbs-highwaynode-medium-capsule/) | 2 |
+| [Pbs Highwaynode Medium Capsule Pr](/content/items/pbs-highwaynode-medium-capsule-pr/) | 2 |
+| [Pbs Highwaynode Medium Object](/content/items/pbs-highwaynode-medium-object/) | 2 |
+| [Advanced masker](/content/items/pbs-maskertower-medium/) | 2 |
+| [Pbs Maskertower Medium Capsule](/content/items/pbs-maskertower-medium-capsule/) | 2 |
+| [Pbs Maskertower Medium Capsule Pr](/content/items/pbs-maskertower-medium-capsule-pr/) | 2 |
+| [Pbs Maskertower Medium Object](/content/items/pbs-maskertower-medium-object/) | 2 |
+| [Advanced factory](/content/items/pbs-mill-medium/) | 2 |
+| [Pbs Mill Medium Capsule](/content/items/pbs-mill-medium-capsule/) | 2 |
+| [Pbs Mill Medium Capsule Pr](/content/items/pbs-mill-medium-capsule-pr/) | 2 |
+| [Pbs Mill Medium Object](/content/items/pbs-mill-medium-object/) | 2 |
+| [Advanced mining outpost](/content/items/pbs-mining-tower-medium/) | 2 |
+| [Pbs Mining Tower Medium Capsule](/content/items/pbs-mining-tower-medium-capsule/) | 2 |
+| [Pbs Mining Tower Medium Capsule Pr](/content/items/pbs-mining-tower-medium-capsule-pr/) | 2 |
+| [Pbs Mining Tower Medium Object](/content/items/pbs-mining-tower-medium-object/) | 2 |
+| [Advanced facility upgrade](/content/items/pbs-production-upgrade-medium/) | 2 |
+| [Pbs Production Upgrade Medium Capsule](/content/items/pbs-production-upgrade-medium-capsule/) | 2 |
+| [Pbs Production Upgrade Medium Capsule Pr](/content/items/pbs-production-upgrade-medium-capsule-pr/) | 2 |
+| [Pbs Production Upgrade Medium Object](/content/items/pbs-production-upgrade-medium-object/) | 2 |
+| [Advanced prototype facility](/content/items/pbs-prototyper-medium/) | 2 |
+| [Pbs Prototyper Medium Capsule](/content/items/pbs-prototyper-medium-capsule/) | 2 |
+| [Pbs Prototyper Medium Capsule Pr](/content/items/pbs-prototyper-medium-capsule-pr/) | 2 |
+| [Pbs Prototyper Medium Object](/content/items/pbs-prototyper-medium-object/) | 2 |
+| [Advanced reactor](/content/items/pbs-reactor-medium/) | 2 |
+| [Pbs Reactor Medium Capsule](/content/items/pbs-reactor-medium-capsule/) | 2 |
+| [Pbs Reactor Medium Capsule Pr](/content/items/pbs-reactor-medium-capsule-pr/) | 2 |
+| [Pbs Reactor Medium Object](/content/items/pbs-reactor-medium-object/) | 2 |
+| [Advanced refinery](/content/items/pbs-refinery-medium/) | 2 |
+| [Pbs Refinery Medium Capsule](/content/items/pbs-refinery-medium-capsule/) | 2 |
+| [Pbs Refinery Medium Capsule Pr](/content/items/pbs-refinery-medium-capsule-pr/) | 2 |
+| [Pbs Refinery Medium Object](/content/items/pbs-refinery-medium-object/) | 2 |
+| [Advanced repair shop](/content/items/pbs-repair-medium/) | 2 |
+| [Pbs Repair Medium Capsule](/content/items/pbs-repair-medium-capsule/) | 2 |
+| [Pbs Repair Medium Capsule Pr](/content/items/pbs-repair-medium-capsule-pr/) | 2 |
+| [Pbs Repair Medium Object](/content/items/pbs-repair-medium-object/) | 2 |
+| [Advanced recycling plant](/content/items/pbs-reprocessor-medium/) | 2 |
+| [Pbs Reprocessor Medium Capsule](/content/items/pbs-reprocessor-medium-capsule/) | 2 |
+| [Pbs Reprocessor Medium Capsule Pr](/content/items/pbs-reprocessor-medium-capsule-pr/) | 2 |
+| [Pbs Reprocessor Medium Object](/content/items/pbs-reprocessor-medium-object/) | 2 |
+| [Advanced decoder lab](/content/items/pbs-research-kit-forge-medium/) | 2 |
+| [Pbs Research Kit Forge Medium Capsule](/content/items/pbs-research-kit-forge-medium-capsule/) | 2 |
+| [Pbs Research Kit Forge Medium Capsule Pr](/content/items/pbs-research-kit-forge-medium-capsule-pr/) | 2 |
+| [Pbs Research Kit Forge Medium Object](/content/items/pbs-research-kit-forge-medium-object/) | 2 |
+| [Advanced reverse engineering](/content/items/pbs-research-lab-medium/) | 2 |
+| [Pbs Research Lab Medium Capsule](/content/items/pbs-research-lab-medium-capsule/) | 2 |
+| [Pbs Research Lab Medium Capsule Pr](/content/items/pbs-research-lab-medium-capsule-pr/) | 2 |
+| [Pbs Research Lab Medium Object](/content/items/pbs-research-lab-medium-object/) | 2 |
+| [Advanced EW turret](/content/items/pbs-turret-ew-medium/) | 2 |
+| [Pbs Turret Ew Medium Capsule](/content/items/pbs-turret-ew-medium-capsule/) | 2 |
+| [Pbs Turret Ew Medium Capsule Pr](/content/items/pbs-turret-ew-medium-capsule-pr/) | 2 |
+| [Pbs Turret Ew Medium Object](/content/items/pbs-turret-ew-medium-object/) | 2 |
+| [Advanced laser turret](/content/items/pbs-turret-laser-medium/) | 2 |
+| [Pbs Turret Laser Medium Capsule](/content/items/pbs-turret-laser-medium-capsule/) | 2 |
+| [Pbs Turret Laser Medium Capsule Pr](/content/items/pbs-turret-laser-medium-capsule-pr/) | 2 |
+| [Pbs Turret Laser Medium Object](/content/items/pbs-turret-laser-medium-object/) | 2 |
+| [Advanced missile turret](/content/items/pbs-turret-missile-medium/) | 2 |
+| [Pbs Turret Missile Medium Capsule](/content/items/pbs-turret-missile-medium-capsule/) | 2 |
+| [Pbs Turret Missile Medium Capsule Pr](/content/items/pbs-turret-missile-medium-capsule-pr/) | 2 |
+| [Pbs Turret Missile Medium Object](/content/items/pbs-turret-missile-medium-object/) | 2 |
+| [Advanced EM-turret](/content/items/pbs-turret-rail-medium/) | 2 |
+| [Pbs Turret Rail Medium Capsule](/content/items/pbs-turret-rail-medium-capsule/) | 2 |
+| [Pbs Turret Rail Medium Capsule Pr](/content/items/pbs-turret-rail-medium-capsule-pr/) | 2 |
+| [Pbs Turret Rail Medium Object](/content/items/pbs-turret-rail-medium-object/) | 2 |
+| [Server Wide Ep Booster T2](/content/items/server-wide-ep-booster-t2/) | 2 |
+| [Wall Bomb B](/content/items/wall-bomb-b/) | 2 |
+| [Wall Bomb B Capsule](/content/items/wall-bomb-b-capsule/) | 2 |
+| [Boost Ep T3](/content/items/boost-ep-t3/) | 3 |
+| [Construction Module Ammo T3](/content/items/construction-module-ammo-t3/) | 3 |
+| [Construction Module Ammo T3 Pr](/content/items/construction-module-ammo-t3-pr/) | 3 |
+| [Named2 Harvesting Turret](/content/items/named2-harvesting-turret/) | 3 |
+| [Named2 Harvesting Turret Unit](/content/items/named2-harvesting-turret-unit/) | 3 |
+| [Named2 Mining Turret](/content/items/named2-mining-turret/) | 3 |
+| [Named2 Mining Turret Unit](/content/items/named2-mining-turret-unit/) | 3 |
+| [Named2 Nuimqol Combat Drone](/content/items/named2-nuimqol-combat-drone/) | 3 |
+| [Named2 Nuimqol Combat Drone Unit](/content/items/named2-nuimqol-combat-drone-unit/) | 3 |
+| [Named2 Pelistal Combat Drone](/content/items/named2-pelistal-combat-drone/) | 3 |
+| [Named2 Pelistal Combat Drone Unit](/content/items/named2-pelistal-combat-drone-unit/) | 3 |
+| [Named2 Sentry Turret](/content/items/named2-sentry-turret/) | 3 |
+| [Named2 Sentry Turret Unit](/content/items/named2-sentry-turret-unit/) | 3 |
+| [Named2 Thelodica Combat Drone](/content/items/named2-thelodica-combat-drone/) | 3 |
+| [Named2 Thelodica Combat Drone Unit](/content/items/named2-thelodica-combat-drone-unit/) | 3 |
+| [Hi-tech energy backbone node](/content/items/pbs-xl-core-transmitter-large/) | 3 |
+| [Pbs XL Core Transmitter Large Capsule](/content/items/pbs-xl-core-transmitter-large-capsule/) | 3 |
+| [Pbs XL Core Transmitter Large Capsule Pr](/content/items/pbs-xl-core-transmitter-large-capsule-pr/) | 3 |
+| [Pbs XL Core Transmitter Large Object](/content/items/pbs-xl-core-transmitter-large-object/) | 3 |
+| [Hi-tech repair node](/content/items/pbs-armor-repairer-large/) | 3 |
+| [Hi-tech repair node foundation](/content/items/pbs-armor-repairer-large-object/) | 3 |
+| [Pbs Aura Emitter Large Capsule](/content/items/pbs-aura-emitter-large-capsule/) | 3 |
+| [Pbs Aura Emitter Large Capsule Pr](/content/items/pbs-aura-emitter-large-capsule-pr/) | 3 |
+| [Hi-tech calibration lab](/content/items/pbs-calibration-forge-large/) | 3 |
+| [Pbs Calibration Forge Large Capsule](/content/items/pbs-calibration-forge-large-capsule/) | 3 |
+| [Pbs Calibration Forge Large Capsule Pr](/content/items/pbs-calibration-forge-large-capsule-pr/) | 3 |
+| [Pbs Calibration Forge Large Object](/content/items/pbs-calibration-forge-large-object/) | 3 |
+| [Hi-tech command relay](/content/items/pbs-control-tower-large/) | 3 |
+| [Pbs Control Tower Large Capsule](/content/items/pbs-control-tower-large-capsule/) | 3 |
+| [Pbs Control Tower Large Capsule Pr](/content/items/pbs-control-tower-large-capsule-pr/) | 3 |
+| [Pbs Control Tower Large Object](/content/items/pbs-control-tower-large-object/) | 3 |
+| [Hi-tech energy battery](/content/items/pbs-core-battery-large/) | 3 |
+| [Pbs Core Battery Large Capsule](/content/items/pbs-core-battery-large-capsule/) | 3 |
+| [Pbs Core Battery Large Capsule Pr](/content/items/pbs-core-battery-large-capsule-pr/) | 3 |
+| [Pbs Core Battery Large Object](/content/items/pbs-core-battery-large-object/) | 3 |
+| [Hi-tech energy transmitter node](/content/items/pbs-core-transmitter-large/) | 3 |
+| [Pbs Core Transmitter Large Capsule](/content/items/pbs-core-transmitter-large-capsule/) | 3 |
+| [Pbs Core Transmitter Large Capsule Pr](/content/items/pbs-core-transmitter-large-capsule-pr/) | 3 |
+| [Pbs Core Transmitter Large Object](/content/items/pbs-core-transmitter-large-object/) | 3 |
+| [Hi-tech main terminal](/content/items/pbs-docking-base-large/) | 3 |
+| [Pbs Docking Base Large Capsule](/content/items/pbs-docking-base-large-capsule/) | 3 |
+| [Pbs Docking Base Large Capsule Pr](/content/items/pbs-docking-base-large-capsule-pr/) | 3 |
+| [Pbs Docking Base Large Object](/content/items/pbs-docking-base-large-object/) | 3 |
+| [Hi-tech booster node](/content/items/pbs-effect-supplier-large/) | 3 |
+| [Hi-tech booster node foundation](/content/items/pbs-effect-supplier-large-object/) | 3 |
+| [Hi-tech energy well](/content/items/pbs-energywell-large/) | 3 |
+| [Pbs Energywell Large Capsule](/content/items/pbs-energywell-large-capsule/) | 3 |
+| [Pbs Energywell Large Capsule Pr](/content/items/pbs-energywell-large-capsule-pr/) | 3 |
+| [Pbs Energywell Large Object](/content/items/pbs-energywell-large-object/) | 3 |
+| [Hi-tech accelerator strip](/content/items/pbs-highwaynode-large/) | 3 |
+| [Pbs Highwaynode Large Capsule](/content/items/pbs-highwaynode-large-capsule/) | 3 |
+| [Pbs Highwaynode Large Capsule Pr](/content/items/pbs-highwaynode-large-capsule-pr/) | 3 |
+| [Pbs Highwaynode Large Object](/content/items/pbs-highwaynode-large-object/) | 3 |
+| [Hi-tech masker](/content/items/pbs-maskertower-large/) | 3 |
+| [Pbs Maskertower Large Capsule](/content/items/pbs-maskertower-large-capsule/) | 3 |
+| [Pbs Maskertower Large Capsule Pr](/content/items/pbs-maskertower-large-capsule-pr/) | 3 |
+| [Pbs Maskertower Large Object](/content/items/pbs-maskertower-large-object/) | 3 |
+| [Hi-tech factory](/content/items/pbs-mill-large/) | 3 |
+| [Pbs Mill Large Capsule](/content/items/pbs-mill-large-capsule/) | 3 |
+| [Pbs Mill Large Capsule Pr](/content/items/pbs-mill-large-capsule-pr/) | 3 |
+| [Pbs Mill Large Object](/content/items/pbs-mill-large-object/) | 3 |
+| [Hi-tech mining outpost](/content/items/pbs-mining-tower-large/) | 3 |
+| [Pbs Mining Tower Large Capsule](/content/items/pbs-mining-tower-large-capsule/) | 3 |
+| [Pbs Mining Tower Large Capsule Pr](/content/items/pbs-mining-tower-large-capsule-pr/) | 3 |
+| [Pbs Mining Tower Large Object](/content/items/pbs-mining-tower-large-object/) | 3 |
+| [Hi-tech facility upgrade](/content/items/pbs-production-upgrade-large/) | 3 |
+| [Pbs Production Upgrade Large Capsule](/content/items/pbs-production-upgrade-large-capsule/) | 3 |
+| [Pbs Production Upgrade Large Capsule Pr](/content/items/pbs-production-upgrade-large-capsule-pr/) | 3 |
+| [Pbs Production Upgrade Large Object](/content/items/pbs-production-upgrade-large-object/) | 3 |
+| [Hi-tech prototype facility](/content/items/pbs-prototyper-large/) | 3 |
+| [Pbs Prototyper Large Capsule](/content/items/pbs-prototyper-large-capsule/) | 3 |
+| [Pbs Prototyper Large Capsule Pr](/content/items/pbs-prototyper-large-capsule-pr/) | 3 |
+| [Pbs Prototyper Large Object](/content/items/pbs-prototyper-large-object/) | 3 |
+| [Hi-tech reactor](/content/items/pbs-reactor-large/) | 3 |
+| [Pbs Reactor Large Capsule](/content/items/pbs-reactor-large-capsule/) | 3 |
+| [Pbs Reactor Large Capsule Pr](/content/items/pbs-reactor-large-capsule-pr/) | 3 |
+| [Pbs Reactor Large Object](/content/items/pbs-reactor-large-object/) | 3 |
+| [Hi-tech refinery](/content/items/pbs-refinery-large/) | 3 |
+| [Pbs Refinery Large Capsule](/content/items/pbs-refinery-large-capsule/) | 3 |
+| [Pbs Refinery Large Capsule Pr](/content/items/pbs-refinery-large-capsule-pr/) | 3 |
+| [Pbs Refinery Large Object](/content/items/pbs-refinery-large-object/) | 3 |
+| [Hi-tech repair shop](/content/items/pbs-repair-large/) | 3 |
+| [Pbs Repair Large Capsule](/content/items/pbs-repair-large-capsule/) | 3 |
+| [Pbs Repair Large Capsule Pr](/content/items/pbs-repair-large-capsule-pr/) | 3 |
+| [Pbs Repair Large Object](/content/items/pbs-repair-large-object/) | 3 |
+| [Hi-tech recycling plant](/content/items/pbs-reprocessor-large/) | 3 |
+| [Pbs Reprocessor Large Capsule](/content/items/pbs-reprocessor-large-capsule/) | 3 |
+| [Pbs Reprocessor Large Capsule Pr](/content/items/pbs-reprocessor-large-capsule-pr/) | 3 |
+| [Pbs Reprocessor Large Object](/content/items/pbs-reprocessor-large-object/) | 3 |
+| [Hi-tech decoder lab](/content/items/pbs-research-kit-forge-large/) | 3 |
+| [Pbs Research Kit Forge Large Capsule](/content/items/pbs-research-kit-forge-large-capsule/) | 3 |
+| [Pbs Research Kit Forge Large Capsule Pr](/content/items/pbs-research-kit-forge-large-capsule-pr/) | 3 |
+| [Pbs Research Kit Forge Large Object](/content/items/pbs-research-kit-forge-large-object/) | 3 |
+| [Hi-tech reverse engineering](/content/items/pbs-research-lab-large/) | 3 |
+| [Pbs Research Lab Large Capsule](/content/items/pbs-research-lab-large-capsule/) | 3 |
+| [Pbs Research Lab Large Capsule Pr](/content/items/pbs-research-lab-large-capsule-pr/) | 3 |
+| [Pbs Research Lab Large Object](/content/items/pbs-research-lab-large-object/) | 3 |
+| [Hi-tech EW turret](/content/items/pbs-turret-ew-large/) | 3 |
+| [Pbs Turret Ew Large Capsule](/content/items/pbs-turret-ew-large-capsule/) | 3 |
+| [Pbs Turret Ew Large Capsule Pr](/content/items/pbs-turret-ew-large-capsule-pr/) | 3 |
+| [Pbs Turret Ew Large Object](/content/items/pbs-turret-ew-large-object/) | 3 |
+| [Hi-tech laser turret](/content/items/pbs-turret-laser-large/) | 3 |
+| [Pbs Turret Laser Large Capsule](/content/items/pbs-turret-laser-large-capsule/) | 3 |
+| [Pbs Turret Laser Large Capsule Pr](/content/items/pbs-turret-laser-large-capsule-pr/) | 3 |
+| [Pbs Turret Laser Large Object](/content/items/pbs-turret-laser-large-object/) | 3 |
+| [Hi-tech missile turret](/content/items/pbs-turret-missile-large/) | 3 |
+| [Pbs Turret Missile Large Capsule](/content/items/pbs-turret-missile-large-capsule/) | 3 |
+| [Pbs Turret Missile Large Capsule Pr](/content/items/pbs-turret-missile-large-capsule-pr/) | 3 |
+| [Pbs Turret Missile Large Object](/content/items/pbs-turret-missile-large-object/) | 3 |
+| [Hi-tech EM-turret](/content/items/pbs-turret-rail-large/) | 3 |
+| [Pbs Turret Rail Large Capsule](/content/items/pbs-turret-rail-large-capsule/) | 3 |
+| [Pbs Turret Rail Large Capsule Pr](/content/items/pbs-turret-rail-large-capsule-pr/) | 3 |
+| [Pbs Turret Rail Large Object](/content/items/pbs-turret-rail-large-object/) | 3 |
+| [Server Wide Ep Booster T3](/content/items/server-wide-ep-booster-t3/) | 3 |
+| [Named3 Harvesting Turret](/content/items/named3-harvesting-turret/) | 4 |
+| [Named3 Harvesting Turret Unit](/content/items/named3-harvesting-turret-unit/) | 4 |
+| [Named3 Mining Turret](/content/items/named3-mining-turret/) | 4 |
+| [Named3 Mining Turret Unit](/content/items/named3-mining-turret-unit/) | 4 |
+| [Named3 Nuimqol Combat Drone](/content/items/named3-nuimqol-combat-drone/) | 4 |
+| [Named3 Nuimqol Combat Drone Unit](/content/items/named3-nuimqol-combat-drone-unit/) | 4 |
+| [Named3 Pelistal Combat Drone](/content/items/named3-pelistal-combat-drone/) | 4 |
+| [Named3 Pelistal Combat Drone Unit](/content/items/named3-pelistal-combat-drone-unit/) | 4 |
+| [Named3 Sentry Turret](/content/items/named3-sentry-turret/) | 4 |
+| [Named3 Sentry Turret Unit](/content/items/named3-sentry-turret-unit/) | 4 |
+| [Named3 Thelodica Combat Drone](/content/items/named3-thelodica-combat-drone/) | 4 |
+| [Named3 Thelodica Combat Drone Unit](/content/items/named3-thelodica-combat-drone-unit/) | 4 |
 | [Account](/content/items/account/) | – |
 | [Alien Improbability Device](/content/items/anniversary-package/) | – |
 | [Area Bomb](/content/items/area-bomb/) | – |
 | [Area Bomb Capsule](/content/items/area-bomb-capsule/) | – |
 | [Arena Guard](/content/items/arena-guard/) | – |
-| [Arkhe2 Bot Pink](/content/items/arkhe2-bot-pink/) | 2 |
 | [Asintec token](/content/items/asi-mission-coin/) | – |
 | [Basic Attack Remote Command](/content/items/basic-attack-remote-command/) | – |
 | [Basic Defend Remote Command](/content/items/basic-defend-remote-command/) | – |
@@ -4055,21 +4430,10 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [High frequency emitter](/content/items/blob-emission-ammo-a/) | – |
 | [Low frequency emitter](/content/items/blob-emission-ammo-b/) | – |
 | [Interference emitter](/content/items/blob-emitter/) | – |
-| [Boost Ep T0](/content/items/boost-ep-t0/) | – |
-| [Boost Ep T1](/content/items/boost-ep-t1/) | 1 |
-| [Boost Ep T2](/content/items/boost-ep-t2/) | 2 |
-| [Boost Ep T3](/content/items/boost-ep-t3/) | 3 |
 | [Deconstruction charge](/content/items/construction-module-ammo-deconstruct/) | – |
 | [Construction Module Ammo Deconstruct Dev](/content/items/construction-module-ammo-deconstruct-dev/) | – |
 | [Construction Module Ammo Dev](/content/items/construction-module-ammo-dev/) | – |
 | [Syn-tec construction block](/content/items/construction-module-ammo-syndicate/) | – |
-| [Construction Module Ammo T0](/content/items/construction-module-ammo-t0/) | – |
-| [Construction Module Ammo T1](/content/items/construction-module-ammo-t1/) | 1 |
-| [Construction Module Ammo T1 Pr](/content/items/construction-module-ammo-t1-pr/) | 1 |
-| [Construction Module Ammo T2](/content/items/construction-module-ammo-t2/) | 2 |
-| [Construction Module Ammo T2 Pr](/content/items/construction-module-ammo-t2-pr/) | 2 |
-| [Construction Module Ammo T3](/content/items/construction-module-ammo-t3/) | 3 |
-| [Construction Module Ammo T3 Pr](/content/items/construction-module-ammo-t3-pr/) | 3 |
 | [Field container capsule](/content/items/container-capsule/) | – |
 | [Standard energy injector charge](/content/items/corebooster-ammo/) | – |
 | [Default Alliance](/content/items/default-alliance/) | – |
@@ -4223,47 +4587,10 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Mobile Teleport Stronghold Level 02 Capsule](/content/items/mobile-teleport-stronghold-level-02-capsule/) | – |
 | [Mobile World Teleport Capsule](/content/items/mobile-world-teleport-capsule/) | – |
 | [Mobile World Teleporter Basic](/content/items/mobile-world-teleporter-basic/) | – |
-| [Named1 Harvesting Turret](/content/items/named1-harvesting-turret/) | 2 |
-| [Named1 Harvesting Turret Unit](/content/items/named1-harvesting-turret-unit/) | 2 |
-| [Named1 Mining Turret](/content/items/named1-mining-turret/) | 2 |
-| [Named1 Mining Turret Unit](/content/items/named1-mining-turret-unit/) | 2 |
-| [Named1 Nuimqol Combat Drone](/content/items/named1-nuimqol-combat-drone/) | 2 |
-| [Named1 Nuimqol Combat Drone Unit](/content/items/named1-nuimqol-combat-drone-unit/) | 2 |
-| [Named1 Pelistal Combat Drone](/content/items/named1-pelistal-combat-drone/) | 2 |
-| [Named1 Pelistal Combat Drone Unit](/content/items/named1-pelistal-combat-drone-unit/) | 2 |
-| [Named1 Sentry Turret](/content/items/named1-sentry-turret/) | 2 |
-| [Named1 Sentry Turret Unit](/content/items/named1-sentry-turret-unit/) | 2 |
-| [Named1 Thelodica Combat Drone](/content/items/named1-thelodica-combat-drone/) | 2 |
-| [Named1 Thelodica Combat Drone Unit](/content/items/named1-thelodica-combat-drone-unit/) | 2 |
-| [Named2 Harvesting Turret](/content/items/named2-harvesting-turret/) | 3 |
-| [Named2 Harvesting Turret Unit](/content/items/named2-harvesting-turret-unit/) | 3 |
-| [Named2 Mining Turret](/content/items/named2-mining-turret/) | 3 |
-| [Named2 Mining Turret Unit](/content/items/named2-mining-turret-unit/) | 3 |
-| [Named2 Nuimqol Combat Drone](/content/items/named2-nuimqol-combat-drone/) | 3 |
-| [Named2 Nuimqol Combat Drone Unit](/content/items/named2-nuimqol-combat-drone-unit/) | 3 |
-| [Named2 Pelistal Combat Drone](/content/items/named2-pelistal-combat-drone/) | 3 |
-| [Named2 Pelistal Combat Drone Unit](/content/items/named2-pelistal-combat-drone-unit/) | 3 |
-| [Named2 Sentry Turret](/content/items/named2-sentry-turret/) | 3 |
-| [Named2 Sentry Turret Unit](/content/items/named2-sentry-turret-unit/) | 3 |
-| [Named2 Thelodica Combat Drone](/content/items/named2-thelodica-combat-drone/) | 3 |
-| [Named2 Thelodica Combat Drone Unit](/content/items/named2-thelodica-combat-drone-unit/) | 3 |
-| [Named3 Harvesting Turret](/content/items/named3-harvesting-turret/) | 4 |
-| [Named3 Harvesting Turret Unit](/content/items/named3-harvesting-turret-unit/) | 4 |
-| [Named3 Mining Turret](/content/items/named3-mining-turret/) | 4 |
-| [Named3 Mining Turret Unit](/content/items/named3-mining-turret-unit/) | 4 |
-| [Named3 Nuimqol Combat Drone](/content/items/named3-nuimqol-combat-drone/) | 4 |
-| [Named3 Nuimqol Combat Drone Unit](/content/items/named3-nuimqol-combat-drone-unit/) | 4 |
-| [Named3 Pelistal Combat Drone](/content/items/named3-pelistal-combat-drone/) | 4 |
-| [Named3 Pelistal Combat Drone Unit](/content/items/named3-pelistal-combat-drone-unit/) | 4 |
-| [Named3 Sentry Turret](/content/items/named3-sentry-turret/) | 4 |
-| [Named3 Sentry Turret Unit](/content/items/named3-sentry-turret-unit/) | 4 |
-| [Named3 Thelodica Combat Drone](/content/items/named3-thelodica-combat-drone/) | 4 |
-| [Named3 Thelodica Combat Drone Unit](/content/items/named3-thelodica-combat-drone-unit/) | 4 |
 | [Nuimqol Assault Drone](/content/items/nuimqol-assault-drone/) | – |
 | [Nuimqol Assault Drone Unit](/content/items/nuimqol-assault-drone-unit/) | – |
 | [Nuimqol Attack Drone](/content/items/nuimqol-attack-drone/) | – |
 | [Nuimqol Attack Drone Unit](/content/items/nuimqol-attack-drone-unit/) | – |
-| [Outpost Decay](/content/items/outpost-decay/) | 1 |
 | [Paint Black](/content/items/paint-black/) | – |
 | [Paint Blue](/content/items/paint-blue/) | – |
 | [Paint Blue Dark](/content/items/paint-blue-dark/) | – |
@@ -4280,118 +4607,7 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Paint Teal](/content/items/paint-teal/) | – |
 | [Paint White](/content/items/paint-white/) | – |
 | [Paint Yellow](/content/items/paint-yellow/) | – |
-| [Hi-tech energy backbone node](/content/items/pbs-xl-core-transmitter-large/) | 3 |
-| [Pbs XL Core Transmitter Large Capsule](/content/items/pbs-xl-core-transmitter-large-capsule/) | 3 |
-| [Pbs XL Core Transmitter Large Capsule Pr](/content/items/pbs-xl-core-transmitter-large-capsule-pr/) | 3 |
-| [Pbs XL Core Transmitter Large Object](/content/items/pbs-xl-core-transmitter-large-object/) | 3 |
-| [Advanced energy backbone node](/content/items/pbs-xl-core-transmitter-medium/) | 2 |
-| [Pbs XL Core Transmitter Medium Capsule](/content/items/pbs-xl-core-transmitter-medium-capsule/) | 2 |
-| [Pbs XL Core Transmitter Medium Capsule Pr](/content/items/pbs-xl-core-transmitter-medium-capsule-pr/) | 2 |
-| [Pbs XL Core Transmitter Medium Object](/content/items/pbs-xl-core-transmitter-medium-object/) | 2 |
-| [Standard energy backbone node](/content/items/pbs-xl-core-transmitter-small/) | 1 |
-| [Pbs XL Core Transmitter Small Capsule](/content/items/pbs-xl-core-transmitter-small-capsule/) | 1 |
-| [Pbs XL Core Transmitter Small Capsule Pr](/content/items/pbs-xl-core-transmitter-small-capsule-pr/) | 1 |
-| [Pbs XL Core Transmitter Small Object](/content/items/pbs-xl-core-transmitter-small-object/) | 1 |
-| [Hi-tech repair node](/content/items/pbs-armor-repairer-large/) | 3 |
-| [Hi-tech repair node foundation](/content/items/pbs-armor-repairer-large-object/) | 3 |
-| [Advanced repair node](/content/items/pbs-armor-repairer-medium/) | 2 |
-| [Advanced repair node foundation](/content/items/pbs-armor-repairer-medium-object/) | 2 |
-| [Standard repair node](/content/items/pbs-armor-repairer-small/) | 1 |
-| [Standard repair node foundation](/content/items/pbs-armor-repairer-small-object/) | 1 |
-| [Hi-tech Aura emitter](/content/items/pbs-aura-emitter-large/) | 1 |
-| [Pbs Aura Emitter Large Capsule](/content/items/pbs-aura-emitter-large-capsule/) | 3 |
-| [Pbs Aura Emitter Large Capsule Pr](/content/items/pbs-aura-emitter-large-capsule-pr/) | 3 |
-| [Pbs Aura Emitter Large Object](/content/items/pbs-aura-emitter-large-object/) | 1 |
-| [Advanced Aura emitter](/content/items/pbs-aura-emitter-medium/) | 1 |
-| [Pbs Aura Emitter Medium Capsule](/content/items/pbs-aura-emitter-medium-capsule/) | 2 |
-| [Pbs Aura Emitter Medium Capsule Pr](/content/items/pbs-aura-emitter-medium-capsule-pr/) | 2 |
-| [Pbs Aura Emitter Medium Object](/content/items/pbs-aura-emitter-medium-object/) | 1 |
-| [Standard Aura emitter](/content/items/pbs-aura-emitter-small/) | 1 |
-| [Pbs Aura Emitter Small Capsule](/content/items/pbs-aura-emitter-small-capsule/) | 1 |
-| [Pbs Aura Emitter Small Capsule Pr](/content/items/pbs-aura-emitter-small-capsule-pr/) | 1 |
-| [Pbs Aura Emitter Small Object](/content/items/pbs-aura-emitter-small-object/) | 1 |
-| [Hi-tech calibration lab](/content/items/pbs-calibration-forge-large/) | 3 |
-| [Pbs Calibration Forge Large Capsule](/content/items/pbs-calibration-forge-large-capsule/) | 3 |
-| [Pbs Calibration Forge Large Capsule Pr](/content/items/pbs-calibration-forge-large-capsule-pr/) | 3 |
-| [Pbs Calibration Forge Large Object](/content/items/pbs-calibration-forge-large-object/) | 3 |
-| [Advanced calibration lab](/content/items/pbs-calibration-forge-medium/) | 2 |
-| [Pbs Calibration Forge Medium Capsule](/content/items/pbs-calibration-forge-medium-capsule/) | 2 |
-| [Pbs Calibration Forge Medium Capsule Pr](/content/items/pbs-calibration-forge-medium-capsule-pr/) | 2 |
-| [Pbs Calibration Forge Medium Object](/content/items/pbs-calibration-forge-medium-object/) | 2 |
-| [Standard calibration lab](/content/items/pbs-calibration-forge-small/) | 1 |
-| [Pbs Calibration Forge Small Capsule](/content/items/pbs-calibration-forge-small-capsule/) | 1 |
-| [Pbs Calibration Forge Small Capsule Pr](/content/items/pbs-calibration-forge-small-capsule-pr/) | 1 |
-| [Pbs Calibration Forge Small Object](/content/items/pbs-calibration-forge-small-object/) | 1 |
-| [Hi-tech command relay](/content/items/pbs-control-tower-large/) | 3 |
-| [Pbs Control Tower Large Capsule](/content/items/pbs-control-tower-large-capsule/) | 3 |
-| [Pbs Control Tower Large Capsule Pr](/content/items/pbs-control-tower-large-capsule-pr/) | 3 |
-| [Pbs Control Tower Large Object](/content/items/pbs-control-tower-large-object/) | 3 |
-| [Advanced command relay](/content/items/pbs-control-tower-medium/) | 2 |
-| [Pbs Control Tower Medium Capsule](/content/items/pbs-control-tower-medium-capsule/) | 2 |
-| [Pbs Control Tower Medium Capsule Pr](/content/items/pbs-control-tower-medium-capsule-pr/) | 2 |
-| [Pbs Control Tower Medium Object](/content/items/pbs-control-tower-medium-object/) | 2 |
-| [Standard command relay](/content/items/pbs-control-tower-small/) | 1 |
-| [Pbs Control Tower Small Capsule](/content/items/pbs-control-tower-small-capsule/) | 1 |
-| [Pbs Control Tower Small Capsule Pr](/content/items/pbs-control-tower-small-capsule-pr/) | 1 |
-| [Pbs Control Tower Small Object](/content/items/pbs-control-tower-small-object/) | 1 |
-| [Hi-tech energy battery](/content/items/pbs-core-battery-large/) | 3 |
-| [Pbs Core Battery Large Capsule](/content/items/pbs-core-battery-large-capsule/) | 3 |
-| [Pbs Core Battery Large Capsule Pr](/content/items/pbs-core-battery-large-capsule-pr/) | 3 |
-| [Pbs Core Battery Large Object](/content/items/pbs-core-battery-large-object/) | 3 |
-| [Advanced energy battery](/content/items/pbs-core-battery-medium/) | 2 |
-| [Pbs Core Battery Medium Capsule](/content/items/pbs-core-battery-medium-capsule/) | 2 |
-| [Pbs Core Battery Medium Capsule Pr](/content/items/pbs-core-battery-medium-capsule-pr/) | 2 |
-| [Pbs Core Battery Medium Object](/content/items/pbs-core-battery-medium-object/) | 2 |
-| [Standard energy battery](/content/items/pbs-core-battery-small/) | 1 |
-| [Pbs Core Battery Small Capsule](/content/items/pbs-core-battery-small-capsule/) | 1 |
-| [Pbs Core Battery Small Capsule Pr](/content/items/pbs-core-battery-small-capsule-pr/) | 1 |
-| [Pbs Core Battery Small Object](/content/items/pbs-core-battery-small-object/) | 1 |
-| [Hi-tech energy transmitter node](/content/items/pbs-core-transmitter-large/) | 3 |
-| [Pbs Core Transmitter Large Capsule](/content/items/pbs-core-transmitter-large-capsule/) | 3 |
-| [Pbs Core Transmitter Large Capsule Pr](/content/items/pbs-core-transmitter-large-capsule-pr/) | 3 |
-| [Pbs Core Transmitter Large Object](/content/items/pbs-core-transmitter-large-object/) | 3 |
-| [Advanced energy transmitter node](/content/items/pbs-core-transmitter-medium/) | 2 |
-| [Pbs Core Transmitter Medium Capsule](/content/items/pbs-core-transmitter-medium-capsule/) | 2 |
-| [Pbs Core Transmitter Medium Capsule Pr](/content/items/pbs-core-transmitter-medium-capsule-pr/) | 2 |
-| [Pbs Core Transmitter Medium Object](/content/items/pbs-core-transmitter-medium-object/) | 2 |
-| [Standard energy transmitter node](/content/items/pbs-core-transmitter-small/) | 1 |
-| [Pbs Core Transmitter Small Capsule](/content/items/pbs-core-transmitter-small-capsule/) | 1 |
-| [Pbs Core Transmitter Small Capsule Pr](/content/items/pbs-core-transmitter-small-capsule-pr/) | 1 |
-| [Pbs Core Transmitter Small Object](/content/items/pbs-core-transmitter-small-object/) | 1 |
-| [Hi-tech main terminal](/content/items/pbs-docking-base-large/) | 3 |
-| [Pbs Docking Base Large Capsule](/content/items/pbs-docking-base-large-capsule/) | 3 |
-| [Pbs Docking Base Large Capsule Pr](/content/items/pbs-docking-base-large-capsule-pr/) | 3 |
-| [Pbs Docking Base Large Object](/content/items/pbs-docking-base-large-object/) | 3 |
-| [Advanced main terminal](/content/items/pbs-docking-base-medium/) | 2 |
-| [Pbs Docking Base Medium Capsule](/content/items/pbs-docking-base-medium-capsule/) | 2 |
-| [Pbs Docking Base Medium Capsule Pr](/content/items/pbs-docking-base-medium-capsule-pr/) | 2 |
-| [Pbs Docking Base Medium Object](/content/items/pbs-docking-base-medium-object/) | 2 |
-| [Standard main terminal](/content/items/pbs-docking-base-small/) | 1 |
-| [Pbs Docking Base Small Capsule](/content/items/pbs-docking-base-small-capsule/) | 1 |
-| [Pbs Docking Base Small Capsule Pr](/content/items/pbs-docking-base-small-capsule-pr/) | 1 |
-| [Pbs Docking Base Small Object](/content/items/pbs-docking-base-small-object/) | 1 |
-| [Hi-tech booster node](/content/items/pbs-effect-supplier-large/) | 3 |
-| [Hi-tech booster node foundation](/content/items/pbs-effect-supplier-large-object/) | 3 |
-| [Advanced booster node](/content/items/pbs-effect-supplier-medium/) | 2 |
-| [Advanced booster node foundation](/content/items/pbs-effect-supplier-medium-object/) | 2 |
 | [Pbs Effect Supplier Object](/content/items/pbs-effect-supplier-object/) | – |
-| [Standard booster node](/content/items/pbs-effect-supplier-small/) | 1 |
-| [Standard booster node foundation](/content/items/pbs-effect-supplier-small-object/) | 1 |
-| [Hi-tech energy well](/content/items/pbs-energywell-large/) | 3 |
-| [Pbs Energywell Large Capsule](/content/items/pbs-energywell-large-capsule/) | 3 |
-| [Pbs Energywell Large Capsule Pr](/content/items/pbs-energywell-large-capsule-pr/) | 3 |
-| [Pbs Energywell Large Object](/content/items/pbs-energywell-large-object/) | 3 |
-| [Advanced energy well](/content/items/pbs-energywell-medium/) | 2 |
-| [Pbs Energywell Medium Capsule](/content/items/pbs-energywell-medium-capsule/) | 2 |
-| [Pbs Energywell Medium Capsule Pr](/content/items/pbs-energywell-medium-capsule-pr/) | 2 |
-| [Pbs Energywell Medium Object](/content/items/pbs-energywell-medium-object/) | 2 |
-| [Standard energy well](/content/items/pbs-energywell-small/) | 1 |
-| [Pbs Energywell Small Capsule](/content/items/pbs-energywell-small-capsule/) | 1 |
-| [Pbs Energywell Small Capsule Pr](/content/items/pbs-energywell-small-capsule-pr/) | 1 |
-| [Pbs Energywell Small Object](/content/items/pbs-energywell-small-object/) | 1 |
-| [Pbs Expiring Docking Base](/content/items/pbs-expiring-docking-base/) | – |
-| [Pbs Expiring Docking Base Capsule](/content/items/pbs-expiring-docking-base-capsule/) | – |
-| [Pbs Expiring Docking Base Object](/content/items/pbs-expiring-docking-base-object/) | – |
 | [Calibration lab](/content/items/pbs-facility-calibration-program-forge/) | – |
 | [Pbs Facility Mill](/content/items/pbs-facility-mill/) | – |
 | [Pbs Facility Prototyper](/content/items/pbs-facility-prototyper/) | – |
@@ -4400,199 +4616,7 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Pbs Facility Reprocessor](/content/items/pbs-facility-reprocessor/) | – |
 | [Decoder lab](/content/items/pbs-facility-research-kit-forge/) | – |
 | [Pbs Facility Research Lab](/content/items/pbs-facility-research-lab/) | – |
-| [Hi-tech accelerator strip](/content/items/pbs-highwaynode-large/) | 3 |
-| [Pbs Highwaynode Large Capsule](/content/items/pbs-highwaynode-large-capsule/) | 3 |
-| [Pbs Highwaynode Large Capsule Pr](/content/items/pbs-highwaynode-large-capsule-pr/) | 3 |
-| [Pbs Highwaynode Large Object](/content/items/pbs-highwaynode-large-object/) | 3 |
-| [Advanced accelerator strip](/content/items/pbs-highwaynode-medium/) | 2 |
-| [Pbs Highwaynode Medium Capsule](/content/items/pbs-highwaynode-medium-capsule/) | 2 |
-| [Pbs Highwaynode Medium Capsule Pr](/content/items/pbs-highwaynode-medium-capsule-pr/) | 2 |
-| [Pbs Highwaynode Medium Object](/content/items/pbs-highwaynode-medium-object/) | 2 |
-| [Standard accelerator strip](/content/items/pbs-highwaynode-small/) | 1 |
-| [Pbs Highwaynode Small Capsule](/content/items/pbs-highwaynode-small-capsule/) | 1 |
-| [Pbs Highwaynode Small Capsule Pr](/content/items/pbs-highwaynode-small-capsule-pr/) | 1 |
-| [Pbs Highwaynode Small Object](/content/items/pbs-highwaynode-small-object/) | 1 |
-| [Hi-tech masker](/content/items/pbs-maskertower-large/) | 3 |
-| [Pbs Maskertower Large Capsule](/content/items/pbs-maskertower-large-capsule/) | 3 |
-| [Pbs Maskertower Large Capsule Pr](/content/items/pbs-maskertower-large-capsule-pr/) | 3 |
-| [Pbs Maskertower Large Object](/content/items/pbs-maskertower-large-object/) | 3 |
-| [Advanced masker](/content/items/pbs-maskertower-medium/) | 2 |
-| [Pbs Maskertower Medium Capsule](/content/items/pbs-maskertower-medium-capsule/) | 2 |
-| [Pbs Maskertower Medium Capsule Pr](/content/items/pbs-maskertower-medium-capsule-pr/) | 2 |
-| [Pbs Maskertower Medium Object](/content/items/pbs-maskertower-medium-object/) | 2 |
-| [Standard masker](/content/items/pbs-maskertower-small/) | 1 |
-| [Pbs Maskertower Small Capsule](/content/items/pbs-maskertower-small-capsule/) | 1 |
-| [Pbs Maskertower Small Capsule Pr](/content/items/pbs-maskertower-small-capsule-pr/) | 1 |
-| [Pbs Maskertower Small Object](/content/items/pbs-maskertower-small-object/) | 1 |
-| [Hi-tech factory](/content/items/pbs-mill-large/) | 3 |
-| [Pbs Mill Large Capsule](/content/items/pbs-mill-large-capsule/) | 3 |
-| [Pbs Mill Large Capsule Pr](/content/items/pbs-mill-large-capsule-pr/) | 3 |
-| [Pbs Mill Large Object](/content/items/pbs-mill-large-object/) | 3 |
-| [Advanced factory](/content/items/pbs-mill-medium/) | 2 |
-| [Pbs Mill Medium Capsule](/content/items/pbs-mill-medium-capsule/) | 2 |
-| [Pbs Mill Medium Capsule Pr](/content/items/pbs-mill-medium-capsule-pr/) | 2 |
-| [Pbs Mill Medium Object](/content/items/pbs-mill-medium-object/) | 2 |
-| [Standard factory](/content/items/pbs-mill-small/) | 1 |
-| [Pbs Mill Small Capsule](/content/items/pbs-mill-small-capsule/) | 1 |
-| [Pbs Mill Small Capsule Pr](/content/items/pbs-mill-small-capsule-pr/) | 1 |
-| [Pbs Mill Small Object](/content/items/pbs-mill-small-object/) | 1 |
-| [Hi-tech mining outpost](/content/items/pbs-mining-tower-large/) | 3 |
-| [Pbs Mining Tower Large Capsule](/content/items/pbs-mining-tower-large-capsule/) | 3 |
-| [Pbs Mining Tower Large Capsule Pr](/content/items/pbs-mining-tower-large-capsule-pr/) | 3 |
-| [Pbs Mining Tower Large Object](/content/items/pbs-mining-tower-large-object/) | 3 |
-| [Advanced mining outpost](/content/items/pbs-mining-tower-medium/) | 2 |
-| [Pbs Mining Tower Medium Capsule](/content/items/pbs-mining-tower-medium-capsule/) | 2 |
-| [Pbs Mining Tower Medium Capsule Pr](/content/items/pbs-mining-tower-medium-capsule-pr/) | 2 |
-| [Pbs Mining Tower Medium Object](/content/items/pbs-mining-tower-medium-object/) | 2 |
-| [Standard mining outpost](/content/items/pbs-mining-tower-small/) | 1 |
-| [Pbs Mining Tower Small Capsule](/content/items/pbs-mining-tower-small-capsule/) | 1 |
-| [Pbs Mining Tower Small Capsule Pr](/content/items/pbs-mining-tower-small-capsule-pr/) | 1 |
-| [Pbs Mining Tower Small Object](/content/items/pbs-mining-tower-small-object/) | 1 |
-| [Hi-tech facility upgrade](/content/items/pbs-production-upgrade-large/) | 3 |
-| [Pbs Production Upgrade Large Capsule](/content/items/pbs-production-upgrade-large-capsule/) | 3 |
-| [Pbs Production Upgrade Large Capsule Pr](/content/items/pbs-production-upgrade-large-capsule-pr/) | 3 |
-| [Pbs Production Upgrade Large Object](/content/items/pbs-production-upgrade-large-object/) | 3 |
-| [Advanced facility upgrade](/content/items/pbs-production-upgrade-medium/) | 2 |
-| [Pbs Production Upgrade Medium Capsule](/content/items/pbs-production-upgrade-medium-capsule/) | 2 |
-| [Pbs Production Upgrade Medium Capsule Pr](/content/items/pbs-production-upgrade-medium-capsule-pr/) | 2 |
-| [Pbs Production Upgrade Medium Object](/content/items/pbs-production-upgrade-medium-object/) | 2 |
-| [Standard facility upgrade](/content/items/pbs-production-upgrade-small/) | 1 |
-| [Pbs Production Upgrade Small Capsule](/content/items/pbs-production-upgrade-small-capsule/) | 1 |
-| [Pbs Production Upgrade Small Capsule Pr](/content/items/pbs-production-upgrade-small-capsule-pr/) | 1 |
-| [Pbs Production Upgrade Small Object](/content/items/pbs-production-upgrade-small-object/) | 1 |
-| [Hi-tech prototype facility](/content/items/pbs-prototyper-large/) | 3 |
-| [Pbs Prototyper Large Capsule](/content/items/pbs-prototyper-large-capsule/) | 3 |
-| [Pbs Prototyper Large Capsule Pr](/content/items/pbs-prototyper-large-capsule-pr/) | 3 |
-| [Pbs Prototyper Large Object](/content/items/pbs-prototyper-large-object/) | 3 |
-| [Advanced prototype facility](/content/items/pbs-prototyper-medium/) | 2 |
-| [Pbs Prototyper Medium Capsule](/content/items/pbs-prototyper-medium-capsule/) | 2 |
-| [Pbs Prototyper Medium Capsule Pr](/content/items/pbs-prototyper-medium-capsule-pr/) | 2 |
-| [Pbs Prototyper Medium Object](/content/items/pbs-prototyper-medium-object/) | 2 |
-| [Standard prototype facility](/content/items/pbs-prototyper-small/) | 1 |
-| [Pbs Prototyper Small Capsule](/content/items/pbs-prototyper-small-capsule/) | 1 |
-| [Pbs Prototyper Small Capsule Pr](/content/items/pbs-prototyper-small-capsule-pr/) | 1 |
-| [Pbs Prototyper Small Object](/content/items/pbs-prototyper-small-object/) | 1 |
-| [Hi-tech reactor](/content/items/pbs-reactor-large/) | 3 |
-| [Pbs Reactor Large Capsule](/content/items/pbs-reactor-large-capsule/) | 3 |
-| [Pbs Reactor Large Capsule Pr](/content/items/pbs-reactor-large-capsule-pr/) | 3 |
-| [Pbs Reactor Large Object](/content/items/pbs-reactor-large-object/) | 3 |
-| [Advanced reactor](/content/items/pbs-reactor-medium/) | 2 |
-| [Pbs Reactor Medium Capsule](/content/items/pbs-reactor-medium-capsule/) | 2 |
-| [Pbs Reactor Medium Capsule Pr](/content/items/pbs-reactor-medium-capsule-pr/) | 2 |
-| [Pbs Reactor Medium Object](/content/items/pbs-reactor-medium-object/) | 2 |
-| [Standard reactor](/content/items/pbs-reactor-small/) | 1 |
-| [Pbs Reactor Small Capsule](/content/items/pbs-reactor-small-capsule/) | 1 |
-| [Pbs Reactor Small Capsule Pr](/content/items/pbs-reactor-small-capsule-pr/) | 1 |
-| [Pbs Reactor Small Object](/content/items/pbs-reactor-small-object/) | 1 |
-| [Hi-tech refinery](/content/items/pbs-refinery-large/) | 3 |
-| [Pbs Refinery Large Capsule](/content/items/pbs-refinery-large-capsule/) | 3 |
-| [Pbs Refinery Large Capsule Pr](/content/items/pbs-refinery-large-capsule-pr/) | 3 |
-| [Pbs Refinery Large Object](/content/items/pbs-refinery-large-object/) | 3 |
-| [Advanced refinery](/content/items/pbs-refinery-medium/) | 2 |
-| [Pbs Refinery Medium Capsule](/content/items/pbs-refinery-medium-capsule/) | 2 |
-| [Pbs Refinery Medium Capsule Pr](/content/items/pbs-refinery-medium-capsule-pr/) | 2 |
-| [Pbs Refinery Medium Object](/content/items/pbs-refinery-medium-object/) | 2 |
-| [Standard refinery](/content/items/pbs-refinery-small/) | 1 |
-| [Pbs Refinery Small Capsule](/content/items/pbs-refinery-small-capsule/) | 1 |
-| [Pbs Refinery Small Capsule Pr](/content/items/pbs-refinery-small-capsule-pr/) | 1 |
-| [Pbs Refinery Small Object](/content/items/pbs-refinery-small-object/) | 1 |
-| [Hi-tech repair shop](/content/items/pbs-repair-large/) | 3 |
-| [Pbs Repair Large Capsule](/content/items/pbs-repair-large-capsule/) | 3 |
-| [Pbs Repair Large Capsule Pr](/content/items/pbs-repair-large-capsule-pr/) | 3 |
-| [Pbs Repair Large Object](/content/items/pbs-repair-large-object/) | 3 |
-| [Advanced repair shop](/content/items/pbs-repair-medium/) | 2 |
-| [Pbs Repair Medium Capsule](/content/items/pbs-repair-medium-capsule/) | 2 |
-| [Pbs Repair Medium Capsule Pr](/content/items/pbs-repair-medium-capsule-pr/) | 2 |
-| [Pbs Repair Medium Object](/content/items/pbs-repair-medium-object/) | 2 |
-| [Standard repair shop](/content/items/pbs-repair-small/) | 1 |
-| [Pbs Repair Small Capsule](/content/items/pbs-repair-small-capsule/) | 1 |
-| [Pbs Repair Small Capsule Pr](/content/items/pbs-repair-small-capsule-pr/) | 1 |
-| [Pbs Repair Small Object](/content/items/pbs-repair-small-object/) | 1 |
-| [Hi-tech recycling plant](/content/items/pbs-reprocessor-large/) | 3 |
-| [Pbs Reprocessor Large Capsule](/content/items/pbs-reprocessor-large-capsule/) | 3 |
-| [Pbs Reprocessor Large Capsule Pr](/content/items/pbs-reprocessor-large-capsule-pr/) | 3 |
-| [Pbs Reprocessor Large Object](/content/items/pbs-reprocessor-large-object/) | 3 |
-| [Advanced recycling plant](/content/items/pbs-reprocessor-medium/) | 2 |
-| [Pbs Reprocessor Medium Capsule](/content/items/pbs-reprocessor-medium-capsule/) | 2 |
-| [Pbs Reprocessor Medium Capsule Pr](/content/items/pbs-reprocessor-medium-capsule-pr/) | 2 |
-| [Pbs Reprocessor Medium Object](/content/items/pbs-reprocessor-medium-object/) | 2 |
-| [Standard recycling plant](/content/items/pbs-reprocessor-small/) | 1 |
-| [Pbs Reprocessor Small Capsule](/content/items/pbs-reprocessor-small-capsule/) | 1 |
-| [Pbs Reprocessor Small Capsule Pr](/content/items/pbs-reprocessor-small-capsule-pr/) | 1 |
-| [Pbs Reprocessor Small Object](/content/items/pbs-reprocessor-small-object/) | 1 |
-| [Hi-tech decoder lab](/content/items/pbs-research-kit-forge-large/) | 3 |
-| [Pbs Research Kit Forge Large Capsule](/content/items/pbs-research-kit-forge-large-capsule/) | 3 |
-| [Pbs Research Kit Forge Large Capsule Pr](/content/items/pbs-research-kit-forge-large-capsule-pr/) | 3 |
-| [Pbs Research Kit Forge Large Object](/content/items/pbs-research-kit-forge-large-object/) | 3 |
-| [Advanced decoder lab](/content/items/pbs-research-kit-forge-medium/) | 2 |
-| [Pbs Research Kit Forge Medium Capsule](/content/items/pbs-research-kit-forge-medium-capsule/) | 2 |
-| [Pbs Research Kit Forge Medium Capsule Pr](/content/items/pbs-research-kit-forge-medium-capsule-pr/) | 2 |
-| [Pbs Research Kit Forge Medium Object](/content/items/pbs-research-kit-forge-medium-object/) | 2 |
-| [Standard decoder lab](/content/items/pbs-research-kit-forge-small/) | 1 |
-| [Pbs Research Kit Forge Small Capsule](/content/items/pbs-research-kit-forge-small-capsule/) | 1 |
-| [Pbs Research Kit Forge Small Capsule Pr](/content/items/pbs-research-kit-forge-small-capsule-pr/) | 1 |
-| [Pbs Research Kit Forge Small Object](/content/items/pbs-research-kit-forge-small-object/) | 1 |
-| [Hi-tech reverse engineering](/content/items/pbs-research-lab-large/) | 3 |
-| [Pbs Research Lab Large Capsule](/content/items/pbs-research-lab-large-capsule/) | 3 |
-| [Pbs Research Lab Large Capsule Pr](/content/items/pbs-research-lab-large-capsule-pr/) | 3 |
-| [Pbs Research Lab Large Object](/content/items/pbs-research-lab-large-object/) | 3 |
-| [Advanced reverse engineering](/content/items/pbs-research-lab-medium/) | 2 |
-| [Pbs Research Lab Medium Capsule](/content/items/pbs-research-lab-medium-capsule/) | 2 |
-| [Pbs Research Lab Medium Capsule Pr](/content/items/pbs-research-lab-medium-capsule-pr/) | 2 |
-| [Pbs Research Lab Medium Object](/content/items/pbs-research-lab-medium-object/) | 2 |
-| [Standard reverse engineering](/content/items/pbs-research-lab-small/) | 1 |
-| [Pbs Research Lab Small Capsule](/content/items/pbs-research-lab-small-capsule/) | 1 |
-| [Pbs Research Lab Small Capsule Pr](/content/items/pbs-research-lab-small-capsule-pr/) | 1 |
-| [Pbs Research Lab Small Object](/content/items/pbs-research-lab-small-object/) | 1 |
-| [Hi-tech EW turret](/content/items/pbs-turret-ew-large/) | 3 |
-| [Pbs Turret Ew Large Capsule](/content/items/pbs-turret-ew-large-capsule/) | 3 |
-| [Pbs Turret Ew Large Capsule Pr](/content/items/pbs-turret-ew-large-capsule-pr/) | 3 |
-| [Pbs Turret Ew Large Object](/content/items/pbs-turret-ew-large-object/) | 3 |
-| [Advanced EW turret](/content/items/pbs-turret-ew-medium/) | 2 |
-| [Pbs Turret Ew Medium Capsule](/content/items/pbs-turret-ew-medium-capsule/) | 2 |
-| [Pbs Turret Ew Medium Capsule Pr](/content/items/pbs-turret-ew-medium-capsule-pr/) | 2 |
-| [Pbs Turret Ew Medium Object](/content/items/pbs-turret-ew-medium-object/) | 2 |
-| [Standard EW turret](/content/items/pbs-turret-ew-small/) | 1 |
-| [Pbs Turret Ew Small Capsule](/content/items/pbs-turret-ew-small-capsule/) | 1 |
-| [Pbs Turret Ew Small Capsule Pr](/content/items/pbs-turret-ew-small-capsule-pr/) | 1 |
-| [Pbs Turret Ew Small Object](/content/items/pbs-turret-ew-small-object/) | 1 |
-| [Hi-tech laser turret](/content/items/pbs-turret-laser-large/) | 3 |
-| [Pbs Turret Laser Large Capsule](/content/items/pbs-turret-laser-large-capsule/) | 3 |
-| [Pbs Turret Laser Large Capsule Pr](/content/items/pbs-turret-laser-large-capsule-pr/) | 3 |
-| [Pbs Turret Laser Large Object](/content/items/pbs-turret-laser-large-object/) | 3 |
-| [Advanced laser turret](/content/items/pbs-turret-laser-medium/) | 2 |
-| [Pbs Turret Laser Medium Capsule](/content/items/pbs-turret-laser-medium-capsule/) | 2 |
-| [Pbs Turret Laser Medium Capsule Pr](/content/items/pbs-turret-laser-medium-capsule-pr/) | 2 |
-| [Pbs Turret Laser Medium Object](/content/items/pbs-turret-laser-medium-object/) | 2 |
-| [Standard laser turret](/content/items/pbs-turret-laser-small/) | 1 |
-| [Pbs Turret Laser Small Capsule](/content/items/pbs-turret-laser-small-capsule/) | 1 |
-| [Pbs Turret Laser Small Capsule Pr](/content/items/pbs-turret-laser-small-capsule-pr/) | 1 |
-| [Pbs Turret Laser Small Object](/content/items/pbs-turret-laser-small-object/) | 1 |
-| [Hi-tech missile turret](/content/items/pbs-turret-missile-large/) | 3 |
-| [Pbs Turret Missile Large Capsule](/content/items/pbs-turret-missile-large-capsule/) | 3 |
-| [Pbs Turret Missile Large Capsule Pr](/content/items/pbs-turret-missile-large-capsule-pr/) | 3 |
-| [Pbs Turret Missile Large Object](/content/items/pbs-turret-missile-large-object/) | 3 |
-| [Advanced missile turret](/content/items/pbs-turret-missile-medium/) | 2 |
-| [Pbs Turret Missile Medium Capsule](/content/items/pbs-turret-missile-medium-capsule/) | 2 |
-| [Pbs Turret Missile Medium Capsule Pr](/content/items/pbs-turret-missile-medium-capsule-pr/) | 2 |
-| [Pbs Turret Missile Medium Object](/content/items/pbs-turret-missile-medium-object/) | 2 |
-| [Standard missile turret](/content/items/pbs-turret-missile-small/) | 1 |
-| [Pbs Turret Missile Small Capsule](/content/items/pbs-turret-missile-small-capsule/) | 1 |
-| [Pbs Turret Missile Small Capsule Pr](/content/items/pbs-turret-missile-small-capsule-pr/) | 1 |
-| [Pbs Turret Missile Small Object](/content/items/pbs-turret-missile-small-object/) | 1 |
 | [Pbs Turret Object](/content/items/pbs-turret-object/) | – |
-| [Hi-tech EM-turret](/content/items/pbs-turret-rail-large/) | 3 |
-| [Pbs Turret Rail Large Capsule](/content/items/pbs-turret-rail-large-capsule/) | 3 |
-| [Pbs Turret Rail Large Capsule Pr](/content/items/pbs-turret-rail-large-capsule-pr/) | 3 |
-| [Pbs Turret Rail Large Object](/content/items/pbs-turret-rail-large-object/) | 3 |
-| [Advanced EM-turret](/content/items/pbs-turret-rail-medium/) | 2 |
-| [Pbs Turret Rail Medium Capsule](/content/items/pbs-turret-rail-medium-capsule/) | 2 |
-| [Pbs Turret Rail Medium Capsule Pr](/content/items/pbs-turret-rail-medium-capsule-pr/) | 2 |
-| [Pbs Turret Rail Medium Object](/content/items/pbs-turret-rail-medium-object/) | 2 |
-| [Standard EM-turret](/content/items/pbs-turret-rail-small/) | 1 |
-| [Pbs Turret Rail Small Capsule](/content/items/pbs-turret-rail-small-capsule/) | 1 |
-| [Pbs Turret Rail Small Capsule Pr](/content/items/pbs-turret-rail-small-capsule-pr/) | 1 |
-| [Pbs Turret Rail Small Object](/content/items/pbs-turret-rail-small-object/) | 1 |
 | [Pelistal Assault Drone](/content/items/pelistal-assault-drone/) | – |
 | [Pelistal Assault Drone Unit](/content/items/pelistal-assault-drone-unit/) | – |
 | [Pelistal Attack Drone](/content/items/pelistal-attack-drone/) | – |
@@ -4650,29 +4674,9 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Sentry Test](/content/items/sentry-test/) | – |
 | [Sentry Test Deployer](/content/items/sentry-test-deployer/) | – |
 | [Sentry Test Egg](/content/items/sentry-test-egg/) | – |
-| [Server Wide Ep Booster T0](/content/items/server-wide-ep-booster-t0/) | – |
-| [Server Wide Ep Booster T1](/content/items/server-wide-ep-booster-t1/) | 1 |
-| [Server Wide Ep Booster T2](/content/items/server-wide-ep-booster-t2/) | 2 |
-| [Server Wide Ep Booster T3](/content/items/server-wide-ep-booster-t3/) | 3 |
 | [Spark Teleport Device Daoden](/content/items/spark-teleport-device-daoden/) | – |
 | [Spark Teleport Device Hersh](/content/items/spark-teleport-device-hersh/) | – |
 | [Spark Teleport Device Nv](/content/items/spark-teleport-device-nv/) | – |
-| [Standard Hunter Drone Pve](/content/items/standard-hunter-drone-pve/) | 1 |
-| [Standard Hunter Drone Pvp](/content/items/standard-hunter-drone-pvp/) | 1 |
-| [Standard Hunter Drone Rcu Pve](/content/items/standard-hunter-drone-rcu-pve/) | 1 |
-| [Standard Hunter Drone Rcu Pvp](/content/items/standard-hunter-drone-rcu-pvp/) | 1 |
-| [Standart Harvesting Turret](/content/items/standart-harvesting-turret/) | 1 |
-| [Standart Harvesting Turret Unit](/content/items/standart-harvesting-turret-unit/) | 1 |
-| [Standart Mining Turret](/content/items/standart-mining-turret/) | 1 |
-| [Standart Mining Turret Unit](/content/items/standart-mining-turret-unit/) | 1 |
-| [Standart Nuimqol Combat Drone](/content/items/standart-nuimqol-combat-drone/) | 1 |
-| [Standart Nuimqol Combat Drone Unit](/content/items/standart-nuimqol-combat-drone-unit/) | 1 |
-| [Standart Pelistal Combat Drone](/content/items/standart-pelistal-combat-drone/) | 1 |
-| [Standart Pelistal Combat Drone Unit](/content/items/standart-pelistal-combat-drone-unit/) | 1 |
-| [Standart Sentry Turret](/content/items/standart-sentry-turret/) | 1 |
-| [Standart Sentry Turret Unit](/content/items/standart-sentry-turret-unit/) | 1 |
-| [Standart Thelodica Combat Drone](/content/items/standart-thelodica-combat-drone/) | 1 |
-| [Standart Thelodica Combat Drone Unit](/content/items/standart-thelodica-combat-drone-unit/) | 1 |
 | [Stronghold Exit Rift](/content/items/stronghold-exit-rift/) | – |
 | [Syndicate Assault Drone](/content/items/syndicate-assault-drone/) | – |
 | [Syndicate Assault Drone Unit](/content/items/syndicate-assault-drone-unit/) | – |
@@ -4698,10 +4702,6 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Universal token](/content/items/universal-mission-coin/) | – |
 | [Visibility Probe](/content/items/visibility-probe/) | – |
 | [Visibility Probe Capsule](/content/items/visibility-probe-capsule/) | – |
-| [Wall Bomb A](/content/items/wall-bomb-a/) | 1 |
-| [Wall Bomb A Capsule](/content/items/wall-bomb-a-capsule/) | 1 |
-| [Wall Bomb B](/content/items/wall-bomb-b/) | 2 |
-| [Wall Bomb B Capsule](/content/items/wall-bomb-b-capsule/) | 2 |
 | [Standard wall compiler charge](/content/items/wall-builder-ammo-a/) | – |
 | [Wall Healer Large Capsule](/content/items/wall-healer-large-capsule/) | – |
 | [Wall Healer Large Object](/content/items/wall-healer-large-object/) | – |
