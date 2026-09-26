@@ -148,7 +148,12 @@ public static class RobotsPage
                 .OrderBy(d => d.Name.Contains("_mk2") ? 1 : d.Name.Contains("_reward") ? 2 : 0)
                 .ThenBy(d => d.Name, StringComparer.Ordinal)
                 .ToList();
-            sb.Append($"**{Md.DisplayName(family.Key)}**\n\n");
+            var title = Md.DisplayName(family.Key);
+            sb.Append($"**{title}**\n\n");
+            // Model icon. Optional: models
+            // without a known icon just get no image.
+            if (RobotIcons.TryGetValue(title, out var icon))
+                sb.Append($"<img class=\"robot-icon\" src=\"/img/robots/{icon}\" alt=\"{title}\">\n\n");
             Md.WriteTable(sb, new[] { "Robot", "Size" },
                 frows.Select(d => new[] { Md.DisplayName(d.Name), Md.Cell(d.Volume) }).ToArray());
             sb.Append('\n');
@@ -157,6 +162,24 @@ public static class RobotsPage
 
     /// <summary>Model family key: the definition name without generation/reward suffixes.</summary>
     private static string FamilyKey(DefRow d) => d.Name.Replace("_mk2", "").Replace("_reward1", "");
+
+    /// <summary>Display name -> static icon file (static/img/robots/), sourced from
+    /// the Open Perpetuum community wiki.</summary>
+    private static readonly Dictionary<string, string> RobotIcons = new(StringComparer.OrdinalIgnoreCase)
+    {
+        ["Arbalest"] = "arbalest.png", ["Argano"] = "argano.png", ["Artemis"] = "artemis.png",
+        ["Baphomet"] = "baphomet.png", ["Callisto"] = "callisto.png", ["Cameleon"] = "cameleon.png",
+        ["Castel"] = "castel.png", ["Daidalos"] = "daidalos.png", ["Felos"] = "felos.png",
+        ["Gargoyle"] = "gargoyle.png", ["Helix"] = "helix.png", ["Hermes"] = "hermes.png",
+        ["Hydra"] = "hydra.png", ["Ikarus"] = "ikarus.png", ["Intakt"] = "intakt.png",
+        ["Ictus"] = "ictus.png", ["Kain"] = "kain.png", ["Laird"] = "laird.png",
+        ["Lithus"] = "lithus.png", ["Locust"] = "locust.png", ["Mesmer"] = "mesmer.png",
+        ["Metis"] = "metis.png", ["Onyx"] = "onyx.png", ["Prometheus"] = "prometheus.png",
+        ["Riveler"] = "riveler.png", ["Sequer"] = "sequer.png", ["Seth"] = "seth.png",
+        ["Symbiont"] = "symbiont.png", ["Termis"] = "termis.png", ["Troiar"] = "troiar.png",
+        ["Tyrannos"] = "tyrannos.png", ["Vektor"] = "vektor.png", ["Waspish"] = "waspish.png",
+        ["Yagel"] = "yagel.png",
+    };
 
     /// <summary>Class by priority (higher classes set the lower class bits too).</summary>
     private static long ClassOf(DefRow d)
