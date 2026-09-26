@@ -80,6 +80,12 @@ public static class Program
             ("shop.md", ShopPage.Build(db, shop)),
             ("recipes.md", RecipesPage.Build(db)),
         };
+        // The shop catalog is one page per category under shop/.
+        foreach (var (_, slug, _) in ShopPage.Categories)
+        {
+            try { pages.Add((Path.Combine("shop", slug + ".md"), ShopPage.BuildCategoryPage(db, shop, slug))); }
+            catch (Exception e) { Console.Error.WriteLine($"shop category {slug} failed: {e.Message}"); }
+        }
         // The item catalog is one page per item under items/ plus its index.
         pages.AddRange(ItemsPage.Build(db, defs, statsByDef, shop));
         var itemPages = 0;

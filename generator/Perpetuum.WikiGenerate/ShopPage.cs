@@ -73,19 +73,35 @@ public static class ShopPage
     // Classification is by name shape (CT-capsule variants are classified by their
     // payload) plus the module equipment category flag — the raw flags do not
     // separate paint/coins/eggs etc.
-    private static readonly (string Name, Func<string, long, bool> Match)[] Categories =
+    internal static readonly (string Name, string Slug, Func<string, long, bool> Match)[] Categories =
     {
-        ("Ammo",          (n, f) => n.StartsWith("def_ammo_")),
-        ("Bots",          (n, f) => n.EndsWith("_bot")),
-        ("Paint",         (n, f) => n.StartsWith("def_paint_")),
-        ("Modules & equipment", (n, f) => (f & Flags.CfRobotEquipment) == Flags.CfRobotEquipment),
-        ("Remote commands", (n, f) => n.EndsWith("_remote_command")),
-        ("EP boosters",   (n, f) => n.Contains("boost")),
-        ("Mission coins", (n, f) => n.Contains("mission_coin")),
-        ("Teleports",     (n, f) => n.Contains("teleport")),
-        ("NPC eggs",      (n, f) => n.Contains("npc_egg")),
-        ("SAP items",     (n, f) => n.Contains("sap_item")),
-        ("Other",         (n, f) => true),
+        ("Ammo",          "ammo",          (n, f) => n.StartsWith("def_ammo_")),
+        ("Bots",          "bots",          (n, f) => n.EndsWith("_bot")),
+        ("Paint",         "paint",         (n, f) => n.StartsWith("def_paint_")),
+        ("Modules & equipment", "modules-equipment", (n, f) => (f & Flags.CfRobotEquipment) == Flags.CfRobotEquipment),
+        ("Remote commands", "remote-commands", (n, f) => n.EndsWith("_remote_command")),
+        ("EP boosters",   "ep-boosters",   (n, f) => n.Contains("boost")),
+        ("Mission coins", "mission-coins", (n, f) => n.Contains("mission_coin")),
+        ("Teleports",     "teleports",     (n, f) => n.Contains("teleport")),
+        ("NPC eggs",      "npc-eggs",      (n, f) => n.Contains("npc_egg")),
+        ("SAP items",     "sap-items",     (n, f) => n.Contains("sap_item")),
+        ("Other",         "other",         (n, f) => true),
+    };
+
+    /// <summary>One-line description per catalog category (shown on the index page).</summary>
+    private static readonly Dictionary<string, string> CategoryBlurb = new(StringComparer.Ordinal)
+    {
+        ["Ammo"] = "Weapon ammo and scanner/industrial charges, in fixed stacks.",
+        ["Bots"] = "Ready-to-fly robots and named fits, straight from the vendor.",
+        ["Paint"] = "Robot paint and tint items.",
+        ["Modules & equipment"] = "Fitted modules: weapons, armor, shields, energy and industrial equipment.",
+        ["Remote commands"] = "Items that control your robots remotely.",
+        ["EP boosters"] = "Temporary extension-point gain boosters.",
+        ["Mission coins"] = "The per-galaxy mission currencies and their exchange.",
+        ["Teleports"] = "Teleport charges and travel items.",
+        ["NPC eggs"] = "Spawn-capsule items used by content and events.",
+        ["SAP items"] = "Items consumed by outpost (SAP) activities.",
+        ["Other"] = "Everything the vendors sell that fits no other category.",
     };
 
     public static string Build(Db db, List<ShopSale> sales)
@@ -158,36 +174,97 @@ public static class ShopPage
         Md.WriteTable(sb, vendorHeader, vendorCells);
         sb.Append('\n');
 
-        // ---- catalog: every item once, grouped by category ----
-        sb.Append("## Catalog\n\n");
+        // ---- catalog: one reference row per category; the tables live on
+        // dedicated pages (shop/<category>/) so this index stays light ----
         var byCategory = allDefs
             .GroupBy(def => Categories.First(c => c.Match(Payload(def).Name, Payload(def).Flags)).Name)
             .ToDictionary(g => g.Key, g => g.ToList());
-        foreach (var (cat, _) in Categories)
+        sb.Append("## Catalog\n\n");
+        sb.Append("Each category is its own page; best price across all vendors, one row per item.\n\n");
+        var rows = new List<string[]>();
+        foreach (var (cat, slug, _) in Categories)
         {
             if (!byCategory.TryGetValue(cat, out var catDefs) || catDefs.Count == 0) continue;
-            sb.Append($"### {cat} ({catDefs.Count})\n\n");
-            var header = new[] { "Item", "Qty", "TM Coin", "ICS Coin", "ASI Coin", "Credits", "UniCoin", "Vendors" };
-            var cells = catDefs.Select(def =>
+            rows.Add(new[]
             {
-                var selling = Locations.Where(loc => BestFor(sales, loc, def).Qty > 0).ToList();
-                var best = selling
-                    .Select(loc => BestFor(sales, loc, def))
-                    .ToList();
-                return new[]
-                {
-                    ItemCell(def),
-                    best.Min(b => b.Qty).ToString(),
-                    Coin(best.Min(b => b.Tm)), Coin(best.Min(b => b.Ics)), Coin(best.Min(b => b.Asi)),
-                    Coin(best.Min(b => b.Credit)), Coin(best.Min(b => b.Uni)),
-                    string.Join(" · ", selling.Select(loc => loc.Short)),
-                };
-            }).ToArray();
-            var trimmed = TrimColumns(header, cells);
-            Md.WriteTable(sb, trimmed.Header, trimmed.Cells);
-            sb.Append('\n');
+                $"[{cat}](/content/shop/{slug}/)",
+                catDefs.Count.ToString(),
+                CategoryBlurb.GetValueOrDefault(cat, ""),
+            });
+        }
+        Md.WriteTable(sb, new[] { "Category", "Items", "What it is" }, rows.ToArray());
+        sb.Append('\n');
+
+        return sb.ToString();
+    }
+
+    /// <summary>One catalog category page: shop/&lt;slug&gt;/index.md</summary>
+    public static string BuildCategoryPage(Db db, List<ShopSale> sales, string slug)
+    {
+        var cat = Categories.First(c => c.Slug == slug);
+        var defByName = db.Query("SELECT definition, definitionname FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => r.Str("definitionname"));
+        var defs = db.Query("SELECT definition, definitionname, enabled, hidden FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => (r.Str("definitionname"), r.Bit("enabled"), r.Bit("hidden")));
+        var cats = db.Query("SELECT definition, categoryflags FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => r.Lng("categoryflags"));
+
+        (string Name, long Flags) Payload(int def)
+        {
+            var dn = defByName.TryGetValue(def, out var n) ? n : $"def_{def}";
+            var payload = dn.EndsWith("_CT_capsule") ? dn[..^11] : dn;
+            var pf = cats.TryGetValue(def, out var dv) ? dv : 0L;
+            return (payload, pf);
+        }
+        string? ItemLink(int def)
+        {
+            if (!defs.TryGetValue(def, out var d)) return null;
+            var (name, enabled, hidden) = d;
+            if (!enabled || hidden) return null;
+            if (name.EndsWith("_bot")) return "/content/robots/";
+            if (name.StartsWith("def_npc_") || name.EndsWith("_bot_pr")) return null;
+            var flags = cats.GetValueOrDefault(def, 0);
+            if ((flags & Flags.CfOre) == Flags.CfOre) return null;
+            if ((flags & Flags.CfDeployableStructure) == Flags.CfDeployableStructure) return null;
+            return "/content/items/" + name["def_".Length..].ToLowerInvariant().Replace('_', '-') + "/";
+        }
+        string ItemCell(int def)
+        {
+            var name = defs.TryGetValue(def, out var dd) ? dd.Item1 : $"def_{def}";
+            var display = Md.DisplayName(name);
+            var url = ItemLink(def);
+            return url is null ? display : $"[{display}]({url})";
         }
 
+        var allDefs = sales.Select(s => s.Def).Distinct()
+            .Where(def => Categories.First(c => c.Match(Payload(def).Name, Payload(def).Flags)).Slug == slug)
+            .OrderBy(def => def).ToList();
+
+        var sb = new StringBuilder();
+        sb.Append(Md.Header($"Shop — {cat.Name}", $"Fixed-price vendor items: {cat.Name.ToLowerInvariant()}. Best price across all vendors.",
+            "itemshop + itemshoppresets (joined to entitydefaults)"));
+        sb.Append($"\n\n# {cat.Name}\n\n");
+        sb.Append($"[Item shop](/content/shop/) → {cat.Name}. {CategoryBlurb.GetValueOrDefault(cat.Name, "")}\n\n");
+        sb.Append("**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; " +
+                  "**Credits**: the common currency; **UniCoin**: a premium currency. " +
+                  "Each row shows the best terms across all vendors that sell the item.\n\n");
+        var header = new[] { "Item", "Qty", "TM Coin", "ICS Coin", "ASI Coin", "Credits", "UniCoin", "Vendors" };
+        var cells = allDefs.Select(def =>
+        {
+            var selling = Locations.Where(loc => BestFor(sales, loc, def).Qty > 0).ToList();
+            var best = selling.Select(loc => BestFor(sales, loc, def)).ToList();
+            return new[]
+            {
+                ItemCell(def),
+                best.Min(b => b.Qty).ToString(),
+                Coin(best.Min(b => b.Tm)), Coin(best.Min(b => b.Ics)), Coin(best.Min(b => b.Asi)),
+                Coin(best.Min(b => b.Credit)), Coin(best.Min(b => b.Uni)),
+                string.Join(" · ", selling.Select(loc => loc.Short)),
+            };
+        }).ToArray();
+        var trimmed = TrimColumns(header, cells);
+        Md.WriteTable(sb, trimmed.Header, trimmed.Cells);
+        sb.Append('\n');
         return sb.ToString();
     }
 
