@@ -1,2 +1,1 @@
-# Wiki
-Wiki for Open Perpetuum
+# OpenPerpetuum Wiki
