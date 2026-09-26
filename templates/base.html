@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // Apply the saved theme before first paint (no flash of wrong theme).
+        (function () {
+            try {
+                if (localStorage.getItem("wiki-theme") === "light")
+                    document.documentElement.setAttribute("data-theme", "light");
+            } catch (e) { /* storage unavailable: stay on the default (dark) */ }
+        })();
+    </script>
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+    {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    <link rel="stylesheet" href="/style.css">
+    <script src="/search.js"></script>
+    <script src="/mermaid.min.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+    <a class="brand" href="/">{{ config.title }}</a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">☾</button>
+    <input type="search" id="wiki-search" placeholder="Search the wiki…" autocomplete="off" spellcheck="false">
+</header>
+<div id="search-results" class="search-results" hidden></div>
+<nav class="sidenav">
+    <ul>
+        <li class="nav-group">New here</li>
+        <li><a href="/features/getting-started/">Getting started</a></li>
+        <li class="nav-group">In the field</li>
+        <li><a href="/features/gathering/">Gathering</a></li>
+        <li><a href="/features/combat/">Combat</a></li>
+        <li><a href="/features/missions/">Missions</a></li>
+        <li><a href="/features/movement/">Movement &amp; zones</a></li>
+        <li><a href="/features/probes/">Proximity probes</a></li>
+        <li class="nav-group">Industry &amp; progress</li>
+        <li><a href="/features/robots/">Robots &amp; fitting</a></li>
+        <li><a href="/features/production/">Production</a></li>
+        <li><a href="/features/research/">Research</a></li>
+        <li><a href="/features/items/">Items &amp; inventory</a></li>
+        <li class="nav-group">Trade &amp; economy</li>
+        <li><a href="/features/market/">Market &amp; trade</a></li>
+        <li><a href="/features/transport/">Transport</a></li>
+        <li><a href="/content/shop/">Item shop</a></li>
+        <li class="nav-group">Big play</li>
+        <li><a href="/features/pbs/">Power base stations</a></li>
+        <li><a href="/features/intrusion/">Intrusion</a></li>
+        <li class="nav-group">With others</li>
+        <li><a href="/features/groups/">Groups</a></li>
+        <li><a href="/features/social/">Social</a></li>
+        <li class="nav-group">Data reference</li>
+        <li><a href="/content/">Content tables</a></li>
+        <li><a href="/zones/">Zones</a></li>
+        <li><a href="/features/">All features</a></li>
+        <li><a href="/features/server/">Server &amp; reference</a></li>
+        <li><a href="/formats/">Formats (dev)</a></li>
+    </ul>
+</nav>
+<main>
+    {% block content %}{% endblock content %}
+</main>
+<footer>
+    <!-- Bottom section: static links; the JS at the end of the body marks the
+         section this page belongs to (bold section name + page title in parentheses). -->
+    <nav class="footnav">
+        <a href="/">Home</a>
+        <a href="/features/" data-section="features">Features</a>
+        <a href="/content/" data-section="content">Content</a>
+        <a href="/zones/" data-section="zones">Zones</a>
+        <a href="/formats/" data-section="formats">Formats (dev)</a>
+    </nav>
+    <p class="footcredit">Open Perpetuum wiki — generated with <a href="https://www.getzola.org/">Zola</a>. Content tables are
+    generated from the live game database (<code>tools/generate</code>).</p>
+</footer>
+<script>
+    // Light/dark toggle: the whole site (chrome + content) switches.
+    // The icon shows the currently selected mode.
+    (function () {
+        var btn = document.getElementById("theme-toggle");
+        if (!btn) return;
+        var root = document.documentElement;
+        function isLight() { return root.getAttribute("data-theme") === "light"; }
+        btn.textContent = isLight() ? "☀" : "☾";
+        btn.addEventListener("click", function () {
+            if (isLight()) root.removeAttribute("data-theme");
+            else root.setAttribute("data-theme", "light");
+            try { localStorage.setItem("wiki-theme", isLight() ? "light" : "dark"); } catch (e) {}
+            btn.textContent = isLight() ? "☀" : "☾";
+            refreshMermaid(isLight() ? "neutral" : "dark");
+        });
+    })();
+    // Re-render the transport diagrams with the theme matching the content area.
+    function refreshMermaid(theme) {
+        if (!window.mermaid) return;
+        var divs = document.querySelectorAll(".mermaid[data-src]");
+        if (!divs.length) return;
+        divs.forEach(function (d) {
+            d.removeAttribute("data-processed");
+            d.textContent = d.getAttribute("data-src");
+        });
+        window.mermaid.initialize({ startOnLoad: false, theme: theme });
+        window.mermaid.run({ querySelector: ".mermaid" });
+    }
+    // Bottom section: highlight the section this page belongs to — bold section
+    // name, current page title in parentheses.
+    (function () {
+        var secs = ["features", "content", "zones", "formats"];
+        var path = document.location.pathname;
+        var here = null;
+        for (var i = 0; i < secs.length; i++) {
+            if (path === "/" + secs[i] || path.indexOf("/" + secs[i] + "/") === 0) { here = secs[i]; break; }
+        }
+        if (!here) return;
+        var link = document.querySelector('.footnav a[data-section="' + here + '"]');
+        if (!link) return;
+        var title = document.title;
+        var sep = title.indexOf(" | ");
+        if (sep >= 0) title = title.substring(0, sep);
+        var span = document.createElement("span");
+        span.className = "here";
+        var strong = document.createElement("strong");
+        strong.textContent = link.textContent;
+        var cur = document.createElement("span");
+        cur.className = "curtitle";
+        cur.textContent = title;
+        span.appendChild(strong);
+        span.appendChild(document.createTextNode(" ("));
+        span.appendChild(cur);
+        span.appendChild(document.createTextNode(")"));
+        link.replaceWith(span);
+    })();
+    // Render ```mermaid fences as diagrams (mermaid.min.js loads deferred).
+    document.addEventListener("DOMContentLoaded", function () {
+        var blocks = document.querySelectorAll("pre code[data-lang=mermaid]");
+        if (!blocks.length) return;
+        blocks.forEach(function (el) {
+            var div = document.createElement("div");
+            div.className = "mermaid";
+            div.setAttribute("data-src", el.textContent);
+            div.textContent = el.textContent;
+            el.closest("pre").replaceWith(div);
+        });
+        if (window.mermaid) {
+            var theme = document.documentElement.getAttribute("data-theme") === "light" ? "neutral" : "dark";
+            window.mermaid.initialize({ startOnLoad: false, theme: theme });
+            window.mermaid.run({ querySelector: ".mermaid" });
+        }
+    });
+</script>
+</body>
+</html>

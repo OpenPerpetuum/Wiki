@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{% if section.title %}{{ section.title }} | {% endif %}{{ config.title }}{% endblock title %}
+{% block content %}
+<article>
+    {% if section.content %}{{ section.content | safe }}{% endif %}
+    <h2>Pages</h2>
+    <ul>
+        {% for p in section.pages %}
+        <li><a href="{{ p.permalink | safe }}">{{ p.title }}</a>{% if p.description %} — {{ p.description }}{% endif %}</li>
+        {% endfor %}
+    </ul>
+</article>
+{% endblock content %}

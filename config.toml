@@ -1,0 +1,17 @@
+title = "Open Perpetuum Wiki"
+description = "Player and developer reference for the Open Perpetuum server: what you can do in the game, entity stats, zone generation, and stat field semantics."
+# GitHub Pages: set the repo Pages URL once the site is published, e.g.
+# base_url = "https://<user>.github.io/<repo>/wiki"
+base_url = "/"
+generate_feeds = false
+# Search is a lightweight client-side script (search.js + search_index.json
+# template) instead of the elasticlunr index.
+build_search_index = false
+generate_sitemap = true
+
+[markdown]
+smart_punctuation = false
+
+
+[extra]
+# reserved (e.g. server name, build date injected by CI)
