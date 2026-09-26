@@ -53,12 +53,43 @@ and the character-level settings you'll touch early on.
 - **Sign out** ends the session; **select character** starts it again.
 - If the server kicks you (e.g. forced to base), you reappear docked — see [movement](/features/movement/).
 
+## The tutorial
+
+New characters start in the training zone with a **Rookie Checklist** — finish it:
+it covers the basics and pays out several robots with modules and ammo. You can
+skip it (undock and walk to a faction exit) but you lose the rewards, and you
+cannot return to the training zone later. What the four faction exits give you is
+in the [FAQ](/features/faq/#what-faction-should-i-pick).
+
+## Survival
+
+Perpetuum is a risk-and-reward sandbox, and when your robot dies you lose it —
+docked or not, killed by a player or an NPC — and reappear at your [home base](#character-settings)
+(you can request a free starter robot there if you arrive empty-handed). A few
+rules that keep the losses survivable:
+
+- **Don't fly what you can't afford to lose.** Before undocking, ask: "Can I afford
+  to lose this robot and everything on it?"
+- **Know the zones.** The protected (PvE) islands are safe from players; the
+  open-PvP islands are free-for-fight with no crime/punishment system. See
+  [zones](/zones/) for the map.
+- **Know the NPCs.** Orange markers only aggress when provoked; red markers
+  aggress on approach. Run and break line-of-sight to drop aggro. See
+  [NPCs & PVE hunting](/features/npcs/).
+- **Mitigate, don't just accept, risk.** Going to an open-PvP island in your best
+  T4-fitted mech is how mechs die. Cheaper, replaceable gear that pays for itself
+  in a few trips beats the expensive bot that takes twenty.
+- **Build a sustainable loop.** Whatever you do — missions, gathering, hunting,
+  production, hauling — someone pays NIC for it. Keep backup assets so one bad day
+  doesn't zero your income.
+
 ## What to do next
 
 1. Select your starter robot and learn the [hangar & fitting](/features/robots/) screen.
 2. Undock and fly into the zone — see [movement](/features/movement/).
 3. Scan the ground and start collecting resources — see [gathering](/features/gathering/).
 4. Research your first extensions — see [research](/features/research/).
+5. Pick a career — the [FAQ](/features/faq/#what-do-i-do-once-i-m-out) has the menu.
 
 <!-- TODO(Phase 1): verify client UI flow (account creation screen, character wizard).
      UI model: see features/ui.md (EVE-style, project-provided).

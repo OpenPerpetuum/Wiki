@@ -28,6 +28,12 @@ A robot's class comes from its parts. Typical roles below are guidance — check
 | **Heavy mechs** | The top-tier combat class. | The strongest base stats and the most slots; built for sustained fights. | Slow and the most expensive parts in the game. |
 | **Walkers** | A rare heavy platform class. | Heavy-mech-class stats in a distinct platform. | Very few models; limited part availability. |
 
+*Class names in the wild: community sources (and older client material) call runners
+"light robots", crawlers "assault robots" and walkers "heavy gliders", and list
+Felos/Hydra/Onyx as "destroyers" — a special-role group that sits under
+Starter & special here. When a fit or a chat message uses one of those names, it is
+the same class.*
+
 ## Player robots
 
 Robots you can acquire and control yourself (80 models), grouped by class; each model gets its own table with its generations.

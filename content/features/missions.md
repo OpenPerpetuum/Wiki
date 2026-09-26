@@ -27,6 +27,36 @@ Not every category/level is available everywhere — availability is content-dri
 complete list of missions (type, category, level, duration, reward fee, and reward items)
 is generated in [Missions](/content/missions/).
 
+## What missions are for
+
+Missions serve two purposes at once: they pay NIC, and they build your **relation**
+with the issuing (contractor) corporation. A better relation is a key factor in
+getting a **higher facility ratio** at that corporation's terminals — production and
+other facility runs become cheaper and faster for you. Relations can also *drop*: some
+missions conflict with another corporation's interests, and the brief notes when that
+will cost you standing.
+
+- **Training missions** — easy, highlighted for rookies; do all of them, the rewards
+  are a nice early injection.
+- **Regular missions** come in three flavors:
+  - *Combat* — recon (scan enemy robots), bounty hunting (kill targets in a marked
+    circle), destroy & recover (kill + retrieve + deliver), recon & recovery, special
+    bounties (hard-to-reach targets).
+  - *Industry* — geology (scan for a mineral with the right charge), harvesting, mineral
+    exploitation, skilled exploitation (guarded dig sites — bring armed help).
+  - *Logistics* — transportation (deliver a package between terminals) and retrieval
+    (a big package through dangerous ground — escort it).
+- There is no such thing as a **safe mission**: if you see enemies on the route and
+  lack the gear to defend yourself, ask for help before you lose everything on the way.
+- **Objectives only count in the marked area** — the mission map shows it as a red
+  circle on the radar; killing or scanning elsewhere does nothing. Miss the deadline
+  and the mission fails instantly.
+- **Private transport contracts** — a Syndicate-run system (second tab of the mission
+  window) where players post containers for other players to haul between terminals,
+  with a set reward and a **collateral** the hauler stakes (refunded on success, lost if
+  the container is destroyed; aborting mid-way refunds only half). Keep containers
+  small enough that someone can actually carry them.
+
 ## Mission data & options
 
 - **Mission data** — details of a mission.

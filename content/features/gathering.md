@@ -35,6 +35,10 @@ and **deployables**. This page explains how each works and how the collection lo
   time up to its configured maximum. How nodes are placed and how plant populations
   are maintained — with real zones as worked examples — is in
   [Zones → Generation](/zones/generation/).
+- **Solid vs liquid ores.** Solid ores deplete tile by tile — you target and mine
+  each tile of the field until it's empty. Liquid ores draw from the whole field, so
+  your miner can run continuously as long as you have cargo. That ease is exactly why
+  liquid ores tend to be worth less: less skill and attention to mine.
 
 ### Plant & ore stats at a glance
 

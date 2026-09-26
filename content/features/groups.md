@@ -16,7 +16,11 @@ corporations), and **gangs** (temporary fleets for zone play).
 ## Corporations
 
 ### Joining & leaving
-- **Create** a corporation.
+- **Create** a corporation — requires the basic corporation-management extension
+  (level 1) and a founding fee of **250,000 NIC**. You choose the official name,
+  a **short ID** (max 6 characters, shown on the terrain to identify your members),
+  and the **tax rate** — a cut of members' earnings (notably mission pay) that goes
+  to the corp account automatically.
 - **Apply** to one, or **invite** a character in.
 - **Accept an application** / **list applications** (officers).
 - **Reply** to an invite you received.
@@ -63,11 +67,17 @@ server config: 50,000 credits per 7-day period).
 
 ### Appearance & profile
 - **Rename**, **set colour**, **set info** (public profile).
+- **Logo** — up to 5 symbols from a fixed set, each editable (size, transparency,
+  layering); only entitled members may create or change it.
 - **Name history** — past names.
 
 ### CEO
-- **Volunteer for CEO**, or check the **CEO takeover status** (a mechanism to replace an
-  inactive CEO).
+- **Volunteer for CEO**, or check the **CEO takeover status**.
+- **Takeover in practice**: if a CEO has been offline for **over 30 days**, a Deputy
+  can initiate a takeover — a **48-hour countdown** starts, announced in the corp
+  window. The CEO or any other Deputy can **veto** it instantly (a veto doesn't
+  stop the next attempt if the CEO still doesn't log in). If the countdown reaches
+  zero, the Deputy becomes CEO with full privileges.
 
 ### Votes
 Corporations can hold **votes**:

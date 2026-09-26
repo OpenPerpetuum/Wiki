@@ -16,8 +16,12 @@ lives on the per-system pages.
 | Getting started | [getting-started](/features/getting-started/) | creating/selecting characters, first robot, account basics |
 | Movement | [movement](/features/movement/) | zones, docking, queue, teleports, spark jumps, gates |
 | Gathering | [gathering](/features/gathering/) | scanning, harvesting, resource collection |
-| Combat | [combat](/features/combat/) | fighting, alarms, kill reports, SOS |
+| Combat | [combat](/features/combat/) | fighting, damage types, interference, alarms, kill reports, SOS |
+| NPCs & PVE hunting | [npcs](/features/npcs/) | NPC ranks & factions, weaknesses, spawn types, TAPs, tactics |
+| Exploration | [exploration](/features/exploration/) | artifacts and relics |
 | Robots & fitting | [robots](/features/robots/) | selecting robots, modules, ammo, presets, tints |
+| Modules & fitting | [modules](/features/modules/) | the module families and fitting rules of thumb |
+| Sparks | [sparks](/features/sparks/) | spark authorization, switching, ability bonuses |
 | Research | [research](/features/research/) | extensions (skill tree), EP, tech tree |
 | Production | [production](/features/production/) | production lines, refine, repair, reprocess, prototypes, CPRG |
 | Market & trade | [market](/features/market/) | market orders, direct trades, item shop, credits |
@@ -28,8 +32,13 @@ lives on the per-system pages.
 | Items & inventory | [items](/features/items/) | containers, stacking, item names, redeemables, goodie packs |
 | Social | [social](/features/social/) | mail, channels, friends, standings, yellow pages, news, polls |
 | Intrusion | [intrusion](/features/intrusion/) | the NPC-site assault mode |
+| Outposts & SAP | [outposts](/features/outposts/) | outpost ownership, stability, the four SAP types |
 | Proximity probes | [probes](/features/probes/) | zone surveillance probes |
 | Server & reference | [server](/features/server/) | server info, high scores, reference data, purchases |
+| FAQ | [faq](/features/faq/) | the tutorial, faction choice, first steps |
+| Abbreviations | [abbreviations](/features/abbreviations/) | the game's jargon |
+| Lore | [lore](/features/lore/) | the setting: Nia, the Nians, the Syndicate |
+| Client & PC setup | [client-setup](/features/client-setup/) | running the client, multi-boxing, UI scaling |
 
 ### Reference
 
