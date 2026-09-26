@@ -12,6 +12,9 @@
                 var p = localStorage.getItem("wiki-palette");
                 if (p && p !== "cyan")
                     document.documentElement.setAttribute("data-palette", p);
+                var cb = localStorage.getItem("wiki-cb");
+                if (cb && cb !== "none")
+                    document.documentElement.setAttribute("data-cb", cb);
             } catch (e) { /* storage unavailable: stay on the defaults */ }
         })();
     </script>
@@ -31,10 +34,17 @@
             <span class="palette-swatch"></span>
         </button>
         <div id="palette-menu" class="palette-menu" role="menu">
-            <button type="button" role="menuitem" data-palette="cyan" aria-pressed="true"><span class="palette-dot" style="background:#41d3ff"></span>Cyan</button>
-            <button type="button" role="menuitem" data-palette="violet" aria-pressed="false"><span class="palette-dot" style="background:#a78bfa"></span>Violet</button>
-            <button type="button" role="menuitem" data-palette="green" aria-pressed="false"><span class="palette-dot" style="background:#4ade80"></span>Phosphor</button>
-            <button type="button" role="menuitem" data-palette="amber" aria-pressed="false"><span class="palette-dot" style="background:#fbbf24"></span>Amber</button>
+            <div class="palette-group">Accent</div>
+            <button type="button" role="menuitem" data-palette="cyan" aria-pressed="true"><span class="palette-dot" aria-hidden="true" style="background:#41d3ff"></span>Cyan</button>
+            <button type="button" role="menuitem" data-palette="violet" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#a78bfa"></span>Violet</button>
+            <button type="button" role="menuitem" data-palette="green" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#4ade80"></span>Phosphor</button>
+            <button type="button" role="menuitem" data-palette="amber" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#fbbf24"></span>Amber</button>
+            <div class="palette-group">Colorblind</div>
+            <button type="button" role="menuitem" data-cb="none" aria-pressed="true">Default</button>
+            <button type="button" role="menuitem" data-cb="deutan">Deuteranopia</button>
+            <button type="button" role="menuitem" data-cb="protan">Protanopia</button>
+            <button type="button" role="menuitem" data-cb="tritan">Tritanopia</button>
+            <button type="button" role="menuitem" data-cb="achro">Grayscale</button>
         </div>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">☾</button>
     </div>
@@ -157,9 +167,26 @@
                 else root.setAttribute("data-palette", p);
                 try { localStorage.setItem("wiki-palette", p); } catch (e2) {}
                 current();
+            });
+        });
+        // Colorblind modes: independent of the accent palette; they retint the
+        // zone-map family colors and the accent. "Default" removes the mode.
+        var cbItems = Array.prototype.slice.call(menu.querySelectorAll("button[data-cb]"));
+        function cbCurrent() {
+            var c = root.getAttribute("data-cb") || "none";
+            cbItems.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-cb") === c ? "true" : "false"); });
+        }
+        cbItems.forEach(function (b) {
+            b.addEventListener("click", function () {
+                var c = b.getAttribute("data-cb");
+                if (c === "none") root.removeAttribute("data-cb");
+                else root.setAttribute("data-cb", c);
+                try { localStorage.setItem("wiki-cb", c); } catch (e3) {}
+                cbCurrent();
                 setOpen(false);
             });
         });
+        cbCurrent();
         document.addEventListener("click", function (e) {
             if (menu.contains(e.target) || e.target === btn) return;
             setOpen(false);

@@ -84,13 +84,15 @@ public static class ZonesMapPage
         sb.Append("\n");
 
         sb.Append("## Galaxies & zones\n\n");
-        var fams = new (string Label, string Key, string Color)[]
+        // Family colors live in style.css (--map-* variables) so colorblind
+        // modes can recolor them; the key only selects the CSS class.
+        var fams = new (string Label, string Key)[]
         {
-            ("New Virginia (TM)", "tm", "#41d3ff"),
-            ("Attalica (ICS)", "ics", "#6ee7a0"),
-            ("Daoden (ASI)", "asi", "#f5a05a"),
-            ("Gamma belt", "gamma", "#a78bfa"),
-            ("Special zones", "special", "#c8d2e0"),
+            ("New Virginia (TM)", "tm"),
+            ("Attalica (ICS)", "ics"),
+            ("Daoden (ASI)", "asi"),
+            ("Gamma belt", "gamma"),
+            ("Special zones", "special"),
         };
         var frows = fams.Select(f =>
         {
@@ -98,7 +100,7 @@ public static class ZonesMapPage
             var types = string.Join(", ", zs.Select(z => TypeLabel(z.z.Type)).Distinct().OrderBy(t => t));
             return new[]
             {
-                $"<span class=\"mapdot\" style=\"background:{f.Color}\"></span> {f.Label}",
+                $"<span class=\"mapdot mapfam-{f.Key}\" role=\"img\" aria-label=\"{f.Label} color swatch\"></span> {f.Label}",
                 zs.Count.ToString(),
                 types.Length > 0 ? types : "–",
                 string.Join(", ", zs.Select(z => z.z.Name).OrderBy(n => n)),
@@ -165,14 +167,9 @@ public static class ZonesMapPage
         List<(string Src, string Dst, int Tps)> tps,
         double vbW, double vbH, Func<double, double> Px, Func<double, double> Py)
     {
-        var colors = new Dictionary<string, string>
-        {
-            ["tm"] = "#41d3ff", ["ics"] = "#6ee7a0", ["asi"] = "#f5a05a",
-            ["gamma"] = "#a78bfa", ["special"] = "#c8d2e0",
-        };
-
         var sb = new StringBuilder();
-        sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones\" class=\"zonemap\">\n");
+        sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones, colored by galaxy family\" class=\"zonemap\">\n");
+        sb.Append("  <title>Map of all game zones, colored by galaxy family</title>\n");
         foreach (var l in tps)
         {
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
@@ -193,7 +190,7 @@ public static class ZonesMapPage
             var fs = f == "gamma" ? 8 : 9.5;
             var x1 = Px(z.X);
             var y1 = Py(z.Y);
-            var node = $"<circle cx=\"{x1:0.#}\" cy=\"{y1:0.#}\" r=\"{r}\" fill=\"{colors[f]}\" class=\"zonemap-node-{f}\">" +
+            var node = $"<circle cx=\"{x1:0.#}\" cy=\"{y1:0.#}\" r=\"{r}\" class=\"mapfam-{f} zonemap-node-{f}\">" +
                        $"<title>{z.Name} — {TypeLabel(z.Type)} ({z.X:0} / {z.Y:0})</title></circle>" +
                        $"<text x=\"{x1 + r + 2:0.#}\" y=\"{y1 + fs / 3:0.#}\" font-size=\"{fs}\" class=\"zonemap-label\">{shortName}</text>";
             var link = PageLink(z.Name);

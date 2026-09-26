@@ -14,19 +14,19 @@ trade, and research your way up from a starter bot to a fully fitted war machine
 Guides from the Open Perpetuum Project. Click a card to play it here.
 
 <div class="video-grid">
-  <div class="video-card" tabindex="0" data-id="mHd3nOHvEuM" data-title="Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more.">
+  <div class="video-card" role="button" tabindex="0" aria-label="Play video: Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more." data-id="mHd3nOHvEuM" data-title="Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more.">
     <img src="https://i.ytimg.com/vi/mHd3nOHvEuM/hqdefault.jpg" alt="Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more."
          width="480" height="270" referrerpolicy="origin">
     <span class="video-play" aria-hidden="true">&#9654;</span>
     <div class="video-title">Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more.</div>
   </div>
-  <div class="video-card" tabindex="0" data-id="lQgrO6RNBSg" data-title="Syndicate Careers Help - Artifacting">
+  <div class="video-card" role="button" tabindex="0" aria-label="Play video: Syndicate Careers Help - Artifacting" data-id="lQgrO6RNBSg" data-title="Syndicate Careers Help - Artifacting">
     <img src="https://i.ytimg.com/vi/lQgrO6RNBSg/hqdefault.jpg" alt="Syndicate Careers Help - Artifacting"
          width="480" height="270" referrerpolicy="origin">
     <span class="video-play" aria-hidden="true">&#9654;</span>
     <div class="video-title">Syndicate Careers Help — Artifacting</div>
   </div>
-  <div class="video-card" tabindex="0" data-id="sRBouSF8Gu4" data-title="Open Perpetuum Tutorial - How to run multiple clients">
+  <div class="video-card" role="button" tabindex="0" aria-label="Play video: Open Perpetuum Tutorial - How to run multiple clients" data-id="sRBouSF8Gu4" data-title="Open Perpetuum Tutorial - How to run multiple clients">
     <img src="https://i.ytimg.com/vi/sRBouSF8Gu4/hqdefault.jpg" alt="Open Perpetuum Tutorial - How to run multiple clients"
          width="480" height="270" referrerpolicy="origin">
     <span class="video-play" aria-hidden="true">&#9654;</span>
@@ -49,6 +49,8 @@ Guides from the Open Perpetuum Project. Click a card to play it here.
             card.innerHTML = "";
             card.appendChild(f);
             card.removeAttribute("tabindex");
+            card.removeAttribute("role");
+            card.removeAttribute("aria-label");
             card.style.cursor = "default";
         }
         cards.forEach(function (card) {
