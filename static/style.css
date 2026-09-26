@@ -178,7 +178,9 @@ pre code { background: none; padding: 0; }
 }
 .content-col { flex: 1; min-width: 0; }
 .sidenav {
+    position: sticky; top: 52px;
     flex: 0 0 230px;
+    max-height: calc(100vh - 70px); overflow-y: auto;
     background: linear-gradient(180deg, var(--chrome-bg2), var(--chrome-bg));
     border: 1px solid var(--neon-dim);
     border-radius: 10px;
@@ -224,6 +226,15 @@ pre code { background: none; padding: 0; }
     font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em;
     text-transform: uppercase; color: var(--neon);
     opacity: 0.85;
+}
+.sidenav .nav-group-link {
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0.2rem 0.6rem; margin: -0.2rem -0.6rem 0;
+    border-radius: 6px; text-decoration: none;
+}
+.sidenav .nav-group-link:hover {
+    background: var(--neon-faint); color: var(--neon);
+    border-left-color: transparent;
 }
 
 /* ============ content panel (dark, lighter than chrome) ============ */
