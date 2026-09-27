@@ -17,7 +17,7 @@ public static class Program
     public static int Main(string[] args)
     {
         string? connection = Environment.GetEnvironmentVariable("PERPETUUM_CONNECTIONSTRING");
-        string? plantrulesDir = null, outDir = null, zonesOutDir = null, gbfPath = null;
+        string? plantrulesDir = null, outDir = null, zonesOutDir = null;
         for (var i = 0; i < args.Length; i++)
         {
             switch (args[i])
@@ -26,7 +26,6 @@ public static class Program
                 case "--plantrules": plantrulesDir = args[++i]; break;
                 case "--zones-out": zonesOutDir = args[++i]; break;
                 case "--out": outDir = args[++i]; break;
-                case "--gbf": gbfPath = args[++i]; break;
                 case "--help": PrintHelp(); return 0;
                 default: Console.Error.WriteLine($"unknown argument: {args[i]}"); PrintHelp(); return 2;
             }
@@ -35,16 +34,9 @@ public static class Program
         if (string.IsNullOrEmpty(plantrulesDir) || !Directory.Exists(plantrulesDir)) { Console.Error.WriteLine($"missing/invalid --plantrules dir: {plantrulesDir}"); return 2; }
         if (string.IsNullOrEmpty(outDir)) { Console.Error.WriteLine("missing --out"); return 2; }
 
-        // Client display names (zones, robots, items) come from the client string
-        // dictionary inside the GBF asset archive. Optional: without it the names are
-        // derived from the internal definition names.
-        if (!string.IsNullOrEmpty(gbfPath))
-        {
-            if (!File.Exists(gbfPath)) { Console.Error.WriteLine($"--gbf file not found: {gbfPath}"); return 2; }
-            Console.WriteLine($"loading client dictionary from {gbfPath} ...");
-            Md.ClientStrings = Gbf.LoadDictionary(gbfPath);
-            Console.WriteLine($"  {Md.ClientStrings.Count} client strings");
-        }
+        // Client display names are a static snapshot (ClientNames.cs) of the
+        // official client's string dictionary; the names fall back to being
+        // derived from the internal definition names where the client has none.
 
         using var db = new Db(connection);
 
@@ -91,6 +83,23 @@ public static class Program
         pages.AddRange(TechTreePage.Build(db));
         // The item catalog is one page per item under items/ plus its index.
         pages.AddRange(ItemsPage.Build(db, defs, statsByDef, shop));
+        // Remove the previous run's artifacts before writing: the generator
+        // overwrites in place, and without this a definition removed from the
+        // DB would leave a ghost page behind (and in the client search index).
+        // items/, shop/ and techtree/ are owned entirely by the generator; the
+        // hand-written sections (features, zones, formats, menu) are never touched.
+        foreach (var dir in new[] { "items", "shop", "techtree" })
+        {
+            var p = Path.Combine(outDir, dir);
+            if (Directory.Exists(p)) Directory.Delete(p, true);
+        }
+        foreach (var file in pages.Where(p => !p.File.Contains('/')).Select(p => p.File).Distinct())
+        {
+            var p = Path.Combine(outDir, file);
+            if (File.Exists(p)) File.Delete(p);
+        }
+        File.Delete(Path.Combine(outDir, "_index.md"));
+
         var itemPages = 0;
         foreach (var (file, content) in pages)
         {
@@ -161,5 +170,5 @@ public static class Program
     private static string FormatStat(double v) => Md.Num(v);
 
     private static void PrintHelp() => Console.Error.WriteLine(
-        "wiki-generate --connection <cs> --plantrules <dir> --out <dir> [--zones-out <dir>] [--gbf <archive.gbf>]");
+        "wiki-generate --connection <cs> --plantrules <dir> --out <dir> [--zones-out <dir>]");
 }

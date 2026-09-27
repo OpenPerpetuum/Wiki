@@ -8,12 +8,12 @@ description: "Research node that unlocks Advanced booster node foundation (PBS s
 
 # Advanced booster node foundation (research node)
 
-This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks [Advanced booster node foundation](/content/items/pbs-effect-supplier-medium-capsule/).
+This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks Advanced booster node foundation.
 
 |  |  |
 |---|---|
 | Category | [PBS structures](/content/techtree/groups/pbs/) |
-| Unlocks | [Advanced booster node foundation](/content/items/pbs-effect-supplier-medium-capsule/) |
+| Unlocks | Advanced booster node foundation |
 | Parent node | [Standard booster node foundation](/content/techtree/nodes/pbs-effect-supplier-small-capsule/) |
 | Unlocks next | [Hi-tech booster node foundation](/content/techtree/nodes/pbs-effect-supplier-large-capsule/) |
 | Enabler extension | – |

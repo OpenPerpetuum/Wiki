@@ -35,9 +35,11 @@ make generate \
   WIKI_PLANTRULES=/path/to/GameRoot/plantrules
 ```
 
-Client display names are read from the client string archive at `../Perpetuum.gbf`
-(override with `WIKI_GBF=...`). The layout assumption is that this repository
-sits as `wiki/` directly inside the PerpetuumServer2 repository.
+Client display names are a static snapshot of the official client's English
+string dictionary (`generator/Perpetuum.WikiGenerate/ClientNames.cs`, 4,266
+entries) — no client archive is needed. The snapshot predates the end of
+official client development, so it does not need refreshing; entities the
+client never named fall back to a name derived from the internal identifier.
 
 Commit the regenerated pages — the site build always uses the committed markdown.
 

@@ -8,12 +8,12 @@ description: "Research node that unlocks Hi-tech booster node foundation (PBS st
 
 # Hi-tech booster node foundation (research node)
 
-This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks [Hi-tech booster node foundation](/content/items/pbs-effect-supplier-large-capsule/).
+This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks Hi-tech booster node foundation.
 
 |  |  |
 |---|---|
 | Category | [PBS structures](/content/techtree/groups/pbs/) |
-| Unlocks | [Hi-tech booster node foundation](/content/items/pbs-effect-supplier-large-capsule/) |
+| Unlocks | Hi-tech booster node foundation |
 | Parent node | [Advanced booster node foundation](/content/techtree/nodes/pbs-effect-supplier-medium-capsule/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

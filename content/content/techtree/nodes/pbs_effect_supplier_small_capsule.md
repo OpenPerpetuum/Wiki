@@ -8,12 +8,12 @@ description: "Research node that unlocks Standard booster node foundation (PBS s
 
 # Standard booster node foundation (research node)
 
-This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks [Standard booster node foundation](/content/items/pbs-effect-supplier-small-capsule/).
+This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks Standard booster node foundation.
 
 |  |  |
 |---|---|
 | Category | [PBS structures](/content/techtree/groups/pbs/) |
-| Unlocks | [Standard booster node foundation](/content/items/pbs-effect-supplier-small-capsule/) |
+| Unlocks | Standard booster node foundation |
 | Parent node | [Standard masker foundation](/content/techtree/nodes/pbs-maskertower-small-capsule/) |
 | Unlocks next | [Advanced booster node foundation](/content/techtree/nodes/pbs-effect-supplier-medium-capsule/), [Standard Aura emitter foundation](/content/techtree/nodes/pbs-aura-emitter-small-capsule/) |
 | Enabler extension | – |

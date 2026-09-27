@@ -93,21 +93,21 @@ For each documented stat: how many items have it, its unit, and the smallest / m
 
 | Stat | Unit | Items | Smallest | Median | Largest | Small example | Large example |
 |---|---|---|---|---|---|---|---|
-| `accuracy` | % | 129 | 0.1 | 11.5 | 46 | [Waspish](/content/items/npc-waspish-miniboss-rank2/) | [Standard Raven Cannon](/content/items/standard-raven-cannon/) |
+| `accuracy` | % | 129 | 0.1 | 11.5 | 46 | Waspish | [Standard Raven Cannon](/content/items/standard-raven-cannon/) |
 | `ammo_reload_time` | s | 4 | 10k | 10k | 10k | [Specimen processing](/content/items/sap-specimen-processing/) | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) |
 | `armor_max` | hp | 428 | 50 | 3.6k | 150M | [Plasma bomb](/content/items/area-bomb/) | [Passive hacking](/content/items/sap-passive-hacking/) |
-| `armor_repair_amount` | hp | 40 | 3 | 110 | 460 | [Ictus](/content/items/npc-ictus-tm-ww-level03-exp2/) | [Pandegris large armor repairer](/content/items/named3-large-armor-repairer/) |
+| `armor_repair_amount` | hp | 40 | 3 | 110 | 460 | Ictus | [Pandegris large armor repairer](/content/items/named3-large-armor-repairer/) |
 | `core_max` | RP | 164 | 1 | 2.75k | 25M | [Specimen processing](/content/items/sap-specimen-processing/) | [Hi-tech energy well foundation](/content/items/pbs-energywell-large/) |
 | `core_recharge_time` | s | 21 | 300 | 345.6k | 345.6k | [Npcpbs Turret Chassis](/content/items/npcpbs-turret-chassis/) | [Hi-tech accelerator strip foundation](/content/items/pbs-highwaynode-large/) |
 | `core_usage` | RP | 500 | 0 | 20 | 495 | [Standard small energy injector](/content/items/standard-small-core-booster/) | [Pandegris large armor repairer](/content/items/named3-large-armor-repairer/) |
 | `cpu_max` | CU | 2 | 1k | 5k | 5k | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) | [Npcpbs Turret Head](/content/items/npcpbs-turret-head/) |
 | `cpu_usage` | CU | 677 | 0 | 41.2 | 495 | [Standard coprocessor](/content/items/standard-cpu-upgrade/) | [Named3 Large Harvester](/content/items/named3-large-harvester/) |
 | `cycle_time` | s | 553 | 0.6 | 10k | 180k | [Standard laser turret](/content/items/pbs-turret-laser-small/) | [Named3 Excavator Module](/content/items/named3-excavator-module/) |
-| `damage_chemical` | hp | 41 | 3 | 16 | 900 | [Small TFJ bullet](/content/items/ammo-small-projectile-rewa/) | [Heavy Landmine Capsule](/content/items/heavy-landmine/) |
-| `damage_explosive` | hp | 80 | 1 | 39.732 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | [Heavy Landmine Capsule](/content/items/heavy-landmine/) |
-| `damage_kinetic` | hp | 73 | 1 | 26 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | [Heavy Landmine Capsule](/content/items/heavy-landmine/) |
-| `damage_thermal` | hp | 61 | 1 | 26 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | [Heavy Landmine Capsule](/content/items/heavy-landmine/) |
-| `damage_toxic` | hp | 33 | 3 | 18 | 900 | [Small armor-piercing bullet](/content/items/ammo-small-projectile-a/) | [Heavy Landmine Capsule](/content/items/heavy-landmine/) |
+| `damage_chemical` | hp | 41 | 3 | 16 | 900 | [Small TFJ bullet](/content/items/ammo-small-projectile-rewa/) | Heavy Landmine Capsule |
+| `damage_explosive` | hp | 80 | 1 | 39.732 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | Heavy Landmine Capsule |
+| `damage_kinetic` | hp | 73 | 1 | 26 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | Heavy Landmine Capsule |
+| `damage_thermal` | hp | 61 | 1 | 26 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | Heavy Landmine Capsule |
+| `damage_toxic` | hp | 33 | 3 | 18 | 900 | [Small armor-piercing bullet](/content/items/ammo-small-projectile-a/) | Heavy Landmine Capsule |
 | `default_effect_range` | m | 60 | 100 | 100 | 100 | [Standard velocity NEXUS module](/content/items/standard-gang-assist-speed-module/) | [Bomitar I. shield NEXUS module](/content/items/named1-gang-assist-shield-calculation-module/) |
 | `energy_neutralized_amount` | RP | 13 | 35 | 160 | 1k | [Flawed small energy neutralizer](/content/items/artifact-damaged-small-energy-neutralizer/) | [Turret-mounted energy neutralizer](/content/items/turret-energy-neutralizer/) |
 | `energy_transfer_amount` | RP | 12 | 30 | 150 | 250 | [Flawed small energy transferer](/content/items/artifact-damaged-small-energy-transfer/) | [Livostid PT-VI medium energy transferer](/content/items/named3-medium-energy-transfer/) |
@@ -122,10 +122,10 @@ For each documented stat: how many items have it, its unit, and the smallest / m
 | `optimal_range` | m | 283 | 3 | 18 | 300 | [Standard small harvester](/content/items/standard-small-harvester/) | [The Eraser](/content/items/zmall-railg00n/) |
 | `powergrid_max` | RP | 4 | 1k | 1.25M | 1.25M | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) | [Passive hacking](/content/items/sap-passive-hacking/) |
 | `powergrid_usage` | RP | 671 | 2 | 35 | 100k | [Standard accumulator recharger](/content/items/standard-core-recharger/) | [The Eraser](/content/items/zmall-railg00n/) |
-| `resist_chemical` | % | 703 | -10 | 75 | 100k | [Npc Gamma Sequer Basic Lindy](/content/items/npc-gamma-sequer-basic-lindy/) | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
+| `resist_chemical` | % | 703 | -10 | 75 | 100k | Npc Gamma Sequer Basic Lindy | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
 | `resist_explosive` | % | 703 | 10 | 75 | 100k | [Teleport anomaly](/content/items/rift/) | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
-| `resist_kinetic` | % | 703 | 10 | 75 | 100k | [Npc Gamma Seth Dps L7](/content/items/npc-gamma-seth-dps-l7/) | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
-| `resist_thermal` | % | 703 | 10 | 75 | 100k | [Npc Gamma Seth Dps L7](/content/items/npc-gamma-seth-dps-l7/) | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
+| `resist_kinetic` | % | 703 | 10 | 75 | 100k | Npc Gamma Seth Dps L7 | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
+| `resist_thermal` | % | 703 | 10 | 75 | 100k | Npc Gamma Seth Dps L7 | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
 | `sensor_strength` | — | 29 | 30 | 180 | 200 | [Flawed ECCM](/content/items/artifact-damaged-eccm/) | [Hi-tech EM-turret](/content/items/pbs-turret-rail-large/) |
 | `shield_absorbtion` | hp | 25 | 1.2 | 2 | 2.3 | [Flawed small shield generator](/content/items/artifact-damaged-small-shield-generator/) | [Archer Named4 Medium Shield Generator](/content/items/archer-named4-medium-shield-generator/) |
 | `shield_radius` | m | 25 | 4.5 | 12 | 33 | [Standard small shield generator](/content/items/standard-small-shield-generator/) | [Umbeler large shield generator](/content/items/named3-large-shield-generator/) |

@@ -8,12 +8,12 @@ description: "Research node that unlocks Hi-tech repair node foundation (PBS str
 
 # Hi-tech repair node foundation (research node)
 
-This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks [Hi-tech repair node foundation](/content/items/pbs-armor-repairer-large-capsule/).
+This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks Hi-tech repair node foundation.
 
 |  |  |
 |---|---|
 | Category | [PBS structures](/content/techtree/groups/pbs/) |
-| Unlocks | [Hi-tech repair node foundation](/content/items/pbs-armor-repairer-large-capsule/) |
+| Unlocks | Hi-tech repair node foundation |
 | Parent node | [Advanced repair node foundation](/content/techtree/nodes/pbs-armor-repairer-medium-capsule/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

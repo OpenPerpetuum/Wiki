@@ -24,8 +24,8 @@ public static class TechTreePage
 
     public static List<(string File, string Content)> Build(Db db)
     {
-        var defs = db.Query("SELECT definition, definitionname, enabled, hidden FROM entitydefaults")
-            .ToDictionary(r => r.Int("definition"), r => (r.Str("definitionname"), r.Bit("enabled"), r.Bit("hidden")));
+        var defs = db.Query("SELECT definition, definitionname, enabled, hidden, categoryflags FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => (r.Str("definitionname"), r.Bit("enabled"), r.Bit("hidden"), r.Lng("categoryflags")));
         var exts = db.Query("SELECT extensionid, extensionname FROM extensions")
             .ToDictionary(r => r.Int("extensionid"), r => r.Str("extensionname"));
         var groups = db.Query("SELECT id, name FROM techtreegroups").ToDictionary(r => r.Int("id"), r => r.Str("name"));
@@ -50,9 +50,12 @@ public static class TechTreePage
         string ItemLink(int def)
         {
             if (!defs.TryGetValue(def, out var d)) return null;
-            var (name, enabled, hidden) = d;
+            var (name, enabled, hidden, catFlags) = d;
             if (!enabled || hidden) return null;
-            if (name.EndsWith("_bot")) return "/content/robots/";
+            if (name.StartsWith("def_npc_")) return null; // NPC unit fits: no catalog page
+            if (name.EndsWith("_bot") || name.EndsWith("_bot_pr")) return "/content/robots/";
+            if ((catFlags & Flags.CfOre) == Flags.CfOre) return null;
+            if ((catFlags & Flags.CfDeployableStructure) == Flags.CfDeployableStructure) return null;
             return "/content/items/" + name["def_".Length..].ToLowerInvariant().Replace('_', '-') + "/";
         }
         /// <summary>Node page URL: the item slug, without the "_bot" suffix (robots

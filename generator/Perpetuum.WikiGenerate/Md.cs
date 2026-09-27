@@ -3,9 +3,10 @@ namespace Perpetuum.WikiGenerate;
 /// <summary>Markdown table + page helpers shared by all page generators.</summary>
 public static class Md
 {
-    /// <summary>Client string dictionary (key -> display name) loaded from the GBF
-    /// archive; empty when no archive was supplied.</summary>
-    public static Dictionary<string, string> ClientStrings { get; set; } = new();
+    /// <summary>Client display names: a static snapshot of the official client's
+    /// English string dictionary (see ClientNames.cs), reduced to the definition
+    /// and zone keys this generator resolves.</summary>
+    public static IReadOnlyDictionary<string, string> ClientStrings { get; } = ClientNames.Map;
 
     /// <summary>Escapes pipes and newlines for a single table cell.</summary>
     public static string Cell(object? v)

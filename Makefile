@@ -8,10 +8,6 @@
 # The site build (build/serve) never needs a database: the generated markdown is
 # committed to git. `make generate` is only needed when the database content
 # changes; it requires the .NET 8 SDK and a reachable game database.
-#
-# Layout assumption: this repository is checked out as `wiki/` directly inside
-# the PerpetuumServer2 repository, so the client string archive is found at
-# ../Perpetuum.gbf (override with WIKI_GBF=...).
 
 ZOLA_IMAGE := ghcr.io/getzola/zola:v0.23.6
 WIKI_PORT  ?= 8085
@@ -19,10 +15,8 @@ WIKI_PORT  ?= 8085
 # Generator inputs (make generate).
 #   WIKI_DB          SQL Server connection string (falls back to $PERPETUUM_CONNECTIONSTRING)
 #   WIKI_PLANTRULES  directory containing the plant rule files ($GameRoot/plantrules)
-#   WIKI_GBF         client string archive (default: ../Perpetuum.gbf)
 WIKI_DB         ?= $(PERPETUUM_CONNECTIONSTRING)
 WIKI_PLANTRULES ?=
-WIKI_GBF        ?= ../Perpetuum.gbf
 DOTNET          ?= $(shell command -v dotnet 2>/dev/null || echo $(HOME)/.dotnet/dotnet)
 TTY_FLAG        := $(shell [ -t 0 ] && echo -it || echo -i)
 
@@ -57,7 +51,6 @@ generate:
 	$(DOTNET) run -c Release --no-build --project generator/Perpetuum.WikiGenerate -- \
 		--connection "$(WIKI_DB)" \
 		--plantrules "$(WIKI_PLANTRULES)" \
-		--gbf "$(WIKI_GBF)" \
 		--out content/content \
 		--zones-out content/zones
 

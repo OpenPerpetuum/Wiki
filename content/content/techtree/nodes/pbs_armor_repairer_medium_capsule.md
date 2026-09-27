@@ -8,12 +8,12 @@ description: "Research node that unlocks Advanced repair node foundation (PBS st
 
 # Advanced repair node foundation (research node)
 
-This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks [Advanced repair node foundation](/content/items/pbs-armor-repairer-medium-capsule/).
+This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks Advanced repair node foundation.
 
 |  |  |
 |---|---|
 | Category | [PBS structures](/content/techtree/groups/pbs/) |
-| Unlocks | [Advanced repair node foundation](/content/items/pbs-armor-repairer-medium-capsule/) |
+| Unlocks | Advanced repair node foundation |
 | Parent node | [Standard repair node foundation](/content/techtree/nodes/pbs-armor-repairer-small-capsule/) |
 | Unlocks next | [Hi-tech repair node foundation](/content/techtree/nodes/pbs-armor-repairer-large-capsule/) |
 | Enabler extension | – |

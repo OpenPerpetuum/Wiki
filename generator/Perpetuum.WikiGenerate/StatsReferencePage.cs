@@ -67,7 +67,7 @@ public static class StatsReferencePage
 
         // Catalog-wide values per documented field, prototypes and test objects excluded.
         var values = db.Query("""
-            SELECT av.definition, af.name, av.value
+            SELECT av.definition, af.name, av.value, d.definitionname, d.categoryflags
             FROM aggregatevalues av
             JOIN aggregatefields af ON af.id = av.field
             JOIN entitydefaults d ON d.definition = av.definition
@@ -77,12 +77,18 @@ public static class StatsReferencePage
               AND af.name NOT LIKE '%modifier'
             """).ToList();
 
-        string ItemLink(int def)
+        // defs here is name->(name, enabled, hidden); the flags live on the
+        // values rows because the catalog exclusion rules need category flags
+        // (ores and deployable structures get their own pages, not item pages).
+        string ItemLink(int def, long flags)
         {
             if (!defs.TryGetValue(def, out var d)) return null;
             var (name, enabled, hidden) = d;
             if (!enabled || hidden) return null;
-            if (name.EndsWith("_bot")) return "/content/robots/";
+            if (name.StartsWith("def_npc_")) return null; // NPC unit fits: no catalog page
+            if (name.EndsWith("_bot") || name.EndsWith("_bot_pr")) return "/content/robots/";
+            if ((flags & Flags.CfOre) == Flags.CfOre) return null;
+            if ((flags & Flags.CfDeployableStructure) == Flags.CfDeployableStructure) return null;
             var slug = name["def_".Length..].ToLowerInvariant().Replace('_', '-');
             // "Capsule" items are their own catalog entry; when the stat actually
             // belongs to the payload (e.g. landmine damage), link the payload.
@@ -94,10 +100,13 @@ public static class StatsReferencePage
             }
             return "/content/items/" + slug + "/";
         }
+        var flagsByDef = values
+            .GroupBy(v => v.Int("definition"))
+            .ToDictionary(g => g.Key, g => g.First().Lng("categoryflags"));
         string Example(int def)
         {
             var name = defs.TryGetValue(def, out var d) ? d.Item1 : "def_" + def;
-            var url = ItemLink(def);
+            var url = ItemLink(def, flagsByDef.TryGetValue(def, out var f) ? f : 0);
             var label = Md.DisplayName(name);
             return url is null ? label : $"[{label}]({url})";
         }

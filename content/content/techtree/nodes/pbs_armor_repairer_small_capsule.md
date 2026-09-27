@@ -8,12 +8,12 @@ description: "Research node that unlocks Standard repair node foundation (PBS st
 
 # Standard repair node foundation (research node)
 
-This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks [Standard repair node foundation](/content/items/pbs-armor-repairer-small-capsule/).
+This node of the [PBS structures](/content/techtree/groups/pbs/) research tree unlocks Standard repair node foundation.
 
 |  |  |
 |---|---|
 | Category | [PBS structures](/content/techtree/groups/pbs/) |
-| Unlocks | [Standard repair node foundation](/content/items/pbs-armor-repairer-small-capsule/) |
+| Unlocks | Standard repair node foundation |
 | Parent node | [Standard repair shop foundation](/content/techtree/nodes/pbs-repair-small-capsule/) |
 | Unlocks next | [Advanced repair node foundation](/content/techtree/nodes/pbs-armor-repairer-medium-capsule/), [Standard masker foundation](/content/techtree/nodes/pbs-maskertower-small-capsule/) |
 | Enabler extension | – |
