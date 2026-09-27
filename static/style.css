@@ -206,13 +206,8 @@ pre code { background: none; padding: 0; }
     border-radius: 4px;
     background: var(--neon-faint);
 }
-/* expandable item-shop sub-menu */
-.sidenav details.shop-sub summary { list-style: none; cursor: pointer; }
-.sidenav details.shop-sub summary::-webkit-details-marker { display: none; }
-.sidenav details.shop-sub summary::before { content: "▸ "; color: var(--chrome-muted); }
-.sidenav details.shop-sub[open] summary::before { content: "▾ "; }
-.sidenav details.shop-sub ul { margin: 0.15rem 0 0.3rem 1.1rem; }
-.sidenav details.shop-sub a { display: inline-block; padding: 0.05rem 0.35rem; }
+/* item-shop sub-category list (always open) */
+.sidenav ul.shop-sub { margin: 0.1rem 0 0.3rem 0.9rem; }
 .sidenav a {
     display: block; padding: 0.3rem 0.6rem; border-radius: 6px;
     color: var(--chrome-muted); font-size: 0.92rem;

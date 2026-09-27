@@ -78,112 +78,62 @@
 <div class="layout">
 <nav class="sidenav">
     <ul>
-        <li>
-            <details class="nav-sub" data-nav-sub="new-here">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/new-here/"><svg class="navicon" aria-hidden="true"><use href="#mi-start"/></svg>{{ config.extra.ui.nav_new_here }}</a></summary>
-                <ul>
-                    <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
-                    <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
-                    <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
-                </ul>
-            </details>
-        </li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/new-here/"><svg class="navicon" aria-hidden="true"><use href="#mi-start"/></svg>{{ config.extra.ui.nav_new_here }}</a></li>
+        <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
+        <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
+        <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
         <li><a class="map-entry" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a></li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/in-the-field/"><svg class="navicon" aria-hidden="true"><use href="#mi-radar"/></svg>{{ config.extra.ui.nav_in_the_field }}</a></li>
+        <li><a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a></li>
+        <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
+        <li><a href="/features/missions/">{{ config.extra.ui.nav_missions }}</a></li>
+        <li><a href="/features/movement/">{{ config.extra.ui.nav_movement }}</a></li>
+        <li><a href="/features/npcs/">{{ config.extra.ui.nav_npcs }}</a></li>
+        <li><a href="/features/exploration/">{{ config.extra.ui.nav_exploration }}</a></li>
+        <li><a href="/features/probes/">{{ config.extra.ui.nav_probes }}</a></li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/industry/"><svg class="navicon" aria-hidden="true"><use href="#mi-arm"/></svg>{{ config.extra.ui.nav_industry }}</a></li>
+        <li><a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a></li>
+        <li><a href="/features/production/">{{ config.extra.ui.nav_production }}</a></li>
+        <li><a href="/features/research/">{{ config.extra.ui.nav_research }}</a></li>
+        <li><a href="/features/items/">{{ config.extra.ui.nav_items }}</a></li>
+        <li><a href="/features/modules/">{{ config.extra.ui.nav_modules }}</a></li>
+        <li><a href="/features/sparks/">{{ config.extra.ui.nav_sparks }}</a></li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/trade/"><svg class="navicon" aria-hidden="true"><use href="#mi-panel"/></svg>{{ config.extra.ui.nav_trade }}</a></li>
+        <li><a href="/features/market/">{{ config.extra.ui.nav_market }}</a></li>
+        <li><a href="/features/transport/">{{ config.extra.ui.nav_transport }}</a></li>
         <li>
-            <details class="nav-sub" data-nav-sub="in-the-field">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/in-the-field/"><svg class="navicon" aria-hidden="true"><use href="#mi-radar"/></svg>{{ config.extra.ui.nav_in_the_field }}</a></summary>
-                <ul>
-                    <li><a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a></li>
-                    <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
-                    <li><a href="/features/missions/">{{ config.extra.ui.nav_missions }}</a></li>
-                    <li><a href="/features/movement/">{{ config.extra.ui.nav_movement }}</a></li>
-                    <li><a href="/features/npcs/">{{ config.extra.ui.nav_npcs }}</a></li>
-                    <li><a href="/features/exploration/">{{ config.extra.ui.nav_exploration }}</a></li>
-                    <li><a href="/features/probes/">{{ config.extra.ui.nav_probes }}</a></li>
-                </ul>
-            </details>
+            <a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a>
+            <ul class="shop-sub">
+                <li><a href="/content/shop/ammo/">Ammo</a></li>
+                <li><a href="/content/shop/bots/">Bots</a></li>
+                <li><a href="/content/shop/paint/">Paint</a></li>
+                <li><a href="/content/shop/modules-equipment/">Modules &amp; equipment</a></li>
+                <li><a href="/content/shop/remote-commands/">Remote commands</a></li>
+                <li><a href="/content/shop/ep-boosters/">EP boosters</a></li>
+                <li><a href="/content/shop/mission-coins/">Mission coins</a></li>
+                <li><a href="/content/shop/teleports/">Teleports</a></li>
+                <li><a href="/content/shop/npc-eggs/">NPC eggs</a></li>
+                <li><a href="/content/shop/sap-items/">SAP items</a></li>
+                <li><a href="/content/shop/other/">Other</a></li>
+            </ul>
         </li>
-        <li>
-            <details class="nav-sub" data-nav-sub="industry">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/industry/"><svg class="navicon" aria-hidden="true"><use href="#mi-arm"/></svg>{{ config.extra.ui.nav_industry }}</a></summary>
-                <ul>
-                    <li><a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a></li>
-                    <li><a href="/features/production/">{{ config.extra.ui.nav_production }}</a></li>
-                    <li><a href="/features/research/">{{ config.extra.ui.nav_research }}</a></li>
-                    <li><a href="/features/items/">{{ config.extra.ui.nav_items }}</a></li>
-                    <li><a href="/features/modules/">{{ config.extra.ui.nav_modules }}</a></li>
-                    <li><a href="/features/sparks/">{{ config.extra.ui.nav_sparks }}</a></li>
-                </ul>
-            </details>
-        </li>
-        <li>
-            <details class="nav-sub" data-nav-sub="trade">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/trade/"><svg class="navicon" aria-hidden="true"><use href="#mi-panel"/></svg>{{ config.extra.ui.nav_trade }}</a></summary>
-                <ul>
-                    <li><a href="/features/market/">{{ config.extra.ui.nav_market }}</a></li>
-                    <li><a href="/features/transport/">{{ config.extra.ui.nav_transport }}</a></li>
-                    <li>
-                        <details class="nav-sub" data-nav-sub="shop">
-                            <summary class="sub-head"><a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a></summary>
-                            <ul>
-                                <li><a href="/content/shop/ammo/">Ammo</a></li>
-                                <li><a href="/content/shop/bots/">Bots</a></li>
-                                <li><a href="/content/shop/paint/">Paint</a></li>
-                                <li><a href="/content/shop/modules-equipment/">Modules &amp; equipment</a></li>
-                                <li><a href="/content/shop/remote-commands/">Remote commands</a></li>
-                                <li><a href="/content/shop/ep-boosters/">EP boosters</a></li>
-                                <li><a href="/content/shop/mission-coins/">Mission coins</a></li>
-                                <li><a href="/content/shop/teleports/">Teleports</a></li>
-                                <li><a href="/content/shop/npc-eggs/">NPC eggs</a></li>
-                                <li><a href="/content/shop/sap-items/">SAP items</a></li>
-                                <li><a href="/content/shop/other/">Other</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                </ul>
-            </details>
-        </li>
-        <li>
-            <details class="nav-sub" data-nav-sub="big-play">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/big-play/"><svg class="navicon" aria-hidden="true"><use href="#mi-star"/></svg>{{ config.extra.ui.nav_big_play }}</a></summary>
-                <ul>
-                    <li><a href="/features/pbs/">{{ config.extra.ui.nav_pbs }}</a></li>
-                    <li><a href="/features/outposts/">{{ config.extra.ui.nav_outposts }}</a></li>
-                    <li><a href="/features/intrusion/">{{ config.extra.ui.nav_intrusion }}</a></li>
-                </ul>
-            </details>
-        </li>
-        <li>
-            <details class="nav-sub" data-nav-sub="with-others">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/with-others/"><svg class="navicon" aria-hidden="true"><use href="#mi-robots"/></svg>{{ config.extra.ui.nav_with_others }}</a></summary>
-                <ul>
-                    <li><a href="/features/groups/">{{ config.extra.ui.nav_groups }}</a></li>
-                    <li><a href="/features/social/">{{ config.extra.ui.nav_social }}</a></li>
-                </ul>
-            </details>
-        </li>
-        <li>
-            <details class="nav-sub" data-nav-sub="knowledge">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/knowledge/"><svg class="navicon" aria-hidden="true"><use href="#mi-crystal"/></svg>{{ config.extra.ui.nav_knowledge }}</a></summary>
-                <ul>
-                    <li><a href="/features/abbreviations/">{{ config.extra.ui.nav_abbreviations }}</a></li>
-                    <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
-                </ul>
-            </details>
-        </li>
-        <li>
-            <details class="nav-sub" data-nav-sub="data-reference">
-                <summary class="nav-group"><a class="nav-group-link" href="/menu/data-reference/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_data_reference }}</a></summary>
-                <ul>
-                    <li><a href="/zones/map/">{{ config.extra.ui.nav_zone_map }}</a></li>
-                    <li><a href="/content/">{{ config.extra.ui.nav_content }}</a></li>
-                    <li><a href="/zones/">{{ config.extra.ui.nav_zones }}</a></li>
-                    <li><a href="/features/">{{ config.extra.ui.nav_all_features }}</a></li>
-                    <li><a href="/features/server/">{{ config.extra.ui.nav_server }}</a></li>
-                    <li><a href="/formats/">{{ config.extra.ui.nav_formats }}</a></li>
-                </ul>
-            </details>
-        </li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/big-play/"><svg class="navicon" aria-hidden="true"><use href="#mi-star"/></svg>{{ config.extra.ui.nav_big_play }}</a></li>
+        <li><a href="/features/pbs/">{{ config.extra.ui.nav_pbs }}</a></li>
+        <li><a href="/features/outposts/">{{ config.extra.ui.nav_outposts }}</a></li>
+        <li><a href="/features/intrusion/">{{ config.extra.ui.nav_intrusion }}</a></li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/with-others/"><svg class="navicon" aria-hidden="true"><use href="#mi-robots"/></svg>{{ config.extra.ui.nav_with_others }}</a></li>
+        <li><a href="/features/groups/">{{ config.extra.ui.nav_groups }}</a></li>
+        <li><a href="/features/social/">{{ config.extra.ui.nav_social }}</a></li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/knowledge/"><svg class="navicon" aria-hidden="true"><use href="#mi-crystal"/></svg>{{ config.extra.ui.nav_knowledge }}</a></li>
+        <li><a href="/features/abbreviations/">{{ config.extra.ui.nav_abbreviations }}</a></li>
+        <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
+        <li class="nav-group"><a class="nav-group-link" href="/menu/data-reference/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_data_reference }}</a></li>
+        <li><a href="/zones/map/">{{ config.extra.ui.nav_zone_map }}</a></li>
+        <li><a href="/content/">{{ config.extra.ui.nav_content }}</a></li>
+        <li><a href="/zones/">{{ config.extra.ui.nav_zones }}</a></li>
+        <li><a href="/features/">{{ config.extra.ui.nav_all_features }}</a></li>
+        <li><a href="/features/server/">{{ config.extra.ui.nav_server }}</a></li>
+        <li><a href="/formats/">{{ config.extra.ui.nav_formats }}</a></li>
     </ul>
 </nav>
 <div class="content-col">
@@ -332,41 +282,6 @@
         });
         document.addEventListener("keydown", function (e) {
             if (e.key === "Escape") setOpen(false);
-        });
-    })();
-    // Left-menu sub-categories (<details>): the open state is remembered per
-    // browser, and a sub-menu force-opens while you are inside its section.
-    (function () {
-        var path = document.location.pathname;
-        // Which sidenav entry "owns" this page? The longest link that is the
-        // page itself or an ancestor directory of it — so /features/research/
-        // is owned by its own entry, not by the /features/ index entry.
-        var best = null;
-        Array.prototype.forEach.call(document.querySelectorAll(".sidenav a[href]"), function (a) {
-            var h = a.getAttribute("href");
-            if (!h || h === "/") return;
-            var hit = path === h || (h[h.length - 1] === "/" && path.startsWith(h) && path.length > h.length);
-            if (hit && (best === null || h.length > best.length)) best = h;
-        });
-        Array.prototype.forEach.call(document.querySelectorAll(".sidenav details[data-nav-sub]"), function (d) {
-            var key = "wiki-nav-open:" + d.getAttribute("data-nav-sub");
-            var inSection = false;
-            if (best) {
-                Array.prototype.forEach.call(d.querySelectorAll("a[href]"), function (a) {
-                    if (a.getAttribute("href") === best) inSection = true;
-                });
-            }
-            if (inSection) {
-                d.open = true;
-                try { localStorage.setItem(key, "1"); } catch (e) {}
-                return;
-            }
-            var saved = null;
-            try { saved = localStorage.getItem(key); } catch (e) {}
-            d.open = saved === "1";
-            d.addEventListener("toggle", function () {
-                try { localStorage.setItem(key, d.open ? "1" : "0"); } catch (e) {}
-            });
         });
     })();
     // Keyboard: Ctrl+F / Cmd+F focuses the wiki search; Esc unfocuses it.
