@@ -319,11 +319,18 @@
     (function () {
         var path = document.location.pathname;
         function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
-        // left menu: exact page (or its parent index for generated pages)
+        // left menu: longest matching entry — the page itself, or the deepest
+        // menu entry that is an ancestor of it (so generated sub-pages like an
+        // item page highlight "Content", a shop category highlights its entry).
+        var best = null, bestLen = -1;
         document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
             var href = a.getAttribute("href");
-            if (href === norm(path) || href === path) a.classList.add("active");
+            if (!href || href === "/") return;
+            var h = href[href.length - 1] === "/" ? href : href + "/";
+            var hit = h === norm(path) || (path.startsWith(h) && path.length > h.length);
+            if (hit && h.length > bestLen) { best = a; bestLen = h.length; }
         });
+        if (best) best.classList.add("active");
         // bottom menu: section
         var sections = ["/features/", "/content/", "/zones/"];
         var here = null;
@@ -333,6 +340,31 @@
         var link = document.querySelector('.footnav a[href="' + (here || "/") + '"]');
         if (!link) return;
         link.classList.add("active");
+    })();
+    // Left-menu scroll: restore the last position after navigation and make
+    // sure the highlighted entry is visible (a reset scroll must not hide the
+    // current category/sub-category).
+    (function () {
+        var nav = document.querySelector(".sidenav");
+        if (!nav) return;
+        var KEY = "wiki-sidenav-scroll";
+        var saved = null;
+        try { saved = sessionStorage.getItem(KEY); } catch (e) {}
+        if (saved !== null) nav.scrollTop = parseInt(saved, 10) || 0;
+        var active = nav.querySelector("a.active");
+        if (active) {
+            var nr = nav.getBoundingClientRect();
+            var ar = active.getBoundingClientRect();
+            if (ar.top < nr.top || ar.bottom > nr.bottom)
+                nav.scrollTop += (ar.top - nr.top) - (nr.height / 2) + (ar.height / 2);
+        }
+        var t = null;
+        nav.addEventListener("scroll", function () {
+            clearTimeout(t);
+            t = setTimeout(function () {
+                try { sessionStorage.setItem(KEY, String(nav.scrollTop)); } catch (e) {}
+            }, 100);
+        }, { passive: true });
     })();
     // Render ```mermaid fences as diagrams (mermaid.min.js loads deferred).
     document.addEventListener("DOMContentLoaded", function () {
