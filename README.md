@@ -3,6 +3,8 @@
 The player- and developer-facing wiki for the Open Perpetuum MMO server, built
 with [Zola](https://www.getzola.org/).
 
+License: **Apache-2.0** (see `LICENSE/`).
+
 ## Sections
 
 - **Features** — how the gameplay systems work (robots, combat, market, missions, ...)
