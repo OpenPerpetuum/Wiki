@@ -8,7 +8,7 @@ description: "Every item with its own stat page: modules, ammo, armor, robot par
 
 # Items
 
-Every item the game offers players, grouped into categories and sub-categories — **each item has its own page** with its full stats. Tier: 1 = normal, 2 = prototype, 3 = special. What a stat field actually does is documented in [Formats](/formats/).
+Every item the game offers players, grouped into categories and sub-categories — **each item has its own page** with its full stats. Tier: 1 = normal, 2 = prototype, 3 = special. What a stat value means and how big it is in context is in the [Stat reference](/content/stat-reference/); what a stat field actually does is in [Formats](/formats/).
 
 ## Modules (1469)
 

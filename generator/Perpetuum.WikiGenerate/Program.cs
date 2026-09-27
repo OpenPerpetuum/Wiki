@@ -79,6 +79,7 @@ public static class Program
             ("missions.md", MissionsPage.Build(db)),
             ("shop.md", ShopPage.Build(db, shop)),
             ("recipes.md", RecipesPage.Build(db)),
+        ("stat-reference.md", StatsReferencePage.Build(db)),
         };
         // The shop catalog is one page per category under shop/.
         foreach (var (_, slug, _) in ShopPage.Categories)
