@@ -150,10 +150,11 @@ public static class RobotsPage
                 .ToList();
             var title = Md.DisplayName(family.Key);
             sb.Append($"**{title}**\n\n");
-            // Model icon. Optional: models
-            // without a known icon just get no image.
-            if (RobotIcons.TryGetValue(title, out var icon))
-                sb.Append($"<img class=\"robot-icon\" src=\"/img/robots/{icon}\" alt=\"{title}\">\n\n");
+            // Model icon. Real model icons are not bundled (see the reuse policy);
+            // every family shows the shared placeholder until licensed art exists.
+            // RobotIcons can map a family to a file in static/img/robots/ again.
+            var icon = RobotIcons.TryGetValue(title, out var ic) ? $"/img/robots/{ic}" : "/img/placeholder.svg";
+            sb.Append($"<img class=\"robot-icon\" src=\"{icon}\" alt=\"{title}\">\n\n");
             Md.WriteTable(sb, new[] { "Robot", "Size" },
                 frows.Select(d => new[] { Md.DisplayName(d.Name), Md.Cell(d.Volume) }).ToArray());
             sb.Append('\n');
@@ -163,23 +164,12 @@ public static class RobotsPage
     /// <summary>Model family key: the definition name without generation/reward suffixes.</summary>
     private static string FamilyKey(DefRow d) => d.Name.Replace("_mk2", "").Replace("_reward1", "");
 
-    /// <summary>Display name -> static icon file (static/img/robots/), sourced from
-    /// the Open Perpetuum community wiki;
-    /// Scarab is missing there and was extracted from the client archive instead.</summary>
+    /// <summary>Display name -> static icon file (static/img/robots/). Empty for
+    /// now: the community-wiki icons were removed from the repo and the client
+    /// archive is not an allowed source. Families with no entry fall back to
+    /// placeholder.svg; add licensed icons here when available.</summary>
     private static readonly Dictionary<string, string> RobotIcons = new(StringComparer.OrdinalIgnoreCase)
     {
-        ["Arbalest"] = "arbalest.png", ["Argano"] = "argano.png", ["Artemis"] = "artemis.png",
-        ["Baphomet"] = "baphomet.png", ["Callisto"] = "callisto.png", ["Cameleon"] = "cameleon.png",
-        ["Castel"] = "castel.png", ["Daidalos"] = "daidalos.png", ["Felos"] = "felos.png",
-        ["Gargoyle"] = "gargoyle.png", ["Helix"] = "helix.png", ["Hermes"] = "hermes.png",
-        ["Hydra"] = "hydra.png", ["Ikarus"] = "ikarus.png", ["Intakt"] = "intakt.png",
-        ["Ictus"] = "ictus.png", ["Kain"] = "kain.png", ["Laird"] = "laird.png",
-        ["Lithus"] = "lithus.png", ["Locust"] = "locust.png", ["Mesmer"] = "mesmer.png",
-        ["Metis"] = "metis.png", ["Onyx"] = "onyx.png", ["Prometheus"] = "prometheus.png",
-        ["Riveler"] = "riveler.png", ["Sequer"] = "sequer.png", ["Seth"] = "seth.png",
-        ["Symbiont"] = "symbiont.png", ["Termis"] = "termis.png", ["Troiar"] = "troiar.png",
-        ["Tyrannos"] = "tyrannos.png", ["Vektor"] = "vektor.png", ["Waspish"] = "waspish.png",
-        ["Yagel"] = "yagel.png", ["Scarab"] = "scarab.png",
     };
 
     /// <summary>Class by priority (higher classes set the lower class bits too).</summary>

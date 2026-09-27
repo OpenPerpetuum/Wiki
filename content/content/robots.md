@@ -45,7 +45,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Argano**
 
-<img class="robot-icon" src="/img/robots/argano.png" alt="Argano">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Argano">
 
 | Robot | Size |
 |---|---|
@@ -54,13 +54,15 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Beholder**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Beholder">
+
 | Robot | Size |
 |---|---|
 | Beholder | 123 |
 
 **Cameleon**
 
-<img class="robot-icon" src="/img/robots/cameleon.png" alt="Cameleon">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Cameleon">
 
 | Robot | Size |
 |---|---|
@@ -69,7 +71,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Castel**
 
-<img class="robot-icon" src="/img/robots/castel.png" alt="Castel">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Castel">
 
 | Robot | Size |
 |---|---|
@@ -78,7 +80,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Helix**
 
-<img class="robot-icon" src="/img/robots/helix.png" alt="Helix">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Helix">
 
 | Robot | Size |
 |---|---|
@@ -86,7 +88,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Ikarus**
 
-<img class="robot-icon" src="/img/robots/ikarus.png" alt="Ikarus">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Ikarus">
 
 | Robot | Size |
 |---|---|
@@ -94,7 +96,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Intakt**
 
-<img class="robot-icon" src="/img/robots/intakt.png" alt="Intakt">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Intakt">
 
 | Robot | Size |
 |---|---|
@@ -103,7 +105,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Laird**
 
-<img class="robot-icon" src="/img/robots/laird.png" alt="Laird">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Laird">
 
 | Robot | Size |
 |---|---|
@@ -112,7 +114,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Prometheus**
 
-<img class="robot-icon" src="/img/robots/prometheus.png" alt="Prometheus">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Prometheus">
 
 | Robot | Size |
 |---|---|
@@ -121,7 +123,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Troiar**
 
-<img class="robot-icon" src="/img/robots/troiar.png" alt="Troiar">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Troiar">
 
 | Robot | Size |
 |---|---|
@@ -130,7 +132,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Vektor**
 
-<img class="robot-icon" src="/img/robots/vektor.png" alt="Vektor">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Vektor">
 
 | Robot | Size |
 |---|---|
@@ -138,7 +140,7 @@ The fast, light class — the cheapest robots to build and fly.
 
 **Yagel**
 
-<img class="robot-icon" src="/img/robots/yagel.png" alt="Yagel">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Yagel">
 
 | Robot | Size |
 |---|---|
@@ -155,7 +157,7 @@ The mid-size workhorse class.
 
 **Arbalest**
 
-<img class="robot-icon" src="/img/robots/arbalest.png" alt="Arbalest">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Arbalest">
 
 | Robot | Size |
 |---|---|
@@ -164,7 +166,7 @@ The mid-size workhorse class.
 
 **Baphomet**
 
-<img class="robot-icon" src="/img/robots/baphomet.png" alt="Baphomet">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Baphomet">
 
 | Robot | Size |
 |---|---|
@@ -173,13 +175,15 @@ The mid-size workhorse class.
 
 **Cronus**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Cronus">
+
 | Robot | Size |
 |---|---|
 | Cronus | 22 |
 
 **Hermes**
 
-<img class="robot-icon" src="/img/robots/hermes.png" alt="Hermes">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Hermes">
 
 | Robot | Size |
 |---|---|
@@ -187,7 +191,7 @@ The mid-size workhorse class.
 
 **Locust**
 
-<img class="robot-icon" src="/img/robots/locust.png" alt="Locust">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Locust">
 
 | Robot | Size |
 |---|---|
@@ -195,7 +199,7 @@ The mid-size workhorse class.
 
 **Sequer**
 
-<img class="robot-icon" src="/img/robots/sequer.png" alt="Sequer">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Sequer">
 
 | Robot | Size |
 |---|---|
@@ -204,7 +208,7 @@ The mid-size workhorse class.
 
 **Waspish**
 
-<img class="robot-icon" src="/img/robots/waspish.png" alt="Waspish">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Waspish">
 
 | Robot | Size |
 |---|---|
@@ -221,7 +225,7 @@ The main combat class.
 
 **Artemis**
 
-<img class="robot-icon" src="/img/robots/artemis.png" alt="Artemis">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Artemis">
 
 | Robot | Size |
 |---|---|
@@ -230,7 +234,7 @@ The main combat class.
 
 **Callisto**
 
-<img class="robot-icon" src="/img/robots/callisto.png" alt="Callisto">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Callisto">
 
 | Robot | Size |
 |---|---|
@@ -238,7 +242,7 @@ The main combat class.
 
 **Daidalos**
 
-<img class="robot-icon" src="/img/robots/daidalos.png" alt="Daidalos">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Daidalos">
 
 | Robot | Size |
 |---|---|
@@ -246,13 +250,15 @@ The main combat class.
 
 **Echelon**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Echelon">
+
 | Robot | Size |
 |---|---|
 | Echelon | 20 |
 
 **Gargoyle**
 
-<img class="robot-icon" src="/img/robots/gargoyle.png" alt="Gargoyle">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Gargoyle">
 
 | Robot | Size |
 |---|---|
@@ -261,7 +267,7 @@ The main combat class.
 
 **Ictus**
 
-<img class="robot-icon" src="/img/robots/ictus.png" alt="Ictus">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Ictus">
 
 | Robot | Size |
 |---|---|
@@ -270,7 +276,7 @@ The main combat class.
 
 **Kain**
 
-<img class="robot-icon" src="/img/robots/kain.png" alt="Kain">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Kain">
 
 | Robot | Size |
 |---|---|
@@ -279,7 +285,7 @@ The main combat class.
 
 **Termis**
 
-<img class="robot-icon" src="/img/robots/termis.png" alt="Termis">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Termis">
 
 | Robot | Size |
 |---|---|
@@ -288,7 +294,7 @@ The main combat class.
 
 **Tyrannos**
 
-<img class="robot-icon" src="/img/robots/tyrannos.png" alt="Tyrannos">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Tyrannos">
 
 | Robot | Size |
 |---|---|
@@ -297,12 +303,16 @@ The main combat class.
 
 **Vagabond**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Vagabond">
+
 | Robot | Size |
 |---|---|
 | Vagabond | 16 |
 | Vagabond Mk2 | 16 |
 
 **Zenith**
+
+<img class="robot-icon" src="/img/placeholder.svg" alt="Zenith">
 
 | Robot | Size |
 |---|---|
@@ -319,11 +329,15 @@ The top-tier combat class.
 
 **Archer Gropho Mk3**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Archer Gropho Mk3">
+
 | Robot | Size |
 |---|---|
 | Archer Gropho Mk3 | 22.5 |
 
 **Gropho**
+
+<img class="robot-icon" src="/img/placeholder.svg" alt="Gropho">
 
 | Robot | Size |
 |---|---|
@@ -333,13 +347,15 @@ The top-tier combat class.
 
 **Legatus**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Legatus">
+
 | Robot | Size |
 |---|---|
 | Legatus | 22.5 |
 
 **Lithus**
 
-<img class="robot-icon" src="/img/robots/lithus.png" alt="Lithus">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Lithus">
 
 | Robot | Size |
 |---|---|
@@ -348,7 +364,7 @@ The top-tier combat class.
 
 **Mesmer**
 
-<img class="robot-icon" src="/img/robots/mesmer.png" alt="Mesmer">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Mesmer">
 
 | Robot | Size |
 |---|---|
@@ -358,7 +374,7 @@ The top-tier combat class.
 
 **Metis**
 
-<img class="robot-icon" src="/img/robots/metis.png" alt="Metis">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Metis">
 
 | Robot | Size |
 |---|---|
@@ -366,7 +382,7 @@ The top-tier combat class.
 
 **Riveler**
 
-<img class="robot-icon" src="/img/robots/riveler.png" alt="Riveler">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Riveler">
 
 | Robot | Size |
 |---|---|
@@ -375,7 +391,7 @@ The top-tier combat class.
 
 **Seth**
 
-<img class="robot-icon" src="/img/robots/seth.png" alt="Seth">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Seth">
 
 | Robot | Size |
 |---|---|
@@ -385,7 +401,7 @@ The top-tier combat class.
 
 **Symbiont**
 
-<img class="robot-icon" src="/img/robots/symbiont.png" alt="Symbiont">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Symbiont">
 
 | Robot | Size |
 |---|---|
@@ -402,7 +418,7 @@ A rare heavy platform class.
 
 **Scarab**
 
-<img class="robot-icon" src="/img/robots/scarab.png" alt="Scarab">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Scarab">
 
 | Robot | Size |
 |---|---|
@@ -419,11 +435,15 @@ The starter bot, the flagship and limited/event models.
 
 **AnniversArkhe**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="AnniversArkhe">
+
 | Robot | Size |
 |---|---|
 | AnniversArkhe | 12 |
 
 **Anniversarkhe Year2**
+
+<img class="robot-icon" src="/img/placeholder.svg" alt="Anniversarkhe Year2">
 
 | Robot | Size |
 |---|---|
@@ -431,11 +451,15 @@ The starter bot, the flagship and limited/event models.
 
 **Anniversarkhe Year3**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Anniversarkhe Year3">
+
 | Robot | Size |
 |---|---|
 | Anniversarkhe Year3 | 12 |
 
 **Ares**
+
+<img class="robot-icon" src="/img/placeholder.svg" alt="Ares">
 
 | Robot | Size |
 |---|---|
@@ -443,13 +467,15 @@ The starter bot, the flagship and limited/event models.
 
 **Arkhe Mk2**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Arkhe Mk2">
+
 | Robot | Size |
 |---|---|
 | Arkhe Mk2 | 12 |
 
 **Felos**
 
-<img class="robot-icon" src="/img/robots/felos.png" alt="Felos">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Felos">
 
 | Robot | Size |
 |---|---|
@@ -457,7 +483,7 @@ The starter bot, the flagship and limited/event models.
 
 **Hydra**
 
-<img class="robot-icon" src="/img/robots/hydra.png" alt="Hydra">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Hydra">
 
 | Robot | Size |
 |---|---|
@@ -465,19 +491,23 @@ The starter bot, the flagship and limited/event models.
 
 **Arkhe**
 
+<img class="robot-icon" src="/img/placeholder.svg" alt="Arkhe">
+
 | Robot | Size |
 |---|---|
 | Arkhe | 12 |
 
 **Onyx**
 
-<img class="robot-icon" src="/img/robots/onyx.png" alt="Onyx">
+<img class="robot-icon" src="/img/placeholder.svg" alt="Onyx">
 
 | Robot | Size |
 |---|---|
 | Onyx | 22.5 |
 
 **Terramotus**
+
+<img class="robot-icon" src="/img/placeholder.svg" alt="Terramotus">
 
 | Robot | Size |
 |---|---|
