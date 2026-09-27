@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 85 |
 | cpu_usage | 45 |
-| cycle_time | 15000 |
+| cycle_time | 15k |
 | mining_probe_accuracy | 0.25 |
 | powergrid_usage | 50 |
 

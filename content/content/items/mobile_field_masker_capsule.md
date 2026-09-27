@@ -21,8 +21,8 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 15000 |
-| despawn_time | 900000 |
+| armor_max | 15k |
+| despawn_time | 900k |
 | effect_stealth_strength_modifier | 75 |
 | resist_chemical | 150 |
 | resist_explosive | 150 |

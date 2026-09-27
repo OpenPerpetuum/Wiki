@@ -84,6 +84,7 @@ pre code { background: none; padding: 0; }
     width: 26px; height: 26px;
     vertical-align: -0.35em; margin-right: 0.45rem;
     filter: drop-shadow(0 0 6px var(--neon-faint));
+    color: var(--neon);
 }
 .palette-wrap { position: relative; margin-left: auto; display: flex; gap: 0.4rem; }
 .palette-toggle {
@@ -589,6 +590,7 @@ img[src^="/img/outpostrelic"], img[src^="/img/nia-small"] {
     vertical-align: -0.5em; margin-right: 0.5rem;
     filter: drop-shadow(0 0 6px var(--neon-faint));
 }
+.robot-icon.icon-mask { width: 2.6em; }
 
 /* video grid (home page): responsive, several per row on wide windows */
 .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 1.1rem 0; }
@@ -674,5 +676,14 @@ footer {
 .footcredit .attr a { text-decoration: underline; }
 .footcredit a { color: var(--chrome-fg); }
 .footcredit code { background: rgba(255, 255, 255, 0.07); color: var(--chrome-fg); }
-.brand-logo { color: var(--neon); }
-.robot-icon { color: var(--accent); }
+/* SVG icons loaded via <img> can't inherit page CSS colors, so theme-tinted
+   icons are rendered as alpha masks over currentColor instead. */
+.icon-mask {
+    display: inline-block;
+    background: currentColor;
+    -webkit-mask: url("/img/placeholder.svg") no-repeat center;
+    mask: url("/img/placeholder.svg") no-repeat center;
+    -webkit-mask-size: contain; mask-size: contain;
+}
+.robot-icon.icon-mask { color: var(--accent); }
+.palette-toggle { color: var(--neon); }

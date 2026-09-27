@@ -10,33 +10,33 @@ description: "Fixed-price vendor items: bots. Best price across all vendors."
 
 [Item shop](/content/shop/) → Bots. Ready-to-fly robots and named fits, straight from the vendor.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | TM Coin | ICS Coin | ASI Coin | Credits | UniCoin | Vendors |
 |---|---|---|---|---|---|---|---|
-| [Vanguard Mesmer](/content/robots/) | 1 | – | 50000 | – | 2500000000 | – | Daoden outpost |
-| [Mercenary Seth](/content/robots/) | 1 | – | – | 50000 | 2500000000 | – | Daoden outpost |
-| [Praetorian Gropho](/content/robots/) | 1 | 50000 | – | – | 2500000000 | – | Daoden outpost |
-| [Vektor](/content/robots/) | 1 | – | – | – | 490000 | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Helix](/content/robots/) | 1 | – | – | – | 1380000 | 230 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Locust](/content/robots/) | 1 | – | – | – | 1330000 | 220 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Echelon](/content/robots/) | 1 | – | – | – | 4260000 | 710 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Callisto](/content/robots/) | 1 | – | – | – | 5330000 | 890 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Legatus](/content/robots/) | 1 | – | – | – | 17870000 | 2980 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Ikarus](/content/robots/) | 1 | – | – | – | 330000 | 60 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Cronus](/content/robots/) | 1 | – | – | – | 1570000 | 260 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Hermes](/content/robots/) | 1 | – | – | – | 1560000 | 260 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Daidalos](/content/robots/) | 1 | – | – | – | 9300000 | 1550 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Metis](/content/robots/) | 1 | – | – | – | 20370000 | 3390 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Vektor Bot (CT capsule)](/content/items/vektor-bot-ct-capsule/) | 1 | – | – | – | 250000 | 125 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Helix Bot (CT capsule)](/content/items/helix-bot-ct-capsule/) | 1 | – | – | – | 750000 | 550 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Locust Bot (CT capsule)](/content/items/locust-bot-ct-capsule/) | 1 | – | – | – | 750000 | 375 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Echelon Bot (CT capsule)](/content/items/echelon-bot-ct-capsule/) | 1 | – | – | – | 2250000 | 1500 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Callisto Bot (CT capsule)](/content/items/callisto-bot-ct-capsule/) | 1 | – | – | – | 3750000 | 2250 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Legatus Bot (CT capsule)](/content/items/legatus-bot-ct-capsule/) | 1 | – | – | – | 12500000 | 6650 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Ikarus Bot (CT capsule)](/content/items/ikarus-bot-ct-capsule/) | 1 | – | – | – | 125000 | 50 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Cronus Bot (CT capsule)](/content/items/cronus-bot-ct-capsule/) | 1 | – | – | – | 750000 | 500 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Hermes Bot (CT capsule)](/content/items/hermes-bot-ct-capsule/) | 1 | – | – | – | 875000 | 500 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Daidalos Bot (CT capsule)](/content/items/daidalos-bot-ct-capsule/) | 1 | – | – | – | 5000000 | 1650 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Metis Bot (CT capsule)](/content/items/metis-bot-ct-capsule/) | 1 | – | – | – | 17500000 | 8750 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Vanguard Mesmer](/content/robots/) | ∞ | – | 50k | – | 2.5G | – | Daoden outpost |
+| [Mercenary Seth](/content/robots/) | ∞ | – | – | 50k | 2.5G | – | Daoden outpost |
+| [Praetorian Gropho](/content/robots/) | ∞ | 50k | – | – | 2.5G | – | Daoden outpost |
+| [Vektor](/content/robots/) | ∞ | – | – | – | 490k | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Helix](/content/robots/) | ∞ | – | – | – | 1.38M | 230 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Locust](/content/robots/) | ∞ | – | – | – | 1.33M | 220 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Echelon](/content/robots/) | ∞ | – | – | – | 4.26M | 710 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Callisto](/content/robots/) | ∞ | – | – | – | 5.33M | 890 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Legatus](/content/robots/) | ∞ | – | – | – | 17.87M | 2.98k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Ikarus](/content/robots/) | ∞ | – | – | – | 330k | 60 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Cronus](/content/robots/) | ∞ | – | – | – | 1.57M | 260 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Hermes](/content/robots/) | ∞ | – | – | – | 1.56M | 260 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Daidalos](/content/robots/) | ∞ | – | – | – | 9.3M | 1.55k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Metis](/content/robots/) | ∞ | – | – | – | 20.37M | 3.39k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Vektor Bot (CT capsule)](/content/items/vektor-bot-ct-capsule/) | ∞ | – | – | – | 250k | 125 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Helix Bot (CT capsule)](/content/items/helix-bot-ct-capsule/) | ∞ | – | – | – | 750k | 550 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Locust Bot (CT capsule)](/content/items/locust-bot-ct-capsule/) | ∞ | – | – | – | 750k | 375 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Echelon Bot (CT capsule)](/content/items/echelon-bot-ct-capsule/) | ∞ | – | – | – | 2.25M | 1.5k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Callisto Bot (CT capsule)](/content/items/callisto-bot-ct-capsule/) | ∞ | – | – | – | 3.75M | 2.25k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Legatus Bot (CT capsule)](/content/items/legatus-bot-ct-capsule/) | ∞ | – | – | – | 12.5M | 6.65k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Ikarus Bot (CT capsule)](/content/items/ikarus-bot-ct-capsule/) | ∞ | – | – | – | 125k | 50 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Cronus Bot (CT capsule)](/content/items/cronus-bot-ct-capsule/) | ∞ | – | – | – | 750k | 500 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Hermes Bot (CT capsule)](/content/items/hermes-bot-ct-capsule/) | ∞ | – | – | – | 875k | 500 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Daidalos Bot (CT capsule)](/content/items/daidalos-bot-ct-capsule/) | ∞ | – | – | – | 5M | 1.65k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Metis Bot (CT capsule)](/content/items/metis-bot-ct-capsule/) | ∞ | – | – | – | 17.5M | 8.75k | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
 

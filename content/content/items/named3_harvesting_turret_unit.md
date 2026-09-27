@@ -21,9 +21,9 @@ description: "Special & other / Miscellaneous, tier 4"
 
 | Field | Value |
 |---|---|
-| cycle_time | 4810 |
+| cycle_time | 4.81k |
 | harvesting_amount_modifier | 5.4905 |
 | remote_control_bandwidth_usage | 4 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 
 [All items](/content/items/)

@@ -32,11 +32,12 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 
 ```mermaid
 graph LR
-    a["Elitet2 70 Small Shield Generator (CT capsule) (current)"]:::current
-    b["Elitet2 70 Small Shield Generator"]
-    a --> b
-    click b "/content/items/elitet2-70-small-shield-generator/" "Elitet2 70 Small Shield Generator"
+    a["Elitet2 70 Small Shield Generator (CT capsule)"]:::current
+    b["Elitet2 70 Small Shield Generator"]:::finished
+    a -->|yields| b
+                click b "/content/items/elitet2-70-small-shield-generator/" "Elitet2 70 Small Shield Generator"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -44,10 +45,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| New Virginia (zone_TM) | 1 | 600000 | 30 |
-| Attalica (zone_ICS) | 1 | 600000 | 30 |
-| Attalica outpost | 1 | 600000 | 30 |
-| Daoden (zone_ASI) | 1 | 600000 | 30 |
-| Daoden outpost | 1 | 600000 | 30 |
+| New Virginia (zone_TM) | ∞ | 600k | 30 |
+| Attalica (zone_ICS) | ∞ | 600k | 30 |
+| Attalica outpost | ∞ | 600k | 30 |
+| Daoden (zone_ASI) | ∞ | 600k | 30 |
+| Daoden outpost | ∞ | 600k | 30 |
 
 [All items](/content/items/)

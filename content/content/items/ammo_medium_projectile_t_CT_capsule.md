@@ -32,11 +32,12 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 
 ```mermaid
 graph LR
-    a["Ammo Medium Projectile T (CT capsule) (current)"]:::current
-    b["Ammo Medium Projectile T"]
-    a --> b
-    click b "/content/items/ammo-medium-projectile-t/" "Ammo Medium Projectile T"
+    a["Ammo Medium Projectile T (CT capsule)"]:::current
+    b["Ammo Medium Projectile T"]:::finished
+    a -->|yields| b
+                click b "/content/items/ammo-medium-projectile-t/" "Ammo Medium Projectile T"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -44,10 +45,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| New Virginia (zone_TM) | 1 | 5000000 | 100 |
-| Attalica (zone_ICS) | 1 | 5000000 | 100 |
-| Attalica outpost | 1 | 5000000 | 100 |
-| Daoden (zone_ASI) | 1 | 5000000 | 100 |
-| Daoden outpost | 1 | 5000000 | 100 |
+| New Virginia (zone_TM) | ∞ | 5M | 100 |
+| Attalica (zone_ICS) | ∞ | 5M | 100 |
+| Attalica outpost | ∞ | 5M | 100 |
+| Daoden (zone_ASI) | ∞ | 5M | 100 |
+| Daoden outpost | ∞ | 5M | 100 |
 
 [All items](/content/items/)

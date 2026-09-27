@@ -25,7 +25,7 @@ description: "Artifacts, tier 3"
 | blob_emission_radius_modifier | 1.2 |
 | core_usage | 55 |
 | cpu_usage | 99 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | optimal_range | 35 |
 | powergrid_usage | 183 |
 

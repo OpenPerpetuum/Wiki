@@ -23,13 +23,13 @@ description: "Modules / Enhancements, tier 1"
 |---|---|
 | core_usage | 165 |
 | cpu_usage | 450 |
-| cycle_time | 180000 |
+| cycle_time | 180k |
 | effect_dreadnought_blob_emission_modifier | 2 |
 | effect_dreadnought_detection_strength_modifier | 150 |
 | effect_dreadnought_optimal_range_modifier | 1.6 |
 | effect_dreadnought_stealth_strength_modifier | -30 |
 | effect_dreadnought_weapon_cycle_time_modifier | 0.9 |
 | effect_dreadnought_weapon_damage_modifier | 1.3 |
-| powergrid_usage | 1350 |
+| powergrid_usage | 1.35k |
 
 [All items](/content/items/)

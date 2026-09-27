@@ -24,7 +24,7 @@ description: "Modules / Enhancements, tier 1"
 |---|---|
 | core_usage | 35 |
 | cpu_usage | 85 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | default_effect_range | 100 |
 | effect_gathering_cycle_time_modifier | 0.98 |
 | powergrid_usage | 35 |

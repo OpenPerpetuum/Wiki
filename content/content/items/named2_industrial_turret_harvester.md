@@ -23,7 +23,7 @@ description: "Modules / Turrets, tier 3"
 |---|---|
 | core_usage | 0 |
 | cpu_usage | 50 |
-| cycle_time | 5260 |
+| cycle_time | 5.26k |
 | optimal_range | 15 |
 | powergrid_usage | 150 |
 

@@ -10,13 +10,13 @@ description: "Fixed-price vendor items: teleports. Best price across all vendors
 
 [Item shop](/content/shop/) → Teleports. Teleport charges and travel items.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | TM Coin | ICS Coin | ASI Coin | Credits | UniCoin | Vendors |
 |---|---|---|---|---|---|---|---|
-| [Mobile Teleport Stronghold Capsule](/content/items/mobile-teleport-stronghold-capsule/) | 1 | 20 | 20 | 20 | 500000 | 20 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Mobile Teleport Stronghold Level 02 Capsule](/content/items/mobile-teleport-stronghold-level-02-capsule/) | 1 | 50 | 50 | 50 | 1000000 | 50 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Spark Teleport Device Hersh](/content/items/spark-teleport-device-hersh/) | 1 | – | – | – | 5000000 | 300 | TM zone |
-| [Spark Teleport Device Nv](/content/items/spark-teleport-device-nv/) | 1 | – | – | – | 5000000 | 300 | TM zone |
-| [Spark Teleport Device Daoden](/content/items/spark-teleport-device-daoden/) | 1 | – | – | – | 5000000 | 300 | Daoden outpost |
+| [Mobile Teleport Stronghold Capsule](/content/items/mobile-teleport-stronghold-capsule/) | ∞ | 20 | 20 | 20 | 500k | 20 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Mobile Teleport Stronghold Level 02 Capsule](/content/items/mobile-teleport-stronghold-level-02-capsule/) | ∞ | 50 | 50 | 50 | 1M | 50 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Spark Teleport Device Hersh](/content/items/spark-teleport-device-hersh/) | ∞ | – | – | – | 5M | 300 | TM zone |
+| [Spark Teleport Device Nv](/content/items/spark-teleport-device-nv/) | ∞ | – | – | – | 5M | 300 | TM zone |
+| [Spark Teleport Device Daoden](/content/items/spark-teleport-device-daoden/) | ∞ | – | – | – | 5M | 300 | Daoden outpost |
 

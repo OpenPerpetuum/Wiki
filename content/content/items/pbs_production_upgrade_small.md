@@ -21,7 +21,7 @@ description: "Special & other / Miscellaneous, tier 1"
 
 | Field | Value |
 |---|---|
-| armor_max | 30000 |
+| armor_max | 30k |
 | core_max | 500 |
 | resist_chemical | 30 |
 | resist_explosive | 30 |

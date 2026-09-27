@@ -55,282 +55,282 @@ All mission definitions (see [Missions](/features/missions/) in the features sec
 | – | missiontype_killandfetch | missioncategory_combat | 0 | 720 | 0 | 0 | 0 | 1 | no | – |
 | – | missiontype_killandfetch | missioncategory_combat | 0 | 720 | 0 | 0 | 0 | 1 | no | – |
 | – | missiontype_killandfetch | missioncategory_combat | 0 | 720 | 0 | 0 | 0 | 1 | no | – |
-| mission_asi_gen_tutorial_exp3_01 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 18750 | 0 | 0 | no | def_ammo_small_projectile_a ×400 (100) |
-| mission_asi_gen_tutorial_exp3_02 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 22500 | 0 | 0 | no | def_standard_small_autocannon ×2 (100) |
-| mission_asi_gen_tutorial_exp3_03 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 27500 | 0 | 0 | no | def_standard_mining_probe_module ×1 (100) |
-| mission_asi_gen_tutorial_exp3_04 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 33750 | 0 | 0 | no | def_standard_mass_reductor ×1 (100) |
-| mission_asi_gen_tutorial_exp3_05 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 43750 | 0 | 0 | no | def_arkhe2_bot ×1 (100) |
-| mission_asi_i_tutorial_exp3_01 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 31250 | 0 | 0 | yes | def_ammo_mining_titan ×200 (100); def_standard_small_driller ×2 (100) |
-| mission_asi_i_tutorial_exp3_02 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 43750 | 0 | 0 | yes | def_ammo_harvesting_standard ×150 (100); def_standard_small_harvester ×2 (100) |
-| mission_asi_i_tutorial_exp3_03 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 56250 | 0 | 0 | yes | def_kernel_common ×100 (100) |
-| mission_asi_i_tutorial_exp3_04 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 75000 | 0 | 0 | yes | def_research_kit_2 ×5 (100) |
-| mission_asi_i_tutorial_exp3_05 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 87500 | 0 | 0 | yes | def_argano_bot ×1 (100) |
-| mission_asi_w_tutorial_exp3_01 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 37500 | 0 | 0 | yes | def_standard_sensor_booster ×1 (100) |
-| mission_asi_w_tutorial_exp3_02 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 53125 | 0 | 0 | yes | def_ammo_small_lasercrystal_a ×480 (100); def_standard_small_laser ×2 (100) |
-| mission_asi_w_tutorial_exp3_03 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 68750 | 0 | 0 | yes | def_standard_small_armor_plate ×1 (100) |
-| mission_asi_w_tutorial_exp3_04 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 81250 | 0 | 0 | yes | def_standard_small_armor_repairer ×1 (100) |
-| mission_asi_w_tutorial_exp3_05 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 93750 | 0 | 0 | yes | def_prometheus_bot ×1 (100); def_standard_damage_mod_laser ×1 (100) |
-| mission_asi_w_tutorial_exp3_06 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 112500 | 0 | 0 | no | – |
-| mission_ics_gen_tutorial_exp3_01 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 18750 | 0 | 0 | no | def_ammo_small_projectile_a ×400 (100) |
-| mission_ics_gen_tutorial_exp3_02 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 22500 | 0 | 0 | no | def_standard_small_autocannon ×2 (100) |
-| mission_ics_gen_tutorial_exp3_03 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 27500 | 0 | 0 | no | def_standard_mining_probe_module ×1 (100) |
-| mission_ics_gen_tutorial_exp3_04 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 33750 | 0 | 0 | no | def_standard_mass_reductor ×1 (100) |
-| mission_ics_gen_tutorial_exp3_05 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 43750 | 0 | 0 | no | def_arkhe2_bot ×1 (100) |
-| mission_ics_i_tutorial_exp3_01 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 31250 | 0 | 0 | yes | def_ammo_mining_titan ×200 (100); def_standard_small_driller ×2 (100) |
-| mission_ics_i_tutorial_exp3_02 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 43750 | 0 | 0 | yes | def_ammo_harvesting_standard ×150 (100); def_standard_small_harvester ×2 (100) |
-| mission_ics_i_tutorial_exp3_03 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 56250 | 0 | 0 | yes | def_kernel_common ×100 (100) |
-| mission_ics_i_tutorial_exp3_04 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 75000 | 0 | 0 | yes | def_research_kit_2 ×5 (100) |
-| mission_ics_i_tutorial_exp3_05 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 87500 | 0 | 0 | yes | def_argano_bot ×1 (100) |
-| mission_ics_w_tutorial_exp3_01 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 37500 | 0 | 0 | yes | def_standard_sensor_booster ×1 (100) |
-| mission_ics_w_tutorial_exp3_02 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 53125 | 0 | 0 | yes | def_ammo_small_railgun_b ×200 (100); def_standard_small_railgun ×2 (100) |
-| mission_ics_w_tutorial_exp3_03 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 68750 | 0 | 0 | yes | def_standard_small_armor_plate ×1 (100) |
-| mission_ics_w_tutorial_exp3_04 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 81250 | 0 | 0 | yes | def_standard_small_armor_repairer ×1 (100) |
-| mission_ics_w_tutorial_exp3_05 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 93750 | 0 | 0 | yes | def_standard_damage_mod_railgun ×1 (100); def_yagel_bot ×1 (100) |
-| mission_ics_w_tutorial_exp3_06 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 112500 | 0 | 0 | no | – |
-| mission_tm_gen_tutorial_exp3_01 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 18750 | 0 | 0 | yes | def_ammo_small_projectile_a ×400 (100) |
-| mission_tm_gen_tutorial_exp3_02 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 22500 | 0 | 0 | yes | def_standard_small_autocannon ×2 (100) |
-| mission_tm_gen_tutorial_exp3_03 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 27500 | 0 | 0 | yes | def_standard_mining_probe_module ×1 (100) |
-| mission_tm_gen_tutorial_exp3_04 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 33750 | 0 | 0 | yes | def_standard_mass_reductor ×1 (100) |
-| mission_tm_gen_tutorial_exp3_05 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 43750 | 0 | 0 | yes | def_arkhe2_bot ×1 (100) |
-| mission_tm_i_tutorial_exp3_01 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 31250 | 0 | 0 | yes | def_ammo_mining_titan ×200 (100); def_standard_small_driller ×2 (100) |
-| mission_tm_i_tutorial_exp3_02 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 43750 | 0 | 0 | yes | def_ammo_harvesting_standard ×150 (100); def_standard_small_harvester ×2 (100) |
-| mission_tm_i_tutorial_exp3_03 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 56250 | 0 | 0 | yes | def_kernel_common ×100 (100) |
-| mission_tm_i_tutorial_exp3_04 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 75000 | 0 | 0 | yes | def_research_kit_2 ×5 (100) |
-| mission_tm_i_tutorial_exp3_05 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 87500 | 0 | 0 | yes | def_argano_bot ×1 (100) |
-| mission_tm_w_tutorial_exp3_01 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 37500 | 0 | 0 | yes | def_standard_sensor_booster ×1 (100) |
-| mission_tm_w_tutorial_exp3_02 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 53125 | 0 | 0 | yes | def_ammo_rocket_d ×120 (100); def_standard_rocket_launcher ×2 (100) |
-| mission_tm_w_tutorial_exp3_03 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 68750 | 0 | 0 | yes | def_standard_small_armor_plate ×1 (100) |
-| mission_tm_w_tutorial_exp3_04 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 81250 | 0 | 0 | yes | def_standard_small_armor_repairer ×1 (100) |
-| mission_tm_w_tutorial_exp3_05 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 93750 | 0 | 0 | yes | def_castel_bot ×1 (100); def_standard_damage_mod_missile ×1 (100) |
-| mission_tm_w_tutorial_exp3_06 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 112500 | 0 | 0 | no | – |
-| mission_tutorialchecklist_transport | missiontype_courier | missioncategory_transport | 0 | 720 | 0 | 10000 | 0 | 0 | yes | – |
-| mission_asi_ss_level03_exp2_001 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50000 | 0 | 0 | no | – |
-| mission_asi_ss_level03_exp2_002 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 150000 | 0 | 0 | no | – |
-| mission_asi_ss_level03_exp2_003 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 250000 | 0 | 0 | no | – |
-| mission_asi_ss_level03_exp2_004 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 350000 | 0 | 0 | no | – |
-| mission_ics_ii_level03_exp2_001 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50000 | 0 | 0 | no | – |
-| mission_ics_ii_level03_exp2_002 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 150000 | 0 | 0 | no | – |
-| mission_ics_ii_level03_exp2_003 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 250000 | 0 | 0 | no | – |
-| mission_ics_ii_level03_exp2_004 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 350000 | 0 | 0 | no | – |
-| mission_ics_ii_level03_exp2_005 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 450000 | 0 | 0 | no | – |
-| mission_ics_ii_level03_exp2_006 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 550000 | 0 | 0 | no | – |
-| mission_tm_ww_level03_exp2_001 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50000 | 0 | 0 | no | – |
-| mission_tm_ww_level03_exp2_002 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50000 | 0 | 0 | no | – |
-| mission_tm_ww_level03_exp2_003 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 250000 | 0 | 0 | no | – |
-| mission_tm_ww_level03_exp2_004 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 450000 | 0 | 0 | no | – |
-| mission_asi_ii_level04_001 | missiontype_mining | missioncategory_mining | 4 | 720 | 0 | 91000 | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
-| mission_asi_ii_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 26875 | 0 | 0 | yes | def_asi_mission_coin ×1 (100) |
-| mission_asi_ii_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 123400 | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
-| mission_asi_is_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
-| mission_asi_is_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151750 | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
-| mission_asi_is_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 246250 | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
-| mission_asi_iw_level04_001 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 246250 | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
-| mission_asi_iw_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 94375 | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
-| mission_asi_iw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 111250 | 0 | 0 | yes | def_asi_mission_coin ×6 (100) |
-| mission_asi_si_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
-| mission_asi_si_level04_002 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 151750 | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
-| mission_asi_si_level04_003 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 91000 | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
-| mission_asi_ss_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151750 | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
-| mission_asi_ss_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
-| mission_asi_ss_level04_003 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 192250 | 0 | 0 | yes | def_asi_mission_coin ×11 (100) |
-| mission_asi_sw_level04_001 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 293500 | 0 | 0 | yes | def_asi_mission_coin ×16 (100) |
-| mission_asi_sw_level04_002 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 178750 | 0 | 0 | yes | def_asi_mission_coin ×10 (100) |
-| mission_asi_sw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 131500 | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
-| mission_asi_wi_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 122500 | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
-| mission_asi_wi_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 77500 | 0 | 0 | yes | def_asi_mission_coin ×4 (100) |
-| mission_asi_wi_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 577000 | 0 | 0 | yes | def_asi_mission_coin ×32 (100) |
-| mission_asi_ws_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 122500 | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
-| mission_asi_ws_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 293500 | 0 | 0 | yes | def_asi_mission_coin ×16 (100) |
-| mission_asi_ws_level04_003 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 42400 | 0 | 0 | yes | def_asi_mission_coin ×2 (100) |
-| mission_asi_ww_level04_001 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 145000 | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
-| mission_asi_ww_level04_002 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 212500 | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
-| mission_asi_ww_level04_003 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 280000 | 0 | 0 | yes | def_asi_mission_coin ×15 (100) |
-| mission_ics_ii_level04_001 | missiontype_mining | missioncategory_mining | 4 | 720 | 0 | 30250 | 0 | 0 | yes | def_ics_mission_coin ×2 (100) |
-| mission_ics_ii_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 94375 | 0 | 0 | yes | def_ics_mission_coin ×5 (100) |
-| mission_ics_ii_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 180100 | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
-| mission_ics_is_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_ics_mission_coin ×12 (100) |
-| mission_ics_is_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151750 | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
-| mission_ics_is_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 246250 | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
-| mission_ics_iw_level04_001 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 104500 | 0 | 0 | yes | def_ics_mission_coin ×6 (100) |
-| mission_ics_iw_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 94375 | 0 | 0 | yes | def_ics_mission_coin ×5 (100) |
-| mission_ics_iw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 178750 | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
-| mission_ics_si_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_ics_mission_coin ×12 (100) |
-| mission_ics_si_level04_002 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 199000 | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
-| mission_ics_si_level04_003 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 50500 | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
-| mission_ics_ss_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151750 | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
-| mission_ics_ss_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_ics_mission_coin ×12 (100) |
-| mission_ics_ss_level04_003 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 192250 | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
-| mission_ics_sw_level04_001 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 236800 | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
-| mission_ics_sw_level04_002 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 291250 | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
-| mission_ics_sw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 172000 | 0 | 0 | yes | def_ics_mission_coin ×9 (100) |
-| mission_ics_wi_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 291250 | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
-| mission_ics_wi_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 43750 | 0 | 0 | yes | def_ics_mission_coin ×2 (100) |
-| mission_ics_wi_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 463600 | 0 | 0 | yes | def_ics_mission_coin ×25 (100) |
-| mission_ics_ws_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 178750 | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
-| mission_ics_ws_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 293500 | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
-| mission_ics_ws_level04_003 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 74800 | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
-| mission_ics_ww_level04_001 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 50500 | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
-| mission_ics_ww_level04_002 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 77500 | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
-| mission_ics_ww_level04_003 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 180100 | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
-| mission_tm_ii_level04_001 | missiontype_mining | missioncategory_mining | 4 | 720 | 0 | 50500 | 0 | 0 | yes | def_tm_mission_coin ×3 (100) |
-| mission_tm_ii_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 77500 | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
-| mission_tm_ii_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 180100 | 0 | 0 | yes | def_tm_mission_coin ×10 (100) |
-| mission_tm_is_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
-| mission_tm_is_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151750 | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
-| mission_tm_is_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 199000 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_iw_level04_001 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 104500 | 0 | 0 | yes | def_tm_mission_coin ×6 (100) |
-| mission_tm_iw_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 77500 | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
-| mission_tm_iw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 178750 | 0 | 0 | yes | def_tm_mission_coin ×10 (100) |
-| mission_tm_si_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
-| mission_tm_si_level04_002 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 199000 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_si_level04_003 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 91000 | 0 | 0 | yes | def_tm_mission_coin ×5 (100) |
-| mission_tm_ss_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151750 | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
-| mission_tm_ss_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222625 | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
-| mission_tm_ss_level04_003 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 192250 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_sw_level04_001 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 236800 | 0 | 0 | yes | def_tm_mission_coin ×13 (100) |
-| mission_tm_sw_level04_002 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 235000 | 0 | 0 | yes | def_tm_mission_coin ×13 (100) |
-| mission_tm_sw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 212500 | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
-| mission_tm_wi_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 291250 | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
-| mission_tm_wi_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 60625 | 0 | 0 | yes | def_tm_mission_coin ×3 (100) |
-| mission_tm_wi_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 577000 | 0 | 0 | yes | def_tm_mission_coin ×32 (100) |
-| mission_tm_ws_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 178750 | 0 | 0 | yes | def_tm_mission_coin ×10 (100) |
-| mission_tm_ws_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 293500 | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
-| mission_tm_ws_level04_003 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 139600 | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
-| mission_tm_ww_level04_001 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 347500 | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
-| mission_tm_ww_level04_002 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 131500 | 0 | 0 | yes | def_tm_mission_coin ×7 (100) |
-| mission_tm_ww_level04_003 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 280000 | 0 | 0 | yes | def_tm_mission_coin ×15 (100) |
-| mission_asi_ii_level05_001 | missiontype_mining | missioncategory_mining | 5 | 720 | 0 | 145000 | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
-| mission_asi_ii_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122500 | 0 | 0 | yes | def_asi_mission_coin ×6 (100) |
-| mission_asi_ii_level05_003 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413200 | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
-| mission_asi_is_level05_001 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 293500 | 0 | 0 | yes | def_asi_mission_coin ×14 (100) |
-| mission_asi_is_level05_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 269200 | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
-| mission_asi_is_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122500 | 0 | 0 | yes | def_asi_mission_coin ×6 (100) |
-| mission_asi_iw_level05_002 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 235000 | 0 | 0 | yes | def_asi_mission_coin ×11 (100) |
-| mission_asi_iw_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 154000 | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
-| mission_asi_iw_level06_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 347500 | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
-| mission_asi_si_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 293500 | 0 | 0 | yes | def_asi_mission_coin ×14 (100) |
-| mission_asi_si_level05_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413200 | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
-| mission_asi_si_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 91000 | 0 | 0 | yes | def_asi_mission_coin ×4 (100) |
-| mission_asi_ss_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 199000 | 0 | 0 | yes | def_asi_mission_coin ×9 (100) |
-| mission_asi_ss_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 334000 | 0 | 0 | yes | def_asi_mission_coin ×16 (100) |
-| mission_asi_ss_level05_003 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 388000 | 0 | 0 | yes | def_asi_mission_coin ×18 (100) |
-| mission_asi_sw_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 370000 | 0 | 0 | yes | def_asi_mission_coin ×17 (100) |
-| mission_asi_sw_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 442000 | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
-| mission_asi_sw_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 385000 | 0 | 0 | yes | def_asi_mission_coin ×18 (100) |
-| mission_asi_wi_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 154000 | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
-| mission_asi_wi_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 118000 | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
-| mission_asi_wi_level05_003 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 370000 | 0 | 0 | yes | def_asi_mission_coin ×17 (100) |
-| mission_asi_wi_level06_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 577000 | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
-| mission_asi_ws_level05_002 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 199000 | 0 | 0 | yes | def_asi_mission_coin ×9 (100) |
-| mission_asi_ws_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 370000 | 0 | 0 | yes | def_asi_mission_coin ×17 (100) |
-| mission_asi_ww_level05_001 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 280000 | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
-| mission_asi_ww_level05_002 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 199000 | 0 | 0 | yes | def_asi_mission_coin ×9 (100) |
-| mission_asi_ww_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310000 | 0 | 0 | yes | def_asi_mission_coin ×14 (100) |
-| mission_ics_ii_level05_001 | missiontype_mining | missioncategory_mining | 5 | 720 | 0 | 91000 | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
-| mission_ics_ii_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 77500 | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
-| mission_ics_is_level05_001 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 293500 | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
-| mission_ics_is_level05_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 269200 | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
-| mission_ics_is_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 55000 | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
-| mission_ics_iw_level05_001 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 312400 | 0 | 0 | yes | def_ics_mission_coin ×15 (100) |
-| mission_ics_iw_level05_002 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310000 | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
-| mission_ics_iw_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226000 | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
-| mission_ics_iw_level06_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 347500 | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
-| mission_ics_si_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 293500 | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
-| mission_ics_si_level05_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 514000 | 0 | 0 | yes | def_ics_mission_coin ×24 (100) |
-| mission_ics_si_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 64000 | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
-| mission_ics_ss_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 199000 | 0 | 0 | yes | def_ics_mission_coin ×9 (100) |
-| mission_ics_ss_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 334000 | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
-| mission_ics_ss_level05_003 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 388000 | 0 | 0 | yes | def_ics_mission_coin ×18 (100) |
-| mission_ics_sw_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 298000 | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
-| mission_ics_sw_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 442000 | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
-| mission_ics_sw_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310000 | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
-| mission_ics_wi_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 298000 | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
-| mission_ics_wi_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122500 | 0 | 0 | yes | def_ics_mission_coin ×2 (100) |
-| mission_ics_wi_level05_003 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 154000 | 0 | 0 | yes | def_ics_mission_coin ×7 (100) |
-| mission_ics_wi_level06_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 577000 | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
-| mission_ics_ws_level05_001 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310000 | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
-| mission_ics_ws_level05_002 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 199000 | 0 | 0 | yes | def_ics_mission_coin ×9 (100) |
-| mission_ics_ws_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226000 | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
-| mission_ics_ww_level05_001 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 226000 | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
-| mission_ics_ww_level05_002 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 325000 | 0 | 0 | yes | def_ics_mission_coin ×15 (100) |
-| mission_tm_ii_level05_001 | missiontype_mining | missioncategory_mining | 5 | 720 | 0 | 118000 | 0 | 0 | yes | def_tm_mission_coin ×5 (100) |
-| mission_tm_ii_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122500 | 0 | 0 | yes | def_tm_mission_coin ×6 (100) |
-| mission_tm_ii_level05_003 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413200 | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
-| mission_tm_is_level05_001 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 293500 | 0 | 0 | yes | def_tm_mission_coin ×14 (100) |
-| mission_tm_is_level05_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 334000 | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
-| mission_tm_is_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 77500 | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
-| mission_tm_iw_level05_002 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 385000 | 0 | 0 | yes | def_tm_mission_coin ×18 (100) |
-| mission_tm_iw_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226000 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_iw_level06_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 347500 | 0 | 0 | yes | def_tm_mission_coin ×13 (100) |
-| mission_tm_si_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 293500 | 0 | 0 | yes | def_tm_mission_coin ×14 (100) |
-| mission_tm_si_level05_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413200 | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
-| mission_tm_si_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 91000 | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
-| mission_tm_ss_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 199000 | 0 | 0 | yes | def_tm_mission_coin ×9 (100) |
-| mission_tm_ss_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 334000 | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
-| mission_tm_ss_level05_003 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 388000 | 0 | 0 | yes | def_tm_mission_coin ×18 (100) |
-| mission_tm_sw_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226000 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_sw_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 442000 | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
-| mission_tm_sw_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 235000 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_wi_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226000 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_wi_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 46000 | 0 | 0 | yes | def_tm_mission_coin ×2 (100) |
-| mission_tm_wi_level05_003 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 154000 | 0 | 0 | yes | def_tm_mission_coin ×7 (100) |
-| mission_tm_wi_level06_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 577000 | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
-| mission_tm_ws_level05_001 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 235000 | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
-| mission_tm_ws_level05_002 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 199000 | 0 | 0 | yes | def_tm_mission_coin ×9 (100) |
-| mission_tm_ws_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 154000 | 0 | 0 | yes | def_tm_mission_coin ×7 (100) |
-| mission_tm_ww_level05_001 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 172000 | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
-| mission_tm_ww_level05_002 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 136000 | 0 | 0 | yes | def_tm_mission_coin ×6 (100) |
-| mission_asi_ii_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577000 | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
-| mission_asi_ii_level06_002 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212500 | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
-| mission_asi_is_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
-| mission_asi_is_level06_002 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577000 | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
-| mission_asi_iw_level05_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 514000 | 0 | 0 | yes | def_asi_mission_coin ×24 (100) |
-| mission_asi_iw_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 860500 | 0 | 0 | yes | def_asi_mission_coin ×32 (100) |
-| mission_asi_si_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212500 | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
-| mission_asi_si_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_asi_mission_coin ×23 (100) |
-| mission_asi_ss_level06_001 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
-| mission_asi_ss_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_asi_mission_coin ×23 (100) |
-| mission_asi_sw_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
-| mission_asi_sw_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
-| mission_asi_wi_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_asi_mission_coin ×23 (100) |
-| mission_asi_ws_level05_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 385000 | 0 | 0 | yes | def_asi_mission_coin ×18 (100) |
-| mission_asi_ws_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
-| mission_asi_ws_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
-| mission_asi_ww_level06_001 | missiontype_killandfetch | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
-| mission_asi_ww_level06_002 | missiontype_onlykill | missioncategory_combat | 6 | 720 | 0 | 820000 | 0 | 0 | yes | def_asi_mission_coin ×30 (100) |
-| mission_ics_ii_level05_003 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 413200 | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
-| mission_ics_ii_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577000 | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
-| mission_ics_ii_level06_002 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212500 | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
-| mission_ics_is_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
-| mission_ics_is_level06_002 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577000 | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
-| mission_ics_iw_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 860500 | 0 | 0 | yes | def_ics_mission_coin ×32 (100) |
-| mission_ics_si_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212500 | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
-| mission_ics_si_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_ics_mission_coin ×23 (100) |
-| mission_ics_ss_level06_001 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
-| mission_ics_ss_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_ics_mission_coin ×23 (100) |
-| mission_ics_sw_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
-| mission_ics_sw_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
-| mission_ics_wi_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_ics_mission_coin ×23 (100) |
-| mission_ics_ws_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
-| mission_ics_ws_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
-| mission_ics_ww_level05_003 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 385000 | 0 | 0 | yes | def_ics_mission_coin ×18 (100) |
-| mission_ics_ww_level06_001 | missiontype_killandfetch | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
-| mission_ics_ww_level06_002 | missiontype_onlykill | missioncategory_combat | 6 | 720 | 0 | 820000 | 0 | 0 | yes | def_ics_mission_coin ×30 (100) |
-| mission_tm_ii_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577000 | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
-| mission_tm_ii_level06_002 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212500 | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
-| mission_tm_is_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
-| mission_tm_is_level06_002 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577000 | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
-| mission_tm_iw_level05_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 514000 | 0 | 0 | yes | def_tm_mission_coin ×24 (100) |
-| mission_tm_iw_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 860500 | 0 | 0 | yes | def_tm_mission_coin ×32 (100) |
-| mission_tm_si_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212500 | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
-| mission_tm_si_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_tm_mission_coin ×23 (100) |
-| mission_tm_ss_level06_001 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
-| mission_tm_ss_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_tm_mission_coin ×23 (100) |
-| mission_tm_sw_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
-| mission_tm_sw_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
-| mission_tm_wi_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 617500 | 0 | 0 | yes | def_tm_mission_coin ×23 (100) |
-| mission_tm_ws_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572500 | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
-| mission_tm_ws_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
-| mission_tm_ww_level05_003 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 385000 | 0 | 0 | yes | def_tm_mission_coin ×18 (100) |
-| mission_tm_ww_level06_001 | missiontype_killandfetch | missioncategory_combat | 6 | 720 | 0 | 516250 | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
-| mission_tm_ww_level06_002 | missiontype_onlykill | missioncategory_combat | 6 | 720 | 0 | 820000 | 0 | 0 | yes | def_tm_mission_coin ×30 (100) |
+| mission_asi_gen_tutorial_exp3_01 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 18.75k | 0 | 0 | no | def_ammo_small_projectile_a ×400 (100) |
+| mission_asi_gen_tutorial_exp3_02 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 22.5k | 0 | 0 | no | def_standard_small_autocannon ×2 (100) |
+| mission_asi_gen_tutorial_exp3_03 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 27.5k | 0 | 0 | no | def_standard_mining_probe_module ×1 (100) |
+| mission_asi_gen_tutorial_exp3_04 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 33.75k | 0 | 0 | no | def_standard_mass_reductor ×1 (100) |
+| mission_asi_gen_tutorial_exp3_05 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 43.75k | 0 | 0 | no | def_arkhe2_bot ×1 (100) |
+| mission_asi_i_tutorial_exp3_01 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 31.25k | 0 | 0 | yes | def_ammo_mining_titan ×200 (100); def_standard_small_driller ×2 (100) |
+| mission_asi_i_tutorial_exp3_02 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 43.75k | 0 | 0 | yes | def_ammo_harvesting_standard ×150 (100); def_standard_small_harvester ×2 (100) |
+| mission_asi_i_tutorial_exp3_03 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 56.25k | 0 | 0 | yes | def_kernel_common ×100 (100) |
+| mission_asi_i_tutorial_exp3_04 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 75k | 0 | 0 | yes | def_research_kit_2 ×5 (100) |
+| mission_asi_i_tutorial_exp3_05 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 87.5k | 0 | 0 | yes | def_argano_bot ×1 (100) |
+| mission_asi_w_tutorial_exp3_01 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 37.5k | 0 | 0 | yes | def_standard_sensor_booster ×1 (100) |
+| mission_asi_w_tutorial_exp3_02 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 53.125k | 0 | 0 | yes | def_ammo_small_lasercrystal_a ×480 (100); def_standard_small_laser ×2 (100) |
+| mission_asi_w_tutorial_exp3_03 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 68.75k | 0 | 0 | yes | def_standard_small_armor_plate ×1 (100) |
+| mission_asi_w_tutorial_exp3_04 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 81.25k | 0 | 0 | yes | def_standard_small_armor_repairer ×1 (100) |
+| mission_asi_w_tutorial_exp3_05 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 93.75k | 0 | 0 | yes | def_prometheus_bot ×1 (100); def_standard_damage_mod_laser ×1 (100) |
+| mission_asi_w_tutorial_exp3_06 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 112.5k | 0 | 0 | no | – |
+| mission_ics_gen_tutorial_exp3_01 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 18.75k | 0 | 0 | no | def_ammo_small_projectile_a ×400 (100) |
+| mission_ics_gen_tutorial_exp3_02 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 22.5k | 0 | 0 | no | def_standard_small_autocannon ×2 (100) |
+| mission_ics_gen_tutorial_exp3_03 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 27.5k | 0 | 0 | no | def_standard_mining_probe_module ×1 (100) |
+| mission_ics_gen_tutorial_exp3_04 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 33.75k | 0 | 0 | no | def_standard_mass_reductor ×1 (100) |
+| mission_ics_gen_tutorial_exp3_05 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 43.75k | 0 | 0 | no | def_arkhe2_bot ×1 (100) |
+| mission_ics_i_tutorial_exp3_01 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 31.25k | 0 | 0 | yes | def_ammo_mining_titan ×200 (100); def_standard_small_driller ×2 (100) |
+| mission_ics_i_tutorial_exp3_02 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 43.75k | 0 | 0 | yes | def_ammo_harvesting_standard ×150 (100); def_standard_small_harvester ×2 (100) |
+| mission_ics_i_tutorial_exp3_03 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 56.25k | 0 | 0 | yes | def_kernel_common ×100 (100) |
+| mission_ics_i_tutorial_exp3_04 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 75k | 0 | 0 | yes | def_research_kit_2 ×5 (100) |
+| mission_ics_i_tutorial_exp3_05 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 87.5k | 0 | 0 | yes | def_argano_bot ×1 (100) |
+| mission_ics_w_tutorial_exp3_01 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 37.5k | 0 | 0 | yes | def_standard_sensor_booster ×1 (100) |
+| mission_ics_w_tutorial_exp3_02 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 53.125k | 0 | 0 | yes | def_ammo_small_railgun_b ×200 (100); def_standard_small_railgun ×2 (100) |
+| mission_ics_w_tutorial_exp3_03 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 68.75k | 0 | 0 | yes | def_standard_small_armor_plate ×1 (100) |
+| mission_ics_w_tutorial_exp3_04 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 81.25k | 0 | 0 | yes | def_standard_small_armor_repairer ×1 (100) |
+| mission_ics_w_tutorial_exp3_05 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 93.75k | 0 | 0 | yes | def_standard_damage_mod_railgun ×1 (100); def_yagel_bot ×1 (100) |
+| mission_ics_w_tutorial_exp3_06 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 112.5k | 0 | 0 | no | – |
+| mission_tm_gen_tutorial_exp3_01 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 18.75k | 0 | 0 | yes | def_ammo_small_projectile_a ×400 (100) |
+| mission_tm_gen_tutorial_exp3_02 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 22.5k | 0 | 0 | yes | def_standard_small_autocannon ×2 (100) |
+| mission_tm_gen_tutorial_exp3_03 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 27.5k | 0 | 0 | yes | def_standard_mining_probe_module ×1 (100) |
+| mission_tm_gen_tutorial_exp3_04 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 33.75k | 0 | 0 | yes | def_standard_mass_reductor ×1 (100) |
+| mission_tm_gen_tutorial_exp3_05 | missiontype_general_training | missioncategory_general_training | -1 | 720 | 0 | 43.75k | 0 | 0 | yes | def_arkhe2_bot ×1 (100) |
+| mission_tm_i_tutorial_exp3_01 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 31.25k | 0 | 0 | yes | def_ammo_mining_titan ×200 (100); def_standard_small_driller ×2 (100) |
+| mission_tm_i_tutorial_exp3_02 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 43.75k | 0 | 0 | yes | def_ammo_harvesting_standard ×150 (100); def_standard_small_harvester ×2 (100) |
+| mission_tm_i_tutorial_exp3_03 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 56.25k | 0 | 0 | yes | def_kernel_common ×100 (100) |
+| mission_tm_i_tutorial_exp3_04 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 75k | 0 | 0 | yes | def_research_kit_2 ×5 (100) |
+| mission_tm_i_tutorial_exp3_05 | missiontype_industrial_training | missioncategory_industrial_training | -1 | 720 | 0 | 87.5k | 0 | 0 | yes | def_argano_bot ×1 (100) |
+| mission_tm_w_tutorial_exp3_01 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 37.5k | 0 | 0 | yes | def_standard_sensor_booster ×1 (100) |
+| mission_tm_w_tutorial_exp3_02 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 53.125k | 0 | 0 | yes | def_ammo_rocket_d ×120 (100); def_standard_rocket_launcher ×2 (100) |
+| mission_tm_w_tutorial_exp3_03 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 68.75k | 0 | 0 | yes | def_standard_small_armor_plate ×1 (100) |
+| mission_tm_w_tutorial_exp3_04 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 81.25k | 0 | 0 | yes | def_standard_small_armor_repairer ×1 (100) |
+| mission_tm_w_tutorial_exp3_05 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 93.75k | 0 | 0 | yes | def_castel_bot ×1 (100); def_standard_damage_mod_missile ×1 (100) |
+| mission_tm_w_tutorial_exp3_06 | missiontype_combat_training | missioncategory_combat_training | -1 | 720 | 0 | 112.5k | 0 | 0 | no | – |
+| mission_tutorialchecklist_transport | missiontype_courier | missioncategory_transport | 0 | 720 | 0 | 10k | 0 | 0 | yes | – |
+| mission_asi_ss_level03_exp2_001 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50k | 0 | 0 | no | – |
+| mission_asi_ss_level03_exp2_002 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 150k | 0 | 0 | no | – |
+| mission_asi_ss_level03_exp2_003 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 250k | 0 | 0 | no | – |
+| mission_asi_ss_level03_exp2_004 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 350k | 0 | 0 | no | – |
+| mission_ics_ii_level03_exp2_001 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50k | 0 | 0 | no | – |
+| mission_ics_ii_level03_exp2_002 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 150k | 0 | 0 | no | – |
+| mission_ics_ii_level03_exp2_003 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 250k | 0 | 0 | no | – |
+| mission_ics_ii_level03_exp2_004 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 350k | 0 | 0 | no | – |
+| mission_ics_ii_level03_exp2_005 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 450k | 0 | 0 | no | – |
+| mission_ics_ii_level03_exp2_006 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 550k | 0 | 0 | no | – |
+| mission_tm_ww_level03_exp2_001 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50k | 0 | 0 | no | – |
+| mission_tm_ww_level03_exp2_002 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 50k | 0 | 0 | no | – |
+| mission_tm_ww_level03_exp2_003 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 250k | 0 | 0 | no | – |
+| mission_tm_ww_level03_exp2_004 | missiontype_storyline | missioncategory_special | 3 | 720 | 0 | 450k | 0 | 0 | no | – |
+| mission_asi_ii_level04_001 | missiontype_mining | missioncategory_mining | 4 | 720 | 0 | 91k | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
+| mission_asi_ii_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 26.875k | 0 | 0 | yes | def_asi_mission_coin ×1 (100) |
+| mission_asi_ii_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 123.4k | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
+| mission_asi_is_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
+| mission_asi_is_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151.75k | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
+| mission_asi_is_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 246.25k | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
+| mission_asi_iw_level04_001 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 246.25k | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
+| mission_asi_iw_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 94.375k | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
+| mission_asi_iw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 111.25k | 0 | 0 | yes | def_asi_mission_coin ×6 (100) |
+| mission_asi_si_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
+| mission_asi_si_level04_002 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 151.75k | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
+| mission_asi_si_level04_003 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 91k | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
+| mission_asi_ss_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151.75k | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
+| mission_asi_ss_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
+| mission_asi_ss_level04_003 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 192.25k | 0 | 0 | yes | def_asi_mission_coin ×11 (100) |
+| mission_asi_sw_level04_001 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 293.5k | 0 | 0 | yes | def_asi_mission_coin ×16 (100) |
+| mission_asi_sw_level04_002 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 178.75k | 0 | 0 | yes | def_asi_mission_coin ×10 (100) |
+| mission_asi_sw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 131.5k | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
+| mission_asi_wi_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 122.5k | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
+| mission_asi_wi_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 77.5k | 0 | 0 | yes | def_asi_mission_coin ×4 (100) |
+| mission_asi_wi_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 577k | 0 | 0 | yes | def_asi_mission_coin ×32 (100) |
+| mission_asi_ws_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 122.5k | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
+| mission_asi_ws_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 293.5k | 0 | 0 | yes | def_asi_mission_coin ×16 (100) |
+| mission_asi_ws_level04_003 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 42.4k | 0 | 0 | yes | def_asi_mission_coin ×2 (100) |
+| mission_asi_ww_level04_001 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 145k | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
+| mission_asi_ww_level04_002 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 212.5k | 0 | 0 | yes | def_asi_mission_coin ×12 (100) |
+| mission_asi_ww_level04_003 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 280k | 0 | 0 | yes | def_asi_mission_coin ×15 (100) |
+| mission_ics_ii_level04_001 | missiontype_mining | missioncategory_mining | 4 | 720 | 0 | 30.25k | 0 | 0 | yes | def_ics_mission_coin ×2 (100) |
+| mission_ics_ii_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 94.375k | 0 | 0 | yes | def_ics_mission_coin ×5 (100) |
+| mission_ics_ii_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 180.1k | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
+| mission_ics_is_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_ics_mission_coin ×12 (100) |
+| mission_ics_is_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151.75k | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
+| mission_ics_is_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 246.25k | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
+| mission_ics_iw_level04_001 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 104.5k | 0 | 0 | yes | def_ics_mission_coin ×6 (100) |
+| mission_ics_iw_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 94.375k | 0 | 0 | yes | def_ics_mission_coin ×5 (100) |
+| mission_ics_iw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 178.75k | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
+| mission_ics_si_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_ics_mission_coin ×12 (100) |
+| mission_ics_si_level04_002 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 199k | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
+| mission_ics_si_level04_003 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 50.5k | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
+| mission_ics_ss_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151.75k | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
+| mission_ics_ss_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_ics_mission_coin ×12 (100) |
+| mission_ics_ss_level04_003 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 192.25k | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
+| mission_ics_sw_level04_001 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 236.8k | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
+| mission_ics_sw_level04_002 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 291.25k | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
+| mission_ics_sw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 172k | 0 | 0 | yes | def_ics_mission_coin ×9 (100) |
+| mission_ics_wi_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 291.25k | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
+| mission_ics_wi_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 43.75k | 0 | 0 | yes | def_ics_mission_coin ×2 (100) |
+| mission_ics_wi_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 463.6k | 0 | 0 | yes | def_ics_mission_coin ×25 (100) |
+| mission_ics_ws_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 178.75k | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
+| mission_ics_ws_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 293.5k | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
+| mission_ics_ws_level04_003 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 74.8k | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
+| mission_ics_ww_level04_001 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 50.5k | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
+| mission_ics_ww_level04_002 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 77.5k | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
+| mission_ics_ww_level04_003 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 180.1k | 0 | 0 | yes | def_ics_mission_coin ×10 (100) |
+| mission_tm_ii_level04_001 | missiontype_mining | missioncategory_mining | 4 | 720 | 0 | 50.5k | 0 | 0 | yes | def_tm_mission_coin ×3 (100) |
+| mission_tm_ii_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 77.5k | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
+| mission_tm_ii_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 180.1k | 0 | 0 | yes | def_tm_mission_coin ×10 (100) |
+| mission_tm_is_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
+| mission_tm_is_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151.75k | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
+| mission_tm_is_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 199k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_iw_level04_001 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 104.5k | 0 | 0 | yes | def_tm_mission_coin ×6 (100) |
+| mission_tm_iw_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 77.5k | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
+| mission_tm_iw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 178.75k | 0 | 0 | yes | def_tm_mission_coin ×10 (100) |
+| mission_tm_si_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
+| mission_tm_si_level04_002 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 199k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_si_level04_003 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 91k | 0 | 0 | yes | def_tm_mission_coin ×5 (100) |
+| mission_tm_ss_level04_001 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 151.75k | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
+| mission_tm_ss_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 222.625k | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
+| mission_tm_ss_level04_003 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 192.25k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_sw_level04_001 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 236.8k | 0 | 0 | yes | def_tm_mission_coin ×13 (100) |
+| mission_tm_sw_level04_002 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 235k | 0 | 0 | yes | def_tm_mission_coin ×13 (100) |
+| mission_tm_sw_level04_003 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 212.5k | 0 | 0 | yes | def_tm_mission_coin ×12 (100) |
+| mission_tm_wi_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 291.25k | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
+| mission_tm_wi_level04_002 | missiontype_scan | missioncategory_exploration | 4 | 720 | 0 | 60.625k | 0 | 0 | yes | def_tm_mission_coin ×3 (100) |
+| mission_tm_wi_level04_003 | missiontype_defendandmine | missioncategory_industrial | 4 | 720 | 0 | 577k | 0 | 0 | yes | def_tm_mission_coin ×32 (100) |
+| mission_tm_ws_level04_001 | missiontype_huntthescout | missioncategory_combat | 4 | 720 | 0 | 178.75k | 0 | 0 | yes | def_tm_mission_coin ×10 (100) |
+| mission_tm_ws_level04_002 | missiontype_courier | missioncategory_transport | 4 | 720 | 0 | 293.5k | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
+| mission_tm_ws_level04_003 | missiontype_scanandloot | missioncategory_combat_exploration | 4 | 720 | 0 | 139.6k | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
+| mission_tm_ww_level04_001 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 347.5k | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
+| mission_tm_ww_level04_002 | missiontype_killandfetch | missioncategory_combat | 4 | 720 | 0 | 131.5k | 0 | 0 | yes | def_tm_mission_coin ×7 (100) |
+| mission_tm_ww_level04_003 | missiontype_onlykill | missioncategory_combat | 4 | 720 | 0 | 280k | 0 | 0 | yes | def_tm_mission_coin ×15 (100) |
+| mission_asi_ii_level05_001 | missiontype_mining | missioncategory_mining | 5 | 720 | 0 | 145k | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
+| mission_asi_ii_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122.5k | 0 | 0 | yes | def_asi_mission_coin ×6 (100) |
+| mission_asi_ii_level05_003 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413.2k | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
+| mission_asi_is_level05_001 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 293.5k | 0 | 0 | yes | def_asi_mission_coin ×14 (100) |
+| mission_asi_is_level05_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 269.2k | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
+| mission_asi_is_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122.5k | 0 | 0 | yes | def_asi_mission_coin ×6 (100) |
+| mission_asi_iw_level05_002 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 235k | 0 | 0 | yes | def_asi_mission_coin ×11 (100) |
+| mission_asi_iw_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 154k | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
+| mission_asi_iw_level06_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 347.5k | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
+| mission_asi_si_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 293.5k | 0 | 0 | yes | def_asi_mission_coin ×14 (100) |
+| mission_asi_si_level05_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413.2k | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
+| mission_asi_si_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 91k | 0 | 0 | yes | def_asi_mission_coin ×4 (100) |
+| mission_asi_ss_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 199k | 0 | 0 | yes | def_asi_mission_coin ×9 (100) |
+| mission_asi_ss_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 334k | 0 | 0 | yes | def_asi_mission_coin ×16 (100) |
+| mission_asi_ss_level05_003 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 388k | 0 | 0 | yes | def_asi_mission_coin ×18 (100) |
+| mission_asi_sw_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 370k | 0 | 0 | yes | def_asi_mission_coin ×17 (100) |
+| mission_asi_sw_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 442k | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
+| mission_asi_sw_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 385k | 0 | 0 | yes | def_asi_mission_coin ×18 (100) |
+| mission_asi_wi_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 154k | 0 | 0 | yes | def_asi_mission_coin ×7 (100) |
+| mission_asi_wi_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 118k | 0 | 0 | yes | def_asi_mission_coin ×5 (100) |
+| mission_asi_wi_level05_003 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 370k | 0 | 0 | yes | def_asi_mission_coin ×17 (100) |
+| mission_asi_wi_level06_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 577k | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
+| mission_asi_ws_level05_002 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 199k | 0 | 0 | yes | def_asi_mission_coin ×9 (100) |
+| mission_asi_ws_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 370k | 0 | 0 | yes | def_asi_mission_coin ×17 (100) |
+| mission_asi_ww_level05_001 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 280k | 0 | 0 | yes | def_asi_mission_coin ×13 (100) |
+| mission_asi_ww_level05_002 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 199k | 0 | 0 | yes | def_asi_mission_coin ×9 (100) |
+| mission_asi_ww_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310k | 0 | 0 | yes | def_asi_mission_coin ×14 (100) |
+| mission_ics_ii_level05_001 | missiontype_mining | missioncategory_mining | 5 | 720 | 0 | 91k | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
+| mission_ics_ii_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 77.5k | 0 | 0 | yes | def_ics_mission_coin ×4 (100) |
+| mission_ics_is_level05_001 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 293.5k | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
+| mission_ics_is_level05_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 269.2k | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
+| mission_ics_is_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 55k | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
+| mission_ics_iw_level05_001 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 312.4k | 0 | 0 | yes | def_ics_mission_coin ×15 (100) |
+| mission_ics_iw_level05_002 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310k | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
+| mission_ics_iw_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226k | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
+| mission_ics_iw_level06_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 347.5k | 0 | 0 | yes | def_ics_mission_coin ×13 (100) |
+| mission_ics_si_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 293.5k | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
+| mission_ics_si_level05_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 514k | 0 | 0 | yes | def_ics_mission_coin ×24 (100) |
+| mission_ics_si_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 64k | 0 | 0 | yes | def_ics_mission_coin ×3 (100) |
+| mission_ics_ss_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 199k | 0 | 0 | yes | def_ics_mission_coin ×9 (100) |
+| mission_ics_ss_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 334k | 0 | 0 | yes | def_ics_mission_coin ×16 (100) |
+| mission_ics_ss_level05_003 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 388k | 0 | 0 | yes | def_ics_mission_coin ×18 (100) |
+| mission_ics_sw_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 298k | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
+| mission_ics_sw_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 442k | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
+| mission_ics_sw_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310k | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
+| mission_ics_wi_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 298k | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
+| mission_ics_wi_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122.5k | 0 | 0 | yes | def_ics_mission_coin ×2 (100) |
+| mission_ics_wi_level05_003 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 154k | 0 | 0 | yes | def_ics_mission_coin ×7 (100) |
+| mission_ics_wi_level06_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 577k | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
+| mission_ics_ws_level05_001 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 310k | 0 | 0 | yes | def_ics_mission_coin ×14 (100) |
+| mission_ics_ws_level05_002 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 199k | 0 | 0 | yes | def_ics_mission_coin ×9 (100) |
+| mission_ics_ws_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226k | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
+| mission_ics_ww_level05_001 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 226k | 0 | 0 | yes | def_ics_mission_coin ×11 (100) |
+| mission_ics_ww_level05_002 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 325k | 0 | 0 | yes | def_ics_mission_coin ×15 (100) |
+| mission_tm_ii_level05_001 | missiontype_mining | missioncategory_mining | 5 | 720 | 0 | 118k | 0 | 0 | yes | def_tm_mission_coin ×5 (100) |
+| mission_tm_ii_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 122.5k | 0 | 0 | yes | def_tm_mission_coin ×6 (100) |
+| mission_tm_ii_level05_003 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413.2k | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
+| mission_tm_is_level05_001 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 293.5k | 0 | 0 | yes | def_tm_mission_coin ×14 (100) |
+| mission_tm_is_level05_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 334k | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
+| mission_tm_is_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 77.5k | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
+| mission_tm_iw_level05_002 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 385k | 0 | 0 | yes | def_tm_mission_coin ×18 (100) |
+| mission_tm_iw_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_iw_level06_002 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 347.5k | 0 | 0 | yes | def_tm_mission_coin ×13 (100) |
+| mission_tm_si_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 293.5k | 0 | 0 | yes | def_tm_mission_coin ×14 (100) |
+| mission_tm_si_level05_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 413.2k | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
+| mission_tm_si_level05_003 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 91k | 0 | 0 | yes | def_tm_mission_coin ×4 (100) |
+| mission_tm_ss_level05_001 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 199k | 0 | 0 | yes | def_tm_mission_coin ×9 (100) |
+| mission_tm_ss_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 334k | 0 | 0 | yes | def_tm_mission_coin ×16 (100) |
+| mission_tm_ss_level05_003 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 388k | 0 | 0 | yes | def_tm_mission_coin ×18 (100) |
+| mission_tm_sw_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_sw_level05_002 | missiontype_courier | missioncategory_transport | 5 | 720 | 0 | 442k | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
+| mission_tm_sw_level05_003 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 235k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_wi_level05_001 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 226k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_wi_level05_002 | missiontype_scan | missioncategory_exploration | 5 | 720 | 0 | 46k | 0 | 0 | yes | def_tm_mission_coin ×2 (100) |
+| mission_tm_wi_level05_003 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 154k | 0 | 0 | yes | def_tm_mission_coin ×7 (100) |
+| mission_tm_wi_level06_002 | missiontype_defendandmine | missioncategory_industrial | 5 | 720 | 0 | 577k | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
+| mission_tm_ws_level05_001 | missiontype_huntthescout | missioncategory_combat | 5 | 720 | 0 | 235k | 0 | 0 | yes | def_tm_mission_coin ×11 (100) |
+| mission_tm_ws_level05_002 | missiontype_industrial_courier | missioncategory_industrial | 5 | 720 | 0 | 199k | 0 | 0 | yes | def_tm_mission_coin ×9 (100) |
+| mission_tm_ws_level05_003 | missiontype_onlykill | missioncategory_combat | 5 | 720 | 0 | 154k | 0 | 0 | yes | def_tm_mission_coin ×7 (100) |
+| mission_tm_ww_level05_001 | missiontype_scanandloot | missioncategory_combat_exploration | 5 | 720 | 0 | 172k | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
+| mission_tm_ww_level05_002 | missiontype_killandfetch | missioncategory_combat | 5 | 720 | 0 | 136k | 0 | 0 | yes | def_tm_mission_coin ×6 (100) |
+| mission_asi_ii_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577k | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
+| mission_asi_ii_level06_002 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212.5k | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
+| mission_asi_is_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
+| mission_asi_is_level06_002 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577k | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
+| mission_asi_iw_level05_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 514k | 0 | 0 | yes | def_asi_mission_coin ×24 (100) |
+| mission_asi_iw_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 860.5k | 0 | 0 | yes | def_asi_mission_coin ×32 (100) |
+| mission_asi_si_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212.5k | 0 | 0 | yes | def_asi_mission_coin ×8 (100) |
+| mission_asi_si_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_asi_mission_coin ×23 (100) |
+| mission_asi_ss_level06_001 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
+| mission_asi_ss_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_asi_mission_coin ×23 (100) |
+| mission_asi_sw_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
+| mission_asi_sw_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
+| mission_asi_wi_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_asi_mission_coin ×23 (100) |
+| mission_asi_ws_level05_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 385k | 0 | 0 | yes | def_asi_mission_coin ×18 (100) |
+| mission_asi_ws_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_asi_mission_coin ×21 (100) |
+| mission_asi_ws_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
+| mission_asi_ww_level06_001 | missiontype_killandfetch | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_asi_mission_coin ×19 (100) |
+| mission_asi_ww_level06_002 | missiontype_onlykill | missioncategory_combat | 6 | 720 | 0 | 820k | 0 | 0 | yes | def_asi_mission_coin ×30 (100) |
+| mission_ics_ii_level05_003 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 413.2k | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
+| mission_ics_ii_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577k | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
+| mission_ics_ii_level06_002 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212.5k | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
+| mission_ics_is_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
+| mission_ics_is_level06_002 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577k | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
+| mission_ics_iw_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 860.5k | 0 | 0 | yes | def_ics_mission_coin ×32 (100) |
+| mission_ics_si_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212.5k | 0 | 0 | yes | def_ics_mission_coin ×8 (100) |
+| mission_ics_si_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_ics_mission_coin ×23 (100) |
+| mission_ics_ss_level06_001 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
+| mission_ics_ss_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_ics_mission_coin ×23 (100) |
+| mission_ics_sw_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
+| mission_ics_sw_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
+| mission_ics_wi_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_ics_mission_coin ×23 (100) |
+| mission_ics_ws_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_ics_mission_coin ×21 (100) |
+| mission_ics_ws_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
+| mission_ics_ww_level05_003 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 385k | 0 | 0 | yes | def_ics_mission_coin ×18 (100) |
+| mission_ics_ww_level06_001 | missiontype_killandfetch | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_ics_mission_coin ×19 (100) |
+| mission_ics_ww_level06_002 | missiontype_onlykill | missioncategory_combat | 6 | 720 | 0 | 820k | 0 | 0 | yes | def_ics_mission_coin ×30 (100) |
+| mission_tm_ii_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577k | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
+| mission_tm_ii_level06_002 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212.5k | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
+| mission_tm_is_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
+| mission_tm_is_level06_002 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 577k | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
+| mission_tm_iw_level05_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 514k | 0 | 0 | yes | def_tm_mission_coin ×24 (100) |
+| mission_tm_iw_level06_001 | missiontype_defendandmine | missioncategory_industrial | 6 | 720 | 0 | 860.5k | 0 | 0 | yes | def_tm_mission_coin ×32 (100) |
+| mission_tm_si_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 212.5k | 0 | 0 | yes | def_tm_mission_coin ×8 (100) |
+| mission_tm_si_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_tm_mission_coin ×23 (100) |
+| mission_tm_ss_level06_001 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
+| mission_tm_ss_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_tm_mission_coin ×23 (100) |
+| mission_tm_sw_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
+| mission_tm_sw_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
+| mission_tm_wi_level06_001 | missiontype_scan | missioncategory_exploration | 6 | 720 | 0 | 617.5k | 0 | 0 | yes | def_tm_mission_coin ×23 (100) |
+| mission_tm_ws_level06_001 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 572.5k | 0 | 0 | yes | def_tm_mission_coin ×21 (100) |
+| mission_tm_ws_level06_002 | missiontype_retrieve | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
+| mission_tm_ww_level05_003 | missiontype_huntthescout | missioncategory_combat | 6 | 720 | 0 | 385k | 0 | 0 | yes | def_tm_mission_coin ×18 (100) |
+| mission_tm_ww_level06_001 | missiontype_killandfetch | missioncategory_combat | 6 | 720 | 0 | 516.25k | 0 | 0 | yes | def_tm_mission_coin ×19 (100) |
+| mission_tm_ww_level06_002 | missiontype_onlykill | missioncategory_combat | 6 | 720 | 0 | 820k | 0 | 0 | yes | def_tm_mission_coin ×30 (100) |

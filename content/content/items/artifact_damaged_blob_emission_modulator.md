@@ -25,7 +25,7 @@ description: "Artifacts"
 | blob_emission_radius_modifier | 0.6 |
 | core_usage | 50 |
 | cpu_usage | 85 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | optimal_range | 25 |
 | powergrid_usage | 150 |
 

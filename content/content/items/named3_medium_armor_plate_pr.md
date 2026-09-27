@@ -21,7 +21,7 @@ description: "Modules / Armor, tier 4"
 
 | Field | Value |
 |---|---|
-| armor_max | 1575 |
+| armor_max | 1.575k |
 | cpu_usage | 2 |
 | massiveness | 0.15 |
 | powergrid_usage | 77 |

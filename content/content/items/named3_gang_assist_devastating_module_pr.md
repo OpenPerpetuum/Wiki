@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 4"
 |---|---|
 | core_usage | 36 |
 | cpu_usage | 90 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | default_effect_range | 100 |
 | effect_devastating_chance_modifier | 1.075 |
 | effect_enhancer_aura_radius_modifier | 1.2 |

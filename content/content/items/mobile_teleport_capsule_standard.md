@@ -23,8 +23,8 @@ description: "Special & other / Miscellaneous"
 | Field | Value |
 |---|---|
 | armor_max | 500 |
-| despawn_time | 780000 |
-| mobile_teleport_cooldown | 30000 |
+| despawn_time | 780k |
+| mobile_teleport_cooldown | 30k |
 | resist_chemical | 50 |
 | resist_explosive | 50 |
 | resist_kinetic | 50 |

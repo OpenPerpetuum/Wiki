@@ -23,7 +23,7 @@ description: "Modules / Turrets, tier 1"
 |---|---|
 | core_usage | 10 |
 | cpu_usage | 55 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | effect_massivness_speed_max_modifier | 0.5 |
 | falloff | 20 |
 | optimal_range | 80 |

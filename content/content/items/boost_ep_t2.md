@@ -22,7 +22,7 @@ description: "Special & other / Miscellaneous, tier 2"
 
 | Field | Value |
 |---|---|
-| despawn_time | 172800000 |
+| despawn_time | 172.8M |
 
 ## Where to buy
 
@@ -30,10 +30,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | TM Coin | ICS Coin | ASI Coin | Credits |
 |---|---|---|---|---|---|
-| New Virginia (zone_TM) | 1 | 60 | 60 | 60 | 36000000 |
-| Attalica (zone_ICS) | 1 | 60 | 60 | 60 | 36000000 |
-| Attalica outpost | 1 | 60 | 60 | 60 | 36000000 |
-| Daoden (zone_ASI) | 1 | 60 | 60 | 60 | 36000000 |
-| Daoden outpost | 1 | 60 | 60 | 60 | 36000000 |
+| New Virginia (zone_TM) | ∞ | 60 | 60 | 60 | 36M |
+| Attalica (zone_ICS) | ∞ | 60 | 60 | 60 | 36M |
+| Attalica outpost | ∞ | 60 | 60 | 60 | 36M |
+| Daoden (zone_ASI) | ∞ | 60 | 60 | 60 | 36M |
+| Daoden outpost | ∞ | 60 | 60 | 60 | 36M |
 
 [All items](/content/items/)

@@ -21,10 +21,10 @@ description: "Modules / Armor, tier 4"
 
 | Field | Value |
 |---|---|
-| armor_max | 4725 |
+| armor_max | 4.725k |
 | cpu_usage | 60 |
 | massiveness | 0.18 |
-| powergrid_usage | 1190 |
+| powergrid_usage | 1.19k |
 | signature_radius | 3 |
 
 [All items](/content/items/)

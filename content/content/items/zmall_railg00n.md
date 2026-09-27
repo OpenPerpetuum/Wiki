@@ -25,13 +25,13 @@ description: "Modules / Enhancements"
 | accuracy | 1 |
 | core_usage | 1 |
 | cpu_usage | 1 |
-| cycle_time | 2000 |
+| cycle_time | 2k |
 | damage_modifier | 50 |
 | falloff | 100 |
 | least_optimal | 1 |
 | locked_targets_max | 1 |
 | locking_range | 10 |
 | optimal_range | 300 |
-| powergrid_usage | 100000 |
+| powergrid_usage | 100k |
 
 [All items](/content/items/)

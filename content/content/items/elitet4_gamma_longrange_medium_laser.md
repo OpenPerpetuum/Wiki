@@ -25,7 +25,7 @@ description: "Modules / Weapons, tier 4"
 | accuracy | 12 |
 | core_usage | 21.6 |
 | cpu_usage | 33 |
-| cycle_time | 6000 |
+| cycle_time | 6k |
 | damage_modifier | 1.4 |
 | falloff | 10 |
 | least_optimal | 12 |
@@ -38,11 +38,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet4 Gamma Longrange Medium Laser (current)"]:::current
-    b["Elitet4 Gamma Longrange Medium Laser (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet4-gamma-longrange-medium-laser-ct-capsule/" "Elitet4 Gamma Longrange Medium Laser (CT capsule)"
+    a["Elitet4 Gamma Longrange Medium Laser (CT capsule)"]:::current
+    b["Elitet4 Gamma Longrange Medium Laser"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet4-gamma-longrange-medium-laser/" "Elitet4 Gamma Longrange Medium Laser"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -50,6 +51,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | ASI Coin | Credits |
 |---|---|---|---|
-| Daoden outpost | 1 | 5000 | 750000000 |
+| Daoden outpost | ∞ | 5k | 750M |
 
 [All items](/content/items/)

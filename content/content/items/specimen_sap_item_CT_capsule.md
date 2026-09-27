@@ -32,11 +32,12 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 
 ```mermaid
 graph LR
-    a["Specimen Sap Item (CT capsule) (current)"]:::current
-    b["Specimen Sap Item"]
-    a --> b
-    click b "/content/items/specimen-sap-item/" "Specimen Sap Item"
+    a["Specimen Sap Item (CT capsule)"]:::current
+    b["Specimen Sap Item"]:::finished
+    a -->|yields| b
+                click b "/content/items/specimen-sap-item/" "Specimen Sap Item"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -44,10 +45,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | TM Coin | ICS Coin | ASI Coin | Credits | UniCoin |
 |---|---|---|---|---|---|---|
-| New Virginia (zone_TM) | 1 | 10 | 10 | 10 | 500000 | 20 |
-| Attalica (zone_ICS) | 1 | 10 | 10 | 10 | 500000 | 20 |
-| Attalica outpost | 1 | 10 | 10 | 10 | 500000 | 20 |
-| Daoden (zone_ASI) | 1 | 10 | 10 | 10 | 500000 | 20 |
-| Daoden outpost | 1 | 10 | 10 | 10 | 500000 | 20 |
+| New Virginia (zone_TM) | ∞ | 10 | 10 | 10 | 500k | 20 |
+| Attalica (zone_ICS) | ∞ | 10 | 10 | 10 | 500k | 20 |
+| Attalica outpost | ∞ | 10 | 10 | 10 | 500k | 20 |
+| Daoden (zone_ASI) | ∞ | 10 | 10 | 10 | 500k | 20 |
+| Daoden outpost | ∞ | 10 | 10 | 10 | 500k | 20 |
 
 [All items](/content/items/)

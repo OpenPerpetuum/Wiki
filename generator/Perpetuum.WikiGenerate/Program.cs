@@ -75,7 +75,7 @@ public static class Program
             ("deployables.md", DeployablesPage.Build(db, defs, statsByDef)),
             ("robots.md", RobotsPage.Build(db, defs, statsByDef)),
             ("extensions.md", ExtensionsPage.Build(db)),
-            ("techtree.md", TechTreePage.Build(db)),
+
             ("missions.md", MissionsPage.Build(db)),
             ("shop.md", ShopPage.Build(db, shop)),
             ("recipes.md", RecipesPage.Build(db)),
@@ -86,6 +86,8 @@ public static class Program
             try { pages.Add((Path.Combine("shop", slug + ".md"), ShopPage.BuildCategoryPage(db, shop, slug))); }
             catch (Exception e) { Console.Error.WriteLine($"shop category {slug} failed: {e.Message}"); }
         }
+        // The tech tree is an index + one page per category + one page per node.
+        pages.AddRange(TechTreePage.Build(db));
         // The item catalog is one page per item under items/ plus its index.
         pages.AddRange(ItemsPage.Build(db, defs, statsByDef, shop));
         var itemPages = 0;
@@ -155,7 +157,7 @@ public static class Program
             """;
     }
 
-    private static string FormatStat(double v) => v.ToString("0.######", System.Globalization.CultureInfo.InvariantCulture);
+    private static string FormatStat(double v) => Md.Num(v);
 
     private static void PrintHelp() => Console.Error.WriteLine(
         "wiki-generate --connection <cs> --plantrules <dir> --out <dir> [--zones-out <dir>] [--gbf <archive.gbf>]");

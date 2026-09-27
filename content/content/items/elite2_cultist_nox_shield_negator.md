@@ -23,10 +23,10 @@ description: "Modules / Shield, tier 2"
 |---|---|
 | core_usage | 0 |
 | cpu_usage | 85 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | default_nox_effect_radius | 100 |
 | nox_shield_absorbtion_modifier | 0.9 |
 | powergrid_usage | 35 |
-| ppm_thelodica_plasma_consumption | 1000 |
+| ppm_thelodica_plasma_consumption | 1k |
 
 [All items](/content/items/)

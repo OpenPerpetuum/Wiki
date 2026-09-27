@@ -24,7 +24,7 @@ description: "Modules / Enhancements"
 |---|---|
 | core_usage | 15 |
 | cpu_usage | 125 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | falloff | 0 |
 | optimal_range | 3 |
 | powergrid_usage | 45 |

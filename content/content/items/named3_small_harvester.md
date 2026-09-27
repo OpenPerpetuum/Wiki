@@ -23,7 +23,7 @@ description: "Modules / Harvesting, tier 4"
 |---|---|
 | core_usage | 22 |
 | cpu_usage | 44 |
-| cycle_time | 12500 |
+| cycle_time | 12.5k |
 | optimal_range | 3 |
 | powergrid_usage | 33 |
 

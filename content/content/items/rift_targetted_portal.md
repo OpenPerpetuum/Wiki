@@ -22,13 +22,13 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 42069 |
+| armor_max | 42.069k |
 | blob_emission | 10 |
 | blob_emission_radius | 50 |
-| resist_chemical | 100000 |
-| resist_explosive | 100000 |
-| resist_kinetic | 100000 |
-| resist_thermal | 100000 |
+| resist_chemical | 100k |
+| resist_explosive | 100k |
+| resist_kinetic | 100k |
+| resist_thermal | 100k |
 | signature_radius | 1 |
 | stealth_strength | 25 |
 

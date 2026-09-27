@@ -34,11 +34,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet2 72 Damage Mod Projectile (current)"]:::current
-    b["Elitet2 72 Damage Mod Projectile (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet2-72-damage-mod-projectile-ct-capsule/" "Elitet2 72 Damage Mod Projectile (CT capsule)"
+    a["Elitet2 72 Damage Mod Projectile (CT capsule)"]:::current
+    b["Elitet2 72 Damage Mod Projectile"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet2-72-damage-mod-projectile/" "Elitet2 72 Damage Mod Projectile"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -46,6 +47,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| Daoden outpost | 1 | 250000000 | 10000 |
+| Daoden outpost | ∞ | 250M | 10k |
 
 [All items](/content/items/)

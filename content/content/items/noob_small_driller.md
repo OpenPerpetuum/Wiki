@@ -23,7 +23,7 @@ description: "Modules / Enhancements"
 |---|---|
 | core_usage | 18 |
 | cpu_usage | 1 |
-| cycle_time | 24000 |
+| cycle_time | 24k |
 | optimal_range | 3 |
 | powergrid_usage | 20 |
 

@@ -21,15 +21,15 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| ammo_reload_time | 10000 |
-| armor_max | 150000000 |
+| ammo_reload_time | 10k |
+| armor_max | 150M |
 | core_max | 1 |
-| core_recharge_time | 3600 |
-| powergrid_max | 1250000 |
-| resist_chemical | 15000 |
-| resist_explosive | 15000 |
-| resist_kinetic | 15000 |
-| resist_thermal | 15000 |
+| core_recharge_time | 3.6k |
+| powergrid_max | 1.25M |
+| resist_chemical | 15k |
+| resist_explosive | 15k |
+| resist_kinetic | 15k |
+| resist_thermal | 15k |
 | signature_radius | 20 |
 | stealth_strength | 25 |
 

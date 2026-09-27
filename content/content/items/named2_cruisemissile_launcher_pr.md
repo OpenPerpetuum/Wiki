@@ -25,7 +25,7 @@ description: "Modules / Weapons, tier 3"
 | accuracy | 1 |
 | core_usage | 15 |
 | cpu_usage | 105 |
-| cycle_time | 12000 |
+| cycle_time | 12k |
 | damage_modifier | 1.4 |
 | module_missile_range_modifier | 1.1 |
 | powergrid_usage | 240 |

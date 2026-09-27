@@ -26,10 +26,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| New Virginia (zone_TM) | 1 | 3750000 | 2250 |
-| Attalica (zone_ICS) | 1 | 3750000 | 2250 |
-| Attalica outpost | 1 | 3750000 | 2250 |
-| Daoden (zone_ASI) | 1 | 3750000 | 2250 |
-| Daoden outpost | 1 | 3750000 | 2250 |
+| New Virginia (zone_TM) | ∞ | 3.75M | 2.25k |
+| Attalica (zone_ICS) | ∞ | 3.75M | 2.25k |
+| Attalica outpost | ∞ | 3.75M | 2.25k |
+| Daoden (zone_ASI) | ∞ | 3.75M | 2.25k |
+| Daoden outpost | ∞ | 3.75M | 2.25k |
 
 [All items](/content/items/)

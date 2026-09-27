@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 30 |
 | cpu_usage | 15 |
-| cycle_time | 7500 |
+| cycle_time | 7.5k |
 | falloff | 6 |
 | optimal_range | 20 |
 | powergrid_usage | 5 |

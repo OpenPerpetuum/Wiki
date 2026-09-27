@@ -23,7 +23,7 @@ description: "Artifacts, tier 3"
 |---|---|
 | core_usage | 20 |
 | cpu_usage | 46 |
-| cycle_time | 14000 |
+| cycle_time | 14k |
 | optimal_range | 3 |
 | powergrid_usage | 35 |
 

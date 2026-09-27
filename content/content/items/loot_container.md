@@ -23,10 +23,10 @@ description: "Special & other / Containers"
 | Field | Value |
 |---|---|
 | armor_max | 100 |
-| resist_chemical | 5000 |
-| resist_explosive | 5000 |
-| resist_kinetic | 5000 |
-| resist_thermal | 5000 |
+| resist_chemical | 5k |
+| resist_explosive | 5k |
+| resist_kinetic | 5k |
+| resist_thermal | 5k |
 | signature_radius | 0.5 |
 | stealth_strength | 200 |
 

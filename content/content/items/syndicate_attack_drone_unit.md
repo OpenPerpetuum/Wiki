@@ -22,8 +22,8 @@ description: "Special & other / Miscellaneous"
 | Field | Value |
 |---|---|
 | accuracy | 6 |
-| armor_max | 1500 |
-| cycle_time | 3200 |
+| armor_max | 1.5k |
+| cycle_time | 3.2k |
 | damage_chemical | 3 |
 | damage_explosive | 6 |
 | damage_kinetic | 6 |
@@ -32,7 +32,7 @@ description: "Special & other / Miscellaneous"
 | falloff | 12.5 |
 | optimal_range | 7.5 |
 | remote_control_bandwidth_usage | 5 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 | resist_chemical | 45 |
 | resist_explosive | 45 |
 | resist_kinetic | 45 |

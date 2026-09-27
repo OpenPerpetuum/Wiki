@@ -34,10 +34,11 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Ammo Medium Projectile T (current)"]:::current
-    b["Ammo Medium Projectile T (CT capsule)"]
-    a --> b
-    click b "/content/items/ammo-medium-projectile-t-ct-capsule/" "Ammo Medium Projectile T (CT capsule)"
+    a["Ammo Medium Projectile T (CT capsule)"]:::current
+    b["Ammo Medium Projectile T"]:::finished
+    a -->|carries| b
+                click b "/content/items/ammo-medium-projectile-t/" "Ammo Medium Projectile T"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 [All items](/content/items/)

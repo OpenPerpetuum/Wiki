@@ -25,7 +25,7 @@ description: "Modules / Repair"
 | armor_repair_amount | 30 |
 | core_usage | 60 |
 | cpu_usage | 1 |
-| cycle_time | 20000 |
+| cycle_time | 20k |
 | powergrid_usage | 20 |
 
 [All items](/content/items/)

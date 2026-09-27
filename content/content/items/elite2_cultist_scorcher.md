@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 2"
 |---|---|
 | core_usage | 225 |
 | cpu_usage | 35 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | electric_damage | 125 |
 | energy_dispersion | 10 |
 | falloff | 0 |

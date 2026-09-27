@@ -24,7 +24,7 @@ description: "Artifacts"
 | armor_repair_amount | 110 |
 | core_usage | 350 |
 | cpu_usage | 60 |
-| cycle_time | 25000 |
+| cycle_time | 25k |
 | falloff | 0 |
 | optimal_range | 20 |
 | powergrid_usage | 125 |

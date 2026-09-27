@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 3"
 |---|---|
 | core_usage | 70 |
 | cpu_usage | 50 |
-| cycle_time | 12500 |
+| cycle_time | 12.5k |
 | mining_probe_accuracy | 0.6 |
 | powergrid_usage | 50 |
 

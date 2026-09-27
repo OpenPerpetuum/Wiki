@@ -24,7 +24,7 @@ description: "Modules / Enhancements, tier 4"
 |---|---|
 | core_usage | 20 |
 | cpu_usage | 43 |
-| cycle_time | 11750 |
+| cycle_time | 11.75k |
 | optimal_range | 3.5 |
 | powergrid_usage | 31 |
 
@@ -34,11 +34,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet4 Gamma Small Driller (current)"]:::current
-    b["Elitet4 Gamma Small Driller (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet4-gamma-small-driller-ct-capsule/" "Elitet4 Gamma Small Driller (CT capsule)"
+    a["Elitet4 Gamma Small Driller (CT capsule)"]:::current
+    b["Elitet4 Gamma Small Driller"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet4-gamma-small-driller/" "Elitet4 Gamma Small Driller"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -46,6 +47,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| Daoden outpost | 1 | 500000000 | 25000 |
+| Daoden outpost | ∞ | 500M | 25k |
 
 [All items](/content/items/)

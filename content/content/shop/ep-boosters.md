@@ -10,18 +10,18 @@ description: "Fixed-price vendor items: ep boosters. Best price across all vendo
 
 [Item shop](/content/shop/) → EP boosters. Temporary extension-point gain boosters.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | TM Coin | ICS Coin | ASI Coin | Credits | UniCoin | Vendors |
 |---|---|---|---|---|---|---|---|
-| [Boost Ep T1](/content/items/boost-ep-t1/) | 1 | 36 | 36 | 36 | 24600000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Boost Ep T2](/content/items/boost-ep-t2/) | 1 | 60 | 60 | 60 | 36000000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Boost Ep T3](/content/items/boost-ep-t3/) | 1 | 120 | 120 | 120 | 57000000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Elitet2 70 Sensor Booster (CT capsule)](/content/items/elitet2-70-sensor-booster-ct-capsule/) | 1 | – | – | – | 1200000 | 60 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Elitet4 70 Sensor Booster (CT capsule)](/content/items/elitet4-70-sensor-booster-ct-capsule/) | 1 | – | – | – | 1600000 | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Elitet2 70 Small Core Booster (CT capsule)](/content/items/elitet2-70-small-core-booster-ct-capsule/) | 1 | – | – | – | 600000 | 30 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Elitet4 70 Small Core Booster (CT capsule)](/content/items/elitet4-70-small-core-booster-ct-capsule/) | 1 | – | – | – | 800000 | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Elitet2 70 Medium Core Booster (CT capsule)](/content/items/elitet2-70-medium-core-booster-ct-capsule/) | 1 | – | – | – | 1200000 | 60 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Elitet4 70 Medium Core Booster (CT capsule)](/content/items/elitet4-70-medium-core-booster-ct-capsule/) | 1 | – | – | – | 1600000 | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Server Wide Ep Booster T0](/content/items/server-wide-ep-booster-t0/) | 1 | – | – | – | 10000000 | 500 | Daoden outpost |
+| [Boost Ep T1](/content/items/boost-ep-t1/) | ∞ | 36 | 36 | 36 | 24.6M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Boost Ep T2](/content/items/boost-ep-t2/) | ∞ | 60 | 60 | 60 | 36M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Boost Ep T3](/content/items/boost-ep-t3/) | ∞ | 120 | 120 | 120 | 57M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Elitet2 70 Sensor Booster (CT capsule)](/content/items/elitet2-70-sensor-booster-ct-capsule/) | ∞ | – | – | – | 1.2M | 60 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Elitet4 70 Sensor Booster (CT capsule)](/content/items/elitet4-70-sensor-booster-ct-capsule/) | ∞ | – | – | – | 1.6M | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Elitet2 70 Small Core Booster (CT capsule)](/content/items/elitet2-70-small-core-booster-ct-capsule/) | ∞ | – | – | – | 600k | 30 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Elitet4 70 Small Core Booster (CT capsule)](/content/items/elitet4-70-small-core-booster-ct-capsule/) | ∞ | – | – | – | 800k | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Elitet2 70 Medium Core Booster (CT capsule)](/content/items/elitet2-70-medium-core-booster-ct-capsule/) | ∞ | – | – | – | 1.2M | 60 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Elitet4 70 Medium Core Booster (CT capsule)](/content/items/elitet4-70-medium-core-booster-ct-capsule/) | ∞ | – | – | – | 1.6M | 80 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Server Wide Ep Booster T0](/content/items/server-wide-ep-booster-t0/) | ∞ | – | – | – | 10M | 500 | Daoden outpost |
 

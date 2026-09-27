@@ -25,7 +25,7 @@ description: "Modules / Weapons, tier 4"
 | accuracy | 1 |
 | core_usage | 15 |
 | cpu_usage | 112.5 |
-| cycle_time | 10500 |
+| cycle_time | 10.5k |
 | damage_modifier | 1.5 |
 | module_missile_range_modifier | 1.2 |
 | powergrid_usage | 255 |

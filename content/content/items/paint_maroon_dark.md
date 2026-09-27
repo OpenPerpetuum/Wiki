@@ -26,9 +26,9 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits |
 |---|---|---|
-| New Virginia (zone_TM) | 1 | 3000000 |
-| Attalica (zone_ICS) | 1 | 3000000 |
-| Daoden (zone_ASI) | 1 | 3000000 |
-| Daoden outpost | 1 | 3000000 |
+| New Virginia (zone_TM) | ∞ | 3M |
+| Attalica (zone_ICS) | ∞ | 3M |
+| Daoden (zone_ASI) | ∞ | 3M |
+| Daoden outpost | ∞ | 3M |
 
 [All items](/content/items/)

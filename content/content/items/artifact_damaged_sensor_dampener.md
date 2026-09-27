@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 16 |
 | cpu_usage | 35 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | ecm_strength | 40 |
 | effect_sensor_dampener_locking_range_modifier | 0.9 |
 | effect_sensor_dampener_locking_time_modifier | 1.2 |

@@ -10,12 +10,12 @@ description: "Fixed-price vendor items: mission coins. Best price across all ven
 
 [Item shop](/content/shop/) → Mission coins. The per-galaxy mission currencies and their exchange.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | Credits | Vendors |
 |---|---|---|---|
-| [Truhold-Markson token](/content/items/tm-mission-coin/) | 1 | 10 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost · Bellicha · Cadavaria |
-| [Asintec token](/content/items/asi-mission-coin/) | 1 | 10 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost · Bellicha · Lenworth |
-| [ICS token](/content/items/ics-mission-coin/) | 1 | 10 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost · Cadavaria · Lenworth |
-| [Universal token](/content/items/universal-mission-coin/) | 1 | 10 | Bellicha · Cadavaria · Lenworth |
+| [Truhold-Markson token](/content/items/tm-mission-coin/) | ∞ | 10 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost · Bellicha · Cadavaria |
+| [Asintec token](/content/items/asi-mission-coin/) | ∞ | 10 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost · Bellicha · Lenworth |
+| [ICS token](/content/items/ics-mission-coin/) | ∞ | 10 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost · Cadavaria · Lenworth |
+| [Universal token](/content/items/universal-mission-coin/) | ∞ | 10 | Bellicha · Cadavaria · Lenworth |
 

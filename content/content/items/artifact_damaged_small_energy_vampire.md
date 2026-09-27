@@ -24,7 +24,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 5 |
 | cpu_usage | 45 |
-| cycle_time | 8000 |
+| cycle_time | 8k |
 | energy_dispersion | 4 |
 | energy_vampired_amount | 14 |
 | falloff | 0 |

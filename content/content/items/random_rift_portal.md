@@ -21,12 +21,12 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 10000 |
+| armor_max | 10k |
 | blob_emission | 200 |
 | blob_emission_radius | 30 |
-| resist_chemical | 5000 |
+| resist_chemical | 5k |
 | resist_explosive | 10 |
-| resist_kinetic | 1000 |
+| resist_kinetic | 1k |
 | resist_thermal | 250 |
 | signature_radius | 20 |
 | stealth_strength | 100 |

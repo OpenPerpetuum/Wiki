@@ -24,7 +24,7 @@ description: "Modules / Shield, tier 2"
 |---|---|
 | core_usage | 1 |
 | cpu_usage | 38 |
-| cycle_time | 2250 |
+| cycle_time | 2.25k |
 | powergrid_usage | 43 |
 | shield_absorbtion | 2.1277 |
 | shield_radius | 5 |
@@ -36,11 +36,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet2 71 Small Shield Generator (current)"]:::current
-    b["Elitet2 71 Small Shield Generator (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet2-71-small-shield-generator-ct-capsule/" "Elitet2 71 Small Shield Generator (CT capsule)"
+    a["Elitet2 71 Small Shield Generator (CT capsule)"]:::current
+    b["Elitet2 71 Small Shield Generator"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet2-71-small-shield-generator/" "Elitet2 71 Small Shield Generator"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -48,6 +49,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | TM Coin | Credits |
 |---|---|---|---|
-| Daoden outpost | 1 | 2500 | 375000000 |
+| Daoden outpost | ∞ | 2.5k | 375M |
 
 [All items](/content/items/)

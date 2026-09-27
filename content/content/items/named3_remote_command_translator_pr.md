@@ -23,7 +23,7 @@ description: "Modules / Remote control, tier 4"
 |---|---|
 | core_usage | 10 |
 | cpu_usage | 136 |
-| cycle_time | 9000 |
+| cycle_time | 9k |
 | drone_remote_command_translation_armor_max_modifier | 1.2 |
 | drone_remote_command_translation_damage_modifier | 1.075 |
 | drone_remote_command_translation_harvesting_amount_modifier | 1.075 |
@@ -32,7 +32,7 @@ description: "Modules / Remote control, tier 4"
 | drone_remote_command_translation_retreat | 0.001 |
 | powergrid_usage | 67 |
 | remote_control_bandwidth_max_modifier | 5 |
-| remote_control_lifetime_modifier | 300000 |
+| remote_control_lifetime_modifier | 300k |
 | remote_control_operational_range_modifier | 20 |
 
 [All items](/content/items/)

@@ -25,7 +25,7 @@ description: "Artifacts, tier 3"
 | armor_repair_amount | 60 |
 | core_usage | 72 |
 | cpu_usage | 55 |
-| cycle_time | 17000 |
+| cycle_time | 17k |
 | falloff | 0 |
 | optimal_range | 12 |
 | powergrid_usage | 32 |

@@ -23,7 +23,7 @@ description: "Modules / Sensors & scanning, tier 4"
 |---|---|
 | core_usage | 12 |
 | cpu_usage | 19 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_sensor_booster_locking_range_modifier | 1.45 |
 | effect_sensor_booster_locking_time_modifier | 0.7 |
 | powergrid_usage | 9 |

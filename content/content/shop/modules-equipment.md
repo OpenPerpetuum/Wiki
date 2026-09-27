@@ -10,61 +10,61 @@ description: "Fixed-price vendor items: modules & equipment. Best price across a
 
 [Item shop](/content/shop/) → Modules & equipment. Fitted modules: weapons, armor, shields, energy and industrial equipment.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | TM Coin | ICS Coin | ASI Coin | Credits | UniCoin | Vendors |
 |---|---|---|---|---|---|---|---|
-| ["The Wall" shield hardener](/content/items/tux-shield-hardener-reward/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| ["Perpetuum 500" lightweight frame](/content/items/purgatory-mass-reductor-reward/) | 1 | – | – | – | 1000000000 | 25000 | Daoden outpost |
-| [Elitet2 70 Small Armor Repairer](/content/items/elitet2-70-small-armor-repairer/) | 1 | – | 2500 | – | 375000000 | – | Daoden outpost |
-| [Elitet4 70 Small Armor Repairer](/content/items/elitet4-70-small-armor-repairer/) | 1 | – | 5000 | – | 750000000 | – | Daoden outpost |
-| [Elitet2 70 Medium Armor Repairer](/content/items/elitet2-70-medium-armor-repairer/) | 1 | – | 2500 | – | 375000000 | – | Daoden outpost |
-| [Elitet4 70 Medium Armor Repairer](/content/items/elitet4-70-medium-armor-repairer/) | 1 | – | 5000 | – | 750000000 | – | Daoden outpost |
-| [Elitet2 70 Small Shield Generator](/content/items/elitet2-70-small-shield-generator/) | 1 | 2500 | – | – | 375000000 | – | Daoden outpost |
-| [Elitet4 70 Small Shield Generator](/content/items/elitet4-70-small-shield-generator/) | 1 | 5000 | – | – | 750000000 | – | Daoden outpost |
-| [Elitet2 70 Medium Shield Generator](/content/items/elitet2-70-medium-shield-generator/) | 1 | 2500 | – | – | 375000000 | – | Daoden outpost |
-| [Elitet4 70 Medium Shield Generator](/content/items/elitet4-70-medium-shield-generator/) | 1 | 5000 | – | – | 750000000 | – | Daoden outpost |
-| [Elitet2 70 Sensor Booster](/content/items/elitet2-70-sensor-booster/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 70 Sensor Booster](/content/items/elitet4-70-sensor-booster/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 70 Webber](/content/items/elitet2-70-webber/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 70 Webber](/content/items/elitet4-70-webber/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 70 Eccm](/content/items/elitet2-70-eccm/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 70 Eccm](/content/items/elitet4-70-eccm/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 70 Small Core Booster](/content/items/elitet2-70-small-core-booster/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 70 Small Core Booster](/content/items/elitet4-70-small-core-booster/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 70 Medium Core Booster](/content/items/elitet2-70-medium-core-booster/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 70 Medium Core Booster](/content/items/elitet4-70-medium-core-booster/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 70 Tracking Upgrade](/content/items/elitet2-70-tracking-upgrade/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 70 Tracking Upgrade](/content/items/elitet4-70-tracking-upgrade/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 72 Small Armor Repairer](/content/items/elitet2-72-small-armor-repairer/) | 1 | – | 2500 | – | 375000000 | – | Daoden outpost |
-| [Elitet4 72 Small Armor Repairer](/content/items/elitet4-72-small-armor-repairer/) | 1 | – | 5000 | – | 750000000 | – | Daoden outpost |
-| [Elitet2 72 Medium Armor Repairer](/content/items/elitet2-72-medium-armor-repairer/) | 1 | – | 2500 | – | 375000000 | – | Daoden outpost |
-| [Elitet4 72 Medium Armor Repairer](/content/items/elitet4-72-medium-armor-repairer/) | 1 | – | 5000 | – | 750000000 | – | Daoden outpost |
-| [Elitet2 71 Small Shield Generator](/content/items/elitet2-71-small-shield-generator/) | 1 | 2500 | – | – | 375000000 | – | Daoden outpost |
-| [Elitet4 71 Small Shield Generator](/content/items/elitet4-71-small-shield-generator/) | 1 | 5000 | – | – | 750000000 | – | Daoden outpost |
-| [Elitet2 71 Medium Shield Generator](/content/items/elitet2-71-medium-shield-generator/) | 1 | 2500 | – | – | 375000000 | – | Daoden outpost |
-| [Elitet4 71 Medium Shield Generator](/content/items/elitet4-71-medium-shield-generator/) | 1 | 5000 | – | – | 750000000 | – | Daoden outpost |
-| [Elitet2 71 Mining Probe Module](/content/items/elitet2-71-mining-probe-module/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 71 Mining Probe Module](/content/items/elitet4-71-mining-probe-module/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 72 Damage Mod Projectile](/content/items/elitet2-72-damage-mod-projectile/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 72 Damage Mod Projectile](/content/items/elitet4-72-damage-mod-projectile/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 72 Mass Reductor](/content/items/elitet2-72-mass-reductor/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 72 Mass Reductor](/content/items/elitet4-72-mass-reductor/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet2 71 Maneuvering Upgrade](/content/items/elitet2-71-maneuvering-upgrade/) | 1 | – | – | – | 250000000 | 10000 | Daoden outpost |
-| [Elitet4 71 Maneuvering Upgrade](/content/items/elitet4-71-maneuvering-upgrade/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet4 Gamma Small Autocannon](/content/items/elitet4-gamma-small-autocannon/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet4 Gamma Medium Autocannon](/content/items/elitet4-gamma-medium-autocannon/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet4 Gamma Longrange Medium Autocannon](/content/items/elitet4-gamma-longrange-medium-autocannon/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet4 Gamma Small Laser](/content/items/elitet4-gamma-small-laser/) | 1 | – | – | 5000 | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Medium Laser](/content/items/elitet4-gamma-medium-laser/) | 1 | – | – | 5000 | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Longrange Medium Laser](/content/items/elitet4-gamma-longrange-medium-laser/) | 1 | – | – | 5000 | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Small Railgun](/content/items/elitet4-gamma-small-railgun/) | 1 | – | 5000 | – | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Medium Railgun](/content/items/elitet4-gamma-medium-railgun/) | 1 | – | 5000 | – | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Longrange Medium Railgun](/content/items/elitet4-gamma-longrange-medium-railgun/) | 1 | – | 5000 | – | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Rocket Launcher](/content/items/elitet4-gamma-rocket-launcher/) | 1 | 5000 | – | – | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Missile Launcher](/content/items/elitet4-gamma-missile-launcher/) | 1 | 5000 | – | – | 750000000 | – | Daoden outpost |
-| [Elitet4 Gamma Small Driller](/content/items/elitet4-gamma-small-driller/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet4 Gamma Medium Driller](/content/items/elitet4-gamma-medium-driller/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet4 Gamma Small Harvester](/content/items/elitet4-gamma-small-harvester/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
-| [Elitet4 Gamma Medium Harvester](/content/items/elitet4-gamma-medium-harvester/) | 1 | – | – | – | 500000000 | 25000 | Daoden outpost |
+| ["The Wall" shield hardener](/content/items/tux-shield-hardener-reward/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| ["Perpetuum 500" lightweight frame](/content/items/purgatory-mass-reductor-reward/) | ∞ | – | – | – | 1G | 25k | Daoden outpost |
+| [Elitet2 70 Small Armor Repairer](/content/items/elitet2-70-small-armor-repairer/) | ∞ | – | 2.5k | – | 375M | – | Daoden outpost |
+| [Elitet4 70 Small Armor Repairer](/content/items/elitet4-70-small-armor-repairer/) | ∞ | – | 5k | – | 750M | – | Daoden outpost |
+| [Elitet2 70 Medium Armor Repairer](/content/items/elitet2-70-medium-armor-repairer/) | ∞ | – | 2.5k | – | 375M | – | Daoden outpost |
+| [Elitet4 70 Medium Armor Repairer](/content/items/elitet4-70-medium-armor-repairer/) | ∞ | – | 5k | – | 750M | – | Daoden outpost |
+| [Elitet2 70 Small Shield Generator](/content/items/elitet2-70-small-shield-generator/) | ∞ | 2.5k | – | – | 375M | – | Daoden outpost |
+| [Elitet4 70 Small Shield Generator](/content/items/elitet4-70-small-shield-generator/) | ∞ | 5k | – | – | 750M | – | Daoden outpost |
+| [Elitet2 70 Medium Shield Generator](/content/items/elitet2-70-medium-shield-generator/) | ∞ | 2.5k | – | – | 375M | – | Daoden outpost |
+| [Elitet4 70 Medium Shield Generator](/content/items/elitet4-70-medium-shield-generator/) | ∞ | 5k | – | – | 750M | – | Daoden outpost |
+| [Elitet2 70 Sensor Booster](/content/items/elitet2-70-sensor-booster/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 70 Sensor Booster](/content/items/elitet4-70-sensor-booster/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 70 Webber](/content/items/elitet2-70-webber/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 70 Webber](/content/items/elitet4-70-webber/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 70 Eccm](/content/items/elitet2-70-eccm/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 70 Eccm](/content/items/elitet4-70-eccm/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 70 Small Core Booster](/content/items/elitet2-70-small-core-booster/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 70 Small Core Booster](/content/items/elitet4-70-small-core-booster/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 70 Medium Core Booster](/content/items/elitet2-70-medium-core-booster/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 70 Medium Core Booster](/content/items/elitet4-70-medium-core-booster/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 70 Tracking Upgrade](/content/items/elitet2-70-tracking-upgrade/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 70 Tracking Upgrade](/content/items/elitet4-70-tracking-upgrade/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 72 Small Armor Repairer](/content/items/elitet2-72-small-armor-repairer/) | ∞ | – | 2.5k | – | 375M | – | Daoden outpost |
+| [Elitet4 72 Small Armor Repairer](/content/items/elitet4-72-small-armor-repairer/) | ∞ | – | 5k | – | 750M | – | Daoden outpost |
+| [Elitet2 72 Medium Armor Repairer](/content/items/elitet2-72-medium-armor-repairer/) | ∞ | – | 2.5k | – | 375M | – | Daoden outpost |
+| [Elitet4 72 Medium Armor Repairer](/content/items/elitet4-72-medium-armor-repairer/) | ∞ | – | 5k | – | 750M | – | Daoden outpost |
+| [Elitet2 71 Small Shield Generator](/content/items/elitet2-71-small-shield-generator/) | ∞ | 2.5k | – | – | 375M | – | Daoden outpost |
+| [Elitet4 71 Small Shield Generator](/content/items/elitet4-71-small-shield-generator/) | ∞ | 5k | – | – | 750M | – | Daoden outpost |
+| [Elitet2 71 Medium Shield Generator](/content/items/elitet2-71-medium-shield-generator/) | ∞ | 2.5k | – | – | 375M | – | Daoden outpost |
+| [Elitet4 71 Medium Shield Generator](/content/items/elitet4-71-medium-shield-generator/) | ∞ | 5k | – | – | 750M | – | Daoden outpost |
+| [Elitet2 71 Mining Probe Module](/content/items/elitet2-71-mining-probe-module/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 71 Mining Probe Module](/content/items/elitet4-71-mining-probe-module/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 72 Damage Mod Projectile](/content/items/elitet2-72-damage-mod-projectile/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 72 Damage Mod Projectile](/content/items/elitet4-72-damage-mod-projectile/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 72 Mass Reductor](/content/items/elitet2-72-mass-reductor/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 72 Mass Reductor](/content/items/elitet4-72-mass-reductor/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet2 71 Maneuvering Upgrade](/content/items/elitet2-71-maneuvering-upgrade/) | ∞ | – | – | – | 250M | 10k | Daoden outpost |
+| [Elitet4 71 Maneuvering Upgrade](/content/items/elitet4-71-maneuvering-upgrade/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet4 Gamma Small Autocannon](/content/items/elitet4-gamma-small-autocannon/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet4 Gamma Medium Autocannon](/content/items/elitet4-gamma-medium-autocannon/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet4 Gamma Longrange Medium Autocannon](/content/items/elitet4-gamma-longrange-medium-autocannon/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet4 Gamma Small Laser](/content/items/elitet4-gamma-small-laser/) | ∞ | – | – | 5k | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Medium Laser](/content/items/elitet4-gamma-medium-laser/) | ∞ | – | – | 5k | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Longrange Medium Laser](/content/items/elitet4-gamma-longrange-medium-laser/) | ∞ | – | – | 5k | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Small Railgun](/content/items/elitet4-gamma-small-railgun/) | ∞ | – | 5k | – | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Medium Railgun](/content/items/elitet4-gamma-medium-railgun/) | ∞ | – | 5k | – | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Longrange Medium Railgun](/content/items/elitet4-gamma-longrange-medium-railgun/) | ∞ | – | 5k | – | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Rocket Launcher](/content/items/elitet4-gamma-rocket-launcher/) | ∞ | 5k | – | – | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Missile Launcher](/content/items/elitet4-gamma-missile-launcher/) | ∞ | 5k | – | – | 750M | – | Daoden outpost |
+| [Elitet4 Gamma Small Driller](/content/items/elitet4-gamma-small-driller/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet4 Gamma Medium Driller](/content/items/elitet4-gamma-medium-driller/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet4 Gamma Small Harvester](/content/items/elitet4-gamma-small-harvester/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
+| [Elitet4 Gamma Medium Harvester](/content/items/elitet4-gamma-medium-harvester/) | ∞ | – | – | – | 500M | 25k | Daoden outpost |
 

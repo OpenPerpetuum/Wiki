@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 14 |
 | cpu_usage | 20 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_sensor_booster_locking_range_modifier | 1.18 |
 | effect_sensor_booster_locking_time_modifier | 0.88 |
 | falloff | 0 |

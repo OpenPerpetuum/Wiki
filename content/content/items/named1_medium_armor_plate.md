@@ -21,7 +21,7 @@ description: "Modules / Armor, tier 2"
 
 | Field | Value |
 |---|---|
-| armor_max | 1350 |
+| armor_max | 1.35k |
 | cpu_usage | 2 |
 | massiveness | 0.12 |
 | powergrid_usage | 60 |

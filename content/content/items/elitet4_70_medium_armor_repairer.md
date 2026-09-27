@@ -26,7 +26,7 @@ description: "Modules / Repair, tier 4"
 | core_recharge_time_modifier | 0.96 |
 | core_usage | 297 |
 | cpu_usage | 52 |
-| cycle_time | 12000 |
+| cycle_time | 12k |
 | powergrid_usage | 105 |
 
 ## Transport capsule
@@ -35,11 +35,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet4 70 Medium Armor Repairer (current)"]:::current
-    b["Elitet4 70 Medium Armor Repairer (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet4-70-medium-armor-repairer-ct-capsule/" "Elitet4 70 Medium Armor Repairer (CT capsule)"
+    a["Elitet4 70 Medium Armor Repairer (CT capsule)"]:::current
+    b["Elitet4 70 Medium Armor Repairer"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet4-70-medium-armor-repairer/" "Elitet4 70 Medium Armor Repairer"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -47,6 +48,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | ICS Coin | Credits |
 |---|---|---|---|
-| Daoden outpost | 1 | 5000 | 750000000 |
+| Daoden outpost | ∞ | 5k | 750M |
 
 [All items](/content/items/)

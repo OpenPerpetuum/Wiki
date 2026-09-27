@@ -22,7 +22,7 @@ description: "Modules / Power"
 
 | Field | Value |
 |---|---|
-| core_max | 1125 |
+| core_max | 1.125k |
 | cpu_usage | 400 |
 | powergrid_usage | 840 |
 

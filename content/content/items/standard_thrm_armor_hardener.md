@@ -23,7 +23,7 @@ description: "Modules / Armor, tier 1"
 |---|---|
 | core_usage | 13 |
 | cpu_usage | 25 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_resist_thermal | 100 |
 | powergrid_usage | 5 |
 | resist_thermal | 25 |

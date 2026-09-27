@@ -22,7 +22,7 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 350000 |
+| armor_max | 350k |
 | blob_emission | 2 |
 | blob_emission_radius | 50 |
 | resist_chemical | 150 |

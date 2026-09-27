@@ -28,7 +28,7 @@ public static class OresPage
         {
             m.Name,
             defs.TryGetValue(m.Definition, out var d) ? d.Name : m.Definition.ToString(),
-            m.Amount.ToString(),
+            Md.Num(m.Amount),
             m.ExtractionType.ToString(),
             m.EnablerRequired ? "yes" : "no",
             m.GeoScanDocument?.ToString() ?? "–"
@@ -42,9 +42,9 @@ public static class OresPage
         {
             Md.ZoneName(zones[c.ZoneId]),
             minerals.FirstOrDefault(m => m.Idx == c.MaterialType)?.Name ?? c.MaterialType.ToString(),
-            c.MaxNodes.ToString(),
-            c.MaxTilesPerNode.ToString(),
-            c.TotalAmountPerNode.ToString(),
+            Md.Num(c.MaxNodes),
+            Md.Num(c.MaxTilesPerNode),
+            Md.Num(c.TotalAmountPerNode),
             Md.Cell(c.MinThreshold)
         }).ToArray();
         if (cfgRows.Length > 0)

@@ -22,8 +22,8 @@ description: "Special & other / Miscellaneous, tier 2"
 | Field | Value |
 |---|---|
 | accuracy | 4.2 |
-| armor_max | 2000 |
-| cycle_time | 1790 |
+| armor_max | 2k |
+| cycle_time | 1.79k |
 | damage_chemical | 19.866 |
 | damage_explosive | 39.732 |
 | damage_kinetic | 39.732 |
@@ -32,7 +32,7 @@ description: "Special & other / Miscellaneous, tier 2"
 | falloff | 15 |
 | optimal_range | 10 |
 | remote_control_bandwidth_usage | 3 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 | resist_chemical | 90 |
 | resist_explosive | 90 |
 | resist_kinetic | 90 |

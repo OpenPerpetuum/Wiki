@@ -21,12 +21,12 @@ description: "Special & other / Miscellaneous, tier 3"
 
 | Field | Value |
 |---|---|
-| armor_max | 4760 |
-| cycle_time | 8680 |
+| armor_max | 4.76k |
+| cycle_time | 8.68k |
 | damage_explosive | 224.4 |
 | explosion_radius | 7.5 |
 | remote_control_bandwidth_usage | 5 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 | resist_chemical | 30 |
 | resist_explosive | 45 |
 | resist_kinetic | 10 |

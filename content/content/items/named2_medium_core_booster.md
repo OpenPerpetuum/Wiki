@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 3"
 |---|---|
 | core_usage | 0 |
 | cpu_usage | 25 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | powergrid_usage | 275 |
 
 [All items](/content/items/)

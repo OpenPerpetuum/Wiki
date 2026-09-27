@@ -22,7 +22,7 @@ description: "Special & other / Miscellaneous, tier 2"
 
 | Field | Value |
 |---|---|
-| armor_max | 650000 |
+| armor_max | 650k |
 | resist_chemical | 75 |
 | resist_explosive | 75 |
 | resist_kinetic | 75 |

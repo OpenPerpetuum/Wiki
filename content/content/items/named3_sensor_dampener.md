@@ -23,7 +23,7 @@ description: "Modules / Sensors & scanning, tier 4"
 |---|---|
 | core_usage | 20 |
 | cpu_usage | 38 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | ecm_strength | 70 |
 | effect_sensor_dampener_locking_range_modifier | 0.75 |
 | effect_sensor_dampener_locking_time_modifier | 1.4 |

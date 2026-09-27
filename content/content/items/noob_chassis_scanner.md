@@ -23,7 +23,7 @@ description: "Modules / Sensors & scanning"
 |---|---|
 | core_usage | 15 |
 | cpu_usage | 1 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | falloff | 10 |
 | optimal_range | 10 |
 | powergrid_usage | 5 |

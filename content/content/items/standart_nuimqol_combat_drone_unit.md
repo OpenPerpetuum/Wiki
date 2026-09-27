@@ -22,11 +22,11 @@ description: "Special & other / Miscellaneous, tier 1"
 | Field | Value |
 |---|---|
 | accuracy | 9.45 |
-| armor_max | 1156 |
-| cycle_time | 5148 |
+| armor_max | 1.156k |
+| cycle_time | 5.148k |
 | damage_kinetic | 67.76016 |
 | remote_control_bandwidth_usage | 5 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 | resist_chemical | 30 |
 | resist_explosive | 150 |
 | resist_kinetic | 45 |

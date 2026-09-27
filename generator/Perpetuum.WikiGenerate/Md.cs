@@ -59,6 +59,26 @@ public static class Md
     /// internal zone name (gamma zones have no client name).</summary>
     public static string ZoneName(string name) => ClientStrings.TryGetValue(name, out var d) ? d : name;
 
+    /// <summary>Engineering-style number: 214 stays "214", 1000 becomes "1k", 1001 becomes
+    /// "1.001k" — at most three decimals with trailing zeros trimmed, k/M/G above 10³.
+    /// Values below 1000 (and fractions) are left untouched.</summary>
+    public static string Num(long v)
+    {
+        if (v < 0) return "-" + Num(-v);
+        if (v < 1000) return v.ToString(System.Globalization.CultureInfo.InvariantCulture);
+        var (unit, suf) = v >= 1_000_000_000 ? (1_000_000_000L, "G") : v >= 1_000_000 ? (1_000_000L, "M") : (1000L, "k");
+        var d = (double)v / unit;
+        return d.ToString("0.###", System.Globalization.CultureInfo.InvariantCulture) + suf;
+    }
+
+    /// <summary>Stat values: engineering notation above 1000, up to six decimals below it.</summary>
+    public static string Num(double v)
+    {
+        if (v < 0) return "-" + Num(-v);
+        if (v >= 1000) return Num((long)Math.Round(v));
+        return v.ToString("0.######", System.Globalization.CultureInfo.InvariantCulture);
+    }
+
     /// <summary>Player-readable name for an internal definition/zone name: the client's
     /// own string when the dictionary has it, otherwise derived from the internal name.
     /// forceDerived skips the dictionary (used when a client string collides with

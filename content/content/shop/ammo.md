@@ -10,35 +10,35 @@ description: "Fixed-price vendor items: ammo. Best price across all vendors."
 
 [Item shop](/content/shop/) → Ammo. Weapon ammo and scanner/industrial charges, in fixed stacks.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | TM Coin | ICS Coin | ASI Coin | Credits | UniCoin | Vendors |
 |---|---|---|---|---|---|---|---|
-| [Small UDC slug](/content/items/ammo-small-railgun-rewa/) | 240 | – | 100 | – | 200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Small 'Magnedart' slug](/content/items/ammo-small-railgun-rewb/) | 240 | – | 100 | – | 200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium UDC slug](/content/items/ammo-medium-railgun-rewa/) | 360 | – | 600 | – | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium 'Magnedart' slug](/content/items/ammo-medium-railgun-rewb/) | 360 | – | 600 | – | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Small TFJ bullet](/content/items/ammo-small-projectile-rewa/) | 450 | – | – | – | 200000 | 100 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Small 'Flechette' bullet](/content/items/ammo-small-projectile-rewb/) | 450 | – | – | – | 200000 | 100 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium TFJ bullet](/content/items/ammo-medium-projectile-rewa/) | 700 | – | – | – | 1200000 | 600 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium 'Flechette' bullet](/content/items/ammo-medium-projectile-rewb/) | 700 | – | – | – | 1200000 | 600 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Small 'Apocalypse' energy cell](/content/items/ammo-small-lasercrystal-rewa/) | 300 | – | – | 100 | 200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Small 'Crypto' energy cell](/content/items/ammo-small-lasercrystal-rewb/) | 300 | – | – | 100 | 200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium 'Apocalypse' energy cell](/content/items/ammo-medium-lasercrystal-rewa/) | 450 | – | – | 600 | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium 'Crypto' energy cell](/content/items/ammo-medium-lasercrystal-rewb/) | 450 | – | – | 600 | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Small 'Smite' ballistic missile](/content/items/ammo-rocket-rewa/) | 240 | 100 | – | – | 200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Small HEAT-IX ballistic missile](/content/items/ammo-rocket-rewb/) | 240 | 100 | – | – | 200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium 'Smite' compact missile](/content/items/ammo-missile-rewa/) | 360 | 600 | – | – | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium HEAT-IX compact missile](/content/items/ammo-missile-rewb/) | 360 | 600 | – | – | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium 'Smite' ballistic missile](/content/items/ammo-longrange-missile-rewa/) | 360 | 600 | – | – | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Medium HEAT-IX ballistic missile](/content/items/ammo-longrange-missile-rewb/) | 360 | 600 | – | – | 1200000 | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Advanced tile-based geoscanner charge (liquizit)](/content/items/ammo-mining-probe-liquizit-tile-rewa/) | 10 | – | – | – | 75000 | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Advanced tile-based geoscanner charge (stermonit)](/content/items/ammo-mining-probe-stermonit-tile-rewa/) | 10 | – | – | – | 75000 | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Advanced tile-based geoscanner charge (HDT)](/content/items/ammo-mining-probe-crude-tile-rewa/) | 10 | – | – | – | 75000 | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Advanced tile-based geoscanner charge (epriton)](/content/items/ammo-mining-probe-epriton-tile-rewa/) | 10 | – | – | – | 75000 | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Advanced tile-based geoscanner charge (titan ore)](/content/items/ammo-mining-probe-titan-tile-rewa/) | 10 | – | – | – | 75000 | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Advanced tile-based geoscanner charge (imentium)](/content/items/ammo-mining-probe-imentium-tile-rewa/) | 10 | – | – | – | 75000 | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Advanced tile-based geoscanner charge (silgium)](/content/items/ammo-mining-probe-silgium-tile-rewa/) | 10 | – | – | – | 75000 | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Ammo Small Projectile T (CT capsule)](/content/items/ammo-small-projectile-t-ct-capsule/) | 1 | – | – | – | 1000000 | 20 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Ammo Medium Projectile T (CT capsule)](/content/items/ammo-medium-projectile-t-ct-capsule/) | 1 | – | – | – | 5000000 | 100 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small UDC slug](/content/items/ammo-small-railgun-rewa/) | ∞ | – | 100 | – | 200k | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small 'Magnedart' slug](/content/items/ammo-small-railgun-rewb/) | ∞ | – | 100 | – | 200k | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium UDC slug](/content/items/ammo-medium-railgun-rewa/) | ∞ | – | 600 | – | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium 'Magnedart' slug](/content/items/ammo-medium-railgun-rewb/) | ∞ | – | 600 | – | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small TFJ bullet](/content/items/ammo-small-projectile-rewa/) | ∞ | – | – | – | 200k | 100 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small 'Flechette' bullet](/content/items/ammo-small-projectile-rewb/) | ∞ | – | – | – | 200k | 100 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium TFJ bullet](/content/items/ammo-medium-projectile-rewa/) | ∞ | – | – | – | 1.2M | 600 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium 'Flechette' bullet](/content/items/ammo-medium-projectile-rewb/) | ∞ | – | – | – | 1.2M | 600 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small 'Apocalypse' energy cell](/content/items/ammo-small-lasercrystal-rewa/) | ∞ | – | – | 100 | 200k | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small 'Crypto' energy cell](/content/items/ammo-small-lasercrystal-rewb/) | ∞ | – | – | 100 | 200k | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium 'Apocalypse' energy cell](/content/items/ammo-medium-lasercrystal-rewa/) | ∞ | – | – | 600 | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium 'Crypto' energy cell](/content/items/ammo-medium-lasercrystal-rewb/) | ∞ | – | – | 600 | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small 'Smite' ballistic missile](/content/items/ammo-rocket-rewa/) | ∞ | 100 | – | – | 200k | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Small HEAT-IX ballistic missile](/content/items/ammo-rocket-rewb/) | ∞ | 100 | – | – | 200k | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium 'Smite' compact missile](/content/items/ammo-missile-rewa/) | ∞ | 600 | – | – | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium HEAT-IX compact missile](/content/items/ammo-missile-rewb/) | ∞ | 600 | – | – | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium 'Smite' ballistic missile](/content/items/ammo-longrange-missile-rewa/) | ∞ | 600 | – | – | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Medium HEAT-IX ballistic missile](/content/items/ammo-longrange-missile-rewb/) | ∞ | 600 | – | – | 1.2M | – | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Advanced tile-based geoscanner charge (liquizit)](/content/items/ammo-mining-probe-liquizit-tile-rewa/) | ∞ | – | – | – | 75k | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Advanced tile-based geoscanner charge (stermonit)](/content/items/ammo-mining-probe-stermonit-tile-rewa/) | ∞ | – | – | – | 75k | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Advanced tile-based geoscanner charge (HDT)](/content/items/ammo-mining-probe-crude-tile-rewa/) | ∞ | – | – | – | 75k | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Advanced tile-based geoscanner charge (epriton)](/content/items/ammo-mining-probe-epriton-tile-rewa/) | ∞ | – | – | – | 75k | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Advanced tile-based geoscanner charge (titan ore)](/content/items/ammo-mining-probe-titan-tile-rewa/) | ∞ | – | – | – | 75k | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Advanced tile-based geoscanner charge (imentium)](/content/items/ammo-mining-probe-imentium-tile-rewa/) | ∞ | – | – | – | 75k | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Advanced tile-based geoscanner charge (silgium)](/content/items/ammo-mining-probe-silgium-tile-rewa/) | ∞ | – | – | – | 75k | 150 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Ammo Small Projectile T (CT capsule)](/content/items/ammo-small-projectile-t-ct-capsule/) | ∞ | – | – | – | 1M | 20 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Ammo Medium Projectile T (CT capsule)](/content/items/ammo-medium-projectile-t-ct-capsule/) | ∞ | – | – | – | 5M | 100 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
 

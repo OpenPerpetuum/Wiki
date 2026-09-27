@@ -153,8 +153,12 @@ public static class RobotsPage
             // Model icon. Real model icons are not bundled (see the reuse policy);
             // every family shows the shared placeholder until licensed art exists.
             // RobotIcons can map a family to a file in static/img/robots/ again.
-            var icon = RobotIcons.TryGetValue(title, out var ic) ? $"/img/robots/{ic}" : "/img/placeholder.svg";
-            sb.Append($"<img class=\"robot-icon\" src=\"{icon}\" alt=\"{title}\">\n\n");
+            // The placeholder is a CSS alpha-mask (theme-tinted); real icons
+            // (when licensed art exists in RobotIcons) are plain <img>.
+            if (RobotIcons.TryGetValue(title, out var ic))
+                sb.Append($"<img class=\"robot-icon\" src=\"/img/robots/{ic}\" alt=\"{title}\">\n\n");
+            else
+                sb.Append($"<span class=\"robot-icon icon-mask\" role=\"img\" aria-label=\"{title} icon\"></span>\n\n");
             Md.WriteTable(sb, new[] { "Robot", "Size" },
                 frows.Select(d => new[] { Md.DisplayName(d.Name), Md.Cell(d.Volume) }).ToArray());
             sb.Append('\n');

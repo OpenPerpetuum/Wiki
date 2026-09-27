@@ -24,7 +24,7 @@ description: "Modules / Repair, tier 2"
 | armor_repair_amount | 360 |
 | core_usage | 362 |
 | cpu_usage | 360 |
-| cycle_time | 15000 |
+| cycle_time | 15k |
 | powergrid_usage | 900 |
 
 [All items](/content/items/)

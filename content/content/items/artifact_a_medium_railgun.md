@@ -24,7 +24,7 @@ description: "Artifacts, tier 3"
 | accuracy | 13.5 |
 | core_usage | 17 |
 | cpu_usage | 38 |
-| cycle_time | 6000 |
+| cycle_time | 6k |
 | damage_modifier | 2 |
 | falloff | 6 |
 | least_optimal | 13 |

@@ -22,18 +22,18 @@ description: "Robot parts / Heads"
 
 | Field | Value |
 |---|---|
-| ammo_reload_time | 10000 |
+| ammo_reload_time | 10k |
 | blob_level_high | 500 |
 | blob_level_low | 300 |
-| core_max | 3000 |
-| core_recharge_time | 1800 |
-| cpu_max | 1000 |
+| core_max | 3k |
+| core_recharge_time | 1.8k |
+| cpu_max | 1k |
 | detection_strength | 125 |
 | locked_targets_max | 0 |
 | locking_range | 1 |
-| locking_time | 10000 |
+| locking_time | 10k |
 | missile_miss | 1 |
-| powergrid_max | 1000 |
+| powergrid_max | 1k |
 | reactor_radiation | 1 |
 | sensor_strength | 200 |
 | slope | 4 |

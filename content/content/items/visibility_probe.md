@@ -28,7 +28,7 @@ description: "Special & other / Miscellaneous"
 | blob_level_high | 70 |
 | blob_level_low | 25 |
 | core_max | 50 |
-| core_recharge_time | 86400 |
+| core_recharge_time | 86.4k |
 | detection_strength | 45 |
 | signature_radius | 2 |
 | stealth_strength | 275 |

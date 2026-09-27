@@ -1,7 +1,7 @@
 namespace Perpetuum.WikiGenerate;
 
 /// <summary>One itemshop row (a vendor preset selling one item).</summary>
-public record ShopSale(int Preset, int Def, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing);
+public record ShopSale(int Preset, int Def, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit);
 
 public static class ShopPage
 {
@@ -33,23 +33,32 @@ public static class ShopPage
 
     public static List<ShopSale> Load(Db db) => db.Query("""
         SELECT s.presetid, s.targetdefinition, s.targetamount, s.tmcoin, s.icscoin, s.asicoin,
-               s.credit, s.unicoin, s.standing
+               s.credit, s.unicoin, s.standing, s.globallimit
         FROM itemshop s ORDER BY s.presetid, s.targetdefinition
         """).Select(r => new ShopSale(r.Int("presetid"), r.Int("targetdefinition"), r.Int("targetamount"),
-        r.Lng("tmcoin"), r.Lng("icscoin"), r.Lng("asicoin"), r.Lng("credit"), r.Lng("unicoin"), r.Dbl("standing")))
+        r.Lng("tmcoin"), r.Lng("icscoin"), r.Lng("asicoin"), r.Lng("credit"), r.Lng("unicoin"), r.Dbl("standing"),
+        r.TryGetValue("globallimit", out var gl) && gl is null ? null : (int?)Convert.ToInt32(gl!)))
         .ToList();
 
     /// <summary>Best terms of one item at one location (lowest price per currency,
     /// lowest qty, lowest standing) across the location's presets.</summary>
-    public static (int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing) BestFor(
+    public static (int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit) BestFor(
         List<ShopSale> sales, Location loc, int def)
     {
         var rows = sales.Where(s => s.Def == def && loc.Presets.Contains(s.Preset)).ToList();
-        if (rows.Count == 0) return (0, 0, 0, 0, 0, 0, 0);
+        if (rows.Count == 0) return (0, 0, 0, 0, 0, 0, 0, null);
+        // A null global limit means the vendor never runs out; a numeric limit
+        // only applies when every preset has one (server: ItemShopEntry.CheckGlobalLimit).
+        var limits = rows.Select(r => r.Limit).ToList();
+        var limit = limits.Any(l => l is null) ? null : limits.Min();
         return (rows.Min(r => r.Qty),
             Min(rows, r => r.Tm), Min(rows, r => r.Ics), Min(rows, r => r.Asi),
-            Min(rows, r => r.Credit), Min(rows, r => r.Uni), rows.Min(r => r.Standing));
+            Min(rows, r => r.Credit), Min(rows, r => r.Uni), rows.Min(r => r.Standing), limit);
     }
+
+    /// <summary>Per-purchase quantity with the stock situation: "∞" when the vendor
+    /// has no global limit, "240 · stock 600" when it does.</summary>
+    public static string QtyText(int qty, int? limit) => limit is null ? "∞" : $"{Md.Num(qty)} · stock {Md.Num(limit.Value)}";
 
     private static long Min(List<ShopSale> rows, Func<ShopSale, long> f)
     {
@@ -57,7 +66,7 @@ public static class ShopPage
         return v.Count > 0 ? v.Min() : 0;
     }
 
-    public static string Coin(long v) => v > 0 ? v.ToString() : "–";
+    public static string Coin(long v) => v > 0 ? Md.Num(v) : "–";
 
     /// <summary>Drop columns (after the first two) that carry no value in the table.</summary>
     public static (string[] Header, string[][] Cells) TrimColumns(string[] header, string[][] cells)
@@ -153,7 +162,7 @@ public static class ShopPage
                   "that sells it (robots link to the [robot catalog](/content/robots/)).\n\n");
         sb.Append("**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency " +
                   "(each shop sells for all three coins where offered); **Credits**: the common currency; " +
-                  "**UniCoin**: a premium currency.\n\n");
+                  "**UniCoin**: a premium currency. **Qty ∞** means the vendor has no stock limit.\n\n");
 
         // ---- vendors overview, ordered by protection area ----
         sb.Append("## Vendors\n\n");
@@ -247,7 +256,8 @@ public static class ShopPage
         sb.Append($"[Item shop](/content/shop/) → {cat.Name}. {CategoryBlurb.GetValueOrDefault(cat.Name, "")}\n\n");
         sb.Append("**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; " +
                   "**Credits**: the common currency; **UniCoin**: a premium currency. " +
-                  "Each row shows the best terms across all vendors that sell the item.\n\n");
+                  "Each row shows the best terms across all vendors that sell the item. " +
+                  "**Qty ∞** means the vendor has no stock limit.\n\n");
         var header = new[] { "Item", "Qty", "TM Coin", "ICS Coin", "ASI Coin", "Credits", "UniCoin", "Vendors" };
         var cells = allDefs.Select(def =>
         {
@@ -256,7 +266,7 @@ public static class ShopPage
             return new[]
             {
                 ItemCell(def),
-                best.Min(b => b.Qty).ToString(),
+                QtyText(best.Min(b => b.Qty), best.Min(b => b.Limit!)),
                 Coin(best.Min(b => b.Tm)), Coin(best.Min(b => b.Ics)), Coin(best.Min(b => b.Asi)),
                 Coin(best.Min(b => b.Credit)), Coin(best.Min(b => b.Uni)),
                 string.Join(" · ", selling.Select(loc => loc.Short)),
@@ -270,12 +280,12 @@ public static class ShopPage
 
     /// <summary>The per-vendor rows of one item (one row per location that sells it,
     /// PvE/PvP presets merged to the best terms). Empty when the item is not shop stock.</summary>
-    public static List<(Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing)>
+    public static List<(Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit)>
         VendorsFor(List<ShopSale> sales, int def) =>
         Locations
             .Select(loc => (Loc: loc, Best: BestFor(sales, loc, def)))
             .Where(x => x.Best.Qty > 0)
-            .Select(x => (x.Loc, x.Best.Qty, x.Best.Tm, x.Best.Ics, x.Best.Asi, x.Best.Credit, x.Best.Uni, x.Best.Standing))
+            .Select(x => (x.Loc, x.Best.Qty, x.Best.Tm, x.Best.Ics, x.Best.Asi, x.Best.Credit, x.Best.Uni, x.Best.Standing, x.Best.Limit))
             .ToList();
 
     /// <summary>"New Virginia (zone_TM)" for the galaxy shops, plain name elsewhere.

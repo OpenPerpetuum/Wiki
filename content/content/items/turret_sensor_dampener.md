@@ -23,7 +23,7 @@ description: "Modules / Turrets, tier 1"
 |---|---|
 | core_usage | 5 |
 | cpu_usage | 35 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | ecm_strength | 120 |
 | effect_sensor_dampener_locking_range_modifier | 0.7 |
 | effect_sensor_dampener_locking_time_modifier | 1.45 |

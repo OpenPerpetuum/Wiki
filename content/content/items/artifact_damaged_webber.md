@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 16 |
 | cpu_usage | 45 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | effect_massivness_speed_max_modifier | 0.74 |
 | falloff | 0 |
 | optimal_range | 12 |

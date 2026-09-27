@@ -25,7 +25,7 @@ description: "Modules / Weapons"
 | accuracy | 34.5 |
 | core_usage | 11.76 |
 | cpu_usage | 62.5 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | damage_modifier | 1.91 |
 | falloff | 10 |
 | optimal_range | 22.5 |

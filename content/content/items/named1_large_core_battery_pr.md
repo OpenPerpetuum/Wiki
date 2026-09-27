@@ -22,7 +22,7 @@ description: "Modules / Power, tier 2"
 
 | Field | Value |
 |---|---|
-| core_max | 1125 |
+| core_max | 1.125k |
 | cpu_usage | 360 |
 | powergrid_usage | 800 |
 

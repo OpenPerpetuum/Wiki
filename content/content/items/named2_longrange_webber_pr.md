@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 3"
 |---|---|
 | core_usage | 35 |
 | cpu_usage | 54 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | effect_massivness_speed_max_modifier | 0.98 |
 | falloff | 0 |
 | optimal_range | 27.5 |

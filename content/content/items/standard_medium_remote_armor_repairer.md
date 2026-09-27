@@ -24,7 +24,7 @@ description: "Modules / Repair, tier 1"
 | armor_repair_amount | 180 |
 | core_usage | 350 |
 | cpu_usage | 60 |
-| cycle_time | 20000 |
+| cycle_time | 20k |
 | falloff | 0 |
 | optimal_range | 20 |
 | powergrid_usage | 125 |

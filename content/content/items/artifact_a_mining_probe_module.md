@@ -23,7 +23,7 @@ description: "Artifacts, tier 3"
 |---|---|
 | core_usage | 95 |
 | cpu_usage | 55 |
-| cycle_time | 12500 |
+| cycle_time | 12.5k |
 | mining_probe_accuracy | 0.6 |
 | powergrid_usage | 55 |
 

@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 0 |
 | cpu_usage | 20 |
-| cycle_time | 28000 |
+| cycle_time | 28k |
 | powergrid_usage | 50 |
 
 [All items](/content/items/)

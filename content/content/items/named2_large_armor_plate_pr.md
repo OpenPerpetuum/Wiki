@@ -22,10 +22,10 @@ description: "Modules / Armor, tier 3"
 
 | Field | Value |
 |---|---|
-| armor_max | 4350 |
+| armor_max | 4.35k |
 | cpu_usage | 60 |
 | massiveness | 0.156 |
-| powergrid_usage | 1050 |
+| powergrid_usage | 1.05k |
 | signature_radius | 3 |
 
 [All items](/content/items/)

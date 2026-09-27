@@ -21,7 +21,7 @@ description: "Modules / Power, tier 4"
 
 | Field | Value |
 |---|---|
-| core_max | 1290 |
+| core_max | 1.29k |
 | cpu_usage | 460 |
 | powergrid_usage | 872 |
 

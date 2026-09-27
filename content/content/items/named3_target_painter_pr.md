@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 4"
 |---|---|
 | core_usage | 125 |
 | cpu_usage | 58 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_stealth_strength_modifier | -80 |
 | optimal_range | 105 |
 | powergrid_usage | 20 |

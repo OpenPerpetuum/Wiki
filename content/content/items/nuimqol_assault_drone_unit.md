@@ -22,13 +22,13 @@ description: "Special & other / Miscellaneous"
 | Field | Value |
 |---|---|
 | accuracy | 14 |
-| armor_max | 3600 |
-| cycle_time | 10000 |
+| armor_max | 3.6k |
+| cycle_time | 10k |
 | damage_kinetic | 48 |
 | falloff | 7.5 |
 | optimal_range | 29 |
 | remote_control_bandwidth_usage | 5 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 | resist_chemical | 30 |
 | resist_explosive | 150 |
 | resist_kinetic | 45 |

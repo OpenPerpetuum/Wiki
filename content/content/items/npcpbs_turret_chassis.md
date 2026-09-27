@@ -22,13 +22,13 @@ description: "Robot parts / Chassis"
 
 | Field | Value |
 |---|---|
-| ammo_reload_time | 10000 |
-| armor_max | 75000 |
-| core_max | 30000 |
+| ammo_reload_time | 10k |
+| armor_max | 75k |
+| core_max | 30k |
 | core_recharge_time | 300 |
 | mine_detection_range | 7 |
 | missile_miss | 1 |
-| powergrid_max | 5000 |
+| powergrid_max | 5k |
 | reactor_radiation | 1 |
 | resist_chemical | 150 |
 | resist_explosive | 150 |

@@ -24,7 +24,7 @@ description: "Modules / Turrets, tier 4"
 | accuracy | 10.2 |
 | core_usage | 2 |
 | cpu_usage | 10 |
-| cycle_time | 2140 |
+| cycle_time | 2.14k |
 | damage_modifier | 4 |
 | falloff | 5 |
 | least_optimal | 3 |

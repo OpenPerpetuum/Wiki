@@ -24,7 +24,7 @@ description: "Modules / Turrets, tier 1"
 | accuracy | 1 |
 | core_usage | 15 |
 | cpu_usage | 40 |
-| cycle_time | 7500 |
+| cycle_time | 7.5k |
 | damage_modifier | 9 |
 | module_missile_falloff_modifier | 1 |
 | module_missile_range_modifier | 1 |

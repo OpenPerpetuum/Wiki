@@ -23,7 +23,7 @@ description: "Modules / Armor, tier 3"
 |---|---|
 | core_usage | 10 |
 | cpu_usage | 24 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_resist_explosive | 110 |
 | powergrid_usage | 5 |
 | resist_explosive | 25 |

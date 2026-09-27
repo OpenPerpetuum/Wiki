@@ -23,7 +23,7 @@ description: "Artifacts, tier 3"
 |---|---|
 | core_usage | 18 |
 | cpu_usage | 41 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | ecm_strength | 65 |
 | effect_sensor_dampener_locking_range_modifier | 0.8 |
 | effect_sensor_dampener_locking_time_modifier | 1.35 |

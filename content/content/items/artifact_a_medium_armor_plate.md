@@ -21,7 +21,7 @@ description: "Artifacts, tier 3"
 
 | Field | Value |
 |---|---|
-| armor_max | 1450 |
+| armor_max | 1.45k |
 | cpu_usage | 3 |
 | massiveness | 0.13 |
 | powergrid_usage | 90 |

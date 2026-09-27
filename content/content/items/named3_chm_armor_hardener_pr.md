@@ -23,7 +23,7 @@ description: "Modules / Armor, tier 4"
 |---|---|
 | core_usage | 12 |
 | cpu_usage | 26 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_resist_chemical | 125 |
 | powergrid_usage | 6 |
 | resist_chemical | 25 |

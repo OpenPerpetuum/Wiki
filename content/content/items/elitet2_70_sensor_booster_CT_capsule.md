@@ -32,11 +32,12 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 
 ```mermaid
 graph LR
-    a["Elitet2 70 Sensor Booster (CT capsule) (current)"]:::current
-    b["Elitet2 70 Sensor Booster"]
-    a --> b
-    click b "/content/items/elitet2-70-sensor-booster/" "Elitet2 70 Sensor Booster"
+    a["Elitet2 70 Sensor Booster (CT capsule)"]:::current
+    b["Elitet2 70 Sensor Booster"]:::finished
+    a -->|yields| b
+                click b "/content/items/elitet2-70-sensor-booster/" "Elitet2 70 Sensor Booster"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -44,10 +45,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| New Virginia (zone_TM) | 1 | 1200000 | 60 |
-| Attalica (zone_ICS) | 1 | 1200000 | 60 |
-| Attalica outpost | 1 | 1200000 | 60 |
-| Daoden (zone_ASI) | 1 | 1200000 | 60 |
-| Daoden outpost | 1 | 1200000 | 60 |
+| New Virginia (zone_TM) | ∞ | 1.2M | 60 |
+| Attalica (zone_ICS) | ∞ | 1.2M | 60 |
+| Attalica outpost | ∞ | 1.2M | 60 |
+| Daoden (zone_ASI) | ∞ | 1.2M | 60 |
+| Daoden outpost | ∞ | 1.2M | 60 |
 
 [All items](/content/items/)

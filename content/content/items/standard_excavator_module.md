@@ -23,10 +23,10 @@ description: "Modules / Harvesting, tier 1"
 |---|---|
 | core_usage | 165 |
 | cpu_usage | 450 |
-| cycle_time | 180000 |
+| cycle_time | 180k |
 | effect_excavator_harvesting_amount_modifier | 1.3 |
 | effect_excavator_mining_amount_modifier | 1.3 |
 | effect_excavator_stealth_strength_modifier | -30 |
-| powergrid_usage | 1350 |
+| powergrid_usage | 1.35k |
 
 [All items](/content/items/)

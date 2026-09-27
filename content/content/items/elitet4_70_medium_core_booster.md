@@ -24,7 +24,7 @@ description: "Modules / Enhancements, tier 4"
 |---|---|
 | core_usage | 0 |
 | cpu_usage | 26 |
-| cycle_time | 9000 |
+| cycle_time | 9k |
 | powergrid_usage | 285 |
 | reactor_radiation_modifier | 0.91 |
 
@@ -34,11 +34,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet4 70 Medium Core Booster (current)"]:::current
-    b["Elitet4 70 Medium Core Booster (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet4-70-medium-core-booster-ct-capsule/" "Elitet4 70 Medium Core Booster (CT capsule)"
+    a["Elitet4 70 Medium Core Booster (CT capsule)"]:::current
+    b["Elitet4 70 Medium Core Booster"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet4-70-medium-core-booster/" "Elitet4 70 Medium Core Booster"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -46,6 +47,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| Daoden outpost | 1 | 500000000 | 25000 |
+| Daoden outpost | ∞ | 500M | 25k |
 
 [All items](/content/items/)

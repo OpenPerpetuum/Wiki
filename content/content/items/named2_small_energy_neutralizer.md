@@ -24,7 +24,7 @@ description: "Modules / Shield, tier 3"
 |---|---|
 | core_usage | 45 |
 | cpu_usage | 27 |
-| cycle_time | 8000 |
+| cycle_time | 8k |
 | energy_dispersion | 4 |
 | energy_neutralized_amount | 55 |
 | falloff | 0 |

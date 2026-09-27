@@ -25,7 +25,7 @@ description: "Modules / Weapons, tier 4"
 | accuracy | 1 |
 | core_usage | 1 |
 | cpu_usage | 32 |
-| cycle_time | 6500 |
+| cycle_time | 6.5k |
 | damage_modifier | 1.05 |
 | module_missile_range_modifier | 1.2 |
 | powergrid_usage | 28 |
@@ -36,11 +36,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet4 Gamma Rocket Launcher (current)"]:::current
-    b["Elitet4 Gamma Rocket Launcher (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet4-gamma-rocket-launcher-ct-capsule/" "Elitet4 Gamma Rocket Launcher (CT capsule)"
+    a["Elitet4 Gamma Rocket Launcher (CT capsule)"]:::current
+    b["Elitet4 Gamma Rocket Launcher"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet4-gamma-rocket-launcher/" "Elitet4 Gamma Rocket Launcher"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -48,6 +49,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | TM Coin | Credits |
 |---|---|---|---|
-| Daoden outpost | 1 | 5000 | 750000000 |
+| Daoden outpost | ∞ | 5k | 750M |
 
 [All items](/content/items/)

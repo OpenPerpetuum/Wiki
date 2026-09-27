@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 2"
 |---|---|
 | core_usage | 12 |
 | cpu_usage | 17 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_mine_detection_range_modifier | 1.3 |
 | powergrid_usage | 6 |
 

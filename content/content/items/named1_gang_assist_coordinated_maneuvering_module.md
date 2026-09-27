@@ -24,7 +24,7 @@ description: "Modules / Enhancements, tier 2"
 |---|---|
 | core_usage | 31 |
 | cpu_usage | 78 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | default_effect_range | 100 |
 | effect_signature_radius_modifier | -0.1 |
 | powergrid_usage | 31 |

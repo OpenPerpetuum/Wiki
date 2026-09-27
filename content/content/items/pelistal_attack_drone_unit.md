@@ -21,13 +21,13 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 1368 |
-| cycle_time | 7500 |
+| armor_max | 1.368k |
+| cycle_time | 7.5k |
 | damage_explosive | 40 |
 | explosion_radius | 4.5 |
 | optimal_range | 18 |
 | remote_control_bandwidth_usage | 5 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 | resist_chemical | 30 |
 | resist_explosive | 45 |
 | resist_kinetic | 10 |

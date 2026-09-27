@@ -21,15 +21,15 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 500000 |
-| core_max | 100000 |
-| core_recharge_time | 3600 |
-| cpu_max | 200000 |
-| powergrid_max | 1250000 |
-| resist_chemical | 5000 |
-| resist_explosive | 5000 |
-| resist_kinetic | 5000 |
-| resist_thermal | 5000 |
+| armor_max | 500k |
+| core_max | 100k |
+| core_recharge_time | 3.6k |
+| cpu_max | 200k |
+| powergrid_max | 1.25M |
+| resist_chemical | 5k |
+| resist_explosive | 5k |
+| resist_kinetic | 5k |
+| resist_thermal | 5k |
 | signature_radius | 20 |
 
 [All items](/content/items/)

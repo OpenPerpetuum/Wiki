@@ -25,7 +25,7 @@ description: "Modules / Enhancements, tier 4"
 | blob_emission_radius_modifier | 1.5 |
 | core_usage | 60 |
 | cpu_usage | 100 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | optimal_range | 40 |
 | powergrid_usage | 180 |
 

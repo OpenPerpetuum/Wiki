@@ -22,7 +22,7 @@ description: "Modules / Enhancements, tier 3"
 | Field | Value |
 |---|---|
 | adaptive_resist_points | 85 |
-| cpu_usage | 3363 |
+| cpu_usage | 3.363k |
 | powergrid_usage | 12 |
 
 [All items](/content/items/)

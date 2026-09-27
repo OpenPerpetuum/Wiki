@@ -21,7 +21,7 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 30000 |
+| armor_max | 30k |
 | resist_chemical | 150 |
 | resist_explosive | 150 |
 | resist_kinetic | 150 |

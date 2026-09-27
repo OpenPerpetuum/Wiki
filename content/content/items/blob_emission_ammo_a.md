@@ -24,7 +24,7 @@ description: "Special & other / Miscellaneous"
 | armor_max | 200 |
 | blob_emission | 50 |
 | blob_emission_radius | 15 |
-| despawn_time | 300000 |
+| despawn_time | 300k |
 | signature_radius | 1 |
 
 [All items](/content/items/)

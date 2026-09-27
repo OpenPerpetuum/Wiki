@@ -24,7 +24,7 @@ description: "Artifacts, tier 3"
 |---|---|
 | core_usage | 5 |
 | cpu_usage | 51 |
-| cycle_time | 8000 |
+| cycle_time | 8k |
 | energy_dispersion | 4 |
 | energy_vampired_amount | 22 |
 | falloff | 0 |

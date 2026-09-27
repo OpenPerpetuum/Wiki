@@ -23,7 +23,7 @@ description: "Modules / Turrets, tier 4"
 |---|---|
 | core_usage | 0 |
 | cpu_usage | 50 |
-| cycle_time | 4810 |
+| cycle_time | 4.81k |
 | optimal_range | 20 |
 | powergrid_usage | 150 |
 

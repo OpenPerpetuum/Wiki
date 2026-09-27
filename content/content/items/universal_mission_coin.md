@@ -25,8 +25,8 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | TM Coin | ICS Coin | ASI Coin | Credits |
 |---|---|---|---|---|---|
-| Outpost: Bellicha | 1 | – | 5 | – | 10 |
-| Outpost: Cadavaria | 1 | – | – | 5 | 10 |
-| Outpost: Lenworth | 1 | 5 | – | – | 10 |
+| Outpost: Bellicha | ∞ | – | 5 | – | 10 |
+| Outpost: Cadavaria | ∞ | – | – | 5 | 10 |
+| Outpost: Lenworth | ∞ | 5 | – | – | 10 |
 
 [All items](/content/items/)

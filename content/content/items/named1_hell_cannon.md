@@ -24,7 +24,7 @@ description: "Modules / Weapons, tier 2"
 | accuracy | 44 |
 | core_usage | 2 |
 | cpu_usage | 49.5 |
-| cycle_time | 8000 |
+| cycle_time | 8k |
 | damage_modifier | 2.2 |
 | falloff | 20 |
 | optimal_range | 15 |

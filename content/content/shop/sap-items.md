@@ -10,9 +10,9 @@ description: "Fixed-price vendor items: sap items. Best price across all vendors
 
 [Item shop](/content/shop/) → SAP items. Items consumed by outpost (SAP) activities.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | TM Coin | ICS Coin | ASI Coin | Credits | UniCoin | Vendors |
 |---|---|---|---|---|---|---|---|
-| [Specimen Sap Item (CT capsule)](/content/items/specimen-sap-item-ct-capsule/) | 1 | 10 | 10 | 10 | 500000 | 20 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Specimen Sap Item (CT capsule)](/content/items/specimen-sap-item-ct-capsule/) | ∞ | 10 | 10 | 10 | 500k | 20 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
 

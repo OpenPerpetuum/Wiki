@@ -21,9 +21,9 @@ description: "Special & other / Miscellaneous, tier 2"
 
 | Field | Value |
 |---|---|
-| cycle_time | 5560 |
+| cycle_time | 5.56k |
 | mining_amount_modifier | 3.7268 |
 | remote_control_bandwidth_usage | 4 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 
 [All items](/content/items/)

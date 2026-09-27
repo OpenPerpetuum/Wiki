@@ -25,7 +25,7 @@ description: "Artifacts"
 | armor_repair_amount | 40 |
 | core_usage | 65 |
 | cpu_usage | 35 |
-| cycle_time | 18000 |
+| cycle_time | 18k |
 | powergrid_usage | 20 |
 
 [All items](/content/items/)

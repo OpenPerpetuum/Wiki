@@ -23,7 +23,7 @@ description: "Modules / Sensors & scanning, tier 4"
 |---|---|
 | core_usage | 25 |
 | cpu_usage | 20 |
-| cycle_time | 2500 |
+| cycle_time | 2.5k |
 | falloff | 10 |
 | optimal_range | 35 |
 | powergrid_usage | 6 |

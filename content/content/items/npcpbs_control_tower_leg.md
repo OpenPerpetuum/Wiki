@@ -22,7 +22,7 @@ description: "Robot parts / Legs"
 
 | Field | Value |
 |---|---|
-| armor_max | 50000 |
+| armor_max | 50k |
 | resist_chemical | 150 |
 | resist_explosive | 150 |
 | resist_kinetic | 150 |

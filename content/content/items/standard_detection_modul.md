@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 1"
 |---|---|
 | core_usage | 180 |
 | cpu_usage | 85 |
-| cycle_time | 25000 |
+| cycle_time | 25k |
 | effect_detection_strength_modifier | 20 |
 | effect_stealth_strength_modifier | -20 |
 | powergrid_usage | 5 |

@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 13 |
 | cpu_usage | 25 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_resist_chemical | 60 |
 | powergrid_usage | 5 |
 | resist_chemical | 15 |

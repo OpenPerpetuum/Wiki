@@ -23,7 +23,7 @@ description: "Modules / Sensors & scanning"
 |---|---|
 | core_usage | 5 |
 | cpu_usage | 1 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_sensor_booster_locking_range_modifier | 1.1 |
 | effect_sensor_booster_locking_time_modifier | 0.9 |
 | powergrid_usage | 5 |

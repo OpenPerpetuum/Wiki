@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 12.5 |
 | cpu_usage | 65 |
-| cycle_time | 12000 |
+| cycle_time | 12k |
 | powergrid_usage | 250 |
 | shield_absorbtion | 1.2 |
 | shield_radius | 8 |

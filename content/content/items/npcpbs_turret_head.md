@@ -24,11 +24,11 @@ description: "Robot parts / Heads"
 |---|---|
 | blob_level_high | 500 |
 | blob_level_low | 300 |
-| cpu_max | 5000 |
+| cpu_max | 5k |
 | detection_strength | 125 |
 | locked_targets_max | 100 |
 | locking_range | 100 |
-| locking_time | 5000 |
+| locking_time | 5k |
 | sensor_strength | 200 |
 | stealth_strength | 100 |
 

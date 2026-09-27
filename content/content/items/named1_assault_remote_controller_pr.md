@@ -23,7 +23,7 @@ description: "Modules / Remote control, tier 2"
 |---|---|
 | core_usage | 135 |
 | cpu_usage | 214 |
-| cycle_time | 3000 |
+| cycle_time | 3k |
 | drone_amplification_accuracy_modifier | 1 |
 | drone_amplification_armor_max_modifier | 1 |
 | drone_amplification_core_max_modifier | 1 |
@@ -37,7 +37,7 @@ description: "Modules / Remote control, tier 2"
 | optimal_range | 20 |
 | powergrid_usage | 57 |
 | remote_control_bandwidth_max | 5 |
-| remote_control_lifetime | 300000 |
+| remote_control_lifetime | 300k |
 | remote_control_operational_range | 30 |
 
 [All items](/content/items/)

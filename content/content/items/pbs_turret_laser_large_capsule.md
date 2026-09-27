@@ -21,8 +21,8 @@ description: "Special & other / Miscellaneous, tier 3"
 
 | Field | Value |
 |---|---|
-| armor_max | 75000 |
-| core_max | 2500 |
+| armor_max | 75k |
+| core_max | 2.5k |
 | cycle_time | 1 |
 | damage_modifier | 1 |
 | detection_strength | 125 |

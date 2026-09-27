@@ -23,8 +23,8 @@ description: "Modules / Shield, tier 3"
 |---|---|
 | core_usage | 30 |
 | cpu_usage | 335 |
-| cycle_time | 7750 |
-| powergrid_usage | 1350 |
+| cycle_time | 7.75k |
+| powergrid_usage | 1.35k |
 | shield_absorbtion | 2 |
 | shield_radius | 30 |
 

@@ -24,7 +24,7 @@ description: "Artifacts"
 | accuracy | 11.5 |
 | core_usage | 16.8 |
 | cpu_usage | 25 |
-| cycle_time | 5000 |
+| cycle_time | 5k |
 | damage_modifier | 0.765 |
 | falloff | 10 |
 | least_optimal | 5 |

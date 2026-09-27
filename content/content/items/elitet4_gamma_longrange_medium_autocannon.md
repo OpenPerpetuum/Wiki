@@ -25,7 +25,7 @@ description: "Modules / Weapons, tier 4"
 | accuracy | 18 |
 | core_usage | 2 |
 | cpu_usage | 13 |
-| cycle_time | 9000 |
+| cycle_time | 9k |
 | damage_modifier | 2.85 |
 | falloff | 32 |
 | least_optimal | 5 |
@@ -38,11 +38,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet4 Gamma Longrange Medium Autocannon (current)"]:::current
-    b["Elitet4 Gamma Longrange Medium Autocannon (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet4-gamma-longrange-medium-autocannon-ct-capsule/" "Elitet4 Gamma Longrange Medium Autocannon (CT capsule)"
+    a["Elitet4 Gamma Longrange Medium Autocannon (CT capsule)"]:::current
+    b["Elitet4 Gamma Longrange Medium Autocannon"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet4-gamma-longrange-medium-autocannon/" "Elitet4 Gamma Longrange Medium Autocannon"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -50,6 +51,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| Daoden outpost | 1 | 500000000 | 25000 |
+| Daoden outpost | ∞ | 500M | 25k |
 
 [All items](/content/items/)

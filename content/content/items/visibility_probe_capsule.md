@@ -28,8 +28,8 @@ description: "Special & other / Miscellaneous"
 | blob_level_high | 70 |
 | blob_level_low | 25 |
 | core_max | 150 |
-| core_recharge_time | 86400 |
-| despawn_time | 28800000 |
+| core_recharge_time | 86.4k |
+| despawn_time | 28.8M |
 | detection_strength | 45 |
 | signature_radius | 2 |
 | stealth_strength | 275 |

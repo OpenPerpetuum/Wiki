@@ -24,11 +24,11 @@ description: "Modules / Remote control, tier 3"
 |---|---|
 | core_usage | 160 |
 | cpu_usage | 270 |
-| cycle_time | 4000 |
+| cycle_time | 4k |
 | detection_range | 120 |
 | powergrid_usage | 69 |
 | remote_control_bandwidth_max | 1 |
-| remote_control_lifetime | 2160000 |
+| remote_control_lifetime | 2.16M |
 | remote_control_operational_range | 180 |
 
 [All items](/content/items/)

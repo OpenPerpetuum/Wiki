@@ -10,24 +10,24 @@ description: "Fixed-price vendor items: paint. Best price across all vendors."
 
 [Item shop](/content/shop/) → Paint. Robot paint and tint items.
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; **Credits**: the common currency; **UniCoin**: a premium currency. Each row shows the best terms across all vendors that sell the item. **Qty ∞** means the vendor has no stock limit.
 
 | Item | Qty | Credits | Vendors |
 |---|---|---|---|
-| [Paint Black](/content/items/paint-black/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Blue Dark](/content/items/paint-blue-dark/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Blue](/content/items/paint-blue/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Green Dark](/content/items/paint-green-dark/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Teal](/content/items/paint-teal/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Green](/content/items/paint-green/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Cyan](/content/items/paint-cyan/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Red Dark](/content/items/paint-red-dark/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Purple](/content/items/paint-purple/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Gray](/content/items/paint-gray/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Red](/content/items/paint-red/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Magenta](/content/items/paint-magenta/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Orange](/content/items/paint-orange/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Yellow](/content/items/paint-yellow/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint White](/content/items/paint-white/) | 1 | 3000000 | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
-| [Paint Maroon Dark](/content/items/paint-maroon-dark/) | 1 | 3000000 | TM zone · ICS zone · ASI zone · Daoden outpost |
+| [Paint Black](/content/items/paint-black/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Blue Dark](/content/items/paint-blue-dark/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Blue](/content/items/paint-blue/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Green Dark](/content/items/paint-green-dark/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Teal](/content/items/paint-teal/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Green](/content/items/paint-green/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Cyan](/content/items/paint-cyan/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Red Dark](/content/items/paint-red-dark/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Purple](/content/items/paint-purple/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Gray](/content/items/paint-gray/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Red](/content/items/paint-red/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Magenta](/content/items/paint-magenta/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Orange](/content/items/paint-orange/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Yellow](/content/items/paint-yellow/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint White](/content/items/paint-white/) | ∞ | 3M | TM zone · ICS zone · Attalica outpost · ASI zone · Daoden outpost |
+| [Paint Maroon Dark](/content/items/paint-maroon-dark/) | ∞ | 3M | TM zone · ICS zone · ASI zone · Daoden outpost |
 

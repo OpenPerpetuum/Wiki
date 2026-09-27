@@ -24,7 +24,7 @@ description: "Modules / Enhancements, tier 4"
 |---|---|
 | core_usage | 40 |
 | cpu_usage | 95 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | default_effect_range | 100 |
 | effect_weapon_cycle_time_modifier | 0.925 |
 | powergrid_usage | 40 |

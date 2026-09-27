@@ -16,7 +16,7 @@ public static class MissionsPage
                 g => string.Join("; ", g
                     .Select(r => {
                         var name = defs.TryGetValue(r.Int("definition"), out var dn) ? dn : r.Int("definition").ToString();
-                        return $"{name} ×{r.Int("quantity")} ({r.Int("probability")})";
+                        return $"{name} ×{Md.Num(r.Int("quantity"))} ({r.Int("probability")})";
                     })
                     .OrderBy(x => x)));
 
@@ -44,8 +44,8 @@ public static class MissionsPage
                 m.Int("missionlevel").ToString(),
                 m.Int("durationminutes").ToString(),
                 m.Int("periodminutes").ToString(),
-                Md.Cell(m.Dbl("rewardfee")),
-                Md.Cell(m.Dbl("difficultyreward")),
+                Md.Num(m.Dbl("rewardfee")),
+                Md.Num(m.Dbl("difficultyreward")),
                 Md.Cell(m.Dbl("difficultymultiplier")),
                 m.Bit("listable") ? "yes" : "no",
                 rewards.TryGetValue(m.Int("id"), out var rw) ? rw : "–"

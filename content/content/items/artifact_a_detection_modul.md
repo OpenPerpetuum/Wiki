@@ -23,7 +23,7 @@ description: "Artifacts, tier 3"
 |---|---|
 | core_usage | 193 |
 | cpu_usage | 94 |
-| cycle_time | 25000 |
+| cycle_time | 25k |
 | effect_detection_strength_modifier | 27.5 |
 | effect_stealth_strength_modifier | -20 |
 | powergrid_usage | 8 |

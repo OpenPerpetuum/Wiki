@@ -30,6 +30,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| Daoden outpost | 1 | 10000000 | 500 |
+| Daoden outpost | ∞ | 10M | 500 |
 
 [All items](/content/items/)

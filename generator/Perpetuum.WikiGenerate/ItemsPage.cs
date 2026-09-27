@@ -42,7 +42,7 @@ public static class ItemsPage
         var whereToBuy = shop.Count > 0
             ? shop.Select(s => s.Def).Distinct()
                 .ToDictionary(d => d, d => ShopPage.VendorsFor(shop, d))
-            : new Dictionary<int, List<(ShopPage.Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing)>>();
+            : new Dictionary<int, List<(ShopPage.Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit)>>();
 
         // Production data for the CT-capsule pages (payload research level + components).
         var research = db.Query("SELECT definition, MAX(researchlevel) AS lvl FROM itemresearchlevels GROUP BY definition")
@@ -256,7 +256,7 @@ public static class ItemsPage
     /// production details.</summary>
     private static string ItemPage(DefRow d, string showName, (string Cat, string Sub) cs, List<string> stats,
         (int Def, string Name, string Url, int? Research, string Cost)? production, DefRow? ct,
-        List<(ShopPage.Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing)>? vendors)
+        List<(ShopPage.Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit)>? vendors)
     {
         var tier = Md.Tier(d.TierType, d.TierLevel);
         var category = cs.Sub == "General" || cs.Sub == cs.Cat ? cs.Cat : $"{cs.Cat} / {cs.Sub}";
@@ -302,13 +302,14 @@ public static class ItemsPage
             };
             Md.WriteTable(sb, new[] { "", "" }, prows.ToArray());
             sb.Append("\n");
-            sb.Append(MermaidDiagram(showName, Md.DisplayName(p.Name), p.Url));
+            sb.Append(MermaidDiagram(showName, Md.DisplayName(p.Name), "", "yields", p.Url));
         }
         else if (ct is { } c)
         {
             sb.Append("\n## Transport capsule\n\n");
             sb.Append("A transport capsule (CT) exists for this item — it is how the item moves between players and zones.\n\n");
-            sb.Append(MermaidDiagram(showName, Md.DisplayName(c.Name), "/content/items/" + Slug(c.Name) + "/"));
+            var itemUrl = "/content/items/" + Slug(d.Name) + "/";
+            sb.Append(MermaidDiagram(Md.DisplayName(c.Name), showName, "", "carries", itemUrl));
         }
         if (vendors is { Count: > 0 } v)
         {
@@ -318,9 +319,9 @@ public static class ItemsPage
             var cells = v.Select(x => new[]
             {
                 ShopPage.Title(x.Loc),
-                x.Qty.ToString(),
+                ShopPage.QtyText(x.Qty, x.Limit),
                 ShopPage.Coin(x.Tm), ShopPage.Coin(x.Ics), ShopPage.Coin(x.Asi),
-                x.Credit > 0 ? Md.Cell(x.Credit) : "–",
+                x.Credit > 0 ? Md.Num(x.Credit) : "–",
                 ShopPage.Coin(x.Uni),
                 x.Standing > 0 ? Md.Cell(x.Standing) : "–",
             }).ToArray();
@@ -333,17 +334,22 @@ public static class ItemsPage
 
     /// <summary>Two-node transport diagram: the current page's item (green) points at the
     /// linked item. Rendered client-side by mermaid (see base.html).</summary>
-    private static string MermaidDiagram(string currentDisplay, string otherDisplay, string otherUrl)
+    private static string MermaidDiagram(string currentDisplay, string otherDisplay, string otherUrl,
+        string arrow = "yields", string finishedUrl = "")
     {
+        // The finished product is always the right-hand node.
         static string Q(string s) => s.Replace("\"", "'");
+        var clickFinished = string.IsNullOrEmpty(finishedUrl)
+            ? ""
+            : "\n                click b \"" + finishedUrl + "\" \"" + Q(otherDisplay) + "\"";
         return $$"""
             ```mermaid
             graph LR
-                a["{{Q(currentDisplay)}} (current)"]:::current
-                b["{{Q(otherDisplay)}}"]
-                a --> b
-                click b "{{otherUrl}}" "{{Q(otherDisplay)}}"
+                a["{{Q(currentDisplay)}}"]:::current
+                b["{{Q(otherDisplay)}}"]:::finished
+                a -->|{{arrow}}| b{{clickFinished}}
                 classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+                classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
             ```
             """;
     }

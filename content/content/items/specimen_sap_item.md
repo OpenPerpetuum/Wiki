@@ -26,10 +26,11 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Specimen Sap Item (current)"]:::current
-    b["Specimen Sap Item (CT capsule)"]
-    a --> b
-    click b "/content/items/specimen-sap-item-ct-capsule/" "Specimen Sap Item (CT capsule)"
+    a["Specimen Sap Item (CT capsule)"]:::current
+    b["Specimen Sap Item"]:::finished
+    a -->|carries| b
+                click b "/content/items/specimen-sap-item/" "Specimen Sap Item"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 [All items](/content/items/)

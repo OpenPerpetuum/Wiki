@@ -22,8 +22,8 @@ description: "Special & other / Miscellaneous, tier 3"
 
 | Field | Value |
 |---|---|
-| armor_max | 75000 |
-| core_max | 1500 |
+| armor_max | 75k |
+| core_max | 1.5k |
 | resist_chemical | 120 |
 | resist_explosive | 120 |
 | resist_kinetic | 120 |

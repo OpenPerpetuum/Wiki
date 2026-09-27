@@ -23,7 +23,7 @@ description: "Modules / Sensors & scanning, tier 3"
 |---|---|
 | core_usage | 18 |
 | cpu_usage | 16 |
-| cycle_time | 2500 |
+| cycle_time | 2.5k |
 | falloff | 10 |
 | optimal_range | 30 |
 | powergrid_usage | 5 |

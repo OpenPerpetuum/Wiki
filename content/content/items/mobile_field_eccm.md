@@ -21,8 +21,8 @@ description: "Special & other / Miscellaneous"
 
 | Field | Value |
 |---|---|
-| armor_max | 15000 |
-| despawn_time | 900000 |
+| armor_max | 15k |
+| despawn_time | 900k |
 | effect_field_reactor_radiation_modifier | 0.75 |
 | effect_field_sensor_strength_modifier | 100 |
 | resist_chemical | 150 |

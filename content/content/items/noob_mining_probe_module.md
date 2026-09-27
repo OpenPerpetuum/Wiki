@@ -23,7 +23,7 @@ description: "Modules / Enhancements"
 |---|---|
 | core_usage | 60 |
 | cpu_usage | 1 |
-| cycle_time | 20000 |
+| cycle_time | 20k |
 | mining_probe_accuracy | 0.3 |
 | powergrid_usage | 35 |
 

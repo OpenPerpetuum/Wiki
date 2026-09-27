@@ -23,7 +23,7 @@ description: "Modules / Enhancements, tier 4"
 |---|---|
 | core_usage | 90 |
 | cpu_usage | 60 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | mining_probe_accuracy | 0.7 |
 | powergrid_usage | 53 |
 

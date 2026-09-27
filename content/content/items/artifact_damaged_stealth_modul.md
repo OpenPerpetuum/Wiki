@@ -23,7 +23,7 @@ description: "Artifacts"
 |---|---|
 | core_usage | 2 |
 | cpu_usage | 100 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | effect_stealth_strength_modifier | 20 |
 | powergrid_usage | 5 |
 

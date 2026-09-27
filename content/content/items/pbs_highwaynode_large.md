@@ -21,9 +21,9 @@ description: "Special & other / Miscellaneous, tier 3"
 
 | Field | Value |
 |---|---|
-| armor_max | 15000 |
-| core_max | 4500 |
-| core_recharge_time | 345600 |
+| armor_max | 15k |
+| core_max | 4.5k |
+| core_recharge_time | 345.6k |
 | resist_chemical | 300 |
 | resist_explosive | 300 |
 | resist_kinetic | 300 |

@@ -31,7 +31,7 @@ Field meanings: **growRate** = growth cycles a plant sits in each stage before a
 | electroplant | 0 | 3 | 2 | -1 | 10 | 0–8076 | -6–8076 | 2 | def_electroplant_fruit (×125) | 630 | 10,50,125,255,255,255 | yes | electroplant_lo.txt |
 | bonsai | 2 | 1 | 4 | -1 | 18 | 0–8480 | 7–8048 | -1 | none (not harvestable) | 15 | 50,125,255,255 | no | bonsai.txt |
 | irontree | 1 | 4 | 2 | -1 | 14 | 0–8480 | 15–8048 | 1 | def_prismocitae (×75) | 20 | 50,125,255,255 | no | irontree_lo.txt |
-| devrinol | 5 | 3 | 0 | 0 | 40 | 0–8076 | -6–8076 | -1 | none (not harvestable) | 14630 | 20,20,20,20 | yes | devrinol.txt |
+| devrinol | 5 | 3 | 0 | 0 | 40 | 0–8076 | -6–8076 | -1 | none (not harvestable) | 14630 | 250,250,250,250 | yes | devrinol.txt |
 | electroplant | 0 | 3 | 2 | -1 | 10 | 0–8076 | -6–8076 | 2 | def_electroplant_fruit (×175) | 630 | 10,50,125,255,255,255 | yes | electroplant_hi.txt |
 | rustbush | 3 | 4 | 3 | -1 | 7 | 12–8420 | 20–8048 | 2 | def_helioptris (×100) | 30 | 50,125,255,255 | no | rustbush_hi.txt |
 | slimeroot | 3 | 4 | 3 | -1 | 12 | 15–8480 | 20–8048 | 1 | def_triandlus (×100) | 30 | 50,125,255,255 | no | slimeroot_hi.txt |

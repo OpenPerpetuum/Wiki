@@ -32,11 +32,12 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 
 ```mermaid
 graph LR
-    a["Elitet4 Gamma Rocket Launcher (CT capsule) (current)"]:::current
-    b["Elitet4 Gamma Rocket Launcher"]
-    a --> b
-    click b "/content/items/elitet4-gamma-rocket-launcher/" "Elitet4 Gamma Rocket Launcher"
+    a["Elitet4 Gamma Rocket Launcher (CT capsule)"]:::current
+    b["Elitet4 Gamma Rocket Launcher"]:::finished
+    a -->|yields| b
+                click b "/content/items/elitet4-gamma-rocket-launcher/" "Elitet4 Gamma Rocket Launcher"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -44,10 +45,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | TM Coin | Credits |
 |---|---|---|---|
-| New Virginia (zone_TM) | 1 | 40 | 800000 |
-| Attalica (zone_ICS) | 1 | 40 | 800000 |
-| Attalica outpost | 1 | 40 | 800000 |
-| Daoden (zone_ASI) | 1 | 40 | 800000 |
-| Daoden outpost | 1 | 40 | 800000 |
+| New Virginia (zone_TM) | ∞ | 40 | 800k |
+| Attalica (zone_ICS) | ∞ | 40 | 800k |
+| Attalica outpost | ∞ | 40 | 800k |
+| Daoden (zone_ASI) | ∞ | 40 | 800k |
+| Daoden outpost | ∞ | 40 | 800k |
 
 [All items](/content/items/)

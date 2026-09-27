@@ -23,9 +23,9 @@ description: "Modules / Turrets, tier 1"
 |---|---|
 | core_usage | 50 |
 | cpu_usage | 35 |
-| cycle_time | 10000 |
+| cycle_time | 10k |
 | energy_dispersion | 5 |
-| energy_neutralized_amount | 1000 |
+| energy_neutralized_amount | 1k |
 | falloff | 40 |
 | optimal_range | 60 |
 | powergrid_usage | 200 |

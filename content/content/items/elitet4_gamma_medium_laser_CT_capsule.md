@@ -32,11 +32,12 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 
 ```mermaid
 graph LR
-    a["Elitet4 Gamma Medium Laser (CT capsule) (current)"]:::current
-    b["Elitet4 Gamma Medium Laser"]
-    a --> b
-    click b "/content/items/elitet4-gamma-medium-laser/" "Elitet4 Gamma Medium Laser"
+    a["Elitet4 Gamma Medium Laser (CT capsule)"]:::current
+    b["Elitet4 Gamma Medium Laser"]:::finished
+    a -->|yields| b
+                click b "/content/items/elitet4-gamma-medium-laser/" "Elitet4 Gamma Medium Laser"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -44,10 +45,10 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | ASI Coin | Credits |
 |---|---|---|---|
-| New Virginia (zone_TM) | 1 | 80 | 1600000 |
-| Attalica (zone_ICS) | 1 | 80 | 1600000 |
-| Attalica outpost | 1 | 80 | 1600000 |
-| Daoden (zone_ASI) | 1 | 80 | 1600000 |
-| Daoden outpost | 1 | 80 | 1600000 |
+| New Virginia (zone_TM) | ∞ | 80 | 1.6M |
+| Attalica (zone_ICS) | ∞ | 80 | 1.6M |
+| Attalica outpost | ∞ | 80 | 1.6M |
+| Daoden (zone_ASI) | ∞ | 80 | 1.6M |
+| Daoden outpost | ∞ | 80 | 1.6M |
 
 [All items](/content/items/)

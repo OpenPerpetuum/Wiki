@@ -36,11 +36,12 @@ A transport capsule (CT) exists for this item — it is how the item moves betwe
 
 ```mermaid
 graph LR
-    a["Elitet4 70 Tracking Upgrade (current)"]:::current
-    b["Elitet4 70 Tracking Upgrade (CT capsule)"]
-    a --> b
-    click b "/content/items/elitet4-70-tracking-upgrade-ct-capsule/" "Elitet4 70 Tracking Upgrade (CT capsule)"
+    a["Elitet4 70 Tracking Upgrade (CT capsule)"]:::current
+    b["Elitet4 70 Tracking Upgrade"]:::finished
+    a -->|carries| b
+                click b "/content/items/elitet4-70-tracking-upgrade/" "Elitet4 70 Tracking Upgrade"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
 ## Where to buy
 
@@ -48,6 +49,6 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
-| Daoden outpost | 1 | 500000000 | 25000 |
+| Daoden outpost | ∞ | 500M | 25k |
 
 [All items](/content/items/)

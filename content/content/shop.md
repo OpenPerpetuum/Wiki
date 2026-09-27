@@ -10,7 +10,7 @@ description: "The fixed-price vendor catalog: what each vendor sells, at what pr
 
 Fixed-price vendor items, separate from the player-driven [market](/features/market/). The same item can be sold at several vendors — the catalog below lists every item once, with the best price across all vendors; each [item page](/content/items/) lists every vendor that sells it (robots link to the [robot catalog](/content/robots/)).
 
-**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency (each shop sells for all three coins where offered); **Credits**: the common currency; **UniCoin**: a premium currency.
+**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency (each shop sells for all three coins where offered); **Credits**: the common currency; **UniCoin**: a premium currency. **Qty ∞** means the vendor has no stock limit.
 
 ## Vendors
 

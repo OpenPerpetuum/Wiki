@@ -24,7 +24,7 @@ description: "Modules / Enhancements"
 |---|---|
 | core_usage | 0 |
 | cpu_usage | 375 |
-| cycle_time | 6050 |
-| powergrid_usage | 1250 |
+| cycle_time | 6.05k |
+| powergrid_usage | 1.25k |
 
 [All items](/content/items/)

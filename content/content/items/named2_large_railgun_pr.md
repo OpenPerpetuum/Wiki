@@ -25,7 +25,7 @@ description: "Modules / Weapons, tier 3"
 | accuracy | 40.5 |
 | core_usage | 10.5 |
 | cpu_usage | 87.5 |
-| cycle_time | 6000 |
+| cycle_time | 6k |
 | damage_modifier | 3 |
 | falloff | 6 |
 | optimal_range | 21.5 |
