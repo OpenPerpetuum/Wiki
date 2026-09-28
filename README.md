@@ -47,3 +47,14 @@ Commit the regenerated pages — the site build always uses the committed markdo
 
 See [generator/README.md](generator/README.md) for what each generated page is
 built from, and [idea.md](idea.md) for the original design notes.
+
+## CI and action pinning
+
+GitHub Actions in `.github/workflows/` are pinned to commit SHAs with
+[ratchet](https://github.com/sethvargo/ratchet) (the `# ratchet:...` comment
+records the original tag constraint). CI lints the pins on every run; to
+refresh them to the latest matching tags:
+
+```bash
+docker run --rm -v "${PWD}:${PWD}" -w "${PWD}" ghcr.io/sethvargo/ratchet:latest update .github/workflows/wiki.yml
+```
