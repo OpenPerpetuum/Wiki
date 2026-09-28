@@ -35,7 +35,7 @@ jobs:
           set -euo pipefail
           curl -sSfL -o /tmp/ratchet.tar.gz \
             "https://github.com/sethvargo/ratchet/releases/download/v0.12.0/ratchet_0.12.0_linux_amd64.tar.gz"
-          echo "0d14cb829d3f5068454402f8198b0d9a29b776c8a070ef3f7e7bbb4f53d16aa15309f8e5042cbb3330b2d415b3c058ef269be946cc267098e2e4ad8a75fa1b5c  ratchet.tar.gz" | sha512sum -c -
+          echo "0d14cb829d3f5068454402f8198b0d9a29b776c8a070ef3f7e7bbb4f53d16aa15309f8e5042cbb3330b2d415b3c058ef269be946cc267098e2e4ad8a75fa1b5c  /tmp/ratchet.tar.gz" | sha512sum -c -
           tar xzC /tmp -f /tmp/ratchet.tar.gz
 
       - name: Lint pins
