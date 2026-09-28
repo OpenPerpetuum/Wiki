@@ -8,33 +8,33 @@ description: "All ore types, their extraction yields, and per-zone node generati
 
 # Ores
 
-Ore exists in the ground as **deposits (nodes)**. Each node holds a limited total amount; when a node is mined below its threshold it is removed and the zone regenerates new nodes up to its configured maximum. How each column is used by the server, with the node-generation formulas, is in [Ore fields](/formats/ore-fields/).
+Ore exists in the ground as **deposits (nodes)**. Each node holds a limited total amount; when a node is mined below its threshold it is removed and the zone regenerates new nodes up to its configured maximum. Every ore has its own page with its extraction facts, the zones it spawns in and what is made from it. How each column is used by the server, with the node-generation formulas, is in [Ore fields](/formats/ore-fields/).
 
 ## Ore types
 
-Jump to a type: [titan](#titan) · [crude](#crude) · [stermonit](#stermonit) · [imentium](#imentium) · [liquizit](#liquizit) · [epriton](#epriton) · [helioptris](#helioptris) · [triandlus](#triandlus) · [prismocitae](#prismocitae) · [gravel](#gravel) · [electrofruit](#electrofruit) · [silgium](#silgium) · [gammaterial](#gammaterial) · [plants](#plants) · [energymineral](#energymineral) · [fluxore](#fluxore) · [deeptanium](#deeptanium) · [deepriton](#deepriton) · [dhdt](#dhdt)
+[titan](/content/ores/titan/) · [crude](/content/ores/crude/) · [stermonit](/content/ores/stermonit/) · [imentium](/content/ores/imentium/) · [liquizit](/content/ores/liquizit/) · [epriton](/content/ores/epriton/) · [helioptris](/content/ores/helioptris/) · [triandlus](/content/ores/triandlus/) · [prismocitae](/content/ores/prismocitae/) · [gravel](/content/ores/gravel/) · [electrofruit](/content/ores/electrofruit/) · [silgium](/content/ores/silgium/) · [gammaterial](/content/ores/gammaterial/) · [plants](/content/ores/plants/) · [energymineral](/content/ores/energymineral/) · [fluxore](/content/ores/fluxore/) · [deeptanium](/content/ores/deeptanium/) · [deepriton](/content/ores/deepriton/) · [dhdt](/content/ores/dhdt/)
 
 <table>
-<tr><th>Ore</th><th>Item definition</th><th>Amount / extraction</th><th>Extraction type</th><th>Enabler effect</th><th>Geo-scan doc</th></tr>
-<tr id="titan"><td><a href="#titan">titan</a></td><td><code>def_titan</code></td><td>1.5k</td><td>0</td><td>no</td><td>5382</td></tr>
-<tr id="crude"><td><a href="#crude">crude</a></td><td><code>def_crude</code></td><td>1.5k</td><td>1</td><td>no</td><td>5383</td></tr>
-<tr id="stermonit"><td><a href="#stermonit">stermonit</a></td><td><code>def_stermonit</code></td><td>975</td><td>0</td><td>no</td><td>5384</td></tr>
-<tr id="imentium"><td><a href="#imentium">imentium</a></td><td><code>def_imentium</code></td><td>975</td><td>0</td><td>no</td><td>5385</td></tr>
-<tr id="liquizit"><td><a href="#liquizit">liquizit</a></td><td><code>def_liquizit</code></td><td>450</td><td>1</td><td>no</td><td>5386</td></tr>
-<tr id="epriton"><td><a href="#epriton">epriton</a></td><td><code>def_epriton</code></td><td>450</td><td>1</td><td>no</td><td>5387</td></tr>
-<tr id="helioptris"><td><a href="#helioptris">helioptris</a></td><td><code>def_helioptris</code></td><td>450</td><td>0</td><td>no</td><td>–</td></tr>
-<tr id="triandlus"><td><a href="#triandlus">triandlus</a></td><td><code>def_triandlus</code></td><td>450</td><td>0</td><td>no</td><td>–</td></tr>
-<tr id="prismocitae"><td><a href="#prismocitae">prismocitae</a></td><td><code>def_prismocitae</code></td><td>450</td><td>0</td><td>no</td><td>–</td></tr>
-<tr id="gravel"><td><a href="#gravel">gravel</a></td><td><code>def_gravel</code></td><td>1</td><td>0</td><td>no</td><td>5388</td></tr>
-<tr id="electrofruit"><td><a href="#electrofruit">electrofruit</a></td><td><code>def_electroplant_fruit</code></td><td>300</td><td>0</td><td>no</td><td>–</td></tr>
-<tr id="silgium"><td><a href="#silgium">silgium</a></td><td><code>def_silgium</code></td><td>975</td><td>0</td><td>no</td><td>5389</td></tr>
-<tr id="gammaterial"><td><a href="#gammaterial">gammaterial</a></td><td><code>def_gammaterial</code></td><td>150</td><td>0</td><td>required</td><td>–</td></tr>
-<tr id="plants"><td><a href="#plants">plants</a></td><td><code>def_titanium</code></td><td>10</td><td>0</td><td>no</td><td>–</td></tr>
-<tr id="energymineral"><td><a href="#energymineral">energymineral</a></td><td><code>def_energymineral</code></td><td>100</td><td>1</td><td>no</td><td>–</td></tr>
-<tr id="fluxore"><td><a href="#fluxore">fluxore</a></td><td><code>def_fluxore</code></td><td>100</td><td>0</td><td>no</td><td>5842</td></tr>
-<tr id="deeptanium"><td><a href="#deeptanium">deeptanium</a></td><td><code>def_deeptanium</code></td><td>1.5k</td><td>0</td><td>no</td><td>8671</td></tr>
-<tr id="deepriton"><td><a href="#deepriton">deepriton</a></td><td><code>def_deepriton</code></td><td>450</td><td>1</td><td>no</td><td>8699</td></tr>
-<tr id="dhdt"><td><a href="#dhdt">dhdt</a></td><td><code>def_dhdt</code></td><td>450</td><td>1</td><td>no</td><td>8706</td></tr>
+<tr><th>Ore</th><th>Amount / extraction</th><th>Extraction type</th><th>Enabler effect</th><th>Geo-scan doc</th></tr>
+<tr><td><a href="/content/ores/titan/">titan</a></td><td>1.5k</td><td>0</td><td>no</td><td>5382</td></tr>
+<tr><td><a href="/content/ores/crude/">crude</a></td><td>1.5k</td><td>1</td><td>no</td><td>5383</td></tr>
+<tr><td><a href="/content/ores/stermonit/">stermonit</a></td><td>975</td><td>0</td><td>no</td><td>5384</td></tr>
+<tr><td><a href="/content/ores/imentium/">imentium</a></td><td>975</td><td>0</td><td>no</td><td>5385</td></tr>
+<tr><td><a href="/content/ores/liquizit/">liquizit</a></td><td>450</td><td>1</td><td>no</td><td>5386</td></tr>
+<tr><td><a href="/content/ores/epriton/">epriton</a></td><td>450</td><td>1</td><td>no</td><td>5387</td></tr>
+<tr><td><a href="/content/ores/helioptris/">helioptris</a></td><td>450</td><td>0</td><td>no</td><td>–</td></tr>
+<tr><td><a href="/content/ores/triandlus/">triandlus</a></td><td>450</td><td>0</td><td>no</td><td>–</td></tr>
+<tr><td><a href="/content/ores/prismocitae/">prismocitae</a></td><td>450</td><td>0</td><td>no</td><td>–</td></tr>
+<tr><td><a href="/content/ores/gravel/">gravel</a></td><td>1</td><td>0</td><td>no</td><td>5388</td></tr>
+<tr><td><a href="/content/ores/electrofruit/">electrofruit</a></td><td>300</td><td>0</td><td>no</td><td>–</td></tr>
+<tr><td><a href="/content/ores/silgium/">silgium</a></td><td>975</td><td>0</td><td>no</td><td>5389</td></tr>
+<tr><td><a href="/content/ores/gammaterial/">gammaterial</a></td><td>150</td><td>0</td><td>required</td><td>–</td></tr>
+<tr><td><a href="/content/ores/plants/">plants</a></td><td>10</td><td>0</td><td>no</td><td>–</td></tr>
+<tr><td><a href="/content/ores/energymineral/">energymineral</a></td><td>100</td><td>1</td><td>no</td><td>–</td></tr>
+<tr><td><a href="/content/ores/fluxore/">fluxore</a></td><td>100</td><td>0</td><td>no</td><td>5842</td></tr>
+<tr><td><a href="/content/ores/deeptanium/">deeptanium</a></td><td>1.5k</td><td>0</td><td>no</td><td>8671</td></tr>
+<tr><td><a href="/content/ores/deepriton/">deepriton</a></td><td>450</td><td>1</td><td>no</td><td>8699</td></tr>
+<tr><td><a href="/content/ores/dhdt/">dhdt</a></td><td>450</td><td>1</td><td>no</td><td>8706</td></tr>
 </table>
 
 **Extraction type**: 0 = solid (tile-by-tile with a drill), 1 = liquid (continuous pump). **Enabler effect** — when *required*, the robot needs the matching enabler effect active to extract that ore at all.
@@ -47,840 +47,840 @@ How many nodes of each ore a zone maintains, and how large each node is — one 
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 1k | 15M | 0.5 |
-| [crude](#crude) | 7 | 1k | 30M | 0.5 |
-| [liquizit](#liquizit) | 7 | 1k | 15M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 1k | 15M | 0.5 |
+| [crude](/content/ores/crude/) | 7 | 1k | 30M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 7 | 1k | 15M | 0.5 |
 
 ### Attalica
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 625 | 80M | 0.5 |
-| [crude](#crude) | 7 | 1k | 82.125M | 0.5 |
-| [imentium](#imentium) | 7 | 625 | 68M | 0.5 |
-| [liquizit](#liquizit) | 7 | 625 | 80M | 0.5 |
-| [silgium](#silgium) | 7 | 625 | 68M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 625 | 80M | 0.5 |
+| [crude](/content/ores/crude/) | 7 | 1k | 82.125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 625 | 68M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 7 | 625 | 80M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 625 | 68M | 0.5 |
 
 ### Daoden
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 8 | 500 | 125M | 0.5 |
-| [crude](#crude) | 8 | 1.257k | 125M | 0.5 |
-| [stermonit](#stermonit) | 8 | 500 | 125M | 0.5 |
-| [imentium](#imentium) | 8 | 500 | 125M | 0.5 |
-| [liquizit](#liquizit) | 8 | 500 | 125M | 0.5 |
-| [epriton](#epriton) | 8 | 500 | 85M | 0.5 |
-| [silgium](#silgium) | 8 | 500 | 85M | 0.5 |
-| [fluxore](#fluxore) | 8 | 300 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 8 | 500 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 8 | 1.257k | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 500 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 500 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 8 | 500 | 125M | 0.5 |
+| [epriton](/content/ores/epriton/) | 8 | 500 | 85M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 500 | 85M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 8 | 300 | 5M | 0.5 |
 
 ### Domhalarn
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 8 | 500 | 125M | 0.5 |
-| [crude](#crude) | 8 | 1.257k | 125M | 0.5 |
-| [stermonit](#stermonit) | 8 | 500 | 125M | 0.5 |
-| [imentium](#imentium) | 8 | 500 | 125M | 0.5 |
-| [liquizit](#liquizit) | 8 | 500 | 125M | 0.5 |
-| [epriton](#epriton) | 10 | 350 | 85M | 0.5 |
-| [fluxore](#fluxore) | 4 | 300 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 8 | 500 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 8 | 1.257k | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 500 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 500 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 8 | 500 | 125M | 0.5 |
+| [epriton](/content/ores/epriton/) | 10 | 350 | 85M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 4 | 300 | 5M | 0.5 |
 
 ### Hokkogaros
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 8 | 500 | 125M | 0.5 |
-| [crude](#crude) | 8 | 500 | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 500 | 125M | 0.5 |
-| [liquizit](#liquizit) | 8 | 500 | 125M | 0.5 |
-| [epriton](#epriton) | 10 | 350 | 85M | 0.5 |
-| [silgium](#silgium) | 8 | 500 | 125M | 0.5 |
-| [fluxore](#fluxore) | 4 | 300 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 8 | 500 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 8 | 500 | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 500 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 8 | 500 | 125M | 0.5 |
+| [epriton](/content/ores/epriton/) | 10 | 350 | 85M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 500 | 125M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 4 | 300 | 5M | 0.5 |
 
 ### Norhoop
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 8 | 500 | 125M | 0.5 |
-| [crude](#crude) | 8 | 500 | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 500 | 125M | 0.5 |
-| [liquizit](#liquizit) | 8 | 1.257k | 80M | 0.5 |
-| [epriton](#epriton) | 10 | 350 | 85M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 56.25M | 0.5 |
-| [fluxore](#fluxore) | 4 | 300 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 8 | 500 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 8 | 500 | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 500 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 8 | 1.257k | 80M | 0.5 |
+| [epriton](/content/ores/epriton/) | 10 | 350 | 85M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 56.25M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 4 | 300 | 5M | 0.5 |
 
 ### Tellesis
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 625 | 80M | 0.5 |
-| [crude](#crude) | 7 | 1k | 82.125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 625 | 68M | 0.5 |
-| [imentium](#imentium) | 7 | 625 | 68M | 0.5 |
-| [liquizit](#liquizit) | 7 | 625 | 80M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 625 | 80M | 0.5 |
+| [crude](/content/ores/crude/) | 7 | 1k | 82.125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 625 | 68M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 625 | 68M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 7 | 625 | 80M | 0.5 |
 
 ### Shinjalar
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 625 | 80M | 0.5 |
-| [crude](#crude) | 7 | 1k | 82.125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 625 | 68M | 0.5 |
-| [liquizit](#liquizit) | 7 | 625 | 80M | 0.5 |
-| [silgium](#silgium) | 7 | 625 | 68M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 625 | 80M | 0.5 |
+| [crude](/content/ores/crude/) | 7 | 1k | 82.125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 625 | 68M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 7 | 625 | 80M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 625 | 68M | 0.5 |
 
 ### Hershfield
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 750 | 50M | 0.5 |
-| [crude](#crude) | 7 | 750 | 100M | 0.5 |
-| [stermonit](#stermonit) | 7 | 750 | 30M | 0.5 |
-| [imentium](#imentium) | 7 | 750 | 30M | 0.5 |
-| [liquizit](#liquizit) | 7 | 750 | 50M | 0.5 |
-| [silgium](#silgium) | 7 | 750 | 30M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 750 | 50M | 0.5 |
+| [crude](/content/ores/crude/) | 7 | 750 | 100M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 750 | 30M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 750 | 30M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 7 | 750 | 50M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 750 | 30M | 0.5 |
 
 ### Kentagura
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 500 | 125M | 0.5 |
-| [crude](#crude) | 10 | 500 | 250M | 0.5 |
-| [stermonit](#stermonit) | 10 | 500 | 125M | 0.5 |
-| [liquizit](#liquizit) | 10 | 500 | 125M | 0.5 |
-| [epriton](#epriton) | 12 | 350 | 85M | 0.5 |
-| [silgium](#silgium) | 10 | 500 | 125M | 0.5 |
-| [fluxore](#fluxore) | 5 | 300 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 500 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 10 | 500 | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 500 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 10 | 500 | 125M | 0.5 |
+| [epriton](/content/ores/epriton/) | 12 | 350 | 85M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 500 | 125M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 5 | 300 | 5M | 0.5 |
 
 ### Alsbale
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 500 | 125M | 0.5 |
-| [crude](#crude) | 10 | 500 | 250M | 0.5 |
-| [imentium](#imentium) | 10 | 500 | 125M | 0.5 |
-| [liquizit](#liquizit) | 10 | 500 | 125M | 0.5 |
-| [epriton](#epriton) | 12 | 350 | 85M | 0.5 |
-| [silgium](#silgium) | 10 | 500 | 125M | 0.5 |
-| [fluxore](#fluxore) | 5 | 300 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 500 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 10 | 500 | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 500 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 10 | 500 | 125M | 0.5 |
+| [epriton](/content/ores/epriton/) | 12 | 350 | 85M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 500 | 125M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 5 | 300 | 5M | 0.5 |
 
 ### Novastrov
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 500 | 125M | 0.5 |
-| [crude](#crude) | 10 | 1.257k | 125M | 0.5 |
-| [stermonit](#stermonit) | 10 | 500 | 125M | 0.5 |
-| [imentium](#imentium) | 10 | 500 | 125M | 0.5 |
-| [liquizit](#liquizit) | 10 | 500 | 125M | 0.5 |
-| [epriton](#epriton) | 12 | 350 | 85M | 0.5 |
-| [fluxore](#fluxore) | 5 | 300 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 500 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 10 | 1.257k | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 500 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 500 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 10 | 500 | 125M | 0.5 |
+| [epriton](/content/ores/epriton/) | 12 | 350 | 85M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 5 | 300 | 5M | 0.5 |
 
 ### Davis Barrier
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Gravehills
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Emperth
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Guthraw
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Landers Bridge
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Solarfield
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Blackpoint
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Greensward
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 50M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 93.75M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 50M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 93.75M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Novaya Trava
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Neuhorn
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Kraslovsk
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Langruhm
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Berger's Island
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Clandrais
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Bleumon
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Chalydor
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Rhaoshan
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Changowa
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Mhenosha
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Xiantor
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Nirayon
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Shuzhon
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Imidero
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### Yuraion Ro
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](#stermonit) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [silgium](#silgium) | 8 | 314 | 50M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 314 | 50M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 ### zone_gamma_z106
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z107
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 5 | 600 | 100M | 0.5 |
-| [crude](#crude) | 3 | 600 | 100M | 0.5 |
-| [stermonit](#stermonit) | 5 | 600 | 100M | 0.5 |
-| [liquizit](#liquizit) | 3 | 600 | 100M | 0.5 |
-| [silgium](#silgium) | 5 | 600 | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 10 | 300 | 36M | 0.5 |
+| [titan](/content/ores/titan/) | 5 | 600 | 100M | 0.5 |
+| [crude](/content/ores/crude/) | 3 | 600 | 100M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 5 | 600 | 100M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 3 | 600 | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 5 | 600 | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 10 | 300 | 36M | 0.5 |
 
 ### zone_gamma_z108
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z109
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z110
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 225M | 0.5 |
-| [crude](#crude) | 5 | 600 | 225M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 225M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 225M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 225M | 0.5 |
-| [epriton](#epriton) | 5 | 300 | 50M | 0.5 |
-| [fluxore](#fluxore) | 2 | 200 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 225M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 225M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 225M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 225M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 225M | 0.5 |
+| [epriton](/content/ores/epriton/) | 5 | 300 | 50M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 2 | 200 | 5M | 0.5 |
 
 ### zone_gamma_z111
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z112
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z113
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z114
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 225M | 0.5 |
-| [crude](#crude) | 5 | 600 | 225M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 225M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 225M | 0.5 |
-| [epriton](#epriton) | 5 | 300 | 50M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 225M | 0.5 |
-| [fluxore](#fluxore) | 2 | 200 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 225M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 225M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 225M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 225M | 0.5 |
+| [epriton](/content/ores/epriton/) | 5 | 300 | 50M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 225M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 2 | 200 | 5M | 0.5 |
 
 ### zone_gamma_z115
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z116
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z117
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z118
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z119
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 225M | 0.5 |
-| [crude](#crude) | 5 | 600 | 225M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 225M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 225M | 0.5 |
-| [epriton](#epriton) | 5 | 300 | 50M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 225M | 0.5 |
-| [fluxore](#fluxore) | 2 | 200 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 225M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 225M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 225M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 225M | 0.5 |
+| [epriton](/content/ores/epriton/) | 5 | 300 | 50M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 225M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 2 | 200 | 5M | 0.5 |
 
 ### zone_gamma_z120
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z121
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z122
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 5 | 600 | 100M | 0.5 |
-| [crude](#crude) | 3 | 600 | 100M | 0.5 |
-| [imentium](#imentium) | 5 | 600 | 100M | 0.5 |
-| [liquizit](#liquizit) | 3 | 600 | 100M | 0.5 |
-| [silgium](#silgium) | 5 | 600 | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 10 | 300 | 36M | 0.5 |
+| [titan](/content/ores/titan/) | 5 | 600 | 100M | 0.5 |
+| [crude](/content/ores/crude/) | 3 | 600 | 100M | 0.5 |
+| [imentium](/content/ores/imentium/) | 5 | 600 | 100M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 3 | 600 | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 5 | 600 | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 10 | 300 | 36M | 0.5 |
 
 ### zone_gamma_z123
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z124
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z125
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z126
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z127
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z128
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 5 | 600 | 100M | 0.5 |
-| [crude](#crude) | 3 | 600 | 100M | 0.5 |
-| [stermonit](#stermonit) | 5 | 600 | 100M | 0.5 |
-| [imentium](#imentium) | 5 | 600 | 100M | 0.5 |
-| [liquizit](#liquizit) | 3 | 600 | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 10 | 300 | 36M | 0.5 |
+| [titan](/content/ores/titan/) | 5 | 600 | 100M | 0.5 |
+| [crude](/content/ores/crude/) | 3 | 600 | 100M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 5 | 600 | 100M | 0.5 |
+| [imentium](/content/ores/imentium/) | 5 | 600 | 100M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 3 | 600 | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 10 | 300 | 36M | 0.5 |
 
 ### zone_gamma_z129
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z130
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z131
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 225M | 0.5 |
-| [crude](#crude) | 5 | 600 | 225M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 225M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 225M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 225M | 0.5 |
-| [epriton](#epriton) | 5 | 300 | 50M | 0.5 |
-| [fluxore](#fluxore) | 2 | 200 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 225M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 225M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 225M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 225M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 225M | 0.5 |
+| [epriton](/content/ores/epriton/) | 5 | 300 | 50M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 2 | 200 | 5M | 0.5 |
 
 ### zone_gamma_z132
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [imentium](#imentium) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z133
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z134
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 5 | 600 | 100M | 0.5 |
-| [crude](#crude) | 3 | 600 | 100M | 0.5 |
-| [stermonit](#stermonit) | 5 | 600 | 100M | 0.5 |
-| [imentium](#imentium) | 5 | 600 | 100M | 0.5 |
-| [liquizit](#liquizit) | 3 | 600 | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 10 | 300 | 36M | 0.5 |
+| [titan](/content/ores/titan/) | 5 | 600 | 100M | 0.5 |
+| [crude](/content/ores/crude/) | 3 | 600 | 100M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 5 | 600 | 100M | 0.5 |
+| [imentium](/content/ores/imentium/) | 5 | 600 | 100M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 3 | 600 | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 10 | 300 | 36M | 0.5 |
 
 ### zone_gamma_z135
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z136
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [imentium](#imentium) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z137
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 10 | 600 | 175M | 0.5 |
-| [crude](#crude) | 5 | 600 | 175M | 0.5 |
-| [stermonit](#stermonit) | 10 | 600 | 175M | 0.5 |
-| [liquizit](#liquizit) | 5 | 600 | 175M | 0.5 |
-| [silgium](#silgium) | 10 | 600 | 175M | 0.5 |
-| [gammaterial](#gammaterial) | 10 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 7 | 300 | 12M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 175M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 175M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 10 | 600 | 175M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 175M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 175M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 10 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 7 | 300 | 12M | 0.5 |
 
 ### zone_gamma_z138
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z139
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 7 | 600 | 125M | 0.5 |
-| [crude](#crude) | 4 | 600 | 125M | 0.5 |
-| [stermonit](#stermonit) | 7 | 600 | 125M | 0.5 |
-| [liquizit](#liquizit) | 4 | 600 | 125M | 0.5 |
-| [silgium](#silgium) | 7 | 600 | 125M | 0.5 |
-| [gammaterial](#gammaterial) | 7 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 8 | 300 | 24M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125M | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 600 | 125M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24M | 0.5 |
 
 ### zone_gamma_z140
 
 | Ore | Max nodes | Max tiles / node | Total amount / node | Min threshold |
 |---|---|---|---|---|
-| [titan](#titan) | 5 | 600 | 100M | 0.5 |
-| [crude](#crude) | 3 | 600 | 100M | 0.5 |
-| [stermonit](#stermonit) | 5 | 600 | 100M | 0.5 |
-| [liquizit](#liquizit) | 3 | 600 | 100M | 0.5 |
-| [silgium](#silgium) | 5 | 600 | 100M | 0.5 |
-| [gammaterial](#gammaterial) | 3 | 100 | 10M | 0.5 |
-| [energymineral](#energymineral) | 10 | 300 | 36M | 0.5 |
+| [titan](/content/ores/titan/) | 5 | 600 | 100M | 0.5 |
+| [crude](/content/ores/crude/) | 3 | 600 | 100M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 5 | 600 | 100M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 3 | 600 | 100M | 0.5 |
+| [silgium](/content/ores/silgium/) | 5 | 600 | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 100 | 10M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 10 | 300 | 36M | 0.5 |
 

@@ -27,13 +27,13 @@ The node generation this zone maintains. Per-ore yields and the generation formu
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| [titan](/content/ores/#titan) | 10 | 707 | 150M | 0.5 |
-| [crude](/content/ores/#crude) | 6 | 1.257k | 250M | 0.5 |
-| [stermonit](/content/ores/#stermonit) | 8 | 314 | 50M | 0.5 |
-| [imentium](/content/ores/#imentium) | 8 | 314 | 93.75M | 0.5 |
-| [liquizit](/content/ores/#liquizit) | 5 | 1.257k | 100M | 0.5 |
-| [gammaterial](/content/ores/#gammaterial) | 3 | 707 | 115M | 0.5 |
-| [energymineral](/content/ores/#energymineral) | 15 | 350 | 37.5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 707 | 150M | 0.5 |
+| [crude](/content/ores/crude/) | 6 | 1.257k | 250M | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 314 | 50M | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 314 | 93.75M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 1.257k | 100M | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 3 | 707 | 115M | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 15 | 350 | 37.5M | 0.5 |
 
 
 ```mermaid

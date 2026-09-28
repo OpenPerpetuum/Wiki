@@ -25,14 +25,14 @@ the flux-ore sites that attract NPC attacks.
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| [titan](/content/ores/#titan) | 8 | 500 | 125,000,000 | 0.5 |
-| [crude](/content/ores/#crude) | 8 | 1257 | 125,000,000 | 0.5 |
-| [stermonit](/content/ores/#stermonit) | 8 | 500 | 125,000,000 | 0.5 |
-| [imentium](/content/ores/#imentium) | 8 | 500 | 125,000,000 | 0.5 |
-| [liquizit](/content/ores/#liquizit) | 8 | 500 | 125,000,000 | 0.5 |
-| [epriton](/content/ores/#epriton) | 8 | 500 | 85,000,000 | 0.5 |
-| [silgium](/content/ores/#silgium) | 8 | 500 | 85,000,000 | 0.5 |
-| [fluxore](/content/ores/#fluxore) | 8 | 300 | 5,000,000 | 0.5 |
+| [titan](/content/ores/titan/) | 8 | 500 | 125,000,000 | 0.5 |
+| [crude](/content/ores/crude/) | 8 | 1257 | 125,000,000 | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 8 | 500 | 125,000,000 | 0.5 |
+| [imentium](/content/ores/imentium/) | 8 | 500 | 125,000,000 | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 8 | 500 | 125,000,000 | 0.5 |
+| [epriton](/content/ores/epriton/) | 8 | 500 | 85,000,000 | 0.5 |
+| [silgium](/content/ores/silgium/) | 8 | 500 | 85,000,000 | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 8 | 300 | 5,000,000 | 0.5 |
 
 ```mermaid
 pie showData

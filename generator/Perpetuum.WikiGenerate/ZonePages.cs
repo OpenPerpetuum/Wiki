@@ -151,7 +151,7 @@ public static class ZonePages
             foreach (var c in myConfigs.OrderBy(c => c.Mat))
             {
                 var ore = minerals.TryGetValue(c.Mat, out var on) ? on : c.Mat.ToString();
-                sb.Append($"| [{ore}](/content/ores/#{Md.Slug(ore)}) | {c.Nodes} | {Md.Num(c.Tiles)} | " +
+                sb.Append($"| [{ore}](/content/ores/{Md.Slug(ore)}/) | {c.Nodes} | {Md.Num(c.Tiles)} | " +
                           $"{Md.Num(c.Total)} | {Md.Cell(c.Min)} |\n");
             }
             sb.Append("\n");

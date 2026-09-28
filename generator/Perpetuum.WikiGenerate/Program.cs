@@ -69,7 +69,7 @@ public static class Program
         Console.WriteLine($"wrote static/extensions-tree.svg ({treeNodes} nodes, {treeEdges} edges)");
         var pages = new List<(string File, string Content)>
         {
-            ("ores.md", OresPage.Build(db, defs)),
+            ("ores.md", OresPage.Build(db, defs).Index),
             ("plants.md", PlantsPage.Build(db, defs, plantrulesDir)),
             ("deployables.md", DeployablesPage.Build(db, defs, statsByDef)),
             ("robots.md", RobotsPage.Build(db, defs, statsByDef)),
@@ -95,7 +95,7 @@ public static class Program
         // DB would leave a ghost page behind (and in the client search index).
         // items/, shop/ and techtree/ are owned entirely by the generator; the
         // hand-written sections (features, zones, formats, menu) are never touched.
-        foreach (var dir in new[] { "items", "shop", "techtree" })
+        foreach (var dir in new[] { "items", "shop", "techtree", "ores" })
         {
             var p = Path.Combine(outDir, dir);
             if (Directory.Exists(p)) Directory.Delete(p, true);
@@ -108,6 +108,7 @@ public static class Program
         File.Delete(Path.Combine(outDir, "_index.md"));
 
         var itemPages = 0;
+        var orePages = 0;
         foreach (var (file, content) in pages)
         {
             var path = Path.Combine(outDir, file);
@@ -116,7 +117,16 @@ public static class Program
             if (file.StartsWith("items/", StringComparison.Ordinal)) { itemPages++; continue; }
             Console.WriteLine($"wrote {file} ({content.Length / 1024} KB)");
         }
+        // One page per ore type (the ores index above links to each of them).
+        foreach (var (file, content) in OresPage.Build(db, defs).OrePages)
+        {
+            var path = Path.Combine(outDir, file);
+            Directory.CreateDirectory(Path.GetDirectoryName(path)!);
+            File.WriteAllText(path, content);
+            orePages++;
+        }
         Console.WriteLine($"wrote items/ ({itemPages} pages incl. index)");
+        Console.WriteLine($"wrote ores/ ({orePages} ore pages)");
 
         // The zone pages live in the zones/ section, not the content/ section:
         // one page per zone (the three hand-written worked examples are skipped).

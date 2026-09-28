@@ -29,13 +29,13 @@ The node generation this zone maintains. Per-ore yields and the generation formu
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| [titan](/content/ores/#titan) | 10 | 600 | 225M | 0.5 |
-| [crude](/content/ores/#crude) | 5 | 600 | 225M | 0.5 |
-| [imentium](/content/ores/#imentium) | 10 | 600 | 225M | 0.5 |
-| [liquizit](/content/ores/#liquizit) | 5 | 600 | 225M | 0.5 |
-| [epriton](/content/ores/#epriton) | 5 | 300 | 50M | 0.5 |
-| [silgium](/content/ores/#silgium) | 10 | 600 | 225M | 0.5 |
-| [fluxore](/content/ores/#fluxore) | 2 | 200 | 5M | 0.5 |
+| [titan](/content/ores/titan/) | 10 | 600 | 225M | 0.5 |
+| [crude](/content/ores/crude/) | 5 | 600 | 225M | 0.5 |
+| [imentium](/content/ores/imentium/) | 10 | 600 | 225M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 5 | 600 | 225M | 0.5 |
+| [epriton](/content/ores/epriton/) | 5 | 300 | 50M | 0.5 |
+| [silgium](/content/ores/silgium/) | 10 | 600 | 225M | 0.5 |
+| [fluxore](/content/ores/fluxore/) | 2 | 200 | 5M | 0.5 |
 
 
 ```mermaid

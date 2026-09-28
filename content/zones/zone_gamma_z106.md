@@ -26,13 +26,13 @@ resources.
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| [titan](/content/ores/#titan) | 7 | 600 | 125,000,000 | 0.5 |
-| [crude](/content/ores/#crude) | 4 | 600 | 125,000,000 | 0.5 |
-| [stermonit](/content/ores/#stermonit) | 7 | 600 | 125,000,000 | 0.5 |
-| [imentium](/content/ores/#imentium) | 7 | 600 | 125,000,000 | 0.5 |
-| [liquizit](/content/ores/#liquizit) | 4 | 600 | 125,000,000 | 0.5 |
-| [gammaterial](/content/ores/#gammaterial) | 7 | 100 | 10,000,000 | 0.5 |
-| [energymineral](/content/ores/#energymineral) | 8 | 300 | 24,000,000 | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 600 | 125,000,000 | 0.5 |
+| [crude](/content/ores/crude/) | 4 | 600 | 125,000,000 | 0.5 |
+| [stermonit](/content/ores/stermonit/) | 7 | 600 | 125,000,000 | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 600 | 125,000,000 | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 4 | 600 | 125,000,000 | 0.5 |
+| [gammaterial](/content/ores/gammaterial/) | 7 | 100 | 10,000,000 | 0.5 |
+| [energymineral](/content/ores/energymineral/) | 8 | 300 | 24,000,000 | 0.5 |
 
 ```mermaid
 pie showData

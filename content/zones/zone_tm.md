@@ -25,9 +25,9 @@ the basic plant mix.
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| [titan](/content/ores/#titan) | 7 | 1000 | 15,000,000 | 0.5 |
-| [crude](/content/ores/#crude) | 7 | 1257 | 30,000,000 | 0.5 |
-| [liquizit](/content/ores/#liquizit) | 7 | 1000 | 15,000,000 | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 1000 | 15,000,000 | 0.5 |
+| [crude](/content/ores/crude/) | 7 | 1257 | 30,000,000 | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 7 | 1000 | 15,000,000 | 0.5 |
 
 ```mermaid
 pie showData

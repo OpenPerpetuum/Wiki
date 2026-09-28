@@ -27,11 +27,11 @@ The node generation this zone maintains. Per-ore yields and the generation formu
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| [titan](/content/ores/#titan) | 7 | 625 | 80M | 0.5 |
-| [crude](/content/ores/#crude) | 7 | 1k | 82.125M | 0.5 |
-| [imentium](/content/ores/#imentium) | 7 | 625 | 68M | 0.5 |
-| [liquizit](/content/ores/#liquizit) | 7 | 625 | 80M | 0.5 |
-| [silgium](/content/ores/#silgium) | 7 | 625 | 68M | 0.5 |
+| [titan](/content/ores/titan/) | 7 | 625 | 80M | 0.5 |
+| [crude](/content/ores/crude/) | 7 | 1k | 82.125M | 0.5 |
+| [imentium](/content/ores/imentium/) | 7 | 625 | 68M | 0.5 |
+| [liquizit](/content/ores/liquizit/) | 7 | 625 | 80M | 0.5 |
+| [silgium](/content/ores/silgium/) | 7 | 625 | 68M | 0.5 |
 
 
 ```mermaid
