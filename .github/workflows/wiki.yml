@@ -30,9 +30,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Zola
+        # The runner is non-root, so extract to the workspace, not /usr/local.
         run: |
+          mkdir -p "$GITHUB_WORKSPACE/tools"
           curl -sSfL -o /tmp/zola.tar.gz "https://github.com/getzola/zola/releases/download/${ZOLA_VERSION}/zola-${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
-          tar xzC /usr/local -f /tmp/zola.tar.gz
+          tar xzC "$GITHUB_WORKSPACE/tools" -f /tmp/zola.tar.gz
+          echo "$GITHUB_WORKSPACE/tools" >> "$GITHUB_PATH"
           zola --version
 
       - name: Build
