@@ -22,5 +22,5 @@ Each category is its own page with the full tree and one page per node.
 | [ Common (first set) ](/content/techtree/groups/common1/) | 78 | 4 | The first set of standard (non-faction) modules available to every player. |
 | [ PBS structures ](/content/techtree/groups/pbs/) | 84 | 1 | Power base station capsules and construction modules — the buildings of open-world corporate play. |
 | [ Industrial ](/content/techtree/groups/indy/) | 67 | 3 | Industrial research: reactor boosters and the modules that keep production lines moving. |
-| [ Common (second set) ](/content/techtree/groups/common2/) | 164 | 4 | The second set of standard modules, including the named energy-transfer lines. |
+| [ Common (second set) ](/content/techtree/groups/common2/) | 169 | 4 | The second set of standard modules, including the named energy-transfer lines. |
 

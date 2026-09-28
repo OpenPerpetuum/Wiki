@@ -18,7 +18,7 @@ The whole tree at a glance: one column per rank (left to right), rows grouped by
 
 <div class="map-zoom-wrap">
 <button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
-<img class="zoommap" src="/extensions-tree.svg" alt="Extension tree: 242 extensions, 156 prerequisite edges" loading="lazy">
+<img class="zoommap" src="/extensions-tree.svg" alt="Extension tree: 251 extensions, 156 prerequisite edges" loading="lazy">
 </div>
 
 | Extension | Category | Rank | Level-1 price | Bonus | Target attribute | Primary attribute | Secondary attribute | Prerequisites | State |
@@ -381,3 +381,12 @@ The whole tree at a glance: one column per rank (left to right), rows grouped by
 | ext_spark_stealth | extcat_spark_extension | 10 | 0 | 1 | – | attributeA | – | – | hidden |
 | ext_spark_stermonit_mined | extcat_spark_extension | 10 | 0 | 0.01 | – | attributeA | – | – | hidden |
 | ext_spark_thermal_resist | extcat_spark_extension | 10 | 0 | 1 | – | attributeA | – | – | hidden |
+| ext_turret_amplification_locking_time | extcat_turrets_operations | 5 | 125000 | -0.07 | – | attributeA | – | – | active |
+| ext_turret_amplification_accuracy | extcat_turrets_operations | 6 | 180000 | -0.03 | – | attributeA | – | – | active |
+| ext_turret_amplification_armor_max | extcat_turrets_operations | 6 | 180000 | 0.05 | – | attributeA | – | – | active |
+| ext_turret_amplification_long_range | extcat_turrets_operations | 6 | 180000 | 0.03 | – | attributeA | – | – | active |
+| ext_turret_amplification_cycle_time | extcat_turrets_operations | 7 | 245000 | -0.05 | – | attributeA | – | – | active |
+| ext_turret_amplification_core_max | extcat_turrets_operations | 8 | 320000 | 0.03 | – | attributeA | – | – | active |
+| ext_turret_amplification_core_recharge_time | extcat_turrets_operations | 8 | 320000 | -0.03 | – | attributeA | – | – | active |
+| ext_turret_amplification_damage | extcat_turrets_operations | 9 | 405000 | 0.09 | – | attributeA | – | – | active |
+| ext_turret_amplification_reactor_radiation | extcat_turrets_operations | 9 | 405000 | -0.03 | – | attributeA | – | – | active |

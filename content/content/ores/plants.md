@@ -478,6 +478,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Distortio ECM tuning prototype](/content/items/named1-ecm-booster-pr/) | 50 | 6 |
 | [Blister EnWar upgrade](/content/items/named1-energy-warfare-upgrade/) | 50 | 6 |
 | [Blister EnWar upgrade prototype](/content/items/named1-energy-warfare-upgrade-pr/) | 50 | 6 |
+| [Named1 Engineering Remote Controller](/content/items/named1-engineering-remote-controller/) | 50 | – |
+| [Named1 Engineering Remote Controller Pr](/content/items/named1-engineering-remote-controller-pr/) | 50 | 6 |
 | [Named1 Excavator Module](/content/items/named1-excavator-module/) | 2.4k | – |
 | [Named1 Excavator Module Pr](/content/items/named1-excavator-module-pr/) | 2.4k | 6 |
 | [Ballistris I. seismic armor](/content/items/named1-exp-armor-hardener/) | 100 | 4 |
@@ -706,6 +708,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Hodge ECM tuning prototype](/content/items/named2-ecm-booster-pr/) | 50 | 7 |
 | [OM-Shock EnWar upgrade](/content/items/named2-energy-warfare-upgrade/) | 50 | 7 |
 | [OM-Shock EnWar upgrade prototype](/content/items/named2-energy-warfare-upgrade-pr/) | 50 | 7 |
+| [Named2 Engineering Remote Controller](/content/items/named2-engineering-remote-controller/) | 50 | – |
+| [Named2 Engineering Remote Controller Pr](/content/items/named2-engineering-remote-controller-pr/) | 50 | 7 |
 | [Named2 Excavator Module](/content/items/named2-excavator-module/) | 2.4k | – |
 | [Named2 Excavator Module Pr](/content/items/named2-excavator-module-pr/) | 2.4k | 7 |
 | [Formantel-DVU seismic armor](/content/items/named2-exp-armor-hardener/) | 100 | 5 |
@@ -920,6 +924,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Named3 Dreadnought Module Pr](/content/items/named3-dreadnought-module-pr/) | 2.4k | 8 |
 | [Braviar ECCM](/content/items/named3-eccm/) | 50 | 5 |
 | [Braviar ECCM prototype](/content/items/named3-eccm-pr/) | 50 | 5 |
+| [Named3 Engineering Remote Controller](/content/items/named3-engineering-remote-controller/) | 50 | – |
+| [Named3 Engineering Remote Controller Pr](/content/items/named3-engineering-remote-controller-pr/) | 50 | 8 |
 | [Named3 Excavator Module](/content/items/named3-excavator-module/) | 2.4k | – |
 | [Named3 Excavator Module Pr](/content/items/named3-excavator-module-pr/) | 2.4k | 8 |
 | [R4S-A evasive NEXUS module](/content/items/named3-gang-assist-coordinated-maneuvering-module/) | 50 | 7 |
@@ -1176,6 +1182,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | Scarab prototype head | 625 | – |
 | Scarab legs | 2.5k | – |
 | Scarab prototype legs | 2.5k | – |
+| [Sentry Turret Unit](/content/items/sentry-turret-unit/) | 1k | 5 |
 | [Sequer](/content/items/sequer-bot/) | 3k | – |
 | [Sequer prototype](/content/items/sequer-bot-pr/) | 3k | 2 |
 | Sequer chassis | 1.5k | 2 |
@@ -1210,6 +1217,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Standard ECCM](/content/items/standard-eccm/) | 50 | 2 |
 | [Standard ECM tuning](/content/items/standard-ecm-booster/) | 50 | 5 |
 | [Standard EnWar upgrade](/content/items/standard-energy-warfare-upgrade/) | 50 | 5 |
+| [Standard Engineering Remote Controller](/content/items/standard-engineering-remote-controller/) | 50 | 5 |
 | [Standard Excavator Module](/content/items/standard-excavator-module/) | 2.4k | 5 |
 | [Standard seismic armor](/content/items/standard-exp-armor-hardener/) | 100 | 3 |
 | [Standard seismic ERP](/content/items/standard-explosive-kers/) | 200 | 5 |
@@ -1312,7 +1320,6 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Standart Mining Turret Unit](/content/items/standart-mining-turret-unit/) | 500 | 2 |
 | [Standart Nuimqol Combat Drone Unit](/content/items/standart-nuimqol-combat-drone-unit/) | 1k | 3 |
 | [Standart Pelistal Combat Drone Unit](/content/items/standart-pelistal-combat-drone-unit/) | 1k | 3 |
-| [Standart Sentry Turret Unit](/content/items/standart-sentry-turret-unit/) | 500 | 2 |
 | [Standart Thelodica Combat Drone Unit](/content/items/standart-thelodica-combat-drone-unit/) | 1k | 3 |
 | [Symbiont](/content/items/symbiont-bot/) | 5k | – |
 | [Symbiont prototype](/content/items/symbiont-bot-pr/) | 5k | 4 |

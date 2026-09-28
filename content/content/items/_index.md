@@ -10,7 +10,7 @@ description: "Every item with its own stat page: modules, ammo, armor, robot par
 
 Every item the game offers players, grouped into categories and sub-categories — **each item has its own page** with its full stats. Tier: 1 = normal, 2 = prototype, 3 = special. What a stat value means and how big it is in context is in the [Stat reference](/content/stat-reference/); what a stat field actually does is in [Formats](/formats/).
 
-## Modules (1469)
+## Modules (1476)
 
 Equipable robot modules (weapons, sensors, shield/armor systems, power, utilities).
 
@@ -293,13 +293,12 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Standard Large Laser Pr](/content/items/standard-large-laser-pr/) | – |
 | [Standard Large Railgun Pr](/content/items/standard-large-railgun-pr/) | – |
 
-### Turrets (19)
+### Turrets (15)
 
 | Item | Tier |
 |---|---|
 | [Standart Industrial Turret Driller](/content/items/standart-industrial-turret-driller/) | 1 |
 | [Standart Industrial Turret Harvester](/content/items/standart-industrial-turret-harvester/) | 1 |
-| [Standart Sentry Turret Gun](/content/items/standart-sentry-turret-gun/) | 1 |
 | [Turret-mounted energy neutralizer](/content/items/turret-energy-neutralizer/) | 1 |
 | [Turret-mounted laser](/content/items/turret-laser/) | 1 |
 | [Turret-mounted missile launcher](/content/items/turret-missile-launcher/) | 1 |
@@ -309,13 +308,10 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Turret-mounted demobilizer](/content/items/turret-webber/) | 1 |
 | [Named1 Industrial Turret Driller](/content/items/named1-industrial-turret-driller/) | 2 |
 | [Named1 Industrial Turret Harvester](/content/items/named1-industrial-turret-harvester/) | 2 |
-| [Named1 Sentry Turret Gun](/content/items/named1-sentry-turret-gun/) | 2 |
 | [Named2 Industrial Turret Driller](/content/items/named2-industrial-turret-driller/) | 3 |
 | [Named2 Industrial Turret Harvester](/content/items/named2-industrial-turret-harvester/) | 3 |
-| [Named2 Sentry Turret Gun](/content/items/named2-sentry-turret-gun/) | 3 |
 | [Named3 Industrial Turret Driller](/content/items/named3-industrial-turret-driller/) | 4 |
 | [Named3 Industrial Turret Harvester](/content/items/named3-industrial-turret-harvester/) | 4 |
-| [Named3 Sentry Turret Gun](/content/items/named3-sentry-turret-gun/) | 4 |
 
 ### Sensors & scanning (86)
 
@@ -787,12 +783,14 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Weasel Named4 Small Armor Repairer](/content/items/weasel-named4-small-armor-repairer/) | 5 |
 | [Standard Large Armor Repairer Pr](/content/items/standard-large-armor-repairer-pr/) | – |
 
-### Remote control (66)
+### Remote control (77)
 
 | Item | Tier |
 |---|---|
 | [Standard Assault Remote Controller](/content/items/standard-assault-remote-controller/) | 1 |
 | [Standard Assault Remote Controller Cprg](/content/items/standard-assault-remote-controller-cprg/) | 1 |
+| [Standard Engineering Remote Controller](/content/items/standard-engineering-remote-controller/) | 1 |
+| [Standard Engineering Remote Controller Cprg](/content/items/standard-engineering-remote-controller-cprg/) | 1 |
 | [Standard Hunter Remote Controller](/content/items/standard-hunter-remote-controller/) | 1 |
 | [Standard Hunter Remote Controller Cprg](/content/items/standard-hunter-remote-controller-cprg/) | 1 |
 | [Standard Industrial Remote Controller](/content/items/standard-industrial-remote-controller/) | 1 |
@@ -806,6 +804,9 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Named1 Assault Remote Controller](/content/items/named1-assault-remote-controller/) | 2 |
 | [Named1 Assault Remote Controller Cprg](/content/items/named1-assault-remote-controller-cprg/) | 2 |
 | [Named1 Assault Remote Controller Pr](/content/items/named1-assault-remote-controller-pr/) | 2 |
+| [Named1 Engineering Remote Controller](/content/items/named1-engineering-remote-controller/) | 2 |
+| [Named1 Engineering Remote Controller Cprg](/content/items/named1-engineering-remote-controller-cprg/) | 2 |
+| [Named1 Engineering Remote Controller Pr](/content/items/named1-engineering-remote-controller-pr/) | 2 |
 | [Named1 Hunter Remote Controller](/content/items/named1-hunter-remote-controller/) | 2 |
 | [Named1 Hunter Remote Controller Cprg](/content/items/named1-hunter-remote-controller-cprg/) | 2 |
 | [Named1 Hunter Remote Controller Pr](/content/items/named1-hunter-remote-controller-pr/) | 2 |
@@ -824,6 +825,9 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Named2 Assault Remote Controller](/content/items/named2-assault-remote-controller/) | 3 |
 | [Named2 Assault Remote Controller Cprg](/content/items/named2-assault-remote-controller-cprg/) | 3 |
 | [Named2 Assault Remote Controller Pr](/content/items/named2-assault-remote-controller-pr/) | 3 |
+| [Named2 Engineering Remote Controller](/content/items/named2-engineering-remote-controller/) | 3 |
+| [Named2 Engineering Remote Controller Cprg](/content/items/named2-engineering-remote-controller-cprg/) | 3 |
+| [Named2 Engineering Remote Controller Pr](/content/items/named2-engineering-remote-controller-pr/) | 3 |
 | [Named2 Hunter Remote Controller](/content/items/named2-hunter-remote-controller/) | 3 |
 | [Named2 Hunter Remote Controller Cprg](/content/items/named2-hunter-remote-controller-cprg/) | 3 |
 | [Named2 Hunter Remote Controller Pr](/content/items/named2-hunter-remote-controller-pr/) | 3 |
@@ -842,6 +846,9 @@ Equipable robot modules (weapons, sensors, shield/armor systems, power, utilitie
 | [Named3 Assault Remote Controller](/content/items/named3-assault-remote-controller/) | 4 |
 | [Named3 Assault Remote Controller Cprg](/content/items/named3-assault-remote-controller-cprg/) | 4 |
 | [Named3 Assault Remote Controller Pr](/content/items/named3-assault-remote-controller-pr/) | 4 |
+| [Named3 Engineering Remote Controller](/content/items/named3-engineering-remote-controller/) | 4 |
+| [Named3 Engineering Remote Controller Cprg](/content/items/named3-engineering-remote-controller-cprg/) | 4 |
+| [Named3 Engineering Remote Controller Pr](/content/items/named3-engineering-remote-controller-pr/) | 4 |
 | [Named3 Hunter Remote Controller](/content/items/named3-hunter-remote-controller/) | 4 |
 | [Named3 Hunter Remote Controller Cprg](/content/items/named3-hunter-remote-controller-cprg/) | 4 |
 | [Named3 Hunter Remote Controller Pr](/content/items/named3-hunter-remote-controller-pr/) | 4 |
@@ -1970,11 +1977,11 @@ Robot parts (heads, chassis, legs) used to build robots.
 | [Yagel legs CT](/content/items/yagel-leg-cprg/) | – |
 | [Zenith legs CT](/content/items/zenith-leg-cprg/) | – |
 
-## Materials (322)
+## Materials (319)
 
 Raw and processed materials used in production. (Ores have their own page.)
 
-### General (322)
+### General (319)
 
 | Item | Tier |
 |---|---|
@@ -2016,14 +2023,12 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Standart Mining Turret Unit Cprg](/content/items/standart-mining-turret-unit-cprg/) | 1 |
 | [Standart Nuimqol Combat Drone Unit Cprg](/content/items/standart-nuimqol-combat-drone-unit-cprg/) | 1 |
 | [Standart Pelistal Combat Drone Unit Cprg](/content/items/standart-pelistal-combat-drone-unit-cprg/) | 1 |
-| [Standart Sentry Turret Unit Cprg](/content/items/standart-sentry-turret-unit-cprg/) | 1 |
 | [Standart Thelodica Combat Drone Unit Cprg](/content/items/standart-thelodica-combat-drone-unit-cprg/) | 1 |
 | [Construction Module Ammo T2 Cprg](/content/items/construction-module-ammo-t2-cprg/) | 2 |
 | [Named1 Harvesting Turret Unit Cprg](/content/items/named1-harvesting-turret-unit-cprg/) | 2 |
 | [Named1 Mining Turret Unit Cprg](/content/items/named1-mining-turret-unit-cprg/) | 2 |
 | [Named1 Nuimqol Combat Drone Unit Cprg](/content/items/named1-nuimqol-combat-drone-unit-cprg/) | 2 |
 | [Named1 Pelistal Combat Drone Unit Cprg](/content/items/named1-pelistal-combat-drone-unit-cprg/) | 2 |
-| [Named1 Sentry Turret Unit Cprg](/content/items/named1-sentry-turret-unit-cprg/) | 2 |
 | [Named1 Thelodica Combat Drone Unit Cprg](/content/items/named1-thelodica-combat-drone-unit-cprg/) | 2 |
 | [Advanced energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-medium-capsule-cprg/) | 2 |
 | [Advanced repair node foundation CT](/content/items/pbs-armor-repairer-medium-capsule-cprg/) | 2 |
@@ -2059,7 +2064,6 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Named2 Mining Turret Unit Cprg](/content/items/named2-mining-turret-unit-cprg/) | 3 |
 | [Named2 Nuimqol Combat Drone Unit Cprg](/content/items/named2-nuimqol-combat-drone-unit-cprg/) | 3 |
 | [Named2 Pelistal Combat Drone Unit Cprg](/content/items/named2-pelistal-combat-drone-unit-cprg/) | 3 |
-| [Named2 Sentry Turret Unit Cprg](/content/items/named2-sentry-turret-unit-cprg/) | 3 |
 | [Named2 Thelodica Combat Drone Unit Cprg](/content/items/named2-thelodica-combat-drone-unit-cprg/) | 3 |
 | [Hi-tech energy backbone node foundation CT](/content/items/pbs-xl-core-transmitter-large-capsule-cprg/) | 3 |
 | [Hi-tech repair node foundation CT](/content/items/pbs-armor-repairer-large-capsule-cprg/) | 3 |
@@ -2094,7 +2098,6 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Named3 Mining Turret Unit Cprg](/content/items/named3-mining-turret-unit-cprg/) | 4 |
 | [Named3 Nuimqol Combat Drone Unit Cprg](/content/items/named3-nuimqol-combat-drone-unit-cprg/) | 4 |
 | [Named3 Pelistal Combat Drone Unit Cprg](/content/items/named3-pelistal-combat-drone-unit-cprg/) | 4 |
-| [Named3 Sentry Turret Unit Cprg](/content/items/named3-sentry-turret-unit-cprg/) | 4 |
 | [Named3 Thelodica Combat Drone Unit Cprg](/content/items/named3-thelodica-combat-drone-unit-cprg/) | 4 |
 | [Admin Trashcan](/content/items/admin-trashcan/) | – |
 | [Alligior](/content/items/alligior/) | – |
@@ -2257,6 +2260,7 @@ Raw and processed materials used in production. (Ores have their own page.)
 | [Damaged thelodica fragment](/content/items/robotshard-thelodica-basic/) | – |
 | [Perfect thelodica fragment](/content/items/robotshard-thelodica-expert/) | – |
 | [Scarab CT](/content/items/scarab-bot-cprg/) | – |
+| [Sentry Turret Unit Cprg](/content/items/sentry-turret-unit-cprg/) | – |
 | [Sequer CT](/content/items/sequer-bot-cprg/) | – |
 | [Seth CT](/content/items/seth-bot-cprg/) | – |
 | [Silgit (PL-90)](/content/items/silgium-rare-large/) | – |
@@ -3822,7 +3826,7 @@ Zone decorations and placeable scenery.
 | [Decor Yagel Wreck](/content/items/decor-yagel-wreck/) | – |
 | [Decor Zenith Wreck](/content/items/decor-zenith-wreck/) | – |
 
-## Special & other (864)
+## Special & other (861)
 
 Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsules and calibrated variants of modules/ammo are listed with their base item.)
 
@@ -4037,7 +4041,7 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Vektor Bot (CT capsule)](/content/items/vektor-bot-ct-capsule/) | – |
 | [Vektor Bot Cprg](/content/items/vektor-bot-cprg/) | – |
 
-### Miscellaneous (668)
+### Miscellaneous (665)
 
 | Item | Tier |
 |---|---|
@@ -4168,8 +4172,6 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Standart Nuimqol Combat Drone Unit](/content/items/standart-nuimqol-combat-drone-unit/) | 1 |
 | [Standart Pelistal Combat Drone](/content/items/standart-pelistal-combat-drone/) | 1 |
 | [Standart Pelistal Combat Drone Unit](/content/items/standart-pelistal-combat-drone-unit/) | 1 |
-| [Standart Sentry Turret](/content/items/standart-sentry-turret/) | 1 |
-| [Standart Sentry Turret Unit](/content/items/standart-sentry-turret-unit/) | 1 |
 | [Standart Thelodica Combat Drone](/content/items/standart-thelodica-combat-drone/) | 1 |
 | [Standart Thelodica Combat Drone Unit](/content/items/standart-thelodica-combat-drone-unit/) | 1 |
 | [Wall Bomb A](/content/items/wall-bomb-a/) | 1 |
@@ -4186,7 +4188,6 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Named1 Nuimqol Combat Drone Unit](/content/items/named1-nuimqol-combat-drone-unit/) | 2 |
 | [Named1 Pelistal Combat Drone](/content/items/named1-pelistal-combat-drone/) | 2 |
 | [Named1 Pelistal Combat Drone Unit](/content/items/named1-pelistal-combat-drone-unit/) | 2 |
-| [Named1 Sentry Turret](/content/items/named1-sentry-turret/) | 2 |
 | [Named1 Sentry Turret Unit](/content/items/named1-sentry-turret-unit/) | 2 |
 | [Named1 Thelodica Combat Drone](/content/items/named1-thelodica-combat-drone/) | 2 |
 | [Named1 Thelodica Combat Drone Unit](/content/items/named1-thelodica-combat-drone-unit/) | 2 |
@@ -4302,7 +4303,6 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Named2 Nuimqol Combat Drone Unit](/content/items/named2-nuimqol-combat-drone-unit/) | 3 |
 | [Named2 Pelistal Combat Drone](/content/items/named2-pelistal-combat-drone/) | 3 |
 | [Named2 Pelistal Combat Drone Unit](/content/items/named2-pelistal-combat-drone-unit/) | 3 |
-| [Named2 Sentry Turret](/content/items/named2-sentry-turret/) | 3 |
 | [Named2 Sentry Turret Unit](/content/items/named2-sentry-turret-unit/) | 3 |
 | [Named2 Thelodica Combat Drone](/content/items/named2-thelodica-combat-drone/) | 3 |
 | [Named2 Thelodica Combat Drone Unit](/content/items/named2-thelodica-combat-drone-unit/) | 3 |
@@ -4413,7 +4413,6 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Named3 Nuimqol Combat Drone Unit](/content/items/named3-nuimqol-combat-drone-unit/) | 4 |
 | [Named3 Pelistal Combat Drone](/content/items/named3-pelistal-combat-drone/) | 4 |
 | [Named3 Pelistal Combat Drone Unit](/content/items/named3-pelistal-combat-drone-unit/) | 4 |
-| [Named3 Sentry Turret](/content/items/named3-sentry-turret/) | 4 |
 | [Named3 Sentry Turret Unit](/content/items/named3-sentry-turret-unit/) | 4 |
 | [Named3 Thelodica Combat Drone](/content/items/named3-thelodica-combat-drone/) | 4 |
 | [Named3 Thelodica Combat Drone Unit](/content/items/named3-thelodica-combat-drone-unit/) | 4 |
@@ -4674,6 +4673,8 @@ Everything else: spark unlocks, containers, robot fit capsules, misc. (CT capsul
 | [Sentry Test](/content/items/sentry-test/) | – |
 | [Sentry Test Deployer](/content/items/sentry-test-deployer/) | – |
 | [Sentry Test Egg](/content/items/sentry-test-egg/) | – |
+| [Sentry Turret](/content/items/sentry-turret/) | – |
+| [Sentry Turret Unit](/content/items/sentry-turret-unit/) | – |
 | [Spark Teleport Device Daoden](/content/items/spark-teleport-device-daoden/) | – |
 | [Spark Teleport Device Hersh](/content/items/spark-teleport-device-hersh/) | – |
 | [Spark Teleport Device Nv](/content/items/spark-teleport-device-nv/) | – |
