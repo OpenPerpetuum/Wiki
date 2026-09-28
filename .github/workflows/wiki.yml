@@ -6,6 +6,7 @@ name: Wiki
 on:
   push:
     branches: [ "main" ]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -44,6 +45,9 @@ jobs:
 
   deploy:
     name: Deploy to GitHub Pages
+    # Deploys only from main (pull_request runs build-only, so PR checks
+    # never touch the Pages environment).
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: build
     environment:
