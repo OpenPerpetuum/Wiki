@@ -23,8 +23,37 @@ env:
   ZOLA_VERSION: v0.23.6
 
 jobs:
-  sast:
-    name: SAST (CodeQL)
+  ratchet:
+    name: Ratchet (action pins)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # ratchet:actions/checkout@v4
+
+      - name: Download ratchet (pinned release)
+        run: |
+          set -euo pipefail
+          curl -sSfL -o /tmp/ratchet.tar.gz \
+            "https://github.com/sethvargo/ratchet/releases/download/v0.12.0/ratchet_0.12.0_linux_amd64.tar.gz"
+          echo "0d14cb829d3f5068454402f8198b0d9a29b776c8a070ef3f7e7bbb4f53d16aa15309f8e5042cbb3330b2d415b3c058ef269be946cc267098e2e4ad8a75fa1b5c  ratchet.tar.gz" | sha512sum -c -
+          tar xzC /tmp -f /tmp/ratchet.tar.gz
+
+      - name: Lint pins
+        run: /tmp/ratchet lint .github/workflows/wiki.yml
+
+      - name: Check pins match their tags
+        # Resolves the # ratchet: constraints and diffs against the committed
+        # file: fails when a pinned SHA no longer matches its tag (tag moved
+        # upstream or was re-pointed). Fix by running 'ratchet update' locally.
+        run: |
+          /tmp/ratchet update -out /tmp/wiki.updated.yml .github/workflows/wiki.yml
+          if ! diff -u .github/workflows/wiki.yml /tmp/wiki.updated.yml; then
+            echo "::error::Pinned action versions have drifted from their tags. Run 'ratchet update .github/workflows/wiki.yml' and commit the result."
+            exit 1
+          fi
+
+  sast-csharp:
+    name: SAST (CodeQL, C#)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,12 +62,28 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@1190a975f95ce23525efb6a3fc21ea29567c1b52 # ratchet:github/codeql-action/init@v3
         with:
-          languages: csharp, javascript-typescript
+          languages: csharp
           build-mode: manual
           config-file: ./codeql-config.yml
 
       - name: Build generator (.NET)
         run: dotnet build generator/Perpetuum.WikiGenerate/Perpetuum.WikiGenerate.csproj -c Release
+
+      - name: Analyze
+        uses: github/codeql-action/analyze@1190a975f95ce23525efb6a3fc21ea29567c1b52 # ratchet:github/codeql-action/analyze@v3
+
+  sast-js:
+    name: SAST (CodeQL, JS)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # ratchet:actions/checkout@v4
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@1190a975f95ce23525efb6a3fc21ea29567c1b52 # ratchet:github/codeql-action/init@v3
+        with:
+          languages: javascript-typescript
+          config-file: ./codeql-config.yml
 
       - name: Analyze
         uses: github/codeql-action/analyze@1190a975f95ce23525efb6a3fc21ea29567c1b52 # ratchet:github/codeql-action/analyze@v3
@@ -49,11 +94,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # ratchet:actions/checkout@v4
-
-      - name: Lint action pins (ratchet)
-        uses: sethvargo/ratchet@main # ratchet:exclude
-        with:
-          files: .github/workflows/*.yml
 
       - name: Install Zola
         # The runner is non-root, so extract to the workspace, not /usr/local.
