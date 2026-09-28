@@ -41,7 +41,9 @@ jobs:
           zola --version
 
       - name: Build
-        run: zola build -d . -o "$GITHUB_WORKSPACE/public"
+        # Zola 0.23 builds from the current directory (no -d flag); the
+        # default working directory is the repo root where config.toml lives.
+        run: zola build --force -o public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
