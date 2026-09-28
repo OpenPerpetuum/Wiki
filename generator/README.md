@@ -28,15 +28,23 @@ Each generated page carries a header stating its source tables and generation da
 From the repository root (this directory's parent):
 
 ```bash
+git submodule update --init server   # once, unless WIKI_PLANTRULES points elsewhere
 make generate \
-  WIKI_DB="Server=...;Database=perpetuumsa;User Id=sa;Password=...;TrustServerCertificate=True" \
-  WIKI_PLANTRULES=/path/to/GameRoot/plantrules
+  WIKI_DB="Server=...;Database=perpetuumsa;User Id=sa;Password=...;TrustServerCertificate=True"
 ```
 
-`$PERPETUUM_CONNECTIONSTRING` is used when `WIKI_DB` is not set. Output goes to
-`content/content/`; the zone pages (`zone-index.md`, `map.md` — the per-zone
-table and the x/y zone map) go to `content/zones/`. Client display names are
-read from `../Perpetuum.gbf` (override with `WIKI_GBF=...`).
+`$PERPETUUM_CONNECTIONSTRING` is used when `WIKI_DB` is not set. `WIKI_PLANTRULES`
+defaults to the `server/` submodule's GameRoot copy
+(`server/src/Perpetuum.ServerService2/data/plantrules`); set it to a local
+GameRoot `plantrules/` directory to override. Output goes to `content/content/`;
+the zone pages (`zone-index.md`, `map.md` — the per-zone table and the x/y zone
+map) go to `content/zones/`. Client display names are a static snapshot in
+`ClientNames.cs` (regenerated from the GBF client archive when the client's
+strings change — see `generator/Perpetuum.WikiGenerate/ClientNames.cs`).
+
+The `server/` submodule also exists so generation and content verification can
+reference the actual server source and `docs/db_structure/` without a second
+checkout.
 
 ## Notes & constraints
 

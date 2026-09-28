@@ -14,9 +14,14 @@ WIKI_PORT  ?= 8085
 
 # Generator inputs (make generate).
 #   WIKI_DB          SQL Server connection string (falls back to $PERPETUUM_CONNECTIONSTRING)
-#   WIKI_PLANTRULES  directory containing the plant rule files ($GameRoot/plantrules)
+#   WIKI_PLANTRULES  directory containing the plant rule files; defaults to the
+#                    server submodule (run `git submodule update --init server` first)
 WIKI_DB         ?= $(PERPETUUM_CONNECTIONSTRING)
-WIKI_PLANTRULES ?=
+# ?= would not override an empty WIKI_PLANTRULES from the environment, so use ifdef.
+ifdef WIKI_PLANTRULES
+else
+WIKI_PLANTRULES = $(abspath server/src/Perpetuum.ServerService2/data/plantrules)
+endif
 DOTNET          ?= $(shell command -v dotnet 2>/dev/null || echo $(HOME)/.dotnet/dotnet)
 TTY_FLAG        := $(shell [ -t 0 ] && echo -it || echo -i)
 
@@ -45,8 +50,8 @@ serve:
 # search index) from the database. See generator/README.md for the table mapping.
 generate:
 	@test -n "$(WIKI_DB)" || { echo "error: set WIKI_DB (or PERPETUUM_CONNECTIONSTRING)"; exit 1; }
-	@test -n "$(WIKI_PLANTRULES)" || { echo "error: set WIKI_PLANTRULES to the GameRoot plantrules dir"; exit 1; }
-	@test -d "$(WIKI_PLANTRULES)" || { echo "error: WIKI_PLANTRULES is not a directory: $(WIKI_PLANTRULES)"; exit 1; }
+	@test -d "$(WIKI_PLANTRULES)" || { echo "error: WIKI_PLANTRULES is not a directory: $(WIKI_PLANTRULES)"; \
+	  echo "hint: run 'git submodule update --init server' (or set WIKI_PLANTRULES to a GameRoot plantrules dir)"; exit 1; }
 	$(DOTNET) build -c Release generator/Perpetuum.WikiGenerate/Perpetuum.WikiGenerate.csproj
 	$(DOTNET) run -c Release --no-build --project generator/Perpetuum.WikiGenerate -- \
 		--connection "$(WIKI_DB)" \
