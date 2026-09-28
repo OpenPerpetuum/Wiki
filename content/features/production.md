@@ -54,6 +54,17 @@ that previews cost/output before you commit.
   skill multiplier starts at **75%** with no bonus and trends to 0 with maximum bonus.
 - **Research components** — produce research components (query + run).
 
+```mermaid
+flowchart LR
+    I["An item you already have"] -->|+ research kit| RL["Research lab\n(both consumed)"]
+    RL --> P["CPRG\n(material + time efficiency)"]
+    P -->|calibrate| ML["Mill (mass production)"]
+    ML -->|degrades 2–3 pts/round| P
+    F["CPRG forge:\ncombine two programs\n(stronger base + ⅓ of weaker)"] --> P
+    PT["Prototype facility\n(recipe + shards + previous-gen specimen,\n~10× cycle time)"] --> I
+    I -.->|feed back into research| RL
+```
+
 ## The item lifecycle (the circular process)
 
 Item creation is a loop of three connected facilities:

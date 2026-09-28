@@ -8,12 +8,12 @@ description: "Research node that unlocks Intakt (Thelodica (faction) category)."
 
 # Intakt (research node)
 
-This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Intakt](/content/robots/).
+This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Intakt](/content/robots/#intakt).
 
 |  |  |
 |---|---|
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
-| Unlocks | [Intakt](/content/robots/) |
+| Unlocks | [Intakt](/content/robots/#intakt) |
 | Parent node | [Standard sensor suppressor](/content/techtree/nodes/standard-sensor-dampener/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

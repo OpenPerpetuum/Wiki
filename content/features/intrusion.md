@@ -31,6 +31,19 @@ upgrade facilities to control and profit from a site.
     unowned).
 - **Stability log** — review changes to a site's stability.
 
+```mermaid
+flowchart TD
+    S["SAP completed at the site\n(loot container + 120 EP to participants)"] --> W{"Who won, relative to the owner?"}
+    W -->|"owning corp"| UP["Stability + SAP value"]
+    W -->|"ally (mutual standing ≥ 10)"| SAME["No change"]
+    W -->|"hostile corp"| DOWN["Stability − SAP value"]
+    W -->|"site unowned"| TAKE["Winner takes ownership\n(stability resets to 1)"]
+    DOWN --> Z{"Stability at 0?"}
+    Z -->|yes| LOSE["Owner loses the site"]
+    UP --> DECAY{"5 days without a SAP?"}
+    DECAY -->|yes| D2["−5 stability per day\nuntil action resumes"]
+```
+
 ### Who moves stability
 
 Stability changes come from completed **SAPs** (below) and the system decay. The effect

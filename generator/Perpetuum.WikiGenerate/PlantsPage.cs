@@ -46,6 +46,18 @@ public static class PlantsPage
         sb.Append("Plants grow over time through a sequence of stages; a plant produces (is harvestable) only once it reaches its fruiting stage. The zone maintains plant populations toward a **fertility target** per area; `spreading` biases new growth toward existing clusters of the same type. The full field reference — types, defaults, the growth state machine, and the rule-file format — is in [Plant fields](/formats/plant-fields/).\n\n");
         sb.Append("Field meanings: **growRate** = growth cycles a plant sits in each stage before advancing (higher = slower); **fertility** = how strongly the zone tries to keep this species present; **spreading** = preference for growing in groups; **killDistance** = minimum spacing between two plants of the same type (−1 = none);\n\n");
 
+        sb.Append(@"
+        ```mermaid
+        flowchart LR
+            S[""Sprout (stage 1)""] --> G[""Grow: growRate cycles per stage""]
+            G --> S
+            G --> F[""Fruiting stage reached""]
+            F --> H[""Harvestable: fruit x fruitAmount""]
+            F --> K[""Killed / damaged""]
+            K --> R[""Zone respawns toward the\nfertility target (weighted by species fertility)""]
+        ```
+        
+        ");
         sb.Append("## Plant species\n\n");
         var species = new List<(int Idx, string File, Dictionary<string, object> Rule)>();
         foreach (var f in refs.Select(r => r.File).Distinct())

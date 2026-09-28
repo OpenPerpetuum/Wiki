@@ -32,6 +32,16 @@ zones) have no ore layers at all.
 
 ## Ore nodes
 
+```mermaid
+flowchart TD
+    A["Zone loads: count existing nodes of each type"] --> B{"Below maxnodes?"}
+    B -->|no| Z["Layer idle"]
+    B -->|yes| C["Pick a random passable tile,\nfurther than 2× the exclusion radius\nfrom any node of the same type"]
+    C --> D["Random walk: flood outward with a\n4-tile brush until maxtilespernode\nvalid tiles form one connected blob"]
+    D --> E["Spread totalamountpernode over the blob:\ntile share = normalized noise × total,\n±10% jitter"]
+    E --> F["Node is live: mined tile by tile;\nbelow 1% of its total it is deleted\nand a fresh node is generated"]
+```
+
 ### How a node is placed
 
 When a zone loads, each ore type's layer counts its existing nodes (persisted in the

@@ -8,12 +8,12 @@ description: "Research node that unlocks Laird (Industrial category)."
 
 # Laird (research node)
 
-This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Laird](/content/robots/).
+This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Laird](/content/robots/#laird).
 
 |  |  |
 |---|---|
 | Category | [Industrial](/content/techtree/groups/indy/) |
-| Unlocks | [Laird](/content/robots/) |
+| Unlocks | [Laird](/content/robots/#laird) |
 | Parent node | [Standard small harvester](/content/techtree/nodes/standard-small-harvester/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

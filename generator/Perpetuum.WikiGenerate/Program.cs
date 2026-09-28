@@ -57,16 +57,23 @@ public static class Program
         }
         foreach (var kv in statsByDef) kv.Value.Sort(StringComparer.Ordinal);
 
+        // The wiki root (for static/): outDir is <wiki>/content/content.
+        var wikiRoot = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetFullPath(outDir)))!;
+
         Directory.CreateDirectory(outDir);
         // Shop sales are shared by the shop page and the item pages ("Where to buy").
         var shop = ShopPage.Load(db);
+        // Extension tree SVG (static/extensions-tree.svg) for the extensions page.
+        var (treeSvg, treeNodes, treeEdges) = ExtensionsTree.Build(db);
+        File.WriteAllText(Path.Combine(wikiRoot, "static", "extensions-tree.svg"), treeSvg);
+        Console.WriteLine($"wrote static/extensions-tree.svg ({treeNodes} nodes, {treeEdges} edges)");
         var pages = new List<(string File, string Content)>
         {
             ("ores.md", OresPage.Build(db, defs)),
             ("plants.md", PlantsPage.Build(db, defs, plantrulesDir)),
             ("deployables.md", DeployablesPage.Build(db, defs, statsByDef)),
             ("robots.md", RobotsPage.Build(db, defs, statsByDef)),
-            ("extensions.md", ExtensionsPage.Build(db)),
+            ("extensions.md", ExtensionsPage.Build(db, treeSvg, treeNodes, treeEdges)),
 
             ("missions.md", MissionsPage.Build(db)),
             ("shop.md", ShopPage.Build(db, shop)),
@@ -111,16 +118,45 @@ public static class Program
         }
         Console.WriteLine($"wrote items/ ({itemPages} pages incl. index)");
 
-        // Zone index lives in the zones/ section, not the content/ section.
+        // The zone pages live in the zones/ section, not the content/ section:
+        // one page per zone (the three hand-written worked examples are skipped).
+        // Hand-written files in zones/ the generator must never touch — any other
+        // zone_*.md is owned by ZonePages and is cleaned up before writing.
+        var ZonesKeep = new HashSet<string>(StringComparer.Ordinal)
+        {
+            "_index.md", "generation.md", "map.md", "protection.md", "zone-index.md",
+            "zone_tm.md", "zone_asi.md", "zone_gamma_z106.md",
+        };
         if (!string.IsNullOrEmpty(zonesOutDir))
         {
             Directory.CreateDirectory(zonesOutDir);
+            if (Directory.Exists(zonesOutDir))
+            {
+                foreach (var f in Directory.GetFiles(zonesOutDir))
+                {
+                    var fn = Path.GetFileName(f);
+                    if (fn.StartsWith("zone_", StringComparison.Ordinal) && fn.EndsWith(".md", StringComparison.Ordinal)
+                        && !ZonesKeep.Contains(fn))
+                        File.Delete(f);
+                }
+            }
             var zoneIndex = ZoneIndexPage.Build(db);
             File.WriteAllText(Path.Combine(zonesOutDir, "zone-index.md"), zoneIndex);
             Console.WriteLine($"wrote zones-out/zone-index.md ({zoneIndex.Length / 1024} KB)");
             var zoneMap = ZonesMapPage.Build(db);
             File.WriteAllText(Path.Combine(zonesOutDir, "map.md"), zoneMap);
             Console.WriteLine($"wrote zones-out/map.md ({zoneMap.Length / 1024} KB)");
+            var (zonePages, zoneMaps) = ZonePages.BuildAll(db);
+            foreach (var (file, content) in zonePages)
+                File.WriteAllText(Path.Combine(zonesOutDir, file), content);
+            Console.WriteLine($"wrote zones-out zone pages ({zonePages.Count})");
+            // Per-zone teleport maps (SVG) served from static/zonemaps/.
+            var mapsDir = Path.Combine(wikiRoot, "static", "zonemaps");
+            Directory.CreateDirectory(mapsDir);
+            foreach (var f in Directory.GetFiles(mapsDir, "*.svg")) File.Delete(f);
+            foreach (var (name, svg) in zoneMaps)
+                File.WriteAllText(Path.Combine(mapsDir, name.ToLowerInvariant().Replace("_", "-") + ".svg"), svg);
+            Console.WriteLine($"wrote static/zonemaps ({zoneMaps.Count} svgs)");
         }
 
         // Section landing page (hand-written body, generated counts).
@@ -131,7 +167,6 @@ public static class Program
 
         // Client search index (title/description/URL per page) for the lightweight
         // search in wiki/static/search.js. outDir is <wiki>/content/content.
-        var wikiRoot = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetFullPath(outDir)))!;
         SearchIndex.Build(wikiRoot);
 
         Console.WriteLine("done.");

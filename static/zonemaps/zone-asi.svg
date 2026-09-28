@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_ASI">
+  <rect x="0" y="0" width="2048" height="2048" rx="16" fill="#10151f" stroke="#39445a" stroke-width="2"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <circle cx="455.5" cy="411.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="455.5" y="386.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+  <circle cx="556.5" cy="1263.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="556.5" y="1238.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+  <circle cx="594.5" cy="1597.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <circle cx="633.5" cy="389.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <circle cx="712.5" cy="1162.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="712.5" y="1137.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+  <circle cx="803.5" cy="1382.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="803.5" y="1357.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+  <circle cx="833.5" cy="1162.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="833.5" y="1137.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+  <circle cx="1065.5" cy="516.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="1065.5" y="491.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+  <circle cx="1394.5" cy="789.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="1394.5" y="764.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+  <circle cx="1533.5" cy="790.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <circle cx="1558.5" cy="1718.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <circle cx="1655.5" cy="1540.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+  <text x="1655.5" y="1515.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="0.55">Daoden</text>
+</svg>

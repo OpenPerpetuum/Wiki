@@ -8,12 +8,12 @@ description: "Research node that unlocks Kain (Nuimqol (faction) category)."
 
 # Kain (research node)
 
-This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Kain](/content/robots/).
+This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Kain](/content/robots/#kain).
 
 |  |  |
 |---|---|
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
-| Unlocks | [Kain](/content/robots/) |
+| Unlocks | [Kain](/content/robots/#kain) |
 | Parent node | [Standard medium Gauss gun](/content/techtree/nodes/standard-medium-railgun/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | [ext_research_nuimqol](/content/extensions/) |

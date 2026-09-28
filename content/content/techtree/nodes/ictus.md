@@ -8,12 +8,12 @@ description: "Research node that unlocks Ictus (Pelistal (faction) category)."
 
 # Ictus (research node)
 
-This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Ictus](/content/robots/).
+This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Ictus](/content/robots/#ictus).
 
 |  |  |
 |---|---|
 | Category | [Pelistal (faction)](/content/techtree/groups/pelistal/) |
-| Unlocks | [Ictus](/content/robots/) |
+| Unlocks | [Ictus](/content/robots/#ictus) |
 | Parent node | [Standard medium energy neutralizer](/content/techtree/nodes/standard-medium-energy-neutralizer/) |
 | Unlocks next | [Standard recharger NEXUS module](/content/techtree/nodes/standard-gang-assist-core-management-module/) |
 | Enabler extension | – |

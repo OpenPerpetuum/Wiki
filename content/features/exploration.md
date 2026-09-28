@@ -10,6 +10,16 @@ Exploration is finding hidden value in the terrain — a strong solo activity at
 any level. It comes in two forms: **artifacts**, which are personal and hidden,
 and **relics**, which are open and contested.
 
+```mermaid
+flowchart TD
+    A["Load artifact scan charges\ninto geoscanner\n(100 / 300 / 500 m)"] --> B["Scan from your position\n(your character's set only)"]
+    B --> C["Fly to a found position"]
+    C --> D["Pick up the artifact"]
+    D --> E["Loot container: components\n+ robot shards"]
+    D -->|observer / infestation types| F["Hostile NPCs spawn with it"]
+    F --> D
+```
+
 ## Artifacting
 
 Artifacts are points that exist **per character**: the server keeps a separate
@@ -27,7 +37,7 @@ Two things make artifacting a combat activity as well as a gathering one:
 
 - Some artifact types **spawn NPCs with you** — the "observer" and
   "infestation" variants pull in hostiles the moment the artifact is found, so
-  fly something that can fight.
+  pilot something that can fight.
 - Loot is random per artifact type: module components (armor plates, hardeners,
   generators, repairers…) and **robot shards** — the faction-specific
   research/production ingredients, which is what makes artifacting a core

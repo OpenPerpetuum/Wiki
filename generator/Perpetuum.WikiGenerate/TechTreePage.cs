@@ -53,7 +53,10 @@ public static class TechTreePage
             var (name, enabled, hidden, catFlags) = d;
             if (!enabled || hidden) return null;
             if (name.StartsWith("def_npc_")) return null; // NPC unit fits: no catalog page
-            if (name.EndsWith("_bot") || name.EndsWith("_bot_pr")) return "/content/robots/";
+            if (name.EndsWith("_bot"))
+                // spectator/tutorial bots are not listed on the robots page
+                return name.Contains("spectator") || name.Contains("tutorial") ? "/content/robots/" : Md.RobotAnchorUrl(name);
+            if (name.EndsWith("_bot_pr")) return "/content/robots/";
             if ((catFlags & Flags.CfOre) == Flags.CfOre) return null;
             if ((catFlags & Flags.CfDeployableStructure) == Flags.CfDeployableStructure) return null;
             return "/content/items/" + name["def_".Length..].ToLowerInvariant().Replace('_', '-') + "/";

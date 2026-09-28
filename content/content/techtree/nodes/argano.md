@@ -8,12 +8,12 @@ description: "Research node that unlocks Argano (Industrial category)."
 
 # Argano (research node)
 
-This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Argano](/content/robots/).
+This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Argano](/content/robots/#argano).
 
 |  |  |
 |---|---|
 | Category | [Industrial](/content/techtree/groups/indy/) |
-| Unlocks | [Argano](/content/robots/) |
+| Unlocks | [Argano](/content/robots/#argano) |
 | Parent node | [Standard small miner module](/content/techtree/nodes/standard-small-driller/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

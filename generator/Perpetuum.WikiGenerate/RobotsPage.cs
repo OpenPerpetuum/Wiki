@@ -10,7 +10,7 @@ public static class RobotsPage
 
     private static readonly (long Bit, string Name, string Intro, string Pros, string Cons)[] Archetypes =
     {
-        (BitRunner, "Runners", "The fast, light class — the cheapest robots to build and fly.",
+        (BitRunner, "Runners", "The fast, light class — the cheapest robots to build and pilot.",
          "Fast and agile; cheap parts; fine for travel, couriers and scouting.",
          "Few slots and the weakest base stats of the combat classes."),
         (BitCrawler, "Crawlers", "The mid-size workhorse class.",
@@ -62,6 +62,22 @@ public static class RobotsPage
             "entitydefaults (complete robot definitions, robot class part flags, purchasable flag)"));
         sb.Append("\n\n# Robots\n\n");
         sb.Append("Fitting, slots and in-game play are covered in the [Robots & fitting](/features/robots/) feature page; this page is the data reference.\n\n");
+sb.Append(@"
+        ```mermaid
+        flowchart TD
+            R[""Robots""] --> P[""Player robots""]
+            P -->|fast, light, cheap| RU[""Runners""]
+            P -->|compact workers| CR[""Crawlers""]
+            P -->|combat workhorses| ME[""Mechs""]
+            P -->|top-tier combat| HM[""Heavy mechs""]
+            P -->|rare heavy platform| WA[""Walkers""]
+            P -->|one-off models| SP[""Starter & special""]
+            R --> HY[""Hybrid builds""]
+            R --> NP[""NPC units""]
+            R --> TU[""Defense turrets""]
+        ```
+        
+        ");
 
         sb.Append("## How a robot is made\n\n");
         sb.Append("A robot you control is assembled from **three body parts** — a **head**, a **chassis** and a set of **legs** — plus a **cargo container**. Each part contributes to the robot's stats (core, CPU, power grid, armor, speed, …) and provides **module slots**; modules are fitted into the slots of the part that carries them. A module only fits a slot whose category flags cover the module's own flags (see [slot categories](/features/robots/#slot-categories)).\n\n");

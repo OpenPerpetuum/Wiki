@@ -8,12 +8,12 @@ description: "Research node that unlocks Hydra (Pelistal (faction) category)."
 
 # Hydra (research node)
 
-This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Hydra](/content/robots/).
+This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Hydra](/content/robots/#hydra).
 
 |  |  |
 |---|---|
 | Category | [Pelistal (faction)](/content/techtree/groups/pelistal/) |
-| Unlocks | [Hydra](/content/robots/) |
+| Unlocks | [Hydra](/content/robots/#hydra) |
 | Parent node | [Gropho](/content/techtree/nodes/gropho/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

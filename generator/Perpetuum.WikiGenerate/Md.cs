@@ -84,6 +84,26 @@ public static class Md
     /// own string when the dictionary has it, otherwise derived from the internal name.
     /// forceDerived skips the dictionary (used when a client string collides with
     /// another item's name and the derived name is more informative).</summary>
+    /// <summary>URL-safe on-page anchor id for a display name
+    /// (e.g. "Praetorian Gropho" -> "praetorian-gropho").</summary>
+    public static string Slug(string text)
+    {
+        var sb = new StringBuilder(text.Length);
+        foreach (var c in text.ToLowerInvariant())
+        {
+            if (c is >= 'a' and <= 'z' or >= '0' and <= '9')
+                sb.Append(c);
+            else if (sb.Length > 0 && sb[^1] != '-')
+                sb.Append('-');
+        }
+        return sb.ToString().TrimEnd('-');
+    }
+
+    /// <summary>Scroll link to a robot family on the robots catalog page
+    /// (mirrors RobotsPage.FamilyKey, so the anchor always exists).</summary>
+    public static string RobotAnchorUrl(string defname)
+        => "/content/robots/#" + Slug(DisplayName(defname.Replace("_mk2", "").Replace("_reward1", "")));
+
     public static string DisplayName(string name, bool forceDerived = false)
     {
         if (!forceDerived && ClientStrings.TryGetValue(name, out var client)) return client;

@@ -6,16 +6,34 @@ weight: 60
 
 # Robots & fitting
 
-Your **active robot** is what you fly in a zone and what you fight with. Fitting means
+Your **active robot** is the robot you pilot in a zone and fight with. Fitting means
 loading **modules** into the robot's component slots and **ammo** into your weapons. All
 fitting is **docked-only**.
 
 > UI locations follow the [client UI overview](/features/ui/) (the **Equip** category on the top
 > bar). Mechanics below are confirmed against the server.
 
+```mermaid
+flowchart LR
+    subgraph Robot["Your robot"]
+        H["Head\nsensor / coprocessor slots"]
+        C["Chassis\nweapon + industrial slots"]
+        L["Legs\ndrive slots"]
+        K["Cargo container"]
+    end
+    M["Modules (fitted into slots)"] --> H
+    M --> C
+    M --> L
+    AM["Ammo (loaded into weapons)"] --> C
+    R["Robot = 3 parts + container\neach part brings stats + slots"]
+    H -.-> R
+    C -.-> R
+    L -.-> R
+```
+
 ## The active robot
 
-- **Select active robot** — choose which of your robots to fly. Requirements:
+- **Select active robot** — choose which of your robots to pilot. Requirements:
   - you are **docked**,
   - the robot is in a container you own (not the corp hangar, robot inventory, or a
     system container),
@@ -64,7 +82,7 @@ Presets are handy for re-fitting after a battle or when swapping between roles.
 ## Practical notes
 
 - **You can't fit in a zone** — everything here needs you docked.
-- **Enabler extension first** — no researched robot class means you can't select or fly it.
+- **Enabler extension first** — no researched robot class means you can't select or pilot it.
 - **Ammo must match the weapon** — an incompatible ammo definition is refused.
 - **Repackaged robots can't be used** — unpack a robot before selecting or fitting it.
 - **Use presets to re-fit fast** — save a known-good loadout, then apply it after losses.

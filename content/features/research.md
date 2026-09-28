@@ -11,6 +11,18 @@ There are **two separate progression systems**. Both are docked-only.
 > UI locations follow the [client UI overview](/features/ui/) (Character window → extensions; the
 > tech tree has its own window). Mechanics below are confirmed against the server.
 
+```mermaid
+flowchart LR
+    subgraph EP["Extension tree (per character)"]
+        A["EP pool (account-level,\n1,440/day batch)"] --> B["Extension levels 1–10\n(prereqs gate the path)"]
+        B --> C["Unlock gameplay:\nrobot enablers, facility bonuses …"]
+    end
+    subgraph TT["Tech tree (per character or corp)"]
+        K["Kernels (from NPC loot /\nartifacting / production)"] -->|1:1| P["Research points\n(7 point types)"]
+        P --> N["Unlock nodes\n(parent chain + enabler extension)"]
+    end
+```
+
 ## The extension tree (character skills)
 
 Extensions are per-character skill levels that unlock gameplay — most importantly the

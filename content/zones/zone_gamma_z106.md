@@ -14,6 +14,7 @@ resources.
 |---|---|
 | Zone id | 106 |
 | Type | PvP (open) |
+| Protection | [Gamma](/zones/protection/) — open PvP, terraformable |
 | Size | 2048 × 2048 tiles |
 | Fertility | 15 |
 | Terraformable | yes (PBS tech limit 2) |
@@ -25,13 +26,25 @@ resources.
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| titan | 7 | 600 | 125,000,000 | 0.5 |
-| crude | 4 | 600 | 125,000,000 | 0.5 |
-| stermonit | 7 | 600 | 125,000,000 | 0.5 |
-| imentium | 7 | 600 | 125,000,000 | 0.5 |
-| liquizit | 4 | 600 | 125,000,000 | 0.5 |
-| gammaterial | 7 | 100 | 10,000,000 | 0.5 |
-| energy mineral | 8 | 300 | 24,000,000 | 0.5 |
+| [titan](/content/ores/#titan) | 7 | 600 | 125,000,000 | 0.5 |
+| [crude](/content/ores/#crude) | 4 | 600 | 125,000,000 | 0.5 |
+| [stermonit](/content/ores/#stermonit) | 7 | 600 | 125,000,000 | 0.5 |
+| [imentium](/content/ores/#imentium) | 7 | 600 | 125,000,000 | 0.5 |
+| [liquizit](/content/ores/#liquizit) | 4 | 600 | 125,000,000 | 0.5 |
+| [gammaterial](/content/ores/#gammaterial) | 7 | 100 | 10,000,000 | 0.5 |
+| [energymineral](/content/ores/#energymineral) | 8 | 300 | 24,000,000 | 0.5 |
+
+```mermaid
+pie showData
+    title Steady-state ore stock by type (million units)
+    "titan" : 875
+    "crude" : 500
+    "stermonit" : 875
+    "imentium" : 875
+    "liquizit" : 500
+    "gammaterial" : 70
+    "energy mineral" : 192
+```
 
 Notes that stand out:
 
@@ -67,6 +80,16 @@ Per-species rules (including the t2 fruit amounts) are in
   running player gardens of the seeded t2 electroplant and slimeroot.
 - Terraforming (PBS tech limit 2) means the ground itself can be reshaped by players
   (see [Power base stations](/features/pbs/)).
+
+
+## Teleport map
+
+![Teleport columns in zone_gamma_z106](/zonemaps/zone-gamma-z106.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
+the column is currently switched off), the landing spots of teleports arriving from other
+zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
+tile coordinates the server records.
 
 <!-- Developer notes: zones row id 106 (zonetype 2 = PvP, protected 0, fertility 15,
      terraformable 1, pbsTechLimit 2, plantruleset 22); mineralconfigs 7 rows (crude

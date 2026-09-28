@@ -5,6 +5,14 @@ public static class ZoneIndexPage
     // ZoneType enum (src/Perpetuum/Zones/ZoneType.cs)
     private static readonly string[] ZoneTypes = { "Undefined", "PvE", "PvP", "Training", "Stronghold" };
 
+    /// <summary>Link to a zone's own page — every zone has one (the three worked
+    /// examples are hand-written, the rest generated; same slug scheme).</summary>
+    private static string ZoneLink(string name)
+    {
+        var label = Md.ClientStrings.TryGetValue(name, out var d) && d != name ? d : name;
+        return $"[{label}](/zones/{name.ToLowerInvariant().Replace("_", "-")}/)";
+    }
+
     public static string Build(Db db)
     {
         var species = db.Query("SELECT rulesetid, COUNT(*) AS n FROM plantrules GROUP BY rulesetid")
@@ -25,12 +33,12 @@ public static class ZoneIndexPage
         sb.Append(Md.Header("Zone index", "Every zone: type, protection, fertility, size, plant species count, and ore configuration.",
             "zones, mineralconfigs, plantrules"));
         sb.Append("\n\n# Zone index\n\n");
-        sb.Append("All zones on the server. **Type**: PvE (peaceful), PvP (open combat), Training, or Stronghold. " +
+        sb.Append("All zones on the server — the name links to the zone's own page. **Type**: PvE (peaceful), PvP (open combat), Training, or Stronghold. " +
                   "**Fertility** is the zone's plant coverage target (percent of ground tiles). **Ore nodes** is the " +
                   "sum of `maxnodes` across the zone's `mineralconfigs` rows — the total number of ore nodes the zone " +
                   "maintains per material type combined. Zones without an ore configuration (–) have no ore layers " +
                   "(arenas, training zones, strongholds, gamma tc zones). See [Generation](/zones/generation/) for how these " +
-                  "numbers are used. The binary layer files that make up a zone are documented in [Zone files](/formats/zone-files/).\n\n");
+                  "numbers are used. The *Protection* column is the zone's [protection level](/zones/protection/) (alpha = protected, beta = open with standard terrain, gamma = open and terraformable). The binary layer files that make up a zone are documented in [Zone files](/formats/zone-files/).\n\n");
 
         // Display name from the client string dictionary where the client has one
         // (gamma zones and similar have none and keep their internal name).
@@ -44,9 +52,10 @@ public static class ZoneIndexPage
             return new[]
             {
                 z.Int("id").ToString(),
-                ZoneName(z.Str("name")),
+                ZoneLink(z.Str("name")),
                 type,
-                z.Bit("protected") ? "protected" : "open",
+                z.Bit("protected") ? "[protected](/zones/protection/)" :
+                    z.Bit("terraformable") ? "[open (gamma)](/zones/protection/)" : "[open (beta)](/zones/protection/)",
                 z.Int("fertility").ToString(),
                 $"{z.Int("width")}×{z.Int("height")}",
                 speciesCount,

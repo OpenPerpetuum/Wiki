@@ -12,6 +12,20 @@ and the character-level settings you'll touch early on.
 > UI locations follow the [client UI overview](/features/ui/). Mechanics below are confirmed
 > against the server implementation.
 
+```mermaid
+flowchart TD
+    A["Create a character"] --> B["Tutorial zone\nRookie Checklist"]
+    B --> C{"Choose an exit"}
+    C -->|Pelistal| D1["Castel + missile loadout"]
+    C -->|Nuimqol| D2["Yagel + railgun loadout"]
+    C -->|Thelodica| D3["Prometheus + laser loadout"]
+    C -->|Industrial| D4["Argano + mining loadout"]
+    D1 --> E["Open world\nstarter corporation + skills"]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+```
+
 ## Creating a character
 
 - You can **check whether a name is free** before creating (`characterCheckNick`).
@@ -68,8 +82,9 @@ docked or not, killed by a player or an NPC — and reappear at your [home base]
 (you can request a free starter robot there if you arrive empty-handed). A few
 rules that keep the losses survivable:
 
-- **Don't fly what you can't afford to lose.** Before undocking, ask: "Can I afford
-  to lose this robot and everything on it?"
+- **Only commit what you can replace.** Undocking is a bet: if the robot goes
+  down, it and its fitted modules are gone (or loot). Before you launch, make
+  sure that loss is survivable.
 - **Know the zones.** The protected (PvE) islands are safe from players; the
   open-PvP islands are free-for-fight with no crime/punishment system. See
   [zones](/zones/) for the map.
@@ -86,7 +101,7 @@ rules that keep the losses survivable:
 ## What to do next
 
 1. Select your starter robot and learn the [hangar & fitting](/features/robots/) screen.
-2. Undock and fly into the zone — see [movement](/features/movement/).
+2. Undock and move into the zone — see [movement](/features/movement/).
 3. Scan the ground and start collecting resources — see [gathering](/features/gathering/).
 4. Research your first extensions — see [research](/features/research/).
 5. Pick a career — the [FAQ](/features/faq/#what-do-i-do-once-i-m-out) has the menu.

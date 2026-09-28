@@ -8,12 +8,12 @@ description: "Research node that unlocks Sequer (Common (first set) category)."
 
 # Sequer (research node)
 
-This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Sequer](/content/robots/).
+This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Sequer](/content/robots/#sequer).
 
 |  |  |
 |---|---|
 | Category | [Common (first set)](/content/techtree/groups/common1/) |
-| Unlocks | [Sequer](/content/robots/) |
+| Unlocks | [Sequer](/content/robots/#sequer) |
 | Parent node | [Standard lightweight frame](/content/techtree/nodes/standard-mass-reductor/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

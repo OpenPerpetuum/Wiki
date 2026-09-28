@@ -8,12 +8,12 @@ description: "Research node that unlocks Troiar (Pelistal (faction) category)."
 
 # Troiar (research node)
 
-This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Troiar](/content/robots/).
+This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Troiar](/content/robots/#troiar).
 
 |  |  |
 |---|---|
 | Category | [Pelistal (faction)](/content/techtree/groups/pelistal/) |
-| Unlocks | [Troiar](/content/robots/) |
+| Unlocks | [Troiar](/content/robots/#troiar) |
 | Parent node | [Standard small energy neutralizer](/content/techtree/nodes/standard-small-energy-neutralizer/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

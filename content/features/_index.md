@@ -9,6 +9,18 @@ Every player action, organized by system. The command name is the server-side
 identifier — the client presents these actions in its own UI. Per-action prose
 lives on the per-system pages.
 
+The game in one loop: earn and spend your way up a tier ladder.
+
+```mermaid
+flowchart LR
+    G["Gather\n(ore, plants, NPCs)"] --> P["Produce\n(refine, craft, repair)"]
+    P --> F["Fit & undock\n(active robot)"]
+    F --> A["Act in the zone\nhunt, missions, transport,\nSAPs, artifacting"]
+    A --> E["Earn\nNIC, EP, kernels,\nmodules"]
+    E --> R["Research\n(extensions, tech tree)"]
+    R --> G
+```
+
 ## Systems
 
 | System | Page | What it covers |

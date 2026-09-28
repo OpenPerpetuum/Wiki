@@ -1,40 +1,48 @@
 namespace Perpetuum.WikiGenerate;
 
 /// <summary>
-/// The zone map page: every zone plotted on the server's x/y grid (zones.x/y),
-/// colored by galaxy family, with the rift gate connections that are recorded in
-/// the server database (strongholdexitconfig + riftconfigs + riftdestinations).
-/// Rendered as inline SVG so it themes with the site and stays crisp at any size.
+/// The zone map page: every zone drawn as an island (a rounded rectangle sized
+/// to the zone's real width/height) on the server's x/y grid (zones.x/y),
+/// colored by galaxy family, with the teleport columns and rift gate
+/// connections recorded in the server database. Rendered as inline SVG so it
+/// themes with the site; static/map.js adds zoom (wheel) and pan (drag), and
+/// every island links to a zone page.
 /// </summary>
 public static class ZonesMapPage
 {
-    private sealed record Zone(string Name, int Type, double X, double Y);
+    private sealed record Zone(string Name, int Type, double X, double Y, int W, int H, bool Protected, bool Terraformable);
+
+    private sealed record Group(string Id, string Label, string Blurb, List<Zone> Zones);
 
     public static string Build(Db db)
     {
-        var zones = db.Query("SELECT id, name, zonetype, x, y, enabled FROM zones ORDER BY id")
-            .Select(r => new Zone(r.Str("name"), r.Int("zonetype"), r.Dbl("x"), r.Dbl("y")))
+        var zones = db.Query("SELECT id, name, zonetype, x, y, width, height, protected, terraformable, enabled FROM zones ORDER BY id")
+            .Select(r => new Zone(r.Str("name"), r.Int("zonetype"), r.Dbl("x"), r.Dbl("y"),
+                r.Int("width"), r.Int("height"), r.Bit("protected"), r.Bit("terraformable")))
             .ToList();
 
         // The zones table can hold several rows with the same name (e.g. zone_TM has
         // three — the extra rows sit at 50000/51000 sentinel coordinates). The map
         // plots one node per zone name, keeping the first (lowest id) row.
         var byName = zones.GroupBy(z => z.Name).ToDictionary(g => g.Key, g => g.First());
-        var family = byName.Values.Select(z => (z, F: Family(z.Name))).ToList();
+        var all = byName.Values.ToList();
 
-        // Viewbox: fit all coordinates with padding.
-        var minX = family.Min(f => f.z.X);
-        var maxX = family.Max(f => f.z.X);
-        var minY = family.Min(f => f.z.Y);
-        var maxY = family.Max(f => f.z.Y);
+        // Viewbox from the real coordinates only: the 50000/51000 sentinel rows must
+        // not stretch the canvas (they would leave the real map as a sliver in a
+        // corner). Every plotted zone's primary row has a real coordinate, so
+        // excluding the sentinels never drops a node.
+        var real = all.Where(z => z.X < 49000 && z.Y < 49000).ToList();
+        var minX = real.Min(z => z.X);
+        var maxX = real.Max(z => z.X);
+        var minY = real.Min(z => z.Y);
+        var maxY = real.Max(z => z.Y);
         var w = Math.Max(1, maxX - minX);
         var h = Math.Max(1, maxY - minY);
-        var padX = w * 0.06;
-        var padY = h * 0.04;
-        const double vbW = 900;
-        var vbH = vbW * (h + 2 * padY) / (w + 2 * padX);
-        double Px(double x) => (x - minX + padX) / (w + 2 * padX) * vbW;
-        double Py(double y) => vbH - (y - minY + padY) / (h + 2 * padY) * vbH; // y grows upward
+        const double vbW = 1000;
+        const double padFrac = 0.10; // extra room: islands have extent and labels sit outside
+        var vbH = vbW * (h + 2 * padFrac * h) / (w + 2 * padFrac * w);
+        double Px(double x) => (x - minX + padFrac * w) / (w + 2 * padFrac * w) * vbW;
+        double Py(double y) => vbH - (y - minY + padFrac * h) / (h + 2 * padFrac * h) * vbH; // y grows upward
 
         // Known gate connections from the DB: stronghold/arena exits and their
         // destinations (grouped — a zone can have several exit configs to the same
@@ -68,46 +76,47 @@ public static class ZonesMapPage
             .OrderBy(l => l.Src).ThenBy(l => l.Dst)
             .ToList();
 
+        var groups = Groups(all);
+
         var sb = new StringBuilder();
-        sb.Append(Md.Header("Zone map", "Every zone plotted on the server's x/y grid, colored by galaxy, with the rift gate connections recorded in the server database.",
-            "zones (x/y, zonetype), strongholdexitconfig + riftconfigs + riftdestinations (gate links)"));
-        sb.Append("\n\n# Zone map\n\n");
-        sb.Append("All zones of the server, plotted at their real grid coordinates. Colors group the " +
-                  "galaxies (the starter area, the main galaxy, the beta galaxy and the gamma belt); " +
-                  "grey nodes are the special zones (training, PvP arena, strongholds). The thin lines are " +
-                  "the inter-zone teleport points (TP columns) recorded in the database — each zone has a " +
-                  "few of them, and the count per pair is shown in the line tooltip; the dashed lines are " +
-                  "the stronghold/PvP-arena exit gates. Hover a node for its coordinates; zones with a wiki " +
-                  "page are clickable.\n\n");
+        sb.Append(Md.Header("World", "Every zone drawn to scale on the server grid, colored by galaxy, with the teleport and gate connections from the database.",
+            "zones (x/y, width, protected, terraformable), teleportdescriptions, strongholdexitconfig + riftconfigs + riftdestinations"));
+        sb.Append("\n\n# World\n\n");
+        sb.Append("All zones of the server, drawn at their real grid coordinates — each island's size is its " +
+                  "real width in tiles (the legend below the map shows the sizes). Colors group the galaxies; " +
+                  "grey is the special zones (training, PvP arena, strongholds). The thin lines are the " +
+                  "inter-zone teleport columns recorded in the database (the count per pair is in the line " +
+                  "tooltip); the dashed lines are the stronghold/PvP-arena exit gates. **Scroll over the map to zoom** (no key needed), **drag " +
+                  "to pan**, and click an island to open its page (islands without a dedicated page go to the " +
+                  "[zone index](/zones/zone-index/)). Hover an island for its name, protection level and " +
+                  "coordinates.\n\n");
 
-        sb.Append(Svg(family, byName, links, tps, vbW, vbH, Px, Py));
-        sb.Append("\n");
+        sb.Append("<div class=\"zonemap-wrap\">\n");
+        sb.Append("<button type=\"button\" class=\"zonemap-reset\" title=\"Reset the zoom\">⟲</button>\n");
+        sb.Append(Svg(all, byName, links, tps, vbW, vbH, Px, Py));
+        sb.Append("</div>\n\n");
+        sb.Append("<div class=\"zonemap-legend\">Island sizes (tiles): ");
+        foreach (var (lab, px) in LegendSizes())
+        {
+            var style = $"width:{px * 0.5:0.#}px;min-width:6px";
+            sb.Append($"<span class=\"legend-isle\" style=\"{style}\"></span> {lab};&ensp; ");
+        }
+        sb.Append("</div>\n\n");
 
-        sb.Append("## Galaxies & zones\n\n");
-        // Family colors live in style.css (--map-* variables) so colorblind
-        // modes can recolor them; the key only selects the CSS class.
-        var fams = new (string Label, string Key)[]
+        // Sub-category sections (also the side-menu anchors under "World").
+        foreach (var g in groups)
         {
-            ("New Virginia (TM)", "tm"),
-            ("Attalica (ICS)", "ics"),
-            ("Daoden (ASI)", "asi"),
-            ("Gamma belt", "gamma"),
-            ("Special zones", "special"),
-        };
-        var frows = fams.Select(f =>
-        {
-            var zs = family.Where(x => x.F == f.Key).ToList();
-            var types = string.Join(", ", zs.Select(z => TypeLabel(z.z.Type)).Distinct().OrderBy(t => t));
-            return new[]
+            sb.Append($"<a id=\"{g.Id}\"></a>\n\n## {g.Label}\n\n{g.Blurb}\n\n");
+            var rows = g.Zones.Select(z => new[]
             {
-                $"<span class=\"mapdot mapfam-{f.Key}\" role=\"img\" aria-label=\"{f.Label} color swatch\"></span> {f.Label}",
-                zs.Count.ToString(),
-                types.Length > 0 ? types : "–",
-                string.Join(", ", zs.Select(z => z.z.Name).OrderBy(n => n)),
-            };
-        }).ToArray();
-        Md.WriteTable(sb, new[] { "Family", "Zones", "Types", "Zone names" }, frows);
-        sb.Append("\n");
+                ZoneName(z.Name),
+                TypeLabel(z.Type),
+                $"{z.W}×{z.H}",
+                Link(z.Name),
+            }).ToArray();
+            Md.WriteTable(sb, new[] { "Zone", "Type", "Size", "Page" }, rows);
+            sb.Append("\n");
+        }
 
         sb.Append("## Teleport connections (from the server database)\n\n");
         sb.Append($"Inter-zone TP columns recorded in `teleportdescriptions` (active rows only; " +
@@ -129,47 +138,86 @@ public static class ZonesMapPage
         sb.Append("\n_The Daoden stronghold instance (\"Daoden z2\") also has a recorded exit that sends players " +
                   "to a weighted-random destination among zone_ASI_pve, zone_ICS, zone_ICS_pve, zone_TM and " +
                   "zone_TM_pve — it is not a permanent zone, so it has no node on the map._\n\n");
-        sb.Append("[Zones overview](/zones/)\n");
+        sb.Append("[Zones overview](/zones/) · [Zone index](/zones/zone-index/) · [Protection levels](/zones/protection/)\n");
         return sb.ToString();
     }
 
-    // Case-insensitive: the main zones are uppercase (zone_TM) while the gate
-    // zones are lowercase (zone_tm_g_1).
-    private static string Family(string name) =>
-        name.Contains("gamma", System.StringComparison.OrdinalIgnoreCase) ? "gamma"
-        : name.Contains("tm", System.StringComparison.OrdinalIgnoreCase) ? "tm"
-        : name.Contains("ics", System.StringComparison.OrdinalIgnoreCase) ? "ics"
-        : name.Contains("asi", System.StringComparison.OrdinalIgnoreCase) ? "asi"
-        : "special";
-
-    private static string TypeLabel(int t) => t switch
+    /// <summary>Island size in viewbox units for a zone's real width.</summary>
+    private static double Size(double w) => w switch
     {
-        1 => "PvE",
-        2 => "PvP",
-        3 => "Training",
-        4 => "Stronghold",
-        _ => "Undefined",
+        >= 1800 => 38,
+        >= 800 => 24,
+        >= 380 => 15,
+        _ => 10,
     };
 
-    /// <summary>Wiki page link for the zones that have one, null otherwise.</summary>
-    private static string? PageLink(string name) => name switch
+    private static IEnumerable<(string Lab, double Px)> LegendSizes()
     {
-        "zone_TM" => "/zones/zone-tm/",
-        "zone_ASI" => "/zones/zone-asi/",
-        "zone_gamma_z106" => "/zones/zone-gamma-z106/",
-        _ => null,
-    };
+        yield return ("2048 (main islands)", 38);
+        yield return ("1024 (training)", 24);
+        yield return ("512 (stronghold)", 15);
+        yield return ("256 (tc zones)", 10);
+    }
+
+    /// <summary>The menu sub-categories, in the order the side menu lists them.
+    /// The gamma frontier belt is split into T0 (the tc transit zones) and T1–T4
+    /// by zone number (the server stores no per-zone tier field; the split is a
+    /// navigation grouping, noted on the page).</summary>
+    private static List<Group> Groups(List<Zone> all)
+    {
+        bool Is(string n, params string[] parts) =>
+            parts.Any(p => n.Contains(p, System.StringComparison.OrdinalIgnoreCase));
+        Zone? ByName(string n) => all.FirstOrDefault(z => z.Name == n);
+        int GammaTier(Zone z)
+        {
+            if (!z.Name.StartsWith("zone_gamma_z", StringComparison.Ordinal)) return -1;
+            if (!int.TryParse(z.Name["zone_gamma_z".Length..], out var n)) return -1;
+            return n is >= 106 and <= 140 ? (n - 106) / 9 + 1 : -1;
+        }
+        string GammaBlurb(int t) => "Frontier belt islands with the server-recorded tier " +
+            $"**T{t}** (zones.note). Open PvP and terraformable — see [Protection levels](/zones/protection/). " +
+            "Each island's page has its ore configuration and TP connections.";;
+        return new List<Group>
+        {
+            new("training", "Training",
+                "The virtual training island — where new characters start and learn the basics before entering the main galaxies.",
+                new List<Zone> { ByName("zone_training")! }),
+            new("starter-islands", "Starter islands",
+                "The main protected islands and their second-wave PvE companions — the safe starter economy (see [Protection levels](/zones/protection/)).",
+                all.Where(z => z.Name == "zone_TM" || z.Name == "zone_ICS" || z.Name == "zone_ASI"
+                    || z.Name == "zone_TM_pve" || z.Name == "zone_ICS_pve" || z.Name == "zone_ASI_pve")
+                    .OrderBy(z => z.Name, StringComparer.Ordinal).ToList()),
+            new("beta", "Beta",
+                "The open-PvP islands: the three main islands' PvP twins (the \"_real\" names), the eight gate islands of each galaxy, " +
+                "and the special zones (the PvP arena and the strongholds — protected instances, listed here for completeness).",
+                all.Where(z => z.Name != "zone_training" && !Is(z.Name, "gamma")
+                    && (z.Protected == false || z.Type == 4))
+                    .OrderBy(z => z.Name, StringComparer.Ordinal).ToList()),
+            new("t0", "Gamma T0 — tc transit",
+                "The six small (256-tile) transit zones of the frontier belt. No ore configuration — pure travel nodes between the main galaxies and the belt.",
+                all.Where(z => z.Name.Contains("tc", StringComparison.OrdinalIgnoreCase))
+                    .OrderBy(z => z.Name, StringComparer.Ordinal).ToList()),
+            new("t1", "Gamma T1", GammaBlurb(1),
+                all.Where(z => GammaTier(z) == 1).OrderBy(z => z.Name, StringComparer.Ordinal).ToList()),
+            new("t2", "Gamma T2", GammaBlurb(2),
+                all.Where(z => GammaTier(z) == 2).OrderBy(z => z.Name, StringComparer.Ordinal).ToList()),
+            new("t3", "Gamma T3", GammaBlurb(3),
+                all.Where(z => GammaTier(z) == 3).OrderBy(z => z.Name, StringComparer.Ordinal).ToList()),
+            new("t4", "Gamma T4", GammaBlurb(4),
+                all.Where(z => GammaTier(z) == 4).OrderBy(z => z.Name, StringComparer.Ordinal).ToList()),
+        };
+    }
 
     private static string Svg(
-        List<(Zone z, string F)> family,
+        List<Zone> all,
         Dictionary<string, Zone> byName,
         List<(string Src, string Dst, string Rift)> links,
         List<(string Src, string Dst, int Tps)> tps,
         double vbW, double vbH, Func<double, double> Px, Func<double, double> Py)
     {
         var sb = new StringBuilder();
-        sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones, colored by galaxy family\" class=\"zonemap\">\n");
-        sb.Append("  <title>Map of all game zones, colored by galaxy family</title>\n");
+        sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones, drawn to scale, colored by galaxy family\" class=\"zonemap\" xmlns=\"http://www.w3.org/2000/svg\">\n");
+        sb.Append("  <title>Map of all game zones, drawn to scale, colored by galaxy family</title>\n");
         foreach (var l in tps)
         {
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
@@ -182,23 +230,68 @@ public static class ZonesMapPage
             sb.Append($"  <line x1=\"{Px(s.X):0.#}\" y1=\"{Py(s.Y):0.#}\" x2=\"{Px(d.X):0.#}\" y2=\"{Py(d.Y):0.#}\" class=\"zonemap-link\">" +
                       $"<title>{l.Src} — {l.Dst} (exit gate `{l.Rift}`)</title></line>\n");
         }
-        // Gamma nodes first so the main-zone labels draw on top.
-        foreach (var (z, f) in family.OrderByDescending(x => x.F == "gamma").ThenBy(x => x.z.Name, StringComparer.Ordinal))
+        // Small islands first so the big-island labels draw on top.
+        foreach (var z in all.OrderBy(z => Size(z.W)).ThenBy(z => z.Name, StringComparer.Ordinal))
         {
-            var shortName = z.Name.StartsWith("zone_", StringComparison.Ordinal) ? z.Name[5..] : z.Name;
-            var r = f == "gamma" ? 3.5 : 5.5;
-            var fs = f == "gamma" ? 8 : 9.5;
+            var f = Family(z.Name);
+            var size = Size(z.W);
             var x1 = Px(z.X);
             var y1 = Py(z.Y);
-            var node = $"<circle cx=\"{x1:0.#}\" cy=\"{y1:0.#}\" r=\"{r}\" class=\"mapfam-{f} zonemap-node-{f}\">" +
-                       $"<title>{z.Name} — {TypeLabel(z.Type)} ({z.X:0} / {z.Y:0})</title></circle>" +
-                       $"<text x=\"{x1 + r + 2:0.#}\" y=\"{y1 + fs / 3:0.#}\" font-size=\"{fs}\" class=\"zonemap-label\">{shortName}</text>";
-            var link = PageLink(z.Name);
-            sb.Append(link is null
-                ? $"  <g>{node}</g>\n"
-                : $"  <a href=\"{link}\"><g>{node}</g></a>\n");
+            var shortName = z.Name.StartsWith("zone_", StringComparison.Ordinal) ? z.Name[5..] : z.Name;
+            var tip = $"{z.Name} — {ProtectionLabel(z)} · {TypeLabel(z.Type)} ({z.X:0} / {z.Y:0})";
+            var shape = f == "special"
+                ? $"<circle cx=\"{x1:0.#}\" cy=\"{y1:0.#}\" r=\"{size / 2}\" class=\"mapfam-{f} zonemap-node-{f}\"><title>{tip}</title></circle>"
+                : $"<rect x=\"{x1 - size / 2:0.#}\" y=\"{y1 - size / 2:0.#}\" width=\"{size:0.#}\" height=\"{size:0.#}\" rx=\"{size * 0.3:0.#}\" class=\"mapfam-{f} zonemap-node-{f}\"><title>{tip}</title></rect>";
+            var label = f == "gamma" ? 10.5 : 13;
+            var text = $"<text x=\"{x1 + size / 2 + 3:0.#}\" y=\"{y1 + label / 3:0.#}\" font-size=\"{label}\" class=\"zonemap-label\">{shortName}</text>";
+            var href = PageLink(z.Name);
+            sb.Append($"  <a href=\"{href}\"><g>{shape}{text}</g></a>\n");
         }
         sb.Append("</svg>\n");
         return sb.ToString();
+    }
+
+    /// <summary>Case-insensitive: the main zones are uppercase (zone_TM) while the gate
+    /// zones are lowercase (zone_tm_g_1).</summary>
+    private static string Family(string name) =>
+        name.Contains("gamma", System.StringComparison.OrdinalIgnoreCase) ? "gamma"
+        : name.Contains("tm", System.StringComparison.OrdinalIgnoreCase) ? "tm"
+        : name.Contains("ics", System.StringComparison.OrdinalIgnoreCase) ? "ics"
+        : name.Contains("asi", System.StringComparison.OrdinalIgnoreCase) ? "asi"
+        : "special";
+
+    /// <summary>Protection level straight from the zones flags
+    /// (ZoneConfiguration.IsAlpha/IsBeta/IsGamma): alpha = protected,
+    /// gamma = terraformable, beta = the open rest.</summary>
+    private static string ProtectionLabel(Zone z)
+    {
+        if (z.Protected) return "protected (alpha)";
+        return z.Terraformable ? "open (gamma)" : "open (beta)";
+    }
+
+    private static string TypeLabel(int t) => t switch
+    {
+        1 => "PvE",
+        2 => "PvP",
+        3 => "Training",
+        4 => "Stronghold",
+        _ => "Undefined",
+    };
+
+    private static string ZoneName(string n)
+    {
+        if (Md.ClientStrings.TryGetValue(n, out var d) && d != n) return d;
+        return n.StartsWith("zone_", StringComparison.Ordinal) ? n[5..] : n;
+    }
+
+    /// <summary>Page for a zone — every zone has its own page (the three worked
+    /// examples are hand-written, the rest generated; same slug scheme).</summary>
+    private static string PageLink(string name) =>
+        "/zones/" + name.ToLowerInvariant().Replace("_", "-") + "/";
+
+    private static string Link(string name)
+    {
+        var href = PageLink(name);
+        return $"[{ZoneName(name)}]({href})";
     }
 }

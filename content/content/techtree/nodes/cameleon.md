@@ -8,12 +8,12 @@ description: "Research node that unlocks Cameleon (Nuimqol (faction) category)."
 
 # Cameleon (research node)
 
-This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Cameleon](/content/robots/).
+This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Cameleon](/content/robots/#cameleon).
 
 |  |  |
 |---|---|
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
-| Unlocks | [Cameleon](/content/robots/) |
+| Unlocks | [Cameleon](/content/robots/#cameleon) |
 | Parent node | [Standard ECM](/content/techtree/nodes/standard-sensor-jammer/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | [ext_research_nuimqol](/content/extensions/) |

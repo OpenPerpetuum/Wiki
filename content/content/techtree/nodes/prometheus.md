@@ -8,12 +8,12 @@ description: "Research node that unlocks Prometheus (Thelodica (faction) categor
 
 # Prometheus (research node)
 
-This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Prometheus](/content/robots/).
+This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Prometheus](/content/robots/#prometheus).
 
 |  |  |
 |---|---|
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
-| Unlocks | [Prometheus](/content/robots/) |
+| Unlocks | [Prometheus](/content/robots/#prometheus) |
 | Parent node | [Standard light HCL laser](/content/techtree/nodes/standard-small-laser/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

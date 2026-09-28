@@ -12,7 +12,18 @@ Plants grow over time through a sequence of stages; a plant produces (is harvest
 
 Field meanings: **growRate** = growth cycles a plant sits in each stage before advancing (higher = slower); **fertility** = how strongly the zone tries to keep this species present; **spreading** = preference for growing in groups; **killDistance** = minimum spacing between two plants of the same type (−1 = none);
 
-## Plant species
+
+        ```mermaid
+        flowchart LR
+            S["Sprout (stage 1)"] --> G["Grow: growRate cycles per stage"]
+            G --> S
+            G --> F["Fruiting stage reached"]
+            F --> H["Harvestable: fruit x fruitAmount"]
+            F --> K["Killed / damaged"]
+            K --> R["Zone respawns toward the\nfertility target (weighted by species fertility)"]
+        ```
+        
+        ## Plant species
 
 | Plant | Grow rate | Fertility | Spreading | Kill distance | Max slope | Altitude band | Water band | Fruiting state | Fruit (yield) | Max amount | Health (stages) | Player seeded | Rule file |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|

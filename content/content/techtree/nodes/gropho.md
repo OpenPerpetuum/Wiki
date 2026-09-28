@@ -8,12 +8,12 @@ description: "Research node that unlocks Gropho (Pelistal (faction) category)."
 
 # Gropho (research node)
 
-This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Gropho](/content/robots/).
+This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Gropho](/content/robots/#gropho).
 
 |  |  |
 |---|---|
 | Category | [Pelistal (faction)](/content/techtree/groups/pelistal/) |
-| Unlocks | [Gropho](/content/robots/) |
+| Unlocks | [Gropho](/content/robots/#gropho) |
 | Parent node | [Vollert medium missile launcher](/content/techtree/nodes/named2-missile-launcher/) |
 | Unlocks next | [Hydra](/content/techtree/nodes/hydra/) |
 | Enabler extension | – |

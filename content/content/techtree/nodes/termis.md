@@ -8,12 +8,12 @@ description: "Research node that unlocks Termis (Industrial category)."
 
 # Termis (research node)
 
-This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Termis](/content/robots/).
+This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Termis](/content/robots/#termis).
 
 |  |  |
 |---|---|
 | Category | [Industrial](/content/techtree/groups/indy/) |
-| Unlocks | [Termis](/content/robots/) |
+| Unlocks | [Termis](/content/robots/#termis) |
 | Parent node | [Standard medium miner module](/content/techtree/nodes/standard-medium-driller/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

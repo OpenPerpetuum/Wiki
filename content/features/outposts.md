@@ -11,6 +11,20 @@ Control is measured by a **stability** meter (0–150) shown above the outpost
 in map view. The **SAP** (Service Access Point) system is how that meter
 moves — and how outposts change hands.
 
+```mermaid
+flowchart TD
+    O["Outpost owned by a corporation\n(stability 1–150, shown on the map)"] --> S8["Every 8 h: a new SAP opens\n(passive / active / specimen / destruction)\nexpires after 2 h if unfinished"]
+    S8 --> W{"Completing corp vs owner"}
+    W -->|"owner"| UP["+ SAP points (10–15)"]
+    W -->|"ally (standing ≥ 10)"| NO["No change"]
+    W -->|"anyone else"| DN["− SAP points"]
+    UP --> M{"Stability at 0?"}
+    DN --> M
+    M -->|yes| NEUTRAL["Outpost becomes neutral\nnext SAP capture takes it (starts at 1)"]
+    M -->|no| O
+    O -.->|no SAP for 5 days| DECAY["−5 stability per day"]
+```
+
 ## The rules
 
 - When the **owning** corporation completes a SAP, stability goes **up** by

@@ -10,7 +10,22 @@ description: "How a robot is built, the robot classes, and every robot: player, 
 
 Fitting, slots and in-game play are covered in the [Robots & fitting](/features/robots/) feature page; this page is the data reference.
 
-## How a robot is made
+
+        ```mermaid
+        flowchart TD
+            R["Robots"] --> P["Player robots"]
+            P -->|fast, light, cheap| RU["Runners"]
+            P -->|compact workers| CR["Crawlers"]
+            P -->|combat workhorses| ME["Mechs"]
+            P -->|top-tier combat| HM["Heavy mechs"]
+            P -->|rare heavy platform| WA["Walkers"]
+            P -->|one-off models| SP["Starter & special"]
+            R --> HY["Hybrid builds"]
+            R --> NP["NPC units"]
+            R --> TU["Defense turrets"]
+        ```
+        
+        ## How a robot is made
 
 A robot you control is assembled from **three body parts** — a **head**, a **chassis** and a set of **legs** — plus a **cargo container**. Each part contributes to the robot's stats (core, CPU, power grid, armor, speed, …) and provides **module slots**; modules are fitted into the slots of the part that carries them. A module only fits a slot whose category flags cover the module's own flags (see [slot categories](/features/robots/#slot-categories)).
 
@@ -22,7 +37,7 @@ A robot's class comes from its parts. Typical roles below are guidance — check
 
 | Class | Role | Pros | Cons |
 |---|---|---|---|
-| **Runners** | The fast, light class — the cheapest robots to build and fly. | Fast and agile; cheap parts; fine for travel, couriers and scouting. | Few slots and the weakest base stats of the combat classes. |
+| **Runners** | The fast, light class — the cheapest robots to build and pilot. | Fast and agile; cheap parts; fine for travel, couriers and scouting. | Few slots and the weakest base stats of the combat classes. |
 | **Crawlers** | The mid-size workhorse class. | Balanced speed, slots and durability; the standard choice for gathering and hauling. | No single extreme — outgunned by mechs, outrun by runners. |
 | **Mechs** | The main combat class. | More slots and durability than crawlers — the usual platform for combat fitting. | Slower and more expensive to build and maintain. |
 | **Heavy mechs** | The top-tier combat class. | The strongest base stats and the most slots; built for sustained fights. | Slow and the most expensive parts in the game. |
@@ -37,7 +52,7 @@ Robots you can acquire and control yourself (80 models), grouped by class; each 
 
 ### Runners (20)
 
-The fast, light class — the cheapest robots to build and fly.
+The fast, light class — the cheapest robots to build and pilot.
 
 *Strengths:* Fast and agile; cheap parts; fine for travel, couriers and scouting.
 

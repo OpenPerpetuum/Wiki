@@ -8,12 +8,12 @@ description: "Research node that unlocks Yagel (Nuimqol (faction) category)."
 
 # Yagel (research node)
 
-This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Yagel](/content/robots/).
+This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Yagel](/content/robots/#yagel).
 
 |  |  |
 |---|---|
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
-| Unlocks | [Yagel](/content/robots/) |
+| Unlocks | [Yagel](/content/robots/#yagel) |
 | Parent node | [Standard light EM-gun](/content/techtree/nodes/standard-small-railgun/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | [ext_research_nuimqol](/content/extensions/) |

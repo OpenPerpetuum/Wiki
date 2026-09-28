@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_pvp_arena">
+  <rect x="0" y="0" width="2048" height="2048" rx="16" fill="#10151f" stroke="#39445a" stroke-width="2"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <path d="M 1120 1020.8 L 1139.2 1040 L 1120 1059.2 L 1100.8 1040 Z" fill="#f5a05a" stroke="#10151f" stroke-width="2"/>
+  <text x="1120" y="1085.2" font-size="20.8" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif">exit → Hershfield</text>
+  <path d="M 942 973.8 L 961.2 993 L 942 1012.2 L 922.8 993 Z" fill="#f5a05a" stroke="#10151f" stroke-width="2"/>
+  <text x="942" y="1038.2" font-size="20.8" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif">exit → Hershfield</text>
+  <circle cx="1108" cy="1048" r="12" fill="#8b93a5" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <circle cx="1108" cy="1048" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+</svg>

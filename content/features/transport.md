@@ -13,6 +13,24 @@ shipment, a **volunteer** takes it and delivers it.
 > UI locations follow the [client UI overview](/features/ui/) (the **Assignments** category on the
 > top bar). Mechanics below are confirmed against the server.
 
+```mermaid
+stateDiagram-v2
+    [*] --> Submitted: owner posts container + reward + collateral\n(reward escrowed)
+    Submitted --> Taken: volunteer posts collateral\n(container becomes their cargo)
+    Submitted --> Cancelled: owner cancels (≥ 60 s)
+    Submitted --> Expired: unaccepted past expiry
+    Taken --> Delivered: container at target base\nvolunteer paid reward + collateral
+    Taken --> GivenUp: volunteer abandons\n(half collateral refunded)
+    Taken --> Retrieved: owner retrieves after expiry
+    Taken --> Lost: cargo destroyed in transit\n(full collateral forfeited)
+    Cancelled --> [*]: reward refunded
+    Expired --> [*]: reward refunded
+    GivenUp --> [*]
+    Retrieved --> [*]
+    Lost --> [*]
+    Delivered --> [*]
+```
+
 ## The two sides
 
 - **Owner (principal)** — posts a shipment: a container to move, from a **source base**

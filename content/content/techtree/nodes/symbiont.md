@@ -8,12 +8,12 @@ description: "Research node that unlocks Symbiont (Industrial category)."
 
 # Symbiont (research node)
 
-This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Symbiont](/content/robots/).
+This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Symbiont](/content/robots/#symbiont).
 
 |  |  |
 |---|---|
 | Category | [Industrial](/content/techtree/groups/indy/) |
-| Unlocks | [Symbiont](/content/robots/) |
+| Unlocks | [Symbiont](/content/robots/#symbiont) |
 | Parent node | [Cultivator-XM medium harvester](/content/techtree/nodes/named2-medium-harvester/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

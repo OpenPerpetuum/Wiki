@@ -8,12 +8,12 @@ description: "Research node that unlocks Riveler (Industrial category)."
 
 # Riveler (research node)
 
-This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Riveler](/content/robots/).
+This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Riveler](/content/robots/#riveler).
 
 |  |  |
 |---|---|
 | Category | [Industrial](/content/techtree/groups/indy/) |
-| Unlocks | [Riveler](/content/robots/) |
+| Unlocks | [Riveler](/content/robots/#riveler) |
 | Parent node | [Sublimator Mid-D medium miner module](/content/techtree/nodes/named2-medium-driller/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

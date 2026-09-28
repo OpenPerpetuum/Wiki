@@ -8,12 +8,12 @@ description: "Research node that unlocks Ares (Common (first set) category)."
 
 # Ares (research node)
 
-This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Ares](/content/robots/).
+This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Ares](/content/robots/#ares).
 
 |  |  |
 |---|---|
 | Category | [Common (first set)](/content/techtree/groups/common1/) |
-| Unlocks | [Ares](/content/robots/) |
+| Unlocks | [Ares](/content/robots/#ares) |
 | Parent node | – (root line) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

@@ -8,12 +8,12 @@ description: "Research node that unlocks Lithus (Common (first set) category)."
 
 # Lithus (research node)
 
-This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Lithus](/content/robots/).
+This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Lithus](/content/robots/#lithus).
 
 |  |  |
 |---|---|
 | Category | [Common (first set)](/content/techtree/groups/common1/) |
-| Unlocks | [Lithus](/content/robots/) |
+| Unlocks | [Lithus](/content/robots/#lithus) |
 | Parent node | [Eizbiogh-dfg20 lightweight frame](/content/techtree/nodes/named2-mass-reductor/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

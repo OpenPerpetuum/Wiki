@@ -12,6 +12,20 @@ container, bags/boxes, etc.). This page covers manipulating items inside them.
 > UI locations follow the [client UI overview](/features/ui/). Mechanics below are confirmed against
 > the server.
 
+```mermaid
+stateDiagram-v2
+    [*] --> InContainer: crafted / bought / looted
+    InContainer --> Packed: pack into a bag/box\n(volume wrapper)
+    Packed --> InContainer: unpack
+    InContainer --> Equipped: fitted into a robot slot\n(docked only)
+    Equipped --> InContainer: removed
+    InContainer --> Trashed: discarded (gone)
+    note right of InContainer
+        Stacking: same definition + same health
+        stack freely if always-stackable
+    end note
+```
+
 ## Containers
 
 - **List a container** — view its contents.

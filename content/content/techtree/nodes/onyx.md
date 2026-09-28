@@ -8,12 +8,12 @@ description: "Research node that unlocks Onyx (Thelodica (faction) category)."
 
 # Onyx (research node)
 
-This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Onyx](/content/robots/).
+This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Onyx](/content/robots/#onyx).
 
 |  |  |
 |---|---|
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
-| Unlocks | [Onyx](/content/robots/) |
+| Unlocks | [Onyx](/content/robots/#onyx) |
 | Parent node | [Seth](/content/techtree/nodes/seth/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

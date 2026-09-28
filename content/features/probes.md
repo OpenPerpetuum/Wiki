@@ -20,6 +20,19 @@ Probes come in two families:
 > UI locations follow the [client UI overview](/features/ui/). Mechanics below are confirmed against
 > the server.
 
+```mermaid
+stateDiagram-v2
+    [*] --> Deployed: placed in a zone
+    Deployed --> Scanning: core above 98%\n(scan every 10 s, 50-tile radius)
+    Deployed --> Idle: core drained
+    Idle --> Scanning: refed
+    Scanning --> Reporting: player contacts found\n(report pushed to registered chars\n(CEO + deputy always included))
+    Reporting --> Scanning
+    Scanning --> Destroyed: hostile action or\ndespawn (~333 days)
+    Idle --> Destroyed
+    Destroyed --> [*]
+```
+
 ## Managing your probes
 
 - **List** your probes — see the probes you have.

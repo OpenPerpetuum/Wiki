@@ -7,17 +7,29 @@ weight: 20
 # Movement & zones
 
 You are always in one of two states: **docked** at a base, or **undocked** in a zone
-flying your active robot. Everything on this page is about moving between those states
+pilot your active robot remotely. Everything on this page is about moving between those states
 and between zones.
 
 > UI locations follow the [client UI overview](/features/ui/): the **Deploy/Dock button** is the
 > center top-bar toggle. Mechanics below are confirmed against the server.
 
+```mermaid
+stateDiagram-v2
+    [*] --> Docked
+    Docked --> Undocked: Deploy\n(robot selected, enabler researched,\nenergy intact, cargo space, no cooldown)
+    Undocked --> Docked: Dock in range
+    Undocked --> Docked: Force dock / SOS\n(emergency, anywhere)
+    Undocked --> Undocked: Teleport / mobile teleport\n(range, active channel, no sickness, no PvP)
+    Docked --> Docked: Spark teleport\n(to another base)
+```
+
 ## Docked vs. undocked
 
 - **Docked** — you are at a base. Your robots and items are in containers. You cannot
-  fly, use teleports, or scan, but you can craft, trade, research, and use base facilities.
-- **Undocked** — you are in a zone as your active robot. You can fly, scan, fight, and
+  pilot a robot, use teleports, or scan, but you can craft, trade, research, and use base
+  facilities.
+- **Undocked** — you are in a zone, piloting your active robot. You can move, scan,
+  fight, and
   interact with zone objects, but most base-only activities are locked.
 
 ## Undocking

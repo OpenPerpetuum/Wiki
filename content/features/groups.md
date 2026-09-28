@@ -13,6 +13,17 @@ corporations), and **gangs** (temporary fleets for zone play).
 > the **Corp Storage** category; gangs have their own window). Mechanics below are
 > confirmed against the server.
 
+```mermaid
+flowchart TD
+    AL["Alliance\n(a group of corporations)"] --> C1["Corporation A"]
+    AL --> C2["Corporation B"]
+    C1 --> CEO["CEO / Deputy"]
+    C1 --> ROLES["Officers: HR, Accountant,\nProduction, PR, Vote, Hangar, PBS …"]
+    C1 --> MEM["Members"]
+    G["Gang (fleet)\ntemporary, zone-scoped:\nowner + invited members,\nshared mobile teleports"]
+    MEM -.->|joins in a zone| G
+```
+
 ## Corporations
 
 ### Joining & leaving
@@ -73,7 +84,7 @@ server config: 50,000 credits per 7-day period).
 
 ### CEO
 - **Volunteer for CEO**, or check the **CEO takeover status**.
-- **Takeover in practice**: if a CEO has been offline for **over 30 days**, a Deputy
+- **Takeover in practice**: once a CEO has been offline for **30 days**, a Deputy
   can initiate a takeover — a **48-hour countdown** starts, announced in the corp
   window. The CEO or any other Deputy can **veto** it instantly (a veto doesn't
   stop the next attempt if the CEO still doesn't log in). If the countdown reaches
@@ -134,7 +145,7 @@ use one (see [movement](/features/movement/)).
   the right role.
 - **Corporation tech is shared** — unlocking for the corp uses shared points and a
   multiplier (see [research](/features/research/)).
-- **The hangar is storage, not a hangar bay** — you can't fly a robot out of it.
+- **The hangar is storage, not a launch pad** — you can't undock from it into a robot.
 - **Gangs are ephemeral** — use them for a zone session, not as a permanent org.
 - **Standings follow your corp** — your corporation's standing affects how the universe
   treats you (see [social](/features/social/)).

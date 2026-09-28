@@ -8,12 +8,12 @@ description: "Research node that unlocks Terramotus (Industrial category)."
 
 # Terramotus (research node)
 
-This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Terramotus](/content/robots/).
+This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Terramotus](/content/robots/#terramotus).
 
 |  |  |
 |---|---|
 | Category | [Industrial](/content/techtree/groups/indy/) |
-| Unlocks | [Terramotus](/content/robots/) |
+| Unlocks | [Terramotus](/content/robots/#terramotus) |
 | Parent node | – (root line) |
 | Unlocks next | [Standard large miner module](/content/techtree/nodes/standard-large-driller/), [Standard Large Harvester](/content/techtree/nodes/standard-large-harvester/) |
 | Enabler extension | – |

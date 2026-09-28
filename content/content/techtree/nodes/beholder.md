@@ -8,12 +8,12 @@ description: "Research node that unlocks Beholder (Common (second set) category)
 
 # Beholder (research node)
 
-This node of the [Common (second set)](/content/techtree/groups/common2/) research tree unlocks [Beholder](/content/robots/).
+This node of the [Common (second set)](/content/techtree/groups/common2/) research tree unlocks [Beholder](/content/robots/#beholder).
 
 |  |  |
 |---|---|
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
-| Unlocks | [Beholder](/content/robots/) |
+| Unlocks | [Beholder](/content/robots/#beholder) |
 | Parent node | [Standard Tactical Remote Controller](/content/techtree/nodes/standard-tactical-remote-controller/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

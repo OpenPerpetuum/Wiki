@@ -6,6 +6,17 @@ weight: 20
 
 # Lore
 
+```mermaid
+flowchart TD
+    E["Earth, late 20th c.\ncorporate megapowers"] -->|Perpetuum Project| N["Planet Nia\nM54 globular cluster, Sagittarius"]
+    N --> P1["Pelistal Empire"]
+    N --> P2["Nuimqol Union"]
+    N --> P3["Thelodica Clan"]
+    N --> P4["Industrial worker machines"]
+    E -->|funds the project| S["The Syndicate\nthree megacorporations,\ndivide-and-conquer strategy"]
+    S -.->|spheres of operation| N
+```
+
 ## The discovery of Nia
 
 Earth's late-20th-century tech boom — the internet, medical IT fusion, space
@@ -14,8 +25,8 @@ trade got faster and cheaper, and the great corporations grew into the de facto
 governments of their regions.
 
 Into that world came the discovery of **planet Nia**, in the M54 globular cluster
-of Sagittarius (the source of the project's logo). Nia is part of a binary star
-system — the fourth planet of the pair — and is strikingly Earth-like: mean
+of Sagittarius (the source of the project's logo). Nia orbits one of a pair of
+stars — the fourth planet of that pair — and is strikingly Earth-like: mean
 surface temperature around 19 °C and a near-Earth atmospheric density. Two
 quirks set it apart. Its oceans are impassable barriers to anything
 electric-driven — the planet's dense core and rapid rotation keep them charged —

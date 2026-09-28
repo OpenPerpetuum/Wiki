@@ -7,7 +7,7 @@ weight: 10
 # Sparks
 
 A **spark** is a nanobot specialization installed on your character. While it is
-active, its bonuses apply to every robot you fly — the spark for a faction's
+active, its bonuses apply to every robot you pilot — the spark for a faction's
 combat line, for example, raises weapon damage and critical chance level by
 level, while an industrial line raises core capacity and mining yield.
 
@@ -31,6 +31,14 @@ only). Depending on the spark, the server checks:
   with a key item).
 
 Unlocking is one-time: once unlocked, the spark stays in your collection.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Active: character created\n(default spark installed)
+    Active --> Active: one spark at a time
+    Active --> Cooldown: switch (costs NIC, per-spark)
+    Cooldown --> Active: after 1 hour\n(new spark's bonuses apply to all robots)
+```
 
 ## Switching sparks
 

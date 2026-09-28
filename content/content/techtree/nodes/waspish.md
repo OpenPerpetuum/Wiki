@@ -8,12 +8,12 @@ description: "Research node that unlocks Waspish (Pelistal (faction) category)."
 
 # Waspish (research node)
 
-This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Waspish](/content/robots/).
+This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Waspish](/content/robots/#waspish).
 
 |  |  |
 |---|---|
 | Category | [Pelistal (faction)](/content/techtree/groups/pelistal/) |
-| Unlocks | [Waspish](/content/robots/) |
+| Unlocks | [Waspish](/content/robots/#waspish) |
 | Parent node | [Pelistec-Horosol DBM light missile launcher](/content/techtree/nodes/named1-rocket-launcher/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

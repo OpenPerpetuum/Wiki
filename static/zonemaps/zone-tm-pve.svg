@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_TM_pve">
+  <rect x="0" y="0" width="2048" height="2048" rx="16" fill="#10151f" stroke="#39445a" stroke-width="2"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <circle cx="307.5" cy="1758.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="307.5" y="1733.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Norhoop</text>
+  <circle cx="308.5" cy="412.5" r="12" fill="#f5a05a" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="308.5" y="387.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hokkogaros</text>
+  <circle cx="350.5" cy="554.5" r="12" fill="#f5a05a" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="350.5" y="529.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Shinjalar</text>
+  <circle cx="484.5" cy="603.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="484.5" y="578.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="509.5" cy="1793.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="509.5" y="1768.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="829.5" cy="782.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="829.5" y="757.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="947.5" cy="682.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="947.5" y="657.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="950.5" cy="891.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="950.5" y="866.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="1042.5" cy="788.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1042.5" y="763.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="1272.5" cy="256.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1272.5" y="231.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="1359.5" cy="1395.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1359.5" y="1370.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="1388.5" cy="193.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1388.5" y="168.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Domhalarn, Tellesis</text>
+  <circle cx="1626.5" cy="1381.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1626.5" y="1356.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">New Virginia, Attalica</text>
+  <circle cx="1563.5" cy="1547.5" r="12" fill="#5b6478" stroke="#10151f" stroke-width="2" opacity="0.55"/>
+</svg>

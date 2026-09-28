@@ -8,12 +8,12 @@ description: "Research node that unlocks Vagabond (Nuimqol (faction) category)."
 
 # Vagabond (research node)
 
-This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Vagabond](/content/robots/).
+This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Vagabond](/content/robots/#vagabond).
 
 |  |  |
 |---|---|
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
-| Unlocks | [Vagabond](/content/robots/) |
+| Unlocks | [Vagabond](/content/robots/#vagabond) |
 | Parent node | [Wavoslur ECM](/content/techtree/nodes/named2-sensor-jammer/) |
 | Unlocks next | [Standard velocity NEXUS module](/content/techtree/nodes/standard-gang-assist-speed-module/) |
 | Enabler extension | [ext_research_nuimqol](/content/extensions/) |

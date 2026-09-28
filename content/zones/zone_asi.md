@@ -14,6 +14,7 @@ the flux-ore sites that attract NPC attacks.
 |---|---|
 | Zone id | 2 |
 | Type | PvP (open) |
+| Protection | [Beta](/zones/protection/) — open PvP, standard terrain |
 | Size | 2048 × 2048 tiles |
 | Fertility | 20 |
 | Plant rule set | 2 — 19 species (incl. high-tier harvestables) |
@@ -24,14 +25,27 @@ the flux-ore sites that attract NPC attacks.
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| titan | 8 | 500 | 125,000,000 | 0.5 |
-| crude | 8 | 1257 | 125,000,000 | 0.5 |
-| stermonit | 8 | 500 | 125,000,000 | 0.5 |
-| imentium | 8 | 500 | 125,000,000 | 0.5 |
-| liquizit | 8 | 500 | 125,000,000 | 0.5 |
-| epriton | 8 | 500 | 85,000,000 | 0.5 |
-| silgium | 8 | 500 | 85,000,000 | 0.5 |
-| flux ore | 8 | 300 | 5,000,000 | 0.5 |
+| [titan](/content/ores/#titan) | 8 | 500 | 125,000,000 | 0.5 |
+| [crude](/content/ores/#crude) | 8 | 1257 | 125,000,000 | 0.5 |
+| [stermonit](/content/ores/#stermonit) | 8 | 500 | 125,000,000 | 0.5 |
+| [imentium](/content/ores/#imentium) | 8 | 500 | 125,000,000 | 0.5 |
+| [liquizit](/content/ores/#liquizit) | 8 | 500 | 125,000,000 | 0.5 |
+| [epriton](/content/ores/#epriton) | 8 | 500 | 85,000,000 | 0.5 |
+| [silgium](/content/ores/#silgium) | 8 | 500 | 85,000,000 | 0.5 |
+| [fluxore](/content/ores/#fluxore) | 8 | 300 | 5,000,000 | 0.5 |
+
+```mermaid
+pie showData
+    title Steady-state ore stock by type (million units)
+    "titan" : 1000
+    "crude" : 1000
+    "stermonit" : 1000
+    "imentium" : 1000
+    "liquizit" : 1000
+    "epriton" : 680
+    "silgium" : 680
+    "flux ore" : 40
+```
 
 Notes that stand out:
 
@@ -46,7 +60,7 @@ Notes that stand out:
   epriton distance from bases. Mining a flux node publishes spawn events to the NPC
   system — flux sites are contested by design (see [Intrusion & NPC
   systems](/features/intrusion/)).
-- Steady-state stock: ~6.9 billion units of material in total.
+- Steady-state stock: ~6.4 billion units of material in total.
 
 ## Plant mix
 
@@ -69,6 +83,16 @@ Per-species rules are in [Plants](/content/plants/); per-ore yields in
   those nodes.
 - Plant harvesting here targets the high-tier variants, which have better fruit than
   the low-tier species in starter zones.
+
+
+## Teleport map
+
+![Teleport columns in Daoden](/zonemaps/zone-asi.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
+the column is currently switched off), the landing spots of teleports arriving from other
+zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
+tile coordinates the server records.
 
 <!-- Developer notes: zones row id 2 (zonetype 2 = PvP, protected 0, fertility 20,
      plantruleset 2); mineralconfigs 8 rows (7 standard + fluxore 8/300/5M);

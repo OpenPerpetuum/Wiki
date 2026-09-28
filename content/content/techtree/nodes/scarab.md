@@ -8,12 +8,12 @@ description: "Research node that unlocks Scarab (Common (first set) category)."
 
 # Scarab (research node)
 
-This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Scarab](/content/robots/).
+This node of the [Common (first set)](/content/techtree/groups/common1/) research tree unlocks [Scarab](/content/robots/#scarab).
 
 |  |  |
 |---|---|
 | Category | [Common (first set)](/content/techtree/groups/common1/) |
-| Unlocks | [Scarab](/content/robots/) |
+| Unlocks | [Scarab](/content/robots/#scarab) |
 | Parent node | [MRE 3000 lightweight frame](/content/techtree/nodes/named3-mass-reductor/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

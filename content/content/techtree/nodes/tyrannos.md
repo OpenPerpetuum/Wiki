@@ -8,12 +8,12 @@ description: "Research node that unlocks Tyrannos (Pelistal (faction) category).
 
 # Tyrannos (research node)
 
-This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Tyrannos](/content/robots/).
+This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Tyrannos](/content/robots/#tyrannos).
 
 |  |  |
 |---|---|
 | Category | [Pelistal (faction)](/content/techtree/groups/pelistal/) |
-| Unlocks | [Tyrannos](/content/robots/) |
+| Unlocks | [Tyrannos](/content/robots/#tyrannos) |
 | Parent node | [Standard medium missile launcher](/content/techtree/nodes/standard-missile-launcher/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

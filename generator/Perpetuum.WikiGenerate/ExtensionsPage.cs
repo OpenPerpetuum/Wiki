@@ -2,7 +2,7 @@ namespace Perpetuum.WikiGenerate;
 
 public static class ExtensionsPage
 {
-    public static string Build(Db db)
+    public static string Build(Db db, string treeSvg = null, int treeNodes = 0, int treeEdges = 0)
     {
         var categories = db.Query("SELECT extensioncategoryid, categoryname FROM extensioncategories")
             .ToDictionary(r => r.Int("extensioncategoryid"), r => r.Str("categoryname"));
@@ -26,6 +26,16 @@ public static class ExtensionsPage
         sb.Append("\n\n# Extensions\n\n");
         sb.Append("Extensions are per-character skills (see [Research](/features/research/) in the features section). " +
                   "**Price** is the level-1 credit cost; higher levels cost EP only. **Prerequisites** list the extensions (and minimum level) that must be learned first.\n\n");
+        if (!string.IsNullOrEmpty(treeSvg))
+        {
+            sb.Append("<a id=\"tree\"></a>\n\n");
+            sb.Append("## Extension tree\n\n");
+            sb.Append($"The whole tree at a glance: one column per rank (left to right), rows grouped by category, and an arrow for every prerequisite (hover an arrow for the required level). **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.\n\n");
+            sb.Append("<div class=\"map-zoom-wrap\">\n");
+            sb.Append("<button type=\"button\" class=\"zoommap-reset\" title=\"Reset the zoom\">\u27f2</button>\n");
+            sb.Append($"<img class=\"zoommap\" src=\"/extensions-tree.svg\" alt=\"Extension tree: {treeNodes} extensions, {treeEdges} prerequisite edges\" loading=\"lazy\">\n");
+            sb.Append("</div>\n\n");
+        }
 
         var rows = exts.Select(r => new[]
         {

@@ -14,6 +14,18 @@ role.
 > UI locations follow the [client UI overview](/features/ui/). The in-client name for "PBS" should
 > be confirmed. Mechanics below are confirmed against the server.
 
+```mermaid
+flowchart LR
+    subgraph Network["PBS network (one corporation)"]
+        R["Reactor\n(fed by fuel items)"] -- "connection" --> DB["Docking base\n(players dock here)"]
+        R -- "connection" --> ML["Mill / refinery /\nresearch lab …"]
+        R -- "connection" --> TT["Turrets /\narmor repairer"]
+        R -- "connection" --> AE["Aura emitter\n(territory buffs)"]
+        DB --- MT["Control tower\n(extends the base's reach)"]
+    end
+    Network --> T["Connected nodes share one territory\n(the corp controls it, sets visibility + standing)"]
+```
+
 ## What a PBS does
 
 - It is a **node** in a PBS **network**.
@@ -58,6 +70,20 @@ out the base is killed and its contents are lost. This is the "rent" model for P
 docking: you don't pay rent, you get a timebox.
 
 ## Deployment
+
+```mermaid
+stateDiagram-v2
+    [*] --> Carried: capsule in a container
+    Carried --> Researched: CPRG researched (research level met)
+    Researched --> Produced: structure produced at the mill /\nprototype facility
+    Produced --> Deployed: deployed in a zone\n(CEO / deputy / edit-PBS role,\nconstruction + blocking radius checks)
+    Deployed --> Online: set online\n(reactor/mining tower: fed with fuel)
+    Online --> Connected: linked into the network\n(territory + effects apply)
+    Connected --> Online: connection broken
+    Online --> Deployed: set offline
+    Deployed --> Decommissioned: deconstruction\n(the expiring base instead expires\nafter 7 days, contents lost)
+    Decommissioned --> [*]
+```
 
 - **Check deployment** — before placing, verify a PBS can be deployed at a position
   (slope, blocking, and privilege checks). This requires a corporation role

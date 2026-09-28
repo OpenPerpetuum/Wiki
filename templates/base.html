@@ -24,6 +24,7 @@
     {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
     <link rel="stylesheet" href="/style.css">
     <script src="/search.js"></script>
+    <script src="/map.js"></script>
     <script src="/mermaid.min.js" defer></script>
 </head>
 <body>
@@ -36,7 +37,8 @@
         <symbol id="mi-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 14.2 9.8 21.5 12 14.2 14.2 12 21.5 9.8 14.2 2.5 12 9.8 9.8Z"/></symbol>
         <symbol id="mi-robots" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="6.5" height="9" rx="1"/><path d="M7.2 9V6.2h0.1M7.2 6.2a1 1 0 1 0 .1 0M4 12H2.2M10.5 12H12.3"/><rect x="13.5" y="9" width="6.5" height="9" rx="1"/><path d="M16.8 9V6.2h0.1M16.8 6.2a1 1 0 1 0 .1 0M13.5 12h-1.8M19.5 12h1.8"/></symbol>
         <symbol id="mi-crystal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 19 12l-7 9.5L5 12Z"/><path d="M5 12h14M12 2.5 9 12l3 9.5"/></symbol>
-        <symbol id="mi-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="1.5"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 4v16"/></symbol>
+        <symbol id="mi-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><circle cx="5.5" cy="19" r="2.2"/><circle cx="18.5" cy="19" r="2.2"/><path d="M12 7.2v3.6m0 0c0 2.4-6.5 2.4-6.5 4.6m6.5-4.6c0 2.4 6.5 2.4 6.5 4.6"/></symbol>
+<symbol id="mi-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="1.5"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 4v16"/></symbol>
         <symbol id="mi-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4ZM9 4v14M15 6v14"/></symbol>
     </defs>
 </svg>
@@ -82,7 +84,25 @@
         <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
         <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
         <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
-        <li class="nav-group"><a class="nav-group-link" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a></li>
+        <li>
+            <a class="nav-group-link" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
+            <ul class="map-sub">
+                <li><a href="/zones/map/#training" data-mapanchor="1">{{ config.extra.ui.nav_map_training }}</a></li>
+                <li><a href="/zones/map/#starter-islands" data-mapanchor="1">{{ config.extra.ui.nav_map_starter }}</a></li>
+                <li><a href="/zones/map/#beta" data-mapanchor="1">{{ config.extra.ui.nav_map_beta }}</a></li>
+                <li>
+                    <a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma }}</a>
+                    <ul class="map-sub map-sub-deep">
+                        <li><a href="/zones/map/#t0" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t0 }}</a></li>
+                        <li><a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t1 }}</a></li>
+                        <li><a href="/zones/map/#t2" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t2 }}</a></li>
+                        <li><a href="/zones/map/#t3" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t3 }}</a></li>
+                        <li><a href="/zones/map/#t4" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t4 }}</a></li>
+                    </ul>
+                </li>
+                <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
+            </ul>
+        </li>
         <li class="nav-group"><a class="nav-group-link" href="/menu/in-the-field/"><svg class="navicon" aria-hidden="true"><use href="#mi-radar"/></svg>{{ config.extra.ui.nav_in_the_field }}</a></li>
         <li><a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a></li>
         <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
@@ -130,6 +150,9 @@
         <li class="nav-group"><a class="nav-group-link" href="/menu/data-reference/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_data_reference }}</a></li>
         <li><a href="/content/">{{ config.extra.ui.nav_content }}</a></li>
         <li><a href="/zones/">{{ config.extra.ui.nav_zones }}</a></li>
+        <li class="nav-group"><a class="nav-group-link" href="/content/extensions/#tree"><svg class="navicon" aria-hidden="true"><use href="#mi-tree"/></svg>{{ config.extra.ui.nav_tree }}</a></li>
+        <li><a href="/content/extensions/#tree" data-mapanchor="1">{{ config.extra.ui.nav_tree }}</a></li>
+        <li><a href="/content/extensions/">{{ config.extra.ui.nav_extensions }}</a></li>
         <li><a href="/features/">{{ config.extra.ui.nav_all_features }}</a></li>
         <li><a href="/features/server/">{{ config.extra.ui.nav_server }}</a></li>
         <li><a href="/formats/">{{ config.extra.ui.nav_formats }}</a></li>
@@ -330,6 +353,35 @@
             if (hit && h.length > bestLen) { best = a; bestLen = h.length; }
         });
         if (best) best.classList.add("active");
+        // Keep the browser's own scroll restoration on: navigating away and
+        // back must restore the page position (e.g. back from a zone page).
+        try { if (window.history && history.scrollRestoration) history.scrollRestoration = "auto"; } catch (e) {}
+        // same-page anchors (e.g. /zones/map/#training): scroll and highlight.
+        // Menu sub-anchors carry data-mapanchor so a plain page load (or the
+        // back button) does not re-jump to the section and does not keep the
+        // hash in the address bar.
+        var hash = document.location.hash;
+        // A plain load (or the back button) of a page whose URL still carries a
+        // menu sub-anchor (#training, #beta, ...) must NOT re-jump to that
+        // section: the browser restores the scroll position instead. Only a
+        // fresh click on the menu entry jumps.
+        var freshAnchorClick = false;
+        try {
+            var entry = document.querySelector('.sidenav a[data-mapanchor][href$="' + hash + '"]');
+            if (entry && document.activeElement === entry) freshAnchorClick = true;
+        } catch (e) {}
+        if (hash.length > 1 && freshAnchorClick) {
+            var target = document.getElementById(hash.substring(1));
+            if (target) {
+                target.scrollIntoView();
+                if (target.id === "training" || target.id === "starter-islands"
+                        || target.id === "beta" || target.id === "t0" || target.id === "t1"
+                        || target.id === "t2" || target.id === "t3" || target.id === "t4") {
+                    var sub = document.querySelector('.sidenav a[href$="/zones/map/#' + target.id + '"]');
+                    if (sub) sub.classList.add("active");
+                }
+            }
+        }
         // bottom menu: section
         var sections = ["/features/", "/content/", "/zones/"];
         var here = null;
@@ -380,6 +432,23 @@
             var theme = document.documentElement.getAttribute("data-theme") === "light" ? "neutral" : "dark";
             window.mermaid.initialize({ startOnLoad: false, theme: theme });
             window.mermaid.run({ querySelector: ".mermaid" });
+        } else {
+            // mermaid.min.js loads deferred; wait for it instead of dropping the diagrams.
+            var t0 = Date.now();
+            var timer = setInterval(function () {
+                if (window.mermaid) {
+                    clearInterval(timer);
+                    var theme = document.documentElement.getAttribute("data-theme") === "light" ? "neutral" : "dark";
+                    window.mermaid.initialize({ startOnLoad: false, theme: theme });
+                    window.mermaid.run({ querySelector: ".mermaid" });
+                } else if (Date.now() - t0 > 10000) {
+                    clearInterval(timer);
+                    document.querySelectorAll(".mermaid").forEach(function (el) {
+                        el.textContent = el.getAttribute("data-src") || "";
+                        el.removeAttribute("class");
+                    });
+                }
+            }, 200);
         }
     });
 </script>

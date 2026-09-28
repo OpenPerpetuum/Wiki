@@ -8,12 +8,12 @@ description: "Research node that unlocks Felos (Nuimqol (faction) category)."
 
 # Felos (research node)
 
-This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Felos](/content/robots/).
+This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Felos](/content/robots/#felos).
 
 |  |  |
 |---|---|
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
-| Unlocks | [Felos](/content/robots/) |
+| Unlocks | [Felos](/content/robots/#felos) |
 | Parent node | [Mesmer](/content/techtree/nodes/mesmer/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

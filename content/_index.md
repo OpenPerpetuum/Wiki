@@ -9,6 +9,18 @@ A persistent-universe MMO: you pilot **robots** across a galaxy of zones, gather
 resources, build and defend **power base stations (PBS)**, contest **intrusion sites**,
 trade, and research your way up from a starter bot to a fully fitted war machine.
 
+## Get the game
+
+Perpetuum is free on [Steam](https://store.steampowered.com/app/223410/Perpetuum/).
+
+<div class="steam-card">
+  <a class="steam-card-link" href="https://store.steampowered.com/app/223410/Perpetuum/" target="_blank" rel="noopener">
+    <img src="https://cdn.akamai.steamstatic.com/steam/apps/223410/header.jpg"
+         alt="Perpetuum on the Steam store" class="steam-card-img" width="460" height="215" loading="lazy">
+    <span class="steam-card-label">Perpetuum on Steam — free to play</span>
+  </a>
+</div>
+
 ## Watch first
 
 Guides from the Open Perpetuum Project. Click a card to play it here.
@@ -122,7 +134,7 @@ Guides from the Open Perpetuum Project. Click a card to play it here.
 - [**Content tables**](/content/) — every ore, plant, item, robot, extension, recipe,
   mission, tech-tree node and shop item, generated from the live database
 - [**Zones**](/zones/) — the full zone index, resource-generation rules and the
-  [zone map](/zones/map/)
+  [world map](/zones/map/)
   (every zone on the grid with its teleport links)
 - [**Formats**](/formats/) — developer reference: stat fields and zone file formats
 - [**Server & reference**](/features/server/) — server info, high scores, reference data

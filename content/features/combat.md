@@ -17,10 +17,11 @@ server side; detailed damage/fitting interactions live under [robots & fitting](
 ## Entering combat
 
 - You can only fight while **undocked** — you are your active robot.
-- Attacking a non-flagged target in an open (PvP) zone raises the **PvP flag** on both
-  sides (defending against a flagged attacker, or supporting one, raises it too). The
-  flag lasts **5 minutes** (the `effect_pvp` definition, 300,000 ms) and is refreshed
-  while the fight continues.
+- Firing an offensive weapon at another player in an open (PvP) zone raises the
+  **PvP flag** on the attacker. Firing back, or using a support module on an
+  already-flagged player, raises it on you too. The flag lasts **5 minutes**
+  (the `effect_pvp` definition, 300,000 ms) and is refreshed with each new act
+  of aggression.
 - While the flag is up:
   - you **cannot use teleports** (including mobile ones), and
   - you **cannot dock normally** — the only way out is **force dock**, which is
@@ -66,9 +67,26 @@ When a fight goes badly:
 
 - **Force dock** — the emergency exit. Pulls you out of the zone and docks you at the
   main base (TMA) immediately, even mid-fight.
-- **SOS** — docks you at the current base and flags the incident as a help call.
+- **SOS** — an alternative exit: docks you at the current base after the normal
+  (7-second) undock delay.
 
 Both are your safety nets; force dock is the "I'm about to die" button.
+
+```mermaid
+flowchart TD
+    F["Weapon fires\n(lock must be Locked)"] --> LOS{"Line of sight?\n(ballistic arc over terrain)"}
+    LOS -->|blocked| B["Hit the obstacle\n(damage the terrain)"]
+    LOS -->|clear| H["Hit the target"]
+    H --> C{"Critical? 1.75×"}
+    C --> SH{"Shield active?"}
+    SH -->|yes| ABS["Damage absorbed by shield\n(core is drained)"]
+    SH -->|no| RES
+    ABS --> RES["Resistance: damage ÷ (1 + res/100)"]
+    RES --> CO["Rest hits the core"]
+    CO --> K["Kers: post-resist damage ×\nthe kers modifier is added to your core"]
+    CO --> D{"Core at 0?"}
+    D -->|yes| L["Death: explosion (open zones),\n50% loot rolls, insurance check"]
+```
 
 ## Target lock, range and hit
 
@@ -129,8 +147,8 @@ redistributes your resistances toward whatever is actually hitting you.
   detection range instead.
 - **Blob.** Some units and structures emit a *blob* field. While you stand inside
   an emitter's radius, the blob level on your unit rises; between your two blob
-  threshold stats it **increases your locking time** (up to 5×) and **cuts your
-  locking range and sensor strength** (down to half).
+  threshold stats it **increases your locking time** (up to 6× the base value)
+  and **cuts your locking range and sensor strength** (down to half).
 - **Speed.** Top speed falls with mass: speed = base × (design mass ÷ actual
   mass) — every ton of extra modules, armor and cargo you fit makes you slower.
 - **Demobilization ("demob").** The webber effect slows a target's top speed.
@@ -142,9 +160,10 @@ redistributes your resistances toward whatever is actually hitting you.
 An **alarm** is triggered in a zone by an **alarm switch** (a mission-related
 structure). When started:
 
-- It runs for a fixed **alarm period**.
-- It affects **players within the alarm's range**.
-- It cannot be re-triggered while already active.
+- It runs for a fixed **alarm period** (set by the mission; short by default).
+- You have to **stay within the switch's range** for the whole period — it is
+  checked every couple of seconds, and drifting away cancels the alarm.
+- You can have only **one alarm running at a time**.
 
 Alarms are tied to mission content — see [missions](/features/missions/).
 
@@ -213,7 +232,7 @@ Verified against:
   check via optimal-range modifier).
 - Blob: Zones/Blobs/BlobHandler.cs (emitters raise blob level inside
   BlobEmissionRadius; between blob_level_low/high the multiplier scales:
-  locking_time modifier -5 (i.e. up to 5x longer), max_targeting_range *0.5,
+  locking_time modifier -5, i.e. lock time x(1+5*m) — up to 6x base at full blob, max_targeting_range *0.5,
   sensor_strength *0.5).
 - LOS: Zones/LineOfSight.cs (raycast vs terrain blocks incl. Plant flag;
   ballistic arc for missiles: max amplitude 16 m over 40 m);

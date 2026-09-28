@@ -8,12 +8,12 @@ description: "Research node that unlocks Mesmer (Nuimqol (faction) category)."
 
 # Mesmer (research node)
 
-This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Mesmer](/content/robots/).
+This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Mesmer](/content/robots/#mesmer).
 
 |  |  |
 |---|---|
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
-| Unlocks | [Mesmer](/content/robots/) |
+| Unlocks | [Mesmer](/content/robots/#mesmer) |
 | Parent node | [Condor-SPP medium EM-gun](/content/techtree/nodes/named1-longrange-medium-railgun/) |
 | Unlocks next | [Felos](/content/techtree/nodes/felos/) |
 | Enabler extension | [ext_research_nuimqol](/content/extensions/) |

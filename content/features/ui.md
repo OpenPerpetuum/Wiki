@@ -13,6 +13,22 @@ Wiring is per-system — see the pages linked below.
 > This layout is a working model provided by the project, used to describe where actions
 > live. Exact screen names may differ slightly; the structure is the reference.
 
+```mermaid
+flowchart LR
+    subgraph Topbar["Top bar"]
+        direction LR
+        L["Left: Mail · Character ·\nCorporation · Options · Disconnect"] --- C["Center: Deploy / Dock"]
+        C --- R["Right: Refinery · Recycling · Repair ·\nInsurance · Market · Assignments ·\nCorp Storage · Equip …"]
+    end
+    subgraph Below["Below the bar"]
+        direction LR
+        U["Undocked: expandable zone actions\n(top-right) + status panel\n(shield / armor / energy)"]
+        D["Docked: the right-side categories\nare your workspace"]
+    end
+    C --> U
+    C --> D
+```
+
 ## The top bar
 
 A persistent bar across the top of the screen.
@@ -44,7 +60,7 @@ into the zone (see [movement](/features/movement/) for the undock preconditions)
 
 ## Undocked state
 
-While **undocked** (flying your active robot in a zone):
+While **undocked** (piloting your active robot in a zone):
 
 - The **top-right** area gains an **expandable actions button**: click it and a list of
   extra zone actions expands downward (scanning, harvest/interact actions, zone tools —

@@ -36,6 +36,19 @@ ranks 1–5 that scale up in stats and loot. Beyond the regular ranks:
   named NPCs) that runs its own static farms, usually on protected and
   shallow open islands.
 
+```mermaid
+flowchart TD
+    S["Flock at home position"] --> T{"Behavior"}
+    T -->|Passive| P["Waits\n(farms sit still)"]
+    T -->|Aggressive| AG["Aggro within 30 m\nchases + supports allies"]
+    P -->|you shoot / bomb / use a module on it| F["Fight starts"]
+    AG --> F
+    F --> TH["Threat spreads: every member\npicks you up at reduced threat"]
+    TH --> CH{"Any member's armor < 20%?"}
+    CH -->|call for help enabled| ALL["Whole flock commits"]
+    CH -->|no| F
+```
+
 ## Passive vs aggressive
 
 - **Passive flocks** never attack on their own — you have to shoot, bomb or

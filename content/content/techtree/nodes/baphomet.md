@@ -8,12 +8,12 @@ description: "Research node that unlocks Baphomet (Thelodica (faction) category)
 
 # Baphomet (research node)
 
-This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Baphomet](/content/robots/).
+This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Baphomet](/content/robots/#baphomet).
 
 |  |  |
 |---|---|
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
-| Unlocks | [Baphomet](/content/robots/) |
+| Unlocks | [Baphomet](/content/robots/#baphomet) |
 | Parent node | [Thelotec-Dabis light HCL laser](/content/techtree/nodes/named1-small-laser/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

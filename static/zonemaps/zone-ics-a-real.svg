@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_ICS_A_real">
+  <rect x="0" y="0" width="2048" height="2048" rx="16" fill="#10151f" stroke="#39445a" stroke-width="2"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <circle cx="376.5" cy="558.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="376.5" y="533.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Kraslovsk, Hershfield…</text>
+  <circle cx="408.5" cy="772.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="408.5" y="747.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Domhalarn</text>
+  <circle cx="504.5" cy="1527.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="504.5" y="1502.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield</text>
+  <circle cx="560.5" cy="1387.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="560.5" y="1362.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Domhalarn</text>
+  <circle cx="1082.5" cy="1342.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1082.5" y="1317.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Domhalarn</text>
+  <circle cx="1122.5" cy="803.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1122.5" y="778.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Domhalarn</text>
+  <circle cx="1181.5" cy="350.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1181.5" y="325.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Kraslovsk, Novastrov</text>
+  <circle cx="1347.5" cy="1838.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1347.5" y="1813.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Hershfield, Alsbale</text>
+  <circle cx="1416.5" cy="933.5" r="12" fill="#a78bfa" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1416.5" y="908.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">zone_gamma_tc_z105</text>
+  <circle cx="1703.5" cy="1445.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1703.5" y="1420.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Alsbale</text>
+</svg>

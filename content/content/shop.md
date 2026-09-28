@@ -32,7 +32,7 @@ Each category is its own page; best price across all vendors, one row per item.
 | Category | Items | What it is |
 |---|---|---|
 | [Ammo](/content/shop/ammo/) | 27 | Weapon ammo and scanner/industrial charges, in fixed stacks. |
-| [Bots](/content/shop/bots/) | 25 | Ready-to-fly robots and named fits, straight from the vendor. |
+| [Bots](/content/shop/bots/) | 25 | Ready-to-pilot robots and named fits, straight from the vendor. |
 | [Paint](/content/shop/paint/) | 16 | Robot paint and tint items. |
 | [Modules & equipment](/content/shop/modules-equipment/) | 104 | Fitted modules: weapons, armor, shields, energy and industrial equipment. |
 | [Remote commands](/content/shop/remote-commands/) | 9 | Items that control your robots remotely. |

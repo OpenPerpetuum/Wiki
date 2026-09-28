@@ -10,6 +10,20 @@ weight: 18
 robot becomes what you need it to be. *Fitting* means both the module loadout
 ("send me your fitting") and the CPU/reactor budget it consumes.
 
+```mermaid
+flowchart TD
+    subgraph Frame["Robot frame budget"]
+        CPU["CPU cap"]
+        PG["Reactor (powergrid) cap"]
+    end
+    S["Slot\ntyped by a bitmask:\nturret / missile / head / industrial /\nEWar / size (S·M·L)"] --> R{"Module fits?"}
+    R -->|"module flags ⊆ slot flags"| FIT["Fitted"]
+    R -->|"no"| NO["Refused"]
+    FIT --> B{"Sum of CPU + reactor\ndraw within frame caps?"}
+    B -->|yes| OK["Robot stats re-derived"]
+    B -->|no| NO2["Over budget — remove or\nupgrade (coprocessor, reactor upgrade)"]
+```
+
 ## Slots & resources
 
 A robot's frame has a fixed set of **slots**, defined by its chassis. Each slot is

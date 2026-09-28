@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_TM_pvp">
+  <rect x="0" y="0" width="2048" height="2048" rx="16" fill="#10151f" stroke="#39445a" stroke-width="2"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <circle cx="903" cy="517" r="20.4" fill="none" stroke="#c8d2e0" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"/>
+  <text x="903" y="488.2" font-size="20.8" fill="#8b93a5" text-anchor="middle" font-family="sans-serif">from Alsbale</text>
+  <circle cx="497" cy="1148" r="20.4" fill="none" stroke="#c8d2e0" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"/>
+  <text x="497" y="1119.2" font-size="20.8" fill="#8b93a5" text-anchor="middle" font-family="sans-serif">from Alsbale</text>
+  <circle cx="1850" cy="888" r="20.4" fill="none" stroke="#c8d2e0" stroke-width="2" stroke-dasharray="7 5" opacity="0.85"/>
+  <text x="1850" y="859.2" font-size="20.8" fill="#8b93a5" text-anchor="middle" font-family="sans-serif">from Alsbale</text>
+  <circle cx="306.5" cy="974.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="306.5" y="949.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Emperth, Norhoop</text>
+  <circle cx="496.5" cy="1187.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="496.5" y="1162.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Alsbale</text>
+  <circle cx="938.5" cy="515.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="938.5" y="490.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Alsbale</text>
+  <circle cx="1207.5" cy="296.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1207.5" y="271.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Domhalarn</text>
+  <circle cx="1723.5" cy="540.5" r="12" fill="#6ee7a0" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1723.5" y="515.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Domhalarn</text>
+  <circle cx="1742.5" cy="1242.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1742.5" y="1217.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Emperth, Norhoop</text>
+  <circle cx="1856.5" cy="857.5" r="12" fill="#41d3ff" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <text x="1856.5" y="832.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">Alsbale, zone_gamma_tc_z100</text>
+</svg>

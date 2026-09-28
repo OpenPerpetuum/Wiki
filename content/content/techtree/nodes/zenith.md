@@ -8,12 +8,12 @@ description: "Research node that unlocks Zenith (Thelodica (faction) category)."
 
 # Zenith (research node)
 
-This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Zenith](/content/robots/).
+This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Zenith](/content/robots/#zenith).
 
 |  |  |
 |---|---|
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
-| Unlocks | [Zenith](/content/robots/) |
+| Unlocks | [Zenith](/content/robots/#zenith) |
 | Parent node | [MSD m\2315 'Filch' sensor suppressor](/content/techtree/nodes/named2-sensor-dampener/) |
 | Unlocks next | [Standard farlock NEXUS module](/content/techtree/nodes/standard-gang-assist-information-module/) |
 | Enabler extension | – |

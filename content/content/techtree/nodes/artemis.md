@@ -8,12 +8,12 @@ description: "Research node that unlocks Artemis (Thelodica (faction) category).
 
 # Artemis (research node)
 
-This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Artemis](/content/robots/).
+This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Artemis](/content/robots/#artemis).
 
 |  |  |
 |---|---|
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
-| Unlocks | [Artemis](/content/robots/) |
+| Unlocks | [Artemis](/content/robots/#artemis) |
 | Parent node | [Standard medium LCL laser](/content/techtree/nodes/standard-medium-laser/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

@@ -8,12 +8,12 @@ description: "Research node that unlocks Arbalest (Nuimqol (faction) category)."
 
 # Arbalest (research node)
 
-This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Arbalest](/content/robots/).
+This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research tree unlocks [Arbalest](/content/robots/#arbalest).
 
 |  |  |
 |---|---|
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
-| Unlocks | [Arbalest](/content/robots/) |
+| Unlocks | [Arbalest](/content/robots/#arbalest) |
 | Parent node | [Nuimtec-ROWO light EM-gun](/content/techtree/nodes/named1-small-railgun/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | [ext_research_nuimqol](/content/extensions/) |

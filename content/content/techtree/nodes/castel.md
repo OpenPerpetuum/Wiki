@@ -8,12 +8,12 @@ description: "Research node that unlocks Castel (Pelistal (faction) category)."
 
 # Castel (research node)
 
-This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Castel](/content/robots/).
+This node of the [Pelistal (faction)](/content/techtree/groups/pelistal/) research tree unlocks [Castel](/content/robots/#castel).
 
 |  |  |
 |---|---|
 | Category | [Pelistal (faction)](/content/techtree/groups/pelistal/) |
-| Unlocks | [Castel](/content/robots/) |
+| Unlocks | [Castel](/content/robots/#castel) |
 | Parent node | [Standard light missile launcher](/content/techtree/nodes/standard-rocket-launcher/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

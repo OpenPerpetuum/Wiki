@@ -8,12 +8,12 @@ description: "Research node that unlocks Seth (Thelodica (faction) category)."
 
 # Seth (research node)
 
-This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Seth](/content/robots/).
+This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) research tree unlocks [Seth](/content/robots/#seth).
 
 |  |  |
 |---|---|
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
-| Unlocks | [Seth](/content/robots/) |
+| Unlocks | [Seth](/content/robots/#seth) |
 | Parent node | [Tertzer medium HCL laser](/content/techtree/nodes/named1-longrange-medium-laser/) |
 | Unlocks next | [Onyx](/content/techtree/nodes/onyx/) |
 | Enabler extension | – |

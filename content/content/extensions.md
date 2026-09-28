@@ -10,6 +10,17 @@ description: "The full extension (skill) tree: every extension, its rank, level-
 
 Extensions are per-character skills (see [Research](/features/research/) in the features section). **Price** is the level-1 credit cost; higher levels cost EP only. **Prerequisites** list the extensions (and minimum level) that must be learned first.
 
+<a id="tree"></a>
+
+## Extension tree
+
+The whole tree at a glance: one column per rank (left to right), rows grouped by category, and an arrow for every prerequisite (hover an arrow for the required level). **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
+
+<div class="map-zoom-wrap">
+<button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
+<img class="zoommap" src="/extensions-tree.svg" alt="Extension tree: 242 extensions, 156 prerequisite edges" loading="lazy">
+</div>
+
 | Extension | Category | Rank | Level-1 price | Bonus | Target attribute | Primary attribute | Secondary attribute | Prerequisites | State |
 |---|---|---|---|---|---|---|---|---|---|
 | ext_corporation_voting | extcat_corporation_management | 1 | 5000 | 1 | – | attributeF | attributeE | – | inactive |

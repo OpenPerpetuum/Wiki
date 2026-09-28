@@ -14,6 +14,7 @@ the basic plant mix.
 |---|---|
 | Zone id | 0 |
 | Type | PvE (protected) |
+| Protection | [Alpha](/zones/protection/) — protected, PvP disabled |
 | Size | 2048 × 2048 tiles |
 | Fertility | 20 |
 | Plant rule set | 0 — 15 species (basic "tm pve" mix) |
@@ -24,9 +25,17 @@ the basic plant mix.
 
 | Material | Nodes | Max tiles/node | Total per node | Min threshold |
 |---|---|---|---|---|
-| titan | 7 | 1000 | 15,000,000 | 0.5 |
-| crude | 7 | 1257 | 30,000,000 | 0.5 |
-| liquizit | 7 | 1000 | 15,000,000 | 0.5 |
+| [titan](/content/ores/#titan) | 7 | 1000 | 15,000,000 | 0.5 |
+| [crude](/content/ores/#crude) | 7 | 1257 | 30,000,000 | 0.5 |
+| [liquizit](/content/ores/#liquizit) | 7 | 1000 | 15,000,000 | 0.5 |
+
+```mermaid
+pie showData
+    title Steady-state ore stock by type (million units)
+    "titan" : 105
+    "crude" : 210
+    "liquizit" : 105
+```
 
 Notes that stand out:
 
@@ -39,8 +48,8 @@ Notes that stand out:
 - `minthreshold` 0.5 means a tile is only usable if the node's noise fill there is at
   least half of its maximum — the edges of each blob are thin.
 
-Per-type yields (what one unit of each ore refines into) are in
-[Ores](/content/ores/).
+Per-type yields (what one unit of each ore refines into, and the node-generation
+formulas behind the numbers above) are in [Ores](/content/ores/).
 
 ## Plant mix
 
@@ -63,6 +72,16 @@ Full per-species rules (growRate, fruit, health) are in [Plants](/content/plants
   electroplant/iron tree/rustbush/slimeroot) appear in later zones.
 - Because the zone is protected, PvP risk is the only thing missing from the
   gathering loop (see [movement](/features/movement/) for zone entry).
+
+
+## Teleport map
+
+![Teleport columns in New Virginia](/zonemaps/zone-tm.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
+the column is currently switched off), the landing spots of teleports arriving from other
+zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
+tile coordinates the server records.
 
 <!-- Developer notes: zones row id 0 (zonetype 1 = PvE, protected 1, fertility 20,
      plantruleset 0); mineralconfigs 3 rows (titan/crude/liquizit, 7 nodes each);

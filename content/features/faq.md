@@ -29,9 +29,23 @@ you get determines your reward level, which decides which reward tiers you
 receive on exit — a level-1 exit gets the first tier only, a full completion
 gets all four.
 
+```mermaid
+flowchart LR
+    T["Finish (or skip)\nthe tutorial"] --> L{"Reward level\n1–4, by how far you got"}
+    L --> X{"Pick an exit"}
+    X -->|Pelistal| A["Castel, 4 missile launchers"]
+    X -->|Nuimqol| B["Yagel, 3 railguns"]
+    X -->|Thelodica| C["Prometheus, 4 lasers"]
+    X -->|Industrial| D["Argano, drills + harvester"]
+    A --> R["+ starter kit: autocannons, armor,\nutility modules, 2nd frame"]
+    B --> R
+    C --> R
+    D --> R
+```
+
 ## What does each exit give me?
 
-Your choice determines three things: the **starter robot** you fly, the **reward
+Your choice determines three things: the **starter robot** you pilot, the **reward
 items** you receive, and the **default corporation and starting skills** you get.
 Everything else — any skill, any robot, any faction's gear — can be trained and
 bought later with EP and NIC, so the choice is a starting kit, not a lock-in.
@@ -61,7 +75,7 @@ Nearly any activity earns EP for skills and NIC for gear:
 New to open-world PvP? Read the [survival notes in Getting
 started](/features/getting-started/#survival) first.
 
-## Can I return to the tutorial island?
+## Can I revisit the training zone?
 
 No. The training zone is for new characters and there is no re-entry once you've
 left it. The Rookie Checklist stays available in the Help menu if you want to

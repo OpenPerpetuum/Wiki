@@ -101,7 +101,7 @@ public static class ShopPage
     private static readonly Dictionary<string, string> CategoryBlurb = new(StringComparer.Ordinal)
     {
         ["Ammo"] = "Weapon ammo and scanner/industrial charges, in fixed stacks.",
-        ["Bots"] = "Ready-to-fly robots and named fits, straight from the vendor.",
+        ["Bots"] = "Ready-to-pilot robots and named fits, straight from the vendor.",
         ["Paint"] = "Robot paint and tint items.",
         ["Modules & equipment"] = "Fitted modules: weapons, armor, shields, energy and industrial equipment.",
         ["Remote commands"] = "Items that control your robots remotely.",
@@ -134,7 +134,7 @@ public static class ShopPage
             if (!defs.TryGetValue(def, out var d)) return null;
             var (name, enabled, hidden) = d;
             if (!enabled || hidden) return null;
-            if (name.EndsWith("_bot")) return "/content/robots/";
+            if (name.EndsWith("_bot")) return Md.RobotAnchorUrl(name);
             if (name.StartsWith("def_npc_") || name.EndsWith("_bot_pr")) return null;
             var flags = cats.GetValueOrDefault(def, 0);
             if ((flags & Flags.CfOre) == Flags.CfOre) return null;
@@ -230,7 +230,7 @@ public static class ShopPage
             if (!defs.TryGetValue(def, out var d)) return null;
             var (name, enabled, hidden) = d;
             if (!enabled || hidden) return null;
-            if (name.EndsWith("_bot")) return "/content/robots/";
+            if (name.EndsWith("_bot")) return Md.RobotAnchorUrl(name);
             if (name.StartsWith("def_npc_") || name.EndsWith("_bot_pr")) return null;
             var flags = cats.GetValueOrDefault(def, 0);
             if ((flags & Flags.CfOre) == Flags.CfOre) return null;

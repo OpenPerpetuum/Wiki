@@ -8,91 +8,91 @@ description: "Every zone: type, protection, fertility, size, plant species count
 
 # Zone index
 
-All zones on the server. **Type**: PvE (peaceful), PvP (open combat), Training, or Stronghold. **Fertility** is the zone's plant coverage target (percent of ground tiles). **Ore nodes** is the sum of `maxnodes` across the zone's `mineralconfigs` rows — the total number of ore nodes the zone maintains per material type combined. Zones without an ore configuration (–) have no ore layers (arenas, training zones, strongholds, gamma tc zones). See [Generation](/zones/generation/) for how these numbers are used. The binary layer files that make up a zone are documented in [Zone files](/formats/zone-files/).
+All zones on the server — the name links to the zone's own page. **Type**: PvE (peaceful), PvP (open combat), Training, or Stronghold. **Fertility** is the zone's plant coverage target (percent of ground tiles). **Ore nodes** is the sum of `maxnodes` across the zone's `mineralconfigs` rows — the total number of ore nodes the zone maintains per material type combined. Zones without an ore configuration (–) have no ore layers (arenas, training zones, strongholds, gamma tc zones). See [Generation](/zones/generation/) for how these numbers are used. The *Protection* column is the zone's [protection level](/zones/protection/) (alpha = protected, beta = open with standard terrain, gamma = open and terraformable). The binary layer files that make up a zone are documented in [Zone files](/formats/zone-files/).
 
 | Id | Name | Type | Protection | Fertility | Size | Plant species | Ore materials | Ore nodes (total) |
 |---|---|---|---|---|---|---|---|---|
-| 0 | New Virginia (zone_TM) | PvE | protected | 20 | 2048×2048 | 15 | 3 | 21 |
-| 1 | Attalica (zone_ICS) | PvE | protected | 20 | 2048×2048 | 15 | 5 | 35 |
-| 2 | Daoden (zone_ASI) | PvP | open | 20 | 2048×2048 | 19 | 8 | 64 |
-| 3 | Domhalarn (zone_ICS_A_real) | PvP | open | 20 | 2048×2048 | 17 | 7 | 54 |
-| 4 | Hokkogaros (zone_ASI_A_real) | PvP | open | 20 | 2048×2048 | 17 | 7 | 54 |
-| 5 | Norhoop (zone_TM_A_real) | PvP | open | 20 | 2048×2048 | 17 | 7 | 54 |
-| 6 | Tellesis (zone_ICS_pve) | PvE | protected | 20 | 2048×2048 | 14 | 5 | 35 |
-| 7 | Shinjalar (zone_ASI_pve) | PvE | protected | 20 | 2048×2048 | 14 | 5 | 35 |
-| 8 | Hershfield (zone_TM_pve) | PvE | protected | 20 | 2048×2048 | 15 | 6 | 42 |
-| 9 | Kentagura (zone_ASI_pvp) | PvP | open | 20 | 2048×2048 | 17 | 7 | 67 |
-| 10 | Alsbale (zone_TM_pvp) | PvP | open | 20 | 2048×2048 | 17 | 7 | 67 |
-| 11 | Novastrov (zone_ICS_pvp) | PvP | open | 20 | 2048×2048 | 17 | 7 | 67 |
-| 16 | Omega (zone_pvp_arena) | Stronghold | protected | 20 | 2048×2048 | 10 | – | – |
-| 20 | Davis Barrier (zone_tm_g_1) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 21 | Gravehills (zone_tm_g_2) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 22 | Emperth (zone_tm_g_3) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 23 | Guthraw (zone_tm_g_4) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 24 | Landers Bridge (zone_tm_g_5) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 25 | Solarfield (zone_tm_g_6) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 26 | Blackpoint (zone_tm_g_7) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 27 | Greensward (zone_tm_g_8) | PvP | open | 20 | 2048×2048 | 17 | 6 | 52 |
-| 28 | Novaya Trava (zone_ics_g_1) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 29 | Neuhorn (zone_ics_g_2) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 30 | Kraslovsk (zone_ics_g_3) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 31 | Langruhm (zone_ics_g_4) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 32 | Berger's Island (zone_ics_g_5) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 33 | Clandrais (zone_ics_g_6) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 34 | Bleumon (zone_ics_g_7) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 35 | Chalydor (zone_ics_g_8) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 36 | Rhaoshan (zone_asi_g_1) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 37 | Changowa (zone_asi_g_2) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 38 | Mhenosha (zone_asi_g_3) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 39 | Xiantor (zone_asi_g_4) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 40 | Nirayon (zone_asi_g_5) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 41 | Shuzhon (zone_asi_g_6) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 42 | Imidero (zone_asi_g_7) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 43 | Yuraion Ro (zone_asi_g_8) | PvP | open | 20 | 2048×2048 | 17 | 7 | 55 |
-| 45 | Virtual Training Grounds (zone_training) | Training | protected | 20 | 1024×1024 | 15 | – | – |
-| 50 | New Virginia (zone_TM) | Training | protected | 20 | 1024×1024 | 15 | – | – |
-| 51 | New Virginia (zone_TM) | Training | protected | 20 | 1024×1024 | 15 | – | – |
-| 70 | zone_strghld_70 | Stronghold | protected | 20 | 512×512 | 10 | – | – |
-| 71 | zone_strghld_71 | Stronghold | protected | 20 | 256×256 | 10 | – | – |
-| 72 | zone_strghld_72 | Stronghold | protected | 20 | 256×256 | 10 | – | – |
-| 100 | zone_gamma_tc_z100 | PvP | open | 15 | 256×256 | 12 | – | – |
-| 101 | zone_gamma_tc_z101 | PvP | open | 15 | 256×256 | 12 | – | – |
-| 102 | zone_gamma_tc_z102 | PvP | open | 15 | 256×256 | 12 | – | – |
-| 103 | zone_gamma_tc_z103 | PvP | open | 15 | 256×256 | 12 | – | – |
-| 104 | zone_gamma_tc_z104 | PvP | open | 15 | 256×256 | 12 | – | – |
-| 105 | zone_gamma_tc_z105 | PvP | open | 15 | 256×256 | 12 | – | – |
-| 106 | zone_gamma_z106 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 107 | zone_gamma_z107 | PvP | open | 15 | 2048×2048 | 16 | 7 | 34 |
-| 108 | zone_gamma_z108 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 109 | zone_gamma_z109 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 110 | zone_gamma_z110 | PvP | open | 15 | 2048×2048 | 15 | 7 | 47 |
-| 111 | zone_gamma_z111 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 112 | zone_gamma_z112 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 113 | zone_gamma_z113 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 114 | zone_gamma_z114 | PvP | open | 15 | 2048×2048 | 15 | 7 | 47 |
-| 115 | zone_gamma_z115 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 116 | zone_gamma_z116 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 117 | zone_gamma_z117 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 118 | zone_gamma_z118 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 119 | zone_gamma_z119 | PvP | open | 15 | 2048×2048 | 15 | 7 | 47 |
-| 120 | zone_gamma_z120 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 121 | zone_gamma_z121 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 122 | zone_gamma_z122 | PvP | open | 15 | 2048×2048 | 16 | 7 | 34 |
-| 123 | zone_gamma_z123 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 124 | zone_gamma_z124 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 125 | zone_gamma_z125 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 126 | zone_gamma_z126 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 127 | zone_gamma_z127 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 128 | zone_gamma_z128 | PvP | open | 15 | 2048×2048 | 16 | 7 | 34 |
-| 129 | zone_gamma_z129 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 130 | zone_gamma_z130 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 131 | zone_gamma_z131 | PvP | open | 15 | 2048×2048 | 15 | 7 | 47 |
-| 132 | zone_gamma_z132 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 133 | zone_gamma_z133 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 134 | zone_gamma_z134 | PvP | open | 15 | 2048×2048 | 16 | 7 | 34 |
-| 135 | zone_gamma_z135 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 136 | zone_gamma_z136 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 137 | zone_gamma_z137 | PvP | open | 15 | 2048×2048 | 17 | 7 | 57 |
-| 138 | zone_gamma_z138 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 139 | zone_gamma_z139 | PvP | open | 15 | 2048×2048 | 17 | 7 | 44 |
-| 140 | zone_gamma_z140 | PvP | open | 15 | 2048×2048 | 16 | 7 | 34 |
+| 0 | [New Virginia](/zones/zone-tm/) | PvE | [protected](/zones/protection/) | 20 | 2048×2048 | 15 | 3 | 21 |
+| 1 | [Attalica](/zones/zone-ics/) | PvE | [protected](/zones/protection/) | 20 | 2048×2048 | 15 | 5 | 35 |
+| 2 | [Daoden](/zones/zone-asi/) | PvP | [open (beta)](/zones/protection/) | 20 | 2048×2048 | 19 | 8 | 64 |
+| 3 | [Domhalarn](/zones/zone-ics-a-real/) | PvP | [open (beta)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 54 |
+| 4 | [Hokkogaros](/zones/zone-asi-a-real/) | PvP | [open (beta)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 54 |
+| 5 | [Norhoop](/zones/zone-tm-a-real/) | PvP | [open (beta)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 54 |
+| 6 | [Tellesis](/zones/zone-ics-pve/) | PvE | [protected](/zones/protection/) | 20 | 2048×2048 | 14 | 5 | 35 |
+| 7 | [Shinjalar](/zones/zone-asi-pve/) | PvE | [protected](/zones/protection/) | 20 | 2048×2048 | 14 | 5 | 35 |
+| 8 | [Hershfield](/zones/zone-tm-pve/) | PvE | [protected](/zones/protection/) | 20 | 2048×2048 | 15 | 6 | 42 |
+| 9 | [Kentagura](/zones/zone-asi-pvp/) | PvP | [open (beta)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 67 |
+| 10 | [Alsbale](/zones/zone-tm-pvp/) | PvP | [open (beta)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 67 |
+| 11 | [Novastrov](/zones/zone-ics-pvp/) | PvP | [open (beta)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 67 |
+| 16 | [Omega](/zones/zone-pvp-arena/) | Stronghold | [protected](/zones/protection/) | 20 | 2048×2048 | 10 | – | – |
+| 20 | [Davis Barrier](/zones/zone-tm-g-1/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 21 | [Gravehills](/zones/zone-tm-g-2/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 22 | [Emperth](/zones/zone-tm-g-3/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 23 | [Guthraw](/zones/zone-tm-g-4/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 24 | [Landers Bridge](/zones/zone-tm-g-5/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 25 | [Solarfield](/zones/zone-tm-g-6/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 26 | [Blackpoint](/zones/zone-tm-g-7/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 27 | [Greensward](/zones/zone-tm-g-8/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 6 | 52 |
+| 28 | [Novaya Trava](/zones/zone-ics-g-1/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 29 | [Neuhorn](/zones/zone-ics-g-2/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 30 | [Kraslovsk](/zones/zone-ics-g-3/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 31 | [Langruhm](/zones/zone-ics-g-4/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 32 | [Berger's Island](/zones/zone-ics-g-5/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 33 | [Clandrais](/zones/zone-ics-g-6/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 34 | [Bleumon](/zones/zone-ics-g-7/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 35 | [Chalydor](/zones/zone-ics-g-8/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 36 | [Rhaoshan](/zones/zone-asi-g-1/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 37 | [Changowa](/zones/zone-asi-g-2/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 38 | [Mhenosha](/zones/zone-asi-g-3/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 39 | [Xiantor](/zones/zone-asi-g-4/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 40 | [Nirayon](/zones/zone-asi-g-5/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 41 | [Shuzhon](/zones/zone-asi-g-6/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 42 | [Imidero](/zones/zone-asi-g-7/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 43 | [Yuraion Ro](/zones/zone-asi-g-8/) | PvP | [open (gamma)](/zones/protection/) | 20 | 2048×2048 | 17 | 7 | 55 |
+| 45 | [Virtual Training Grounds](/zones/zone-training/) | Training | [protected](/zones/protection/) | 20 | 1024×1024 | 15 | – | – |
+| 50 | [New Virginia](/zones/zone-tm/) | Training | [protected](/zones/protection/) | 20 | 1024×1024 | 15 | – | – |
+| 51 | [New Virginia](/zones/zone-tm/) | Training | [protected](/zones/protection/) | 20 | 1024×1024 | 15 | – | – |
+| 70 | [zone_strghld_70](/zones/zone-strghld-70/) | Stronghold | [protected](/zones/protection/) | 20 | 512×512 | 10 | – | – |
+| 71 | [zone_strghld_71](/zones/zone-strghld-71/) | Stronghold | [protected](/zones/protection/) | 20 | 256×256 | 10 | – | – |
+| 72 | [zone_strghld_72](/zones/zone-strghld-72/) | Stronghold | [protected](/zones/protection/) | 20 | 256×256 | 10 | – | – |
+| 100 | [zone_gamma_tc_z100](/zones/zone-gamma-tc-z100/) | PvP | [open (beta)](/zones/protection/) | 15 | 256×256 | 12 | – | – |
+| 101 | [zone_gamma_tc_z101](/zones/zone-gamma-tc-z101/) | PvP | [open (beta)](/zones/protection/) | 15 | 256×256 | 12 | – | – |
+| 102 | [zone_gamma_tc_z102](/zones/zone-gamma-tc-z102/) | PvP | [open (beta)](/zones/protection/) | 15 | 256×256 | 12 | – | – |
+| 103 | [zone_gamma_tc_z103](/zones/zone-gamma-tc-z103/) | PvP | [open (beta)](/zones/protection/) | 15 | 256×256 | 12 | – | – |
+| 104 | [zone_gamma_tc_z104](/zones/zone-gamma-tc-z104/) | PvP | [open (beta)](/zones/protection/) | 15 | 256×256 | 12 | – | – |
+| 105 | [zone_gamma_tc_z105](/zones/zone-gamma-tc-z105/) | PvP | [open (beta)](/zones/protection/) | 15 | 256×256 | 12 | – | – |
+| 106 | [zone_gamma_z106](/zones/zone-gamma-z106/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 107 | [zone_gamma_z107](/zones/zone-gamma-z107/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 16 | 7 | 34 |
+| 108 | [zone_gamma_z108](/zones/zone-gamma-z108/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 109 | [zone_gamma_z109](/zones/zone-gamma-z109/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 110 | [zone_gamma_z110](/zones/zone-gamma-z110/) | PvP | [open (beta)](/zones/protection/) | 15 | 2048×2048 | 15 | 7 | 47 |
+| 111 | [zone_gamma_z111](/zones/zone-gamma-z111/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 112 | [zone_gamma_z112](/zones/zone-gamma-z112/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 113 | [zone_gamma_z113](/zones/zone-gamma-z113/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 114 | [zone_gamma_z114](/zones/zone-gamma-z114/) | PvP | [open (beta)](/zones/protection/) | 15 | 2048×2048 | 15 | 7 | 47 |
+| 115 | [zone_gamma_z115](/zones/zone-gamma-z115/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 116 | [zone_gamma_z116](/zones/zone-gamma-z116/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 117 | [zone_gamma_z117](/zones/zone-gamma-z117/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 118 | [zone_gamma_z118](/zones/zone-gamma-z118/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 119 | [zone_gamma_z119](/zones/zone-gamma-z119/) | PvP | [open (beta)](/zones/protection/) | 15 | 2048×2048 | 15 | 7 | 47 |
+| 120 | [zone_gamma_z120](/zones/zone-gamma-z120/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 121 | [zone_gamma_z121](/zones/zone-gamma-z121/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 122 | [zone_gamma_z122](/zones/zone-gamma-z122/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 16 | 7 | 34 |
+| 123 | [zone_gamma_z123](/zones/zone-gamma-z123/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 124 | [zone_gamma_z124](/zones/zone-gamma-z124/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 125 | [zone_gamma_z125](/zones/zone-gamma-z125/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 126 | [zone_gamma_z126](/zones/zone-gamma-z126/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 127 | [zone_gamma_z127](/zones/zone-gamma-z127/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 128 | [zone_gamma_z128](/zones/zone-gamma-z128/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 16 | 7 | 34 |
+| 129 | [zone_gamma_z129](/zones/zone-gamma-z129/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 130 | [zone_gamma_z130](/zones/zone-gamma-z130/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 131 | [zone_gamma_z131](/zones/zone-gamma-z131/) | PvP | [open (beta)](/zones/protection/) | 15 | 2048×2048 | 15 | 7 | 47 |
+| 132 | [zone_gamma_z132](/zones/zone-gamma-z132/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 133 | [zone_gamma_z133](/zones/zone-gamma-z133/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 134 | [zone_gamma_z134](/zones/zone-gamma-z134/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 16 | 7 | 34 |
+| 135 | [zone_gamma_z135](/zones/zone-gamma-z135/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 136 | [zone_gamma_z136](/zones/zone-gamma-z136/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 137 | [zone_gamma_z137](/zones/zone-gamma-z137/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 57 |
+| 138 | [zone_gamma_z138](/zones/zone-gamma-z138/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 139 | [zone_gamma_z139](/zones/zone-gamma-z139/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 17 | 7 | 44 |
+| 140 | [zone_gamma_z140](/zones/zone-gamma-z140/) | PvP | [open (gamma)](/zones/protection/) | 15 | 2048×2048 | 16 | 7 | 34 |

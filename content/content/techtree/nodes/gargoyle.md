@@ -8,12 +8,12 @@ description: "Research node that unlocks Gargoyle (Industrial category)."
 
 # Gargoyle (research node)
 
-This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Gargoyle](/content/robots/).
+This node of the [Industrial](/content/techtree/groups/indy/) research tree unlocks [Gargoyle](/content/robots/#gargoyle).
 
 |  |  |
 |---|---|
 | Category | [Industrial](/content/techtree/groups/indy/) |
-| Unlocks | [Gargoyle](/content/robots/) |
+| Unlocks | [Gargoyle](/content/robots/#gargoyle) |
 | Parent node | [Standard medium harvester](/content/techtree/nodes/standard-medium-harvester/) |
 | Unlocks next | – (end of line) |
 | Enabler extension | – |

@@ -13,6 +13,19 @@ use structures. They are how you progress, earn rewards, and drive a lot of zone
 > UI locations follow the [client UI overview](/features/ui/). Mechanics below are confirmed against
 > the server.
 
+```mermaid
+flowchart TD
+    A{"Where do you start?"} -->|docked| B["From your current base"]
+    A -->|in a zone| C["At an explicit location"]
+    A -->|field terminal| D["Zone-tied start"]
+    B --> E["Mission runs\nradar shows the marked area,\ndeadline ticks down"]
+    C --> E
+    D --> E
+    E --> F{"Outcome"}
+    F -->|objectives done in the marked area, in time| G["Success: NIC + relation with the contractor"]
+    F -->|deadline missed / failed| H["Failure: the mission is lost"]
+```
+
 ## Starting a mission
 
 You start a mission by choosing a **category** and a **level** (levels are clamped to a
@@ -48,8 +61,8 @@ will cost you standing.
     (a big package through dangerous ground — escort it).
 - There is no such thing as a **safe mission**: if you see enemies on the route and
   lack the gear to defend yourself, ask for help before you lose everything on the way.
-- **Objectives only count in the marked area** — the mission map shows it as a red
-  circle on the radar; killing or scanning elsewhere does nothing. Miss the deadline
+- **Objectives only count in the marked area** — the mission map marks it with a
+  red circle on the radar; kills and scans elsewhere count for nothing. Miss the deadline
   and the mission fails instantly.
 - **Private transport contracts** — a Syndicate-run system (second tab of the mission
   window) where players post containers for other players to haul between terminals,

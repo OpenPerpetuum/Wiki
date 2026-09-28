@@ -17,7 +17,7 @@ and **deployables**. This page explains how each works and how the collection lo
 
 ## The basic loop
 
-1. **Undock** and fly into a zone (see [movement](/features/movement/)).
+1. **Undock** and move into a zone (see [movement](/features/movement/)).
 2. **Scan** the area with your robot's scanner module.
 3. **Collect** — harvest ore, pick plant fruit, or strip deployables.
 4. **Dock** and deliver your cargo to a base container.
@@ -30,6 +30,18 @@ and **deployables**. This page explains how each works and how the collection lo
   personal mineral-scan list.
 - Your stored scan results can be **listed, moved, deleted, or converted into items**
   (the "mineral scan" items used for processing/production).
+```mermaid
+flowchart TD
+    A["Undock and move to a deposit\n(scan results or known node)"] --> T{"Ore type"}
+    T -->|solid| S["Target and mine each tile\nof the field one by one"]
+    T -->|liquid| L["Mine continuously from the whole\nfield as long as cargo lasts"]
+    S --> F["Node depletes tile by tile"]
+    L --> F
+    F --> R{"Node below its threshold?"}
+    R -->|yes| G["Node is removed; the zone\nregenerates a new one over time"]
+    R -->|no| A
+```
+
 - Deposits are **finite**: each node holds a limited total amount. When a node is
   mined below its threshold it is removed, and the zone **regenerates new nodes** over
   time up to its configured maximum. How nodes are placed and how plant populations
@@ -75,6 +87,16 @@ uses them) is in [Formats → Plant fields](/formats/plant-fields/).
   ground is under-planted for its fertility level, new plants sprout; the type chosen
   weighs each species' `fertility`, and `spreading` biases new growth toward existing
   clusters.
+```mermaid
+flowchart TD
+    A["Find a plant (scan or sight)"] --> G{"Growth stage"}
+    G -->|immature| W["Not harvestable yet —\nwait out its growRate cycles"]
+    W --> G
+    G -->|fruiting stage| H["Harvest: fruit x fruitAmount\ninto your cargo"]
+    H --> Z["Zone keeps the population toward\nthe fertility target: new plants sprout,\nbiased toward existing clusters"]
+    Z --> A
+```
+
 - Some plants are **player-seeded** (they only exist in player gardens) and some are
   **unprotected-zone only**.
 - Plants can be **damaged and killed**; their `health` and `damageScale` determine how
@@ -85,6 +107,13 @@ uses them) is in [Formats → Plant fields](/formats/plant-fields/).
 Deployables are placed objects in a zone (see [Power base stations](/features/pbs/) for the
 structure side). Some can be **stripped** for materials. Stripping rules and per-type
 yields are in the generated tables: [Content → Ores](/content/ores/) and [Content → Plants](/content/plants/).
+
+```mermaid
+flowchart LR
+    A["Locate a deployable\n(structure / placeable object)"] --> B["Strip it for materials\n(per-type yields in the generated tables)"]
+    B --> C["Materials to your cargo"]
+    C --> D["Object depleted or destroyed"]
+```
 
 ## Kiosks
 
