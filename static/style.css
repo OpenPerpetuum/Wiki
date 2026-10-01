@@ -259,6 +259,8 @@ pre code { background: none; padding: 0; }
 }
 .sidenav .nav-group-link {
     display: flex; align-items: center; gap: 0.5rem;
+    flex: 1; /* span the row (incl. the gap before the caret) so the active
+                outline covers the full entry width */
     padding: 0.2rem 0.6rem; margin: -0.2rem -0.6rem 0;
     border-radius: 6px; text-decoration: none;
 }

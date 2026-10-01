@@ -55,6 +55,32 @@ test('zones map: top-level World header is active', async ({ page, baseURL }) =>
   expect(await page.locator('.sidenav a.active').textContent()).toBe('World');
 });
 
+test('world anchor click: the anchor itself is highlighted, not World', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/map/`);
+  await page.locator('.sidenav a[href="/zones/map/#training"]').click();
+  // the highlight follows the hashchange event, which fires asynchronously
+  await page.waitForFunction(
+    () => {
+      const actives = document.querySelectorAll('.sidenav a.active');
+      return actives.length === 1 && actives[0].getAttribute('href') === '/zones/map/#training';
+    },
+    null,
+    { timeout: 5000 }
+  );
+  const actives = page.locator('.sidenav a.active');
+  expect(await actives.count()).toBe(1);
+  expect(await actives.getAttribute('href')).toBe('/zones/map/#training');
+});
+
+test('active selection spans the row up to the caret button', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/map/`); // World header active
+  const head = page.locator('.sidenav .nav-group-head:has(.active)');
+  const lb = await head.locator('a').boundingBox();
+  const cb = await head.locator('.nav-caret').boundingBox();
+  // only the flex gap (0.5rem) may remain between the selection and the caret
+  expect(cb.x - (lb.x + lb.width)).toBeLessThan(12);
+});
+
 test('item-shop sub-list expands on demand', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/features/market/`);
   const caret = page.locator(

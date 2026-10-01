@@ -451,30 +451,48 @@
     (function () {
         var path = document.location.pathname;
         function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
-        // left menu: longest matching entry — the page itself, or the deepest
-        // menu entry that is an ancestor of it (so generated sub-pages like an
-        // item page highlight "Content", a shop category highlights its entry).
-        var best = null, bestLen = -1;
-        document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
-            var href = a.getAttribute("href");
-            if (!href || href === "/") return;
-            var h = href[href.length - 1] === "/" ? href : href + "/";
-            var hit = h === norm(path) || (path.startsWith(h) && path.length > h.length);
-            if (hit && h.length > bestLen) { best = a; bestLen = h.length; }
-        });
-        if (best) best.classList.add("active");
+        // Left menu selection: same-page anchors (e.g. /zones/map/#training)
+        // use an exact full-href match (path + hash), so the selected anchor
+        // is highlighted instead of its parent entry (World); otherwise the
+        // longest matching entry wins — the page itself, or the deepest menu
+        // entry that is an ancestor of it (so a generated sub-page like an
+        // item page highlights "Content", a shop category its entry).
+        function selectActive() {
+            var hash = document.location.hash;
+            var best = null;
+            if (hash.length > 1) {
+                document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
+                    if (a.getAttribute("href") === path + hash) best = a;
+                });
+            }
+            if (!best) {
+                var bestLen = -1;
+                document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
+                    var href = a.getAttribute("href");
+                    if (!href || href === "/") return;
+                    var h = href[href.length - 1] === "/" ? href : href + "/";
+                    var hit = h === norm(path) || (path.startsWith(h) && path.length > h.length);
+                    if (hit && h.length > bestLen) { best = a; bestLen = h.length; }
+                });
+            }
+            document.querySelectorAll(".sidenav a.active").forEach(function (a) {
+                a.classList.remove("active");
+            });
+            if (best) best.classList.add("active");
+        }
+        selectActive();
+        // same-page anchor clicks change only the hash (no page load) —
+        // re-run the selection so the clicked anchor is highlighted
+        window.addEventListener("hashchange", selectActive);
         // Keep the browser's own scroll restoration on: navigating away and
         // back must restore the page position (e.g. back from a zone page).
         try { if (window.history && history.scrollRestoration) history.scrollRestoration = "auto"; } catch (e) {}
-        // same-page anchors (e.g. /zones/map/#training): scroll and highlight.
-        // Menu sub-anchors carry data-mapanchor so a plain page load (or the
-        // back button) does not re-jump to the section and does not keep the
-        // hash in the address bar.
+        // same-page anchors (e.g. /zones/map/#training): on a fresh menu click
+        // the browser scrolls to the section natively; a plain page load (or
+        // the back button) of a URL that still carries a menu sub-anchor must
+        // NOT re-jump — the browser restores the scroll position instead. The
+        // highlight for the current hash is handled by selectActive() above.
         var hash = document.location.hash;
-        // A plain load (or the back button) of a page whose URL still carries a
-        // menu sub-anchor (#training, #beta, ...) must NOT re-jump to that
-        // section: the browser restores the scroll position instead. Only a
-        // fresh click on the menu entry jumps.
         var freshAnchorClick = false;
         try {
             var entry = document.querySelector('.sidenav a[data-mapanchor][href$="' + hash + '"]');
@@ -484,12 +502,6 @@
             var target = document.getElementById(hash.substring(1));
             if (target) {
                 target.scrollIntoView();
-                if (target.id === "training" || target.id === "starter-islands"
-                        || target.id === "beta" || target.id === "t0" || target.id === "t1"
-                        || target.id === "t2" || target.id === "t3" || target.id === "t4") {
-                    var sub = document.querySelector('.sidenav a[href$="/zones/map/#' + target.id + '"]');
-                    if (sub) sub.classList.add("active");
-                }
             }
         }
         // bottom menu: section
