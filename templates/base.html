@@ -432,6 +432,7 @@
         // with their parent entry); plain links count by exact or prefix
         // path match (sub-pages like /content/shop/ammo/ under /content/shop/).
         function linkInside(href) {
+            var hash = document.location.hash;
             var i = href.indexOf("#");
             var h = i === -1 ? href : href.slice(0, i);
             if (h.length < 2) return false;
@@ -440,11 +441,18 @@
             if (hash) return (linkHash === hash || !linkHash) && h === norm(path);
             return !linkHash && (h === norm(path) || (h.length < path.length && path.indexOf(h) === 0));
         }
-        Array.prototype.slice.call(document.querySelectorAll(".sidenav li li.nav-has-sub")).forEach(function (el) {
-            var inside = Array.prototype.slice.call(el.querySelectorAll("a[href]"))
-                .some(function (a) { return linkInside(a.getAttribute("href")); });
-            setCollapsed(el, !inside);
-        });
+        // Open the 2nd-level sub-list that contains the current page (the rest
+        // stay collapsed). Re-run on same-page hash navigation — that is not
+        // a page load, so load-only code would miss it.
+        function syncLists() {
+            Array.prototype.slice.call(document.querySelectorAll(".sidenav li li.nav-has-sub")).forEach(function (el) {
+                var inside = Array.prototype.slice.call(el.querySelectorAll("a[href]"))
+                    .some(function (a) { return linkInside(a.getAttribute("href")); });
+                setCollapsed(el, !inside);
+            });
+        }
+        syncLists();
+        window.addEventListener("hashchange", syncLists);
     })();
     // Current-page selection: bold + outlined in both the left menu and the
     // bottom menu.
@@ -533,13 +541,20 @@
         var saved = null;
         try { saved = sessionStorage.getItem(KEY); } catch (e) {}
         if (saved !== null) nav.scrollTop = parseInt(saved, 10) || 0;
-        var active = nav.querySelector("a.active");
-        if (active) {
+        // Keep the highlighted entry visible: only scroll when it is actually
+        // off-screen (a reset scroll must not hide the current category). On
+        // same-page hash navigation the saved position is kept as-is and the
+        // entry is re-centered only when it is not visible at that position.
+        function centerActive() {
+            var active = nav.querySelector("a.active");
+            if (!active) return;
             var nr = nav.getBoundingClientRect();
             var ar = active.getBoundingClientRect();
             if (ar.top < nr.top || ar.bottom > nr.bottom)
                 nav.scrollTop += (ar.top - nr.top) - (nr.height / 2) + (ar.height / 2);
         }
+        centerActive();
+        window.addEventListener("hashchange", centerActive);
         var t = null;
         nav.addEventListener("scroll", function () {
             clearTimeout(t);

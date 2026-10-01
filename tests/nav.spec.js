@@ -125,3 +125,41 @@ test('zone data page: Zones sub-list auto-opens', async ({ page, baseURL }) => {
   expect(await zonesSub.locator('a:visible').count()).toBe(2);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Zones');
 });
+
+// --- sidenav scroll position across navigation ---
+
+const NAV_SCROLL = () => document.querySelector('.sidenav').scrollTop;
+
+const ACTIVE_VISIBLE = () => {
+  const nav = document.querySelector('.sidenav');
+  const active = nav.querySelector('a.active');
+  if (!active) return true; // e.g. the home page has no sidenav entry
+  const nr = nav.getBoundingClientRect();
+  const ar = active.getBoundingClientRect();
+  return ar.top >= nr.top - 1 && ar.bottom <= nr.bottom + 1;
+};
+
+test('scroll position is preserved when the new active entry stays visible', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/features/robots/`);
+  await page.waitForTimeout(400); // let the debounced scroll save (100 ms) flush
+  const s1 = await page.evaluate(NAV_SCROLL);
+  expect(s1).toBeGreaterThan(0); // robots is below the fold: the menu actually scrolled
+  // Production sits right below Robots in the Systems group: visible at the
+  // same scroll offset, so the position must carry over
+  await page.locator('.sidenav a[href="/features/production/"]').click();
+  await page.waitForLoadState('load');
+  const s2 = await page.evaluate(NAV_SCROLL);
+  expect(await page.locator('.sidenav a.active').textContent()).toBe('Production');
+  expect(Math.abs(s2 - s1)).toBeLessThan(4);
+});
+
+test('every sidenav link lands with its active entry visible in the menu', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/`);
+  const hrefs = [...new Set(await page.$$eval('.sidenav a[href]', (as) => as.map((a) => a.getAttribute('href'))))];
+  expect(hrefs.length).toBeGreaterThan(20);
+  for (const href of hrefs) {
+    await page.goto(`${baseURL}${href}`);
+    const ok = await page.evaluate(ACTIVE_VISIBLE);
+    expect(ok, `active entry not visible in the sidenav for ${href}`).toBe(true);
+  }
+});
