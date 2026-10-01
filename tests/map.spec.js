@@ -62,7 +62,7 @@ test('wheel outside the map still scrolls the page', async ({ page, baseURL }) =
   expect(y1).toBeGreaterThan(y0);
 });
 
-test('dragging on the map pans it, reset restores the view', async ({ page, baseURL }) => {
+test('at max zoom out the whole map is visible and cannot be panned away', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`);
   const wrap = page.locator('.zonemap-wrap');
   await wrap.scrollIntoViewIfNeeded();
@@ -70,13 +70,55 @@ test('dragging on the map pans it, reset restores the view', async ({ page, base
   const box = await wrap.boundingBox();
   const cx = box.x + box.width / 2, cy = box.y + box.height / 2;
 
+  // no zoom: the map fits, so dragging must not move it
   await page.mouse.move(cx, cy);
   await page.mouse.down();
-  await page.mouse.move(cx + 60, cy + 40, { steps: 5 });
+  await page.mouse.move(cx + 100, cy + 100, { steps: 3 });
   await page.mouse.up();
   const p = await transform(page);
-  expect(p.tx).toBeGreaterThan(20);
-  expect(p.ty).toBeGreaterThan(20);
+  expect(p.tx).toBe(0);
+  expect(p.ty).toBe(0);
+  expect(p.scale).toBe(1);
+});
+
+test('zoomed in: drag pans but the map always covers the view; reset restores', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${MAP}`);
+  const wrap = page.locator('.zonemap-wrap');
+  await wrap.scrollIntoViewIfNeeded();
+  await page.waitForTimeout(100);
+  const box = await wrap.boundingBox();
+  const cx = box.x + box.width / 2, cy = box.y + box.height / 2;
+
+  // zoom in (~2x)
+  await page.mouse.move(cx, cy);
+  await page.mouse.wheel(0, -480);
+  await page.waitForTimeout(50);
+  expect((await transform(page)).scale).toBeGreaterThan(1.5);
+
+  const covered = () => page.evaluate(() => {
+    const w = document.querySelector('.zonemap-wrap').getBoundingClientRect();
+    const m = document.querySelector('.zonemap').getBoundingClientRect();
+    return m.top <= w.top + 1 && m.left <= w.left + 1
+        && m.bottom >= w.bottom - 1 && m.right >= w.right - 1;
+  });
+
+  // drag far past any sane limit — the map must stay in view
+  await page.mouse.move(cx, cy);
+  await page.mouse.down();
+  await page.mouse.move(cx + 600, cy + 600, { steps: 5 });
+  await page.mouse.up();
+  let p = await transform(page);
+  expect(p.ty).toBeGreaterThan(20); // it did pan
+  expect(await covered()).toBe(true);
+
+  // and the other way
+  await page.mouse.move(cx, cy);
+  await page.mouse.down();
+  await page.mouse.move(cx - 1200, cy - 1200, { steps: 5 });
+  await page.mouse.up();
+  p = await transform(page);
+  expect(p.ty).toBeLessThan(-20);
+  expect(await covered()).toBe(true);
 
   await page.locator('.zonemap-reset').click();
   const r = await transform(page);

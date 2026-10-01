@@ -33,39 +33,67 @@
     wrap.setAttribute('data-zoom-init', '1');
     var svg = wrap.querySelector('.zonemap, .zoommap');
     if (!svg) return;
-    var MIN = 1, MAX = 20;
+    // s = 1 is "max zoom out": the whole map is visible (and then the map
+    // cannot be panned away from any side). MAX keeps zoom-in useful — at
+    // 8x the map is already far beyond the level of detail it carries.
+    var MIN = 1, MAX = 8;
     var s = 1, tx = 0, ty = 0;
 
     function apply() {
         svg.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + s + ')';
     }
 
+    // Rendered size of the map content inside the svg/img element. The SVG
+    // is letterboxed (preserveAspectRatio meet) inside its box; an <img>
+    // fills its content box. Padding does not matter: the content is
+    // centered in the element either way.
+    function contentSize() {
+        // clientWidth/Height are the layout (untransformed) element sizes —
+        // getBoundingClientRect would include the current scale.
+        var st = window.getComputedStyle(svg);
+        var vw = svg.clientWidth - parseFloat(st.paddingLeft) - parseFloat(st.paddingRight);
+        var vh = svg.clientHeight - parseFloat(st.paddingTop) - parseFloat(st.paddingBottom);
+        if (svg.tagName === 'svg' && svg.viewBox && svg.viewBox.baseVal.width) {
+            var vb = svg.viewBox.baseVal;
+            var k = Math.min(vw / vb.width, vh / vb.height);
+            return { w: vb.width * k, h: vb.height * k };
+        }
+        return { w: vw, h: vh };
+    }
+
+    function limit(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+
+    // The map must never be pannable/zoomable out of view: the scaled
+    // content has to cover the wrapper on all sides. When it is smaller
+    // than the wrapper (s = 1, max zoom out) it stays centered — no pan.
+    function clamp() {
+        var rect = wrap.getBoundingClientRect();
+        var c = contentSize();
+        var sw = s * c.w, sh = s * c.h;
+        tx = sw > rect.width ? limit(tx, (rect.width - sw) / 2, (sw - rect.width) / 2) : 0;
+        ty = sh > rect.height ? limit(ty, (rect.height - sh) / 2, (sh - rect.height) / 2) : 0;
+    }
+
+    // Zoom about an arbitrary screen point (the cursor, or the midpoint of
+    // two touch fingers). The CSS transform is translate(tx,ty) scale(s)
+    // about the element center; with rc the *transformed* element center
+    // (getBoundingClientRect includes the transform) and E0 = rc - t the
+    // untransformed one, a content point p sits at E0 + t + s*p. Keeping the
+    // point under the screen point C fixed: p = (C - rc)/s and
+    // t' = C - E0 - ns*p = C - rc + t - ns*p.
     function zoomAt(clientX, clientY, factor) {
         var rect = svg.getBoundingClientRect();
-        var cx = rect.width / 2, cy = rect.height / 2;
-        var px = clientX - rect.left - cx;
-        var py = clientY - rect.top - cy;
+        var rcx = rect.left + rect.width / 2;
+        var rcy = rect.top + rect.height / 2;
         var ns = Math.min(MAX, Math.max(MIN, s * factor));
         if (ns === s) return;
-        // Keep the point under the cursor fixed. The CSS transform is
-        // translate(tx,ty) scale(s) about the element center, so the cursor's
-        // content-space point is (px - tx)/s and must satisfy
-        // tx' = cx - ((px - tx)/s) * ns.
-        var contentX = (px - tx) / s;
-        var contentY = (py - ty) / s;
-        tx = cx - contentX * ns;
-        ty = cy - contentY * ns;
+        var contentX = (clientX - rcx) / s;
+        var contentY = (clientY - rcy) / s;
+        tx = tx + clientX - rcx - ns * contentX;
+        ty = ty + clientY - rcy - ns * contentY;
         s = ns;
         clamp();
         apply();
-    }
-
-    function clamp() {
-        var rect = wrap.getBoundingClientRect();
-        // Content must stay within one screenful of the viewport.
-        var mx = rect.width, my = rect.height;
-        tx = Math.min(mx, Math.max(-mx, tx));
-        ty = Math.min(my, Math.max(-my, ty));
     }
 
     // Wheel = zoom (no key needed). The listener is non-passive so the page
@@ -95,8 +123,11 @@
             e.preventDefault();
             var d = dist(e);
             if (d > 0 && pinch > 0) {
-                var rect = wrap.getBoundingClientRect();
-                zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, d / pinch);
+                // Free two-finger zoom: the anchor is the midpoint between
+                // the fingers, so the map follows the pinch position.
+                var mx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                var my = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                zoomAt(mx, my, d / pinch);
             }
             pinch = d;
         }
@@ -115,6 +146,7 @@
         if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
         tx += dx; ty += dy;
         lx = e.clientX; ly = e.clientY;
+        clamp(); // never let the map be dragged out of view
         apply();
     });
     function endDrag(e) {
