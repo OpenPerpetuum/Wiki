@@ -82,9 +82,9 @@
 <!-- Sidenav: the Home quick link on top, then the main items — Start, World,
      Play, Systems, Reference. Groups are open by default (root -> sub always
      visible); 2nd-level sub-lists (Gamma's tiers, the item-shop categories)
-     start collapsed. Caret buttons collapse/expand any section; World's
-     anchors are its sub-items. Group headers (except World) link to their
-     overview page under /menu/. -->
+     start collapsed unless the current page lives inside them. Caret buttons
+     collapse/expand any section; World's anchors are its sub-items. Group
+     headers (except World) link to their overview page under /menu/. -->
 <nav class="sidenav">
     <ul>
         <li class="nav-quick">
@@ -380,9 +380,11 @@
     }
     // Sidenav: every caret button collapses/expands its own section — a
     // top-level group (.nav-group) or a sub-list (.nav-has-sub). Groups and
-    // their items (root -> sub) are open by default; 2nd-level sub-lists
+    // their items (root -> sub) are open by default. 2nd-level sub-lists
     // (nested inside another item: Gamma's tiers, the item-shop categories)
-    // start collapsed.
+    // start collapsed — except when the current page lives inside them
+    // (e.g. an item-shop category page opens Item shop, a gamma anchor
+    // opens Gamma), so the active entry is visible on load.
     (function () {
         function setCollapsed(target, collapsed) {
             target.classList.toggle("collapsed", collapsed);
@@ -396,9 +398,26 @@
                 if (target) setCollapsed(target, !target.classList.contains("collapsed"));
             });
         });
-        // 2nd-level sub-lists (nested in another item) start collapsed
+        var path = document.location.pathname;
+        var hash = document.location.hash;
+        function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
+        // Does this link point at the current page? Hash links only count
+        // when the URL carries that hash (hash anchors share the page path
+        // with their parent entry); plain links count by exact or prefix
+        // path match (sub-pages like /content/shop/ammo/ under /content/shop/).
+        function linkInside(href) {
+            var i = href.indexOf("#");
+            var h = i === -1 ? href : href.slice(0, i);
+            if (h.length < 2) return false;
+            if (h[h.length - 1] !== "/") h += "/";
+            var linkHash = i === -1 ? "" : href.slice(i);
+            if (hash) return (linkHash === hash || !linkHash) && h === norm(path);
+            return !linkHash && (h === norm(path) || (h.length < path.length && path.indexOf(h) === 0));
+        }
         Array.prototype.slice.call(document.querySelectorAll(".sidenav li li.nav-has-sub")).forEach(function (el) {
-            setCollapsed(el, true);
+            var inside = Array.prototype.slice.call(el.querySelectorAll("a[href]"))
+                .some(function (a) { return linkInside(a.getAttribute("href")); });
+            setCollapsed(el, !inside);
         });
     })();
     // Current-page selection: bold + outlined in both the left menu and the

@@ -18,7 +18,10 @@ Legend: `[existing]` page exists today Â· `[planned]` page to be written later Â
 The sidenav has the **Home** quick link on top, then the main items: Start,
 World, Play, Systems, Reference. Groups are **open by default** (root -> sub
 always visible); 2nd-level sub-lists (Gamma's tiers, the item-shop
-categories) start collapsed. Caret buttons collapse/expand any section.
+categories) start collapsed, unless the current page lives inside them
+(e.g. an item-shop category page opens Item shop). Caret buttons
+collapse/expand any section; on load the sidenav is scrolled so the active
+entry is visible.
 Group headers (except World) link to their overview page under `/menu/`.
 Labels live in `config.toml` (`extra.ui.nav_*`), overview pages in
 `content/menu/`.

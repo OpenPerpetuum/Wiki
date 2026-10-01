@@ -63,3 +63,19 @@ test('item-shop sub-list expands on demand', async ({ page, baseURL }) => {
   await caret.click();
   expect(await page.locator('.shop-sub a:visible').count()).toBe(11);
 });
+
+test('shop category page: sub-list auto-opens, active link scrolled into view', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/content/shop/ammo/`);
+  expect(await page.locator('.shop-sub a:visible').count()).toBe(11);
+  const active = page.locator('.sidenav a.active');
+  expect(await active.textContent()).toBe('Ammo');
+  // the sidenav must be scrolled so the active entry is inside its viewport
+  const ar = await active.boundingBox();
+  const nr = await page.locator('.sidenav').boundingBox();
+  expect(ar.y >= nr.y - 1 && ar.y + ar.height <= nr.y + nr.height + 1).toBe(true);
+});
+
+test('gamma anchor hash: Gamma sub-list auto-opens', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/map/#t2`);
+  expect(await page.locator('.map-sub-deep a:visible').count()).toBe(5);
+});
