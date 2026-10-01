@@ -16,11 +16,11 @@ and between zones.
 ```mermaid
 stateDiagram-v2
     [*] --> Docked
-    Docked --> Undocked: Deploy\n(robot selected, enabler researched,\nenergy intact, cargo space, no cooldown)
+    Docked --> Undocked: Deploy (robot selected, enabler researched, energy intact, cargo space, no cooldown)
     Undocked --> Docked: Dock in range
-    Undocked --> Docked: Force dock / SOS\n(emergency, anywhere)
-    Undocked --> Undocked: Teleport / mobile teleport\n(range, active channel, no sickness, no PvP)
-    Docked --> Docked: Spark teleport\n(to another base)
+    Undocked --> Docked: Force dock / SOS (emergency, anywhere)
+    Undocked --> Undocked: Teleport / mobile teleport (range, active channel, no sickness, no PvP)
+    Docked --> Docked: Spark teleport (to another base)
 ```
 
 ## Docked vs. undocked

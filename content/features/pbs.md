@@ -75,13 +75,13 @@ docking: you don't pay rent, you get a timebox.
 stateDiagram-v2
     [*] --> Carried: capsule in a container
     Carried --> Researched: CPRG researched (research level met)
-    Researched --> Produced: structure produced at the mill /\nprototype facility
-    Produced --> Deployed: deployed in a zone\n(CEO / deputy / edit-PBS role,\nconstruction + blocking radius checks)
-    Deployed --> Online: set online\n(reactor/mining tower: fed with fuel)
-    Online --> Connected: linked into the network\n(territory + effects apply)
+    Researched --> Produced: structure produced at the mill / prototype facility
+    Produced --> Deployed: deployed in a zone (CEO / deputy / edit-PBS role, construction + blocking radius checks)
+    Deployed --> Online: set online (reactor / mining tower fed with fuel)
+    Online --> Connected: linked into the network (territory + effects apply)
     Connected --> Online: connection broken
     Online --> Deployed: set offline
-    Deployed --> Decommissioned: deconstruction\n(the expiring base instead expires\nafter 7 days, contents lost)
+    Deployed --> Decommissioned: deconstruction (the expiring base instead expires after 7 days, contents lost)
     Decommissioned --> [*]
 ```
 

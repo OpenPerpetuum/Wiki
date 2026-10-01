@@ -15,14 +15,14 @@ shipment, a **volunteer** takes it and delivers it.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Submitted: owner posts container + reward + collateral\n(reward escrowed)
-    Submitted --> Taken: volunteer posts collateral\n(container becomes their cargo)
+    [*] --> Submitted: owner posts container + reward + collateral (reward escrowed)
+    Submitted --> Taken: volunteer posts collateral (container becomes their cargo)
     Submitted --> Cancelled: owner cancels (≥ 60 s)
     Submitted --> Expired: unaccepted past expiry
-    Taken --> Delivered: container at target base\nvolunteer paid reward + collateral
-    Taken --> GivenUp: volunteer abandons\n(half collateral refunded)
+    Taken --> Delivered: container at target base, volunteer paid reward + collateral
+    Taken --> GivenUp: volunteer abandons (half collateral refunded)
     Taken --> Retrieved: owner retrieves after expiry
-    Taken --> Lost: cargo destroyed in transit\n(full collateral forfeited)
+    Taken --> Lost: cargo destroyed in transit (full collateral forfeited)
     Cancelled --> [*]: reward refunded
     Expired --> [*]: reward refunded
     GivenUp --> [*]

@@ -15,9 +15,9 @@ container, bags/boxes, etc.). This page covers manipulating items inside them.
 ```mermaid
 stateDiagram-v2
     [*] --> InContainer: crafted / bought / looted
-    InContainer --> Packed: pack into a bag/box\n(volume wrapper)
+    InContainer --> Packed: pack into a bag/box (volume wrapper)
     Packed --> InContainer: unpack
-    InContainer --> Equipped: fitted into a robot slot\n(docked only)
+    InContainer --> Equipped: fitted into a robot slot (docked only)
     Equipped --> InContainer: removed
     InContainer --> Trashed: discarded (gone)
     note right of InContainer

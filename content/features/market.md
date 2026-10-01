@@ -14,13 +14,13 @@ The **market** is where you buy and sell items at a base. All market actions are
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Listed: place sell order\n(items leave your container,\n10 cr/day fee paid up front)
-    Listed --> Locked: 10-minute order lock\n(no modify/cancel)
+    [*] --> Listed: place sell order (items leave your container, 10 cr/day fee paid up front)
+    Listed --> Locked: 10-minute order lock (no modify/cancel)
     Locked --> Listed
-    Listed --> Sold: buyer buys out /\nhighest-buy matching
+    Listed --> Sold: buyer buys out / highest-buy matching
     Listed --> Cancelled: cancel (items return)
     Cancelled --> [*]
-    Sold --> [*]: item to buyer,\ncredits to you (minus tax)
+    Sold --> [*]: item to buyer, credits to you (minus tax)
 ```
 
 ## Market orders

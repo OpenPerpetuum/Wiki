@@ -34,10 +34,10 @@ Unlocking is one-time: once unlocked, the spark stays in your collection.
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Active: character created\n(default spark installed)
+    [*] --> Active: character created (default spark installed)
     Active --> Active: one spark at a time
     Active --> Cooldown: switch (costs NIC, per-spark)
-    Cooldown --> Active: after 1 hour\n(new spark's bonuses apply to all robots)
+    Cooldown --> Active: after 1 hour (new spark's bonuses apply to all robots)
 ```
 
 ## Switching sparks

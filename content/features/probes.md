@@ -23,12 +23,12 @@ Probes come in two families:
 ```mermaid
 stateDiagram-v2
     [*] --> Deployed: placed in a zone
-    Deployed --> Scanning: core above 98%\n(scan every 10 s, 50-tile radius)
+    Deployed --> Scanning: core above 98% (scan every 10 s, 50-tile radius)
     Deployed --> Idle: core drained
     Idle --> Scanning: refed
-    Scanning --> Reporting: player contacts found\n(report pushed to registered chars\n(CEO + deputy always included))
+    Scanning --> Reporting: player contacts found (report pushed to registered chars; CEO + deputy always included)
     Reporting --> Scanning
-    Scanning --> Destroyed: hostile action or\ndespawn (~333 days)
+    Scanning --> Destroyed: hostile action or despawn (~333 days)
     Idle --> Destroyed
     Destroyed --> [*]
 ```
