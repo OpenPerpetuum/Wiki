@@ -33,9 +33,9 @@
     wrap.setAttribute('data-zoom-init', '1');
     var svg = wrap.querySelector('.zonemap, .zoommap');
     if (!svg) return;
-    // s = 1 is "max zoom out": the whole map is visible (and then the map
-    // cannot be panned away from any side). MAX keeps zoom-in useful — at
-    // 8x the map is already far beyond the level of detail it carries.
+    // s = 1 is "max zoom out": the whole map is visible. MAX keeps zoom-in
+    // useful — at 8x the map is already far beyond the level of detail it
+    // carries.
     var MIN = 1, MAX = 8;
     var s = 1, tx = 0, ty = 0;
 
@@ -63,15 +63,43 @@
 
     function limit(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
 
-    // The map must never be pannable/zoomable out of view: the scaled
-    // content has to cover the wrapper on all sides. When it is smaller
-    // than the wrapper (s = 1, max zoom out) it stays centered — no pan.
+    // Overlap length of [0, len] with the content span centered at offset t.
+    function overlapLen(len, size, t) {
+        var a = Math.max(0, (len - size) / 2 + t);
+        var b = Math.min(len, (len - size) / 2 + t + size);
+        return Math.max(0, b - a);
+    }
+
+    // Pan limits: panning may show empty space around the map, but at least
+    // MIN_VISIBLE of the viewport must stay covered by map content (overlap
+    // area, shared between both axes). This also applies at max zoom out —
+    // the map can be panned, just not further out than that. (For a span of
+    // size >= need inside [0, len], overlap >= need  <=>  the span starts
+    // at or before len - need and ends at or after need.)
+    var MIN_VISIBLE = 0.25;
+
     function clamp() {
         var rect = wrap.getBoundingClientRect();
+        var W = rect.width, H = rect.height;
         var c = contentSize();
         var sw = s * c.w, sh = s * c.h;
-        tx = sw > rect.width ? limit(tx, (rect.width - sw) / 2, (sw - rect.width) / 2) : 0;
-        ty = sh > rect.height ? limit(ty, (rect.height - sh) / 2, (sh - rect.height) / 2) : 0;
+        // Two passes so both axes respect the shared area budget.
+        for (var pass = 0; pass < 2; pass++) {
+            var needX = MIN_VISIBLE * W * H / Math.max(overlapLen(H, sh, ty), 1e-6);
+            if (sw >= needX) {
+                var x0 = (W - sw) / 2;
+                tx = limit(tx, needX - sw - x0, W - needX - x0);
+            } else {
+                tx = 0;
+            }
+            var needY = MIN_VISIBLE * W * H / Math.max(overlapLen(W, sw, tx), 1e-6);
+            if (sh >= needY) {
+                var y0 = (H - sh) / 2;
+                ty = limit(ty, needY - sh - y0, H - needY - y0);
+            } else {
+                ty = 0;
+            }
+        }
     }
 
     // Zoom about an arbitrary screen point (the cursor, or the midpoint of
@@ -134,32 +162,36 @@
     }, { passive: false });
     wrap.addEventListener('touchend', function () { pinch = null; }, { passive: true });
 
+    // Pan handlers live on the wrapper, not the svg: zoomed in and panned,
+    // the (transformed) svg can leave empty areas inside the panel, and a
+    // drag started there should still pan the map.
     var dragging = false, moved = false, lx = 0, ly = 0;
-    svg.addEventListener('pointerdown', function (e) {
+    wrap.addEventListener('pointerdown', function (e) {
+        if (e.target.closest && e.target.closest('button')) return; // reset button
         dragging = true; moved = false; lx = e.clientX; ly = e.clientY;
-        svg.setPointerCapture(e.pointerId);
+        wrap.setPointerCapture(e.pointerId);
         svg.classList.add('dragging');
     });
-    svg.addEventListener('pointermove', function (e) {
+    wrap.addEventListener('pointermove', function (e) {
         if (!dragging) return;
         var dx = e.clientX - lx, dy = e.clientY - ly;
         if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
         tx += dx; ty += dy;
         lx = e.clientX; ly = e.clientY;
-        clamp(); // never let the map be dragged out of view
+        clamp(); // keep at least MIN_VISIBLE of the viewport covered
         apply();
     });
     function endDrag(e) {
         if (!dragging) return;
         dragging = false;
         svg.classList.remove('dragging');
-        try { svg.releasePointerCapture(e.pointerId); } catch (err) { /* already released */ }
+        try { wrap.releasePointerCapture(e.pointerId); } catch (err) { /* already released */ }
         if (moved && e.type === 'pointerup') e.preventDefault();
     }
-    svg.addEventListener('pointerup', endDrag);
-    svg.addEventListener('pointercancel', endDrag);
+    wrap.addEventListener('pointerup', endDrag);
+    wrap.addEventListener('pointercancel', endDrag);
     // Suppress the click-through to the zone link right after a drag.
-    svg.addEventListener('click', function (e) {
+    wrap.addEventListener('click', function (e) {
         if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
     }, true);
 
