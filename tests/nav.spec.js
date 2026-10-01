@@ -72,13 +72,15 @@ test('world anchor click: the anchor itself is highlighted, not World', async ({
   expect(await actives.getAttribute('href')).toBe('/zones/map/#training');
 });
 
-test('active selection spans the row up to the caret button', async ({ page, baseURL }) => {
+test('active selection box spans the whole row, ending after the caret', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/zones/map/`); // World header active
-  const head = page.locator('.sidenav .nav-group-head:has(.active)');
-  const lb = await head.locator('a').boundingBox();
+  const head = page.locator('.sidenav .nav-group-head.row-active');
+  expect(await head.count()).toBe(1);
+  const hb = await head.boundingBox();
   const cb = await head.locator('.nav-caret').boundingBox();
-  // only the flex gap (0.5rem) may remain between the selection and the caret
-  expect(cb.x - (lb.x + lb.width)).toBeLessThan(12);
+  // the box covers the caret: it starts before it and ends after it
+  expect(hb.x).toBeLessThanOrEqual(cb.x + 1);
+  expect(hb.x + hb.width).toBeGreaterThanOrEqual(cb.x + cb.width - 1);
 });
 
 test('item-shop sub-list expands on demand', async ({ page, baseURL }) => {

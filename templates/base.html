@@ -478,7 +478,16 @@
             document.querySelectorAll(".sidenav a.active").forEach(function (a) {
                 a.classList.remove("active");
             });
-            if (best) best.classList.add("active");
+            document.querySelectorAll(".sidenav .row-active").forEach(function (r) {
+                r.classList.remove("row-active");
+            });
+            if (best) {
+                best.classList.add("active");
+                // entries with an open/close caret: the selection box spans
+                // the whole row (it ends after the caret button)
+                var row = best.closest(".nav-group-head, .nav-sub-head");
+                if (row) row.classList.add("row-active");
+            }
         }
         selectActive();
         // same-page anchor clicks change only the hash (no page load) —
