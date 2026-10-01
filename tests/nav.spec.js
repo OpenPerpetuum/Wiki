@@ -9,13 +9,13 @@ const VISIBLE_LINKS = () =>
 const COLLAPSED = (sel) =>
   [...document.querySelectorAll(sel)].map((g) => g.classList.contains('collapsed'));
 const GROUPS = '.sidenav .nav-group'; // Start, World, Play, Systems, Reference
-const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Item shop
+const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Item shop, Content, Zones
 
 test('home: groups open, 2nd-level sub-lists closed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
   expect(await page.locator('.nav-quick a').getAttribute('href')).toBe('/');
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true]);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true]);
   // Home + 5 group headers + Start(3) + World(5) + Play(12) + Systems(9) + Reference(9)
   expect(await page.evaluate(VISIBLE_LINKS)).toBe(44);
 });
@@ -46,7 +46,7 @@ test('World anchors visible by default, Gamma tiers expand on demand', async ({ 
 test('feature page: all groups stay open, current page highlighted', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/features/combat/`);
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true]);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true]);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Combat');
 });
 
@@ -78,4 +78,22 @@ test('shop category page: sub-list auto-opens, active link scrolled into view', 
 test('gamma anchor hash: Gamma sub-list auto-opens', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/zones/map/#t2`);
   expect(await page.locator('.map-sub-deep a:visible').count()).toBe(5);
+});
+
+test('content sub-page: Content tables auto-opens, section highlighted and in view', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/content/ores/crude/`);
+  const contentSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/content/"]) > .nav-sub');
+  expect(await contentSub.locator('a:visible').count()).toBe(9);
+  const active = page.locator('.sidenav a.active');
+  expect(await active.textContent()).toBe('Ores');
+  const ar = await active.boundingBox();
+  const nr = await page.locator('.sidenav').boundingBox();
+  expect(ar.y >= nr.y - 1 && ar.y + ar.height <= nr.y + nr.height + 1).toBe(true);
+});
+
+test('zone data page: Zones sub-list auto-opens', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/zone-asi/`);
+  const zonesSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/zones/"]) > .nav-sub');
+  expect(await zonesSub.locator('a:visible').count()).toBe(2);
+  expect(await page.locator('.sidenav a.active').textContent()).toBe('Zones');
 });

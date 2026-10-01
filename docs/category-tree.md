@@ -17,11 +17,11 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
 
 The sidenav has the **Home** quick link on top, then the main items: Start,
 World, Play, Systems, Reference. Groups are **open by default** (root -> sub
-always visible); 2nd-level sub-lists (Gamma's tiers, the item-shop
-categories) start collapsed, unless the current page lives inside them
-(e.g. an item-shop category page opens Item shop). Caret buttons
-collapse/expand any section; on load the sidenav is scrolled so the active
-entry is visible.
+always visible); 2nd-level sub-lists (Gamma's tiers, item-shop categories,
+Content tables' sections, Zones' pages) start collapsed, unless the current
+page lives inside them (e.g. an item-shop category page opens Item shop,
+a tech-tree node page opens Content tables). Caret buttons collapse/expand
+any section; on load the sidenav is scrolled so the active entry is visible.
 Group headers (except World) link to their overview page under `/menu/`.
 Labels live in `config.toml` (`extra.ui.nav_*`), overview pages in
 `content/menu/`.
@@ -89,8 +89,9 @@ Labels live in `config.toml` (`extra.ui.nav_*`), overview pages in
 
 5. **Reference** (`/menu/reference/`) — merges the old *Knowledge* and
    *Data reference* groups
-   - Content (catalog index) `[existing]`
-   - Zones (data) `[existing]`
+   - Content tables `[existing]` — 2nd-level sub-list: Items, Ores, Plants,
+     Deployables, Robots, Missions, Recipes, Tech tree, Stat reference
+   - Zones (data) `[existing]` — 2nd-level sub-list: Generation, Zone index
    - All features (full system list `/features/`) `[existing]`
    - Extension tree `[existing]`
    - Extensions `[existing]`

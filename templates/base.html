@@ -81,8 +81,9 @@
 <div class="layout">
 <!-- Sidenav: the Home quick link on top, then the main items — Start, World,
      Play, Systems, Reference. Groups are open by default (root -> sub always
-     visible); 2nd-level sub-lists (Gamma's tiers, the item-shop categories)
-     start collapsed unless the current page lives inside them. Caret buttons
+     visible); 2nd-level sub-lists (Gamma's tiers, item-shop categories,
+     content tables, zones) start collapsed unless the current page lives
+     inside them. Caret buttons
      collapse/expand any section; World's anchors are its sub-items. Group
      headers (except World) link to their overview page under /menu/. -->
 <nav class="sidenav">
@@ -187,8 +188,33 @@
                 <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
             </div>
             <ul class="nav-items">
-                <li><a href="/content/">{{ config.extra.ui.nav_content }}</a></li>
-                <li><a href="/zones/">{{ config.extra.ui.nav_zones }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/content/">{{ config.extra.ui.nav_content }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/items/">{{ config.extra.ui.nav_content_items }}</a></li>
+                        <li><a href="/content/ores/">{{ config.extra.ui.nav_content_ores }}</a></li>
+                        <li><a href="/content/plants/">{{ config.extra.ui.nav_content_plants }}</a></li>
+                        <li><a href="/content/deployables/">{{ config.extra.ui.nav_content_deployables }}</a></li>
+                        <li><a href="/content/robots/">{{ config.extra.ui.nav_content_robots }}</a></li>
+                        <li><a href="/content/missions/">{{ config.extra.ui.nav_content_missions }}</a></li>
+                        <li><a href="/content/recipes/">{{ config.extra.ui.nav_content_recipes }}</a></li>
+                        <li><a href="/content/techtree/">{{ config.extra.ui.nav_content_techtree }}</a></li>
+                        <li><a href="/content/stat-reference/">{{ config.extra.ui.nav_content_statref }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/zones/">{{ config.extra.ui.nav_zones }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/zones/generation/">{{ config.extra.ui.nav_zones_generation }}</a></li>
+                        <li><a href="/zones/zone-index/">{{ config.extra.ui.nav_zones_index }}</a></li>
+                    </ul>
+                </li>
                 <li><a class="nav-item-icon" href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a></li>
                 <li><a class="nav-item-icon" href="/content/extensions/#tree" data-mapanchor="1"><svg class="navicon" aria-hidden="true"><use href="#mi-tree"/></svg>{{ config.extra.ui.nav_tree }}</a></li>
                 <li><a href="/content/extensions/">{{ config.extra.ui.nav_extensions }}</a></li>

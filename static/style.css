@@ -235,8 +235,8 @@ pre code { background: none; padding: 0; }
     border-radius: 4px;
     background: var(--neon-faint);
 }
-/* item-shop sub-category list (always open) */
-.sidenav ul.shop-sub { margin: 0.1rem 0 0.3rem 0.9rem; }
+/* sub-category lists (item shop, content tables, zones) */
+.sidenav ul.shop-sub, .sidenav ul.nav-sub { margin: 0.1rem 0 0.3rem 0.9rem; }
 /* zone-map sub-category list (always open) */
 .sidenav ul.map-sub { margin: 0.1rem 0 0.3rem 0.9rem; }
 /* the Gamma tier level nests one deeper */
