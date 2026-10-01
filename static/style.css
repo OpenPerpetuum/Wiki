@@ -206,8 +206,13 @@ pre code { background: none; padding: 0; }
     transition: transform 0.15s ease;
 }
 .sidenav .nav-caret:hover { color: var(--neon); background: var(--neon-faint); }
-.sidenav .nav-group.collapsed .nav-items { display: none; }
-.sidenav .nav-group.collapsed .nav-caret { transform: rotate(-90deg); }
+.sidenav .nav-group.collapsed > .nav-items { display: none; }
+/* sub-list parents (World, Gamma, Item shop): link + collapse caret row */
+.sidenav .nav-sub-head { display: flex; align-items: center; }
+.sidenav .nav-sub-head a { flex: 1; }
+.sidenav .nav-has-sub.collapsed > ul { display: none; }
+.sidenav .nav-group.collapsed > .nav-group-head .nav-caret,
+.sidenav .nav-has-sub.collapsed > .nav-sub-head .nav-caret { transform: rotate(-90deg); }
 /* "All features" quick link: always visible at the top of the menu */
 .sidenav .nav-quick a {
     margin-bottom: 0.2rem;

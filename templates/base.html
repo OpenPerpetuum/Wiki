@@ -98,14 +98,20 @@
                 <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
                 <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
                 <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
-                <li>
-                    <a class="nav-item-icon" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a class="nav-item-icon" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
                     <ul class="map-sub">
                         <li><a href="/zones/map/#training" data-mapanchor="1">{{ config.extra.ui.nav_map_training }}</a></li>
                         <li><a href="/zones/map/#starter-islands" data-mapanchor="1">{{ config.extra.ui.nav_map_starter }}</a></li>
                         <li><a href="/zones/map/#beta" data-mapanchor="1">{{ config.extra.ui.nav_map_beta }}</a></li>
-                        <li>
-                            <a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma }}</a>
+                        <li class="nav-has-sub">
+                            <div class="nav-sub-head">
+                                <a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma }}</a>
+                                <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                            </div>
                             <ul class="map-sub map-sub-deep">
                                 <li><a href="/zones/map/#t0" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t0 }}</a></li>
                                 <li><a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t1 }}</a></li>
@@ -153,8 +159,11 @@
                 <li><a href="/features/sparks/">{{ config.extra.ui.nav_sparks }}</a></li>
                 <li><a href="/features/market/">{{ config.extra.ui.nav_market }}</a></li>
                 <li><a href="/features/transport/">{{ config.extra.ui.nav_transport }}</a></li>
-                <li>
-                    <a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
                     <ul class="shop-sub">
                         <li><a href="/content/shop/ammo/">Ammo</a></li>
                         <li><a href="/content/shop/bots/">Bots</a></li>
@@ -367,30 +376,36 @@
         window.mermaid.initialize({ startOnLoad: false, theme: theme });
         window.mermaid.run({ querySelector: ".mermaid" });
     }
-    // Sidenav groups: the caret button collapses/expands a group's items.
+    // Sidenav: every caret button collapses/expands its own section — a
+    // top-level group (.nav-group) or a sub-list (.nav-has-sub: the zone-map
+    // anchors, the gamma tiers, and the item-shop categories).
     // On load every group except the one containing the current page is
-    // collapsed, so the default view is a high-level map of the wiki; the
-    // "All features" quick link above the groups stays visible for one-click
-    // access to the full system list.
+    // collapsed, and all sub-lists start collapsed, so the default view is a
+    // high-level map of the wiki; the "All features" quick link above the
+    // groups stays visible for one-click access to the full system list.
     (function () {
-        var groups = Array.prototype.slice.call(document.querySelectorAll(".sidenav .nav-group"));
-        if (!groups.length) return;
-        function setCollapsed(g, collapsed) {
-            g.classList.toggle("collapsed", collapsed);
-            var btn = g.querySelector(".nav-caret");
+        function setCollapsed(target, collapsed) {
+            target.classList.toggle("collapsed", collapsed);
+            var head = target.querySelector(".nav-group-head, .nav-sub-head");
+            var btn = head ? head.querySelector(".nav-caret") : null;
             if (btn) btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
         }
-        groups.forEach(function (g) {
-            var btn = g.querySelector(".nav-caret");
-            if (!btn) return;
+        Array.prototype.slice.call(document.querySelectorAll(".sidenav .nav-caret")).forEach(function (btn) {
             btn.addEventListener("click", function () {
-                setCollapsed(g, !g.classList.contains("collapsed"));
+                var target = btn.closest(".nav-group, .nav-has-sub");
+                if (target) setCollapsed(target, !target.classList.contains("collapsed"));
             });
         });
+        // sub-lists are collapsed by default (World, Gamma, Item shop)
+        Array.prototype.slice.call(document.querySelectorAll(".sidenav .nav-has-sub")).forEach(function (el) {
+            setCollapsed(el, true);
+        });
+        var groups = Array.prototype.slice.call(document.querySelectorAll(".sidenav .nav-group"));
         var path = document.location.pathname;
         function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
         var current = null;
         groups.forEach(function (g) {
+            if (current) return;
             var links = Array.prototype.slice.call(g.querySelectorAll("a[href]"));
             for (var i = 0; i < links.length; i++) {
                 var href = links[i].getAttribute("href");
@@ -400,7 +415,6 @@
                 if (h[h.length - 1] !== "/") h += "/";
                 if (h === norm(path) || path.indexOf(h) === 0) { current = g; break; }
             }
-            if (current) break;
         });
         groups.forEach(function (g) { setCollapsed(g, g !== current); });
     })();
