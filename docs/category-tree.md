@@ -15,7 +15,16 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
 
 ## Top-level menu
 
-1. **New here**
+The sidenav is a high-level view by default: one quick link (**All features**,
+always visible at the top) plus four collapsible groups. Each group header links
+to its overview page under `/menu/`; the caret collapses the group's items (JS
+auto-expands the group containing the current page). Group labels and the
+overview pages live in `config.toml` (`extra.ui.nav_*`) and `content/menu/`.
+
+0. **All features** — quick link to the full system list `/features/`,
+   always visible above the groups `[existing]`
+
+1. **Start** (`/menu/start/`)
    - Getting started `[existing]`
    - First hours (survival guide) `[planned]`
    - FAQ `[existing]`
@@ -24,12 +33,12 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
      - UI scaling `[planned] (sub)`
      - Multi-boxing `[planned] (sub)`
      - Reshader `[planned] (sub)`
-   - Abbreviations `[existing]` (moved here from Knowledge)
    - Home base (respawn / declared terminal) `[planned]`
+   - World (zone map) `[existing]` — with map sub-anchors (training, starter
+     islands, beta, gamma tiers, protection)
 
-2. **Zone map** — top-level entry, always visible `[existing]`
-
-3. **In the field**
+2. **Play** (`/menu/play/`) — merges the old *In the field*, *Big play*, and
+   *With others* groups
    - Gathering `[existing]`
    - Combat `[existing]`
      - Damage & application `[planned] (sub)`
@@ -42,10 +51,53 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
      - Bosses `[planned] (sub)`
    - Exploration `[existing]`
    - Probes `[existing]`
+   - PBS `[existing]`
+   - Outposts `[existing]`
+   - SAP `[planned]`
+   - Intrusion `[existing]`
+   - Relations / territorial warfare `[planned]`
+   - Groups (corps / alliances) `[existing]`
+     - Creation & management `[planned] (sub)`
+     - CEO takeover / logo editor `[planned] (sub)`
+   - Squads (NEXUS) `[planned]`
+   - Social `[existing]`
    - Field guides (combat / exploration / industry) `[planned]`
 
-4. **How it works** — *new group* (all planned; the group goes live when its first
-   pages exist)
+3. **Systems** (`/menu/systems/`) — merges the old *Industry & progress* and
+   *Trade* groups
+   - Robots `[existing]` — to become a per-robot catalog `[planned (catalog)]`
+     (one generated page per robot: class, chassis stats, extension requirements &
+     bonuses, where to buy; prose descriptions written originally)
+   - Production `[existing]`
+   - Research `[existing]`
+   - Items & inventory `[existing]`
+   - Modules `[existing]` — to become per-family pages `[planned]`
+     (weapons, armor, shield, energy, electronics, EWar, industrial, NEXUS, special)
+   - Sparks `[existing]`
+   - Calibration / prototyping `[planned]`
+   - Reverse engineering `[planned]`
+   - Market `[existing]`
+   - Transport (CT capsules) `[existing]`
+   - Item shop `[existing]` — 11 category pages `[existing (catalog)]`
+
+4. **Reference** (`/menu/reference/`) — merges the old *Knowledge* and
+   *Data reference* groups
+   - Content (catalog index) `[existing]`
+   - Zones (data) `[existing]`
+   - Extension tree `[existing]`
+   - Extensions `[existing]`
+   - Stat reference `[existing]` *(added to the menu — currently only linked from
+     the item catalog)*
+   - Abbreviations `[existing]`
+   - Lore `[existing]`
+     - Nia / Discovery of Nia `[planned]`
+     - Syndicate `[planned]`
+   - Zone guides (per-zone prose alongside the generated zone data pages) `[planned]`
+   - Server `[existing]`
+   - Formats (developer) `[existing]`
+
+**How it works** — *new group* (all planned; the group goes live when its first
+pages exist; insert between **Play** and **Systems**):
    - Damage & application `[planned]`
    - Fitting `[planned]`
    - Powergrid `[planned]`
@@ -58,63 +110,15 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
    - Forms `[planned]`
    - NEXUS / squad bonuses `[planned]`
 
-5. **Industry & progress**
-   - Robots `[existing]` — to become a per-robot catalog `[planned (catalog)]`
-     (one generated page per robot: class, chassis stats, extension requirements &
-     bonuses, where to buy; prose descriptions written originally)
-   - Modules `[existing]` — to become per-family pages `[planned]`
-     (weapons, armor, shield, energy, electronics, EWar, industrial, NEXUS, special)
-   - Production `[existing]`
-   - Research `[existing]`
-   - Items & inventory `[existing]`
-   - Sparks `[existing]`
-   - Calibration / prototyping `[planned]`
-   - Reverse engineering `[planned]`
-
-6. **Trade**
-   - Market `[existing]`
-   - Transport (CT capsules) `[existing]`
-   - Item shop `[existing]` — 11 category pages `[existing (catalog)]`
-
-7. **Big play**
-   - PBS `[existing]`
-   - Outposts `[existing]`
-   - SAP `[planned]`
-   - Intrusion `[existing]`
-   - Relations / territorial warfare `[planned]`
-
-8. **With others**
-   - Corps `[existing]`
-     - Creation & management `[planned] (sub)`
-     - CEO takeover / logo editor `[planned] (sub)`
-   - Squads (NEXUS) `[planned]`
-   - Social `[existing]`
-
-9. **World & lore** — *renamed from "Knowledge"* (lore stays; abbreviations move out)
-   - Lore `[existing]`
-   - Nia / Discovery of Nia `[planned]`
-   - Syndicate `[planned]`
-   - Zone guides (per-zone prose alongside the generated zone data pages) `[planned]`
-
-10. **Data reference**
-    - Zone map `[existing]`
-    - Content (catalog index) `[existing]`
-    - Stat reference `[existing]` *(added to the menu — currently only linked from
-      the item catalog)*
-    - Zones (data) `[existing]`
-    - All features `[existing]`
-    - Server `[existing]`
-    - Formats (developer) `[existing]`
-
 ## Implementation notes
 
-- The tree changes nothing that exists yet: no page moves until a `[planned]` page
-  is actually written, so no URLs break. The live site keeps its current 8 groups.
-- When the first "How it works" pages land, insert the group between *In the field*
-  and *Industry & progress*; when "Knowledge" becomes "World & lore", update
-  `content/menu/knowledge.md` → `/menu/world-and-lore/` and re-link.
-- Abbreviations moves to *New here* only when the group gains its planned pages
-  (moving it now would be a pointless URL churn).
+- The 4-group menu is live: the sidenav groups are collapsible and the old 8
+  groups were merged into the 4 overview pages (the former `/menu/` pages for
+  *in-the-field*, *industry*, *trade*, *big-play*, *with-others*, *knowledge*,
+  and *data-reference* were replaced by `/menu/start|play|systems|reference/`).
+- When the first "How it works" pages land, add the group to the sidenav
+  between **Play** and **Systems** (new `nav_*` string + `/menu/` page +
+  search-index regen).
 - Per-robot pages and module family pages are generator work (P1/P3 of the
   reorganisation plan); everything else is original prose.
 - Left menu, `/menu/<slug>/` overview pages and the search index all follow the

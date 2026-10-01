@@ -25,14 +25,14 @@ smart_punctuation = false
 # into Zola [translations]); the chrome reads `config.extra.ui`, and the
 # inline JS receives it via window.WIKI_UI.
 [extra.ui]
-nav_new_here = "New here"
-nav_in_the_field = "In the field"
-nav_industry = "Industry & progress"
-nav_trade = "Trade & economy"
-nav_big_play = "Big play"
-nav_with_others = "With others"
-nav_knowledge = "Knowledge"
-nav_data_reference = "Data reference"
+# Main-menu group names (high level; each group expands in the sidenav and
+# has an overview page under /menu/).
+nav_start = "Start"
+nav_play = "Play"
+nav_systems = "Systems"
+nav_reference = "Reference"
+nav_collapse = "Collapse section"
+nav_expand = "Expand section"
 nav_getting_started = "Getting started"
 nav_gathering = "Gathering"
 nav_combat = "Combat"

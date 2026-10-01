@@ -192,11 +192,32 @@ pre code { background: none; padding: 0; }
     box-shadow: 0 0 16px var(--neon-faint);
 }
 .sidenav ul { list-style: none; padding: 0; margin: 0; }
-.sidenav .nav-group {
-    display: flex; align-items: center; gap: 0.5rem;
-    margin-top: 0.9rem;
+/* top-level groups: header row (overview link + collapse caret) above the items */
+.sidenav .nav-group { margin-top: 0.9rem; }
+.sidenav .nav-quick { margin-top: 0; }
+.sidenav .nav-group-head { display: flex; align-items: center; gap: 0.5rem; }
+/* collapse caret button on a group header */
+.sidenav .nav-caret {
+    flex: none; width: 1.7rem; height: 1.7rem; padding: 0;
+    margin-left: auto;
+    border: 1px solid var(--neon-dim); border-radius: 5px;
+    background: transparent; color: var(--chrome-muted);
+    font-size: 0.75rem; line-height: 1; cursor: pointer;
+    transition: transform 0.15s ease;
 }
-.sidenav .nav-group:first-child { margin-top: 0; }
+.sidenav .nav-caret:hover { color: var(--neon); background: var(--neon-faint); }
+.sidenav .nav-group.collapsed .nav-items { display: none; }
+.sidenav .nav-group.collapsed .nav-caret { transform: rotate(-90deg); }
+/* "All features" quick link: always visible at the top of the menu */
+.sidenav .nav-quick a {
+    margin-bottom: 0.2rem;
+    border: 1px solid var(--neon-dim);
+    background: var(--neon-faint);
+    font-weight: 600;
+}
+/* a regular item that carries an icon (World, Extension tree) */
+.sidenav a.nav-item-icon { display: flex; align-items: center; gap: 0.5rem; }
+.sidenav a.nav-item-icon .navicon { width: 20px; height: 20px; }
 .navicon { width: 36px; height: 36px; flex: none; color: var(--accent); }
 .menuicon { width: 36px; height: 36px; flex: none; color: var(--accent); vertical-align: -0.9em; margin-right: 0.45rem; }
 /* current-page selection: bold + neon outline with contrast */
@@ -225,8 +246,8 @@ pre code { background: none; padding: 0; }
     background: var(--neon-faint); color: var(--neon); text-decoration: none;
     border-left-color: var(--neon);
 }
-.sidenav .nav-group {
-    margin: 0.8rem 0.2rem 0.15rem;
+.sidenav .nav-group { margin: 0.8rem 0.2rem 0.15rem; }
+.sidenav .nav-group-head {
     font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em;
     text-transform: uppercase; color: var(--neon);
     opacity: 0.85;
