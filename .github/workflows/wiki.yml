@@ -88,6 +88,40 @@ jobs:
       - name: Analyze
         uses: github/codeql-action/analyze@1190a975f95ce23525efb6a3fc21ea29567c1b52 # ratchet:github/codeql-action/analyze@v3
 
+  test:
+    name: Tests (Playwright)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # ratchet:actions/checkout@v4
+
+      - name: Install Zola
+        # The runner is non-root, so extract to the workspace, not /usr/local.
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE/tools"
+          curl -sSfL -o /tmp/zola.tar.gz "https://github.com/getzola/zola/releases/download/${ZOLA_VERSION}/zola-${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          tar xzC "$GITHUB_WORKSPACE/tools" -f /tmp/zola.tar.gz
+          export PATH="$GITHUB_WORKSPACE/tools:$PATH"
+          echo "$GITHUB_WORKSPACE/tools" >> "$GITHUB_PATH"
+          zola --version
+
+      - name: Build
+        run: zola build --force -o public
+
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # ratchet:actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install test dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run tests
+        run: npm test
+
   build:
     name: Build (Zola)
     runs-on: ubuntu-latest

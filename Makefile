@@ -2,6 +2,9 @@
 #
 #   make build     build the static site into public/ (Docker, pinned Zola image)
 #   make serve     local live-reload server on :8085 (Docker; override WIKI_PORT=NNNN)
+#   make test      run the Playwright browser tests (needs node + npm install,
+#                  builds the site first; CHROMIUM_PATH=... to skip the
+#                  Playwright Chromium download)
 #   make generate  regenerate the generated content pages from the database
 #   make clean     remove the build output
 #
@@ -25,9 +28,14 @@ endif
 DOTNET          ?= $(shell command -v dotnet 2>/dev/null || echo $(HOME)/.dotnet/dotnet)
 TTY_FLAG        := $(shell [ -t 0 ] && echo -it || echo -i)
 
-.PHONY: all build serve generate clean
+.PHONY: all build serve test generate clean
 
 all: build
+
+# Browser tests (tests/): mermaid syntax of every diagram + sidenav behaviour,
+# run against the built site. One-time setup: npm install.
+test: build
+	npm test
 
 # Build the static site with the pinned official Zola container (no local
 # install). The container runs as root (the image has no alpine coreutils),
