@@ -25,8 +25,10 @@ smart_punctuation = false
 # into Zola [translations]); the chrome reads `config.extra.ui`, and the
 # inline JS receives it via window.WIKI_UI.
 [extra.ui]
-# Main-menu group names (high level; each group expands in the sidenav and
-# has an overview page under /menu/).
+# Top-level sidenav links (always visible) and main-menu group names (high
+# level; each group expands in the sidenav and has an overview page under
+# /menu/).
+nav_home = "Home"
 nav_start = "Start"
 nav_play = "Play"
 nav_systems = "Systems"

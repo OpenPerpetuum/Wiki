@@ -15,14 +15,20 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
 
 ## Top-level menu
 
-The sidenav is a high-level view by default: one quick link (**All features**,
-always visible at the top) plus four collapsible groups. Each group header links
-to its overview page under `/menu/`; the caret collapses the group's items (JS
-auto-expands the group containing the current page). Group labels and the
-overview pages live in `config.toml` (`extra.ui.nav_*`) and `content/menu/`.
+The sidenav is a high-level view by default: three top-level links (**Home**,
+**World**, **All features** — always visible) plus four collapsible groups.
+Each group header links to its overview page under `/menu/`; the caret
+collapses the group's items (JS auto-expands the group containing the current
+page). Group labels and the overview pages live in `config.toml`
+(`extra.ui.nav_*`) and `content/menu/`.
 
-0. **All features** — quick link to the full system list `/features/`,
-   always visible above the groups `[existing]`
+0. Top-level links (always visible, above the groups)
+   - **Home** — quick link to `/` `[existing]`
+   - **World** (zone map) — top-level entry with map sub-anchors (training,
+     starter islands, beta, gamma tiers, protection); collapsed by default
+     `[existing]`
+   - **All features** — quick link to the full system list `/features/`
+     `[existing]`
 
 1. **Start** (`/menu/start/`)
    - Getting started `[existing]`
@@ -34,8 +40,6 @@ overview pages live in `config.toml` (`extra.ui.nav_*`) and `content/menu/`.
      - Multi-boxing `[planned] (sub)`
      - Reshader `[planned] (sub)`
    - Home base (respawn / declared terminal) `[planned]`
-   - World (zone map) `[existing]` — with map sub-anchors (training, starter
-     islands, beta, gamma tiers, protection)
 
 2. **Play** (`/menu/play/`) — merges the old *In the field*, *Big play*, and
    *With others* groups

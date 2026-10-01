@@ -40,6 +40,7 @@
         <symbol id="mi-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><circle cx="5.5" cy="19" r="2.2"/><circle cx="18.5" cy="19" r="2.2"/><path d="M12 7.2v3.6m0 0c0 2.4-6.5 2.4-6.5 4.6m6.5-4.6c0 2.4 6.5 2.4 6.5 4.6"/></symbol>
 <symbol id="mi-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="1.5"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 4v16"/></symbol>
         <symbol id="mi-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4ZM9 4v14M15 6v14"/></symbol>
+        <symbol id="mi-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></symbol>
     </defs>
 </svg>
 <div id="wiki-ui-strings" hidden
@@ -78,16 +79,44 @@
 </header>
 <div id="search-results" class="search-results" hidden></div>
 <div class="layout">
-<!-- Sidenav: one quick link (All features — the full system list, always
-     visible at the top) plus four collapsible top-level groups. Each group
-     header links to its overview page under /menu/; the caret button
-     collapses/expands the group's items. JS (below) collapses every group
-     except the one containing the current page, so the default view is a
-     high-level map of the wiki. -->
+<!-- Sidenav: three top-level links (Home, World, All features — World and All
+     features always visible at the top) plus four collapsible top-level
+     groups. Each group header links to its overview page under /menu/; caret
+     buttons collapse/expand group items and sub-lists (World, Gamma, Item
+     shop). JS (below) collapses every group except the one containing the
+     current page, so the default view is a high-level map of the wiki. -->
 <nav class="sidenav">
     <ul>
         <li class="nav-quick">
-            <a href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a>
+            <a href="/"><svg class="navicon" aria-hidden="true"><use href="#mi-home"/></svg>{{ config.extra.ui.nav_home }}</a>
+        </li>
+        <li class="nav-top nav-has-sub">
+            <div class="nav-sub-head">
+                <a class="nav-item-icon" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
+                <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+            </div>
+            <ul class="map-sub">
+                <li><a href="/zones/map/#training" data-mapanchor="1">{{ config.extra.ui.nav_map_training }}</a></li>
+                <li><a href="/zones/map/#starter-islands" data-mapanchor="1">{{ config.extra.ui.nav_map_starter }}</a></li>
+                <li><a href="/zones/map/#beta" data-mapanchor="1">{{ config.extra.ui.nav_map_beta }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="map-sub map-sub-deep">
+                        <li><a href="/zones/map/#t0" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t0 }}</a></li>
+                        <li><a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t1 }}</a></li>
+                        <li><a href="/zones/map/#t2" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t2 }}</a></li>
+                        <li><a href="/zones/map/#t3" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t3 }}</a></li>
+                        <li><a href="/zones/map/#t4" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t4 }}</a></li>
+                    </ul>
+                </li>
+                <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
+            </ul>
+        </li>
+        <li class="nav-top">
+            <a class="nav-item-icon" href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a>
         </li>
         <li class="nav-group">
             <div class="nav-group-head">
@@ -98,31 +127,6 @@
                 <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
                 <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
                 <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
-                <li class="nav-has-sub">
-                    <div class="nav-sub-head">
-                        <a class="nav-item-icon" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
-                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
-                    </div>
-                    <ul class="map-sub">
-                        <li><a href="/zones/map/#training" data-mapanchor="1">{{ config.extra.ui.nav_map_training }}</a></li>
-                        <li><a href="/zones/map/#starter-islands" data-mapanchor="1">{{ config.extra.ui.nav_map_starter }}</a></li>
-                        <li><a href="/zones/map/#beta" data-mapanchor="1">{{ config.extra.ui.nav_map_beta }}</a></li>
-                        <li class="nav-has-sub">
-                            <div class="nav-sub-head">
-                                <a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma }}</a>
-                                <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
-                            </div>
-                            <ul class="map-sub map-sub-deep">
-                                <li><a href="/zones/map/#t0" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t0 }}</a></li>
-                                <li><a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t1 }}</a></li>
-                                <li><a href="/zones/map/#t2" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t2 }}</a></li>
-                                <li><a href="/zones/map/#t3" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t3 }}</a></li>
-                                <li><a href="/zones/map/#t4" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t4 }}</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
-                    </ul>
-                </li>
             </ul>
         </li>
         <li class="nav-group">
