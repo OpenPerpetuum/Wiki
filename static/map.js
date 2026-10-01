@@ -11,17 +11,26 @@
         var wraps = document.querySelectorAll('.zonemap-wrap, .map-zoom-wrap');
         for (var w = 0; w < wraps.length; w++) attach(wraps[w]);
     }
-    scan();
-    if (window.MutationObserver) {
-        // Re-scan when the DOM changes (covers late-rendered content).
-        new MutationObserver(scan).observe(document.body, { childList: true, subtree: true });
+    // map.js loads in <head> without defer — at that point the DOM (and
+    // document.body) does not exist yet, so boot on DOMContentLoaded instead
+    // of running immediately (running immediately used to throw on
+    // document.body === null and the zoom/pan handlers never attached).
+    function boot() {
+        scan();
+        if (window.MutationObserver && document.body) {
+            // Re-scan when the DOM changes (covers late-rendered content).
+            new MutationObserver(scan).observe(document.body, { childList: true, subtree: true });
+        }
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', boot);
+    } else {
+        boot();
     }
 
     function attach(wrap) {
     if (wrap.getAttribute('data-zoom-init')) return;
     wrap.setAttribute('data-zoom-init', '1');
-    var svg = wrap.querySelector('.zonemap, .zoommap');
-    if (!svg) return;
     var svg = wrap.querySelector('.zonemap, .zoommap');
     if (!svg) return;
     var MIN = 1, MAX = 20;
