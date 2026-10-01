@@ -15,20 +15,15 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
 
 ## Top-level menu
 
-The sidenav is a high-level view by default: three top-level links (**Home**,
-**World**, **All features** — always visible) plus four collapsible groups.
-Each group header links to its overview page under `/menu/`; the caret
-collapses the group's items (JS auto-expands the group containing the current
-page). Group labels and the overview pages live in `config.toml`
-(`extra.ui.nav_*`) and `content/menu/`.
+The sidenav has the **Home** quick link on top, then the main items: Start,
+World, Play, Systems, Reference. Groups are **open by default** (root -> sub
+always visible); 2nd-level sub-lists (Gamma's tiers, the item-shop
+categories) start collapsed. Caret buttons collapse/expand any section.
+Group headers (except World) link to their overview page under `/menu/`.
+Labels live in `config.toml` (`extra.ui.nav_*`), overview pages in
+`content/menu/`.
 
-0. Top-level links (always visible, above the groups)
-   - **Home** — quick link to `/` `[existing]`
-   - **World** (zone map) — top-level entry with map sub-anchors (training,
-     starter islands, beta, gamma tiers, protection); collapsed by default
-     `[existing]`
-   - **All features** — quick link to the full system list `/features/`
-     `[existing]`
+0. **Home** — quick link to `/`, above all groups `[existing]`
 
 1. **Start** (`/menu/start/`)
    - Getting started `[existing]`
@@ -41,7 +36,12 @@ page). Group labels and the overview pages live in `config.toml`
      - Reshader `[planned] (sub)`
    - Home base (respawn / declared terminal) `[planned]`
 
-2. **Play** (`/menu/play/`) — merges the old *In the field*, *Big play*, and
+2. **World** (zone map `/zones/map/`) — 2nd top-level item, styled like a
+   group; sub-items are the map anchors (training, starter islands, beta,
+   protection), and the 2nd-level *Gamma* sub-list (T0–T4) starts collapsed
+   `[existing]`
+
+3. **Play** (`/menu/play/`) — merges the old *In the field*, *Big play*, and
    *With others* groups
    - Gathering `[existing]`
    - Combat `[existing]`
@@ -67,7 +67,7 @@ page). Group labels and the overview pages live in `config.toml`
    - Social `[existing]`
    - Field guides (combat / exploration / industry) `[planned]`
 
-3. **Systems** (`/menu/systems/`) — merges the old *Industry & progress* and
+4. **Systems** (`/menu/systems/`) — merges the old *Industry & progress* and
    *Trade* groups
    - Robots `[existing]` — to become a per-robot catalog `[planned (catalog)]`
      (one generated page per robot: class, chassis stats, extension requirements &
@@ -84,10 +84,11 @@ page). Group labels and the overview pages live in `config.toml`
    - Transport (CT capsules) `[existing]`
    - Item shop `[existing]` — 11 category pages `[existing (catalog)]`
 
-4. **Reference** (`/menu/reference/`) — merges the old *Knowledge* and
+5. **Reference** (`/menu/reference/`) — merges the old *Knowledge* and
    *Data reference* groups
    - Content (catalog index) `[existing]`
    - Zones (data) `[existing]`
+   - All features (full system list `/features/`) `[existing]`
    - Extension tree `[existing]`
    - Extensions `[existing]`
    - Stat reference `[existing]` *(added to the menu — currently only linked from
@@ -100,8 +101,8 @@ page). Group labels and the overview pages live in `config.toml`
    - Server `[existing]`
    - Formats (developer) `[existing]`
 
-**How it works** — *new group* (all planned; the group goes live when its first
-pages exist; insert between **Play** and **Systems**):
+**How it works** — *new group* (all planned; the group goes live when its
+first pages exist; insert between **Play** and **Systems**):
    - Damage & application `[planned]`
    - Fitting `[planned]`
    - Powergrid `[planned]`

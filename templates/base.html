@@ -79,23 +79,34 @@
 </header>
 <div id="search-results" class="search-results" hidden></div>
 <div class="layout">
-<!-- Sidenav: three top-level links (Home, World, All features — World and All
-     features always visible at the top) plus four collapsible top-level
-     groups. Each group header links to its overview page under /menu/; caret
-     buttons collapse/expand group items and sub-lists (World, Gamma, Item
-     shop). JS (below) collapses every group except the one containing the
-     current page, so the default view is a high-level map of the wiki. -->
+<!-- Sidenav: the Home quick link on top, then the main items — Start, World,
+     Play, Systems, Reference. Groups are open by default (root -> sub always
+     visible); 2nd-level sub-lists (Gamma's tiers, the item-shop categories)
+     start collapsed. Caret buttons collapse/expand any section; World's
+     anchors are its sub-items. Group headers (except World) link to their
+     overview page under /menu/. -->
 <nav class="sidenav">
     <ul>
         <li class="nav-quick">
             <a href="/"><svg class="navicon" aria-hidden="true"><use href="#mi-home"/></svg>{{ config.extra.ui.nav_home }}</a>
         </li>
-        <li class="nav-top nav-has-sub">
-            <div class="nav-sub-head">
-                <a class="nav-item-icon" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
-                <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+        <li class="nav-group">
+            <div class="nav-group-head">
+                <a class="nav-group-link" href="/menu/start/"><svg class="navicon" aria-hidden="true"><use href="#mi-start"/></svg>{{ config.extra.ui.nav_start }}</a>
+                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
             </div>
-            <ul class="map-sub">
+            <ul class="nav-items">
+                <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
+                <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
+                <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
+            </ul>
+        </li>
+        <li class="nav-group">
+            <div class="nav-group-head">
+                <a class="nav-group-link" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
+                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
+            </div>
+            <ul class="nav-items">
                 <li><a href="/zones/map/#training" data-mapanchor="1">{{ config.extra.ui.nav_map_training }}</a></li>
                 <li><a href="/zones/map/#starter-islands" data-mapanchor="1">{{ config.extra.ui.nav_map_starter }}</a></li>
                 <li><a href="/zones/map/#beta" data-mapanchor="1">{{ config.extra.ui.nav_map_beta }}</a></li>
@@ -113,20 +124,6 @@
                     </ul>
                 </li>
                 <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
-            </ul>
-        </li>
-        <li class="nav-top">
-            <a class="nav-item-icon" href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a>
-        </li>
-        <li class="nav-group">
-            <div class="nav-group-head">
-                <a class="nav-group-link" href="/menu/start/"><svg class="navicon" aria-hidden="true"><use href="#mi-start"/></svg>{{ config.extra.ui.nav_start }}</a>
-                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
-            </div>
-            <ul class="nav-items">
-                <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
-                <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
-                <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
             </ul>
         </li>
         <li class="nav-group">
@@ -192,6 +189,7 @@
             <ul class="nav-items">
                 <li><a href="/content/">{{ config.extra.ui.nav_content }}</a></li>
                 <li><a href="/zones/">{{ config.extra.ui.nav_zones }}</a></li>
+                <li><a class="nav-item-icon" href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a></li>
                 <li><a class="nav-item-icon" href="/content/extensions/#tree" data-mapanchor="1"><svg class="navicon" aria-hidden="true"><use href="#mi-tree"/></svg>{{ config.extra.ui.nav_tree }}</a></li>
                 <li><a href="/content/extensions/">{{ config.extra.ui.nav_extensions }}</a></li>
                 <li><a href="/features/abbreviations/">{{ config.extra.ui.nav_abbreviations }}</a></li>
@@ -381,12 +379,10 @@
         window.mermaid.run({ querySelector: ".mermaid" });
     }
     // Sidenav: every caret button collapses/expands its own section — a
-    // top-level group (.nav-group) or a sub-list (.nav-has-sub: the zone-map
-    // anchors, the gamma tiers, and the item-shop categories).
-    // On load every group except the one containing the current page is
-    // collapsed, and all sub-lists start collapsed, so the default view is a
-    // high-level map of the wiki; the "All features" quick link above the
-    // groups stays visible for one-click access to the full system list.
+    // top-level group (.nav-group) or a sub-list (.nav-has-sub). Groups and
+    // their items (root -> sub) are open by default; 2nd-level sub-lists
+    // (nested inside another item: Gamma's tiers, the item-shop categories)
+    // start collapsed.
     (function () {
         function setCollapsed(target, collapsed) {
             target.classList.toggle("collapsed", collapsed);
@@ -400,27 +396,10 @@
                 if (target) setCollapsed(target, !target.classList.contains("collapsed"));
             });
         });
-        // sub-lists are collapsed by default (World, Gamma, Item shop)
-        Array.prototype.slice.call(document.querySelectorAll(".sidenav .nav-has-sub")).forEach(function (el) {
+        // 2nd-level sub-lists (nested in another item) start collapsed
+        Array.prototype.slice.call(document.querySelectorAll(".sidenav li li.nav-has-sub")).forEach(function (el) {
             setCollapsed(el, true);
         });
-        var groups = Array.prototype.slice.call(document.querySelectorAll(".sidenav .nav-group"));
-        var path = document.location.pathname;
-        function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
-        var current = null;
-        groups.forEach(function (g) {
-            if (current) return;
-            var links = Array.prototype.slice.call(g.querySelectorAll("a[href]"));
-            for (var i = 0; i < links.length; i++) {
-                var href = links[i].getAttribute("href");
-                if (!href || href === "/") continue;
-                var h = href.split("#")[0];
-                if (h.length < 2) continue;
-                if (h[h.length - 1] !== "/") h += "/";
-                if (h === norm(path) || path.indexOf(h) === 0) { current = g; break; }
-            }
-        });
-        groups.forEach(function (g) { setCollapsed(g, g !== current); });
     })();
     // Current-page selection: bold + outlined in both the left menu and the
     // bottom menu.
