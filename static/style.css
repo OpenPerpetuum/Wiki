@@ -322,7 +322,9 @@ main p, main li, main blockquote, main dt, main dd {
    close, swipe the drawer left to close, Escape closes. */
 .sidenav-toggle { display: none; }
 @media (max-width: 800px) {
-    main { margin: 1rem 1rem 2rem; padding: 0.4rem 1.2rem 1.6rem; }
+    /* no extra side margin: .layout and the footer below share the same
+       1.2rem inset, so the panel edges line up top to bottom */
+    main { margin: 0 0 2rem; padding: 0.4rem 1.2rem 1.6rem; }
     .sidenav {
         display: block;
         position: fixed; top: 0; left: 0; bottom: 0;
