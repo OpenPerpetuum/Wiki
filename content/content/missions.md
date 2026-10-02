@@ -42,9 +42,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×7–32</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×6–25</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×6–32</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×7–32</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×6–25</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×6–32</div>
 </div>
 </div>
 <div class="mission-card">
@@ -55,9 +55,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×19–21</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×15–24</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×19–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×19–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×15–24</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×19–21</div>
 </div>
 </div>
 <div class="mission-card">
@@ -68,9 +68,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×21–32</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×19–32</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×21–32</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×21–32</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×19–32</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×21–32</div>
 </div>
 </div>
 </div>
@@ -90,9 +90,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×9–14</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×9–14</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×9–14</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×9–14</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×9–14</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×9–14</div>
 </div>
 </div>
 </div>
@@ -112,9 +112,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×7–10</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×10–16</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×10–16</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×7–10</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×10–16</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×10–16</div>
 </div>
 </div>
 <div class="mission-card">
@@ -125,9 +125,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×11–18</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×14</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×11–18</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×11–18</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×14</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×11–18</div>
 </div>
 </div>
 <div class="mission-card">
@@ -138,9 +138,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×18–21</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×18–21</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×18–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×18–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×18–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×18–21</div>
 </div>
 </div>
 </div>
@@ -160,9 +160,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×6–12</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×4–10</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×7–12</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×6–12</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×4–10</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×7–12</div>
 </div>
 </div>
 <div class="mission-card">
@@ -173,9 +173,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×9–17</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×7–15</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×6–7</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×9–17</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×7–15</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×6–7</div>
 </div>
 </div>
 <div class="mission-card">
@@ -186,9 +186,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×19</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×19</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×19</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×19</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×19</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×19</div>
 </div>
 </div>
 </div>
@@ -208,9 +208,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×8–15</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×3–10</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×15–19</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×8–15</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×3–10</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×15–19</div>
 </div>
 </div>
 <div class="mission-card">
@@ -221,9 +221,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×7–17</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×11–14</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×7–11</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×7–17</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×11–14</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×7–11</div>
 </div>
 </div>
 <div class="mission-card">
@@ -234,9 +234,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×30</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×30</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×30</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×30</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×30</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×30</div>
 </div>
 </div>
 </div>
@@ -256,9 +256,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×19–23</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×19–23</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×19–23</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×19–23</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×19–23</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×19–23</div>
 </div>
 </div>
 </div>
@@ -286,9 +286,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×8–16</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×8–16</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×8–16</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×8–16</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×8–16</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×8–16</div>
 </div>
 </div>
 <div class="mission-card">
@@ -299,9 +299,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×9–21</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×9–21</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×9–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×9–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×9–21</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×9–21</div>
 </div>
 </div>
 </div>
@@ -336,11 +336,11 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Small armor-piercing bullet](/content/items/ammo-small-projectile-a/) ×400</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ammo-small-projectile-a/">Small armor-piercing bullet</a> ×400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> Arkhe Mk2 ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard lightweight frame](/content/items/standard-mass-reductor/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard geoscanner](/content/items/standard-mining-probe-module/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard light autocannon](/content/items/standard-small-autocannon/) ×2</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-mass-reductor/">Standard lightweight frame</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-mining-probe-module/">Standard geoscanner</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-small-autocannon/">Standard light autocannon</a> ×2</div>
 </div>
 </div>
 </div>
@@ -358,20 +358,20 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Small sonic ballistic missile](/content/items/ammo-rocket-d/) ×120</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Small chemoactive energy cell](/content/items/ammo-small-lasercrystal-a/) ×480</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Small chemoactive slug](/content/items/ammo-small-railgun-b/) ×200</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ammo-rocket-d/">Small sonic ballistic missile</a> ×120</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ammo-small-lasercrystal-a/">Small chemoactive energy cell</a> ×480</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ammo-small-railgun-b/">Small chemoactive slug</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> Castel ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> Prometheus ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard laser tuning](/content/items/standard-damage-mod-laser/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard missile launcher tuning](/content/items/standard-damage-mod-missile/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard magnetic weapon tuning](/content/items/standard-damage-mod-railgun/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard light missile launcher](/content/items/standard-rocket-launcher/) ×2</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard sensor amplifier](/content/items/standard-sensor-booster/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard light armor plate](/content/items/standard-small-armor-plate/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard small armor repairer](/content/items/standard-small-armor-repairer/) ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard light HCL laser](/content/items/standard-small-laser/) ×2</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard light EM-gun](/content/items/standard-small-railgun/) ×2</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-damage-mod-laser/">Standard laser tuning</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-damage-mod-missile/">Standard missile launcher tuning</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-damage-mod-railgun/">Standard magnetic weapon tuning</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-rocket-launcher/">Standard light missile launcher</a> ×2</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-sensor-booster/">Standard sensor amplifier</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-small-armor-plate/">Standard light armor plate</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-small-armor-repairer/">Standard small armor repairer</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-small-laser/">Standard light HCL laser</a> ×2</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-small-railgun/">Standard light EM-gun</a> ×2</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> Yagel ×1</div>
 </div>
 </div>
@@ -390,13 +390,13 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Universal harvester charge](/content/items/ammo-harvesting-standard/) ×150</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Miner charge (titan ore)](/content/items/ammo-mining-titan/) ×200</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ammo-harvesting-standard/">Universal harvester charge</a> ×150</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ammo-mining-titan/">Miner charge (titan ore)</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> Argano ×1</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Common kernel](/content/items/kernel-common/) ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Level 2 decoder](/content/items/research-kit-2/) ×5</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard small miner module](/content/items/standard-small-driller/) ×2</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Standard small harvester](/content/items/standard-small-harvester/) ×2</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/kernel-common/">Common kernel</a> ×100</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/research-kit-2/">Level 2 decoder</a> ×5</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-small-driller/">Standard small miner module</a> ×2</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-small-harvester/">Standard small harvester</a> ×2</div>
 </div>
 </div>
 </div>
@@ -416,9 +416,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×1–5</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×2–5</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×3–5</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×1–5</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×2–5</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×3–5</div>
 </div>
 </div>
 <div class="mission-card">
@@ -429,9 +429,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×4–6</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×2–4</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×2–6</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×4–6</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×2–4</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×2–6</div>
 </div>
 </div>
 <div class="mission-card">
@@ -442,9 +442,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×8–23</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×8–23</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×8–23</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×8–23</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×8–23</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×8–23</div>
 </div>
 </div>
 </div>
@@ -462,9 +462,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×5</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×2</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×3</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×5</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×2</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×3</div>
 </div>
 </div>
 <div class="mission-card">
@@ -475,9 +475,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×7</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×4</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×5</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×7</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×4</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×5</div>
 </div>
 </div>
 </div>
@@ -497,9 +497,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×2–16</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×4–13</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×8–13</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×2–16</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×4–13</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×8–13</div>
 </div>
 </div>
 <div class="mission-card">
@@ -510,9 +510,9 @@ One section per **mission type**; each tier is a card. **Reward fee** is the cre
 <div class="mission-card-sub">Duration 720 min</div></div>
 </div>
 <div class="mission-card-rewards">
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Asintec token](/content/items/asi-mission-coin/) ×13</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [ICS token](/content/items/ics-mission-coin/) ×11–13</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> [Truhold-Markson token](/content/items/tm-mission-coin/) ×8–16</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/asi-mission-coin/">Asintec token</a> ×13</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/ics-mission-coin/">ICS token</a> ×11–13</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/tm-mission-coin/">Truhold-Markson token</a> ×8–16</div>
 </div>
 </div>
 </div>

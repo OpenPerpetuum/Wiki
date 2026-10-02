@@ -119,7 +119,10 @@ public static class MissionsPage
             foreach (var r in t.Rewards)
             {
                 var qty = r.QMin == r.QMax ? Md.Num(r.QMin) : $"{Md.Num(r.QMin)}–{Md.Num(r.QMax)}";
-                var name = r.Url is null ? Md.DisplayName(r.Name) : $"[{Md.DisplayName(r.Name)}]({r.Url})";
+                // raw <a>, not a markdown link: this line is a raw HTML block
+                // (it starts with <div>), and markdown is not parsed inside
+                // raw HTML blocks — [x](y) would render as literal text.
+                var name = r.Url is null ? Md.DisplayName(r.Name) : $"<a href=\"{r.Url}\">{Md.DisplayName(r.Name)}</a>";
                 var prob = r.Prob < 100 ? $" ({r.Prob}%)" : "";
                 sb.Append($"<div class=\"reward-box\"><span class=\"icon-mask reward-box-icon\" role=\"img\" aria-label=\"item icon\"></span> {name} ×{qty}{prob}</div>\n");
             }
