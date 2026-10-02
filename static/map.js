@@ -99,10 +99,53 @@
         applyWrap(wrap);
     }
 
+    // Pie charts display non-interactively: the wheel keeps scrolling the
+    // page, and there is no drag pan, pinch, or reset button. This mermaid
+    // build leaves the svg root unclassed, so detect from the pie-specific
+    // inner elements once rendered, or — before the render, when the wrap's
+    // text is still the diagram source — from the first token of the source.
+    function pieNow(wrap) {
+        if (wrap._zmPieKnown) return true;
+        var s = wrap._zoomSvg || wrap.querySelector('svg');
+        var pie = !!(s && s.querySelector('.pieOuterCircle, .pieCircle, .pieTitleText'));
+        if (!pie) {
+            var txt = (wrap.textContent || '').trim();
+            pie = txt.indexOf('pie') === 0 && (txt.length === 3 || /\s/.test(txt.charAt(3)));
+        }
+        // Cache only a positive result: mermaid inserts the svg shell before
+        // its content, so a negative check on the shell would cache forever.
+        if (pie) wrap._zmPieKnown = 1;
+        return pie;
+    }
+
+    // Reset button: present in the map wrappers; created for mermaid boxes.
+    // Re-called on every re-render, because mermaid replaces the wrap's
+    // contents (and with them any button we appended) when it re-renders a
+    // diagram — e.g. on a theme toggle.
+    function ensureReset(wrap) {
+        var reset = wrap.querySelector('.zonemap-reset, .zoommap-reset');
+        if (!reset && wrap.classList.contains('mermaid')) {
+            reset = document.createElement('button');
+            reset.type = 'button';
+            reset.className = 'zonemap-reset';
+            reset.title = 'Reset the zoom';
+            reset.textContent = '⟲';
+            wrap.appendChild(reset);
+        }
+        if (reset && !reset.getAttribute('data-zr-bound')) {
+            reset.setAttribute('data-zr-bound', '1');
+            reset.addEventListener('click', function () {
+                var st = stateOf(wrap);
+                st.s = 1; st.tx = 0; st.ty = 0;
+                applyWrap(wrap);
+            });
+        }
+    }
+
     function attach(wrap) {
         var svg = wrap.querySelector('svg');
         if (!svg) return; // mermaid boxes: the svg appears later; re-scanned
-        if (wrap.classList.contains('mermaid') && svg.classList.contains('pie')) {
+        if (wrap.classList.contains('mermaid') && (wrap._zmPie || pieNow(wrap))) {
             return; // pie charts: no zoom/pan — the wheel keeps scrolling the page
         }
         if (wrap.getAttribute('data-zoom-init')) return;
@@ -112,6 +155,9 @@
         // Wheel = zoom (no key needed). The listener is non-passive so the
         // page scroll is suppressed while the pointer is over the map.
         wrap.addEventListener('wheel', function (e) {
+            // Re-check in case the pie became detectable only after the
+            // render (a pie detected late must not swallow the wheel).
+            if (wrap.classList.contains('mermaid') && pieNow(wrap)) return;
             e.preventDefault();
             zoomAt(wrap, e.clientX, e.clientY, Math.exp(-e.deltaY * 0.0015));
         }, { passive: false });
@@ -131,7 +177,8 @@
             if (e.touches.length === 2) { pinch = dist(e); dragging = false; }
         }, { passive: true });
         wrap.addEventListener('touchmove', function (e) {
-            if (pinch !== null && e.touches.length === 2) {
+            if (pinch !== null && e.touches.length === 2 &&
+                !(wrap.classList.contains('mermaid') && pieNow(wrap))) {
                 e.preventDefault();
                 var d = dist(e);
                 if (d > 0 && pinch > 0) {
@@ -157,6 +204,7 @@
             // reset button right after panning)
             moved = false;
             if (e.target.closest && e.target.closest('button')) return; // reset button
+            if (wrap.classList.contains('mermaid') && pieNow(wrap)) return;
             dragging = true; moved = false; lx = e.clientX; ly = e.clientY;
             svg.classList.add('dragging');
         });
@@ -196,24 +244,7 @@
             if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
         }, true);
 
-        // Reset button: present in the map wrappers; created for mermaid
-        // boxes.
-        var reset = wrap.querySelector('.zonemap-reset, .zoommap-reset');
-        if (!reset && wrap.classList.contains('mermaid')) {
-            reset = document.createElement('button');
-            reset.type = 'button';
-            reset.className = 'zonemap-reset';
-            reset.title = 'Reset the zoom';
-            reset.textContent = '⟲';
-            wrap.appendChild(reset);
-        }
-        if (reset) {
-            reset.addEventListener('click', function () {
-                var st = stateOf(wrap);
-                st.s = 1; st.tx = 0; st.ty = 0;
-                applyWrap(wrap);
-            });
-        }
+        ensureReset(wrap);
         applyWrap(wrap);
     }
 
@@ -222,10 +253,33 @@
         for (var w = 0; w < wraps.length; w++) {
             var wrap = wraps[w];
             var s = wrap.querySelector('svg');
+            if (!s && wrap.classList.contains('mermaid')) {
+                // Not rendered yet: the wrap's text is still the diagram
+                // source — remember pie charts now, before mermaid replaces
+                // the text with the rendered diagram.
+                var txt = (wrap.textContent || '').trim();
+                if (txt.indexOf('pie') === 0 && (txt.length === 3 || /\s/.test(txt.charAt(3)))) {
+                    wrap._zmPie = 1;
+                }
+                continue;
+            }
+            if (wrap.classList.contains('mermaid') && s &&
+                wrap.getAttribute('data-zoom-init') && pieNow(wrap)) {
+                // A pie chart recognized only after attach (mermaid fills the
+                // svg's content after inserting the shell): strip the
+                // affordances attach gave it. The event-time guards in the
+                // handlers already make wheel/drag/pinch no-ops for pies.
+                var rb = wrap.querySelector('.zonemap-reset');
+                if (rb) rb.remove();
+                if (s.style.transform) s.style.transform = '';
+                continue;
+            }
             if (wrap._zoomSvg && s && wrap._zoomSvg !== s) {
                 // mermaid re-rendered in place (theme toggle) — follow the
-                // new svg and keep the current zoom on it
+                // new svg, keep the current zoom on it, and restore the
+                // reset button the re-render wiped out
                 wrap._zoomSvg = s;
+                ensureReset(wrap);
                 applyWrap(wrap);
                 continue;
             }

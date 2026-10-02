@@ -42,7 +42,7 @@ test('diagram zooms on wheel and resets', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/features/pbs/`, { waitUntil: 'networkidle' });
   const box = page.locator('.mermaid').first();
   await box.waitFor({ state: 'visible', timeout: 15000 });
-  await box.waitForSelector('svg', { timeout: 15000 });
+  await box.locator('svg').waitFor({ timeout: 15000 });
   await box.scrollIntoViewIfNeeded();
   await page.waitForTimeout(100);
   const b = await box.boundingBox();
@@ -59,4 +59,48 @@ test('diagram zooms on wheel and resets', async ({ page, baseURL }) => {
   await reset.click();
   t = await box.locator('svg').evaluate((el) => el.style.transform);
   expect(t).toMatch(/scale\(1\)/);
+});
+
+// Pie charts are deliberately NOT interactive: the wheel keeps scrolling the
+// page (it is not consumed), dragging does not pan, and no reset button is
+// added. Rendered with the site's own mermaid build.
+test('pie chart is not interactive', async ({ page, baseURL }) => {
+  test.skip(page.viewportSize().width <= 500, 'desktop layout only');
+  await page.goto(`${baseURL}/features/pbs/`, { waitUntil: 'networkidle' });
+  await page.waitForFunction(() => window.mermaid && typeof window.mermaid.run === 'function');
+
+  // Inject a pie chart the same way the page renders its diagrams.
+  await page.evaluate(() => {
+    const pre = document.createElement('pre');
+    pre.className = 'mermaid pie-probe';
+    pre.textContent = 'pie title Probe\n"A" : 44\n"B" : 56';
+    document.body.appendChild(pre);
+    return mermaid.run({ querySelector: '.pie-probe' });
+  });
+  const box = page.locator('pre.pie-probe');
+  await box.locator('svg').waitFor({ timeout: 15000 });
+  await box.evaluate((el) => el.scrollIntoView({ block: 'center' }));
+  await page.waitForTimeout(100);
+  const b = await box.boundingBox();
+  const cx = b.x + b.width / 2, cy = b.y + b.height / 2;
+
+  // Wheel over the pie scrolls the PAGE (the zoom handler did not consume it).
+  const y0 = await page.evaluate(() => window.scrollY);
+  await page.mouse.move(cx, cy);
+  await page.mouse.wheel(0, -240);
+  await page.waitForTimeout(80);
+  expect(await page.evaluate(() => window.scrollY)).not.toBe(y0);
+  expect(await box.locator('svg').evaluate((el) => el.style.transform)).toBe('');
+
+  // Dragging over the pie does not pan it.
+  await box.evaluate((el) => el.scrollIntoView({ block: 'center' }));
+  const b2 = await box.boundingBox();
+  await page.mouse.move(b2.x + b2.width / 2, b2.y + b2.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(b2.x + b2.width / 2 + 80, b2.y + b2.height / 2 + 40, { steps: 4 });
+  await page.mouse.up();
+  expect(await box.locator('svg').evaluate((el) => el.style.transform)).toBe('');
+
+  // No reset button is added to a pie chart.
+  expect(await box.locator('.zonemap-reset').count()).toBe(0);
 });
