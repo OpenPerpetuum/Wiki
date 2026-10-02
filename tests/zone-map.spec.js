@@ -30,10 +30,12 @@ test('zone map is inlined with its terrain background', async ({ page, baseURL }
   expect(errors).toEqual([]);
 });
 
-test('display modes: color and plain switch the background', async ({ page, baseURL }) => {
+test('display modes: height and color switch the background', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
   const wrap = page.locator('.zonetp-wrap');
   await wrap.waitFor({ state: 'visible', timeout: 10000 });
+  // exactly two modes
+  expect(await wrap.locator('.zonemap-mode').count()).toBe(2);
   const visible = (sel) => page.evaluate((s) => {
     const el = document.querySelector(s);
     return el && el.style.display !== 'none';
@@ -45,8 +47,8 @@ test('display modes: color and plain switch the background', async ({ page, base
   expect(await visible('image#zm-color')).toBe(true);
   expect(await visible('image#zm-height')).toBe(false);
 
-  await wrap.locator('.zonemap-mode[data-mode="plain"]').click();
-  expect(await visible('image#zm-height')).toBe(false);
+  await wrap.locator('.zonemap-mode[data-mode="height"]').click();
+  expect(await visible('image#zm-height')).toBe(true);
   expect(await visible('image#zm-color')).toBe(false);
 });
 

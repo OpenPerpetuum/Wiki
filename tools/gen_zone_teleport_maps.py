@@ -7,10 +7,17 @@
       1. $OP_ASSETS_DIR/custom-layers/  (default: ../PerpetuumServer2)
       2. the .gbf archives next to it (decoded with the server's own
          script/extract_gbf.py decoder — GXY2 format)
-    Two display modes are rendered per zone (128x128 PNGs, referenced by
+    Two display modes are rendered per zone (512x512 PNGs, referenced by
     the SVG and switchable in the UI by static/zone-map.js):
       height  hillshaded monochrome heightmap (real island shapes)
-      color   altitude color ramp + island coastline (blocks Island flag)
+      color   altitude color ramp + coastline (derived from the altitude
+               band, so the line sits exactly where the color changes)
+    Both modes also show the zone's roads (the Highway flag, 1<<7, of the
+    control layer — TerrainControlFlags from the server code) in grey.
+    Road tiles below sea level are drawn in a darker grey.
+    (The blocks layer's Island flag turned out to be too sparse to use as
+    a land mask — it marks only a fraction of land tiles — hence the
+    altitude-derived coastline.)
     Zones without layer data anywhere (e.g. the training zone) fall back
     to a deterministic procedural heightmap (fBm value noise +
     hillshading, seeded per zone) embedded as base64.
@@ -26,7 +33,9 @@ The input SVGs are produced by generator/Perpetuum.WikiGenerate
 static assets, so it needs no database. Pure standard library (plus the
 server's extract_gbf.py, also stdlib, when a .gbf fallback is needed) —
 run it locally (`python3 tools/gen_zone_teleport_maps.py`) or via
-`make zonemaps` (containerized).
+`make zonemaps` (containerized). Zones are independent, so the script
+spawns one process per CPU core (multiprocessing — the per-tile loops are
+Python bytecode, so threads would not help).
 
 Note: when the C# generator is re-run it will overwrite these files;
 re-run this script afterwards (or port this logic into ZoneMapSvg.cs).
@@ -39,6 +48,7 @@ import re
 import struct
 import zlib
 from itertools import accumulate
+from multiprocessing import Pool
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ZONEMAPS = os.path.join(ROOT, "static", "zonemaps")
@@ -111,65 +121,72 @@ def _layer_bytes(name):
     return None
 
 
-def load_terrain(zid, w, h, size):
-    """(alt[size][size], coast[size][size] or None) from the game's layers.
+# TerrainControlFlags (server: Perpetuum/Zones/Terrains/TerrainControlFlags.cs);
+# the on-disk control layer is one ushort per tile (little-endian).
+FLAG_HIGHWAY = 1 << 7
+# sea level for the ramp (shore transition) — roads below it are over water
+# the ramp has no colors between 950 (shore) and 1500 (grass) — the real
+# sea/land boundary sits in that gap; these thresholds split it
+SEA_LEVEL = 1200    # below: over water (dark road grey)
+SEA_COAST = 1200    # below: sea (coastline derived from this crossing)
 
-    alt: box-averaged elevation. coast: 1 on outline cells of the island
-    flag (blocks layer) — the accurate island border. (None, None) when the
-    zone has no layer data anywhere.
+
+def load_terrain(zid, w, h, size):
+    """(alt, coast, roads, None) from the game's layers, size×size grids.
+
+    alt: box-averaged elevation. coast: 1 on cells where the sea/land
+    boundary runs (altitude crossing SEA_COAST). roads: 1 on cells
+    containing a Highway tile (control layer). (None, ...) when the zone
+    has no layer data anywhere.
     """
     id4 = f"{zid:04d}"
     alt_path = os.path.join(ASSETS, "custom-layers", f"altitude.{id4}.bin")
-    blk_path = os.path.join(ASSETS, "custom-layers", f"blocks.{id4}.bin")
-    alt_raw = blk_raw = None
+    ctl_path = os.path.join(ASSETS, "custom-layers", f"control.{id4}.bin")
+    alt_raw = ctl_raw = None
     if os.path.isfile(alt_path):
         alt_raw = open(alt_path, "rb").read()
-        if os.path.isfile(blk_path):
-            blk_raw = open(blk_path, "rb").read()
+        if os.path.isfile(ctl_path):
+            ctl_raw = open(ctl_path, "rb").read()
     else:
         alt_raw = _layer_bytes(f"altitude{id4}")
-        if blk_raw is None and alt_raw is not None:
-            blk_raw = _layer_bytes(f"blocks{id4}")
+        if ctl_raw is None and alt_raw is not None:
+            ctl_raw = _layer_bytes(f"control{id4}")
     if alt_raw is None:
-        return None, None
+        return None, None, None, None
     if len(alt_raw) != w * h * 2:
         print(f"  [!] zone {id4}: altitude layer size {len(alt_raw)} != {w * h * 2} — skipped")
-        return None, None
+        return None, None, None, None
 
     fx, fy = w // size, h // size
     acc = [[0.0] * w for _ in range(size)]
+    roads = [[0] * size for _ in range(size)] if ctl_raw is not None and len(ctl_raw) == w * h * 2 else None
     for y in range(h):
         row = struct.unpack_from(f"<{w}H", alt_raw, y * w * 2)
+        crow = struct.unpack_from(f"<{w}H", ctl_raw, y * w * 2) if roads is not None else None
         ay = acc[y // fy]
+        cy = y // fy
+        rrow = roads[cy] if roads is not None else None
         for x in range(w):
             ay[x] += row[x]
+            if rrow is not None and crow[x] & FLAG_HIGHWAY:
+                rrow[x // fx] = 1
     alt = []
     for oy in range(size):
         ps = [0]
         ps.extend(accumulate(acc[oy]))  # ps[i] = sum of columns [0, i)
         alt.append([(ps[(ox + 1) * fx] - ps[ox * fx]) / (fx * fy) for ox in range(size)])
 
-    coast = None
-    if blk_raw is not None and len(blk_raw) == w * h * 2:
-        isl = [[0] * size for _ in range(size)]
-        for y in range(h):
-            base = y * w * 2
-            cy = y // fy
-            row = isl[cy]
-            for x in range(w):
-                if blk_raw[base + x * 2] & 8:  # BlockingFlags.Island
-                    row[x // fx] = 1
-        # outline: island cells touching non-island cells
-        coast = [[0] * size for _ in range(size)]
-        for y in range(size):
-            for x in range(size):
-                if not isl[y][x]:
-                    continue
-                if (x == 0 or y == 0 or x == size - 1 or y == size - 1
-                        or not isl[y][x - 1] or not isl[y][x + 1]
-                        or not isl[y - 1][x] or not isl[y + 1][x]):
-                    coast[y][x] = 1
-    return alt, coast
+    # coastline: cells where the (box-averaged) altitude crosses the
+    # sea/land boundary — sits exactly on the rendered color change
+    sea = [[v < SEA_COAST for v in row] for row in alt]
+    coast = [[0] * size for _ in range(size)]
+    for y in range(size):
+        for x in range(size):
+            s = sea[y][x]
+            if (x > 0 and sea[y][x - 1] != s) or (y > 0 and sea[y - 1][x] != s) \
+              or (x < size - 1 and sea[y][x + 1] != s) or (y < size - 1 and sea[y + 1][x] != s):
+                coast[y][x] = 1
+    return alt, coast, roads, None
 
 
 RAMP = [  # (elevation, rgb) — deep water to snow line
@@ -209,13 +226,27 @@ def _shade_at(alt, y, x):
     return max(0.62, min(1.35, s))
 
 
-def height_png(alt, size=128):
+# road grey: light enough to read on land, darker over water (the game lays
+# highway tiles out to the teleport columns standing off-coast)
+ROAD_LAND = (176, 182, 194)
+ROAD_WATER = (104, 112, 126)
+ROAD_LAND_H = (150, 158, 172)
+ROAD_WATER_H = (96, 104, 118)
+
+
+def height_png(alt, roads, _isl):
     """Hillshaded monochrome heightmap (real terrain) as PNG bytes."""
+    size = len(alt)
     px = bytearray()
     vmax = max(max(r) for r in alt)
     for y in range(size):
         row = alt[y]
+        rrow = roads[y] if roads else None
         for x in range(size):
+            if rrow and rrow[x]:
+                c = ROAD_LAND_H if row[x] >= SEA_LEVEL else ROAD_WATER_H
+                px += bytes((c[0], c[1], c[2], 255))
+                continue
             sh = _shade_at(alt, y, x)
             t = (row[x] / vmax) ** 0.65 if vmax else 0.0
             r = int(min(255, (LO[0] + (HI[0] - LO[0]) * t) * sh))
@@ -225,15 +256,21 @@ def height_png(alt, size=128):
     return png_encode(size, size, bytes(px))
 
 
-def color_png(alt, coast, size=128):
-    """Altitude color ramp + island coastline as PNG bytes."""
+def color_png(alt, coast, roads, _isl):
+    """Altitude color ramp + roads + island coastline as PNG bytes."""
+    size = len(alt)
     px = bytearray()
     for y in range(size):
         row = alt[y]
         crow = coast[y] if coast else None
+        rrow = roads[y] if roads else None
         for x in range(size):
             if crow and crow[x]:
                 px += bytes((191, 232, 255, 255))  # island border
+                continue
+            if rrow and rrow[x]:
+                c = ROAD_LAND if row[x] >= SEA_LEVEL else ROAD_WATER
+                px += bytes((c[0], c[1], c[2], 255))
                 continue
             sh = _shade_at(alt, y, x)
             r, g, b = _ramp(row[x])
@@ -286,7 +323,7 @@ def png_encode(w, h, rgba):
             + chunk(b"IEND", b""))
 
 
-def heightmap_png(zone_name, size=128):
+def heightmap_png(zone_name, size=512):
     """Deterministic hillshaded heightmap as a PNG (RGBA) byte string."""
     seed = int.from_bytes(hashlib.md5(zone_name.encode("utf-8")).digest()[:8], "big")
     img = fbm(size, seed)
@@ -315,6 +352,12 @@ ITEM = re.compile(r"<(rect|line|circle|path)\b([^>]*?)/>|<text\b([^>]*?)>(.*?)</
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+def _fmt(v):
+    """18.0 -> '18', 2.25 -> '2.25'"""
+    s = f"{v:.2f}".rstrip("0").rstrip(".")
+    return s or "0"
 
 
 def markup(kind, at, txt=None):
@@ -348,37 +391,45 @@ def label_names(kind, label):
 
 
 def rebuild(path, name2slug, slug2id, slug2size):
-    w, h, zone, els = parse(open(path, encoding="utf-8").read())
+    svg_text = open(path, encoding="utf-8").read()
+    w, h, zone, els = parse(svg_text)
     f = w / 2048.0
     slug = os.path.basename(path)[:-4] + "/"  # e.g. "zone-asi-a-real/"
+    # the POI enlargement below is multiplicative — the marker makes the
+    # script idempotent (a re-run passes the already-scaled sizes through)
+    already = 'data-zm-v2=' in svg_text
 
     out = []
     out.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="640" '
-               f'height="{int(640.0 * h / w)}" role="img" aria-label="Teleport map of {esc(zone)}">')
+               f'height="{int(640.0 * h / w)}" role="img" aria-label="Teleport map of {esc(zone)}" '
+               f'data-zm-v2="1">')
     # zone extent, then the background: real terrain (two switchable modes —
     # static/zone-map.js swaps the images) or, when the zone has no layer
     # data, an embedded procedural heightmap.
     out.append(f'  <rect x="0" y="0" width="{w}" height="{h}" rx="{16 * f}" fill="#10151f" stroke="#39445a" stroke-width="{2 * f}"/>')
     zid = slug2id.get(slug)
-    real = (None, None)
+    real = (None, None, None, None)
     if zid is not None:
         try:
-            real = load_terrain(zid, w, h, 128) or (None, None)
+            # never upsample: tiny zones (256×256) keep their native size
+            real = load_terrain(zid, w, h, min(512, w, h)) or real
         except Exception as e:
             print(f"  [!] {slug}: {e}")
     if real[0] is not None:
-        alt, coast = real
+        alt, coast, roads, isl = real
         d = os.path.join(ZONEMAPS, slug)
         os.makedirs(d, exist_ok=True)
-        open(os.path.join(d, "height.png"), "wb").write(height_png(alt))
-        open(os.path.join(d, "color.png"), "wb").write(color_png(alt, coast))
+        open(os.path.join(d, "height.png"), "wb").write(height_png(alt, roads, isl))
+        open(os.path.join(d, "color.png"), "wb").write(color_png(alt, coast, roads, isl))
         out.append(f'  <image id="zm-height" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}height.png" preserveAspectRatio="none"/>')
         out.append(f'  <image id="zm-color" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}color.png" preserveAspectRatio="none" style="display:none"/>')
     else:
         b64 = base64.b64encode(heightmap_png(zone)).decode("ascii")
         out.append(f'  <image id="zm-height" x="0" y="0" width="{w}" height="{h}" href="data:image/png;base64,{b64}" opacity="0.55" preserveAspectRatio="none"/>')
 
-    last_shape = None  # (kind, markup) waiting for its label
+    # the generated points of interest are small (r = w/170); enlarge them
+    # a bit and give the labels a dark halo so they read on any terrain.
+    last_shape = None  # (kind, markup, radius-growth) waiting for its label
     for kind, at, txt in els:
         if kind == "rect":
             if at.get("fill") == "#10151f":
@@ -392,7 +443,21 @@ def rebuild(path, name2slug, slug2id, slug2size):
             if last_shape is None:
                 out.append("  " + markup("text", at, txt))
                 continue
-            kind_name, shape_mup = last_shape  # already classified
+            kind_name, shape_mup, growth = last_shape  # already classified
+            # labels sit above their point: lift them by the radius growth
+            if not already and growth and "y" in at:
+                at["y"] = _fmt(float(at["y"]) - growth)
+            if not already and "font-size" in at:
+                fs = float(at["font-size"]) * 1.3
+                at["font-size"] = _fmt(fs)
+                # halo: a wide dark stroke behind the glyphs (paint-order)
+                at["paint-order"] = "stroke"
+                at["stroke"] = "#070c14"
+                at["stroke-opacity"] = "0.85"
+                at["stroke-width"] = _fmt(fs * 0.3)
+                at["stroke-linejoin"] = "round"
+            if at.get("fill") == "#d5dbe8":
+                at["fill"] = "#eef4fd"  # brighter over the new backgrounds
             href = resolve(label_names(kind_name, txt), name2slug)
             if href:
                 out.append(f'  <a href="{href}" title="{esc(txt)}">')
@@ -408,7 +473,13 @@ def rebuild(path, name2slug, slug2id, slug2size):
                 out.append("  " + last_shape[1])
             shape_kind = "spot" if kind == "circle" and "stroke-dasharray" in at else \
                          ("gate" if kind == "path" else "col")
-            last_shape = (shape_kind, markup(kind, at))
+            growth = 0.0
+            if not already and kind == "circle" and "r" in at:
+                growth = float(at["r"]) * 0.5
+                at["r"] = _fmt(float(at["r"]) + growth)
+            if not already and kind in ("circle", "path") and "stroke-width" in at:
+                at["stroke-width"] = _fmt(float(at["stroke-width"]) * 1.25)
+            last_shape = (shape_kind, markup(kind, at), growth)
 
     if last_shape is not None:
         out.append("  " + last_shape[1])
@@ -421,22 +492,31 @@ def rebuild(path, name2slug, slug2id, slug2size):
     return zone
 
 
+def _rebuild_one(fname, name2slug, slug2id, slug2size):
+    """One zone, one process: (fname, zone, links, real, svg-bytes)."""
+    path = os.path.join(ZONEMAPS, fname)
+    try:
+        zone = rebuild(path, name2slug, slug2id, slug2size)
+    except Exception as e:
+        print(f"  [!] {fname}: {e}")
+        zone = None
+    new = open(path, encoding="utf-8").read()
+    return fname, zone, new.count("<a href="), 'id="zm-color"' in new, len(new.encode("utf-8"))
+
+
 def main():
     name2slug, slug2id, slug2size = load_zone_meta()
     print(f"name map: {len(name2slug)} zones, {len(slug2id)} with ids")
     print(f"assets: {os.path.abspath(ASSETS)}")
     files = sorted(f for f in os.listdir(ZONEMAPS) if f.endswith(".svg"))
-    linked = real = 0
-    total = 0
-    for fname in files:
-        path = os.path.join(ZONEMAPS, fname)
-        rebuild(path, name2slug, slug2id, slug2size)
-        new = open(path, encoding="utf-8").read()
-        linked += new.count("<a href=")
-        if 'id="zm-color"' in new:
-            real += 1
-        total += len(new.encode("utf-8"))
-    print(f"{len(files)} maps regenerated ({real} with real terrain), {linked} clickable elements, {total / 1024 / 1024:.2f} MB total")
+    workers = max(1, min(len(files), os.cpu_count() or 1))
+    with Pool(workers) as pool:  # one process per core, one zone each
+        results = pool.starmap(_rebuild_one, [(f, name2slug, slug2id, slug2size) for f in files])
+    linked = sum(r[2] for r in results)
+    real = sum(1 for r in results if r[3])
+    total = sum(r[4] for r in results)
+    print(f"{len(files)} maps regenerated in parallel ({workers} workers, {real} with real terrain), "
+          f"{linked} clickable elements, {total / 1024 / 1024:.2f} MB total")
 
 
 if __name__ == "__main__":

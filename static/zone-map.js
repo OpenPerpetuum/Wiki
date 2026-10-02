@@ -10,8 +10,9 @@
 (function () {
     'use strict';
 
-    // The display mode (height/color/plain) is a user preference: it is
-    // remembered and applied to every zone map that gets inlined.
+    // The display mode (height/color) is a user preference: it is
+    // remembered and applied to every zone map that gets inlined. (Older
+    // versions also had a 'plain' mode; that value now reads as 'height'.)
     var MODE_KEY = 'wiki-zonemap-mode';
     function getMode() {
         try { return localStorage.getItem(MODE_KEY); } catch (err) { return null; }
@@ -20,7 +21,7 @@
         try { localStorage.setItem(MODE_KEY, m); } catch (err) { /* private mode */ }
     }
     function applyMode(hImg, cImg, mode, bar) {
-        if (mode !== 'color' && mode !== 'plain') mode = 'height';
+        if (mode !== 'color') mode = 'height';
         hImg.style.display = mode === 'height' ? '' : 'none';
         cImg.style.display = mode === 'color' ? '' : 'none';
         if (bar) {
@@ -54,7 +55,7 @@
             btn.textContent = '⟲';
             wrap.appendChild(btn);
 
-            // display modes (Height / Color / Plain) — only for zones whose
+            // display modes (Height / Color) — only for zones whose
             // SVG carries both real-terrain images
             var hImg = svg.querySelector('#zm-height');
             var cImg = svg.querySelector('#zm-color');
@@ -64,8 +65,7 @@
                 bar = document.createElement('div');
                 bar.className = 'zonemap-modes';
                 [['height', ui.zonemapModeHeight || 'Height'],
-                 ['color', ui.zonemapModeColor || 'Color'],
-                 ['plain', ui.zonemapModePlain || 'Plain']].forEach(function (m) {
+                 ['color', ui.zonemapModeColor || 'Color']].forEach(function (m) {
                     var b = document.createElement('button');
                     b.type = 'button';
                     b.className = 'zonemap-mode';

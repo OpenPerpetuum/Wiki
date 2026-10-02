@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_gamma_z129">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_gamma_z129" data-zm-v2="1">
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="#10151f" stroke="#39445a" stroke-width="2.0"/>
   <image id="zm-height" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-gamma-z129/height.png" preserveAspectRatio="none"/>
   <image id="zm-color" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-gamma-z129/color.png" preserveAspectRatio="none" style="display:none"/>
@@ -17,14 +17,14 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <a href="/zones/zone-gamma-z128" title="zone_gamma_z128">
-  <circle cx="234.5" cy="1271.5" r="12" fill="#a78bfa" stroke="#10151f" stroke-width="2" opacity="1"/>
-  <text x="234.5" y="1246.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">zone_gamma_z128</text>
+  <circle cx="234.5" cy="1271.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="234.5" y="1240.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z128</text>
   </a>
-  <circle cx="1020.5" cy="233.5" r="12" fill="#8b93a5" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <circle cx="1020.5" cy="233.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-gamma-z130" title="zone_gamma_z130">
-  <circle cx="1508.5" cy="1737.5" r="12" fill="#a78bfa" stroke="#10151f" stroke-width="2" opacity="1"/>
-  <text x="1508.5" y="1712.5" font-size="26" fill="#d5dbe8" text-anchor="middle" font-family="sans-serif" opacity="1">zone_gamma_z130</text>
+  <circle cx="1508.5" cy="1737.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="1508.5" y="1706.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z130</text>
   </a>
-  <circle cx="1727.5" cy="777.5" r="12" fill="#8b93a5" stroke="#10151f" stroke-width="2" opacity="1"/>
+  <circle cx="1727.5" cy="777.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
 </svg>
