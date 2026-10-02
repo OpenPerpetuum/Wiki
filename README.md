@@ -48,6 +48,35 @@ Commit the regenerated pages — the site build always uses the committed markdo
 See [generator/README.md](generator/README.md) for what each generated page is
 built from, and [idea.md](idea.md) for the original design notes.
 
+## Zone map terrain
+
+The zone teleport maps (`static/zonemaps/*.svg`) show each zone's real
+terrain. The **layer data is not in this repo** — only the small SVGs are
+committed, plus derived 512×512 PNGs for the zones whose layer data is not
+fetchable in CI (see below). The PNGs for the other zones are generated at
+build time by `tools/gen_zone_teleport_maps.py` (pure standard-library
+Python, one process per core) from the game's layer files, sourced in order:
+
+1. a local PerpetuumServer2 checkout (sibling `../PerpetuumServer2` or the
+   `server/` submodule) when it has `custom-layers/` — `make zonemaps` uses
+   it directly, no download
+2. otherwise `tools/fetch_zone_layers.sh` fetches what is publicly
+   available into `.assets/` (the same sources the PerpetuumServer2 CI
+   uses): the original zones' `.bin` layers from the Dedicated Server
+   installer (Steam app 693060, anonymous) and the latest gamma/custom
+   zones from the public Google Drive archive
+
+The remaining zones (classic 2048×2048 worlds) ship only in the game
+client's `Perpetuum.gbf`, which needs a Steam account — not available to CI
+yet. For those, `static/zonemaps-fallback/<zone>/{height,color}.png` holds
+previously derived terrain PNGs committed to the repo (~11 MB); the tool
+keeps them instead of downgrading to the procedural placeholder. Once a
+Steam account can fetch the client data, regenerate locally and delete the
+fallback directory.
+
+After re-running `make generate` (new zones or moved teleports), re-run
+`make zonemaps` to refresh the map backgrounds and links.
+
 ## CI and action pinning
 
 GitHub Actions in `.github/workflows/` are pinned to commit SHAs with

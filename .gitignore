@@ -6,3 +6,5 @@ memory.md
 generator/**/bin/
 generator/**/obj/
 tools/__pycache__/
+static/zonemaps/*/
+.assets/

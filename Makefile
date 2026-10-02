@@ -5,9 +5,9 @@
 #   make test      build + run the Playwright browser tests (needs node +
 #                  npm install; CHROMIUM_PATH=... to skip the Playwright
 #                  Chromium download)
-#   make zonemaps  regenerate the zone teleport map SVGs (heightmap +
-#                  clickable teleports; pure-stdlib Python in a container —
-#                  no database needed)
+#   make zonemaps  regenerate the zone teleport maps: real terrain from the
+#                  game's layer data (fetched when no local checkout exists)
+#                  + clickable teleports (pure-stdlib Python, no database)
 #   make generate  regenerate the generated content pages from the database
 #   make clean     remove the build output
 #
@@ -37,14 +37,19 @@ TTY_FLAG        := $(shell [ -t 0 ] && echo -it || echo -i)
 all: build
 
 # Post-process the generated zone teleport maps (static/zonemaps/*.svg):
-# REAL terrain backgrounds from the game's layer files (custom-layers/*.bin
-# or the .gbf archives in the sibling PerpetuumServer2 checkout — see the
-# script header), emphasized zone border, and clickable teleport links.
+# REAL terrain backgrounds from the game's layer files, emphasized zone
+# border, and clickable teleport links. The game's layer data is NOT in
+# this repo; the tool reads it, in order of preference, from:
+#   1. a PerpetuumServer2 checkout (sibling ../PerpetuumServer2 or the
+#      server/ submodule) when one has custom-layers/ — full data
+#   2. .assets/ — fetched by tools/fetch_zone_layers.sh (Steam dedicated
+#      server + the public gamma Drive archive) when no checkout exists;
+#      zones only available in the game client then keep their committed
+#      derived PNGs from static/zonemaps-fallback/ (see the tool header)
 # Pure standard-library Python — no database, no pip installs.
+ASSETS ?= $(patsubst %/custom-layers,%,$(firstword $(wildcard ../PerpetuumServer2/custom-layers ./server/custom-layers .assets/custom-layers)))
 zonemaps:
-	docker run --rm -v "$PWD:/src" -w /src \
-		-v "$(shell cd .. && pwd)/PerpetuumServer2:/assets:ro" \
-		-e OP_ASSETS_DIR=/assets $(PYTHON_IMAGE) python3 tools/gen_zone_teleport_maps.py
+	ASSETS="$(ASSETS)"; if [ -z "$$ASSETS" ]; then bash tools/fetch_zone_layers.sh .assets; ASSETS=$$(pwd)/.assets; fi; OP_ASSETS_DIR="$$ASSETS" python3 tools/gen_zone_teleport_maps.py
 
 # Browser tests (tests/): mermaid syntax of every diagram + sidenav behaviour,
 # run against the built site. One-time setup: npm install.

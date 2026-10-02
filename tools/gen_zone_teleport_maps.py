@@ -22,6 +22,10 @@
     to a deterministic procedural heightmap (fBm value noise +
     hillshading, seeded per zone) embedded as base64.
   * an emphasized border around the zone.
+  * zones whose layer data is not present (e.g. CI, where the original
+    zones' layers only ship in the game client's Perpetuum.gbf) keep their
+    committed derived PNGs from static/zonemaps-fallback/<slug>/ instead of
+    downgrading to the procedural placeholder.
   * interactivity: teleport columns, landing spots ("from …") and exit
     gates ("exit → …") whose destination/origin resolves to a zone page
     are wrapped in <a href="/zones/<slug>/"> so they are clickable once the
@@ -52,6 +56,11 @@ from multiprocessing import Pool
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ZONEMAPS = os.path.join(ROOT, "static", "zonemaps")
+# committed derived PNGs for zones whose layer data is not fetchable in CI
+# (it only ships in the game client's Perpetuum.gbf): when a zone has no
+# layer data but a fallback pair exists here, the tool copies it into
+# static/zonemaps/<slug>/ instead of downgrading to the fBm placeholder
+ZONEMAPS_FALLBACK = os.path.join(ROOT, "static", "zonemaps-fallback")
 ZONE_INDEX = os.path.join(ROOT, "content", "zones", "zone-index.md")
 # the game assets live in the sibling server checkout
 ASSETS = os.environ.get("OP_ASSETS_DIR",
@@ -415,12 +424,25 @@ def rebuild(path, name2slug, slug2id, slug2size):
             real = load_terrain(zid, w, h, min(512, w, h)) or real
         except Exception as e:
             print(f"  [!] {slug}: {e}")
+    # committed derived PNGs for zones whose layer data is not fetchable in
+    # CI (it only ships in the game client's Perpetuum.gbf)
+    fb = os.path.join(ZONEMAPS_FALLBACK, slug)
+    have_fallback = (os.path.isfile(os.path.join(fb, "height.png"))
+                     and os.path.isfile(os.path.join(fb, "color.png")))
     if real[0] is not None:
         alt, coast, roads, isl = real
         d = os.path.join(ZONEMAPS, slug)
         os.makedirs(d, exist_ok=True)
         open(os.path.join(d, "height.png"), "wb").write(height_png(alt, roads, isl))
         open(os.path.join(d, "color.png"), "wb").write(color_png(alt, coast, roads, isl))
+    elif have_fallback:
+        # no layer data here: keep the committed derived PNGs (copied into
+        # place so the SVG's /zonemaps/<slug>/ URLs resolve)
+        d = os.path.join(ZONEMAPS, slug)
+        os.makedirs(d, exist_ok=True)
+        for name in ("height.png", "color.png"):
+            open(os.path.join(d, name), "wb").write(open(os.path.join(fb, name), "rb").read())
+    if real[0] is not None or have_fallback:
         out.append(f'  <image id="zm-height" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}height.png" preserveAspectRatio="none"/>')
         out.append(f'  <image id="zm-color" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}color.png" preserveAspectRatio="none" style="display:none"/>')
     else:
