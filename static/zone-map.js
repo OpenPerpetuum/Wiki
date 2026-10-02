@@ -10,6 +10,26 @@
 (function () {
     'use strict';
 
+    // The display mode (height/color/plain) is a user preference: it is
+    // remembered and applied to every zone map that gets inlined.
+    var MODE_KEY = 'wiki-zonemap-mode';
+    function getMode() {
+        try { return localStorage.getItem(MODE_KEY); } catch (err) { return null; }
+    }
+    function setMode(m) {
+        try { localStorage.setItem(MODE_KEY, m); } catch (err) { /* private mode */ }
+    }
+    function applyMode(hImg, cImg, mode, bar) {
+        if (mode !== 'color' && mode !== 'plain') mode = 'height';
+        hImg.style.display = mode === 'height' ? '' : 'none';
+        cImg.style.display = mode === 'color' ? '' : 'none';
+        if (bar) {
+            Array.prototype.forEach.call(bar.querySelectorAll('.zonemap-mode'), function (x) {
+                x.setAttribute('aria-pressed', x.getAttribute('data-mode') === mode ? 'true' : 'false');
+            });
+        }
+    }
+
     function upgrade(img) {
         var src = img.getAttribute('src');
         fetch(src, { credentials: 'same-origin' }).then(function (r) {
@@ -33,6 +53,33 @@
             btn.title = 'Reset the zoom';
             btn.textContent = '⟲';
             wrap.appendChild(btn);
+
+            // display modes (Height / Color / Plain) — only for zones whose
+            // SVG carries both real-terrain images
+            var hImg = svg.querySelector('#zm-height');
+            var cImg = svg.querySelector('#zm-color');
+            var bar = null;
+            if (hImg && cImg) {
+                var ui = window.WIKI_UI || {};
+                bar = document.createElement('div');
+                bar.className = 'zonemap-modes';
+                [['height', ui.zonemapModeHeight || 'Height'],
+                 ['color', ui.zonemapModeColor || 'Color'],
+                 ['plain', ui.zonemapModePlain || 'Plain']].forEach(function (m) {
+                    var b = document.createElement('button');
+                    b.type = 'button';
+                    b.className = 'zonemap-mode';
+                    b.textContent = m[1];
+                    b.setAttribute('data-mode', m[0]);
+                    b.addEventListener('click', function () {
+                        setMode(m[0]);
+                        applyMode(hImg, cImg, m[0], bar);
+                    });
+                    bar.appendChild(b);
+                });
+                wrap.appendChild(bar);
+            }
+            if (hImg && cImg) applyMode(hImg, cImg, getMode(), bar); // remembered choice
             wrap.appendChild(svg);
 
             // the <img> sits alone in a <p>; replace that paragraph so a

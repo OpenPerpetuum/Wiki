@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 """Regenerate the zone teleport map SVGs (static/zonemaps/*.svg):
 
-  * background: a deterministic procedural heightmap (fBm value noise +
-    hillshading, seeded per zone) over the zone's extent, and an emphasized
-    border around the zone. Real game terrain textures are NOT used — they
-    are proprietary game assets; this approximation keeps the open-source
-    wiki clean.
+  * background: the zone's REAL terrain, read from the game's layer files
+    (altitude.NNNN.bin, 2 bytes/tile little-endian; see
+    content/formats/zone_files.md), sourced in this order:
+      1. $OP_ASSETS_DIR/custom-layers/  (default: ../PerpetuumServer2)
+      2. the .gbf archives next to it (decoded with the server's own
+         script/extract_gbf.py decoder — GXY2 format)
+    Two display modes are rendered per zone (128x128 PNGs, referenced by
+    the SVG and switchable in the UI by static/zone-map.js):
+      height  hillshaded monochrome heightmap (real island shapes)
+      color   altitude color ramp + island coastline (blocks Island flag)
+    Zones without layer data anywhere (e.g. the training zone) fall back
+    to a deterministic procedural heightmap (fBm value noise +
+    hillshading, seeded per zone) embedded as base64.
+  * an emphasized border around the zone.
   * interactivity: teleport columns, landing spots ("from …") and exit
     gates ("exit → …") whose destination/origin resolves to a zone page
     are wrapped in <a href="/zones/<slug>/"> so they are clickable once the
@@ -14,9 +23,10 @@
 
 The input SVGs are produced by generator/Perpetuum.WikiGenerate
 (ZoneMapSvg.cs) from the live database. This script only rewrites the
-static assets, so it needs no database. Pure standard library — run it
-locally (`python3 tools/gen_zone_teleport_maps.py`) or via `make zonemaps`
-(containerized).
+static assets, so it needs no database. Pure standard library (plus the
+server's extract_gbf.py, also stdlib, when a .gbf fallback is needed) —
+run it locally (`python3 tools/gen_zone_teleport_maps.py`) or via
+`make zonemaps` (containerized).
 
 Note: when the C# generator is re-run it will overwrite these files;
 re-run this script afterwards (or port this logic into ZoneMapSvg.cs).
@@ -28,21 +38,32 @@ import random
 import re
 import struct
 import zlib
+from itertools import accumulate
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ZONEMAPS = os.path.join(ROOT, "static", "zonemaps")
 ZONE_INDEX = os.path.join(ROOT, "content", "zones", "zone-index.md")
+# the game assets live in the sibling server checkout
+ASSETS = os.environ.get("OP_ASSETS_DIR",
+                        os.path.join(ROOT, "..", "PerpetuumServer2"))
 
 # ---------------------------------------------------------------- name map
 
-def load_name_map():
-    """Display zone name -> /zones/<slug>/ from the zone index table."""
+_ROW = re.compile(
+    r"\|\s*(\d+)\s*\|\s*\[([^\]]+)\]\((/zones/[^/]+)/\)\s*\|[^|]*\|[^|]*\|[^|]*\|\s*(\d+)×(\d+)\s*\|")
+
+
+def load_zone_meta():
+    """From the zone index table: name -> /zones/<slug>/ and
+    slug -> (zone_id, width, height)."""
     text = open(ZONE_INDEX, encoding="utf-8").read()
-    rows = re.findall(r"\|\s*\d+\s*\|\s*\[([^\]]+)\]\((/zones/[^)]+)\)", text)
-    name2slug = {}
-    for name, slug in rows:
+    name2slug, slug2id, slug2size = {}, {}, {}
+    for zid, name, slug, w, h in _ROW.findall(text):
         name2slug.setdefault(name.strip(), slug)
-    return name2slug
+        base = slug.rstrip("/").split("/")[-1] + "/"  # /zones/<slug>/ -> <slug>/
+        slug2id.setdefault(base, int(zid))
+        slug2size.setdefault(base, (int(w), int(h)))
+    return name2slug, slug2id, slug2size
 
 
 def resolve(names, name2slug):
@@ -52,6 +73,172 @@ def resolve(names, name2slug):
         if n and n in name2slug:
             return name2slug[n]
     return None
+
+# ------------------------------------------------- real terrain (from gbf)
+
+_GBFS = []  # lazy: [(path, GXY2Archive)]
+
+
+def _gbf_archives():
+    global _GBFS
+    if not _GBFS:
+        try:
+            sys = __import__("sys")
+            script_dir = os.path.join(ASSETS, "script")
+            if os.path.isdir(script_dir):
+                sys.path.insert(0, script_dir)
+            from extract_gbf import GXY2Archive  # the server's own decoder
+        except Exception:
+            return []
+        for f in sorted(os.listdir(ASSETS)):
+            if not f.endswith(".gbf"):
+                continue
+            p = os.path.join(ASSETS, f)
+            try:
+                _GBFS.append((p, GXY2Archive(p)))
+            except Exception as e:
+                print(f"  [!] skipping {f}: {e}")
+    return _GBFS
+
+
+def _layer_bytes(name):
+    """Raw bytes of a layer entry (e.g. 'altitude0004') from a .gbf, or None."""
+    for _, arc in _gbf_archives():
+        for e in arc.entries:
+            if e["name"] == name:
+                with open(arc.filepath, "rb") as fh:
+                    return arc.extract_file(e, fh)
+    return None
+
+
+def load_terrain(zid, w, h, size):
+    """(alt[size][size], coast[size][size] or None) from the game's layers.
+
+    alt: box-averaged elevation. coast: 1 on outline cells of the island
+    flag (blocks layer) — the accurate island border. (None, None) when the
+    zone has no layer data anywhere.
+    """
+    id4 = f"{zid:04d}"
+    alt_path = os.path.join(ASSETS, "custom-layers", f"altitude.{id4}.bin")
+    blk_path = os.path.join(ASSETS, "custom-layers", f"blocks.{id4}.bin")
+    alt_raw = blk_raw = None
+    if os.path.isfile(alt_path):
+        alt_raw = open(alt_path, "rb").read()
+        if os.path.isfile(blk_path):
+            blk_raw = open(blk_path, "rb").read()
+    else:
+        alt_raw = _layer_bytes(f"altitude{id4}")
+        if blk_raw is None and alt_raw is not None:
+            blk_raw = _layer_bytes(f"blocks{id4}")
+    if alt_raw is None:
+        return None, None
+    if len(alt_raw) != w * h * 2:
+        print(f"  [!] zone {id4}: altitude layer size {len(alt_raw)} != {w * h * 2} — skipped")
+        return None, None
+
+    fx, fy = w // size, h // size
+    acc = [[0.0] * w for _ in range(size)]
+    for y in range(h):
+        row = struct.unpack_from(f"<{w}H", alt_raw, y * w * 2)
+        ay = acc[y // fy]
+        for x in range(w):
+            ay[x] += row[x]
+    alt = []
+    for oy in range(size):
+        ps = [0]
+        ps.extend(accumulate(acc[oy]))  # ps[i] = sum of columns [0, i)
+        alt.append([(ps[(ox + 1) * fx] - ps[ox * fx]) / (fx * fy) for ox in range(size)])
+
+    coast = None
+    if blk_raw is not None and len(blk_raw) == w * h * 2:
+        isl = [[0] * size for _ in range(size)]
+        for y in range(h):
+            base = y * w * 2
+            cy = y // fy
+            row = isl[cy]
+            for x in range(w):
+                if blk_raw[base + x * 2] & 8:  # BlockingFlags.Island
+                    row[x // fx] = 1
+        # outline: island cells touching non-island cells
+        coast = [[0] * size for _ in range(size)]
+        for y in range(size):
+            for x in range(size):
+                if not isl[y][x]:
+                    continue
+                if (x == 0 or y == 0 or x == size - 1 or y == size - 1
+                        or not isl[y][x - 1] or not isl[y][x + 1]
+                        or not isl[y - 1][x] or not isl[y + 1][x]):
+                    coast[y][x] = 1
+    return alt, coast
+
+
+RAMP = [  # (elevation, rgb) — deep water to snow line
+    (0,     (13, 34, 66)),
+    (350,   (21, 55, 95)),
+    (750,   (46, 86, 124)),
+    (950,   (124, 110, 74)),
+    (1500,  (72, 104, 60)),
+    (3800,  (94, 122, 58)),
+    (7500,  (97, 103, 55)),
+    (12500, (112, 99, 77)),
+    (18500, (130, 125, 118)),
+    (23500, (216, 221, 229)),
+]
+
+
+def _ramp(v):
+    if v <= RAMP[0][0]:
+        return RAMP[0][1]
+    for i in range(1, len(RAMP)):
+        if v <= RAMP[i][0]:
+            v0, c0 = RAMP[i - 1]
+            v1, c1 = RAMP[i]
+            t = (v - v0) / (v1 - v0)
+            return tuple(int(c0[k] + (c1[k] - c0[k]) * t) for k in range(3))
+    return RAMP[-1][1]
+
+
+def _shade_at(alt, y, x):
+    """Hillshade from the gradient, light from the north-west."""
+    n = len(alt)
+    xl = alt[y][x - 1] if x > 0 else alt[y][x]
+    xr = alt[y][x + 1] if x < n - 1 else alt[y][x]
+    yu = alt[y - 1][x] if y > 0 else alt[y][x]
+    yd = alt[y + 1][x] if y < n - 1 else alt[y][x]
+    s = 1.0 + (xl - xr + yu - yd) * 0.00035
+    return max(0.62, min(1.35, s))
+
+
+def height_png(alt, size=128):
+    """Hillshaded monochrome heightmap (real terrain) as PNG bytes."""
+    px = bytearray()
+    vmax = max(max(r) for r in alt)
+    for y in range(size):
+        row = alt[y]
+        for x in range(size):
+            sh = _shade_at(alt, y, x)
+            t = (row[x] / vmax) ** 0.65 if vmax else 0.0
+            r = int(min(255, (LO[0] + (HI[0] - LO[0]) * t) * sh))
+            g = int(min(255, (LO[1] + (HI[1] - LO[1]) * t) * sh))
+            b = int(min(255, (LO[2] + (HI[2] - LO[2]) * t) * sh))
+            px += bytes((r, g, b, 255))
+    return png_encode(size, size, bytes(px))
+
+
+def color_png(alt, coast, size=128):
+    """Altitude color ramp + island coastline as PNG bytes."""
+    px = bytearray()
+    for y in range(size):
+        row = alt[y]
+        crow = coast[y] if coast else None
+        for x in range(size):
+            if crow and crow[x]:
+                px += bytes((191, 232, 255, 255))  # island border
+                continue
+            sh = _shade_at(alt, y, x)
+            r, g, b = _ramp(row[x])
+            px += bytes((int(min(255, r * sh)), int(min(255, g * sh)), int(min(255, b * sh)), 255))
+    return png_encode(size, size, bytes(px))
 
 # ------------------------------------------------------------- heightmap
 
@@ -160,19 +347,36 @@ def label_names(kind, label):
     return label.split(",")
 
 
-def rebuild(path, name2slug):
+def rebuild(path, name2slug, slug2id, slug2size):
     w, h, zone, els = parse(open(path, encoding="utf-8").read())
     f = w / 2048.0
-    b64 = base64.b64encode(heightmap_png(zone)).decode("ascii")
+    slug = os.path.basename(path)[:-4] + "/"  # e.g. "zone-asi-a-real/"
 
     out = []
     out.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="640" '
                f'height="{int(640.0 * h / w)}" role="img" aria-label="Teleport map of {esc(zone)}">')
-    # zone extent + generated heightmap (approximate terrain — game texture
-    # assets are not redistributed), grid kept from the generated file,
-    # emphasized border on top.
+    # zone extent, then the background: real terrain (two switchable modes —
+    # static/zone-map.js swaps the images) or, when the zone has no layer
+    # data, an embedded procedural heightmap.
     out.append(f'  <rect x="0" y="0" width="{w}" height="{h}" rx="{16 * f}" fill="#10151f" stroke="#39445a" stroke-width="{2 * f}"/>')
-    out.append(f'  <image x="0" y="0" width="{w}" height="{h}" href="data:image/png;base64,{b64}" opacity="0.55" preserveAspectRatio="none"/>')
+    zid = slug2id.get(slug)
+    real = (None, None)
+    if zid is not None:
+        try:
+            real = load_terrain(zid, w, h, 128) or (None, None)
+        except Exception as e:
+            print(f"  [!] {slug}: {e}")
+    if real[0] is not None:
+        alt, coast = real
+        d = os.path.join(ZONEMAPS, slug)
+        os.makedirs(d, exist_ok=True)
+        open(os.path.join(d, "height.png"), "wb").write(height_png(alt))
+        open(os.path.join(d, "color.png"), "wb").write(color_png(alt, coast))
+        out.append(f'  <image id="zm-height" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}height.png" preserveAspectRatio="none"/>')
+        out.append(f'  <image id="zm-color" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}color.png" preserveAspectRatio="none" style="display:none"/>')
+    else:
+        b64 = base64.b64encode(heightmap_png(zone)).decode("ascii")
+        out.append(f'  <image id="zm-height" x="0" y="0" width="{w}" height="{h}" href="data:image/png;base64,{b64}" opacity="0.55" preserveAspectRatio="none"/>')
 
     last_shape = None  # (kind, markup) waiting for its label
     for kind, at, txt in els:
@@ -218,18 +422,21 @@ def rebuild(path, name2slug):
 
 
 def main():
-    name2slug = load_name_map()
-    print(f"name map: {len(name2slug)} zones")
+    name2slug, slug2id, slug2size = load_zone_meta()
+    print(f"name map: {len(name2slug)} zones, {len(slug2id)} with ids")
+    print(f"assets: {os.path.abspath(ASSETS)}")
     files = sorted(f for f in os.listdir(ZONEMAPS) if f.endswith(".svg"))
-    linked = 0
+    linked = real = 0
     total = 0
     for fname in files:
         path = os.path.join(ZONEMAPS, fname)
-        rebuild(path, name2slug)
+        rebuild(path, name2slug, slug2id, slug2size)
         new = open(path, encoding="utf-8").read()
         linked += new.count("<a href=")
+        if 'id="zm-color"' in new:
+            real += 1
         total += len(new.encode("utf-8"))
-    print(f"{len(files)} maps regenerated, {linked} clickable elements, {total / 1024 / 1024:.2f} MB total")
+    print(f"{len(files)} maps regenerated ({real} with real terrain), {linked} clickable elements, {total / 1024 / 1024:.2f} MB total")
 
 
 if __name__ == "__main__":

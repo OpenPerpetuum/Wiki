@@ -3,10 +3,15 @@
 // teleport elements clickable, linking to the zone pages.
 const { test, expect } = require('@playwright/test');
 
+// desktop-only: these drive the mouse over fixed desktop map geometry
+test.beforeEach(async ({ page }) => {
+  test.skip(page.viewportSize().width <= 500, 'desktop layout only');
+});
+
 // Hokkogaros — 10 labelled teleport columns
 const ZONE = '/zones/zone-asi-a-real/';
 
-test('zone map is inlined with its heightmap background', async ({ page, baseURL }) => {
+test('zone map is inlined with its terrain background', async ({ page, baseURL }) => {
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
@@ -15,10 +20,53 @@ test('zone map is inlined with its heightmap background', async ({ page, baseURL
   const svg = wrap.locator('svg.zonemap');
   expect(await svg.count()).toBe(1);
   expect(await page.locator('img[src^="/zonemaps/"]').count()).toBe(0); // img replaced
+  // this zone has real terrain: two switchable mode images
   const bg = svg.locator('image');
-  expect(await bg.count()).toBe(1);
-  expect(await bg.getAttribute('href')).toContain('data:image/png;base64,');
+  expect(await bg.count()).toBe(2);
+  const href = await bg.first().getAttribute('href');
+  expect(href).toMatch(/^\/zonemaps\//);
+  const r = await page.request.get(href); // the terrain PNG is served
+  expect(r.ok()).toBe(true);
   expect(errors).toEqual([]);
+});
+
+test('display modes: color and plain switch the background', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
+  const wrap = page.locator('.zonetp-wrap');
+  await wrap.waitFor({ state: 'visible', timeout: 10000 });
+  const visible = (sel) => page.evaluate((s) => {
+    const el = document.querySelector(s);
+    return el && el.style.display !== 'none';
+  }, sel);
+  expect(await visible('image#zm-height')).toBe(true);
+  expect(await visible('image#zm-color')).toBe(false);
+
+  await wrap.locator('.zonemap-mode[data-mode="color"]').click();
+  expect(await visible('image#zm-color')).toBe(true);
+  expect(await visible('image#zm-height')).toBe(false);
+
+  await wrap.locator('.zonemap-mode[data-mode="plain"]').click();
+  expect(await visible('image#zm-height')).toBe(false);
+  expect(await visible('image#zm-color')).toBe(false);
+});
+
+test('the chosen display mode persists across other zone maps', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
+  const wrap = page.locator('.zonetp-wrap');
+  await wrap.waitFor({ state: 'visible', timeout: 10000 });
+  await wrap.locator('.zonemap-mode[data-mode="color"]').click();
+
+  // another zone: the remembered mode is applied on load
+  await page.goto(`${baseURL}/zones/zone-ics/`, { waitUntil: 'networkidle' });
+  const wrap2 = page.locator('.zonetp-wrap');
+  await wrap2.waitFor({ state: 'visible', timeout: 10000 });
+  await expect.poll(() => page.evaluate(() => {
+    const c = document.querySelector('image#zm-color');
+    const h = document.querySelector('image#zm-height');
+    return !!c && !!h && c.style.display !== 'none' && h.style.display === 'none';
+  })).toBe(true);
+  const pressed = await wrap2.locator('.zonemap-mode[aria-pressed="true"]').getAttribute('data-mode');
+  expect(pressed).toBe('color');
 });
 
 test('teleport elements are clickable and lead to the right zone page', async ({ page, baseURL }) => {

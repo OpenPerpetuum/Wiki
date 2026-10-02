@@ -37,11 +37,14 @@ TTY_FLAG        := $(shell [ -t 0 ] && echo -it || echo -i)
 all: build
 
 # Post-process the generated zone teleport maps (static/zonemaps/*.svg):
-# deterministic procedural heightmap background, emphasized zone border,
-# and clickable teleport links (see the script header for details). Pure
-# standard-library Python — no database, no pip installs.
+# REAL terrain backgrounds from the game's layer files (custom-layers/*.bin
+# or the .gbf archives in the sibling PerpetuumServer2 checkout — see the
+# script header), emphasized zone border, and clickable teleport links.
+# Pure standard-library Python — no database, no pip installs.
 zonemaps:
-	docker run --rm -v "$PWD:/src" -w /src $(PYTHON_IMAGE) python3 tools/gen_zone_teleport_maps.py
+	docker run --rm -v "$PWD:/src" -w /src \
+		-v "$(shell cd .. && pwd)/PerpetuumServer2:/assets:ro" \
+		-e OP_ASSETS_DIR=/assets $(PYTHON_IMAGE) python3 tools/gen_zone_teleport_maps.py
 
 # Browser tests (tests/): mermaid syntax of every diagram + sidenav behaviour,
 # run against the built site. One-time setup: npm install.
