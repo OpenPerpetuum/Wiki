@@ -48,7 +48,8 @@
     data-search-no-results="{{ config.extra.ui.search_no_results }}"
     data-search-unavailable="{{ config.extra.ui.search_unavailable }}"
     data-pages-found-one="{{ config.extra.ui.search_pages_found_one }}"
-    data-pages-found-many="{{ config.extra.ui.search_pages_found_many }}"></div>
+    data-pages-found-many="{{ config.extra.ui.search_pages_found_many }}"
+    data-update-available="{{ config.extra.ui.update_available }}"></div>
 <header class="topbar">
     <a class="brand" href="/"><span class="brand-logo" aria-hidden="true"></span>{{ config.title }}</a>
     <div class="palette-wrap">
@@ -603,5 +604,9 @@
         }
     });
 </script>
+<!-- synchronous on purpose: update-check.js snapshots the pristine
+     <main> while the document is still parsing, before any other script
+     has mutated the DOM -->
+<script src="/update-check.js"></script>
 </body>
 </html>
