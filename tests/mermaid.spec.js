@@ -34,3 +34,29 @@ test('every mermaid diagram in content/ parses', async ({ page, baseURL }) => {
     `mermaid parse failures:\n${failures.map((f) => `  ${f.file} (block ${f.n}): ${f.err}`).join('\n')}`
   ).toEqual([]);
 });
+
+// Diagrams are interactive like the maps: wheel zooms the diagram (not the
+// page), a reset button is added, and it restores the original view.
+test('diagram zooms on wheel and resets', async ({ page, baseURL }) => {
+  test.skip(page.viewportSize().width <= 500, 'desktop layout only');
+  await page.goto(`${baseURL}/features/pbs/`, { waitUntil: 'networkidle' });
+  const box = page.locator('.mermaid').first();
+  await box.waitFor({ state: 'visible', timeout: 15000 });
+  await box.waitForSelector('svg', { timeout: 15000 });
+  await box.scrollIntoViewIfNeeded();
+  await page.waitForTimeout(100);
+  const b = await box.boundingBox();
+  await page.mouse.move(b.x + b.width / 2, b.y + b.height / 2);
+  const y0 = await page.evaluate(() => window.scrollY);
+  await page.mouse.wheel(0, -240);
+  await page.waitForTimeout(50);
+  expect(await page.evaluate(() => window.scrollY)).toBe(y0); // page did not scroll
+  let t = await box.locator('svg').evaluate((el) => el.style.transform);
+  expect(t).toMatch(/scale\((1\.[1-9]|[2-9])/);
+
+  const reset = box.locator('.zonemap-reset');
+  expect(await reset.count()).toBe(1);
+  await reset.click();
+  t = await box.locator('svg').evaluate((el) => el.style.transform);
+  expect(t).toMatch(/scale\(1\)/);
+});
