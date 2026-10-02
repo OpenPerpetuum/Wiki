@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 216 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Vitricyl"]:::current
+    b["Niani missile launcher tuning"]:::prod
+    a --> b
+    click b "/content/items/artifact-a-damage-mod-missile/" "Niani missile launcher tuning"
+    c["Niani medium energy neutralizer"]:::prod
+    a --> c
+    click c "/content/items/artifact-a-medium-energy-neutralizer/" "Niani medium energy neutralizer"
+    d["Niani medium shield generator"]:::prod
+    a --> d
+    click d "/content/items/artifact-a-medium-shield-generator/" "Niani medium shield generator"
+    e["Niani shield hardener"]:::prod
+    a --> e
+    click e "/content/items/artifact-a-shield-hardener/" "Niani shield hardener"
+    f["Niani small energy neutralizer"]:::prod
+    a --> f
+    click f "/content/items/artifact-a-small-energy-neutralizer/" "Niani small energy neutralizer"
+    g["Niani small shield generator"]:::prod
+    a --> g
+    click g "/content/items/artifact-a-small-shield-generator/" "Niani small shield generator"
+    h["Niani thermal armor"]:::prod
+    a --> h
+    click h "/content/items/artifact-a-thrm-armor-hardener/" "Niani thermal armor"
+    i["Flawed missile launcher tuning"]:::prod
+    a --> i
+    click i "/content/items/artifact-damaged-damage-mod-missile/" "Flawed missile launcher tuning"
+    j["+208 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

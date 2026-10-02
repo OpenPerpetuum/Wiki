@@ -20,4 +20,41 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 8 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Material Boss Z72"]:::current
+    b["Elitet2 72 Damage Mod Projectile"]:::prod
+    a --> b
+    click b "/content/items/elitet2-72-damage-mod-projectile/" "Elitet2 72 Damage Mod Projectile"
+    c["Elitet2 72 Mass Reductor"]:::prod
+    a --> c
+    click c "/content/items/elitet2-72-mass-reductor/" "Elitet2 72 Mass Reductor"
+    d["Elitet2 72 Medium Armor Repairer"]:::prod
+    a --> d
+    click d "/content/items/elitet2-72-medium-armor-repairer/" "Elitet2 72 Medium Armor Repairer"
+    e["Elitet2 72 Small Armor Repairer"]:::prod
+    a --> e
+    click e "/content/items/elitet2-72-small-armor-repairer/" "Elitet2 72 Small Armor Repairer"
+    f["Elitet4 72 Damage Mod Projectile"]:::prod
+    a --> f
+    click f "/content/items/elitet4-72-damage-mod-projectile/" "Elitet4 72 Damage Mod Projectile"
+    g["Elitet4 72 Mass Reductor"]:::prod
+    a --> g
+    click g "/content/items/elitet4-72-mass-reductor/" "Elitet4 72 Mass Reductor"
+    h["Elitet4 72 Medium Armor Repairer"]:::prod
+    a --> h
+    click h "/content/items/elitet4-72-medium-armor-repairer/" "Elitet4 72 Medium Armor Repairer"
+    i["Elitet4 72 Small Armor Repairer"]:::prod
+    a --> i
+    click i "/content/items/elitet4-72-small-armor-repairer/" "Elitet4 72 Small Armor Repairer"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

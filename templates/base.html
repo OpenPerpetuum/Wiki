@@ -169,6 +169,15 @@
                 <li><a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a></li>
                 <li><a href="/features/production/">{{ config.extra.ui.nav_production }}</a></li>
                 <li><a href="/features/research/">{{ config.extra.ui.nav_research }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/character/">{{ config.extra.ui.nav_character }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/extensions/">{{ config.extra.ui.nav_extensions }}</a></li>
+                    </ul>
+                </li>
                 <li><a href="/features/items/">{{ config.extra.ui.nav_items }}</a></li>
                 <li><a href="/features/modules/">{{ config.extra.ui.nav_modules }}</a></li>
                 <li><a href="/features/sparks/">{{ config.extra.ui.nav_sparks }}</a></li>
@@ -229,8 +238,6 @@
                     </ul>
                 </li>
                 <li><a class="nav-item-icon" href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a></li>
-                <li><a class="nav-item-icon" href="/content/extensions/#tree" data-mapanchor="1"><svg class="navicon" aria-hidden="true"><use href="#mi-tree"/></svg>{{ config.extra.ui.nav_tree }}</a></li>
-                <li><a href="/content/extensions/">{{ config.extra.ui.nav_extensions }}</a></li>
                 <li><a href="/features/abbreviations/">{{ config.extra.ui.nav_abbreviations }}</a></li>
                 <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
                 <li><a href="/features/server/">{{ config.extra.ui.nav_server }}</a></li>
@@ -437,10 +444,12 @@
             btn.textContent = v ? "\u2715" : "\u2630"; // ✕ / ☰
         }
         btn.addEventListener("click", function () { open(!isOpen()); });
-        // a tap anywhere outside the drawer (the dimmed backdrop) closes it
+        // a tap anywhere outside the drawer (the dimmed backdrop) closes it —
+        // except the hamburger itself, whose click toggles (its bubble would
+        // otherwise close the drawer the instant it opens)
         document.addEventListener("click", function (e) {
             if (!isOpen()) return;
-            if (e.target.closest && e.target.closest("#sidenav")) return;
+            if (e.target.closest && e.target.closest("#sidenav, #sidenav-toggle")) return;
             open(false);
         });
         // tapping a link navigates and closes (the caret buttons do not)

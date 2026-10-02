@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 511 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Hydrobenol"]:::current
+    b["Medium 'Smite' ballistic missile"]:::prod
+    a --> b
+    click b "/content/items/ammo-longrange-missile-rewa/" "Medium 'Smite' ballistic missile"
+    c["Medium HEAT-IX ballistic missile"]:::prod
+    a --> c
+    click c "/content/items/ammo-longrange-missile-rewb/" "Medium HEAT-IX ballistic missile"
+    d["Medium 'Apocalypse' energy cell"]:::prod
+    a --> d
+    click d "/content/items/ammo-medium-lasercrystal-rewa/" "Medium 'Apocalypse' energy cell"
+    e["Medium 'Crypto' energy cell"]:::prod
+    a --> e
+    click e "/content/items/ammo-medium-lasercrystal-rewb/" "Medium 'Crypto' energy cell"
+    f["Medium UDC slug"]:::prod
+    a --> f
+    click f "/content/items/ammo-medium-railgun-rewa/" "Medium UDC slug"
+    g["Medium 'Magnedart' slug"]:::prod
+    a --> g
+    click g "/content/items/ammo-medium-railgun-rewb/" "Medium 'Magnedart' slug"
+    h["Ammo Mining Deep Gammaterial"]:::prod
+    a --> h
+    click h "/content/items/ammo-mining-deep-gammaterial/" "Ammo Mining Deep Gammaterial"
+    i["Ammo Mining Deep Gammaterial Pr"]:::prod
+    a --> i
+    click i "/content/items/ammo-mining-deep-gammaterial-pr/" "Ammo Mining Deep Gammaterial Pr"
+    j["+503 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -28,4 +28,23 @@ description: "Modules / Weapons, tier 2"
 | damage_modifier | 1 |
 | powergrid_usage | 135 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["ST-Dupot medium missile launcher"]:::current
+    b["Vollert medium missile launcher"]:::prod
+    a --> b
+    click b "/content/items/named2-missile-launcher/" "Vollert medium missile launcher"
+    c["Vollert medium missile launcher prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-missile-launcher-pr/" "Vollert medium missile launcher prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

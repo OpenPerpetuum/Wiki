@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 122 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Functional nuimqol fragment"]:::current
+    b["WPG3000 armor repairer tuning"]:::prod
+    a --> b
+    click b "/content/items/named2-armor-repairer-upgrade/" "WPG3000 armor repairer tuning"
+    c["WPG3000 armor repairer tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-armor-repairer-upgrade-pr/" "WPG3000 armor repairer tuning prototype"
+    d["RSU-Magnitcore magnetic weapon tuning"]:::prod
+    a --> d
+    click d "/content/items/named2-damage-mod-railgun/" "RSU-Magnitcore magnetic weapon tuning"
+    e["RSU-Magnitcore magnetic weapon tuning prototype"]:::prod
+    a --> e
+    click e "/content/items/named2-damage-mod-railgun-pr/" "RSU-Magnitcore magnetic weapon tuning prototype"
+    f["Hodge ECM tuning"]:::prod
+    a --> f
+    click f "/content/items/named2-ecm-booster/" "Hodge ECM tuning"
+    g["Hodge ECM tuning prototype"]:::prod
+    a --> g
+    click g "/content/items/named2-ecm-booster-pr/" "Hodge ECM tuning prototype"
+    h["SER-300 'Devactico' seismic ERP"]:::prod
+    a --> h
+    click h "/content/items/named2-explosive-kers/" "SER-300 'Devactico' seismic ERP"
+    i["SER-300 'Devactico' seismic ERP prototype"]:::prod
+    a --> i
+    click i "/content/items/named2-explosive-kers-pr/" "SER-300 'Devactico' seismic ERP prototype"
+    j["+114 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

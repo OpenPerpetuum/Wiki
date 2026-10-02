@@ -27,4 +27,23 @@ description: "Modules / Repair, tier 3"
 | cycle_time | 13.5k |
 | powergrid_usage | 1.1k |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["FO-330 'Reconstructor' large armor repairer"]:::current
+    b["Pandegris large armor repairer"]:::prod
+    a --> b
+    click b "/content/items/named3-large-armor-repairer/" "Pandegris large armor repairer"
+    c["Named3 Large Armor Repairer Pr"]:::prod
+    a --> c
+    click c "/content/items/named3-large-armor-repairer-pr/" "Named3 Large Armor Repairer Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

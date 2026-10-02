@@ -28,4 +28,23 @@ description: "Modules / Repair, tier 3"
 | cycle_time | 13.5k |
 | powergrid_usage | 25 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Quissot's small armor repairer"]:::current
+    b["Microforge Aestolar small armor repairer"]:::prod
+    a --> b
+    click b "/content/items/named3-small-armor-repairer/" "Microforge Aestolar small armor repairer"
+    c["Microforge Aestolar small armor repairer prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-small-armor-repairer-pr/" "Microforge Aestolar small armor repairer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

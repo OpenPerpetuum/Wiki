@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 68 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Perfect nuimqol fragment"]:::current
+    b["Apogenion armor repairer tuning"]:::prod
+    a --> b
+    click b "/content/items/named3-armor-repairer-upgrade/" "Apogenion armor repairer tuning"
+    c["Apogenion armor repairer tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-armor-repairer-upgrade-pr/" "Apogenion armor repairer tuning prototype"
+    d["Nuimtec-Magniscope XM80 magnetic weapon tuning"]:::prod
+    a --> d
+    click d "/content/items/named3-damage-mod-railgun/" "Nuimtec-Magniscope XM80 magnetic weapon tuning"
+    e["Nuimtec-Magniscope XM80 magnetic weapon tuning prototype"]:::prod
+    a --> e
+    click e "/content/items/named3-damage-mod-railgun-pr/" "Nuimtec-Magniscope XM80 magnetic weapon tuning prototype"
+    f["Sludge ECM tuning"]:::prod
+    a --> f
+    click f "/content/items/named3-ecm-booster/" "Sludge ECM tuning"
+    g["Sludge ECM tuning prototype"]:::prod
+    a --> g
+    click g "/content/items/named3-ecm-booster-pr/" "Sludge ECM tuning prototype"
+    h["365p-CSD seismic ERP"]:::prod
+    a --> h
+    click h "/content/items/named3-explosive-kers/" "365p-CSD seismic ERP"
+    i["365p-CSD seismic ERP prototype"]:::prod
+    a --> i
+    click i "/content/items/named3-explosive-kers-pr/" "365p-CSD seismic ERP prototype"
+    j["+60 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

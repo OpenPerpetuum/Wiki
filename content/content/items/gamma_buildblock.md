@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 113 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Coalimin"]:::current
+    b["Construction Module Ammo T2"]:::prod
+    a --> b
+    click b "/content/items/construction-module-ammo-t2/" "Construction Module Ammo T2"
+    c["Construction Module Ammo T2 Pr"]:::prod
+    a --> c
+    click c "/content/items/construction-module-ammo-t2-pr/" "Construction Module Ammo T2 Pr"
+    d["Construction Module Ammo T3"]:::prod
+    a --> d
+    click d "/content/items/construction-module-ammo-t3/" "Construction Module Ammo T3"
+    e["Construction Module Ammo T3 Pr"]:::prod
+    a --> e
+    click e "/content/items/construction-module-ammo-t3-pr/" "Construction Module Ammo T3 Pr"
+    f["Pbs XL Core Transmitter Large Capsule"]:::prod
+    a --> f
+    click f "/content/items/pbs-xl-core-transmitter-large-capsule/" "Pbs XL Core Transmitter Large Capsule"
+    g["Pbs XL Core Transmitter Large Capsule Pr"]:::prod
+    a --> g
+    click g "/content/items/pbs-xl-core-transmitter-large-capsule-pr/" "Pbs XL Core Transmitter Large Capsule Pr"
+    h["Pbs XL Core Transmitter Medium Capsule"]:::prod
+    a --> h
+    click h "/content/items/pbs-xl-core-transmitter-medium-capsule/" "Pbs XL Core Transmitter Medium Capsule"
+    i["Pbs XL Core Transmitter Medium Capsule Pr"]:::prod
+    a --> i
+    click i "/content/items/pbs-xl-core-transmitter-medium-capsule-pr/" "Pbs XL Core Transmitter Medium Capsule Pr"
+    j["+105 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

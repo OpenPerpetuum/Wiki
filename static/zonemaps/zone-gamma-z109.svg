@@ -16,19 +16,19 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
-  <a href="/zones/zone-gamma-z139" title="zone_gamma_z139">
+  <a href="/zones/zone-gamma-z139/" title="zone_gamma_z139">
   <circle cx="255.5" cy="915.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="255.5" y="884.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z139</text>
   </a>
-  <a href="/zones/zone-gamma-tc-z103" title="zone_gamma_tc_z103">
+  <a href="/zones/zone-gamma-tc-z103/" title="zone_gamma_tc_z103">
   <circle cx="975.5" cy="333.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="975.5" y="302.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z103</text>
   </a>
-  <a href="/zones/zone-gamma-tc-z104" title="zone_gamma_tc_z104">
+  <a href="/zones/zone-gamma-tc-z104/" title="zone_gamma_tc_z104">
   <circle cx="1109.5" cy="1720.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1109.5" y="1689.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z104</text>
   </a>
-  <a href="/zones/zone-gamma-z110" title="zone_gamma_z110">
+  <a href="/zones/zone-gamma-z110/" title="zone_gamma_z110">
   <circle cx="1718.5" cy="801.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1718.5" y="770.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z110</text>
   </a>

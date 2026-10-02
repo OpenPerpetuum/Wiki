@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 9 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Helioptris"]:::current
+    b["Biotichrin"]:::prod
+    a --> b
+    click b "/content/items/biotichrin/" "Biotichrin"
+    c["Helioquid (PL-90)"]:::prod
+    a --> c
+    click c "/content/items/helioptris-rare-large/" "Helioquid (PL-90)"
+    d["Helioquid (PL-40)"]:::prod
+    a --> d
+    click d "/content/items/helioptris-rare-medium/" "Helioquid (PL-40)"
+    e["Helioquid (PL-10)"]:::prod
+    a --> e
+    click e "/content/items/helioptris-rare-small/" "Helioquid (PL-10)"
+    f["Olyclin"]:::prod
+    a --> f
+    click f "/content/items/missionitemmineral-helioptrisshard/" "Olyclin"
+    g["Polynitrocol"]:::prod
+    a --> g
+    click g "/content/items/polynitrocol/" "Polynitrocol"
+    h["Specimen Sap Item"]:::prod
+    a --> h
+    click h "/content/items/specimen-sap-item/" "Specimen Sap Item"
+    i["Statichnol"]:::prod
+    a --> i
+    click i "/content/items/statichnol/" "Statichnol"
+    j["+1 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

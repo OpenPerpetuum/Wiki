@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 770 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Briochit"]:::current
+    b["Ammo Mining Deep Fluxore"]:::prod
+    a --> b
+    click b "/content/items/ammo-mining-deep-fluxore/" "Ammo Mining Deep Fluxore"
+    c["Ammo Mining Deep Fluxore Pr"]:::prod
+    a --> c
+    click c "/content/items/ammo-mining-deep-fluxore-pr/" "Ammo Mining Deep Fluxore Pr"
+    d["Ammo Mining Deep Gammaterial"]:::prod
+    a --> d
+    click d "/content/items/ammo-mining-deep-gammaterial/" "Ammo Mining Deep Gammaterial"
+    e["Ammo Mining Deep Gammaterial Pr"]:::prod
+    a --> e
+    click e "/content/items/ammo-mining-deep-gammaterial-pr/" "Ammo Mining Deep Gammaterial Pr"
+    f["Ammo Mining Fluxore"]:::prod
+    a --> f
+    click f "/content/items/ammo-mining-fluxore/" "Ammo Mining Fluxore"
+    g["Ammo Mining Fluxore Pr"]:::prod
+    a --> g
+    click g "/content/items/ammo-mining-fluxore-pr/" "Ammo Mining Fluxore Pr"
+    h["Miner charge (colixum)"]:::prod
+    a --> h
+    click h "/content/items/ammo-mining-gammaterial/" "Miner charge (colixum)"
+    i["Ammo Mining Gammaterial Pr"]:::prod
+    a --> i
+    click i "/content/items/ammo-mining-gammaterial-pr/" "Ammo Mining Gammaterial Pr"
+    j["+762 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

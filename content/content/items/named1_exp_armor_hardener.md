@@ -28,4 +28,23 @@ description: "Modules / Armor, tier 2"
 | powergrid_usage | 4 |
 | resist_explosive | 25 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Ballistris I. seismic armor"]:::current
+    b["Formantel-DVU seismic armor"]:::prod
+    a --> b
+    click b "/content/items/named2-exp-armor-hardener/" "Formantel-DVU seismic armor"
+    c["Formantel-DVU seismic armor prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-exp-armor-hardener-pr/" "Formantel-DVU seismic armor prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

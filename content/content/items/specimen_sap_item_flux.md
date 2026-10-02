@@ -20,4 +20,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 231 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Specimen Sap Item Flux"]:::current
+    b["Large armor-piercing compact missile"]:::prod
+    a --> b
+    click b "/content/items/ammo-cruisemissile-a/" "Large armor-piercing compact missile"
+    c["Ammo Cruisemissile A Pr"]:::prod
+    a --> c
+    click c "/content/items/ammo-cruisemissile-a-pr/" "Ammo Cruisemissile A Pr"
+    d["Large chemoactive compact missile"]:::prod
+    a --> d
+    click d "/content/items/ammo-cruisemissile-b/" "Large chemoactive compact missile"
+    e["Ammo Cruisemissile B Pr"]:::prod
+    a --> e
+    click e "/content/items/ammo-cruisemissile-b-pr/" "Ammo Cruisemissile B Pr"
+    f["Large doublecore compact missile"]:::prod
+    a --> f
+    click f "/content/items/ammo-cruisemissile-c/" "Large doublecore compact missile"
+    g["Ammo Cruisemissile C Pr"]:::prod
+    a --> g
+    click g "/content/items/ammo-cruisemissile-c-pr/" "Ammo Cruisemissile C Pr"
+    h["Large sonic compact missile"]:::prod
+    a --> h
+    click h "/content/items/ammo-cruisemissile-d/" "Large sonic compact missile"
+    i["Ammo Cruisemissile D Pr"]:::prod
+    a --> i
+    click i "/content/items/ammo-cruisemissile-d-pr/" "Ammo Cruisemissile D Pr"
+    j["+223 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

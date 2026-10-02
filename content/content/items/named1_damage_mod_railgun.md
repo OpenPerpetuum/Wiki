@@ -25,4 +25,23 @@ description: "Modules / Weapons, tier 2"
 | damage_railgun_modifier | 0.15 |
 | powergrid_usage | 4 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Nuimtec-Spilster magnetic weapon tuning"]:::current
+    b["RSU-Magnitcore magnetic weapon tuning"]:::prod
+    a --> b
+    click b "/content/items/named2-damage-mod-railgun/" "RSU-Magnitcore magnetic weapon tuning"
+    c["RSU-Magnitcore magnetic weapon tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-damage-mod-railgun-pr/" "RSU-Magnitcore magnetic weapon tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -29,4 +29,23 @@ description: "Modules / Repair, tier 3"
 | optimal_range | 22.5 |
 | powergrid_usage | 140 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Basio medium remote armor repairer"]:::current
+    b["ALS medium remote armor repairer"]:::prod
+    a --> b
+    click b "/content/items/named3-medium-remote-armor-repairer/" "ALS medium remote armor repairer"
+    c["ALS medium remote armor repairer prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-medium-remote-armor-repairer-pr/" "ALS medium remote armor repairer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

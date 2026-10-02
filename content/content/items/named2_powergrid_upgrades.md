@@ -24,4 +24,23 @@ description: "Modules / Power, tier 3"
 | cpu_usage | 37 |
 | powergrid_max_modifier | 1.15 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Palp coreactor"]:::current
+    b["E-set 15VaW coreactor"]:::prod
+    a --> b
+    click b "/content/items/named3-powergrid-upgrades/" "E-set 15VaW coreactor"
+    c["E-set 15VaW coreactor prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-powergrid-upgrades-pr/" "E-set 15VaW coreactor prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

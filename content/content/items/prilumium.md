@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 192 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Prilumium"]:::current
+    b["Niani laser tuning"]:::prod
+    a --> b
+    click b "/content/items/artifact-a-damage-mod-laser/" "Niani laser tuning"
+    c["Niani kinetic armor"]:::prod
+    a --> c
+    click c "/content/items/artifact-a-kin-armor-hardener/" "Niani kinetic armor"
+    d["Niani medium HCL laser"]:::prod
+    a --> d
+    click d "/content/items/artifact-a-longrange-medium-laser/" "Niani medium HCL laser"
+    e["Niani universal armor"]:::prod
+    a --> e
+    click e "/content/items/artifact-a-resistant-plating/" "Niani universal armor"
+    f["Niani sensor suppressor"]:::prod
+    a --> f
+    click f "/content/items/artifact-a-sensor-dampener/" "Niani sensor suppressor"
+    g["Flawed laser tuning"]:::prod
+    a --> g
+    click g "/content/items/artifact-damaged-damage-mod-laser/" "Flawed laser tuning"
+    h["Flawed kinetic armor"]:::prod
+    a --> h
+    click h "/content/items/artifact-damaged-kin-armor-hardener/" "Flawed kinetic armor"
+    i["Flawed medium HCL laser"]:::prod
+    a --> i
+    click i "/content/items/artifact-damaged-longrange-medium-laser/" "Flawed medium HCL laser"
+    j["+184 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

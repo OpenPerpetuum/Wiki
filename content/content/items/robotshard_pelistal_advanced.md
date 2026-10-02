@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 124 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Functional pelistal fragment"]:::current
+    b["Teppes heavy missile launcher"]:::prod
+    a --> b
+    click b "/content/items/named2-cruisemissile-launcher/" "Teppes heavy missile launcher"
+    c["Named2 Cruisemissile Launcher Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-cruisemissile-launcher-pr/" "Named2 Cruisemissile Launcher Pr"
+    d["Pelistec-FBP-II. missile launcher tuning"]:::prod
+    a --> d
+    click d "/content/items/named2-damage-mod-missile/" "Pelistec-FBP-II. missile launcher tuning"
+    e["Pelistec-FBP-II. missile launcher tuning prototype"]:::prod
+    a --> e
+    click e "/content/items/named2-damage-mod-missile-pr/" "Pelistec-FBP-II. missile launcher tuning prototype"
+    f["OM-Shock EnWar upgrade"]:::prod
+    a --> f
+    click f "/content/items/named2-energy-warfare-upgrade/" "OM-Shock EnWar upgrade"
+    g["OM-Shock EnWar upgrade prototype"]:::prod
+    a --> g
+    click g "/content/items/named2-energy-warfare-upgrade-pr/" "OM-Shock EnWar upgrade prototype"
+    h["Pareduit evasive NEXUS module"]:::prod
+    a --> h
+    click h "/content/items/named2-gang-assist-coordinated-maneuvering-module/" "Pareduit evasive NEXUS module"
+    i["Pareduit evasive NEXUS module prototype"]:::prod
+    a --> i
+    click i "/content/items/named2-gang-assist-coordinated-maneuvering-module-pr/" "Pareduit evasive NEXUS module prototype"
+    j["+116 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

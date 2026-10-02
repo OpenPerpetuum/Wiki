@@ -27,4 +27,29 @@ description: "Modules / Repair, tier 2"
 | cycle_time | 15k |
 | powergrid_usage | 90 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 4 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Vautrell medium armor repairer"]:::current
+    b["Elitet2 70 Medium Armor Repairer"]:::prod
+    a --> b
+    click b "/content/items/elitet2-70-medium-armor-repairer/" "Elitet2 70 Medium Armor Repairer"
+    c["Elitet2 72 Medium Armor Repairer"]:::prod
+    a --> c
+    click c "/content/items/elitet2-72-medium-armor-repairer/" "Elitet2 72 Medium Armor Repairer"
+    d["FO-150 'Reparator' medium armor repairer"]:::prod
+    a --> d
+    click d "/content/items/named2-medium-armor-repairer/" "FO-150 'Reparator' medium armor repairer"
+    e["FO-150 'Reparator' medium armor repairer prototype"]:::prod
+    a --> e
+    click e "/content/items/named2-medium-armor-repairer-pr/" "FO-150 'Reparator' medium armor repairer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

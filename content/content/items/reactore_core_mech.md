@@ -19,4 +19,40 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 16 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Niani mech CPU cortex"]:::current
+    b["Artemis Chassis mk2"]:::prod
+    a --> b
+    c["Artemis mk2 Bot"]:::prod
+    a --> c
+    click c "/content/robots/" "Artemis mk2 Bot"
+    d["Gargoyle Chassis mk2"]:::prod
+    a --> d
+    e["Gargoyle mk2 Bot"]:::prod
+    a --> e
+    click e "/content/robots/" "Gargoyle mk2 Bot"
+    f["Ictus Chassis mk2"]:::prod
+    a --> f
+    g["Ictus mk2 Bot"]:::prod
+    a --> g
+    click g "/content/robots/" "Ictus mk2 Bot"
+    h["Kain Chassis mk2"]:::prod
+    a --> h
+    i["Kain mk2 Bot"]:::prod
+    a --> i
+    click i "/content/robots/" "Kain mk2 Bot"
+    j["+8 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

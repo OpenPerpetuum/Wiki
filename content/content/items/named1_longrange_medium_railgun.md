@@ -31,4 +31,23 @@ description: "Modules / Weapons, tier 2"
 | optimal_range | 29 |
 | powergrid_usage | 170 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Condor-SPP medium EM-gun"]:::current
+    b["Nuimtec-Accolon LRS medium EM-gun"]:::prod
+    a --> b
+    click b "/content/items/named2-longrange-medium-railgun/" "Nuimtec-Accolon LRS medium EM-gun"
+    c["Nuimtec-Accolon LRS medium EM-gun prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-longrange-medium-railgun-pr/" "Nuimtec-Accolon LRS medium EM-gun prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

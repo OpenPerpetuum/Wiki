@@ -26,4 +26,23 @@ description: "Modules / Enhancements, tier 2"
 | cycle_time | 12k |
 | powergrid_usage | 1.215k |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["MMA v19-'Widge' large miner module"]:::current
+    b["Sublimator Hi-D large miner module"]:::prod
+    a --> b
+    click b "/content/items/named2-large-driller/" "Sublimator Hi-D large miner module"
+    c["Named2 Large Driller Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-large-driller-pr/" "Named2 Large Driller Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

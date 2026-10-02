@@ -30,4 +30,23 @@ description: "Modules / Weapons, tier 2"
 | optimal_range | 38 |
 | powergrid_usage | 270 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Named1 Raven Cannon"]:::current
+    b["Named2 Raven Cannon"]:::prod
+    a --> b
+    click b "/content/items/named2-raven-cannon/" "Named2 Raven Cannon"
+    c["Named2 Raven Cannon Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-raven-cannon-pr/" "Named2 Raven Cannon Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

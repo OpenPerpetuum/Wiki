@@ -28,4 +28,23 @@ description: "Modules / Weapons, tier 2"
 | damage_modifier | 1 |
 | powergrid_usage | 22 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Pelistec-Horosol DBM light missile launcher"]:::current
+    b["Morteq light missile launcher"]:::prod
+    a --> b
+    click b "/content/items/named2-rocket-launcher/" "Morteq light missile launcher"
+    c["Morteq light missile launcher prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-rocket-launcher-pr/" "Morteq light missile launcher prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -38,4 +38,23 @@ description: "Modules / Remote control, tier 1"
 | turret_amplification_long_range_modifier | 1 |
 | turret_amplification_reactor_radiation_modifier | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard Engineering Remote Controller"]:::current
+    b["Named1 Engineering Remote Controller"]:::prod
+    a --> b
+    click b "/content/items/named1-engineering-remote-controller/" "Named1 Engineering Remote Controller"
+    c["Named1 Engineering Remote Controller Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-engineering-remote-controller-pr/" "Named1 Engineering Remote Controller Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -29,4 +29,23 @@ description: "Modules / Enhancements, tier 3"
 | effect_core_recharge_time_modifier | 0.95 |
 | powergrid_usage | 36 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["ARMS E300 recharger NEXUS module"]:::current
+    b["ARMS X500 recharger NEXUS module"]:::prod
+    a --> b
+    click b "/content/items/named3-gang-assist-core-management-module/" "ARMS X500 recharger NEXUS module"
+    c["ARMS X500 recharger NEXUS module prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-gang-assist-core-management-module-pr/" "ARMS X500 recharger NEXUS module prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

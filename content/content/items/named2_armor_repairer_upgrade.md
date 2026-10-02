@@ -26,4 +26,23 @@ description: "Modules / Repair, tier 3"
 | cpu_usage | 37 |
 | powergrid_usage | 27 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["WPG3000 armor repairer tuning"]:::current
+    b["Apogenion armor repairer tuning"]:::prod
+    a --> b
+    click b "/content/items/named3-armor-repairer-upgrade/" "Apogenion armor repairer tuning"
+    c["Apogenion armor repairer tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-armor-repairer-upgrade-pr/" "Apogenion armor repairer tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

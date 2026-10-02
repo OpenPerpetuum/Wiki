@@ -29,4 +29,23 @@ description: "Modules / Shield, tier 2"
 | effect_shield_absorbtion_modifier | 1.02 |
 | powergrid_usage | 31 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Bomitar I. shield NEXUS module"]:::current
+    b["Stasis-Gen shield NEXUS module"]:::prod
+    a --> b
+    click b "/content/items/named2-gang-assist-shield-calculation-module/" "Stasis-Gen shield NEXUS module"
+    c["Stasis-Gen shield NEXUS module prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-gang-assist-shield-calculation-module-pr/" "Stasis-Gen shield NEXUS module prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

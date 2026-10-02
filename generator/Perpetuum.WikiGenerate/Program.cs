@@ -67,17 +67,21 @@ public static class Program
         var (treeSvg, treeNodes, treeEdges) = ExtensionsTree.Build(db);
         File.WriteAllText(Path.Combine(wikiRoot, "static", "extensions-tree.svg"), treeSvg);
         Console.WriteLine($"wrote static/extensions-tree.svg ({treeNodes} nodes, {treeEdges} edges)");
+        // Main-categories overview SVG (static/extensions-categories.svg).
+        var (catSvg, catCount, catEdges) = ExtensionsCategories.Build(db);
+        File.WriteAllText(Path.Combine(wikiRoot, "static", "extensions-categories.svg"), catSvg);
+        Console.WriteLine($"wrote static/extensions-categories.svg ({catCount} categories, {catEdges} edges)");
         var pages = new List<(string File, string Content)>
         {
             ("ores.md", OresPage.Build(db, defs).Index),
             ("plants.md", PlantsPage.Build(db, defs, plantrulesDir)),
             ("deployables.md", DeployablesPage.Build(db, defs, statsByDef)),
             ("robots.md", RobotsPage.Build(db, defs, statsByDef)),
-            ("extensions.md", ExtensionsPage.Build(db, treeSvg, treeNodes, treeEdges)),
+            ("extensions.md", ExtensionsPage.Build(db, treeSvg, treeNodes, treeEdges, catSvg, catCount, catEdges)),
 
             ("missions.md", MissionsPage.Build(db)),
             ("shop.md", ShopPage.Build(db, shop)),
-            ("recipes.md", RecipesPage.Build(db)),
+            ("recipes.md", RecipesPage.Build(db, defs)),
         ("stat-reference.md", StatsReferencePage.Build(db)),
         };
         // The shop catalog is one page per category under shop/.

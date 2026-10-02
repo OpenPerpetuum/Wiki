@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 1.1k items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Cryoperine"]:::current
+    b["Niani interference module"]:::prod
+    a --> b
+    click b "/content/items/artifact-a-blob-emission-modulator/" "Niani interference module"
+    c["Niani cargo scanner"]:::prod
+    a --> c
+    click c "/content/items/artifact-a-cargo-scanner/" "Niani cargo scanner"
+    d["Niani chassis scanner"]:::prod
+    a --> d
+    click d "/content/items/artifact-a-chassis-scanner/" "Niani chassis scanner"
+    e["Niani chemical armor"]:::prod
+    a --> e
+    click e "/content/items/artifact-a-chm-armor-hardener/" "Niani chemical armor"
+    f["Niani accumulator recharger"]:::prod
+    a --> f
+    click f "/content/items/artifact-a-core-recharger/" "Niani accumulator recharger"
+    g["Niani coprocessor"]:::prod
+    a --> g
+    click g "/content/items/artifact-a-cpu-upgrade/" "Niani coprocessor"
+    h["Niani signal detector"]:::prod
+    a --> h
+    click h "/content/items/artifact-a-detection-modul/" "Niani signal detector"
+    i["Niani ECCM"]:::prod
+    a --> i
+    click i "/content/items/artifact-a-eccm/" "Niani ECCM"
+    j["+1.0k more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

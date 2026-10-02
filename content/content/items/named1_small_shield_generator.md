@@ -29,4 +29,29 @@ description: "Modules / Shield, tier 2"
 | shield_absorbtion | 2 |
 | shield_radius | 4.5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 4 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Parsvaal-IP small shield generator"]:::current
+    b["Elitet2 70 Small Shield Generator"]:::prod
+    a --> b
+    click b "/content/items/elitet2-70-small-shield-generator/" "Elitet2 70 Small Shield Generator"
+    c["Elitet2 71 Small Shield Generator"]:::prod
+    a --> c
+    click c "/content/items/elitet2-71-small-shield-generator/" "Elitet2 71 Small Shield Generator"
+    d["Ovostec-Yellowray small shield generator"]:::prod
+    a --> d
+    click d "/content/items/named2-small-shield-generator/" "Ovostec-Yellowray small shield generator"
+    e["Ovostec-Yellowray small shield generator prototype"]:::prod
+    a --> e
+    click e "/content/items/named2-small-shield-generator-pr/" "Ovostec-Yellowray small shield generator prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

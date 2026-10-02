@@ -26,4 +26,23 @@ description: "Modules / Enhancements, tier 1"
 | cycle_time | 11k |
 | powergrid_usage | 250 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard medium energy injector"]:::current
+    b["Shoxit Parter I. medium energy injector"]:::prod
+    a --> b
+    click b "/content/items/named1-medium-core-booster/" "Shoxit Parter I. medium energy injector"
+    c["Shoxit Parter I. medium energy injector prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-medium-core-booster-pr/" "Shoxit Parter I. medium energy injector prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

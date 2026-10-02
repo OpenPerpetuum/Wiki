@@ -19,4 +19,20 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Inductor [Nibelung - III]"]:::current
+    b["Mobile fusion reactor [Nibelung - III]"]:::prod
+    a --> b
+    click b "/content/items/missionitem-ics-i-level05-exp3-03-t06/" "Mobile fusion reactor [Nibelung - III]"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

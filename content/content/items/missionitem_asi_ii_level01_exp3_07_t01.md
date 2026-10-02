@@ -19,4 +19,20 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Modulator casing [Persepolis VII/1]"]:::current
+    b["RX-Modulator [Persepolis VII]"]:::prod
+    a --> b
+    click b "/content/items/missionitem-asi-ii-level01-exp3-07-t04/" "RX-Modulator [Persepolis VII]"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

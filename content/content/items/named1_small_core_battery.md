@@ -25,4 +25,23 @@ description: "Modules / Power, tier 2"
 | cpu_usage | 32 |
 | powergrid_usage | 14 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Co-Fuse small auxiliary accumulator"]:::current
+    b["Ovostec-Ghioc small auxiliary accumulator"]:::prod
+    a --> b
+    click b "/content/items/named2-small-core-battery/" "Ovostec-Ghioc small auxiliary accumulator"
+    c["Ovostec-Ghioc small auxiliary accumulator prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-small-core-battery-pr/" "Ovostec-Ghioc small auxiliary accumulator prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

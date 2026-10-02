@@ -25,4 +25,20 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 17 |
 | sensor_strength_modifier | 75 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Braviar ECCM"]:::current
+    b["Elitet4 70 Eccm"]:::prod
+    a --> b
+    click b "/content/items/elitet4-70-eccm/" "Elitet4 70 Eccm"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

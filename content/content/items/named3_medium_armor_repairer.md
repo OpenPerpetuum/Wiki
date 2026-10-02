@@ -27,4 +27,23 @@ description: "Modules / Repair, tier 4"
 | cycle_time | 12k |
 | powergrid_usage | 110 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["CRC40 medium armor repairer"]:::current
+    b["Elitet4 70 Medium Armor Repairer"]:::prod
+    a --> b
+    click b "/content/items/elitet4-70-medium-armor-repairer/" "Elitet4 70 Medium Armor Repairer"
+    c["Elitet4 72 Medium Armor Repairer"]:::prod
+    a --> c
+    click c "/content/items/elitet4-72-medium-armor-repairer/" "Elitet4 72 Medium Armor Repairer"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

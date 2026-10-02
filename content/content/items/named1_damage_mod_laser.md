@@ -25,4 +25,23 @@ description: "Modules / Weapons, tier 2"
 | damage_laser_modifier | 0.15 |
 | powergrid_usage | 9 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Reflexis II. laser tuning"]:::current
+    b["Kauska Optibrace laser tuning"]:::prod
+    a --> b
+    click b "/content/items/named2-damage-mod-laser/" "Kauska Optibrace laser tuning"
+    c["Kauska Optibrace laser tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-damage-mod-laser-pr/" "Kauska Optibrace laser tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

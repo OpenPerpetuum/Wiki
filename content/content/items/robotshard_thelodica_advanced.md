@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 119 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Functional thelodica fragment"]:::current
+    b["Kauska Optibrace laser tuning"]:::prod
+    a --> b
+    click b "/content/items/named2-damage-mod-laser/" "Kauska Optibrace laser tuning"
+    c["Kauska Optibrace laser tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-damage-mod-laser-pr/" "Kauska Optibrace laser tuning prototype"
+    d["Formantel-DVU seismic armor"]:::prod
+    a --> d
+    click d "/content/items/named2-exp-armor-hardener/" "Formantel-DVU seismic armor"
+    e["Formantel-DVU seismic armor prototype"]:::prod
+    a --> e
+    click e "/content/items/named2-exp-armor-hardener-pr/" "Formantel-DVU seismic armor prototype"
+    f["Paternis armor NEXUS module"]:::prod
+    a --> f
+    click f "/content/items/named2-gang-assist-defense-module/" "Paternis armor NEXUS module"
+    g["Paternis armor NEXUS module prototype"]:::prod
+    a --> g
+    click g "/content/items/named2-gang-assist-defense-module-pr/" "Paternis armor NEXUS module prototype"
+    h["Named2 Gang Assist Devastating Module"]:::prod
+    a --> h
+    click h "/content/items/named2-gang-assist-devastating-module/" "Named2 Gang Assist Devastating Module"
+    i["Named2 Gang Assist Devastating Module Pr"]:::prod
+    a --> i
+    click i "/content/items/named2-gang-assist-devastating-module-pr/" "Named2 Gang Assist Devastating Module Pr"
+    j["+111 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

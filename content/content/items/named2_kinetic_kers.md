@@ -28,4 +28,23 @@ description: "Modules / Enhancements, tier 3"
 | powergrid_usage | 17 |
 | thermal_damage_to_core_modifier | 0.125 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Solitex-990 kinetic ERP"]:::current
+    b["Emerolyte kinetic ERP"]:::prod
+    a --> b
+    click b "/content/items/named3-kinetic-kers/" "Emerolyte kinetic ERP"
+    c["Emerolyte kinetic ERP prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-kinetic-kers-pr/" "Emerolyte kinetic ERP prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

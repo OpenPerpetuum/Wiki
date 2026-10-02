@@ -20,4 +20,43 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 10 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Material Boss Gamma Syndicate"]:::current
+    b["Elitet4 Gamma Longrange Medium Autocannon"]:::prod
+    a --> b
+    click b "/content/items/elitet4-gamma-longrange-medium-autocannon/" "Elitet4 Gamma Longrange Medium Autocannon"
+    c["Elitet4 Gamma Medium Autocannon"]:::prod
+    a --> c
+    click c "/content/items/elitet4-gamma-medium-autocannon/" "Elitet4 Gamma Medium Autocannon"
+    d["Elitet4 Gamma Small Autocannon"]:::prod
+    a --> d
+    click d "/content/items/elitet4-gamma-small-autocannon/" "Elitet4 Gamma Small Autocannon"
+    e["Named3 Harvesting Turret Unit"]:::prod
+    a --> e
+    click e "/content/items/named3-harvesting-turret-unit/" "Named3 Harvesting Turret Unit"
+    f["Named3 Mining Turret Unit"]:::prod
+    a --> f
+    click f "/content/items/named3-mining-turret-unit/" "Named3 Mining Turret Unit"
+    g["Named3 Sentry Turret Unit"]:::prod
+    a --> g
+    click g "/content/items/named3-sentry-turret-unit/" "Named3 Sentry Turret Unit"
+    h["Beholder Bot"]:::prod
+    a --> h
+    click h "/content/robots/" "Beholder Bot"
+    i["Beholder Bot Pr"]:::prod
+    a --> i
+    j["+2 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

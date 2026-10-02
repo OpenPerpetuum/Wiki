@@ -31,4 +31,23 @@ description: "Modules / Shield, tier 3"
 | optimal_range | 14 |
 | powergrid_usage | 37 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Ekcept small energy drainer"]:::current
+    b["Io-trail SVU small energy drainer"]:::prod
+    a --> b
+    click b "/content/items/named3-small-energy-vampire/" "Io-trail SVU small energy drainer"
+    c["Io-trail SVU small energy drainer prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-small-energy-vampire-pr/" "Io-trail SVU small energy drainer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

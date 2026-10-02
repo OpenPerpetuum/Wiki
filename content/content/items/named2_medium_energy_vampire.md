@@ -30,4 +30,23 @@ description: "Modules / Shield, tier 3"
 | optimal_range | 27.5 |
 | powergrid_usage | 185 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["V90-Quadres medium energy drainer"]:::current
+    b["Filch-AM medium energy drainer"]:::prod
+    a --> b
+    click b "/content/items/named3-medium-energy-vampire/" "Filch-AM medium energy drainer"
+    c["Filch-AM medium energy drainer prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-medium-energy-vampire-pr/" "Filch-AM medium energy drainer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

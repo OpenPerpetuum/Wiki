@@ -31,4 +31,23 @@ description: "Modules / Weapons, tier 3"
 | optimal_range | 18.5 |
 | powergrid_usage | 225 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Kauska Heatpin I. medium LCL laser"]:::current
+    b["Thermodissector medium LCL laser"]:::prod
+    a --> b
+    click b "/content/items/named3-medium-laser/" "Thermodissector medium LCL laser"
+    c["Thermodissector medium LCL laser prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-medium-laser-pr/" "Thermodissector medium LCL laser prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

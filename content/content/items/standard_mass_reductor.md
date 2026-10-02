@@ -27,4 +27,23 @@ description: "Modules / Enhancements, tier 1"
 | powergrid_usage | 2 |
 | speed_max_modifier | 1.15 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard lightweight frame"]:::current
+    b["MR1000-Boogey lightweight frame"]:::prod
+    a --> b
+    click b "/content/items/named1-mass-reductor/" "MR1000-Boogey lightweight frame"
+    c["MR1000-Boogey lightweight frame prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-mass-reductor-pr/" "MR1000-Boogey lightweight frame prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

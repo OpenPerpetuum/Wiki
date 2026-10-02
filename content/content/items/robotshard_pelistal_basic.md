@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 169 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Damaged pelistal fragment"]:::current
+    b["Aqwit Imperator heavy missile launcher"]:::prod
+    a --> b
+    click b "/content/items/named1-cruisemissile-launcher/" "Aqwit Imperator heavy missile launcher"
+    c["Named1 Cruisemissile Launcher Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-cruisemissile-launcher-pr/" "Named1 Cruisemissile Launcher Pr"
+    d["AIT-Dipris Propellant missile launcher tuning"]:::prod
+    a --> d
+    click d "/content/items/named1-damage-mod-missile/" "AIT-Dipris Propellant missile launcher tuning"
+    e["AIT-Dipris Propellant missile launcher tuning prototype"]:::prod
+    a --> e
+    click e "/content/items/named1-damage-mod-missile-pr/" "AIT-Dipris Propellant missile launcher tuning prototype"
+    f["Blister EnWar upgrade"]:::prod
+    a --> f
+    click f "/content/items/named1-energy-warfare-upgrade/" "Blister EnWar upgrade"
+    g["Blister EnWar upgrade prototype"]:::prod
+    a --> g
+    click g "/content/items/named1-energy-warfare-upgrade-pr/" "Blister EnWar upgrade prototype"
+    h["Oshbo evasive NEXUS module"]:::prod
+    a --> h
+    click h "/content/items/named1-gang-assist-coordinated-maneuvering-module/" "Oshbo evasive NEXUS module"
+    i["Oshbo evasive NEXUS module prototype"]:::prod
+    a --> i
+    click i "/content/items/named1-gang-assist-coordinated-maneuvering-module-pr/" "Oshbo evasive NEXUS module prototype"
+    j["+161 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

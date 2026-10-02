@@ -27,4 +27,23 @@ description: "Modules / Harvesting, tier 1"
 | optimal_range | 3 |
 | powergrid_usage | 30 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard small harvester"]:::current
+    b["MHA 400-'Avalon' small harvester"]:::prod
+    a --> b
+    click b "/content/items/named1-small-harvester/" "MHA 400-'Avalon' small harvester"
+    c["MHA 400-'Avalon' small harvester prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-small-harvester-pr/" "MHA 400-'Avalon' small harvester prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

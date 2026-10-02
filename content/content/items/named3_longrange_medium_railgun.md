@@ -31,4 +31,20 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 31 |
 | powergrid_usage | 200 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["5.5-Glipler medium EM-gun"]:::current
+    b["Elitet4 Gamma Longrange Medium Railgun"]:::prod
+    a --> b
+    click b "/content/items/elitet4-gamma-longrange-medium-railgun/" "Elitet4 Gamma Longrange Medium Railgun"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

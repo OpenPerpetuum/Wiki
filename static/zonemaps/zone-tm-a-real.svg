@@ -16,43 +16,43 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
-  <a href="/zones/zone-tm-pve" title="Hershfield, Kentagura">
+  <a href="/zones/zone-tm-pve/" title="Hershfield, Kentagura">
   <circle cx="188.5" cy="1725.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="188.5" y="1694.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield, Kentagura</text>
   </a>
-  <a href="/zones/zone-tm-a-real" title="Norhoop, zone_gamma_tc_z101">
+  <a href="/zones/zone-tm-a-real/" title="Norhoop, zone_gamma_tc_z101">
   <circle cx="461.5" cy="1232.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="461.5" y="1201.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop, zone_gamma_tc_z101</text>
   </a>
-  <a href="/zones/zone-tm-a-real" title="Norhoop">
+  <a href="/zones/zone-tm-a-real/" title="Norhoop">
   <circle cx="596.5" cy="628.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="596.5" y="597.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
   </a>
-  <a href="/zones/zone-tm-pve" title="Hershfield, Kentagura">
+  <a href="/zones/zone-tm-pve/" title="Hershfield, Kentagura">
   <circle cx="597.5" cy="341.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="597.5" y="310.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield, Kentagura</text>
   </a>
-  <a href="/zones/zone-tm-a-real" title="Norhoop">
+  <a href="/zones/zone-tm-a-real/" title="Norhoop">
   <circle cx="1066.5" cy="1542.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1066.5" y="1511.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
   </a>
-  <a href="/zones/zone-tm-a-real" title="Norhoop">
+  <a href="/zones/zone-tm-a-real/" title="Norhoop">
   <circle cx="1198.5" cy="793.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1198.5" y="762.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
   </a>
-  <a href="/zones/zone-tm-a-real" title="Norhoop">
+  <a href="/zones/zone-tm-a-real/" title="Norhoop">
   <circle cx="1377.5" cy="927.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1377.5" y="896.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
   </a>
-  <a href="/zones/zone-tm-a-real" title="Norhoop">
+  <a href="/zones/zone-tm-a-real/" title="Norhoop">
   <circle cx="1558.5" cy="1648.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1558.5" y="1617.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
   </a>
-  <a href="/zones/zone-tm-g-6" title="Solarfield, Hershfield…">
+  <a href="/zones/zone-tm-g-6/" title="Solarfield, Hershfield…">
   <circle cx="1620.5" cy="652.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1620.5" y="621.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Solarfield, Hershfield…</text>
   </a>
-  <a href="/zones/zone-tm-g-6" title="Solarfield, Alsbale">
+  <a href="/zones/zone-tm-g-6/" title="Solarfield, Alsbale">
   <circle cx="1751.5" cy="1816.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1751.5" y="1785.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Solarfield, Alsbale</text>
   </a>

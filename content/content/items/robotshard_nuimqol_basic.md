@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 165 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Damaged nuimqol fragment"]:::current
+    b["Diaptes armor repairer tuning"]:::prod
+    a --> b
+    click b "/content/items/named1-armor-repairer-upgrade/" "Diaptes armor repairer tuning"
+    c["Diaptes armor repairer tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-armor-repairer-upgrade-pr/" "Diaptes armor repairer tuning prototype"
+    d["Nuimtec-Spilster magnetic weapon tuning"]:::prod
+    a --> d
+    click d "/content/items/named1-damage-mod-railgun/" "Nuimtec-Spilster magnetic weapon tuning"
+    e["Nuimtec-Spilster magnetic weapon tuning prototype"]:::prod
+    a --> e
+    click e "/content/items/named1-damage-mod-railgun-pr/" "Nuimtec-Spilster magnetic weapon tuning prototype"
+    f["Distortio ECM tuning"]:::prod
+    a --> f
+    click f "/content/items/named1-ecm-booster/" "Distortio ECM tuning"
+    g["Distortio ECM tuning prototype"]:::prod
+    a --> g
+    click g "/content/items/named1-ecm-booster-pr/" "Distortio ECM tuning prototype"
+    h["SER-250 'Eruptico' seismic ERP"]:::prod
+    a --> h
+    click h "/content/items/named1-explosive-kers/" "SER-250 'Eruptico' seismic ERP"
+    i["SER-250 'Eruptico' seismic ERP prototype"]:::prod
+    a --> i
+    click i "/content/items/named1-explosive-kers-pr/" "SER-250 'Eruptico' seismic ERP prototype"
+    j["+157 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

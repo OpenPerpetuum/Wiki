@@ -25,4 +25,23 @@ description: "Modules / Enhancements, tier 2"
 | damage_missile_modifier | 0.15 |
 | powergrid_usage | 4 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["AIT-Dipris Propellant missile launcher tuning"]:::current
+    b["Pelistec-FBP-II. missile launcher tuning"]:::prod
+    a --> b
+    click b "/content/items/named2-damage-mod-missile/" "Pelistec-FBP-II. missile launcher tuning"
+    c["Pelistec-FBP-II. missile launcher tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-damage-mod-missile-pr/" "Pelistec-FBP-II. missile launcher tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

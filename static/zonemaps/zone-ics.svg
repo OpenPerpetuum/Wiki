@@ -16,39 +16,39 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
-  <a href="/zones/zone-tm-pve" title="Hershfield">
+  <a href="/zones/zone-tm-pve/" title="Hershfield">
   <circle cx="334.5" cy="918.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="334.5" y="887.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield</text>
   </a>
-  <a href="/zones/zone-ics" title="Attalica">
+  <a href="/zones/zone-ics/" title="Attalica">
   <circle cx="546.5" cy="1268.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="546.5" y="1237.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Attalica</text>
   </a>
-  <a href="/zones/zone-asi-pve" title="Shinjalar">
+  <a href="/zones/zone-asi-pve/" title="Shinjalar">
   <circle cx="644.5" cy="1466.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="644.5" y="1435.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
-  <a href="/zones/zone-ics" title="Attalica">
+  <a href="/zones/zone-ics/" title="Attalica">
   <circle cx="861.5" cy="1093.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="861.5" y="1062.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Attalica</text>
   </a>
-  <a href="/zones/zone-ics" title="Attalica">
+  <a href="/zones/zone-ics/" title="Attalica">
   <circle cx="896.5" cy="842.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="896.5" y="811.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Attalica</text>
   </a>
-  <a href="/zones/zone-ics" title="Attalica">
+  <a href="/zones/zone-ics/" title="Attalica">
   <circle cx="1011.5" cy="1074.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1011.5" y="1043.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Attalica</text>
   </a>
-  <a href="/zones/zone-ics" title="Attalica">
+  <a href="/zones/zone-ics/" title="Attalica">
   <circle cx="1324.5" cy="721.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1324.5" y="690.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Attalica</text>
   </a>
-  <a href="/zones/zone-ics" title="Attalica">
+  <a href="/zones/zone-ics/" title="Attalica">
   <circle cx="1418.5" cy="1395.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1418.5" y="1364.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Attalica</text>
   </a>
-  <a href="/zones/zone-ics-pve" title="Tellesis">
+  <a href="/zones/zone-ics-pve/" title="Tellesis">
   <circle cx="1553.5" cy="708.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1553.5" y="677.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Tellesis</text>
   </a>

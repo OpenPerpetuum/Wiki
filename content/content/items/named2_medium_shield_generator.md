@@ -28,4 +28,23 @@ description: "Modules / Shield, tier 3"
 | shield_absorbtion | 2.2 |
 | shield_radius | 12 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Ovostec-Yellowray II. medium shield generator"]:::current
+    b["Penik medium shield generator"]:::prod
+    a --> b
+    click b "/content/items/named3-medium-shield-generator/" "Penik medium shield generator"
+    c["Penik medium shield generator prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-medium-shield-generator-pr/" "Penik medium shield generator prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

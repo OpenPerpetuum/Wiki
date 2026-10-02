@@ -19,4 +19,37 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 8 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Niani assault robot CPU cortex"]:::current
+    b["Arbalest Chassis mk2"]:::prod
+    a --> b
+    c["Arbalest mk2 Bot"]:::prod
+    a --> c
+    click c "/content/robots/" "Arbalest mk2 Bot"
+    d["Baphomet mk2 Bot"]:::prod
+    a --> d
+    click d "/content/robots/" "Baphomet mk2 Bot"
+    e["Baphomet mk2 Chassis"]:::prod
+    a --> e
+    f["Sequer Chassis mk2"]:::prod
+    a --> f
+    g["Sequer mk2 Bot"]:::prod
+    a --> g
+    click g "/content/robots/" "Sequer mk2 Bot"
+    h["Waspish Chassis mk2"]:::prod
+    a --> h
+    i["Waspish mk2 Bot"]:::prod
+    a --> i
+    click i "/content/robots/" "Waspish mk2 Bot"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

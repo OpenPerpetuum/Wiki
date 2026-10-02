@@ -27,4 +27,23 @@ description: "Modules / Repair, tier 3"
 | cycle_time | 13.5k |
 | powergrid_usage | 110 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["FO-150 'Reparator' medium armor repairer"]:::current
+    b["CRC40 medium armor repairer"]:::prod
+    a --> b
+    click b "/content/items/named3-medium-armor-repairer/" "CRC40 medium armor repairer"
+    c["CRC40 medium armor repairer prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-medium-armor-repairer-pr/" "CRC40 medium armor repairer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

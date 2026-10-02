@@ -28,4 +28,23 @@ description: "Modules / Sensors & scanning, tier 3"
 | optimal_range | 30 |
 | powergrid_usage | 5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Stalis CS3 chassis scanner"]:::current
+    b["sy-D-930 chassis scanner"]:::prod
+    a --> b
+    click b "/content/items/named3-chassis-scanner/" "sy-D-930 chassis scanner"
+    c["sy-D-930 chassis scanner prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-chassis-scanner-pr/" "sy-D-930 chassis scanner prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

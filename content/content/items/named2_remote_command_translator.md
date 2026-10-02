@@ -35,4 +35,23 @@ description: "Modules / Remote control, tier 3"
 | remote_control_lifetime_modifier | 150k |
 | remote_control_operational_range_modifier | 15 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Named2 Remote Command Translator"]:::current
+    b["Named3 Remote Command Translator"]:::prod
+    a --> b
+    click b "/content/items/named3-remote-command-translator/" "Named3 Remote Command Translator"
+    c["Named3 Remote Command Translator Pr"]:::prod
+    a --> c
+    click c "/content/items/named3-remote-command-translator-pr/" "Named3 Remote Command Translator Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

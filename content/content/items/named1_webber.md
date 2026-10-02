@@ -29,4 +29,26 @@ description: "Modules / Enhancements, tier 2"
 | optimal_range | 12 |
 | powergrid_usage | 14 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Arachnid-type S-demobilizer"]:::current
+    b["Elitet2 70 Webber"]:::prod
+    a --> b
+    click b "/content/items/elitet2-70-webber/" "Elitet2 70 Webber"
+    c["NNt. IX S-demobilizer"]:::prod
+    a --> c
+    click c "/content/items/named2-webber/" "NNt. IX S-demobilizer"
+    d["NNt. IX S-demobilizer prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-webber-pr/" "NNt. IX S-demobilizer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

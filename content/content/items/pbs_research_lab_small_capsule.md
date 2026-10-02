@@ -30,4 +30,23 @@ description: "Special & other / Miscellaneous, tier 1"
 | signature_radius | 50 |
 | stealth_strength | 50 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Pbs Research Lab Small Capsule"]:::current
+    b["Pbs Research Lab Medium Capsule"]:::prod
+    a --> b
+    click b "/content/items/pbs-research-lab-medium-capsule/" "Pbs Research Lab Medium Capsule"
+    c["Pbs Research Lab Medium Capsule Pr"]:::prod
+    a --> c
+    click c "/content/items/pbs-research-lab-medium-capsule-pr/" "Pbs Research Lab Medium Capsule Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

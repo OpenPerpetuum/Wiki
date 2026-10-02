@@ -26,4 +26,20 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 28 |
 | signature_radius | -1.15 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Yridan RCD evasive module"]:::current
+    b["Elitet4 71 Maneuvering Upgrade"]:::prod
+    a --> b
+    click b "/content/items/elitet4-71-maneuvering-upgrade/" "Elitet4 71 Maneuvering Upgrade"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

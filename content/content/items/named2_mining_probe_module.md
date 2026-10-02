@@ -27,4 +27,23 @@ description: "Modules / Enhancements, tier 3"
 | mining_probe_accuracy | 0.6 |
 | powergrid_usage | 50 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Syverz geoscanner"]:::current
+    b["Eksplor-q3000 geoscanner"]:::prod
+    a --> b
+    click b "/content/items/named3-mining-probe-module/" "Eksplor-q3000 geoscanner"
+    c["Eksplor-q3000 geoscanner prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-mining-probe-module-pr/" "Eksplor-q3000 geoscanner prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

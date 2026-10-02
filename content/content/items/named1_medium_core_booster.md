@@ -26,4 +26,26 @@ description: "Modules / Enhancements, tier 2"
 | cycle_time | 11k |
 | powergrid_usage | 225 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Shoxit Parter I. medium energy injector"]:::current
+    b["Elitet2 70 Medium Core Booster"]:::prod
+    a --> b
+    click b "/content/items/elitet2-70-medium-core-booster/" "Elitet2 70 Medium Core Booster"
+    c["Follypsos medium energy injector"]:::prod
+    a --> c
+    click c "/content/items/named2-medium-core-booster/" "Follypsos medium energy injector"
+    d["Follypsos medium energy injector prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-medium-core-booster-pr/" "Follypsos medium energy injector prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

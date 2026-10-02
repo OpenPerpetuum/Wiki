@@ -25,4 +25,23 @@ description: "Modules / Enhancements, tier 1"
 | damage_projectile_modifier | 0.15 |
 | powergrid_usage | 5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard firearm tuning"]:::current
+    b["Diathel-Subperis firearm tuning"]:::prod
+    a --> b
+    click b "/content/items/named1-damage-mod-projectile/" "Diathel-Subperis firearm tuning"
+    c["Diathel-Subperis firearm tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-damage-mod-projectile-pr/" "Diathel-Subperis firearm tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

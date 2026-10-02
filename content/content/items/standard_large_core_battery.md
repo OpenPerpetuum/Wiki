@@ -25,4 +25,23 @@ description: "Modules / Power, tier 1"
 | cpu_usage | 400 |
 | powergrid_usage | 840 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard large auxiliary accumulator"]:::current
+    b["Ovostec-gxc9000 large auxiliary accumulator"]:::prod
+    a --> b
+    click b "/content/items/named1-large-core-battery/" "Ovostec-gxc9000 large auxiliary accumulator"
+    c["Named1 Large Core Battery Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-large-core-battery-pr/" "Named1 Large Core Battery Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

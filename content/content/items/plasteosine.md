@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 582 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Plasteosine"]:::current
+    b["Ammo Hell Cannon D"]:::prod
+    a --> b
+    click b "/content/items/ammo-hell-cannon-d/" "Ammo Hell Cannon D"
+    c["Ammo Hell Cannon D Pr"]:::prod
+    a --> c
+    click c "/content/items/ammo-hell-cannon-d-pr/" "Ammo Hell Cannon D Pr"
+    d["Ammo Hell Cannon T"]:::prod
+    a --> d
+    click d "/content/items/ammo-hell-cannon-t/" "Ammo Hell Cannon T"
+    e["Ammo Hell Cannon T Pr"]:::prod
+    a --> e
+    click e "/content/items/ammo-hell-cannon-t-pr/" "Ammo Hell Cannon T Pr"
+    f["Ammo Raven Cannon D"]:::prod
+    a --> f
+    click f "/content/items/ammo-raven-cannon-d/" "Ammo Raven Cannon D"
+    g["Ammo Raven Cannon D Pr"]:::prod
+    a --> g
+    click g "/content/items/ammo-raven-cannon-d-pr/" "Ammo Raven Cannon D Pr"
+    h["Ammo Raven Cannon T"]:::prod
+    a --> h
+    click h "/content/items/ammo-raven-cannon-t/" "Ammo Raven Cannon T"
+    i["Ammo Raven Cannon T Pr"]:::prod
+    a --> i
+    click i "/content/items/ammo-raven-cannon-t-pr/" "Ammo Raven Cannon T Pr"
+    j["+574 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

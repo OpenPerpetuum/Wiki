@@ -20,4 +20,41 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 8 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Material Boss Gamma Thelodica"]:::current
+    b["Elitet4 Gamma Longrange Medium Laser"]:::prod
+    a --> b
+    click b "/content/items/elitet4-gamma-longrange-medium-laser/" "Elitet4 Gamma Longrange Medium Laser"
+    c["Elitet4 Gamma Medium Driller"]:::prod
+    a --> c
+    click c "/content/items/elitet4-gamma-medium-driller/" "Elitet4 Gamma Medium Driller"
+    d["Elitet4 Gamma Medium Harvester"]:::prod
+    a --> d
+    click d "/content/items/elitet4-gamma-medium-harvester/" "Elitet4 Gamma Medium Harvester"
+    e["Elitet4 Gamma Medium Laser"]:::prod
+    a --> e
+    click e "/content/items/elitet4-gamma-medium-laser/" "Elitet4 Gamma Medium Laser"
+    f["Elitet4 Gamma Small Driller"]:::prod
+    a --> f
+    click f "/content/items/elitet4-gamma-small-driller/" "Elitet4 Gamma Small Driller"
+    g["Elitet4 Gamma Small Harvester"]:::prod
+    a --> g
+    click g "/content/items/elitet4-gamma-small-harvester/" "Elitet4 Gamma Small Harvester"
+    h["Elitet4 Gamma Small Laser"]:::prod
+    a --> h
+    click h "/content/items/elitet4-gamma-small-laser/" "Elitet4 Gamma Small Laser"
+    i["Named3 Thelodica Combat Drone Unit"]:::prod
+    a --> i
+    click i "/content/items/named3-thelodica-combat-drone-unit/" "Named3 Thelodica Combat Drone Unit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

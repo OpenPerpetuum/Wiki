@@ -28,4 +28,23 @@ description: "Modules / Enhancements, tier 3"
 | optimal_range | 90 |
 | powergrid_usage | 20 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Colqual target marker"]:::current
+    b["Pulsus target marker"]:::prod
+    a --> b
+    click b "/content/items/named3-target-painter/" "Pulsus target marker"
+    c["Pulsus target marker prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-target-painter-pr/" "Pulsus target marker prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

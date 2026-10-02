@@ -25,4 +25,20 @@ description: "Modules / Power, tier 2"
 | cpu_usage | 360 |
 | powergrid_usage | 800 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Ovostec-gxc9000 large auxiliary accumulator"]:::current
+    b["Nibott-I large auxiliary accumulator"]:::prod
+    a --> b
+    click b "/content/items/named2-large-core-battery/" "Nibott-I large auxiliary accumulator"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

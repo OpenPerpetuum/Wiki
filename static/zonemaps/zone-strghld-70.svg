@@ -16,11 +16,11 @@
   <line stroke="#1d2534" stroke-width="0.25"/>
   <line stroke="#1d2534" stroke-width="0.25"/>
   <line stroke="#1d2534" stroke-width="0.25"/>
-  <a href="/zones/zone-tm-pve" title="exit → Hershfield">
+  <a href="/zones/zone-tm-pve/" title="exit → Hershfield">
   <path d="M 487 392.2 L 491.8 397 L 487 401.8 L 482.2 397 Z" fill="#f5a05a" stroke="#10151f" stroke-width="0.62"/>
   <text x="487" y="408.3" font-size="6.76" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="2.03" stroke-linejoin="round">exit → Hershfield</text>
   </a>
-  <a href="/zones/zone-tm-pve" title="exit → Hershfield">
+  <a href="/zones/zone-tm-pve/" title="exit → Hershfield">
   <path d="M 33 40.2 L 37.8 45 L 33 49.8 L 28.2 45 Z" fill="#f5a05a" stroke="#10151f" stroke-width="0.62"/>
   <text x="33" y="56.3" font-size="6.76" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="2.03" stroke-linejoin="round">exit → Hershfield</text>
   </a>

@@ -26,4 +26,26 @@ description: "Modules / Enhancements, tier 2"
 | powergrid_usage | 22 |
 | signature_radius | -0.85 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["R4S-S evasive module"]:::current
+    b["Elitet2 71 Maneuvering Upgrade"]:::prod
+    a --> b
+    click b "/content/items/elitet2-71-maneuvering-upgrade/" "Elitet2 71 Maneuvering Upgrade"
+    c["Deflectik evasive module"]:::prod
+    a --> c
+    click c "/content/items/named2-maneuvering-upgrade/" "Deflectik evasive module"
+    d["Deflectik evasive module prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-maneuvering-upgrade-pr/" "Deflectik evasive module prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

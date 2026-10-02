@@ -119,8 +119,10 @@ test('sidenav drawer: hamburger opens, backdrop/link/swipe/Escape close', async 
   expect(await openState()).toBe(true);
   expect(await toggle.getAttribute('aria-expanded')).toBe('true');
 
-  // tap the dimmed backdrop (content area) -> closes
-  await page.locator('main').click({ position: { x: 300, y: 200 } });
+  // tap the dimmed backdrop (content area, to the right of the drawer) ->
+  // closes. Raw mouse click: the backdrop is a body::before pseudo-element,
+  // so no real element receives the hit and locator.click() would refuse it.
+  await page.mouse.click(370, 200);
   await expect.poll(openState).toBe(false);
 
   // open again, tap a link -> navigates AND closes

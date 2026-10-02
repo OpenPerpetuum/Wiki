@@ -27,4 +27,20 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 3 |
 | speed_max_modifier | 1.25 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["MRE 3000 lightweight frame"]:::current
+    b["Elitet4 72 Mass Reductor"]:::prod
+    a --> b
+    click b "/content/items/elitet4-72-mass-reductor/" "Elitet4 72 Mass Reductor"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

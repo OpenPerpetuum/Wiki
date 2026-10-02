@@ -27,4 +27,23 @@ description: "Modules / Repair, tier 2"
 | cycle_time | 15k |
 | powergrid_usage | 900 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Stesodenn large armor repairer"]:::current
+    b["FO-330 'Reconstructor' large armor repairer"]:::prod
+    a --> b
+    click b "/content/items/named2-large-armor-repairer/" "FO-330 'Reconstructor' large armor repairer"
+    c["Named2 Large Armor Repairer Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-large-armor-repairer-pr/" "Named2 Large Armor Repairer Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

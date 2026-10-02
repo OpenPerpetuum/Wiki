@@ -50,6 +50,15 @@ public static class ItemsPage
         var components = db.Query("SELECT definition, componentdefinition, componentamount FROM components")
             .GroupBy(r => r.Int("definition"))
             .ToDictionary(g => g.Key, g => g.Select(r => (Comp: r.Int("componentdefinition"), Amt: r.Int("componentamount"))).ToList());
+        // Reverse: which products take each component (for the "Production" section
+        // — what can be built with this item).
+        var usedIn = new Dictionary<int, List<int>>();
+        foreach (var (def, parts) in components)
+            foreach (var (comp, _) in parts)
+            {
+                if (!usedIn.TryGetValue(comp, out var users)) usedIn[comp] = users = new List<int>();
+                users.Add(def);
+            }
         var all = db.Query("SELECT definition, definitionname, attributeflags, categoryflags, enabled, hidden, volume, mass, health, quantity, tiertype, tierlevel, note FROM entitydefaults ORDER BY definitionname")
             .Select(r => new DefRow(r.Int("definition"), r.Str("definitionname"), r.Lng("attributeflags"), r.Lng("categoryflags"),
                 "", r.Str("note"), r.Bit("enabled"), r.Bit("hidden"), r.Dbl("volume"), r.Dbl("mass"), r.Dbl("health"), r.Int("quantity"), r.Int("tiertype"), r.Int("tierlevel")))
@@ -86,7 +95,8 @@ public static class ItemsPage
                 ? ctRow
                 : null;
             pages.Add((ItemPath(d.Name), ItemPage(d, ShowName(d), cs, stats, production, ct,
-                whereToBuy.TryGetValue(d.Definition, out var vendors) ? vendors : null)));
+                whereToBuy.TryGetValue(d.Definition, out var vendors) ? vendors : null,
+                usedIn.TryGetValue(d.Definition, out var users) ? users : null, defs)));
             if (!byCat.TryGetValue(cs.Cat, out var list)) byCat[cs.Cat] = list = new List<(DefRow, (string, string))>();
             list.Add((d, cs));
         }
@@ -132,7 +142,7 @@ public static class ItemsPage
     /// <summary>Sort key for catalog listings: tier 0-5 ascending, untyped items last.</summary>
     private static int TierSortKey(DefRow d) => d.TierType == 0 || d.TierLevel is null ? int.MaxValue : d.TierLevel.Value;
 
-    private static bool IsItem(DefRow d)
+    public static bool IsItem(DefRow d)
     {
         if ((d.CatFlags & Flags.CfOre) == Flags.CfOre) return false;
         if ((d.CatFlags & Flags.CfDeployableStructure) == Flags.CfDeployableStructure) return false;
@@ -143,7 +153,7 @@ public static class ItemsPage
     }
 
     /// <summary>Category + sub-category, decided once per item (first rule wins).</summary>
-    private static (string Cat, string Sub) Classify(DefRow d, Dictionary<string, DefRow> defs)
+    public static (string Cat, string Sub) Classify(DefRow d, Dictionary<string, DefRow> defs)
     {
         // Calibrated (cprg) and CT-capsule variants are listed with their base item:
         // classify by the payload name and the payload's own category flags (the
@@ -225,7 +235,7 @@ public static class ItemsPage
 
     /// <summary>URL slug for an item: the definition name without the def_ prefix,
     /// lowercased (Zola lowercases the URL slug, e.g. _CT_capsule -> -ct-capsule).</summary>
-    private static string Slug(string name) => name["def_".Length..].ToLowerInvariant().Replace('_', '-');
+    public static string Slug(string name) => name["def_".Length..].ToLowerInvariant().Replace('_', '-');
 
     private static string ItemPath(string name) => "items/" + name["def_".Length..] + ".md";
 
@@ -257,7 +267,8 @@ public static class ItemsPage
     /// production details.</summary>
     private static string ItemPage(DefRow d, string showName, (string Cat, string Sub) cs, List<string> stats,
         (int Def, string Name, string Url, int? Research, string Cost)? production, DefRow? ct,
-        List<(ShopPage.Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit)>? vendors)
+        List<(ShopPage.Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit)>? vendors,
+        List<int>? users, Dictionary<int, DefRow> defs)
     {
         var tier = Md.Tier(d.TierType, d.TierLevel);
         var category = cs.Sub == "General" || cs.Sub == cs.Cat ? cs.Cat : $"{cs.Cat} / {cs.Sub}";
@@ -329,9 +340,74 @@ public static class ItemsPage
             var trimmed = ShopPage.TrimColumns(header, cells);
             Md.WriteTable(sb, trimmed.Header, trimmed.Cells);
         }
+        if (production is not { } && users is { Count: > 0 } u)
+        {
+            // Not a CT-capsule page (those already carry a payload "Production" table).
+            sb.Append("\n## Production\n\n");
+            sb.Append(ProductionSection(showName, u, defs));
+        }
         sb.Append("\n[All items](/content/items/)\n");
         return sb.ToString();
     }
+
+    private const int MaxProducts = 8;
+
+    /// <summary>
+    /// "What can be built with this item": a mermaid tree from this item to the
+    /// products that take it as a component, capped at MaxProducts (high-fan-out
+    /// materials point at the recipes page for the rest). Mirrors the Python
+    /// tool tools/gen_production_pages.py — keep in sync.
+    /// </summary>
+    private static string ProductionSection(string selfDisplay, List<int> users, Dictionary<int, DefRow> defs)
+    {
+        var intro = users.Count > MaxProducts
+            ? $"**Component of {Num(users.Count)} items** — a sample of what can be " +
+              "produced with it (the full list is in [Recipes](/content/recipes/)).\n\n"
+            : $"**Component of {Num(users.Count)} items** — everything that uses it in production:\n\n";
+        // Stable order; the capped sample prefers products with their own page
+        // over internal definitions (robot parts, bot fits) without one.
+        var withPage = users.Where(u => TargetLabel(u, defs).Url is not null).OrderBy(u => u).ToList();
+        var rest = users.Where(u => TargetLabel(u, defs).Url is null).OrderBy(u => u).ToList();
+        var all = withPage.Concat(rest).ToList();
+        var shown = all.Take(MaxProducts).ToList();
+        var extra = all.Count - shown.Count;
+        var lines = new List<string> { "```mermaid", "graph LR" };
+        lines.Add($"    a[\"{MermaidLabel(selfDisplay)}\"]:::current");
+        for (var i = 0; i < shown.Count; i++)
+        {
+            var letter = ((char)('b' + i)).ToString();
+            var (name, url) = TargetLabel(shown[i], defs);
+            lines.Add($"    {letter}[\"{MermaidLabel(name)}\"]:::prod");
+            lines.Add($"    a --> {letter}");
+            if (url is not null)
+                lines.Add($"    click {letter} \"{url}\" \"{MermaidLabel(name)}\"");
+        }
+        if (extra > 0)
+        {
+            var m = ((char)('b' + shown.Count)).ToString();
+            lines.Add($"    {m}[\"+{Num(extra)} more\"]:::more");
+            lines.Add($"    a --> {m}");
+            lines.Add($"    click {m} \"/content/recipes/\" \"All recipes\"");
+        }
+        lines.Add("    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff");
+        lines.Add("    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff");
+        lines.Add("    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8");
+        lines.Add("```");
+        return intro + string.Join("\n", lines);
+    }
+
+    /// <summary>Display name + page URL of a product definition (item/ore page, else no link).</summary>
+    private static (string Name, string? Url) TargetLabel(int def, Dictionary<int, DefRow> defs)
+    {
+        if (!defs.TryGetValue(def, out var d)) return (def.ToString(), null);
+        if (d.Name.EndsWith("_bot")) return (Md.DisplayName(d.Name), null);
+        if (IsItem(d)) return (Md.DisplayName(d.Name), "/content/items/" + Slug(d.Name) + "/");
+        if ((d.CatFlags & Flags.CfOre) == Flags.CfOre) return (Md.DisplayName(d.Name), "/content/ores/" + Slug(d.Name) + "/");
+        return (Md.DisplayName(d.Name), null);
+    }
+
+    private static string MermaidLabel(string s) => s.Replace('\"', '\'').Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");
+    private static string Num(int n) => n >= 1_000_000 ? $"{n / 1_000_000.0:F1}M" : n >= 1_000 ? $"{n / 1_000.0:F1}k" : n.ToString();
 
     /// <summary>Two-node transport diagram: the current page's item (green) points at the
     /// linked item. Rendered client-side by mermaid (see base.html).</summary>

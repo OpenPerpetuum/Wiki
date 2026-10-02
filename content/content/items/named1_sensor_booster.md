@@ -28,4 +28,26 @@ description: "Modules / Sensors & scanning, tier 2"
 | effect_sensor_booster_locking_time_modifier | 0.8 |
 | powergrid_usage | 5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Bullz-I 6601 sensor amplifier"]:::current
+    b["Elitet2 70 Sensor Booster"]:::prod
+    a --> b
+    click b "/content/items/elitet2-70-sensor-booster/" "Elitet2 70 Sensor Booster"
+    c["Desenspure sensor amplifier"]:::prod
+    a --> c
+    click c "/content/items/named2-sensor-booster/" "Desenspure sensor amplifier"
+    d["Desenspure sensor amplifier prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-sensor-booster-pr/" "Desenspure sensor amplifier prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

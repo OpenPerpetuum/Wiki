@@ -26,4 +26,23 @@ description: "Modules / Enhancements, tier 1"
 | mining_amount_modifier | 1.05 |
 | powergrid_usage | 20 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard industrial tuning"]:::current
+    b["Piog Forgekit AI industrial tuning"]:::prod
+    a --> b
+    click b "/content/items/named1-mining-upgrade/" "Piog Forgekit AI industrial tuning"
+    c["Piog Forgekit AI industrial tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-mining-upgrade-pr/" "Piog Forgekit AI industrial tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

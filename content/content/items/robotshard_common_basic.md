@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 850 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Damaged common fragment"]:::current
+    b["Named1 Adaptive Alloy"]:::prod
+    a --> b
+    click b "/content/items/named1-adaptive-alloy/" "Named1 Adaptive Alloy"
+    c["Named1 Adaptive Alloy Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-adaptive-alloy-pr/" "Named1 Adaptive Alloy Pr"
+    d["Diaptes armor repairer tuning"]:::prod
+    a --> d
+    click d "/content/items/named1-armor-repairer-upgrade/" "Diaptes armor repairer tuning"
+    e["Diaptes armor repairer tuning prototype"]:::prod
+    a --> e
+    click e "/content/items/named1-armor-repairer-upgrade-pr/" "Diaptes armor repairer tuning prototype"
+    f["Named1 Assault Remote Controller"]:::prod
+    a --> f
+    click f "/content/items/named1-assault-remote-controller/" "Named1 Assault Remote Controller"
+    g["Named1 Assault Remote Controller Pr"]:::prod
+    a --> g
+    click g "/content/items/named1-assault-remote-controller-pr/" "Named1 Assault Remote Controller Pr"
+    h["Bandoler IU-250 interference module"]:::prod
+    a --> h
+    click h "/content/items/named1-blob-emission-modulator/" "Bandoler IU-250 interference module"
+    i["Bandoler IU-250 interference module prototype"]:::prod
+    a --> i
+    click i "/content/items/named1-blob-emission-modulator-pr/" "Bandoler IU-250 interference module prototype"
+    j["+842 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

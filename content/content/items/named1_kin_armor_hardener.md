@@ -28,4 +28,23 @@ description: "Modules / Armor, tier 2"
 | powergrid_usage | 4 |
 | resist_kinetic | 25 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Counterpress I-230 kinetic armor"]:::current
+    b["Apparod Defragger kinetic armor"]:::prod
+    a --> b
+    click b "/content/items/named2-kin-armor-hardener/" "Apparod Defragger kinetic armor"
+    c["Apparod Defragger kinetic armor prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-kin-armor-hardener-pr/" "Apparod Defragger kinetic armor prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

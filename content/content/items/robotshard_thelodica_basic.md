@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 162 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Damaged thelodica fragment"]:::current
+    b["Reflexis II. laser tuning"]:::prod
+    a --> b
+    click b "/content/items/named1-damage-mod-laser/" "Reflexis II. laser tuning"
+    c["Reflexis II. laser tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-damage-mod-laser-pr/" "Reflexis II. laser tuning prototype"
+    d["Ballistris I. seismic armor"]:::prod
+    a --> d
+    click d "/content/items/named1-exp-armor-hardener/" "Ballistris I. seismic armor"
+    e["Ballistris I. seismic armor prototype"]:::prod
+    a --> e
+    click e "/content/items/named1-exp-armor-hardener-pr/" "Ballistris I. seismic armor prototype"
+    f["Starodix armor NEXUS module"]:::prod
+    a --> f
+    click f "/content/items/named1-gang-assist-defense-module/" "Starodix armor NEXUS module"
+    g["Starodix armor NEXUS module prototype"]:::prod
+    a --> g
+    click g "/content/items/named1-gang-assist-defense-module-pr/" "Starodix armor NEXUS module prototype"
+    h["Named1 Gang Assist Devastating Module"]:::prod
+    a --> h
+    click h "/content/items/named1-gang-assist-devastating-module/" "Named1 Gang Assist Devastating Module"
+    i["Named1 Gang Assist Devastating Module Pr"]:::prod
+    a --> i
+    click i "/content/items/named1-gang-assist-devastating-module-pr/" "Named1 Gang Assist Devastating Module Pr"
+    j["+154 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

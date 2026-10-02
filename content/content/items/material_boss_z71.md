@@ -20,4 +20,41 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 8 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Material Boss Z71"]:::current
+    b["Elitet2 71 Maneuvering Upgrade"]:::prod
+    a --> b
+    click b "/content/items/elitet2-71-maneuvering-upgrade/" "Elitet2 71 Maneuvering Upgrade"
+    c["Elitet2 71 Medium Shield Generator"]:::prod
+    a --> c
+    click c "/content/items/elitet2-71-medium-shield-generator/" "Elitet2 71 Medium Shield Generator"
+    d["Elitet2 71 Mining Probe Module"]:::prod
+    a --> d
+    click d "/content/items/elitet2-71-mining-probe-module/" "Elitet2 71 Mining Probe Module"
+    e["Elitet2 71 Small Shield Generator"]:::prod
+    a --> e
+    click e "/content/items/elitet2-71-small-shield-generator/" "Elitet2 71 Small Shield Generator"
+    f["Elitet4 71 Maneuvering Upgrade"]:::prod
+    a --> f
+    click f "/content/items/elitet4-71-maneuvering-upgrade/" "Elitet4 71 Maneuvering Upgrade"
+    g["Elitet4 71 Medium Shield Generator"]:::prod
+    a --> g
+    click g "/content/items/elitet4-71-medium-shield-generator/" "Elitet4 71 Medium Shield Generator"
+    h["Elitet4 71 Mining Probe Module"]:::prod
+    a --> h
+    click h "/content/items/elitet4-71-mining-probe-module/" "Elitet4 71 Mining Probe Module"
+    i["Elitet4 71 Small Shield Generator"]:::prod
+    a --> i
+    click i "/content/items/elitet4-71-small-shield-generator/" "Elitet4 71 Small Shield Generator"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

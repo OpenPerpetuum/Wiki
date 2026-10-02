@@ -25,4 +25,26 @@ description: "Modules / Enhancements, tier 2"
 | powergrid_usage | 14 |
 | sensor_strength_modifier | 50 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Wallex ECCM"]:::current
+    b["Elitet2 70 Eccm"]:::prod
+    a --> b
+    click b "/content/items/elitet2-70-eccm/" "Elitet2 70 Eccm"
+    c["Deshrud-QW ECCM"]:::prod
+    a --> c
+    click c "/content/items/named2-eccm/" "Deshrud-QW ECCM"
+    d["Deshrud-QW ECCM prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-eccm-pr/" "Deshrud-QW ECCM prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

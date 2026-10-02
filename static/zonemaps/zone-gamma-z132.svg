@@ -16,16 +16,16 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
-  <a href="/zones/zone-gamma-tc-z105" title="zone_gamma_tc_z105">
+  <a href="/zones/zone-gamma-tc-z105/" title="zone_gamma_tc_z105">
   <circle cx="229.5" cy="1281.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="229.5" y="1250.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z105</text>
   </a>
-  <a href="/zones/zone-gamma-z131" title="zone_gamma_z131">
+  <a href="/zones/zone-gamma-z131/" title="zone_gamma_z131">
   <circle cx="683.5" cy="245.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="683.5" y="214.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z131</text>
   </a>
   <circle cx="1767.5" cy="148.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <a href="/zones/zone-gamma-z133" title="zone_gamma_z133">
+  <a href="/zones/zone-gamma-z133/" title="zone_gamma_z133">
   <circle cx="1768.5" cy="1543.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1768.5" y="1512.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z133</text>
   </a>

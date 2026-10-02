@@ -14,15 +14,15 @@ const VISIBLE_LINKS = () =>
 const COLLAPSED = (sel) =>
   [...document.querySelectorAll(sel)].map((g) => g.classList.contains('collapsed'));
 const GROUPS = '.sidenav .nav-group'; // Start, World, Play, Systems, Reference
-const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Item shop, Content, Zones
+const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Item shop, Character, Content, Zones
 
 test('home: groups open, 2nd-level sub-lists closed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
   expect(await page.locator('.nav-quick a').getAttribute('href')).toBe('/');
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true]);
-  // Home + 5 group headers + Start(3) + World(5) + Play(12) + Systems(9) + Reference(9)
-  expect(await page.evaluate(VISIBLE_LINKS)).toBe(44);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true]);
+  // Home + 5 group headers + Start(3) + World(5) + Play(12) + Systems(10) + Reference(7)
+  expect(await page.evaluate(VISIBLE_LINKS)).toBe(43);
 });
 
 test('caret buttons collapse and re-open groups', async ({ page, baseURL }) => {
@@ -30,10 +30,10 @@ test('caret buttons collapse and re-open groups', async ({ page, baseURL }) => {
   const carets = page.locator(`${GROUPS} > .nav-group-head .nav-caret`);
   await carets.nth(2).click(); // Play
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, true, false, false]);
-  expect(await page.evaluate(VISIBLE_LINKS)).toBe(44 - 12);
+  expect(await page.evaluate(VISIBLE_LINKS)).toBe(43 - 12);
   await carets.nth(2).click();
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(VISIBLE_LINKS)).toBe(44);
+  expect(await page.evaluate(VISIBLE_LINKS)).toBe(43);
 });
 
 test('World anchors visible by default, Gamma tiers expand on demand', async ({ page, baseURL }) => {
@@ -51,7 +51,7 @@ test('World anchors visible by default, Gamma tiers expand on demand', async ({ 
 test('feature page: all groups stay open, current page highlighted', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/features/combat/`);
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true]);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true]);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Combat');
 });
 
@@ -129,6 +129,13 @@ test('zone data page: Zones sub-list auto-opens', async ({ page, baseURL }) => {
   const zonesSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/zones/"]) > .nav-sub');
   expect(await zonesSub.locator('a:visible').count()).toBe(2);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Zones');
+});
+
+test('extensions page: Character sub-list auto-opens, Extensions highlighted', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/content/extensions/`);
+  const charSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/features/character/"]) > .nav-sub');
+  expect(await charSub.locator('a:visible').count()).toBe(1);
+  expect(await page.locator('.sidenav a.active').textContent()).toBe('Extensions');
 });
 
 // --- sidenav scroll position across navigation ---

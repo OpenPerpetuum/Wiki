@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 224 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Chollonin"]:::current
+    b["Niani armor repairer tuning"]:::prod
+    a --> b
+    click b "/content/items/artifact-a-armor-repairer-upgrade/" "Niani armor repairer tuning"
+    c["Niani magnetic weapon tuning"]:::prod
+    a --> c
+    click c "/content/items/artifact-a-damage-mod-railgun/" "Niani magnetic weapon tuning"
+    d["Niani seismic armor"]:::prod
+    a --> d
+    click d "/content/items/artifact-a-exp-armor-hardener/" "Niani seismic armor"
+    e["Niani medium EM-gun"]:::prod
+    a --> e
+    click e "/content/items/artifact-a-longrange-medium-railgun/" "Niani medium EM-gun"
+    f["Niani medium armor repairer"]:::prod
+    a --> f
+    click f "/content/items/artifact-a-medium-armor-repairer/" "Niani medium armor repairer"
+    g["Niani ECM"]:::prod
+    a --> g
+    click g "/content/items/artifact-a-sensor-jammer/" "Niani ECM"
+    h["Niani small armor repairer"]:::prod
+    a --> h
+    click h "/content/items/artifact-a-small-armor-repairer/" "Niani small armor repairer"
+    i["Flawed armor repairer tuning"]:::prod
+    a --> i
+    click i "/content/items/artifact-damaged-armor-repairer-upgrade/" "Flawed armor repairer tuning"
+    j["+216 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

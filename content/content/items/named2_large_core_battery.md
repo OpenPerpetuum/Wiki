@@ -25,4 +25,26 @@ description: "Modules / Power, tier 3"
 | cpu_usage | 430 |
 | powergrid_usage | 856 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Nibott-I large auxiliary accumulator"]:::current
+    b["Named2 Large Core Battery Pr"]:::prod
+    a --> b
+    click b "/content/items/named2-large-core-battery-pr/" "Named2 Large Core Battery Pr"
+    c["Pheter Charge-L large auxiliary accumulator"]:::prod
+    a --> c
+    click c "/content/items/named3-large-core-battery/" "Pheter Charge-L large auxiliary accumulator"
+    d["Named3 Large Core Battery Pr"]:::prod
+    a --> d
+    click d "/content/items/named3-large-core-battery-pr/" "Named3 Large Core Battery Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

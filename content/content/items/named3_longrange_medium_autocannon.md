@@ -31,4 +31,20 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 24 |
 | powergrid_usage | 150 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Znatvoy-Berjiar-IA medium autocannon"]:::current
+    b["Elitet4 Gamma Longrange Medium Autocannon"]:::prod
+    a --> b
+    click b "/content/items/elitet4-gamma-longrange-medium-autocannon/" "Elitet4 Gamma Longrange Medium Autocannon"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

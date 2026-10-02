@@ -31,4 +31,23 @@ description: "Modules / Weapons, tier 1"
 | optimal_range | 7.5 |
 | powergrid_usage | 15 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard light autocannon"]:::current
+    b["Malleus light autocannon"]:::prod
+    a --> b
+    click b "/content/items/named1-small-autocannon/" "Malleus light autocannon"
+    c["Malleus light autocannon prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-small-autocannon-pr/" "Malleus light autocannon prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

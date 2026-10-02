@@ -28,4 +28,23 @@ description: "Modules / Enhancements, tier 1"
 | effect_stealth_strength_modifier | -20 |
 | powergrid_usage | 5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard signal detector"]:::current
+    b["Techodo signal detector"]:::prod
+    a --> b
+    click b "/content/items/named1-detection-modul/" "Techodo signal detector"
+    c["Techodo signal detector prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-detection-modul-pr/" "Techodo signal detector prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

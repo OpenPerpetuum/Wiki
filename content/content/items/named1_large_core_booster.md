@@ -26,4 +26,23 @@ description: "Modules / Enhancements, tier 2"
 | cycle_time | 6.05k |
 | powergrid_usage | 1.125k |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Shoxit Parter II. large energy injector"]:::current
+    b["CC90-Tensio large energy injector"]:::prod
+    a --> b
+    click b "/content/items/named2-large-core-booster/" "CC90-Tensio large energy injector"
+    c["Named2 Large Core Booster Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-large-core-booster-pr/" "Named2 Large Core Booster Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

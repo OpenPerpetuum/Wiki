@@ -28,4 +28,23 @@ description: "Modules / Enhancements, tier 3"
 | powergrid_usage | 17 |
 | thermal_damage_to_core_modifier | 0.125 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["SER-300 'Devactico' seismic ERP"]:::current
+    b["365p-CSD seismic ERP"]:::prod
+    a --> b
+    click b "/content/items/named3-explosive-kers/" "365p-CSD seismic ERP"
+    c["365p-CSD seismic ERP prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-explosive-kers-pr/" "365p-CSD seismic ERP prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

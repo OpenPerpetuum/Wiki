@@ -26,4 +26,23 @@ description: "Modules / Harvesting, tier 1"
 | cycle_time | 12k |
 | powergrid_usage | 1.35k |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard Large Harvester"]:::current
+    b["Named1 Large Harvester"]:::prod
+    a --> b
+    click b "/content/items/named1-large-harvester/" "Named1 Large Harvester"
+    c["Named1 Large Harvester Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-large-harvester-pr/" "Named1 Large Harvester Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -27,4 +27,23 @@ description: "Modules / Armor, tier 1"
 | powergrid_usage | 75 |
 | signature_radius | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard medium armor plate"]:::current
+    b["Azilo-Protec Duoforge medium armor plate"]:::prod
+    a --> b
+    click b "/content/items/named1-medium-armor-plate/" "Azilo-Protec Duoforge medium armor plate"
+    c["Azilo-Protec Duoforge medium armor plate prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-medium-armor-plate-pr/" "Azilo-Protec Duoforge medium armor plate prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

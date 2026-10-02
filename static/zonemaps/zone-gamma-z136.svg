@@ -16,11 +16,11 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
-  <a href="/zones/zone-gamma-z137" title="zone_gamma_z137">
+  <a href="/zones/zone-gamma-z137/" title="zone_gamma_z137">
   <circle cx="333.5" cy="982.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="333.5" y="951.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z137</text>
   </a>
-  <a href="/zones/zone-gamma-z135" title="zone_gamma_z135">
+  <a href="/zones/zone-gamma-z135/" title="zone_gamma_z135">
   <circle cx="866.5" cy="448.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="866.5" y="417.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z135</text>
   </a>

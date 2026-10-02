@@ -25,4 +25,23 @@ description: "Modules / Power, tier 3"
 | cpu_usage | 27 |
 | powergrid_usage | 2 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Duobar 300xs-'Othys' accumulator recharger"]:::current
+    b["Nyhna Filler accumulator recharger"]:::prod
+    a --> b
+    click b "/content/items/named3-core-recharger/" "Nyhna Filler accumulator recharger"
+    c["Nyhna Filler accumulator recharger prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-core-recharger-pr/" "Nyhna Filler accumulator recharger prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -28,4 +28,23 @@ description: "Modules / Shield, tier 2"
 | shield_absorbtion | 1.9048 |
 | shield_radius | 30 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["AVA-Spintarge large shield generator"]:::current
+    b["Gegel Ioner large shield generator"]:::prod
+    a --> b
+    click b "/content/items/named2-large-shield-generator/" "Gegel Ioner large shield generator"
+    c["Named2 Large Shield Generator Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-large-shield-generator-pr/" "Named2 Large Shield Generator Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

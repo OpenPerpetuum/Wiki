@@ -35,6 +35,7 @@ flowchart LR
 | Modules & fitting | [modules](/features/modules/) | the module families and fitting rules of thumb |
 | Sparks | [sparks](/features/sparks/) | spark authorization, switching, ability bonuses |
 | Research | [research](/features/research/) | extensions (skill tree), EP, tech tree |
+| Character | [character](/features/character/) | the character window: extensions tab (skill tree) and sparks |
 | Production | [production](/features/production/) | production lines, refine, repair, reprocess, prototypes, CPRG |
 | Market & trade | [market](/features/market/) | market orders, direct trades, item shop, credits |
 | Groups | [groups](/features/groups/) | corporations, alliances, gangs (fleets) |

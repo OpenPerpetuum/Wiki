@@ -31,4 +31,23 @@ description: "Modules / Weapons, tier 1"
 | optimal_range | 15 |
 | powergrid_usage | 150 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard medium Gauss gun"]:::current
+    b["Iskio-Magnetor medium Gauss gun"]:::prod
+    a --> b
+    click b "/content/items/named1-medium-railgun/" "Iskio-Magnetor medium Gauss gun"
+    c["Iskio-Magnetor medium Gauss gun prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-medium-railgun-pr/" "Iskio-Magnetor medium Gauss gun prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

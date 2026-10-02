@@ -25,4 +25,26 @@ description: "Modules / Enhancements, tier 2"
 | optimal_range_modifier | 1.1 |
 | powergrid_usage | 90 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Opaletrak range extender"]:::current
+    b["Elitet2 70 Tracking Upgrade"]:::prod
+    a --> b
+    click b "/content/items/elitet2-70-tracking-upgrade/" "Elitet2 70 Tracking Upgrade"
+    c["Unotron 60s-'Crack shot' range extender"]:::prod
+    a --> c
+    click c "/content/items/named2-tracking-upgrade/" "Unotron 60s-'Crack shot' range extender"
+    d["Unotron 60s-'Crack shot' range extender prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-tracking-upgrade-pr/" "Unotron 60s-'Crack shot' range extender prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -30,4 +30,23 @@ description: "Modules / Weapons, tier 1"
 | optimal_range | 44 |
 | powergrid_usage | 402.5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Longrange Standard Large Laser"]:::current
+    b["Named1 Longrange Large Laser"]:::prod
+    a --> b
+    click b "/content/items/named1-longrange-large-laser/" "Named1 Longrange Large Laser"
+    c["Named1 Longrange Large Laser Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-longrange-large-laser-pr/" "Named1 Longrange Large Laser Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -25,4 +25,23 @@ description: "Modules / Weapons, tier 1"
 | damage_railgun_modifier | 0.15 |
 | powergrid_usage | 5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard magnetic weapon tuning"]:::current
+    b["Nuimtec-Spilster magnetic weapon tuning"]:::prod
+    a --> b
+    click b "/content/items/named1-damage-mod-railgun/" "Nuimtec-Spilster magnetic weapon tuning"
+    c["Nuimtec-Spilster magnetic weapon tuning prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-damage-mod-railgun-pr/" "Nuimtec-Spilster magnetic weapon tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

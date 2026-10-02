@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 638 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Functional common fragment"]:::current
+    b["Named2 Adaptive Alloy"]:::prod
+    a --> b
+    click b "/content/items/named2-adaptive-alloy/" "Named2 Adaptive Alloy"
+    c["Named2 Adaptive Alloy Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-adaptive-alloy-pr/" "Named2 Adaptive Alloy Pr"
+    d["WPG3000 armor repairer tuning"]:::prod
+    a --> d
+    click d "/content/items/named2-armor-repairer-upgrade/" "WPG3000 armor repairer tuning"
+    e["WPG3000 armor repairer tuning prototype"]:::prod
+    a --> e
+    click e "/content/items/named2-armor-repairer-upgrade-pr/" "WPG3000 armor repairer tuning prototype"
+    f["Named2 Assault Remote Controller"]:::prod
+    a --> f
+    click f "/content/items/named2-assault-remote-controller/" "Named2 Assault Remote Controller"
+    g["Named2 Assault Remote Controller Pr"]:::prod
+    a --> g
+    click g "/content/items/named2-assault-remote-controller-pr/" "Named2 Assault Remote Controller Pr"
+    h["Bandoler IV-500 interference module"]:::prod
+    a --> h
+    click h "/content/items/named2-blob-emission-modulator/" "Bandoler IV-500 interference module"
+    i["Bandoler IV-500 interference module prototype"]:::prod
+    a --> i
+    click i "/content/items/named2-blob-emission-modulator-pr/" "Bandoler IV-500 interference module prototype"
+    j["+630 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

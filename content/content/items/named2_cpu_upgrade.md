@@ -25,4 +25,23 @@ description: "Modules / Enhancements, tier 3"
 | cpu_usage | 0 |
 | powergrid_usage | 3 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Cerebellum-1000 coprocessor"]:::current
+    b["Processyt-C1000 coprocessor"]:::prod
+    a --> b
+    click b "/content/items/named3-cpu-upgrade/" "Processyt-C1000 coprocessor"
+    c["Processyt-C1000 coprocessor prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-cpu-upgrade-pr/" "Processyt-C1000 coprocessor prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

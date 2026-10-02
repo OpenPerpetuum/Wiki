@@ -2,7 +2,8 @@ namespace Perpetuum.WikiGenerate;
 
 public static class ExtensionsPage
 {
-    public static string Build(Db db, string treeSvg = null, int treeNodes = 0, int treeEdges = 0)
+    public static string Build(Db db, string treeSvg = null, int treeNodes = 0, int treeEdges = 0,
+        string categoriesSvg = null, int categoryCount = 0, int categoryEdges = 0)
     {
         var categories = db.Query("SELECT extensioncategoryid, categoryname FROM extensioncategories")
             .ToDictionary(r => r.Int("extensioncategoryid"), r => r.Str("categoryname"));
@@ -26,6 +27,24 @@ public static class ExtensionsPage
         sb.Append("\n\n# Extensions\n\n");
         sb.Append("Extensions are per-character skills (see [Research](/features/research/) in the features section). " +
                   "**Price** is the level-1 credit cost; higher levels cost EP only. **Prerequisites** list the extensions (and minimum level) that must be learned first.\n\n");
+        if (!string.IsNullOrEmpty(categoriesSvg))
+        {
+            // The marker comment keeps the Python post-processor
+            // (tools/gen_extension_categories.py) idempotent over this page.
+            sb.Append("<!-- categories:generated -->\n");
+            sb.Append("<a id=\"categories\"></a>\n\n");
+            sb.Append("## Main categories\n\n");
+            sb.Append($"The {categoryCount} categories at a glance instead of the {treeNodes}-node detail tree: " +
+                      "one box per category (extension count, entry points without prerequisites, rank range), " +
+                      "and an arrow for every cross-category prerequisite (hover an arrow for the exact " +
+                      "requirements) — which categories open up which. **Scroll over the diagram to zoom**, " +
+                      "drag to pan, and use the ⟲ button to reset.\n\n");
+            sb.Append("<div class=\"map-zoom-wrap\">\n");
+            sb.Append("<button type=\"button\" class=\"zoommap-reset\" title=\"Reset the zoom\">\u27f2</button>\n");
+            sb.Append($"<img class=\"zoommap\" src=\"/extensions-categories.svg\" alt=\"Extension categories: {categoryCount} categories, " +
+                      $"{categoryEdges} cross-category prerequisite edges\" loading=\"lazy\">\n");
+            sb.Append("</div>\n\n");
+        }
         if (!string.IsNullOrEmpty(treeSvg))
         {
             sb.Append("<a id=\"tree\"></a>\n\n");

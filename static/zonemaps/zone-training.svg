@@ -16,39 +16,39 @@
   <line stroke="#1d2534" stroke-width="0.5"/>
   <line stroke="#1d2534" stroke-width="0.5"/>
   <line stroke="#1d2534" stroke-width="0.5"/>
-  <a href="/zones/zone-tm" title="New Virginia">
+  <a href="/zones/zone-tm/" title="New Virginia">
   <circle cx="189.5" cy="779.5" r="9" fill="#41d3ff" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="189.5" y="764" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">New Virginia</text>
   </a>
-  <a href="/zones/zone-tm" title="New Virginia">
+  <a href="/zones/zone-tm/" title="New Virginia">
   <circle cx="190.5" cy="883.5" r="9" fill="#41d3ff" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="190.5" y="868" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">New Virginia</text>
   </a>
-  <a href="/zones/zone-training" title="Virtual Training Grounds">
+  <a href="/zones/zone-training/" title="Virtual Training Grounds">
   <circle cx="278.5" cy="831.5" r="9" fill="#c8d2e0" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="278.5" y="816" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">Virtual Training Grounds</text>
   </a>
-  <a href="/zones/zone-tm" title="New Virginia">
+  <a href="/zones/zone-tm/" title="New Virginia">
   <circle cx="278.5" cy="933.5" r="9" fill="#41d3ff" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="278.5" y="918" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">New Virginia</text>
   </a>
-  <a href="/zones/zone-training" title="Virtual Training Grounds">
+  <a href="/zones/zone-training/" title="Virtual Training Grounds">
   <circle cx="321.5" cy="442.5" r="9" fill="#c8d2e0" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="321.5" y="427" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">Virtual Training Grounds</text>
   </a>
-  <a href="/zones/zone-training" title="Virtual Training Grounds">
+  <a href="/zones/zone-training/" title="Virtual Training Grounds">
   <circle cx="365.5" cy="681.5" r="9" fill="#c8d2e0" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="365.5" y="666" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">Virtual Training Grounds</text>
   </a>
-  <a href="/zones/zone-tm" title="New Virginia">
+  <a href="/zones/zone-tm/" title="New Virginia">
   <circle cx="367.5" cy="882.5" r="9" fill="#41d3ff" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="367.5" y="867" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">New Virginia</text>
   </a>
-  <a href="/zones/zone-training" title="Virtual Training Grounds">
+  <a href="/zones/zone-training/" title="Virtual Training Grounds">
   <circle cx="496.5" cy="570.5" r="9" fill="#c8d2e0" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="496.5" y="555" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">Virtual Training Grounds</text>
   </a>
-  <a href="/zones/zone-training" title="Virtual Training Grounds">
+  <a href="/zones/zone-training/" title="Virtual Training Grounds">
   <circle cx="676.5" cy="413.5" r="9" fill="#c8d2e0" stroke="#10151f" stroke-width="1.25" opacity="1"/>
   <text x="676.5" y="398" font-size="16.9" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="5.07" stroke-linejoin="round">Virtual Training Grounds</text>
   </a>

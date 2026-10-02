@@ -26,4 +26,23 @@ description: "Modules / Enhancements, tier 3"
 | powergrid_usage | 25 |
 | signature_radius | -1 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Deflectik evasive module"]:::current
+    b["Yridan RCD evasive module"]:::prod
+    a --> b
+    click b "/content/items/named3-maneuvering-upgrade/" "Yridan RCD evasive module"
+    c["Yridan RCD evasive module prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-maneuvering-upgrade-pr/" "Yridan RCD evasive module prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

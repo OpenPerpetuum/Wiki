@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 130 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Metachropin"]:::current
+    b["Ammo Mining Deep Fluxore"]:::prod
+    a --> b
+    click b "/content/items/ammo-mining-deep-fluxore/" "Ammo Mining Deep Fluxore"
+    c["Ammo Mining Deep Fluxore Pr"]:::prod
+    a --> c
+    click c "/content/items/ammo-mining-deep-fluxore-pr/" "Ammo Mining Deep Fluxore Pr"
+    d["Ammo Mining Fluxore"]:::prod
+    a --> d
+    click d "/content/items/ammo-mining-fluxore/" "Ammo Mining Fluxore"
+    e["Ammo Mining Fluxore Pr"]:::prod
+    a --> e
+    click e "/content/items/ammo-mining-fluxore-pr/" "Ammo Mining Fluxore Pr"
+    f["Niani kinetic armor"]:::prod
+    a --> f
+    click f "/content/items/artifact-a-kin-armor-hardener/" "Niani kinetic armor"
+    g["Niani universal armor"]:::prod
+    a --> g
+    click g "/content/items/artifact-a-resistant-plating/" "Niani universal armor"
+    h["Flawed kinetic armor"]:::prod
+    a --> h
+    click h "/content/items/artifact-damaged-kin-armor-hardener/" "Flawed kinetic armor"
+    i["Flawed universal armor"]:::prod
+    a --> i
+    click i "/content/items/artifact-damaged-resistant-plating/" "Flawed universal armor"
+    j["+122 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

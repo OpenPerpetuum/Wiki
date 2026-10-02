@@ -25,4 +25,26 @@ description: "Modules / Enhancements, tier 2"
 | damage_projectile_modifier | 0.15 |
 | powergrid_usage | 4 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Diathel-Subperis firearm tuning"]:::current
+    b["Elitet2 72 Damage Mod Projectile"]:::prod
+    a --> b
+    click b "/content/items/elitet2-72-damage-mod-projectile/" "Elitet2 72 Damage Mod Projectile"
+    c["Plasmidwad-9000 firearm tuning"]:::prod
+    a --> c
+    click c "/content/items/named2-damage-mod-projectile/" "Plasmidwad-9000 firearm tuning"
+    d["Plasmidwad-9000 firearm tuning prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-damage-mod-projectile-pr/" "Plasmidwad-9000 firearm tuning prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

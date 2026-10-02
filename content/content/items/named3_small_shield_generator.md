@@ -29,4 +29,23 @@ description: "Modules / Shield, tier 4"
 | shield_absorbtion | 2 |
 | shield_radius | 6 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["SBA-200 Forebrace small shield generator"]:::current
+    b["Elitet4 70 Small Shield Generator"]:::prod
+    a --> b
+    click b "/content/items/elitet4-70-small-shield-generator/" "Elitet4 70 Small Shield Generator"
+    c["Elitet4 71 Small Shield Generator"]:::prod
+    a --> c
+    click c "/content/items/elitet4-71-small-shield-generator/" "Elitet4 71 Small Shield Generator"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

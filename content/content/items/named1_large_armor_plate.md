@@ -27,4 +27,23 @@ description: "Modules / Armor, tier 2"
 | powergrid_usage | 840 |
 | signature_radius | 3 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Vorbol p113 heavy armor plate"]:::current
+    b["Invigor III. heavy armor plate"]:::prod
+    a --> b
+    click b "/content/items/named2-large-armor-plate/" "Invigor III. heavy armor plate"
+    c["Named2 Large Armor Plate Pr"]:::prod
+    a --> c
+    click c "/content/items/named2-large-armor-plate-pr/" "Named2 Large Armor Plate Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

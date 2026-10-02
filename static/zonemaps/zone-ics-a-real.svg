@@ -16,43 +16,43 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
-  <a href="/zones/zone-ics-g-3" title="Kraslovsk, Hershfield…">
+  <a href="/zones/zone-ics-g-3/" title="Kraslovsk, Hershfield…">
   <circle cx="376.5" cy="558.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="376.5" y="527.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Kraslovsk, Hershfield…</text>
   </a>
-  <a href="/zones/zone-ics-a-real" title="Domhalarn">
+  <a href="/zones/zone-ics-a-real/" title="Domhalarn">
   <circle cx="408.5" cy="772.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="408.5" y="741.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
-  <a href="/zones/zone-tm-pve" title="Hershfield">
+  <a href="/zones/zone-tm-pve/" title="Hershfield">
   <circle cx="504.5" cy="1527.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="504.5" y="1496.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield</text>
   </a>
-  <a href="/zones/zone-ics-a-real" title="Domhalarn">
+  <a href="/zones/zone-ics-a-real/" title="Domhalarn">
   <circle cx="560.5" cy="1387.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="560.5" y="1356.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
-  <a href="/zones/zone-ics-a-real" title="Domhalarn">
+  <a href="/zones/zone-ics-a-real/" title="Domhalarn">
   <circle cx="1082.5" cy="1342.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1082.5" y="1311.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
-  <a href="/zones/zone-ics-a-real" title="Domhalarn">
+  <a href="/zones/zone-ics-a-real/" title="Domhalarn">
   <circle cx="1122.5" cy="803.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1122.5" y="772.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
-  <a href="/zones/zone-ics-g-3" title="Kraslovsk, Novastrov">
+  <a href="/zones/zone-ics-g-3/" title="Kraslovsk, Novastrov">
   <circle cx="1181.5" cy="350.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1181.5" y="319.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Kraslovsk, Novastrov</text>
   </a>
-  <a href="/zones/zone-tm-pve" title="Hershfield, Alsbale">
+  <a href="/zones/zone-tm-pve/" title="Hershfield, Alsbale">
   <circle cx="1347.5" cy="1838.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1347.5" y="1807.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield, Alsbale</text>
   </a>
-  <a href="/zones/zone-gamma-tc-z105" title="zone_gamma_tc_z105">
+  <a href="/zones/zone-gamma-tc-z105/" title="zone_gamma_tc_z105">
   <circle cx="1416.5" cy="933.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1416.5" y="902.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z105</text>
   </a>
-  <a href="/zones/zone-tm-pvp" title="Alsbale">
+  <a href="/zones/zone-tm-pvp/" title="Alsbale">
   <circle cx="1703.5" cy="1445.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1703.5" y="1414.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale</text>
   </a>

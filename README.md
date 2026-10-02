@@ -77,6 +77,24 @@ fallback directory.
 After re-running `make generate` (new zones or moved teleports), re-run
 `make zonemaps` to refresh the map backgrounds and links.
 
+## Content tools (no database needed)
+
+The .NET generator is the long-term source of the generated pages, but a few
+`tools/` scripts transform the already-committed markdown without a database —
+use them when the .NET toolchain is not at hand. Each one is idempotent and
+kept in sync with its generator counterpart (the page it feeds):
+
+| Tool | What it does | Generator counterpart |
+|---|---|---|
+| `tools/gen_production_pages.py` | adds a "Production" mermaid section (what can be built with an item) to item pages; writes the shared `tools/recipes_data.json` cache | `ItemsPage.cs` |
+| `tools/gen_recipes_cards.py` | lays out the recipes page as category sections of reward-style cards, each linked to the item's page | `RecipesPage.cs` |
+| `tools/gen_extension_categories.py` | builds `static/extensions-categories.svg` (the 15 skill categories with cross-category prerequisite arrows) and its "Main categories" section on the extensions page | `ExtensionsCategories.cs` |
+| `tools/regen_search_index.py` | rewrites `static/search_index.json` from the committed pages (title/description/URL per page) | `SearchIndex.cs` |
+
+Run order for a full refresh: `gen_production_pages.py`, then
+`gen_recipes_cards.py` and `gen_extension_categories.py` (independent), then
+`regen_search_index.py`, then rebuild.
+
 ## CI and action pinning
 
 GitHub Actions in `.github/workflows/` are pinned to commit SHAs with

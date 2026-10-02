@@ -27,4 +27,26 @@ description: "Modules / Enhancements, tier 2"
 | mining_probe_accuracy | 0.5 |
 | powergrid_usage | 45 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 3 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Ovostec-Chisomel geoscanner"]:::current
+    b["Elitet2 71 Mining Probe Module"]:::prod
+    a --> b
+    click b "/content/items/elitet2-71-mining-probe-module/" "Elitet2 71 Mining Probe Module"
+    c["Syverz geoscanner"]:::prod
+    a --> c
+    click c "/content/items/named2-mining-probe-module/" "Syverz geoscanner"
+    d["Syverz geoscanner prototype"]:::prod
+    a --> d
+    click d "/content/items/named2-mining-probe-module-pr/" "Syverz geoscanner prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

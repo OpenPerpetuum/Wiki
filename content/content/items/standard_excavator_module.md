@@ -29,4 +29,23 @@ description: "Modules / Harvesting, tier 1"
 | effect_excavator_stealth_strength_modifier | -30 |
 | powergrid_usage | 1.35k |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard Excavator Module"]:::current
+    b["Named1 Excavator Module"]:::prod
+    a --> b
+    click b "/content/items/named1-excavator-module/" "Named1 Excavator Module"
+    c["Named1 Excavator Module Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-excavator-module-pr/" "Named1 Excavator Module Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

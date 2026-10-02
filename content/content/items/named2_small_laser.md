@@ -31,4 +31,23 @@ description: "Modules / Weapons, tier 3"
 | optimal_range | 16 |
 | powergrid_usage | 42 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Pikolo light HCL laser"]:::current
+    b["Thelotec-Stroyar light HCL laser"]:::prod
+    a --> b
+    click b "/content/items/named3-small-laser/" "Thelotec-Stroyar light HCL laser"
+    c["Thelotec-Stroyar light HCL laser prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-small-laser-pr/" "Thelotec-Stroyar light HCL laser prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

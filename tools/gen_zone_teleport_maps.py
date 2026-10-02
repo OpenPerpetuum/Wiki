@@ -78,7 +78,9 @@ def load_zone_meta():
     text = open(ZONE_INDEX, encoding="utf-8").read()
     name2slug, slug2id, slug2size = {}, {}, {}
     for zid, name, slug, w, h in _ROW.findall(text):
-        name2slug.setdefault(name.strip(), slug)
+        # the table links carry the trailing slash; the regex group stops
+        # before it, so put it back — Zola pages are /zones/<slug>/
+        name2slug.setdefault(name.strip(), slug + "/")
         base = slug.rstrip("/").split("/")[-1] + "/"  # /zones/<slug>/ -> <slug>/
         slug2id.setdefault(base, int(zid))
         slug2size.setdefault(base, (int(w), int(h)))

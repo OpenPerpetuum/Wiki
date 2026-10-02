@@ -31,4 +31,23 @@ description: "Modules / Shield, tier 3"
 | optimal_range | 12.5 |
 | powergrid_usage | 43 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["600GFX-Spasm small energy neutralizer"]:::current
+    b["Cerba small energy neutralizer"]:::prod
+    a --> b
+    click b "/content/items/named3-small-energy-neutralizer/" "Cerba small energy neutralizer"
+    c["Cerba small energy neutralizer prototype"]:::prod
+    a --> c
+    click c "/content/items/named3-small-energy-neutralizer-pr/" "Cerba small energy neutralizer prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

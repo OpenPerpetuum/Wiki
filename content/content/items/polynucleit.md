@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 221 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Polynucleit"]:::current
+    b["Large doublecore compact missile"]:::prod
+    a --> b
+    click b "/content/items/ammo-cruisemissile-c/" "Large doublecore compact missile"
+    c["Ammo Cruisemissile C Pr"]:::prod
+    a --> c
+    click c "/content/items/ammo-cruisemissile-c-pr/" "Ammo Cruisemissile C Pr"
+    d["Large chemoactive energy cell"]:::prod
+    a --> d
+    click d "/content/items/ammo-large-lasercrystal-a/" "Large chemoactive energy cell"
+    e["Ammo Large Lasercrystal A Pr"]:::prod
+    a --> e
+    click e "/content/items/ammo-large-lasercrystal-a-pr/" "Ammo Large Lasercrystal A Pr"
+    f["Large sonic energy cell"]:::prod
+    a --> f
+    click f "/content/items/ammo-large-lasercrystal-b/" "Large sonic energy cell"
+    g["Ammo Large Lasercrystal B Pr"]:::prod
+    a --> g
+    click g "/content/items/ammo-large-lasercrystal-b-pr/" "Ammo Large Lasercrystal B Pr"
+    h["Large photokinetic energy cell"]:::prod
+    a --> h
+    click h "/content/items/ammo-large-lasercrystal-c/" "Large photokinetic energy cell"
+    i["Ammo Large Lasercrystal C Pr"]:::prod
+    a --> i
+    click i "/content/items/ammo-large-lasercrystal-c-pr/" "Ammo Large Lasercrystal C Pr"
+    j["+213 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

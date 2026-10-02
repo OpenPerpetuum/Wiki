@@ -29,4 +29,23 @@ description: "Modules / Enhancements, tier 1"
 | effect_gathering_cycle_time_modifier | 0.98 |
 | powergrid_usage | 35 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard fast extractor NEXUS module"]:::current
+    b["AE-D250 fast extractor NEXUS module"]:::prod
+    a --> b
+    click b "/content/items/named1-gang-assist-fast-extraction-module/" "AE-D250 fast extractor NEXUS module"
+    c["AE-D250 fast extractor NEXUS module prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-gang-assist-fast-extraction-module-pr/" "AE-D250 fast extractor NEXUS module prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

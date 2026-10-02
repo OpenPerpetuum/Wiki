@@ -10,6 +10,18 @@ description: "The full extension (skill) tree: every extension, its rank, level-
 
 Extensions are per-character skills (see [Research](/features/research/) in the features section). **Price** is the level-1 credit cost; higher levels cost EP only. **Prerequisites** list the extensions (and minimum level) that must be learned first.
 
+<!-- categories:generated -->
+<a id="categories"></a>
+
+## Main categories
+
+The 15 categories at a glance instead of the 251-node detail tree: one box per category (extension count, entry points without prerequisites, rank range), and an arrow for every cross-category prerequisite (hover an arrow for the exact requirements) — which categories open up which. **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
+
+<div class="map-zoom-wrap">
+<button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
+<img class="zoommap" src="/extensions-categories.svg" alt="Extension categories: 15 categories, 21 cross-category prerequisite edges" loading="lazy">
+</div>
+
 <a id="tree"></a>
 
 ## Extension tree

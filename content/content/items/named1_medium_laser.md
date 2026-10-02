@@ -31,4 +31,23 @@ description: "Modules / Weapons, tier 2"
 | optimal_range | 17.5 |
 | powergrid_usage | 180 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Thelotec-Grazier medium LCL laser"]:::current
+    b["Kauska Heatpin I. medium LCL laser"]:::prod
+    a --> b
+    click b "/content/items/named2-medium-laser/" "Kauska Heatpin I. medium LCL laser"
+    c["Kauska Heatpin I. medium LCL laser prototype"]:::prod
+    a --> c
+    click c "/content/items/named2-medium-laser-pr/" "Kauska Heatpin I. medium LCL laser prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

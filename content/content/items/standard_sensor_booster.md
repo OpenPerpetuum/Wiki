@@ -28,4 +28,23 @@ description: "Modules / Sensors & scanning, tier 1"
 | effect_sensor_booster_locking_time_modifier | 0.8 |
 | powergrid_usage | 5 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standard sensor amplifier"]:::current
+    b["Bullz-I 6601 sensor amplifier"]:::prod
+    a --> b
+    click b "/content/items/named1-sensor-booster/" "Bullz-I 6601 sensor amplifier"
+    c["Bullz-I 6601 sensor amplifier prototype"]:::prod
+    a --> c
+    click c "/content/items/named1-sensor-booster-pr/" "Bullz-I 6601 sensor amplifier prototype"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

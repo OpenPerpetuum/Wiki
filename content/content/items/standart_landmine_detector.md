@@ -27,4 +27,23 @@ description: "Modules / Enhancements, tier 1"
 | effect_mine_detection_range_modifier | 1.3 |
 | powergrid_usage | 7 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 2 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Standart Landmine Detector"]:::current
+    b["Named1 Landmine Detector"]:::prod
+    a --> b
+    click b "/content/items/named1-landmine-detector/" "Named1 Landmine Detector"
+    c["Named1 Landmine Detector Pr"]:::prod
+    a --> c
+    click c "/content/items/named1-landmine-detector-pr/" "Named1 Landmine Detector Pr"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

@@ -27,4 +27,20 @@ description: "Modules / Enhancements, tier 4"
 | mining_probe_accuracy | 0.7 |
 | powergrid_usage | 53 |
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Eksplor-q3000 geoscanner"]:::current
+    b["Elitet4 71 Mining Probe Module"]:::prod
+    a --> b
+    click b "/content/items/elitet4-71-mining-probe-module/" "Elitet4 71 Mining Probe Module"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

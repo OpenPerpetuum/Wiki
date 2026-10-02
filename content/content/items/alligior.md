@@ -19,4 +19,44 @@ description: "Materials"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 515 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
+
+```mermaid
+graph LR
+    a["Alligior"]:::current
+    b["Niani armor repairer tuning"]:::prod
+    a --> b
+    click b "/content/items/artifact-a-armor-repairer-upgrade/" "Niani armor repairer tuning"
+    c["Niani chemical armor"]:::prod
+    a --> c
+    click c "/content/items/artifact-a-chm-armor-hardener/" "Niani chemical armor"
+    d["Niani signal detector"]:::prod
+    a --> d
+    click d "/content/items/artifact-a-detection-modul/" "Niani signal detector"
+    e["Niani ECCM"]:::prod
+    a --> e
+    click e "/content/items/artifact-a-eccm/" "Niani ECCM"
+    f["Niani seismic armor"]:::prod
+    a --> f
+    click f "/content/items/artifact-a-exp-armor-hardener/" "Niani seismic armor"
+    g["Niani kinetic armor"]:::prod
+    a --> g
+    click g "/content/items/artifact-a-kin-armor-hardener/" "Niani kinetic armor"
+    h["Niani evasive module"]:::prod
+    a --> h
+    click h "/content/items/artifact-a-maneuvering-upgrade/" "Niani evasive module"
+    i["Niani lightweight frame"]:::prod
+    a --> i
+    click i "/content/items/artifact-a-mass-reductor/" "Niani lightweight frame"
+    j["+507 more"]:::more
+    a --> j
+    click j "/content/recipes/" "All recipes"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)

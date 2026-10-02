@@ -19,4 +19,20 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Component of 1 items** — everything that uses it in production:
+
+```mermaid
+graph LR
+    a["Modulator casing [Cappadocia IV/1]"]:::current
+    b["TRS-Modulator [Cappadocia IV]"]:::prod
+    a --> b
+    click b "/content/items/missionitem-ics-ii-level01-exp3-04-t03/" "TRS-Modulator [Cappadocia IV]"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
+    classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
+```
+
 [All items](/content/items/)
