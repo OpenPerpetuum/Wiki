@@ -104,9 +104,11 @@ test('panning may show empty space, but at least 25% of the viewport stays cover
   expect(p.tx).toBeGreaterThan(50);
 
   // ...but never further out than 25% of the viewport still showing the map
+  // (many small steps: like a real drag, the pointer leaves the wrapper
+  // only after pointer capture has engaged)
   await page.mouse.move(cx, cy);
   await page.mouse.down();
-  await page.mouse.move(cx + 3000, cy + 3000, { steps: 5 });
+  await page.mouse.move(cx + 3000, cy + 3000, { steps: 40 });
   await page.mouse.up();
   expect(await coverage(page)).toBeGreaterThanOrEqual(0.249);
   p = await transform(page);
@@ -136,7 +138,7 @@ test('zoomed in: panning keeps at least 25% of the viewport covered', async ({ p
   // drag far past any sane limit — at least 25% must stay covered
   await page.mouse.move(cx, cy);
   await page.mouse.down();
-  await page.mouse.move(cx + 600, cy + 600, { steps: 5 });
+  await page.mouse.move(cx + 600, cy + 600, { steps: 20 });
   await page.mouse.up();
   let p = await transform(page);
   expect(p.ty).toBeGreaterThan(20); // it did pan
@@ -145,7 +147,7 @@ test('zoomed in: panning keeps at least 25% of the viewport covered', async ({ p
   // and the other way
   await page.mouse.move(cx, cy);
   await page.mouse.down();
-  await page.mouse.move(cx - 1200, cy - 1200, { steps: 5 });
+  await page.mouse.move(cx - 1200, cy - 1200, { steps: 20 });
   await page.mouse.up();
   p = await transform(page);
   expect(p.ty).toBeLessThan(-20);

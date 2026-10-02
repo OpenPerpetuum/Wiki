@@ -677,6 +677,17 @@ html[data-theme="light"][data-cb="achro"] {
     cursor: pointer;
 }
 .zonemap-reset:hover { border-color: var(--neon); color: var(--neon); }
+/* zone teleport maps: inlined from /zonemaps/*.svg by zone-map.js into
+   the same wrapper the world map uses (map.js then attaches zoom/pan).
+   The maps are square, so a squarer panel than the world map's. */
+.zonetp-wrap { height: min(72vh, 700px); }
+.zonemap a { cursor: pointer; }
+.zonemap a:hover > circle, .zonemap a:hover > path {
+    stroke: #ffffff;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.55));
+}
+.zonemap text { user-select: none; }
+
 .zonemap-legend {
     display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem;
     color: var(--muted); font-size: 0.88em;

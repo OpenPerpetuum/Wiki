@@ -2,9 +2,12 @@
 #
 #   make build     build the static site into public/ (Docker, pinned Zola image)
 #   make serve     local live-reload server on :8085 (Docker; override WIKI_PORT=NNNN)
-#   make test      run the Playwright browser tests (needs node + npm install,
-#                  builds the site first; CHROMIUM_PATH=... to skip the
-#                  Playwright Chromium download)
+#   make test      build + run the Playwright browser tests (needs node +
+#                  npm install; CHROMIUM_PATH=... to skip the Playwright
+#                  Chromium download)
+#   make zonemaps  regenerate the zone teleport map SVGs (heightmap +
+#                  clickable teleports; pure-stdlib Python in a container —
+#                  no database needed)
 #   make generate  regenerate the generated content pages from the database
 #   make clean     remove the build output
 #
@@ -13,6 +16,7 @@
 # changes; it requires the .NET 8 SDK and a reachable game database.
 
 ZOLA_IMAGE := ghcr.io/getzola/zola:v0.23.6
+PYTHON_IMAGE := python:3.12-slim
 WIKI_PORT  ?= 8085
 
 # Generator inputs (make generate).
@@ -28,9 +32,16 @@ endif
 DOTNET          ?= $(shell command -v dotnet 2>/dev/null || echo $(HOME)/.dotnet/dotnet)
 TTY_FLAG        := $(shell [ -t 0 ] && echo -it || echo -i)
 
-.PHONY: all build serve test generate clean
+.PHONY: all build serve test zonemaps generate clean
 
 all: build
+
+# Post-process the generated zone teleport maps (static/zonemaps/*.svg):
+# deterministic procedural heightmap background, emphasized zone border,
+# and clickable teleport links (see the script header for details). Pure
+# standard-library Python — no database, no pip installs.
+zonemaps:
+	docker run --rm -v "$PWD:/src" -w /src $(PYTHON_IMAGE) python3 tools/gen_zone_teleport_maps.py
 
 # Browser tests (tests/): mermaid syntax of every diagram + sidenav behaviour,
 # run against the built site. One-time setup: npm install.
@@ -55,7 +66,9 @@ serve:
 		$(ZOLA_IMAGE) -r /src serve -i 0.0.0.0 --no-port-append -u "http://localhost:$(WIKI_PORT)/"
 
 # Regenerate the generated pages (content/content + zone index + zone map +
-# search index) from the database. See generator/README.md for the table mapping.
+# search index) from the database. See generator/README.md for the table
+# mapping. (After a generate, re-run `make zonemaps` to refresh the teleport
+# map backgrounds/links.)
 generate:
 	@test -n "$(WIKI_DB)" || { echo "error: set WIKI_DB (or PERPETUUM_CONNECTIONSTRING)"; exit 1; }
 	@test -d "$(WIKI_PLANTRULES)" || { echo "error: WIKI_PLANTRULES is not a directory: $(WIKI_PLANTRULES)"; \

@@ -167,15 +167,28 @@
     // drag started there should still pan the map.
     var dragging = false, moved = false, lx = 0, ly = 0;
     wrap.addEventListener('pointerdown', function (e) {
+        // consume the stale flag from the previous gesture: the drag's own
+        // click echo is already gone (pointerup was prevented), so a new
+        // pointerdown means the next click is a real one (e.g. the reset
+        // button right after panning)
+        moved = false;
         if (e.target.closest && e.target.closest('button')) return; // reset button
         dragging = true; moved = false; lx = e.clientX; ly = e.clientY;
-        wrap.setPointerCapture(e.pointerId);
         svg.classList.add('dragging');
     });
     wrap.addEventListener('pointermove', function (e) {
         if (!dragging) return;
         var dx = e.clientX - lx, dy = e.clientY - ly;
-        if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
+        if (!moved) {
+            if (Math.abs(dx) + Math.abs(dy) <= 2) return; // still a click
+            // capture only once it is really a drag — capturing on
+            // pointerdown would retarget the pointerup to the wrapper and
+            // the derived click event would never reach the <a> elements
+            // inside the map (teleport links would be unclickable)
+            moved = true;
+            try { wrap.setPointerCapture(e.pointerId); } catch (err) { /* no capture */ }
+            return;
+        }
         tx += dx; ty += dy;
         lx = e.clientX; ly = e.clientY;
         clamp(); // keep at least MIN_VISIBLE of the viewport covered
@@ -185,8 +198,10 @@
         if (!dragging) return;
         dragging = false;
         svg.classList.remove('dragging');
-        try { wrap.releasePointerCapture(e.pointerId); } catch (err) { /* already released */ }
-        if (moved && e.type === 'pointerup') e.preventDefault();
+        if (moved) {
+            try { wrap.releasePointerCapture(e.pointerId); } catch (err) { /* already released */ }
+            if (e.type === 'pointerup') e.preventDefault();
+        }
     }
     wrap.addEventListener('pointerup', endDrag);
     wrap.addEventListener('pointercancel', endDrag);
