@@ -4,6 +4,11 @@
 
 const { test, expect } = require('@playwright/test');
 
+// the sidenav only exists on wide viewports (drawer on mobile — see mobile.spec.js)
+test.beforeEach(async ({ page }) => {
+  test.skip(page.viewportSize().width <= 500, 'desktop layout only');
+});
+
 const VISIBLE_LINKS = () =>
   [...document.querySelectorAll('.sidenav a')].filter((a) => a.offsetParent !== null).length;
 const COLLAPSED = (sel) =>

@@ -22,6 +22,20 @@ module.exports = defineConfig({
     baseURL: `http://127.0.0.1:${port}`,
     launchOptions: process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {},
   },
+  projects: [
+    { name: 'desktop', use: { viewport: { width: 1280, height: 720 } } },
+    // phone-sized; isMobile/hasTouch emulate a real handset (viewport meta,
+    // touch events). Mobile-only tests skip on the desktop project.
+    {
+      name: 'mobile',
+      use: {
+        viewport: { width: 390, height: 844 },
+        deviceScaleFactor: 2,
+        isMobile: true,
+        hasTouch: true,
+      },
+    },
+  ],
   webServer: {
     command: `node tests/serve.js public ${port}`,
     url: `http://127.0.0.1:${port}/`,

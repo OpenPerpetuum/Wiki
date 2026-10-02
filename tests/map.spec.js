@@ -4,6 +4,11 @@
 // document.body === null, and never attach any of these handlers.
 const { test, expect } = require('@playwright/test');
 
+// desktop-only: these drive the mouse over fixed desktop map geometry
+test.beforeEach(async ({ page }) => {
+  test.skip(page.viewportSize().width <= 500, 'desktop layout only');
+});
+
 const MAP = '/zones/map/';
 
 const transform = (page) =>
