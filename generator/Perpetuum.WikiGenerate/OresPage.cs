@@ -223,11 +223,12 @@ public static class OresPage
 
     /// <summary>
     /// Link to an item's page when it is a catalog page, otherwise the display
-    /// name alone (transport capsules, robot fits and other non-catalog
-    /// definitions have no item page).
+    /// name alone. The catalog test is ItemsPage.IsItem — robot fits (_bot),
+    /// prototypes (_bot_pr), ores, deployables and NPC fits have no item page,
+    /// so a bare "known in entitydefaults" check would link to 404s.
     /// </summary>
     private static string ItemLink(string defname, Dictionary<string, DefRow> byName)
-        => byName.TryGetValue(defname, out var d) && d.Enabled && !d.Hidden
+        => byName.TryGetValue(defname, out var d) && d.Enabled && !d.Hidden && ItemsPage.IsItem(d)
             ? $"[{Md.DisplayName(defname)}]({ItemUrl(defname)})"
             : Md.DisplayName(defname);
 

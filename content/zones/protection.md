@@ -13,8 +13,8 @@ other players can attack you, and whether the terrain can be reshaped.
 
 | Level | Flag on the zone | PvP | Blobs | Terraforming | Where you'll find it |
 |---|---|---|---|---|---|
-| **Alpha** | protected | not possible | not formed | not possible | [Starter islands](/zones/map/#starter-islands), training, strongholds, PvP arena |
-| **Beta** | open, standard terrain | open | open | not possible | The PvP twins of the starter islands and the gamma belt |
+| **Alpha** | protected | not possible | not formed | not possible | [Alpha islands](/zones/map/#alpha), [training](/zones/zone-training/), strongholds, [PvP arena](/zones/zone-pvp-arena/) |
+| **Beta** | open, standard terrain | open | open | not possible | The PvP twins of the [Alpha islands](/zones/map/#alpha) and the gamma belt |
 | **Gamma** | open, terraformable | open | open | possible | The gate islands of the three galaxies and the frontier belt |
 
 ## Alpha — protected

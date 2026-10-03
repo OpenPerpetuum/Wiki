@@ -38,7 +38,7 @@ test('caret buttons collapse and re-open groups', async ({ page, baseURL }) => {
 
 test('World anchors visible by default, Gamma tiers expand on demand', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
-  // Lore, Training, Starter islands, Beta, Gamma, Protection levels
+  // Lore, Training, Alpha, Beta, Gamma, Protection levels
   expect(await page.locator(`${GROUPS} >> nth=1 >> .nav-items > li`).count()).toBe(6);
   const gammaCaret = page.locator('.sidenav .nav-has-sub:has(a[href="/zones/map/#t1"]) > .nav-sub-head .nav-caret');
   expect(await page.locator('.map-sub-deep a:visible').count()).toBe(0);

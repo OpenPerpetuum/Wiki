@@ -88,17 +88,17 @@ test('teleport elements are clickable and lead to the right zone page', async ({
   expect(await page.locator('main h1').count()).toBe(1);
 });
 
-test('local teleport lines light up near their endpoint columns', async ({ page, baseURL }) => {
+test('local teleport lines are visible and light up near their endpoint columns', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
   const wrap = page.locator('.zonetp-wrap');
   await wrap.waitFor({ state: 'visible', timeout: 10000 });
-  // this zone has in-zone teleports: dashed lines, hidden by default
+  // this zone has in-zone teleports: the dashed lines are always visible
   const lines = page.locator('.zonetp-wrap .ltp-line');
   expect(await lines.count()).toBeGreaterThan(0);
   for (let i = 0; i < await lines.count(); i++) {
-    expect(await lines.nth(i).evaluate((el) => getComputedStyle(el).opacity)).toBe('0');
+    expect(parseFloat(await lines.nth(i).evaluate((el) => getComputedStyle(el).opacity))).toBeGreaterThan(0.5);
   }
-  // hover near one of the endpoint columns: its line(s) stay lit
+  // hovering near one of the endpoint columns brightens the line further
   const anchor = page.locator('.zonetp-wrap circle[data-ltp]').first();
   const b = await anchor.boundingBox();
   await page.mouse.move(b.x + b.width / 2, b.y + b.height / 2);

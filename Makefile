@@ -75,8 +75,10 @@ serve:
 
 # Regenerate the generated pages (content/content + zone index + zone map +
 # search index) from the database. See generator/README.md for the table
-# mapping. (After a generate, re-run `make zonemaps` to refresh the teleport
-# map backgrounds/links.)
+# mapping. IMPORTANT: `make zonemaps` must run AFTER `make generate` —
+# generate rewrites the raw zone teleport SVGs, and zonemaps post-processes
+# them (terrain, markers, links); re-running generate afterwards overwrites
+# the post-processed maps with the raw output (the zone-map tests break).
 generate:
 	@test -n "$(WIKI_DB)" || { echo "error: set WIKI_DB (or PERPETUUM_CONNECTIONSTRING)"; exit 1; }
 	@test -d "$(WIKI_PLANTRULES)" || { echo "error: WIKI_PLANTRULES is not a directory: $(WIKI_PLANTRULES)"; \

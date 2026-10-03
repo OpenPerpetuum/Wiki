@@ -12,9 +12,7 @@ Where this zone's teleport columns stand (dots, labelled with the destination �
 the column is currently switched off), the landing spots of teleports arriving from other
 zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
 tile coordinates the server records.
-This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line
-between the pair's two locations stays lit.
-
+The dashed lines connect the pairs of local (in-zone) teleport columns.
 
 A low-tier **protected PvE** zone — a safe place where new characters gather. Its
 configuration shows the simplest end of the spectrum: few ore types, large nodes, and

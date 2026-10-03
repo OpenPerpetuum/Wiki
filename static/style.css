@@ -775,15 +775,19 @@ html[data-theme="light"][data-cb="achro"] {
     border: 1px solid rgba(0, 0, 0, 0.35);
     vertical-align: middle;
 }
-.zonemap-tp { stroke: var(--muted); stroke-width: 0.8; stroke-opacity: 0.4; }
-.zonemap-tp:hover { stroke: var(--neon); stroke-opacity: 0.95; stroke-width: 1.6; }
+/* inter-zone teleports: dashed lines, the stroke set per line as a gradient
+   from the source family color to the destination's (see ZonesMapPage.cs) */
+.zonemap-tp { stroke-width: 1.1; stroke-opacity: 0.65; stroke-dasharray: 5 4; }
+.zonemap-tp:hover { stroke-opacity: 1; stroke-width: 2; }
 .zonemap-link { stroke: var(--accent); stroke-width: 1.6; stroke-opacity: 0.85; stroke-dasharray: 5 3; }
 .zonemap-link:hover { stroke: var(--neon); stroke-width: 2.2; }
-/* local (in-zone) teleports: hidden dashed lines + endpoint dots, lit by
-   map.js while the cursor is near an endpoint (data-ltp pairs) */
-.zonemap .ltp-line { opacity: 0; transition: opacity 0.15s; pointer-events: none; }
-.zonemap .ltp-line.ltp-on { opacity: 0.95; }
-.zonemap .ltp-dot { pointer-events: none; stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
+/* local (in-zone) teleports on the zone maps: the dashed lines between a
+   pair's columns are always visible (they are the point of the map); map.js
+   brightens them a touch while the cursor is near an endpoint (data-ltp).
+   The world map does not carry ltp elements at all. */
+.zonetp-wrap .ltp-line { opacity: 0.85; transition: opacity 0.15s; pointer-events: none; }
+.zonetp-wrap .ltp-line.ltp-on { opacity: 1; }
+.zonetp-wrap .ltp-dot { pointer-events: none; stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
 /* world map sub-sections: zone cards (thumbnail = the coastline-only
    thumb.png), small enough for 3-4 per row */
 .zone-cards {
@@ -810,6 +814,10 @@ html[data-theme="light"][data-cb="achro"] {
 }
 .zone-card-name { color: var(--fg); font-weight: 600; font-size: 0.95rem; line-height: 1.2; }
 .zone-card-meta { color: var(--muted); font-size: 0.82rem; }
+/* anchor jumps (category boxes on the extensions page, the side-menu map
+   anchors, …) land below the two-row sticky topbar so the section heading
+   stays visible */
+main [id] { scroll-margin-top: 7rem; }
 .zonemap-label { fill: var(--fg); opacity: 0.85; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .zonemap circle, .zonemap rect { stroke: rgba(0, 0, 0, 0.35); stroke-width: 1; }
 .zonemap a:hover circle, .zonemap a:hover rect { stroke: var(--neon); stroke-width: 2.5; }

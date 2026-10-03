@@ -31,21 +31,25 @@ test('map page loads without script errors', async ({ page, baseURL }) => {
   expect(errors).toEqual([]);
 });
 
-test('zones are drawn with their real terrain and local teleports have hover lines', async ({ page, baseURL }) => {
+test('zones are drawn with coastline thumbnails and inter-zone TPs are dashed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
-  // every zone node carries its terrain thumbnail (world.png)
-  const imgs = page.locator('.zonemap image[href$="world.png"]');
+  // every zone node carries its coastline thumbnail (thumb.png) — the same
+  // design as the index cards below the map
+  const imgs = page.locator('.zonemap image[href$="thumb.png"]');
   expect(await imgs.count()).toBeGreaterThanOrEqual(80);
   const first = await imgs.first().getAttribute('href');
   const r = await page.request.get(first);
   expect(r.ok()).toBe(true);
   expect(r.headers()['content-type']).toMatch(/image\/png/);
-  // the zones with in-zone teleports carry hidden hover lines + endpoint dots
-  expect(await page.locator('.zonemap .ltp-line').count()).toBeGreaterThan(0);
-  expect(await page.locator('.zonemap .ltp-dot').count()).toBeGreaterThan(0);
-  for (const l of await page.locator('.zonemap .ltp-line').all()) {
-    expect(await l.evaluate((el) => getComputedStyle(el).opacity)).toBe('0');
-  }
+  // inter-zone TP lines: dashed, gradient-colored (stroke = url(#tpgN)),
+  // no local-teleport elements on the world map anymore
+  const tps = page.locator('.zonemap .zonemap-tp');
+  expect(await tps.count()).toBeGreaterThan(10);
+  const dash = await tps.first().evaluate((el) => getComputedStyle(el).strokeDasharray);
+  expect(dash).not.toBe('none');
+  expect(await tps.first().getAttribute('stroke')).toMatch(/^url\(#tpg\d+\)$/);
+  expect(await page.locator('.zonemap .ltp-line').count()).toBe(0);
+  expect(await page.locator('.zonemap .ltp-dot').count()).toBe(0);
 });
 
 test('world map sub-sections use zone cards with coastline thumbnails', async ({ page, baseURL }) => {

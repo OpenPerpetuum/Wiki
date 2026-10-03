@@ -158,8 +158,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Small compositecore slug](/content/items/ammo-small-railgun-d/) | 25 | 1 |
 | [Small UDC slug](/content/items/ammo-small-railgun-rewa/) | 25 | – |
 | [Small 'Magnedart' slug](/content/items/ammo-small-railgun-rewb/) | 25 | – |
-| [Arbalest](/content/items/arbalest-bot/) | 1k | – |
-| [Arbalest prototype](/content/items/arbalest-bot-pr/) | 1k | 3 |
+| Arbalest | 1k | – |
+| Arbalest prototype | 1k | 3 |
 | Arbalest chassis | 500 | 3 |
 | Arbalest Mk2 chassis | 500 | – |
 | Arbalest prototype chassis | 500 | – |
@@ -169,11 +169,11 @@ Items that take this ore as a recipe component (amount per single production). F
 | Arbalest legs | 400 | 3 |
 | Arbalest Mk2 legs | 400 | – |
 | Arbalest prototype legs | 400 | – |
-| [Arbalest Mk2](/content/items/arbalest-mk2-bot/) | 1k | – |
-| [Ares](/content/items/ares-bot/) | 20k | – |
-| [Ares Bot Pr](/content/items/ares-bot-pr/) | 20k | 8 |
-| [Argano](/content/items/argano-bot/) | 750 | – |
-| [Argano prototype](/content/items/argano-bot-pr/) | 750 | 1 |
+| Arbalest Mk2 | 1k | – |
+| Ares | 20k | – |
+| Ares Bot Pr | 20k | 8 |
+| Argano | 750 | – |
+| Argano prototype | 750 | 1 |
 | Argano chassis | 375 | 1 |
 | Argano Mk2 chassis | 375 | – |
 | Argano prototype chassis | 375 | – |
@@ -183,9 +183,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Argano legs | 300 | 1 |
 | Argano Mk2 legs | 300 | – |
 | Argano prototype legs | 300 | – |
-| [Argano Mk2](/content/items/argano-mk2-bot/) | 750 | – |
-| [Artemis](/content/items/artemis-bot/) | 3k | – |
-| [Artemis prototype](/content/items/artemis-bot-pr/) | 3k | 4 |
+| Argano Mk2 | 750 | – |
+| Artemis | 3k | – |
+| Artemis prototype | 3k | 4 |
 | Artemis chassis | 1.5k | 4 |
 | Artemis Mk2 chassis | 1.5k | – |
 | Artemis prototype chassis | 1.5k | – |
@@ -195,7 +195,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | Artemis legs | 1.2k | 4 |
 | Artemis Mk2 legs | 1.2k | – |
 | Artemis prototype legs | 1.2k | – |
-| [Artemis Mk2](/content/items/artemis-mk2-bot/) | 3k | – |
+| Artemis Mk2 | 3k | – |
 | [Niani interference module](/content/items/artifact-a-blob-emission-modulator/) | 25 | – |
 | [Niani cargo scanner](/content/items/artifact-a-cargo-scanner/) | 25 | – |
 | [Niani chassis scanner](/content/items/artifact-a-chassis-scanner/) | 25 | – |
@@ -266,26 +266,26 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Flawed target marker](/content/items/artifact-damaged-target-painter/) | 100 | – |
 | [Flawed range extender](/content/items/artifact-damaged-tracking-upgrade/) | 50 | – |
 | [Flawed S-demobilizer](/content/items/artifact-damaged-webber/) | 50 | – |
-| [Baphomet](/content/items/baphomet-bot/) | 1k | – |
-| [Baphomet prototype](/content/items/baphomet-bot-pr/) | 1k | 3 |
+| Baphomet | 1k | – |
+| Baphomet prototype | 1k | 3 |
 | Baphomet chassis | 500 | 3 |
 | Baphomet prototype chassis | 500 | – |
 | Baphomet head | 100 | 3 |
 | Baphomet prototype head | 100 | – |
 | Baphomet legs | 400 | 3 |
 | Baphomet prototype legs | 400 | – |
-| [Baphomet Mk2](/content/items/baphomet-mk2-bot/) | 1k | – |
+| Baphomet Mk2 | 1k | – |
 | Baphomet Mk2 chassis | 500 | – |
 | Baphomet Mk2 head | 100 | – |
 | Baphomet Mk2 legs | 400 | – |
-| [Beholder](/content/items/beholder-bot/) | 3.75k | – |
-| [Beholder Bot Pr](/content/items/beholder-bot-pr/) | 3.75k | 6 |
-| [Callisto](/content/items/callisto-bot/) | 750 | – |
+| Beholder | 3.75k | – |
+| Beholder Bot Pr | 3.75k | 6 |
+| Callisto | 750 | – |
 | Callisto chassis | 500 | – |
 | Callisto head | 100 | – |
 | Callisto legs | 400 | – |
-| [Cameleon](/content/items/cameleon-bot/) | 1k | – |
-| [Cameleon prototype](/content/items/cameleon-bot-pr/) | 1k | 2 |
+| Cameleon | 1k | – |
+| Cameleon prototype | 1k | 2 |
 | Cameleon chassis | 500 | 2 |
 | Cameleon Mk2 chassis | 500 | – |
 | Cameleon prototype chassis | 500 | – |
@@ -295,9 +295,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Cameleon legs | 400 | 2 |
 | Cameleon Mk2 legs | 400 | – |
 | Cameleon prototype legs | 400 | – |
-| [Cameleon Mk2](/content/items/cameleon-mk2-bot/) | 1k | – |
-| [Castel](/content/items/castel-bot/) | 750 | – |
-| [Castel prototype](/content/items/castel-bot-pr/) | 750 | 2 |
+| Cameleon Mk2 | 1k | – |
+| Castel | 750 | – |
+| Castel prototype | 750 | 2 |
 | Castel chassis | 375 | 2 |
 | Castel Mk2 chassis | 375 | – |
 | Castel prototype chassis | 375 | – |
@@ -307,7 +307,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | Castel legs | 300 | 2 |
 | Castel Mk2 legs | 300 | – |
 | Castel prototype legs | 300 | – |
-| [Castel Mk2](/content/items/castel-mk2-bot/) | 750 | – |
+| Castel Mk2 | 750 | – |
 | Construction block | 25 | 1 |
 | [Construction Module Ammo T1](/content/items/construction-module-ammo-t1/) | 25 | – |
 | [Construction Module Ammo T1 Pr](/content/items/construction-module-ammo-t1-pr/) | 25 | 2 |
@@ -316,11 +316,11 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Construction Module Ammo T3](/content/items/construction-module-ammo-t3/) | 50 | – |
 | [Construction Module Ammo T3 Pr](/content/items/construction-module-ammo-t3-pr/) | 50 | 6 |
 | [Standard energy injector charge](/content/items/corebooster-ammo/) | 50 | 3 |
-| [Cronus](/content/items/cronus-bot/) | 2.25k | – |
-| [Daidalos](/content/items/daidalos-bot/) | 3k | – |
-| [Echelon](/content/items/echelon-bot/) | 2.25k | – |
-| [Gargoyle](/content/items/gargoyle-bot/) | 6k | – |
-| [Gargoyle prototype](/content/items/gargoyle-bot-pr/) | 6k | 3 |
+| Cronus | 2.25k | – |
+| Daidalos | 3k | – |
+| Echelon | 2.25k | – |
+| Gargoyle | 6k | – |
+| Gargoyle prototype | 6k | 3 |
 | Gargoyle chassis | 3k | 3 |
 | Gargoyle Mk2 chassis | 3k | – |
 | Gargoyle prototype chassis | 3k | – |
@@ -330,15 +330,15 @@ Items that take this ore as a recipe component (amount per single production). F
 | Gargoyle legs | 2.4k | 3 |
 | Gargoyle Mk2 legs | 2.4k | – |
 | Gargoyle prototype legs | 2.4k | – |
-| [Gargoyle Mk2](/content/items/gargoyle-mk2-bot/) | 6k | – |
+| Gargoyle Mk2 | 6k | – |
 | [Harvesting Industrial Drone Unit](/content/items/harvesting-industrial-drone-unit/) | 1k | 5 |
-| [Helix](/content/items/helix-bot/) | 750 | – |
+| Helix | 750 | – |
 | Helix chassis | 500 | – |
 | Helix head | 100 | – |
 | Helix legs | 400 | – |
-| [Hermes](/content/items/hermes-bot/) | 750 | – |
-| [Ictus](/content/items/ictus-bot/) | 1k | – |
-| [Ictus prototype](/content/items/ictus-bot-pr/) | 1k | 4 |
+| Hermes | 750 | – |
+| Ictus | 1k | – |
+| Ictus prototype | 1k | 4 |
 | Ictus chassis | 500 | 4 |
 | Ictus Mk2 chassis | 500 | – |
 | Ictus prototype chassis | 500 | – |
@@ -348,8 +348,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | Ictus legs | 400 | 4 |
 | Ictus Mk2 legs | 400 | – |
 | Ictus prototype legs | 400 | – |
-| [Ictus Mk2](/content/items/ictus-mk2-bot/) | 1k | – |
-| [Ikarus](/content/items/ikarus-bot/) | 560 | – |
+| Ictus Mk2 | 1k | – |
+| Ikarus | 560 | – |
 | Platinum Alchemist chemical armor | 50 | – |
 | Platinum Alchemist accumulator recharger | 75 | – |
 | Platinum Alchemist medium auxiliary accumulator | 100 | – |
@@ -378,8 +378,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | Platinum Alchemist Tycoon small energy transferer | 100 | – |
 | Platinum Alchemist Tycoon small harvester | 150 | – |
 | Platinum Alchemist Tycoon small remote armor repairer | 100 | – |
-| [Intakt](/content/items/intakt-bot/) | 1k | – |
-| [Intakt prototype](/content/items/intakt-bot-pr/) | 1k | 2 |
+| Intakt | 1k | – |
+| Intakt prototype | 1k | 2 |
 | Intakt chassis | 500 | 2 |
 | Intakt Mk2 chassis | 500 | – |
 | Intakt prototype chassis | 500 | – |
@@ -389,9 +389,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Intakt legs | 400 | 2 |
 | Intakt Mk2 legs | 400 | – |
 | Intakt prototype legs | 400 | – |
-| [Intakt Mk2](/content/items/intakt-mk2-bot/) | 1k | – |
-| [Kain](/content/items/kain-bot/) | 3k | – |
-| [Kain prototype](/content/items/kain-bot-pr/) | 3k | 4 |
+| Intakt Mk2 | 1k | – |
+| Kain | 3k | – |
+| Kain prototype | 3k | 4 |
 | Kain chassis | 1.5k | 4 |
 | Kain Mk2 chassis | 1.5k | – |
 | Kain prototype chassis | 1.5k | – |
@@ -401,9 +401,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Kain legs | 1.2k | 4 |
 | Kain Mk2 legs | 1.2k | – |
 | Kain prototype legs | 1.2k | – |
-| [Kain Mk2](/content/items/kain-mk2-bot/) | 3k | – |
-| [Laird](/content/items/laird-bot/) | 750 | – |
-| [Laird prototype](/content/items/laird-bot-pr/) | 750 | 1 |
+| Kain Mk2 | 3k | – |
+| Laird | 750 | – |
+| Laird prototype | 750 | 1 |
 | Laird chassis | 375 | 1 |
 | Laird Mk2 chassis | 375 | – |
 | Laird prototype chassis | 375 | – |
@@ -413,10 +413,10 @@ Items that take this ore as a recipe component (amount per single production). F
 | Laird legs | 300 | 1 |
 | Laird Mk2 legs | 300 | – |
 | Laird prototype legs | 300 | – |
-| [Laird Mk2](/content/items/laird-mk2-bot/) | 750 | – |
+| Laird Mk2 | 750 | – |
 | Legatus head | 500 | – |
-| [Lithus](/content/items/lithus-bot/) | 5k | – |
-| [Lithus prototype](/content/items/lithus-bot-pr/) | 5k | 4 |
+| Lithus | 5k | – |
+| Lithus prototype | 5k | 4 |
 | Lithus chassis | 2.5k | – |
 | Lithus Mk2 chassis | 2.5k | – |
 | Lithus prototype chassis | 2.5k | – |
@@ -426,8 +426,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | Lithus legs | 2k | – |
 | Lithus Mk2 legs | 2k | – |
 | Lithus prototype legs | 2k | – |
-| [Lithus Mk2](/content/items/lithus-mk2-bot/) | 5k | – |
-| [Locust](/content/items/locust-bot/) | 750 | – |
+| Lithus Mk2 | 5k | – |
+| Locust | 750 | – |
 | [Longrange Standard Large Laser](/content/items/longrange-standard-large-laser/) | 150 | – |
 | [Longrange Standard Large Laser Pr](/content/items/longrange-standard-large-laser-pr/) | 150 | 5 |
 | [Longrange Standard Large Railgun](/content/items/longrange-standard-large-railgun/) | 150 | – |
@@ -435,7 +435,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Standard medium autocannon](/content/items/longrange-standard-medium-autocannon/) | 100 | 3 |
 | [Standard medium HCL laser](/content/items/longrange-standard-medium-laser/) | 100 | 4 |
 | [Standard medium EM-gun](/content/items/longrange-standard-medium-railgun/) | 100 | 4 |
-| [Metis](/content/items/metis-bot/) | 6.25k | – |
+| Metis | 6.25k | – |
 | Metis chassis | 2.5k | – |
 | Metis head | 500 | – |
 | Metis legs | 2k | – |
@@ -1038,10 +1038,10 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Pbs XL Core Transmitter Medium Capsule Pr](/content/items/pbs-xl-core-transmitter-medium-capsule-pr/) | 100 | 5 |
 | [Standard energy backbone node foundation](/content/items/pbs-xl-core-transmitter-small-capsule/) | 200 | – |
 | [Pbs XL Core Transmitter Small Capsule Pr](/content/items/pbs-xl-core-transmitter-small-capsule-pr/) | 200 | 4 |
-| [Advanced repair node foundation](/content/items/pbs-armor-repairer-medium-capsule/) | 250 | – |
-| [Pbs Armor Repairer Medium Capsule Pr](/content/items/pbs-armor-repairer-medium-capsule-pr/) | 250 | 5 |
-| [Standard repair node foundation](/content/items/pbs-armor-repairer-small-capsule/) | 500 | – |
-| [Pbs Armor Repairer Small Capsule Pr](/content/items/pbs-armor-repairer-small-capsule-pr/) | 500 | 4 |
+| Advanced repair node foundation | 250 | – |
+| Pbs Armor Repairer Medium Capsule Pr | 250 | 5 |
+| Standard repair node foundation | 500 | – |
+| Pbs Armor Repairer Small Capsule Pr | 500 | 4 |
 | [Advanced Aura emitter foundation](/content/items/pbs-aura-emitter-medium-capsule/) | 125 | – |
 | [Pbs Aura Emitter Medium Capsule Pr](/content/items/pbs-aura-emitter-medium-capsule-pr/) | 125 | 4 |
 | [Standard Aura emitter foundation](/content/items/pbs-aura-emitter-small-capsule/) | 250 | – |
@@ -1066,10 +1066,10 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Pbs Docking Base Medium Capsule Pr](/content/items/pbs-docking-base-medium-capsule-pr/) | 10k | 7 |
 | [Standard main terminal foundation](/content/items/pbs-docking-base-small-capsule/) | 20k | – |
 | [Pbs Docking Base Small Capsule Pr](/content/items/pbs-docking-base-small-capsule-pr/) | 20k | 6 |
-| [Advanced booster node foundation](/content/items/pbs-effect-supplier-medium-capsule/) | 125 | – |
-| [Pbs Effect Supplier Medium Capsule Pr](/content/items/pbs-effect-supplier-medium-capsule-pr/) | 125 | 5 |
-| [Standard booster node foundation](/content/items/pbs-effect-supplier-small-capsule/) | 250 | – |
-| [Pbs Effect Supplier Small Capsule Pr](/content/items/pbs-effect-supplier-small-capsule-pr/) | 250 | 4 |
+| Advanced booster node foundation | 125 | – |
+| Pbs Effect Supplier Medium Capsule Pr | 125 | 5 |
+| Standard booster node foundation | 250 | – |
+| Pbs Effect Supplier Small Capsule Pr | 250 | 4 |
 | [Advanced energy well foundation](/content/items/pbs-energywell-medium-capsule/) | 675 | – |
 | [Pbs Energywell Medium Capsule Pr](/content/items/pbs-energywell-medium-capsule-pr/) | 675 | 4 |
 | [Standard energy well foundation](/content/items/pbs-energywell-small-capsule/) | 1.25k | – |
@@ -1140,8 +1140,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Pbs Turret Rail Small Capsule Pr](/content/items/pbs-turret-rail-small-capsule-pr/) | 100 | 3 |
 | [Pelistal Assault Drone Unit](/content/items/pelistal-assault-drone-unit/) | 2k | 5 |
 | [Pelistal Attack Drone Unit](/content/items/pelistal-attack-drone-unit/) | 1k | 5 |
-| [Prometheus](/content/items/prometheus-bot/) | 750 | – |
-| [Prometheus prototype](/content/items/prometheus-bot-pr/) | 750 | 2 |
+| Prometheus | 750 | – |
+| Prometheus prototype | 750 | 2 |
 | Prometheus chassis | 375 | 2 |
 | Prometheus Mk2 chassis | 375 | – |
 | Prometheus prototype chassis | 375 | – |
@@ -1151,7 +1151,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | Prometheus legs | 300 | 2 |
 | Prometheus Mk2 legs | 300 | – |
 | Prometheus prototype legs | 300 | – |
-| [Prometheus Mk2](/content/items/prometheus-mk2-bot/) | 750 | – |
+| Prometheus Mk2 | 750 | – |
 | [Energy storage cell](/content/items/reactor-booster-a/) | 100 | – |
 | [Reactor Booster A Pr](/content/items/reactor-booster-a-pr/) | 100 | 2 |
 | [Reactor Booster B](/content/items/reactor-booster-b/) | 150 | – |
@@ -1159,8 +1159,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Reactor Booster C](/content/items/reactor-booster-c/) | 225 | – |
 | [Reactor Booster C Pr](/content/items/reactor-booster-c-pr/) | 225 | 6 |
 | [Repair Support Drone Unit](/content/items/repair-support-drone-unit/) | 1k | 5 |
-| [Riveler](/content/items/riveler-bot/) | 5k | – |
-| [Riveler prototype](/content/items/riveler-bot-pr/) | 5k | 4 |
+| Riveler | 5k | – |
+| Riveler prototype | 5k | 4 |
 | Riveler chassis | 2.5k | 4 |
 | Riveler Mk2 chassis | 2.5k | – |
 | Riveler prototype chassis | 2.5k | – |
@@ -1170,12 +1170,12 @@ Items that take this ore as a recipe component (amount per single production). F
 | Riveler legs | 2k | 4 |
 | Riveler Mk2 legs | 2k | – |
 | Riveler prototype legs | 2k | – |
-| [Riveler Mk2](/content/items/riveler-mk2-bot/) | 5k | – |
+| Riveler Mk2 | 5k | – |
 | [Functional common fragment](/content/items/robotshard-common-advanced/) | 2 | – |
 | [Damaged common fragment](/content/items/robotshard-common-basic/) | 1 | – |
 | [Perfect common fragment](/content/items/robotshard-common-expert/) | 3 | – |
-| [Scarab](/content/items/scarab-bot/) | 9.375k | – |
-| [Scarab prototype](/content/items/scarab-bot-pr/) | 9.375k | 5 |
+| Scarab | 9.375k | – |
+| Scarab prototype | 9.375k | 5 |
 | Scarab chassis | 3.125k | – |
 | Scarab prototype chassis | 3.125k | – |
 | Scarab head | 625 | – |
@@ -1183,8 +1183,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | Scarab legs | 2.5k | – |
 | Scarab prototype legs | 2.5k | – |
 | [Sentry Turret Unit](/content/items/sentry-turret-unit/) | 1k | 5 |
-| [Sequer](/content/items/sequer-bot/) | 3k | – |
-| [Sequer prototype](/content/items/sequer-bot-pr/) | 3k | 2 |
+| Sequer | 3k | – |
+| Sequer prototype | 3k | 2 |
 | Sequer chassis | 1.5k | 2 |
 | Sequer Mk2 chassis | 1.5k | – |
 | Sequer prototype chassis | 1.5k | – |
@@ -1194,9 +1194,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Sequer legs | 1.2k | 2 |
 | Sequer Mk2 legs | 1.2k | – |
 | Sequer prototype legs | 1.2k | – |
-| [Sequer Mk2](/content/items/sequer-mk2-bot/) | 3k | – |
-| [Spectator](/content/items/spectator-bot/) | 15k | – |
-| [Spectator Bot Pr](/content/items/spectator-bot-pr/) | 15k | 8 |
+| Sequer Mk2 | 3k | – |
+| Spectator | 15k | – |
+| Spectator Bot Pr | 15k | 8 |
 | [Standard Adaptive Alloy](/content/items/standard-adaptive-alloy/) | 200 | 3 |
 | [Standard armor repairer tuning](/content/items/standard-armor-repairer-upgrade/) | 100 | 3 |
 | [Standard Assault Remote Controller](/content/items/standard-assault-remote-controller/) | 50 | 5 |
@@ -1321,8 +1321,8 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Standart Nuimqol Combat Drone Unit](/content/items/standart-nuimqol-combat-drone-unit/) | 1k | 3 |
 | [Standart Pelistal Combat Drone Unit](/content/items/standart-pelistal-combat-drone-unit/) | 1k | 3 |
 | [Standart Thelodica Combat Drone Unit](/content/items/standart-thelodica-combat-drone-unit/) | 1k | 3 |
-| [Symbiont](/content/items/symbiont-bot/) | 5k | – |
-| [Symbiont prototype](/content/items/symbiont-bot-pr/) | 5k | 4 |
+| Symbiont | 5k | – |
+| Symbiont prototype | 5k | 4 |
 | Symbiont chassis | 2.5k | 4 |
 | Symbiont Mk2 chassis | 2.5k | – |
 | Symbiont prototype chassis | 2.5k | – |
@@ -1332,11 +1332,11 @@ Items that take this ore as a recipe component (amount per single production). F
 | Symbiont legs | 2k | 4 |
 | Symbiont Mk2 legs | 2k | – |
 | Symbiont prototype legs | 2k | – |
-| [Symbiont Mk2](/content/items/symbiont-mk2-bot/) | 5k | – |
+| Symbiont Mk2 | 5k | – |
 | [Syndicate Assault Drone Unit](/content/items/syndicate-assault-drone-unit/) | 1k | 5 |
 | [Syndicate Attack Drone Unit](/content/items/syndicate-attack-drone-unit/) | 500 | 5 |
-| [Termis](/content/items/termis-bot/) | 6k | – |
-| [Termis prototype](/content/items/termis-bot-pr/) | 6k | 3 |
+| Termis | 6k | – |
+| Termis prototype | 6k | 3 |
 | Termis chassis | 3k | 3 |
 | Termis Mk2 chassis | 3k | – |
 | Termis prototype chassis | 3k | – |
@@ -1346,17 +1346,17 @@ Items that take this ore as a recipe component (amount per single production). F
 | Termis legs | 2.4k | 3 |
 | Termis Mk2 legs | 2.4k | – |
 | Termis prototype legs | 2.4k | – |
-| [Termis Mk2](/content/items/termis-mk2-bot/) | 6k | – |
-| [Terramotus](/content/items/terramotus-bot/) | 1k | – |
-| [Terramotus Bot Pr](/content/items/terramotus-bot-pr/) | 1k | 7 |
+| Termis Mk2 | 6k | – |
+| Terramotus | 1k | – |
+| Terramotus Bot Pr | 1k | 7 |
 | Ruby Mercenary medium armor plate | 250 | – |
 | Ruby Mercenary light armor plate | 125 | – |
 | Ruby Mercenary Commander medium armor plate | 500 | – |
 | Ruby Mercenary Commander light armor plate | 250 | – |
 | [Thelodica Assault Drone Unit](/content/items/thelodica-assault-drone-unit/) | 2k | 5 |
 | [Thelodica Attack Drone Unit](/content/items/thelodica-attack-drone-unit/) | 1k | 5 |
-| [Troiar](/content/items/troiar-bot/) | 1k | – |
-| [Troiar prototype](/content/items/troiar-bot-pr/) | 1k | 2 |
+| Troiar | 1k | – |
+| Troiar prototype | 1k | 2 |
 | Troiar chassis | 500 | 2 |
 | Troiar Mk2 chassis | 500 | – |
 | Troiar prototype chassis | 500 | – |
@@ -1366,9 +1366,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Troiar legs | 400 | 2 |
 | Troiar Mk2 legs | 400 | – |
 | Troiar prototype legs | 400 | – |
-| [Troiar Mk2](/content/items/troiar-mk2-bot/) | 1k | – |
-| [Tyrannos](/content/items/tyrannos-bot/) | 3k | – |
-| [Tyrannos prototype](/content/items/tyrannos-bot-pr/) | 3k | 4 |
+| Troiar Mk2 | 1k | – |
+| Tyrannos | 3k | – |
+| Tyrannos prototype | 3k | 4 |
 | Tyrannos chassis | 1.5k | 4 |
 | Tyrannos Mk2 chassis | 1.5k | – |
 | Tyrannos prototype chassis | 1.5k | – |
@@ -1378,9 +1378,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Tyrannos legs | 1.2k | 4 |
 | Tyrannos Mk2 legs | 1.2k | – |
 | Tyrannos prototype legs | 1.2k | – |
-| [Tyrannos Mk2](/content/items/tyrannos-mk2-bot/) | 3k | – |
-| [Vagabond](/content/items/vagabond-bot/) | 1k | – |
-| [Vagabond prototype](/content/items/vagabond-bot-pr/) | 1k | 4 |
+| Tyrannos Mk2 | 3k | – |
+| Vagabond | 1k | – |
+| Vagabond prototype | 1k | 4 |
 | Vagabond chassis | 500 | 4 |
 | Vagabond Mk2 chassis | 500 | – |
 | Vagabond prototype chassis | 500 | – |
@@ -1390,10 +1390,10 @@ Items that take this ore as a recipe component (amount per single production). F
 | Vagabond legs | 400 | 4 |
 | Vagabond Mk2 legs | 400 | – |
 | Vagabond prototype legs | 400 | – |
-| [Vagabond Mk2](/content/items/vagabond-mk2-bot/) | 1k | – |
-| [Vektor](/content/items/vektor-bot/) | 560 | – |
-| [Waspish](/content/items/waspish-bot/) | 1k | – |
-| [Waspish prototype](/content/items/waspish-bot-pr/) | 1k | 3 |
+| Vagabond Mk2 | 1k | – |
+| Vektor | 560 | – |
+| Waspish | 1k | – |
+| Waspish prototype | 1k | 3 |
 | Waspish chassis | 500 | 3 |
 | Waspish Mk2 chassis | 500 | – |
 | Waspish prototype chassis | 500 | – |
@@ -1403,9 +1403,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Waspish legs | 400 | 3 |
 | Waspish Mk2 legs | 400 | – |
 | Waspish prototype legs | 400 | – |
-| [Waspish Mk2](/content/items/waspish-mk2-bot/) | 1k | – |
-| [Yagel](/content/items/yagel-bot/) | 750 | – |
-| [Yagel prototype](/content/items/yagel-bot-pr/) | 750 | 2 |
+| Waspish Mk2 | 1k | – |
+| Yagel | 750 | – |
+| Yagel prototype | 750 | 2 |
 | Yagel chassis | 375 | 2 |
 | Yagel Mk2 chassis | 375 | – |
 | Yagel prototype chassis | 375 | – |
@@ -1415,9 +1415,9 @@ Items that take this ore as a recipe component (amount per single production). F
 | Yagel legs | 300 | 2 |
 | Yagel Mk2 legs | 300 | – |
 | Yagel prototype legs | 300 | – |
-| [Yagel Mk2](/content/items/yagel-mk2-bot/) | 750 | – |
-| [Zenith](/content/items/zenith-bot/) | 1k | – |
-| [Zenith prototype](/content/items/zenith-bot-pr/) | 1k | 4 |
+| Yagel Mk2 | 750 | – |
+| Zenith | 1k | – |
+| Zenith prototype | 1k | 4 |
 | Zenith chassis | 500 | 4 |
 | Zenith Mk2 chassis | 500 | – |
 | Zenith prototype chassis | 500 | – |
@@ -1427,7 +1427,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | Zenith legs | 400 | 4 |
 | Zenith Mk2 legs | 400 | – |
 | Zenith prototype legs | 400 | – |
-| [Zenith Mk2](/content/items/zenith-mk2-bot/) | 1k | – |
+| Zenith Mk2 | 1k | – |
 
 
 [All ores](/content/ores/) · [Ore fields](/formats/ore-fields/)

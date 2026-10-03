@@ -752,6 +752,17 @@ def main():
     print(f"name map: {len(name2slug)} zones, {len(slug2id)} with ids")
     print(f"assets: {os.path.abspath(ASSETS)}")
     files = sorted(f for f in os.listdir(ZONEMAPS) if f.endswith(".svg"))
+    # zones on the world map (ZonesMapPage.cs) without their own teleport map
+    # (the strongholds: no teleport columns inside them) — the world map and
+    # the zone cards still need their world.png/thumb.png
+    world_slugs = set(re.findall(r'/zonemaps/([a-z0-9-]+)/thumb\.png',
+                                 open(os.path.join(ROOT, "content", "zones", "map.md"), encoding="utf-8").read()))
+    for slug in sorted(world_slugs - {f[:-4] + "/" for f in files}):
+        d = os.path.join(ZONEMAPS, slug.rstrip("/"))
+        os.makedirs(d, exist_ok=True)
+        world, thumb = fbm_world_thumb(slug.rstrip("/"))
+        open(os.path.join(d, "world.png"), "wb").write(world)
+        open(os.path.join(d, "thumb.png"), "wb").write(thumb)
     workers = max(1, min(len(files), os.cpu_count() or 1))
     with Pool(workers) as pool:  # one process per core, one zone each
         results = pool.starmap(_rebuild_one, [(f, name2slug, slug2id, slug2size) for f in files])

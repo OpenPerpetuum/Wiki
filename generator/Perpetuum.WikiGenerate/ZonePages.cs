@@ -210,8 +210,7 @@ public static class ZonePages
                "zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the " +
                "tile coordinates the server records." +
                (hasLocal
-                   ? " This zone has local (in-zone) teleports — move the cursor near one of their columns " +
-                     "and the dashed line between the pair's two locations stays lit."
+                   ? " The dashed lines connect the pairs of local (in-zone) teleport columns."
                    : "") +
                "\n\n";
     }
@@ -297,7 +296,7 @@ public static class ZonePages
     {
         if (name == "zone_training") return "#training";
         if (name is "zone_TM" or "zone_ICS" or "zone_ASI"
-            or "zone_TM_pve" or "zone_ICS_pve" or "zone_ASI_pve") return "#starter-islands";
+            or "zone_TM_pve" or "zone_ICS_pve" or "zone_ASI_pve") return "#alpha";
         if (name.Contains("gamma", StringComparison.OrdinalIgnoreCase))
         {
             if (name.Contains("tc", StringComparison.OrdinalIgnoreCase)) return "#t0";

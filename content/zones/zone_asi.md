@@ -12,9 +12,7 @@ Where this zone's teleport columns stand (dots, labelled with the destination �
 the column is currently switched off), the landing spots of teleports arriving from other
 zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
 tile coordinates the server records.
-This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line
-between the pair's two locations stays lit.
-
+The dashed lines connect the pairs of local (in-zone) teleport columns.
 
 An **open PvP** zone of the alpha tier — the richest ore configuration in the game and
 the place where the rare types live. Everything New Virginia has, plus epriton, silgium, and

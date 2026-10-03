@@ -77,6 +77,12 @@ public static class Program
         var (sparksSvg, sparkCount, sparkEdges) = SparksTree.Build(db);
         File.WriteAllText(Path.Combine(wikiRoot, "static", "sparks-tree.svg"), sparksSvg);
         Console.WriteLine($"wrote static/sparks-tree.svg ({sparkCount} sparks, {sparkEdges} bundle entries)");
+        // Spark family overview (inlined in the sparks page) + the page itself:
+        // the hand-written prose plus a generated family graph whose boxes link
+        // to the per-family card sections (#family-<slug>).
+        var sparkFamilies = SparksPage.BuildFamilies(db);
+        var sparkFamilySvg = SparksFamilySvg.Build(
+            sparkFamilies.Select(f => new SparkFamilyInfo(f.Label, f.Slug, f.Color, f.Sparks.Count, f.Box)).ToList());
         var pages = new List<(string File, string Content)>
         {
             ("ores.md", OresPage.Build(db, defs).Index),
@@ -88,8 +94,12 @@ public static class Program
             ("missions.md", MissionsPage.Build(db)),
             ("shop.md", ShopPage.Build(db, shop)),
             ("recipes.md", RecipesPage.Build(db, defs)),
-        ("stat-reference.md", StatsReferencePage.Build(db)),
+            ("stat-reference.md", StatsReferencePage.Build(db)),
         };
+        // The sparks page lives in content/features (not the generated
+        // content/content tree): the generator owns its whole content now.
+        File.WriteAllText(Path.Combine(wikiRoot, "content", "features", "sparks.md"), SparksPage.Build(db, sparkFamilySvg));
+        Console.WriteLine("wrote content/features/sparks.md");
         // The shop catalog is one page per category under shop/.
         foreach (var (_, slug, _) in ShopPage.Categories)
         {

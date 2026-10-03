@@ -9,7 +9,7 @@ description: "Training protected zone: 15 plant species, 1024×1024 tiles."
 
 ![Teleport columns in Virtual Training Grounds (zone_training)](/zonemaps/zone-training.svg)
 
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records. This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line between the pair's two locations stays lit.
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records. The dashed lines connect the pairs of local (in-zone) teleport columns.
 
 The virtual training island — where new characters start and learn the basics.
 

@@ -8,419 +8,955 @@ description: "Every zone drawn with its real terrain at its grid position, outli
 
 # World
 
-All zones of the server, drawn at their real grid coordinates — each island is its own terrain map (the color mode of the zone's teleport map, downscaled), sized to its real width in tiles (the legend below the map shows the sizes). The outline colors group the galaxies; grey is the special zones (training, PvP arena, strongholds). The thin lines are the inter-zone teleport columns recorded in the database (the count per pair is in the line tooltip); the dashed lines are the stronghold/PvP-arena exit gates. Islands that have local (in-zone) teleports carry their endpoint dots — **move the cursor near a dot and the dashed line between the pair's two locations stays lit** (zoom in to see them clearly). **Scroll over the map to zoom** (no key needed), **drag to pan**, and click an island to open its page (islands without a dedicated page go to the [zone index](/zones/zone-index/)). Hover an island for its name, protection level and coordinates.
+All zones of the server, drawn at their real grid coordinates — each island in the same design as its index card below (the coastline outline in the galaxy family color, sized to its real width in tiles, the legend below the map shows the sizes). The dashed lines are the inter-zone teleport columns recorded in the database, colored from the source island's family color to the destination's (the count per pair is in the line tooltip); the light dashed lines are the stronghold/PvP-arena exit gates. **Scroll over the map to zoom** (no key needed), **drag to pan**, and click an island to open its page (islands without a dedicated page go to the [zone index](/zones/zone-index/)). Hover an island for its name, protection level and coordinates.
 
 <div class="zonemap-wrap">
 <button type="button" class="zonemap-reset" title="Reset the zoom">⟲</button>
-<svg viewBox="0 0 1000 1477" role="img" aria-label="Map of all game zones, each drawn with its real terrain at its grid position, outlined by galaxy family" class="zonemap" xmlns="http://www.w3.org/2000/svg">
-  <title>Map of all game zones, each drawn with its real terrain at its grid position</title>
-  <line x1="404.6" y1="540.6" x2="367.5" y2="716.8" class="zonemap-tp"><title>zone_ASI_A_real — zone_asi_g_4 (2 TP points)</title></line>
-  <line x1="404.6" y1="540.6" x2="404.6" y2="484.9" class="zonemap-tp"><title>zone_ASI_A_real — zone_ASI_pvp (2 TP points)</title></line>
-  <line x1="404.6" y1="540.6" x2="329.7" y2="921.6" class="zonemap-tp"><title>zone_ASI_A_real — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="404.6" y1="540.6" x2="478.8" y2="568.4" class="zonemap-tp"><title>zone_ASI_A_real — zone_ICS_pvp (2 TP points)</title></line>
-  <line x1="404.6" y1="540.6" x2="460.3" y2="512.7" class="zonemap-tp"><title>zone_ASI_A_real — zone_TM_pve (3 TP points)</title></line>
-  <line x1="130.4" y1="575.8" x2="367.5" y2="716.8" class="zonemap-tp"><title>zone_asi_g_1 — zone_asi_g_4 (2 TP points)</title></line>
-  <line x1="130.4" y1="575.8" x2="404.6" y2="484.9" class="zonemap-tp"><title>zone_asi_g_1 — zone_ASI_pvp (2 TP points)</title></line>
-  <line x1="367.5" y1="716.8" x2="404.6" y2="540.6" class="zonemap-tp"><title>zone_asi_g_4 — zone_ASI_A_real (2 TP points)</title></line>
-  <line x1="367.5" y1="716.8" x2="130.4" y2="575.8" class="zonemap-tp"><title>zone_asi_g_4 — zone_asi_g_1 (1 TP point)</title></line>
-  <line x1="355.1" y1="512.7" x2="531.3" y2="435.4" class="zonemap-tp"><title>zone_ASI_pve — zone_ICS (1 TP point)</title></line>
-  <line x1="355.1" y1="512.7" x2="528.4" y2="590.1" class="zonemap-tp"><title>zone_ASI_pve — zone_ICS_pve (1 TP point)</title></line>
-  <line x1="355.1" y1="512.7" x2="460.3" y2="512.7" class="zonemap-tp"><title>zone_ASI_pve — zone_TM_pve (1 TP point)</title></line>
-  <line x1="404.6" y1="484.9" x2="404.6" y2="540.6" class="zonemap-tp"><title>zone_ASI_pvp — zone_ASI_A_real (2 TP points)</title></line>
-  <line x1="404.6" y1="484.9" x2="130.4" y2="575.8" class="zonemap-tp"><title>zone_ASI_pvp — zone_asi_g_1 (2 TP points)</title></line>
-  <line x1="404.6" y1="484.9" x2="319.6" y2="1090.3" class="zonemap-tp"><title>zone_ASI_pvp — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="404.6" y1="484.9" x2="478.8" y2="457.1" class="zonemap-tp"><title>zone_ASI_pvp — zone_TM_A_real (2 TP points)</title></line>
-  <line x1="673.4" y1="1075" x2="700" y2="1013.4" class="zonemap-tp"><title>zone_gamma_tc_z100 — zone_gamma_z112 (1 TP point)</title></line>
-  <line x1="673.4" y1="1075" x2="556.2" y2="1117.1" class="zonemap-tp"><title>zone_gamma_tc_z100 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="673.4" y1="1075" x2="761.1" y2="1122.7" class="zonemap-tp"><title>zone_gamma_tc_z100 — zone_gamma_z130 (1 TP point)</title></line>
-  <line x1="673.4" y1="1075" x2="553" y2="484.9" class="zonemap-tp"><title>zone_gamma_tc_z100 — zone_TM_pvp (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="556.2" y2="1117.1" class="zonemap-tp"><title>zone_gamma_tc_z101 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="363.2" y2="1156.5" class="zonemap-tp"><title>zone_gamma_tc_z101 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="567.4" y2="1320.5" class="zonemap-tp"><title>zone_gamma_tc_z101 — zone_gamma_z125 (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="478.8" y2="457.1" class="zonemap-tp"><title>zone_gamma_tc_z101 — zone_TM_A_real (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="404.6" y2="484.9" class="zonemap-tp"><title>zone_gamma_tc_z102 — zone_ASI_pvp (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="363.2" y2="1156.5" class="zonemap-tp"><title>zone_gamma_tc_z102 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="258.7" y2="1023.9" class="zonemap-tp"><title>zone_gamma_tc_z102 — zone_gamma_z116 (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="247.5" y2="1178.2" class="zonemap-tp"><title>zone_gamma_tc_z102 — zone_gamma_z120 (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="404.6" y2="540.6" class="zonemap-tp"><title>zone_gamma_tc_z103 — zone_ASI_A_real (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="397" y2="906.5" class="zonemap-tp"><title>zone_gamma_tc_z103 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="258.7" y2="1023.9" class="zonemap-tp"><title>zone_gamma_tc_z103 — zone_gamma_z116 (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="206.5" y2="945.1" class="zonemap-tp"><title>zone_gamma_tc_z103 — zone_gamma_z117 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="397" y2="906.5" class="zonemap-tp"><title>zone_gamma_tc_z104 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="639" y2="949.1" class="zonemap-tp"><title>zone_gamma_tc_z104 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="561" y2="711.1" class="zonemap-tp"><title>zone_gamma_tc_z104 — zone_gamma_z137 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="478.8" y2="568.4" class="zonemap-tp"><title>zone_gamma_tc_z104 — zone_ICS_pvp (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="639" y2="949.1" class="zonemap-tp"><title>zone_gamma_tc_z105 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="700" y2="1013.4" class="zonemap-tp"><title>zone_gamma_tc_z105 — zone_gamma_z112 (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="815" y2="962.8" class="zonemap-tp"><title>zone_gamma_tc_z105 — zone_gamma_z132 (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="553" y2="540.6" class="zonemap-tp"><title>zone_gamma_tc_z105 — zone_ICS_A_real (1 TP point)</title></line>
-  <line x1="566.6" y1="1033.5" x2="495.9" y2="1003" class="zonemap-tp"><title>zone_gamma_z106 — zone_gamma_z107 (1 TP point)</title></line>
-  <line x1="566.6" y1="1033.5" x2="700" y2="1013.4" class="zonemap-tp"><title>zone_gamma_z106 — zone_gamma_z112 (1 TP point)</title></line>
-  <line x1="495.9" y1="1003" x2="566.6" y2="1033.5" class="zonemap-tp"><title>zone_gamma_z107 — zone_gamma_z106 (1 TP point)</title></line>
-  <line x1="495.9" y1="1003" x2="381.7" y2="1021.9" class="zonemap-tp"><title>zone_gamma_z107 — zone_gamma_z108 (1 TP point)</title></line>
-  <line x1="381.7" y1="1021.9" x2="495.9" y2="1003" class="zonemap-tp"><title>zone_gamma_z108 — zone_gamma_z107 (1 TP point)</title></line>
-  <line x1="381.7" y1="1021.9" x2="258.7" y2="1023.9" class="zonemap-tp"><title>zone_gamma_z108 — zone_gamma_z116 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="329.7" y2="921.6" class="zonemap-tp"><title>zone_gamma_z109 — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="537.2" y2="773" class="zonemap-tp"><title>zone_gamma_z109 — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="524" y2="888" class="zonemap-tp"><title>zone_gamma_z109 — zone_gamma_z110 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="401.8" y2="822.1" class="zonemap-tp"><title>zone_gamma_z109 — zone_gamma_z139 (1 TP point)</title></line>
-  <line x1="524" y1="888" x2="397" y2="906.5" class="zonemap-tp"><title>zone_gamma_z110 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="524" y1="888" x2="639" y2="949.1" class="zonemap-tp"><title>zone_gamma_z110 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="537.2" y2="773" class="zonemap-tp"><title>zone_gamma_z111 — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="743.7" y2="929" class="zonemap-tp"><title>zone_gamma_z111 — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="524" y2="888" class="zonemap-tp"><title>zone_gamma_z111 — zone_gamma_z110 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="663.9" y2="849.4" class="zonemap-tp"><title>zone_gamma_z111 — zone_gamma_z135 (1 TP point)</title></line>
-  <line x1="700" y1="1013.4" x2="673.4" y2="1075" class="zonemap-tp"><title>zone_gamma_z112 — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="700" y1="1013.4" x2="743.7" y2="929" class="zonemap-tp"><title>zone_gamma_z112 — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="700" y1="1013.4" x2="566.6" y2="1033.5" class="zonemap-tp"><title>zone_gamma_z112 — zone_gamma_z106 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="673.4" y2="1075" class="zonemap-tp"><title>zone_gamma_z113 — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="511.7" y2="1171.4" class="zonemap-tp"><title>zone_gamma_z113 — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="429.2" y2="1115.5" class="zonemap-tp"><title>zone_gamma_z113 — zone_gamma_z114 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="587.5" y2="1209.6" class="zonemap-tp"><title>zone_gamma_z113 — zone_gamma_z127 (1 TP point)</title></line>
-  <line x1="429.2" y1="1115.5" x2="556.2" y2="1117.1" class="zonemap-tp"><title>zone_gamma_z114 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="429.2" y1="1115.5" x2="363.2" y2="1156.5" class="zonemap-tp"><title>zone_gamma_z114 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="511.7" y2="1171.4" class="zonemap-tp"><title>zone_gamma_z115 — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="319.6" y2="1090.3" class="zonemap-tp"><title>zone_gamma_z115 — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="429.2" y2="1115.5" class="zonemap-tp"><title>zone_gamma_z115 — zone_gamma_z114 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="418.7" y2="1281.9" class="zonemap-tp"><title>zone_gamma_z115 — zone_gamma_z123 (1 TP point)</title></line>
-  <line x1="258.7" y1="1023.9" x2="319.6" y2="1090.3" class="zonemap-tp"><title>zone_gamma_z116 — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="258.7" y1="1023.9" x2="329.7" y2="921.6" class="zonemap-tp"><title>zone_gamma_z116 — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="258.7" y1="1023.9" x2="381.7" y2="1021.9" class="zonemap-tp"><title>zone_gamma_z116 — zone_gamma_z108 (1 TP point)</title></line>
-  <line x1="206.5" y1="945.1" x2="329.7" y2="921.6" class="zonemap-tp"><title>zone_gamma_z117 — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="206.5" y1="945.1" x2="171.1" y2="858.3" class="zonemap-tp"><title>zone_gamma_z117 — zone_gamma_z118 (1 TP point)</title></line>
-  <line x1="206.5" y1="945.1" x2="152.5" y2="1085.8" class="zonemap-tp"><title>zone_gamma_z117 — zone_gamma_z119 (1 TP point)</title></line>
-  <line x1="171.1" y1="858.3" x2="206.5" y2="945.1" class="zonemap-tp"><title>zone_gamma_z118 — zone_gamma_z117 (1 TP point)</title></line>
-  <line x1="171.1" y1="858.3" x2="253.1" y2="824.5" class="zonemap-tp"><title>zone_gamma_z118 — zone_gamma_z140 (1 TP point)</title></line>
-  <line x1="152.5" y1="1085.8" x2="206.5" y2="945.1" class="zonemap-tp"><title>zone_gamma_z119 — zone_gamma_z117 (1 TP point)</title></line>
-  <line x1="152.5" y1="1085.8" x2="247.5" y2="1178.2" class="zonemap-tp"><title>zone_gamma_z119 — zone_gamma_z120 (1 TP point)</title></line>
-  <line x1="247.5" y1="1178.2" x2="319.6" y2="1090.3" class="zonemap-tp"><title>zone_gamma_z120 — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="247.5" y1="1178.2" x2="152.5" y2="1085.8" class="zonemap-tp"><title>zone_gamma_z120 — zone_gamma_z119 (1 TP point)</title></line>
-  <line x1="247.5" y1="1178.2" x2="265.2" y2="1264.2" class="zonemap-tp"><title>zone_gamma_z120 — zone_gamma_z121 (1 TP point)</title></line>
-  <line x1="265.2" y1="1264.2" x2="247.5" y2="1178.2" class="zonemap-tp"><title>zone_gamma_z121 — zone_gamma_z120 (1 TP point)</title></line>
-  <line x1="265.2" y1="1264.2" x2="332.7" y2="1312.5" class="zonemap-tp"><title>zone_gamma_z121 — zone_gamma_z122 (1 TP point)</title></line>
-  <line x1="332.7" y1="1312.5" x2="265.2" y2="1264.2" class="zonemap-tp"><title>zone_gamma_z122 — zone_gamma_z121 (1 TP point)</title></line>
-  <line x1="332.7" y1="1312.5" x2="418.7" y2="1281.9" class="zonemap-tp"><title>zone_gamma_z122 — zone_gamma_z123 (1 TP point)</title></line>
-  <line x1="418.7" y1="1281.9" x2="363.2" y2="1156.5" class="zonemap-tp"><title>zone_gamma_z123 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="418.7" y1="1281.9" x2="332.7" y2="1312.5" class="zonemap-tp"><title>zone_gamma_z123 — zone_gamma_z122 (1 TP point)</title></line>
-  <line x1="418.7" y1="1281.9" x2="489.4" y2="1354.2" class="zonemap-tp"><title>zone_gamma_z123 — zone_gamma_z124 (1 TP point)</title></line>
-  <line x1="489.4" y1="1354.2" x2="418.7" y2="1281.9" class="zonemap-tp"><title>zone_gamma_z124 — zone_gamma_z123 (1 TP point)</title></line>
-  <line x1="489.4" y1="1354.2" x2="567.4" y2="1320.5" class="zonemap-tp"><title>zone_gamma_z124 — zone_gamma_z125 (1 TP point)</title></line>
-  <line x1="567.4" y1="1320.5" x2="511.7" y2="1171.4" class="zonemap-tp"><title>zone_gamma_z125 — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="567.4" y1="1320.5" x2="489.4" y2="1354.2" class="zonemap-tp"><title>zone_gamma_z125 — zone_gamma_z124 (1 TP point)</title></line>
-  <line x1="567.4" y1="1320.5" x2="652.6" y2="1298.9" class="zonemap-tp"><title>zone_gamma_z125 — zone_gamma_z126 (1 TP point)</title></line>
-  <line x1="652.6" y1="1298.9" x2="567.4" y2="1320.5" class="zonemap-tp"><title>zone_gamma_z126 — zone_gamma_z125 (1 TP point)</title></line>
-  <line x1="652.6" y1="1298.9" x2="587.5" y2="1209.6" class="zonemap-tp"><title>zone_gamma_z126 — zone_gamma_z127 (1 TP point)</title></line>
-  <line x1="587.5" y1="1209.6" x2="556.2" y2="1117.1" class="zonemap-tp"><title>zone_gamma_z127 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="587.5" y1="1209.6" x2="652.6" y2="1298.9" class="zonemap-tp"><title>zone_gamma_z127 — zone_gamma_z126 (1 TP point)</title></line>
-  <line x1="587.5" y1="1209.6" x2="674.3" y2="1179" class="zonemap-tp"><title>zone_gamma_z127 — zone_gamma_z128 (1 TP point)</title></line>
-  <line x1="674.3" y1="1179" x2="587.5" y2="1209.6" class="zonemap-tp"><title>zone_gamma_z128 — zone_gamma_z127 (1 TP point)</title></line>
-  <line x1="674.3" y1="1179" x2="764.4" y2="1190.3" class="zonemap-tp"><title>zone_gamma_z128 — zone_gamma_z129 (1 TP point)</title></line>
-  <line x1="764.4" y1="1190.3" x2="674.3" y2="1179" class="zonemap-tp"><title>zone_gamma_z129 — zone_gamma_z128 (1 TP point)</title></line>
-  <line x1="764.4" y1="1190.3" x2="761.1" y2="1122.7" class="zonemap-tp"><title>zone_gamma_z129 — zone_gamma_z130 (1 TP point)</title></line>
-  <line x1="761.1" y1="1122.7" x2="673.4" y2="1075" class="zonemap-tp"><title>zone_gamma_z130 — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="761.1" y1="1122.7" x2="764.4" y2="1190.3" class="zonemap-tp"><title>zone_gamma_z130 — zone_gamma_z129 (1 TP point)</title></line>
-  <line x1="761.1" y1="1122.7" x2="818.3" y2="1052.8" class="zonemap-tp"><title>zone_gamma_z130 — zone_gamma_z131 (1 TP point)</title></line>
-  <line x1="818.3" y1="1052.8" x2="761.1" y2="1122.7" class="zonemap-tp"><title>zone_gamma_z131 — zone_gamma_z130 (1 TP point)</title></line>
-  <line x1="818.3" y1="1052.8" x2="815" y2="962.8" class="zonemap-tp"><title>zone_gamma_z131 — zone_gamma_z132 (1 TP point)</title></line>
-  <line x1="815" y1="962.8" x2="743.7" y2="929" class="zonemap-tp"><title>zone_gamma_z132 — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="815" y1="962.8" x2="818.3" y2="1052.8" class="zonemap-tp"><title>zone_gamma_z132 — zone_gamma_z131 (1 TP point)</title></line>
-  <line x1="815" y1="962.8" x2="826.3" y2="876" class="zonemap-tp"><title>zone_gamma_z132 — zone_gamma_z133 (1 TP point)</title></line>
-  <line x1="826.3" y1="876" x2="815" y2="962.8" class="zonemap-tp"><title>zone_gamma_z133 — zone_gamma_z132 (1 TP point)</title></line>
-  <line x1="826.3" y1="876" x2="761.9" y2="823.7" class="zonemap-tp"><title>zone_gamma_z133 — zone_gamma_z134 (1 TP point)</title></line>
-  <line x1="761.9" y1="823.7" x2="826.3" y2="876" class="zonemap-tp"><title>zone_gamma_z134 — zone_gamma_z133 (1 TP point)</title></line>
-  <line x1="761.9" y1="823.7" x2="663.9" y2="849.4" class="zonemap-tp"><title>zone_gamma_z134 — zone_gamma_z135 (1 TP point)</title></line>
-  <line x1="663.9" y1="849.4" x2="639" y2="949.1" class="zonemap-tp"><title>zone_gamma_z135 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="663.9" y1="849.4" x2="761.9" y2="823.7" class="zonemap-tp"><title>zone_gamma_z135 — zone_gamma_z134 (1 TP point)</title></line>
-  <line x1="663.9" y1="849.4" x2="689.6" y2="740.9" class="zonemap-tp"><title>zone_gamma_z135 — zone_gamma_z136 (1 TP point)</title></line>
-  <line x1="689.6" y1="740.9" x2="663.9" y2="849.4" class="zonemap-tp"><title>zone_gamma_z136 — zone_gamma_z135 (1 TP point)</title></line>
-  <line x1="689.6" y1="740.9" x2="561" y2="711.1" class="zonemap-tp"><title>zone_gamma_z136 — zone_gamma_z137 (1 TP point)</title></line>
-  <line x1="561" y1="711.1" x2="537.2" y2="773" class="zonemap-tp"><title>zone_gamma_z137 — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="561" y1="711.1" x2="689.6" y2="740.9" class="zonemap-tp"><title>zone_gamma_z137 — zone_gamma_z136 (1 TP point)</title></line>
-  <line x1="561" y1="711.1" x2="410.7" y2="755.4" class="zonemap-tp"><title>zone_gamma_z137 — zone_gamma_z138 (1 TP point)</title></line>
-  <line x1="410.7" y1="755.4" x2="561" y2="711.1" class="zonemap-tp"><title>zone_gamma_z138 — zone_gamma_z137 (1 TP point)</title></line>
-  <line x1="410.7" y1="755.4" x2="401.8" y2="822.1" class="zonemap-tp"><title>zone_gamma_z138 — zone_gamma_z139 (1 TP point)</title></line>
-  <line x1="401.8" y1="822.1" x2="397" y2="906.5" class="zonemap-tp"><title>zone_gamma_z139 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="401.8" y1="822.1" x2="410.7" y2="755.4" class="zonemap-tp"><title>zone_gamma_z139 — zone_gamma_z138 (1 TP point)</title></line>
-  <line x1="401.8" y1="822.1" x2="253.1" y2="824.5" class="zonemap-tp"><title>zone_gamma_z139 — zone_gamma_z140 (1 TP point)</title></line>
-  <line x1="253.1" y1="824.5" x2="171.1" y2="858.3" class="zonemap-tp"><title>zone_gamma_z140 — zone_gamma_z118 (1 TP point)</title></line>
-  <line x1="253.1" y1="824.5" x2="401.8" y2="822.1" class="zonemap-tp"><title>zone_gamma_z140 — zone_gamma_z139 (1 TP point)</title></line>
-  <line x1="531.3" y1="435.4" x2="355.1" y2="512.7" class="zonemap-tp"><title>zone_ICS — zone_ASI_pve (1 TP point)</title></line>
-  <line x1="531.3" y1="435.4" x2="528.4" y2="590.1" class="zonemap-tp"><title>zone_ICS — zone_ICS_pve (1 TP point)</title></line>
-  <line x1="531.3" y1="435.4" x2="460.3" y2="512.7" class="zonemap-tp"><title>zone_ICS — zone_TM_pve (1 TP point)</title></line>
-  <line x1="553" y1="540.6" x2="743.7" y2="929" class="zonemap-tp"><title>zone_ICS_A_real — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="553" y1="540.6" x2="563.1" y2="889.7" class="zonemap-tp"><title>zone_ICS_A_real — zone_ics_g_3 (2 TP points)</title></line>
-  <line x1="553" y1="540.6" x2="478.8" y2="568.4" class="zonemap-tp"><title>zone_ICS_A_real — zone_ICS_pvp (2 TP points)</title></line>
-  <line x1="553" y1="540.6" x2="460.3" y2="512.7" class="zonemap-tp"><title>zone_ICS_A_real — zone_TM_pve (3 TP points)</title></line>
-  <line x1="553" y1="540.6" x2="553" y2="484.9" class="zonemap-tp"><title>zone_ICS_A_real — zone_TM_pvp (2 TP points)</title></line>
-  <line x1="563.1" y1="889.7" x2="553" y2="540.6" class="zonemap-tp"><title>zone_ics_g_3 — zone_ICS_A_real (2 TP points)</title></line>
-  <line x1="563.1" y1="889.7" x2="478.8" y2="679.7" class="zonemap-tp"><title>zone_ics_g_3 — zone_ics_g_8 (2 TP points)</title></line>
-  <line x1="478.8" y1="679.7" x2="563.1" y2="889.7" class="zonemap-tp"><title>zone_ics_g_8 — zone_ics_g_3 (2 TP points)</title></line>
-  <line x1="478.8" y1="679.7" x2="478.8" y2="568.4" class="zonemap-tp"><title>zone_ics_g_8 — zone_ICS_pvp (2 TP points)</title></line>
-  <line x1="528.4" y1="590.1" x2="355.1" y2="512.7" class="zonemap-tp"><title>zone_ICS_pve — zone_ASI_pve (1 TP point)</title></line>
-  <line x1="528.4" y1="590.1" x2="531.3" y2="435.4" class="zonemap-tp"><title>zone_ICS_pve — zone_ICS (1 TP point)</title></line>
-  <line x1="528.4" y1="590.1" x2="460.3" y2="512.7" class="zonemap-tp"><title>zone_ICS_pve — zone_TM_pve (1 TP point)</title></line>
-  <line x1="478.8" y1="568.4" x2="404.6" y2="540.6" class="zonemap-tp"><title>zone_ICS_pvp — zone_ASI_A_real (2 TP points)</title></line>
-  <line x1="478.8" y1="568.4" x2="537.2" y2="773" class="zonemap-tp"><title>zone_ICS_pvp — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="478.8" y1="568.4" x2="553" y2="540.6" class="zonemap-tp"><title>zone_ICS_pvp — zone_ICS_A_real (2 TP points)</title></line>
-  <line x1="478.8" y1="568.4" x2="478.8" y2="679.7" class="zonemap-tp"><title>zone_ICS_pvp — zone_ics_g_8 (2 TP points)</title></line>
-  <line x1="497.4" y1="512.7" x2="460.3" y2="512.7" class="zonemap-tp"><title>zone_TM — zone_TM_pve (2 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="404.6" y2="484.9" class="zonemap-tp"><title>zone_TM_A_real — zone_ASI_pvp (2 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="511.7" y2="1171.4" class="zonemap-tp"><title>zone_TM_A_real — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="478.8" y1="457.1" x2="800" y2="428.6" class="zonemap-tp"><title>zone_TM_A_real — zone_tm_g_6 (2 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="460.3" y2="512.7" class="zonemap-tp"><title>zone_TM_A_real — zone_TM_pve (3 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="553" y2="484.9" class="zonemap-tp"><title>zone_TM_A_real — zone_TM_pvp (2 TP points)</title></line>
-  <line x1="590.2" y1="716.8" x2="800" y2="428.6" class="zonemap-tp"><title>zone_tm_g_3 — zone_tm_g_6 (2 TP points)</title></line>
-  <line x1="590.2" y1="716.8" x2="553" y2="484.9" class="zonemap-tp"><title>zone_tm_g_3 — zone_TM_pvp (2 TP points)</title></line>
-  <line x1="800" y1="428.6" x2="478.8" y2="457.1" class="zonemap-tp"><title>zone_tm_g_6 — zone_TM_A_real (2 TP points)</title></line>
-  <line x1="800" y1="428.6" x2="590.2" y2="716.8" class="zonemap-tp"><title>zone_tm_g_6 — zone_tm_g_3 (2 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="404.6" y2="540.6" class="zonemap-tp"><title>zone_TM_pve — zone_ASI_A_real (3 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="355.1" y2="512.7" class="zonemap-tp"><title>zone_TM_pve — zone_ASI_pve (1 TP point)</title></line>
-  <line x1="460.3" y1="512.7" x2="531.3" y2="435.4" class="zonemap-tp"><title>zone_TM_pve — zone_ICS (1 TP point)</title></line>
-  <line x1="460.3" y1="512.7" x2="553" y2="540.6" class="zonemap-tp"><title>zone_TM_pve — zone_ICS_A_real (3 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="528.4" y2="590.1" class="zonemap-tp"><title>zone_TM_pve — zone_ICS_pve (1 TP point)</title></line>
-  <line x1="460.3" y1="512.7" x2="497.4" y2="512.7" class="zonemap-tp"><title>zone_TM_pve — zone_TM (2 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="478.8" y2="457.1" class="zonemap-tp"><title>zone_TM_pve — zone_TM_A_real (3 TP points)</title></line>
-  <line x1="553" y1="484.9" x2="673.4" y2="1075" class="zonemap-tp"><title>zone_TM_pvp — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="553" y1="484.9" x2="553" y2="540.6" class="zonemap-tp"><title>zone_TM_pvp — zone_ICS_A_real (2 TP points)</title></line>
-  <line x1="553" y1="484.9" x2="478.8" y2="457.1" class="zonemap-tp"><title>zone_TM_pvp — zone_TM_A_real (2 TP points)</title></line>
-  <line x1="553" y1="484.9" x2="590.2" y2="716.8" class="zonemap-tp"><title>zone_TM_pvp — zone_tm_g_3 (2 TP points)</title></line>
-  <line x1="636.5" y1="355" x2="497.4" y2="512.7" class="zonemap-tp"><title>zone_training — zone_TM (6 TP points)</title></line>
+<svg viewBox="0 0 1000 1477" role="img" aria-label="Map of all game zones at their grid positions, coastline outlines colored by galaxy family, with the teleport and exit-gate connections between them" class="zonemap" xmlns="http://www.w3.org/2000/svg">
+  <title>Map of all game zones at their grid positions, with the teleport and exit-gate connections between them</title>
+  <defs>
+    <linearGradient id="tpg0" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="367.5" y2="716.8">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg1" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="404.6" y2="484.9">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg2" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="329.7" y2="921.6">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg3" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="478.8" y2="568.4">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg4" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="460.3" y2="512.7">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg5" gradientUnits="userSpaceOnUse" x1="130.4" y1="575.8" x2="367.5" y2="716.8">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg6" gradientUnits="userSpaceOnUse" x1="130.4" y1="575.8" x2="404.6" y2="484.9">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg7" gradientUnits="userSpaceOnUse" x1="367.5" y1="716.8" x2="404.6" y2="540.6">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg8" gradientUnits="userSpaceOnUse" x1="367.5" y1="716.8" x2="130.4" y2="575.8">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg9" gradientUnits="userSpaceOnUse" x1="355.1" y1="512.7" x2="531.3" y2="435.4">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg10" gradientUnits="userSpaceOnUse" x1="355.1" y1="512.7" x2="528.4" y2="590.1">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg11" gradientUnits="userSpaceOnUse" x1="355.1" y1="512.7" x2="460.3" y2="512.7">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg12" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="404.6" y2="540.6">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg13" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="130.4" y2="575.8">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg14" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="319.6" y2="1090.3">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg15" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="478.8" y2="457.1">
+      <stop offset="0" stop-color="#f5a05a"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg16" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="700" y2="1013.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg17" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="556.2" y2="1117.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg18" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="761.1" y2="1122.7">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg19" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="553" y2="484.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg20" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="556.2" y2="1117.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg21" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="363.2" y2="1156.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg22" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="567.4" y2="1320.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg23" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="478.8" y2="457.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg24" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="404.6" y2="484.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg25" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="363.2" y2="1156.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg26" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="258.7" y2="1023.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg27" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="247.5" y2="1178.2">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg28" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="404.6" y2="540.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg29" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="397" y2="906.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg30" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="258.7" y2="1023.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg31" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="206.5" y2="945.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg32" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="397" y2="906.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg33" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="639" y2="949.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg34" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="561" y2="711.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg35" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="478.8" y2="568.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg36" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="639" y2="949.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg37" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="700" y2="1013.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg38" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="815" y2="962.8">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg39" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="553" y2="540.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg40" gradientUnits="userSpaceOnUse" x1="566.6" y1="1033.5" x2="495.9" y2="1003">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg41" gradientUnits="userSpaceOnUse" x1="566.6" y1="1033.5" x2="700" y2="1013.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg42" gradientUnits="userSpaceOnUse" x1="495.9" y1="1003" x2="566.6" y2="1033.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg43" gradientUnits="userSpaceOnUse" x1="495.9" y1="1003" x2="381.7" y2="1021.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg44" gradientUnits="userSpaceOnUse" x1="381.7" y1="1021.9" x2="495.9" y2="1003">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg45" gradientUnits="userSpaceOnUse" x1="381.7" y1="1021.9" x2="258.7" y2="1023.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg46" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="329.7" y2="921.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg47" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="537.2" y2="773">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg48" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="524" y2="888">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg49" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="401.8" y2="822.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg50" gradientUnits="userSpaceOnUse" x1="524" y1="888" x2="397" y2="906.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg51" gradientUnits="userSpaceOnUse" x1="524" y1="888" x2="639" y2="949.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg52" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="537.2" y2="773">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg53" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="743.7" y2="929">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg54" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="524" y2="888">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg55" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="663.9" y2="849.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg56" gradientUnits="userSpaceOnUse" x1="700" y1="1013.4" x2="673.4" y2="1075">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg57" gradientUnits="userSpaceOnUse" x1="700" y1="1013.4" x2="743.7" y2="929">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg58" gradientUnits="userSpaceOnUse" x1="700" y1="1013.4" x2="566.6" y2="1033.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg59" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="673.4" y2="1075">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg60" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="511.7" y2="1171.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg61" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="429.2" y2="1115.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg62" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="587.5" y2="1209.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg63" gradientUnits="userSpaceOnUse" x1="429.2" y1="1115.5" x2="556.2" y2="1117.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg64" gradientUnits="userSpaceOnUse" x1="429.2" y1="1115.5" x2="363.2" y2="1156.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg65" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="511.7" y2="1171.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg66" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="319.6" y2="1090.3">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg67" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="429.2" y2="1115.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg68" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="418.7" y2="1281.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg69" gradientUnits="userSpaceOnUse" x1="258.7" y1="1023.9" x2="319.6" y2="1090.3">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg70" gradientUnits="userSpaceOnUse" x1="258.7" y1="1023.9" x2="329.7" y2="921.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg71" gradientUnits="userSpaceOnUse" x1="258.7" y1="1023.9" x2="381.7" y2="1021.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg72" gradientUnits="userSpaceOnUse" x1="206.5" y1="945.1" x2="329.7" y2="921.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg73" gradientUnits="userSpaceOnUse" x1="206.5" y1="945.1" x2="171.1" y2="858.3">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg74" gradientUnits="userSpaceOnUse" x1="206.5" y1="945.1" x2="152.5" y2="1085.8">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg75" gradientUnits="userSpaceOnUse" x1="171.1" y1="858.3" x2="206.5" y2="945.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg76" gradientUnits="userSpaceOnUse" x1="171.1" y1="858.3" x2="253.1" y2="824.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg77" gradientUnits="userSpaceOnUse" x1="152.5" y1="1085.8" x2="206.5" y2="945.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg78" gradientUnits="userSpaceOnUse" x1="152.5" y1="1085.8" x2="247.5" y2="1178.2">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg79" gradientUnits="userSpaceOnUse" x1="247.5" y1="1178.2" x2="319.6" y2="1090.3">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg80" gradientUnits="userSpaceOnUse" x1="247.5" y1="1178.2" x2="152.5" y2="1085.8">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg81" gradientUnits="userSpaceOnUse" x1="247.5" y1="1178.2" x2="265.2" y2="1264.2">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg82" gradientUnits="userSpaceOnUse" x1="265.2" y1="1264.2" x2="247.5" y2="1178.2">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg83" gradientUnits="userSpaceOnUse" x1="265.2" y1="1264.2" x2="332.7" y2="1312.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg84" gradientUnits="userSpaceOnUse" x1="332.7" y1="1312.5" x2="265.2" y2="1264.2">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg85" gradientUnits="userSpaceOnUse" x1="332.7" y1="1312.5" x2="418.7" y2="1281.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg86" gradientUnits="userSpaceOnUse" x1="418.7" y1="1281.9" x2="363.2" y2="1156.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg87" gradientUnits="userSpaceOnUse" x1="418.7" y1="1281.9" x2="332.7" y2="1312.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg88" gradientUnits="userSpaceOnUse" x1="418.7" y1="1281.9" x2="489.4" y2="1354.2">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg89" gradientUnits="userSpaceOnUse" x1="489.4" y1="1354.2" x2="418.7" y2="1281.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg90" gradientUnits="userSpaceOnUse" x1="489.4" y1="1354.2" x2="567.4" y2="1320.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg91" gradientUnits="userSpaceOnUse" x1="567.4" y1="1320.5" x2="511.7" y2="1171.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg92" gradientUnits="userSpaceOnUse" x1="567.4" y1="1320.5" x2="489.4" y2="1354.2">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg93" gradientUnits="userSpaceOnUse" x1="567.4" y1="1320.5" x2="652.6" y2="1298.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg94" gradientUnits="userSpaceOnUse" x1="652.6" y1="1298.9" x2="567.4" y2="1320.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg95" gradientUnits="userSpaceOnUse" x1="652.6" y1="1298.9" x2="587.5" y2="1209.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg96" gradientUnits="userSpaceOnUse" x1="587.5" y1="1209.6" x2="556.2" y2="1117.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg97" gradientUnits="userSpaceOnUse" x1="587.5" y1="1209.6" x2="652.6" y2="1298.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg98" gradientUnits="userSpaceOnUse" x1="587.5" y1="1209.6" x2="674.3" y2="1179">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg99" gradientUnits="userSpaceOnUse" x1="674.3" y1="1179" x2="587.5" y2="1209.6">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg100" gradientUnits="userSpaceOnUse" x1="674.3" y1="1179" x2="764.4" y2="1190.3">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg101" gradientUnits="userSpaceOnUse" x1="764.4" y1="1190.3" x2="674.3" y2="1179">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg102" gradientUnits="userSpaceOnUse" x1="764.4" y1="1190.3" x2="761.1" y2="1122.7">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg103" gradientUnits="userSpaceOnUse" x1="761.1" y1="1122.7" x2="673.4" y2="1075">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg104" gradientUnits="userSpaceOnUse" x1="761.1" y1="1122.7" x2="764.4" y2="1190.3">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg105" gradientUnits="userSpaceOnUse" x1="761.1" y1="1122.7" x2="818.3" y2="1052.8">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg106" gradientUnits="userSpaceOnUse" x1="818.3" y1="1052.8" x2="761.1" y2="1122.7">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg107" gradientUnits="userSpaceOnUse" x1="818.3" y1="1052.8" x2="815" y2="962.8">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg108" gradientUnits="userSpaceOnUse" x1="815" y1="962.8" x2="743.7" y2="929">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg109" gradientUnits="userSpaceOnUse" x1="815" y1="962.8" x2="818.3" y2="1052.8">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg110" gradientUnits="userSpaceOnUse" x1="815" y1="962.8" x2="826.3" y2="876">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg111" gradientUnits="userSpaceOnUse" x1="826.3" y1="876" x2="815" y2="962.8">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg112" gradientUnits="userSpaceOnUse" x1="826.3" y1="876" x2="761.9" y2="823.7">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg113" gradientUnits="userSpaceOnUse" x1="761.9" y1="823.7" x2="826.3" y2="876">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg114" gradientUnits="userSpaceOnUse" x1="761.9" y1="823.7" x2="663.9" y2="849.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg115" gradientUnits="userSpaceOnUse" x1="663.9" y1="849.4" x2="639" y2="949.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg116" gradientUnits="userSpaceOnUse" x1="663.9" y1="849.4" x2="761.9" y2="823.7">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg117" gradientUnits="userSpaceOnUse" x1="663.9" y1="849.4" x2="689.6" y2="740.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg118" gradientUnits="userSpaceOnUse" x1="689.6" y1="740.9" x2="663.9" y2="849.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg119" gradientUnits="userSpaceOnUse" x1="689.6" y1="740.9" x2="561" y2="711.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg120" gradientUnits="userSpaceOnUse" x1="561" y1="711.1" x2="537.2" y2="773">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg121" gradientUnits="userSpaceOnUse" x1="561" y1="711.1" x2="689.6" y2="740.9">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg122" gradientUnits="userSpaceOnUse" x1="561" y1="711.1" x2="410.7" y2="755.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg123" gradientUnits="userSpaceOnUse" x1="410.7" y1="755.4" x2="561" y2="711.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg124" gradientUnits="userSpaceOnUse" x1="410.7" y1="755.4" x2="401.8" y2="822.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg125" gradientUnits="userSpaceOnUse" x1="401.8" y1="822.1" x2="397" y2="906.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg126" gradientUnits="userSpaceOnUse" x1="401.8" y1="822.1" x2="410.7" y2="755.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg127" gradientUnits="userSpaceOnUse" x1="401.8" y1="822.1" x2="253.1" y2="824.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg128" gradientUnits="userSpaceOnUse" x1="253.1" y1="824.5" x2="171.1" y2="858.3">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg129" gradientUnits="userSpaceOnUse" x1="253.1" y1="824.5" x2="401.8" y2="822.1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg130" gradientUnits="userSpaceOnUse" x1="531.3" y1="435.4" x2="355.1" y2="512.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg131" gradientUnits="userSpaceOnUse" x1="531.3" y1="435.4" x2="528.4" y2="590.1">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg132" gradientUnits="userSpaceOnUse" x1="531.3" y1="435.4" x2="460.3" y2="512.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg133" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="743.7" y2="929">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg134" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="563.1" y2="889.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg135" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="478.8" y2="568.4">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg136" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="460.3" y2="512.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg137" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="553" y2="484.9">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg138" gradientUnits="userSpaceOnUse" x1="563.1" y1="889.7" x2="553" y2="540.6">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg139" gradientUnits="userSpaceOnUse" x1="563.1" y1="889.7" x2="478.8" y2="679.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg140" gradientUnits="userSpaceOnUse" x1="478.8" y1="679.7" x2="563.1" y2="889.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg141" gradientUnits="userSpaceOnUse" x1="478.8" y1="679.7" x2="478.8" y2="568.4">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg142" gradientUnits="userSpaceOnUse" x1="528.4" y1="590.1" x2="355.1" y2="512.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg143" gradientUnits="userSpaceOnUse" x1="528.4" y1="590.1" x2="531.3" y2="435.4">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg144" gradientUnits="userSpaceOnUse" x1="528.4" y1="590.1" x2="460.3" y2="512.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg145" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="404.6" y2="540.6">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg146" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="537.2" y2="773">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg147" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="553" y2="540.6">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg148" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="478.8" y2="679.7">
+      <stop offset="0" stop-color="#6ee7a0"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg149" gradientUnits="userSpaceOnUse" x1="497.4" y1="512.7" x2="460.3" y2="512.7">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg150" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="404.6" y2="484.9">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg151" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="511.7" y2="1171.4">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg152" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="800" y2="428.6">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg153" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="460.3" y2="512.7">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg154" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="553" y2="484.9">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg155" gradientUnits="userSpaceOnUse" x1="590.2" y1="716.8" x2="800" y2="428.6">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg156" gradientUnits="userSpaceOnUse" x1="590.2" y1="716.8" x2="553" y2="484.9">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg157" gradientUnits="userSpaceOnUse" x1="800" y1="428.6" x2="478.8" y2="457.1">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg158" gradientUnits="userSpaceOnUse" x1="800" y1="428.6" x2="590.2" y2="716.8">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg159" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="404.6" y2="540.6">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg160" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="355.1" y2="512.7">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#f5a05a"/>
+    </linearGradient>
+    <linearGradient id="tpg161" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="531.3" y2="435.4">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg162" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="553" y2="540.6">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg163" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="528.4" y2="590.1">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg164" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="497.4" y2="512.7">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg165" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="478.8" y2="457.1">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg166" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="673.4" y2="1075">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg167" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="553" y2="540.6">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg168" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="478.8" y2="457.1">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg169" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="590.2" y2="716.8">
+      <stop offset="0" stop-color="#41d3ff"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+    <linearGradient id="tpg170" gradientUnits="userSpaceOnUse" x1="636.5" y1="355" x2="497.4" y2="512.7">
+      <stop offset="0" stop-color="#c8d2e0"/>
+      <stop offset="1" stop-color="#41d3ff"/>
+    </linearGradient>
+  </defs>
+  <line x1="404.6" y1="540.6" x2="367.5" y2="716.8" class="zonemap-tp" stroke="url(#tpg0)"><title>zone_ASI_A_real — zone_asi_g_4 (2 TP points)</title></line>
+  <line x1="404.6" y1="540.6" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg1)"><title>zone_ASI_A_real — zone_ASI_pvp (2 TP points)</title></line>
+  <line x1="404.6" y1="540.6" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg2)"><title>zone_ASI_A_real — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="404.6" y1="540.6" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg3)"><title>zone_ASI_A_real — zone_ICS_pvp (2 TP points)</title></line>
+  <line x1="404.6" y1="540.6" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg4)"><title>zone_ASI_A_real — zone_TM_pve (3 TP points)</title></line>
+  <line x1="130.4" y1="575.8" x2="367.5" y2="716.8" class="zonemap-tp" stroke="url(#tpg5)"><title>zone_asi_g_1 — zone_asi_g_4 (2 TP points)</title></line>
+  <line x1="130.4" y1="575.8" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg6)"><title>zone_asi_g_1 — zone_ASI_pvp (2 TP points)</title></line>
+  <line x1="367.5" y1="716.8" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg7)"><title>zone_asi_g_4 — zone_ASI_A_real (2 TP points)</title></line>
+  <line x1="367.5" y1="716.8" x2="130.4" y2="575.8" class="zonemap-tp" stroke="url(#tpg8)"><title>zone_asi_g_4 — zone_asi_g_1 (1 TP point)</title></line>
+  <line x1="355.1" y1="512.7" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg9)"><title>zone_ASI_pve — zone_ICS (1 TP point)</title></line>
+  <line x1="355.1" y1="512.7" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg10)"><title>zone_ASI_pve — zone_ICS_pve (1 TP point)</title></line>
+  <line x1="355.1" y1="512.7" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg11)"><title>zone_ASI_pve — zone_TM_pve (1 TP point)</title></line>
+  <line x1="404.6" y1="484.9" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg12)"><title>zone_ASI_pvp — zone_ASI_A_real (2 TP points)</title></line>
+  <line x1="404.6" y1="484.9" x2="130.4" y2="575.8" class="zonemap-tp" stroke="url(#tpg13)"><title>zone_ASI_pvp — zone_asi_g_1 (2 TP points)</title></line>
+  <line x1="404.6" y1="484.9" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg14)"><title>zone_ASI_pvp — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="404.6" y1="484.9" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg15)"><title>zone_ASI_pvp — zone_TM_A_real (2 TP points)</title></line>
+  <line x1="673.4" y1="1075" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg16)"><title>zone_gamma_tc_z100 — zone_gamma_z112 (1 TP point)</title></line>
+  <line x1="673.4" y1="1075" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg17)"><title>zone_gamma_tc_z100 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="673.4" y1="1075" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg18)"><title>zone_gamma_tc_z100 — zone_gamma_z130 (1 TP point)</title></line>
+  <line x1="673.4" y1="1075" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg19)"><title>zone_gamma_tc_z100 — zone_TM_pvp (1 TP point)</title></line>
+  <line x1="511.7" y1="1171.4" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg20)"><title>zone_gamma_tc_z101 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="511.7" y1="1171.4" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg21)"><title>zone_gamma_tc_z101 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="511.7" y1="1171.4" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg22)"><title>zone_gamma_tc_z101 — zone_gamma_z125 (1 TP point)</title></line>
+  <line x1="511.7" y1="1171.4" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg23)"><title>zone_gamma_tc_z101 — zone_TM_A_real (1 TP point)</title></line>
+  <line x1="319.6" y1="1090.3" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg24)"><title>zone_gamma_tc_z102 — zone_ASI_pvp (1 TP point)</title></line>
+  <line x1="319.6" y1="1090.3" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg25)"><title>zone_gamma_tc_z102 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="319.6" y1="1090.3" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg26)"><title>zone_gamma_tc_z102 — zone_gamma_z116 (1 TP point)</title></line>
+  <line x1="319.6" y1="1090.3" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg27)"><title>zone_gamma_tc_z102 — zone_gamma_z120 (1 TP point)</title></line>
+  <line x1="329.7" y1="921.6" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg28)"><title>zone_gamma_tc_z103 — zone_ASI_A_real (1 TP point)</title></line>
+  <line x1="329.7" y1="921.6" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg29)"><title>zone_gamma_tc_z103 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="329.7" y1="921.6" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg30)"><title>zone_gamma_tc_z103 — zone_gamma_z116 (1 TP point)</title></line>
+  <line x1="329.7" y1="921.6" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg31)"><title>zone_gamma_tc_z103 — zone_gamma_z117 (1 TP point)</title></line>
+  <line x1="537.2" y1="773" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg32)"><title>zone_gamma_tc_z104 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="537.2" y1="773" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg33)"><title>zone_gamma_tc_z104 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="537.2" y1="773" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg34)"><title>zone_gamma_tc_z104 — zone_gamma_z137 (1 TP point)</title></line>
+  <line x1="537.2" y1="773" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg35)"><title>zone_gamma_tc_z104 — zone_ICS_pvp (1 TP point)</title></line>
+  <line x1="743.7" y1="929" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg36)"><title>zone_gamma_tc_z105 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="743.7" y1="929" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg37)"><title>zone_gamma_tc_z105 — zone_gamma_z112 (1 TP point)</title></line>
+  <line x1="743.7" y1="929" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg38)"><title>zone_gamma_tc_z105 — zone_gamma_z132 (1 TP point)</title></line>
+  <line x1="743.7" y1="929" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg39)"><title>zone_gamma_tc_z105 — zone_ICS_A_real (1 TP point)</title></line>
+  <line x1="566.6" y1="1033.5" x2="495.9" y2="1003" class="zonemap-tp" stroke="url(#tpg40)"><title>zone_gamma_z106 — zone_gamma_z107 (1 TP point)</title></line>
+  <line x1="566.6" y1="1033.5" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg41)"><title>zone_gamma_z106 — zone_gamma_z112 (1 TP point)</title></line>
+  <line x1="495.9" y1="1003" x2="566.6" y2="1033.5" class="zonemap-tp" stroke="url(#tpg42)"><title>zone_gamma_z107 — zone_gamma_z106 (1 TP point)</title></line>
+  <line x1="495.9" y1="1003" x2="381.7" y2="1021.9" class="zonemap-tp" stroke="url(#tpg43)"><title>zone_gamma_z107 — zone_gamma_z108 (1 TP point)</title></line>
+  <line x1="381.7" y1="1021.9" x2="495.9" y2="1003" class="zonemap-tp" stroke="url(#tpg44)"><title>zone_gamma_z108 — zone_gamma_z107 (1 TP point)</title></line>
+  <line x1="381.7" y1="1021.9" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg45)"><title>zone_gamma_z108 — zone_gamma_z116 (1 TP point)</title></line>
+  <line x1="397" y1="906.5" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg46)"><title>zone_gamma_z109 — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="397" y1="906.5" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg47)"><title>zone_gamma_z109 — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="397" y1="906.5" x2="524" y2="888" class="zonemap-tp" stroke="url(#tpg48)"><title>zone_gamma_z109 — zone_gamma_z110 (1 TP point)</title></line>
+  <line x1="397" y1="906.5" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg49)"><title>zone_gamma_z109 — zone_gamma_z139 (1 TP point)</title></line>
+  <line x1="524" y1="888" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg50)"><title>zone_gamma_z110 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="524" y1="888" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg51)"><title>zone_gamma_z110 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="639" y1="949.1" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg52)"><title>zone_gamma_z111 — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="639" y1="949.1" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg53)"><title>zone_gamma_z111 — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="639" y1="949.1" x2="524" y2="888" class="zonemap-tp" stroke="url(#tpg54)"><title>zone_gamma_z111 — zone_gamma_z110 (1 TP point)</title></line>
+  <line x1="639" y1="949.1" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg55)"><title>zone_gamma_z111 — zone_gamma_z135 (1 TP point)</title></line>
+  <line x1="700" y1="1013.4" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg56)"><title>zone_gamma_z112 — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="700" y1="1013.4" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg57)"><title>zone_gamma_z112 — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="700" y1="1013.4" x2="566.6" y2="1033.5" class="zonemap-tp" stroke="url(#tpg58)"><title>zone_gamma_z112 — zone_gamma_z106 (1 TP point)</title></line>
+  <line x1="556.2" y1="1117.1" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg59)"><title>zone_gamma_z113 — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="556.2" y1="1117.1" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg60)"><title>zone_gamma_z113 — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="556.2" y1="1117.1" x2="429.2" y2="1115.5" class="zonemap-tp" stroke="url(#tpg61)"><title>zone_gamma_z113 — zone_gamma_z114 (1 TP point)</title></line>
+  <line x1="556.2" y1="1117.1" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg62)"><title>zone_gamma_z113 — zone_gamma_z127 (1 TP point)</title></line>
+  <line x1="429.2" y1="1115.5" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg63)"><title>zone_gamma_z114 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="429.2" y1="1115.5" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg64)"><title>zone_gamma_z114 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="363.2" y1="1156.5" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg65)"><title>zone_gamma_z115 — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="363.2" y1="1156.5" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg66)"><title>zone_gamma_z115 — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="363.2" y1="1156.5" x2="429.2" y2="1115.5" class="zonemap-tp" stroke="url(#tpg67)"><title>zone_gamma_z115 — zone_gamma_z114 (1 TP point)</title></line>
+  <line x1="363.2" y1="1156.5" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg68)"><title>zone_gamma_z115 — zone_gamma_z123 (1 TP point)</title></line>
+  <line x1="258.7" y1="1023.9" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg69)"><title>zone_gamma_z116 — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="258.7" y1="1023.9" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg70)"><title>zone_gamma_z116 — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="258.7" y1="1023.9" x2="381.7" y2="1021.9" class="zonemap-tp" stroke="url(#tpg71)"><title>zone_gamma_z116 — zone_gamma_z108 (1 TP point)</title></line>
+  <line x1="206.5" y1="945.1" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg72)"><title>zone_gamma_z117 — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="206.5" y1="945.1" x2="171.1" y2="858.3" class="zonemap-tp" stroke="url(#tpg73)"><title>zone_gamma_z117 — zone_gamma_z118 (1 TP point)</title></line>
+  <line x1="206.5" y1="945.1" x2="152.5" y2="1085.8" class="zonemap-tp" stroke="url(#tpg74)"><title>zone_gamma_z117 — zone_gamma_z119 (1 TP point)</title></line>
+  <line x1="171.1" y1="858.3" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg75)"><title>zone_gamma_z118 — zone_gamma_z117 (1 TP point)</title></line>
+  <line x1="171.1" y1="858.3" x2="253.1" y2="824.5" class="zonemap-tp" stroke="url(#tpg76)"><title>zone_gamma_z118 — zone_gamma_z140 (1 TP point)</title></line>
+  <line x1="152.5" y1="1085.8" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg77)"><title>zone_gamma_z119 — zone_gamma_z117 (1 TP point)</title></line>
+  <line x1="152.5" y1="1085.8" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg78)"><title>zone_gamma_z119 — zone_gamma_z120 (1 TP point)</title></line>
+  <line x1="247.5" y1="1178.2" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg79)"><title>zone_gamma_z120 — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="247.5" y1="1178.2" x2="152.5" y2="1085.8" class="zonemap-tp" stroke="url(#tpg80)"><title>zone_gamma_z120 — zone_gamma_z119 (1 TP point)</title></line>
+  <line x1="247.5" y1="1178.2" x2="265.2" y2="1264.2" class="zonemap-tp" stroke="url(#tpg81)"><title>zone_gamma_z120 — zone_gamma_z121 (1 TP point)</title></line>
+  <line x1="265.2" y1="1264.2" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg82)"><title>zone_gamma_z121 — zone_gamma_z120 (1 TP point)</title></line>
+  <line x1="265.2" y1="1264.2" x2="332.7" y2="1312.5" class="zonemap-tp" stroke="url(#tpg83)"><title>zone_gamma_z121 — zone_gamma_z122 (1 TP point)</title></line>
+  <line x1="332.7" y1="1312.5" x2="265.2" y2="1264.2" class="zonemap-tp" stroke="url(#tpg84)"><title>zone_gamma_z122 — zone_gamma_z121 (1 TP point)</title></line>
+  <line x1="332.7" y1="1312.5" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg85)"><title>zone_gamma_z122 — zone_gamma_z123 (1 TP point)</title></line>
+  <line x1="418.7" y1="1281.9" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg86)"><title>zone_gamma_z123 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="418.7" y1="1281.9" x2="332.7" y2="1312.5" class="zonemap-tp" stroke="url(#tpg87)"><title>zone_gamma_z123 — zone_gamma_z122 (1 TP point)</title></line>
+  <line x1="418.7" y1="1281.9" x2="489.4" y2="1354.2" class="zonemap-tp" stroke="url(#tpg88)"><title>zone_gamma_z123 — zone_gamma_z124 (1 TP point)</title></line>
+  <line x1="489.4" y1="1354.2" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg89)"><title>zone_gamma_z124 — zone_gamma_z123 (1 TP point)</title></line>
+  <line x1="489.4" y1="1354.2" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg90)"><title>zone_gamma_z124 — zone_gamma_z125 (1 TP point)</title></line>
+  <line x1="567.4" y1="1320.5" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg91)"><title>zone_gamma_z125 — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="567.4" y1="1320.5" x2="489.4" y2="1354.2" class="zonemap-tp" stroke="url(#tpg92)"><title>zone_gamma_z125 — zone_gamma_z124 (1 TP point)</title></line>
+  <line x1="567.4" y1="1320.5" x2="652.6" y2="1298.9" class="zonemap-tp" stroke="url(#tpg93)"><title>zone_gamma_z125 — zone_gamma_z126 (1 TP point)</title></line>
+  <line x1="652.6" y1="1298.9" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg94)"><title>zone_gamma_z126 — zone_gamma_z125 (1 TP point)</title></line>
+  <line x1="652.6" y1="1298.9" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg95)"><title>zone_gamma_z126 — zone_gamma_z127 (1 TP point)</title></line>
+  <line x1="587.5" y1="1209.6" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg96)"><title>zone_gamma_z127 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="587.5" y1="1209.6" x2="652.6" y2="1298.9" class="zonemap-tp" stroke="url(#tpg97)"><title>zone_gamma_z127 — zone_gamma_z126 (1 TP point)</title></line>
+  <line x1="587.5" y1="1209.6" x2="674.3" y2="1179" class="zonemap-tp" stroke="url(#tpg98)"><title>zone_gamma_z127 — zone_gamma_z128 (1 TP point)</title></line>
+  <line x1="674.3" y1="1179" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg99)"><title>zone_gamma_z128 — zone_gamma_z127 (1 TP point)</title></line>
+  <line x1="674.3" y1="1179" x2="764.4" y2="1190.3" class="zonemap-tp" stroke="url(#tpg100)"><title>zone_gamma_z128 — zone_gamma_z129 (1 TP point)</title></line>
+  <line x1="764.4" y1="1190.3" x2="674.3" y2="1179" class="zonemap-tp" stroke="url(#tpg101)"><title>zone_gamma_z129 — zone_gamma_z128 (1 TP point)</title></line>
+  <line x1="764.4" y1="1190.3" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg102)"><title>zone_gamma_z129 — zone_gamma_z130 (1 TP point)</title></line>
+  <line x1="761.1" y1="1122.7" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg103)"><title>zone_gamma_z130 — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="761.1" y1="1122.7" x2="764.4" y2="1190.3" class="zonemap-tp" stroke="url(#tpg104)"><title>zone_gamma_z130 — zone_gamma_z129 (1 TP point)</title></line>
+  <line x1="761.1" y1="1122.7" x2="818.3" y2="1052.8" class="zonemap-tp" stroke="url(#tpg105)"><title>zone_gamma_z130 — zone_gamma_z131 (1 TP point)</title></line>
+  <line x1="818.3" y1="1052.8" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg106)"><title>zone_gamma_z131 — zone_gamma_z130 (1 TP point)</title></line>
+  <line x1="818.3" y1="1052.8" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg107)"><title>zone_gamma_z131 — zone_gamma_z132 (1 TP point)</title></line>
+  <line x1="815" y1="962.8" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg108)"><title>zone_gamma_z132 — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="815" y1="962.8" x2="818.3" y2="1052.8" class="zonemap-tp" stroke="url(#tpg109)"><title>zone_gamma_z132 — zone_gamma_z131 (1 TP point)</title></line>
+  <line x1="815" y1="962.8" x2="826.3" y2="876" class="zonemap-tp" stroke="url(#tpg110)"><title>zone_gamma_z132 — zone_gamma_z133 (1 TP point)</title></line>
+  <line x1="826.3" y1="876" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg111)"><title>zone_gamma_z133 — zone_gamma_z132 (1 TP point)</title></line>
+  <line x1="826.3" y1="876" x2="761.9" y2="823.7" class="zonemap-tp" stroke="url(#tpg112)"><title>zone_gamma_z133 — zone_gamma_z134 (1 TP point)</title></line>
+  <line x1="761.9" y1="823.7" x2="826.3" y2="876" class="zonemap-tp" stroke="url(#tpg113)"><title>zone_gamma_z134 — zone_gamma_z133 (1 TP point)</title></line>
+  <line x1="761.9" y1="823.7" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg114)"><title>zone_gamma_z134 — zone_gamma_z135 (1 TP point)</title></line>
+  <line x1="663.9" y1="849.4" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg115)"><title>zone_gamma_z135 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="663.9" y1="849.4" x2="761.9" y2="823.7" class="zonemap-tp" stroke="url(#tpg116)"><title>zone_gamma_z135 — zone_gamma_z134 (1 TP point)</title></line>
+  <line x1="663.9" y1="849.4" x2="689.6" y2="740.9" class="zonemap-tp" stroke="url(#tpg117)"><title>zone_gamma_z135 — zone_gamma_z136 (1 TP point)</title></line>
+  <line x1="689.6" y1="740.9" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg118)"><title>zone_gamma_z136 — zone_gamma_z135 (1 TP point)</title></line>
+  <line x1="689.6" y1="740.9" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg119)"><title>zone_gamma_z136 — zone_gamma_z137 (1 TP point)</title></line>
+  <line x1="561" y1="711.1" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg120)"><title>zone_gamma_z137 — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="561" y1="711.1" x2="689.6" y2="740.9" class="zonemap-tp" stroke="url(#tpg121)"><title>zone_gamma_z137 — zone_gamma_z136 (1 TP point)</title></line>
+  <line x1="561" y1="711.1" x2="410.7" y2="755.4" class="zonemap-tp" stroke="url(#tpg122)"><title>zone_gamma_z137 — zone_gamma_z138 (1 TP point)</title></line>
+  <line x1="410.7" y1="755.4" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg123)"><title>zone_gamma_z138 — zone_gamma_z137 (1 TP point)</title></line>
+  <line x1="410.7" y1="755.4" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg124)"><title>zone_gamma_z138 — zone_gamma_z139 (1 TP point)</title></line>
+  <line x1="401.8" y1="822.1" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg125)"><title>zone_gamma_z139 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="401.8" y1="822.1" x2="410.7" y2="755.4" class="zonemap-tp" stroke="url(#tpg126)"><title>zone_gamma_z139 — zone_gamma_z138 (1 TP point)</title></line>
+  <line x1="401.8" y1="822.1" x2="253.1" y2="824.5" class="zonemap-tp" stroke="url(#tpg127)"><title>zone_gamma_z139 — zone_gamma_z140 (1 TP point)</title></line>
+  <line x1="253.1" y1="824.5" x2="171.1" y2="858.3" class="zonemap-tp" stroke="url(#tpg128)"><title>zone_gamma_z140 — zone_gamma_z118 (1 TP point)</title></line>
+  <line x1="253.1" y1="824.5" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg129)"><title>zone_gamma_z140 — zone_gamma_z139 (1 TP point)</title></line>
+  <line x1="531.3" y1="435.4" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg130)"><title>zone_ICS — zone_ASI_pve (1 TP point)</title></line>
+  <line x1="531.3" y1="435.4" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg131)"><title>zone_ICS — zone_ICS_pve (1 TP point)</title></line>
+  <line x1="531.3" y1="435.4" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg132)"><title>zone_ICS — zone_TM_pve (1 TP point)</title></line>
+  <line x1="553" y1="540.6" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg133)"><title>zone_ICS_A_real — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="553" y1="540.6" x2="563.1" y2="889.7" class="zonemap-tp" stroke="url(#tpg134)"><title>zone_ICS_A_real — zone_ics_g_3 (2 TP points)</title></line>
+  <line x1="553" y1="540.6" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg135)"><title>zone_ICS_A_real — zone_ICS_pvp (2 TP points)</title></line>
+  <line x1="553" y1="540.6" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg136)"><title>zone_ICS_A_real — zone_TM_pve (3 TP points)</title></line>
+  <line x1="553" y1="540.6" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg137)"><title>zone_ICS_A_real — zone_TM_pvp (2 TP points)</title></line>
+  <line x1="563.1" y1="889.7" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg138)"><title>zone_ics_g_3 — zone_ICS_A_real (2 TP points)</title></line>
+  <line x1="563.1" y1="889.7" x2="478.8" y2="679.7" class="zonemap-tp" stroke="url(#tpg139)"><title>zone_ics_g_3 — zone_ics_g_8 (2 TP points)</title></line>
+  <line x1="478.8" y1="679.7" x2="563.1" y2="889.7" class="zonemap-tp" stroke="url(#tpg140)"><title>zone_ics_g_8 — zone_ics_g_3 (2 TP points)</title></line>
+  <line x1="478.8" y1="679.7" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg141)"><title>zone_ics_g_8 — zone_ICS_pvp (2 TP points)</title></line>
+  <line x1="528.4" y1="590.1" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg142)"><title>zone_ICS_pve — zone_ASI_pve (1 TP point)</title></line>
+  <line x1="528.4" y1="590.1" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg143)"><title>zone_ICS_pve — zone_ICS (1 TP point)</title></line>
+  <line x1="528.4" y1="590.1" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg144)"><title>zone_ICS_pve — zone_TM_pve (1 TP point)</title></line>
+  <line x1="478.8" y1="568.4" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg145)"><title>zone_ICS_pvp — zone_ASI_A_real (2 TP points)</title></line>
+  <line x1="478.8" y1="568.4" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg146)"><title>zone_ICS_pvp — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="478.8" y1="568.4" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg147)"><title>zone_ICS_pvp — zone_ICS_A_real (2 TP points)</title></line>
+  <line x1="478.8" y1="568.4" x2="478.8" y2="679.7" class="zonemap-tp" stroke="url(#tpg148)"><title>zone_ICS_pvp — zone_ics_g_8 (2 TP points)</title></line>
+  <line x1="497.4" y1="512.7" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg149)"><title>zone_TM — zone_TM_pve (2 TP points)</title></line>
+  <line x1="478.8" y1="457.1" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg150)"><title>zone_TM_A_real — zone_ASI_pvp (2 TP points)</title></line>
+  <line x1="478.8" y1="457.1" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg151)"><title>zone_TM_A_real — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="478.8" y1="457.1" x2="800" y2="428.6" class="zonemap-tp" stroke="url(#tpg152)"><title>zone_TM_A_real — zone_tm_g_6 (2 TP points)</title></line>
+  <line x1="478.8" y1="457.1" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg153)"><title>zone_TM_A_real — zone_TM_pve (3 TP points)</title></line>
+  <line x1="478.8" y1="457.1" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg154)"><title>zone_TM_A_real — zone_TM_pvp (2 TP points)</title></line>
+  <line x1="590.2" y1="716.8" x2="800" y2="428.6" class="zonemap-tp" stroke="url(#tpg155)"><title>zone_tm_g_3 — zone_tm_g_6 (2 TP points)</title></line>
+  <line x1="590.2" y1="716.8" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg156)"><title>zone_tm_g_3 — zone_TM_pvp (2 TP points)</title></line>
+  <line x1="800" y1="428.6" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg157)"><title>zone_tm_g_6 — zone_TM_A_real (2 TP points)</title></line>
+  <line x1="800" y1="428.6" x2="590.2" y2="716.8" class="zonemap-tp" stroke="url(#tpg158)"><title>zone_tm_g_6 — zone_tm_g_3 (2 TP points)</title></line>
+  <line x1="460.3" y1="512.7" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg159)"><title>zone_TM_pve — zone_ASI_A_real (3 TP points)</title></line>
+  <line x1="460.3" y1="512.7" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg160)"><title>zone_TM_pve — zone_ASI_pve (1 TP point)</title></line>
+  <line x1="460.3" y1="512.7" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg161)"><title>zone_TM_pve — zone_ICS (1 TP point)</title></line>
+  <line x1="460.3" y1="512.7" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg162)"><title>zone_TM_pve — zone_ICS_A_real (3 TP points)</title></line>
+  <line x1="460.3" y1="512.7" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg163)"><title>zone_TM_pve — zone_ICS_pve (1 TP point)</title></line>
+  <line x1="460.3" y1="512.7" x2="497.4" y2="512.7" class="zonemap-tp" stroke="url(#tpg164)"><title>zone_TM_pve — zone_TM (2 TP points)</title></line>
+  <line x1="460.3" y1="512.7" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg165)"><title>zone_TM_pve — zone_TM_A_real (3 TP points)</title></line>
+  <line x1="553" y1="484.9" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg166)"><title>zone_TM_pvp — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="553" y1="484.9" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg167)"><title>zone_TM_pvp — zone_ICS_A_real (2 TP points)</title></line>
+  <line x1="553" y1="484.9" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg168)"><title>zone_TM_pvp — zone_TM_A_real (2 TP points)</title></line>
+  <line x1="553" y1="484.9" x2="590.2" y2="716.8" class="zonemap-tp" stroke="url(#tpg169)"><title>zone_TM_pvp — zone_tm_g_3 (2 TP points)</title></line>
+  <line x1="636.5" y1="355" x2="497.4" y2="512.7" class="zonemap-tp" stroke="url(#tpg170)"><title>zone_training — zone_TM (6 TP points)</title></line>
   <line x1="682.9" y1="308.7" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_pvp_arena — zone_TM_pve (exit gate `stronghold_default_exit`)</title></line>
   <line x1="868.5" y1="123.1" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_strghld_70 — zone_TM_pve (exit gate `stronghold_default_exit`)</title></line>
   <line x1="775.7" y1="308.7" x2="497.4" y2="512.7" class="zonemap-link"><title>zone_strghld_71 — zone_TM (exit gate `stronghold_z71_exit`)</title></line>
   <line x1="775.7" y1="290.1" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_strghld_72 — zone_TM_pve (exit gate `stronghold_z72_exit`)</title></line>
-  <a href="/zones/zone-gamma-tc-z100/"><g><rect x="668.4" y="1070" width="10" height="10" rx="3" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z100 — open (beta) · PvP (9488 / -31302)</title></rect><image href="/zonemaps/zone-gamma-tc-z100/world.png" x="668.4" y="1070" width="10" height="10" preserveAspectRatio="none"/><text x="681.4" y="1078.5" font-size="10.5" class="zonemap-label">gamma_tc_z100</text></g></a>
-  <a href="/zones/zone-gamma-tc-z101/"><g><rect x="506.7" y="1166.4" width="10" height="10" rx="3" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z101 — open (beta) · PvP (774 / -36500)</title></rect><image href="/zonemaps/zone-gamma-tc-z101/world.png" x="506.7" y="1166.4" width="10" height="10" preserveAspectRatio="none"/><text x="519.7" y="1174.9" font-size="10.5" class="zonemap-label">gamma_tc_z101</text></g></a>
-  <a href="/zones/zone-gamma-tc-z102/"><g><rect x="314.6" y="1085.3" width="10" height="10" rx="3" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z102 — open (beta) · PvP (-9582 / -32128)</title></rect><image href="/zonemaps/zone-gamma-tc-z102/world.png" x="314.6" y="1085.3" width="10" height="10" preserveAspectRatio="none"/><text x="327.6" y="1093.8" font-size="10.5" class="zonemap-label">gamma_tc_z102</text></g></a>
-  <a href="/zones/zone-gamma-tc-z103/"><g><rect x="324.7" y="916.6" width="10" height="10" rx="3" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z103 — open (beta) · PvP (-9035 / -23034)</title></rect><image href="/zonemaps/zone-gamma-tc-z103/world.png" x="324.7" y="916.6" width="10" height="10" preserveAspectRatio="none"/><text x="337.7" y="925.1" font-size="10.5" class="zonemap-label">gamma_tc_z103</text></g></a>
-  <a href="/zones/zone-gamma-tc-z104/"><g><rect x="532.2" y="768" width="10" height="10" rx="3" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z104 — open (beta) · PvP (2147 / -15026)</title></rect><image href="/zonemaps/zone-gamma-tc-z104/world.png" x="532.2" y="768" width="10" height="10" preserveAspectRatio="none"/><text x="545.2" y="776.5" font-size="10.5" class="zonemap-label">gamma_tc_z104</text></g></a>
-  <a href="/zones/zone-gamma-tc-z105/"><g><rect x="738.7" y="924" width="10" height="10" rx="3" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z105 — open (beta) · PvP (13275 / -23435)</title></rect><image href="/zonemaps/zone-gamma-tc-z105/world.png" x="738.7" y="924" width="10" height="10" preserveAspectRatio="none"/><text x="751.7" y="932.5" font-size="10.5" class="zonemap-label">gamma_tc_z105</text></g></a>
-  <a href="/zones/zone-strghld-71/"><g><circle cx="775.7" cy="308.7" r="5" class="mapfam-special zonemap-node-special"><title>zone_strghld_71 — protected (alpha) · Stronghold (15000 / 10000)</title></circle><image href="/zonemaps/zone-strghld-71/world.png" x="770.7" y="303.7" width="10" height="10" preserveAspectRatio="none"/><text x="783.7" y="313" font-size="13" class="zonemap-label">strghld_71</text></g></a>
-  <a href="/zones/zone-strghld-72/"><g><circle cx="775.7" cy="290.1" r="5" class="mapfam-special zonemap-node-special"><title>zone_strghld_72 — protected (alpha) · Stronghold (15000 / 11000)</title></circle><image href="/zonemaps/zone-strghld-72/world.png" x="770.7" y="285.1" width="10" height="10" preserveAspectRatio="none"/><text x="783.7" y="294.4" font-size="13" class="zonemap-label">strghld_72</text></g></a>
-  <a href="/zones/zone-strghld-70/"><g><circle cx="868.5" cy="123.1" r="7.5" class="mapfam-special zonemap-node-special"><title>zone_strghld_70 — protected (alpha) · Stronghold (20000 / 20000)</title></circle><image href="/zonemaps/zone-strghld-70/world.png" x="861" y="115.6" width="15" height="15" preserveAspectRatio="none"/><text x="879" y="127.4" font-size="13" class="zonemap-label">strghld_70</text></g></a>
-  <a href="/zones/zone-training/"><g><circle cx="636.5" cy="355" r="12" class="mapfam-special zonemap-node-special"><title>zone_training — protected (alpha) · Training (7500 / 7500)</title></circle><image href="/zonemaps/zone-training/world.png" x="624.5" y="343" width="24" height="24" preserveAspectRatio="none"/><text x="651.5" y="359.4" font-size="13" class="zonemap-label">training</text></g></a>
-  <a href="/zones/zone-asi/"><g><rect x="107.3" y="493.7" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_ASI — open (beta) · PvP (-20000 / -1000)</title></rect><image href="/zonemaps/zone-asi/world.png" x="107.3" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="148.3" y="517.1" font-size="13" class="zonemap-label">ASI</text></g></a>
-  <a href="/zones/zone-asi-a-real/"><g><rect x="385.6" y="521.6" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_ASI_A_real — open (beta) · PvP (-5000 / -2500)</title></rect><image href="/zonemaps/zone-asi-a-real/world.png" x="385.6" y="521.6" width="38" height="38" preserveAspectRatio="none"/><text x="426.6" y="544.9" font-size="13" class="zonemap-label">ASI_A_real</text></g></a>
-  <a href="/zones/zone-asi-pve/"><g><rect x="336.1" y="493.7" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_ASI_pve — protected (alpha) · PvE (-7670 / -1000)</title></rect><image href="/zonemaps/zone-asi-pve/world.png" x="336.1" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="377.1" y="517.1" font-size="13" class="zonemap-label">ASI_pve</text></g></a>
-  <a href="/zones/zone-asi-pvp/"><g><rect x="385.6" y="465.9" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_ASI_pvp — open (beta) · PvP (-5000 / 500)</title></rect><image href="/zonemaps/zone-asi-pvp/world.png" x="385.6" y="465.9" width="38" height="38" preserveAspectRatio="none"/><text x="426.6" y="489.2" font-size="13" class="zonemap-label">ASI_pvp</text></g></a>
-  <a href="/zones/zone-ics/"><g><rect x="512.3" y="416.4" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ICS — protected (alpha) · PvE (1826 / 3170)</title></rect><image href="/zonemaps/zone-ics/world.png" x="512.3" y="416.4" width="38" height="38" preserveAspectRatio="none"/><text x="553.3" y="439.7" font-size="13" class="zonemap-label">ICS</text></g></a>
-  <a href="/zones/zone-ics-a-real/"><g><rect x="534" y="521.6" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ICS_A_real — open (beta) · PvP (3000 / -2500)</title></rect><image href="/zonemaps/zone-ics-a-real/world.png" x="534" y="521.6" width="38" height="38" preserveAspectRatio="none"/><text x="575" y="544.9" font-size="13" class="zonemap-label">ICS_A_real</text></g></a>
-  <a href="/zones/zone-ics-pve/"><g><rect x="509.4" y="571.1" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ICS_pve — protected (alpha) · PvE (1670 / -5170)</title></rect><image href="/zonemaps/zone-ics-pve/world.png" x="509.4" y="571.1" width="38" height="38" preserveAspectRatio="none"/><text x="550.4" y="594.5" font-size="13" class="zonemap-label">ICS_pve</text></g></a>
-  <a href="/zones/zone-ics-pvp/"><g><rect x="459.8" y="549.4" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ICS_pvp — open (beta) · PvP (-1000 / -4000)</title></rect><image href="/zonemaps/zone-ics-pvp/world.png" x="459.8" y="549.4" width="38" height="38" preserveAspectRatio="none"/><text x="500.8" y="572.7" font-size="13" class="zonemap-label">ICS_pvp</text></g></a>
-  <a href="/zones/zone-tm/"><g><rect x="478.4" y="493.7" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_TM — protected (alpha) · PvE (0 / -1000)</title></rect><image href="/zonemaps/zone-tm/world.png" x="478.4" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="519.4" y="517.1" font-size="13" class="zonemap-label">TM</text></g></a>
-  <a href="/zones/zone-tm-a-real/"><g><rect x="459.8" y="438.1" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_TM_A_real — open (beta) · PvP (-1000 / 2000)</title></rect><image href="/zonemaps/zone-tm-a-real/world.png" x="459.8" y="438.1" width="38" height="38" preserveAspectRatio="none"/><text x="500.8" y="461.4" font-size="13" class="zonemap-label">TM_A_real</text></g></a>
-  <a href="/zones/zone-tm-pve/"><g><rect x="441.3" y="493.7" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_TM_pve — protected (alpha) · PvE (-2000 / -1000)</title></rect><image href="/zonemaps/zone-tm-pve/world.png" x="441.3" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="482.3" y="517.1" font-size="13" class="zonemap-label">TM_pve</text></g></a>
-  <a href="/zones/zone-tm-pvp/"><g><rect x="534" y="465.9" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_TM_pvp — open (beta) · PvP (3000 / 500)</title></rect><image href="/zonemaps/zone-tm-pvp/world.png" x="534" y="465.9" width="38" height="38" preserveAspectRatio="none"/><text x="575" y="489.2" font-size="13" class="zonemap-label">TM_pvp</text></g></a>
-  <a href="/zones/zone-asi-g-1/"><g><rect x="111.4" y="556.8" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_1 — open (gamma) · PvP (-19779 / -4401)</title></rect><image href="/zonemaps/zone-asi-g-1/world.png" x="111.4" y="556.8" width="38" height="38" preserveAspectRatio="none"/><text x="152.4" y="580.2" font-size="13" class="zonemap-label">asi_g_1</text></g></a>
-  <a href="/zones/zone-asi-g-2/"><g><rect x="165.9" y="465.4" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_2 — open (gamma) · PvP (-16841 / 530)</title></rect><image href="/zonemaps/zone-asi-g-2/world.png" x="165.9" y="465.4" width="38" height="38" preserveAspectRatio="none"/><text x="206.9" y="488.7" font-size="13" class="zonemap-label">asi_g_2</text></g></a>
-  <a href="/zones/zone-asi-g-3/"><g><rect x="64.3" y="458.6" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_3 — open (gamma) · PvP (-22316 / 892)</title></rect><image href="/zonemaps/zone-asi-g-3/world.png" x="64.3" y="458.6" width="38" height="38" preserveAspectRatio="none"/><text x="105.3" y="482" font-size="13" class="zonemap-label">asi_g_3</text></g></a>
-  <a href="/zones/zone-asi-g-4/"><g><rect x="348.5" y="697.8" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_4 — open (gamma) · PvP (-7000 / -12000)</title></rect><image href="/zonemaps/zone-asi-g-4/world.png" x="348.5" y="697.8" width="38" height="38" preserveAspectRatio="none"/><text x="389.5" y="721.2" font-size="13" class="zonemap-label">asi_g_4</text></g></a>
-  <a href="/zones/zone-asi-g-5/"><g><rect x="169.2" y="264.5" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_5 — open (gamma) · PvP (-16663 / 11356)</title></rect><image href="/zonemaps/zone-asi-g-5/world.png" x="169.2" y="264.5" width="38" height="38" preserveAspectRatio="none"/><text x="210.2" y="287.8" font-size="13" class="zonemap-label">asi_g_5</text></g></a>
-  <a href="/zones/zone-asi-g-6/"><g><rect x="64.8" y="254.9" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_6 — open (gamma) · PvP (-22293 / 11874)</title></rect><image href="/zonemaps/zone-asi-g-6/world.png" x="64.8" y="254.9" width="38" height="38" preserveAspectRatio="none"/><text x="105.8" y="278.2" font-size="13" class="zonemap-label">asi_g_6</text></g></a>
-  <a href="/zones/zone-asi-g-7/"><g><rect x="266.6" y="212" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_7 — open (gamma) · PvP (-11413 / 14184)</title></rect><image href="/zonemaps/zone-asi-g-7/world.png" x="266.6" y="212" width="38" height="38" preserveAspectRatio="none"/><text x="307.6" y="235.4" font-size="13" class="zonemap-label">asi_g_7</text></g></a>
-  <a href="/zones/zone-asi-g-8/"><g><rect x="409.3" y="314.8" width="38" height="38" rx="11.4" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_8 — open (gamma) · PvP (-3722 / 8645)</title></rect><image href="/zonemaps/zone-asi-g-8/world.png" x="409.3" y="314.8" width="38" height="38" preserveAspectRatio="none"/><text x="450.3" y="338.1" font-size="13" class="zonemap-label">asi_g_8</text></g></a>
-  <a href="/zones/zone-gamma-z106/"><g><rect x="547.6" y="1014.5" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z106 — open (gamma) · PvP (3731 / -29068)</title></rect><image href="/zonemaps/zone-gamma-z106/world.png" x="547.6" y="1014.5" width="38" height="38" preserveAspectRatio="none"/><text x="588.6" y="1037" font-size="10.5" class="zonemap-label">gamma_z106</text></g></a>
-  <a href="/zones/zone-gamma-z107/"><g><rect x="476.9" y="984" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z107 — open (gamma) · PvP (-81 / -27422)</title></rect><image href="/zonemaps/zone-gamma-z107/world.png" x="476.9" y="984" width="38" height="38" preserveAspectRatio="none"/><text x="517.9" y="1006.5" font-size="10.5" class="zonemap-label">gamma_z107</text></g></a>
-  <a href="/zones/zone-gamma-z108/"><g><rect x="362.7" y="1002.9" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z108 — open (gamma) · PvP (-6233 / -28442)</title></rect><image href="/zonemaps/zone-gamma-z108/world.png" x="362.7" y="1002.9" width="38" height="38" preserveAspectRatio="none"/><text x="403.7" y="1025.4" font-size="10.5" class="zonemap-label">gamma_z108</text></g></a>
-  <a href="/zones/zone-gamma-z109/"><g><rect x="378" y="887.5" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z109 — open (gamma) · PvP (-5410 / -22223)</title></rect><image href="/zonemaps/zone-gamma-z109/world.png" x="378" y="887.5" width="38" height="38" preserveAspectRatio="none"/><text x="419" y="910" font-size="10.5" class="zonemap-label">gamma_z109</text></g></a>
-  <a href="/zones/zone-gamma-z110/"><g><rect x="505" y="869" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z110 — open (beta) · PvP (1435 / -21223)</title></rect><image href="/zonemaps/zone-gamma-z110/world.png" x="505" y="869" width="38" height="38" preserveAspectRatio="none"/><text x="546" y="891.5" font-size="10.5" class="zonemap-label">gamma_z110</text></g></a>
-  <a href="/zones/zone-gamma-z111/"><g><rect x="620" y="930.1" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z111 — open (gamma) · PvP (7630 / -24519)</title></rect><image href="/zonemaps/zone-gamma-z111/world.png" x="620" y="930.1" width="38" height="38" preserveAspectRatio="none"/><text x="661" y="952.6" font-size="10.5" class="zonemap-label">gamma_z111</text></g></a>
-  <a href="/zones/zone-gamma-z112/"><g><rect x="681" y="994.4" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z112 — open (gamma) · PvP (10923 / -27985)</title></rect><image href="/zonemaps/zone-gamma-z112/world.png" x="681" y="994.4" width="38" height="38" preserveAspectRatio="none"/><text x="722" y="1016.9" font-size="10.5" class="zonemap-label">gamma_z112</text></g></a>
-  <a href="/zones/zone-gamma-z113/"><g><rect x="537.2" y="1098.1" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z113 — open (gamma) · PvP (3168 / -33574)</title></rect><image href="/zonemaps/zone-gamma-z113/world.png" x="537.2" y="1098.1" width="38" height="38" preserveAspectRatio="none"/><text x="578.2" y="1120.6" font-size="10.5" class="zonemap-label">gamma_z113</text></g></a>
-  <a href="/zones/zone-gamma-z114/"><g><rect x="410.2" y="1096.5" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z114 — open (beta) · PvP (-3677 / -33487)</title></rect><image href="/zonemaps/zone-gamma-z114/world.png" x="410.2" y="1096.5" width="38" height="38" preserveAspectRatio="none"/><text x="451.2" y="1119" font-size="10.5" class="zonemap-label">gamma_z114</text></g></a>
-  <a href="/zones/zone-gamma-z115/"><g><rect x="344.2" y="1137.5" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z115 — open (gamma) · PvP (-7230 / -35697)</title></rect><image href="/zonemaps/zone-gamma-z115/world.png" x="344.2" y="1137.5" width="38" height="38" preserveAspectRatio="none"/><text x="385.2" y="1160" font-size="10.5" class="zonemap-label">gamma_z115</text></g></a>
-  <a href="/zones/zone-gamma-z116/"><g><rect x="239.7" y="1004.9" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z116 — open (gamma) · PvP (-12862 / -28548)</title></rect><image href="/zonemaps/zone-gamma-z116/world.png" x="239.7" y="1004.9" width="38" height="38" preserveAspectRatio="none"/><text x="280.7" y="1027.4" font-size="10.5" class="zonemap-label">gamma_z116</text></g></a>
-  <a href="/zones/zone-gamma-z117/"><g><rect x="187.5" y="926.1" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z117 — open (gamma) · PvP (-15678 / -24303)</title></rect><image href="/zonemaps/zone-gamma-z117/world.png" x="187.5" y="926.1" width="38" height="38" preserveAspectRatio="none"/><text x="228.5" y="948.6" font-size="10.5" class="zonemap-label">gamma_z117</text></g></a>
-  <a href="/zones/zone-gamma-z118/"><g><rect x="152.1" y="839.3" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z118 — open (gamma) · PvP (-17584 / -19624)</title></rect><image href="/zonemaps/zone-gamma-z118/world.png" x="152.1" y="839.3" width="38" height="38" preserveAspectRatio="none"/><text x="193.1" y="861.8" font-size="10.5" class="zonemap-label">gamma_z118</text></g></a>
-  <a href="/zones/zone-gamma-z119/"><g><rect x="133.5" y="1066.8" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z119 — open (beta) · PvP (-18588 / -31884)</title></rect><image href="/zonemaps/zone-gamma-z119/world.png" x="133.5" y="1066.8" width="38" height="38" preserveAspectRatio="none"/><text x="174.5" y="1089.3" font-size="10.5" class="zonemap-label">gamma_z119</text></g></a>
-  <a href="/zones/zone-gamma-z120/"><g><rect x="228.5" y="1159.2" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z120 — open (gamma) · PvP (-13468 / -36867)</title></rect><image href="/zonemaps/zone-gamma-z120/world.png" x="228.5" y="1159.2" width="38" height="38" preserveAspectRatio="none"/><text x="269.5" y="1181.7" font-size="10.5" class="zonemap-label">gamma_z120</text></g></a>
-  <a href="/zones/zone-gamma-z121/"><g><rect x="246.2" y="1245.2" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z121 — open (gamma) · PvP (-12515 / -41502)</title></rect><image href="/zonemaps/zone-gamma-z121/world.png" x="246.2" y="1245.2" width="38" height="38" preserveAspectRatio="none"/><text x="287.2" y="1267.7" font-size="10.5" class="zonemap-label">gamma_z121</text></g></a>
-  <a href="/zones/zone-gamma-z122/"><g><rect x="313.7" y="1293.5" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z122 — open (gamma) · PvP (-8876 / -44102)</title></rect><image href="/zonemaps/zone-gamma-z122/world.png" x="313.7" y="1293.5" width="38" height="38" preserveAspectRatio="none"/><text x="354.7" y="1316" font-size="10.5" class="zonemap-label">gamma_z122</text></g></a>
-  <a href="/zones/zone-gamma-z123/"><g><rect x="399.7" y="1262.9" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z123 — open (gamma) · PvP (-4240 / -42455)</title></rect><image href="/zonemaps/zone-gamma-z123/world.png" x="399.7" y="1262.9" width="38" height="38" preserveAspectRatio="none"/><text x="440.7" y="1285.4" font-size="10.5" class="zonemap-label">gamma_z123</text></g></a>
-  <a href="/zones/zone-gamma-z124/"><g><rect x="470.4" y="1335.2" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z124 — open (gamma) · PvP (-428 / -46354)</title></rect><image href="/zonemaps/zone-gamma-z124/world.png" x="470.4" y="1335.2" width="38" height="38" preserveAspectRatio="none"/><text x="511.4" y="1357.7" font-size="10.5" class="zonemap-label">gamma_z124</text></g></a>
-  <a href="/zones/zone-gamma-z125/"><g><rect x="548.4" y="1301.5" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z125 — open (gamma) · PvP (3774 / -44535)</title></rect><image href="/zonemaps/zone-gamma-z125/world.png" x="548.4" y="1301.5" width="38" height="38" preserveAspectRatio="none"/><text x="589.4" y="1324" font-size="10.5" class="zonemap-label">gamma_z125</text></g></a>
-  <a href="/zones/zone-gamma-z126/"><g><rect x="633.6" y="1279.9" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z126 — open (gamma) · PvP (8367 / -43372)</title></rect><image href="/zonemaps/zone-gamma-z126/world.png" x="633.6" y="1279.9" width="38" height="38" preserveAspectRatio="none"/><text x="674.6" y="1302.4" font-size="10.5" class="zonemap-label">gamma_z126</text></g></a>
-  <a href="/zones/zone-gamma-z127/"><g><rect x="568.5" y="1190.6" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z127 — open (gamma) · PvP (4858 / -38556)</title></rect><image href="/zonemaps/zone-gamma-z127/world.png" x="568.5" y="1190.6" width="38" height="38" preserveAspectRatio="none"/><text x="609.5" y="1213.1" font-size="10.5" class="zonemap-label">gamma_z127</text></g></a>
-  <a href="/zones/zone-gamma-z128/"><g><rect x="655.3" y="1160" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z128 — open (gamma) · PvP (9536 / -36910)</title></rect><image href="/zonemaps/zone-gamma-z128/world.png" x="655.3" y="1160" width="38" height="38" preserveAspectRatio="none"/><text x="696.3" y="1182.5" font-size="10.5" class="zonemap-label">gamma_z128</text></g></a>
-  <a href="/zones/zone-gamma-z129/"><g><rect x="745.4" y="1171.3" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z129 — open (gamma) · PvP (14389 / -37516)</title></rect><image href="/zonemaps/zone-gamma-z129/world.png" x="745.4" y="1171.3" width="38" height="38" preserveAspectRatio="none"/><text x="786.4" y="1193.8" font-size="10.5" class="zonemap-label">gamma_z129</text></g></a>
-  <a href="/zones/zone-gamma-z130/"><g><rect x="742.1" y="1103.7" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z130 — open (gamma) · PvP (14215 / -33877)</title></rect><image href="/zonemaps/zone-gamma-z130/world.png" x="742.1" y="1103.7" width="38" height="38" preserveAspectRatio="none"/><text x="783.1" y="1126.2" font-size="10.5" class="zonemap-label">gamma_z130</text></g></a>
-  <a href="/zones/zone-gamma-z131/"><g><rect x="799.3" y="1033.8" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z131 — open (beta) · PvP (17299 / -30108)</title></rect><image href="/zonemaps/zone-gamma-z131/world.png" x="799.3" y="1033.8" width="38" height="38" preserveAspectRatio="none"/><text x="840.3" y="1056.3" font-size="10.5" class="zonemap-label">gamma_z131</text></g></a>
-  <a href="/zones/zone-gamma-z132/"><g><rect x="796" y="943.8" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z132 — open (gamma) · PvP (17118 / -25256)</title></rect><image href="/zonemaps/zone-gamma-z132/world.png" x="796" y="943.8" width="38" height="38" preserveAspectRatio="none"/><text x="837" y="966.3" font-size="10.5" class="zonemap-label">gamma_z132</text></g></a>
-  <a href="/zones/zone-gamma-z133/"><g><rect x="807.3" y="857" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z133 — open (gamma) · PvP (17725 / -20577)</title></rect><image href="/zonemaps/zone-gamma-z133/world.png" x="807.3" y="857" width="38" height="38" preserveAspectRatio="none"/><text x="848.3" y="879.5" font-size="10.5" class="zonemap-label">gamma_z133</text></g></a>
-  <a href="/zones/zone-gamma-z134/"><g><rect x="742.9" y="804.7" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z134 — open (gamma) · PvP (14259 / -17761)</title></rect><image href="/zonemaps/zone-gamma-z134/world.png" x="742.9" y="804.7" width="38" height="38" preserveAspectRatio="none"/><text x="783.9" y="827.2" font-size="10.5" class="zonemap-label">gamma_z134</text></g></a>
-  <a href="/zones/zone-gamma-z135/"><g><rect x="644.9" y="830.4" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z135 — open (gamma) · PvP (8973 / -19147)</title></rect><image href="/zonemaps/zone-gamma-z135/world.png" x="644.9" y="830.4" width="38" height="38" preserveAspectRatio="none"/><text x="685.9" y="852.9" font-size="10.5" class="zonemap-label">gamma_z135</text></g></a>
-  <a href="/zones/zone-gamma-z136/"><g><rect x="670.6" y="721.9" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z136 — open (gamma) · PvP (10360 / -13298)</title></rect><image href="/zonemaps/zone-gamma-z136/world.png" x="670.6" y="721.9" width="38" height="38" preserveAspectRatio="none"/><text x="711.6" y="744.4" font-size="10.5" class="zonemap-label">gamma_z136</text></g></a>
-  <a href="/zones/zone-gamma-z137/"><g><rect x="542" y="692.1" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z137 — open (gamma) · PvP (3428 / -11688)</title></rect><image href="/zonemaps/zone-gamma-z137/world.png" x="542" y="692.1" width="38" height="38" preserveAspectRatio="none"/><text x="583" y="714.6" font-size="10.5" class="zonemap-label">gamma_z137</text></g></a>
-  <a href="/zones/zone-gamma-z138/"><g><rect x="391.7" y="736.4" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z138 — open (gamma) · PvP (-4674 / -14078)</title></rect><image href="/zonemaps/zone-gamma-z138/world.png" x="391.7" y="736.4" width="38" height="38" preserveAspectRatio="none"/><text x="432.7" y="758.9" font-size="10.5" class="zonemap-label">gamma_z138</text></g></a>
-  <a href="/zones/zone-gamma-z139/"><g><rect x="382.8" y="803.1" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z139 — open (gamma) · PvP (-5150 / -17674)</title></rect><image href="/zonemaps/zone-gamma-z139/world.png" x="382.8" y="803.1" width="38" height="38" preserveAspectRatio="none"/><text x="423.8" y="825.6" font-size="10.5" class="zonemap-label">gamma_z139</text></g></a>
-  <a href="/zones/zone-gamma-z140/"><g><rect x="234.1" y="805.5" width="38" height="38" rx="11.4" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z140 — open (gamma) · PvP (-13165 / -17804)</title></rect><image href="/zonemaps/zone-gamma-z140/world.png" x="234.1" y="805.5" width="38" height="38" preserveAspectRatio="none"/><text x="275.1" y="828" font-size="10.5" class="zonemap-label">gamma_z140</text></g></a>
-  <a href="/zones/zone-ics-g-1/"><g><rect x="411" y="790.4" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_1 — open (gamma) · PvP (-3634 / -16991)</title></rect><image href="/zonemaps/zone-ics-g-1/world.png" x="411" y="790.4" width="38" height="38" preserveAspectRatio="none"/><text x="452" y="813.8" font-size="13" class="zonemap-label">ics_g_1</text></g></a>
-  <a href="/zones/zone-ics-g-2/"><g><rect x="673" y="831.8" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_2 — open (gamma) · PvP (10490 / -19220)</title></rect><image href="/zonemaps/zone-ics-g-2/world.png" x="673" y="831.8" width="38" height="38" preserveAspectRatio="none"/><text x="714" y="855.1" font-size="13" class="zonemap-label">ics_g_2</text></g></a>
-  <a href="/zones/zone-ics-g-3/"><g><rect x="544.1" y="870.7" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_3 — open (gamma) · PvP (3540 / -21314)</title></rect><image href="/zonemaps/zone-ics-g-3/world.png" x="544.1" y="870.7" width="38" height="38" preserveAspectRatio="none"/><text x="585.1" y="894" font-size="13" class="zonemap-label">ics_g_3</text></g></a>
-  <a href="/zones/zone-ics-g-4/"><g><rect x="795.7" y="880.9" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_4 — open (gamma) · PvP (17102 / -21865)</title></rect><image href="/zonemaps/zone-ics-g-4/world.png" x="795.7" y="880.9" width="38" height="38" preserveAspectRatio="none"/><text x="836.7" y="904.2" font-size="13" class="zonemap-label">ics_g_4</text></g></a>
-  <a href="/zones/zone-ics-g-5/"><g><rect x="897.7" y="884.4" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_5 — open (gamma) · PvP (22598 / -22054)</title></rect><image href="/zonemaps/zone-ics-g-5/world.png" x="897.7" y="884.4" width="38" height="38" preserveAspectRatio="none"/><text x="938.7" y="907.7" font-size="13" class="zonemap-label">ics_g_5</text></g></a>
-  <a href="/zones/zone-ics-g-6/"><g><rect x="269" y="822.4" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_6 — open (gamma) · PvP (-11283 / -18712)</title></rect><image href="/zonemaps/zone-ics-g-6/world.png" x="269" y="822.4" width="38" height="38" preserveAspectRatio="none"/><text x="310" y="845.7" font-size="13" class="zonemap-label">ics_g_6</text></g></a>
-  <a href="/zones/zone-ics-g-7/"><g><rect x="317.3" y="746.2" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_7 — open (gamma) · PvP (-8684 / -14604)</title></rect><image href="/zonemaps/zone-ics-g-7/world.png" x="317.3" y="746.2" width="38" height="38" preserveAspectRatio="none"/><text x="358.3" y="769.5" font-size="13" class="zonemap-label">ics_g_7</text></g></a>
-  <a href="/zones/zone-ics-g-8/"><g><rect x="459.8" y="660.7" width="38" height="38" rx="11.4" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_8 — open (gamma) · PvP (-1000 / -10000)</title></rect><image href="/zonemaps/zone-ics-g-8/world.png" x="459.8" y="660.7" width="38" height="38" preserveAspectRatio="none"/><text x="500.8" y="684.1" font-size="13" class="zonemap-label">ics_g_8</text></g></a>
-  <a href="/zones/zone-pvp-arena/"><g><circle cx="682.9" cy="308.7" r="19" class="mapfam-special zonemap-node-special"><title>zone_pvp_arena — protected (alpha) · Stronghold (10000 / 10000)</title></circle><image href="/zonemaps/zone-pvp-arena/world.png" x="663.9" y="289.7" width="38" height="38" preserveAspectRatio="none"/><text x="704.9" y="313" font-size="13" class="zonemap-label">pvp_arena</text></g></a>
-  <a href="/zones/zone-tm-g-1/"><g><rect x="681.4" y="531" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_1 — open (gamma) · PvP (10943 / -3006)</title></rect><image href="/zonemaps/zone-tm-g-1/world.png" x="681.4" y="531" width="38" height="38" preserveAspectRatio="none"/><text x="722.4" y="554.3" font-size="13" class="zonemap-label">tm_g_1</text></g></a>
-  <a href="/zones/zone-tm-g-2/"><g><rect x="787.2" y="550.6" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_2 — open (gamma) · PvP (16646 / -4063)</title></rect><image href="/zonemaps/zone-tm-g-2/world.png" x="787.2" y="550.6" width="38" height="38" preserveAspectRatio="none"/><text x="828.2" y="573.9" font-size="13" class="zonemap-label">tm_g_2</text></g></a>
-  <a href="/zones/zone-tm-g-3/"><g><rect x="571.2" y="697.8" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_3 — open (gamma) · PvP (5000 / -12000)</title></rect><image href="/zonemaps/zone-tm-g-3/world.png" x="571.2" y="697.8" width="38" height="38" preserveAspectRatio="none"/><text x="612.2" y="721.2" font-size="13" class="zonemap-label">tm_g_3</text></g></a>
-  <a href="/zones/zone-tm-g-4/"><g><rect x="859.9" y="422.8" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_4 — open (gamma) · PvP (20565 / 2823)</title></rect><image href="/zonemaps/zone-tm-g-4/world.png" x="859.9" y="422.8" width="38" height="38" preserveAspectRatio="none"/><text x="900.9" y="446.1" font-size="13" class="zonemap-label">tm_g_4</text></g></a>
-  <a href="/zones/zone-tm-g-5/"><g><rect x="558.2" y="247.8" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_5 — open (gamma) · PvP (4300 / 12258)</title></rect><image href="/zonemaps/zone-tm-g-5/world.png" x="558.2" y="247.8" width="38" height="38" preserveAspectRatio="none"/><text x="599.2" y="271.1" font-size="13" class="zonemap-label">tm_g_5</text></g></a>
-  <a href="/zones/zone-tm-g-6/"><g><rect x="781" y="409.6" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_6 — open (gamma) · PvP (16311 / 3533)</title></rect><image href="/zonemaps/zone-tm-g-6/world.png" x="781" y="409.6" width="38" height="38" preserveAspectRatio="none"/><text x="822" y="433" font-size="13" class="zonemap-label">tm_g_6</text></g></a>
-  <a href="/zones/zone-tm-g-7/"><g><rect x="802.6" y="281.8" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_7 — open (gamma) · PvP (17474 / 10423)</title></rect><image href="/zonemaps/zone-tm-g-7/world.png" x="802.6" y="281.8" width="38" height="38" preserveAspectRatio="none"/><text x="843.6" y="305.1" font-size="13" class="zonemap-label">tm_g_7</text></g></a>
-  <a href="/zones/zone-tm-g-8/"><g><rect x="895.5" y="639.2" width="38" height="38" rx="11.4" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_8 — open (gamma) · PvP (22479 / -8837)</title></rect><image href="/zonemaps/zone-tm-g-8/world.png" x="895.5" y="639.2" width="38" height="38" preserveAspectRatio="none"/><text x="936.5" y="662.5" font-size="13" class="zonemap-label">tm_g_8</text></g></a>
-  <line class="ltp-line" data-ltp="0" x1="138" y1="522.3" x2="122.2" y2="519.4" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI</title></line>
-  <circle class="ltp-dot" data-ltp="0" cx="138" cy="522.3" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1656 / 1541)</title></circle>
-  <circle class="ltp-dot" data-ltp="0" cx="122.2" cy="519.4" r="2.2" fill="#f5a05a"><title>local teleport endpoint (804 / 1383)</title></circle>
-  <line class="ltp-line" data-ltp="1" x1="115.8" y1="501.4" x2="117.6" y2="517.2" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI</title></line>
-  <circle class="ltp-dot" data-ltp="1" cx="115.8" cy="501.4" r="2.2" fill="#f5a05a"><title>local teleport endpoint (456 / 412)</title></circle>
-  <circle class="ltp-dot" data-ltp="1" cx="117.6" cy="517.2" r="2.2" fill="#f5a05a"><title>local teleport endpoint (557 / 1264)</title></circle>
-  <line class="ltp-line" data-ltp="2" x1="120.5" y1="515.3" x2="127.1" y2="503.3" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI</title></line>
-  <circle class="ltp-dot" data-ltp="2" cx="120.5" cy="515.3" r="2.2" fill="#f5a05a"><title>local teleport endpoint (713 / 1163)</title></circle>
-  <circle class="ltp-dot" data-ltp="2" cx="127.1" cy="503.3" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1066 / 517)</title></circle>
-  <line class="ltp-line" data-ltp="3" x1="133.2" y1="508.4" x2="122.8" y2="515.3" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI</title></line>
-  <circle class="ltp-dot" data-ltp="3" cx="133.2" cy="508.4" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1395 / 790)</title></circle>
-  <circle class="ltp-dot" data-ltp="3" cx="122.8" cy="515.3" r="2.2" fill="#f5a05a"><title>local teleport endpoint (834 / 1163)</title></circle>
-  <line class="ltp-line" data-ltp="4" x1="390.5" y1="543.9" x2="395.2" y2="535.5" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="4" cx="390.5" cy="543.9" r="2.2" fill="#f5a05a"><title>local teleport endpoint (262 / 1204)</title></circle>
-  <circle class="ltp-dot" data-ltp="4" cx="395.2" cy="535.5" r="2.2" fill="#f5a05a"><title>local teleport endpoint (518 / 749)</title></circle>
-  <line class="ltp-line" data-ltp="5" x1="402.7" y1="541.9" x2="411.8" y2="552.1" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="5" cx="402.7" cy="541.9" r="2.2" fill="#f5a05a"><title>local teleport endpoint (924 / 1097)</title></circle>
-  <circle class="ltp-dot" data-ltp="5" cx="411.8" cy="552.1" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1411 / 1647)</title></circle>
-  <line class="ltp-line" data-ltp="6" x1="390" y1="526.5" x2="402.2" y2="532.9" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="6" cx="390" cy="526.5" r="2.2" fill="#f5a05a"><title>local teleport endpoint (235 / 264)</title></circle>
-  <circle class="ltp-dot" data-ltp="6" cx="402.2" cy="532.9" r="2.2" fill="#f5a05a"><title>local teleport endpoint (897 / 613)</title></circle>
-  <line class="ltp-line" data-ltp="7" x1="345.6" y1="524.2" x2="354.5" y2="515.9" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pve</title></line>
-  <circle class="ltp-dot" data-ltp="7" cx="345.6" cy="524.2" r="2.2" fill="#f5a05a"><title>local teleport endpoint (516 / 1640)</title></circle>
-  <circle class="ltp-dot" data-ltp="7" cx="354.5" cy="515.9" r="2.2" fill="#f5a05a"><title>local teleport endpoint (995 / 1195)</title></circle>
-  <line class="ltp-line" data-ltp="8" x1="363.9" y1="521.2" x2="357" y2="515.5" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pve</title></line>
-  <circle class="ltp-dot" data-ltp="8" cx="363.9" cy="521.2" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1499 / 1482)</title></circle>
-  <circle class="ltp-dot" data-ltp="8" cx="357" cy="515.5" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1126 / 1171)</title></circle>
-  <line class="ltp-line" data-ltp="9" x1="367.9" y1="502.9" x2="356.7" y2="511.4" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pve</title></line>
-  <circle class="ltp-dot" data-ltp="9" cx="367.9" cy="502.9" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1714 / 495)</title></circle>
-  <circle class="ltp-dot" data-ltp="9" cx="356.7" cy="511.4" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1113 / 952)</title></circle>
-  <line class="ltp-line" data-ltp="10" x1="352.5" y1="502.8" x2="353.2" y2="511.7" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pve</title></line>
-  <circle class="ltp-dot" data-ltp="10" cx="352.5" cy="502.8" r="2.2" fill="#f5a05a"><title>local teleport endpoint (888 / 490)</title></circle>
-  <circle class="ltp-dot" data-ltp="10" cx="353.2" cy="511.7" r="2.2" fill="#f5a05a"><title>local teleport endpoint (926 / 967)</title></circle>
-  <line class="ltp-line" data-ltp="11" x1="353.4" y1="513.2" x2="345.6" y2="507.2" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pve</title></line>
-  <circle class="ltp-dot" data-ltp="11" cx="353.4" cy="513.2" r="2.2" fill="#f5a05a"><title>local teleport endpoint (934 / 1048)</title></circle>
-  <circle class="ltp-dot" data-ltp="11" cx="345.6" cy="507.2" r="2.2" fill="#f5a05a"><title>local teleport endpoint (512 / 724)</title></circle>
-  <line class="ltp-line" data-ltp="12" x1="396.7" y1="479.5" x2="411.9" y2="493.5" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="12" cx="396.7" cy="479.5" r="2.2" fill="#f5a05a"><title>local teleport endpoint (599 / 734)</title></circle>
-  <circle class="ltp-dot" data-ltp="12" cx="411.9" cy="493.5" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1419 / 1485)</title></circle>
-  <line class="ltp-line" data-ltp="13" x1="413.5" y1="481.8" x2="395.5" y2="492.4" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="13" cx="413.5" cy="481.8" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1505 / 859)</title></circle>
-  <circle class="ltp-dot" data-ltp="13" cx="395.5" cy="492.4" r="2.2" fill="#f5a05a"><title>local teleport endpoint (533 / 1426)</title></circle>
-  <line class="ltp-line" data-ltp="14" x1="396.7" y1="479.5" x2="413.5" y2="481.8" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ASI_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="14" cx="396.7" cy="479.5" r="2.2" fill="#f5a05a"><title>local teleport endpoint (599 / 734)</title></circle>
-  <circle class="ltp-dot" data-ltp="14" cx="413.5" cy="481.8" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1505 / 859)</title></circle>
-  <line class="ltp-line" data-ltp="15" x1="528.2" y1="436.7" x2="522.4" y2="439.9" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS</title></line>
-  <circle class="ltp-dot" data-ltp="15" cx="528.2" cy="436.7" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (862 / 1094)</title></circle>
-  <circle class="ltp-dot" data-ltp="15" cx="522.4" cy="439.9" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (547 / 1269)</title></circle>
-  <line class="ltp-line" data-ltp="16" x1="538.6" y1="442.3" x2="531" y2="436.3" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS</title></line>
-  <circle class="ltp-dot" data-ltp="16" cx="538.6" cy="442.3" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1419 / 1396)</title></circle>
-  <circle class="ltp-dot" data-ltp="16" cx="531" cy="436.3" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1012 / 1075)</title></circle>
-  <line class="ltp-line" data-ltp="17" x1="536.8" y1="429.8" x2="528.9" y2="432" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS</title></line>
-  <circle class="ltp-dot" data-ltp="17" cx="536.8" cy="429.8" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1325 / 722)</title></circle>
-  <circle class="ltp-dot" data-ltp="17" cx="528.9" cy="432" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (897 / 843)</title></circle>
-  <line class="ltp-line" data-ltp="18" x1="554.1" y1="546.5" x2="544.4" y2="547.3" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="18" cx="554.1" cy="546.5" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1083 / 1343)</title></circle>
-  <circle class="ltp-dot" data-ltp="18" cx="544.4" cy="547.3" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (561 / 1388)</title></circle>
-  <line class="ltp-line" data-ltp="19" x1="541.6" y1="535.9" x2="554.9" y2="536.5" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="19" cx="541.6" cy="535.9" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (409 / 773)</title></circle>
-  <circle class="ltp-dot" data-ltp="19" cx="554.9" cy="536.5" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1123 / 804)</title></circle>
-  <line class="ltp-line" data-ltp="20" x1="527.5" y1="598" x2="529.8" y2="592.6" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_pve</title></line>
-  <circle class="ltp-dot" data-ltp="20" cx="527.5" cy="598" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (977 / 1449)</title></circle>
-  <circle class="ltp-dot" data-ltp="20" cx="529.8" cy="592.6" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1099 / 1158)</title></circle>
-  <line class="ltp-line" data-ltp="21" x1="517.4" y1="585" x2="525.1" y2="589.9" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_pve</title></line>
-  <circle class="ltp-dot" data-ltp="21" cx="517.4" cy="585" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (434 / 751)</title></circle>
-  <circle class="ltp-dot" data-ltp="21" cx="525.1" cy="589.9" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (848 / 1015)</title></circle>
-  <line class="ltp-line" data-ltp="22" x1="527.6" y1="588" x2="536.2" y2="579.4" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_pve</title></line>
-  <circle class="ltp-dot" data-ltp="22" cx="527.6" cy="588" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (984 / 913)</title></circle>
-  <circle class="ltp-dot" data-ltp="22" cx="536.2" cy="579.4" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1449 / 447)</title></circle>
-  <line class="ltp-line" data-ltp="23" x1="542.4" y1="591.5" x2="532.1" y2="588.5" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_pve</title></line>
-  <circle class="ltp-dot" data-ltp="23" cx="542.4" cy="591.5" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1779 / 1100)</title></circle>
-  <circle class="ltp-dot" data-ltp="23" cx="532.1" cy="588.5" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1224 / 936)</title></circle>
-  <line class="ltp-line" data-ltp="24" x1="482.8" y1="559.7" x2="471" y2="577.2" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="24" cx="482.8" cy="559.7" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1237 / 555)</title></circle>
-  <circle class="ltp-dot" data-ltp="24" cx="471" cy="577.2" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (601 / 1499)</title></circle>
-  <line class="ltp-line" data-ltp="25" x1="482.8" y1="559.7" x2="481" y2="577.2" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="25" cx="482.8" cy="559.7" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1237 / 555)</title></circle>
-  <circle class="ltp-dot" data-ltp="25" cx="481" cy="577.2" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1142 / 1496)</title></circle>
-  <line class="ltp-line" data-ltp="26" x1="481" y1="577.2" x2="471" y2="577.2" stroke="#6ee7a0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_ICS_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="26" cx="481" cy="577.2" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (1142 / 1496)</title></circle>
-  <circle class="ltp-dot" data-ltp="26" cx="471" cy="577.2" r="2.2" fill="#6ee7a0"><title>local teleport endpoint (601 / 1499)</title></circle>
-  <line class="ltp-line" data-ltp="27" x1="495.9" y1="509.7" x2="490.2" y2="504.7" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM</title></line>
-  <circle class="ltp-dot" data-ltp="27" cx="495.9" cy="509.7" r="2.2" fill="#41d3ff"><title>local teleport endpoint (944 / 859)</title></circle>
-  <circle class="ltp-dot" data-ltp="27" cx="490.2" cy="504.7" r="2.2" fill="#41d3ff"><title>local teleport endpoint (640 / 592)</title></circle>
-  <line class="ltp-line" data-ltp="28" x1="499.1" y1="506.7" x2="507.1" y2="502" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM</title></line>
-  <circle class="ltp-dot" data-ltp="28" cx="499.1" cy="506.7" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1117 / 700)</title></circle>
-  <circle class="ltp-dot" data-ltp="28" cx="507.1" cy="502" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1548 / 446)</title></circle>
-  <line class="ltp-line" data-ltp="29" x1="489.4" y1="524" x2="497.4" y2="512.1" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM</title></line>
-  <circle class="ltp-dot" data-ltp="29" cx="489.4" cy="524" r="2.2" fill="#41d3ff"><title>local teleport endpoint (593 / 1629)</title></circle>
-  <circle class="ltp-dot" data-ltp="29" cx="497.4" cy="512.1" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1027 / 990)</title></circle>
-  <line class="ltp-line" data-ltp="30" x1="505.3" y1="517.2" x2="500.7" y2="512.3" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM</title></line>
-  <circle class="ltp-dot" data-ltp="30" cx="505.3" cy="517.2" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1453 / 1263)</title></circle>
-  <circle class="ltp-dot" data-ltp="30" cx="500.7" cy="512.3" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1202 / 1002)</title></circle>
-  <line class="ltp-line" data-ltp="31" x1="482.1" y1="452.8" x2="470.9" y2="449.7" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="31" cx="482.1" cy="452.8" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1199 / 794)</title></circle>
-  <circle class="ltp-dot" data-ltp="31" cx="470.9" cy="449.7" r="2.2" fill="#41d3ff"><title>local teleport endpoint (597 / 629)</title></circle>
-  <line class="ltp-line" data-ltp="32" x1="488.7" y1="468.7" x2="485.4" y2="455.3" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="32" cx="488.7" cy="468.7" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1559 / 1649)</title></circle>
-  <circle class="ltp-dot" data-ltp="32" cx="485.4" cy="455.3" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1378 / 928)</title></circle>
-  <line class="ltp-line" data-ltp="33" x1="468.4" y1="461" x2="479.6" y2="466.7" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_A_real</title></line>
-  <circle class="ltp-dot" data-ltp="33" cx="468.4" cy="461" r="2.2" fill="#41d3ff"><title>local teleport endpoint (462 / 1233)</title></circle>
-  <circle class="ltp-dot" data-ltp="33" cx="479.6" cy="466.7" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1067 / 1543)</title></circle>
-  <line class="ltp-line" data-ltp="34" x1="458.9" y1="510.3" x2="450.7" y2="527" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_pve</title></line>
-  <circle class="ltp-dot" data-ltp="34" cx="458.9" cy="510.3" r="2.2" fill="#41d3ff"><title>local teleport endpoint (951 / 892)</title></circle>
-  <circle class="ltp-dot" data-ltp="34" cx="450.7" cy="527" r="2.2" fill="#41d3ff"><title>local teleport endpoint (510 / 1794)</title></circle>
-  <line class="ltp-line" data-ltp="35" x1="460.6" y1="508.4" x2="466.5" y2="519.6" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_pve</title></line>
-  <circle class="ltp-dot" data-ltp="35" cx="460.6" cy="508.4" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1043 / 789)</title></circle>
-  <circle class="ltp-dot" data-ltp="35" cx="466.5" cy="519.6" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1360 / 1396)</title></circle>
-  <line class="ltp-line" data-ltp="36" x1="450.3" y1="504.9" x2="456.7" y2="508.3" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_pve</title></line>
-  <circle class="ltp-dot" data-ltp="36" cx="450.3" cy="504.9" r="2.2" fill="#41d3ff"><title>local teleport endpoint (485 / 604)</title></circle>
-  <circle class="ltp-dot" data-ltp="36" cx="456.7" cy="508.3" r="2.2" fill="#41d3ff"><title>local teleport endpoint (830 / 783)</title></circle>
-  <line class="ltp-line" data-ltp="37" x1="464.9" y1="498.5" x2="458.9" y2="506.4" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_pve</title></line>
-  <circle class="ltp-dot" data-ltp="37" cx="464.9" cy="498.5" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1273 / 257)</title></circle>
-  <circle class="ltp-dot" data-ltp="37" cx="458.9" cy="506.4" r="2.2" fill="#41d3ff"><title>local teleport endpoint (948 / 683)</title></circle>
-  <line class="ltp-line" data-ltp="38" x1="551.5" y1="475.5" x2="543.3" y2="487.9" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="38" cx="551.5" cy="475.5" r="2.2" fill="#41d3ff"><title>local teleport endpoint (939 / 516)</title></circle>
-  <circle class="ltp-dot" data-ltp="38" cx="543.3" cy="487.9" r="2.2" fill="#41d3ff"><title>local teleport endpoint (497 / 1188)</title></circle>
-  <line class="ltp-line" data-ltp="39" x1="568.5" y1="481.8" x2="543.3" y2="487.9" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="39" cx="568.5" cy="481.8" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1857 / 858)</title></circle>
-  <circle class="ltp-dot" data-ltp="39" cx="543.3" cy="487.9" r="2.2" fill="#41d3ff"><title>local teleport endpoint (497 / 1188)</title></circle>
-  <line class="ltp-line" data-ltp="40" x1="551.5" y1="475.5" x2="568.5" y2="481.8" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_TM_pvp</title></line>
-  <circle class="ltp-dot" data-ltp="40" cx="551.5" cy="475.5" r="2.2" fill="#41d3ff"><title>local teleport endpoint (939 / 516)</title></circle>
-  <circle class="ltp-dot" data-ltp="40" cx="568.5" cy="481.8" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1857 / 858)</title></circle>
-  <line class="ltp-line" data-ltp="41" x1="144" y1="571.5" x2="142.8" y2="576.3" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_asi_g_1</title></line>
-  <circle class="ltp-dot" data-ltp="41" cx="144" cy="571.5" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1756 / 788)</title></circle>
-  <circle class="ltp-dot" data-ltp="41" cx="142.8" cy="576.3" r="2.2" fill="#f5a05a"><title>local teleport endpoint (1693 / 1048)</title></circle>
-  <line class="ltp-line" data-ltp="42" x1="114.8" y1="569.1" x2="117.7" y2="574.2" stroke="#f5a05a" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_asi_g_1</title></line>
-  <circle class="ltp-dot" data-ltp="42" cx="114.8" cy="569.1" r="2.2" fill="#f5a05a"><title>local teleport endpoint (184 / 663)</title></circle>
-  <circle class="ltp-dot" data-ltp="42" cx="117.7" cy="574.2" r="2.2" fill="#f5a05a"><title>local teleport endpoint (338 / 938)</title></circle>
-  <line class="ltp-line" data-ltp="43" x1="798.4" y1="428" x2="792.3" y2="427.6" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_tm_g_6</title></line>
-  <circle class="ltp-dot" data-ltp="43" cx="798.4" cy="428" r="2.2" fill="#41d3ff"><title>local teleport endpoint (937 / 989)</title></circle>
-  <circle class="ltp-dot" data-ltp="43" cx="792.3" cy="427.6" r="2.2" fill="#41d3ff"><title>local teleport endpoint (610 / 971)</title></circle>
-  <line class="ltp-line" data-ltp="44" x1="809.2" y1="419.9" x2="807" y2="425.4" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_tm_g_6</title></line>
-  <circle class="ltp-dot" data-ltp="44" cx="809.2" cy="419.9" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1520 / 552)</title></circle>
-  <circle class="ltp-dot" data-ltp="44" cx="807" cy="425.4" r="2.2" fill="#41d3ff"><title>local teleport endpoint (1400 / 850)</title></circle>
-  <line class="ltp-line" data-ltp="45" x1="795.9" y1="442" x2="799.2" y2="438.4" stroke="#41d3ff" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_tm_g_6</title></line>
-  <circle class="ltp-dot" data-ltp="45" cx="795.9" cy="442" r="2.2" fill="#41d3ff"><title>local teleport endpoint (805 / 1747)</title></circle>
-  <circle class="ltp-dot" data-ltp="45" cx="799.2" cy="438.4" r="2.2" fill="#41d3ff"><title>local teleport endpoint (979 / 1550)</title></circle>
-  <line class="ltp-line" data-ltp="46" x1="633.1" y1="359" x2="631.1" y2="362.5" stroke="#c8d2e0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_training</title></line>
-  <circle class="ltp-dot" data-ltp="46" cx="633.1" cy="359" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (366 / 682)</title></circle>
-  <circle class="ltp-dot" data-ltp="46" cx="631.1" cy="362.5" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (279 / 832)</title></circle>
-  <line class="ltp-line" data-ltp="47" x1="636.2" y1="356.4" x2="640.4" y2="352.7" stroke="#c8d2e0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_training</title></line>
-  <circle class="ltp-dot" data-ltp="47" cx="636.2" cy="356.4" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (497 / 571)</title></circle>
-  <circle class="ltp-dot" data-ltp="47" cx="640.4" cy="352.7" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (677 / 414)</title></circle>
-  <line class="ltp-line" data-ltp="48" x1="636.2" y1="356.4" x2="632.1" y2="353.4" stroke="#c8d2e0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_training</title></line>
-  <circle class="ltp-dot" data-ltp="48" cx="636.2" cy="356.4" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (497 / 571)</title></circle>
-  <circle class="ltp-dot" data-ltp="48" cx="632.1" cy="353.4" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (322 / 443)</title></circle>
-  <line class="ltp-line" data-ltp="49" x1="640.4" y1="352.7" x2="632.1" y2="353.4" stroke="#c8d2e0" stroke-width="1.4" stroke-dasharray="3 2"><title>local teleport inside zone_training</title></line>
-  <circle class="ltp-dot" data-ltp="49" cx="640.4" cy="352.7" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (677 / 414)</title></circle>
-  <circle class="ltp-dot" data-ltp="49" cx="632.1" cy="353.4" r="2.2" fill="#c8d2e0"><title>local teleport endpoint (322 / 443)</title></circle>
+  <a href="/zones/zone-gamma-tc-z100/"><g><rect x="668.4" y="1070" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z100 — open (beta) · PvP (9488 / -31302)</title></rect><image href="/zonemaps/zone-gamma-tc-z100/thumb.png" x="668.4" y="1070" width="10" height="10" preserveAspectRatio="none"/><text x="681.4" y="1078.5" font-size="10.5" class="zonemap-label">gamma_tc_z100</text></g></a>
+  <a href="/zones/zone-gamma-tc-z101/"><g><rect x="506.7" y="1166.4" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z101 — open (beta) · PvP (774 / -36500)</title></rect><image href="/zonemaps/zone-gamma-tc-z101/thumb.png" x="506.7" y="1166.4" width="10" height="10" preserveAspectRatio="none"/><text x="519.7" y="1174.9" font-size="10.5" class="zonemap-label">gamma_tc_z101</text></g></a>
+  <a href="/zones/zone-gamma-tc-z102/"><g><rect x="314.6" y="1085.3" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z102 — open (beta) · PvP (-9582 / -32128)</title></rect><image href="/zonemaps/zone-gamma-tc-z102/thumb.png" x="314.6" y="1085.3" width="10" height="10" preserveAspectRatio="none"/><text x="327.6" y="1093.8" font-size="10.5" class="zonemap-label">gamma_tc_z102</text></g></a>
+  <a href="/zones/zone-gamma-tc-z103/"><g><rect x="324.7" y="916.6" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z103 — open (beta) · PvP (-9035 / -23034)</title></rect><image href="/zonemaps/zone-gamma-tc-z103/thumb.png" x="324.7" y="916.6" width="10" height="10" preserveAspectRatio="none"/><text x="337.7" y="925.1" font-size="10.5" class="zonemap-label">gamma_tc_z103</text></g></a>
+  <a href="/zones/zone-gamma-tc-z104/"><g><rect x="532.2" y="768" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z104 — open (beta) · PvP (2147 / -15026)</title></rect><image href="/zonemaps/zone-gamma-tc-z104/thumb.png" x="532.2" y="768" width="10" height="10" preserveAspectRatio="none"/><text x="545.2" y="776.5" font-size="10.5" class="zonemap-label">gamma_tc_z104</text></g></a>
+  <a href="/zones/zone-gamma-tc-z105/"><g><rect x="738.7" y="924" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z105 — open (beta) · PvP (13275 / -23435)</title></rect><image href="/zonemaps/zone-gamma-tc-z105/thumb.png" x="738.7" y="924" width="10" height="10" preserveAspectRatio="none"/><text x="751.7" y="932.5" font-size="10.5" class="zonemap-label">gamma_tc_z105</text></g></a>
+  <a href="/zones/zone-strghld-71/"><g><circle cx="775.7" cy="308.7" r="5" fill="#10151f" class="mapfam-special zonemap-node-special"><title>zone_strghld_71 — protected (alpha) · Stronghold (15000 / 10000)</title></circle><image href="/zonemaps/zone-strghld-71/thumb.png" x="770.7" y="303.7" width="10" height="10" preserveAspectRatio="none"/><text x="783.7" y="313" font-size="13" class="zonemap-label">strghld_71</text></g></a>
+  <a href="/zones/zone-strghld-72/"><g><circle cx="775.7" cy="290.1" r="5" fill="#10151f" class="mapfam-special zonemap-node-special"><title>zone_strghld_72 — protected (alpha) · Stronghold (15000 / 11000)</title></circle><image href="/zonemaps/zone-strghld-72/thumb.png" x="770.7" y="285.1" width="10" height="10" preserveAspectRatio="none"/><text x="783.7" y="294.4" font-size="13" class="zonemap-label">strghld_72</text></g></a>
+  <a href="/zones/zone-strghld-70/"><g><circle cx="868.5" cy="123.1" r="7.5" fill="#10151f" class="mapfam-special zonemap-node-special"><title>zone_strghld_70 — protected (alpha) · Stronghold (20000 / 20000)</title></circle><image href="/zonemaps/zone-strghld-70/thumb.png" x="861" y="115.6" width="15" height="15" preserveAspectRatio="none"/><text x="879" y="127.4" font-size="13" class="zonemap-label">strghld_70</text></g></a>
+  <a href="/zones/zone-training/"><g><circle cx="636.5" cy="355" r="12" fill="#10151f" class="mapfam-special zonemap-node-special"><title>zone_training — protected (alpha) · Training (7500 / 7500)</title></circle><image href="/zonemaps/zone-training/thumb.png" x="624.5" y="343" width="24" height="24" preserveAspectRatio="none"/><text x="651.5" y="359.4" font-size="13" class="zonemap-label">training</text></g></a>
+  <a href="/zones/zone-asi/"><g><rect x="107.3" y="493.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_ASI — open (beta) · PvP (-20000 / -1000)</title></rect><image href="/zonemaps/zone-asi/thumb.png" x="107.3" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="148.3" y="517.1" font-size="13" class="zonemap-label">ASI</text></g></a>
+  <a href="/zones/zone-asi-a-real/"><g><rect x="385.6" y="521.6" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_ASI_A_real — open (beta) · PvP (-5000 / -2500)</title></rect><image href="/zonemaps/zone-asi-a-real/thumb.png" x="385.6" y="521.6" width="38" height="38" preserveAspectRatio="none"/><text x="426.6" y="544.9" font-size="13" class="zonemap-label">ASI_A_real</text></g></a>
+  <a href="/zones/zone-asi-pve/"><g><rect x="336.1" y="493.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_ASI_pve — protected (alpha) · PvE (-7670 / -1000)</title></rect><image href="/zonemaps/zone-asi-pve/thumb.png" x="336.1" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="377.1" y="517.1" font-size="13" class="zonemap-label">ASI_pve</text></g></a>
+  <a href="/zones/zone-asi-pvp/"><g><rect x="385.6" y="465.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_ASI_pvp — open (beta) · PvP (-5000 / 500)</title></rect><image href="/zonemaps/zone-asi-pvp/thumb.png" x="385.6" y="465.9" width="38" height="38" preserveAspectRatio="none"/><text x="426.6" y="489.2" font-size="13" class="zonemap-label">ASI_pvp</text></g></a>
+  <a href="/zones/zone-ics/"><g><rect x="512.3" y="416.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ICS — protected (alpha) · PvE (1826 / 3170)</title></rect><image href="/zonemaps/zone-ics/thumb.png" x="512.3" y="416.4" width="38" height="38" preserveAspectRatio="none"/><text x="553.3" y="439.7" font-size="13" class="zonemap-label">ICS</text></g></a>
+  <a href="/zones/zone-ics-a-real/"><g><rect x="534" y="521.6" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ICS_A_real — open (beta) · PvP (3000 / -2500)</title></rect><image href="/zonemaps/zone-ics-a-real/thumb.png" x="534" y="521.6" width="38" height="38" preserveAspectRatio="none"/><text x="575" y="544.9" font-size="13" class="zonemap-label">ICS_A_real</text></g></a>
+  <a href="/zones/zone-ics-pve/"><g><rect x="509.4" y="571.1" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ICS_pve — protected (alpha) · PvE (1670 / -5170)</title></rect><image href="/zonemaps/zone-ics-pve/thumb.png" x="509.4" y="571.1" width="38" height="38" preserveAspectRatio="none"/><text x="550.4" y="594.5" font-size="13" class="zonemap-label">ICS_pve</text></g></a>
+  <a href="/zones/zone-ics-pvp/"><g><rect x="459.8" y="549.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ICS_pvp — open (beta) · PvP (-1000 / -4000)</title></rect><image href="/zonemaps/zone-ics-pvp/thumb.png" x="459.8" y="549.4" width="38" height="38" preserveAspectRatio="none"/><text x="500.8" y="572.7" font-size="13" class="zonemap-label">ICS_pvp</text></g></a>
+  <a href="/zones/zone-tm/"><g><rect x="478.4" y="493.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_TM — protected (alpha) · PvE (0 / -1000)</title></rect><image href="/zonemaps/zone-tm/thumb.png" x="478.4" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="519.4" y="517.1" font-size="13" class="zonemap-label">TM</text></g></a>
+  <a href="/zones/zone-tm-a-real/"><g><rect x="459.8" y="438.1" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_TM_A_real — open (beta) · PvP (-1000 / 2000)</title></rect><image href="/zonemaps/zone-tm-a-real/thumb.png" x="459.8" y="438.1" width="38" height="38" preserveAspectRatio="none"/><text x="500.8" y="461.4" font-size="13" class="zonemap-label">TM_A_real</text></g></a>
+  <a href="/zones/zone-tm-pve/"><g><rect x="441.3" y="493.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_TM_pve — protected (alpha) · PvE (-2000 / -1000)</title></rect><image href="/zonemaps/zone-tm-pve/thumb.png" x="441.3" y="493.7" width="38" height="38" preserveAspectRatio="none"/><text x="482.3" y="517.1" font-size="13" class="zonemap-label">TM_pve</text></g></a>
+  <a href="/zones/zone-tm-pvp/"><g><rect x="534" y="465.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_TM_pvp — open (beta) · PvP (3000 / 500)</title></rect><image href="/zonemaps/zone-tm-pvp/thumb.png" x="534" y="465.9" width="38" height="38" preserveAspectRatio="none"/><text x="575" y="489.2" font-size="13" class="zonemap-label">TM_pvp</text></g></a>
+  <a href="/zones/zone-asi-g-1/"><g><rect x="111.4" y="556.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_1 — open (gamma) · PvP (-19779 / -4401)</title></rect><image href="/zonemaps/zone-asi-g-1/thumb.png" x="111.4" y="556.8" width="38" height="38" preserveAspectRatio="none"/><text x="152.4" y="580.2" font-size="13" class="zonemap-label">asi_g_1</text></g></a>
+  <a href="/zones/zone-asi-g-2/"><g><rect x="165.9" y="465.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_2 — open (gamma) · PvP (-16841 / 530)</title></rect><image href="/zonemaps/zone-asi-g-2/thumb.png" x="165.9" y="465.4" width="38" height="38" preserveAspectRatio="none"/><text x="206.9" y="488.7" font-size="13" class="zonemap-label">asi_g_2</text></g></a>
+  <a href="/zones/zone-asi-g-3/"><g><rect x="64.3" y="458.6" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_3 — open (gamma) · PvP (-22316 / 892)</title></rect><image href="/zonemaps/zone-asi-g-3/thumb.png" x="64.3" y="458.6" width="38" height="38" preserveAspectRatio="none"/><text x="105.3" y="482" font-size="13" class="zonemap-label">asi_g_3</text></g></a>
+  <a href="/zones/zone-asi-g-4/"><g><rect x="348.5" y="697.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_4 — open (gamma) · PvP (-7000 / -12000)</title></rect><image href="/zonemaps/zone-asi-g-4/thumb.png" x="348.5" y="697.8" width="38" height="38" preserveAspectRatio="none"/><text x="389.5" y="721.2" font-size="13" class="zonemap-label">asi_g_4</text></g></a>
+  <a href="/zones/zone-asi-g-5/"><g><rect x="169.2" y="264.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_5 — open (gamma) · PvP (-16663 / 11356)</title></rect><image href="/zonemaps/zone-asi-g-5/thumb.png" x="169.2" y="264.5" width="38" height="38" preserveAspectRatio="none"/><text x="210.2" y="287.8" font-size="13" class="zonemap-label">asi_g_5</text></g></a>
+  <a href="/zones/zone-asi-g-6/"><g><rect x="64.8" y="254.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_6 — open (gamma) · PvP (-22293 / 11874)</title></rect><image href="/zonemaps/zone-asi-g-6/thumb.png" x="64.8" y="254.9" width="38" height="38" preserveAspectRatio="none"/><text x="105.8" y="278.2" font-size="13" class="zonemap-label">asi_g_6</text></g></a>
+  <a href="/zones/zone-asi-g-7/"><g><rect x="266.6" y="212" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_7 — open (gamma) · PvP (-11413 / 14184)</title></rect><image href="/zonemaps/zone-asi-g-7/thumb.png" x="266.6" y="212" width="38" height="38" preserveAspectRatio="none"/><text x="307.6" y="235.4" font-size="13" class="zonemap-label">asi_g_7</text></g></a>
+  <a href="/zones/zone-asi-g-8/"><g><rect x="409.3" y="314.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-asi zonemap-node-asi"><title>zone_asi_g_8 — open (gamma) · PvP (-3722 / 8645)</title></rect><image href="/zonemaps/zone-asi-g-8/thumb.png" x="409.3" y="314.8" width="38" height="38" preserveAspectRatio="none"/><text x="450.3" y="338.1" font-size="13" class="zonemap-label">asi_g_8</text></g></a>
+  <a href="/zones/zone-gamma-z106/"><g><rect x="547.6" y="1014.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z106 — open (gamma) · PvP (3731 / -29068)</title></rect><image href="/zonemaps/zone-gamma-z106/thumb.png" x="547.6" y="1014.5" width="38" height="38" preserveAspectRatio="none"/><text x="588.6" y="1037" font-size="10.5" class="zonemap-label">gamma_z106</text></g></a>
+  <a href="/zones/zone-gamma-z107/"><g><rect x="476.9" y="984" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z107 — open (gamma) · PvP (-81 / -27422)</title></rect><image href="/zonemaps/zone-gamma-z107/thumb.png" x="476.9" y="984" width="38" height="38" preserveAspectRatio="none"/><text x="517.9" y="1006.5" font-size="10.5" class="zonemap-label">gamma_z107</text></g></a>
+  <a href="/zones/zone-gamma-z108/"><g><rect x="362.7" y="1002.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z108 — open (gamma) · PvP (-6233 / -28442)</title></rect><image href="/zonemaps/zone-gamma-z108/thumb.png" x="362.7" y="1002.9" width="38" height="38" preserveAspectRatio="none"/><text x="403.7" y="1025.4" font-size="10.5" class="zonemap-label">gamma_z108</text></g></a>
+  <a href="/zones/zone-gamma-z109/"><g><rect x="378" y="887.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z109 — open (gamma) · PvP (-5410 / -22223)</title></rect><image href="/zonemaps/zone-gamma-z109/thumb.png" x="378" y="887.5" width="38" height="38" preserveAspectRatio="none"/><text x="419" y="910" font-size="10.5" class="zonemap-label">gamma_z109</text></g></a>
+  <a href="/zones/zone-gamma-z110/"><g><rect x="505" y="869" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z110 — open (beta) · PvP (1435 / -21223)</title></rect><image href="/zonemaps/zone-gamma-z110/thumb.png" x="505" y="869" width="38" height="38" preserveAspectRatio="none"/><text x="546" y="891.5" font-size="10.5" class="zonemap-label">gamma_z110</text></g></a>
+  <a href="/zones/zone-gamma-z111/"><g><rect x="620" y="930.1" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z111 — open (gamma) · PvP (7630 / -24519)</title></rect><image href="/zonemaps/zone-gamma-z111/thumb.png" x="620" y="930.1" width="38" height="38" preserveAspectRatio="none"/><text x="661" y="952.6" font-size="10.5" class="zonemap-label">gamma_z111</text></g></a>
+  <a href="/zones/zone-gamma-z112/"><g><rect x="681" y="994.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z112 — open (gamma) · PvP (10923 / -27985)</title></rect><image href="/zonemaps/zone-gamma-z112/thumb.png" x="681" y="994.4" width="38" height="38" preserveAspectRatio="none"/><text x="722" y="1016.9" font-size="10.5" class="zonemap-label">gamma_z112</text></g></a>
+  <a href="/zones/zone-gamma-z113/"><g><rect x="537.2" y="1098.1" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z113 — open (gamma) · PvP (3168 / -33574)</title></rect><image href="/zonemaps/zone-gamma-z113/thumb.png" x="537.2" y="1098.1" width="38" height="38" preserveAspectRatio="none"/><text x="578.2" y="1120.6" font-size="10.5" class="zonemap-label">gamma_z113</text></g></a>
+  <a href="/zones/zone-gamma-z114/"><g><rect x="410.2" y="1096.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z114 — open (beta) · PvP (-3677 / -33487)</title></rect><image href="/zonemaps/zone-gamma-z114/thumb.png" x="410.2" y="1096.5" width="38" height="38" preserveAspectRatio="none"/><text x="451.2" y="1119" font-size="10.5" class="zonemap-label">gamma_z114</text></g></a>
+  <a href="/zones/zone-gamma-z115/"><g><rect x="344.2" y="1137.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z115 — open (gamma) · PvP (-7230 / -35697)</title></rect><image href="/zonemaps/zone-gamma-z115/thumb.png" x="344.2" y="1137.5" width="38" height="38" preserveAspectRatio="none"/><text x="385.2" y="1160" font-size="10.5" class="zonemap-label">gamma_z115</text></g></a>
+  <a href="/zones/zone-gamma-z116/"><g><rect x="239.7" y="1004.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z116 — open (gamma) · PvP (-12862 / -28548)</title></rect><image href="/zonemaps/zone-gamma-z116/thumb.png" x="239.7" y="1004.9" width="38" height="38" preserveAspectRatio="none"/><text x="280.7" y="1027.4" font-size="10.5" class="zonemap-label">gamma_z116</text></g></a>
+  <a href="/zones/zone-gamma-z117/"><g><rect x="187.5" y="926.1" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z117 — open (gamma) · PvP (-15678 / -24303)</title></rect><image href="/zonemaps/zone-gamma-z117/thumb.png" x="187.5" y="926.1" width="38" height="38" preserveAspectRatio="none"/><text x="228.5" y="948.6" font-size="10.5" class="zonemap-label">gamma_z117</text></g></a>
+  <a href="/zones/zone-gamma-z118/"><g><rect x="152.1" y="839.3" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z118 — open (gamma) · PvP (-17584 / -19624)</title></rect><image href="/zonemaps/zone-gamma-z118/thumb.png" x="152.1" y="839.3" width="38" height="38" preserveAspectRatio="none"/><text x="193.1" y="861.8" font-size="10.5" class="zonemap-label">gamma_z118</text></g></a>
+  <a href="/zones/zone-gamma-z119/"><g><rect x="133.5" y="1066.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z119 — open (beta) · PvP (-18588 / -31884)</title></rect><image href="/zonemaps/zone-gamma-z119/thumb.png" x="133.5" y="1066.8" width="38" height="38" preserveAspectRatio="none"/><text x="174.5" y="1089.3" font-size="10.5" class="zonemap-label">gamma_z119</text></g></a>
+  <a href="/zones/zone-gamma-z120/"><g><rect x="228.5" y="1159.2" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z120 — open (gamma) · PvP (-13468 / -36867)</title></rect><image href="/zonemaps/zone-gamma-z120/thumb.png" x="228.5" y="1159.2" width="38" height="38" preserveAspectRatio="none"/><text x="269.5" y="1181.7" font-size="10.5" class="zonemap-label">gamma_z120</text></g></a>
+  <a href="/zones/zone-gamma-z121/"><g><rect x="246.2" y="1245.2" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z121 — open (gamma) · PvP (-12515 / -41502)</title></rect><image href="/zonemaps/zone-gamma-z121/thumb.png" x="246.2" y="1245.2" width="38" height="38" preserveAspectRatio="none"/><text x="287.2" y="1267.7" font-size="10.5" class="zonemap-label">gamma_z121</text></g></a>
+  <a href="/zones/zone-gamma-z122/"><g><rect x="313.7" y="1293.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z122 — open (gamma) · PvP (-8876 / -44102)</title></rect><image href="/zonemaps/zone-gamma-z122/thumb.png" x="313.7" y="1293.5" width="38" height="38" preserveAspectRatio="none"/><text x="354.7" y="1316" font-size="10.5" class="zonemap-label">gamma_z122</text></g></a>
+  <a href="/zones/zone-gamma-z123/"><g><rect x="399.7" y="1262.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z123 — open (gamma) · PvP (-4240 / -42455)</title></rect><image href="/zonemaps/zone-gamma-z123/thumb.png" x="399.7" y="1262.9" width="38" height="38" preserveAspectRatio="none"/><text x="440.7" y="1285.4" font-size="10.5" class="zonemap-label">gamma_z123</text></g></a>
+  <a href="/zones/zone-gamma-z124/"><g><rect x="470.4" y="1335.2" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z124 — open (gamma) · PvP (-428 / -46354)</title></rect><image href="/zonemaps/zone-gamma-z124/thumb.png" x="470.4" y="1335.2" width="38" height="38" preserveAspectRatio="none"/><text x="511.4" y="1357.7" font-size="10.5" class="zonemap-label">gamma_z124</text></g></a>
+  <a href="/zones/zone-gamma-z125/"><g><rect x="548.4" y="1301.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z125 — open (gamma) · PvP (3774 / -44535)</title></rect><image href="/zonemaps/zone-gamma-z125/thumb.png" x="548.4" y="1301.5" width="38" height="38" preserveAspectRatio="none"/><text x="589.4" y="1324" font-size="10.5" class="zonemap-label">gamma_z125</text></g></a>
+  <a href="/zones/zone-gamma-z126/"><g><rect x="633.6" y="1279.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z126 — open (gamma) · PvP (8367 / -43372)</title></rect><image href="/zonemaps/zone-gamma-z126/thumb.png" x="633.6" y="1279.9" width="38" height="38" preserveAspectRatio="none"/><text x="674.6" y="1302.4" font-size="10.5" class="zonemap-label">gamma_z126</text></g></a>
+  <a href="/zones/zone-gamma-z127/"><g><rect x="568.5" y="1190.6" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z127 — open (gamma) · PvP (4858 / -38556)</title></rect><image href="/zonemaps/zone-gamma-z127/thumb.png" x="568.5" y="1190.6" width="38" height="38" preserveAspectRatio="none"/><text x="609.5" y="1213.1" font-size="10.5" class="zonemap-label">gamma_z127</text></g></a>
+  <a href="/zones/zone-gamma-z128/"><g><rect x="655.3" y="1160" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z128 — open (gamma) · PvP (9536 / -36910)</title></rect><image href="/zonemaps/zone-gamma-z128/thumb.png" x="655.3" y="1160" width="38" height="38" preserveAspectRatio="none"/><text x="696.3" y="1182.5" font-size="10.5" class="zonemap-label">gamma_z128</text></g></a>
+  <a href="/zones/zone-gamma-z129/"><g><rect x="745.4" y="1171.3" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z129 — open (gamma) · PvP (14389 / -37516)</title></rect><image href="/zonemaps/zone-gamma-z129/thumb.png" x="745.4" y="1171.3" width="38" height="38" preserveAspectRatio="none"/><text x="786.4" y="1193.8" font-size="10.5" class="zonemap-label">gamma_z129</text></g></a>
+  <a href="/zones/zone-gamma-z130/"><g><rect x="742.1" y="1103.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z130 — open (gamma) · PvP (14215 / -33877)</title></rect><image href="/zonemaps/zone-gamma-z130/thumb.png" x="742.1" y="1103.7" width="38" height="38" preserveAspectRatio="none"/><text x="783.1" y="1126.2" font-size="10.5" class="zonemap-label">gamma_z130</text></g></a>
+  <a href="/zones/zone-gamma-z131/"><g><rect x="799.3" y="1033.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z131 — open (beta) · PvP (17299 / -30108)</title></rect><image href="/zonemaps/zone-gamma-z131/thumb.png" x="799.3" y="1033.8" width="38" height="38" preserveAspectRatio="none"/><text x="840.3" y="1056.3" font-size="10.5" class="zonemap-label">gamma_z131</text></g></a>
+  <a href="/zones/zone-gamma-z132/"><g><rect x="796" y="943.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z132 — open (gamma) · PvP (17118 / -25256)</title></rect><image href="/zonemaps/zone-gamma-z132/thumb.png" x="796" y="943.8" width="38" height="38" preserveAspectRatio="none"/><text x="837" y="966.3" font-size="10.5" class="zonemap-label">gamma_z132</text></g></a>
+  <a href="/zones/zone-gamma-z133/"><g><rect x="807.3" y="857" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z133 — open (gamma) · PvP (17725 / -20577)</title></rect><image href="/zonemaps/zone-gamma-z133/thumb.png" x="807.3" y="857" width="38" height="38" preserveAspectRatio="none"/><text x="848.3" y="879.5" font-size="10.5" class="zonemap-label">gamma_z133</text></g></a>
+  <a href="/zones/zone-gamma-z134/"><g><rect x="742.9" y="804.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z134 — open (gamma) · PvP (14259 / -17761)</title></rect><image href="/zonemaps/zone-gamma-z134/thumb.png" x="742.9" y="804.7" width="38" height="38" preserveAspectRatio="none"/><text x="783.9" y="827.2" font-size="10.5" class="zonemap-label">gamma_z134</text></g></a>
+  <a href="/zones/zone-gamma-z135/"><g><rect x="644.9" y="830.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z135 — open (gamma) · PvP (8973 / -19147)</title></rect><image href="/zonemaps/zone-gamma-z135/thumb.png" x="644.9" y="830.4" width="38" height="38" preserveAspectRatio="none"/><text x="685.9" y="852.9" font-size="10.5" class="zonemap-label">gamma_z135</text></g></a>
+  <a href="/zones/zone-gamma-z136/"><g><rect x="670.6" y="721.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z136 — open (gamma) · PvP (10360 / -13298)</title></rect><image href="/zonemaps/zone-gamma-z136/thumb.png" x="670.6" y="721.9" width="38" height="38" preserveAspectRatio="none"/><text x="711.6" y="744.4" font-size="10.5" class="zonemap-label">gamma_z136</text></g></a>
+  <a href="/zones/zone-gamma-z137/"><g><rect x="542" y="692.1" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z137 — open (gamma) · PvP (3428 / -11688)</title></rect><image href="/zonemaps/zone-gamma-z137/thumb.png" x="542" y="692.1" width="38" height="38" preserveAspectRatio="none"/><text x="583" y="714.6" font-size="10.5" class="zonemap-label">gamma_z137</text></g></a>
+  <a href="/zones/zone-gamma-z138/"><g><rect x="391.7" y="736.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z138 — open (gamma) · PvP (-4674 / -14078)</title></rect><image href="/zonemaps/zone-gamma-z138/thumb.png" x="391.7" y="736.4" width="38" height="38" preserveAspectRatio="none"/><text x="432.7" y="758.9" font-size="10.5" class="zonemap-label">gamma_z138</text></g></a>
+  <a href="/zones/zone-gamma-z139/"><g><rect x="382.8" y="803.1" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z139 — open (gamma) · PvP (-5150 / -17674)</title></rect><image href="/zonemaps/zone-gamma-z139/thumb.png" x="382.8" y="803.1" width="38" height="38" preserveAspectRatio="none"/><text x="423.8" y="825.6" font-size="10.5" class="zonemap-label">gamma_z139</text></g></a>
+  <a href="/zones/zone-gamma-z140/"><g><rect x="234.1" y="805.5" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_z140 — open (gamma) · PvP (-13165 / -17804)</title></rect><image href="/zonemaps/zone-gamma-z140/thumb.png" x="234.1" y="805.5" width="38" height="38" preserveAspectRatio="none"/><text x="275.1" y="828" font-size="10.5" class="zonemap-label">gamma_z140</text></g></a>
+  <a href="/zones/zone-ics-g-1/"><g><rect x="411" y="790.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_1 — open (gamma) · PvP (-3634 / -16991)</title></rect><image href="/zonemaps/zone-ics-g-1/thumb.png" x="411" y="790.4" width="38" height="38" preserveAspectRatio="none"/><text x="452" y="813.8" font-size="13" class="zonemap-label">ics_g_1</text></g></a>
+  <a href="/zones/zone-ics-g-2/"><g><rect x="673" y="831.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_2 — open (gamma) · PvP (10490 / -19220)</title></rect><image href="/zonemaps/zone-ics-g-2/thumb.png" x="673" y="831.8" width="38" height="38" preserveAspectRatio="none"/><text x="714" y="855.1" font-size="13" class="zonemap-label">ics_g_2</text></g></a>
+  <a href="/zones/zone-ics-g-3/"><g><rect x="544.1" y="870.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_3 — open (gamma) · PvP (3540 / -21314)</title></rect><image href="/zonemaps/zone-ics-g-3/thumb.png" x="544.1" y="870.7" width="38" height="38" preserveAspectRatio="none"/><text x="585.1" y="894" font-size="13" class="zonemap-label">ics_g_3</text></g></a>
+  <a href="/zones/zone-ics-g-4/"><g><rect x="795.7" y="880.9" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_4 — open (gamma) · PvP (17102 / -21865)</title></rect><image href="/zonemaps/zone-ics-g-4/thumb.png" x="795.7" y="880.9" width="38" height="38" preserveAspectRatio="none"/><text x="836.7" y="904.2" font-size="13" class="zonemap-label">ics_g_4</text></g></a>
+  <a href="/zones/zone-ics-g-5/"><g><rect x="897.7" y="884.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_5 — open (gamma) · PvP (22598 / -22054)</title></rect><image href="/zonemaps/zone-ics-g-5/thumb.png" x="897.7" y="884.4" width="38" height="38" preserveAspectRatio="none"/><text x="938.7" y="907.7" font-size="13" class="zonemap-label">ics_g_5</text></g></a>
+  <a href="/zones/zone-ics-g-6/"><g><rect x="269" y="822.4" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_6 — open (gamma) · PvP (-11283 / -18712)</title></rect><image href="/zonemaps/zone-ics-g-6/thumb.png" x="269" y="822.4" width="38" height="38" preserveAspectRatio="none"/><text x="310" y="845.7" font-size="13" class="zonemap-label">ics_g_6</text></g></a>
+  <a href="/zones/zone-ics-g-7/"><g><rect x="317.3" y="746.2" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_7 — open (gamma) · PvP (-8684 / -14604)</title></rect><image href="/zonemaps/zone-ics-g-7/thumb.png" x="317.3" y="746.2" width="38" height="38" preserveAspectRatio="none"/><text x="358.3" y="769.5" font-size="13" class="zonemap-label">ics_g_7</text></g></a>
+  <a href="/zones/zone-ics-g-8/"><g><rect x="459.8" y="660.7" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-ics zonemap-node-ics"><title>zone_ics_g_8 — open (gamma) · PvP (-1000 / -10000)</title></rect><image href="/zonemaps/zone-ics-g-8/thumb.png" x="459.8" y="660.7" width="38" height="38" preserveAspectRatio="none"/><text x="500.8" y="684.1" font-size="13" class="zonemap-label">ics_g_8</text></g></a>
+  <a href="/zones/zone-pvp-arena/"><g><circle cx="682.9" cy="308.7" r="19" fill="#10151f" class="mapfam-special zonemap-node-special"><title>zone_pvp_arena — protected (alpha) · Stronghold (10000 / 10000)</title></circle><image href="/zonemaps/zone-pvp-arena/thumb.png" x="663.9" y="289.7" width="38" height="38" preserveAspectRatio="none"/><text x="704.9" y="313" font-size="13" class="zonemap-label">pvp_arena</text></g></a>
+  <a href="/zones/zone-tm-g-1/"><g><rect x="681.4" y="531" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_1 — open (gamma) · PvP (10943 / -3006)</title></rect><image href="/zonemaps/zone-tm-g-1/thumb.png" x="681.4" y="531" width="38" height="38" preserveAspectRatio="none"/><text x="722.4" y="554.3" font-size="13" class="zonemap-label">tm_g_1</text></g></a>
+  <a href="/zones/zone-tm-g-2/"><g><rect x="787.2" y="550.6" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_2 — open (gamma) · PvP (16646 / -4063)</title></rect><image href="/zonemaps/zone-tm-g-2/thumb.png" x="787.2" y="550.6" width="38" height="38" preserveAspectRatio="none"/><text x="828.2" y="573.9" font-size="13" class="zonemap-label">tm_g_2</text></g></a>
+  <a href="/zones/zone-tm-g-3/"><g><rect x="571.2" y="697.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_3 — open (gamma) · PvP (5000 / -12000)</title></rect><image href="/zonemaps/zone-tm-g-3/thumb.png" x="571.2" y="697.8" width="38" height="38" preserveAspectRatio="none"/><text x="612.2" y="721.2" font-size="13" class="zonemap-label">tm_g_3</text></g></a>
+  <a href="/zones/zone-tm-g-4/"><g><rect x="859.9" y="422.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_4 — open (gamma) · PvP (20565 / 2823)</title></rect><image href="/zonemaps/zone-tm-g-4/thumb.png" x="859.9" y="422.8" width="38" height="38" preserveAspectRatio="none"/><text x="900.9" y="446.1" font-size="13" class="zonemap-label">tm_g_4</text></g></a>
+  <a href="/zones/zone-tm-g-5/"><g><rect x="558.2" y="247.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_5 — open (gamma) · PvP (4300 / 12258)</title></rect><image href="/zonemaps/zone-tm-g-5/thumb.png" x="558.2" y="247.8" width="38" height="38" preserveAspectRatio="none"/><text x="599.2" y="271.1" font-size="13" class="zonemap-label">tm_g_5</text></g></a>
+  <a href="/zones/zone-tm-g-6/"><g><rect x="781" y="409.6" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_6 — open (gamma) · PvP (16311 / 3533)</title></rect><image href="/zonemaps/zone-tm-g-6/thumb.png" x="781" y="409.6" width="38" height="38" preserveAspectRatio="none"/><text x="822" y="433" font-size="13" class="zonemap-label">tm_g_6</text></g></a>
+  <a href="/zones/zone-tm-g-7/"><g><rect x="802.6" y="281.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_7 — open (gamma) · PvP (17474 / 10423)</title></rect><image href="/zonemaps/zone-tm-g-7/thumb.png" x="802.6" y="281.8" width="38" height="38" preserveAspectRatio="none"/><text x="843.6" y="305.1" font-size="13" class="zonemap-label">tm_g_7</text></g></a>
+  <a href="/zones/zone-tm-g-8/"><g><rect x="895.5" y="639.2" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_8 — open (gamma) · PvP (22479 / -8837)</title></rect><image href="/zonemaps/zone-tm-g-8/thumb.png" x="895.5" y="639.2" width="38" height="38" preserveAspectRatio="none"/><text x="936.5" y="662.5" font-size="13" class="zonemap-label">tm_g_8</text></g></a>
 </svg>
 </div>
 
@@ -430,7 +966,7 @@ All zones of the server, drawn at their real grid coordinates — each island is
 
 ## Training
 
-The virtual training island — where new characters start and learn the basics before entering the main galaxies.
+The virtual [training island](/zones/zone-training/) — where new characters start and learn the basics before entering the main galaxies.
 
 <div class="zone-cards">
 <a class="zone-card" href="/zones/zone-training/">
@@ -440,9 +976,9 @@ The virtual training island — where new characters start and learn the basics 
 </a>
 </div>
 
-<a id="starter-islands"></a>
+<a id="alpha"></a>
 
-## Starter islands
+## Alpha
 
 The main protected islands and their second-wave PvE companions — the safe starter economy (see [Protection levels](/zones/protection/)).
 
@@ -483,7 +1019,7 @@ The main protected islands and their second-wave PvE companions — the safe sta
 
 ## Beta
 
-The open-PvP islands: the three main islands' PvP twins (the "_real" names), the eight gate islands of each galaxy, and the special zones (the PvP arena and the strongholds — protected instances, listed here for completeness).
+The open-PvP islands: the three main islands' PvP twins (the "_real" names), the eight gate islands of each galaxy, and the special zones (the [PvP arena](/zones/zone-pvp-arena/) and the strongholds — protected instances, listed here for completeness).
 
 <div class="zone-cards">
 <a class="zone-card" href="/zones/zone-asi/">
@@ -912,196 +1448,5 @@ Frontier belt islands with the server-recorded tier **T4** (zones.note). Open Pv
 <span class="zone-card-meta">PvP · 2048×2048</span>
 </a>
 </div>
-
-## Teleport connections (from the server database)
-
-Inter-zone TP columns recorded in `teleportdescriptions` (active rows only; 171 directed pairs, 1, 2, 3, 6 TP point(s) per pair). Pairs where both directions exist are listed once per direction, as recorded.
-
-| From | To | TP points |
-|---|---|---|
-| zone_ASI_A_real | zone_asi_g_4 | 2 |
-| zone_ASI_A_real | zone_ASI_pvp | 2 |
-| zone_ASI_A_real | zone_gamma_tc_z103 | 1 |
-| zone_ASI_A_real | zone_ICS_pvp | 2 |
-| zone_ASI_A_real | zone_TM_pve | 3 |
-| zone_asi_g_1 | zone_asi_g_4 | 2 |
-| zone_asi_g_1 | zone_ASI_pvp | 2 |
-| zone_asi_g_4 | zone_ASI_A_real | 2 |
-| zone_asi_g_4 | zone_asi_g_1 | 1 |
-| zone_ASI_pve | zone_ICS | 1 |
-| zone_ASI_pve | zone_ICS_pve | 1 |
-| zone_ASI_pve | zone_TM_pve | 1 |
-| zone_ASI_pvp | zone_ASI_A_real | 2 |
-| zone_ASI_pvp | zone_asi_g_1 | 2 |
-| zone_ASI_pvp | zone_gamma_tc_z102 | 1 |
-| zone_ASI_pvp | zone_TM_A_real | 2 |
-| zone_gamma_tc_z100 | zone_gamma_z112 | 1 |
-| zone_gamma_tc_z100 | zone_gamma_z113 | 1 |
-| zone_gamma_tc_z100 | zone_gamma_z130 | 1 |
-| zone_gamma_tc_z100 | zone_TM_pvp | 1 |
-| zone_gamma_tc_z101 | zone_gamma_z113 | 1 |
-| zone_gamma_tc_z101 | zone_gamma_z115 | 1 |
-| zone_gamma_tc_z101 | zone_gamma_z125 | 1 |
-| zone_gamma_tc_z101 | zone_TM_A_real | 1 |
-| zone_gamma_tc_z102 | zone_ASI_pvp | 1 |
-| zone_gamma_tc_z102 | zone_gamma_z115 | 1 |
-| zone_gamma_tc_z102 | zone_gamma_z116 | 1 |
-| zone_gamma_tc_z102 | zone_gamma_z120 | 1 |
-| zone_gamma_tc_z103 | zone_ASI_A_real | 1 |
-| zone_gamma_tc_z103 | zone_gamma_z109 | 1 |
-| zone_gamma_tc_z103 | zone_gamma_z116 | 1 |
-| zone_gamma_tc_z103 | zone_gamma_z117 | 1 |
-| zone_gamma_tc_z104 | zone_gamma_z109 | 1 |
-| zone_gamma_tc_z104 | zone_gamma_z111 | 1 |
-| zone_gamma_tc_z104 | zone_gamma_z137 | 1 |
-| zone_gamma_tc_z104 | zone_ICS_pvp | 1 |
-| zone_gamma_tc_z105 | zone_gamma_z111 | 1 |
-| zone_gamma_tc_z105 | zone_gamma_z112 | 1 |
-| zone_gamma_tc_z105 | zone_gamma_z132 | 1 |
-| zone_gamma_tc_z105 | zone_ICS_A_real | 1 |
-| zone_gamma_z106 | zone_gamma_z107 | 1 |
-| zone_gamma_z106 | zone_gamma_z112 | 1 |
-| zone_gamma_z107 | zone_gamma_z106 | 1 |
-| zone_gamma_z107 | zone_gamma_z108 | 1 |
-| zone_gamma_z108 | zone_gamma_z107 | 1 |
-| zone_gamma_z108 | zone_gamma_z116 | 1 |
-| zone_gamma_z109 | zone_gamma_tc_z103 | 1 |
-| zone_gamma_z109 | zone_gamma_tc_z104 | 1 |
-| zone_gamma_z109 | zone_gamma_z110 | 1 |
-| zone_gamma_z109 | zone_gamma_z139 | 1 |
-| zone_gamma_z110 | zone_gamma_z109 | 1 |
-| zone_gamma_z110 | zone_gamma_z111 | 1 |
-| zone_gamma_z111 | zone_gamma_tc_z104 | 1 |
-| zone_gamma_z111 | zone_gamma_tc_z105 | 1 |
-| zone_gamma_z111 | zone_gamma_z110 | 1 |
-| zone_gamma_z111 | zone_gamma_z135 | 1 |
-| zone_gamma_z112 | zone_gamma_tc_z100 | 1 |
-| zone_gamma_z112 | zone_gamma_tc_z105 | 1 |
-| zone_gamma_z112 | zone_gamma_z106 | 1 |
-| zone_gamma_z113 | zone_gamma_tc_z100 | 1 |
-| zone_gamma_z113 | zone_gamma_tc_z101 | 1 |
-| zone_gamma_z113 | zone_gamma_z114 | 1 |
-| zone_gamma_z113 | zone_gamma_z127 | 1 |
-| zone_gamma_z114 | zone_gamma_z113 | 1 |
-| zone_gamma_z114 | zone_gamma_z115 | 1 |
-| zone_gamma_z115 | zone_gamma_tc_z101 | 1 |
-| zone_gamma_z115 | zone_gamma_tc_z102 | 1 |
-| zone_gamma_z115 | zone_gamma_z114 | 1 |
-| zone_gamma_z115 | zone_gamma_z123 | 1 |
-| zone_gamma_z116 | zone_gamma_tc_z102 | 1 |
-| zone_gamma_z116 | zone_gamma_tc_z103 | 1 |
-| zone_gamma_z116 | zone_gamma_z108 | 1 |
-| zone_gamma_z117 | zone_gamma_tc_z103 | 1 |
-| zone_gamma_z117 | zone_gamma_z118 | 1 |
-| zone_gamma_z117 | zone_gamma_z119 | 1 |
-| zone_gamma_z118 | zone_gamma_z117 | 1 |
-| zone_gamma_z118 | zone_gamma_z140 | 1 |
-| zone_gamma_z119 | zone_gamma_z117 | 1 |
-| zone_gamma_z119 | zone_gamma_z120 | 1 |
-| zone_gamma_z120 | zone_gamma_tc_z102 | 1 |
-| zone_gamma_z120 | zone_gamma_z119 | 1 |
-| zone_gamma_z120 | zone_gamma_z121 | 1 |
-| zone_gamma_z121 | zone_gamma_z120 | 1 |
-| zone_gamma_z121 | zone_gamma_z122 | 1 |
-| zone_gamma_z122 | zone_gamma_z121 | 1 |
-| zone_gamma_z122 | zone_gamma_z123 | 1 |
-| zone_gamma_z123 | zone_gamma_z115 | 1 |
-| zone_gamma_z123 | zone_gamma_z122 | 1 |
-| zone_gamma_z123 | zone_gamma_z124 | 1 |
-| zone_gamma_z124 | zone_gamma_z123 | 1 |
-| zone_gamma_z124 | zone_gamma_z125 | 1 |
-| zone_gamma_z125 | zone_gamma_tc_z101 | 1 |
-| zone_gamma_z125 | zone_gamma_z124 | 1 |
-| zone_gamma_z125 | zone_gamma_z126 | 1 |
-| zone_gamma_z126 | zone_gamma_z125 | 1 |
-| zone_gamma_z126 | zone_gamma_z127 | 1 |
-| zone_gamma_z127 | zone_gamma_z113 | 1 |
-| zone_gamma_z127 | zone_gamma_z126 | 1 |
-| zone_gamma_z127 | zone_gamma_z128 | 1 |
-| zone_gamma_z128 | zone_gamma_z127 | 1 |
-| zone_gamma_z128 | zone_gamma_z129 | 1 |
-| zone_gamma_z129 | zone_gamma_z128 | 1 |
-| zone_gamma_z129 | zone_gamma_z130 | 1 |
-| zone_gamma_z130 | zone_gamma_tc_z100 | 1 |
-| zone_gamma_z130 | zone_gamma_z129 | 1 |
-| zone_gamma_z130 | zone_gamma_z131 | 1 |
-| zone_gamma_z131 | zone_gamma_z130 | 1 |
-| zone_gamma_z131 | zone_gamma_z132 | 1 |
-| zone_gamma_z132 | zone_gamma_tc_z105 | 1 |
-| zone_gamma_z132 | zone_gamma_z131 | 1 |
-| zone_gamma_z132 | zone_gamma_z133 | 1 |
-| zone_gamma_z133 | zone_gamma_z132 | 1 |
-| zone_gamma_z133 | zone_gamma_z134 | 1 |
-| zone_gamma_z134 | zone_gamma_z133 | 1 |
-| zone_gamma_z134 | zone_gamma_z135 | 1 |
-| zone_gamma_z135 | zone_gamma_z111 | 1 |
-| zone_gamma_z135 | zone_gamma_z134 | 1 |
-| zone_gamma_z135 | zone_gamma_z136 | 1 |
-| zone_gamma_z136 | zone_gamma_z135 | 1 |
-| zone_gamma_z136 | zone_gamma_z137 | 1 |
-| zone_gamma_z137 | zone_gamma_tc_z104 | 1 |
-| zone_gamma_z137 | zone_gamma_z136 | 1 |
-| zone_gamma_z137 | zone_gamma_z138 | 1 |
-| zone_gamma_z138 | zone_gamma_z137 | 1 |
-| zone_gamma_z138 | zone_gamma_z139 | 1 |
-| zone_gamma_z139 | zone_gamma_z109 | 1 |
-| zone_gamma_z139 | zone_gamma_z138 | 1 |
-| zone_gamma_z139 | zone_gamma_z140 | 1 |
-| zone_gamma_z140 | zone_gamma_z118 | 1 |
-| zone_gamma_z140 | zone_gamma_z139 | 1 |
-| zone_ICS | zone_ASI_pve | 1 |
-| zone_ICS | zone_ICS_pve | 1 |
-| zone_ICS | zone_TM_pve | 1 |
-| zone_ICS_A_real | zone_gamma_tc_z105 | 1 |
-| zone_ICS_A_real | zone_ics_g_3 | 2 |
-| zone_ICS_A_real | zone_ICS_pvp | 2 |
-| zone_ICS_A_real | zone_TM_pve | 3 |
-| zone_ICS_A_real | zone_TM_pvp | 2 |
-| zone_ics_g_3 | zone_ICS_A_real | 2 |
-| zone_ics_g_3 | zone_ics_g_8 | 2 |
-| zone_ics_g_8 | zone_ics_g_3 | 2 |
-| zone_ics_g_8 | zone_ICS_pvp | 2 |
-| zone_ICS_pve | zone_ASI_pve | 1 |
-| zone_ICS_pve | zone_ICS | 1 |
-| zone_ICS_pve | zone_TM_pve | 1 |
-| zone_ICS_pvp | zone_ASI_A_real | 2 |
-| zone_ICS_pvp | zone_gamma_tc_z104 | 1 |
-| zone_ICS_pvp | zone_ICS_A_real | 2 |
-| zone_ICS_pvp | zone_ics_g_8 | 2 |
-| zone_TM | zone_TM_pve | 2 |
-| zone_TM_A_real | zone_ASI_pvp | 2 |
-| zone_TM_A_real | zone_gamma_tc_z101 | 1 |
-| zone_TM_A_real | zone_tm_g_6 | 2 |
-| zone_TM_A_real | zone_TM_pve | 3 |
-| zone_TM_A_real | zone_TM_pvp | 2 |
-| zone_tm_g_3 | zone_tm_g_6 | 2 |
-| zone_tm_g_3 | zone_TM_pvp | 2 |
-| zone_tm_g_6 | zone_TM_A_real | 2 |
-| zone_tm_g_6 | zone_tm_g_3 | 2 |
-| zone_TM_pve | zone_ASI_A_real | 3 |
-| zone_TM_pve | zone_ASI_pve | 1 |
-| zone_TM_pve | zone_ICS | 1 |
-| zone_TM_pve | zone_ICS_A_real | 3 |
-| zone_TM_pve | zone_ICS_pve | 1 |
-| zone_TM_pve | zone_TM | 2 |
-| zone_TM_pve | zone_TM_A_real | 3 |
-| zone_TM_pvp | zone_gamma_tc_z100 | 1 |
-| zone_TM_pvp | zone_ICS_A_real | 2 |
-| zone_TM_pvp | zone_TM_A_real | 2 |
-| zone_TM_pvp | zone_tm_g_3 | 2 |
-| zone_training | zone_TM | 6 |
-
-## Stronghold & arena exit gates
-
-The dashed lines — exits recorded in `strongholdexitconfig` / `riftconfigs` / `riftdestinations`. The entry-side rifts (e.g. the gates *into* the strongholds) are placed inside zone terrain files, so only the exit direction is known from the database.
-
-| From | To | Rift config |
-|---|---|---|
-| zone_pvp_arena | zone_TM_pve | `stronghold_default_exit` |
-| zone_strghld_70 | zone_TM_pve | `stronghold_default_exit` |
-| zone_strghld_71 | zone_TM | `stronghold_z71_exit` |
-| zone_strghld_72 | zone_TM_pve | `stronghold_z72_exit` |
-
-_The Daoden stronghold instance ("Daoden z2") also has a recorded exit that sends players to a weighted-random destination among zone_ASI_pve, zone_ICS, zone_ICS_pve, zone_TM and zone_TM_pve — it is not a permanent zone, so it has no node on the map._
 
 [Zones overview](/zones/) · [Zone index](/zones/zone-index/) · [Protection levels](/zones/protection/)
