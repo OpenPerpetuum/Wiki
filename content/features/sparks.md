@@ -45,7 +45,7 @@ stateDiagram-v2
 
 ## Spark families
 
-The 47 sparks in 6 families at a glance: one box per family (spark count, how the line unlocks), left to right in the order the lines were added. **Click a box to jump to that family's sparks below.** **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset. The full spark-to-extension detail is the [connection tree](#tree) further down.
+The 47 sparks in 6 families at a glance: one box per family (spark count, how the line unlocks), left to right in the order the lines were added. **Click a box to jump to that family's sparks below.** **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
 
 <div class="map-zoom-wrap sparkfam-wrap">
 <button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
@@ -124,47 +124,47 @@ Unlock: standing with the TM megacorporation (2 → 4 → 6 by level). Each swit
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with TM</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with TM</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with TM</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with TM</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with TM</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with TM</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with TM</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with TM</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with TM</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 </div>
 
@@ -178,47 +178,47 @@ Unlock: standing with the ICS megacorporation (2 → 4 → 6 by level). Each swi
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with ICS</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with ICS</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with ICS</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with ICS</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with ICS</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with ICS</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with ICS</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with ICS</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with ICS</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 </div>
 
@@ -232,47 +232,47 @@ Unlock: standing with the ASI megacorporation (2 → 4 → 6 by level). Each swi
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with ASI</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with ASI</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Combat Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with ASI</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with ASI</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with ASI</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Indy Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with ASI</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 3 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 3 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl1</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 2 with ASI</span> · switch <span class="ext-val-price">10k NIC</span></div>
-<div class="ext-card-prereq">Bundles 5 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 5 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl2</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 4 with ASI</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 6 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 6 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Social Lvl3</div>
 <div class="ext-card-meta">unlock <span class="ext-val-bonus">standing 6 with ASI</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 6 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 6 extension levels</div>
 </div>
 </div>
 
@@ -286,27 +286,27 @@ Unlock: a NIC price (1M per spark). Each switch costs NIC (the amount is per spa
 <div class="ext-card">
 <div class="ext-card-name">Syndicate Nic Combat</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">1M NIC</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Syndicate Nic Scout</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">1M NIC</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Syndicate Nic Coreboost</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">1M NIC</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Syndicate Nic Allresist</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">1M NIC</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 4 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 4 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Syndicate Nic Fitboost</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">1M NIC</span> · switch <span class="ext-val-price">100k NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 </div>
 
@@ -320,47 +320,33 @@ Unlock: a NIC price (25–50M per spark). Each switch costs NIC (the amount is p
 <div class="ext-card">
 <div class="ext-card-name">Anniversary Combat</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">25M NIC</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 6 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 6 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Anniversary Logistic</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">25M NIC</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 6 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 6 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Amazon c1 Combat</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">25M NIC</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Amazon c1 Indy</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">25M NIC</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Steam a</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">50M NIC</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 <div class="ext-card">
 <div class="ext-card-name">Steam b</div>
 <div class="ext-card-meta">unlock <span class="ext-val-price">50M NIC</span> · switch <span class="ext-val-price">1M NIC</span></div>
-<div class="ext-card-prereq">Bundles 2 extension levels (see the <a href="#tree">connection tree</a>)</div>
+<div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
-</div>
-
-<a id="tree"></a>
-
-## Spark connection tree
-
-Which spark grants which extension levels — all 47 sparks (grouped by family,
-left) and the extension bundles they carry (right). The arrows are labeled
-with the granted level; hover a spark for its unlock requirement. **Scroll
-over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
-
-<div class="map-zoom-wrap">
-<button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
-<img class="zoommap" src="/sparks-tree.svg" alt="Spark connection tree: 47 sparks and the extension bundles they carry" loading="lazy">
 </div>
 
 <a id="switching-sparks"></a>

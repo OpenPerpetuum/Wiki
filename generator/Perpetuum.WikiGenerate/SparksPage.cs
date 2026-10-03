@@ -3,8 +3,8 @@ namespace Perpetuum.WikiGenerate;
 /// <summary>
 /// The sparks page (content/features/sparks.md): the hand-written prose plus
 /// a generated "Spark families" overview (a compact graph, one box per
-/// family — the vertical connection tree is hard to scan) whose boxes link
-/// to the per-family card sections below, and the connection tree itself.
+/// family) whose boxes link to the per-family card sections below (47 spark
+/// cards: unlock cost/standing, switch cost, bundled extension levels).
 /// The generated block is marked with &lt;!-- sparkfamilies:generated --&gt; so
 /// tools/gen_spark_families.py can rebuild it without a database (it must
 /// produce byte-identical output).
@@ -72,8 +72,7 @@ public static class SparksPage
         sb.Append($"The {sparkCount} sparks in {families.Count} families at a glance: one box per family " +
                   "(spark count, how the line unlocks), left to right in the order the lines were added. " +
                   "**Click a box to jump to that family's sparks below.** " +
-                  "**Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset. " +
-                  "The full spark-to-extension detail is the [connection tree](#tree) further down.\n\n");
+                  "**Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.\n\n");
         sb.Append("<div class=\"map-zoom-wrap sparkfam-wrap\">\n");
         sb.Append("<button type=\"button\" class=\"zoommap-reset\" title=\"Reset the zoom\">\u27f2</button>\n");
         var tag = familySvg.IndexOf("<svg ", StringComparison.Ordinal);
@@ -94,27 +93,13 @@ public static class SparksPage
                 sb.Append($"<div class=\"ext-card-meta\">unlock <span class=\"{(s.IsPrice ? "ext-val-price" : "ext-val-bonus")}\">{Escape(s.Unlock)}</span>" +
                           $" · switch <span class=\"ext-val-price\">{Escape(s.Switch)}</span></div>\n");
                 // raw HTML: Zola does not run the markdown parser inside HTML blocks
-                sb.Append($"<div class=\"ext-card-prereq\">{(s.Default ? "Default spark — installed at character creation" : $"Bundles {s.Bundle} extension level{(s.Bundle == 1 ? "" : "s")} (see the <a href=\"#tree\">connection tree</a>)")}</div>\n");
+                sb.Append($"<div class=\"ext-card-prereq\">{(s.Default ? "Default spark — installed at character creation" : $"Bundles {s.Bundle} extension level{(s.Bundle == 1 ? "" : "s")}")}</div>\n");
                 sb.Append("</div>\n");
             }
             sb.Append("</div>\n\n");
         }
 
         sb.Append("""
-            <a id="tree"></a>
-
-            ## Spark connection tree
-
-            Which spark grants which extension levels — all 47 sparks (grouped by family,
-            left) and the extension bundles they carry (right). The arrows are labeled
-            with the granted level; hover a spark for its unlock requirement. **Scroll
-            over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
-
-            <div class="map-zoom-wrap">
-            <button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
-            <img class="zoommap" src="/sparks-tree.svg" alt="Spark connection tree: 47 sparks and the extension bundles they carry" loading="lazy">
-            </div>
-
             <a id="switching-sparks"></a>
 
             ## Switching sparks

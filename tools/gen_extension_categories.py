@@ -10,8 +10,8 @@ database needed) and:
     cross-category prerequisite (so you can see which categories open up
     which). Each box is a link to its category section on the extensions
     page. The spark-extension category sits outside the diagram (no
-    prerequisites of its own) — it has its own diagram on the sparks page
-    (generator: SparksTree.cs).
+    prerequisites of its own — sparks bundle extension levels, they are not
+    prerequisites).
   * embeds that SVG inline in the "## Main categories" section of the
     extensions page (inline so the boxes are real links), with the same
     zoom/pan wrapper as the world map, above the per-category cards

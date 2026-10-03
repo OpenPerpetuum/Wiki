@@ -73,10 +73,6 @@ public static class Program
         // tools — the DB is the source of truth, the committed JSON is a
         // snapshot of the `components` + `itemresearchlevels` tables.
         WriteRecipesData(wikiRoot, db, defs);
-        // Spark connection tree SVG (static/sparks-tree.svg) for the sparks page.
-        var (sparksSvg, sparkCount, sparkEdges) = SparksTree.Build(db);
-        File.WriteAllText(Path.Combine(wikiRoot, "static", "sparks-tree.svg"), sparksSvg);
-        Console.WriteLine($"wrote static/sparks-tree.svg ({sparkCount} sparks, {sparkEdges} bundle entries)");
         // Spark family overview (inlined in the sparks page) + the page itself:
         // the hand-written prose plus a generated family graph whose boxes link
         // to the per-family card sections (#family-<slug>).

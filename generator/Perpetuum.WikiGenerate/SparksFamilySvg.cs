@@ -5,8 +5,6 @@ namespace Perpetuum.WikiGenerate;
 /// (inlined into content/features/sparks.md by SparksPage.cs): one box per
 /// family (label, spark count, unlock type), colored, each wrapping a link
 /// to the family's card section further down the page (#family-&lt;slug&gt;).
-/// Compact and horizontal on purpose — the vertical spark connection tree
-/// (static/sparks-tree.svg) is the detailed view and stays further down.
 /// Rendered like the extensions category overview: plain rectangles + text,
 /// no images (the extension category art is copyrighted).
 /// </summary>

@@ -47,8 +47,9 @@ test("sparks page: family boxes link to per-family card sections", async ({ page
   expect(await page.locator("main .ext-val-price").count()).toBeGreaterThan(20);
   expect(await page.locator("main .ext-val-bonus").count()).toBeGreaterThan(10);
 
-  // the connection tree section survived with its zoomable svg
-  await expect(page.locator("img[src='/sparks-tree.svg']")).toHaveCount(1);
+  // the old vertical connection tree is gone (family cards replaced it)
+  expect(await page.locator("img[src='/sparks-tree.svg']").count()).toBe(0);
+  expect(await page.locator("#tree").count()).toBe(0);
 
   // clicking a family box scrolls to the family section (the anchor keeps the
   // heading below the sticky topbar — scroll-margin-top on [id] elements)

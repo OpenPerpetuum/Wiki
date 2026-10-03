@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PAGE = ROOT / "content" / "features" / "sparks.md"
 MARKER = "<!-- sparkfamilies:generated -->"
-END = '<a id="tree"></a>'
+END = '<a id="switching-sparks"></a>'
 
 # Family display info (label, slug, color, short box text, long section text)
 # — must match SparksPage.Info(). Order = the order the lines appear on the page.
@@ -107,8 +107,7 @@ def main() -> int:
         f"The {spark_count} sparks in {len(fams)} families at a glance: one box per family "
         "(spark count, how the line unlocks), left to right in the order the lines were added. "
         "**Click a box to jump to that family's sparks below.** "
-        "**Scroll over the diagram to zoom**, drag to pan, and use the \u27f2 button to reset. "
-        "The full spark-to-extension detail is the [connection tree](#tree) further down.",
+        "**Scroll over the diagram to zoom**, drag to pan, and use the \u27f2 button to reset.",
         "",
         '<div class="map-zoom-wrap sparkfam-wrap">',
         '<button type="button" class="zoommap-reset" title="Reset the zoom">\u27f2</button>',

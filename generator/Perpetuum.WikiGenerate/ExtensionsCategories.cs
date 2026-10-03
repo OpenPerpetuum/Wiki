@@ -7,8 +7,8 @@ namespace Perpetuum.WikiGenerate;
 /// right by the starting rank (the progression reads left to right), and an
 /// arrow for every cross-category prerequisite (which categories open up
 /// which, without the full detail tree). The spark-extension category sits
-/// outside this diagram (no prerequisites of its own) — it has its own
-/// diagram on the sparks page (SparksTree). Mirrors the Python tool
+/// outside this diagram (no prerequisites of its own — sparks bundle
+/// extension levels, they are not prerequisites). Mirrors the Python tool
 /// tools/gen_extension_categories.py — keep the two in sync.
 /// </summary>
 public static class ExtensionsCategories
