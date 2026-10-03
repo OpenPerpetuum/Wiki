@@ -79,19 +79,23 @@ pre code { background: none; padding: 0; }
     border-bottom: 1px solid var(--neon-dim);
     box-shadow: 0 0 14px var(--neon-faint), 0 6px 24px rgba(0, 0, 0, 0.55);
 }
-.topbar-main { display: flex; align-items: center; gap: 0.8rem; width: 100%; }
+.topbar-main { display: flex; align-items: center; gap: 0.8rem; width: 100%; flex: 1 1 auto; min-width: 0; }
 .topbar-main .palette-wrap { margin-left: auto; }
 /* The search bar sits on the right of the SAME row (desktop): brand left,
    search + chrome icons right. Mobile keeps its own row below. */
-.topbar-search { display: none; }
-.topbar-search #wiki-search { width: 340px; }
+.topbar-search { display: flex; width: 100%; }
+.topbar-search #wiki-search { width: 100%; min-width: 0; }
 @media (min-width: 801px) {
     .topbar { flex-direction: row; align-items: center; gap: 1rem; padding-bottom: 0.55rem; }
-    .topbar-main { flex: 1; min-width: 0; }
-    /* one row: brand … chrome icons, then the search bar at the right end */
-    .topbar-main .palette-wrap { margin-left: auto; }
-    .topbar-search { display: flex; flex: 0 1 560px; min-width: 200px; }
-    .topbar-search #wiki-search { width: 100%; }
+    .topbar-main { flex: 1 1 auto; min-width: 0; }
+    /* one row: brand … chrome icons, then the search bar at the right end.
+       The search keeps its natural (shrinking) width first; only below the
+       1100px breakpoint does the row get tight enough for the brand to
+       start shrinking too — the search still shrinks first (shrink 3) and
+       nothing ever overlaps. */
+    .topbar-main .palette-wrap { margin-left: auto; flex: none; }
+    .topbar-search { display: flex; flex: 0 1 560px; min-width: 140px; }
+    .brand { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 }
 .brand {
     font-weight: 700; font-size: 1.02rem; color: #eaf6ff;
@@ -355,11 +359,15 @@ main p, main li, main blockquote, main dt, main dd {
     }
     body.sidenav-open .sidenav { transform: translateX(0); }
     body.sidenav-open { overflow: hidden; } /* scroll lock behind the drawer */
-    /* while the drawer has the user's attention the chrome icons (language,
-       palette, theme) are hidden — they sit in the top-right corner the
-       drawer overlays, and the drawer itself is what matters now */
-    body.sidenav-open .palette-toggle,
-    body.sidenav-open #theme-toggle { display: none; }
+    /* while the drawer is open the three chrome buttons (language, palette,
+       theme) leave the topbar — which the drawer covers — and reposition
+       inside the drawer, just below the Home quick-link (measured: the
+       link's bottom sits at ~65px from the viewport top). */
+    body.sidenav-open .palette-wrap {
+        position: fixed; left: 0.75rem; top: 4.2rem;
+        z-index: 46; /* above the drawer (45) */
+        gap: 0.35rem;
+    }
     /* dim backdrop behind the drawer (a tap on it closes, via JS) */
     body.sidenav-open::before {
         content: "";
