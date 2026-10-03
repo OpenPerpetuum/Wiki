@@ -10,9 +10,14 @@ namespace Perpetuum.WikiGenerate;
 /// </summary>
 public static class ZoneMapSvg
 {
-    private sealed record Col(double X, double Y, List<string> Dests, bool Enabled);
+    private sealed record Col(long Eid, double X, double Y, List<string> Dests, bool Enabled);
     private sealed record Spot(double X, double Y, string From);
     private sealed record Gate(double X, double Y, string To);
+    /// <summary>One in-zone (local) teleport pair: both endpoints are teleport
+    /// columns of the same zone. Rendered as a dashed line (hidden until the
+    /// cursor comes near an endpoint — static/map.js) plus the data-ltp token
+    /// on the two endpoint column circles.</summary>
+    private sealed record LocalTp(long A, long B, double Ax, double Ay, double Bx, double By);
 
     /// <summary>
     /// zone name -> SVG markup, for every zone with any teleport data. Columns are
@@ -79,6 +84,34 @@ public static class ZoneMapSvg
             """)
             .ToList();
 
+        // Local (in-zone) teleport pairs: teleportdescriptions rows where the
+        // source and target zone are the same; each pair is recorded in both
+        // directions, so deduplicate on the ordered (a, b) entity ids. The
+        // endpoint columns must be among the plotted teleport entities.
+        var colPos = cols.ToDictionary(c => (Zone: c.Zone, Eid: c.Eid), c => (X: c.X, Y: c.Y));
+        var local = db.Query("""
+            SELECT zn.name, td.sourcecolumn, td.targetcolumn
+            FROM teleportdescriptions td
+            JOIN zones zn ON zn.id = td.sourcezone
+            WHERE zn.id = td.targetzone AND zn.id < 49000 AND td.active = 1
+            """)
+            .Select(r => (Zone: r.Str("name"),
+                A: Math.Min((long)r.Lng("sourcecolumn"), (long)r.Lng("targetcolumn")),
+                B: Math.Max((long)r.Lng("sourcecolumn"), (long)r.Lng("targetcolumn"))))
+            .Where(t => t.A != t.B)
+            .Distinct()
+            .ToList();
+        var localByZone = new Dictionary<string, List<LocalTp>>();
+        foreach (var t in local)
+        {
+            if (!colPos.TryGetValue((t.Zone, t.A), out var a) || !colPos.TryGetValue((t.Zone, t.B), out var b)) continue;
+            if (!localByZone.TryGetValue(t.Zone, out var list)) localByZone[t.Zone] = list = new List<LocalTp>();
+            if (list.Any(l => l.A == t.A && l.B == t.B)) continue;
+            list.Add(new LocalTp(t.A, t.B, a.X, a.Y, b.X, b.Y));
+        }
+        foreach (var list in localByZone.Values)
+            list.Sort((l1, l2) => l1.A == l2.A ? l1.B.CompareTo(l2.B) : l1.A.CompareTo(l2.A));
+
         var result = new Dictionary<string, string>();
         var byZone = cols.GroupBy(c => c.Zone)
             .ToDictionary(g => g.Key, g => g.ToList(), StringComparer.Ordinal);
@@ -86,17 +119,18 @@ public static class ZoneMapSvg
         foreach (var (name, c) in byZone.OrderBy(kv => kv.Key, StringComparer.Ordinal))
         {
             if (!size.TryGetValue(name, out var sz)) continue;
-            var colList = c.Select(x => new Col(x.X, x.Y,
+            var colList = c.Select(x => new Col(x.Eid, x.X, x.Y,
                 destByColumn.TryGetValue(x.Eid, out var d) ? d : new List<string>(), x.Enabled)).ToList();
             var spotList = spots.Where(s => s.Zone == name).Select(s => new Spot(s.X, s.Y, s.From)).Distinct().ToList();
             var gateList = gates.Where(g => g.Str("name") == name).Select(g => new Gate(g.Dbl("x"), g.Dbl("y"), g.Str("dst"))).ToList();
             if (colList.Count == 0 && spotList.Count == 0 && gateList.Count == 0) continue;
-            result[name] = Svg(name, sz.W, sz.H, colList, spotList, gateList);
+            var ltpList = localByZone.TryGetValue(name, out var l) ? l : new List<LocalTp>();
+            result[name] = Svg(name, sz.W, sz.H, colList, spotList, gateList, ltpList);
         }
         return result;
     }
 
-    private static string Svg(string name, int w, int h, List<Col> cols, List<Spot> spots, List<Gate> gates)
+    private static string Svg(string name, int w, int h, List<Col> cols, List<Spot> spots, List<Gate> gates, List<LocalTp> localTps)
     {
         var f = (double)w / 2048.0; // scale font/radii with the zone size
         var r = 12 * f;
@@ -111,6 +145,18 @@ public static class ZoneMapSvg
             var gy = h / 8.0 * i;
             sb.Append($"  <line x1=\"{Fx(gx)}\" y1=\"0\" x2=\"{Fx(gx)}\" y2=\"{h}\" stroke=\"#1d2534\" stroke-width=\"{1 * f}\"/>\n");
             sb.Append($"  <line x1=\"0\" y1=\"{Fx(gy)}\" x2=\"{w}\" y2=\"{Fx(gy)}\" stroke=\"#1d2534\" stroke-width=\"{1 * f}\"/>\n");
+        }
+        // local (in-zone) teleport pairs: a hidden dashed line per pair —
+        // static/map.js lights it up while the cursor is near one of the two
+        // endpoint columns (the circles below carry the same data-ltp token).
+        for (var i = 0; i < localTps.Count; i++)
+        {
+            var l = localTps[i];
+            // self-closing (no <title> child): tools/gen_zone_teleport_maps.py
+            // passes self-closing <line> elements through, but a line with
+            // children would fall through its item parser and be dropped
+            sb.Append($"  <line class=\"ltp-line\" data-ltp=\"{i}\" x1=\"{Fx(l.Ax)}\" y1=\"{Fx(l.Ay)}\" x2=\"{Fx(l.Bx)}\" y2=\"{Fx(l.By)}\" " +
+                      $"stroke=\"{FamilyColor(name)}\" stroke-width=\"{3 * f}\" stroke-dasharray=\"{Fx(12 * f)} {Fx(9 * f)}\"/>\n");
         }
         // landing spots first (under the columns); the label joins every
         // distinct origin sharing the same spot.
@@ -130,7 +176,17 @@ public static class ZoneMapSvg
             sb.Append($"  <path d=\"M {Fx(g.X)} {Fx(g.Y - d)} L {Fx(g.X + d)} {Fx(g.Y)} L {Fx(g.X)} {Fx(g.Y + d)} L {Fx(g.X - d)} {Fx(g.Y)} Z\" fill=\"#f5a05a\" stroke=\"#10151f\" stroke-width=\"{2 * f}\"/>\n");
             sb.Append($"  <text x=\"{Fx(g.X)}\" y=\"{Fx(g.Y + d + fs)}\" font-size=\"{Fx(fs * 0.8)}\" fill=\"#d5dbe8\" text-anchor=\"middle\" font-family=\"sans-serif\">exit → {Escape(Disp(g.To))}</text>\n");
         }
-        // teleport columns, sorted for determinism; disabled ones dimmer
+        // teleport columns, sorted for determinism; disabled ones dimmer.
+        // Columns that are an endpoint of a local (in-zone) teleport carry the
+        // data-ltp token(s) so the hover lines can find their endpoints.
+        var ltpByEid = new Dictionary<long, List<int>>();
+        for (var i = 0; i < localTps.Count; i++)
+        {
+            if (!ltpByEid.TryGetValue(localTps[i].A, out var la)) ltpByEid[localTps[i].A] = la = new List<int>();
+            la.Add(i);
+            if (!ltpByEid.TryGetValue(localTps[i].B, out var lb)) ltpByEid[localTps[i].B] = lb = new List<int>();
+            lb.Add(i);
+        }
         foreach (var c in cols.OrderBy(c => c.Enabled ? 0 : 1).ThenBy(c => c.X).ThenBy(c => c.Y))
         {
             var dests = c.Dests.Select(Disp).Distinct(StringComparer.Ordinal).ToList();
@@ -139,7 +195,10 @@ public static class ZoneMapSvg
             var color = c.Enabled ? ColorFor(label, c.Dests) : "#5b6478";
             var below = c.Y < fs * 3;
             var ty = below ? c.Y + r + fs : c.Y - r - fs * 0.5;
-            sb.Append($"  <circle cx=\"{Fx(c.X)}\" cy=\"{Fx(c.Y)}\" r=\"{Fx(r)}\" fill=\"{color}\" stroke=\"#10151f\" stroke-width=\"{2 * f}\" opacity=\"{(c.Enabled ? 1 : 0.55)}\"/>\n");
+            var ltpAttr = ltpByEid.TryGetValue(c.Eid, out var toks) && toks.Count > 0
+                ? $" data-ltp=\"{string.Join(" ", toks)}\""
+                : "";
+            sb.Append($"  <circle cx=\"{Fx(c.X)}\" cy=\"{Fx(c.Y)}\" r=\"{Fx(r)}\"{ltpAttr} fill=\"{color}\" stroke=\"#10151f\" stroke-width=\"{2 * f}\" opacity=\"{(c.Enabled ? 1 : 0.55)}\"/>\n");
             if (label.Length > 0)
                 sb.Append($"  <text x=\"{Fx(c.X)}\" y=\"{Fx(ty)}\" font-size=\"{Fx(fs)}\" fill=\"#d5dbe8\" text-anchor=\"middle\" font-family=\"sans-serif\" opacity=\"{(c.Enabled ? 1 : 0.55)}\">{Escape(label)}</text>\n");
         }
@@ -156,6 +215,16 @@ public static class ZoneMapSvg
         if (n.Contains("ics", StringComparison.OrdinalIgnoreCase)) return "#6ee7a0";
         if (n.Contains("asi", StringComparison.OrdinalIgnoreCase)) return "#f5a05a";
         if (n.Contains("gamma", StringComparison.OrdinalIgnoreCase)) return "#a78bfa";
+        return "#c8d2e0";
+    }
+
+    /// <summary>The zone's own family color (local teleport lines).</summary>
+    private static string FamilyColor(string zoneName)
+    {
+        if (zoneName.Contains("tm", StringComparison.OrdinalIgnoreCase)) return "#41d3ff";
+        if (zoneName.Contains("ics", StringComparison.OrdinalIgnoreCase)) return "#6ee7a0";
+        if (zoneName.Contains("asi", StringComparison.OrdinalIgnoreCase)) return "#f5a05a";
+        if (zoneName.Contains("gamma", StringComparison.OrdinalIgnoreCase)) return "#a78bfa";
         return "#c8d2e0";
     }
 

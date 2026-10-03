@@ -7,6 +7,10 @@ description: "PvP open zone: 7 ore types, 17 plant species, 2048×2048 tiles."
      Do not edit by hand; regenerate instead. -->
 # Hokkogaros (zone_ASI_A_real)
 
+![Teleport columns in Hokkogaros (zone_ASI_A_real)](/zonemaps/zone-asi-a-real.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records. This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line between the pair's two locations stays lit.
+
 An open-PvP (beta) Daoden (ASI) island — players can attack freely and blobs apply. It maintains 7 ore types.
 
 | Fact | Value |
@@ -66,12 +70,5 @@ pie showData
 - ← [Hershfield](/zones/zone-tm-pve/) (3 TP points)
 - ← [Xiantor](/zones/zone-asi-g-4/) (2 TP points)
 - ← [zone_gamma_tc_z103](/zones/zone-gamma-tc-z103/) (1 TP point)
-
-
-## Teleport map
-
-![Teleport columns in Hokkogaros (zone_ASI_A_real)](/zonemaps/zone-asi-a-real.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

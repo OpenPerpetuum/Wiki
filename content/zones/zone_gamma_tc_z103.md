@@ -7,6 +7,10 @@ description: "PvP open zone: 12 plant species, 256×256 tiles."
      Do not edit by hand; regenerate instead. -->
 # zone_gamma_tc_z103
 
+![Teleport columns in zone_gamma_tc_z103](/zonemaps/zone-gamma-tc-z103.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
+
 A small transit zone of the frontier belt — a pure travel node with no ore configuration.
 
 | Fact | Value |
@@ -36,12 +40,5 @@ A small transit zone of the frontier belt — a pure travel node with no ore con
 - ← [zone_gamma_z109](/zones/zone-gamma-z109/) (1 TP point)
 - ← [zone_gamma_z116](/zones/zone-gamma-z116/) (1 TP point)
 - ← [zone_gamma_z117](/zones/zone-gamma-z117/) (1 TP point)
-
-
-## Teleport map
-
-![Teleport columns in zone_gamma_tc_z103](/zonemaps/zone-gamma-tc-z103.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#t0) · [Protection levels](/zones/protection/)

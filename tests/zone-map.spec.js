@@ -88,6 +88,36 @@ test('teleport elements are clickable and lead to the right zone page', async ({
   expect(await page.locator('main h1').count()).toBe(1);
 });
 
+test('local teleport lines light up near their endpoint columns', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
+  const wrap = page.locator('.zonetp-wrap');
+  await wrap.waitFor({ state: 'visible', timeout: 10000 });
+  // this zone has in-zone teleports: dashed lines, hidden by default
+  const lines = page.locator('.zonetp-wrap .ltp-line');
+  expect(await lines.count()).toBeGreaterThan(0);
+  for (let i = 0; i < await lines.count(); i++) {
+    expect(await lines.nth(i).evaluate((el) => getComputedStyle(el).opacity)).toBe('0');
+  }
+  // hover near one of the endpoint columns: its line(s) stay lit
+  const anchor = page.locator('.zonetp-wrap circle[data-ltp]').first();
+  const b = await anchor.boundingBox();
+  await page.mouse.move(b.x + b.width / 2, b.y + b.height / 2);
+  await expect.poll(async () => {
+    const on = await lines.evaluateAll((ls) => ls.some((l) => l.classList.contains('ltp-on')));
+    return on;
+  }, { timeout: 3000 }).toBe(true);
+  const litId = await lines.evaluateAll((ls) =>
+    ls.find((l) => l.classList.contains('ltp-on')).getAttribute('data-ltp'));
+  // the lit line pairs with the hovered column
+  expect(await anchor.getAttribute('data-ltp')).toContain(litId);
+  // move away: it fades out again (hysteresis)
+  const w = await wrap.boundingBox();
+  await page.mouse.move(w.x + 8, w.y + 8);
+  await expect.poll(async () => {
+    return lines.evaluateAll((ls) => ls.every((l) => !l.classList.contains('ltp-on')));
+  }, { timeout: 3000 }).toBe(true);
+});
+
 test('wheel over the zone map zooms it, not the page', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
   const wrap = page.locator('.zonetp-wrap');

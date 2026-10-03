@@ -7,6 +7,10 @@ description: "Stronghold protected zone: 10 plant species, 2048×2048 tiles."
      Do not edit by hand; regenerate instead. -->
 # Omega (zone_pvp_arena)
 
+![Teleport columns in Omega (zone_pvp_arena)](/zonemaps/zone-pvp-arena.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
+
 The PvP arena — a scripted combat event zone.
 
 | Fact | Value |
@@ -25,12 +29,5 @@ The PvP arena — a scripted combat event zone.
 **Exit gates** (stronghold/arena exits recorded in the database):
 
 - → [Hershfield](/zones/zone-tm-pve/) (`stronghold_default_exit`)
-
-
-## Teleport map
-
-![Teleport columns in Omega (zone_pvp_arena)](/zonemaps/zone-pvp-arena.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

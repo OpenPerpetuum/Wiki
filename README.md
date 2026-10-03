@@ -88,7 +88,7 @@ kept in sync with its generator counterpart (the page it feeds):
 |---|---|---|
 | `tools/gen_production_pages.py` | adds the "Production" (components → item) and "Used in production" (item → products) mermaid sections to item pages from the `tools/recipes_data.json` cache, which the .NET generator writes from the `components`/`itemresearchlevels` tables | `ItemsPage.cs` |
 | `tools/gen_recipes_cards.py` | lays out the recipes page as category sections of reward-style cards, each linked to the item's page | `RecipesPage.cs` |
-| `tools/gen_extension_categories.py` | builds `static/extensions-categories.svg` (the 15 skill categories with cross-category prerequisite arrows) and its "Main categories" section on the extensions page | `ExtensionsCategories.cs` |
+| `tools/gen_extension_categories.py` | builds `static/extensions-categories.svg` (the 15 skill categories with cross-category prerequisite arrows, each box linking to its section) and embeds it inline in the extensions page's "Main categories" section | `ExtensionsCategories.cs` |
 | `tools/regen_search_index.py` | rewrites `static/search_index.json` from the committed pages (title/description/URL per page) | `SearchIndex.cs` |
 
 Run order for a full refresh: `gen_production_pages.py`, then

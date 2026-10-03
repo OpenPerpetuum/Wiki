@@ -26,11 +26,9 @@ extensions** required to pilot a robot class. Level 1 costs credits, every furth
 level costs Extension Points (EP), and prerequisites gate the path.
 
 - [Main categories](/content/extensions/#categories) — the 15 categories at a glance:
-  which categories open up which
-- [Extension tree](/content/extensions/#tree) — the whole tree: every extension by
-  rank and category, with prerequisite edges
-- [Extensions table](/content/extensions/) — every extension: rank, price, bonus,
-  prerequisites
+  which categories open up which (click a box to jump to its cards)
+- [Extensions by category](/content/extensions/#table) — every extension: rank,
+  price, bonus, prerequisites
 - How EP and the tech tree work: [Research](/features/research/)
 
 ## Sparks

@@ -8,15 +8,18 @@ database needed) and:
     (extension count, entry points without prerequisites, rank range), the
     columns ordered left to right by starting rank, with an arrow for every
     cross-category prerequisite (so you can see which categories open up
-    which, without the 250-node detail tree). The spark-extension category
-    sits outside the diagram (no prerequisites of its own) — it has its own
-    diagram on the sparks page (generator: SparksTree.cs).
-  * inserts a "## Main categories" section into the extensions page above
-    the full tree, embedded with the same zoom/pan wrapper as the world map
+    which). Each box is a link to its category section on the extensions
+    page. The spark-extension category sits outside the diagram (no
+    prerequisites of its own) — it has its own diagram on the sparks page
+    (generator: SparksTree.cs).
+  * embeds that SVG inline in the "## Main categories" section of the
+    extensions page (inline so the boxes are real links), with the same
+    zoom/pan wrapper as the world map, above the per-category cards
 
 The section is marked with <!-- categories:generated --> so re-runs replace
 it in place. The long-term source is the .NET generator
-(ExtensionsPage.cs / ExtensionsCategories.cs) — keep the two in sync.
+(ExtensionsPage.cs / ExtensionsCategories.cs) — this tool must produce
+byte-identical output.
 """
 
 import html
@@ -74,6 +77,13 @@ def load_cards():
             cards[-1][3] = html.unescape(p)
     total = sum(1 for ln in open(EXT, encoding="utf-8") if "<div class=\"ext-card\">" in ln)
     return cards, total
+
+
+def slug_cat(display_name):
+    # Must stay identical to ExtensionsPage.SlugCat (C#): "extcat_craft" ->
+    # "craft"; lowercased, non-alphanumerics to '-', collapsed, trimmed.
+    s = re.sub(r"[^a-z0-9]+", "-", display_name.lower()).strip("-")
+    return re.sub(r"-{2,}", "-", s)
 
 
 def main():
@@ -183,13 +193,16 @@ def main():
                  f'stroke-opacity="0.55" marker-end="url(#arrc)"><title>{esc(tip)}</title></path>\n')
         s.append(f'  <text x="{fmt(lx)}" y="{fmt(ly)}" font-size="11" fill="{color[fc]}" '
                  f'text-anchor="middle" font-family="sans-serif">{len(detail)}×</text>\n')
-    # category boxes (only the laid-out ones)
+    # category boxes (only the laid-out ones) — each a link to its section
+    # on the extensions page (the SVG is embedded inline there, so the
+    # href="#cat-..." anchor works)
     for c in sorted(pos):
         d = cat[c]
         x, y = pos[c]
         label = c.replace(" ", " ")
+        anchor = "#cat-" + slug_cat(label)
         s.append(f'  <g><title>{esc(label)}: {d["count"]} extensions, {d["roots"]} entry points, '
-                 f'rank {d["minr"]}–{d["maxr"]}</title>')
+                 f'rank {d["minr"]}–{d["maxr"]}</title><a href="{anchor}">')
         s.append(f'<rect x="{fmt(x)}" y="{fmt(y)}" width="{BW}" height="{BH}" rx="8" fill="#1a2233" '
                  f'stroke="{color[c]}" stroke-width="1.5"/>')
         s.append(f'<text x="{x + 12}" y="{fmt(y + 24)}" font-size="14" font-weight="bold" fill="#e8ecf4" '
@@ -198,12 +211,13 @@ def main():
                  f'{d["count"]} extensions · {d["roots"]} entry point{"s" if d["roots"] != 1 else ""}</text>')
         s.append(f'<text x="{x + 12}" y="{fmt(y + 63)}" font-size="11.5" fill="#8b93a5" font-family="sans-serif">'
                  f'rank {d["minr"]}–{d["maxr"]}</text>')
-        s.append("</g>\n")
+        s.append("</a></g>\n")
     s.append("</svg>\n")
     open(SVG, "w", encoding="utf-8").write("".join(s))
     print(f"svg: {W}x{H}, {len(cat)} categories, {sum(len(v) for v in edges.values())} cross-category edges")
 
-    # insert/replace the section above the full tree
+    # embed/replace the section above the per-category cards (the C# generator
+    # writes the identical bytes — keep both in sync)
     txt = open(EXT, encoding="utf-8").read()
     lines = txt.split("\n")
     out, skip = [], False
@@ -212,36 +226,38 @@ def main():
             skip = True
             continue
         if skip:
-            if ln.startswith("<a id=\"tree\"></a>"):
+            if ln.startswith("<a id=\"table\"></a>"):
                 skip = False
             else:
                 continue
         out.append(ln)
-    idx = next(i for i, ln in enumerate(out) if ln.startswith("<a id=\"tree\"></a>"))
+    idx = next(i for i, ln in enumerate(out) if ln.startswith("<a id=\"table\"></a>"))
+    # inline SVG (not <img>) so the boxes' <a href="#cat-..."> links work;
+    # rstrip the trailing newline — joining the section adds its own
+    inline = "".join(s).replace('<svg ', '<svg class="zoommap" ', 1).rstrip("\n")
     section = [
         MARKER,
         "<a id=\"categories\"></a>",
         "",
         "## Main categories",
         "",
-        f"The {len(cat)} categories at a glance instead of the {len(active)}-node detail tree: "
-        f"one box per category (extension count, entry points without prerequisites, rank range), "
-        f"left to right by starting rank, and an arrow for every cross-category prerequisite (hover an "
-        f"arrow for the exact requirements) — which categories open up which. The spark extensions "
-        f"sit outside this diagram (no prerequisites of their own) — their bundle diagram is on the "
-        f"[Sparks](/features/sparks/) page. **Scroll over the diagram to zoom**, drag to pan, and use "
-        f"the ⟲ button to reset.",
+        f"The {len(cat)} categories at a glance: one box per category (extension count, "
+        "entry points without prerequisites, rank range), left to right by starting rank, and an "
+        "arrow for every cross-category prerequisite (hover an arrow for the exact requirements) — "
+        "which categories open up which. **Click a box to jump to that category's cards below.** "
+        "The spark extensions sit outside this diagram (no prerequisites of their own) — their "
+        "bundle diagram is on the [Sparks](/features/sparks/) page. **Scroll over the diagram to "
+        "zoom**, drag to pan, and use the ⟲ button to reset.",
         "",
-        '<div class="map-zoom-wrap">',
+        '<div class="map-zoom-wrap extcats-wrap">',
         '<button type="button" class="zoommap-reset" title="Reset the zoom">\u27f2</button>',
-        f'<img class="zoommap" src="/extensions-categories.svg" alt="Extension categories: {len(cat)} categories, '
-        f'{sum(len(v) for v in edges.values())} cross-category prerequisite edges" loading="lazy">',
+        inline,
         "</div>",
         "",
     ]
     out = out[:idx] + section + out[idx:]
     open(EXT, "w", encoding="utf-8").write("\n".join(out))
-    print("extensions page: Main categories section inserted")
+    print("extensions page: Main categories section embedded")
 
 
 if __name__ == "__main__":

@@ -31,6 +31,15 @@
     are wrapped in <a href="/zones/<slug>/"> so they are clickable once the
     SVG is inlined by static/zone-map.js (zoom/pan is then picked up
     automatically by static/map.js).
+  * two extra derived PNGs per zone, for the pages that embed many zones
+    at once (both derived from the same altitude data, so the island shape
+    matches the full maps):
+      world.png  128×128 color-mode terrain — the world map (content/zones/
+                 map.md) draws every zone with its real terrain instead of
+                 a flat shape
+      thumb.png  256×256 coastline-only outline (bold island border in the
+                 galaxy family color, no points of interest) — the zone
+                 cards on the world page
 
 The input SVGs are produced by generator/Perpetuum.WikiGenerate
 (ZoneMapSvg.cs) from the live database. This script only rewrites the
@@ -187,8 +196,14 @@ def load_terrain(zid, w, h, size):
         ps.extend(accumulate(acc[oy]))  # ps[i] = sum of columns [0, i)
         alt.append([(ps[(ox + 1) * fx] - ps[ox * fx]) / (fx * fy) for ox in range(size)])
 
-    # coastline: cells where the (box-averaged) altitude crosses the
-    # sea/land boundary — sits exactly on the rendered color change
+    return alt, coast_mask(alt), roads, None
+
+
+def coast_mask(alt):
+    """Coastline cells of a box-averaged altitude grid: where the grid
+    crosses the sea/land boundary (sits exactly on the rendered color
+    change)."""
+    size = len(alt)
     sea = [[v < SEA_COAST for v in row] for row in alt]
     coast = [[0] * size for _ in range(size)]
     for y in range(size):
@@ -197,7 +212,7 @@ def load_terrain(zid, w, h, size):
             if (x > 0 and sea[y][x - 1] != s) or (y > 0 and sea[y - 1][x] != s) \
               or (x < size - 1 and sea[y][x + 1] != s) or (y < size - 1 and sea[y + 1][x] != s):
                 coast[y][x] = 1
-    return alt, coast, roads, None
+    return coast
 
 
 RAMP = [  # (elevation, rgb) — deep water to snow line
@@ -288,6 +303,185 @@ def color_png(alt, coast, roads, _isl):
             px += bytes((int(min(255, r * sh)), int(min(255, g * sh)), int(min(255, b * sh)), 255))
     return png_encode(size, size, bytes(px))
 
+# ------------------------------------------- world map + index-card assets
+
+FAM_PARTS = [("gamma", "#a78bfa"), ("tm", "#41d3ff"), ("ics", "#6ee7a0"), ("asi", "#f5a05a")]
+
+
+def fam_color(zone_name):
+    """Galaxy family color, same scheme as the C# generators."""
+    n = zone_name.lower()
+    for part, c in FAM_PARTS:
+        if part in n:
+            return c
+    return "#c8d2e0"
+
+
+def downsample(grid, factor):
+    """Box-average an integer grid by an integer factor."""
+    n = len(grid)
+    m = n // factor
+    out = [[0.0] * m for _ in range(m)]
+    for y in range(m):
+        oy = y * factor
+        orow = out[y]
+        for x in range(m):
+            ox = x * factor
+            t = 0.0
+            for dy in range(factor):
+                row = grid[oy + dy]
+                for dx in range(factor):
+                    t += row[ox + dx]
+            orow[x] = t / (factor * factor)
+    return out
+
+
+def downsample_road(roads, factor):
+    """Any road tile inside the box keeps the road."""
+    n = len(roads)
+    m = n // factor
+    out = [[0] * m for _ in range(m)]
+    for y in range(m):
+        oy = y * factor
+        orow = out[y]
+        for x in range(m):
+            ox = x * factor
+            for dy in range(factor):
+                row = roads[oy + dy]
+                for dx in range(factor):
+                    if row[ox + dx]:
+                        orow[x] = 1
+                        break
+    return out
+
+
+def world_png(alt, roads):
+    """128×128 color-mode terrain for the world map (the zone's real map,
+    downscaled)."""
+    size = len(alt)
+    factor = max(1, size // 128)
+    if factor > 1:
+        alt = downsample(alt, factor)
+        roads = downsample_road(roads, factor) if roads else None
+    return color_png(alt, coast_mask(alt), roads, None)
+
+
+def thumb_png(coast, color):
+    """Coastline-only outline for the zone cards: bold island border in the
+    family color, dark background, no points of interest."""
+    size = len(coast)
+    r = int(color[1:3], 16); g = int(color[3:5], 16); b = int(color[5:7], 16)
+    px = bytearray()
+    for y in range(size):
+        row = coast[y]
+        up = coast[y - 1] if y > 0 else None
+        dn = coast[y + 1] if y < size - 1 else None
+        for x in range(size):
+            # dilate by one cell: a 1-cell coastline reads bold at card size
+            on = (row[x]
+                  or (x > 0 and row[x - 1]) or (x < size - 1 and row[x + 1])
+                  or (up is not None and up[x]) or (dn is not None and dn[x]))
+            px += bytes((r, g, b, 255) if on else (16, 21, 31, 255))
+    return png_encode(size, size, bytes(px))
+
+
+def png_decode(b):
+    """Decode the filter-0 RGBA PNGs this tool itself writes (the committed
+    fallback set) into a pixel grid."""
+    assert b[:8] == b"\x89PNG\r\n\x1a\n"
+    pos, idat, w = 8, b"", None
+    while pos < len(b):
+        (ln,) = struct.unpack(">I", b[pos:pos + 4])
+        tag = b[pos + 4:pos + 8]
+        if tag == b"IHDR":
+            w, h, _bd, _ct = struct.unpack(">IIBB", b[pos + 8:pos + 18])
+        elif tag == b"IDAT":
+            idat += b[pos + 8:pos + 8 + ln]
+        elif tag == b"IEND":
+            break
+        pos += 12 + ln
+    raw = zlib.decompress(idat)
+    stride = w * 4
+    return w, [[list(struct.unpack("<%dB" % (w * 4), raw[y * (stride + 1) + 1:(y + 1) * (stride + 1)]))
+                for y in range(h)]]
+
+
+def _rgb_downsample(px, factor):
+    n = len(px)
+    m = n // factor
+    out = [[None] * m for _ in range(m)]
+    for y in range(m):
+        oy = y * factor
+        orow = out[y]
+        for x in range(m):
+            ox = x * factor
+            acc = [0, 0, 0]
+            for dy in range(factor):
+                row = px[oy + dy]
+                for dx in range(factor):
+                    p = row[ox + dx]
+                    acc[0] += p[0]; acc[1] += p[1]; acc[2] += p[2]
+            k = 1.0 / (factor * factor)
+            orow[x] = [int(a * k) for a in acc]
+    return out
+
+
+def fallback_world_thumb(color_bytes, zone_name):
+    """world.png + thumb.png derived from the committed fallback color.png
+    (no altitude data for this zone): the terrain is a straight downscale,
+    the coastline the sea/land boundary detected from the rendered colors
+    (the deep-water ramp color vs. everything else)."""
+    w, px = png_decode(color_bytes)
+    world = png_encode(128, 128, b"".join(
+        bytes(p[:3] + (255,)) for p in _rgb_downsample(px, max(1, w // 128))))
+    deep = (13, 34, 66)  # the ramp's deep-water color
+    def sea(p):
+        return (p[0] - deep[0]) ** 2 + (p[1] - deep[1]) ** 2 + (p[2] - deep[2]) ** 2 < 60 * 60
+    m = len(px)
+    sea_m = [[sea(p) for p in row] for row in px]
+    coast = [[0] * m for _ in range(m)]
+    for y in range(m):
+        for x in range(m):
+            s = sea_m[y][x]
+            if (x > 0 and sea_m[y][x - 1] != s) or (y > 0 and sea_m[y - 1][x] != s) \
+              or (x < m - 1 and sea_m[y][x + 1] != s) or (y < m - 1 and sea_m[y + 1][x] != s):
+                coast[y][x] = 1
+    # upscale the mask 2x for the 256 thumb
+    coast2 = [[0] * (m * 2) for _ in range(m * 2)]
+    for y in range(m):
+        for x in range(m):
+            if coast[y][x]:
+                for dy in range(2):
+                    for dx in range(2):
+                        coast2[y * 2 + dy][x * 2 + dx] = 1
+    return world, thumb_png(coast2, fam_color(zone_name))
+
+
+FBM_SEA = 0.45  # fBm value below which the procedural placeholder is water
+
+
+def fbm_world_thumb(zone_name):
+    """world.png + thumb.png for zones with no layer data anywhere (the
+    procedural fBm placeholder): both derived from one 256×256 field so the
+    island shape matches between the two."""
+    seed = int.from_bytes(hashlib.md5(zone_name.encode("utf-8")).digest()[:8], "big")
+    img = fbm(256, seed)
+    sea = [[v < FBM_SEA for v in row] for row in img]
+    coast = [[0] * 256 for _ in range(256)]
+    for y in range(256):
+        for x in range(256):
+            s = sea[y][x]
+            if (x > 0 and sea[y][x - 1] != s) or (y > 0 and sea[y - 1][x] != s) \
+              or (x < 255 and sea[y][x + 1] != s) or (y < 255 and sea[y + 1][x] != s):
+                coast[y][x] = 1
+    alt128 = downsample([[v * 23500.0 for v in row] for row in img], 2)
+    px = bytearray()
+    for y in range(128):
+        row = alt128[y]
+        for x in range(128):
+            r, g, b = _ramp(row[x])
+            px += bytes((r, g, b, 255))
+    return png_encode(128, 128, bytes(px)), thumb_png(coast, fam_color(zone_name))
 # ------------------------------------------------------------- heightmap
 
 def fbm(size, seed, octaves=5, base_freq=3):
@@ -437,6 +631,18 @@ def rebuild(path, name2slug, slug2id, slug2size):
         os.makedirs(d, exist_ok=True)
         open(os.path.join(d, "height.png"), "wb").write(height_png(alt, roads, isl))
         open(os.path.join(d, "color.png"), "wb").write(color_png(alt, coast, roads, isl))
+        # world-map node + index-card thumbnail (same altitude data)
+        open(os.path.join(d, "world.png"), "wb").write(world_png(alt, roads))
+        # the thumb targets 256×256 (a native-512 zone would otherwise draw
+        # its full-res coastline, far heavier than needed for a card)
+        tsize = len(alt)
+        tf = max(1, tsize // 256)
+        if tf > 1:
+            alt_t = downsample(alt, tf)
+            coast_t = coast_mask(alt_t)
+        else:
+            alt_t, coast_t = alt, coast
+        open(os.path.join(d, "thumb.png"), "wb").write(thumb_png(coast_t, fam_color(zone)))
     elif have_fallback:
         # no layer data here: keep the committed derived PNGs (copied into
         # place so the SVG's /zonemaps/<slug>/ URLs resolve)
@@ -444,15 +650,28 @@ def rebuild(path, name2slug, slug2id, slug2size):
         os.makedirs(d, exist_ok=True)
         for name in ("height.png", "color.png"):
             open(os.path.join(d, name), "wb").write(open(os.path.join(fb, name), "rb").read())
+        world, thumb = fallback_world_thumb(open(os.path.join(fb, "color.png"), "rb").read(), zone)
+        open(os.path.join(d, "world.png"), "wb").write(world)
+        open(os.path.join(d, "thumb.png"), "wb").write(thumb)
     if real[0] is not None or have_fallback:
         out.append(f'  <image id="zm-height" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}height.png" preserveAspectRatio="none"/>')
         out.append(f'  <image id="zm-color" x="0" y="0" width="{w}" height="{h}" href="/zonemaps/{slug}color.png" preserveAspectRatio="none" style="display:none"/>')
     else:
+        # no layer data anywhere: the procedural placeholder — still write the
+        # world.png/thumb.png the world map and the zone cards need
+        d = os.path.join(ZONEMAPS, slug)
+        os.makedirs(d, exist_ok=True)
+        world, thumb = fbm_world_thumb(zone)
+        open(os.path.join(d, "world.png"), "wb").write(world)
+        open(os.path.join(d, "thumb.png"), "wb").write(thumb)
         b64 = base64.b64encode(heightmap_png(zone)).decode("ascii")
         out.append(f'  <image id="zm-height" x="0" y="0" width="{w}" height="{h}" href="data:image/png;base64,{b64}" opacity="0.55" preserveAspectRatio="none"/>')
 
     # the generated points of interest are small (r = w/170); enlarge them
     # a bit and give the labels a dark halo so they read on any terrain.
+    # The C# generator's ltp-line <line> elements (local in-zone teleports,
+    # hidden until map.js lights them up) and the data-ltp tokens on the
+    # endpoint column circles pass through untouched.
     last_shape = None  # (kind, markup, radius-growth) waiting for its label
     for kind, at, txt in els:
         if kind == "rect":
@@ -462,7 +681,7 @@ def rebuild(path, name2slug, slug2id, slug2size):
                 continue  # border added by a previous run of this script
             out.append("  " + markup(kind, at))
         elif kind == "line":
-            out.append("  " + markup(kind, at))
+            out.append("  " + markup(kind, at))  # grid + ltp lines pass through
         elif kind == "text":
             if last_shape is None:
                 out.append("  " + markup("text", at, txt))

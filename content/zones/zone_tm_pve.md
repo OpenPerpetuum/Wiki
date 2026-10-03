@@ -7,6 +7,10 @@ description: "PvE protected zone: 6 ore types, 15 plant species, 2048×2048 tile
      Do not edit by hand; regenerate instead. -->
 # Hershfield (zone_TM_pve)
 
+![Teleport columns in Hershfield (zone_TM_pve)](/zonemaps/zone-tm-pve.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records. This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line between the pair's two locations stays lit.
+
 A protected (Alpha) New Virginia (TM) zone — safe from player attack, the standard gathering ground for the New Virginia (TM) galaxy. It maintains 6 ore types.
 
 | Fact | Value |
@@ -68,12 +72,5 @@ pie showData
 - ← [Tellesis](/zones/zone-ics-pve/) (1 TP point)
 - ← [New Virginia](/zones/zone-tm/) (2 TP points)
 - ← [Norhoop](/zones/zone-tm-a-real/) (3 TP points)
-
-
-## Teleport map
-
-![Teleport columns in Hershfield (zone_TM_pve)](/zonemaps/zone-tm-pve.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#starter-islands) · [Protection levels](/zones/protection/)

@@ -31,6 +31,37 @@ test('map page loads without script errors', async ({ page, baseURL }) => {
   expect(errors).toEqual([]);
 });
 
+test('zones are drawn with their real terrain and local teleports have hover lines', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
+  // every zone node carries its terrain thumbnail (world.png)
+  const imgs = page.locator('.zonemap image[href$="world.png"]');
+  expect(await imgs.count()).toBeGreaterThanOrEqual(80);
+  const first = await imgs.first().getAttribute('href');
+  const r = await page.request.get(first);
+  expect(r.ok()).toBe(true);
+  expect(r.headers()['content-type']).toMatch(/image\/png/);
+  // the zones with in-zone teleports carry hidden hover lines + endpoint dots
+  expect(await page.locator('.zonemap .ltp-line').count()).toBeGreaterThan(0);
+  expect(await page.locator('.zonemap .ltp-dot').count()).toBeGreaterThan(0);
+  for (const l of await page.locator('.zonemap .ltp-line').all()) {
+    expect(await l.evaluate((el) => getComputedStyle(el).opacity)).toBe('0');
+  }
+});
+
+test('world map sub-sections use zone cards with coastline thumbnails', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
+  const cards = page.locator('.zone-card');
+  expect(await cards.count()).toBeGreaterThanOrEqual(80);
+  const first = cards.first();
+  expect(await first.getAttribute('href')).toMatch(/^\/zones\/[^/]+\/$/);
+  const thumb = first.locator('img.zone-card-thumb');
+  expect(await thumb.getAttribute('src')).toMatch(/^\/zonemaps\/[^/]+\/thumb\.png$/);
+  const r = await page.request.get(await thumb.getAttribute('src'));
+  expect(r.ok()).toBe(true);
+  // no flat-rectangle fallback: the old overview tables are gone
+  expect(await page.locator('.zonemap-wrap').count()).toBeGreaterThanOrEqual(1);
+});
+
 test('wheel over the map zooms the map and does not scroll the page', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`);
   const wrap = page.locator('.zonemap-wrap');

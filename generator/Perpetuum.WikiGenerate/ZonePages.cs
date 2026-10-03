@@ -112,6 +112,15 @@ public static class ZonePages
             "zones, mineralconfigs, plantrules, teleportdescriptions, strongholdexitconfig"));
         sb.Append($"\n# {title}\n\n");
 
+        // Teleport map first: the zone's own extent with its TP columns/landing
+        // spots plotted, right under the title (before the facts table and text).
+        if (maps.TryGetValue(name, out var svg))
+        {
+            var slug = name.ToLowerInvariant().Replace("_", "-");
+            sb.Append($"![Teleport columns in {title}](/zonemaps/{slug}.svg)\n\n");
+            sb.Append(MapCaption(svg.Contains("ltp-line")));
+        }
+
         // Intro line: what kind of zone this is.
         sb.Append(Intro(name, z, display, type, protection, oreCount));
         sb.Append("\n");
@@ -188,20 +197,23 @@ public static class ZonePages
             }
         }
 
-        // Teleport map: the zone's own extent with its TP columns/landing spots plotted.
-        if (maps.TryGetValue(name, out var svg))
-        {
-            var slug = name.ToLowerInvariant().Replace("_", "-");
-            sb.Append("\n## Teleport map\n\n");
-            sb.Append($"![Teleport columns in {title}](/zonemaps/{slug}.svg)\n\n");
-            sb.Append("Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where " +
-                      "the column is currently switched off), the landing spots of teleports arriving from other " +
-                      "zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the " +
-                      "tile coordinates the server records.\n\n");
-        }
-
         sb.Append($"[Zone index](/zones/zone-index/) · [World map](/zones/map/{MapAnchor(name, z)}) · [Protection levels](/zones/protection/)\n");
         return sb.ToString();
+    }
+
+    /// <summary>hasLocal: the zone's map SVG carries data-ltp markers (ZoneMapSvg)
+    /// — then the caption explains the hover lines.</summary>
+    private static string MapCaption(bool hasLocal)
+    {
+        return "Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where " +
+               "the column is currently switched off), the landing spots of teleports arriving from other " +
+               "zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the " +
+               "tile coordinates the server records." +
+               (hasLocal
+                   ? " This zone has local (in-zone) teleports — move the cursor near one of their columns " +
+                     "and the dashed line between the pair's two locations stays lit."
+                   : "") +
+               "\n\n";
     }
 
     private static string Intro(string name, Z z, string? display, string type, string protection, int oreCount)

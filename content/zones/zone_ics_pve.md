@@ -7,6 +7,10 @@ description: "PvE protected zone: 5 ore types, 14 plant species, 2048×2048 tile
      Do not edit by hand; regenerate instead. -->
 # Tellesis (zone_ICS_pve)
 
+![Teleport columns in Tellesis (zone_ICS_pve)](/zonemaps/zone-ics-pve.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records. This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line between the pair's two locations stays lit.
+
 A protected (Alpha) Attalica (ICS) zone — safe from player attack, the standard gathering ground for the Attalica (ICS) galaxy. It maintains 5 ore types.
 
 | Fact | Value |
@@ -58,12 +62,5 @@ pie showData
 - ← [Shinjalar](/zones/zone-asi-pve/) (1 TP point)
 - ← [Attalica](/zones/zone-ics/) (1 TP point)
 - ← [Hershfield](/zones/zone-tm-pve/) (1 TP point)
-
-
-## Teleport map
-
-![Teleport columns in Tellesis (zone_ICS_pve)](/zonemaps/zone-ics-pve.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#starter-islands) · [Protection levels](/zones/protection/)

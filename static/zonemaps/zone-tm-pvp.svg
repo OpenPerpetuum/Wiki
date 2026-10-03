@@ -16,6 +16,9 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
+  <line class="ltp-line" data-ltp="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="1" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="2" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-tm-pvp/" title="from Alsbale">
   <circle cx="903" cy="517" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="903" y="478" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Alsbale</text>
@@ -33,11 +36,11 @@
   <text x="306.5" y="943.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Emperth, Norhoop</text>
   </a>
   <a href="/zones/zone-tm-pvp/" title="Alsbale">
-  <circle cx="496.5" cy="1187.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="496.5" cy="1187.5" r="18" data-ltp="1 2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="496.5" y="1156.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale</text>
   </a>
   <a href="/zones/zone-tm-pvp/" title="Alsbale">
-  <circle cx="938.5" cy="515.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="938.5" cy="515.5" r="18" data-ltp="0 1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="938.5" y="484.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale</text>
   </a>
   <a href="/zones/zone-ics-a-real/" title="Domhalarn">
@@ -53,7 +56,7 @@
   <text x="1742.5" y="1211.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Emperth, Norhoop</text>
   </a>
   <a href="/zones/zone-tm-pvp/" title="Alsbale, zone_gamma_tc_z100">
-  <circle cx="1856.5" cy="857.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1856.5" cy="857.5" r="18" data-ltp="0 2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1856.5" y="826.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale, zone_gamma_tc_z100</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

@@ -779,6 +779,37 @@ html[data-theme="light"][data-cb="achro"] {
 .zonemap-tp:hover { stroke: var(--neon); stroke-opacity: 0.95; stroke-width: 1.6; }
 .zonemap-link { stroke: var(--accent); stroke-width: 1.6; stroke-opacity: 0.85; stroke-dasharray: 5 3; }
 .zonemap-link:hover { stroke: var(--neon); stroke-width: 2.2; }
+/* local (in-zone) teleports: hidden dashed lines + endpoint dots, lit by
+   map.js while the cursor is near an endpoint (data-ltp pairs) */
+.zonemap .ltp-line { opacity: 0; transition: opacity 0.15s; pointer-events: none; }
+.zonemap .ltp-line.ltp-on { opacity: 0.95; }
+.zonemap .ltp-dot { pointer-events: none; stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
+/* world map sub-sections: zone cards (thumbnail = the coastline-only
+   thumb.png), small enough for 3-4 per row */
+.zone-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    gap: 0.7rem;
+    margin: 0.8rem 0 1.4rem;
+}
+.zone-card {
+    display: flex; flex-direction: column; gap: 0.35rem;
+    padding: 0.55rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.zone-card:hover, .zone-card:focus-visible {
+    border-color: var(--neon); outline: none;
+    transform: translateY(-1px);
+}
+.zone-card-thumb {
+    width: 100%; aspect-ratio: 1; object-fit: cover;
+    border-radius: 6px; background: #10151f;
+}
+.zone-card-name { color: var(--fg); font-weight: 600; font-size: 0.95rem; line-height: 1.2; }
+.zone-card-meta { color: var(--muted); font-size: 0.82rem; }
 .zonemap-label { fill: var(--fg); opacity: 0.85; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .zonemap circle, .zonemap rect { stroke: rgba(0, 0, 0, 0.35); stroke-width: 1; }
 .zonemap a:hover circle, .zonemap a:hover rect { stroke: var(--neon); stroke-width: 2.5; }
@@ -967,6 +998,11 @@ a:hover > .mission-type-chip { border-color: var(--neon); color: var(--accent); 
   font-size: 12px;
   margin: 3px 0 7px;
 }
+/* the interesting values in the meta line (rank, credits, bonus) get
+   contrast: bold + a color each */
+.ext-card-meta .ext-val-rank { color: var(--neon, #41d3ff); font-weight: 700; }
+.ext-card-meta .ext-val-price { color: #6ee7a0; font-weight: 700; }
+.ext-card-meta .ext-val-bonus { color: #facc15; font-weight: 700; }
 
 .ext-card-bonus {
   color: #cdd5e4;

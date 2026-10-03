@@ -6,6 +6,16 @@ weight: 30
 
 # New Virginia (zone_TM) — worked example
 
+![Teleport columns in New Virginia](/zonemaps/zone-tm.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
+the column is currently switched off), the landing spots of teleports arriving from other
+zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
+tile coordinates the server records.
+This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line
+between the pair's two locations stays lit.
+
+
 A low-tier **protected PvE** zone — a safe place where new characters gather. Its
 configuration shows the simplest end of the spectrum: few ore types, large nodes, and
 the basic plant mix.
@@ -74,14 +84,6 @@ Full per-species rules (growRate, fruit, health) are in [Plants](/content/plants
   gathering loop (see [movement](/features/movement/) for zone entry).
 
 
-## Teleport map
-
-![Teleport columns in New Virginia](/zonemaps/zone-tm.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
-the column is currently switched off), the landing spots of teleports arriving from other
-zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
-tile coordinates the server records.
 
 <!-- Developer notes: zones row id 0 (zonetype 1 = PvE, protected 1, fertility 20,
      plantruleset 0); mineralconfigs 3 rows (titan/crude/liquizit, 7 nodes each);

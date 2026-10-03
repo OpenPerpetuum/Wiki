@@ -1,13 +1,13 @@
 namespace Perpetuum.WikiGenerate;
 
 /// <summary>
-/// The extensions page: the categories overview, the detail tree, and one
-/// section per category with a card per extension (no single big table).
+/// The extensions page: the clickable categories overview (the SVG boxes
+/// link to the sections below) and one section per category with a card per
+/// extension (no single big table).
 /// </summary>
 public static class ExtensionsPage
 {
-    public static string Build(Db db, string treeSvg = null, int treeNodes = 0, int treeEdges = 0,
-        string categoriesSvg = null, int categoryCount = 0, int categoryEdges = 0)
+    public static string Build(Db db, string categoriesSvg = null, int categoryCount = 0, int categoryEdges = 0)
     {
         var categories = db.Query("SELECT extensioncategoryid, categoryname FROM extensioncategories")
             .ToDictionary(r => r.Int("extensioncategoryid"), r => r.Str("categoryname"));
@@ -30,7 +30,7 @@ public static class ExtensionsPage
             """).ToList();
 
         var sb = new StringBuilder();
-        sb.Append(Md.Header("Extensions", "Every extension (character skill): the category overview, the full tree, and one card per extension by category.",
+        sb.Append(Md.Header("Extensions", "Every extension (character skill): the clickable category overview and one card per extension by category.",
             "extensions, extensioncategories, extensionprerequire"));
         sb.Append("\n\n# Extensions\n\n");
         sb.Append("Extensions are the per-character skill tree — learned with credits (level 1) and EP (later " +
@@ -44,27 +44,21 @@ public static class ExtensionsPage
             sb.Append("<!-- categories:generated -->\n");
             sb.Append("<a id=\"categories\"></a>\n\n");
             sb.Append("## Main categories\n\n");
-            sb.Append($"The {categoryCount} categories at a glance instead of the {treeNodes}-node detail tree: " +
-                      "one box per category (extension count, entry points without prerequisites, rank range), " +
-                      "left to right by starting rank, and an arrow for every cross-category prerequisite (hover an " +
-                      "arrow for the exact requirements) — which categories open up which. The spark extensions " +
-                      "sit outside this diagram (no prerequisites of their own) — their bundle diagram is on the " +
-                      "[Sparks](/features/sparks/) page. **Scroll over the diagram to zoom**, drag to pan, and use " +
-                      "the ⟲ button to reset.\n\n");
-            sb.Append("<div class=\"map-zoom-wrap\">\n");
+            sb.Append($"The {categoryCount} categories at a glance: one box per category (extension count, " +
+                      "entry points without prerequisites, rank range), left to right by starting rank, and an " +
+                      "arrow for every cross-category prerequisite (hover an arrow for the exact requirements) — " +
+                      "which categories open up which. **Click a box to jump to that category's cards below.** " +
+                      "The spark extensions sit outside this diagram (no prerequisites of their own) — their " +
+                      "bundle diagram is on the [Sparks](/features/sparks/) page. **Scroll over the diagram to " +
+                      "zoom**, drag to pan, and use the ⟲ button to reset.\n\n");
+            sb.Append("<div class=\"map-zoom-wrap extcats-wrap\">\n");
             sb.Append("<button type=\"button\" class=\"zoommap-reset\" title=\"Reset the zoom\">\u27f2</button>\n");
-            sb.Append($"<img class=\"zoommap\" src=\"/extensions-categories.svg\" alt=\"Extension categories: {categoryCount} categories, " +
-                      $"{categoryEdges} cross-category prerequisite edges\" loading=\"lazy\">\n");
-            sb.Append("</div>\n\n");
-        }
-        if (!string.IsNullOrEmpty(treeSvg))
-        {
-            sb.Append("<a id=\"tree\"></a>\n\n");
-            sb.Append("## Extension tree\n\n");
-            sb.Append($"The whole tree at a glance: one column per rank (left to right), rows grouped by category, and an arrow for every prerequisite (hover an arrow for the required level). **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.\n\n");
-            sb.Append("<div class=\"map-zoom-wrap\">\n");
-            sb.Append("<button type=\"button\" class=\"zoommap-reset\" title=\"Reset the zoom\">\u27f2</button>\n");
-            sb.Append($"<img class=\"zoommap\" src=\"/extensions-tree.svg\" alt=\"Extension tree: {treeNodes} extensions, {treeEdges} prerequisite edges\" loading=\"lazy\">\n");
+            // The SVG is embedded inline (not via <img>) so its category boxes
+            // are real links to the sections below. The zoommap class gives it
+            // the same sizing/pan/zoom affordances as the <img> version used
+            // before inlining (static/map.js picks up any svg in the wrap).
+            var tag = categoriesSvg.IndexOf("<svg ", StringComparison.Ordinal);
+            sb.Append(categoriesSvg.Insert(tag + 5, "class=\"zoommap\" "));
             sb.Append("</div>\n\n");
         }
 
@@ -104,7 +98,10 @@ public static class ExtensionsPage
                 : "no prerequisites";
             sb.Append("<div class=\"ext-card\">\n");
             sb.Append($"<div class=\"ext-card-name\">{Escape(Md.DisplayName(name))}</div>\n");
-            sb.Append($"<div class=\"ext-card-meta\">rank {rank} · {price} cr · bonus {Escape(bonus)}{state}</div>\n");
+            // The interesting values (rank, credits, bonus) are bolded and
+            // colored (static/style.css .ext-val-*).
+            sb.Append($"<div class=\"ext-card-meta\"><span class=\"ext-val-rank\">rank {rank}</span> · " +
+                      $"<span class=\"ext-val-price\">{price} cr</span> · <span class=\"ext-val-bonus\">bonus {Escape(bonus)}</span>{state}</div>\n");
             sb.Append($"<div class=\"ext-card-prereq\">{Escape(prereq)}</div>\n");
             sb.Append("</div>\n");
             if (exts.Last(x => x.Int("category") == catId).Int("extensionid") == ext.Int("extensionid"))
@@ -114,7 +111,10 @@ public static class ExtensionsPage
         return sb.ToString();
     }
 
-    private static string SlugCat(string s) => Slug(s.Replace("extcat_", ""));
+    /// <summary>"extcat_craft" → "craft" — the anchor of the category's section
+    /// on the extensions page (shared with ExtensionsCategories, which links
+    /// the overview boxes to it).</summary>
+    public static string SlugCat(string s) => Slug(s.Replace("extcat_", ""));
     private static string Slug(string s)
     {
         var sb = new StringBuilder();

@@ -7,6 +7,10 @@ description: "PvP open-terraformable zone: 7 ore types, 17 plant species, 2048×
      Do not edit by hand; regenerate instead. -->
 # Davis Barrier (zone_tm_g_1)
 
+![Teleport columns in Davis Barrier (zone_tm_g_1)](/zonemaps/zone-tm-g-1.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
+
 An open-PvP, terraformable (gamma) New Virginia (TM) island — the ground can be reshaped by players. It maintains 7 ore types.
 
 | Fact | Value |
@@ -47,12 +51,5 @@ pie showData
     "imentium" : 400
     "gammaterial" : 345
 ```
-
-
-## Teleport map
-
-![Teleport columns in Davis Barrier (zone_tm_g_1)](/zonemaps/zone-tm-g-1.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

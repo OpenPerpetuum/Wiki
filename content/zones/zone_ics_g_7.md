@@ -7,6 +7,10 @@ description: "PvP open-terraformable zone: 7 ore types, 17 plant species, 2048×
      Do not edit by hand; regenerate instead. -->
 # Bleumon (zone_ics_g_7)
 
+![Teleport columns in Bleumon (zone_ics_g_7)](/zonemaps/zone-ics-g-7.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
+
 An open-PvP, terraformable (gamma) Attalica (ICS) island — the ground can be reshaped by players. It maintains 7 ore types.
 
 | Fact | Value |
@@ -47,12 +51,5 @@ pie showData
     "stermonit" : 400
     "gammaterial" : 345
 ```
-
-
-## Teleport map
-
-![Teleport columns in Bleumon (zone_ics_g_7)](/zonemaps/zone-ics-g-7.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

@@ -7,6 +7,10 @@ description: "PvP open-terraformable zone: 7 ore types, 17 plant species, 2048×
      Do not edit by hand; regenerate instead. -->
 # zone_gamma_z112
 
+![Teleport columns in zone_gamma_z112](/zonemaps/zone-gamma-z112.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
+
 An open-PvP, terraformable (gamma) frontier belt island — the ground can be reshaped by players. It maintains 7 ore types.
 
 | Fact | Value |
@@ -64,12 +68,5 @@ pie showData
 - ← [zone_gamma_tc_z100](/zones/zone-gamma-tc-z100/) (1 TP point)
 - ← [zone_gamma_tc_z105](/zones/zone-gamma-tc-z105/) (1 TP point)
 - ← [zone_gamma_z106](/zones/zone-gamma-z106/) (1 TP point)
-
-
-## Teleport map
-
-![Teleport columns in zone_gamma_z112](/zonemaps/zone-gamma-z112.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#t1) · [Protection levels](/zones/protection/)

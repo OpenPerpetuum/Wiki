@@ -167,8 +167,11 @@ public static class ExtensionsCategories
             var d = cat[c];
             var (x, y) = pos[c];
             var label = Md.DisplayName(cats[c]);
+            // The box is a link to its category section on the extensions
+            // page (the SVG is embedded inline there, so <a href="#…"> works).
+            var anchor = "#cat-" + ExtensionsPage.SlugCat(cats[c]);
             sb.Append($"  <g><title>{Escape(label)}: {d.Count} extensions, {d.Roots} entry points, " +
-                      $"rank {d.MinR}–{d.MaxR}</title>");
+                      $"rank {d.MinR}–{d.MaxR}</title><a href=\"{anchor}\">");
             sb.Append($"<rect x=\"{x}\" y=\"{y}\" width=\"{BW}\" height=\"{BH}\" rx=\"8\" fill=\"#1a2233\" " +
                       $"stroke=\"{color[c]}\" stroke-width=\"1.5\"/>");
             sb.Append($"<text x=\"{x + 12}\" y=\"{y + 24}\" font-size=\"14\" font-weight=\"bold\" fill=\"#e8ecf4\" " +
@@ -177,7 +180,7 @@ public static class ExtensionsCategories
                       $"{d.Count} extensions · {d.Roots} entry point{(d.Roots == 1 ? "" : "s")}</text>");
             sb.Append($"<text x=\"{x + 12}\" y=\"{y + 63}\" font-size=\"11.5\" fill=\"#8b93a5\" font-family=\"sans-serif\">" +
                       $"rank {d.MinR}–{d.MaxR}</text>");
-            sb.Append("</g>\n");
+            sb.Append("</a></g>\n");
         }
         sb.Append("</svg>\n");
         // Count the categories that actually have active extensions (the table

@@ -6,6 +6,16 @@ weight: 31
 
 # Daoden (zone_ASI) — worked example
 
+![Teleport columns in Daoden](/zonemaps/zone-asi.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
+the column is currently switched off), the landing spots of teleports arriving from other
+zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
+tile coordinates the server records.
+This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line
+between the pair's two locations stays lit.
+
+
 An **open PvP** zone of the alpha tier — the richest ore configuration in the game and
 the place where the rare types live. Everything New Virginia has, plus epriton, silgium, and
 the flux-ore sites that attract NPC attacks.
@@ -85,14 +95,6 @@ Per-species rules are in [Plants](/content/plants/); per-ore yields in
   the low-tier species in starter zones.
 
 
-## Teleport map
-
-![Teleport columns in Daoden](/zonemaps/zone-asi.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
-the column is currently switched off), the landing spots of teleports arriving from other
-zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
-tile coordinates the server records.
 
 <!-- Developer notes: zones row id 2 (zonetype 2 = PvP, protected 0, fertility 20,
      plantruleset 2); mineralconfigs 8 rows (7 standard + fluxore 8/300/5M);

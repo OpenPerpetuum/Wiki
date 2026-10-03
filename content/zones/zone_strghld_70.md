@@ -7,6 +7,10 @@ description: "Stronghold protected zone: 10 plant species, 512×512 tiles."
      Do not edit by hand; regenerate instead. -->
 # zone_strghld_70
 
+![Teleport columns in zone_strghld_70](/zonemaps/zone-strghld-70.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
+
 A stronghold — a protected instance zone with its own exit gate.
 
 | Fact | Value |
@@ -25,12 +29,5 @@ A stronghold — a protected instance zone with its own exit gate.
 **Exit gates** (stronghold/arena exits recorded in the database):
 
 - → [Hershfield](/zones/zone-tm-pve/) (`stronghold_default_exit`)
-
-
-## Teleport map
-
-![Teleport columns in zone_strghld_70](/zonemaps/zone-strghld-70.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

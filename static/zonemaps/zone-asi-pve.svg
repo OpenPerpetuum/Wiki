@@ -16,38 +16,43 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
+  <line class="ltp-line" data-ltp="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="1" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="2" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="3" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="4" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
   <circle cx="304.5" cy="1565.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <circle cx="446.5" cy="537.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="511.5" cy="723.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="511.5" cy="723.5" r="18" data-ltp="4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="511.5" y="692.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="515.5" cy="1639.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="515.5" cy="1639.5" r="18" data-ltp="3" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="515.5" y="1608.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="887.5" cy="489.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="887.5" cy="489.5" r="18" data-ltp="0" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="887.5" y="458.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="925.5" cy="966.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="925.5" cy="966.5" r="18" data-ltp="0" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="925.5" y="935.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="933.5" cy="1047.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="933.5" cy="1047.5" r="18" data-ltp="4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="933.5" y="1016.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="994.5" cy="1194.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="994.5" cy="1194.5" r="18" data-ltp="3" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="994.5" y="1163.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="1112.5" cy="951.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1112.5" cy="951.5" r="18" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1112.5" y="920.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="1125.5" cy="1170.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1125.5" cy="1170.5" r="18" data-ltp="2" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1125.5" y="1139.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-ics-pve/" title="Tellesis">
@@ -55,7 +60,7 @@
   <text x="1191.5" y="195.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Tellesis</text>
   </a>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="1498.5" cy="1481.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1498.5" cy="1481.5" r="18" data-ltp="2" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1498.5" y="1450.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <a href="/zones/zone-ics/" title="Attalica">
@@ -68,7 +73,7 @@
   </a>
   <circle cx="1620.5" cy="399.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
-  <circle cx="1713.5" cy="494.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1713.5" cy="494.5" r="18" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1713.5" y="463.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

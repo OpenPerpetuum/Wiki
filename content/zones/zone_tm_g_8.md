@@ -7,6 +7,10 @@ description: "PvP open-terraformable zone: 6 ore types, 17 plant species, 2048×
      Do not edit by hand; regenerate instead. -->
 # Greensward (zone_tm_g_8)
 
+![Teleport columns in Greensward (zone_tm_g_8)](/zonemaps/zone-tm-g-8.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
+
 An open-PvP, terraformable (gamma) New Virginia (TM) island — the ground can be reshaped by players. It maintains 6 ore types.
 
 | Fact | Value |
@@ -45,12 +49,5 @@ pie showData
     "liquizit" : 500
     "imentium" : 400
 ```
-
-
-## Teleport map
-
-![Teleport columns in Greensward (zone_tm_g_8)](/zonemaps/zone-tm-g-8.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

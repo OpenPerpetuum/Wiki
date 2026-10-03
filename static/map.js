@@ -244,8 +244,68 @@
             if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
         }, true);
 
+        attachLtp(wrap);
         ensureReset(wrap);
         applyWrap(wrap);
+    }
+
+    // Local (in-zone) teleports: every .ltp-line is hidden until the cursor
+    // comes near one of its endpoint markers — the .ltp-dot circles, or the
+    // teleport-column circles that carry the same data-ltp token — then it
+    // stays lit (hysteresis, so it does not flicker at the edge) while the
+    // cursor stays in the vicinity. The dots are tiny at the default zoom
+    // and the effect really shows zoomed in; the threshold is in screen px,
+    // so it tracks the CSS-transform zoom automatically (getBoundingClientRect
+    // of the markers includes the current transform).
+    function attachLtp(wrap) {
+        var lines = wrap.querySelectorAll('.ltp-line');
+        if (!lines.length) return;
+        var circles = wrap.querySelectorAll('circle[data-ltp]');
+        var pairs = [];
+        for (var i = 0; i < lines.length; i++) {
+            var id = lines[i].getAttribute('data-ltp');
+            var anchors = [];
+            for (var j = 0; j < circles.length; j++) {
+                var toks = (circles[j].getAttribute('data-ltp') || '').split(/\s+/);
+                if (toks.indexOf(id) >= 0) anchors.push(circles[j]);
+            }
+            if (anchors.length) pairs.push({ line: lines[i], anchors: anchors, on: false });
+        }
+        if (!pairs.length) return;
+        var SHOW = 26, KEEP = 44; // screen px (show / keep-lit radius)
+        var raf = 0, cx = 0, cy = 0;
+        function update() {
+            raf = 0;
+            for (var i = 0; i < pairs.length; i++) {
+                var p = pairs[i];
+                var best = Infinity;
+                for (var j = 0; j < p.anchors.length; j++) {
+                    var r = p.anchors[j].getBoundingClientRect();
+                    var dx = cx - (r.left + r.width / 2);
+                    var dy = cy - (r.top + r.height / 2);
+                    var d = Math.sqrt(dx * dx + dy * dy);
+                    if (d < best) best = d;
+                }
+                var on = best < SHOW ? true : (p.on ? best <= KEEP : false);
+                if (on !== p.on) {
+                    p.on = on;
+                    if (on) p.line.classList.add('ltp-on');
+                    else p.line.classList.remove('ltp-on');
+                }
+            }
+        }
+        wrap.addEventListener('pointermove', function (e) {
+            cx = e.clientX; cy = e.clientY;
+            if (!raf) raf = requestAnimationFrame(update);
+        });
+        wrap.addEventListener('pointerleave', function () {
+            for (var i = 0; i < pairs.length; i++) {
+                if (pairs[i].on) {
+                    pairs[i].on = false;
+                    pairs[i].line.classList.remove('ltp-on');
+                }
+            }
+        });
     }
 
     function scan() {

@@ -7,6 +7,10 @@ description: "PvP open zone: 7 ore types, 17 plant species, 2048×2048 tiles."
      Do not edit by hand; regenerate instead. -->
 # Kentagura (zone_ASI_pvp)
 
+![Teleport columns in Kentagura (zone_ASI_pvp)](/zonemaps/zone-asi-pvp.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records. This zone has local (in-zone) teleports — move the cursor near one of their columns and the dashed line between the pair's two locations stays lit.
+
 An open-PvP (beta) Daoden (ASI) island — players can attack freely and blobs apply. It maintains 7 ore types.
 
 | Fact | Value |
@@ -64,12 +68,5 @@ pie showData
 - ← [Norhoop](/zones/zone-tm-a-real/) (2 TP points)
 - ← [Rhaoshan](/zones/zone-asi-g-1/) (2 TP points)
 - ← [zone_gamma_tc_z102](/zones/zone-gamma-tc-z102/) (1 TP point)
-
-
-## Teleport map
-
-![Teleport columns in Kentagura (zone_ASI_pvp)](/zonemaps/zone-asi-pvp.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.
 
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

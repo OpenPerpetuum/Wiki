@@ -63,11 +63,9 @@ public static class Program
         Directory.CreateDirectory(outDir);
         // Shop sales are shared by the shop page and the item pages ("Where to buy").
         var shop = ShopPage.Load(db);
-        // Extension tree SVG (static/extensions-tree.svg) for the extensions page.
-        var (treeSvg, treeNodes, treeEdges) = ExtensionsTree.Build(db);
-        File.WriteAllText(Path.Combine(wikiRoot, "static", "extensions-tree.svg"), treeSvg);
-        Console.WriteLine($"wrote static/extensions-tree.svg ({treeNodes} nodes, {treeEdges} edges)");
-        // Main-categories overview SVG (static/extensions-categories.svg).
+        // Main-categories overview SVG (static/extensions-categories.svg):
+        // also embedded inline in the extensions page (the boxes are clickable
+        // links to the per-category sections below).
         var (catSvg, catCount, catEdges) = ExtensionsCategories.Build(db);
         File.WriteAllText(Path.Combine(wikiRoot, "static", "extensions-categories.svg"), catSvg);
         Console.WriteLine($"wrote static/extensions-categories.svg ({catCount} categories, {catEdges} edges)");
@@ -85,7 +83,7 @@ public static class Program
             ("plants.md", PlantsPage.Build(db, defs, plantrulesDir)),
             ("deployables.md", DeployablesPage.Build(db, defs, statsByDef)),
             ("robots.md", RobotsPage.Build(db, defs, statsByDef)),
-            ("extensions.md", ExtensionsPage.Build(db, treeSvg, treeNodes, treeEdges, catSvg, catCount, catEdges)),
+            ("extensions.md", ExtensionsPage.Build(db, catSvg, catCount, catEdges)),
 
             ("missions.md", MissionsPage.Build(db)),
             ("shop.md", ShopPage.Build(db, shop)),
@@ -279,8 +277,24 @@ public static class Program
             first = false;
             sb.Append($"  \"{kv.Value.Name}\": \"{EscapeJson(LabelOf(kv.Value))}\"");
         }
-        sb.Append("\n },\n \"items\": {},\n \"ores\": {}\n}\n");
+        sb.Append("\n },\n");
         var path = Path.Combine(wikiRoot, "tools", "recipes_data.json");
+        // The items/ores sections are maintained by tools/gen_production_pages.py
+        // (it rewrites this file from the committed item pages) — carry them
+        // over instead of blanking them.
+        var items = "{}";
+        var ores = "{}";
+        if (File.Exists(path))
+        {
+            try
+            {
+                var old = System.Text.Json.Nodes.JsonNode.Parse(File.ReadAllText(path));
+                if (old?["items"] is System.Text.Json.Nodes.JsonObject { } i && i.Count > 0) items = i.ToJsonString();
+                if (old?["ores"] is System.Text.Json.Nodes.JsonObject { } o && o.Count > 0) ores = o.ToJsonString();
+            }
+            catch (Exception e) { Console.WriteLine($"[warn] recipes_data.json carry-over skipped: {e.Message}"); }
+        }
+        sb.Append(" \"items\": " + items + ",\n \"ores\": " + ores + "\n}\n");
         Directory.CreateDirectory(Path.GetDirectoryName(path)!);
         File.WriteAllText(path, sb.ToString());
         Console.WriteLine($"wrote tools/recipes_data.json ({byResult.Count} recipes)");

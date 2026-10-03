@@ -16,6 +16,10 @@
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
   <line stroke="#1d2534" stroke-width="1"/>
+  <line class="ltp-line" data-ltp="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="1" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="2" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="3" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-training/" title="from Virtual Training Grounds">
   <circle cx="1082" cy="828" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="1082" y="789" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Virtual Training Grounds</text>
@@ -29,36 +33,36 @@
   <text x="502.5" y="1385.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield</text>
   </a>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="592.5" cy="1628.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="592.5" cy="1628.5" r="18" data-ltp="0" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="592.5" y="1597.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="639.5" cy="591.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="639.5" cy="591.5" r="18" data-ltp="3" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="639.5" y="560.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="943.5" cy="858.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="943.5" cy="858.5" r="18" data-ltp="3" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="943.5" y="827.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="1026.5" cy="989.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1026.5" cy="989.5" r="18" data-ltp="0" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1026.5" y="958.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="1116.5" cy="699.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1116.5" cy="699.5" r="18" data-ltp="1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1116.5" y="668.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="1201.5" cy="1001.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1201.5" cy="1001.5" r="18" data-ltp="2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1201.5" y="970.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <circle cx="1445.5" cy="1438.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="1452.5" cy="1262.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1452.5" cy="1262.5" r="18" data-ltp="2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1452.5" y="1231.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <a href="/zones/zone-tm/" title="New Virginia">
-  <circle cx="1547.5" cy="445.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1547.5" cy="445.5" r="18" data-ltp="1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1547.5" y="414.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia</text>
   </a>
   <circle cx="1558.5" cy="305.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>

@@ -6,6 +6,14 @@ weight: 32
 
 # zone_gamma_z106 — worked example
 
+![Teleport columns in zone_gamma_z106](/zonemaps/zone-gamma-z106.svg)
+
+Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
+the column is currently switched off), the landing spots of teleports arriving from other
+zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
+tile coordinates the server records.
+
+
 A high-tier **open PvP** zone: terraformable, low fertility, tier-2 plant variants, and
 a tighter ore economy. This is the "endgame" shape of a zone — fewer, more contested
 resources.
@@ -82,14 +90,6 @@ Per-species rules (including the t2 fruit amounts) are in
   (see [Power base stations](/features/pbs/)).
 
 
-## Teleport map
-
-![Teleport columns in zone_gamma_z106](/zonemaps/zone-gamma-z106.svg)
-
-Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where
-the column is currently switched off), the landing spots of teleports arriving from other
-zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the
-tile coordinates the server records.
 
 <!-- Developer notes: zones row id 106 (zonetype 2 = PvP, protected 0, fertility 15,
      terraformable 1, pbsTechLimit 2, plantruleset 22); mineralconfigs 7 rows (crude
