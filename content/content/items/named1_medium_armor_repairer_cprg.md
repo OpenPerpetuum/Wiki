@@ -19,5 +19,3 @@ description: "Modules / Repair, tier T2"
 | Tier line | [Standard medium armor repairer CT](/content/items/standard-medium-armor-repairer-cprg/) (T1) → **Vautrell medium armor repairer CT** (T2) → [FO-150 'Reparator' medium armor repairer CT](/content/items/named2-medium-armor-repairer-cprg/) (T3) → [CRC40 medium armor repairer CT](/content/items/named3-medium-armor-repairer-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

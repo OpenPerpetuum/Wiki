@@ -12,15 +12,17 @@ public static class SparksFamilySvg
 {
     public static string Build(List<SparkFamilyInfo> families)
     {
+        // 3 columns: six boxes in one row (the old layout) made each box too
+        // small to read without zooming; 3x2 keeps them comfortably big.
         const int mx = 24, my = 40;
-        const int bw = 250, bh = 74, gx = 30, gy = 30;
-        const int cols = 6;
+        const int bw = 300, bh = 84, gx = 30, gy = 30;
+        const int cols = 3;
         var rows = (int)Math.Ceiling(families.Count / (double)cols);
         var w = mx * 2 + cols * bw + (cols - 1) * gx;
         var h = my * 2 + rows * bh + (rows - 1) * gy;
 
         var sb = new StringBuilder();
-        sb.Append($"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 {w} {h}\" width=\"1280\" height=\"{(int)(1280 * h / (double)w)}\" role=\"img\" ");
+        sb.Append($"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 {w} {h}\" width=\"960\" height=\"{(int)(960 * h / (double)w)}\" role=\"img\" ");
         sb.Append($"aria-label=\"Spark families: {families.Count} families, {families.Sum(f => f.Count)} sparks; click a family to jump to its sparks below\">\n");
         sb.Append("  <rect x=\"0\" y=\"0\" width=\"");
         sb.Append(w.ToString());

@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T1"
 | Tier line | **Standard small energy neutralizer CT** (T1) → [Gox I. small energy neutralizer CT](/content/items/named1-small-energy-neutralizer-cprg/) (T2) → [600GFX-Spasm small energy neutralizer CT](/content/items/named2-small-energy-neutralizer-cprg/) (T3) → [Cerba small energy neutralizer CT](/content/items/named3-small-energy-neutralizer-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

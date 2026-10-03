@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard evasive module CT](/content/items/standard-maneuvering-upgrade-cprg/) (T1) → [R4S-S evasive module CT](/content/items/named1-maneuvering-upgrade-cprg/) (T2) → [Deflectik evasive module CT](/content/items/named2-maneuvering-upgrade-cprg/) (T3) → **Yridan RCD evasive module CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

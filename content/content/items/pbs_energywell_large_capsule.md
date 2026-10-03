@@ -36,32 +36,12 @@ description: "Special & other / Miscellaneous, tier T3"
 
 **Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pbs Energywell Large Capsule"]:::current
-    b["Alligior ×1.2k"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Espitium ×675"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Coalimin ×1.2k"]:::comp
-    d --> a
-    click d "/content/items/gamma-buildblock/" "Coalimin"
-    e["Bochilum ×1.2k"]:::comp
-    e --> a
-    click e "/content/items/gamma-defblock/" "Bochilum"
-    f["Tiraizin ×675"]:::comp
-    f --> a
-    click f "/content/items/gamma-energyblock/" "Tiraizin"
-    g["Pbs Energywell Medium Capsule ×1"]:::comp
-    g --> a
-    click g "/content/items/pbs-energywell-medium-capsule/" "Pbs Energywell Medium Capsule"
-    h["Briochit ×1.2k"]:::comp
-    h --> a
-    click h "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>675</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-buildblock/">Coalimin</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-defblock/">Bochilum</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-energyblock/">Tiraizin</a></div><div class="prod-card-body">required: <b>675</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-home"/></svg><a class="prod-card-name" href="/content/items/pbs-energywell-medium-capsule/">Pbs Energywell Medium Capsule</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+</div>

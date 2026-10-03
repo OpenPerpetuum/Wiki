@@ -52,23 +52,4 @@ pie showData
     "fluxore" : 20
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Novastrov](/zones/zone-ics-pvp/) (2 TP points)
-- → [Hershfield](/zones/zone-tm-pve/) (3 TP points)
-- → [Alsbale](/zones/zone-tm-pvp/) (2 TP points)
-- → [zone_gamma_tc_z105](/zones/zone-gamma-tc-z105/) (1 TP point)
-- → [Kraslovsk](/zones/zone-ics-g-3/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Novastrov](/zones/zone-ics-pvp/) (2 TP points)
-- ← [Hershfield](/zones/zone-tm-pve/) (3 TP points)
-- ← [Alsbale](/zones/zone-tm-pvp/) (2 TP points)
-- ← [zone_gamma_tc_z105](/zones/zone-gamma-tc-z105/) (1 TP point)
-- ← [Kraslovsk](/zones/zone-ics-g-3/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

@@ -19,5 +19,3 @@ description: "Modules / Repair, tier T1"
 | Tier line | **Standard armor repairer tuning CT** (T1) → [Diaptes armor repairer tuning CT](/content/items/named1-armor-repairer-upgrade-cprg/) (T2) → [WPG3000 armor repairer tuning CT](/content/items/named2-armor-repairer-upgrade-cprg/) (T3) → [Apogenion armor repairer tuning CT](/content/items/named3-armor-repairer-upgrade-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

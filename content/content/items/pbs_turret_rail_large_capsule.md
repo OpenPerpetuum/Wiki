@@ -47,32 +47,12 @@ description: "Special & other / Miscellaneous, tier T3"
 
 **Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pbs Turret Rail Large Capsule"]:::current
-    b["Espitium ×500"]:::comp
-    b --> a
-    click b "/content/items/espitium/" "Espitium"
-    c["Coalimin ×100"]:::comp
-    c --> a
-    click c "/content/items/gamma-buildblock/" "Coalimin"
-    d["Tiraizin ×500"]:::comp
-    d --> a
-    click d "/content/items/gamma-energyblock/" "Tiraizin"
-    e["Turilium ×750"]:::comp
-    e --> a
-    click e "/content/items/gamma-offenseblock/" "Turilium"
-    f["Hydrobenol ×750"]:::comp
-    f --> a
-    click f "/content/items/hydrobenol/" "Hydrobenol"
-    g["Pbs Turret Rail Medium Capsule ×1"]:::comp
-    g --> a
-    click g "/content/items/pbs-turret-rail-medium-capsule/" "Pbs Turret Rail Medium Capsule"
-    h["Briochit ×100"]:::comp
-    h --> a
-    click h "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-buildblock/">Coalimin</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-energyblock/">Tiraizin</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-offenseblock/">Turilium</a></div><div class="prod-card-body">required: <b>750</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>750</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-home"/></svg><a class="prod-card-name" href="/content/items/pbs-turret-rail-medium-capsule/">Pbs Turret Rail Medium Capsule</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

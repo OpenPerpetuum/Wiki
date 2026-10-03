@@ -18,5 +18,3 @@ description: "Robot parts / Legs"
 | Category | Robot parts / Legs |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

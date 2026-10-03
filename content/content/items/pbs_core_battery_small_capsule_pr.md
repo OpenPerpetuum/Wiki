@@ -36,23 +36,9 @@ description: "Special & other / Miscellaneous, tier T1 (prototype)"
 
 **Produced from 4 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pbs Core Battery Small Capsule Pr"]:::current
-    b["Cryoperine ×5.0k"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Espitium ×5.0k"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Titanium ×2.0k"]:::comp
-    d --> a
-    click d "/content/items/titanium/" "Titanium"
-    e["Briochit ×2.0k"]:::comp
-    e --> a
-    click e "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>5.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>5.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>2.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>2.0k</b></div></div>
+</div>

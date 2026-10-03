@@ -25,5 +25,3 @@ description: "Special & other / Miscellaneous, tier T2"
 | armor_max | 500 |
 | signature_radius | 2 |
 | stealth_strength | 200 |
-
-[All items](/content/items/)

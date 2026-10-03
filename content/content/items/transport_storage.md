@@ -19,5 +19,3 @@ description: "Materials"
 | Note | ebben vannak a szallitasra varo cuccok minden bazison |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

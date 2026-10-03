@@ -30,47 +30,17 @@ description: "Special & other / Miscellaneous, tier T2"
 
 **Produced from 12 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Construction Module Ammo T2"]:::current
-    b["Alligior ×25"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Cryoperine ×10"]:::comp
-    c --> a
-    click c "/content/items/axicol/" "Cryoperine"
-    d["Axicoline ×5"]:::comp
-    d --> a
-    click d "/content/items/axicoline/" "Axicoline"
-    e["Espitium ×10"]:::comp
-    e --> a
-    click e "/content/items/espitium/" "Espitium"
-    f["Coalimin ×25"]:::comp
-    f --> a
-    click f "/content/items/gamma-buildblock/" "Coalimin"
-    g["Bochilum ×10"]:::comp
-    g --> a
-    click g "/content/items/gamma-defblock/" "Bochilum"
-    h["Tiraizin ×10"]:::comp
-    h --> a
-    click h "/content/items/gamma-energyblock/" "Tiraizin"
-    i["Turilium ×5"]:::comp
-    i --> a
-    click i "/content/items/gamma-offenseblock/" "Turilium"
-    j["Hydrobenol ×5"]:::comp
-    j --> a
-    click j "/content/items/hydrobenol/" "Hydrobenol"
-    k["Plasteosine ×10"]:::comp
-    k --> a
-    click k "/content/items/plasteosine/" "Plasteosine"
-    l["Titanium ×25"]:::comp
-    l --> a
-    click l "/content/items/titanium/" "Titanium"
-    m["Briochit ×25"]:::comp
-    m --> a
-    click m "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>5</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-buildblock/">Coalimin</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-defblock/">Bochilum</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-energyblock/">Tiraizin</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-offenseblock/">Turilium</a></div><div class="prod-card-body">required: <b>5</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>5</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+</div>

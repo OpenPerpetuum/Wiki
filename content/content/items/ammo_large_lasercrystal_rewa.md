@@ -27,5 +27,3 @@ description: "Ammo / Beam & laser"
 | damage_kinetic | 15 |
 | damage_thermal | 33 |
 | optimal_range_modifier | 1 |
-
-[All items](/content/items/)

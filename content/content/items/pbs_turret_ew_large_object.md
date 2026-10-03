@@ -18,5 +18,3 @@ description: "Special & other / Miscellaneous, tier T3"
 | Category | Special & other / Miscellaneous |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

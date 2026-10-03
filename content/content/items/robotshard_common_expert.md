@@ -24,24 +24,12 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Perfect common fragment"]:::current
-    b["Cryoperine ×3"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Axicoline ×3"]:::comp
-    c --> a
-    click c "/content/items/axicoline/" "Axicoline"
-    d["Plasteosine ×3"]:::comp
-    d --> a
-    click d "/content/items/plasteosine/" "Plasteosine"
-    e["Titanium ×3"]:::comp
-    e --> a
-    click e "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>3</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>3</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>3</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>3</b></div></div>
+</div>
 ## Used in production
 
 **Component of 345 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
@@ -49,24 +37,24 @@ graph LR
 ```mermaid
 graph LR
     a["Perfect common fragment"]:::current
-    b["Named3 Adaptive Alloy"]:::prod
+    b["T4 Adaptive Alloy"]:::prod
     a --> b
-    click b "/content/items/named3-adaptive-alloy/" "Named3 Adaptive Alloy"
-    c["Named3 Adaptive Alloy Pr"]:::prod
+    click b "/content/items/named3-adaptive-alloy/" "T4 Adaptive Alloy"
+    c["T4 Adaptive Alloy Pr"]:::prod
     a --> c
-    click c "/content/items/named3-adaptive-alloy-pr/" "Named3 Adaptive Alloy Pr"
+    click c "/content/items/named3-adaptive-alloy-pr/" "T4 Adaptive Alloy Pr"
     d["Apogenion armor repairer tuning"]:::prod
     a --> d
     click d "/content/items/named3-armor-repairer-upgrade/" "Apogenion armor repairer tuning"
     e["Apogenion armor repairer tuning prototype"]:::prod
     a --> e
     click e "/content/items/named3-armor-repairer-upgrade-pr/" "Apogenion armor repairer tuning prototype"
-    f["Named3 Assault Remote Controller"]:::prod
+    f["T4 Assault Remote Controller"]:::prod
     a --> f
-    click f "/content/items/named3-assault-remote-controller/" "Named3 Assault Remote Controller"
-    g["Named3 Assault Remote Controller Pr"]:::prod
+    click f "/content/items/named3-assault-remote-controller/" "T4 Assault Remote Controller"
+    g["T4 Assault Remote Controller Pr"]:::prod
     a --> g
-    click g "/content/items/named3-assault-remote-controller-pr/" "Named3 Assault Remote Controller Pr"
+    click g "/content/items/named3-assault-remote-controller-pr/" "T4 Assault Remote Controller Pr"
     h["Omini interference module"]:::prod
     a --> h
     click h "/content/items/named3-blob-emission-modulator/" "Omini interference module"
@@ -80,5 +68,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

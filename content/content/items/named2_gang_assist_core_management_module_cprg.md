@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard recharger NEXUS module CT](/content/items/standard-gang-assist-core-management-module-cprg/) (T1) → [Columcyl recharger NEXUS module CT](/content/items/named1-gang-assist-core-management-module-cprg/) (T2) → **ARMS E300 recharger NEXUS module CT** (T3) → [ARMS X500 recharger NEXUS module CT](/content/items/named3-gang-assist-core-management-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

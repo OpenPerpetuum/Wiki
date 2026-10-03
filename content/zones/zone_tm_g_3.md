@@ -52,17 +52,4 @@ pie showData
     "gammaterial" : 345
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Alsbale](/zones/zone-tm-pvp/) (2 TP points)
-- → [Solarfield](/zones/zone-tm-g-6/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Alsbale](/zones/zone-tm-pvp/) (2 TP points)
-- ← [Solarfield](/zones/zone-tm-g-6/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

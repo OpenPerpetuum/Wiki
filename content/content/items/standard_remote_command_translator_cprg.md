@@ -16,8 +16,6 @@ description: "Modules / Remote control, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Remote control |
-| Tier line | **Standard Remote Command Translator Cprg** (T1) → [Named1 Remote Command Translator Cprg](/content/items/named1-remote-command-translator-cprg/) (T2) → [Named2 Remote Command Translator Cprg](/content/items/named2-remote-command-translator-cprg/) (T3) → [Named3 Remote Command Translator Cprg](/content/items/named3-remote-command-translator-cprg/) (T4) |
+| Tier line | **Standard Remote Command Translator Cprg** (T1) → [T2 Remote Command Translator Cprg](/content/items/named1-remote-command-translator-cprg/) (T2) → [T3 Remote Command Translator Cprg](/content/items/named2-remote-command-translator-cprg/) (T3) → [T4 Remote Command Translator Cprg](/content/items/named3-remote-command-translator-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

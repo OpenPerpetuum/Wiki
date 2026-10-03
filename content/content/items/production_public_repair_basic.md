@@ -19,5 +19,3 @@ description: "Production"
 | Note | repairPrice = itemPrice * ratio |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

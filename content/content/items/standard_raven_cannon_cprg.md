@@ -16,8 +16,6 @@ description: "Modules / Weapons, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Weapons |
-| Tier line | **Standard Raven Cannon Cprg** (T1) → [Named1 Raven Cannon Cprg](/content/items/named1-raven-cannon-cprg/) (T2) → [Named2 Raven Cannon Cprg](/content/items/named2-raven-cannon-cprg/) (T3) → [Named3 Raven Cannon Cprg](/content/items/named3-raven-cannon-cprg/) (T4) |
+| Tier line | **Standard Raven Cannon Cprg** (T1) → [T2 Raven Cannon Cprg](/content/items/named1-raven-cannon-cprg/) (T2) → [T3 Raven Cannon Cprg](/content/items/named2-raven-cannon-cprg/) (T3) → [T4 Raven Cannon Cprg](/content/items/named3-raven-cannon-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

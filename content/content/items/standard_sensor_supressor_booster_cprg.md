@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T1"
 | Tier line | **Standard sensor suppressor tuning CT** (T1) → [DDX200-Veil sensor suppressor tuning CT](/content/items/named1-sensor-supressor-booster-cprg/) (T2) → [Radiocor sensor suppressor tuning CT](/content/items/named2-sensor-supressor-booster-cprg/) (T3) → [DDX700-Mist sensor suppressor tuning CT](/content/items/named3-sensor-supressor-booster-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

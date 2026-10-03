@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard seismic ERP CT](/content/items/standard-explosive-kers-cprg/) (T1) → [SER-250 'Eruptico' seismic ERP CT](/content/items/named1-explosive-kers-cprg/) (T2) → **SER-300 'Devactico' seismic ERP CT** (T3) → [365p-CSD seismic ERP CT](/content/items/named3-explosive-kers-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

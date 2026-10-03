@@ -19,5 +19,3 @@ description: "Modules / Armor, tier T1"
 | Tier line | **Standard light armor plate CT** (T1) → [Wobost-Titangrip light armor plate CT](/content/items/named1-small-armor-plate-cprg/) (T2) → [Invigor I. light armor plate CT](/content/items/named2-small-armor-plate-cprg/) (T3) → [Karapas light armor plate CT](/content/items/named3-small-armor-plate-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

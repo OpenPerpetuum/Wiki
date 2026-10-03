@@ -19,5 +19,3 @@ description: "Modules / Armor, tier T2"
 | Tier line | [Standard thermal armor CT](/content/items/standard-thrm-armor-hardener-cprg/) (T1) → **Lava-3T thermal armor CT** (T2) → [Thermoflake thermal armor CT](/content/items/named2-thrm-armor-hardener-cprg/) (T3) → [Hephaistos-TSS thermal armor CT](/content/items/named3-thrm-armor-hardener-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

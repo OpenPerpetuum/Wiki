@@ -22,5 +22,3 @@ description: "Decorations"
 | Field | Value |
 |---|---|
 | mobile_teleport_range | 300 |
-
-[All items](/content/items/)

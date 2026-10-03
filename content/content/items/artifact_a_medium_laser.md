@@ -36,20 +36,8 @@ description: "Artifacts, tier T3 (special)"
 
 **Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Niani medium LCL laser"]:::current
-    b["Hydrobenol ×100"]:::comp
-    b --> a
-    click b "/content/items/hydrobenol/" "Hydrobenol"
-    c["Polynucleit ×100"]:::comp
-    c --> a
-    click c "/content/items/polynucleit/" "Polynucleit"
-    d["Briochit ×100"]:::comp
-    d --> a
-    click d "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynucleit/">Polynucleit</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

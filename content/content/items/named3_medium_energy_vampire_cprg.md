@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T4"
 | Tier line | [Standard medium energy drainer CT](/content/items/standard-medium-energy-vampire-cprg/) (T1) → [Portio II. medium energy drainer CT](/content/items/named1-medium-energy-vampire-cprg/) (T2) → [V90-Quadres medium energy drainer CT](/content/items/named2-medium-energy-vampire-cprg/) (T3) → **Filch-AM medium energy drainer CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard small energy injector CT](/content/items/standard-small-core-booster-cprg/) (T1) → [CC25-Veo small energy injector CT](/content/items/named1-small-core-booster-cprg/) (T2) → **Joffret-Refiller small energy injector CT** (T3) → [Cerepter I. small energy injector CT](/content/items/named3-small-core-booster-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

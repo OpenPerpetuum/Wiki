@@ -10,13 +10,80 @@ description: "Common (first set) research category: 78 nodes."
 
 The first set of standard (non-faction) modules available to every player.
 
-[Tech tree](/content/techtree/) → Common (first set). Every node in the diagram links to its detail page (prerequisites, what it unlocks next, point prices).
+[Tech tree](/content/techtree/) → Common (first set). The category is split into its **research lines** — one per top-level item (the chips above jump to each line's graph). Every node in a graph links to its detail page (prerequisites, what it unlocks next, point prices).
+
+<div class="tt-index">
+<a href="#line-21"><span class="tt-chip">Small remote armor repairer</span></a>&ensp;
+<a href="#line-60"><span class="tt-chip">Light autocannon</span></a>&ensp;
+<a href="#line-298"><span class="tt-chip">Lightweight frame</span></a>&ensp;
+<a href="#line-8888"><span class="tt-chip">Ares</span></a>&ensp;
+</div>
+
+<a id="line-21"></a>
+
+## Standard small remote armor repairer
+
+**16 nodes** — everything that descends from [Standard small remote armor repairer](/content/techtree/nodes/standard-small-remote-armor-repairer/).
 
 ```mermaid
 graph TD
     n21["Standard small remote armor repairer"]
     n22["Standard medium remote armor repairer"]
     n25["Standard chemical armor"]
+    n702["Avaror GD-200 small remote armor repairer"]
+    n703["Iuviar small remote armor repairer"]
+    n704["PPDT-Apadisiator small remote armor repairer"]
+    n705["Avaror GD-800 medium remote armor repairer"]
+    n706["Basio medium remote armor repairer"]
+    n707["ALS medium remote armor repairer"]
+    n712["Delloy s2s chemical armor"]
+    n716["RePro I. chemical armor"]
+    n720["Impetar chemical armor"]
+    n8788["Standard Adaptive Alloy"]
+    n8790["T2 Adaptive Alloy"]
+    n8793["T3 Adaptive Alloy"]
+    n8796["T4 Adaptive Alloy"]
+    n702 --> n22
+    n21 --> n25
+    n21 --> n702
+    n702 --> n703
+    n703 --> n704
+    n22 --> n705
+    n705 --> n706
+    n706 --> n707
+    n25 --> n712
+    n712 --> n716
+    n716 --> n720
+    n712 --> n8788
+    n8788 --> n8790
+    n8790 --> n8793
+    n8793 --> n8796
+    click n21 "/content/techtree/nodes/standard-small-remote-armor-repairer/" "Standard small remote armor repairer"
+    click n22 "/content/techtree/nodes/standard-medium-remote-armor-repairer/" "Standard medium remote armor repairer"
+    click n25 "/content/techtree/nodes/standard-chm-armor-hardener/" "Standard chemical armor"
+    click n702 "/content/techtree/nodes/named1-small-remote-armor-repairer/" "Avaror GD-200 small remote armor repairer"
+    click n703 "/content/techtree/nodes/named2-small-remote-armor-repairer/" "Iuviar small remote armor repairer"
+    click n704 "/content/techtree/nodes/named3-small-remote-armor-repairer/" "PPDT-Apadisiator small remote armor repairer"
+    click n705 "/content/techtree/nodes/named1-medium-remote-armor-repairer/" "Avaror GD-800 medium remote armor repairer"
+    click n706 "/content/techtree/nodes/named2-medium-remote-armor-repairer/" "Basio medium remote armor repairer"
+    click n707 "/content/techtree/nodes/named3-medium-remote-armor-repairer/" "ALS medium remote armor repairer"
+    click n712 "/content/techtree/nodes/named1-chm-armor-hardener/" "Delloy s2s chemical armor"
+    click n716 "/content/techtree/nodes/named2-chm-armor-hardener/" "RePro I. chemical armor"
+    click n720 "/content/techtree/nodes/named3-chm-armor-hardener/" "Impetar chemical armor"
+    click n8788 "/content/techtree/nodes/standard-adaptive-alloy/" "Standard Adaptive Alloy"
+    click n8790 "/content/techtree/nodes/named1-adaptive-alloy/" "T2 Adaptive Alloy"
+    click n8793 "/content/techtree/nodes/named2-adaptive-alloy/" "T3 Adaptive Alloy"
+    click n8796 "/content/techtree/nodes/named3-adaptive-alloy/" "T4 Adaptive Alloy"
+```
+
+<a id="line-60"></a>
+
+## Standard light autocannon
+
+**46 nodes** — everything that descends from [Standard light autocannon](/content/techtree/nodes/standard-small-autocannon/).
+
+```mermaid
+graph TD
     n60["Standard light autocannon"]
     n61["Standard medium machine gun"]
     n62["Standard Hell Cannon"]
@@ -32,25 +99,15 @@ graph TD
     n268["Ammo Hell Cannon B"]
     n269["Ammo Hell Cannon C"]
     n270["Ammo Hell Cannon D"]
-    n298["Standard lightweight frame"]
-    n702["Avaror GD-200 small remote armor repairer"]
-    n703["Iuviar small remote armor repairer"]
-    n704["PPDT-Apadisiator small remote armor repairer"]
-    n705["Avaror GD-800 medium remote armor repairer"]
-    n706["Basio medium remote armor repairer"]
-    n707["ALS medium remote armor repairer"]
-    n712["Delloy s2s chemical armor"]
-    n716["RePro I. chemical armor"]
-    n720["Impetar chemical armor"]
     n840["Malleus light autocannon"]
     n841["Senner Carbine light autocannon"]
     n842["Astoc M45 light autocannon"]
     n843["Grenber 28d medium machine gun"]
     n844[".5s Hastex medium machine gun"]
     n845["Torrex-G17 medium machine gun"]
-    n846["Named1 Hell Cannon"]
-    n847["Named2 Hell Cannon"]
-    n848["Named3 Hell Cannon"]
+    n846["T2 Hell Cannon"]
+    n847["T3 Hell Cannon"]
+    n848["T4 Hell Cannon"]
     n912["Standard firearm tuning"]
     n933["Diathel-Subperis firearm tuning"]
     n934["Plasmidwad-9000 firearm tuning"]
@@ -60,40 +117,19 @@ graph TD
     n1030["GTRB medium autocannon"]
     n1031["Astoc M75 medium autocannon"]
     n1032["Znatvoy-Berjiar-IA medium autocannon"]
-    n1033["Named1 Raven Cannon"]
-    n1034["Named2 Raven Cannon"]
-    n1035["Named3 Raven Cannon"]
-    n1402["MR1000-Boogey lightweight frame"]
-    n1403["Eizbiogh-dfg20 lightweight frame"]
-    n1404["MRE 3000 lightweight frame"]
-    n1484["Sequer"]
-    n2549["Standard evasive module"]
-    n2552["Standard evasive NEXUS module"]
-    n2565["R4S-S evasive module"]
-    n2566["Deflectik evasive module"]
-    n2567["Yridan RCD evasive module"]
-    n2589["Oshbo evasive NEXUS module"]
-    n2590["Pareduit evasive NEXUS module"]
-    n2591["R4S-A evasive NEXUS module"]
-    n2866["Lithus"]
+    n1033["T2 Raven Cannon"]
+    n1034["T3 Raven Cannon"]
+    n1035["T4 Raven Cannon"]
     n3257["Standard weapon stabilizer"]
     n3382["Kobel 450-TZ weapon stabilizer"]
     n3383["Sharpsy weapon stabilizer"]
     n3384["Kobel 300-XZ weapon stabilizer"]
-    n4444["Scarab"]
-    n8788["Standard Adaptive Alloy"]
-    n8790["Named1 Adaptive Alloy"]
-    n8793["Named2 Adaptive Alloy"]
-    n8796["Named3 Adaptive Alloy"]
-    n8888["Ares"]
     n8893["Ammo Raven Cannon A"]
     n8894["Ammo Raven Cannon B"]
     n8895["Ammo Raven Cannon C"]
     n8896["Ammo Raven Cannon D"]
     n8928["Ammo Hell Cannon T"]
     n8931["Ammo Raven Cannon T"]
-    n702 --> n22
-    n21 --> n25
     n840 --> n61
     n844 --> n62
     n60 --> n259
@@ -108,15 +144,6 @@ graph TD
     n267 --> n268
     n267 --> n269
     n267 --> n270
-    n21 --> n702
-    n702 --> n703
-    n703 --> n704
-    n22 --> n705
-    n705 --> n706
-    n706 --> n707
-    n25 --> n712
-    n712 --> n716
-    n716 --> n720
     n60 --> n840
     n840 --> n841
     n841 --> n842
@@ -138,37 +165,16 @@ graph TD
     n1005 --> n1033
     n1033 --> n1034
     n1034 --> n1035
-    n298 --> n1402
-    n1402 --> n1403
-    n1403 --> n1404
-    n298 --> n1484
-    n298 --> n2549
-    n2565 --> n2552
-    n2549 --> n2565
-    n2565 --> n2566
-    n2566 --> n2567
-    n2552 --> n2589
-    n2589 --> n2590
-    n2590 --> n2591
-    n1403 --> n2866
     n60 --> n3257
     n3257 --> n3382
     n3382 --> n3383
     n3383 --> n3384
-    n1404 --> n4444
-    n712 --> n8788
-    n8788 --> n8790
-    n8790 --> n8793
-    n8793 --> n8796
     n1005 --> n8893
     n8893 --> n8894
     n8893 --> n8895
     n8893 --> n8896
     n270 --> n8928
     n8896 --> n8931
-    click n21 "/content/techtree/nodes/standard-small-remote-armor-repairer/" "Standard small remote armor repairer"
-    click n22 "/content/techtree/nodes/standard-medium-remote-armor-repairer/" "Standard medium remote armor repairer"
-    click n25 "/content/techtree/nodes/standard-chm-armor-hardener/" "Standard chemical armor"
     click n60 "/content/techtree/nodes/standard-small-autocannon/" "Standard light autocannon"
     click n61 "/content/techtree/nodes/standard-medium-autocannon/" "Standard medium machine gun"
     click n62 "/content/techtree/nodes/standard-hell-cannon/" "Standard Hell Cannon"
@@ -184,25 +190,15 @@ graph TD
     click n268 "/content/techtree/nodes/ammo-hell-cannon-b/" "Ammo Hell Cannon B"
     click n269 "/content/techtree/nodes/ammo-hell-cannon-c/" "Ammo Hell Cannon C"
     click n270 "/content/techtree/nodes/ammo-hell-cannon-d/" "Ammo Hell Cannon D"
-    click n298 "/content/techtree/nodes/standard-mass-reductor/" "Standard lightweight frame"
-    click n702 "/content/techtree/nodes/named1-small-remote-armor-repairer/" "Avaror GD-200 small remote armor repairer"
-    click n703 "/content/techtree/nodes/named2-small-remote-armor-repairer/" "Iuviar small remote armor repairer"
-    click n704 "/content/techtree/nodes/named3-small-remote-armor-repairer/" "PPDT-Apadisiator small remote armor repairer"
-    click n705 "/content/techtree/nodes/named1-medium-remote-armor-repairer/" "Avaror GD-800 medium remote armor repairer"
-    click n706 "/content/techtree/nodes/named2-medium-remote-armor-repairer/" "Basio medium remote armor repairer"
-    click n707 "/content/techtree/nodes/named3-medium-remote-armor-repairer/" "ALS medium remote armor repairer"
-    click n712 "/content/techtree/nodes/named1-chm-armor-hardener/" "Delloy s2s chemical armor"
-    click n716 "/content/techtree/nodes/named2-chm-armor-hardener/" "RePro I. chemical armor"
-    click n720 "/content/techtree/nodes/named3-chm-armor-hardener/" "Impetar chemical armor"
     click n840 "/content/techtree/nodes/named1-small-autocannon/" "Malleus light autocannon"
     click n841 "/content/techtree/nodes/named2-small-autocannon/" "Senner Carbine light autocannon"
     click n842 "/content/techtree/nodes/named3-small-autocannon/" "Astoc M45 light autocannon"
     click n843 "/content/techtree/nodes/named1-medium-autocannon/" "Grenber 28d medium machine gun"
     click n844 "/content/techtree/nodes/named2-medium-autocannon/" ".5s Hastex medium machine gun"
     click n845 "/content/techtree/nodes/named3-medium-autocannon/" "Torrex-G17 medium machine gun"
-    click n846 "/content/techtree/nodes/named1-hell-cannon/" "Named1 Hell Cannon"
-    click n847 "/content/techtree/nodes/named2-hell-cannon/" "Named2 Hell Cannon"
-    click n848 "/content/techtree/nodes/named3-hell-cannon/" "Named3 Hell Cannon"
+    click n846 "/content/techtree/nodes/named1-hell-cannon/" "T2 Hell Cannon"
+    click n847 "/content/techtree/nodes/named2-hell-cannon/" "T3 Hell Cannon"
+    click n848 "/content/techtree/nodes/named3-hell-cannon/" "T4 Hell Cannon"
     click n912 "/content/techtree/nodes/standard-damage-mod-projectile/" "Standard firearm tuning"
     click n933 "/content/techtree/nodes/named1-damage-mod-projectile/" "Diathel-Subperis firearm tuning"
     click n934 "/content/techtree/nodes/named2-damage-mod-projectile/" "Plasmidwad-9000 firearm tuning"
@@ -212,9 +208,59 @@ graph TD
     click n1030 "/content/techtree/nodes/named1-longrange-medium-autocannon/" "GTRB medium autocannon"
     click n1031 "/content/techtree/nodes/named2-longrange-medium-autocannon/" "Astoc M75 medium autocannon"
     click n1032 "/content/techtree/nodes/named3-longrange-medium-autocannon/" "Znatvoy-Berjiar-IA medium autocannon"
-    click n1033 "/content/techtree/nodes/named1-raven-cannon/" "Named1 Raven Cannon"
-    click n1034 "/content/techtree/nodes/named2-raven-cannon/" "Named2 Raven Cannon"
-    click n1035 "/content/techtree/nodes/named3-raven-cannon/" "Named3 Raven Cannon"
+    click n1033 "/content/techtree/nodes/named1-raven-cannon/" "T2 Raven Cannon"
+    click n1034 "/content/techtree/nodes/named2-raven-cannon/" "T3 Raven Cannon"
+    click n1035 "/content/techtree/nodes/named3-raven-cannon/" "T4 Raven Cannon"
+    click n3257 "/content/techtree/nodes/standard-weapon-stabilizer/" "Standard weapon stabilizer"
+    click n3382 "/content/techtree/nodes/named1-weapon-stabilizer/" "Kobel 450-TZ weapon stabilizer"
+    click n3383 "/content/techtree/nodes/named2-weapon-stabilizer/" "Sharpsy weapon stabilizer"
+    click n3384 "/content/techtree/nodes/named3-weapon-stabilizer/" "Kobel 300-XZ weapon stabilizer"
+    click n8893 "/content/techtree/nodes/ammo-raven-cannon-a/" "Ammo Raven Cannon A"
+    click n8894 "/content/techtree/nodes/ammo-raven-cannon-b/" "Ammo Raven Cannon B"
+    click n8895 "/content/techtree/nodes/ammo-raven-cannon-c/" "Ammo Raven Cannon C"
+    click n8896 "/content/techtree/nodes/ammo-raven-cannon-d/" "Ammo Raven Cannon D"
+    click n8928 "/content/techtree/nodes/ammo-hell-cannon-t/" "Ammo Hell Cannon T"
+    click n8931 "/content/techtree/nodes/ammo-raven-cannon-t/" "Ammo Raven Cannon T"
+```
+
+<a id="line-298"></a>
+
+## Standard lightweight frame
+
+**15 nodes** — everything that descends from [Standard lightweight frame](/content/techtree/nodes/standard-mass-reductor/).
+
+```mermaid
+graph TD
+    n298["Standard lightweight frame"]
+    n1402["MR1000-Boogey lightweight frame"]
+    n1403["Eizbiogh-dfg20 lightweight frame"]
+    n1404["MRE 3000 lightweight frame"]
+    n1484["Sequer"]
+    n2549["Standard evasive module"]
+    n2552["Standard evasive NEXUS module"]
+    n2565["R4S-S evasive module"]
+    n2566["Deflectik evasive module"]
+    n2567["Yridan RCD evasive module"]
+    n2589["Oshbo evasive NEXUS module"]
+    n2590["Pareduit evasive NEXUS module"]
+    n2591["R4S-A evasive NEXUS module"]
+    n2866["Lithus"]
+    n4444["Scarab"]
+    n298 --> n1402
+    n1402 --> n1403
+    n1403 --> n1404
+    n298 --> n1484
+    n298 --> n2549
+    n2565 --> n2552
+    n2549 --> n2565
+    n2565 --> n2566
+    n2566 --> n2567
+    n2552 --> n2589
+    n2589 --> n2590
+    n2590 --> n2591
+    n1403 --> n2866
+    n1404 --> n4444
+    click n298 "/content/techtree/nodes/standard-mass-reductor/" "Standard lightweight frame"
     click n1402 "/content/techtree/nodes/named1-mass-reductor/" "MR1000-Boogey lightweight frame"
     click n1403 "/content/techtree/nodes/named2-mass-reductor/" "Eizbiogh-dfg20 lightweight frame"
     click n1404 "/content/techtree/nodes/named3-mass-reductor/" "MRE 3000 lightweight frame"
@@ -228,25 +274,22 @@ graph TD
     click n2590 "/content/techtree/nodes/named2-gang-assist-coordinated-maneuvering-module/" "Pareduit evasive NEXUS module"
     click n2591 "/content/techtree/nodes/named3-gang-assist-coordinated-maneuvering-module/" "R4S-A evasive NEXUS module"
     click n2866 "/content/techtree/nodes/lithus/" "Lithus"
-    click n3257 "/content/techtree/nodes/standard-weapon-stabilizer/" "Standard weapon stabilizer"
-    click n3382 "/content/techtree/nodes/named1-weapon-stabilizer/" "Kobel 450-TZ weapon stabilizer"
-    click n3383 "/content/techtree/nodes/named2-weapon-stabilizer/" "Sharpsy weapon stabilizer"
-    click n3384 "/content/techtree/nodes/named3-weapon-stabilizer/" "Kobel 300-XZ weapon stabilizer"
     click n4444 "/content/techtree/nodes/scarab/" "Scarab"
-    click n8788 "/content/techtree/nodes/standard-adaptive-alloy/" "Standard Adaptive Alloy"
-    click n8790 "/content/techtree/nodes/named1-adaptive-alloy/" "Named1 Adaptive Alloy"
-    click n8793 "/content/techtree/nodes/named2-adaptive-alloy/" "Named2 Adaptive Alloy"
-    click n8796 "/content/techtree/nodes/named3-adaptive-alloy/" "Named3 Adaptive Alloy"
-    click n8888 "/content/techtree/nodes/ares/" "Ares"
-    click n8893 "/content/techtree/nodes/ammo-raven-cannon-a/" "Ammo Raven Cannon A"
-    click n8894 "/content/techtree/nodes/ammo-raven-cannon-b/" "Ammo Raven Cannon B"
-    click n8895 "/content/techtree/nodes/ammo-raven-cannon-c/" "Ammo Raven Cannon C"
-    click n8896 "/content/techtree/nodes/ammo-raven-cannon-d/" "Ammo Raven Cannon D"
-    click n8928 "/content/techtree/nodes/ammo-hell-cannon-t/" "Ammo Hell Cannon T"
-    click n8931 "/content/techtree/nodes/ammo-raven-cannon-t/" "Ammo Raven Cannon T"
 ```
 
-## Nodes
+<a id="line-8888"></a>
+
+## Ares
+
+**1 node** — everything that descends from [Ares](/content/techtree/nodes/ares/).
+
+```mermaid
+graph TD
+    n8888["Ares"]
+    click n8888 "/content/techtree/nodes/ares/" "Ares"
+```
+
+## Nodes (all)
 
 | Unlocks item | Parent node | Enabler extension | Point prices |
 |---|---|---|---|
@@ -265,7 +308,7 @@ graph TD
 | [Medium armor-piercing bullet](/content/techtree/nodes/ammo-medium-projectile-a/) | [Standard medium machine gun](/content/techtree/nodes/standard-medium-autocannon/) | – | common=25k |
 | [Grenber 28d medium machine gun](/content/techtree/nodes/named1-medium-autocannon/) | [Standard medium machine gun](/content/techtree/nodes/standard-medium-autocannon/) | – | common=25k |
 | [Ammo Hell Cannon A](/content/techtree/nodes/ammo-hell-cannon-a/) | [Standard Hell Cannon](/content/techtree/nodes/standard-hell-cannon/) | – | common=68.6k |
-| [Named1 Hell Cannon](/content/techtree/nodes/named1-hell-cannon/) | [Standard Hell Cannon](/content/techtree/nodes/standard-hell-cannon/) | – | common=102.4k |
+| [T2 Hell Cannon](/content/techtree/nodes/named1-hell-cannon/) | [Standard Hell Cannon](/content/techtree/nodes/standard-hell-cannon/) | – | common=102.4k |
 | [Small metal-ceramic bullet](/content/techtree/nodes/ammo-small-projectile-b/) | [Small armor-piercing bullet](/content/techtree/nodes/ammo-small-projectile-a/) | – | common=5.4k |
 | [Small composite bullet](/content/techtree/nodes/ammo-small-projectile-c/) | [Small armor-piercing bullet](/content/techtree/nodes/ammo-small-projectile-a/) | – | common=5.4k |
 | [Small chemoactive bullet](/content/techtree/nodes/ammo-small-projectile-d/) | [Small armor-piercing bullet](/content/techtree/nodes/ammo-small-projectile-a/) | – | common=5.4k |
@@ -294,19 +337,19 @@ graph TD
 | [Standard medium autocannon](/content/techtree/nodes/longrange-standard-medium-autocannon/) | [Grenber 28d medium machine gun](/content/techtree/nodes/named1-medium-autocannon/) | – | common=43.2k |
 | [Standard Hell Cannon](/content/techtree/nodes/standard-hell-cannon/) | [.5s Hastex medium machine gun](/content/techtree/nodes/named2-medium-autocannon/) | – | common=68.6k |
 | [Torrex-G17 medium machine gun](/content/techtree/nodes/named3-medium-autocannon/) | [.5s Hastex medium machine gun](/content/techtree/nodes/named2-medium-autocannon/) | – | common=34.3k; hitech=17.15k |
-| [Named2 Hell Cannon](/content/techtree/nodes/named2-hell-cannon/) | [Named1 Hell Cannon](/content/techtree/nodes/named1-hell-cannon/) | – | common=145.8k |
-| [Named3 Hell Cannon](/content/techtree/nodes/named3-hell-cannon/) | [Named2 Hell Cannon](/content/techtree/nodes/named2-hell-cannon/) | – | common=100k; hitech=50k |
+| [T3 Hell Cannon](/content/techtree/nodes/named2-hell-cannon/) | [T2 Hell Cannon](/content/techtree/nodes/named1-hell-cannon/) | – | common=145.8k |
+| [T4 Hell Cannon](/content/techtree/nodes/named3-hell-cannon/) | [T3 Hell Cannon](/content/techtree/nodes/named2-hell-cannon/) | – | common=100k; hitech=50k |
 | [Diathel-Subperis firearm tuning](/content/techtree/nodes/named1-damage-mod-projectile/) | [Standard firearm tuning](/content/techtree/nodes/standard-damage-mod-projectile/) | – | common=12.8k |
 | [Plasmidwad-9000 firearm tuning](/content/techtree/nodes/named2-damage-mod-projectile/) | [Diathel-Subperis firearm tuning](/content/techtree/nodes/named1-damage-mod-projectile/) | – | common=43.2k |
 | [DVT-800g firearm tuning](/content/techtree/nodes/named3-damage-mod-projectile/) | [Plasmidwad-9000 firearm tuning](/content/techtree/nodes/named2-damage-mod-projectile/) | – | common=51.2k; hitech=25.6k |
 | [Standard Raven Cannon](/content/techtree/nodes/standard-raven-cannon/) | [Standard medium autocannon](/content/techtree/nodes/longrange-standard-medium-autocannon/) | – | common=68.6k |
 | [GTRB medium autocannon](/content/techtree/nodes/named1-longrange-medium-autocannon/) | [Standard medium autocannon](/content/techtree/nodes/longrange-standard-medium-autocannon/) | – | common=68.6k |
-| [Named1 Raven Cannon](/content/techtree/nodes/named1-raven-cannon/) | [Standard Raven Cannon](/content/techtree/nodes/standard-raven-cannon/) | – | common=102.4k |
+| [T2 Raven Cannon](/content/techtree/nodes/named1-raven-cannon/) | [Standard Raven Cannon](/content/techtree/nodes/standard-raven-cannon/) | – | common=102.4k |
 | [Ammo Raven Cannon A](/content/techtree/nodes/ammo-raven-cannon-a/) | [Standard Raven Cannon](/content/techtree/nodes/standard-raven-cannon/) | – | common=68.6k |
 | [Astoc M75 medium autocannon](/content/techtree/nodes/named2-longrange-medium-autocannon/) | [GTRB medium autocannon](/content/techtree/nodes/named1-longrange-medium-autocannon/) | – | common=102.4k |
 | [Znatvoy-Berjiar-IA medium autocannon](/content/techtree/nodes/named3-longrange-medium-autocannon/) | [Astoc M75 medium autocannon](/content/techtree/nodes/named2-longrange-medium-autocannon/) | – | common=72.9k; hitech=36.45k |
-| [Named2 Raven Cannon](/content/techtree/nodes/named2-raven-cannon/) | [Named1 Raven Cannon](/content/techtree/nodes/named1-raven-cannon/) | – | common=145.8k |
-| [Named3 Raven Cannon](/content/techtree/nodes/named3-raven-cannon/) | [Named2 Raven Cannon](/content/techtree/nodes/named2-raven-cannon/) | – | common=100k; hitech=50k |
+| [T3 Raven Cannon](/content/techtree/nodes/named2-raven-cannon/) | [T2 Raven Cannon](/content/techtree/nodes/named1-raven-cannon/) | – | common=145.8k |
+| [T4 Raven Cannon](/content/techtree/nodes/named3-raven-cannon/) | [T3 Raven Cannon](/content/techtree/nodes/named2-raven-cannon/) | – | common=100k; hitech=50k |
 | [Eizbiogh-dfg20 lightweight frame](/content/techtree/nodes/named2-mass-reductor/) | [MR1000-Boogey lightweight frame](/content/techtree/nodes/named1-mass-reductor/) | – | common=43.2k |
 | [MRE 3000 lightweight frame](/content/techtree/nodes/named3-mass-reductor/) | [Eizbiogh-dfg20 lightweight frame](/content/techtree/nodes/named2-mass-reductor/) | – | common=51.2k; hitech=25.6k |
 | [Lithus](/content/techtree/nodes/lithus/) | [Eizbiogh-dfg20 lightweight frame](/content/techtree/nodes/named2-mass-reductor/) | – | common=343k |
@@ -321,9 +364,9 @@ graph TD
 | [Kobel 450-TZ weapon stabilizer](/content/techtree/nodes/named1-weapon-stabilizer/) | [Standard weapon stabilizer](/content/techtree/nodes/standard-weapon-stabilizer/) | – | common=12.8k |
 | [Sharpsy weapon stabilizer](/content/techtree/nodes/named2-weapon-stabilizer/) | [Kobel 450-TZ weapon stabilizer](/content/techtree/nodes/named1-weapon-stabilizer/) | – | common=43.2k |
 | [Kobel 300-XZ weapon stabilizer](/content/techtree/nodes/named3-weapon-stabilizer/) | [Sharpsy weapon stabilizer](/content/techtree/nodes/named2-weapon-stabilizer/) | – | common=51.2k; hitech=25.6k |
-| [Named1 Adaptive Alloy](/content/techtree/nodes/named1-adaptive-alloy/) | [Standard Adaptive Alloy](/content/techtree/nodes/standard-adaptive-alloy/) | – | common=129.6k |
-| [Named2 Adaptive Alloy](/content/techtree/nodes/named2-adaptive-alloy/) | [Named1 Adaptive Alloy](/content/techtree/nodes/named1-adaptive-alloy/) | – | common=205.8k |
-| [Named3 Adaptive Alloy](/content/techtree/nodes/named3-adaptive-alloy/) | [Named2 Adaptive Alloy](/content/techtree/nodes/named2-adaptive-alloy/) | – | common=76.8k; hitech=153.6k |
+| [T2 Adaptive Alloy](/content/techtree/nodes/named1-adaptive-alloy/) | [Standard Adaptive Alloy](/content/techtree/nodes/standard-adaptive-alloy/) | – | common=129.6k |
+| [T3 Adaptive Alloy](/content/techtree/nodes/named2-adaptive-alloy/) | [T2 Adaptive Alloy](/content/techtree/nodes/named1-adaptive-alloy/) | – | common=205.8k |
+| [T4 Adaptive Alloy](/content/techtree/nodes/named3-adaptive-alloy/) | [T3 Adaptive Alloy](/content/techtree/nodes/named2-adaptive-alloy/) | – | common=76.8k; hitech=153.6k |
 | [Ammo Raven Cannon B](/content/techtree/nodes/ammo-raven-cannon-b/) | [Ammo Raven Cannon A](/content/techtree/nodes/ammo-raven-cannon-a/) | – | common=102.4k |
 | [Ammo Raven Cannon C](/content/techtree/nodes/ammo-raven-cannon-c/) | [Ammo Raven Cannon A](/content/techtree/nodes/ammo-raven-cannon-a/) | – | common=102.4k |
 | [Ammo Raven Cannon D](/content/techtree/nodes/ammo-raven-cannon-d/) | [Ammo Raven Cannon A](/content/techtree/nodes/ammo-raven-cannon-a/) | – | common=102.4k |

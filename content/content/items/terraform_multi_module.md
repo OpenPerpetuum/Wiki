@@ -27,5 +27,3 @@ description: "Modules / Enhancements"
 | cycle_time | 18k |
 | optimal_range | 15 |
 | powergrid_usage | 55 |
-
-[All items](/content/items/)

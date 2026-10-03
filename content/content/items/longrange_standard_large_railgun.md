@@ -35,30 +35,14 @@ description: "Modules / Weapons, tier T1"
 
 **Produced from 6 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Longrange Standard Large Railgun"]:::current
-    b["Cryoperine ×75"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Axicoline ×150"]:::comp
-    c --> a
-    click c "/content/items/axicoline/" "Axicoline"
-    d["Chollonin ×75"]:::comp
-    d --> a
-    click d "/content/items/chollonin/" "Chollonin"
-    e["Polynitrocol ×150"]:::comp
-    e --> a
-    click e "/content/items/polynitrocol/" "Polynitrocol"
-    f["Specimen Sap Item Flux ×10"]:::comp
-    f --> a
-    click f "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    g["Titanium ×150"]:::comp
-    g --> a
-    click g "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>75</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/chollonin/">Chollonin</a></div><div class="prod-card-body">required: <b>75</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynitrocol/">Polynitrocol</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -66,15 +50,13 @@ graph LR
 ```mermaid
 graph LR
     a["Longrange Standard Large Railgun"]:::current
-    b["Named1 Longrange Large Railgun"]:::prod
+    b["T2 Longrange Large Railgun"]:::prod
     a --> b
-    click b "/content/items/named1-longrange-large-railgun/" "Named1 Longrange Large Railgun"
-    c["Named1 Longrange Large Railgun Pr"]:::prod
+    click b "/content/items/named1-longrange-large-railgun/" "T2 Longrange Large Railgun"
+    c["T2 Longrange Large Railgun Pr"]:::prod
     a --> c
-    click c "/content/items/named1-longrange-large-railgun-pr/" "Named1 Longrange Large Railgun Pr"
+    click c "/content/items/named1-longrange-large-railgun-pr/" "T2 Longrange Large Railgun Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

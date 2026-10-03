@@ -28,5 +28,3 @@ description: "Modules / Repair, tier T2 (special)"
 | nox_repair_amount_modifier | 0.9 |
 | powergrid_usage | 35 |
 | ppm_nuimqol_plasma_consumption | 1k |
-
-[All items](/content/items/)

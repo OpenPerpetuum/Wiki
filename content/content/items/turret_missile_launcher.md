@@ -29,5 +29,3 @@ description: "Modules / Turrets, tier T1"
 | module_missile_falloff_modifier | 1 |
 | module_missile_range_modifier | 1 |
 | powergrid_usage | 150 |
-
-[All items](/content/items/)

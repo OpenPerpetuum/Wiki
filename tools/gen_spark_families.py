@@ -14,7 +14,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PAGE = ROOT / "content" / "features" / "sparks.md"
 MARKER = "<!-- sparkfamilies:generated -->"
-END = '<a id="switching-sparks"></a>'
+# The generated block runs to EOF: "Switching sparks" moved above it and the
+# source-attribution comment is the trailer of the block itself (preserved
+# verbatim below).
 
 # Family display info (label, slug, color, short box text, long section text)
 # — must match SparksPage.Info(). Order = the order the lines appear on the page.
@@ -43,8 +45,10 @@ def esc(s: str) -> str:
 
 
 def build_svg(fams: list) -> str:
+    # 3 columns: six boxes in one row (the old layout) made each box too
+    # small to read without zooming; 3x2 keeps them comfortably big.
     mx, my = 24, 40
-    bw, bh, gx, gy, cols = 250, 74, 30, 30, 6
+    bw, bh, gx, gy, cols = 300, 84, 30, 30, 3
     import math
 
     rows = math.ceil(len(fams) / cols)
@@ -52,7 +56,7 @@ def build_svg(fams: list) -> str:
     h = my * 2 + rows * bh + (rows - 1) * gy
     total = sum(f[3] for f in fams)
     out = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="1280" height="{int(1280 * h / w)}" role="img" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="960" height="{int(960 * h / w)}" role="img" '
         f'aria-label="Spark families: {len(fams)} families, {total} sparks; click a family to jump to its sparks below">',
         f'  <rect x="0" y="0" width="{w}" height="{h}" fill="#10151f" stroke="#39445a" stroke-width="1"/>',
     ]
@@ -74,8 +78,12 @@ def build_svg(fams: list) -> str:
 def main() -> int:
     text = PAGE.read_text(encoding="utf-8")
     i = text.index(MARKER) + len(MARKER)
-    j = text.index(END, i)
-    section = text[i:j]
+    section = text[i:]
+
+    # the trailer: the source-attribution comment at the end of the file —
+    # re-emit it byte-for-byte, untouched
+    k = section.rindex("<!--")
+    section, trailer = section[:k], section[k:]
 
     # label as it appears in the file (markdown-escaped, e.g. Event &amp; special)
     fams = []  # (label, slug, color, count, box, unlock) in page order; the
@@ -105,8 +113,8 @@ def main() -> int:
         "## Spark families",
         "",
         f"The {spark_count} sparks in {len(fams)} families at a glance: one box per family "
-        "(spark count, how the line unlocks), left to right in the order the lines were added. "
-        "**Click a box to jump to that family's sparks below.** "
+        "(spark count, how the line unlocks), in the order the lines were added "
+        "(left to right, top to bottom). **Click a box to jump to that family's sparks below.** "
         "**Scroll over the diagram to zoom**, drag to pan, and use the \u27f2 button to reset.",
         "",
         '<div class="map-zoom-wrap sparkfam-wrap">',
@@ -129,7 +137,7 @@ def main() -> int:
         nxt = section.find("<a id=", start)
         out += ["", f'<a id="family-{slug}"></a>', "", f"### {esc(label)} ({n})", ""]
         out.append(f"Unlock: {unlock}. Each switch costs NIC (the amount is per spark, see the cards) "
-                   "and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.")
+                   "and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.")
         out.append("")
         out.append('<div class="ext-cards">')
         for m in CARD_RE.finditer(section[start:nxt if nxt != -1 else len(section)]):
@@ -143,9 +151,9 @@ def main() -> int:
             )
         out.append("</div>")
     out.append("")
-    new_section = "\n".join(out) + "\n"
+    new_section = "\n".join(out) + "\n" + trailer
 
-    new_text = text[:i] + new_section + text[j:]
+    new_text = text[:i] + new_section
     PAGE.write_text(new_text, encoding="utf-8")
     print(f"sparks.md: {len(fams)} families, {spark_count} sparks ({len(CARD_RE.findall(new_text))} cards)")
     return 0

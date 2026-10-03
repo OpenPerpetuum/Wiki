@@ -18,5 +18,3 @@ description: "Ammo / Missiles"
 | Category | Ammo / Missiles |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

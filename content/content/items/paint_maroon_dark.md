@@ -30,5 +30,3 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 | Attalica (zone_ICS) | ∞ | 3M |
 | Daoden (zone_ASI) | ∞ | 3M |
 | Daoden outpost | ∞ | 3M |
-
-[All items](/content/items/)

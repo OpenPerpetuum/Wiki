@@ -33,30 +33,14 @@ description: "Modules / Repair, tier T1"
 
 **Produced from 6 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard large armor repairer"]:::current
-    b["Cryoperine ×75"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Chollonin ×75"]:::comp
-    c --> a
-    click c "/content/items/chollonin/" "Chollonin"
-    d["Plasteosine ×300"]:::comp
-    d --> a
-    click d "/content/items/plasteosine/" "Plasteosine"
-    e["Specimen Sap Item Flux ×10"]:::comp
-    e --> a
-    click e "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    f["Statichnol ×300"]:::comp
-    f --> a
-    click f "/content/items/statichnol/" "Statichnol"
-    g["Titanium ×150"]:::comp
-    g --> a
-    click g "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>75</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/chollonin/">Chollonin</a></div><div class="prod-card-body">required: <b>75</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/statichnol/">Statichnol</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -67,12 +51,10 @@ graph LR
     b["Stesodenn large armor repairer"]:::prod
     a --> b
     click b "/content/items/named1-large-armor-repairer/" "Stesodenn large armor repairer"
-    c["Named1 Large Armor Repairer Pr"]:::prod
+    c["T2 Large Armor Repairer Pr"]:::prod
     a --> c
-    click c "/content/items/named1-large-armor-repairer-pr/" "Named1 Large Armor Repairer Pr"
+    click c "/content/items/named1-large-armor-repairer-pr/" "T2 Large Armor Repairer Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

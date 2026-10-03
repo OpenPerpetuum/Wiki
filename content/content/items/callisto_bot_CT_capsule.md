@@ -31,5 +31,3 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 | Attalica outpost | ∞ | 3.75M | 2.25k |
 | Daoden (zone_ASI) | ∞ | 3.75M | 2.25k |
 | Daoden outpost | ∞ | 3.75M | 2.25k |
-
-[All items](/content/items/)

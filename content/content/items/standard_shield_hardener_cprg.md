@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T1"
 | Tier line | **Standard shield hardener CT** (T1) → [Bund shield hardener CT](/content/items/named1-shield-hardener-cprg/) (T2) → [Patronus shield hardener CT](/content/items/named2-shield-hardener-cprg/) (T3) → [Guardian shield hardener CT](/content/items/named3-shield-hardener-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

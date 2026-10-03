@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T2"
 | Tier line | [Standard medium LCL laser CT](/content/items/standard-medium-laser-cprg/) (T1) → **Thelotec-Grazier medium LCL laser CT** (T2) → [Kauska Heatpin I. medium LCL laser CT](/content/items/named2-medium-laser-cprg/) (T3) → [Thermodissector medium LCL laser CT](/content/items/named3-medium-laser-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

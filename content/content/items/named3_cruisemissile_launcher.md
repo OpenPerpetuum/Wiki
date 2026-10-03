@@ -35,44 +35,16 @@ description: "Modules / Weapons, tier T4"
 
 **Produced from 11 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pelistec-TR500 heavy missile launcher"]:::current
-    b["Hydrobenol ×300"]:::comp
-    b --> a
-    click b "/content/items/hydrobenol/" "Hydrobenol"
-    c["Teppes heavy missile launcher ×1"]:::comp
-    c --> a
-    click c "/content/items/named2-cruisemissile-launcher/" "Teppes heavy missile launcher"
-    d["Phlobotil ×300"]:::comp
-    d --> a
-    click d "/content/items/phlobotil/" "Phlobotil"
-    e["Functional common fragment ×45"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    f["Damaged common fragment ×23"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    g["Perfect common fragment ×68"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    h["Functional pelistal fragment ×45"]:::comp
-    h --> a
-    click h "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
-    i["Damaged pelistal fragment ×23"]:::comp
-    i --> a
-    click i "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
-    j["Perfect pelistal fragment ×68"]:::comp
-    j --> a
-    click j "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
-    k["Specimen Sap Item Flux ×50"]:::comp
-    k --> a
-    click k "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    l["Briochit ×300"]:::comp
-    l --> a
-    click l "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-star"/></svg><a class="prod-card-name" href="/content/items/named2-cruisemissile-launcher/">Teppes heavy missile launcher</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/phlobotil/">Phlobotil</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>23</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>68</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-advanced/">Functional pelistal fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a></div><div class="prod-card-body">required: <b>23</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-expert/">Perfect pelistal fragment</a></div><div class="prod-card-body">required: <b>68</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+</div>

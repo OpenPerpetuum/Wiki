@@ -19,5 +19,3 @@ description: "Materials, tier T1"
 | Note | construction blocks |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

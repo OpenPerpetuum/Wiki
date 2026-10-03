@@ -35,38 +35,14 @@ description: "Modules / Enhancements, tier T4"
 
 **Produced from 9 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["ARMS X500 recharger NEXUS module"]:::current
-    b["Alligior ×100"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Espitium ×500"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Isopropentol ×100"]:::comp
-    d --> a
-    click d "/content/items/isopropentol/" "Isopropentol"
-    e["ARMS E300 recharger NEXUS module ×1"]:::comp
-    e --> a
-    click e "/content/items/named2-gang-assist-core-management-module/" "ARMS E300 recharger NEXUS module"
-    f["Functional common fragment ×30"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    g["Damaged common fragment ×15"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    h["Perfect common fragment ×45"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    i["Briochit ×100"]:::comp
-    i --> a
-    click i "/content/items/unimetal/" "Briochit"
-    j["Vitricyl ×500"]:::comp
-    j --> a
-    click j "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/isopropentol/">Isopropentol</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-panel"/></svg><a class="prod-card-name" href="/content/items/named2-gang-assist-core-management-module/">ARMS E300 recharger NEXUS module</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+</div>

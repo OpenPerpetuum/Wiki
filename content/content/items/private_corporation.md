@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | ez a top extension a cegalapitashoz, kigyujti az osszes alatta levo extension szintjet => ennyi member lehet a cegben.     NEM lehet több enabler extensionje, csak 1, az ami van!!!! |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

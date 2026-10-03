@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standart Landmine Detector](/content/items/standart-landmine-detector/) |
 | Parent node | [Bandoler IU-250 interference module](/content/techtree/nodes/named1-blob-emission-modulator/) |
-| Unlocks next | [Named1 Landmine Detector](/content/techtree/nodes/named1-landmine-detector/) |
+| Unlocks next | [T2 Landmine Detector](/content/techtree/nodes/named1-landmine-detector/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

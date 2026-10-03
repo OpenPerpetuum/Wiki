@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard thermal ERP CT](/content/items/standard-thermal-kers-cprg/) (T1) → [Pyropaster thermal ERP CT](/content/items/named1-thermal-kers-cprg/) (T2) → **DE-melt thermal ERP CT** (T3) → [Dyoriva thermal ERP CT](/content/items/named3-thermal-kers-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

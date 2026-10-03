@@ -22,11 +22,4 @@ The virtual training island — where new characters start and learn the basics.
 | Fertility | 20 |
 | Plant species | 15 (rule set 0) |
 | Max docking bases | none |
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [New Virginia](/zones/zone-tm/) (6 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#training) · [Protection levels](/zones/protection/)

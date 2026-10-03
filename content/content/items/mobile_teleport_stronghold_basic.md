@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | Stronghold teleport field obj |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

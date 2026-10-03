@@ -25,5 +25,3 @@ description: "Modules / Armor, tier special"
 | cpu_usage | 1 |
 | massiveness | 0.05 |
 | powergrid_usage | 15 |
-
-[All items](/content/items/)

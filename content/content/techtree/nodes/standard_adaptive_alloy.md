@@ -15,7 +15,7 @@ This node of the [Common (first set)](/content/techtree/groups/common1/) researc
 | Category | [Common (first set)](/content/techtree/groups/common1/) |
 | Unlocks | [Standard Adaptive Alloy](/content/items/standard-adaptive-alloy/) |
 | Parent node | [Delloy s2s chemical armor](/content/techtree/nodes/named1-chm-armor-hardener/) |
-| Unlocks next | [Named1 Adaptive Alloy](/content/techtree/nodes/named1-adaptive-alloy/) |
+| Unlocks next | [T2 Adaptive Alloy](/content/techtree/nodes/named1-adaptive-alloy/) |
 | Enabler extension | – |
 | Point prices | common=75k |
 

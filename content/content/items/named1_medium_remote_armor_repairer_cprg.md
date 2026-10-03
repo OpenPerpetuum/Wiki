@@ -19,5 +19,3 @@ description: "Modules / Repair, tier T2"
 | Tier line | [Standard medium remote armor repairer CT](/content/items/standard-medium-remote-armor-repairer-cprg/) (T1) → **Avaror GD-800 medium remote armor repairer CT** (T2) → [Basio medium remote armor repairer CT](/content/items/named2-medium-remote-armor-repairer-cprg/) (T3) → [ALS medium remote armor repairer CT](/content/items/named3-medium-remote-armor-repairer-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

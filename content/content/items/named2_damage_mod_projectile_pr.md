@@ -31,35 +31,13 @@ description: "Modules / Enhancements, tier T3 (prototype)"
 
 **Produced from 8 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Plasmidwad-9000 firearm tuning prototype"]:::current
-    b["Cryoperine ×100"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Axicoline ×50"]:::comp
-    c --> a
-    click c "/content/items/axicoline/" "Axicoline"
-    d["Espitium ×100"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Hydrobenol ×50"]:::comp
-    e --> a
-    click e "/content/items/hydrobenol/" "Hydrobenol"
-    f["Diathel-Subperis firearm tuning ×1"]:::comp
-    f --> a
-    click f "/content/items/named1-damage-mod-projectile/" "Diathel-Subperis firearm tuning"
-    g["Functional common fragment ×20"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    h["Damaged common fragment ×20"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    i["Titanium ×100"]:::comp
-    i --> a
-    click i "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-panel"/></svg><a class="prod-card-name" href="/content/items/named1-damage-mod-projectile/">Diathel-Subperis firearm tuning</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>20</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>20</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

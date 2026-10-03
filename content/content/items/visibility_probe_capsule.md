@@ -33,5 +33,3 @@ description: "Special & other / Miscellaneous"
 | detection_strength | 45 |
 | signature_radius | 2 |
 | stealth_strength | 275 |
-
-[All items](/content/items/)

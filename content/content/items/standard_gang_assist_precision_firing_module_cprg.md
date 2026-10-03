@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard critical hit NEXUS module CT** (T1) → [Qandellay critical hit NEXUS module CT](/content/items/named1-gang-assist-precision-firing-module-cprg/) (T2) → [E-scope critical hit NEXUS module CT](/content/items/named2-gang-assist-precision-firing-module-cprg/) (T3) → [ZTW critical hit NEXUS module CT](/content/items/named3-gang-assist-precision-firing-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

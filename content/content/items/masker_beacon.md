@@ -28,5 +28,3 @@ description: "Special & other / Miscellaneous"
 | resist_thermal | 5k |
 | signature_radius | 0.5 |
 | stealth_strength | 100 |
-
-[All items](/content/items/)

@@ -18,5 +18,3 @@ description: "Robot parts / Heads"
 | Category | Robot parts / Heads |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

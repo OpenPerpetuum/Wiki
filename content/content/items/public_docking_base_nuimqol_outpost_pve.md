@@ -23,5 +23,3 @@ description: "Special & other / Miscellaneous"
 | Field | Value |
 |---|---|
 | stealth_strength | 1 |
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Power, tier T2"
 | Tier line | [Standard medium auxiliary accumulator CT](/content/items/standard-medium-core-battery-cprg/) (T1) → **Ovostec-gpc7000 medium auxiliary accumulator CT** (T2) → [Sistolox medium auxiliary accumulator CT](/content/items/named2-medium-core-battery-cprg/) (T3) → [Pheter Charge-M medium auxiliary accumulator CT](/content/items/named3-medium-core-battery-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

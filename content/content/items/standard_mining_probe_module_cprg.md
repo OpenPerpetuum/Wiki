@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard geoscanner CT** (T1) → [Ovostec-Chisomel geoscanner CT](/content/items/named1-mining-probe-module-cprg/) (T2) → [Syverz geoscanner CT](/content/items/named2-mining-probe-module-cprg/) (T3) → [Eksplor-q3000 geoscanner CT](/content/items/named3-mining-probe-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

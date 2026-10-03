@@ -28,5 +28,3 @@ description: "Modules / Enhancements, tier T1"
 | effect_detection_strength_modifier | -120 |
 | optimal_range | 25 |
 | powergrid_usage | 20 |
-
-[All items](/content/items/)

@@ -22,5 +22,3 @@ description: "Special & other / Miscellaneous"
 | Field | Value |
 |---|---|
 | construction_charge_amount | -120 |
-
-[All items](/content/items/)

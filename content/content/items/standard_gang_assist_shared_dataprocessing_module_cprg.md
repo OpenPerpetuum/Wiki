@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard lock booster NEXUS module CT** (T1) → [JPS-Redeye lock booster NEXUS module CT](/content/items/named1-gang-assist-shared-dataprocessing-module-cprg/) (T2) → [Tersung lock booster NEXUS module CT](/content/items/named2-gang-assist-shared-dataprocessing-module-cprg/) (T3) → [JPS-Greeneye lock booster NEXUS module CT](/content/items/named3-gang-assist-shared-dataprocessing-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -54,17 +54,4 @@ pie showData
     "fluxore" : 10
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [zone_gamma_z109](/zones/zone-gamma-z109/) (1 TP point)
-- → [zone_gamma_z111](/zones/zone-gamma-z111/) (1 TP point)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [zone_gamma_z109](/zones/zone-gamma-z109/) (1 TP point)
-- ← [zone_gamma_z111](/zones/zone-gamma-z111/) (1 TP point)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#t1) · [Protection levels](/zones/protection/)

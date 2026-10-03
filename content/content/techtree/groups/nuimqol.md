@@ -10,7 +10,19 @@ description: "Nuimqol (faction) research category: 87 nodes."
 
 Research for the Nuimqol rebel faction: its named weapons and the modules that fight alongside them.
 
-[Tech tree](/content/techtree/) → Nuimqol (faction). Every node in the diagram links to its detail page (prerequisites, what it unlocks next, point prices).
+[Tech tree](/content/techtree/) → Nuimqol (faction). The category is split into its **research lines** — one per top-level item (the chips above jump to each line's graph). Every node in a graph links to its detail page (prerequisites, what it unlocks next, point prices).
+
+<div class="tt-index">
+<a href="#line-18"><span class="tt-chip">Small armor repairer</span></a>&ensp;
+<a href="#line-50"><span class="tt-chip">ECM</span></a>&ensp;
+<a href="#line-66"><span class="tt-chip">Light EM-gun</span></a>&ensp;
+</div>
+
+<a id="line-18"></a>
+
+## Standard small armor repairer
+
+**28 nodes** — everything that descends from [Standard small armor repairer](/content/techtree/nodes/standard-small-armor-repairer/).
 
 ```mermaid
 graph TD
@@ -18,15 +30,152 @@ graph TD
     n19["Standard medium armor repairer"]
     n20["Standard large armor repairer"]
     n27["Standard seismic armor"]
+    n693["A150 small armor repairer"]
+    n694["Quissot's small armor repairer"]
+    n695["Microforge Aestolar small armor repairer"]
+    n696["Vautrell medium armor repairer"]
+    n697["FO-150 'Reparator' medium armor repairer"]
+    n698["CRC40 medium armor repairer"]
+    n699["Stesodenn large armor repairer"]
+    n700["FO-330 'Reconstructor' large armor repairer"]
+    n701["Pandegris large armor repairer"]
+    n714["Ballistris I. seismic armor"]
+    n718["Formantel-DVU seismic armor"]
+    n722["Sheltor seismic armor"]
+    n1060["Standard armor repairer tuning"]
+    n1063["Diaptes armor repairer tuning"]
+    n1064["WPG3000 armor repairer tuning"]
+    n1065["Apogenion armor repairer tuning"]
+    n2554["Standard repairer NEXUS module"]
+    n2592["Diogan repairer NEXUS module"]
+    n2593["Pawish repairer NEXUS module"]
+    n2594["ACF-9900 repairer NEXUS module"]
+    n3301["Standard seismic ERP"]
+    n3302["SER-250 'Eruptico' seismic ERP"]
+    n3303["SER-300 'Devactico' seismic ERP"]
+    n3304["365p-CSD seismic ERP"]
+    n693 --> n19
+    n1063 --> n20
+    n18 --> n27
+    n18 --> n693
+    n693 --> n694
+    n694 --> n695
+    n19 --> n696
+    n696 --> n697
+    n697 --> n698
+    n20 --> n699
+    n699 --> n700
+    n700 --> n701
+    n27 --> n714
+    n714 --> n718
+    n718 --> n722
+    n696 --> n1060
+    n1060 --> n1063
+    n1063 --> n1064
+    n1064 --> n1065
+    n1063 --> n2554
+    n2554 --> n2592
+    n2592 --> n2593
+    n2593 --> n2594
+    n714 --> n3301
+    n3301 --> n3302
+    n3302 --> n3303
+    n3303 --> n3304
+    click n18 "/content/techtree/nodes/standard-small-armor-repairer/" "Standard small armor repairer"
+    click n19 "/content/techtree/nodes/standard-medium-armor-repairer/" "Standard medium armor repairer"
+    click n20 "/content/techtree/nodes/standard-large-armor-repairer/" "Standard large armor repairer"
+    click n27 "/content/techtree/nodes/standard-exp-armor-hardener/" "Standard seismic armor"
+    click n693 "/content/techtree/nodes/named1-small-armor-repairer/" "A150 small armor repairer"
+    click n694 "/content/techtree/nodes/named2-small-armor-repairer/" "Quissot's small armor repairer"
+    click n695 "/content/techtree/nodes/named3-small-armor-repairer/" "Microforge Aestolar small armor repairer"
+    click n696 "/content/techtree/nodes/named1-medium-armor-repairer/" "Vautrell medium armor repairer"
+    click n697 "/content/techtree/nodes/named2-medium-armor-repairer/" "FO-150 'Reparator' medium armor repairer"
+    click n698 "/content/techtree/nodes/named3-medium-armor-repairer/" "CRC40 medium armor repairer"
+    click n699 "/content/techtree/nodes/named1-large-armor-repairer/" "Stesodenn large armor repairer"
+    click n700 "/content/techtree/nodes/named2-large-armor-repairer/" "FO-330 'Reconstructor' large armor repairer"
+    click n701 "/content/techtree/nodes/named3-large-armor-repairer/" "Pandegris large armor repairer"
+    click n714 "/content/techtree/nodes/named1-exp-armor-hardener/" "Ballistris I. seismic armor"
+    click n718 "/content/techtree/nodes/named2-exp-armor-hardener/" "Formantel-DVU seismic armor"
+    click n722 "/content/techtree/nodes/named3-exp-armor-hardener/" "Sheltor seismic armor"
+    click n1060 "/content/techtree/nodes/standard-armor-repairer-upgrade/" "Standard armor repairer tuning"
+    click n1063 "/content/techtree/nodes/named1-armor-repairer-upgrade/" "Diaptes armor repairer tuning"
+    click n1064 "/content/techtree/nodes/named2-armor-repairer-upgrade/" "WPG3000 armor repairer tuning"
+    click n1065 "/content/techtree/nodes/named3-armor-repairer-upgrade/" "Apogenion armor repairer tuning"
+    click n2554 "/content/techtree/nodes/standard-gang-assist-maintance-module/" "Standard repairer NEXUS module"
+    click n2592 "/content/techtree/nodes/named1-gang-assist-maintance-module/" "Diogan repairer NEXUS module"
+    click n2593 "/content/techtree/nodes/named2-gang-assist-maintance-module/" "Pawish repairer NEXUS module"
+    click n2594 "/content/techtree/nodes/named3-gang-assist-maintance-module/" "ACF-9900 repairer NEXUS module"
+    click n3301 "/content/techtree/nodes/standard-explosive-kers/" "Standard seismic ERP"
+    click n3302 "/content/techtree/nodes/named1-explosive-kers/" "SER-250 'Eruptico' seismic ERP"
+    click n3303 "/content/techtree/nodes/named2-explosive-kers/" "SER-300 'Devactico' seismic ERP"
+    click n3304 "/content/techtree/nodes/named3-explosive-kers/" "365p-CSD seismic ERP"
+```
+
+<a id="line-50"></a>
+
+## Standard ECM
+
+**14 nodes** — everything that descends from [Standard ECM](/content/techtree/nodes/standard-sensor-jammer/).
+
+```mermaid
+graph TD
     n50["Standard ECM"]
+    n199["Cameleon"]
+    n211["Vagabond"]
+    n789["Occyt-OEW ECM"]
+    n790["Wavoslur ECM"]
+    n791["Tenion ECM"]
+    n873["Standard velocity NEXUS module"]
+    n2568["Jubatus velocity NEXUS module"]
+    n2569["Iopis-II velocity NEXUS module"]
+    n2570["Contra velocity NEXUS module"]
+    n4578["Standard ECM tuning"]
+    n4587["Distortio ECM tuning"]
+    n4588["Hodge ECM tuning"]
+    n4589["Sludge ECM tuning"]
+    n50 --> n199
+    n790 --> n211
+    n50 --> n789
+    n789 --> n790
+    n790 --> n791
+    n211 --> n873
+    n873 --> n2568
+    n2568 --> n2569
+    n2569 --> n2570
+    n789 --> n4578
+    n4578 --> n4587
+    n4587 --> n4588
+    n4588 --> n4589
+    click n50 "/content/techtree/nodes/standard-sensor-jammer/" "Standard ECM"
+    click n199 "/content/techtree/nodes/cameleon/" "Cameleon"
+    click n211 "/content/techtree/nodes/vagabond/" "Vagabond"
+    click n789 "/content/techtree/nodes/named1-sensor-jammer/" "Occyt-OEW ECM"
+    click n790 "/content/techtree/nodes/named2-sensor-jammer/" "Wavoslur ECM"
+    click n791 "/content/techtree/nodes/named3-sensor-jammer/" "Tenion ECM"
+    click n873 "/content/techtree/nodes/standard-gang-assist-speed-module/" "Standard velocity NEXUS module"
+    click n2568 "/content/techtree/nodes/named1-gang-assist-speed-module/" "Jubatus velocity NEXUS module"
+    click n2569 "/content/techtree/nodes/named2-gang-assist-speed-module/" "Iopis-II velocity NEXUS module"
+    click n2570 "/content/techtree/nodes/named3-gang-assist-speed-module/" "Contra velocity NEXUS module"
+    click n4578 "/content/techtree/nodes/standard-ecm-booster/" "Standard ECM tuning"
+    click n4587 "/content/techtree/nodes/named1-ecm-booster/" "Distortio ECM tuning"
+    click n4588 "/content/techtree/nodes/named2-ecm-booster/" "Hodge ECM tuning"
+    click n4589 "/content/techtree/nodes/named3-ecm-booster/" "Sludge ECM tuning"
+```
+
+<a id="line-66"></a>
+
+## Standard light EM-gun
+
+**45 nodes** — everything that descends from [Standard light EM-gun](/content/techtree/nodes/standard-small-railgun/).
+
+```mermaid
+graph TD
     n66["Standard light EM-gun"]
     n67["Standard medium Gauss gun"]
     n68["Standard heavy Gauss gun"]
     n193["Yagel"]
-    n199["Cameleon"]
     n201["Arbalest"]
     n205["Kain"]
-    n211["Vagabond"]
     n213["Mesmer"]
     n247["Small incendiary slug"]
     n248["Small chemoactive slug"]
@@ -40,21 +189,6 @@ graph TD
     n256["Large chemoactive slug"]
     n257["Large liquidcore slug"]
     n258["Large compositecore slug"]
-    n693["A150 small armor repairer"]
-    n694["Quissot's small armor repairer"]
-    n695["Microforge Aestolar small armor repairer"]
-    n696["Vautrell medium armor repairer"]
-    n697["FO-150 'Reparator' medium armor repairer"]
-    n698["CRC40 medium armor repairer"]
-    n699["Stesodenn large armor repairer"]
-    n700["FO-330 'Reconstructor' large armor repairer"]
-    n701["Pandegris large armor repairer"]
-    n714["Ballistris I. seismic armor"]
-    n718["Formantel-DVU seismic armor"]
-    n722["Sheltor seismic armor"]
-    n789["Occyt-OEW ECM"]
-    n790["Wavoslur ECM"]
-    n791["Tenion ECM"]
     n858["Nuimtec-ROWO light EM-gun"]
     n859["Proto-Gard II. light EM-gun"]
     n860["Nuimtec-Inkandesk light EM-gun"]
@@ -64,7 +198,6 @@ graph TD
     n864["Iskio-Magnetor II. heavy Gauss gun"]
     n865["Nuimtec-Gaule heavy Gauss gun"]
     n866["Pentack-Nailer dd550 heavy Gauss gun"]
-    n873["Standard velocity NEXUS module"]
     n876["Standard assault NEXUS module"]
     n909["Standard magnetic weapon tuning"]
     n924["Nuimtec-Spilster magnetic weapon tuning"]
@@ -75,42 +208,18 @@ graph TD
     n1018["Condor-SPP medium EM-gun"]
     n1019["Nuimtec-Accolon LRS medium EM-gun"]
     n1020["5.5-Glipler medium EM-gun"]
-    n1021["Named1 Longrange Large Railgun"]
-    n1022["Named2 Longrange Large Railgun"]
-    n1023["Named3 Longrange Large Railgun"]
-    n1060["Standard armor repairer tuning"]
-    n1063["Diaptes armor repairer tuning"]
-    n1064["WPG3000 armor repairer tuning"]
-    n1065["Apogenion armor repairer tuning"]
-    n2554["Standard repairer NEXUS module"]
-    n2568["Jubatus velocity NEXUS module"]
-    n2569["Iopis-II velocity NEXUS module"]
-    n2570["Contra velocity NEXUS module"]
+    n1021["T2 Longrange Large Railgun"]
+    n1022["T3 Longrange Large Railgun"]
+    n1023["T4 Longrange Large Railgun"]
     n2577["Myrmidon assault NEXUS module"]
     n2578["Mobba assault NEXUS module"]
     n2579["'Scorch' assault NEXUS module"]
-    n2592["Diogan repairer NEXUS module"]
-    n2593["Pawish repairer NEXUS module"]
-    n2594["ACF-9900 repairer NEXUS module"]
-    n3301["Standard seismic ERP"]
-    n3302["SER-250 'Eruptico' seismic ERP"]
-    n3303["SER-300 'Devactico' seismic ERP"]
-    n3304["365p-CSD seismic ERP"]
-    n4578["Standard ECM tuning"]
-    n4587["Distortio ECM tuning"]
-    n4588["Hodge ECM tuning"]
-    n4589["Sludge ECM tuning"]
     n6008["Felos"]
-    n693 --> n19
-    n1063 --> n20
-    n18 --> n27
     n859 --> n67
     n862 --> n68
     n66 --> n193
-    n50 --> n199
     n858 --> n201
     n67 --> n205
-    n790 --> n211
     n1018 --> n213
     n250 --> n247
     n250 --> n248
@@ -124,21 +233,6 @@ graph TD
     n258 --> n256
     n258 --> n257
     n1001 --> n258
-    n18 --> n693
-    n693 --> n694
-    n694 --> n695
-    n19 --> n696
-    n696 --> n697
-    n697 --> n698
-    n20 --> n699
-    n699 --> n700
-    n700 --> n701
-    n27 --> n714
-    n714 --> n718
-    n718 --> n722
-    n50 --> n789
-    n789 --> n790
-    n790 --> n791
     n66 --> n858
     n858 --> n859
     n859 --> n860
@@ -148,7 +242,6 @@ graph TD
     n68 --> n864
     n864 --> n865
     n865 --> n866
-    n211 --> n873
     n925 --> n876
     n66 --> n909
     n909 --> n924
@@ -162,42 +255,16 @@ graph TD
     n1001 --> n1021
     n1021 --> n1022
     n1022 --> n1023
-    n696 --> n1060
-    n1060 --> n1063
-    n1063 --> n1064
-    n1064 --> n1065
-    n1063 --> n2554
-    n873 --> n2568
-    n2568 --> n2569
-    n2569 --> n2570
     n876 --> n2577
     n2577 --> n2578
     n2578 --> n2579
-    n2554 --> n2592
-    n2592 --> n2593
-    n2593 --> n2594
-    n714 --> n3301
-    n3301 --> n3302
-    n3302 --> n3303
-    n3303 --> n3304
-    n789 --> n4578
-    n4578 --> n4587
-    n4587 --> n4588
-    n4588 --> n4589
     n213 --> n6008
-    click n18 "/content/techtree/nodes/standard-small-armor-repairer/" "Standard small armor repairer"
-    click n19 "/content/techtree/nodes/standard-medium-armor-repairer/" "Standard medium armor repairer"
-    click n20 "/content/techtree/nodes/standard-large-armor-repairer/" "Standard large armor repairer"
-    click n27 "/content/techtree/nodes/standard-exp-armor-hardener/" "Standard seismic armor"
-    click n50 "/content/techtree/nodes/standard-sensor-jammer/" "Standard ECM"
     click n66 "/content/techtree/nodes/standard-small-railgun/" "Standard light EM-gun"
     click n67 "/content/techtree/nodes/standard-medium-railgun/" "Standard medium Gauss gun"
     click n68 "/content/techtree/nodes/standard-large-railgun/" "Standard heavy Gauss gun"
     click n193 "/content/techtree/nodes/yagel/" "Yagel"
-    click n199 "/content/techtree/nodes/cameleon/" "Cameleon"
     click n201 "/content/techtree/nodes/arbalest/" "Arbalest"
     click n205 "/content/techtree/nodes/kain/" "Kain"
-    click n211 "/content/techtree/nodes/vagabond/" "Vagabond"
     click n213 "/content/techtree/nodes/mesmer/" "Mesmer"
     click n247 "/content/techtree/nodes/ammo-small-railgun-a/" "Small incendiary slug"
     click n248 "/content/techtree/nodes/ammo-small-railgun-b/" "Small chemoactive slug"
@@ -211,21 +278,6 @@ graph TD
     click n256 "/content/techtree/nodes/ammo-large-railgun-b/" "Large chemoactive slug"
     click n257 "/content/techtree/nodes/ammo-large-railgun-c/" "Large liquidcore slug"
     click n258 "/content/techtree/nodes/ammo-large-railgun-d/" "Large compositecore slug"
-    click n693 "/content/techtree/nodes/named1-small-armor-repairer/" "A150 small armor repairer"
-    click n694 "/content/techtree/nodes/named2-small-armor-repairer/" "Quissot's small armor repairer"
-    click n695 "/content/techtree/nodes/named3-small-armor-repairer/" "Microforge Aestolar small armor repairer"
-    click n696 "/content/techtree/nodes/named1-medium-armor-repairer/" "Vautrell medium armor repairer"
-    click n697 "/content/techtree/nodes/named2-medium-armor-repairer/" "FO-150 'Reparator' medium armor repairer"
-    click n698 "/content/techtree/nodes/named3-medium-armor-repairer/" "CRC40 medium armor repairer"
-    click n699 "/content/techtree/nodes/named1-large-armor-repairer/" "Stesodenn large armor repairer"
-    click n700 "/content/techtree/nodes/named2-large-armor-repairer/" "FO-330 'Reconstructor' large armor repairer"
-    click n701 "/content/techtree/nodes/named3-large-armor-repairer/" "Pandegris large armor repairer"
-    click n714 "/content/techtree/nodes/named1-exp-armor-hardener/" "Ballistris I. seismic armor"
-    click n718 "/content/techtree/nodes/named2-exp-armor-hardener/" "Formantel-DVU seismic armor"
-    click n722 "/content/techtree/nodes/named3-exp-armor-hardener/" "Sheltor seismic armor"
-    click n789 "/content/techtree/nodes/named1-sensor-jammer/" "Occyt-OEW ECM"
-    click n790 "/content/techtree/nodes/named2-sensor-jammer/" "Wavoslur ECM"
-    click n791 "/content/techtree/nodes/named3-sensor-jammer/" "Tenion ECM"
     click n858 "/content/techtree/nodes/named1-small-railgun/" "Nuimtec-ROWO light EM-gun"
     click n859 "/content/techtree/nodes/named2-small-railgun/" "Proto-Gard II. light EM-gun"
     click n860 "/content/techtree/nodes/named3-small-railgun/" "Nuimtec-Inkandesk light EM-gun"
@@ -235,7 +287,6 @@ graph TD
     click n864 "/content/techtree/nodes/named1-large-railgun/" "Iskio-Magnetor II. heavy Gauss gun"
     click n865 "/content/techtree/nodes/named2-large-railgun/" "Nuimtec-Gaule heavy Gauss gun"
     click n866 "/content/techtree/nodes/named3-large-railgun/" "Pentack-Nailer dd550 heavy Gauss gun"
-    click n873 "/content/techtree/nodes/standard-gang-assist-speed-module/" "Standard velocity NEXUS module"
     click n876 "/content/techtree/nodes/standard-gang-assist-siege-module/" "Standard assault NEXUS module"
     click n909 "/content/techtree/nodes/standard-damage-mod-railgun/" "Standard magnetic weapon tuning"
     click n924 "/content/techtree/nodes/named1-damage-mod-railgun/" "Nuimtec-Spilster magnetic weapon tuning"
@@ -246,35 +297,16 @@ graph TD
     click n1018 "/content/techtree/nodes/named1-longrange-medium-railgun/" "Condor-SPP medium EM-gun"
     click n1019 "/content/techtree/nodes/named2-longrange-medium-railgun/" "Nuimtec-Accolon LRS medium EM-gun"
     click n1020 "/content/techtree/nodes/named3-longrange-medium-railgun/" "5.5-Glipler medium EM-gun"
-    click n1021 "/content/techtree/nodes/named1-longrange-large-railgun/" "Named1 Longrange Large Railgun"
-    click n1022 "/content/techtree/nodes/named2-longrange-large-railgun/" "Named2 Longrange Large Railgun"
-    click n1023 "/content/techtree/nodes/named3-longrange-large-railgun/" "Named3 Longrange Large Railgun"
-    click n1060 "/content/techtree/nodes/standard-armor-repairer-upgrade/" "Standard armor repairer tuning"
-    click n1063 "/content/techtree/nodes/named1-armor-repairer-upgrade/" "Diaptes armor repairer tuning"
-    click n1064 "/content/techtree/nodes/named2-armor-repairer-upgrade/" "WPG3000 armor repairer tuning"
-    click n1065 "/content/techtree/nodes/named3-armor-repairer-upgrade/" "Apogenion armor repairer tuning"
-    click n2554 "/content/techtree/nodes/standard-gang-assist-maintance-module/" "Standard repairer NEXUS module"
-    click n2568 "/content/techtree/nodes/named1-gang-assist-speed-module/" "Jubatus velocity NEXUS module"
-    click n2569 "/content/techtree/nodes/named2-gang-assist-speed-module/" "Iopis-II velocity NEXUS module"
-    click n2570 "/content/techtree/nodes/named3-gang-assist-speed-module/" "Contra velocity NEXUS module"
+    click n1021 "/content/techtree/nodes/named1-longrange-large-railgun/" "T2 Longrange Large Railgun"
+    click n1022 "/content/techtree/nodes/named2-longrange-large-railgun/" "T3 Longrange Large Railgun"
+    click n1023 "/content/techtree/nodes/named3-longrange-large-railgun/" "T4 Longrange Large Railgun"
     click n2577 "/content/techtree/nodes/named1-gang-assist-siege-module/" "Myrmidon assault NEXUS module"
     click n2578 "/content/techtree/nodes/named2-gang-assist-siege-module/" "Mobba assault NEXUS module"
     click n2579 "/content/techtree/nodes/named3-gang-assist-siege-module/" "'Scorch' assault NEXUS module"
-    click n2592 "/content/techtree/nodes/named1-gang-assist-maintance-module/" "Diogan repairer NEXUS module"
-    click n2593 "/content/techtree/nodes/named2-gang-assist-maintance-module/" "Pawish repairer NEXUS module"
-    click n2594 "/content/techtree/nodes/named3-gang-assist-maintance-module/" "ACF-9900 repairer NEXUS module"
-    click n3301 "/content/techtree/nodes/standard-explosive-kers/" "Standard seismic ERP"
-    click n3302 "/content/techtree/nodes/named1-explosive-kers/" "SER-250 'Eruptico' seismic ERP"
-    click n3303 "/content/techtree/nodes/named2-explosive-kers/" "SER-300 'Devactico' seismic ERP"
-    click n3304 "/content/techtree/nodes/named3-explosive-kers/" "365p-CSD seismic ERP"
-    click n4578 "/content/techtree/nodes/standard-ecm-booster/" "Standard ECM tuning"
-    click n4587 "/content/techtree/nodes/named1-ecm-booster/" "Distortio ECM tuning"
-    click n4588 "/content/techtree/nodes/named2-ecm-booster/" "Hodge ECM tuning"
-    click n4589 "/content/techtree/nodes/named3-ecm-booster/" "Sludge ECM tuning"
     click n6008 "/content/techtree/nodes/felos/" "Felos"
 ```
 
-## Nodes
+## Nodes (all)
 
 | Unlocks item | Parent node | Enabler extension | Point prices |
 |---|---|---|---|
@@ -341,12 +373,12 @@ graph TD
 | [Longrange Standard Large Railgun](/content/techtree/nodes/longrange-standard-large-railgun/) | [Standard medium EM-gun](/content/techtree/nodes/longrange-standard-medium-railgun/) | – | hitech=17.15k; nuimqol=34.3k |
 | [Condor-SPP medium EM-gun](/content/techtree/nodes/named1-longrange-medium-railgun/) | [Standard medium EM-gun](/content/techtree/nodes/longrange-standard-medium-railgun/) | [ext_research_nuimqol](/content/extensions/) | common=34.3k; nuimqol=34.3k |
 | [Large compositecore slug](/content/techtree/nodes/ammo-large-railgun-d/) | [Longrange Standard Large Railgun](/content/techtree/nodes/longrange-standard-large-railgun/) | – | hitech=17.15k; nuimqol=34.3k |
-| [Named1 Longrange Large Railgun](/content/techtree/nodes/named1-longrange-large-railgun/) | [Longrange Standard Large Railgun](/content/techtree/nodes/longrange-standard-large-railgun/) | – | hitech=25.6k; nuimqol=51.2k |
+| [T2 Longrange Large Railgun](/content/techtree/nodes/named1-longrange-large-railgun/) | [Longrange Standard Large Railgun](/content/techtree/nodes/longrange-standard-large-railgun/) | – | hitech=25.6k; nuimqol=51.2k |
 | [Mesmer](/content/techtree/nodes/mesmer/) | [Condor-SPP medium EM-gun](/content/techtree/nodes/named1-longrange-medium-railgun/) | [ext_research_nuimqol](/content/extensions/) | common=256k; nuimqol=256k |
 | [Nuimtec-Accolon LRS medium EM-gun](/content/techtree/nodes/named2-longrange-medium-railgun/) | [Condor-SPP medium EM-gun](/content/techtree/nodes/named1-longrange-medium-railgun/) | [ext_research_nuimqol](/content/extensions/) | common=51.2k; nuimqol=51.2k |
 | [5.5-Glipler medium EM-gun](/content/techtree/nodes/named3-longrange-medium-railgun/) | [Nuimtec-Accolon LRS medium EM-gun](/content/techtree/nodes/named2-longrange-medium-railgun/) | [ext_research_nuimqol](/content/extensions/) | hitech=36.45k; nuimqol=72.9k |
-| [Named2 Longrange Large Railgun](/content/techtree/nodes/named2-longrange-large-railgun/) | [Named1 Longrange Large Railgun](/content/techtree/nodes/named1-longrange-large-railgun/) | – | hitech=36.45k; nuimqol=72.9k |
-| [Named3 Longrange Large Railgun](/content/techtree/nodes/named3-longrange-large-railgun/) | [Named2 Longrange Large Railgun](/content/techtree/nodes/named2-longrange-large-railgun/) | – | hitech=50k; nuimqol=100k |
+| [T3 Longrange Large Railgun](/content/techtree/nodes/named2-longrange-large-railgun/) | [T2 Longrange Large Railgun](/content/techtree/nodes/named1-longrange-large-railgun/) | – | hitech=36.45k; nuimqol=72.9k |
+| [T4 Longrange Large Railgun](/content/techtree/nodes/named3-longrange-large-railgun/) | [T3 Longrange Large Railgun](/content/techtree/nodes/named2-longrange-large-railgun/) | – | hitech=50k; nuimqol=100k |
 | [Diaptes armor repairer tuning](/content/techtree/nodes/named1-armor-repairer-upgrade/) | [Standard armor repairer tuning](/content/techtree/nodes/standard-armor-repairer-upgrade/) | [ext_research_nuimqol](/content/extensions/) | common=21.6k; nuimqol=21.6k |
 | [Standard large armor repairer](/content/techtree/nodes/standard-large-armor-repairer/) | [Diaptes armor repairer tuning](/content/techtree/nodes/named1-armor-repairer-upgrade/) | – | hitech=17.15k; nuimqol=34.3k |
 | [WPG3000 armor repairer tuning](/content/techtree/nodes/named2-armor-repairer-upgrade/) | [Diaptes armor repairer tuning](/content/techtree/nodes/named1-armor-repairer-upgrade/) | [ext_research_nuimqol](/content/extensions/) | common=34.3k; nuimqol=34.3k |

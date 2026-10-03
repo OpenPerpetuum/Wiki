@@ -19,5 +19,3 @@ description: "Modules / Armor, tier T1"
 | Tier line | **Standard kinetic armor CT** (T1) → [Counterpress I-230 kinetic armor CT](/content/items/named1-kin-armor-hardener-cprg/) (T2) → [Apparod Defragger kinetic armor CT](/content/items/named2-kin-armor-hardener-cprg/) (T3) → [Grampier-VK kinetic armor CT](/content/items/named3-kin-armor-hardener-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

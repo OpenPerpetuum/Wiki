@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard universal armor CT** (T1) → [Diverter universal armor CT](/content/items/named1-resistant-plating-cprg/) (T2) → [UNI300pls universal armor CT](/content/items/named2-resistant-plating-cprg/) (T3) → [Aegis UAP-10XL universal armor CT](/content/items/named3-resistant-plating-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

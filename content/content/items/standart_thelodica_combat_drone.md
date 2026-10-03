@@ -28,5 +28,3 @@ description: "Special & other / Miscellaneous, tier T1"
 | locking_time_modifier | 0.22 |
 | signature_radius_modifier | 4 |
 | turret_cycle_time_modifier | 0.625 |
-
-[All items](/content/items/)

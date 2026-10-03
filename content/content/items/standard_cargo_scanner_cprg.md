@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T1"
 | Tier line | **Standard cargo scanner CT** (T1) → [Spurt-Singular cargo scanner CT](/content/items/named1-cargo-scanner-cprg/) (T2) → [Nomothetor cargo scanner CT](/content/items/named2-cargo-scanner-cprg/) (T3) → [Visioner cargo scanner CT](/content/items/named3-cargo-scanner-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

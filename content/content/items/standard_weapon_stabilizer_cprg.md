@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T1"
 | Tier line | **Standard weapon stabilizer CT** (T1) → [Kobel 450-TZ weapon stabilizer CT](/content/items/named1-weapon-stabilizer-cprg/) (T2) → [Sharpsy weapon stabilizer CT](/content/items/named2-weapon-stabilizer-cprg/) (T3) → [Kobel 300-XZ weapon stabilizer CT](/content/items/named3-weapon-stabilizer-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

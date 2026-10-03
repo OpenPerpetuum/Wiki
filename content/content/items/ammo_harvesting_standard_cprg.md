@@ -18,5 +18,3 @@ description: "Ammo / Harvesting"
 | Category | Ammo / Harvesting |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -18,5 +18,3 @@ description: "Special & other / Containers"
 | Category | Special & other / Containers |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

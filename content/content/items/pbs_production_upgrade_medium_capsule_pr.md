@@ -36,41 +36,15 @@ description: "Special & other / Miscellaneous, tier T2 (prototype)"
 
 **Produced from 10 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pbs Production Upgrade Medium Capsule Pr"]:::current
-    b["Cryoperine ×250"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Axicoline ×125"]:::comp
-    c --> a
-    click c "/content/items/axicoline/" "Axicoline"
-    d["Espitium ×500"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Coalimin ×125"]:::comp
-    e --> a
-    click e "/content/items/gamma-buildblock/" "Coalimin"
-    f["Tiraizin ×250"]:::comp
-    f --> a
-    click f "/content/items/gamma-energyblock/" "Tiraizin"
-    g["Turilium ×125"]:::comp
-    g --> a
-    click g "/content/items/gamma-offenseblock/" "Turilium"
-    h["Hydrobenol ×250"]:::comp
-    h --> a
-    click h "/content/items/hydrobenol/" "Hydrobenol"
-    i["Pbs Production Upgrade Small Capsule ×1"]:::comp
-    i --> a
-    click i "/content/items/pbs-production-upgrade-small-capsule/" "Pbs Production Upgrade Small Capsule"
-    j["Titanium ×125"]:::comp
-    j --> a
-    click j "/content/items/titanium/" "Titanium"
-    k["Briochit ×250"]:::comp
-    k --> a
-    click k "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>125</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-buildblock/">Coalimin</a></div><div class="prod-card-body">required: <b>125</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-energyblock/">Tiraizin</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-offenseblock/">Turilium</a></div><div class="prod-card-body">required: <b>125</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-home"/></svg><a class="prod-card-name" href="/content/items/pbs-production-upgrade-small-capsule/">Pbs Production Upgrade Small Capsule</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>125</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+</div>

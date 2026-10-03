@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Dreadnought Module](/content/items/standard-dreadnought-module/) |
 | Parent node | – (root line) |
-| Unlocks next | [Named1 Dreadnought Module](/content/techtree/nodes/named1-dreadnought-module/) |
+| Unlocks next | [T2 Dreadnought Module](/content/techtree/nodes/named1-dreadnought-module/) |
 | Enabler extension | – |
 | Point prices | common=34.3k; hitech=34.3k |
 

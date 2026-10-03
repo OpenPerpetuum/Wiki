@@ -36,32 +36,12 @@ description: "Special & other / Miscellaneous, tier T2 (prototype)"
 
 **Produced from 7 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pbs Core Battery Medium Capsule Pr"]:::current
-    b["Cryoperine ×2.5k"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Espitium ×5.0k"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Coalimin ×1.0k"]:::comp
-    d --> a
-    click d "/content/items/gamma-buildblock/" "Coalimin"
-    e["Tiraizin ×2.5k"]:::comp
-    e --> a
-    click e "/content/items/gamma-energyblock/" "Tiraizin"
-    f["Pbs Core Battery Small Capsule ×1"]:::comp
-    f --> a
-    click f "/content/items/pbs-core-battery-small-capsule/" "Pbs Core Battery Small Capsule"
-    g["Titanium ×1.0k"]:::comp
-    g --> a
-    click g "/content/items/titanium/" "Titanium"
-    h["Briochit ×2.0k"]:::comp
-    h --> a
-    click h "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>5.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-buildblock/">Coalimin</a></div><div class="prod-card-body">required: <b>1.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-energyblock/">Tiraizin</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/pbs-core-battery-small-capsule/">Pbs Core Battery Small Capsule</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>1.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>2.0k</b></div></div>
+</div>

@@ -18,5 +18,3 @@ description: "Mission items"
 | Category | Mission items |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

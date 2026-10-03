@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard repairer NEXUS module CT](/content/items/standard-gang-assist-maintance-module-cprg/) (T1) → [Diogan repairer NEXUS module CT](/content/items/named1-gang-assist-maintance-module-cprg/) (T2) → [Pawish repairer NEXUS module CT](/content/items/named2-gang-assist-maintance-module-cprg/) (T3) → **ACF-9900 repairer NEXUS module CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

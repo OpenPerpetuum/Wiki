@@ -34,47 +34,17 @@ description: "Modules / Armor, tier T4"
 
 **Produced from 12 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Hephaistos-TSS thermal armor"]:::current
-    b["Alligior ×250"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Espitium ×100"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Isopropentol ×250"]:::comp
-    d --> a
-    click d "/content/items/isopropentol/" "Isopropentol"
-    e["Thermoflake thermal armor ×1"]:::comp
-    e --> a
-    click e "/content/items/named2-thrm-armor-hardener/" "Thermoflake thermal armor"
-    f["Functional common fragment ×15"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    g["Damaged common fragment ×7"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    h["Perfect common fragment ×22"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    i["Functional nuimqol fragment ×15"]:::comp
-    i --> a
-    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
-    j["Damaged nuimqol fragment ×7"]:::comp
-    j --> a
-    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
-    k["Perfect nuimqol fragment ×22"]:::comp
-    k --> a
-    click k "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
-    l["Briochit ×200"]:::comp
-    l --> a
-    click l "/content/items/unimetal/" "Briochit"
-    m["Vitricyl ×100"]:::comp
-    m --> a
-    click m "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/isopropentol/">Isopropentol</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-tree"/></svg><a class="prod-card-name" href="/content/items/named2-thrm-armor-hardener/">Thermoflake thermal armor</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>7</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>22</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a></div><div class="prod-card-body">required: <b>7</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-expert/">Perfect nuimqol fragment</a></div><div class="prod-card-body">required: <b>22</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

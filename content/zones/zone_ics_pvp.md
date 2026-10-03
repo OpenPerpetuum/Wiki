@@ -52,21 +52,4 @@ pie showData
     "fluxore" : 25
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Hokkogaros](/zones/zone-asi-a-real/) (2 TP points)
-- → [Domhalarn](/zones/zone-ics-a-real/) (2 TP points)
-- → [zone_gamma_tc_z104](/zones/zone-gamma-tc-z104/) (1 TP point)
-- → [Chalydor](/zones/zone-ics-g-8/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Hokkogaros](/zones/zone-asi-a-real/) (2 TP points)
-- ← [Domhalarn](/zones/zone-ics-a-real/) (2 TP points)
-- ← [zone_gamma_tc_z104](/zones/zone-gamma-tc-z104/) (1 TP point)
-- ← [Chalydor](/zones/zone-ics-g-8/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

@@ -31,23 +31,9 @@ description: "Ammo / Projectiles"
 
 **Produced from 4 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Small chemoactive bullet"]:::current
-    b["Axicoline ×50"]:::comp
-    b --> a
-    click b "/content/items/axicoline/" "Axicoline"
-    c["Phlobotil ×10"]:::comp
-    c --> a
-    click c "/content/items/phlobotil/" "Phlobotil"
-    d["Polynitrocol ×15"]:::comp
-    d --> a
-    click d "/content/items/polynitrocol/" "Polynitrocol"
-    e["Titanium ×25"]:::comp
-    e --> a
-    click e "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/phlobotil/">Phlobotil</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynitrocol/">Polynitrocol</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+</div>

@@ -26,5 +26,3 @@ description: "Special & other / Miscellaneous"
 | signature_radius | 1 |
 | slope | 4 |
 | stealth_strength | 500 |
-
-[All items](/content/items/)

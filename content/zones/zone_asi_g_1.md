@@ -52,17 +52,4 @@ pie showData
     "gammaterial" : 345
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Kentagura](/zones/zone-asi-pvp/) (2 TP points)
-- → [Xiantor](/zones/zone-asi-g-4/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Kentagura](/zones/zone-asi-pvp/) (2 TP points)
-- ← [Xiantor](/zones/zone-asi-g-4/) (1 TP point)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

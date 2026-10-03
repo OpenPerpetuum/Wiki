@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T3"
 | Tier line | [Standard medium shield generator CT](/content/items/standard-medium-shield-generator-cprg/) (T1) → [Parsvaal-IIX medium shield generator CT](/content/items/named1-medium-shield-generator-cprg/) (T2) → **Ovostec-Yellowray II. medium shield generator CT** (T3) → [Penik medium shield generator CT](/content/items/named3-medium-shield-generator-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

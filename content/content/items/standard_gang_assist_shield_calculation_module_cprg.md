@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T1"
 | Tier line | **Standard shield NEXUS module CT** (T1) → [Bomitar I. shield NEXUS module CT](/content/items/named1-gang-assist-shield-calculation-module-cprg/) (T2) → [Stasis-Gen shield NEXUS module CT](/content/items/named2-gang-assist-shield-calculation-module-cprg/) (T3) → [Bomitar II. shield NEXUS module CT](/content/items/named3-gang-assist-shield-calculation-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

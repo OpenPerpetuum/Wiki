@@ -35,33 +35,15 @@ description: "Modules / Enhancements, tier T2"
 
 **Produced from 7 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Columcyl recharger NEXUS module"]:::current
-    b["Cryoperine ×250"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Isopropentol ×50"]:::comp
-    c --> a
-    click c "/content/items/isopropentol/" "Isopropentol"
-    d["Plasteosine ×50"]:::comp
-    d --> a
-    click d "/content/items/plasteosine/" "Plasteosine"
-    e["Damaged common fragment ×30"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    f["Standard recharger NEXUS module ×1"]:::comp
-    f --> a
-    click f "/content/items/standard-gang-assist-core-management-module/" "Standard recharger NEXUS module"
-    g["Titanium ×50"]:::comp
-    g --> a
-    click g "/content/items/titanium/" "Titanium"
-    h["Vitricyl ×250"]:::comp
-    h --> a
-    click h "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/isopropentol/">Isopropentol</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-panel"/></svg><a class="prod-card-name" href="/content/items/standard-gang-assist-core-management-module/">Standard recharger NEXUS module</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -79,5 +61,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

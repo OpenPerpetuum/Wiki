@@ -16,8 +16,6 @@ description: "Modules / Harvesting, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Harvesting |
-| Tier line | **Standard Excavator Module Cprg** (T1) → [Named1 Excavator Module Cprg](/content/items/named1-excavator-module-cprg/) (T2) → [Named2 Excavator Module Cprg](/content/items/named2-excavator-module-cprg/) (T3) → [Named3 Excavator Module Cprg](/content/items/named3-excavator-module-cprg/) (T4) |
+| Tier line | **Standard Excavator Module Cprg** (T1) → [T2 Excavator Module Cprg](/content/items/named1-excavator-module-cprg/) (T2) → [T3 Excavator Module Cprg](/content/items/named2-excavator-module-cprg/) (T3) → [T4 Excavator Module Cprg](/content/items/named3-excavator-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

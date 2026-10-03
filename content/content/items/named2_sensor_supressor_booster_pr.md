@@ -33,35 +33,13 @@ description: "Modules / Sensors & scanning, tier T3 (prototype)"
 
 **Produced from 8 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Radiocor sensor suppressor tuning prototype"]:::current
-    b["Espitium ×150"]:::comp
-    b --> a
-    click b "/content/items/espitium/" "Espitium"
-    c["DDX200-Veil sensor suppressor tuning ×1"]:::comp
-    c --> a
-    click c "/content/items/named1-sensor-supressor-booster/" "DDX200-Veil sensor suppressor tuning"
-    d["Prilumium ×150"]:::comp
-    d --> a
-    click d "/content/items/prilumium/" "Prilumium"
-    e["Functional common fragment ×10"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    f["Damaged common fragment ×10"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    g["Functional thelodica fragment ×10"]:::comp
-    g --> a
-    click g "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
-    h["Damaged thelodica fragment ×10"]:::comp
-    h --> a
-    click h "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
-    i["Titanium ×50"]:::comp
-    i --> a
-    click i "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/named1-sensor-supressor-booster/">DDX200-Veil sensor suppressor tuning</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prilumium/">Prilumium</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+</div>

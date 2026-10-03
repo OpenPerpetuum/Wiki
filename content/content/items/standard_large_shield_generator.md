@@ -34,30 +34,14 @@ description: "Modules / Shield, tier T1"
 
 **Produced from 6 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard large shield generator"]:::current
-    b["Cryoperine ×300"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Isopropentol ×600"]:::comp
-    c --> a
-    click c "/content/items/isopropentol/" "Isopropentol"
-    d["Plasteosine ×600"]:::comp
-    d --> a
-    click d "/content/items/plasteosine/" "Plasteosine"
-    e["Specimen Sap Item Flux ×25"]:::comp
-    e --> a
-    click e "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    f["Titanium ×300"]:::comp
-    f --> a
-    click f "/content/items/titanium/" "Titanium"
-    g["Vitricyl ×300"]:::comp
-    g --> a
-    click g "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/isopropentol/">Isopropentol</a></div><div class="prod-card-body">required: <b>600</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>600</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -68,12 +52,10 @@ graph LR
     b["AVA-Spintarge large shield generator"]:::prod
     a --> b
     click b "/content/items/named1-large-shield-generator/" "AVA-Spintarge large shield generator"
-    c["Named1 Large Shield Generator Pr"]:::prod
+    c["T2 Large Shield Generator Pr"]:::prod
     a --> c
-    click c "/content/items/named1-large-shield-generator-pr/" "Named1 Large Shield Generator Pr"
+    click c "/content/items/named1-large-shield-generator-pr/" "T2 Large Shield Generator Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

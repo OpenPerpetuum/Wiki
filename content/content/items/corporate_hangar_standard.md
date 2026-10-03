@@ -19,5 +19,3 @@ description: "Materials"
 | Note | corporate hangar, ebbe lehet a corptagoknak turkalni    #capacity=f500 //kivéve |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

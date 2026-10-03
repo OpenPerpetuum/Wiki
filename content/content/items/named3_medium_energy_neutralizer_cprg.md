@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T4"
 | Tier line | [Standard medium energy neutralizer CT](/content/items/standard-medium-energy-neutralizer-cprg/) (T1) → [Gox II. medium energy neutralizer CT](/content/items/named1-medium-energy-neutralizer-cprg/) (T2) → [1300RFX-Spasm medium energy neutralizer CT](/content/items/named2-medium-energy-neutralizer-cprg/) (T3) → **Sicado I. medium energy neutralizer CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

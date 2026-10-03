@@ -6,15 +6,15 @@ weight: 9
 
 # Abbreviations
 
-Common shorthand in chat, market listings and fits. Every item here has a page
-in the [item catalog](/content/items/) where the full name shows up.
+Common shorthand in chat, market listings and fits. Most terms have a page of
+their own (linked where useful) — the item names resolve in the site search.
 
 | Term | Meaning |
 |---|---|
-| **EP** | [Extension Points](/features/research/) — spent on upgrading extensions (skills). |
+| **EP** | [Extension Points](/features/research/#ep-sources) — the account-level skill currency spent on upgrading [extensions](/features/character/#extensions) (the earning rules are in the [research page](/features/research/#ep-sources)). |
 | **NIC** | Nian Credit — the in-game currency (the `credit` balance on your character). |
-| **CT** | [Calibration Template](/features/production/) — the item a factory line is calibrated with before it produces. |
-| **Proto** | A prototype item — tier-2 gear made on the prototyping line instead of the normal factory. |
+| **CT** | [CPRG — Calibration Program](/features/production/#cprg-calibration-programs) — the program a mill line is calibrated with before it produces (one per item, with material/time efficiencies). |
+| **Proto** | A prototype item — the high-tier variant of a module/robot, made at the [prototype facility](/features/production/#the-item-lifecycle-the-circular-process) (consumes a specimen of the previous tier; see [tier progression](/features/production/#tier-progression)). |
 | **LWF** | Lightweight frame — a mass-reducing armor module (the client names them "… lightweight frame", e.g. *Niani lightweight frame*). Makes a robot lighter, at the cost of armor. |
 | **TP / tele** | [Teleport](/features/movement/) — fast travel between fixed points, or to a deployed mobile teleport device. |
 | **SAP** | Service Access Point — the outpost [stability](/features/outposts/) activity. |
@@ -25,8 +25,8 @@ in the [item catalog](/content/items/) where the full name shows up.
 | **Tuning** | The client's name for the upgrade modules that enhance other modules — damage modifiers for weapons, *industrial tuning* for miners and harvesters, armor-repairer tuning, and so on. |
 | **MK2** | An upgraded variant of a robot (`_mk2` frames) — higher capacities, its own research line. |
 
-Related: [Terminology used in this wiki](/content/robots/) — robot classes follow
-the in-client groupings (see the note under [Robot classes](/content/robots/#robot-classes)).
+Related: [Robots](/content/robots/) — robot classes follow the in-client
+groupings (see the note under [Robot classes](/content/robots/#robot-classes)).
 
 <!--
 Written from scratch, 2026-09-27, against entitydefaults/ClientNames (module

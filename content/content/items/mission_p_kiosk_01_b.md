@@ -23,5 +23,3 @@ description: "Mission items / Landmarks"
 | Field | Value |
 |---|---|
 | stealth_strength | 200 |
-
-[All items](/content/items/)

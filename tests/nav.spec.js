@@ -14,14 +14,16 @@ const VISIBLE_LINKS = () =>
 const COLLAPSED = (sel) =>
   [...document.querySelectorAll(sel)].map((g) => g.classList.contains('collapsed'));
 const GROUPS = '.sidenav .nav-group'; // Start, World, Play, Systems, Reference
-const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Research, Character, Item shop, Content, Zones
+const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Missions, Production, Research, Character, Item shop, Content, Zones (8)
 
 test('home: groups open, 2nd-level sub-lists closed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
   expect(await page.locator('.nav-quick a').getAttribute('href')).toBe('/');
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true, true]);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true, true, true, true]);
   // Home + 5 group headers + Start(3) + World(6) + Play(12) + Systems(9) + Reference(6)
+  // (the Missions/Recipes sub-entries are in collapsed sub-lists: not visible;
+  //  the items catalog entry was in the collapsed Content sub: also not visible)
   expect(await page.evaluate(VISIBLE_LINKS)).toBe(42);
 });
 
@@ -34,6 +36,20 @@ test('caret buttons collapse and re-open groups', async ({ page, baseURL }) => {
   await carets.nth(2).click();
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
   expect(await page.evaluate(VISIBLE_LINKS)).toBe(42);
+});
+
+test('Play: Missions sub-list carries the mission data page', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/features/missions/`);
+  const missSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/features/missions/"]) > .nav-sub');
+  expect(await missSub.locator('a:visible').count()).toBe(1);
+  expect(await missSub.locator('a').first().getAttribute('href')).toBe('/content/missions/');
+});
+
+test('Systems: Production sub-list carries the recipes page', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/features/production/`);
+  const prodSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/features/production/"]) > .nav-sub');
+  expect(await prodSub.locator('a:visible').count()).toBe(1);
+  expect(await prodSub.locator('a').first().getAttribute('href')).toBe('/content/recipes/');
 });
 
 test('World anchors visible by default, Gamma tiers expand on demand', async ({ page, baseURL }) => {
@@ -51,8 +67,16 @@ test('World anchors visible by default, Gamma tiers expand on demand', async ({ 
 test('feature page: all groups stay open, current page highlighted', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/features/combat/`);
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true, true]);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true, true, true, true]);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Combat');
+});
+
+test('items catalog index is gone', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/`);
+  expect(await page.locator('.sidenav a[href="/content/items/"]').count()).toBe(0);
+  // the index page itself no longer builds
+  const res = await page.request.get('/content/items/');
+  expect(res.status()).toBe(404);
 });
 
 test('zones map: top-level World header is active', async ({ page, baseURL }) => {
@@ -116,7 +140,9 @@ test('gamma anchor hash: Gamma sub-list auto-opens', async ({ page, baseURL }) =
 test('content sub-page: Content tables auto-opens, section highlighted and in view', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/content/ores/crude/`);
   const contentSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/content/"]) > .nav-sub');
-  expect(await contentSub.locator('a:visible').count()).toBe(8);
+  // missions and recipes moved out (to Play and Production) and the items
+  // catalog index is gone: 5 entries
+  expect(await contentSub.locator('a:visible').count()).toBe(5);
   const active = page.locator('.sidenav a.active');
   expect(await active.textContent()).toBe('Ores');
   const ar = await active.boundingBox();

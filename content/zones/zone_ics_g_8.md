@@ -52,17 +52,4 @@ pie showData
     "gammaterial" : 345
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Novastrov](/zones/zone-ics-pvp/) (2 TP points)
-- → [Kraslovsk](/zones/zone-ics-g-3/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Novastrov](/zones/zone-ics-pvp/) (2 TP points)
-- ← [Kraslovsk](/zones/zone-ics-g-3/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

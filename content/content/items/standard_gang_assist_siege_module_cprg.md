@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard assault NEXUS module CT** (T1) → [Myrmidon assault NEXUS module CT](/content/items/named1-gang-assist-siege-module-cprg/) (T2) → [Mobba assault NEXUS module CT](/content/items/named2-gang-assist-siege-module-cprg/) (T3) → ['Scorch' assault NEXUS module CT](/content/items/named3-gang-assist-siege-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

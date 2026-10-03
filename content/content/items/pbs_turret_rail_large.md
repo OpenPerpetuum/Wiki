@@ -41,5 +41,3 @@ description: "Special & other / Miscellaneous, tier T3"
 | signature_radius | 30 |
 | stealth_strength | 80 |
 | turret_fallof_modifier | 2 |
-
-[All items](/content/items/)

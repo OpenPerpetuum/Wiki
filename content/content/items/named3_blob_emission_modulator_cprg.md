@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard interference module CT](/content/items/standard-blob-emission-modulator-cprg/) (T1) → [Bandoler IU-250 interference module CT](/content/items/named1-blob-emission-modulator-cprg/) (T2) → [Bandoler IV-500 interference module CT](/content/items/named2-blob-emission-modulator-cprg/) (T3) → **Omini interference module CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

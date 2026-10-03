@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T2"
 | Tier line | [Standard small shield generator CT](/content/items/standard-small-shield-generator-cprg/) (T1) → **Parsvaal-IP small shield generator CT** (T2) → [Ovostec-Yellowray small shield generator CT](/content/items/named2-small-shield-generator-cprg/) (T3) → [SBA-200 Forebrace small shield generator CT](/content/items/named3-small-shield-generator-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

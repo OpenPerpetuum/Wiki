@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard medium miner module CT](/content/items/standard-medium-driller-cprg/) (T1) → [MMA v12-'Alkhemir' medium miner module CT](/content/items/named1-medium-driller-cprg/) (T2) → [Sublimator Mid-D medium miner module CT](/content/items/named2-medium-driller-cprg/) (T3) → **Ovostec-Edger medium miner module CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

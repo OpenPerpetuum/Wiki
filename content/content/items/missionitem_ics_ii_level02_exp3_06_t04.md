@@ -24,20 +24,8 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 3 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["OET cooling device [Meteora VI]"]:::current
-    b["Cooling device casket [Meteora VI/1] ×1"]:::comp
-    b --> a
-    click b "/content/items/missionitem-ics-ii-level02-exp3-06-t01/" "Cooling device casket [Meteora VI/1]"
-    c["Plasma pump controller [Meteora VI/2] ×1"]:::comp
-    c --> a
-    click c "/content/items/missionitem-ics-ii-level02-exp3-06-t02/" "Plasma pump controller [Meteora VI/2]"
-    d["Cooling injector [Meteora VI/3] ×1"]:::comp
-    d --> a
-    click d "/content/items/missionitem-ics-ii-level02-exp3-06-t03/" "Cooling injector [Meteora VI/3]"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/missionitem-ics-ii-level02-exp3-06-t01/">Cooling device casket [Meteora VI/1]</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/missionitem-ics-ii-level02-exp3-06-t02/">Plasma pump controller [Meteora VI/2]</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/missionitem-ics-ii-level02-exp3-06-t03/">Cooling injector [Meteora VI/3]</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+</div>

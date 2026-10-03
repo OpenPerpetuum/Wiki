@@ -18,5 +18,3 @@ description: "Special & other / Fit capsules & programs, tier T3"
 | Category | Special & other / Fit capsules & programs |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

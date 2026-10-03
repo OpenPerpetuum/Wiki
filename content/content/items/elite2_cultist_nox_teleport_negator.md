@@ -28,5 +28,3 @@ description: "Modules / Enhancements, tier T2 (special)"
 | nox_teleport_negation | 1 |
 | powergrid_usage | 35 |
 | ppm_pelistal_plasma_consumption | 1k |
-
-[All items](/content/items/)

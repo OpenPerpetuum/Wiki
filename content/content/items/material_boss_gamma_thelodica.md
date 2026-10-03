@@ -49,12 +49,10 @@ graph LR
     h["Elitet4 Gamma Small Laser"]:::prod
     a --> h
     click h "/content/items/elitet4-gamma-small-laser/" "Elitet4 Gamma Small Laser"
-    i["Named3 Thelodica Combat Drone Unit"]:::prod
+    i["T4 Thelodica Combat Drone Unit"]:::prod
     a --> i
-    click i "/content/items/named3-thelodica-combat-drone-unit/" "Named3 Thelodica Combat Drone Unit"
+    click i "/content/items/named3-thelodica-combat-drone-unit/" "T4 Thelodica Combat Drone Unit"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

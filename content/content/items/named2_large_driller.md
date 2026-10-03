@@ -32,30 +32,14 @@ description: "Modules / Enhancements, tier T3"
 
 **Produced from 6 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Sublimator Hi-D large miner module"]:::current
-    b["Cryoperine ×400"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Espitium ×400"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["MMA v19-'Widge' large miner module ×1"]:::comp
-    d --> a
-    click d "/content/items/named1-large-driller/" "MMA v19-'Widge' large miner module"
-    e["Functional common fragment ×80"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    f["Damaged common fragment ×80"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    g["Titanium ×2.4k"]:::comp
-    g --> a
-    click g "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>400</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>400</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-panel"/></svg><a class="prod-card-name" href="/content/items/named1-large-driller/">MMA v19-'Widge' large miner module</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>80</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>80</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>2.4k</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -66,12 +50,10 @@ graph LR
     b["Pellex large miner module"]:::prod
     a --> b
     click b "/content/items/named3-large-driller/" "Pellex large miner module"
-    c["Named3 Large Driller Pr"]:::prod
+    c["T4 Large Driller Pr"]:::prod
     a --> c
-    click c "/content/items/named3-large-driller-pr/" "Named3 Large Driller Pr"
+    click c "/content/items/named3-large-driller-pr/" "T4 Large Driller Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

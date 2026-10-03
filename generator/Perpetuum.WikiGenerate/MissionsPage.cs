@@ -79,9 +79,11 @@ public static class MissionsPage
         var ordered = types.OrderBy(kv => kv.Value.value).ThenBy(kv => kv.Value.name, StringComparer.Ordinal)
             .Where(kv => tiers.Keys.Any(k => k.Item1 == kv.Key))
             .ToList();
+        // RAW HTML: Zola does not run the markdown parser inside HTML blocks,
+        // so the chips are plain <a> elements, not [label](#anchor) markdown.
         sb.Append("<div class=\"mission-index\">\n");
         foreach (var (tid, tname) in ordered)
-            sb.Append($"[<span class=\"mission-type-chip\">{TypeTitle(tname.name)}</span>](#{TypeAnchor(tname.name)})&ensp;\n");
+            sb.Append($"<a href=\"#{TypeAnchor(tname.name)}\"><span class=\"mission-type-chip\">{TypeTitle(tname.name)}</span></a>&ensp;\n");
         sb.Append("</div>\n\n");
 
         foreach (var (tid, tname) in ordered)

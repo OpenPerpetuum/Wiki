@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T3"
 | Tier line | [Standard medium Gauss gun CT](/content/items/standard-medium-railgun-cprg/) (T1) → [Iskio-Magnetor medium Gauss gun CT](/content/items/named1-medium-railgun-cprg/) (T2) → **Nuimtec-Midion AMS medium Gauss gun CT** (T3) → [Prompt medium Gauss gun CT](/content/items/named3-medium-railgun-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

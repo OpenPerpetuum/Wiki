@@ -52,17 +52,4 @@ pie showData
     "gammaterial" : 345
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Norhoop](/zones/zone-tm-a-real/) (2 TP points)
-- → [Emperth](/zones/zone-tm-g-3/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Norhoop](/zones/zone-tm-a-real/) (2 TP points)
-- ← [Emperth](/zones/zone-tm-g-3/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

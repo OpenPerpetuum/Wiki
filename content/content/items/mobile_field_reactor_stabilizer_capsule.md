@@ -30,5 +30,3 @@ description: "Special & other / Miscellaneous"
 | resist_kinetic | 150 |
 | resist_thermal | 150 |
 | signature_radius | 20 |
-
-[All items](/content/items/)

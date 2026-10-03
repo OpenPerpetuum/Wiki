@@ -158,8 +158,8 @@ public static class ShopPage
         sb.Append("\n\n# Item shop\n\n");
         sb.Append("Fixed-price vendor items, separate from the player-driven [market](/features/market/). " +
                   "The same item can be sold at several vendors — the catalog below lists every item once, " +
-                  "with the best price across all vendors; each [item page](/content/items/) lists every vendor " +
-                  "that sells it (robots link to the [robot catalog](/content/robots/)).\n\n");
+                  "with the best price across all vendors; each item's own page lists every vendor that sells " +
+                  "it (robots link to the [robot catalog](/content/robots/)).\n\n");
         sb.Append("**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency " +
                   "(each shop sells for all three coins where offered); **Credits**: the common currency; " +
                   "**UniCoin**: a premium currency. **Qty ∞** means the vendor has no stock limit.\n\n");

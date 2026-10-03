@@ -16,7 +16,7 @@ description: "Modules / Weapons, tier T1 (prototype)"
 | Volume | 1.8 |
 | Mass | 1045 |
 | Category | Modules / Weapons |
-| Tier line | [Standard Hell Cannon](/content/items/standard-hell-cannon/) (T1) → **Standard Hell Cannon Pr** (T1) → [Named1 Hell Cannon](/content/items/named1-hell-cannon/) (T2) → [Named2 Hell Cannon](/content/items/named2-hell-cannon/) (T3) → [Named3 Hell Cannon](/content/items/named3-hell-cannon/) (T4) |
+| Tier line | [Standard Hell Cannon](/content/items/standard-hell-cannon/) (T1) → **Standard Hell Cannon Pr** (T1) → [T2 Hell Cannon](/content/items/named1-hell-cannon/) (T2) → [T3 Hell Cannon](/content/items/named2-hell-cannon/) (T3) → [T4 Hell Cannon](/content/items/named3-hell-cannon/) (T4) |
 
 ## Stats
 
@@ -36,26 +36,10 @@ description: "Modules / Weapons, tier T1 (prototype)"
 
 **Produced from 5 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard Hell Cannon Pr"]:::current
-    b["Alligior ×100"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Biotichrin ×100"]:::comp
-    c --> a
-    click c "/content/items/biotichrin/" "Biotichrin"
-    d["Espitium ×50"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Specimen Sap Item Flux ×10"]:::comp
-    e --> a
-    click e "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    f["Titanium ×100"]:::comp
-    f --> a
-    click f "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/biotichrin/">Biotichrin</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

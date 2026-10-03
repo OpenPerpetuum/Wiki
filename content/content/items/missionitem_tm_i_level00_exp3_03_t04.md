@@ -24,17 +24,7 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 2 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Emergency Accumulator [Elephant III]"]:::current
-    b["Storage coils [Elephant III] ×1"]:::comp
-    b --> a
-    click b "/content/items/missionitem-tm-i-level00-exp3-03-t02/" "Storage coils [Elephant III]"
-    c["Discharger [Elephant III] ×1"]:::comp
-    c --> a
-    click c "/content/items/missionitem-tm-i-level00-exp3-03-t03/" "Discharger [Elephant III]"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/missionitem-tm-i-level00-exp3-03-t02/">Storage coils [Elephant III]</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/missionitem-tm-i-level00-exp3-03-t03/">Discharger [Elephant III]</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+</div>

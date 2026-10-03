@@ -80,7 +80,7 @@ flowchart TD
 
         sb.Append("## How a robot is made\n\n");
         sb.Append("A robot you control is assembled from **three body parts** — a **head**, a **chassis** and a set of **legs** — plus a **cargo container**. Each part contributes to the robot's stats (core, CPU, power grid, armor, speed, …) and provides **module slots**; modules are fitted into the slots of the part that carries them. A module only fits a slot whose category flags cover the module's own flags (see [slot categories](/features/robots/#slot-categories)).\n\n");
-        sb.Append("Individual parts (heads, chassis, legs, containers) are listed under [Items → Robot components](/content/items/). Most models come in two **generations** — the base model and an improved **MK2** — and a few are limited or event models.\n\n");
+        sb.Append("Individual parts (heads, chassis, legs, containers) each have their own item page (find them by search, or from the [recipes](/content/recipes/) they appear in). Most models come in two **generations** — the base model and an improved **MK2** — and a few are limited or event models.\n\n");
 
         sb.Append("## Robot classes\n\n");
         sb.Append("A robot's class comes from its parts. Typical roles below are guidance — check the per-model numbers for anything specific.\n\n");

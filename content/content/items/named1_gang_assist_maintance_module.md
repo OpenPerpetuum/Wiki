@@ -35,36 +35,16 @@ description: "Modules / Enhancements, tier T2"
 
 **Produced from 8 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Diogan repairer NEXUS module"]:::current
-    b["Cryoperine ×150"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Chollonin ×150"]:::comp
-    c --> a
-    click c "/content/items/chollonin/" "Chollonin"
-    d["Plasteosine ×150"]:::comp
-    d --> a
-    click d "/content/items/plasteosine/" "Plasteosine"
-    e["Damaged nuimqol fragment ×15"]:::comp
-    e --> a
-    click e "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
-    f["Damaged pelistal fragment ×15"]:::comp
-    f --> a
-    click f "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
-    g["Standard repairer NEXUS module ×1"]:::comp
-    g --> a
-    click g "/content/items/standard-gang-assist-maintance-module/" "Standard repairer NEXUS module"
-    h["Statichnol ×150"]:::comp
-    h --> a
-    click h "/content/items/statichnol/" "Statichnol"
-    i["Titanium ×50"]:::comp
-    i --> a
-    click i "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/chollonin/">Chollonin</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-tree"/></svg><a class="prod-card-name" href="/content/items/standard-gang-assist-maintance-module/">Standard repairer NEXUS module</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/statichnol/">Statichnol</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -82,5 +62,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

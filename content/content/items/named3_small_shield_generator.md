@@ -35,39 +35,17 @@ description: "Modules / Shield, tier T4"
 
 **Produced from 9 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["SBA-200 Forebrace small shield generator"]:::current
-    b["Alligior ×400"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Espitium ×200"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Isopropentol ×400"]:::comp
-    d --> a
-    click d "/content/items/isopropentol/" "Isopropentol"
-    e["Ovostec-Yellowray small shield generator ×1"]:::comp
-    e --> a
-    click e "/content/items/named2-small-shield-generator/" "Ovostec-Yellowray small shield generator"
-    f["Functional common fragment ×30"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    g["Damaged common fragment ×15"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    h["Perfect common fragment ×45"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    i["Briochit ×200"]:::comp
-    i --> a
-    click i "/content/items/unimetal/" "Briochit"
-    j["Vitricyl ×200"]:::comp
-    j --> a
-    click j "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>400</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/isopropentol/">Isopropentol</a></div><div class="prod-card-body">required: <b>400</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-tree"/></svg><a class="prod-card-name" href="/content/items/named2-small-shield-generator/">Ovostec-Yellowray small shield generator</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -85,5 +63,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

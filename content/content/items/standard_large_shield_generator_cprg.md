@@ -16,9 +16,7 @@ description: "Modules / Shield, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Shield |
-| Tier line | **Standard Large Shield Generator Cprg** (T1) → [Named1 Large Shield Generator Cprg](/content/items/named1-large-shield-generator-cprg/) (T2) → [Named2 Large Shield Generator Cprg](/content/items/named2-large-shield-generator-cprg/) (T3) → [Named3 Large Shield Generator Cprg](/content/items/named3-large-shield-generator-cprg/) (T4) |
+| Tier line | **Standard Large Shield Generator Cprg** (T1) → [T2 Large Shield Generator Cprg](/content/items/named1-large-shield-generator-cprg/) (T2) → [T3 Large Shield Generator Cprg](/content/items/named2-large-shield-generator-cprg/) (T3) → [T4 Large Shield Generator Cprg](/content/items/named3-large-shield-generator-cprg/) (T4) |
 | Note | CT large weapon |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

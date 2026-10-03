@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | definitionconfig.range a tav amin melozik |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

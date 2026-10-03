@@ -27,5 +27,3 @@ description: "Modules / Sensors & scanning, tier special"
 | falloff | 10 |
 | optimal_range | 10 |
 | powergrid_usage | 5 |
-
-[All items](/content/items/)

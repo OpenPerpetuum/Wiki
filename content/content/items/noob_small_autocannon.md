@@ -30,5 +30,3 @@ description: "Modules / Weapons, tier special"
 | least_optimal | 1 |
 | optimal_range | 7.5 |
 | powergrid_usage | 15 |
-
-[All items](/content/items/)

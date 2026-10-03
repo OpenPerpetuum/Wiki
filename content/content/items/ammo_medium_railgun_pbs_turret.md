@@ -22,5 +22,3 @@ description: "Ammo / Cannon, tier T2"
 | Field | Value |
 |---|---|
 | damage_kinetic | 48 |
-
-[All items](/content/items/)

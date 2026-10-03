@@ -37,41 +37,15 @@ description: "Modules / Weapons, tier T3 (prototype)"
 
 **Produced from 10 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Nuimtec-Accolon LRS medium EM-gun prototype"]:::current
-    b["Chollonin ×50"]:::comp
-    b --> a
-    click b "/content/items/chollonin/" "Chollonin"
-    c["Espitium ×50"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Hydrobenol ×100"]:::comp
-    d --> a
-    click d "/content/items/hydrobenol/" "Hydrobenol"
-    e["Condor-SPP medium EM-gun ×1"]:::comp
-    e --> a
-    click e "/content/items/named1-longrange-medium-railgun/" "Condor-SPP medium EM-gun"
-    f["Polynitrocol ×100"]:::comp
-    f --> a
-    click f "/content/items/polynitrocol/" "Polynitrocol"
-    g["Functional common fragment ×20"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    h["Damaged common fragment ×20"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    i["Functional nuimqol fragment ×20"]:::comp
-    i --> a
-    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
-    j["Damaged nuimqol fragment ×20"]:::comp
-    j --> a
-    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
-    k["Titanium ×100"]:::comp
-    k --> a
-    click k "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/chollonin/">Chollonin</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/named1-longrange-medium-railgun/">Condor-SPP medium EM-gun</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynitrocol/">Polynitrocol</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>20</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>20</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a></div><div class="prod-card-body">required: <b>20</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a></div><div class="prod-card-body">required: <b>20</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

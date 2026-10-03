@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | ez az account entityje, ez kell ahhoz h az account is tudjon tulajdonolni |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

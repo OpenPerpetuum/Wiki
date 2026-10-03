@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T1"
 | Note | CT large weapon |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

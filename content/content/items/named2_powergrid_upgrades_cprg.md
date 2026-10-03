@@ -19,5 +19,3 @@ description: "Modules / Power, tier T3"
 | Tier line | [Standard coreactor CT](/content/items/standard-powergrid-upgrades-cprg/) (T1) → [Y-type 'Connector' coreactor CT](/content/items/named1-powergrid-upgrades-cprg/) (T2) → **Palp coreactor CT** (T3) → [E-set 15VaW coreactor CT](/content/items/named3-powergrid-upgrades-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

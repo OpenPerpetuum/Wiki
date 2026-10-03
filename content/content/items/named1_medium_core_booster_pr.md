@@ -32,23 +32,9 @@ description: "Modules / Enhancements, tier T2 (prototype)"
 
 **Produced from 4 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Shoxit Parter I. medium energy injector prototype"]:::current
-    b["Cryoperine ×200"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Damaged common fragment ×60"]:::comp
-    c --> a
-    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    d["Standard medium energy injector ×1"]:::comp
-    d --> a
-    click d "/content/items/standard-medium-core-booster/" "Standard medium energy injector"
-    e["Titanium ×200"]:::comp
-    e --> a
-    click e "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>60</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/standard-medium-core-booster/">Standard medium energy injector</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+</div>

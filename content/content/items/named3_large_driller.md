@@ -32,35 +32,13 @@ description: "Modules / Enhancements, tier T4"
 
 **Produced from 8 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pellex large miner module"]:::current
-    b["Cryoperine ×800"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Espitium ×800"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Sublimator Hi-D large miner module ×1"]:::comp
-    d --> a
-    click d "/content/items/named2-large-driller/" "Sublimator Hi-D large miner module"
-    e["Functional common fragment ×120"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    f["Damaged common fragment ×60"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    g["Perfect common fragment ×180"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    h["Titanium ×2.4k"]:::comp
-    h --> a
-    click h "/content/items/titanium/" "Titanium"
-    i["Briochit ×2.4k"]:::comp
-    i --> a
-    click i "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>800</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>800</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-panel"/></svg><a class="prod-card-name" href="/content/items/named2-large-driller/">Sublimator Hi-D large miner module</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>120</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>60</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>180</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>2.4k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>2.4k</b></div></div>
+</div>

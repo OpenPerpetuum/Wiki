@@ -131,35 +131,84 @@ public static class TechTreePage
                 "techtree + techtreenodeprices (group " + gid + ")"));
             sb.Append($"\n\n# {title}\n\n");
             sb.Append(blurb + "\n\n");
-            sb.Append("[Tech tree](/content/techtree/) → " + title + ". Every node in the diagram links to its " +
-                      "detail page (prerequisites, what it unlocks next, point prices).\n\n");
+            sb.Append("[Tech tree](/content/techtree/) → " + title + ". The category is split into its " +
+                      "**research lines** — one per top-level item (the chips above jump to each line's " +
+                      "graph). Every node in a graph links to its detail page (prerequisites, what it " +
+                      "unlocks next, point prices).\n\n");
 
-            // diagram: chains top-down, every node clickable
-            var m = new StringBuilder();
-            m.AppendLine("```mermaid");
-            m.AppendLine("graph TD");
-            foreach (var n in gnodes.OrderBy(x => x.Int("childdefinition")))
+            // the lines: every top-level node (no parent) starts one research
+            // line; the line = the root plus everything that descends from it.
+            // One graph per line keeps each diagram small enough to read
+            // without zooming (the old single category-wide graph was a wall).
+            // childdef -> rootdef (root = a node with no parent)
+            var lineOf = new Dictionary<int, int>();
+            void Walk(int c, int root)
+            {
+                lineOf[c] = root;
+                if (children.TryGetValue(c, out var k)) foreach (var x in k) Walk(x, root);
+            }
+            var roots = gnodes.Where(n => n.Int("parentdefinition") == 0)
+                .OrderBy(n => n.Int("childdefinition")).ToList();
+            foreach (var rn in roots) Walk(rn.Int("childdefinition"), rn.Int("childdefinition"));
+            var byRoot = new Dictionary<int, List<Dictionary<string, object?>>>();
+            foreach (var n in gnodes)
             {
                 var c = n.Int("childdefinition");
-                var label = Md.DisplayName(defs.TryGetValue(c, out var d3) ? d3.Item1 : "def_" + c).Replace("\"", "'");
-                m.AppendLine($"    n{c}[\"{label}\"]");
+                if (!lineOf.TryGetValue(c, out var rt)) continue; // defensive: disconnected node
+                if (!byRoot.TryGetValue(rt, out var l)) byRoot[rt] = l = new List<Dictionary<string, object?>>();
+                l.Add(n);
             }
-            foreach (var n in gnodes.OrderBy(x => x.Int("childdefinition")))
-            {
-                var c = n.Int("childdefinition");
-                var p = n.Int("parentdefinition");
-                if (p != 0) m.AppendLine($"    n{p} --> n{c}");
-            }
-            foreach (var n in gnodes.OrderBy(x => x.Int("childdefinition")))
-            {
-                var c = n.Int("childdefinition");
-                var tip = Label(c);
-                m.AppendLine($"    click n{c} \"{NodeUrl(c)}\" \"{tip}\"");
-            }
-            m.AppendLine("```");
-            sb.Append(m.ToString());
 
-            sb.Append("\n## Nodes\n\n");
+            // chip index (missions style): one chip per line, root-name based.
+            // RAW HTML — Zola does not run the markdown parser inside HTML
+            // blocks, so a [label](#anchor) here would render as literal text.
+            sb.Append("<div class=\"tt-index\">\n");
+            foreach (var rn in roots)
+            {
+                var r = rn.Int("childdefinition");
+                var rname = Label(r);
+                var chip = rname.StartsWith("Standard ", StringComparison.Ordinal) ? rname["Standard ".Length..] : rname;
+                if (chip.Length > 1) chip = char.ToUpperInvariant(chip[0]) + chip[1..];
+                sb.Append($"<a href=\"#line-{r}\"><span class=\"tt-chip\">{chip}</span></a>&ensp;\n");
+            }
+            sb.Append("</div>\n\n");
+
+            foreach (var rn in roots)
+            {
+                var r = rn.Int("childdefinition");
+                var lns = byRoot.TryGetValue(r, out var l2) ? l2 : new List<Dictionary<string, object?>>();
+                var rname = Label(r);
+                sb.Append($"<a id=\"line-{r}\"></a>\n\n## {rname}\n\n");
+                sb.Append($"**{lns.Count} node{(lns.Count == 1 ? "" : "s")}** — everything that descends from " +
+                          $"[{rname}]({NodeUrl(r)}).\n\n");
+
+                var ordered = lns.OrderBy(x => x.Int("childdefinition")).ToList();
+                var m = new StringBuilder();
+                m.AppendLine("```mermaid");
+                m.AppendLine("graph TD");
+                foreach (var n in ordered)
+                {
+                    var c = n.Int("childdefinition");
+                    var label = Md.DisplayName(defs.TryGetValue(c, out var d3) ? d3.Item1 : "def_" + c).Replace("\"", "'");
+                    m.AppendLine($"    n{c}[\"{label}\"]");
+                }
+                foreach (var n in ordered)
+                {
+                    var c = n.Int("childdefinition");
+                    var p = n.Int("parentdefinition");
+                    if (p != 0) m.AppendLine($"    n{p} --> n{c}");
+                }
+                foreach (var n in ordered)
+                {
+                    var c = n.Int("childdefinition");
+                    m.AppendLine($"    click n{c} \"{NodeUrl(c)}\" \"{Label(c)}\"");
+                }
+                m.AppendLine("```");
+                sb.Append(m.ToString());
+                sb.Append("\n");
+            }
+
+            sb.Append("## Nodes (all)\n\n");
             var rows = gnodes
                 .OrderBy(n => n.Int("parentdefinition"))
                 .ThenBy(n => n.Int("childdefinition"))

@@ -37,41 +37,15 @@ description: "Modules / Weapons, tier T4 (prototype)"
 
 **Produced from 10 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Prompt medium Gauss gun prototype"]:::current
-    b["Hydrobenol ×200"]:::comp
-    b --> a
-    click b "/content/items/hydrobenol/" "Hydrobenol"
-    c["Nuimtec-Midion AMS medium Gauss gun ×1"]:::comp
-    c --> a
-    click c "/content/items/named2-medium-railgun/" "Nuimtec-Midion AMS medium Gauss gun"
-    d["Polynitrocol ×200"]:::comp
-    d --> a
-    click d "/content/items/polynitrocol/" "Polynitrocol"
-    e["Functional common fragment ×30"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    f["Damaged common fragment ×15"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    g["Perfect common fragment ×45"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    h["Functional nuimqol fragment ×30"]:::comp
-    h --> a
-    click h "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
-    i["Damaged nuimqol fragment ×15"]:::comp
-    i --> a
-    click i "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
-    j["Perfect nuimqol fragment ×45"]:::comp
-    j --> a
-    click j "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
-    k["Briochit ×200"]:::comp
-    k --> a
-    click k "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/named2-medium-railgun/">Nuimtec-Midion AMS medium Gauss gun</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynitrocol/">Polynitrocol</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-expert/">Perfect nuimqol fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+</div>

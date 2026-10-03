@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Tactical Remote Controller](/content/items/standard-tactical-remote-controller/) |
 | Parent node | [Standard coprocessor](/content/techtree/nodes/standard-cpu-upgrade/) |
-| Unlocks next | [Named1 Tactical Remote Controller](/content/techtree/nodes/named1-tactical-remote-controller/), [Syndicate Attack Drone Unit](/content/techtree/nodes/syndicate-attack-drone-unit/), [Beholder](/content/techtree/nodes/beholder/) |
+| Unlocks next | [T2 Tactical Remote Controller](/content/techtree/nodes/named1-tactical-remote-controller/), [Syndicate Attack Drone Unit](/content/techtree/nodes/syndicate-attack-drone-unit/), [Beholder](/content/techtree/nodes/beholder/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

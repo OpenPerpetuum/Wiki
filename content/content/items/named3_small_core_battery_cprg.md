@@ -19,5 +19,3 @@ description: "Modules / Power, tier T4"
 | Tier line | [Standard small auxiliary accumulator CT](/content/items/standard-small-core-battery-cprg/) (T1) → [Co-Fuse small auxiliary accumulator CT](/content/items/named1-small-core-battery-cprg/) (T2) → [Ovostec-Ghioc small auxiliary accumulator CT](/content/items/named2-small-core-battery-cprg/) (T3) → **Pheter Charge-S small auxiliary accumulator CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

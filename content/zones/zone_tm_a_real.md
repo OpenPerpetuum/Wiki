@@ -52,23 +52,4 @@ pie showData
     "fluxore" : 20
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Kentagura](/zones/zone-asi-pvp/) (2 TP points)
-- → [Hershfield](/zones/zone-tm-pve/) (3 TP points)
-- → [Alsbale](/zones/zone-tm-pvp/) (2 TP points)
-- → [zone_gamma_tc_z101](/zones/zone-gamma-tc-z101/) (1 TP point)
-- → [Solarfield](/zones/zone-tm-g-6/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Kentagura](/zones/zone-asi-pvp/) (2 TP points)
-- ← [Hershfield](/zones/zone-tm-pve/) (3 TP points)
-- ← [Alsbale](/zones/zone-tm-pvp/) (2 TP points)
-- ← [zone_gamma_tc_z101](/zones/zone-gamma-tc-z101/) (1 TP point)
-- ← [Solarfield](/zones/zone-tm-g-6/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

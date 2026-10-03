@@ -440,12 +440,12 @@ Items that take this ore as a recipe component (amount per single production). F
 | Metis head | 500 | – |
 | Metis legs | 2k | – |
 | [Mining Industrial Drone Unit](/content/items/mining-industrial-drone-unit/) | 1k | 5 |
-| [Named1 Adaptive Alloy](/content/items/named1-adaptive-alloy/) | 200 | – |
-| [Named1 Adaptive Alloy Pr](/content/items/named1-adaptive-alloy-pr/) | 200 | 4 |
+| [T2 Adaptive Alloy](/content/items/named1-adaptive-alloy/) | 200 | – |
+| [T2 Adaptive Alloy Pr](/content/items/named1-adaptive-alloy-pr/) | 200 | 4 |
 | [Diaptes armor repairer tuning](/content/items/named1-armor-repairer-upgrade/) | 100 | 4 |
 | [Diaptes armor repairer tuning prototype](/content/items/named1-armor-repairer-upgrade-pr/) | 100 | 4 |
-| [Named1 Assault Remote Controller](/content/items/named1-assault-remote-controller/) | 50 | – |
-| [Named1 Assault Remote Controller Pr](/content/items/named1-assault-remote-controller-pr/) | 50 | 6 |
+| [T2 Assault Remote Controller](/content/items/named1-assault-remote-controller/) | 50 | – |
+| [T2 Assault Remote Controller Pr](/content/items/named1-assault-remote-controller-pr/) | 50 | 6 |
 | [Bandoler IU-250 interference module](/content/items/named1-blob-emission-modulator/) | 50 | 6 |
 | [Bandoler IU-250 interference module prototype](/content/items/named1-blob-emission-modulator-pr/) | 50 | 6 |
 | [Spurt-Singular cargo scanner](/content/items/named1-cargo-scanner/) | 50 | 4 |
@@ -459,7 +459,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Parallelyt-C300 coprocessor](/content/items/named1-cpu-upgrade/) | 50 | 4 |
 | [Parallelyt-C300 coprocessor prototype](/content/items/named1-cpu-upgrade-pr/) | 50 | 4 |
 | [Aqwit Imperator heavy missile launcher](/content/items/named1-cruisemissile-launcher/) | 150 | – |
-| [Named1 Cruisemissile Launcher Pr](/content/items/named1-cruisemissile-launcher-pr/) | 150 | 6 |
+| [T2 Cruisemissile Launcher Pr](/content/items/named1-cruisemissile-launcher-pr/) | 150 | 6 |
 | [Reflexis II. laser tuning](/content/items/named1-damage-mod-laser/) | 50 | 4 |
 | [Reflexis II. laser tuning prototype](/content/items/named1-damage-mod-laser-pr/) | 50 | 4 |
 | [AIT-Dipris Propellant missile launcher tuning](/content/items/named1-damage-mod-missile/) | 50 | 4 |
@@ -470,18 +470,18 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Nuimtec-Spilster magnetic weapon tuning prototype](/content/items/named1-damage-mod-railgun-pr/) | 50 | 4 |
 | [Techodo signal detector](/content/items/named1-detection-modul/) | 200 | 7 |
 | [Techodo signal detector prototype](/content/items/named1-detection-modul-pr/) | 200 | 7 |
-| [Named1 Dreadnought Module](/content/items/named1-dreadnought-module/) | 2.4k | – |
-| [Named1 Dreadnought Module Pr](/content/items/named1-dreadnought-module-pr/) | 2.4k | 6 |
+| [T2 Dreadnought Module](/content/items/named1-dreadnought-module/) | 2.4k | – |
+| [T2 Dreadnought Module Pr](/content/items/named1-dreadnought-module-pr/) | 2.4k | 6 |
 | [Wallex ECCM](/content/items/named1-eccm/) | 50 | 3 |
 | [Wallex ECCM prototype](/content/items/named1-eccm-pr/) | 50 | 3 |
 | [Distortio ECM tuning](/content/items/named1-ecm-booster/) | 50 | 6 |
 | [Distortio ECM tuning prototype](/content/items/named1-ecm-booster-pr/) | 50 | 6 |
 | [Blister EnWar upgrade](/content/items/named1-energy-warfare-upgrade/) | 50 | 6 |
 | [Blister EnWar upgrade prototype](/content/items/named1-energy-warfare-upgrade-pr/) | 50 | 6 |
-| [Named1 Engineering Remote Controller](/content/items/named1-engineering-remote-controller/) | 50 | – |
-| [Named1 Engineering Remote Controller Pr](/content/items/named1-engineering-remote-controller-pr/) | 50 | 6 |
-| [Named1 Excavator Module](/content/items/named1-excavator-module/) | 2.4k | – |
-| [Named1 Excavator Module Pr](/content/items/named1-excavator-module-pr/) | 2.4k | 6 |
+| [T2 Engineering Remote Controller](/content/items/named1-engineering-remote-controller/) | 50 | – |
+| [T2 Engineering Remote Controller Pr](/content/items/named1-engineering-remote-controller-pr/) | 50 | 6 |
+| [T2 Excavator Module](/content/items/named1-excavator-module/) | 2.4k | – |
+| [T2 Excavator Module Pr](/content/items/named1-excavator-module-pr/) | 2.4k | 6 |
 | [Ballistris I. seismic armor](/content/items/named1-exp-armor-hardener/) | 100 | 4 |
 | [Ballistris I. seismic armor prototype](/content/items/named1-exp-armor-hardener-pr/) | 100 | 4 |
 | [SER-250 'Eruptico' seismic ERP](/content/items/named1-explosive-kers/) | 200 | 6 |
@@ -512,41 +512,41 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Myrmidon assault NEXUS module prototype](/content/items/named1-gang-assist-siege-module-pr/) | 50 | 5 |
 | [Jubatus velocity NEXUS module](/content/items/named1-gang-assist-speed-module/) | 50 | 5 |
 | [Jubatus velocity NEXUS module prototype](/content/items/named1-gang-assist-speed-module-pr/) | 50 | 5 |
-| [Named1 Harvesting Turret Unit](/content/items/named1-harvesting-turret-unit/) | 750 | 3 |
-| [Named1 Hell Cannon](/content/items/named1-hell-cannon/) | 100 | – |
-| [Named1 Hell Cannon Pr](/content/items/named1-hell-cannon-pr/) | 100 | 6 |
-| [Named1 Hunter Remote Controller](/content/items/named1-hunter-remote-controller/) | 200 | – |
-| [Named1 Hunter Remote Controller Pr](/content/items/named1-hunter-remote-controller-pr/) | 200 | 6 |
-| [Named1 Industrial Remote Controller](/content/items/named1-industrial-remote-controller/) | 50 | – |
-| [Named1 Industrial Remote Controller Pr](/content/items/named1-industrial-remote-controller-pr/) | 50 | 6 |
+| [T2 Harvesting Turret Unit](/content/items/named1-harvesting-turret-unit/) | 750 | 3 |
+| [T2 Hell Cannon](/content/items/named1-hell-cannon/) | 100 | – |
+| [T2 Hell Cannon Pr](/content/items/named1-hell-cannon-pr/) | 100 | 6 |
+| [T2 Hunter Remote Controller](/content/items/named1-hunter-remote-controller/) | 200 | – |
+| [T2 Hunter Remote Controller Pr](/content/items/named1-hunter-remote-controller-pr/) | 200 | 6 |
+| [T2 Industrial Remote Controller](/content/items/named1-industrial-remote-controller/) | 50 | – |
+| [T2 Industrial Remote Controller Pr](/content/items/named1-industrial-remote-controller-pr/) | 50 | 6 |
 | [Counterpress I-230 kinetic armor](/content/items/named1-kin-armor-hardener/) | 100 | 4 |
 | [Counterpress I-230 kinetic armor prototype](/content/items/named1-kin-armor-hardener-pr/) | 100 | 4 |
 | [Hegatex-1000 kinetic ERP](/content/items/named1-kinetic-kers/) | 200 | 6 |
 | [Hegatex-1000 kinetic ERP prototype](/content/items/named1-kinetic-kers-pr/) | 200 | 7 |
-| [Named1 Landmine Detector](/content/items/named1-landmine-detector/) | 100 | – |
-| [Named1 Landmine Detector Pr](/content/items/named1-landmine-detector-pr/) | 100 | 7 |
+| [T2 Landmine Detector](/content/items/named1-landmine-detector/) | 100 | – |
+| [T2 Landmine Detector Pr](/content/items/named1-landmine-detector-pr/) | 100 | 7 |
 | [Vorbol p113 heavy armor plate](/content/items/named1-large-armor-plate/) | 750 | – |
-| [Named1 Large Armor Plate Pr](/content/items/named1-large-armor-plate-pr/) | 750 | 5 |
+| [T2 Large Armor Plate Pr](/content/items/named1-large-armor-plate-pr/) | 750 | 5 |
 | [Stesodenn large armor repairer](/content/items/named1-large-armor-repairer/) | 150 | – |
-| [Named1 Large Armor Repairer Pr](/content/items/named1-large-armor-repairer-pr/) | 150 | 6 |
+| [T2 Large Armor Repairer Pr](/content/items/named1-large-armor-repairer-pr/) | 150 | 6 |
 | [Ovostec-gxc9000 large auxiliary accumulator](/content/items/named1-large-core-battery/) | 300 | – |
-| [Named1 Large Core Battery Pr](/content/items/named1-large-core-battery-pr/) | 300 | 6 |
+| [T2 Large Core Battery Pr](/content/items/named1-large-core-battery-pr/) | 300 | 6 |
 | [Shoxit Parter II. large energy injector](/content/items/named1-large-core-booster/) | 300 | – |
-| [Named1 Large Core Booster Pr](/content/items/named1-large-core-booster-pr/) | 300 | 6 |
+| [T2 Large Core Booster Pr](/content/items/named1-large-core-booster-pr/) | 300 | 6 |
 | [MMA v19-'Widge' large miner module](/content/items/named1-large-driller/) | 2.4k | – |
-| [Named1 Large Driller Pr](/content/items/named1-large-driller-pr/) | 2.4k | 6 |
-| [Named1 Large Harvester](/content/items/named1-large-harvester/) | 2.4k | – |
-| [Named1 Large Harvester Pr](/content/items/named1-large-harvester-pr/) | 2.4k | 6 |
+| [T2 Large Driller Pr](/content/items/named1-large-driller-pr/) | 2.4k | 6 |
+| [T2 Large Harvester](/content/items/named1-large-harvester/) | 2.4k | – |
+| [T2 Large Harvester Pr](/content/items/named1-large-harvester-pr/) | 2.4k | 6 |
 | [Thelotec-Etequitor heavy LCL laser](/content/items/named1-large-laser/) | 150 | – |
-| [Named1 Large Laser Pr](/content/items/named1-large-laser-pr/) | 150 | 6 |
+| [T2 Large Laser Pr](/content/items/named1-large-laser-pr/) | 150 | 6 |
 | [Iskio-Magnetor II. heavy Gauss gun](/content/items/named1-large-railgun/) | 150 | – |
-| [Named1 Large Railgun Pr](/content/items/named1-large-railgun-pr/) | 150 | 6 |
+| [T2 Large Railgun Pr](/content/items/named1-large-railgun-pr/) | 150 | 6 |
 | [AVA-Spintarge large shield generator](/content/items/named1-large-shield-generator/) | 300 | – |
-| [Named1 Large Shield Generator Pr](/content/items/named1-large-shield-generator-pr/) | 300 | 6 |
-| [Named1 Longrange Large Laser](/content/items/named1-longrange-large-laser/) | 150 | – |
-| [Named1 Longrange Large Laser Pr](/content/items/named1-longrange-large-laser-pr/) | 150 | 6 |
-| [Named1 Longrange Large Railgun](/content/items/named1-longrange-large-railgun/) | 150 | – |
-| [Named1 Longrange Large Railgun Pr](/content/items/named1-longrange-large-railgun-pr/) | 150 | 6 |
+| [T2 Large Shield Generator Pr](/content/items/named1-large-shield-generator-pr/) | 300 | 6 |
+| [T2 Longrange Large Laser](/content/items/named1-longrange-large-laser/) | 150 | – |
+| [T2 Longrange Large Laser Pr](/content/items/named1-longrange-large-laser-pr/) | 150 | 6 |
+| [T2 Longrange Large Railgun](/content/items/named1-longrange-large-railgun/) | 150 | – |
+| [T2 Longrange Large Railgun Pr](/content/items/named1-longrange-large-railgun-pr/) | 150 | 6 |
 | [GTRB medium autocannon](/content/items/named1-longrange-medium-autocannon/) | 100 | 4 |
 | [GTRB medium autocannon prototype](/content/items/named1-longrange-medium-autocannon-pr/) | 100 | 4 |
 | [Tertzer medium HCL laser](/content/items/named1-longrange-medium-laser/) | 100 | 5 |
@@ -589,29 +589,29 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Parsvaal-IIX medium shield generator prototype](/content/items/named1-medium-shield-generator-pr/) | 200 | 5 |
 | [Ovostec-Chisomel geoscanner](/content/items/named1-mining-probe-module/) | 50 | 2 |
 | [Ovostec-Chisomel geoscanner prototype](/content/items/named1-mining-probe-module-pr/) | 50 | 2 |
-| [Named1 Mining Turret Unit](/content/items/named1-mining-turret-unit/) | 750 | 3 |
+| [T2 Mining Turret Unit](/content/items/named1-mining-turret-unit/) | 750 | 3 |
 | [Piog Forgekit AI industrial tuning](/content/items/named1-mining-upgrade/) | 50 | 4 |
 | [Piog Forgekit AI industrial tuning prototype](/content/items/named1-mining-upgrade-pr/) | 50 | 4 |
 | [ST-Dupot medium missile launcher](/content/items/named1-missile-launcher/) | 100 | 5 |
 | [ST-Dupot medium missile launcher prototype](/content/items/named1-missile-launcher-pr/) | 100 | 5 |
-| [Named1 Nuimqol Combat Drone Unit](/content/items/named1-nuimqol-combat-drone-unit/) | 1.5k | 4 |
-| [Named1 Pelistal Combat Drone Unit](/content/items/named1-pelistal-combat-drone-unit/) | 1.5k | 4 |
+| [T2 Nuimqol Combat Drone Unit](/content/items/named1-nuimqol-combat-drone-unit/) | 1.5k | 4 |
+| [T2 Pelistal Combat Drone Unit](/content/items/named1-pelistal-combat-drone-unit/) | 1.5k | 4 |
 | [Y-type 'Connector' coreactor](/content/items/named1-powergrid-upgrades/) | 200 | 4 |
 | [Y-type 'Connector' coreactor prototype](/content/items/named1-powergrid-upgrades-pr/) | 200 | 4 |
-| [Named1 Raven Cannon](/content/items/named1-raven-cannon/) | 100 | – |
-| [Named1 Raven Cannon Pr](/content/items/named1-raven-cannon-pr/) | 100 | 6 |
+| [T2 Raven Cannon](/content/items/named1-raven-cannon/) | 100 | – |
+| [T2 Raven Cannon Pr](/content/items/named1-raven-cannon-pr/) | 100 | 6 |
 | [Tortoise reactor sealing](/content/items/named1-reactor-sealing/) | 100 | 4 |
 | [Tortoise reactor sealing prototype](/content/items/named1-reactor-sealing-pr/) | 100 | 4 |
-| [Named1 Remote Command Translator](/content/items/named1-remote-command-translator/) | 200 | – |
-| [Named1 Remote Command Translator Pr](/content/items/named1-remote-command-translator-pr/) | 200 | 6 |
+| [T2 Remote Command Translator](/content/items/named1-remote-command-translator/) | 200 | – |
+| [T2 Remote Command Translator Pr](/content/items/named1-remote-command-translator-pr/) | 200 | 6 |
 | [Occul remote sensor amplifier](/content/items/named1-remote-sensor-booster/) | 100 | 4 |
 | [Occul remote sensor amplifier prototype](/content/items/named1-remote-sensor-booster-pr/) | 100 | 4 |
 | [Diverter universal armor](/content/items/named1-resistant-plating/) | 100 | 4 |
 | [Diverter universal armor prototype](/content/items/named1-resistant-plating-pr/) | 100 | 4 |
 | [Pelistec-Horosol DBM light missile launcher](/content/items/named1-rocket-launcher/) | 50 | 3 |
 | [Pelistec-Horosol DBM light missile launcher prototype](/content/items/named1-rocket-launcher-pr/) | 50 | 3 |
-| [Named1 Self Destruct Module](/content/items/named1-self-destruct-module/) | 200 | – |
-| [Named1 Self Destruct Module Pr](/content/items/named1-self-destruct-module-pr/) | 200 | 6 |
+| [T2 Self Destruct Module](/content/items/named1-self-destruct-module/) | 200 | – |
+| [T2 Self Destruct Module Pr](/content/items/named1-self-destruct-module-pr/) | 200 | 6 |
 | [Bullz-I 6601 sensor amplifier](/content/items/named1-sensor-booster/) | 50 | 4 |
 | [Bullz-I 6601 sensor amplifier prototype](/content/items/named1-sensor-booster-pr/) | 50 | 4 |
 | [Suboster I. sensor suppressor](/content/items/named1-sensor-dampener/) | 50 | 4 |
@@ -620,7 +620,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Occyt-OEW ECM prototype](/content/items/named1-sensor-jammer-pr/) | 50 | 4 |
 | [DDX200-Veil sensor suppressor tuning](/content/items/named1-sensor-supressor-booster/) | 50 | 6 |
 | [DDX200-Veil sensor suppressor tuning prototype](/content/items/named1-sensor-supressor-booster-pr/) | 50 | 6 |
-| [Named1 Sentry Turret Unit](/content/items/named1-sentry-turret-unit/) | 750 | 3 |
+| [T2 Sentry Turret Unit](/content/items/named1-sentry-turret-unit/) | 750 | 3 |
 | [Bund shield hardener](/content/items/named1-shield-hardener/) | 50 | 4 |
 | [Bund shield hardener prototype](/content/items/named1-shield-hardener-pr/) | 50 | 4 |
 | [Wobost-Titangrip light armor plate](/content/items/named1-small-armor-plate/) | 250 | 2 |
@@ -653,13 +653,13 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Parsvaal-IP small shield generator prototype](/content/items/named1-small-shield-generator-pr/) | 100 | 3 |
 | [Mimique signal masker](/content/items/named1-stealth-modul/) | 200 | 7 |
 | [Mimique signal masker prototype](/content/items/named1-stealth-modul-pr/) | 200 | 7 |
-| [Named1 Support Remote Controller](/content/items/named1-support-remote-controller/) | 50 | – |
-| [Named1 Support Remote Controller Pr](/content/items/named1-support-remote-controller-pr/) | 50 | 6 |
-| [Named1 Tactical Remote Controller](/content/items/named1-tactical-remote-controller/) | 50 | – |
-| [Named1 Tactical Remote Controller Pr](/content/items/named1-tactical-remote-controller-pr/) | 50 | 6 |
+| [T2 Support Remote Controller](/content/items/named1-support-remote-controller/) | 50 | – |
+| [T2 Support Remote Controller Pr](/content/items/named1-support-remote-controller-pr/) | 50 | 6 |
+| [T2 Tactical Remote Controller](/content/items/named1-tactical-remote-controller/) | 50 | – |
+| [T2 Tactical Remote Controller Pr](/content/items/named1-tactical-remote-controller-pr/) | 50 | 6 |
 | [Pois-D22 target marker](/content/items/named1-target-painter/) | 200 | 5 |
 | [Pois-D22 target marker prototype](/content/items/named1-target-painter-pr/) | 200 | 5 |
-| [Named1 Thelodica Combat Drone Unit](/content/items/named1-thelodica-combat-drone-unit/) | 1.5k | 4 |
+| [T2 Thelodica Combat Drone Unit](/content/items/named1-thelodica-combat-drone-unit/) | 1.5k | 4 |
 | [Pyropaster thermal ERP](/content/items/named1-thermal-kers/) | 200 | 6 |
 | [Pyropaster thermal ERP prototype](/content/items/named1-thermal-kers-pr/) | 200 | 7 |
 | [Lava-3T thermal armor](/content/items/named1-thrm-armor-hardener/) | 100 | 4 |
@@ -670,12 +670,12 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Kobel 450-TZ weapon stabilizer prototype](/content/items/named1-weapon-stabilizer-pr/) | 150 | 6 |
 | [Arachnid-type S-demobilizer](/content/items/named1-webber/) | 100 | 4 |
 | [Arachnid-type S-demobilizer prototype](/content/items/named1-webber-pr/) | 100 | 4 |
-| [Named2 Adaptive Alloy](/content/items/named2-adaptive-alloy/) | 200 | – |
-| [Named2 Adaptive Alloy Pr](/content/items/named2-adaptive-alloy-pr/) | 200 | 5 |
+| [T3 Adaptive Alloy](/content/items/named2-adaptive-alloy/) | 200 | – |
+| [T3 Adaptive Alloy Pr](/content/items/named2-adaptive-alloy-pr/) | 200 | 5 |
 | [WPG3000 armor repairer tuning](/content/items/named2-armor-repairer-upgrade/) | 100 | 5 |
 | [WPG3000 armor repairer tuning prototype](/content/items/named2-armor-repairer-upgrade-pr/) | 100 | 5 |
-| [Named2 Assault Remote Controller](/content/items/named2-assault-remote-controller/) | 50 | – |
-| [Named2 Assault Remote Controller Pr](/content/items/named2-assault-remote-controller-pr/) | 50 | 7 |
+| [T3 Assault Remote Controller](/content/items/named2-assault-remote-controller/) | 50 | – |
+| [T3 Assault Remote Controller Pr](/content/items/named2-assault-remote-controller-pr/) | 50 | 7 |
 | [Bandoler IV-500 interference module](/content/items/named2-blob-emission-modulator/) | 50 | 7 |
 | [Bandoler IV-500 interference module prototype](/content/items/named2-blob-emission-modulator-pr/) | 50 | 7 |
 | [Nomothetor cargo scanner](/content/items/named2-cargo-scanner/) | 50 | 5 |
@@ -689,7 +689,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Cerebellum-1000 coprocessor](/content/items/named2-cpu-upgrade/) | 50 | 5 |
 | [Cerebellum-1000 coprocessor prototype](/content/items/named2-cpu-upgrade-pr/) | 50 | 5 |
 | [Teppes heavy missile launcher](/content/items/named2-cruisemissile-launcher/) | 150 | – |
-| [Named2 Cruisemissile Launcher Pr](/content/items/named2-cruisemissile-launcher-pr/) | 150 | 7 |
+| [T3 Cruisemissile Launcher Pr](/content/items/named2-cruisemissile-launcher-pr/) | 150 | 7 |
 | [Kauska Optibrace laser tuning](/content/items/named2-damage-mod-laser/) | 50 | 5 |
 | [Kauska Optibrace laser tuning prototype](/content/items/named2-damage-mod-laser-pr/) | 50 | 5 |
 | [Pelistec-FBP-II. missile launcher tuning](/content/items/named2-damage-mod-missile/) | 50 | 5 |
@@ -700,18 +700,18 @@ Items that take this ore as a recipe component (amount per single production). F
 | [RSU-Magnitcore magnetic weapon tuning prototype](/content/items/named2-damage-mod-railgun-pr/) | 50 | 5 |
 | [MX-1 Dogon signal detector](/content/items/named2-detection-modul/) | 200 | 8 |
 | [MX-1 Dogon signal detector prototype](/content/items/named2-detection-modul-pr/) | 200 | 8 |
-| [Named2 Dreadnought Module](/content/items/named2-dreadnought-module/) | 2.4k | – |
-| [Named2 Dreadnought Module Pr](/content/items/named2-dreadnought-module-pr/) | 2.4k | 7 |
+| [T3 Dreadnought Module](/content/items/named2-dreadnought-module/) | 2.4k | – |
+| [T3 Dreadnought Module Pr](/content/items/named2-dreadnought-module-pr/) | 2.4k | 7 |
 | [Deshrud-QW ECCM](/content/items/named2-eccm/) | 50 | 4 |
 | [Deshrud-QW ECCM prototype](/content/items/named2-eccm-pr/) | 50 | 4 |
 | [Hodge ECM tuning](/content/items/named2-ecm-booster/) | 50 | 7 |
 | [Hodge ECM tuning prototype](/content/items/named2-ecm-booster-pr/) | 50 | 7 |
 | [OM-Shock EnWar upgrade](/content/items/named2-energy-warfare-upgrade/) | 50 | 7 |
 | [OM-Shock EnWar upgrade prototype](/content/items/named2-energy-warfare-upgrade-pr/) | 50 | 7 |
-| [Named2 Engineering Remote Controller](/content/items/named2-engineering-remote-controller/) | 50 | – |
-| [Named2 Engineering Remote Controller Pr](/content/items/named2-engineering-remote-controller-pr/) | 50 | 7 |
-| [Named2 Excavator Module](/content/items/named2-excavator-module/) | 2.4k | – |
-| [Named2 Excavator Module Pr](/content/items/named2-excavator-module-pr/) | 2.4k | 7 |
+| [T3 Engineering Remote Controller](/content/items/named2-engineering-remote-controller/) | 50 | – |
+| [T3 Engineering Remote Controller Pr](/content/items/named2-engineering-remote-controller-pr/) | 50 | 7 |
+| [T3 Excavator Module](/content/items/named2-excavator-module/) | 2.4k | – |
+| [T3 Excavator Module Pr](/content/items/named2-excavator-module-pr/) | 2.4k | 7 |
 | [Formantel-DVU seismic armor](/content/items/named2-exp-armor-hardener/) | 100 | 5 |
 | [Formantel-DVU seismic armor prototype](/content/items/named2-exp-armor-hardener-pr/) | 100 | 5 |
 | [SER-300 'Devactico' seismic ERP](/content/items/named2-explosive-kers/) | 200 | 7 |
@@ -742,41 +742,41 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Mobba assault NEXUS module prototype](/content/items/named2-gang-assist-siege-module-pr/) | 50 | 6 |
 | [Iopis-II velocity NEXUS module](/content/items/named2-gang-assist-speed-module/) | 50 | 6 |
 | [Iopis-II velocity NEXUS module prototype](/content/items/named2-gang-assist-speed-module-pr/) | 50 | 6 |
-| [Named2 Harvesting Turret Unit](/content/items/named2-harvesting-turret-unit/) | 750 | 4 |
-| [Named2 Hell Cannon](/content/items/named2-hell-cannon/) | 100 | – |
-| [Named2 Hell Cannon Pr](/content/items/named2-hell-cannon-pr/) | 100 | 7 |
-| [Named2 Hunter Remote Controller](/content/items/named2-hunter-remote-controller/) | 100 | – |
-| [Named2 Hunter Remote Controller Pr](/content/items/named2-hunter-remote-controller-pr/) | 100 | 7 |
-| [Named2 Industrial Remote Controller](/content/items/named2-industrial-remote-controller/) | 50 | – |
-| [Named2 Industrial Remote Controller Pr](/content/items/named2-industrial-remote-controller-pr/) | 50 | 7 |
+| [T3 Harvesting Turret Unit](/content/items/named2-harvesting-turret-unit/) | 750 | 4 |
+| [T3 Hell Cannon](/content/items/named2-hell-cannon/) | 100 | – |
+| [T3 Hell Cannon Pr](/content/items/named2-hell-cannon-pr/) | 100 | 7 |
+| [T3 Hunter Remote Controller](/content/items/named2-hunter-remote-controller/) | 100 | – |
+| [T3 Hunter Remote Controller Pr](/content/items/named2-hunter-remote-controller-pr/) | 100 | 7 |
+| [T3 Industrial Remote Controller](/content/items/named2-industrial-remote-controller/) | 50 | – |
+| [T3 Industrial Remote Controller Pr](/content/items/named2-industrial-remote-controller-pr/) | 50 | 7 |
 | [Apparod Defragger kinetic armor](/content/items/named2-kin-armor-hardener/) | 100 | 5 |
 | [Apparod Defragger kinetic armor prototype](/content/items/named2-kin-armor-hardener-pr/) | 100 | 5 |
 | [Solitex-990 kinetic ERP](/content/items/named2-kinetic-kers/) | 200 | 7 |
 | [Solitex-990 kinetic ERP prototype](/content/items/named2-kinetic-kers-pr/) | 200 | 8 |
-| [Named2 Landmine Detector](/content/items/named2-landmine-detector/) | 100 | – |
-| [Named2 Landmine Detector Pr](/content/items/named2-landmine-detector-pr/) | 100 | 8 |
+| [T3 Landmine Detector](/content/items/named2-landmine-detector/) | 100 | – |
+| [T3 Landmine Detector Pr](/content/items/named2-landmine-detector-pr/) | 100 | 8 |
 | [Invigor III. heavy armor plate](/content/items/named2-large-armor-plate/) | 750 | – |
-| [Named2 Large Armor Plate Pr](/content/items/named2-large-armor-plate-pr/) | 750 | 6 |
+| [T3 Large Armor Plate Pr](/content/items/named2-large-armor-plate-pr/) | 750 | 6 |
 | [FO-330 'Reconstructor' large armor repairer](/content/items/named2-large-armor-repairer/) | 150 | – |
-| [Named2 Large Armor Repairer Pr](/content/items/named2-large-armor-repairer-pr/) | 150 | 7 |
+| [T3 Large Armor Repairer Pr](/content/items/named2-large-armor-repairer-pr/) | 150 | 7 |
 | [Nibott-I large auxiliary accumulator](/content/items/named2-large-core-battery/) | 300 | – |
-| [Named2 Large Core Battery Pr](/content/items/named2-large-core-battery-pr/) | 300 | 7 |
+| [T3 Large Core Battery Pr](/content/items/named2-large-core-battery-pr/) | 300 | 7 |
 | [CC90-Tensio large energy injector](/content/items/named2-large-core-booster/) | 300 | – |
-| [Named2 Large Core Booster Pr](/content/items/named2-large-core-booster-pr/) | 300 | 7 |
+| [T3 Large Core Booster Pr](/content/items/named2-large-core-booster-pr/) | 300 | 7 |
 | [Sublimator Hi-D large miner module](/content/items/named2-large-driller/) | 2.4k | – |
-| [Named2 Large Driller Pr](/content/items/named2-large-driller-pr/) | 2.4k | 7 |
-| [Named2 Large Harvester](/content/items/named2-large-harvester/) | 2.4k | – |
-| [Named2 Large Harvester Pr](/content/items/named2-large-harvester-pr/) | 2.4k | 7 |
+| [T3 Large Driller Pr](/content/items/named2-large-driller-pr/) | 2.4k | 7 |
+| [T3 Large Harvester](/content/items/named2-large-harvester/) | 2.4k | – |
+| [T3 Large Harvester Pr](/content/items/named2-large-harvester-pr/) | 2.4k | 7 |
 | [Thelotec-Apocalyptor heavy LCL laser](/content/items/named2-large-laser/) | 150 | – |
-| [Named2 Large Laser Pr](/content/items/named2-large-laser-pr/) | 150 | 7 |
+| [T3 Large Laser Pr](/content/items/named2-large-laser-pr/) | 150 | 7 |
 | [Nuimtec-Gaule heavy Gauss gun](/content/items/named2-large-railgun/) | 150 | – |
-| [Named2 Large Railgun Pr](/content/items/named2-large-railgun-pr/) | 150 | 7 |
+| [T3 Large Railgun Pr](/content/items/named2-large-railgun-pr/) | 150 | 7 |
 | [Gegel Ioner large shield generator](/content/items/named2-large-shield-generator/) | 300 | – |
-| [Named2 Large Shield Generator Pr](/content/items/named2-large-shield-generator-pr/) | 300 | 7 |
-| [Named2 Longrange Large Laser](/content/items/named2-longrange-large-laser/) | 150 | – |
-| [Named2 Longrange Large Laser Pr](/content/items/named2-longrange-large-laser-pr/) | 150 | 7 |
-| [Named2 Longrange Large Railgun](/content/items/named2-longrange-large-railgun/) | 150 | – |
-| [Named2 Longrange Large Railgun Pr](/content/items/named2-longrange-large-railgun-pr/) | 150 | 7 |
+| [T3 Large Shield Generator Pr](/content/items/named2-large-shield-generator-pr/) | 300 | 7 |
+| [T3 Longrange Large Laser](/content/items/named2-longrange-large-laser/) | 150 | – |
+| [T3 Longrange Large Laser Pr](/content/items/named2-longrange-large-laser-pr/) | 150 | 7 |
+| [T3 Longrange Large Railgun](/content/items/named2-longrange-large-railgun/) | 150 | – |
+| [T3 Longrange Large Railgun Pr](/content/items/named2-longrange-large-railgun-pr/) | 150 | 7 |
 | [Astoc M75 medium autocannon](/content/items/named2-longrange-medium-autocannon/) | 100 | 5 |
 | [Astoc M75 medium autocannon prototype](/content/items/named2-longrange-medium-autocannon-pr/) | 100 | 5 |
 | [Thelotec-Iocle I. medium HCL laser](/content/items/named2-longrange-medium-laser/) | 100 | 6 |
@@ -819,29 +819,29 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Ovostec-Yellowray II. medium shield generator prototype](/content/items/named2-medium-shield-generator-pr/) | 200 | 6 |
 | [Syverz geoscanner](/content/items/named2-mining-probe-module/) | 50 | 3 |
 | [Syverz geoscanner prototype](/content/items/named2-mining-probe-module-pr/) | 50 | 3 |
-| [Named2 Mining Turret Unit](/content/items/named2-mining-turret-unit/) | 750 | 4 |
+| [T3 Mining Turret Unit](/content/items/named2-mining-turret-unit/) | 750 | 4 |
 | [Fraktura SCV industrial tuning](/content/items/named2-mining-upgrade/) | 50 | 5 |
 | [Fraktura SCV industrial tuning prototype](/content/items/named2-mining-upgrade-pr/) | 50 | 5 |
 | [Vollert medium missile launcher](/content/items/named2-missile-launcher/) | 100 | 6 |
 | [Vollert medium missile launcher prototype](/content/items/named2-missile-launcher-pr/) | 100 | 6 |
-| [Named2 Nuimqol Combat Drone Unit](/content/items/named2-nuimqol-combat-drone-unit/) | 1.5k | 5 |
-| [Named2 Pelistal Combat Drone Unit](/content/items/named2-pelistal-combat-drone-unit/) | 1.5k | 5 |
+| [T3 Nuimqol Combat Drone Unit](/content/items/named2-nuimqol-combat-drone-unit/) | 1.5k | 5 |
+| [T3 Pelistal Combat Drone Unit](/content/items/named2-pelistal-combat-drone-unit/) | 1.5k | 5 |
 | [Palp coreactor](/content/items/named2-powergrid-upgrades/) | 200 | 5 |
 | [Palp coreactor prototype](/content/items/named2-powergrid-upgrades-pr/) | 200 | 5 |
-| [Named2 Raven Cannon](/content/items/named2-raven-cannon/) | 100 | – |
-| [Named2 Raven Cannon Pr](/content/items/named2-raven-cannon-pr/) | 100 | 7 |
+| [T3 Raven Cannon](/content/items/named2-raven-cannon/) | 100 | – |
+| [T3 Raven Cannon Pr](/content/items/named2-raven-cannon-pr/) | 100 | 7 |
 | [GRIP-250 reactor sealing](/content/items/named2-reactor-sealing/) | 100 | 5 |
 | [GRIP-250 reactor sealing prototype](/content/items/named2-reactor-sealing-pr/) | 100 | 5 |
-| [Named2 Remote Command Translator](/content/items/named2-remote-command-translator/) | 100 | – |
-| [Named2 Remote Command Translator Pr](/content/items/named2-remote-command-translator-pr/) | 100 | 7 |
+| [T3 Remote Command Translator](/content/items/named2-remote-command-translator/) | 100 | – |
+| [T3 Remote Command Translator Pr](/content/items/named2-remote-command-translator-pr/) | 100 | 7 |
 | [Da Gama-PLS10 remote sensor amplifier](/content/items/named2-remote-sensor-booster/) | 100 | 5 |
 | [Da Gama-PLS10 remote sensor amplifier prototype](/content/items/named2-remote-sensor-booster-pr/) | 100 | 5 |
 | [UNI300pls universal armor](/content/items/named2-resistant-plating/) | 100 | 5 |
 | [UNI300pls universal armor prototype](/content/items/named2-resistant-plating-pr/) | 100 | 5 |
 | [Morteq light missile launcher](/content/items/named2-rocket-launcher/) | 50 | 4 |
 | [Morteq light missile launcher prototype](/content/items/named2-rocket-launcher-pr/) | 50 | 4 |
-| [Named2 Self Destruct Module](/content/items/named2-self-destruct-module/) | 100 | – |
-| [Named2 Self Destruct Module Pr](/content/items/named2-self-destruct-module-pr/) | 100 | 7 |
+| [T3 Self Destruct Module](/content/items/named2-self-destruct-module/) | 100 | – |
+| [T3 Self Destruct Module Pr](/content/items/named2-self-destruct-module-pr/) | 100 | 7 |
 | [Desenspure sensor amplifier](/content/items/named2-sensor-booster/) | 50 | 5 |
 | [Desenspure sensor amplifier prototype](/content/items/named2-sensor-booster-pr/) | 50 | 5 |
 | [MSD m\2315 'Filch' sensor suppressor](/content/items/named2-sensor-dampener/) | 50 | 5 |
@@ -850,7 +850,7 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Wavoslur ECM prototype](/content/items/named2-sensor-jammer-pr/) | 50 | 5 |
 | [Radiocor sensor suppressor tuning](/content/items/named2-sensor-supressor-booster/) | 50 | 7 |
 | [Radiocor sensor suppressor tuning prototype](/content/items/named2-sensor-supressor-booster-pr/) | 50 | 7 |
-| [Named2 Sentry Turret Unit](/content/items/named2-sentry-turret-unit/) | 750 | 4 |
+| [T3 Sentry Turret Unit](/content/items/named2-sentry-turret-unit/) | 750 | 4 |
 | [Patronus shield hardener](/content/items/named2-shield-hardener/) | 50 | 5 |
 | [Patronus shield hardener prototype](/content/items/named2-shield-hardener-pr/) | 50 | 5 |
 | [Invigor I. light armor plate](/content/items/named2-small-armor-plate/) | 250 | 3 |
@@ -883,13 +883,13 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Ovostec-Yellowray small shield generator prototype](/content/items/named2-small-shield-generator-pr/) | 100 | 4 |
 | [MSMD signal masker](/content/items/named2-stealth-modul/) | 200 | 8 |
 | [MSMD signal masker prototype](/content/items/named2-stealth-modul-pr/) | 200 | 8 |
-| [Named2 Support Remote Controller](/content/items/named2-support-remote-controller/) | 50 | – |
-| [Named2 Support Remote Controller Pr](/content/items/named2-support-remote-controller-pr/) | 50 | 7 |
-| [Named2 Tactical Remote Controller](/content/items/named2-tactical-remote-controller/) | 50 | – |
-| [Named2 Tactical Remote Controller Pr](/content/items/named2-tactical-remote-controller-pr/) | 50 | 7 |
+| [T3 Support Remote Controller](/content/items/named2-support-remote-controller/) | 50 | – |
+| [T3 Support Remote Controller Pr](/content/items/named2-support-remote-controller-pr/) | 50 | 7 |
+| [T3 Tactical Remote Controller](/content/items/named2-tactical-remote-controller/) | 50 | – |
+| [T3 Tactical Remote Controller Pr](/content/items/named2-tactical-remote-controller-pr/) | 50 | 7 |
 | [Colqual target marker](/content/items/named2-target-painter/) | 200 | 6 |
 | [Colqual target marker prototype](/content/items/named2-target-painter-pr/) | 200 | 6 |
-| [Named2 Thelodica Combat Drone Unit](/content/items/named2-thelodica-combat-drone-unit/) | 1.5k | 5 |
+| [T3 Thelodica Combat Drone Unit](/content/items/named2-thelodica-combat-drone-unit/) | 1.5k | 5 |
 | [DE-melt thermal ERP](/content/items/named2-thermal-kers/) | 200 | 7 |
 | [DE-melt thermal ERP prototype](/content/items/named2-thermal-kers-pr/) | 200 | 8 |
 | [Thermoflake thermal armor](/content/items/named2-thrm-armor-hardener/) | 100 | 5 |
@@ -900,10 +900,10 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Sharpsy weapon stabilizer prototype](/content/items/named2-weapon-stabilizer-pr/) | 150 | 7 |
 | [NNt. IX S-demobilizer](/content/items/named2-webber/) | 100 | 5 |
 | [NNt. IX S-demobilizer prototype](/content/items/named2-webber-pr/) | 100 | 5 |
-| [Named3 Adaptive Alloy](/content/items/named3-adaptive-alloy/) | 200 | – |
-| [Named3 Adaptive Alloy Pr](/content/items/named3-adaptive-alloy-pr/) | 200 | 6 |
-| [Named3 Assault Remote Controller](/content/items/named3-assault-remote-controller/) | 50 | – |
-| [Named3 Assault Remote Controller Pr](/content/items/named3-assault-remote-controller-pr/) | 50 | 8 |
+| [T4 Adaptive Alloy](/content/items/named3-adaptive-alloy/) | 200 | – |
+| [T4 Adaptive Alloy Pr](/content/items/named3-adaptive-alloy-pr/) | 200 | 6 |
+| [T4 Assault Remote Controller](/content/items/named3-assault-remote-controller/) | 50 | – |
+| [T4 Assault Remote Controller Pr](/content/items/named3-assault-remote-controller-pr/) | 50 | 8 |
 | [Omini interference module](/content/items/named3-blob-emission-modulator/) | 50 | 8 |
 | [Omini interference module prototype](/content/items/named3-blob-emission-modulator-pr/) | 50 | 8 |
 | [Visioner cargo scanner](/content/items/named3-cargo-scanner/) | 50 | 6 |
@@ -920,14 +920,14 @@ Items that take this ore as a recipe component (amount per single production). F
 | [DVT-800g firearm tuning prototype](/content/items/named3-damage-mod-projectile-pr/) | 100 | 6 |
 | ['Rogue' signal detector](/content/items/named3-detection-modul/) | 200 | 9 |
 | ['Rogue' signal detector prototype](/content/items/named3-detection-modul-pr/) | 200 | 9 |
-| [Named3 Dreadnought Module](/content/items/named3-dreadnought-module/) | 2.4k | – |
-| [Named3 Dreadnought Module Pr](/content/items/named3-dreadnought-module-pr/) | 2.4k | 8 |
+| [T4 Dreadnought Module](/content/items/named3-dreadnought-module/) | 2.4k | – |
+| [T4 Dreadnought Module Pr](/content/items/named3-dreadnought-module-pr/) | 2.4k | 8 |
 | [Braviar ECCM](/content/items/named3-eccm/) | 50 | 5 |
 | [Braviar ECCM prototype](/content/items/named3-eccm-pr/) | 50 | 5 |
-| [Named3 Engineering Remote Controller](/content/items/named3-engineering-remote-controller/) | 50 | – |
-| [Named3 Engineering Remote Controller Pr](/content/items/named3-engineering-remote-controller-pr/) | 50 | 8 |
-| [Named3 Excavator Module](/content/items/named3-excavator-module/) | 2.4k | – |
-| [Named3 Excavator Module Pr](/content/items/named3-excavator-module-pr/) | 2.4k | 8 |
+| [T4 Engineering Remote Controller](/content/items/named3-engineering-remote-controller/) | 50 | – |
+| [T4 Engineering Remote Controller Pr](/content/items/named3-engineering-remote-controller-pr/) | 50 | 8 |
+| [T4 Excavator Module](/content/items/named3-excavator-module/) | 2.4k | – |
+| [T4 Excavator Module Pr](/content/items/named3-excavator-module-pr/) | 2.4k | 8 |
 | [R4S-A evasive NEXUS module](/content/items/named3-gang-assist-coordinated-maneuvering-module/) | 50 | 7 |
 | [R4S-A evasive NEXUS module prototype](/content/items/named3-gang-assist-coordinated-maneuvering-module-pr/) | 50 | 7 |
 | [Yzla-2500 EW NEXUS module](/content/items/named3-gang-assist-ewar-range-module/) | 50 | 7 |
@@ -936,23 +936,23 @@ Items that take this ore as a recipe component (amount per single production). F
 | [Matriot-IV fast extractor NEXUS module prototype](/content/items/named3-gang-assist-fast-extraction-module-pr/) | 50 | 7 |
 | [Rypoa industrial NEXUS module](/content/items/named3-gang-assist-industry-module/) | 50 | 7 |
 | [Rypoa industrial NEXUS module prototype](/content/items/named3-gang-assist-industry-module-pr/) | 50 | 7 |
-| [Named3 Harvesting Turret Unit](/content/items/named3-harvesting-turret-unit/) | 1k | 5 |
-| [Named3 Hunter Remote Controller](/content/items/named3-hunter-remote-controller/) | 200 | – |
-| [Named3 Hunter Remote Controller Pr](/content/items/named3-hunter-remote-controller-pr/) | 200 | 8 |
-| [Named3 Industrial Remote Controller](/content/items/named3-industrial-remote-controller/) | 50 | – |
-| [Named3 Industrial Remote Controller Pr](/content/items/named3-industrial-remote-controller-pr/) | 50 | 8 |
-| [Named3 Landmine Detector](/content/items/named3-landmine-detector/) | 100 | – |
-| [Named3 Landmine Detector Pr](/content/items/named3-landmine-detector-pr/) | 100 | 9 |
+| [T4 Harvesting Turret Unit](/content/items/named3-harvesting-turret-unit/) | 1k | 5 |
+| [T4 Hunter Remote Controller](/content/items/named3-hunter-remote-controller/) | 200 | – |
+| [T4 Hunter Remote Controller Pr](/content/items/named3-hunter-remote-controller-pr/) | 200 | 8 |
+| [T4 Industrial Remote Controller](/content/items/named3-industrial-remote-controller/) | 50 | – |
+| [T4 Industrial Remote Controller Pr](/content/items/named3-industrial-remote-controller-pr/) | 50 | 8 |
+| [T4 Landmine Detector](/content/items/named3-landmine-detector/) | 100 | – |
+| [T4 Landmine Detector Pr](/content/items/named3-landmine-detector-pr/) | 100 | 9 |
 | [Halc heavy armor plate](/content/items/named3-large-armor-plate/) | 750 | – |
-| [Named3 Large Armor Plate Pr](/content/items/named3-large-armor-plate-pr/) | 750 | 7 |
+| [T4 Large Armor Plate Pr](/content/items/named3-large-armor-plate-pr/) | 750 | 7 |
 | [Pheter Charge-L large auxiliary accumulator](/content/items/named3-large-core-battery/) | 300 | – |
-| [Named3 Large Core Battery Pr](/content/items/named3-large-core-battery-pr/) | 300 | 8 |
+| [T4 Large Core Battery Pr](/content/items/named3-large-core-battery-pr/) | 300 | 8 |
 | [Rymur DTTO large energy injector](/content/items/named3-large-core-booster/) | 300 | – |
-| [Named3 Large Core Booster Pr](/content/items/named3-large-core-booster-pr/) | 300 | 8 |
+| [T4 Large Core Booster Pr](/content/items/named3-large-core-booster-pr/) | 300 | 8 |
 | [Pellex large miner module](/content/items/named3-large-driller/) | 2.4k | – |
-| [Named3 Large Driller Pr](/content/items/named3-large-driller-pr/) | 2.4k | 8 |
-| [Named3 Large Harvester](/content/items/named3-large-harvester/) | 2.4k | – |
-| [Named3 Large Harvester Pr](/content/items/named3-large-harvester-pr/) | 2.4k | 8 |
+| [T4 Large Driller Pr](/content/items/named3-large-driller-pr/) | 2.4k | 8 |
+| [T4 Large Harvester](/content/items/named3-large-harvester/) | 2.4k | – |
+| [T4 Large Harvester Pr](/content/items/named3-large-harvester-pr/) | 2.4k | 8 |
 | [Znatvoy-Berjiar-IA medium autocannon](/content/items/named3-longrange-medium-autocannon/) | 100 | 6 |
 | [Znatvoy-Berjiar-IA medium autocannon prototype](/content/items/named3-longrange-medium-autocannon-pr/) | 100 | 6 |
 | [TDR25 L-demobilizer](/content/items/named3-longrange-webber/) | 100 | 9 |
@@ -981,24 +981,24 @@ Items that take this ore as a recipe component (amount per single production). F
 | [ALS medium remote armor repairer prototype](/content/items/named3-medium-remote-armor-repairer-pr/) | 200 | 7 |
 | [Eksplor-q3000 geoscanner](/content/items/named3-mining-probe-module/) | 50 | 4 |
 | [Eksplor-q3000 geoscanner prototype](/content/items/named3-mining-probe-module-pr/) | 50 | 4 |
-| [Named3 Mining Turret Unit](/content/items/named3-mining-turret-unit/) | 1k | 5 |
+| [T4 Mining Turret Unit](/content/items/named3-mining-turret-unit/) | 1k | 5 |
 | [Piog Forgekit BW1 industrial tuning](/content/items/named3-mining-upgrade/) | 50 | 6 |
 | [Piog Forgekit BW1 industrial tuning prototype](/content/items/named3-mining-upgrade-pr/) | 50 | 6 |
-| [Named3 Nuimqol Combat Drone Unit](/content/items/named3-nuimqol-combat-drone-unit/) | 2k | 6 |
-| [Named3 Pelistal Combat Drone Unit](/content/items/named3-pelistal-combat-drone-unit/) | 2k | 6 |
+| [T4 Nuimqol Combat Drone Unit](/content/items/named3-nuimqol-combat-drone-unit/) | 2k | 6 |
+| [T4 Pelistal Combat Drone Unit](/content/items/named3-pelistal-combat-drone-unit/) | 2k | 6 |
 | [E-set 15VaW coreactor](/content/items/named3-powergrid-upgrades/) | 200 | 6 |
 | [E-set 15VaW coreactor prototype](/content/items/named3-powergrid-upgrades-pr/) | 200 | 6 |
 | [GRIP-500p reactor sealing](/content/items/named3-reactor-sealing/) | 100 | 6 |
 | [GRIP-500p reactor sealing prototype](/content/items/named3-reactor-sealing-pr/) | 100 | 6 |
-| [Named3 Remote Command Translator](/content/items/named3-remote-command-translator/) | 200 | – |
-| [Named3 Remote Command Translator Pr](/content/items/named3-remote-command-translator-pr/) | 200 | 8 |
+| [T4 Remote Command Translator](/content/items/named3-remote-command-translator/) | 200 | – |
+| [T4 Remote Command Translator Pr](/content/items/named3-remote-command-translator-pr/) | 200 | 8 |
 | [Ambassador-RU2 remote sensor amplifier](/content/items/named3-remote-sensor-booster/) | 100 | 6 |
 | [Ambassador-RU2 remote sensor amplifier prototype](/content/items/named3-remote-sensor-booster-pr/) | 100 | 6 |
-| [Named3 Self Destruct Module](/content/items/named3-self-destruct-module/) | 200 | – |
-| [Named3 Self Destruct Module Pr](/content/items/named3-self-destruct-module-pr/) | 200 | 8 |
+| [T4 Self Destruct Module](/content/items/named3-self-destruct-module/) | 200 | – |
+| [T4 Self Destruct Module Pr](/content/items/named3-self-destruct-module-pr/) | 200 | 8 |
 | [Ambassador SU-I sensor amplifier](/content/items/named3-sensor-booster/) | 50 | 6 |
 | [Ambassador SU-I sensor amplifier prototype](/content/items/named3-sensor-booster-pr/) | 50 | 6 |
-| [Named3 Sentry Turret Unit](/content/items/named3-sentry-turret-unit/) | 1k | 5 |
+| [T4 Sentry Turret Unit](/content/items/named3-sentry-turret-unit/) | 1k | 5 |
 | [Karapas light armor plate](/content/items/named3-small-armor-plate/) | 250 | 4 |
 | [Karapas light armor plate prototype](/content/items/named3-small-armor-plate-pr/) | 250 | 4 |
 | [Astoc M45 light autocannon](/content/items/named3-small-autocannon/) | 50 | 4 |
@@ -1019,13 +1019,13 @@ Items that take this ore as a recipe component (amount per single production). F
 | [PPDT-Apadisiator small remote armor repairer prototype](/content/items/named3-small-remote-armor-repairer-pr/) | 100 | 5 |
 | [Longlag signal masker](/content/items/named3-stealth-modul/) | 200 | 9 |
 | [Longlag signal masker prototype](/content/items/named3-stealth-modul-pr/) | 200 | 9 |
-| [Named3 Support Remote Controller](/content/items/named3-support-remote-controller/) | 50 | – |
-| [Named3 Support Remote Controller Pr](/content/items/named3-support-remote-controller-pr/) | 50 | 8 |
-| [Named3 Tactical Remote Controller](/content/items/named3-tactical-remote-controller/) | 50 | – |
-| [Named3 Tactical Remote Controller Pr](/content/items/named3-tactical-remote-controller-pr/) | 50 | 8 |
+| [T4 Support Remote Controller](/content/items/named3-support-remote-controller/) | 50 | – |
+| [T4 Support Remote Controller Pr](/content/items/named3-support-remote-controller-pr/) | 50 | 8 |
+| [T4 Tactical Remote Controller](/content/items/named3-tactical-remote-controller/) | 50 | – |
+| [T4 Tactical Remote Controller Pr](/content/items/named3-tactical-remote-controller-pr/) | 50 | 8 |
 | [Pulsus target marker](/content/items/named3-target-painter/) | 200 | 7 |
 | [Pulsus target marker prototype](/content/items/named3-target-painter-pr/) | 200 | 7 |
-| [Named3 Thelodica Combat Drone Unit](/content/items/named3-thelodica-combat-drone-unit/) | 2k | 6 |
+| [T4 Thelodica Combat Drone Unit](/content/items/named3-thelodica-combat-drone-unit/) | 2k | 6 |
 | [ATCS-gh50 range extender](/content/items/named3-tracking-upgrade/) | 100 | 6 |
 | [ATCS-gh50 range extender prototype](/content/items/named3-tracking-upgrade-pr/) | 100 | 6 |
 | [Kobel 300-XZ weapon stabilizer](/content/items/named3-weapon-stabilizer/) | 150 | 7 |

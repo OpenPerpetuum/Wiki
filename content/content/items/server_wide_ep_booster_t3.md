@@ -23,5 +23,3 @@ description: "Special & other / Miscellaneous, tier T3"
 |---|---|
 | server_wide_ep_bonus | 20 |
 | server_wide_ep_bonus_duration | 168 |
-
-[All items](/content/items/)

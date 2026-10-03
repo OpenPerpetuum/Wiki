@@ -11,20 +11,20 @@ description: "Every mission by type and tier: reward fee, duration, and the rewa
 One section per **mission type**; each tier is a card. **Reward fee** is the credit payout (a range when a tier has several zone variants); **rewards** are the item drops (quantity range and drop probability, 100 = guaranteed). See [Missions](/features/missions/) in the features section for how missions work.
 
 <div class="mission-index">
-[<span class="mission-type-chip">Defend and mine</span>](#defend-and-mine)&ensp;
-[<span class="mission-type-chip">Industrial courier</span>](#industrial-courier)&ensp;
-[<span class="mission-type-chip">Hunt the scout</span>](#hunt-the-scout)&ensp;
-[<span class="mission-type-chip">Kill and fetch</span>](#kill-and-fetch)&ensp;
-[<span class="mission-type-chip">Kill only</span>](#kill-only)&ensp;
-[<span class="mission-type-chip">Retrieve</span>](#retrieve)&ensp;
-[<span class="mission-type-chip">Courier</span>](#courier)&ensp;
-[<span class="mission-type-chip">Storyline</span>](#storyline)&ensp;
-[<span class="mission-type-chip">General training</span>](#general-training)&ensp;
-[<span class="mission-type-chip">Combat training</span>](#combat-training)&ensp;
-[<span class="mission-type-chip">Industrial training</span>](#industrial-training)&ensp;
-[<span class="mission-type-chip">Scan</span>](#scan)&ensp;
-[<span class="mission-type-chip">Mining</span>](#mining)&ensp;
-[<span class="mission-type-chip">Scan and loot</span>](#scan-and-loot)&ensp;
+<a href="#defend-and-mine"><span class="mission-type-chip">Defend and mine</span></a>&ensp;
+<a href="#industrial-courier"><span class="mission-type-chip">Industrial courier</span></a>&ensp;
+<a href="#hunt-the-scout"><span class="mission-type-chip">Hunt the scout</span></a>&ensp;
+<a href="#kill-and-fetch"><span class="mission-type-chip">Kill and fetch</span></a>&ensp;
+<a href="#kill-only"><span class="mission-type-chip">Kill only</span></a>&ensp;
+<a href="#retrieve"><span class="mission-type-chip">Retrieve</span></a>&ensp;
+<a href="#courier"><span class="mission-type-chip">Courier</span></a>&ensp;
+<a href="#storyline"><span class="mission-type-chip">Storyline</span></a>&ensp;
+<a href="#general-training"><span class="mission-type-chip">General training</span></a>&ensp;
+<a href="#combat-training"><span class="mission-type-chip">Combat training</span></a>&ensp;
+<a href="#industrial-training"><span class="mission-type-chip">Industrial training</span></a>&ensp;
+<a href="#scan"><span class="mission-type-chip">Scan</span></a>&ensp;
+<a href="#mining"><span class="mission-type-chip">Mining</span></a>&ensp;
+<a href="#scan-and-loot"><span class="mission-type-chip">Scan and loot</span></a>&ensp;
 </div>
 
 <a id="defend-and-mine"></a>

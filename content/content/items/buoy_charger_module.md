@@ -27,5 +27,3 @@ description: "Modules / Enhancements, tier T1"
 | falloff | 0 |
 | optimal_range | 35 |
 | powergrid_usage | 55 |
-
-[All items](/content/items/)

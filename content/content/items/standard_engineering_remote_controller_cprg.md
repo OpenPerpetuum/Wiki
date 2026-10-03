@@ -16,8 +16,6 @@ description: "Modules / Remote control, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Remote control |
-| Tier line | **Standard Engineering Remote Controller Cprg** (T1) → [Named1 Engineering Remote Controller Cprg](/content/items/named1-engineering-remote-controller-cprg/) (T2) → [Named2 Engineering Remote Controller Cprg](/content/items/named2-engineering-remote-controller-cprg/) (T3) → [Named3 Engineering Remote Controller Cprg](/content/items/named3-engineering-remote-controller-cprg/) (T4) |
+| Tier line | **Standard Engineering Remote Controller Cprg** (T1) → [T2 Engineering Remote Controller Cprg](/content/items/named1-engineering-remote-controller-cprg/) (T2) → [T3 Engineering Remote Controller Cprg](/content/items/named2-engineering-remote-controller-cprg/) (T3) → [T4 Engineering Remote Controller Cprg](/content/items/named3-engineering-remote-controller-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

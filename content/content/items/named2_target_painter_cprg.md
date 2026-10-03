@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard target marker CT](/content/items/standard-target-painter-cprg/) (T1) → [Pois-D22 target marker CT](/content/items/named1-target-painter-cprg/) (T2) → **Colqual target marker CT** (T3) → [Pulsus target marker CT](/content/items/named3-target-painter-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

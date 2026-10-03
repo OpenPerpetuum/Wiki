@@ -18,5 +18,3 @@ description: "Production"
 | Category | Production |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

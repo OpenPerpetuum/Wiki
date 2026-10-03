@@ -66,39 +66,8 @@ public static class SparksPage
 
             """);
 
-        sb.Append("<!-- sparkfamilies:generated -->\n");
-        sb.Append("<a id=\"families\"></a>\n\n");
-        sb.Append("## Spark families\n\n");
-        sb.Append($"The {sparkCount} sparks in {families.Count} families at a glance: one box per family " +
-                  "(spark count, how the line unlocks), left to right in the order the lines were added. " +
-                  "**Click a box to jump to that family's sparks below.** " +
-                  "**Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.\n\n");
-        sb.Append("<div class=\"map-zoom-wrap sparkfam-wrap\">\n");
-        sb.Append("<button type=\"button\" class=\"zoommap-reset\" title=\"Reset the zoom\">\u27f2</button>\n");
-        var tag = familySvg.IndexOf("<svg ", StringComparison.Ordinal);
-        sb.Append(familySvg.Insert(tag + 5, "class=\"zoommap\" "));
-        sb.Append("</div>\n\n");
-
-        foreach (var f in families)
-        {
-            sb.Append($"<a id=\"family-{f.Slug}\"></a>\n\n");
-            sb.Append($"### {Escape(f.Label)} ({f.Sparks.Count})\n\n");
-            sb.Append($"Unlock: {f.Unlock}. Each switch costs NIC (the amount is per spark, see the cards) " +
-                      "and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.\n\n");
-            sb.Append("<div class=\"ext-cards\">\n");
-            foreach (var s in f.Sparks)
-            {
-                sb.Append("<div class=\"ext-card\">\n");
-                sb.Append($"<div class=\"ext-card-name\">{Escape(s.Label)}</div>\n");
-                sb.Append($"<div class=\"ext-card-meta\">unlock <span class=\"{(s.IsPrice ? "ext-val-price" : "ext-val-bonus")}\">{Escape(s.Unlock)}</span>" +
-                          $" · switch <span class=\"ext-val-price\">{Escape(s.Switch)}</span></div>\n");
-                // raw HTML: Zola does not run the markdown parser inside HTML blocks
-                sb.Append($"<div class=\"ext-card-prereq\">{(s.Default ? "Default spark — installed at character creation" : $"Bundles {s.Bundle} extension level{(s.Bundle == 1 ? "" : "s")}")}</div>\n");
-                sb.Append("</div>\n");
-            }
-            sb.Append("</div>\n\n");
-        }
-
+        // Switching rules come BEFORE the family catalog: a reader deciding
+        // whether a different spark is worth it needs the cost/cooldown first.
         sb.Append("""
             <a id="switching-sparks"></a>
 
@@ -114,6 +83,46 @@ public static class SparksPage
             matches the activity you are spending the most time on, and treat re-
             specializing as an occasional decision rather than a per-session one.
 
+            """);
+
+        sb.Append("<!-- sparkfamilies:generated -->\n");
+        sb.Append("<a id=\"families\"></a>\n\n");
+        sb.Append("## Spark families\n\n");
+        sb.Append($"The {sparkCount} sparks in {families.Count} families at a glance: one box per family " +
+                  "(spark count, how the line unlocks), in the order the lines were added " +
+                  "(left to right, top to bottom). **Click a box to jump to that family's " +
+                  "sparks below.** " +
+                  "**Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.\n\n");
+        sb.Append("<div class=\"map-zoom-wrap sparkfam-wrap\">\n");
+        sb.Append("<button type=\"button\" class=\"zoommap-reset\" title=\"Reset the zoom\">\u27f2</button>\n");
+        var tag = familySvg.IndexOf("<svg ", StringComparison.Ordinal);
+        sb.Append(familySvg.Insert(tag + 5, "class=\"zoommap\" "));
+        sb.Append("</div>\n\n");
+
+        foreach (var f in families)
+        {
+            sb.Append($"<a id=\"family-{f.Slug}\"></a>\n\n");
+            sb.Append($"### {Escape(f.Label)} ({f.Sparks.Count})\n\n");
+            sb.Append($"Unlock: {f.Unlock}. Each switch costs NIC (the amount is per spark, see the cards) " +
+                      "and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.\n\n");
+            sb.Append("<div class=\"ext-cards\">\n");
+            foreach (var s in f.Sparks)
+            {
+                sb.Append("<div class=\"ext-card\">\n");
+                sb.Append($"<div class=\"ext-card-name\">{Escape(s.Label)}</div>\n");
+                sb.Append($"<div class=\"ext-card-meta\">unlock <span class=\"{(s.IsPrice ? "ext-val-price" : "ext-val-bonus")}\">{Escape(s.Unlock)}</span>" +
+                          $" · switch <span class=\"ext-val-price\">{Escape(s.Switch)}</span></div>\n");
+                // raw HTML: Zola does not run the markdown parser inside HTML blocks
+                sb.Append($"<div class=\"ext-card-prereq\">{(s.Default ? "Default spark — installed at character creation" : $"Bundles {s.Bundle} extension level{(s.Bundle == 1 ? "" : "s")}")}</div>\n");
+                sb.Append("</div>\n");
+            }
+            sb.Append("</div>\n\n");
+        }
+
+        // The generated block now extends to the end of the file; the trailer
+        // comment below is part of it (tools/gen_spark_families.py preserves
+        // everything from the last <!-- through to EOF verbatim).
+        sb.Append("""
             <!--
             Written from scratch against the server backend, 2026-09-27:
             RequestHandlers/Sparks/SparkUnlock.cs (unlock rules: price, standing, item),

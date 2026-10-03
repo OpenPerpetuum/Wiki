@@ -24,5 +24,3 @@ description: "Special & other / Miscellaneous"
 | armor_max_modifier | 1 |
 | locking_range_modifier | 4 |
 | signature_radius_modifier | 4 |
-
-[All items](/content/items/)

@@ -1,6 +1,6 @@
 // The sparks page: the generated family overview graph (boxes link to the
 // per-family sections) and the per-spark cards, plus the hand-written prose
-// (unlock rules, the connection tree, switching) that the generator carries.
+// (unlock rules, switching) that the generator carries.
 const { test, expect } = require("@playwright/test");
 
 const SPARKS = "/features/sparks/";
@@ -20,6 +20,11 @@ test("sparks page: family boxes link to per-family card sections", async ({ page
   // the overview graph: one box per family, each a real link to #family-<slug>
   const boxes = page.locator(".sparkfam-wrap svg a[href^='#family-']");
   expect(await boxes.count()).toBe(6);
+  // compact layout: 3 columns x 2 rows (6 boxes in one row was unreadably small)
+  const vb = await page.locator(".sparkfam-wrap svg").getAttribute("viewBox");
+  const [, , vw, vh] = vb.split(" ").map(Number); // x y width height
+  expect(vw).toBeLessThan(1100); // 3 boxes wide, not 6
+  expect(vh).toBeGreaterThan(150); // two rows tall
   const hrefs = [];
   for (const b of await boxes.all()) hrefs.push(await b.getAttribute("href"));
   for (const h of ["#family-special", "#family-tm", "#family-ics", "#family-asi", "#family-syndicate", "#family-limited"]) {
@@ -50,6 +55,15 @@ test("sparks page: family boxes link to per-family card sections", async ({ page
   // the old vertical connection tree is gone (family cards replaced it)
   expect(await page.locator("img[src='/sparks-tree.svg']").count()).toBe(0);
   expect(await page.locator("#tree").count()).toBe(0);
+
+  // the switching-sparks rules come BEFORE the family catalog (a reader
+  // deciding about a switch needs the cost/cooldown before the 47 cards)
+  const order = await page.evaluate(() => {
+    const sw = document.getElementById("switching-sparks");
+    const fam = document.getElementById("families");
+    return sw && fam && sw.compareDocumentPosition(fam) & Node.DOCUMENT_POSITION_FOLLOWING;
+  });
+  expect(order).toBeTruthy();
 
   // clicking a family box scrolls to the family section (the anchor keeps the
   // heading below the sticky topbar — scroll-margin-top on [id] elements)

@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T4"
 | Tier line | [Tertzer medium HCL laser CT](/content/items/named1-longrange-medium-laser-cprg/) (T2) → [Thelotec-Iocle I. medium HCL laser CT](/content/items/named2-longrange-medium-laser-cprg/) (T3) → **Phisker 30PW medium HCL laser CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

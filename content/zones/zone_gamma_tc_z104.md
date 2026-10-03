@@ -24,21 +24,4 @@ A small transit zone of the frontier belt — a pure travel node with no ore con
 | Plant species | 12 (rule set 24) |
 | PBS tech limit | 0 |
 | Max docking bases | none |
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Novastrov](/zones/zone-ics-pvp/) (1 TP point)
-- → [zone_gamma_z109](/zones/zone-gamma-z109/) (1 TP point)
-- → [zone_gamma_z111](/zones/zone-gamma-z111/) (1 TP point)
-- → [zone_gamma_z137](/zones/zone-gamma-z137/) (1 TP point)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Novastrov](/zones/zone-ics-pvp/) (1 TP point)
-- ← [zone_gamma_z109](/zones/zone-gamma-z109/) (1 TP point)
-- ← [zone_gamma_z111](/zones/zone-gamma-z111/) (1 TP point)
-- ← [zone_gamma_z137](/zones/zone-gamma-z137/) (1 TP point)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#t0) · [Protection levels](/zones/protection/)

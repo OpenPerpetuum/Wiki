@@ -16,8 +16,6 @@ description: "Modules / Enhancements, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Enhancements |
-| Tier line | **Standard Large Driller Cprg** (T1) → [Named1 Large Driller Cprg](/content/items/named1-large-driller-cprg/) (T2) → [Named2 Large Driller Cprg](/content/items/named2-large-driller-cprg/) (T3) → [Named3 Large Driller Cprg](/content/items/named3-large-driller-cprg/) (T4) |
+| Tier line | **Standard Large Driller Cprg** (T1) → [T2 Large Driller Cprg](/content/items/named1-large-driller-cprg/) (T2) → [T3 Large Driller Cprg](/content/items/named2-large-driller-cprg/) (T3) → [T4 Large Driller Cprg](/content/items/named3-large-driller-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

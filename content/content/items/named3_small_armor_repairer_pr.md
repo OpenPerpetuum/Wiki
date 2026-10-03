@@ -33,38 +33,14 @@ description: "Modules / Repair, tier T4 (prototype)"
 
 **Produced from 9 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Microforge Aestolar small armor repairer prototype"]:::current
-    b["Alligior ×200"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Chollonin ×50"]:::comp
-    c --> a
-    click c "/content/items/chollonin/" "Chollonin"
-    d["Espitium ×50"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Quissot's small armor repairer ×1"]:::comp
-    e --> a
-    click e "/content/items/named2-small-armor-repairer/" "Quissot's small armor repairer"
-    f["Functional common fragment ×30"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    g["Damaged common fragment ×15"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    h["Perfect common fragment ×45"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    i["Statichnol ×200"]:::comp
-    i --> a
-    click i "/content/items/statichnol/" "Statichnol"
-    j["Briochit ×100"]:::comp
-    j --> a
-    click j "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/chollonin/">Chollonin</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-tree"/></svg><a class="prod-card-name" href="/content/items/named2-small-armor-repairer/">Quissot's small armor repairer</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/statichnol/">Statichnol</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

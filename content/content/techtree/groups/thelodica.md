@@ -10,7 +10,19 @@ description: "Thelodica (faction) research category: 87 nodes."
 
 Research for the Thelodica Clan faction: its named weapons and the modules that fight alongside them.
 
-[Tech tree](/content/techtree/) → Thelodica (faction). Every node in the diagram links to its detail page (prerequisites, what it unlocks next, point prices).
+[Tech tree](/content/techtree/) → Thelodica (faction). The category is split into its **research lines** — one per top-level item (the chips above jump to each line's graph). Every node in a graph links to its detail page (prerequisites, what it unlocks next, point prices).
+
+<div class="tt-index">
+<a href="#line-14"><span class="tt-chip">Light armor plate</span></a>&ensp;
+<a href="#line-51"><span class="tt-chip">Sensor suppressor</span></a>&ensp;
+<a href="#line-57"><span class="tt-chip">Light HCL laser</span></a>&ensp;
+</div>
+
+<a id="line-14"></a>
+
+## Standard light armor plate
+
+**28 nodes** — everything that descends from [Standard light armor plate](/content/techtree/nodes/standard-small-armor-plate/).
 
 ```mermaid
 graph TD
@@ -18,15 +30,152 @@ graph TD
     n16["Standard medium armor plate"]
     n17["Standard large armor plate"]
     n26["Standard kinetic armor"]
+    n684["Wobost-Titangrip light armor plate"]
+    n685["Invigor I. light armor plate"]
+    n686["Karapas light armor plate"]
+    n687["Azilo-Protec Duoforge medium armor plate"]
+    n688["Invigor II. medium armor plate"]
+    n689["THL-Testudo medium armor plate"]
+    n690["Vorbol p113 heavy armor plate"]
+    n691["Invigor III. heavy armor plate"]
+    n692["Halc heavy armor plate"]
+    n713["Counterpress I-230 kinetic armor"]
+    n717["Apparod Defragger kinetic armor"]
+    n721["Grampier-VK kinetic armor"]
+    n877["Standard armor NEXUS module"]
+    n951["Standard universal armor"]
+    n954["Diverter universal armor"]
+    n955["UNI300pls universal armor"]
+    n956["Aegis UAP-10XL universal armor"]
+    n2580["Starodix armor NEXUS module"]
+    n2581["Paternis armor NEXUS module"]
+    n2582["TSP-Hindoo armor NEXUS module"]
+    n3256["Standard kinetic ERP"]
+    n3294["Hegatex-1000 kinetic ERP"]
+    n3295["Solitex-990 kinetic ERP"]
+    n3296["Emerolyte kinetic ERP"]
+    n684 --> n16
+    n954 --> n17
+    n14 --> n26
+    n14 --> n684
+    n684 --> n685
+    n685 --> n686
+    n16 --> n687
+    n687 --> n688
+    n688 --> n689
+    n17 --> n690
+    n690 --> n691
+    n691 --> n692
+    n26 --> n713
+    n713 --> n717
+    n717 --> n721
+    n954 --> n877
+    n687 --> n951
+    n951 --> n954
+    n954 --> n955
+    n955 --> n956
+    n877 --> n2580
+    n2580 --> n2581
+    n2581 --> n2582
+    n713 --> n3256
+    n3256 --> n3294
+    n3294 --> n3295
+    n3295 --> n3296
+    click n14 "/content/techtree/nodes/standard-small-armor-plate/" "Standard light armor plate"
+    click n16 "/content/techtree/nodes/standard-medium-armor-plate/" "Standard medium armor plate"
+    click n17 "/content/techtree/nodes/standard-large-armor-plate/" "Standard large armor plate"
+    click n26 "/content/techtree/nodes/standard-kin-armor-hardener/" "Standard kinetic armor"
+    click n684 "/content/techtree/nodes/named1-small-armor-plate/" "Wobost-Titangrip light armor plate"
+    click n685 "/content/techtree/nodes/named2-small-armor-plate/" "Invigor I. light armor plate"
+    click n686 "/content/techtree/nodes/named3-small-armor-plate/" "Karapas light armor plate"
+    click n687 "/content/techtree/nodes/named1-medium-armor-plate/" "Azilo-Protec Duoforge medium armor plate"
+    click n688 "/content/techtree/nodes/named2-medium-armor-plate/" "Invigor II. medium armor plate"
+    click n689 "/content/techtree/nodes/named3-medium-armor-plate/" "THL-Testudo medium armor plate"
+    click n690 "/content/techtree/nodes/named1-large-armor-plate/" "Vorbol p113 heavy armor plate"
+    click n691 "/content/techtree/nodes/named2-large-armor-plate/" "Invigor III. heavy armor plate"
+    click n692 "/content/techtree/nodes/named3-large-armor-plate/" "Halc heavy armor plate"
+    click n713 "/content/techtree/nodes/named1-kin-armor-hardener/" "Counterpress I-230 kinetic armor"
+    click n717 "/content/techtree/nodes/named2-kin-armor-hardener/" "Apparod Defragger kinetic armor"
+    click n721 "/content/techtree/nodes/named3-kin-armor-hardener/" "Grampier-VK kinetic armor"
+    click n877 "/content/techtree/nodes/standard-gang-assist-defense-module/" "Standard armor NEXUS module"
+    click n951 "/content/techtree/nodes/standard-resistant-plating/" "Standard universal armor"
+    click n954 "/content/techtree/nodes/named1-resistant-plating/" "Diverter universal armor"
+    click n955 "/content/techtree/nodes/named2-resistant-plating/" "UNI300pls universal armor"
+    click n956 "/content/techtree/nodes/named3-resistant-plating/" "Aegis UAP-10XL universal armor"
+    click n2580 "/content/techtree/nodes/named1-gang-assist-defense-module/" "Starodix armor NEXUS module"
+    click n2581 "/content/techtree/nodes/named2-gang-assist-defense-module/" "Paternis armor NEXUS module"
+    click n2582 "/content/techtree/nodes/named3-gang-assist-defense-module/" "TSP-Hindoo armor NEXUS module"
+    click n3256 "/content/techtree/nodes/standard-kinetic-kers/" "Standard kinetic ERP"
+    click n3294 "/content/techtree/nodes/named1-kinetic-kers/" "Hegatex-1000 kinetic ERP"
+    click n3295 "/content/techtree/nodes/named2-kinetic-kers/" "Solitex-990 kinetic ERP"
+    click n3296 "/content/techtree/nodes/named3-kinetic-kers/" "Emerolyte kinetic ERP"
+```
+
+<a id="line-51"></a>
+
+## Standard sensor suppressor
+
+**14 nodes** — everything that descends from [Standard sensor suppressor](/content/techtree/nodes/standard-sensor-dampener/).
+
+```mermaid
+graph TD
     n51["Standard sensor suppressor"]
+    n200["Intakt"]
+    n212["Zenith"]
+    n792["Suboster I. sensor suppressor"]
+    n793["MSD m\2315 'Filch' sensor suppressor"]
+    n794["Stellis sensor suppressor"]
+    n874["Standard farlock NEXUS module"]
+    n2571["Gecko D-1500 farlock NEXUS module"]
+    n2572["Martimal farlock NEXUS module"]
+    n2573["Gecko M-2000 farlock NEXUS module"]
+    n4579["Standard sensor suppressor tuning"]
+    n4590["DDX200-Veil sensor suppressor tuning"]
+    n4591["Radiocor sensor suppressor tuning"]
+    n4592["DDX700-Mist sensor suppressor tuning"]
+    n51 --> n200
+    n793 --> n212
+    n51 --> n792
+    n792 --> n793
+    n793 --> n794
+    n212 --> n874
+    n874 --> n2571
+    n2571 --> n2572
+    n2572 --> n2573
+    n792 --> n4579
+    n4579 --> n4590
+    n4590 --> n4591
+    n4591 --> n4592
+    click n51 "/content/techtree/nodes/standard-sensor-dampener/" "Standard sensor suppressor"
+    click n200 "/content/techtree/nodes/intakt/" "Intakt"
+    click n212 "/content/techtree/nodes/zenith/" "Zenith"
+    click n792 "/content/techtree/nodes/named1-sensor-dampener/" "Suboster I. sensor suppressor"
+    click n793 "/content/techtree/nodes/named2-sensor-dampener/" "MSD m\2315 'Filch' sensor suppressor"
+    click n794 "/content/techtree/nodes/named3-sensor-dampener/" "Stellis sensor suppressor"
+    click n874 "/content/techtree/nodes/standard-gang-assist-information-module/" "Standard farlock NEXUS module"
+    click n2571 "/content/techtree/nodes/named1-gang-assist-information-module/" "Gecko D-1500 farlock NEXUS module"
+    click n2572 "/content/techtree/nodes/named2-gang-assist-information-module/" "Martimal farlock NEXUS module"
+    click n2573 "/content/techtree/nodes/named3-gang-assist-information-module/" "Gecko M-2000 farlock NEXUS module"
+    click n4579 "/content/techtree/nodes/standard-sensor-supressor-booster/" "Standard sensor suppressor tuning"
+    click n4590 "/content/techtree/nodes/named1-sensor-supressor-booster/" "DDX200-Veil sensor suppressor tuning"
+    click n4591 "/content/techtree/nodes/named2-sensor-supressor-booster/" "Radiocor sensor suppressor tuning"
+    click n4592 "/content/techtree/nodes/named3-sensor-supressor-booster/" "DDX700-Mist sensor suppressor tuning"
+```
+
+<a id="line-57"></a>
+
+## Standard light HCL laser
+
+**45 nodes** — everything that descends from [Standard light HCL laser](/content/techtree/nodes/standard-small-laser/).
+
+```mermaid
+graph TD
     n57["Standard light HCL laser"]
     n58["Standard medium LCL laser"]
     n59["Standard heavy LCL laser"]
     n194["Prometheus"]
-    n200["Intakt"]
     n202["Baphomet"]
     n206["Artemis"]
-    n212["Zenith"]
     n214["Seth"]
     n271["Small chemoactive energy cell"]
     n272["Small sonic energy cell"]
@@ -40,21 +189,6 @@ graph TD
     n280["Large sonic energy cell"]
     n281["Large photokinetic energy cell"]
     n282["Large thermic energy cell"]
-    n684["Wobost-Titangrip light armor plate"]
-    n685["Invigor I. light armor plate"]
-    n686["Karapas light armor plate"]
-    n687["Azilo-Protec Duoforge medium armor plate"]
-    n688["Invigor II. medium armor plate"]
-    n689["THL-Testudo medium armor plate"]
-    n690["Vorbol p113 heavy armor plate"]
-    n691["Invigor III. heavy armor plate"]
-    n692["Halc heavy armor plate"]
-    n713["Counterpress I-230 kinetic armor"]
-    n717["Apparod Defragger kinetic armor"]
-    n721["Grampier-VK kinetic armor"]
-    n792["Suboster I. sensor suppressor"]
-    n793["MSD m\2315 'Filch' sensor suppressor"]
-    n794["Stellis sensor suppressor"]
     n831["Thelotec-Dabis light HCL laser"]
     n832["Pikolo light HCL laser"]
     n833["Thelotec-Stroyar light HCL laser"]
@@ -64,53 +198,28 @@ graph TD
     n837["Thelotec-Etequitor heavy LCL laser"]
     n838["Thelotec-Apocalyptor heavy LCL laser"]
     n839["Kauska Heatpin II. heavy LCL laser"]
-    n874["Standard farlock NEXUS module"]
-    n877["Standard armor NEXUS module"]
     n911["Standard laser tuning"]
     n930["Reflexis II. laser tuning"]
     n931["Kauska Optibrace laser tuning"]
     n932["Oqulus laser tuning"]
-    n951["Standard universal armor"]
-    n954["Diverter universal armor"]
-    n955["UNI300pls universal armor"]
-    n956["Aegis UAP-10XL universal armor"]
     n1002["Standard medium HCL laser"]
     n1003["Longrange Standard Large Laser"]
     n1024["Tertzer medium HCL laser"]
     n1025["Thelotec-Iocle I. medium HCL laser"]
     n1026["Phisker 30PW medium HCL laser"]
-    n1027["Named1 Longrange Large Laser"]
-    n1028["Named2 Longrange Large Laser"]
-    n1029["Named3 Longrange Large Laser"]
+    n1027["T2 Longrange Large Laser"]
+    n1028["T3 Longrange Large Laser"]
+    n1029["T4 Longrange Large Laser"]
     n2555["Standard critical hit NEXUS module"]
-    n2571["Gecko D-1500 farlock NEXUS module"]
-    n2572["Martimal farlock NEXUS module"]
-    n2573["Gecko M-2000 farlock NEXUS module"]
-    n2580["Starodix armor NEXUS module"]
-    n2581["Paternis armor NEXUS module"]
-    n2582["TSP-Hindoo armor NEXUS module"]
     n2595["Qandellay critical hit NEXUS module"]
     n2596["E-scope critical hit NEXUS module"]
     n2597["ZTW critical hit NEXUS module"]
-    n3256["Standard kinetic ERP"]
-    n3294["Hegatex-1000 kinetic ERP"]
-    n3295["Solitex-990 kinetic ERP"]
-    n3296["Emerolyte kinetic ERP"]
-    n4579["Standard sensor suppressor tuning"]
-    n4590["DDX200-Veil sensor suppressor tuning"]
-    n4591["Radiocor sensor suppressor tuning"]
-    n4592["DDX700-Mist sensor suppressor tuning"]
     n6013["Onyx"]
-    n684 --> n16
-    n954 --> n17
-    n14 --> n26
     n832 --> n58
     n835 --> n59
     n57 --> n194
-    n51 --> n200
     n831 --> n202
     n58 --> n206
-    n793 --> n212
     n1024 --> n214
     n274 --> n271
     n274 --> n272
@@ -124,21 +233,6 @@ graph TD
     n282 --> n280
     n282 --> n281
     n1003 --> n282
-    n14 --> n684
-    n684 --> n685
-    n685 --> n686
-    n16 --> n687
-    n687 --> n688
-    n688 --> n689
-    n17 --> n690
-    n690 --> n691
-    n691 --> n692
-    n26 --> n713
-    n713 --> n717
-    n717 --> n721
-    n51 --> n792
-    n792 --> n793
-    n793 --> n794
     n57 --> n831
     n831 --> n832
     n832 --> n833
@@ -148,16 +242,10 @@ graph TD
     n59 --> n837
     n837 --> n838
     n838 --> n839
-    n212 --> n874
-    n954 --> n877
     n57 --> n911
     n911 --> n930
     n930 --> n931
     n931 --> n932
-    n687 --> n951
-    n951 --> n954
-    n954 --> n955
-    n955 --> n956
     n834 --> n1002
     n1002 --> n1003
     n1002 --> n1024
@@ -167,37 +255,16 @@ graph TD
     n1027 --> n1028
     n1028 --> n1029
     n931 --> n2555
-    n874 --> n2571
-    n2571 --> n2572
-    n2572 --> n2573
-    n877 --> n2580
-    n2580 --> n2581
-    n2581 --> n2582
     n2555 --> n2595
     n2595 --> n2596
     n2596 --> n2597
-    n713 --> n3256
-    n3256 --> n3294
-    n3294 --> n3295
-    n3295 --> n3296
-    n792 --> n4579
-    n4579 --> n4590
-    n4590 --> n4591
-    n4591 --> n4592
     n214 --> n6013
-    click n14 "/content/techtree/nodes/standard-small-armor-plate/" "Standard light armor plate"
-    click n16 "/content/techtree/nodes/standard-medium-armor-plate/" "Standard medium armor plate"
-    click n17 "/content/techtree/nodes/standard-large-armor-plate/" "Standard large armor plate"
-    click n26 "/content/techtree/nodes/standard-kin-armor-hardener/" "Standard kinetic armor"
-    click n51 "/content/techtree/nodes/standard-sensor-dampener/" "Standard sensor suppressor"
     click n57 "/content/techtree/nodes/standard-small-laser/" "Standard light HCL laser"
     click n58 "/content/techtree/nodes/standard-medium-laser/" "Standard medium LCL laser"
     click n59 "/content/techtree/nodes/standard-large-laser/" "Standard heavy LCL laser"
     click n194 "/content/techtree/nodes/prometheus/" "Prometheus"
-    click n200 "/content/techtree/nodes/intakt/" "Intakt"
     click n202 "/content/techtree/nodes/baphomet/" "Baphomet"
     click n206 "/content/techtree/nodes/artemis/" "Artemis"
-    click n212 "/content/techtree/nodes/zenith/" "Zenith"
     click n214 "/content/techtree/nodes/seth/" "Seth"
     click n271 "/content/techtree/nodes/ammo-small-lasercrystal-a/" "Small chemoactive energy cell"
     click n272 "/content/techtree/nodes/ammo-small-lasercrystal-b/" "Small sonic energy cell"
@@ -211,21 +278,6 @@ graph TD
     click n280 "/content/techtree/nodes/ammo-large-lasercrystal-b/" "Large sonic energy cell"
     click n281 "/content/techtree/nodes/ammo-large-lasercrystal-c/" "Large photokinetic energy cell"
     click n282 "/content/techtree/nodes/ammo-large-lasercrystal-d/" "Large thermic energy cell"
-    click n684 "/content/techtree/nodes/named1-small-armor-plate/" "Wobost-Titangrip light armor plate"
-    click n685 "/content/techtree/nodes/named2-small-armor-plate/" "Invigor I. light armor plate"
-    click n686 "/content/techtree/nodes/named3-small-armor-plate/" "Karapas light armor plate"
-    click n687 "/content/techtree/nodes/named1-medium-armor-plate/" "Azilo-Protec Duoforge medium armor plate"
-    click n688 "/content/techtree/nodes/named2-medium-armor-plate/" "Invigor II. medium armor plate"
-    click n689 "/content/techtree/nodes/named3-medium-armor-plate/" "THL-Testudo medium armor plate"
-    click n690 "/content/techtree/nodes/named1-large-armor-plate/" "Vorbol p113 heavy armor plate"
-    click n691 "/content/techtree/nodes/named2-large-armor-plate/" "Invigor III. heavy armor plate"
-    click n692 "/content/techtree/nodes/named3-large-armor-plate/" "Halc heavy armor plate"
-    click n713 "/content/techtree/nodes/named1-kin-armor-hardener/" "Counterpress I-230 kinetic armor"
-    click n717 "/content/techtree/nodes/named2-kin-armor-hardener/" "Apparod Defragger kinetic armor"
-    click n721 "/content/techtree/nodes/named3-kin-armor-hardener/" "Grampier-VK kinetic armor"
-    click n792 "/content/techtree/nodes/named1-sensor-dampener/" "Suboster I. sensor suppressor"
-    click n793 "/content/techtree/nodes/named2-sensor-dampener/" "MSD m\2315 'Filch' sensor suppressor"
-    click n794 "/content/techtree/nodes/named3-sensor-dampener/" "Stellis sensor suppressor"
     click n831 "/content/techtree/nodes/named1-small-laser/" "Thelotec-Dabis light HCL laser"
     click n832 "/content/techtree/nodes/named2-small-laser/" "Pikolo light HCL laser"
     click n833 "/content/techtree/nodes/named3-small-laser/" "Thelotec-Stroyar light HCL laser"
@@ -235,46 +287,26 @@ graph TD
     click n837 "/content/techtree/nodes/named1-large-laser/" "Thelotec-Etequitor heavy LCL laser"
     click n838 "/content/techtree/nodes/named2-large-laser/" "Thelotec-Apocalyptor heavy LCL laser"
     click n839 "/content/techtree/nodes/named3-large-laser/" "Kauska Heatpin II. heavy LCL laser"
-    click n874 "/content/techtree/nodes/standard-gang-assist-information-module/" "Standard farlock NEXUS module"
-    click n877 "/content/techtree/nodes/standard-gang-assist-defense-module/" "Standard armor NEXUS module"
     click n911 "/content/techtree/nodes/standard-damage-mod-laser/" "Standard laser tuning"
     click n930 "/content/techtree/nodes/named1-damage-mod-laser/" "Reflexis II. laser tuning"
     click n931 "/content/techtree/nodes/named2-damage-mod-laser/" "Kauska Optibrace laser tuning"
     click n932 "/content/techtree/nodes/named3-damage-mod-laser/" "Oqulus laser tuning"
-    click n951 "/content/techtree/nodes/standard-resistant-plating/" "Standard universal armor"
-    click n954 "/content/techtree/nodes/named1-resistant-plating/" "Diverter universal armor"
-    click n955 "/content/techtree/nodes/named2-resistant-plating/" "UNI300pls universal armor"
-    click n956 "/content/techtree/nodes/named3-resistant-plating/" "Aegis UAP-10XL universal armor"
     click n1002 "/content/techtree/nodes/longrange-standard-medium-laser/" "Standard medium HCL laser"
     click n1003 "/content/techtree/nodes/longrange-standard-large-laser/" "Longrange Standard Large Laser"
     click n1024 "/content/techtree/nodes/named1-longrange-medium-laser/" "Tertzer medium HCL laser"
     click n1025 "/content/techtree/nodes/named2-longrange-medium-laser/" "Thelotec-Iocle I. medium HCL laser"
     click n1026 "/content/techtree/nodes/named3-longrange-medium-laser/" "Phisker 30PW medium HCL laser"
-    click n1027 "/content/techtree/nodes/named1-longrange-large-laser/" "Named1 Longrange Large Laser"
-    click n1028 "/content/techtree/nodes/named2-longrange-large-laser/" "Named2 Longrange Large Laser"
-    click n1029 "/content/techtree/nodes/named3-longrange-large-laser/" "Named3 Longrange Large Laser"
+    click n1027 "/content/techtree/nodes/named1-longrange-large-laser/" "T2 Longrange Large Laser"
+    click n1028 "/content/techtree/nodes/named2-longrange-large-laser/" "T3 Longrange Large Laser"
+    click n1029 "/content/techtree/nodes/named3-longrange-large-laser/" "T4 Longrange Large Laser"
     click n2555 "/content/techtree/nodes/standard-gang-assist-precision-firing-module/" "Standard critical hit NEXUS module"
-    click n2571 "/content/techtree/nodes/named1-gang-assist-information-module/" "Gecko D-1500 farlock NEXUS module"
-    click n2572 "/content/techtree/nodes/named2-gang-assist-information-module/" "Martimal farlock NEXUS module"
-    click n2573 "/content/techtree/nodes/named3-gang-assist-information-module/" "Gecko M-2000 farlock NEXUS module"
-    click n2580 "/content/techtree/nodes/named1-gang-assist-defense-module/" "Starodix armor NEXUS module"
-    click n2581 "/content/techtree/nodes/named2-gang-assist-defense-module/" "Paternis armor NEXUS module"
-    click n2582 "/content/techtree/nodes/named3-gang-assist-defense-module/" "TSP-Hindoo armor NEXUS module"
     click n2595 "/content/techtree/nodes/named1-gang-assist-precision-firing-module/" "Qandellay critical hit NEXUS module"
     click n2596 "/content/techtree/nodes/named2-gang-assist-precision-firing-module/" "E-scope critical hit NEXUS module"
     click n2597 "/content/techtree/nodes/named3-gang-assist-precision-firing-module/" "ZTW critical hit NEXUS module"
-    click n3256 "/content/techtree/nodes/standard-kinetic-kers/" "Standard kinetic ERP"
-    click n3294 "/content/techtree/nodes/named1-kinetic-kers/" "Hegatex-1000 kinetic ERP"
-    click n3295 "/content/techtree/nodes/named2-kinetic-kers/" "Solitex-990 kinetic ERP"
-    click n3296 "/content/techtree/nodes/named3-kinetic-kers/" "Emerolyte kinetic ERP"
-    click n4579 "/content/techtree/nodes/standard-sensor-supressor-booster/" "Standard sensor suppressor tuning"
-    click n4590 "/content/techtree/nodes/named1-sensor-supressor-booster/" "DDX200-Veil sensor suppressor tuning"
-    click n4591 "/content/techtree/nodes/named2-sensor-supressor-booster/" "Radiocor sensor suppressor tuning"
-    click n4592 "/content/techtree/nodes/named3-sensor-supressor-booster/" "DDX700-Mist sensor suppressor tuning"
     click n6013 "/content/techtree/nodes/onyx/" "Onyx"
 ```
 
-## Nodes
+## Nodes (all)
 
 | Unlocks item | Parent node | Enabler extension | Point prices |
 |---|---|---|---|
@@ -346,12 +378,12 @@ graph TD
 | [Longrange Standard Large Laser](/content/techtree/nodes/longrange-standard-large-laser/) | [Standard medium HCL laser](/content/techtree/nodes/longrange-standard-medium-laser/) | – | hitech=17.15k; thelodica=34.3k |
 | [Tertzer medium HCL laser](/content/techtree/nodes/named1-longrange-medium-laser/) | [Standard medium HCL laser](/content/techtree/nodes/longrange-standard-medium-laser/) | – | common=34.3k; thelodica=34.3k |
 | [Large thermic energy cell](/content/techtree/nodes/ammo-large-lasercrystal-d/) | [Longrange Standard Large Laser](/content/techtree/nodes/longrange-standard-large-laser/) | – | hitech=17.15k; thelodica=34.3k |
-| [Named1 Longrange Large Laser](/content/techtree/nodes/named1-longrange-large-laser/) | [Longrange Standard Large Laser](/content/techtree/nodes/longrange-standard-large-laser/) | – | hitech=25.6k; thelodica=51.2k |
+| [T2 Longrange Large Laser](/content/techtree/nodes/named1-longrange-large-laser/) | [Longrange Standard Large Laser](/content/techtree/nodes/longrange-standard-large-laser/) | – | hitech=25.6k; thelodica=51.2k |
 | [Seth](/content/techtree/nodes/seth/) | [Tertzer medium HCL laser](/content/techtree/nodes/named1-longrange-medium-laser/) | – | common=256k; thelodica=256k |
 | [Thelotec-Iocle I. medium HCL laser](/content/techtree/nodes/named2-longrange-medium-laser/) | [Tertzer medium HCL laser](/content/techtree/nodes/named1-longrange-medium-laser/) | – | common=51.2k; thelodica=51.2k |
 | [Phisker 30PW medium HCL laser](/content/techtree/nodes/named3-longrange-medium-laser/) | [Thelotec-Iocle I. medium HCL laser](/content/techtree/nodes/named2-longrange-medium-laser/) | – | hitech=36.45k; thelodica=72.9k |
-| [Named2 Longrange Large Laser](/content/techtree/nodes/named2-longrange-large-laser/) | [Named1 Longrange Large Laser](/content/techtree/nodes/named1-longrange-large-laser/) | – | hitech=36.45k; thelodica=72.9k |
-| [Named3 Longrange Large Laser](/content/techtree/nodes/named3-longrange-large-laser/) | [Named2 Longrange Large Laser](/content/techtree/nodes/named2-longrange-large-laser/) | – | hitech=50k; thelodica=100k |
+| [T3 Longrange Large Laser](/content/techtree/nodes/named2-longrange-large-laser/) | [T2 Longrange Large Laser](/content/techtree/nodes/named1-longrange-large-laser/) | – | hitech=36.45k; thelodica=72.9k |
+| [T4 Longrange Large Laser](/content/techtree/nodes/named3-longrange-large-laser/) | [T3 Longrange Large Laser](/content/techtree/nodes/named2-longrange-large-laser/) | – | hitech=50k; thelodica=100k |
 | [Qandellay critical hit NEXUS module](/content/techtree/nodes/named1-gang-assist-precision-firing-module/) | [Standard critical hit NEXUS module](/content/techtree/nodes/standard-gang-assist-precision-firing-module/) | – | common=51.2k; thelodica=51.2k |
 | [Martimal farlock NEXUS module](/content/techtree/nodes/named2-gang-assist-information-module/) | [Gecko D-1500 farlock NEXUS module](/content/techtree/nodes/named1-gang-assist-information-module/) | – | common=72.9k; thelodica=72.9k |
 | [Gecko M-2000 farlock NEXUS module](/content/techtree/nodes/named3-gang-assist-information-module/) | [Martimal farlock NEXUS module](/content/techtree/nodes/named2-gang-assist-information-module/) | – | hitech=50k; thelodica=100k |

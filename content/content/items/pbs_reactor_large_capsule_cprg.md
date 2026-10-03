@@ -18,5 +18,3 @@ description: "Materials, tier T3"
 | Category | Materials |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -52,21 +52,4 @@ pie showData
     "fluxore" : 25
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Domhalarn](/zones/zone-ics-a-real/) (2 TP points)
-- → [Norhoop](/zones/zone-tm-a-real/) (2 TP points)
-- → [zone_gamma_tc_z100](/zones/zone-gamma-tc-z100/) (1 TP point)
-- → [Emperth](/zones/zone-tm-g-3/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Domhalarn](/zones/zone-ics-a-real/) (2 TP points)
-- ← [Norhoop](/zones/zone-tm-a-real/) (2 TP points)
-- ← [zone_gamma_tc_z100](/zones/zone-gamma-tc-z100/) (1 TP point)
-- ← [Emperth](/zones/zone-tm-g-3/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

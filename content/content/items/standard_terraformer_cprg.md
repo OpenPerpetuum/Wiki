@@ -18,5 +18,3 @@ description: "Modules / Enhancements, tier T1"
 | Category | Modules / Enhancements |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

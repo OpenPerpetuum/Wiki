@@ -28,5 +28,3 @@ description: "Ammo / Missiles"
 | damage_thermal | 34 |
 | falloff | 3 |
 | optimal_range | 18 |
-
-[All items](/content/items/)

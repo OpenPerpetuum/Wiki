@@ -24,14 +24,6 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 1 component** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Tri-liquizit (PL-10)"]:::current
-    b["Liquizit ×3.0k"]:::comp
-    b --> a
-    click b "/content/items/liquizit/" "Liquizit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/liquizit/">Liquizit</a></div><div class="prod-card-body">required: <b>3.0k</b></div></div>
+</div>

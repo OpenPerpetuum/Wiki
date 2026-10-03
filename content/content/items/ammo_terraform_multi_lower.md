@@ -19,5 +19,3 @@ description: "Ammo / Other ammo"
 | Note | amountot csokkent az altitude-bol |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

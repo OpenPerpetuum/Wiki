@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard range extender CT** (T1) → [Opaletrak range extender CT](/content/items/named1-tracking-upgrade-cprg/) (T2) → [Unotron 60s-'Crack shot' range extender CT](/content/items/named2-tracking-upgrade-cprg/) (T3) → [ATCS-gh50 range extender CT](/content/items/named3-tracking-upgrade-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

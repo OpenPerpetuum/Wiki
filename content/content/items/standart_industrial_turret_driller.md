@@ -26,5 +26,3 @@ description: "Modules / Turrets, tier T1"
 | cycle_time | 6.31k |
 | optimal_range | 5 |
 | powergrid_usage | 150 |
-
-[All items](/content/items/)

@@ -901,7 +901,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-armor-plate-pr/">Named1 Large Armor Plate Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-armor-plate-pr/">T2 Large Armor Plate Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-large-armor-plate/">Standard large armor plate</a> ×1</div>
@@ -914,7 +914,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-armor-plate-pr/">Named2 Large Armor Plate Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-armor-plate-pr/">T3 Large Armor Plate Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -929,7 +929,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-armor-plate-pr/">Named3 Large Armor Plate Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-armor-plate-pr/">T4 Large Armor Plate Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -3337,7 +3337,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-devastating-module/">Named1 Gang Assist Devastating Module</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-devastating-module/">T2 Gang Assist Devastating Module</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×15</div>
@@ -3348,20 +3348,20 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-devastating-module/">Named2 Gang Assist Devastating Module</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-devastating-module/">T3 Gang Assist Devastating Module</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a> ×10</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-devastating-module/">Named1 Gang Assist Devastating Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-devastating-module/">T2 Gang Assist Devastating Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-devastating-module/">Named3 Gang Assist Devastating Module</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-devastating-module/">T4 Gang Assist Devastating Module</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×7</div>
@@ -3370,7 +3370,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a> ×7</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a> ×15</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-expert/">Perfect nuimqol fragment</a> ×22</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-devastating-module/">Named2 Gang Assist Devastating Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-devastating-module/">T3 Gang Assist Devastating Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -3471,7 +3471,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-resilience-module/">Named1 Gang Assist Resilience Module</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-resilience-module/">T2 Gang Assist Resilience Module</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×15</div>
@@ -3482,20 +3482,20 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-resilience-module/">Named2 Gang Assist Resilience Module</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-resilience-module/">T3 Gang Assist Resilience Module</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-advanced/">Functional pelistal fragment</a> ×10</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-resilience-module/">Named1 Gang Assist Resilience Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-resilience-module/">T2 Gang Assist Resilience Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-resilience-module/">Named3 Gang Assist Resilience Module</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-resilience-module/">T4 Gang Assist Resilience Module</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×7</div>
@@ -3504,7 +3504,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a> ×7</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-advanced/">Functional pelistal fragment</a> ×15</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-expert/">Perfect pelistal fragment</a> ×22</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-resilience-module/">Named2 Gang Assist Resilience Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-resilience-module/">T3 Gang Assist Resilience Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -4153,7 +4153,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-devastating-module-pr/">Named1 Gang Assist Devastating Module Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-devastating-module-pr/">T2 Gang Assist Devastating Module Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×15</div>
@@ -4164,20 +4164,20 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-devastating-module-pr/">Named2 Gang Assist Devastating Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-devastating-module-pr/">T3 Gang Assist Devastating Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a> ×10</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-devastating-module/">Named1 Gang Assist Devastating Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-devastating-module/">T2 Gang Assist Devastating Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-devastating-module-pr/">Named3 Gang Assist Devastating Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-devastating-module-pr/">T4 Gang Assist Devastating Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×7</div>
@@ -4186,13 +4186,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a> ×7</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a> ×15</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-expert/">Perfect nuimqol fragment</a> ×22</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-devastating-module/">Named2 Gang Assist Devastating Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-devastating-module/">T3 Gang Assist Devastating Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-resilience-module-pr/">Named1 Gang Assist Resilience Module Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-gang-assist-resilience-module-pr/">T2 Gang Assist Resilience Module Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×15</div>
@@ -4203,20 +4203,20 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-resilience-module-pr/">Named2 Gang Assist Resilience Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-gang-assist-resilience-module-pr/">T3 Gang Assist Resilience Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a> ×10</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-advanced/">Functional pelistal fragment</a> ×10</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-resilience-module/">Named1 Gang Assist Resilience Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-gang-assist-resilience-module/">T2 Gang Assist Resilience Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-resilience-module-pr/">Named3 Gang Assist Resilience Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-gang-assist-resilience-module-pr/">T4 Gang Assist Resilience Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×7</div>
@@ -4225,7 +4225,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a> ×7</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-advanced/">Functional pelistal fragment</a> ×15</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-pelistal-expert/">Perfect pelistal fragment</a> ×22</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-resilience-module/">Named2 Gang Assist Resilience Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-gang-assist-resilience-module/">T3 Gang Assist Resilience Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -5737,7 +5737,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-core-booster-pr/">Named1 Large Core Booster Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-core-booster-pr/">T2 Large Core Booster Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×300</div>
@@ -5750,7 +5750,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-core-booster-pr/">Named2 Large Core Booster Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-core-booster-pr/">T3 Large Core Booster Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×300</div>
@@ -5765,7 +5765,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-core-booster-pr/">Named3 Large Core Booster Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-core-booster-pr/">T4 Large Core Booster Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×300</div>
@@ -5996,7 +5996,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-landmine-detector/">Named1 Landmine Detector</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-landmine-detector/">T2 Landmine Detector</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6008,7 +6008,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-landmine-detector-pr/">Named1 Landmine Detector Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-landmine-detector-pr/">T2 Landmine Detector Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6020,7 +6020,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-landmine-detector/">Named2 Landmine Detector</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-landmine-detector/">T3 Landmine Detector</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6028,13 +6028,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-landmine-detector/">Named1 Landmine Detector</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-landmine-detector/">T2 Landmine Detector</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-landmine-detector-pr/">Named2 Landmine Detector Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-landmine-detector-pr/">T3 Landmine Detector Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6042,13 +6042,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-landmine-detector/">Named1 Landmine Detector</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-landmine-detector/">T2 Landmine Detector</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-landmine-detector/">Named3 Landmine Detector</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-landmine-detector/">T4 Landmine Detector</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6058,13 +6058,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-landmine-detector/">Named2 Landmine Detector</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-landmine-detector/">T3 Landmine Detector</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-landmine-detector-pr/">Named3 Landmine Detector Pr</a></div><div class="mission-card-sub">Research level 9</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-landmine-detector-pr/">T4 Landmine Detector Pr</a></div><div class="mission-card-sub">Research level 9</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6074,7 +6074,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-landmine-detector/">Named2 Landmine Detector</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-landmine-detector/">T3 Landmine Detector</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -6102,7 +6102,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-driller-pr/">Named1 Large Driller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-driller-pr/">T2 Large Driller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6128,7 +6128,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-driller-pr/">Named2 Large Driller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-driller-pr/">T3 Large Driller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6158,7 +6158,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-driller-pr/">Named3 Large Driller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-driller-pr/">T4 Large Driller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6191,7 +6191,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-adaptive-alloy/">Named1 Adaptive Alloy</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-adaptive-alloy/">T2 Adaptive Alloy</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6210,7 +6210,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-adaptive-alloy-pr/">Named1 Adaptive Alloy Pr</a></div><div class="mission-card-sub">Research level 4</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-adaptive-alloy-pr/">T2 Adaptive Alloy Pr</a></div><div class="mission-card-sub">Research level 4</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6229,7 +6229,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-adaptive-alloy/">Named2 Adaptive Alloy</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-adaptive-alloy/">T3 Adaptive Alloy</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6245,13 +6245,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-adaptive-alloy/">Named1 Adaptive Alloy</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-adaptive-alloy/">T2 Adaptive Alloy</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-adaptive-alloy-pr/">Named2 Adaptive Alloy Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-adaptive-alloy-pr/">T3 Adaptive Alloy Pr</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6267,13 +6267,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-adaptive-alloy/">Named1 Adaptive Alloy</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-adaptive-alloy/">T2 Adaptive Alloy</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-adaptive-alloy/">Named3 Adaptive Alloy</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-adaptive-alloy/">T4 Adaptive Alloy</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6290,13 +6290,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-adaptive-alloy/">Named2 Adaptive Alloy</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-adaptive-alloy/">T3 Adaptive Alloy</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-adaptive-alloy-pr/">Named3 Adaptive Alloy Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-adaptive-alloy-pr/">T4 Adaptive Alloy Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6313,7 +6313,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-adaptive-alloy/">Named2 Adaptive Alloy</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-adaptive-alloy/">T3 Adaptive Alloy</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -6329,7 +6329,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-dreadnought-module/">Named1 Dreadnought Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-dreadnought-module/">T2 Dreadnought Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6341,7 +6341,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-dreadnought-module-pr/">Named1 Dreadnought Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-dreadnought-module-pr/">T2 Dreadnought Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6353,7 +6353,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-dreadnought-module/">Named2 Dreadnought Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-dreadnought-module/">T3 Dreadnought Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6361,13 +6361,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-dreadnought-module/">Named1 Dreadnought Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-dreadnought-module/">T2 Dreadnought Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-dreadnought-module-pr/">Named2 Dreadnought Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-dreadnought-module-pr/">T3 Dreadnought Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6375,13 +6375,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-dreadnought-module/">Named1 Dreadnought Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-dreadnought-module/">T2 Dreadnought Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-dreadnought-module/">Named3 Dreadnought Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-dreadnought-module/">T4 Dreadnought Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6391,13 +6391,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×180</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×2400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×800</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-dreadnought-module/">Named2 Dreadnought Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-dreadnought-module/">T3 Dreadnought Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-dreadnought-module-pr/">Named3 Dreadnought Module Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-dreadnought-module-pr/">T4 Dreadnought Module Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6407,7 +6407,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×180</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×2400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×800</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-dreadnought-module/">Named2 Dreadnought Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-dreadnought-module/">T3 Dreadnought Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -6425,7 +6425,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-self-destruct-module/">Named1 Self Destruct Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-self-destruct-module/">T2 Self Destruct Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6438,7 +6438,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-self-destruct-module-pr/">Named1 Self Destruct Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-self-destruct-module-pr/">T2 Self Destruct Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6452,7 +6452,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-self-destruct-module/">Named2 Self Destruct Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-self-destruct-module/">T3 Self Destruct Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6460,13 +6460,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×125</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-self-destruct-module/">Named1 Self Destruct Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-self-destruct-module/">T2 Self Destruct Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-self-destruct-module-pr/">Named2 Self Destruct Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-self-destruct-module-pr/">T3 Self Destruct Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -6476,13 +6476,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×125</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-self-destruct-module/">Named1 Self Destruct Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-self-destruct-module/">T2 Self Destruct Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-self-destruct-module/">Named3 Self Destruct Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-self-destruct-module/">T4 Self Destruct Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6491,13 +6491,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-self-destruct-module/">Named2 Self Destruct Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-self-destruct-module/">T3 Self Destruct Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-self-destruct-module-pr/">Named3 Self Destruct Module Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-self-destruct-module-pr/">T4 Self Destruct Module Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -6509,7 +6509,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-self-destruct-module/">Named2 Self Destruct Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-self-destruct-module/">T3 Self Destruct Module</a> ×1</div>
 </div>
 </div>
 </div>
@@ -6790,7 +6790,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-excavator-module/">Named1 Excavator Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-excavator-module/">T2 Excavator Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6802,7 +6802,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-excavator-module-pr/">Named1 Excavator Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-excavator-module-pr/">T2 Excavator Module Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6814,7 +6814,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-excavator-module/">Named2 Excavator Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-excavator-module/">T3 Excavator Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6822,13 +6822,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-excavator-module/">Named1 Excavator Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-excavator-module/">T2 Excavator Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-excavator-module-pr/">Named2 Excavator Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-excavator-module-pr/">T3 Excavator Module Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6836,13 +6836,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-excavator-module/">Named1 Excavator Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-excavator-module/">T2 Excavator Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-excavator-module/">Named3 Excavator Module</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-excavator-module/">T4 Excavator Module</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6852,13 +6852,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×180</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×2400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×800</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-excavator-module/">Named2 Excavator Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-excavator-module/">T3 Excavator Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-excavator-module-pr/">Named3 Excavator Module Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-excavator-module-pr/">T4 Excavator Module Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6868,7 +6868,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×180</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×2400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×800</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-excavator-module/">Named2 Excavator Module</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-excavator-module/">T3 Excavator Module</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -6884,7 +6884,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-harvester/">Named1 Large Harvester</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-harvester/">T2 Large Harvester</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6896,7 +6896,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-harvester-pr/">Named1 Large Harvester Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-harvester-pr/">T2 Large Harvester Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6908,7 +6908,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-harvester/">Named2 Large Harvester</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-harvester/">T3 Large Harvester</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6916,13 +6916,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-large-harvester/">Named1 Large Harvester</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-large-harvester/">T2 Large Harvester</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-harvester-pr/">Named2 Large Harvester Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-harvester-pr/">T3 Large Harvester Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6930,13 +6930,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×400</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-large-harvester/">Named1 Large Harvester</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-large-harvester/">T2 Large Harvester</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-harvester/">Named3 Large Harvester</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-harvester/">T4 Large Harvester</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6946,13 +6946,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×180</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×2400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×800</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-large-harvester/">Named2 Large Harvester</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-large-harvester/">T3 Large Harvester</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-harvester-pr/">Named3 Large Harvester Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-harvester-pr/">T4 Large Harvester Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2400</div>
@@ -6962,7 +6962,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×180</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×2400</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×800</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-large-harvester/">Named2 Large Harvester</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-large-harvester/">T3 Large Harvester</a> ×1</div>
 </div>
 </div>
 </div>
@@ -7488,7 +7488,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-core-battery-pr/">Named1 Large Core Battery Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-core-battery-pr/">T2 Large Core Battery Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×300</div>
@@ -7501,7 +7501,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-core-battery-pr/">Named2 Large Core Battery Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-core-battery-pr/">T3 Large Core Battery Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×300</div>
@@ -7516,7 +7516,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-core-battery-pr/">Named3 Large Core Battery Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-core-battery-pr/">T4 Large Core Battery Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×300</div>
@@ -7550,7 +7550,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-assault-remote-controller/">Named1 Assault Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-assault-remote-controller/">T2 Assault Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7564,7 +7564,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-assault-remote-controller/">Named2 Assault Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-assault-remote-controller/">T3 Assault Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7574,13 +7574,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-assault-remote-controller/">Named1 Assault Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-assault-remote-controller/">T2 Assault Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-assault-remote-controller/">Named3 Assault Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-assault-remote-controller/">T4 Assault Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7592,13 +7592,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-assault-remote-controller/">Named2 Assault Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-assault-remote-controller/">T3 Assault Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-assault-remote-controller-pr/">Named1 Assault Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-assault-remote-controller-pr/">T2 Assault Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7612,7 +7612,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-assault-remote-controller-pr/">Named2 Assault Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-assault-remote-controller-pr/">T3 Assault Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7622,13 +7622,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-assault-remote-controller/">Named1 Assault Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-assault-remote-controller/">T2 Assault Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-assault-remote-controller-pr/">Named3 Assault Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-assault-remote-controller-pr/">T4 Assault Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7640,7 +7640,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-assault-remote-controller/">Named2 Assault Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-assault-remote-controller/">T3 Assault Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -7658,7 +7658,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-tactical-remote-controller/">Named1 Tactical Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-tactical-remote-controller/">T2 Tactical Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7672,7 +7672,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-tactical-remote-controller-pr/">Named1 Tactical Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-tactical-remote-controller-pr/">T2 Tactical Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7686,7 +7686,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-tactical-remote-controller/">Named2 Tactical Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-tactical-remote-controller/">T3 Tactical Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7696,13 +7696,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-tactical-remote-controller/">Named1 Tactical Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-tactical-remote-controller/">T2 Tactical Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-tactical-remote-controller-pr/">Named2 Tactical Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-tactical-remote-controller-pr/">T3 Tactical Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7712,13 +7712,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-tactical-remote-controller/">Named1 Tactical Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-tactical-remote-controller/">T2 Tactical Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-tactical-remote-controller/">Named3 Tactical Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-tactical-remote-controller/">T4 Tactical Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7730,13 +7730,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-tactical-remote-controller/">Named2 Tactical Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-tactical-remote-controller/">T3 Tactical Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-tactical-remote-controller-pr/">Named3 Tactical Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-tactical-remote-controller-pr/">T4 Tactical Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7748,7 +7748,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-tactical-remote-controller/">Named2 Tactical Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-tactical-remote-controller/">T3 Tactical Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -7766,7 +7766,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-industrial-remote-controller/">Named1 Industrial Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-industrial-remote-controller/">T2 Industrial Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7780,7 +7780,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-industrial-remote-controller-pr/">Named1 Industrial Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-industrial-remote-controller-pr/">T2 Industrial Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7794,7 +7794,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-industrial-remote-controller/">Named2 Industrial Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-industrial-remote-controller/">T3 Industrial Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7804,13 +7804,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-industrial-remote-controller/">Named1 Industrial Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-industrial-remote-controller/">T2 Industrial Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-industrial-remote-controller-pr/">Named2 Industrial Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-industrial-remote-controller-pr/">T3 Industrial Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7820,13 +7820,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-industrial-remote-controller/">Named1 Industrial Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-industrial-remote-controller/">T2 Industrial Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-industrial-remote-controller/">Named3 Industrial Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-industrial-remote-controller/">T4 Industrial Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7838,13 +7838,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-industrial-remote-controller/">Named2 Industrial Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-industrial-remote-controller/">T3 Industrial Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-industrial-remote-controller-pr/">Named3 Industrial Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-industrial-remote-controller-pr/">T4 Industrial Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7856,7 +7856,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-industrial-remote-controller/">Named2 Industrial Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-industrial-remote-controller/">T3 Industrial Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -7874,7 +7874,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-support-remote-controller/">Named1 Support Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-support-remote-controller/">T2 Support Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7888,7 +7888,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-support-remote-controller-pr/">Named1 Support Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-support-remote-controller-pr/">T2 Support Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7902,7 +7902,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-support-remote-controller/">Named2 Support Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-support-remote-controller/">T3 Support Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7912,13 +7912,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-support-remote-controller/">Named1 Support Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-support-remote-controller/">T2 Support Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-support-remote-controller-pr/">Named2 Support Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-support-remote-controller-pr/">T3 Support Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7928,13 +7928,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-support-remote-controller/">Named1 Support Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-support-remote-controller/">T2 Support Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-support-remote-controller/">Named3 Support Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-support-remote-controller/">T4 Support Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7946,13 +7946,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-support-remote-controller/">Named2 Support Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-support-remote-controller/">T3 Support Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-support-remote-controller-pr/">Named3 Support Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-support-remote-controller-pr/">T4 Support Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -7964,7 +7964,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-support-remote-controller/">Named2 Support Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-support-remote-controller/">T3 Support Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -7983,7 +7983,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-remote-command-translator/">Named1 Remote Command Translator</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-remote-command-translator/">T2 Remote Command Translator</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -7997,7 +7997,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-remote-command-translator-pr/">Named1 Remote Command Translator Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-remote-command-translator-pr/">T2 Remote Command Translator Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -8011,7 +8011,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-remote-command-translator/">Named2 Remote Command Translator</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-remote-command-translator/">T3 Remote Command Translator</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -8021,13 +8021,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×125</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-remote-command-translator/">Named1 Remote Command Translator</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-remote-command-translator/">T2 Remote Command Translator</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-remote-command-translator-pr/">Named2 Remote Command Translator Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-remote-command-translator-pr/">T3 Remote Command Translator Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -8037,13 +8037,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×125</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-remote-command-translator/">Named1 Remote Command Translator</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-remote-command-translator/">T2 Remote Command Translator</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-remote-command-translator/">Named3 Remote Command Translator</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-remote-command-translator/">T4 Remote Command Translator</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -8055,13 +8055,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-remote-command-translator/">Named2 Remote Command Translator</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-remote-command-translator/">T3 Remote Command Translator</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-remote-command-translator-pr/">Named3 Remote Command Translator Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-remote-command-translator-pr/">T4 Remote Command Translator Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -8073,7 +8073,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-remote-command-translator/">Named2 Remote Command Translator</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-remote-command-translator/">T3 Remote Command Translator</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -8091,7 +8091,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-hunter-remote-controller/">Named1 Hunter Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-hunter-remote-controller/">T2 Hunter Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -8104,7 +8104,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-hunter-remote-controller-pr/">Named1 Hunter Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-hunter-remote-controller-pr/">T2 Hunter Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -8118,7 +8118,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-hunter-remote-controller/">Named2 Hunter Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-hunter-remote-controller/">T3 Hunter Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -8126,13 +8126,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×125</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hunter-remote-controller/">Named1 Hunter Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hunter-remote-controller/">T2 Hunter Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-hunter-remote-controller-pr/">Named2 Hunter Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-hunter-remote-controller-pr/">T3 Hunter Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -8142,13 +8142,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×80</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×125</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hunter-remote-controller/">Named1 Hunter Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hunter-remote-controller/">T2 Hunter Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-hunter-remote-controller/">Named3 Hunter Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-hunter-remote-controller/">T4 Hunter Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -8157,13 +8157,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hunter-remote-controller/">Named2 Hunter Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hunter-remote-controller/">T3 Hunter Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-hunter-remote-controller-pr/">Named3 Hunter Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-hunter-remote-controller-pr/">T4 Hunter Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×200</div>
@@ -8175,7 +8175,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×200</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hunter-remote-controller/">Named2 Hunter Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hunter-remote-controller/">T3 Hunter Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
@@ -8193,7 +8193,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-engineering-remote-controller/">Named1 Engineering Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-engineering-remote-controller/">T2 Engineering Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -8206,7 +8206,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-engineering-remote-controller-pr/">Named1 Engineering Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-engineering-remote-controller-pr/">T2 Engineering Remote Controller Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -8220,7 +8220,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-engineering-remote-controller/">Named2 Engineering Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-engineering-remote-controller/">T3 Engineering Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -8228,13 +8228,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×175</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-engineering-remote-controller/">Named1 Engineering Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-engineering-remote-controller/">T2 Engineering Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-engineering-remote-controller-pr/">Named2 Engineering Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-engineering-remote-controller-pr/">T3 Engineering Remote Controller Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -8244,13 +8244,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×20</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-engineering-remote-controller/">Named1 Engineering Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-engineering-remote-controller/">T2 Engineering Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-engineering-remote-controller/">Named3 Engineering Remote Controller</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-engineering-remote-controller/">T4 Engineering Remote Controller</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -8259,13 +8259,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-engineering-remote-controller/">Named2 Engineering Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-engineering-remote-controller/">T3 Engineering Remote Controller</a> ×1</div>
 </div>
 </div>
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-engineering-remote-controller-pr/">Named3 Engineering Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-engineering-remote-controller-pr/">T4 Engineering Remote Controller Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×50</div>
@@ -8277,7 +8277,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/unimetal/">Briochit</a> ×50</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×250</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicoline/">Axicoline</a> ×100</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-engineering-remote-controller/">Named2 Engineering Remote Controller</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-engineering-remote-controller/">T3 Engineering Remote Controller</a> ×1</div>
 </div>
 </div>
 </div>
@@ -9050,7 +9050,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-armor-repairer-pr/">Named1 Large Armor Repairer Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-armor-repairer-pr/">T2 Large Armor Repairer Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-large-armor-repairer/">Standard large armor repairer</a> ×1</div>
@@ -9066,7 +9066,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-armor-repairer-pr/">Named2 Large Armor Repairer Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-armor-repairer-pr/">T3 Large Armor Repairer Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -9083,7 +9083,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-armor-repairer-pr/">Named3 Large Armor Repairer Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-armor-repairer-pr/">T4 Large Armor Repairer Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/statichnol/">Statichnol</a> ×600</div>
@@ -11133,7 +11133,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-shield-generator-pr/">Named1 Large Shield Generator Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-shield-generator-pr/">T2 Large Shield Generator Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-large-shield-generator/">Standard large shield generator</a> ×1</div>
@@ -11149,7 +11149,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-shield-generator-pr/">Named2 Large Shield Generator Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-shield-generator-pr/">T3 Large Shield Generator Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×300</div>
@@ -11166,7 +11166,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-shield-generator-pr/">Named3 Large Shield Generator Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-shield-generator-pr/">T4 Large Shield Generator Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/isopropentol/">Isopropentol</a> ×1200</div>
@@ -11623,7 +11623,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-hell-cannon/">Named1 Hell Cannon</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-hell-cannon/">T2 Hell Cannon</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-hell-cannon/">Standard Hell Cannon</a> ×1</div>
@@ -11638,14 +11638,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-hell-cannon/">Named2 Hell Cannon</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-hell-cannon/">T3 Hell Cannon</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×250</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hell-cannon/">Named1 Hell Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hell-cannon/">T2 Hell Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a> ×25</div>
@@ -11654,13 +11654,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-hell-cannon/">Named3 Hell Cannon</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-hell-cannon/">T4 Hell Cannon</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×120</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×500</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hell-cannon/">Named2 Hell Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hell-cannon/">T3 Hell Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×90</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×120</div>
@@ -12233,7 +12233,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-railgun/">Named1 Longrange Large Railgun</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-railgun/">T2 Longrange Large Railgun</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -12250,7 +12250,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-railgun/">Named2 Longrange Large Railgun</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-railgun/">T3 Longrange Large Railgun</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -12258,7 +12258,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×75</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynitrocol/">Polynitrocol</a> ×150</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-railgun/">Named1 Longrange Large Railgun</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-railgun/">T2 Longrange Large Railgun</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a> ×30</div>
@@ -12269,14 +12269,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-railgun/">Named3 Longrange Large Railgun</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-railgun/">T4 Longrange Large Railgun</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/chollonin/">Chollonin</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynitrocol/">Polynitrocol</a> ×300</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-railgun/">Named2 Longrange Large Railgun</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-railgun/">T3 Longrange Large Railgun</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×23</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×68</div>
@@ -12344,7 +12344,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-laser/">Named1 Longrange Large Laser</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-laser/">T2 Longrange Large Laser</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -12361,7 +12361,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-laser/">Named2 Longrange Large Laser</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-laser/">T3 Longrange Large Laser</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -12369,7 +12369,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynucleit/">Polynucleit</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×75</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-laser/">Named1 Longrange Large Laser</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-laser/">T2 Longrange Large Laser</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×30</div>
@@ -12380,14 +12380,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-laser/">Named3 Longrange Large Laser</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-laser/">T4 Longrange Large Laser</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/prilumium/">Prilumium</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynucleit/">Polynucleit</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×150</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-laser/">Named2 Longrange Large Laser</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-laser/">T3 Longrange Large Laser</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×23</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×68</div>
@@ -12442,7 +12442,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-raven-cannon/">Named1 Raven Cannon</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-raven-cannon/">T2 Raven Cannon</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -12458,14 +12458,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-raven-cannon/">Named2 Raven Cannon</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-raven-cannon/">T3 Raven Cannon</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×250</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-raven-cannon/">Named1 Raven Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-raven-cannon/">T2 Raven Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×100</div>
@@ -12475,13 +12475,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-raven-cannon/">Named3 Raven Cannon</a></div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-raven-cannon/">T4 Raven Cannon</a></div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×120</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×500</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-raven-cannon/">Named2 Raven Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-raven-cannon/">T3 Raven Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×90</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×120</div>
@@ -13412,7 +13412,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-laser-pr/">Named1 Large Laser Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-laser-pr/">T2 Large Laser Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-large-laser/">Standard heavy LCL laser</a> ×1</div>
@@ -13427,7 +13427,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-laser-pr/">Named2 Large Laser Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-laser-pr/">T3 Large Laser Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -13444,7 +13444,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-laser-pr/">Named3 Large Laser Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-laser-pr/">T4 Large Laser Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynucleit/">Polynucleit</a> ×300</div>
@@ -13477,7 +13477,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-laser-pr/">Named1 Longrange Large Laser Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-laser-pr/">T2 Longrange Large Laser Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -13494,7 +13494,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-laser-pr/">Named2 Longrange Large Laser Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-laser-pr/">T3 Longrange Large Laser Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -13502,7 +13502,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynucleit/">Polynucleit</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×75</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-laser/">Named1 Longrange Large Laser</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-laser/">T2 Longrange Large Laser</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a> ×30</div>
@@ -13513,14 +13513,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-laser-pr/">Named3 Longrange Large Laser Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-laser-pr/">T4 Longrange Large Laser Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/prilumium/">Prilumium</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynucleit/">Polynucleit</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×150</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-laser/">Named2 Longrange Large Laser</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-laser/">T3 Longrange Large Laser</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×23</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×68</div>
@@ -13546,7 +13546,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-cruisemissile-launcher-pr/">Named1 Cruisemissile Launcher Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-cruisemissile-launcher-pr/">T2 Cruisemissile Launcher Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-cruisemissile-launcher/">Standard heavy missile launcher</a> ×1</div>
@@ -13561,7 +13561,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-cruisemissile-launcher-pr/">Named2 Cruisemissile Launcher Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-cruisemissile-launcher-pr/">T3 Cruisemissile Launcher Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -13578,7 +13578,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-cruisemissile-launcher-pr/">Named3 Cruisemissile Launcher Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-cruisemissile-launcher-pr/">T4 Cruisemissile Launcher Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/phlobotil/">Phlobotil</a> ×300</div>
@@ -13609,7 +13609,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-large-railgun-pr/">Named1 Large Railgun Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-large-railgun-pr/">T2 Large Railgun Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-large-railgun/">Standard heavy Gauss gun</a> ×1</div>
@@ -13624,7 +13624,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-large-railgun-pr/">Named2 Large Railgun Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-large-railgun-pr/">T3 Large Railgun Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -13641,7 +13641,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-large-railgun-pr/">Named3 Large Railgun Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-large-railgun-pr/">T4 Large Railgun Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×300</div>
@@ -13674,7 +13674,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-railgun-pr/">Named1 Longrange Large Railgun Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-longrange-large-railgun-pr/">T2 Longrange Large Railgun Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -13691,7 +13691,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-railgun-pr/">Named2 Longrange Large Railgun Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-longrange-large-railgun-pr/">T3 Longrange Large Railgun Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×150</div>
@@ -13699,7 +13699,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×75</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynitrocol/">Polynitrocol</a> ×150</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-railgun/">Named1 Longrange Large Railgun</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-longrange-large-railgun/">T2 Longrange Large Railgun</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a> ×30</div>
@@ -13710,14 +13710,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-railgun-pr/">Named3 Longrange Large Railgun Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-longrange-large-railgun-pr/">T4 Longrange Large Railgun Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/chollonin/">Chollonin</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×300</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×150</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/polynitrocol/">Polynitrocol</a> ×300</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-railgun/">Named2 Longrange Large Railgun</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-longrange-large-railgun/">T3 Longrange Large Railgun</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×23</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×45</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×68</div>
@@ -13841,7 +13841,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-hell-cannon-pr/">Named1 Hell Cannon Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-hell-cannon-pr/">T2 Hell Cannon Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/standard-hell-cannon/">Standard Hell Cannon</a> ×1</div>
@@ -13856,14 +13856,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-hell-cannon-pr/">Named2 Hell Cannon Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-hell-cannon-pr/">T3 Hell Cannon Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×250</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hell-cannon/">Named1 Hell Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-hell-cannon/">T2 Hell Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a> ×25</div>
@@ -13872,13 +13872,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-hell-cannon-pr/">Named3 Hell Cannon Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-hell-cannon-pr/">T4 Hell Cannon Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×120</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×500</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hell-cannon/">Named2 Hell Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-hell-cannon/">T3 Hell Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×90</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×120</div>
@@ -13890,7 +13890,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-raven-cannon-pr/">Named1 Raven Cannon Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-raven-cannon-pr/">T2 Raven Cannon Pr</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
@@ -13906,14 +13906,14 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-raven-cannon-pr/">Named2 Raven Cannon Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-raven-cannon-pr/">T3 Raven Cannon Pr</a></div><div class="mission-card-sub">Research level 7</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×100</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×250</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-raven-cannon/">Named1 Raven Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named1-raven-cannon/">T2 Raven Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×60</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/axicol/">Cryoperine</a> ×100</div>
@@ -13923,13 +13923,13 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-raven-cannon-pr/">Named3 Raven Cannon Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-raven-cannon-pr/">T4 Raven Cannon Pr</a></div><div class="mission-card-sub">Research level 8</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/hydrobenol/">Hydrobenol</a> ×200</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/espitium/">Espitium</a> ×120</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/biotichrin/">Biotichrin</a> ×500</div>
-<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-raven-cannon/">Named2 Raven Cannon</a> ×1</div>
+<div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/named2-raven-cannon/">T3 Raven Cannon</a> ×1</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-basic/">Damaged common fragment</a> ×30</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-advanced/">Functional common fragment</a> ×90</div>
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/robotshard-common-expert/">Perfect common fragment</a> ×120</div>
@@ -25601,7 +25601,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-sentry-turret-unit/">Named1 Sentry Turret Unit</a></div><div class="mission-card-sub">Research level 3</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-sentry-turret-unit/">T2 Sentry Turret Unit</a></div><div class="mission-card-sub">Research level 3</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -25614,7 +25614,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-sentry-turret-unit/">Named2 Sentry Turret Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-sentry-turret-unit/">T3 Sentry Turret Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -25628,7 +25628,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-sentry-turret-unit/">Named3 Sentry Turret Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-sentry-turret-unit/">T4 Sentry Turret Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1000</div>
@@ -25655,7 +25655,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-mining-turret-unit/">Named1 Mining Turret Unit</a></div><div class="mission-card-sub">Research level 3</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-mining-turret-unit/">T2 Mining Turret Unit</a></div><div class="mission-card-sub">Research level 3</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -25665,7 +25665,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-mining-turret-unit/">Named2 Mining Turret Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-mining-turret-unit/">T3 Mining Turret Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -25676,7 +25676,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-mining-turret-unit/">Named3 Mining Turret Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-mining-turret-unit/">T4 Mining Turret Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1000</div>
@@ -25700,7 +25700,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-harvesting-turret-unit/">Named1 Harvesting Turret Unit</a></div><div class="mission-card-sub">Research level 3</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-harvesting-turret-unit/">T2 Harvesting Turret Unit</a></div><div class="mission-card-sub">Research level 3</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -25710,7 +25710,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-harvesting-turret-unit/">Named2 Harvesting Turret Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-harvesting-turret-unit/">T3 Harvesting Turret Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×750</div>
@@ -25721,7 +25721,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-harvesting-turret-unit/">Named3 Harvesting Turret Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-harvesting-turret-unit/">T4 Harvesting Turret Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1000</div>
@@ -25745,7 +25745,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-pelistal-combat-drone-unit/">Named1 Pelistal Combat Drone Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-pelistal-combat-drone-unit/">T2 Pelistal Combat Drone Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1500</div>
@@ -25755,7 +25755,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-pelistal-combat-drone-unit/">Named2 Pelistal Combat Drone Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-pelistal-combat-drone-unit/">T3 Pelistal Combat Drone Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1500</div>
@@ -25766,7 +25766,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-pelistal-combat-drone-unit/">Named3 Pelistal Combat Drone Unit</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-pelistal-combat-drone-unit/">T4 Pelistal Combat Drone Unit</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2000</div>
@@ -25790,7 +25790,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-nuimqol-combat-drone-unit/">Named1 Nuimqol Combat Drone Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-nuimqol-combat-drone-unit/">T2 Nuimqol Combat Drone Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1500</div>
@@ -25800,7 +25800,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-nuimqol-combat-drone-unit/">Named2 Nuimqol Combat Drone Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-nuimqol-combat-drone-unit/">T3 Nuimqol Combat Drone Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1500</div>
@@ -25811,7 +25811,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-nuimqol-combat-drone-unit/">Named3 Nuimqol Combat Drone Unit</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-nuimqol-combat-drone-unit/">T4 Nuimqol Combat Drone Unit</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2000</div>
@@ -25835,7 +25835,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named1-thelodica-combat-drone-unit/">Named1 Thelodica Combat Drone Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named1-thelodica-combat-drone-unit/">T2 Thelodica Combat Drone Unit</a></div><div class="mission-card-sub">Research level 4</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1500</div>
@@ -25845,7 +25845,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named2-thelodica-combat-drone-unit/">Named2 Thelodica Combat Drone Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named2-thelodica-combat-drone-unit/">T3 Thelodica Combat Drone Unit</a></div><div class="mission-card-sub">Research level 5</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×1500</div>
@@ -25856,7 +25856,7 @@ Component requirements for every item that is assembled from other items, groupe
 <div class="mission-card">
 <div class="mission-card-head">
 <span class="icon-mask mission-card-icon" role="img" aria-label="item icon"></span>
-<div><div class="mission-card-title"><a href="/content/items/named3-thelodica-combat-drone-unit/">Named3 Thelodica Combat Drone Unit</a></div><div class="mission-card-sub">Research level 6</div></div>
+<div><div class="mission-card-title"><a href="/content/items/named3-thelodica-combat-drone-unit/">T4 Thelodica Combat Drone Unit</a></div><div class="mission-card-sub">Research level 6</div></div>
 </div>
 <div class="mission-card-rewards">
 <div class="reward-box"><span class="icon-mask reward-box-icon" role="img" aria-label="item icon"></span> <a href="/content/items/titanium/">Titanium</a> ×2000</div>

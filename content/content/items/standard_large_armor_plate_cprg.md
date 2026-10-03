@@ -16,9 +16,7 @@ description: "Modules / Armor, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Armor |
-| Tier line | **Standard Large Armor Plate Cprg** (T1) → [Named1 Large Armor Plate Cprg](/content/items/named1-large-armor-plate-cprg/) (T2) → [Named2 Large Armor Plate Cprg](/content/items/named2-large-armor-plate-cprg/) (T3) → [Named3 Large Armor Plate Cprg](/content/items/named3-large-armor-plate-cprg/) (T4) |
+| Tier line | **Standard Large Armor Plate Cprg** (T1) → [T2 Large Armor Plate Cprg](/content/items/named1-large-armor-plate-cprg/) (T2) → [T3 Large Armor Plate Cprg](/content/items/named2-large-armor-plate-cprg/) (T3) → [T4 Large Armor Plate Cprg](/content/items/named3-large-armor-plate-cprg/) (T4) |
 | Note | CT large weapon |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -27,5 +27,3 @@ description: "Modules / Repair, tier special"
 | cpu_usage | 1 |
 | cycle_time | 20k |
 | powergrid_usage | 20 |
-
-[All items](/content/items/)

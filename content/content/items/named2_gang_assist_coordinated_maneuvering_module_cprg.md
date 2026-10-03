@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard evasive NEXUS module CT](/content/items/standard-gang-assist-coordinated-maneuvering-module-cprg/) (T1) → [Oshbo evasive NEXUS module CT](/content/items/named1-gang-assist-coordinated-maneuvering-module-cprg/) (T2) → **Pareduit evasive NEXUS module CT** (T3) → [R4S-A evasive NEXUS module CT](/content/items/named3-gang-assist-coordinated-maneuvering-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

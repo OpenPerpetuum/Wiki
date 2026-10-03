@@ -30,5 +30,3 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 | Vendor | Qty | Credits | UniCoin |
 |---|---|---|---|
 | New Virginia (zone_TM) | ∞ | 1M | 150 |
-
-[All items](/content/items/)

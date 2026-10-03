@@ -26,7 +26,7 @@ stateDiagram-v2
     Deployed --> Scanning: core above 98% (scan every 10 s, 50-tile radius)
     Deployed --> Idle: core drained
     Idle --> Scanning: refed
-    Scanning --> Reporting: player contacts found (report pushed to registered chars; CEO + deputy always included)
+    Scanning --> Reporting: player contacts found<br/>(report pushed to the registration list)
     Reporting --> Scanning
     Scanning --> Destroyed: hostile action or despawn (~333 days)
     Idle --> Destroyed

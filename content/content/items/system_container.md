@@ -19,5 +19,3 @@ description: "Special & other / Containers"
 | Note | ilyen kontenerekbe meloznak a facility-k |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

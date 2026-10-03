@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Remote Command Translator](/content/items/standard-remote-command-translator/) |
 | Parent node | [Standard coprocessor](/content/techtree/nodes/standard-cpu-upgrade/) |
-| Unlocks next | [Named1 Remote Command Translator](/content/techtree/nodes/named1-remote-command-translator/) |
+| Unlocks next | [T2 Remote Command Translator](/content/techtree/nodes/named1-remote-command-translator/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

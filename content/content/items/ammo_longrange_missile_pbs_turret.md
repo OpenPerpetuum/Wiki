@@ -26,5 +26,3 @@ description: "Ammo / Missiles"
 | explosion_radius | 9 |
 | falloff | 40 |
 | optimal_range | 80 |
-
-[All items](/content/items/)

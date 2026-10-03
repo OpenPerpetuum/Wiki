@@ -16,8 +16,6 @@ description: "Modules / Enhancements, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Enhancements |
-| Tier line | **Standard Dreadnought Module Cprg** (T1) → [Named1 Dreadnought Module Cprg](/content/items/named1-dreadnought-module-cprg/) (T2) → [Named2 Dreadnought Module Cprg](/content/items/named2-dreadnought-module-cprg/) (T3) → [Named3 Dreadnought Module Cprg](/content/items/named3-dreadnought-module-cprg/) (T4) |
+| Tier line | **Standard Dreadnought Module Cprg** (T1) → [T2 Dreadnought Module Cprg](/content/items/named1-dreadnought-module-cprg/) (T2) → [T3 Dreadnought Module Cprg](/content/items/named2-dreadnought-module-cprg/) (T3) → [T4 Dreadnought Module Cprg](/content/items/named3-dreadnought-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard armor NEXUS module CT](/content/items/standard-gang-assist-defense-module-cprg/) (T1) → [Starodix armor NEXUS module CT](/content/items/named1-gang-assist-defense-module-cprg/) (T2) → [Paternis armor NEXUS module CT](/content/items/named2-gang-assist-defense-module-cprg/) (T3) → **TSP-Hindoo armor NEXUS module CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

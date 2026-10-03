@@ -33,5 +33,3 @@ description: "Modules / Enhancements"
 | locking_range | 10 |
 | optimal_range | 300 |
 | powergrid_usage | 100k |
-
-[All items](/content/items/)

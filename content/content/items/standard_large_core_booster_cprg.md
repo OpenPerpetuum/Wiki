@@ -16,9 +16,7 @@ description: "Modules / Enhancements, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Enhancements |
-| Tier line | **Standard Large Core Booster Cprg** (T1) → [Named1 Large Core Booster Cprg](/content/items/named1-large-core-booster-cprg/) (T2) → [Named2 Large Core Booster Cprg](/content/items/named2-large-core-booster-cprg/) (T3) → [Named3 Large Core Booster Cprg](/content/items/named3-large-core-booster-cprg/) (T4) |
+| Tier line | **Standard Large Core Booster Cprg** (T1) → [T2 Large Core Booster Cprg](/content/items/named1-large-core-booster-cprg/) (T2) → [T3 Large Core Booster Cprg](/content/items/named2-large-core-booster-cprg/) (T3) → [T4 Large Core Booster Cprg](/content/items/named3-large-core-booster-cprg/) (T4) |
 | Note | CT large weapon |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

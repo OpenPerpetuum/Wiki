@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T4"
 | Tier line | [Condor-SPP medium EM-gun CT](/content/items/named1-longrange-medium-railgun-cprg/) (T2) → [Nuimtec-Accolon LRS medium EM-gun CT](/content/items/named2-longrange-medium-railgun-cprg/) (T3) → **5.5-Glipler medium EM-gun CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

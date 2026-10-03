@@ -965,6 +965,14 @@ footer {
     background: var(--bg-soft); font-size: 0.85em;
 }
 a:hover > .mission-type-chip { border-color: var(--neon); color: var(--accent); }
+/* tech tree line chips: same look as the mission type chips */
+.tt-index { line-height: 2; margin: 0.8rem 0; }
+.tt-chip {
+    display: inline-block; padding: 0.1rem 0.55rem; margin: 0.05rem 0.15rem;
+    border: 1px solid var(--neon-dim); border-radius: 999px;
+    background: var(--bg-soft); font-size: 0.85em;
+}
+a:hover > .tt-chip { border-color: var(--neon); color: var(--accent); }
 .mission-category { color: var(--muted); font-style: italic; }
 .mission-cards {
     display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -1024,6 +1032,58 @@ a:hover > .mission-type-chip { border-color: var(--neon); color: var(--accent); 
   font-size: 12px;
   line-height: 1.5;
 }
+
+/* item pages: "Produced from" component cards (replaced the mermaid tree —
+   one card per component: icon + name on the left, required amount in the
+   body). Grid mirrors .ext-cards. */
+.prod-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 8px;
+  margin: 10px 0 26px;
+}
+
+.prod-card {
+  border: 1px solid var(--line, #2a3242);
+  border-radius: 10px;
+  padding: 9px 11px;
+  background: #121926;
+  font-size: 13px;
+  min-width: 0;
+}
+
+.prod-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.prod-card-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex: 0 0 auto;
+  color: var(--neon, #41d3ff);
+}
+
+.prod-card-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #e8ecf4;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+a.prod-card-name { text-decoration: none; }
+a.prod-card-name:hover { color: var(--neon, #41d3ff); }
+
+.prod-card-body {
+  color: var(--muted, #8b93a5);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.prod-card-body b { color: #e8ecf4; font-weight: 700; }
 
 .reward-box {
     display: flex; align-items: center; gap: 0.5rem;

@@ -18,5 +18,3 @@ description: "Ammo / Other ammo"
 | Category | Ammo / Other ammo |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

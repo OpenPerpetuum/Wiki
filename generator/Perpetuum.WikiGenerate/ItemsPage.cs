@@ -110,44 +110,12 @@ public static class ItemsPage
             list.Add((d, cs));
         }
 
-        // The category index.
-        var sb = new StringBuilder();
-        sb.Append(Md.Header("Items", "Every item with its own stat page: modules, ammo, armor, robot parts, materials, and more — by category and sub-category.",
-            "entitydefaults (enabled, non-hidden items), aggregatevalues via aggregatefields"));
-        sb.Append("\n\n# Items\n\n");
-        sb.Append("Every item the game offers players, grouped into categories and sub-categories — " +
-                  "**each item has its own page** with its full stats. Tier: **T1–T5** are the production " +
-                  "tiers (higher tiers are built from a specimen of the previous tier — an item page's " +
-                  "**tier line** row links the whole chain, see [Production — tier progression](/features/production/#tier-progression)), " +
-                  "**prototype** marks prototype variants and **special** the elite/artifact/faction lines. " +
-                  "What a stat value means and how big it is in context is in the " +
-                  "[Stat reference](/content/stat-reference/); what a stat field actually does is in [Formats](/formats/).\n\n");
-
-        foreach (var (cat, blurb, subs) in Categories)
-        {
-            if (!byCat.TryGetValue(cat, out var rows)) continue;
-            sb.Append($"## {cat} ({rows.Count})\n\n{blurb}\n\n");
-            foreach (var sub in subs)
-            {
-                // Tier first (0-5, untyped last), then name: the listing order is
-            // the progression order, not alphabetical.
-                var subRows = rows.Where(r => r.CS.Sub == sub)
-                    .OrderBy(r => TierSortKey(r.D))
-                    .ThenBy(r => r.D.Name, StringComparer.Ordinal)
-                    .ToList();
-                if (subRows.Count == 0) continue;
-                sb.Append($"### {sub} ({subRows.Count})\n\n");
-                Md.WriteTable(sb, new[] { "Item", "Tier" },
-                    subRows.Select(r => new[]
-                    {
-                        $"[{ShowName(r.D)}](/content/items/{Slug(r.D.Name)}/)",
-                        Md.Tier(r.D.TierType, r.D.TierLevel)
-                    }).ToArray());
-                sb.Append('\n');
-            }
-        }
-
-        pages.Insert(0, ("items/_index.md", sb.ToString()));
+        // No catalog index page: with 1,700+ items it was a wall of links —
+        // items are reached by search and by the links on related pages.
+        // Zola still builds a section index for the directory, so a
+        // render:false _index keeps /content/items/ a 404 (and out of the
+        // search index).
+        pages.Insert(0, ("items/_index.md", "---\ntitle: \"Items\"\nrender: false\n---\n"));
         return pages;
     }
 
@@ -423,39 +391,66 @@ public static class ItemsPage
             sb.Append((parts is { Count: > 0 } ? "\n" : "") + "## Used in production\n\n");
             sb.Append(ProductionSection(showName, u, defs, dupes));
         }
-        sb.Append(hasProdSection ? "\n\n[All items](/content/items/)\n" : "\n[All items](/content/items/)\n");
+        // no "[All items]" footer: the catalog index page was removed — items
+        // are reached by search and by the links on related pages.
         return sb.ToString();
     }
 
     /// <summary>
-    /// "How this item is produced": a mermaid tree with the components on the
-    /// left (display name + required amount, linked when they have a page) and
-    /// this item on the right in green. Mirrors the recipes page cards — keep
-    /// both in sync.
+    /// "How this item is produced": one card per component (icon + name on the
+    /// left, required amount in the body) — the old mermaid tree was hard to
+    /// scan with 10+ components. Mirrors tools/gen_production_pages.py
+    /// recipe_section() — keep both in sync (byte-identical output).
     /// </summary>
     private static string ProductionRecipeSection(string selfDisplay, List<(int Comp, int Amt)> parts, Dictionary<int, DefRow> defs, HashSet<string> dupes, int researchLvl)
     {
         var intro = $"**Produced from {Num(parts.Count)} component{(parts.Count == 1 ? "" : "s")}" +
                     (researchLvl > 0 ? $", research level {researchLvl}" : "") +
                     "** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):\n\n";
-        var lines = new List<string> { "```mermaid", "graph LR" };
-        lines.Add($"    a[\"{MermaidLabel(selfDisplay)}\"]:::current");
+        var sb = new StringBuilder("<div class=\"prod-cards\">\n");
         for (var i = 0; i < parts.Count; i++)
         {
             var (comp, amt) = parts[i];
-            var letter = ((char)('b' + i)).ToString();
             var (name, url) = TargetLabel(comp, defs, dupes);
-            var label = $"{MermaidLabel(name)} ×{Num(amt)}";
-            lines.Add($"    {letter}[\"{label}\"]:::comp");
-            lines.Add($"    {letter} --> a");
-            if (url is not null)
-                lines.Add($"    click {letter} \"{url}\" \"{MermaidLabel(name)}\"");
+            var icon = ComponentIcon(name);
+            var head = url is null
+                ? $"<span class=\"prod-card-name\">{Esc(name)}</span>"
+                : $"<a class=\"prod-card-name\" href=\"{url}\">{Esc(name)}</a>";
+            sb.Append($"<div class=\"prod-card\"><div class=\"prod-card-head\"><svg class=\"prod-card-icon\" aria-hidden=\"true\"><use href=\"#{icon}\"/></svg>{head}</div><div class=\"prod-card-body\">required: <b>{Num(amt)}</b></div></div>\n");
         }
-        lines.Add("    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff");
-        lines.Add("    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff");
-        lines.Add("```");
-        return intro + string.Join("\n", lines);
+        sb.Append("</div>");
+        return intro + sb; // ends at </div>, like the Python tool (no trailing newline)
     }
+
+    /// <summary>
+    /// The navicon symbol id for a component card (icon + name on the left of
+    /// the card). Mirrors tools/gen_production_pages.py component_icon().
+    /// </summary>
+    internal static string ComponentIcon(string name)
+    {
+        // case-insensitive, like the Python tool's name.lower()
+        var n = name.ToLowerInvariant();
+        if (n.Contains("ammo") || n.Contains("missile") || n.Contains("projectile")
+            || n.Contains("cprg")) return "mi-star";
+        if (n.Contains("ore") || n.Contains("fragment") || n.Contains("mineral")
+            || n.Contains("alloy")) return "mi-crystal";
+        if (n.Contains("capsule") || n.Contains("package")) return "mi-home";
+        if (n.Contains("core") || n.Contains("battery") || n.Contains("capacitor")
+            || n.Contains("power")) return "mi-radar";
+        if (n.Contains("weapon") || n.Contains("cannon") || n.Contains("laser")
+            || n.Contains("railgun") || n.Contains("launcher") || n.Contains("turret"))
+            return "mi-robots";
+        if (n.Contains("shield") || n.Contains("armor") || n.Contains("repair")
+            || n.Contains("stabilizer")) return "mi-tree";
+        if (n.Contains("sensor") || n.Contains("scanner") || n.Contains("locator"))
+            return "mi-grid";
+        if (n.Contains("module") || n.Contains("tuning")) return "mi-panel";
+        return "mi-grid";
+    }
+
+    /// <summary>HTML-escape a display name for use inside attribute/text content.</summary>
+    internal static string Esc(string s)
+        => s.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;").Replace("\"", "&quot;");
 
     private const int MaxProducts = 8;
 

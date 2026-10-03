@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T4"
 | Tier line | [Standard ECM CT](/content/items/standard-sensor-jammer-cprg/) (T1) → [Occyt-OEW ECM CT](/content/items/named1-sensor-jammer-cprg/) (T2) → [Wavoslur ECM CT](/content/items/named2-sensor-jammer-cprg/) (T3) → **Tenion ECM CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

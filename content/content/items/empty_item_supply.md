@@ -23,5 +23,3 @@ description: "Materials"
 | Field | Value |
 |---|---|
 | stealth_strength | 200 |
-
-[All items](/content/items/)

@@ -101,8 +101,8 @@ For each documented stat: how many items have it, its unit, and the smallest / m
 | `core_recharge_time` | s | 21 | 300 | 345.6k | 345.6k | [Npcpbs Turret Chassis](/content/items/npcpbs-turret-chassis/) | [Hi-tech accelerator strip foundation](/content/items/pbs-highwaynode-large/) |
 | `core_usage` | RP | 500 | 0 | 20 | 495 | [Standard small energy injector](/content/items/standard-small-core-booster/) | [Pandegris large armor repairer](/content/items/named3-large-armor-repairer/) |
 | `cpu_max` | CU | 2 | 1k | 5k | 5k | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) | [Npcpbs Turret Head](/content/items/npcpbs-turret-head/) |
-| `cpu_usage` | CU | 677 | 0 | 42 | 495 | [Standard coprocessor](/content/items/standard-cpu-upgrade/) | [Named3 Large Harvester](/content/items/named3-large-harvester/) |
-| `cycle_time` | s | 553 | 0.6 | 10k | 180k | [Standard laser turret](/content/items/pbs-turret-laser-small/) | [Named3 Excavator Module](/content/items/named3-excavator-module/) |
+| `cpu_usage` | CU | 677 | 0 | 42 | 495 | [Standard coprocessor](/content/items/standard-cpu-upgrade/) | [T4 Large Harvester](/content/items/named3-large-harvester/) |
+| `cycle_time` | s | 553 | 0.6 | 10k | 180k | [Standard laser turret](/content/items/pbs-turret-laser-small/) | [T4 Excavator Module](/content/items/named3-excavator-module/) |
 | `damage_chemical` | hp | 41 | 3 | 16 | 900 | [Small TFJ bullet](/content/items/ammo-small-projectile-rewa/) | Heavy Landmine Capsule |
 | `damage_explosive` | hp | 80 | 1 | 39.732 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | Heavy Landmine Capsule |
 | `damage_kinetic` | hp | 73 | 1 | 26 | 900 | [Ammo Small Projectile T](/content/items/ammo-small-projectile-t/) | Heavy Landmine Capsule |
@@ -118,7 +118,7 @@ For each documented stat: how many items have it, its unit, and the smallest / m
 | `locked_targets_max` | targets | 32 | 0 | 25 | 100 | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) | [Npcpbs Turret Head](/content/items/npcpbs-turret-head/) |
 | `locking_range` | m | 3 | 1 | 10 | 100 | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) | [Npcpbs Turret Head](/content/items/npcpbs-turret-head/) |
 | `locking_time` | s | 2 | 5k | 10k | 10k | [Npcpbs Turret Head](/content/items/npcpbs-turret-head/) | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) |
-| `massiveness` | × | 68 | -0.4 | -0.1 | 0.18 | [Weasel Named4 Mass Reductor](/content/items/weasel-named4-mass-reductor/) | [Halc heavy armor plate](/content/items/named3-large-armor-plate/) |
+| `massiveness` | × | 68 | -0.4 | -0.1 | 0.18 | [Weasel T5 Mass Reductor](/content/items/weasel-named4-mass-reductor/) | [Halc heavy armor plate](/content/items/named3-large-armor-plate/) |
 | `optimal_range` | m | 279 | 3 | 18 | 300 | [Standard small harvester](/content/items/standard-small-harvester/) | [The Eraser](/content/items/zmall-railg00n/) |
 | `powergrid_max` | RP | 4 | 1k | 1.25M | 1.25M | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) | [Passive hacking](/content/items/sap-passive-hacking/) |
 | `powergrid_usage` | RP | 671 | 2 | 35 | 100k | [Standard accumulator recharger](/content/items/standard-core-recharger/) | [The Eraser](/content/items/zmall-railg00n/) |
@@ -127,7 +127,7 @@ For each documented stat: how many items have it, its unit, and the smallest / m
 | `resist_kinetic` | % | 703 | 10 | 75 | 100k | Npc Gamma Seth Dps L7 | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
 | `resist_thermal` | % | 703 | 10 | 75 | 100k | Npc Gamma Seth Dps L7 | [Rift Targetted Portal](/content/items/rift-targetted-portal/) |
 | `sensor_strength` | — | 29 | 30 | 180 | 200 | [Flawed ECCM](/content/items/artifact-damaged-eccm/) | [Hi-tech EM-turret](/content/items/pbs-turret-rail-large/) |
-| `shield_absorbtion` | hp | 25 | 1.2 | 2 | 2.3 | [Flawed small shield generator](/content/items/artifact-damaged-small-shield-generator/) | [Archer Named4 Medium Shield Generator](/content/items/archer-named4-medium-shield-generator/) |
+| `shield_absorbtion` | hp | 25 | 1.2 | 2 | 2.3 | [Flawed small shield generator](/content/items/artifact-damaged-small-shield-generator/) | [Archer T5 Medium Shield Generator](/content/items/archer-named4-medium-shield-generator/) |
 | `shield_radius` | m | 25 | 4.5 | 12 | 33 | [Standard small shield generator](/content/items/standard-small-shield-generator/) | [Umbeler large shield generator](/content/items/named3-large-shield-generator/) |
 | `signature_radius` | m | 770 | -1.2 | 1 | 150 | [Elitet4 71 Maneuvering Upgrade](/content/items/elitet4-71-maneuvering-upgrade/) | [Hi-tech main terminal foundation](/content/items/pbs-docking-base-large/) |
 | `slope` | % | 4 | 4 | 4 | 4 | [Interference emitter](/content/items/blob-emitter/) | [Npcpbs Invis Head](/content/items/npcpbs-invis-head/) |

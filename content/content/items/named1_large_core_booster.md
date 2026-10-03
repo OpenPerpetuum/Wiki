@@ -32,27 +32,13 @@ description: "Modules / Enhancements, tier T2"
 
 **Produced from 5 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Shoxit Parter II. large energy injector"]:::current
-    b["Cryoperine ×600"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Damaged common fragment ×90"]:::comp
-    c --> a
-    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    d["Specimen Sap Item Flux ×5"]:::comp
-    d --> a
-    click d "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    e["Standard large energy injector ×1"]:::comp
-    e --> a
-    click e "/content/items/standard-large-core-booster/" "Standard large energy injector"
-    f["Titanium ×300"]:::comp
-    f --> a
-    click f "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>600</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>90</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>5</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/standard-large-core-booster/">Standard large energy injector</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -63,12 +49,10 @@ graph LR
     b["CC90-Tensio large energy injector"]:::prod
     a --> b
     click b "/content/items/named2-large-core-booster/" "CC90-Tensio large energy injector"
-    c["Named2 Large Core Booster Pr"]:::prod
+    c["T3 Large Core Booster Pr"]:::prod
     a --> c
-    click c "/content/items/named2-large-core-booster-pr/" "Named2 Large Core Booster Pr"
+    click c "/content/items/named2-large-core-booster-pr/" "T3 Large Core Booster Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

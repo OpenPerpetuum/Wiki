@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T2"
 | Tier line | [Standard velocity NEXUS module CT](/content/items/standard-gang-assist-speed-module-cprg/) (T1) → **Jubatus velocity NEXUS module CT** (T2) → [Iopis-II velocity NEXUS module CT](/content/items/named2-gang-assist-speed-module-cprg/) (T3) → [Contra velocity NEXUS module CT](/content/items/named3-gang-assist-speed-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

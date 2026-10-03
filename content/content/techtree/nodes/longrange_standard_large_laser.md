@@ -15,7 +15,7 @@ This node of the [Thelodica (faction)](/content/techtree/groups/thelodica/) rese
 | Category | [Thelodica (faction)](/content/techtree/groups/thelodica/) |
 | Unlocks | [Longrange Standard Large Laser](/content/items/longrange-standard-large-laser/) |
 | Parent node | [Standard medium HCL laser](/content/techtree/nodes/longrange-standard-medium-laser/) |
-| Unlocks next | [Large thermic energy cell](/content/techtree/nodes/ammo-large-lasercrystal-d/), [Named1 Longrange Large Laser](/content/techtree/nodes/named1-longrange-large-laser/) |
+| Unlocks next | [Large thermic energy cell](/content/techtree/nodes/ammo-large-lasercrystal-d/), [T2 Longrange Large Laser](/content/techtree/nodes/named1-longrange-large-laser/) |
 | Enabler extension | – |
 | Point prices | hitech=17.15k; thelodica=34.3k |
 

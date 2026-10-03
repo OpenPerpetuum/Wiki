@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard fast extractor NEXUS module CT](/content/items/standard-gang-assist-fast-extraction-module-cprg/) (T1) → [AE-D250 fast extractor NEXUS module CT](/content/items/named1-gang-assist-fast-extraction-module-cprg/) (T2) → [Matriot-II fast extractor NEXUS module CT](/content/items/named2-gang-assist-fast-extraction-module-cprg/) (T3) → **Matriot-IV fast extractor NEXUS module CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -16,8 +16,6 @@ description: "Modules / Enhancements, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Enhancements |
-| Tier line | **Standard Gang Assist Resilience Module Cprg** (T1) → [Named1 Gang Assist Resilience Module Cprg](/content/items/named1-gang-assist-resilience-module-cprg/) (T2) → [Named2 Gang Assist Resilience Module Cprg](/content/items/named2-gang-assist-resilience-module-cprg/) (T3) → [Named3 Gang Assist Resilience Module Cprg](/content/items/named3-gang-assist-resilience-module-cprg/) (T4) |
+| Tier line | **Standard Gang Assist Resilience Module Cprg** (T1) → [T2 Gang Assist Resilience Module Cprg](/content/items/named1-gang-assist-resilience-module-cprg/) (T2) → [T3 Gang Assist Resilience Module Cprg](/content/items/named2-gang-assist-resilience-module-cprg/) (T3) → [T4 Gang Assist Resilience Module Cprg](/content/items/named3-gang-assist-resilience-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

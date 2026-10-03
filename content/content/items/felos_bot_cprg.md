@@ -19,5 +19,3 @@ description: "Materials"
 | Note | CT FOR DESTROYER |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

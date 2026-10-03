@@ -28,5 +28,3 @@ description: "Mission items"
 | resist_thermal | 5k |
 | signature_radius | 0.5 |
 | stealth_strength | 200 |
-
-[All items](/content/items/)

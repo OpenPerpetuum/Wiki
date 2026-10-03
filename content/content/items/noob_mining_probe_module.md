@@ -26,5 +26,3 @@ description: "Modules / Enhancements, tier special"
 | cycle_time | 20k |
 | mining_probe_accuracy | 0.3 |
 | powergrid_usage | 35 |
-
-[All items](/content/items/)

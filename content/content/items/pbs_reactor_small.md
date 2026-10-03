@@ -30,5 +30,3 @@ description: "Special & other / Miscellaneous, tier T1"
 | resist_thermal | 30 |
 | signature_radius | 50 |
 | stealth_strength | 50 |
-
-[All items](/content/items/)

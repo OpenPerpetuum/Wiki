@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T2"
 | Tier line | [Standard laser tuning CT](/content/items/standard-damage-mod-laser-cprg/) (T1) → **Reflexis II. laser tuning CT** (T2) → [Kauska Optibrace laser tuning CT](/content/items/named2-damage-mod-laser-cprg/) (T3) → [Oqulus laser tuning CT](/content/items/named3-damage-mod-laser-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -18,5 +18,3 @@ description: "Decorations"
 | Category | Decorations |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

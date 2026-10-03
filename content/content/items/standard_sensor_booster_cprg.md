@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T1"
 | Tier line | **Standard sensor amplifier CT** (T1) → [Bullz-I 6601 sensor amplifier CT](/content/items/named1-sensor-booster-cprg/) (T2) → [Desenspure sensor amplifier CT](/content/items/named2-sensor-booster-cprg/) (T3) → [Ambassador SU-I sensor amplifier CT](/content/items/named3-sensor-booster-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

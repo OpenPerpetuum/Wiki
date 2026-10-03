@@ -10,7 +10,17 @@ description: "PBS structures research category: 84 nodes."
 
 Power base station capsules and construction modules — the buildings of open-world corporate play.
 
-[Tech tree](/content/techtree/) → PBS structures. Every node in the diagram links to its detail page (prerequisites, what it unlocks next, point prices).
+[Tech tree](/content/techtree/) → PBS structures. The category is split into its **research lines** — one per top-level item (the chips above jump to each line's graph). Every node in a graph links to its detail page (prerequisites, what it unlocks next, point prices).
+
+<div class="tt-index">
+<a href="#line-6625"><span class="tt-chip">Construction Module Ammo T1</span></a>&ensp;
+</div>
+
+<a id="line-6625"></a>
+
+## Construction Module Ammo T1
+
+**84 nodes** — everything that descends from [Construction Module Ammo T1](/content/techtree/nodes/construction-module-ammo-t1/).
 
 ```mermaid
 graph TD
@@ -267,7 +277,7 @@ graph TD
     click n6627 "/content/techtree/nodes/construction-module-ammo-t3/" "Construction Module Ammo T3"
 ```
 
-## Nodes
+## Nodes (all)
 
 | Unlocks item | Parent node | Enabler extension | Point prices |
 |---|---|---|---|

@@ -35,47 +35,17 @@ description: "Modules / Enhancements, tier T4 (prototype)"
 
 **Produced from 12 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["TSP-Hindoo armor NEXUS module prototype"]:::current
-    b["Alligior ×100"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Espitium ×500"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Metachropin ×100"]:::comp
-    d --> a
-    click d "/content/items/metachropin/" "Metachropin"
-    e["Paternis armor NEXUS module ×1"]:::comp
-    e --> a
-    click e "/content/items/named2-gang-assist-defense-module/" "Paternis armor NEXUS module"
-    f["Prilumium ×500"]:::comp
-    f --> a
-    click f "/content/items/prilumium/" "Prilumium"
-    g["Functional pelistal fragment ×15"]:::comp
-    g --> a
-    click g "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
-    h["Damaged pelistal fragment ×7"]:::comp
-    h --> a
-    click h "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
-    i["Perfect pelistal fragment ×22"]:::comp
-    i --> a
-    click i "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
-    j["Functional thelodica fragment ×15"]:::comp
-    j --> a
-    click j "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
-    k["Damaged thelodica fragment ×7"]:::comp
-    k --> a
-    click k "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
-    l["Perfect thelodica fragment ×22"]:::comp
-    l --> a
-    click l "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
-    m["Briochit ×100"]:::comp
-    m --> a
-    click m "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/metachropin/">Metachropin</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-tree"/></svg><a class="prod-card-name" href="/content/items/named2-gang-assist-defense-module/">Paternis armor NEXUS module</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prilumium/">Prilumium</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-advanced/">Functional pelistal fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a></div><div class="prod-card-body">required: <b>7</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-expert/">Perfect pelistal fragment</a></div><div class="prod-card-body">required: <b>22</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a></div><div class="prod-card-body">required: <b>7</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-expert/">Perfect thelodica fragment</a></div><div class="prod-card-body">required: <b>22</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

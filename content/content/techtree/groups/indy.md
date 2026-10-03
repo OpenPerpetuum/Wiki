@@ -10,7 +10,19 @@ description: "Industrial research category: 67 nodes."
 
 Industrial research: reactor boosters and the modules that keep production lines moving.
 
-[Tech tree](/content/techtree/) → Industrial. Every node in the diagram links to its detail page (prerequisites, what it unlocks next, point prices).
+[Tech tree](/content/techtree/) → Industrial. The category is split into its **research lines** — one per top-level item (the chips above jump to each line's graph). Every node in a graph links to its detail page (prerequisites, what it unlocks next, point prices).
+
+<div class="tt-index">
+<a href="#line-53"><span class="tt-chip">Small miner module</span></a>&ensp;
+<a href="#line-639"><span class="tt-chip">Small harvester</span></a>&ensp;
+<a href="#line-8693"><span class="tt-chip">Terramotus</span></a>&ensp;
+</div>
+
+<a id="line-53"></a>
+
+## Standard small miner module
+
+**36 nodes** — everything that descends from [Standard small miner module](/content/techtree/nodes/standard-small-driller/).
 
 ```mermaid
 graph TD
@@ -18,14 +30,9 @@ graph TD
     n54["Standard medium miner module"]
     n56["Standard industrial tuning"]
     n197["Argano"]
-    n198["Laird"]
     n209["Termis"]
-    n210["Gargoyle"]
     n217["Riveler"]
-    n218["Symbiont"]
     n228["Standard geoscanner"]
-    n639["Standard small harvester"]
-    n640["Standard medium harvester"]
     n780["Ovostec-Chisomel geoscanner"]
     n781["Syverz geoscanner"]
     n782["Eksplor-q3000 geoscanner"]
@@ -38,15 +45,8 @@ graph TD
     n804["Piog Forgekit AI industrial tuning"]
     n805["Fraktura SCV industrial tuning"]
     n806["Piog Forgekit BW1 industrial tuning"]
-    n807["MHA 400-'Avalon' small harvester"]
-    n808["Agraar-I small harvester"]
-    n809["Protrim FDV-30 small harvester"]
-    n810["MHA 900-'Sap' medium harvester"]
-    n811["Cultivator-XM medium harvester"]
-    n812["Protrim V-II medium harvester"]
     n875["Standard industrial NEXUS module"]
     n888["Miner charge (titan ore)"]
-    n891["Universal harvester charge"]
     n903["Miner charge (HDT)"]
     n904["Miner charge (liquizit)"]
     n905["Miner charge (imentium)"]
@@ -62,6 +62,132 @@ graph TD
     n4804["Miner charge (silgium)"]
     n4805["Miner charge (colixum)"]
     n5846["Ammo Mining Fluxore"]
+    n798 --> n54
+    n801 --> n56
+    n53 --> n197
+    n54 --> n209
+    n802 --> n217
+    n53 --> n228
+    n228 --> n780
+    n780 --> n781
+    n781 --> n782
+    n53 --> n798
+    n798 --> n799
+    n799 --> n800
+    n54 --> n801
+    n801 --> n802
+    n802 --> n803
+    n56 --> n804
+    n804 --> n805
+    n805 --> n806
+    n801 --> n875
+    n53 --> n888
+    n888 --> n903
+    n888 --> n904
+    n903 --> n905
+    n903 --> n906
+    n904 --> n907
+    n875 --> n2558
+    n875 --> n2574
+    n2574 --> n2575
+    n2575 --> n2576
+    n2558 --> n2604
+    n2604 --> n2605
+    n2605 --> n2606
+    n903 --> n4804
+    n907 --> n4805
+    n904 --> n5846
+    click n53 "/content/techtree/nodes/standard-small-driller/" "Standard small miner module"
+    click n54 "/content/techtree/nodes/standard-medium-driller/" "Standard medium miner module"
+    click n56 "/content/techtree/nodes/standard-mining-upgrade/" "Standard industrial tuning"
+    click n197 "/content/techtree/nodes/argano/" "Argano"
+    click n209 "/content/techtree/nodes/termis/" "Termis"
+    click n217 "/content/techtree/nodes/riveler/" "Riveler"
+    click n228 "/content/techtree/nodes/standard-mining-probe-module/" "Standard geoscanner"
+    click n780 "/content/techtree/nodes/named1-mining-probe-module/" "Ovostec-Chisomel geoscanner"
+    click n781 "/content/techtree/nodes/named2-mining-probe-module/" "Syverz geoscanner"
+    click n782 "/content/techtree/nodes/named3-mining-probe-module/" "Eksplor-q3000 geoscanner"
+    click n798 "/content/techtree/nodes/named1-small-driller/" "Biroter 5050 small miner module"
+    click n799 "/content/techtree/nodes/named2-small-driller/" "Sublimator Low-D small miner module"
+    click n800 "/content/techtree/nodes/named3-small-driller/" "Scraper-990 small miner module"
+    click n801 "/content/techtree/nodes/named1-medium-driller/" "MMA v12-'Alkhemir' medium miner module"
+    click n802 "/content/techtree/nodes/named2-medium-driller/" "Sublimator Mid-D medium miner module"
+    click n803 "/content/techtree/nodes/named3-medium-driller/" "Ovostec-Edger medium miner module"
+    click n804 "/content/techtree/nodes/named1-mining-upgrade/" "Piog Forgekit AI industrial tuning"
+    click n805 "/content/techtree/nodes/named2-mining-upgrade/" "Fraktura SCV industrial tuning"
+    click n806 "/content/techtree/nodes/named3-mining-upgrade/" "Piog Forgekit BW1 industrial tuning"
+    click n875 "/content/techtree/nodes/standard-gang-assist-industry-module/" "Standard industrial NEXUS module"
+    click n888 "/content/techtree/nodes/ammo-mining-titan/" "Miner charge (titan ore)"
+    click n903 "/content/techtree/nodes/ammo-mining-crude/" "Miner charge (HDT)"
+    click n904 "/content/techtree/nodes/ammo-mining-liquizit/" "Miner charge (liquizit)"
+    click n905 "/content/techtree/nodes/ammo-mining-imentium/" "Miner charge (imentium)"
+    click n906 "/content/techtree/nodes/ammo-mining-stermonit/" "Miner charge (stermonit)"
+    click n907 "/content/techtree/nodes/ammo-mining-epriton/" "Miner charge (epriton)"
+    click n2558 "/content/techtree/nodes/standard-gang-assist-fast-extraction-module/" "Standard fast extractor NEXUS module"
+    click n2574 "/content/techtree/nodes/named1-gang-assist-industry-module/" "Thobys industrial NEXUS module"
+    click n2575 "/content/techtree/nodes/named2-gang-assist-industry-module/" "EE-D220 industrial NEXUS module"
+    click n2576 "/content/techtree/nodes/named3-gang-assist-industry-module/" "Rypoa industrial NEXUS module"
+    click n2604 "/content/techtree/nodes/named1-gang-assist-fast-extraction-module/" "AE-D250 fast extractor NEXUS module"
+    click n2605 "/content/techtree/nodes/named2-gang-assist-fast-extraction-module/" "Matriot-II fast extractor NEXUS module"
+    click n2606 "/content/techtree/nodes/named3-gang-assist-fast-extraction-module/" "Matriot-IV fast extractor NEXUS module"
+    click n4804 "/content/techtree/nodes/ammo-mining-silgium/" "Miner charge (silgium)"
+    click n4805 "/content/techtree/nodes/ammo-mining-gammaterial/" "Miner charge (colixum)"
+    click n5846 "/content/techtree/nodes/ammo-mining-fluxore/" "Ammo Mining Fluxore"
+```
+
+<a id="line-639"></a>
+
+## Standard small harvester
+
+**12 nodes** — everything that descends from [Standard small harvester](/content/techtree/nodes/standard-small-harvester/).
+
+```mermaid
+graph TD
+    n198["Laird"]
+    n210["Gargoyle"]
+    n218["Symbiont"]
+    n639["Standard small harvester"]
+    n640["Standard medium harvester"]
+    n807["MHA 400-'Avalon' small harvester"]
+    n808["Agraar-I small harvester"]
+    n809["Protrim FDV-30 small harvester"]
+    n810["MHA 900-'Sap' medium harvester"]
+    n811["Cultivator-XM medium harvester"]
+    n812["Protrim V-II medium harvester"]
+    n891["Universal harvester charge"]
+    n639 --> n198
+    n640 --> n210
+    n811 --> n218
+    n807 --> n640
+    n639 --> n807
+    n807 --> n808
+    n808 --> n809
+    n640 --> n810
+    n810 --> n811
+    n811 --> n812
+    n639 --> n891
+    click n198 "/content/techtree/nodes/laird/" "Laird"
+    click n210 "/content/techtree/nodes/gargoyle/" "Gargoyle"
+    click n218 "/content/techtree/nodes/symbiont/" "Symbiont"
+    click n639 "/content/techtree/nodes/standard-small-harvester/" "Standard small harvester"
+    click n640 "/content/techtree/nodes/standard-medium-harvester/" "Standard medium harvester"
+    click n807 "/content/techtree/nodes/named1-small-harvester/" "MHA 400-'Avalon' small harvester"
+    click n808 "/content/techtree/nodes/named2-small-harvester/" "Agraar-I small harvester"
+    click n809 "/content/techtree/nodes/named3-small-harvester/" "Protrim FDV-30 small harvester"
+    click n810 "/content/techtree/nodes/named1-medium-harvester/" "MHA 900-'Sap' medium harvester"
+    click n811 "/content/techtree/nodes/named2-medium-harvester/" "Cultivator-XM medium harvester"
+    click n812 "/content/techtree/nodes/named3-medium-harvester/" "Protrim V-II medium harvester"
+    click n891 "/content/techtree/nodes/ammo-harvesting-standard/" "Universal harvester charge"
+```
+
+<a id="line-8693"></a>
+
+## Terramotus
+
+**19 nodes** — everything that descends from [Terramotus](/content/techtree/nodes/terramotus/).
+
+```mermaid
+graph TD
     n8675["Ammo Mining Deep Titan"]
     n8678["Standard large miner module"]
     n8680["MMA v19-'Widge' large miner module"]
@@ -78,55 +204,9 @@ graph TD
     n8816["Ammo Mining Deep Epriton"]
     n8858["Ammo Mass Harvesting Standard"]
     n8861["Standard Large Harvester"]
-    n8863["Named1 Large Harvester"]
-    n8866["Named2 Large Harvester"]
-    n8869["Named3 Large Harvester"]
-    n798 --> n54
-    n801 --> n56
-    n53 --> n197
-    n639 --> n198
-    n54 --> n209
-    n640 --> n210
-    n802 --> n217
-    n811 --> n218
-    n53 --> n228
-    n807 --> n640
-    n228 --> n780
-    n780 --> n781
-    n781 --> n782
-    n53 --> n798
-    n798 --> n799
-    n799 --> n800
-    n54 --> n801
-    n801 --> n802
-    n802 --> n803
-    n56 --> n804
-    n804 --> n805
-    n805 --> n806
-    n639 --> n807
-    n807 --> n808
-    n808 --> n809
-    n640 --> n810
-    n810 --> n811
-    n811 --> n812
-    n801 --> n875
-    n53 --> n888
-    n639 --> n891
-    n888 --> n903
-    n888 --> n904
-    n903 --> n905
-    n903 --> n906
-    n904 --> n907
-    n875 --> n2558
-    n875 --> n2574
-    n2574 --> n2575
-    n2575 --> n2576
-    n2558 --> n2604
-    n2604 --> n2605
-    n2605 --> n2606
-    n903 --> n4804
-    n907 --> n4805
-    n904 --> n5846
+    n8863["T2 Large Harvester"]
+    n8866["T3 Large Harvester"]
+    n8869["T4 Large Harvester"]
     n8678 --> n8675
     n8693 --> n8678
     n8678 --> n8680
@@ -145,54 +225,6 @@ graph TD
     n8861 --> n8863
     n8863 --> n8866
     n8866 --> n8869
-    click n53 "/content/techtree/nodes/standard-small-driller/" "Standard small miner module"
-    click n54 "/content/techtree/nodes/standard-medium-driller/" "Standard medium miner module"
-    click n56 "/content/techtree/nodes/standard-mining-upgrade/" "Standard industrial tuning"
-    click n197 "/content/techtree/nodes/argano/" "Argano"
-    click n198 "/content/techtree/nodes/laird/" "Laird"
-    click n209 "/content/techtree/nodes/termis/" "Termis"
-    click n210 "/content/techtree/nodes/gargoyle/" "Gargoyle"
-    click n217 "/content/techtree/nodes/riveler/" "Riveler"
-    click n218 "/content/techtree/nodes/symbiont/" "Symbiont"
-    click n228 "/content/techtree/nodes/standard-mining-probe-module/" "Standard geoscanner"
-    click n639 "/content/techtree/nodes/standard-small-harvester/" "Standard small harvester"
-    click n640 "/content/techtree/nodes/standard-medium-harvester/" "Standard medium harvester"
-    click n780 "/content/techtree/nodes/named1-mining-probe-module/" "Ovostec-Chisomel geoscanner"
-    click n781 "/content/techtree/nodes/named2-mining-probe-module/" "Syverz geoscanner"
-    click n782 "/content/techtree/nodes/named3-mining-probe-module/" "Eksplor-q3000 geoscanner"
-    click n798 "/content/techtree/nodes/named1-small-driller/" "Biroter 5050 small miner module"
-    click n799 "/content/techtree/nodes/named2-small-driller/" "Sublimator Low-D small miner module"
-    click n800 "/content/techtree/nodes/named3-small-driller/" "Scraper-990 small miner module"
-    click n801 "/content/techtree/nodes/named1-medium-driller/" "MMA v12-'Alkhemir' medium miner module"
-    click n802 "/content/techtree/nodes/named2-medium-driller/" "Sublimator Mid-D medium miner module"
-    click n803 "/content/techtree/nodes/named3-medium-driller/" "Ovostec-Edger medium miner module"
-    click n804 "/content/techtree/nodes/named1-mining-upgrade/" "Piog Forgekit AI industrial tuning"
-    click n805 "/content/techtree/nodes/named2-mining-upgrade/" "Fraktura SCV industrial tuning"
-    click n806 "/content/techtree/nodes/named3-mining-upgrade/" "Piog Forgekit BW1 industrial tuning"
-    click n807 "/content/techtree/nodes/named1-small-harvester/" "MHA 400-'Avalon' small harvester"
-    click n808 "/content/techtree/nodes/named2-small-harvester/" "Agraar-I small harvester"
-    click n809 "/content/techtree/nodes/named3-small-harvester/" "Protrim FDV-30 small harvester"
-    click n810 "/content/techtree/nodes/named1-medium-harvester/" "MHA 900-'Sap' medium harvester"
-    click n811 "/content/techtree/nodes/named2-medium-harvester/" "Cultivator-XM medium harvester"
-    click n812 "/content/techtree/nodes/named3-medium-harvester/" "Protrim V-II medium harvester"
-    click n875 "/content/techtree/nodes/standard-gang-assist-industry-module/" "Standard industrial NEXUS module"
-    click n888 "/content/techtree/nodes/ammo-mining-titan/" "Miner charge (titan ore)"
-    click n891 "/content/techtree/nodes/ammo-harvesting-standard/" "Universal harvester charge"
-    click n903 "/content/techtree/nodes/ammo-mining-crude/" "Miner charge (HDT)"
-    click n904 "/content/techtree/nodes/ammo-mining-liquizit/" "Miner charge (liquizit)"
-    click n905 "/content/techtree/nodes/ammo-mining-imentium/" "Miner charge (imentium)"
-    click n906 "/content/techtree/nodes/ammo-mining-stermonit/" "Miner charge (stermonit)"
-    click n907 "/content/techtree/nodes/ammo-mining-epriton/" "Miner charge (epriton)"
-    click n2558 "/content/techtree/nodes/standard-gang-assist-fast-extraction-module/" "Standard fast extractor NEXUS module"
-    click n2574 "/content/techtree/nodes/named1-gang-assist-industry-module/" "Thobys industrial NEXUS module"
-    click n2575 "/content/techtree/nodes/named2-gang-assist-industry-module/" "EE-D220 industrial NEXUS module"
-    click n2576 "/content/techtree/nodes/named3-gang-assist-industry-module/" "Rypoa industrial NEXUS module"
-    click n2604 "/content/techtree/nodes/named1-gang-assist-fast-extraction-module/" "AE-D250 fast extractor NEXUS module"
-    click n2605 "/content/techtree/nodes/named2-gang-assist-fast-extraction-module/" "Matriot-II fast extractor NEXUS module"
-    click n2606 "/content/techtree/nodes/named3-gang-assist-fast-extraction-module/" "Matriot-IV fast extractor NEXUS module"
-    click n4804 "/content/techtree/nodes/ammo-mining-silgium/" "Miner charge (silgium)"
-    click n4805 "/content/techtree/nodes/ammo-mining-gammaterial/" "Miner charge (colixum)"
-    click n5846 "/content/techtree/nodes/ammo-mining-fluxore/" "Ammo Mining Fluxore"
     click n8675 "/content/techtree/nodes/ammo-mining-deep-titan/" "Ammo Mining Deep Titan"
     click n8678 "/content/techtree/nodes/standard-large-driller/" "Standard large miner module"
     click n8680 "/content/techtree/nodes/named1-large-driller/" "MMA v19-'Widge' large miner module"
@@ -209,12 +241,12 @@ graph TD
     click n8816 "/content/techtree/nodes/ammo-mining-deep-epriton/" "Ammo Mining Deep Epriton"
     click n8858 "/content/techtree/nodes/ammo-mass-harvesting-standard/" "Ammo Mass Harvesting Standard"
     click n8861 "/content/techtree/nodes/standard-large-harvester/" "Standard Large Harvester"
-    click n8863 "/content/techtree/nodes/named1-large-harvester/" "Named1 Large Harvester"
-    click n8866 "/content/techtree/nodes/named2-large-harvester/" "Named2 Large Harvester"
-    click n8869 "/content/techtree/nodes/named3-large-harvester/" "Named3 Large Harvester"
+    click n8863 "/content/techtree/nodes/named1-large-harvester/" "T2 Large Harvester"
+    click n8866 "/content/techtree/nodes/named2-large-harvester/" "T3 Large Harvester"
+    click n8869 "/content/techtree/nodes/named3-large-harvester/" "T4 Large Harvester"
 ```
 
-## Nodes
+## Nodes (all)
 
 | Unlocks item | Parent node | Enabler extension | Point prices |
 |---|---|---|---|
@@ -282,7 +314,7 @@ graph TD
 | [Standard large miner module](/content/techtree/nodes/standard-large-driller/) | [Terramotus](/content/techtree/nodes/terramotus/) | – | common=34.3k; industrial=34.3k |
 | [Standard Large Harvester](/content/techtree/nodes/standard-large-harvester/) | [Terramotus](/content/techtree/nodes/terramotus/) | – | common=34.3k; industrial=34.3k |
 | [Ammo Mass Harvesting Standard](/content/techtree/nodes/ammo-mass-harvesting-standard/) | [Standard Large Harvester](/content/techtree/nodes/standard-large-harvester/) | – | hitech=51.45k; industrial=102.9k |
-| [Named1 Large Harvester](/content/techtree/nodes/named1-large-harvester/) | [Standard Large Harvester](/content/techtree/nodes/standard-large-harvester/) | – | common=51.2k; industrial=51.2k |
-| [Named2 Large Harvester](/content/techtree/nodes/named2-large-harvester/) | [Named1 Large Harvester](/content/techtree/nodes/named1-large-harvester/) | – | common=72.9k; industrial=72.9k |
-| [Named3 Large Harvester](/content/techtree/nodes/named3-large-harvester/) | [Named2 Large Harvester](/content/techtree/nodes/named2-large-harvester/) | – | hitech=50k; industrial=100k |
+| [T2 Large Harvester](/content/techtree/nodes/named1-large-harvester/) | [Standard Large Harvester](/content/techtree/nodes/standard-large-harvester/) | – | common=51.2k; industrial=51.2k |
+| [T3 Large Harvester](/content/techtree/nodes/named2-large-harvester/) | [T2 Large Harvester](/content/techtree/nodes/named1-large-harvester/) | – | common=72.9k; industrial=72.9k |
+| [T4 Large Harvester](/content/techtree/nodes/named3-large-harvester/) | [T3 Large Harvester](/content/techtree/nodes/named2-large-harvester/) | – | hitech=50k; industrial=100k |
 

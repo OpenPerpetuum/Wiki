@@ -19,5 +19,3 @@ description: "Production"
 | Note | ennek köti a biztosítást a player |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

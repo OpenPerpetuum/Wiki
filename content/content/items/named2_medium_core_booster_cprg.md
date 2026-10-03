@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard medium energy injector CT](/content/items/standard-medium-core-booster-cprg/) (T1) → [Shoxit Parter I. medium energy injector CT](/content/items/named1-medium-core-booster-cprg/) (T2) → **Follypsos medium energy injector CT** (T3) → [Cerepter II. medium energy injector CT](/content/items/named3-medium-core-booster-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

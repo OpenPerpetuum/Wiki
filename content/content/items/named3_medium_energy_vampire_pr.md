@@ -36,50 +36,18 @@ description: "Modules / Shield, tier T4 (prototype)"
 
 **Produced from 13 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Filch-AM medium energy drainer prototype"]:::current
-    b["Cryoperine ×400"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Axicoline ×200"]:::comp
-    c --> a
-    click c "/content/items/axicoline/" "Axicoline"
-    d["Espitium ×400"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Hydrobenol ×200"]:::comp
-    e --> a
-    click e "/content/items/hydrobenol/" "Hydrobenol"
-    f["V90-Quadres medium energy drainer ×1"]:::comp
-    f --> a
-    click f "/content/items/named2-medium-energy-vampire/" "V90-Quadres medium energy drainer"
-    g["Functional common fragment ×30"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    h["Damaged common fragment ×15"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    i["Perfect common fragment ×45"]:::comp
-    i --> a
-    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    j["Functional pelistal fragment ×30"]:::comp
-    j --> a
-    click j "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
-    k["Damaged pelistal fragment ×15"]:::comp
-    k --> a
-    click k "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
-    l["Perfect pelistal fragment ×45"]:::comp
-    l --> a
-    click l "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
-    m["Titanium ×200"]:::comp
-    m --> a
-    click m "/content/items/titanium/" "Titanium"
-    n["Briochit ×200"]:::comp
-    n --> a
-    click n "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>400</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>400</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/named2-medium-energy-vampire/">V90-Quadres medium energy drainer</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-advanced/">Functional pelistal fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-basic/">Damaged pelistal fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-pelistal-expert/">Perfect pelistal fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+</div>

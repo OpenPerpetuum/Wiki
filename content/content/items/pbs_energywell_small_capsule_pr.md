@@ -37,29 +37,11 @@ description: "Special & other / Miscellaneous, tier T1 (prototype)"
 
 **Produced from 6 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pbs Energywell Small Capsule Pr"]:::current
-    b["Alligior ×1.2k"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Cryoperine ×675"]:::comp
-    c --> a
-    click c "/content/items/axicol/" "Cryoperine"
-    d["Espitium ×675"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Plasteosine ×1.2k"]:::comp
-    e --> a
-    click e "/content/items/plasteosine/" "Plasteosine"
-    f["Titanium ×1.2k"]:::comp
-    f --> a
-    click f "/content/items/titanium/" "Titanium"
-    g["Briochit ×1.2k"]:::comp
-    g --> a
-    click g "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>675</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>675</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>1.2k</b></div></div>
+</div>

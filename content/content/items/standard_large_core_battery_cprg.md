@@ -16,9 +16,7 @@ description: "Modules / Power, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Power |
-| Tier line | **Standard Large Core Battery Cprg** (T1) → [Named1 Large Core Battery Cprg](/content/items/named1-large-core-battery-cprg/) (T2) → [Named2 Large Core Battery Cprg](/content/items/named2-large-core-battery-cprg/) (T3) → [Named3 Large Core Battery Cprg](/content/items/named3-large-core-battery-cprg/) (T4) |
+| Tier line | **Standard Large Core Battery Cprg** (T1) → [T2 Large Core Battery Cprg](/content/items/named1-large-core-battery-cprg/) (T2) → [T3 Large Core Battery Cprg](/content/items/named2-large-core-battery-cprg/) (T3) → [T4 Large Core Battery Cprg](/content/items/named3-large-core-battery-cprg/) (T4) |
 | Note | CT large weapon |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

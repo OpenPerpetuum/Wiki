@@ -15,7 +15,7 @@ This node of the [Nuimqol (faction)](/content/techtree/groups/nuimqol/) research
 | Category | [Nuimqol (faction)](/content/techtree/groups/nuimqol/) |
 | Unlocks | [Longrange Standard Large Railgun](/content/items/longrange-standard-large-railgun/) |
 | Parent node | [Standard medium EM-gun](/content/techtree/nodes/longrange-standard-medium-railgun/) |
-| Unlocks next | [Large compositecore slug](/content/techtree/nodes/ammo-large-railgun-d/), [Named1 Longrange Large Railgun](/content/techtree/nodes/named1-longrange-large-railgun/) |
+| Unlocks next | [Large compositecore slug](/content/techtree/nodes/ammo-large-railgun-d/), [T2 Longrange Large Railgun](/content/techtree/nodes/named1-longrange-large-railgun/) |
 | Enabler extension | – |
 | Point prices | hitech=17.15k; nuimqol=34.3k |
 

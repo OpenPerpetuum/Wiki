@@ -104,14 +104,16 @@ public static class Program
         }
         // The tech tree is an index + one page per category + one page per node.
         pages.AddRange(TechTreePage.Build(db));
-        // The item catalog is one page per item under items/ plus its index.
+        // The item catalog is one page per item under items/ (no index page).
         pages.AddRange(ItemsPage.Build(db, defs, statsByDef, shop));
+        // The deployables catalog: one page per deployable under deployables/.
+        pages.AddRange(DeployablesPage.BuildPages(db, statsByDef));
         // Remove the previous run's artifacts before writing: the generator
         // overwrites in place, and without this a definition removed from the
         // DB would leave a ghost page behind (and in the client search index).
         // items/, shop/ and techtree/ are owned entirely by the generator; the
         // hand-written sections (features, zones, formats, menu) are never touched.
-        foreach (var dir in new[] { "items", "shop", "techtree", "ores" })
+        foreach (var dir in new[] { "items", "shop", "techtree", "ores", "deployables" })
         {
             var p = Path.Combine(outDir, dir);
             if (Directory.Exists(p)) Directory.Delete(p, true);
@@ -204,7 +206,7 @@ public static class Program
         return $$"""
             ---
             title: "Content"
-            description: "Generated stat tables for every content entity: ores, plants, deployables, items, robots."
+            description: "Generated stat tables for every content entity: ores, plants, deployables, robots. "
             ---
 
             # Content
@@ -213,10 +215,9 @@ public static class Program
 
             | Page | Contents |
             |---|---|
-            | [Ores](/content/ores/) | All ore types, extraction yields, per-zone node generation |
+            | [Ores](/content/ores/) | All ore types and extraction yields; per-zone node parameters on each ore page |
             | [Plants](/content/plants/) | Every plant species rule (growRate, fertility, spreading, fruit), per-zone fertility |
             | [Deployables](/content/deployables/) | Deployable structures and placeables with stats |
-            | [Items](/content/items/) | Full item catalog: modules, armor, ammo, materials, robot components |
             | [Robots](/content/robots/) | Every robot by class and generation, with strengths and weaknesses |
             | [Extensions](/content/extensions/) | Full extension (skill) tree: rank, price, bonus, prerequisites |
             | [Tech tree](/content/techtree/) | Every tech tree node: unlocked item, enabler extension, point prices |

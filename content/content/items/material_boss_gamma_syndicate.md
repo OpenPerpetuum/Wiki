@@ -37,15 +37,15 @@ graph LR
     d["Elitet4 Gamma Small Autocannon"]:::prod
     a --> d
     click d "/content/items/elitet4-gamma-small-autocannon/" "Elitet4 Gamma Small Autocannon"
-    e["Named3 Harvesting Turret Unit"]:::prod
+    e["T4 Harvesting Turret Unit"]:::prod
     a --> e
-    click e "/content/items/named3-harvesting-turret-unit/" "Named3 Harvesting Turret Unit"
-    f["Named3 Mining Turret Unit"]:::prod
+    click e "/content/items/named3-harvesting-turret-unit/" "T4 Harvesting Turret Unit"
+    f["T4 Mining Turret Unit"]:::prod
     a --> f
-    click f "/content/items/named3-mining-turret-unit/" "Named3 Mining Turret Unit"
-    g["Named3 Sentry Turret Unit"]:::prod
+    click f "/content/items/named3-mining-turret-unit/" "T4 Mining Turret Unit"
+    g["T4 Sentry Turret Unit"]:::prod
     a --> g
-    click g "/content/items/named3-sentry-turret-unit/" "Named3 Sentry Turret Unit"
+    click g "/content/items/named3-sentry-turret-unit/" "T4 Sentry Turret Unit"
     h["Beholder Bot"]:::prod
     a --> h
     click h "/content/robots/" "Beholder Bot"
@@ -58,5 +58,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

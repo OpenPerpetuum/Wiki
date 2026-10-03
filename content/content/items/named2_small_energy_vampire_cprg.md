@@ -19,5 +19,3 @@ description: "Modules / Shield, tier T3"
 | Tier line | [Standard small energy drainer CT](/content/items/standard-small-energy-vampire-cprg/) (T1) → [Portio I. small energy drainer CT](/content/items/named1-small-energy-vampire-cprg/) (T2) → **Ekcept small energy drainer CT** (T3) → [Io-trail SVU small energy drainer CT](/content/items/named3-small-energy-vampire-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

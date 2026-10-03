@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T2"
 | Tier line | [Standard S-demobilizer CT](/content/items/standard-webber-cprg/) (T1) → **Arachnid-type S-demobilizer CT** (T2) → [NNt. IX S-demobilizer CT](/content/items/named2-webber-cprg/) (T3) → [NNt. IY S-demobilizer CT](/content/items/named3-webber-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

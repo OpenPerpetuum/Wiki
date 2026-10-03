@@ -19,5 +19,3 @@ description: "Ammo / Other ammo"
 | Note | definitionconfig.range = ekkora teruleten hat    sima 1 pixeles atlagolos blur az area minden tile-jan. |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

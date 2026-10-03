@@ -16,7 +16,7 @@ description: "Modules / Enhancements, tier T1"
 | Volume | 1.5 |
 | Mass | 500 |
 | Category | Modules / Enhancements |
-| Tier line | **Standard Adaptive Alloy** (T1) → [Named1 Adaptive Alloy](/content/items/named1-adaptive-alloy/) (T2) → [Named2 Adaptive Alloy](/content/items/named2-adaptive-alloy/) (T3) → [Named3 Adaptive Alloy](/content/items/named3-adaptive-alloy/) (T4) |
+| Tier line | **Standard Adaptive Alloy** (T1) → [T2 Adaptive Alloy](/content/items/named1-adaptive-alloy/) (T2) → [T3 Adaptive Alloy](/content/items/named2-adaptive-alloy/) (T3) → [T4 Adaptive Alloy](/content/items/named3-adaptive-alloy/) (T4) |
 
 ## Stats
 
@@ -31,39 +31,17 @@ description: "Modules / Enhancements, tier T1"
 
 **Produced from 9 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard Adaptive Alloy"]:::current
-    b["Cryoperine ×200"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Chollonin ×25"]:::comp
-    c --> a
-    click c "/content/items/chollonin/" "Chollonin"
-    d["Isopropentol ×65"]:::comp
-    d --> a
-    click d "/content/items/isopropentol/" "Isopropentol"
-    e["Metachropin ×65"]:::comp
-    e --> a
-    click e "/content/items/metachropin/" "Metachropin"
-    f["Plasteosine ×500"]:::comp
-    f --> a
-    click f "/content/items/plasteosine/" "Plasteosine"
-    g["Prilumium ×25"]:::comp
-    g --> a
-    click g "/content/items/prilumium/" "Prilumium"
-    h["Statichnol ×65"]:::comp
-    h --> a
-    click h "/content/items/statichnol/" "Statichnol"
-    i["Titanium ×200"]:::comp
-    i --> a
-    click i "/content/items/titanium/" "Titanium"
-    j["Vitricyl ×25"]:::comp
-    j --> a
-    click j "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/chollonin/">Chollonin</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/isopropentol/">Isopropentol</a></div><div class="prod-card-body">required: <b>65</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/metachropin/">Metachropin</a></div><div class="prod-card-body">required: <b>65</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>500</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prilumium/">Prilumium</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/statichnol/">Statichnol</a></div><div class="prod-card-body">required: <b>65</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -71,15 +49,13 @@ graph LR
 ```mermaid
 graph LR
     a["Standard Adaptive Alloy"]:::current
-    b["Named1 Adaptive Alloy"]:::prod
+    b["T2 Adaptive Alloy"]:::prod
     a --> b
-    click b "/content/items/named1-adaptive-alloy/" "Named1 Adaptive Alloy"
-    c["Named1 Adaptive Alloy Pr"]:::prod
+    click b "/content/items/named1-adaptive-alloy/" "T2 Adaptive Alloy"
+    c["T2 Adaptive Alloy Pr"]:::prod
     a --> c
-    click c "/content/items/named1-adaptive-alloy-pr/" "Named1 Adaptive Alloy Pr"
+    click c "/content/items/named1-adaptive-alloy-pr/" "T2 Adaptive Alloy Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

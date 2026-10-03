@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | egy csempere , amit kijelolsz megmondja hogy milyen material van. 0-1 értékkel |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

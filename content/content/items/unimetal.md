@@ -24,21 +24,11 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Briochit"]:::current
-    b["Noralgis ×50"]:::comp
-    b --> a
-    click b "/content/items/electroplant-fruit/" "Noralgis"
-    c["Epriton ×50"]:::comp
-    c --> a
-    click c "/content/items/epriton/" "Epriton"
-    d["Titan ×75"]:::comp
-    d --> a
-    click d "/content/ores/titan/" "Titan"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/electroplant-fruit/">Noralgis</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/epriton/">Epriton</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/ores/titan/">Titan</a></div><div class="prod-card-body">required: <b>75</b></div></div>
+</div>
 ## Used in production
 
 **Component of 770 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
@@ -77,5 +67,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

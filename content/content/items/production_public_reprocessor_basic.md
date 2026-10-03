@@ -19,5 +19,3 @@ description: "Production"
 | Note | materialOutput = defaultComponentAmount * 1/materialEfficiency |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

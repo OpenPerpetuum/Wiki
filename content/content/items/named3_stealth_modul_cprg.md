@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard signal masker CT](/content/items/standard-stealth-modul-cprg/) (T1) → [Mimique signal masker CT](/content/items/named1-stealth-modul-cprg/) (T2) → [MSMD signal masker CT](/content/items/named2-stealth-modul-cprg/) (T3) → **Longlag signal masker CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

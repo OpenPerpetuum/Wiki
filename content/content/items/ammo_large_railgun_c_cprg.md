@@ -19,5 +19,3 @@ description: "Ammo / Cannon"
 | Note | CT large AMMO |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

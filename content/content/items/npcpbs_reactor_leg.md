@@ -28,5 +28,3 @@ description: "Robot parts / Legs"
 | resist_kinetic | 150 |
 | resist_thermal | 150 |
 | signature_radius | 30 |
-
-[All items](/content/items/)

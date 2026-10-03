@@ -19,5 +19,3 @@ description: "Materials"
 | Note | this is the parent of all alliance entities |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

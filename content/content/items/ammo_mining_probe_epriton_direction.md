@@ -19,5 +19,3 @@ description: "Ammo / Mining"
 | Note | per area scannel |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

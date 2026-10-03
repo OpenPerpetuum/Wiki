@@ -36,39 +36,17 @@ description: "Modules / Weapons, tier T3"
 
 **Produced from 9 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Nuimtec-Gaule heavy Gauss gun"]:::current
-    b["Hydrobenol ×150"]:::comp
-    b --> a
-    click b "/content/items/hydrobenol/" "Hydrobenol"
-    c["Iskio-Magnetor II. heavy Gauss gun ×1"]:::comp
-    c --> a
-    click c "/content/items/named1-large-railgun/" "Iskio-Magnetor II. heavy Gauss gun"
-    d["Polynitrocol ×150"]:::comp
-    d --> a
-    click d "/content/items/polynitrocol/" "Polynitrocol"
-    e["Functional common fragment ×30"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    f["Damaged common fragment ×30"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    g["Functional nuimqol fragment ×30"]:::comp
-    g --> a
-    click g "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
-    h["Damaged nuimqol fragment ×30"]:::comp
-    h --> a
-    click h "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
-    i["Specimen Sap Item Flux ×25"]:::comp
-    i --> a
-    click i "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    j["Titanium ×150"]:::comp
-    j --> a
-    click j "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/named1-large-railgun/">Iskio-Magnetor II. heavy Gauss gun</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynitrocol/">Polynitrocol</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-advanced/">Functional nuimqol fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>25</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -79,12 +57,10 @@ graph LR
     b["Pentack-Nailer dd550 heavy Gauss gun"]:::prod
     a --> b
     click b "/content/items/named3-large-railgun/" "Pentack-Nailer dd550 heavy Gauss gun"
-    c["Named3 Large Railgun Pr"]:::prod
+    c["T4 Large Railgun Pr"]:::prod
     a --> c
-    click c "/content/items/named3-large-railgun-pr/" "Named3 Large Railgun Pr"
+    click c "/content/items/named3-large-railgun-pr/" "T4 Large Railgun Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

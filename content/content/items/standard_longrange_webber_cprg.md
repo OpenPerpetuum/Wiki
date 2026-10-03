@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard L-demobilizer CT** (T1) → [Venom L-demobilizer CT](/content/items/named1-longrange-webber-cprg/) (T2) → [GLOO L-demobilizer CT](/content/items/named2-longrange-webber-cprg/) (T3) → [TDR25 L-demobilizer CT](/content/items/named3-longrange-webber-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -24,21 +24,11 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Damaged pelistal fragment"]:::current
-    b["Isopropentol ×1"]:::comp
-    b --> a
-    click b "/content/items/isopropentol/" "Isopropentol"
-    c["Phlobotil ×1"]:::comp
-    c --> a
-    click c "/content/items/phlobotil/" "Phlobotil"
-    d["Vitricyl ×1"]:::comp
-    d --> a
-    click d "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/isopropentol/">Isopropentol</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/phlobotil/">Phlobotil</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+</div>
 ## Used in production
 
 **Component of 169 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
@@ -49,9 +39,9 @@ graph LR
     b["Aqwit Imperator heavy missile launcher"]:::prod
     a --> b
     click b "/content/items/named1-cruisemissile-launcher/" "Aqwit Imperator heavy missile launcher"
-    c["Named1 Cruisemissile Launcher Pr"]:::prod
+    c["T2 Cruisemissile Launcher Pr"]:::prod
     a --> c
-    click c "/content/items/named1-cruisemissile-launcher-pr/" "Named1 Cruisemissile Launcher Pr"
+    click c "/content/items/named1-cruisemissile-launcher-pr/" "T2 Cruisemissile Launcher Pr"
     d["AIT-Dipris Propellant missile launcher tuning"]:::prod
     a --> d
     click d "/content/items/named1-damage-mod-missile/" "AIT-Dipris Propellant missile launcher tuning"
@@ -77,5 +67,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

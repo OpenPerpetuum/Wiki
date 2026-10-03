@@ -54,21 +54,4 @@ pie showData
     "energymineral" : 84
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [zone_gamma_tc_z104](/zones/zone-gamma-tc-z104/) (1 TP point)
-- → [zone_gamma_tc_z105](/zones/zone-gamma-tc-z105/) (1 TP point)
-- → [zone_gamma_z110](/zones/zone-gamma-z110/) (1 TP point)
-- → [zone_gamma_z135](/zones/zone-gamma-z135/) (1 TP point)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [zone_gamma_tc_z104](/zones/zone-gamma-tc-z104/) (1 TP point)
-- ← [zone_gamma_tc_z105](/zones/zone-gamma-tc-z105/) (1 TP point)
-- ← [zone_gamma_z110](/zones/zone-gamma-z110/) (1 TP point)
-- ← [zone_gamma_z135](/zones/zone-gamma-z135/) (1 TP point)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#t1) · [Protection levels](/zones/protection/)

@@ -130,7 +130,22 @@ public static class Md
         if (name.EndsWith("_bot")) name = name[..^4];
         name = name.Replace("_mk2", " MK2").Replace("_reward1", " (reward)").Replace("_CT_capsule", " (CT capsule)");
         var tokens = name.Split('_', StringSplitOptions.RemoveEmptyEntries);
-        return string.Join(' ', tokens.Select(t => char.ToUpperInvariant(t[0]) + t[1..]));
+        var outTokens = new List<string>();
+        foreach (var t in tokens)
+        {
+            // the internal tier tokens (named1/2/3/4) are not player language —
+            // the client tier badges are T2/T3/T4/T5 (the tierlevel), so render
+            // them as such: "Named1 Adaptive Alloy" -> "T2 Adaptive Alloy"
+            if (t is "named1" or "named2" or "named3" or "named4")
+            {
+                if (outTokens.Count > 0 && outTokens[^1] is "T2" or "T3" or "T4" or "T5")
+                    continue; // e.g. ..._named1_named2_... would double up
+                outTokens.Add(t switch { "named1" => "T2", "named2" => "T3", "named4" => "T5", _ => "T4" });
+                continue;
+            }
+            outTokens.Add(char.ToUpperInvariant(t[0]) + t[1..]);
+        }
+        return string.Join(' ', outTokens);
     }
 }
 

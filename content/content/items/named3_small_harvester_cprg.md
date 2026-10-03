@@ -19,5 +19,3 @@ description: "Modules / Harvesting, tier T4"
 | Tier line | [Standard small harvester CT](/content/items/standard-small-harvester-cprg/) (T1) → [MHA 400-'Avalon' small harvester CT](/content/items/named1-small-harvester-cprg/) (T2) → [Agraar-I small harvester CT](/content/items/named2-small-harvester-cprg/) (T3) → **Protrim FDV-30 small harvester CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

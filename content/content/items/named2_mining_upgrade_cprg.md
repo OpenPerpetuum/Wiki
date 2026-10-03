@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard industrial tuning CT](/content/items/standard-mining-upgrade-cprg/) (T1) → [Piog Forgekit AI industrial tuning CT](/content/items/named1-mining-upgrade-cprg/) (T2) → **Fraktura SCV industrial tuning CT** (T3) → [Piog Forgekit BW1 industrial tuning CT](/content/items/named3-mining-upgrade-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

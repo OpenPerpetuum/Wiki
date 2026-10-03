@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T2"
 | Tier line | [Standard medium missile launcher CT](/content/items/standard-missile-launcher-cprg/) (T1) → **ST-Dupot medium missile launcher CT** (T2) → [Vollert medium missile launcher CT](/content/items/named2-missile-launcher-cprg/) (T3) → [Pelistec-TR250 medium missile launcher CT](/content/items/named3-missile-launcher-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

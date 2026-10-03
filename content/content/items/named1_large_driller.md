@@ -32,24 +32,12 @@ description: "Modules / Enhancements, tier T2"
 
 **Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["MMA v19-'Widge' large miner module"]:::current
-    b["Cryoperine ×600"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Damaged common fragment ×120"]:::comp
-    c --> a
-    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    d["Standard large miner module ×1"]:::comp
-    d --> a
-    click d "/content/items/standard-large-driller/" "Standard large miner module"
-    e["Titanium ×2.4k"]:::comp
-    e --> a
-    click e "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>600</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>120</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-panel"/></svg><a class="prod-card-name" href="/content/items/standard-large-driller/">Standard large miner module</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>2.4k</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -60,12 +48,10 @@ graph LR
     b["Sublimator Hi-D large miner module"]:::prod
     a --> b
     click b "/content/items/named2-large-driller/" "Sublimator Hi-D large miner module"
-    c["Named2 Large Driller Pr"]:::prod
+    c["T3 Large Driller Pr"]:::prod
     a --> c
-    click c "/content/items/named2-large-driller-pr/" "Named2 Large Driller Pr"
+    click c "/content/items/named2-large-driller-pr/" "T3 Large Driller Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

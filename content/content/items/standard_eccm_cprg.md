@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard ECCM CT** (T1) → [Wallex ECCM CT](/content/items/named1-eccm-cprg/) (T2) → [Deshrud-QW ECCM CT](/content/items/named2-eccm-cprg/) (T3) → [Braviar ECCM CT](/content/items/named3-eccm-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

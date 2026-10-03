@@ -16,7 +16,7 @@ description: "Modules / Remote control, tier T1"
 | Volume | 1 |
 | Mass | 1 |
 | Category | Modules / Remote control |
-| Tier line | **Standard Support Remote Controller** (T1) → [Named1 Support Remote Controller](/content/items/named1-support-remote-controller/) (T2) → [Named2 Support Remote Controller](/content/items/named2-support-remote-controller/) (T3) → [Named3 Support Remote Controller](/content/items/named3-support-remote-controller/) (T4) |
+| Tier line | **Standard Support Remote Controller** (T1) → [T2 Support Remote Controller](/content/items/named1-support-remote-controller/) (T2) → [T3 Support Remote Controller](/content/items/named2-support-remote-controller/) (T3) → [T4 Support Remote Controller](/content/items/named3-support-remote-controller/) (T4) |
 
 ## Stats
 
@@ -43,24 +43,12 @@ description: "Modules / Remote control, tier T1"
 
 **Produced from 4 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard Support Remote Controller"]:::current
-    b["Cryoperine ×250"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Axicoline ×100"]:::comp
-    c --> a
-    click c "/content/items/axicoline/" "Axicoline"
-    d["Espitium ×50"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Titanium ×50"]:::comp
-    e --> a
-    click e "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>250</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>50</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -68,15 +56,13 @@ graph LR
 ```mermaid
 graph LR
     a["Standard Support Remote Controller"]:::current
-    b["Named1 Support Remote Controller"]:::prod
+    b["T2 Support Remote Controller"]:::prod
     a --> b
-    click b "/content/items/named1-support-remote-controller/" "Named1 Support Remote Controller"
-    c["Named1 Support Remote Controller Pr"]:::prod
+    click b "/content/items/named1-support-remote-controller/" "T2 Support Remote Controller"
+    c["T2 Support Remote Controller Pr"]:::prod
     a --> c
-    click c "/content/items/named1-support-remote-controller-pr/" "Named1 Support Remote Controller Pr"
+    click c "/content/items/named1-support-remote-controller-pr/" "T2 Support Remote Controller Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

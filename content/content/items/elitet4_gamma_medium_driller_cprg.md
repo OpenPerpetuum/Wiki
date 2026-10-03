@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4 (special)"
 | Note | elite module ct |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

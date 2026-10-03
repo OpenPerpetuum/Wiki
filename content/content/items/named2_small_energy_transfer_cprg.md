@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard small energy transferer CT](/content/items/standard-small-energy-transfer-cprg/) (T1) → [Uysta small energy transferer CT](/content/items/named1-small-energy-transfer-cprg/) (T2) → **Bithom small energy transferer CT** (T3) → [Livostid PT3 small energy transferer CT](/content/items/named3-small-energy-transfer-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

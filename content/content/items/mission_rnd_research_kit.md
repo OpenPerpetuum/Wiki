@@ -19,5 +19,3 @@ description: "Mission items"
 | Note | decoder to research cf_generic_random_items |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

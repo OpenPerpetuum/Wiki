@@ -16,8 +16,6 @@ description: "Modules / Remote control, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Remote control |
-| Tier line | **Standard Industrial Remote Controller Cprg** (T1) → [Named1 Industrial Remote Controller Cprg](/content/items/named1-industrial-remote-controller-cprg/) (T2) → [Named2 Industrial Remote Controller Cprg](/content/items/named2-industrial-remote-controller-cprg/) (T3) → [Named3 Industrial Remote Controller Cprg](/content/items/named3-industrial-remote-controller-cprg/) (T4) |
+| Tier line | **Standard Industrial Remote Controller Cprg** (T1) → [T2 Industrial Remote Controller Cprg](/content/items/named1-industrial-remote-controller-cprg/) (T2) → [T3 Industrial Remote Controller Cprg](/content/items/named2-industrial-remote-controller-cprg/) (T3) → [T4 Industrial Remote Controller Cprg](/content/items/named3-industrial-remote-controller-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -26,5 +26,3 @@ description: "Modules / Harvesting, tier special"
 | cycle_time | 24k |
 | optimal_range | 3 |
 | powergrid_usage | 20 |
-
-[All items](/content/items/)

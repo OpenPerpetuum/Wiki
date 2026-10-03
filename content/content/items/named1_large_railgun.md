@@ -36,33 +36,15 @@ description: "Modules / Weapons, tier T2"
 
 **Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Iskio-Magnetor II. heavy Gauss gun"]:::current
-    b["Axicoline ×150"]:::comp
-    b --> a
-    click b "/content/items/axicoline/" "Axicoline"
-    c["Polynitrocol ×150"]:::comp
-    c --> a
-    click c "/content/items/polynitrocol/" "Polynitrocol"
-    d["Damaged common fragment ×45"]:::comp
-    d --> a
-    click d "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    e["Damaged nuimqol fragment ×45"]:::comp
-    e --> a
-    click e "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
-    f["Specimen Sap Item Flux ×10"]:::comp
-    f --> a
-    click f "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    g["Standard heavy Gauss gun ×1"]:::comp
-    g --> a
-    click g "/content/items/standard-large-railgun/" "Standard heavy Gauss gun"
-    h["Titanium ×150"]:::comp
-    h --> a
-    click h "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicoline/">Axicoline</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynitrocol/">Polynitrocol</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-nuimqol-basic/">Damaged nuimqol fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>10</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/standard-large-railgun/">Standard heavy Gauss gun</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>150</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -73,12 +55,10 @@ graph LR
     b["Nuimtec-Gaule heavy Gauss gun"]:::prod
     a --> b
     click b "/content/items/named2-large-railgun/" "Nuimtec-Gaule heavy Gauss gun"
-    c["Named2 Large Railgun Pr"]:::prod
+    c["T3 Large Railgun Pr"]:::prod
     a --> c
-    click c "/content/items/named2-large-railgun-pr/" "Named2 Large Railgun Pr"
+    click c "/content/items/named2-large-railgun-pr/" "T3 Large Railgun Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

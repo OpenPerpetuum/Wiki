@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T2 (special)"
 | Note | elite module |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -30,5 +30,3 @@ description: "Modules / Turrets, tier T1"
 | least_optimal | 12 |
 | optimal_range | 80 |
 | powergrid_usage | 150 |
-
-[All items](/content/items/)

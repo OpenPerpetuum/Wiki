@@ -19,5 +19,3 @@ description: "Modules / Repair, tier T4"
 | Tier line | [Standard small remote armor repairer CT](/content/items/standard-small-remote-armor-repairer-cprg/) (T1) → [Avaror GD-200 small remote armor repairer CT](/content/items/named1-small-remote-armor-repairer-cprg/) (T2) → [Iuviar small remote armor repairer CT](/content/items/named2-small-remote-armor-repairer-cprg/) (T3) → **PPDT-Apadisiator small remote armor repairer CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

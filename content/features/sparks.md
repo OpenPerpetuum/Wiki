@@ -40,23 +40,36 @@ stateDiagram-v2
     Active --> Cooldown: switch (costs NIC, per-spark)
     Cooldown --> Active: after 1 hour (new spark's bonuses apply to all robots)
 ```
+<a id="switching-sparks"></a>
+
+## Switching sparks
+
+- You can only have **one active spark** at a time; installing another swaps it.
+- Each switch **costs NIC** — the amount is per-spark (the common lines cost
+  10k, the paid special lines up to a million).
+- There is a **one-hour cooldown** between switches: the server tracks when your
+  current spark was activated and refuses a new one until the minute is over.
+
+Because switching always costs NIC and takes an hour, pick the spark that
+matches the activity you are spending the most time on, and treat re-
+specializing as an occasional decision rather than a per-session one.
 <!-- sparkfamilies:generated -->
 <a id="families"></a>
 
 ## Spark families
 
-The 47 sparks in 6 families at a glance: one box per family (spark count, how the line unlocks), left to right in the order the lines were added. **Click a box to jump to that family's sparks below.** **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
+The 47 sparks in 6 families at a glance: one box per family (spark count, how the line unlocks), in the order the lines were added (left to right, top to bottom). **Click a box to jump to that family's sparks below.** **Scroll over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
 
 <div class="map-zoom-wrap sparkfam-wrap">
 <button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
-<svg class="zoommap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1698 154" width="1280" height="116" role="img" aria-label="Spark families: 6 families, 47 sparks; click a family to jump to its sparks below">
-  <rect x="0" y="0" width="1698" height="154" fill="#10151f" stroke="#39445a" stroke-width="1"/>
-  <g><title>Event &amp; special: 9 sparks, unlocks with free</title><a href="#family-special"><rect x="24" y="40" width="250" height="74" rx="10" fill="#10151f" stroke="#c8d2e0" stroke-width="1.5"/><text x="149" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">Event &amp; special</text><text x="149" y="92" text-anchor="middle" fill="#c8d2e0" font-size="12">9 sparks · free</text></a></g>
-  <g><title>TM (Truhold-Markson): 9 sparks, unlocks with TM standing</title><a href="#family-tm"><rect x="304" y="40" width="250" height="74" rx="10" fill="#10151f" stroke="#41d3ff" stroke-width="1.5"/><text x="429" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">TM (Truhold-Markson)</text><text x="429" y="92" text-anchor="middle" fill="#41d3ff" font-size="12">9 sparks · TM standing</text></a></g>
-  <g><title>ICS: 9 sparks, unlocks with ICS standing</title><a href="#family-ics"><rect x="584" y="40" width="250" height="74" rx="10" fill="#10151f" stroke="#6ee7a0" stroke-width="1.5"/><text x="709" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">ICS</text><text x="709" y="92" text-anchor="middle" fill="#6ee7a0" font-size="12">9 sparks · ICS standing</text></a></g>
-  <g><title>ASI: 9 sparks, unlocks with ASI standing</title><a href="#family-asi"><rect x="864" y="40" width="250" height="74" rx="10" fill="#10151f" stroke="#f5a05a" stroke-width="1.5"/><text x="989" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">ASI</text><text x="989" y="92" text-anchor="middle" fill="#f5a05a" font-size="12">9 sparks · ASI standing</text></a></g>
-  <g><title>Syndicate (NIC): 5 sparks, unlocks with NIC price</title><a href="#family-syndicate"><rect x="1144" y="40" width="250" height="74" rx="10" fill="#10151f" stroke="#a78bfa" stroke-width="1.5"/><text x="1269" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">Syndicate (NIC)</text><text x="1269" y="92" text-anchor="middle" fill="#a78bfa" font-size="12">5 sparks · NIC price</text></a></g>
-  <g><title>Limited: 6 sparks, unlocks with NIC price</title><a href="#family-limited"><rect x="1424" y="40" width="250" height="74" rx="10" fill="#10151f" stroke="#f472b6" stroke-width="1.5"/><text x="1549" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">Limited</text><text x="1549" y="92" text-anchor="middle" fill="#f472b6" font-size="12">6 sparks · NIC price</text></a></g>
+<svg class="zoommap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1008 278" width="960" height="264" role="img" aria-label="Spark families: 6 families, 47 sparks; click a family to jump to its sparks below">
+  <rect x="0" y="0" width="1008" height="278" fill="#10151f" stroke="#39445a" stroke-width="1"/>
+  <g><title>Event &amp; special: 9 sparks, unlocks with free</title><a href="#family-special"><rect x="24" y="40" width="300" height="84" rx="10" fill="#10151f" stroke="#c8d2e0" stroke-width="1.5"/><text x="174" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">Event &amp; special</text><text x="174" y="92" text-anchor="middle" fill="#c8d2e0" font-size="12">9 sparks · free</text></a></g>
+  <g><title>TM (Truhold-Markson): 9 sparks, unlocks with TM standing</title><a href="#family-tm"><rect x="354" y="40" width="300" height="84" rx="10" fill="#10151f" stroke="#41d3ff" stroke-width="1.5"/><text x="504" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">TM (Truhold-Markson)</text><text x="504" y="92" text-anchor="middle" fill="#41d3ff" font-size="12">9 sparks · TM standing</text></a></g>
+  <g><title>ICS: 9 sparks, unlocks with ICS standing</title><a href="#family-ics"><rect x="684" y="40" width="300" height="84" rx="10" fill="#10151f" stroke="#6ee7a0" stroke-width="1.5"/><text x="834" y="68" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">ICS</text><text x="834" y="92" text-anchor="middle" fill="#6ee7a0" font-size="12">9 sparks · ICS standing</text></a></g>
+  <g><title>ASI: 9 sparks, unlocks with ASI standing</title><a href="#family-asi"><rect x="24" y="154" width="300" height="84" rx="10" fill="#10151f" stroke="#f5a05a" stroke-width="1.5"/><text x="174" y="182" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">ASI</text><text x="174" y="206" text-anchor="middle" fill="#f5a05a" font-size="12">9 sparks · ASI standing</text></a></g>
+  <g><title>Syndicate (NIC): 5 sparks, unlocks with NIC price</title><a href="#family-syndicate"><rect x="354" y="154" width="300" height="84" rx="10" fill="#10151f" stroke="#a78bfa" stroke-width="1.5"/><text x="504" y="182" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">Syndicate (NIC)</text><text x="504" y="206" text-anchor="middle" fill="#a78bfa" font-size="12">5 sparks · NIC price</text></a></g>
+  <g><title>Limited: 6 sparks, unlocks with NIC price</title><a href="#family-limited"><rect x="684" y="154" width="300" height="84" rx="10" fill="#10151f" stroke="#f472b6" stroke-width="1.5"/><text x="834" y="182" text-anchor="middle" fill="#e8eefc" font-size="15" font-weight="700">Limited</text><text x="834" y="206" text-anchor="middle" fill="#f472b6" font-size="12">6 sparks · NIC price</text></a></g>
 </svg>
 </div>
 
@@ -64,7 +77,7 @@ The 47 sparks in 6 families at a glance: one box per family (spark count, how th
 
 ### Event &amp; special (9)
 
-Unlock: nothing — these are the basic default lines. Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.
+Unlock: nothing — these are the basic default lines. Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.
 
 <div class="ext-cards">
 <div class="ext-card">
@@ -118,7 +131,7 @@ Unlock: nothing — these are the basic default lines. Each switch costs NIC (th
 
 ### TM (Truhold-Markson) (9)
 
-Unlock: standing with the TM megacorporation (2 → 4 → 6 by level). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.
+Unlock: standing with the TM megacorporation (2 → 4 → 6 by level). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.
 
 <div class="ext-cards">
 <div class="ext-card">
@@ -172,7 +185,7 @@ Unlock: standing with the TM megacorporation (2 → 4 → 6 by level). Each swit
 
 ### ICS (9)
 
-Unlock: standing with the ICS megacorporation (2 → 4 → 6 by level). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.
+Unlock: standing with the ICS megacorporation (2 → 4 → 6 by level). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.
 
 <div class="ext-cards">
 <div class="ext-card">
@@ -226,7 +239,7 @@ Unlock: standing with the ICS megacorporation (2 → 4 → 6 by level). Each swi
 
 ### ASI (9)
 
-Unlock: standing with the ASI megacorporation (2 → 4 → 6 by level). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.
+Unlock: standing with the ASI megacorporation (2 → 4 → 6 by level). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.
 
 <div class="ext-cards">
 <div class="ext-card">
@@ -280,7 +293,7 @@ Unlock: standing with the ASI megacorporation (2 → 4 → 6 by level). Each swi
 
 ### Syndicate (NIC) (5)
 
-Unlock: a NIC price (1M per spark). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.
+Unlock: a NIC price (1M per spark). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.
 
 <div class="ext-cards">
 <div class="ext-card">
@@ -314,7 +327,7 @@ Unlock: a NIC price (1M per spark). Each switch costs NIC (the amount is per spa
 
 ### Limited (6)
 
-Unlock: a NIC price (25–50M per spark). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) below.
+Unlock: a NIC price (25–50M per spark). Each switch costs NIC (the amount is per spark, see the cards) and takes a one-hour cooldown — see [Switching sparks](#switching-sparks) above.
 
 <div class="ext-cards">
 <div class="ext-card">
@@ -348,20 +361,6 @@ Unlock: a NIC price (25–50M per spark). Each switch costs NIC (the amount is p
 <div class="ext-card-prereq">Bundles 2 extension levels</div>
 </div>
 </div>
-
-<a id="switching-sparks"></a>
-
-## Switching sparks
-
-- You can only have **one active spark** at a time; installing another swaps it.
-- Each switch **costs NIC** — the amount is per-spark (the common lines cost
-  10k, the paid special lines up to a million).
-- There is a **one-hour cooldown** between switches: the server tracks when your
-  current spark was activated and refuses a new one until the minute is over.
-
-Because switching always costs NIC and takes an hour, pick the spark that
-matches the activity you are spending the most time on, and treat re-
-specializing as an occasional decision rather than a per-session one.
 
 <!--
 Written from scratch against the server backend, 2026-09-27:

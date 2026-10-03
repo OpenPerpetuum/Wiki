@@ -14,7 +14,7 @@ and then:
      consumed by tools/gen_recipes_cards.py
   2. inserts the production sections into every item page that can be
      produced or used in production:
-       "## Production"          — a mermaid tree of the components (left,
+       "## Production"          — one card per component (icon + name left,
                                  with required amounts) that build this item
                                  (right, in green), when it is a recipe
                                  product
@@ -56,8 +56,10 @@ def esc(s: str) -> str:
 
 def derived_name(definition: str) -> str:
     """Fallback display name (mirrors the generator's derived naming)."""
+    # mirrors Md.Derive's tier tokens: named1/2/3/4 -> T2/T3/T4/T5
+    tier = {"named1": "T2", "named2": "T3", "named3": "T4", "named4": "T5"}
     words = definition[len("def_"):].split("_")
-    return " ".join(w.capitalize() if w.isalpha() else w for w in words)
+    return " ".join(tier.get(w, w.capitalize() if w.isalpha() else w) for w in words)
 
 
 def product_info(definition, registry, ores, names):
@@ -140,25 +142,53 @@ def num(n: int) -> str:
     return str(n)
 
 
+def esc_html(s: str) -> str:
+    return (s.replace("&", "&amp;").replace("<", "&lt;")
+             .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def component_icon(name: str) -> str:
+    """The navicon symbol id for a component card (mirrors ItemsPage.ComponentIcon)."""
+    n = name.lower()
+    if any(w in n for w in ("ammo", "missile", "projectile", "cprg")):
+        return "mi-star"
+    if any(w in n for w in ("ore", "fragment", "mineral", "alloy")):
+        return "mi-crystal"
+    if any(w in n for w in ("capsule", "package")):
+        return "mi-home"
+    if any(w in n for w in ("core", "battery", "capacitor", "power")):
+        return "mi-radar"
+    if any(w in n for w in ("weapon", "cannon", "laser", "railgun", "launcher", "turret")):
+        return "mi-robots"
+    if any(w in n for w in ("shield", "armor", "repair", "stabilizer")):
+        return "mi-tree"
+    if any(w in n for w in ("sensor", "scanner", "locator")):
+        return "mi-grid"
+    if any(w in n for w in ("module", "tuning")):
+        return "mi-panel"
+    return "mi-grid"
+
+
 def recipe_section(name: str, comps, research, registry, ores, names):
-    """Mermaid tree: the components (left, with amounts) -> this item (right, green)."""
+    """One card per component (icon + name left, required amount in the body).
+    The old mermaid tree was hard to scan with 10+ components."""
     rl = int(research) if str(research).isdigit() else 0
     intro = (f"**Produced from {num(len(comps))} component{'s' if len(comps) != 1 else ''}"
              + (f", research level {rl}" if rl > 0 else "")
              + "** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):\n\n")
-    lines = ["```mermaid", "graph LR"]
-    lines.append(f'    a["{esc(name)}"]:::current')
-    for i, (comp, amt) in enumerate(comps):
-        letter = chr(ord("b") + i)
+    out = ['<div class="prod-cards">']
+    for comp, amt in comps:
         cname, url = product_info(comp, registry, ores, names)
-        lines.append(f'    {letter}["{esc(cname)} ×{num(amt)}"]:::comp')
-        lines.append(f"    {letter} --> a")
-        if url:
-            lines.append(f'    click {letter} "{url}" "{esc(cname)}"')
-    lines.append("    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff")
-    lines.append("    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff")
-    lines.append("```")
-    return intro + "\n".join(lines)
+        head = (f'<a class="prod-card-name" href="{url}">{esc_html(cname)}</a>' if url
+                else f'<span class="prod-card-name">{esc_html(cname)}</span>')
+        out.append(
+            f'<div class="prod-card"><div class="prod-card-head">'
+            f'<svg class="prod-card-icon" aria-hidden="true"><use href="#{component_icon(cname)}"/></svg>'
+            f'{head}</div>'
+            f'<div class="prod-card-body">required: <b>{num(amt)}</b></div></div>'
+        )
+    out.append("</div>")
+    return intro + "\n".join(out)
 
 
 def production_section(name: str, users, registry, ores, names):
@@ -193,10 +223,15 @@ def production_section(name: str, users, registry, ores, names):
 
 
 def insert_section(path, section, before_line):
-    """Replace an existing marked section or insert before `before_line`."""
+    """Replace an existing marked section or append it at the end of the page.
+
+    `before_line` used to be the "[All items]" footer; the catalog index (and
+    with it the footer) is gone, so the section now simply goes at EOF. The
+    argument is kept for the old section-shape: a previous run's section ends
+    right before it when it exists.
+    """
     lines = open(path, encoding="utf-8").read().split("\n")
-    # Drop a previous section: the section starts at the marker and always
-    # ends right before `before_line`, so everything in between is ours.
+    # Drop a previous section: from the marker to `before_line` (or EOF).
     out, skip = [], False
     for ln in lines:
         if ln.strip() == MARKER:
@@ -208,8 +243,9 @@ def insert_section(path, section, before_line):
             else:
                 continue
         out.append(ln)
-    idx = max(i for i, ln in enumerate(out) if ln.startswith(before_line))
-    out = out[:idx] + section.rstrip("\n").split("\n") + [""] + out[idx:]
+    while out and out[-1].strip() == "":
+        out.pop()
+    out += [""] + section.rstrip("\n").split("\n")
     open(path, "w", encoding="utf-8").write("\n".join(out))
 
 
@@ -239,16 +275,35 @@ def item_section(name, comps, research, users, registry, ores, names):
 def main():
     registry, ores = load_registry()
     recipes, names = load_recipes()
-    json.dump(
-        {
-            "recipes": {k: {"components": [[c, q] for c, q in v[0]], "research": v[1]}
-                        for k, v in recipes.items()},
-            "names": names,
-            "items": {k: {"name": v[0], "category": v[1], "url": v[2]} for k, v in registry.items()},
-            "ores": {k: {"name": v[0], "url": v[1]} for k, v in ores.items()},
-        },
-        open(DATA, "w", encoding="utf-8"), indent=1, ensure_ascii=False,
-    )
+    # recipes_data.json: the C# generator owns recipes/ and writes it with one
+    # entry per line (8.5k lines); this tool owns items/ores and must re-emit
+    # the file in the SAME shape so re-runs stay byte-identical (recipes/names
+    # copied through, items/ores rewritten compact inline).
+    old = json.load(open(DATA, encoding="utf-8"))
+    # json.dumps per token: C#'s EscapeJson and json.dumps agree on \\, \" and
+    # control chars (ensure_ascii=False keeps é as é, like C# does).
+    out = ['{', ' "recipes": {']
+    recipe_items = list(old.get("recipes", {}).items())
+    for i, (k, v) in enumerate(recipe_items):
+        comps = ", ".join(f'[{json.dumps(c, ensure_ascii=False)}, {a}]' for c, a in v["components"])
+        out.append(f'  {json.dumps(k, ensure_ascii=False)}: {{"components": [{comps}], '
+                   f'"research": {json.dumps(v["research"], ensure_ascii=False)}}}'
+                   + ("," if i < len(recipe_items) - 1 else ""))
+    out.append(' },')
+    out.append(' "names": {')
+    name_items = list(old.get("names", {}).items())
+    for i, (k, v) in enumerate(name_items):
+        out.append(f'  {json.dumps(k, ensure_ascii=False)}: {json.dumps(v, ensure_ascii=False)}'
+                   + ("," if i < len(name_items) - 1 else ""))
+    out.append(' },')
+    out.append(' "items": ' + json.dumps(
+        {k: {"name": v[0], "category": v[1], "url": v[2]} for k, v in registry.items()},
+        separators=(",", ":"), ensure_ascii=False) + ',')
+    out.append(' "ores": ' + json.dumps(
+        {k: {"name": v[0], "url": v[1]} for k, v in ores.items()},
+        separators=(",", ":"), ensure_ascii=False))
+    out.append('}')
+    open(DATA, "w", encoding="utf-8").write("\n".join(out) + "\n")
     print(f"registry: {len(registry)} items, {len(ores)} ores, {len(recipes)} recipes -> {DATA}")
 
     # reverse map: component definition -> list of (item definition)

@@ -22,5 +22,3 @@ description: "Ammo / Beam & laser, tier T2"
 | Field | Value |
 |---|---|
 | damage_thermal | 48 |
-
-[All items](/content/items/)

@@ -16,7 +16,7 @@ description: "Modules / Enhancements, tier T1"
 | Volume | 0.2 |
 | Mass | 50 |
 | Category | Modules / Enhancements |
-| Tier line | **Standard Gang Assist Resilience Module** (T1) → [Named1 Gang Assist Resilience Module](/content/items/named1-gang-assist-resilience-module/) (T2) → [Named2 Gang Assist Resilience Module](/content/items/named2-gang-assist-resilience-module/) (T3) → [Named3 Gang Assist Resilience Module](/content/items/named3-gang-assist-resilience-module/) (T4) |
+| Tier line | **Standard Gang Assist Resilience Module** (T1) → [T2 Gang Assist Resilience Module](/content/items/named1-gang-assist-resilience-module/) (T2) → [T3 Gang Assist Resilience Module](/content/items/named2-gang-assist-resilience-module/) (T3) → [T4 Gang Assist Resilience Module](/content/items/named3-gang-assist-resilience-module/) (T4) |
 | Note | shield absorbtion ratiot javit |
 
 ## Stats
@@ -38,15 +38,13 @@ description: "Modules / Enhancements, tier T1"
 ```mermaid
 graph LR
     a["Standard Gang Assist Resilience Module"]:::current
-    b["Named1 Gang Assist Resilience Module"]:::prod
+    b["T2 Gang Assist Resilience Module"]:::prod
     a --> b
-    click b "/content/items/named1-gang-assist-resilience-module/" "Named1 Gang Assist Resilience Module"
-    c["Named1 Gang Assist Resilience Module Pr"]:::prod
+    click b "/content/items/named1-gang-assist-resilience-module/" "T2 Gang Assist Resilience Module"
+    c["T2 Gang Assist Resilience Module Pr"]:::prod
     a --> c
-    click c "/content/items/named1-gang-assist-resilience-module-pr/" "Named1 Gang Assist Resilience Module Pr"
+    click c "/content/items/named1-gang-assist-resilience-module-pr/" "T2 Gang Assist Resilience Module Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

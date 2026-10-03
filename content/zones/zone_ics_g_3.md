@@ -52,17 +52,4 @@ pie showData
     "gammaterial" : 345
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Domhalarn](/zones/zone-ics-a-real/) (2 TP points)
-- → [Chalydor](/zones/zone-ics-g-8/) (2 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Domhalarn](/zones/zone-ics-a-real/) (2 TP points)
-- ← [Chalydor](/zones/zone-ics-g-8/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

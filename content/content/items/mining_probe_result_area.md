@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | minden mining probe result ez a definition lesz. spec kommand adja vissza az adatot belole. |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

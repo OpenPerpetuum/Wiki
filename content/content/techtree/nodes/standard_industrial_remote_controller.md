@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Industrial Remote Controller](/content/items/standard-industrial-remote-controller/) |
 | Parent node | [Standard coprocessor](/content/techtree/nodes/standard-cpu-upgrade/) |
-| Unlocks next | [Named1 Industrial Remote Controller](/content/techtree/nodes/named1-industrial-remote-controller/), [Mining Industrial Drone Unit](/content/techtree/nodes/mining-industrial-drone-unit/), [Harvesting Industrial Drone Unit](/content/techtree/nodes/harvesting-industrial-drone-unit/) |
+| Unlocks next | [T2 Industrial Remote Controller](/content/techtree/nodes/named1-industrial-remote-controller/), [Mining Industrial Drone Unit](/content/techtree/nodes/mining-industrial-drone-unit/), [Harvesting Industrial Drone Unit](/content/techtree/nodes/harvesting-industrial-drone-unit/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

@@ -23,5 +23,3 @@ description: "Special & other / Miscellaneous"
 | Field | Value |
 |---|---|
 | despawn_time | 3.6M |
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Materials"
 | Note | minden corp hangar ebben van benne egy public docking base-en |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

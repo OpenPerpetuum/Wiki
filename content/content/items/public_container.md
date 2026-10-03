@@ -19,5 +19,3 @@ description: "Special & other / Containers"
 | Note | ez a public container ebbe pakolja mindenki a bazison a cuccait |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

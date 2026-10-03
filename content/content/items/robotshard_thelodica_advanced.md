@@ -24,21 +24,11 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Functional thelodica fragment"]:::current
-    b["Metachropin ×2"]:::comp
-    b --> a
-    click b "/content/items/metachropin/" "Metachropin"
-    c["Polynucleit ×2"]:::comp
-    c --> a
-    click c "/content/items/polynucleit/" "Polynucleit"
-    d["Prilumium ×2"]:::comp
-    d --> a
-    click d "/content/items/prilumium/" "Prilumium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/metachropin/">Metachropin</a></div><div class="prod-card-body">required: <b>2</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynucleit/">Polynucleit</a></div><div class="prod-card-body">required: <b>2</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prilumium/">Prilumium</a></div><div class="prod-card-body">required: <b>2</b></div></div>
+</div>
 ## Used in production
 
 **Component of 119 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
@@ -64,12 +54,12 @@ graph LR
     g["Paternis armor NEXUS module prototype"]:::prod
     a --> g
     click g "/content/items/named2-gang-assist-defense-module-pr/" "Paternis armor NEXUS module prototype"
-    h["Named2 Gang Assist Devastating Module"]:::prod
+    h["T3 Gang Assist Devastating Module"]:::prod
     a --> h
-    click h "/content/items/named2-gang-assist-devastating-module/" "Named2 Gang Assist Devastating Module"
-    i["Named2 Gang Assist Devastating Module Pr"]:::prod
+    click h "/content/items/named2-gang-assist-devastating-module/" "T3 Gang Assist Devastating Module"
+    i["T3 Gang Assist Devastating Module Pr"]:::prod
     a --> i
-    click i "/content/items/named2-gang-assist-devastating-module-pr/" "Named2 Gang Assist Devastating Module Pr"
+    click i "/content/items/named2-gang-assist-devastating-module-pr/" "T3 Gang Assist Devastating Module Pr"
     j["+111 more"]:::more
     a --> j
     click j "/content/recipes/" "All recipes"
@@ -77,5 +67,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

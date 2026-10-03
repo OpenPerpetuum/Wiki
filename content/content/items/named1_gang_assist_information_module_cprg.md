@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T2"
 | Tier line | [Standard farlock NEXUS module CT](/content/items/standard-gang-assist-information-module-cprg/) (T1) → **Gecko D-1500 farlock NEXUS module CT** (T2) → [Martimal farlock NEXUS module CT](/content/items/named2-gang-assist-information-module-cprg/) (T3) → [Gecko M-2000 farlock NEXUS module CT](/content/items/named3-gang-assist-information-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

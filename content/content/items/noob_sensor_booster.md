@@ -27,5 +27,3 @@ description: "Modules / Sensors & scanning, tier special"
 | effect_sensor_booster_locking_range_modifier | 1.1 |
 | effect_sensor_booster_locking_time_modifier | 0.9 |
 | powergrid_usage | 5 |
-
-[All items](/content/items/)

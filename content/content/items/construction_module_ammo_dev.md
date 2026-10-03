@@ -23,5 +23,3 @@ description: "Special & other / Miscellaneous"
 |---|---|
 | construction_charge_amount | 999 |
 | construction_charge_techmax | 4 |
-
-[All items](/content/items/)

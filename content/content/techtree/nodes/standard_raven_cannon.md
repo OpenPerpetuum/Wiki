@@ -15,7 +15,7 @@ This node of the [Common (first set)](/content/techtree/groups/common1/) researc
 | Category | [Common (first set)](/content/techtree/groups/common1/) |
 | Unlocks | [Standard Raven Cannon](/content/items/standard-raven-cannon/) |
 | Parent node | [Standard medium autocannon](/content/techtree/nodes/longrange-standard-medium-autocannon/) |
-| Unlocks next | [Named1 Raven Cannon](/content/techtree/nodes/named1-raven-cannon/), [Ammo Raven Cannon A](/content/techtree/nodes/ammo-raven-cannon-a/) |
+| Unlocks next | [T2 Raven Cannon](/content/techtree/nodes/named1-raven-cannon/), [Ammo Raven Cannon A](/content/techtree/nodes/ammo-raven-cannon-a/) |
 | Enabler extension | – |
 | Point prices | common=68.6k |
 

@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Hunter Remote Controller](/content/items/standard-hunter-remote-controller/) |
 | Parent node | [Standard Self Destruct Module](/content/techtree/nodes/standard-self-destruct-module/) |
-| Unlocks next | [Standard Hunter Drone Rcu Pve](/content/techtree/nodes/standard-hunter-drone-rcu-pve/), [Standard Hunter Drone Rcu Pvp](/content/techtree/nodes/standard-hunter-drone-rcu-pvp/), [Named1 Hunter Remote Controller](/content/techtree/nodes/named1-hunter-remote-controller/) |
+| Unlocks next | [Standard Hunter Drone Rcu Pve](/content/techtree/nodes/standard-hunter-drone-rcu-pve/), [Standard Hunter Drone Rcu Pvp](/content/techtree/nodes/standard-hunter-drone-rcu-pvp/), [T2 Hunter Remote Controller](/content/techtree/nodes/named1-hunter-remote-controller/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

@@ -28,5 +28,3 @@ description: "Modules / Shield, tier T2 (special)"
 | nox_shield_absorbtion_modifier | 0.9 |
 | powergrid_usage | 35 |
 | ppm_thelodica_plasma_consumption | 1k |
-
-[All items](/content/items/)

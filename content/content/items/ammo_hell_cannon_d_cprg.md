@@ -18,5 +18,3 @@ description: "Ammo / Cannon"
 | Category | Ammo / Cannon |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

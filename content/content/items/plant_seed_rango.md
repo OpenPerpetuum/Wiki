@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | ez lesz amit a marketen veszel es a cargodbol deployolod    Rango-t ultet |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

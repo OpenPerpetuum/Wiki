@@ -149,7 +149,15 @@
             <ul class="nav-items">
                 <li><a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a></li>
                 <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
-                <li><a href="/features/missions/">{{ config.extra.ui.nav_missions }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/missions/">{{ config.extra.ui.nav_missions }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/missions/">{{ config.extra.ui.nav_content_missions }}</a></li>
+                    </ul>
+                </li>
                 <li><a href="/features/movement/">{{ config.extra.ui.nav_movement }}</a></li>
                 <li><a href="/features/npcs/">{{ config.extra.ui.nav_npcs }}</a></li>
                 <li><a href="/features/exploration/">{{ config.extra.ui.nav_exploration }}</a></li>
@@ -168,7 +176,15 @@
             </div>
             <ul class="nav-items">
                 <li><a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a></li>
-                <li><a href="/features/production/">{{ config.extra.ui.nav_production }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/production/">{{ config.extra.ui.nav_production }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/recipes/">{{ config.extra.ui.nav_content_recipes }}</a></li>
+                    </ul>
+                </li>
                 <li class="nav-has-sub">
                     <div class="nav-sub-head">
                         <a href="/features/research/">{{ config.extra.ui.nav_research }}</a>
@@ -225,13 +241,10 @@
                         <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
                     </div>
                     <ul class="nav-sub">
-                        <li><a href="/content/items/">{{ config.extra.ui.nav_content_items }}</a></li>
                         <li><a href="/content/ores/">{{ config.extra.ui.nav_content_ores }}</a></li>
                         <li><a href="/content/plants/">{{ config.extra.ui.nav_content_plants }}</a></li>
                         <li><a href="/content/deployables/">{{ config.extra.ui.nav_content_deployables }}</a></li>
                         <li><a href="/content/robots/">{{ config.extra.ui.nav_content_robots }}</a></li>
-                        <li><a href="/content/missions/">{{ config.extra.ui.nav_content_missions }}</a></li>
-                        <li><a href="/content/recipes/">{{ config.extra.ui.nav_content_recipes }}</a></li>
                         <li><a href="/content/stat-reference/">{{ config.extra.ui.nav_content_statref }}</a></li>
                     </ul>
                 </li>
@@ -432,7 +445,8 @@
             d.removeAttribute("data-processed");
             d.textContent = d.getAttribute("data-src");
         });
-        window.mermaid.initialize({ startOnLoad: false, theme: theme });
+        window.mermaid.initialize({ startOnLoad: false, theme: theme,
+                themeVariables: { fontSize: '18px' } });
         window.mermaid.run({ querySelector: ".mermaid" });
     }
     // Sidenav drawer (mobile): the hamburger (top left) opens the off-canvas
@@ -649,7 +663,8 @@
         });
         if (window.mermaid) {
             var theme = document.documentElement.getAttribute("data-theme") === "light" ? "neutral" : "dark";
-            window.mermaid.initialize({ startOnLoad: false, theme: theme });
+            window.mermaid.initialize({ startOnLoad: false, theme: theme,
+                themeVariables: { fontSize: '18px' } });
             window.mermaid.run({ querySelector: ".mermaid" });
         } else {
             // mermaid.min.js loads deferred; wait for it instead of dropping the diagrams.
@@ -658,7 +673,8 @@
                 if (window.mermaid) {
                     clearInterval(timer);
                     var theme = document.documentElement.getAttribute("data-theme") === "light" ? "neutral" : "dark";
-                    window.mermaid.initialize({ startOnLoad: false, theme: theme });
+                    window.mermaid.initialize({ startOnLoad: false, theme: theme,
+                themeVariables: { fontSize: '18px' } });
                     window.mermaid.run({ querySelector: ".mermaid" });
                 } else if (Date.now() - t0 > 10000) {
                     clearInterval(timer);

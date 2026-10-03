@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | runner 10000*rank  crawler 15000*rank  mech 30000*rank  hmech 45000*rank |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

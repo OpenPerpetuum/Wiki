@@ -19,5 +19,3 @@ description: "Modules / Repair, tier T1"
 | Tier line | **Standard small armor repairer CT** (T1) → [A150 small armor repairer CT](/content/items/named1-small-armor-repairer-cprg/) (T2) → [Quissot's small armor repairer CT](/content/items/named2-small-armor-repairer-cprg/) (T3) → [Microforge Aestolar small armor repairer CT](/content/items/named3-small-armor-repairer-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

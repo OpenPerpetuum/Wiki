@@ -33,46 +33,21 @@ graph LR
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
+
 <!-- production:generated -->
 ## Production
 
 **Produced from 10 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Specimen Sap Item"]:::current
-    b["HDT ×40.0k"]:::comp
-    b --> a
-    click b "/content/items/crude/" "HDT"
-    c["Helioptris ×10.0k"]:::comp
-    c --> a
-    click c "/content/items/helioptris/" "Helioptris"
-    d["Imentium ×10.0k"]:::comp
-    d --> a
-    click d "/content/ores/imentium/" "Imentium"
-    e["Liquizit ×20.0k"]:::comp
-    e --> a
-    click e "/content/items/liquizit/" "Liquizit"
-    f["Prismocitae ×10.0k"]:::comp
-    f --> a
-    click f "/content/items/prismocitae/" "Prismocitae"
-    g["Silgium ×10.0k"]:::comp
-    g --> a
-    click g "/content/ores/silgium/" "Silgium"
-    h["Specimen Sap Item Flux ×1"]:::comp
-    h --> a
-    click h "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    i["Stermonit ×10.0k"]:::comp
-    i --> a
-    click i "/content/ores/stermonit/" "Stermonit"
-    j["Titan ×10.0k"]:::comp
-    j --> a
-    click j "/content/ores/titan/" "Titan"
-    k["Triandlus ×10.0k"]:::comp
-    k --> a
-    click k "/content/items/triandlus/" "Triandlus"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/crude/">HDT</a></div><div class="prod-card-body">required: <b>40.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/helioptris/">Helioptris</a></div><div class="prod-card-body">required: <b>10.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/ores/imentium/">Imentium</a></div><div class="prod-card-body">required: <b>10.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/liquizit/">Liquizit</a></div><div class="prod-card-body">required: <b>20.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prismocitae/">Prismocitae</a></div><div class="prod-card-body">required: <b>10.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/ores/silgium/">Silgium</a></div><div class="prod-card-body">required: <b>10.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/ores/stermonit/">Stermonit</a></div><div class="prod-card-body">required: <b>10.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/ores/titan/">Titan</a></div><div class="prod-card-body">required: <b>10.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/triandlus/">Triandlus</a></div><div class="prod-card-body">required: <b>10.0k</b></div></div>
+</div>

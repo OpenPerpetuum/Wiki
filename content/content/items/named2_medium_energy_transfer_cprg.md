@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard medium energy transferer CT](/content/items/standard-medium-energy-transfer-cprg/) (T1) → [CDC-Yamp medium energy transferer CT](/content/items/named1-medium-energy-transfer-cprg/) (T2) → **Avit-Microfloss medium energy transferer CT** (T3) → [Livostid PT-VI medium energy transferer CT](/content/items/named3-medium-energy-transfer-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

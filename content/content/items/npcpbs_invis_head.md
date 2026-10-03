@@ -39,5 +39,3 @@ description: "Robot parts / Heads"
 | slope | 4 |
 | speed_max | 0 |
 | stealth_strength | 100 |
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Ammo / Mining"
 | Note | direction scanner ammo |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

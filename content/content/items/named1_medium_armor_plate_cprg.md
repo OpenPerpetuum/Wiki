@@ -19,5 +19,3 @@ description: "Modules / Armor, tier T2"
 | Tier line | [Standard medium armor plate CT](/content/items/standard-medium-armor-plate-cprg/) (T1) → **Azilo-Protec Duoforge medium armor plate CT** (T2) → [Invigor II. medium armor plate CT](/content/items/named2-medium-armor-plate-cprg/) (T3) → [THL-Testudo medium armor plate CT](/content/items/named3-medium-armor-plate-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

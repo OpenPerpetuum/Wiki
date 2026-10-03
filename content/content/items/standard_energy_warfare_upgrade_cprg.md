@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard EnWar upgrade CT** (T1) → [Blister EnWar upgrade CT](/content/items/named1-energy-warfare-upgrade-cprg/) (T2) → [OM-Shock EnWar upgrade CT](/content/items/named2-energy-warfare-upgrade-cprg/) (T3) → [XT-Shock EnWar upgrade CT](/content/items/named3-energy-warfare-upgrade-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T4"
 | Tier line | [Standard medium machine gun CT](/content/items/standard-medium-autocannon-cprg/) (T1) → [Grenber 28d medium machine gun CT](/content/items/named1-medium-autocannon-cprg/) (T2) → [.5s Hastex medium machine gun CT](/content/items/named2-medium-autocannon-cprg/) (T3) → **Torrex-G17 medium machine gun CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

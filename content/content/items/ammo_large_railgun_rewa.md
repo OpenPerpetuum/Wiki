@@ -27,5 +27,3 @@ description: "Ammo / Cannon"
 | damage_kinetic | 33 |
 | damage_thermal | 15 |
 | optimal_range_modifier | 1 |
-
-[All items](/content/items/)

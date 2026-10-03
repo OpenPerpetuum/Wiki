@@ -50,27 +50,4 @@ pie showData
     "stermonit" : 210
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Hokkogaros](/zones/zone-asi-a-real/) (3 TP points)
-- → [Shinjalar](/zones/zone-asi-pve/) (1 TP point)
-- → [Attalica](/zones/zone-ics/) (1 TP point)
-- → [Domhalarn](/zones/zone-ics-a-real/) (3 TP points)
-- → [Tellesis](/zones/zone-ics-pve/) (1 TP point)
-- → [New Virginia](/zones/zone-tm/) (2 TP points)
-- → [Norhoop](/zones/zone-tm-a-real/) (3 TP points)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Hokkogaros](/zones/zone-asi-a-real/) (3 TP points)
-- ← [Shinjalar](/zones/zone-asi-pve/) (1 TP point)
-- ← [Attalica](/zones/zone-ics/) (1 TP point)
-- ← [Domhalarn](/zones/zone-ics-a-real/) (3 TP points)
-- ← [Tellesis](/zones/zone-ics-pve/) (1 TP point)
-- ← [New Virginia](/zones/zone-tm/) (2 TP points)
-- ← [Norhoop](/zones/zone-tm-a-real/) (3 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#alpha) · [Protection levels](/zones/protection/)

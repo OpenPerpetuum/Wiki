@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | def |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

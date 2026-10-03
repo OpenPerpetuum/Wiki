@@ -33,41 +33,15 @@ description: "Modules / Sensors & scanning, tier T4"
 
 **Produced from 10 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["DDX700-Mist sensor suppressor tuning"]:::current
-    b["Espitium ×300"]:::comp
-    b --> a
-    click b "/content/items/espitium/" "Espitium"
-    c["Radiocor sensor suppressor tuning ×1"]:::comp
-    c --> a
-    click c "/content/items/named2-sensor-supressor-booster/" "Radiocor sensor suppressor tuning"
-    d["Prilumium ×300"]:::comp
-    d --> a
-    click d "/content/items/prilumium/" "Prilumium"
-    e["Functional common fragment ×15"]:::comp
-    e --> a
-    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    f["Damaged common fragment ×7"]:::comp
-    f --> a
-    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    g["Perfect common fragment ×22"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    h["Functional thelodica fragment ×15"]:::comp
-    h --> a
-    click h "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
-    i["Damaged thelodica fragment ×7"]:::comp
-    i --> a
-    click i "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
-    j["Perfect thelodica fragment ×22"]:::comp
-    j --> a
-    click j "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
-    k["Briochit ×100"]:::comp
-    k --> a
-    click k "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/named2-sensor-supressor-booster/">Radiocor sensor suppressor tuning</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prilumium/">Prilumium</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>7</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>22</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a></div><div class="prod-card-body">required: <b>7</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-expert/">Perfect thelodica fragment</a></div><div class="prod-card-body">required: <b>22</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+</div>

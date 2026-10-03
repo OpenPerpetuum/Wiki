@@ -15,7 +15,7 @@ This node of the [Industrial](/content/techtree/groups/indy/) research tree unlo
 | Category | [Industrial](/content/techtree/groups/indy/) |
 | Unlocks | [Standard Large Harvester](/content/items/standard-large-harvester/) |
 | Parent node | [Terramotus](/content/techtree/nodes/terramotus/) |
-| Unlocks next | [Ammo Mass Harvesting Standard](/content/techtree/nodes/ammo-mass-harvesting-standard/), [Named1 Large Harvester](/content/techtree/nodes/named1-large-harvester/) |
+| Unlocks next | [Ammo Mass Harvesting Standard](/content/techtree/nodes/ammo-mass-harvesting-standard/), [T2 Large Harvester](/content/techtree/nodes/named1-large-harvester/) |
 | Enabler extension | – |
 | Point prices | common=34.3k; industrial=34.3k |
 

@@ -37,48 +37,20 @@ description: "Modules / Weapons, tier T4"
 
 **Produced from 12 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Phisker 30PW medium HCL laser"]:::current
-    b["Espitium ×100"]:::comp
-    b --> a
-    click b "/content/items/espitium/" "Espitium"
-    c["Hydrobenol ×200"]:::comp
-    c --> a
-    click c "/content/items/hydrobenol/" "Hydrobenol"
-    d["Thelotec-Iocle I. medium HCL laser ×1"]:::comp
-    d --> a
-    click d "/content/items/named2-longrange-medium-laser/" "Thelotec-Iocle I. medium HCL laser"
-    e["Polynucleit ×200"]:::comp
-    e --> a
-    click e "/content/items/polynucleit/" "Polynucleit"
-    f["Prilumium ×100"]:::comp
-    f --> a
-    click f "/content/items/prilumium/" "Prilumium"
-    g["Functional common fragment ×30"]:::comp
-    g --> a
-    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
-    h["Damaged common fragment ×15"]:::comp
-    h --> a
-    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
-    i["Perfect common fragment ×45"]:::comp
-    i --> a
-    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
-    j["Functional thelodica fragment ×30"]:::comp
-    j --> a
-    click j "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
-    k["Damaged thelodica fragment ×15"]:::comp
-    k --> a
-    click k "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
-    l["Perfect thelodica fragment ×45"]:::comp
-    l --> a
-    click l "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
-    m["Briochit ×200"]:::comp
-    m --> a
-    click m "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-robots"/></svg><a class="prod-card-name" href="/content/items/named2-longrange-medium-laser/">Thelotec-Iocle I. medium HCL laser</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/polynucleit/">Polynucleit</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prilumium/">Prilumium</a></div><div class="prod-card-body">required: <b>100</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-advanced/">Functional common fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-basic/">Damaged common fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-common-expert/">Perfect common fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-advanced/">Functional thelodica fragment</a></div><div class="prod-card-body">required: <b>30</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-basic/">Damaged thelodica fragment</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-crystal"/></svg><a class="prod-card-name" href="/content/items/robotshard-thelodica-expert/">Perfect thelodica fragment</a></div><div class="prod-card-body">required: <b>45</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>200</b></div></div>
+</div>
 ## Used in production
 
 **Component of 1 items** — everything that uses it in production:
@@ -93,5 +65,3 @@ graph LR
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

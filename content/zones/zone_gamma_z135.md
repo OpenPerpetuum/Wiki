@@ -54,19 +54,4 @@ pie showData
     "gammaterial" : 70
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [zone_gamma_z111](/zones/zone-gamma-z111/) (1 TP point)
-- → [zone_gamma_z134](/zones/zone-gamma-z134/) (1 TP point)
-- → [zone_gamma_z136](/zones/zone-gamma-z136/) (1 TP point)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [zone_gamma_z111](/zones/zone-gamma-z111/) (1 TP point)
-- ← [zone_gamma_z134](/zones/zone-gamma-z134/) (1 TP point)
-- ← [zone_gamma_z136](/zones/zone-gamma-z136/) (1 TP point)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#t2) · [Protection levels](/zones/protection/)

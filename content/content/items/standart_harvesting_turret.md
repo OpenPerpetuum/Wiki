@@ -25,5 +25,3 @@ description: "Special & other / Miscellaneous, tier T1"
 | harvesting_amount_modifier | 2.99475 |
 | locking_range_modifier | 4 |
 | signature_radius_modifier | 4 |
-
-[All items](/content/items/)

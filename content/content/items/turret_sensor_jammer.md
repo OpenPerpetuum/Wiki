@@ -28,5 +28,3 @@ description: "Modules / Turrets, tier T1"
 | falloff | 60 |
 | optimal_range | 80 |
 | powergrid_usage | 25 |
-
-[All items](/content/items/)

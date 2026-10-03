@@ -19,5 +19,3 @@ description: "Special & other / Fit capsules & programs, tier T1"
 | Note | MK2 CT Capsule! |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -10,7 +10,19 @@ description: "Pelistal (faction) research category: 91 nodes."
 
 Research for the Pelistal domain faction: its named weapons and the modules that fight alongside them.
 
-[Tech tree](/content/techtree/) → Pelistal (faction). Every node in the diagram links to its detail page (prerequisites, what it unlocks next, point prices).
+[Tech tree](/content/techtree/) → Pelistal (faction). The category is split into its **research lines** — one per top-level item (the chips above jump to each line's graph). Every node in a graph links to its detail page (prerequisites, what it unlocks next, point prices).
+
+<div class="tt-index">
+<a href="#line-28"><span class="tt-chip">Small shield generator</span></a>&ensp;
+<a href="#line-38"><span class="tt-chip">Small energy neutralizer</span></a>&ensp;
+<a href="#line-63"><span class="tt-chip">Light missile launcher</span></a>&ensp;
+</div>
+
+<a id="line-28"></a>
+
+## Standard small shield generator
+
+**28 nodes** — everything that descends from [Standard small shield generator](/content/techtree/nodes/standard-small-shield-generator/).
 
 ```mermaid
 graph TD
@@ -19,8 +31,157 @@ graph TD
     n29["Standard medium shield generator"]
     n30["Standard large shield generator"]
     n31["Standard shield hardener"]
+    n711["Lava-3T thermal armor"]
+    n715["Thermoflake thermal armor"]
+    n719["Hephaistos-TSS thermal armor"]
+    n723["Parsvaal-IP small shield generator"]
+    n724["Ovostec-Yellowray small shield generator"]
+    n725["SBA-200 Forebrace small shield generator"]
+    n726["Parsvaal-IIX medium shield generator"]
+    n727["Ovostec-Yellowray II. medium shield generator"]
+    n728["Penik medium shield generator"]
+    n729["AVA-Spintarge large shield generator"]
+    n730["Gegel Ioner large shield generator"]
+    n731["Umbeler large shield generator"]
+    n732["Bund shield hardener"]
+    n733["Patronus shield hardener"]
+    n734["Guardian shield hardener"]
+    n2559["Standard shield NEXUS module"]
+    n2607["Bomitar I. shield NEXUS module"]
+    n2608["Stasis-Gen shield NEXUS module"]
+    n2609["Bomitar II. shield NEXUS module"]
+    n3297["Standard thermal ERP"]
+    n3298["Pyropaster thermal ERP"]
+    n3299["DE-melt thermal ERP"]
+    n3300["Dyoriva thermal ERP"]
+    n28 --> n24
+    n723 --> n29
+    n732 --> n30
+    n726 --> n31
+    n24 --> n711
+    n711 --> n715
+    n715 --> n719
+    n28 --> n723
+    n723 --> n724
+    n724 --> n725
+    n29 --> n726
+    n726 --> n727
+    n727 --> n728
+    n30 --> n729
+    n729 --> n730
+    n730 --> n731
+    n31 --> n732
+    n732 --> n733
+    n733 --> n734
+    n732 --> n2559
+    n2559 --> n2607
+    n2607 --> n2608
+    n2608 --> n2609
+    n711 --> n3297
+    n3297 --> n3298
+    n3298 --> n3299
+    n3299 --> n3300
+    click n24 "/content/techtree/nodes/standard-thrm-armor-hardener/" "Standard thermal armor"
+    click n28 "/content/techtree/nodes/standard-small-shield-generator/" "Standard small shield generator"
+    click n29 "/content/techtree/nodes/standard-medium-shield-generator/" "Standard medium shield generator"
+    click n30 "/content/techtree/nodes/standard-large-shield-generator/" "Standard large shield generator"
+    click n31 "/content/techtree/nodes/standard-shield-hardener/" "Standard shield hardener"
+    click n711 "/content/techtree/nodes/named1-thrm-armor-hardener/" "Lava-3T thermal armor"
+    click n715 "/content/techtree/nodes/named2-thrm-armor-hardener/" "Thermoflake thermal armor"
+    click n719 "/content/techtree/nodes/named3-thrm-armor-hardener/" "Hephaistos-TSS thermal armor"
+    click n723 "/content/techtree/nodes/named1-small-shield-generator/" "Parsvaal-IP small shield generator"
+    click n724 "/content/techtree/nodes/named2-small-shield-generator/" "Ovostec-Yellowray small shield generator"
+    click n725 "/content/techtree/nodes/named3-small-shield-generator/" "SBA-200 Forebrace small shield generator"
+    click n726 "/content/techtree/nodes/named1-medium-shield-generator/" "Parsvaal-IIX medium shield generator"
+    click n727 "/content/techtree/nodes/named2-medium-shield-generator/" "Ovostec-Yellowray II. medium shield generator"
+    click n728 "/content/techtree/nodes/named3-medium-shield-generator/" "Penik medium shield generator"
+    click n729 "/content/techtree/nodes/named1-large-shield-generator/" "AVA-Spintarge large shield generator"
+    click n730 "/content/techtree/nodes/named2-large-shield-generator/" "Gegel Ioner large shield generator"
+    click n731 "/content/techtree/nodes/named3-large-shield-generator/" "Umbeler large shield generator"
+    click n732 "/content/techtree/nodes/named1-shield-hardener/" "Bund shield hardener"
+    click n733 "/content/techtree/nodes/named2-shield-hardener/" "Patronus shield hardener"
+    click n734 "/content/techtree/nodes/named3-shield-hardener/" "Guardian shield hardener"
+    click n2559 "/content/techtree/nodes/standard-gang-assist-shield-calculation-module/" "Standard shield NEXUS module"
+    click n2607 "/content/techtree/nodes/named1-gang-assist-shield-calculation-module/" "Bomitar I. shield NEXUS module"
+    click n2608 "/content/techtree/nodes/named2-gang-assist-shield-calculation-module/" "Stasis-Gen shield NEXUS module"
+    click n2609 "/content/techtree/nodes/named3-gang-assist-shield-calculation-module/" "Bomitar II. shield NEXUS module"
+    click n3297 "/content/techtree/nodes/standard-thermal-kers/" "Standard thermal ERP"
+    click n3298 "/content/techtree/nodes/named1-thermal-kers/" "Pyropaster thermal ERP"
+    click n3299 "/content/techtree/nodes/named2-thermal-kers/" "DE-melt thermal ERP"
+    click n3300 "/content/techtree/nodes/named3-thermal-kers/" "Dyoriva thermal ERP"
+```
+
+<a id="line-38"></a>
+
+## Standard small energy neutralizer
+
+**18 nodes** — everything that descends from [Standard small energy neutralizer](/content/techtree/nodes/standard-small-energy-neutralizer/).
+
+```mermaid
+graph TD
     n38["Standard small energy neutralizer"]
     n39["Standard medium energy neutralizer"]
+    n753["Gox I. small energy neutralizer"]
+    n754["600GFX-Spasm small energy neutralizer"]
+    n755["Cerba small energy neutralizer"]
+    n756["Gox II. medium energy neutralizer"]
+    n757["1300RFX-Spasm medium energy neutralizer"]
+    n758["Sicado I. medium energy neutralizer"]
+    n942["Troiar"]
+    n948["Ictus"]
+    n2557["Standard recharger NEXUS module"]
+    n2601["Columcyl recharger NEXUS module"]
+    n2602["ARMS E300 recharger NEXUS module"]
+    n2603["ARMS X500 recharger NEXUS module"]
+    n4577["Standard EnWar upgrade"]
+    n4583["Blister EnWar upgrade"]
+    n4585["OM-Shock EnWar upgrade"]
+    n4586["XT-Shock EnWar upgrade"]
+    n753 --> n39
+    n38 --> n753
+    n753 --> n754
+    n754 --> n755
+    n39 --> n756
+    n756 --> n757
+    n757 --> n758
+    n38 --> n942
+    n39 --> n948
+    n948 --> n2557
+    n2557 --> n2601
+    n2601 --> n2602
+    n2602 --> n2603
+    n753 --> n4577
+    n4577 --> n4583
+    n4583 --> n4585
+    n4585 --> n4586
+    click n38 "/content/techtree/nodes/standard-small-energy-neutralizer/" "Standard small energy neutralizer"
+    click n39 "/content/techtree/nodes/standard-medium-energy-neutralizer/" "Standard medium energy neutralizer"
+    click n753 "/content/techtree/nodes/named1-small-energy-neutralizer/" "Gox I. small energy neutralizer"
+    click n754 "/content/techtree/nodes/named2-small-energy-neutralizer/" "600GFX-Spasm small energy neutralizer"
+    click n755 "/content/techtree/nodes/named3-small-energy-neutralizer/" "Cerba small energy neutralizer"
+    click n756 "/content/techtree/nodes/named1-medium-energy-neutralizer/" "Gox II. medium energy neutralizer"
+    click n757 "/content/techtree/nodes/named2-medium-energy-neutralizer/" "1300RFX-Spasm medium energy neutralizer"
+    click n758 "/content/techtree/nodes/named3-medium-energy-neutralizer/" "Sicado I. medium energy neutralizer"
+    click n942 "/content/techtree/nodes/troiar/" "Troiar"
+    click n948 "/content/techtree/nodes/ictus/" "Ictus"
+    click n2557 "/content/techtree/nodes/standard-gang-assist-core-management-module/" "Standard recharger NEXUS module"
+    click n2601 "/content/techtree/nodes/named1-gang-assist-core-management-module/" "Columcyl recharger NEXUS module"
+    click n2602 "/content/techtree/nodes/named2-gang-assist-core-management-module/" "ARMS E300 recharger NEXUS module"
+    click n2603 "/content/techtree/nodes/named3-gang-assist-core-management-module/" "ARMS X500 recharger NEXUS module"
+    click n4577 "/content/techtree/nodes/standard-energy-warfare-upgrade/" "Standard EnWar upgrade"
+    click n4583 "/content/techtree/nodes/named1-energy-warfare-upgrade/" "Blister EnWar upgrade"
+    click n4585 "/content/techtree/nodes/named2-energy-warfare-upgrade/" "OM-Shock EnWar upgrade"
+    click n4586 "/content/techtree/nodes/named3-energy-warfare-upgrade/" "XT-Shock EnWar upgrade"
+```
+
+<a id="line-63"></a>
+
+## Standard light missile launcher
+
+**45 nodes** — everything that descends from [Standard light missile launcher](/content/techtree/nodes/standard-rocket-launcher/).
+
+```mermaid
+graph TD
     n63["Standard light missile launcher"]
     n64["Standard medium missile launcher"]
     n65["Standard heavy missile launcher"]
@@ -40,27 +201,6 @@ graph TD
     n292["Large chemoactive compact missile"]
     n293["Large doublecore compact missile"]
     n294["Large sonic compact missile"]
-    n711["Lava-3T thermal armor"]
-    n715["Thermoflake thermal armor"]
-    n719["Hephaistos-TSS thermal armor"]
-    n723["Parsvaal-IP small shield generator"]
-    n724["Ovostec-Yellowray small shield generator"]
-    n725["SBA-200 Forebrace small shield generator"]
-    n726["Parsvaal-IIX medium shield generator"]
-    n727["Ovostec-Yellowray II. medium shield generator"]
-    n728["Penik medium shield generator"]
-    n729["AVA-Spintarge large shield generator"]
-    n730["Gegel Ioner large shield generator"]
-    n731["Umbeler large shield generator"]
-    n732["Bund shield hardener"]
-    n733["Patronus shield hardener"]
-    n734["Guardian shield hardener"]
-    n753["Gox I. small energy neutralizer"]
-    n754["600GFX-Spasm small energy neutralizer"]
-    n755["Cerba small energy neutralizer"]
-    n756["Gox II. medium energy neutralizer"]
-    n757["1300RFX-Spasm medium energy neutralizer"]
-    n758["Sicado I. medium energy neutralizer"]
     n849["Pelistec-Horosol DBM light missile launcher"]
     n850["Morteq light missile launcher"]
     n851["Pelistec-TR110 light missile launcher"]
@@ -74,8 +214,6 @@ graph TD
     n927["AIT-Dipris Propellant missile launcher tuning"]
     n928["Pelistec-FBP-II. missile launcher tuning"]
     n929["Dozer-IMT missile launcher tuning"]
-    n942["Troiar"]
-    n948["Ictus"]
     n1036["Medium armor-piercing ballistic missile"]
     n1037["Medium chemoactive ballistic missile"]
     n1038["Medium doublecore ballistic missile"]
@@ -85,31 +223,10 @@ graph TD
     n1042["Ammo Longrange Cruisemissile C"]
     n1043["Ammo Longrange Cruisemissile D"]
     n2551["Standard lock booster NEXUS module"]
-    n2557["Standard recharger NEXUS module"]
-    n2559["Standard shield NEXUS module"]
     n2586["JPS-Redeye lock booster NEXUS module"]
     n2587["Tersung lock booster NEXUS module"]
     n2588["JPS-Greeneye lock booster NEXUS module"]
-    n2601["Columcyl recharger NEXUS module"]
-    n2602["ARMS E300 recharger NEXUS module"]
-    n2603["ARMS X500 recharger NEXUS module"]
-    n2607["Bomitar I. shield NEXUS module"]
-    n2608["Stasis-Gen shield NEXUS module"]
-    n2609["Bomitar II. shield NEXUS module"]
-    n3297["Standard thermal ERP"]
-    n3298["Pyropaster thermal ERP"]
-    n3299["DE-melt thermal ERP"]
-    n3300["Dyoriva thermal ERP"]
-    n4577["Standard EnWar upgrade"]
-    n4583["Blister EnWar upgrade"]
-    n4585["OM-Shock EnWar upgrade"]
-    n4586["XT-Shock EnWar upgrade"]
     n6003["Hydra"]
-    n28 --> n24
-    n723 --> n29
-    n732 --> n30
-    n726 --> n31
-    n753 --> n39
     n850 --> n64
     n853 --> n65
     n849 --> n196
@@ -128,27 +245,6 @@ graph TD
     n294 --> n292
     n294 --> n293
     n65 --> n294
-    n24 --> n711
-    n711 --> n715
-    n715 --> n719
-    n28 --> n723
-    n723 --> n724
-    n724 --> n725
-    n29 --> n726
-    n726 --> n727
-    n727 --> n728
-    n30 --> n729
-    n729 --> n730
-    n730 --> n731
-    n31 --> n732
-    n732 --> n733
-    n733 --> n734
-    n38 --> n753
-    n753 --> n754
-    n754 --> n755
-    n39 --> n756
-    n756 --> n757
-    n757 --> n758
     n63 --> n849
     n849 --> n850
     n850 --> n851
@@ -162,8 +258,6 @@ graph TD
     n910 --> n927
     n927 --> n928
     n928 --> n929
-    n38 --> n942
-    n39 --> n948
     n1039 --> n1036
     n1039 --> n1037
     n1039 --> n1038
@@ -173,33 +267,10 @@ graph TD
     n1043 --> n1042
     n294 --> n1043
     n928 --> n2551
-    n948 --> n2557
-    n732 --> n2559
     n2551 --> n2586
     n2586 --> n2587
     n2587 --> n2588
-    n2557 --> n2601
-    n2601 --> n2602
-    n2602 --> n2603
-    n2559 --> n2607
-    n2607 --> n2608
-    n2608 --> n2609
-    n711 --> n3297
-    n3297 --> n3298
-    n3298 --> n3299
-    n3299 --> n3300
-    n753 --> n4577
-    n4577 --> n4583
-    n4583 --> n4585
-    n4585 --> n4586
     n216 --> n6003
-    click n24 "/content/techtree/nodes/standard-thrm-armor-hardener/" "Standard thermal armor"
-    click n28 "/content/techtree/nodes/standard-small-shield-generator/" "Standard small shield generator"
-    click n29 "/content/techtree/nodes/standard-medium-shield-generator/" "Standard medium shield generator"
-    click n30 "/content/techtree/nodes/standard-large-shield-generator/" "Standard large shield generator"
-    click n31 "/content/techtree/nodes/standard-shield-hardener/" "Standard shield hardener"
-    click n38 "/content/techtree/nodes/standard-small-energy-neutralizer/" "Standard small energy neutralizer"
-    click n39 "/content/techtree/nodes/standard-medium-energy-neutralizer/" "Standard medium energy neutralizer"
     click n63 "/content/techtree/nodes/standard-rocket-launcher/" "Standard light missile launcher"
     click n64 "/content/techtree/nodes/standard-missile-launcher/" "Standard medium missile launcher"
     click n65 "/content/techtree/nodes/standard-cruisemissile-launcher/" "Standard heavy missile launcher"
@@ -219,27 +290,6 @@ graph TD
     click n292 "/content/techtree/nodes/ammo-cruisemissile-b/" "Large chemoactive compact missile"
     click n293 "/content/techtree/nodes/ammo-cruisemissile-c/" "Large doublecore compact missile"
     click n294 "/content/techtree/nodes/ammo-cruisemissile-d/" "Large sonic compact missile"
-    click n711 "/content/techtree/nodes/named1-thrm-armor-hardener/" "Lava-3T thermal armor"
-    click n715 "/content/techtree/nodes/named2-thrm-armor-hardener/" "Thermoflake thermal armor"
-    click n719 "/content/techtree/nodes/named3-thrm-armor-hardener/" "Hephaistos-TSS thermal armor"
-    click n723 "/content/techtree/nodes/named1-small-shield-generator/" "Parsvaal-IP small shield generator"
-    click n724 "/content/techtree/nodes/named2-small-shield-generator/" "Ovostec-Yellowray small shield generator"
-    click n725 "/content/techtree/nodes/named3-small-shield-generator/" "SBA-200 Forebrace small shield generator"
-    click n726 "/content/techtree/nodes/named1-medium-shield-generator/" "Parsvaal-IIX medium shield generator"
-    click n727 "/content/techtree/nodes/named2-medium-shield-generator/" "Ovostec-Yellowray II. medium shield generator"
-    click n728 "/content/techtree/nodes/named3-medium-shield-generator/" "Penik medium shield generator"
-    click n729 "/content/techtree/nodes/named1-large-shield-generator/" "AVA-Spintarge large shield generator"
-    click n730 "/content/techtree/nodes/named2-large-shield-generator/" "Gegel Ioner large shield generator"
-    click n731 "/content/techtree/nodes/named3-large-shield-generator/" "Umbeler large shield generator"
-    click n732 "/content/techtree/nodes/named1-shield-hardener/" "Bund shield hardener"
-    click n733 "/content/techtree/nodes/named2-shield-hardener/" "Patronus shield hardener"
-    click n734 "/content/techtree/nodes/named3-shield-hardener/" "Guardian shield hardener"
-    click n753 "/content/techtree/nodes/named1-small-energy-neutralizer/" "Gox I. small energy neutralizer"
-    click n754 "/content/techtree/nodes/named2-small-energy-neutralizer/" "600GFX-Spasm small energy neutralizer"
-    click n755 "/content/techtree/nodes/named3-small-energy-neutralizer/" "Cerba small energy neutralizer"
-    click n756 "/content/techtree/nodes/named1-medium-energy-neutralizer/" "Gox II. medium energy neutralizer"
-    click n757 "/content/techtree/nodes/named2-medium-energy-neutralizer/" "1300RFX-Spasm medium energy neutralizer"
-    click n758 "/content/techtree/nodes/named3-medium-energy-neutralizer/" "Sicado I. medium energy neutralizer"
     click n849 "/content/techtree/nodes/named1-rocket-launcher/" "Pelistec-Horosol DBM light missile launcher"
     click n850 "/content/techtree/nodes/named2-rocket-launcher/" "Morteq light missile launcher"
     click n851 "/content/techtree/nodes/named3-rocket-launcher/" "Pelistec-TR110 light missile launcher"
@@ -253,8 +303,6 @@ graph TD
     click n927 "/content/techtree/nodes/named1-damage-mod-missile/" "AIT-Dipris Propellant missile launcher tuning"
     click n928 "/content/techtree/nodes/named2-damage-mod-missile/" "Pelistec-FBP-II. missile launcher tuning"
     click n929 "/content/techtree/nodes/named3-damage-mod-missile/" "Dozer-IMT missile launcher tuning"
-    click n942 "/content/techtree/nodes/troiar/" "Troiar"
-    click n948 "/content/techtree/nodes/ictus/" "Ictus"
     click n1036 "/content/techtree/nodes/ammo-longrange-missile-a/" "Medium armor-piercing ballistic missile"
     click n1037 "/content/techtree/nodes/ammo-longrange-missile-b/" "Medium chemoactive ballistic missile"
     click n1038 "/content/techtree/nodes/ammo-longrange-missile-c/" "Medium doublecore ballistic missile"
@@ -264,29 +312,13 @@ graph TD
     click n1042 "/content/techtree/nodes/ammo-longrange-cruisemissile-c/" "Ammo Longrange Cruisemissile C"
     click n1043 "/content/techtree/nodes/ammo-longrange-cruisemissile-d/" "Ammo Longrange Cruisemissile D"
     click n2551 "/content/techtree/nodes/standard-gang-assist-shared-dataprocessing-module/" "Standard lock booster NEXUS module"
-    click n2557 "/content/techtree/nodes/standard-gang-assist-core-management-module/" "Standard recharger NEXUS module"
-    click n2559 "/content/techtree/nodes/standard-gang-assist-shield-calculation-module/" "Standard shield NEXUS module"
     click n2586 "/content/techtree/nodes/named1-gang-assist-shared-dataprocessing-module/" "JPS-Redeye lock booster NEXUS module"
     click n2587 "/content/techtree/nodes/named2-gang-assist-shared-dataprocessing-module/" "Tersung lock booster NEXUS module"
     click n2588 "/content/techtree/nodes/named3-gang-assist-shared-dataprocessing-module/" "JPS-Greeneye lock booster NEXUS module"
-    click n2601 "/content/techtree/nodes/named1-gang-assist-core-management-module/" "Columcyl recharger NEXUS module"
-    click n2602 "/content/techtree/nodes/named2-gang-assist-core-management-module/" "ARMS E300 recharger NEXUS module"
-    click n2603 "/content/techtree/nodes/named3-gang-assist-core-management-module/" "ARMS X500 recharger NEXUS module"
-    click n2607 "/content/techtree/nodes/named1-gang-assist-shield-calculation-module/" "Bomitar I. shield NEXUS module"
-    click n2608 "/content/techtree/nodes/named2-gang-assist-shield-calculation-module/" "Stasis-Gen shield NEXUS module"
-    click n2609 "/content/techtree/nodes/named3-gang-assist-shield-calculation-module/" "Bomitar II. shield NEXUS module"
-    click n3297 "/content/techtree/nodes/standard-thermal-kers/" "Standard thermal ERP"
-    click n3298 "/content/techtree/nodes/named1-thermal-kers/" "Pyropaster thermal ERP"
-    click n3299 "/content/techtree/nodes/named2-thermal-kers/" "DE-melt thermal ERP"
-    click n3300 "/content/techtree/nodes/named3-thermal-kers/" "Dyoriva thermal ERP"
-    click n4577 "/content/techtree/nodes/standard-energy-warfare-upgrade/" "Standard EnWar upgrade"
-    click n4583 "/content/techtree/nodes/named1-energy-warfare-upgrade/" "Blister EnWar upgrade"
-    click n4585 "/content/techtree/nodes/named2-energy-warfare-upgrade/" "OM-Shock EnWar upgrade"
-    click n4586 "/content/techtree/nodes/named3-energy-warfare-upgrade/" "XT-Shock EnWar upgrade"
     click n6003 "/content/techtree/nodes/hydra/" "Hydra"
 ```
 
-## Nodes
+## Nodes (all)
 
 | Unlocks item | Parent node | Enabler extension | Point prices |
 |---|---|---|---|

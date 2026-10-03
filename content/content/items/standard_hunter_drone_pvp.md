@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous, tier T1"
 | Note | Autonomous kamikaze drone chassis (PvP): hunts hostile-standing players and self-destructs on contact. |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

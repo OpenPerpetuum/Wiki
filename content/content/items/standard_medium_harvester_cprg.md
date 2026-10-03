@@ -19,5 +19,3 @@ description: "Modules / Harvesting, tier T1"
 | Tier line | **Standard medium harvester CT** (T1) → [MHA 900-'Sap' medium harvester CT](/content/items/named1-medium-harvester-cprg/) (T2) → [Cultivator-XM medium harvester CT](/content/items/named2-medium-harvester-cprg/) (T3) → [Protrim V-II medium harvester CT](/content/items/named3-medium-harvester-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

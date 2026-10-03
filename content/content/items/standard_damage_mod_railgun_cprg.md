@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T1"
 | Tier line | **Standard magnetic weapon tuning CT** (T1) → [Nuimtec-Spilster magnetic weapon tuning CT](/content/items/named1-damage-mod-railgun-cprg/) (T2) → [RSU-Magnitcore magnetic weapon tuning CT](/content/items/named2-damage-mod-railgun-cprg/) (T3) → [Nuimtec-Magniscope XM80 magnetic weapon tuning CT](/content/items/named3-damage-mod-railgun-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

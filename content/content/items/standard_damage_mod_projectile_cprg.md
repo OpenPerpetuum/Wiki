@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard firearm tuning CT** (T1) → [Diathel-Subperis firearm tuning CT](/content/items/named1-damage-mod-projectile-cprg/) (T2) → [Plasmidwad-9000 firearm tuning CT](/content/items/named2-damage-mod-projectile-cprg/) (T3) → [DVT-800g firearm tuning CT](/content/items/named3-damage-mod-projectile-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -48,19 +48,4 @@ pie showData
     "silgium" : 476
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Attalica](/zones/zone-ics/) (1 TP point)
-- → [Tellesis](/zones/zone-ics-pve/) (1 TP point)
-- → [Hershfield](/zones/zone-tm-pve/) (1 TP point)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Attalica](/zones/zone-ics/) (1 TP point)
-- ← [Tellesis](/zones/zone-ics-pve/) (1 TP point)
-- ← [Hershfield](/zones/zone-tm-pve/) (1 TP point)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#alpha) · [Protection levels](/zones/protection/)

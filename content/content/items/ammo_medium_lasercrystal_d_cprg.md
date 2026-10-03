@@ -18,5 +18,3 @@ description: "Ammo / Beam & laser"
 | Category | Ammo / Beam & laser |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

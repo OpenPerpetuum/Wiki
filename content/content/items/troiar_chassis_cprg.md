@@ -18,5 +18,3 @@ description: "Robot parts / Chassis"
 | Category | Robot parts / Chassis |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

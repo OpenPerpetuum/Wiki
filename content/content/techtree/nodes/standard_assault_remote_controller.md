@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Assault Remote Controller](/content/items/standard-assault-remote-controller/) |
 | Parent node | [Standard coprocessor](/content/techtree/nodes/standard-cpu-upgrade/) |
-| Unlocks next | [Named1 Assault Remote Controller](/content/techtree/nodes/named1-assault-remote-controller/), [Spectator](/content/techtree/nodes/spectator/), [Syndicate Assault Drone Unit](/content/techtree/nodes/syndicate-assault-drone-unit/) |
+| Unlocks next | [T2 Assault Remote Controller](/content/techtree/nodes/named1-assault-remote-controller/), [Spectator](/content/techtree/nodes/spectator/), [Syndicate Assault Drone Unit](/content/techtree/nodes/syndicate-assault-drone-unit/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

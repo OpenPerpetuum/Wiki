@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T1"
 | Tier line | **Standard light HCL laser CT** (T1) → [Thelotec-Dabis light HCL laser CT](/content/items/named1-small-laser-cprg/) (T2) → [Pikolo light HCL laser CT](/content/items/named2-small-laser-cprg/) (T3) → [Thelotec-Stroyar light HCL laser CT](/content/items/named3-small-laser-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

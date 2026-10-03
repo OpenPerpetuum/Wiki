@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous, tier T1"
 | Note | Decay def |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

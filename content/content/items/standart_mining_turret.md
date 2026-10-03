@@ -25,5 +25,3 @@ description: "Special & other / Miscellaneous, tier T1"
 | locking_range_modifier | 4 |
 | mining_amount_modifier | 2.7951 |
 | signature_radius_modifier | 4 |
-
-[All items](/content/items/)

@@ -52,21 +52,4 @@ pie showData
     "fluxore" : 25
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Hokkogaros](/zones/zone-asi-a-real/) (2 TP points)
-- → [Norhoop](/zones/zone-tm-a-real/) (2 TP points)
-- → [Rhaoshan](/zones/zone-asi-g-1/) (2 TP points)
-- → [zone_gamma_tc_z102](/zones/zone-gamma-tc-z102/) (1 TP point)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Hokkogaros](/zones/zone-asi-a-real/) (2 TP points)
-- ← [Norhoop](/zones/zone-tm-a-real/) (2 TP points)
-- ← [Rhaoshan](/zones/zone-asi-g-1/) (2 TP points)
-- ← [zone_gamma_tc_z102](/zones/zone-gamma-tc-z102/) (1 TP point)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

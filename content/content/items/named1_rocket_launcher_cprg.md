@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T2"
 | Tier line | [Standard light missile launcher CT](/content/items/standard-rocket-launcher-cprg/) (T1) → **Pelistec-Horosol DBM light missile launcher CT** (T2) → [Morteq light missile launcher CT](/content/items/named2-rocket-launcher-cprg/) (T3) → [Pelistec-TR110 light missile launcher CT](/content/items/named3-rocket-launcher-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Engineering Remote Controller](/content/items/standard-engineering-remote-controller/) |
 | Parent node | [Standard coprocessor](/content/techtree/nodes/standard-cpu-upgrade/) |
-| Unlocks next | [Sentry Turret Unit](/content/techtree/nodes/sentry-turret-unit/), [Named1 Engineering Remote Controller](/content/techtree/nodes/named1-engineering-remote-controller/) |
+| Unlocks next | [Sentry Turret Unit](/content/techtree/nodes/sentry-turret-unit/), [T2 Engineering Remote Controller](/content/techtree/nodes/named1-engineering-remote-controller/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

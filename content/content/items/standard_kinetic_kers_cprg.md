@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard kinetic ERP CT** (T1) → [Hegatex-1000 kinetic ERP CT](/content/items/named1-kinetic-kers-cprg/) (T2) → [Solitex-990 kinetic ERP CT](/content/items/named2-kinetic-kers-cprg/) (T3) → [Emerolyte kinetic ERP CT](/content/items/named3-kinetic-kers-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

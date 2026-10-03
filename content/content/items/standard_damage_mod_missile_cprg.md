@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard missile launcher tuning CT** (T1) → [AIT-Dipris Propellant missile launcher tuning CT](/content/items/named1-damage-mod-missile-cprg/) (T2) → [Pelistec-FBP-II. missile launcher tuning CT](/content/items/named2-damage-mod-missile-cprg/) (T3) → [Dozer-IMT missile launcher tuning CT](/content/items/named3-damage-mod-missile-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard reactor sealing CT** (T1) → [Tortoise reactor sealing CT](/content/items/named1-reactor-sealing-cprg/) (T2) → [GRIP-250 reactor sealing CT](/content/items/named2-reactor-sealing-cprg/) (T3) → [GRIP-500p reactor sealing CT](/content/items/named3-reactor-sealing-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

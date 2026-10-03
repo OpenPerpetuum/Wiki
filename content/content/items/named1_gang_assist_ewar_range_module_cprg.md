@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T2"
 | Tier line | [Standard EW NEXUS module CT](/content/items/standard-gang-assist-ewar-range-module-cprg/) (T1) → **Yzla-1500 EW NEXUS module CT** (T2) → [Hidmuns EW NEXUS module CT](/content/items/named2-gang-assist-ewar-range-module-cprg/) (T3) → [Yzla-2500 EW NEXUS module CT](/content/items/named3-gang-assist-ewar-range-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

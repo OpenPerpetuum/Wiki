@@ -28,5 +28,3 @@ description: "Modules / Enhancements"
 | falloff | 0 |
 | optimal_range | 3 |
 | powergrid_usage | 45 |
-
-[All items](/content/items/)

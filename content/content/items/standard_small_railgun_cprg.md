@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T1"
 | Tier line | **Standard light EM-gun CT** (T1) → [Nuimtec-ROWO light EM-gun CT](/content/items/named1-small-railgun-cprg/) (T2) → [Proto-Gard II. light EM-gun CT](/content/items/named2-small-railgun-cprg/) (T3) → [Nuimtec-Inkandesk light EM-gun CT](/content/items/named3-small-railgun-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

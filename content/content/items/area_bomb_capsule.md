@@ -25,5 +25,3 @@ description: "Special & other / Miscellaneous"
 | armor_max | 50 |
 | signature_radius | 2 |
 | stealth_strength | 120 |
-
-[All items](/content/items/)

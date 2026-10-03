@@ -19,5 +19,3 @@ description: "Materials"
 | Note | itemek csoportositasara szolgalo doboz. limites. ez mar mehet a robot gyomraba, felteve ha belefer |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

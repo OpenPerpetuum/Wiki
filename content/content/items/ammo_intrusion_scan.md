@@ -23,5 +23,3 @@ description: "Ammo / Other ammo"
 |---|---|
 | mining_probe_cycle_time_intrusion_modifier | 6 |
 | mining_probe_intrusion_range | 10 |
-
-[All items](/content/items/)

@@ -23,11 +23,4 @@ The PvP arena — a scripted combat event zone.
 | Plant species | 10 (rule set 70) |
 | Round time limit | 180 min |
 | Max docking bases | none |
-
-## Connections
-
-**Exit gates** (stronghold/arena exits recorded in the database):
-
-- → [Hershfield](/zones/zone-tm-pve/) (`stronghold_default_exit`)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

@@ -18,5 +18,3 @@ description: "Special & other / Spark unlocks"
 | Category | Special & other / Spark unlocks |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

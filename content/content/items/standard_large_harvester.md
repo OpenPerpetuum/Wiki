@@ -16,7 +16,7 @@ description: "Modules / Harvesting, tier T1"
 | Volume | 2.5 |
 | Mass | 2000 |
 | Category | Modules / Harvesting |
-| Tier line | **Standard Large Harvester** (T1) → [Named1 Large Harvester](/content/items/named1-large-harvester/) (T2) → [Named2 Large Harvester](/content/items/named2-large-harvester/) (T3) → [Named3 Large Harvester](/content/items/named3-large-harvester/) (T4) |
+| Tier line | **Standard Large Harvester** (T1) → [T2 Large Harvester](/content/items/named1-large-harvester/) (T2) → [T3 Large Harvester](/content/items/named2-large-harvester/) (T3) → [T4 Large Harvester](/content/items/named3-large-harvester/) (T4) |
 
 ## Stats
 
@@ -32,18 +32,10 @@ description: "Modules / Harvesting, tier T1"
 
 **Produced from 2 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard Large Harvester"]:::current
-    b["Cryoperine ×1.6k"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Titanium ×2.4k"]:::comp
-    c --> a
-    click c "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>1.6k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>2.4k</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -51,15 +43,13 @@ graph LR
 ```mermaid
 graph LR
     a["Standard Large Harvester"]:::current
-    b["Named1 Large Harvester"]:::prod
+    b["T2 Large Harvester"]:::prod
     a --> b
-    click b "/content/items/named1-large-harvester/" "Named1 Large Harvester"
-    c["Named1 Large Harvester Pr"]:::prod
+    click b "/content/items/named1-large-harvester/" "T2 Large Harvester"
+    c["T2 Large Harvester Pr"]:::prod
     a --> c
-    click c "/content/items/named1-large-harvester-pr/" "Named1 Large Harvester Pr"
+    click c "/content/items/named1-large-harvester-pr/" "T2 Large Harvester Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

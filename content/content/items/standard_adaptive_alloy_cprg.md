@@ -16,8 +16,6 @@ description: "Modules / Enhancements, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Enhancements |
-| Tier line | **Standard Adaptive Alloy Cprg** (T1) → [Named1 Adaptive Alloy Cprg](/content/items/named1-adaptive-alloy-cprg/) (T2) → [Named2 Adaptive Alloy Cprg](/content/items/named2-adaptive-alloy-cprg/) (T3) → [Named3 Adaptive Alloy Cprg](/content/items/named3-adaptive-alloy-cprg/) (T4) |
+| Tier line | **Standard Adaptive Alloy Cprg** (T1) → [T2 Adaptive Alloy Cprg](/content/items/named1-adaptive-alloy-cprg/) (T2) → [T3 Adaptive Alloy Cprg](/content/items/named2-adaptive-alloy-cprg/) (T3) → [T4 Adaptive Alloy Cprg](/content/items/named3-adaptive-alloy-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -23,5 +23,3 @@ description: "Robot parts / Chassis"
 | Field | Value |
 |---|---|
 | mine_detection_range | 7 |
-
-[All items](/content/items/)

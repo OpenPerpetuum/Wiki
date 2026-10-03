@@ -1,6 +1,6 @@
 ---
 title: "Content"
-description: "Generated stat tables for every content entity: ores, plants, deployables, items, robots."
+description: "Generated stat tables for every content entity: ores, plants, deployables, robots. "
 ---
 
 # Content
@@ -9,10 +9,9 @@ Stat tables for every content entity, generated from the live database.
 
 | Page | Contents |
 |---|---|
-| [Ores](/content/ores/) | All ore types, extraction yields, per-zone node generation |
+| [Ores](/content/ores/) | All ore types and extraction yields; per-zone node parameters on each ore page |
 | [Plants](/content/plants/) | Every plant species rule (growRate, fertility, spreading, fruit), per-zone fertility |
 | [Deployables](/content/deployables/) | Deployable structures and placeables with stats |
-| [Items](/content/items/) | Full item catalog: modules, armor, ammo, materials, robot components |
 | [Robots](/content/robots/) | Every robot by class and generation, with strengths and weaknesses |
 | [Extensions](/content/extensions/) | Full extension (skill) tree: rank, price, bonus, prerequisites |
 | [Tech tree](/content/techtree/) | Every tech tree node: unlocked item, enabler extension, point prices |

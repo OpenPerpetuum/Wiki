@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T2"
 | Tier line | **GTRB medium autocannon CT** (T2) → [Astoc M75 medium autocannon CT](/content/items/named2-longrange-medium-autocannon-cprg/) (T3) → [Znatvoy-Berjiar-IA medium autocannon CT](/content/items/named3-longrange-medium-autocannon-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

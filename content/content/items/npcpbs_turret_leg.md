@@ -24,5 +24,3 @@ description: "Robot parts / Legs"
 |---|---|
 | slope | 4 |
 | speed_max | 0 |
-
-[All items](/content/items/)

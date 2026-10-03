@@ -5,8 +5,8 @@ namespace Perpetuum.WikiGenerate;
 /// examples (zone_TM, zone_ASI, zone_gamma_z106) are hand-written and skipped
 /// here; everything else gets a generated page with the facts the server
 /// records for the zone: type, protection level, size, fertility, plant
-/// species, the ore configuration (with a steady-state stock pie), and the
-/// inter-zone teleport connections.
+/// species, and the ore configuration (with a steady-state stock pie). The
+/// zone's teleports are on its map; the inter-zone links, on the world map.
 /// </summary>
 public static class ZonePages
 {
@@ -47,37 +47,16 @@ public static class ZonePages
                 Tiles: r.Int("maxtilespernode"), Total: r.Lng("totalamountpernode"), Min: r.Dbl("minthreshold")))
             .ToList();
 
-        var tps = db.Query("""
-            SELECT zs.name AS src, zd.name AS dst, COUNT(*) AS tps
-            FROM teleportdescriptions td
-            JOIN zones zs ON zs.id = td.sourcezone
-            JOIN zones zd ON zd.id = td.targetzone
-            WHERE td.sourcezone <> td.targetzone AND td.active = 1
-            GROUP BY zs.name, zd.name
-            """)
-            .Select(r => (Src: r.Str("src"), Dst: r.Str("dst"), Tps: r.Int("tps")))
-            .ToList();
-
-        var exits = db.Query("""
-            SELECT sz.name AS src, dz.name AS dst, rc.name AS rift
-            FROM strongholdexitconfig se
-            JOIN zones sz ON sz.id = se.zoneid
-            JOIN riftconfigs rc ON rc.id = se.riftConfigId
-            JOIN riftdestinations rd ON rd.groupId = rc.destinationGroupId
-            JOIN zones dz ON dz.id = rd.zoneId
-            """)
-            .Select(r => (Src: r.Str("src"), Dst: r.Str("dst"), Rift: r.Str("rift")))
-            .GroupBy(l => (l.Src, l.Dst))
-            .Select(g => g.First())
-            .ToList();
-
+        // The zone pages no longer carry an inter-zone "Connections" section
+        // (the zone map shows the TPs, the world map shows the inter-zone
+        // links), so the teleportdescriptions/strongholdexitconfig queries are gone.
         var maps = ZoneMapSvg.Build(db);
         var result = new Dictionary<string, string>(StringComparer.Ordinal);
         foreach (var (name, z) in zones.OrderBy(kv => kv.Value.Id))
         {
             var file = name.ToLowerInvariant() + ".md";
             if (HandWritten.Contains(file)) continue;
-            result[file] = Page(name, z, species, minerals, configs, tps, exits, zones.Count, maps);
+            result[file] = Page(name, z, species, minerals, configs, zones.Count, maps);
         }
         return (result, maps);
     }
@@ -94,8 +73,7 @@ public static class ZonePages
         string name, Z z,
         Dictionary<int, int> species, Dictionary<int, string> minerals,
         List<(int ZoneId, int Mat, int Nodes, int Tiles, long Total, double Min)> configs,
-        List<(string Src, string Dst, int Tps)> tps,
-        List<(string Src, string Dst, string Rift)> exits, int totalZones,
+        int totalZones,
         Dictionary<string, string> maps)
     {
         var display = Md.ClientStrings.TryGetValue(name, out var d) && d != name ? d : null;
@@ -167,36 +145,9 @@ public static class ZonePages
             sb.Append(StockPie(myConfigs, minerals));
         }
 
-        // Connections.
-        var outTps = tps.Where(t => t.Src == name).ToList();
-        var inTps = tps.Where(t => t.Dst == name).ToList();
-        var myExits = exits.Where(e => e.Src == name).ToList();
-        if (outTps.Count > 0 || inTps.Count > 0 || myExits.Count > 0)
-        {
-            sb.Append("\n## Connections\n\n");
-            if (outTps.Count > 0)
-            {
-                sb.Append("**Teleports out** (TP columns from this zone):\n\n");
-                foreach (var t in outTps.OrderBy(t => t.Dst, StringComparer.Ordinal))
-                    sb.Append($"- → {ZoneLink(t.Dst)} ({t.Tps} TP point{(t.Tps > 1 ? "s" : "")})\n");
-                sb.Append("\n");
-            }
-            if (inTps.Count > 0)
-            {
-                sb.Append("**Teleports in** (other zones with a TP column to this one):\n\n");
-                foreach (var t in inTps.OrderBy(t => t.Src, StringComparer.Ordinal))
-                    sb.Append($"- ← {ZoneLink(t.Src)} ({t.Tps} TP point{(t.Tps > 1 ? "s" : "")})\n");
-                sb.Append("\n");
-            }
-            if (myExits.Count > 0)
-            {
-                sb.Append("**Exit gates** (stronghold/arena exits recorded in the database):\n\n");
-                foreach (var e in myExits.OrderBy(e => e.Dst, StringComparer.Ordinal))
-                    sb.Append($"- → {ZoneLink(e.Dst)} (`{e.Rift}`)\n");
-                sb.Append("\n");
-            }
-        }
-
+        // The inter-zone "Connections" section was removed: the zone map above
+        // already shows every TP column/landing point in the zone, and the
+        // world map shows the inter-zone teleport links.
         sb.Append($"[Zone index](/zones/zone-index/) · [World map](/zones/map/{MapAnchor(name, z)}) · [Protection levels](/zones/protection/)\n");
         return sb.ToString();
     }

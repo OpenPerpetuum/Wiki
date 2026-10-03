@@ -18,5 +18,3 @@ description: "Modules / Weapons, tier T1"
 | Category | Modules / Weapons |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -23,5 +23,3 @@ description: "Ammo / Mining"
 | Field | Value |
 |---|---|
 | mining_probe_range | 30 |
-
-[All items](/content/items/)

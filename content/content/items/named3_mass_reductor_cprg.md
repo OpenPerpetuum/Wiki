@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard lightweight frame CT](/content/items/standard-mass-reductor-cprg/) (T1) → [MR1000-Boogey lightweight frame CT](/content/items/named1-mass-reductor-cprg/) (T2) → [Eizbiogh-dfg20 lightweight frame CT](/content/items/named2-mass-reductor-cprg/) (T3) → **MRE 3000 lightweight frame CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

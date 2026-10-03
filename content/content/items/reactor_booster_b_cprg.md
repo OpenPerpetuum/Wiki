@@ -19,5 +19,3 @@ description: "Materials, tier T2"
 | Note | Reactor fuel rods |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

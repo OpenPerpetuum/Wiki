@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard industrial NEXUS module CT](/content/items/standard-gang-assist-industry-module-cprg/) (T1) → [Thobys industrial NEXUS module CT](/content/items/named1-gang-assist-industry-module-cprg/) (T2) → **EE-D220 industrial NEXUS module CT** (T3) → [Rypoa industrial NEXUS module CT](/content/items/named3-gang-assist-industry-module-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T3"
 | Tier line | [Standard signal detector CT](/content/items/standard-detection-modul-cprg/) (T1) → [Techodo signal detector CT](/content/items/named1-detection-modul-cprg/) (T2) → **MX-1 Dogon signal detector CT** (T3) → ['Rogue' signal detector CT](/content/items/named3-detection-modul-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,11 +19,4 @@ A stronghold — a protected instance zone with its own exit gate.
 | Plant species | 10 (rule set 72) |
 | Round time limit | 60 min |
 | Max docking bases | none |
-
-## Connections
-
-**Exit gates** (stronghold/arena exits recorded in the database):
-
-- → [Hershfield](/zones/zone-tm-pve/) (`stronghold_z72_exit`)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)

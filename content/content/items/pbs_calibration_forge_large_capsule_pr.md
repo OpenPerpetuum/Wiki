@@ -36,38 +36,14 @@ description: "Special & other / Miscellaneous, tier T3 (prototype)"
 
 **Produced from 9 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Pbs Calibration Forge Large Capsule Pr"]:::current
-    b["Alligior ×2.5k"]:::comp
-    b --> a
-    click b "/content/items/alligior/" "Alligior"
-    c["Espitium ×2.5k"]:::comp
-    c --> a
-    click c "/content/items/espitium/" "Espitium"
-    d["Coalimin ×5.0k"]:::comp
-    d --> a
-    click d "/content/items/gamma-buildblock/" "Coalimin"
-    e["Bochilum ×2.5k"]:::comp
-    e --> a
-    click e "/content/items/gamma-defblock/" "Bochilum"
-    f["Tiraizin ×2.5k"]:::comp
-    f --> a
-    click f "/content/items/gamma-energyblock/" "Tiraizin"
-    g["Turilium ×2.5k"]:::comp
-    g --> a
-    click g "/content/items/gamma-offenseblock/" "Turilium"
-    h["Hydrobenol ×2.5k"]:::comp
-    h --> a
-    click h "/content/items/hydrobenol/" "Hydrobenol"
-    i["Pbs Calibration Forge Medium Capsule ×1"]:::comp
-    i --> a
-    click i "/content/items/pbs-calibration-forge-medium-capsule/" "Pbs Calibration Forge Medium Capsule"
-    j["Briochit ×5.0k"]:::comp
-    j --> a
-    click j "/content/items/unimetal/" "Briochit"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/alligior/">Alligior</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-buildblock/">Coalimin</a></div><div class="prod-card-body">required: <b>5.0k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-defblock/">Bochilum</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-energyblock/">Tiraizin</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-offenseblock/">Turilium</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/hydrobenol/">Hydrobenol</a></div><div class="prod-card-body">required: <b>2.5k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-home"/></svg><a class="prod-card-name" href="/content/items/pbs-calibration-forge-medium-capsule/">Pbs Calibration Forge Medium Capsule</a></div><div class="prod-card-body">required: <b>1</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>5.0k</b></div></div>
+</div>

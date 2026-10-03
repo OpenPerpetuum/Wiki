@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T3"
 | Tier line | [Standard sensor suppressor CT](/content/items/standard-sensor-dampener-cprg/) (T1) → [Suboster I. sensor suppressor CT](/content/items/named1-sensor-dampener-cprg/) (T2) → **MSD m\2315 'Filch' sensor suppressor CT** (T3) → [Stellis sensor suppressor CT](/content/items/named3-sensor-dampener-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

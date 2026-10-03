@@ -19,5 +19,3 @@ description: "Ammo / Other ammo"
 | Note | ez az ammo kell ahhoz, hogy menjen a terraform modul   |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -33,21 +33,11 @@ description: "Modules / Armor, tier T1"
 
 **Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard large armor plate"]:::current
-    b["Plasteosine ×1.1k"]:::comp
-    b --> a
-    click b "/content/items/plasteosine/" "Plasteosine"
-    c["Specimen Sap Item Flux ×15"]:::comp
-    c --> a
-    click c "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    d["Titanium ×750"]:::comp
-    d --> a
-    click d "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/plasteosine/">Plasteosine</a></div><div class="prod-card-body">required: <b>1.1k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>15</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>750</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -58,12 +48,10 @@ graph LR
     b["Vorbol p113 heavy armor plate"]:::prod
     a --> b
     click b "/content/items/named1-large-armor-plate/" "Vorbol p113 heavy armor plate"
-    c["Named1 Large Armor Plate Pr"]:::prod
+    c["T2 Large Armor Plate Pr"]:::prod
     a --> c
-    click c "/content/items/named1-large-armor-plate-pr/" "Named1 Large Armor Plate Pr"
+    click c "/content/items/named1-large-armor-plate-pr/" "T2 Large Armor Plate Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

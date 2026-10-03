@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Excavator Module](/content/items/standard-excavator-module/) |
 | Parent node | – (root line) |
-| Unlocks next | [Named1 Excavator Module](/content/techtree/nodes/named1-excavator-module/) |
+| Unlocks next | [T2 Excavator Module](/content/techtree/nodes/named1-excavator-module/) |
 | Enabler extension | – |
 | Point prices | common=34.3k; hitech=34.3k |
 

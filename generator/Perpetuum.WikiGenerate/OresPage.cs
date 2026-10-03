@@ -58,8 +58,8 @@ public static class OresPage
     private static string IndexBuild(List<MineralRow> minerals, List<MineralConfigRow> configs, Dictionary<int, string> zoneNames)
     {
         var sb = new StringBuilder();
-        sb.Append(Md.Header("Ores", "All ore types, their extraction yields, and per-zone node generation parameters.",
-            "minerals, mineralconfigs, zones (joined to entitydefaults for ore item names)"));
+        sb.Append(Md.Header("Ores", "All ore types and their extraction yields; the per-zone node parameters are on each ore's own page.",
+            "minerals (mineralconfigs/zones data lives on the per-ore pages)"));
         sb.Append("\n\n# Ores\n\n");
         sb.Append("Ore exists in the ground as **deposits (nodes)**. Each node holds a limited total amount; " +
                   "when a node is mined below its threshold it is removed and the zone regenerates new nodes " +
@@ -89,31 +89,8 @@ public static class OresPage
         sb.Append("</table>\n\n");
         sb.Append("**Extraction type**: 0 = solid (tile-by-tile with a drill), 1 = liquid (continuous pump). " +
                   "**Enabler effect** — when *required*, the robot needs the matching enabler effect active to " +
-                  "extract that ore at all.\n\n");
-
-        // Per-zone node generation: one subsection (and table) per zone, in zone
-        // id order. Headings are auto-anchored by Zola, so zone pages can deep-link.
-        sb.Append("## Per-zone node generation\n\n");
-        sb.Append("How many nodes of each ore a zone maintains, and how large each node is — one table per zone. " +
-                  "Zones without an ore configuration (the tc transit zones, arenas, strongholds, training) have no section here.\n\n");
-        foreach (var g in configs.Where(c => zoneNames.ContainsKey(c.ZoneId))
-                     .GroupBy(c => c.ZoneId)
-                     .OrderBy(g2 => g2.Key))
-        {
-            var zoneName = zoneNames[g.Key];
-            sb.Append($"### {Md.ZoneName(zoneName)}\n\n");
-            var rows = g.OrderBy(c => c.MaterialType)
-                .Select(c => new[]
-                {
-                    OrePageLink(minerals.FirstOrDefault(m => m.Idx == c.MaterialType)),
-                    Md.Num(c.MaxNodes),
-                    Md.Num(c.MaxTilesPerNode),
-                    Md.Num(c.TotalAmountPerNode),
-                    Md.Cell(c.MinThreshold)
-                }).ToArray();
-            Md.WriteTable(sb, new[] { "Ore", "Max nodes", "Max tiles / node", "Total amount / node", "Min threshold" }, rows);
-            sb.Append("\n");
-        }
+                  "extract that ore at all. How many nodes of each ore a zone maintains, and how large each node " +
+                  "is, is on each ore's own page (the *Zone parameters* table there).\n\n");
 
         return sb.ToString();
     }

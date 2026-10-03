@@ -30,5 +30,3 @@ description: "Special & other / Miscellaneous"
 | resist_kinetic | 33 |
 | resist_thermal | 33 |
 | stealth_strength | 1 |
-
-[All items](/content/items/)

@@ -10,7 +10,20 @@ description: "Common (second set) research category: 169 nodes."
 
 The second set of standard modules, including the named energy-transfer lines.
 
-[Tech tree](/content/techtree/) → Common (second set). Every node in the diagram links to its detail page (prerequisites, what it unlocks next, point prices).
+[Tech tree](/content/techtree/) → Common (second set). The category is split into its **research lines** — one per top-level item (the chips above jump to each line's graph). Every node in a graph links to its detail page (prerequisites, what it unlocks next, point prices).
+
+<div class="tt-index">
+<a href="#line-42"><span class="tt-chip">Coreactor</span></a>&ensp;
+<a href="#line-48"><span class="tt-chip">Coprocessor</span></a>&ensp;
+<a href="#line-8799"><span class="tt-chip">Dreadnought Module</span></a>&ensp;
+<a href="#line-8819"><span class="tt-chip">Excavator Module</span></a>&ensp;
+</div>
+
+<a id="line-42"></a>
+
+## Standard coreactor
+
+**53 nodes** — everything that descends from [Standard coreactor](/content/techtree/nodes/standard-powergrid-upgrades/).
 
 ```mermaid
 graph TD
@@ -20,13 +33,6 @@ graph TD
     n36["Standard medium energy drainer"]
     n41["Standard accumulator recharger"]
     n42["Standard coreactor"]
-    n43["Standard sensor amplifier"]
-    n44["Standard remote sensor amplifier"]
-    n45["Standard cargo scanner"]
-    n46["Standard chassis scanner"]
-    n48["Standard coprocessor"]
-    n49["Standard S-demobilizer"]
-    n52["Standard ECCM"]
     n645["Standard small auxiliary accumulator"]
     n646["Standard medium auxiliary accumulator"]
     n647["Standard large auxiliary accumulator"]
@@ -52,6 +58,150 @@ graph TD
     n765["Y-type 'Connector' coreactor"]
     n766["Palp coreactor"]
     n767["E-set 15VaW coreactor"]
+    n813["Co-Fuse small auxiliary accumulator"]
+    n814["Ovostec-Ghioc small auxiliary accumulator"]
+    n815["Pheter Charge-S small auxiliary accumulator"]
+    n816["Ovostec-gpc7000 medium auxiliary accumulator"]
+    n817["Sistolox medium auxiliary accumulator"]
+    n818["Pheter Charge-M medium auxiliary accumulator"]
+    n819["Ovostec-gxc9000 large auxiliary accumulator"]
+    n820["Nibott-I large auxiliary accumulator"]
+    n821["Pheter Charge-L large auxiliary accumulator"]
+    n822["CC25-Veo small energy injector"]
+    n823["Joffret-Refiller small energy injector"]
+    n824["Cerepter I. small energy injector"]
+    n825["Shoxit Parter I. medium energy injector"]
+    n826["Follypsos medium energy injector"]
+    n827["Cerepter II. medium energy injector"]
+    n828["Shoxit Parter II. large energy injector"]
+    n829["CC90-Tensio large energy injector"]
+    n830["Rymur DTTO large energy injector"]
+    n4576["Standard reactor sealing"]
+    n4580["Tortoise reactor sealing"]
+    n4581["GRIP-250 reactor sealing"]
+    n4582["GRIP-500p reactor sealing"]
+    n765 --> n32
+    n735 --> n33
+    n735 --> n35
+    n744 --> n36
+    n42 --> n41
+    n762 --> n645
+    n813 --> n646
+    n646 --> n647
+    n762 --> n648
+    n822 --> n649
+    n649 --> n650
+    n648 --> n664
+    n32 --> n735
+    n735 --> n736
+    n736 --> n737
+    n33 --> n738
+    n738 --> n739
+    n739 --> n740
+    n35 --> n744
+    n744 --> n745
+    n745 --> n746
+    n36 --> n747
+    n747 --> n748
+    n748 --> n749
+    n41 --> n762
+    n762 --> n763
+    n763 --> n764
+    n42 --> n765
+    n765 --> n766
+    n766 --> n767
+    n645 --> n813
+    n813 --> n814
+    n814 --> n815
+    n646 --> n816
+    n816 --> n817
+    n817 --> n818
+    n647 --> n819
+    n819 --> n820
+    n820 --> n821
+    n648 --> n822
+    n822 --> n823
+    n823 --> n824
+    n649 --> n825
+    n825 --> n826
+    n826 --> n827
+    n650 --> n828
+    n828 --> n829
+    n829 --> n830
+    n765 --> n4576
+    n4576 --> n4580
+    n4580 --> n4581
+    n4581 --> n4582
+    click n32 "/content/techtree/nodes/standard-small-energy-transfer/" "Standard small energy transferer"
+    click n33 "/content/techtree/nodes/standard-medium-energy-transfer/" "Standard medium energy transferer"
+    click n35 "/content/techtree/nodes/standard-small-energy-vampire/" "Standard small energy drainer"
+    click n36 "/content/techtree/nodes/standard-medium-energy-vampire/" "Standard medium energy drainer"
+    click n41 "/content/techtree/nodes/standard-core-recharger/" "Standard accumulator recharger"
+    click n42 "/content/techtree/nodes/standard-powergrid-upgrades/" "Standard coreactor"
+    click n645 "/content/techtree/nodes/standard-small-core-battery/" "Standard small auxiliary accumulator"
+    click n646 "/content/techtree/nodes/standard-medium-core-battery/" "Standard medium auxiliary accumulator"
+    click n647 "/content/techtree/nodes/standard-large-core-battery/" "Standard large auxiliary accumulator"
+    click n648 "/content/techtree/nodes/standard-small-core-booster/" "Standard small energy injector"
+    click n649 "/content/techtree/nodes/standard-medium-core-booster/" "Standard medium energy injector"
+    click n650 "/content/techtree/nodes/standard-large-core-booster/" "Standard large energy injector"
+    click n664 "/content/techtree/nodes/corebooster-ammo/" "Standard energy injector charge"
+    click n735 "/content/techtree/nodes/named1-small-energy-transfer/" "Uysta small energy transferer"
+    click n736 "/content/techtree/nodes/named2-small-energy-transfer/" "Bithom small energy transferer"
+    click n737 "/content/techtree/nodes/named3-small-energy-transfer/" "Livostid PT3 small energy transferer"
+    click n738 "/content/techtree/nodes/named1-medium-energy-transfer/" "CDC-Yamp medium energy transferer"
+    click n739 "/content/techtree/nodes/named2-medium-energy-transfer/" "Avit-Microfloss medium energy transferer"
+    click n740 "/content/techtree/nodes/named3-medium-energy-transfer/" "Livostid PT-VI medium energy transferer"
+    click n744 "/content/techtree/nodes/named1-small-energy-vampire/" "Portio I. small energy drainer"
+    click n745 "/content/techtree/nodes/named2-small-energy-vampire/" "Ekcept small energy drainer"
+    click n746 "/content/techtree/nodes/named3-small-energy-vampire/" "Io-trail SVU small energy drainer"
+    click n747 "/content/techtree/nodes/named1-medium-energy-vampire/" "Portio II. medium energy drainer"
+    click n748 "/content/techtree/nodes/named2-medium-energy-vampire/" "V90-Quadres medium energy drainer"
+    click n749 "/content/techtree/nodes/named3-medium-energy-vampire/" "Filch-AM medium energy drainer"
+    click n762 "/content/techtree/nodes/named1-core-recharger/" "Basis Ionostator accumulator recharger"
+    click n763 "/content/techtree/nodes/named2-core-recharger/" "Duobar 300xs-'Othys' accumulator recharger"
+    click n764 "/content/techtree/nodes/named3-core-recharger/" "Nyhna Filler accumulator recharger"
+    click n765 "/content/techtree/nodes/named1-powergrid-upgrades/" "Y-type 'Connector' coreactor"
+    click n766 "/content/techtree/nodes/named2-powergrid-upgrades/" "Palp coreactor"
+    click n767 "/content/techtree/nodes/named3-powergrid-upgrades/" "E-set 15VaW coreactor"
+    click n813 "/content/techtree/nodes/named1-small-core-battery/" "Co-Fuse small auxiliary accumulator"
+    click n814 "/content/techtree/nodes/named2-small-core-battery/" "Ovostec-Ghioc small auxiliary accumulator"
+    click n815 "/content/techtree/nodes/named3-small-core-battery/" "Pheter Charge-S small auxiliary accumulator"
+    click n816 "/content/techtree/nodes/named1-medium-core-battery/" "Ovostec-gpc7000 medium auxiliary accumulator"
+    click n817 "/content/techtree/nodes/named2-medium-core-battery/" "Sistolox medium auxiliary accumulator"
+    click n818 "/content/techtree/nodes/named3-medium-core-battery/" "Pheter Charge-M medium auxiliary accumulator"
+    click n819 "/content/techtree/nodes/named1-large-core-battery/" "Ovostec-gxc9000 large auxiliary accumulator"
+    click n820 "/content/techtree/nodes/named2-large-core-battery/" "Nibott-I large auxiliary accumulator"
+    click n821 "/content/techtree/nodes/named3-large-core-battery/" "Pheter Charge-L large auxiliary accumulator"
+    click n822 "/content/techtree/nodes/named1-small-core-booster/" "CC25-Veo small energy injector"
+    click n823 "/content/techtree/nodes/named2-small-core-booster/" "Joffret-Refiller small energy injector"
+    click n824 "/content/techtree/nodes/named3-small-core-booster/" "Cerepter I. small energy injector"
+    click n825 "/content/techtree/nodes/named1-medium-core-booster/" "Shoxit Parter I. medium energy injector"
+    click n826 "/content/techtree/nodes/named2-medium-core-booster/" "Follypsos medium energy injector"
+    click n827 "/content/techtree/nodes/named3-medium-core-booster/" "Cerepter II. medium energy injector"
+    click n828 "/content/techtree/nodes/named1-large-core-booster/" "Shoxit Parter II. large energy injector"
+    click n829 "/content/techtree/nodes/named2-large-core-booster/" "CC90-Tensio large energy injector"
+    click n830 "/content/techtree/nodes/named3-large-core-booster/" "Rymur DTTO large energy injector"
+    click n4576 "/content/techtree/nodes/standard-reactor-sealing/" "Standard reactor sealing"
+    click n4580 "/content/techtree/nodes/named1-reactor-sealing/" "Tortoise reactor sealing"
+    click n4581 "/content/techtree/nodes/named2-reactor-sealing/" "GRIP-250 reactor sealing"
+    click n4582 "/content/techtree/nodes/named3-reactor-sealing/" "GRIP-500p reactor sealing"
+```
+
+<a id="line-48"></a>
+
+## Standard coprocessor
+
+**108 nodes** — everything that descends from [Standard coprocessor](/content/techtree/nodes/standard-cpu-upgrade/).
+
+```mermaid
+graph TD
+    n43["Standard sensor amplifier"]
+    n44["Standard remote sensor amplifier"]
+    n45["Standard cargo scanner"]
+    n46["Standard chassis scanner"]
+    n48["Standard coprocessor"]
+    n49["Standard S-demobilizer"]
+    n52["Standard ECCM"]
     n768["Bullz-I 6601 sensor amplifier"]
     n769["Desenspure sensor amplifier"]
     n770["Ambassador SU-I sensor amplifier"]
@@ -73,24 +223,6 @@ graph TD
     n795["Wallex ECCM"]
     n796["Deshrud-QW ECCM"]
     n797["Braviar ECCM"]
-    n813["Co-Fuse small auxiliary accumulator"]
-    n814["Ovostec-Ghioc small auxiliary accumulator"]
-    n815["Pheter Charge-S small auxiliary accumulator"]
-    n816["Ovostec-gpc7000 medium auxiliary accumulator"]
-    n817["Sistolox medium auxiliary accumulator"]
-    n818["Pheter Charge-M medium auxiliary accumulator"]
-    n819["Ovostec-gxc9000 large auxiliary accumulator"]
-    n820["Nibott-I large auxiliary accumulator"]
-    n821["Pheter Charge-L large auxiliary accumulator"]
-    n822["CC25-Veo small energy injector"]
-    n823["Joffret-Refiller small energy injector"]
-    n824["Cerepter I. small energy injector"]
-    n825["Shoxit Parter I. medium energy injector"]
-    n826["Follypsos medium energy injector"]
-    n827["Cerepter II. medium energy injector"]
-    n828["Shoxit Parter II. large energy injector"]
-    n829["CC90-Tensio large energy injector"]
-    n830["Rymur DTTO large energy injector"]
     n913["Standard range extender"]
     n936["Opaletrak range extender"]
     n937["Unotron 60s-'Crack shot' range extender"]
@@ -119,32 +251,28 @@ graph TD
     n3515["Venom L-demobilizer"]
     n3516["GLOO L-demobilizer"]
     n3517["TDR25 L-demobilizer"]
-    n4576["Standard reactor sealing"]
-    n4580["Tortoise reactor sealing"]
-    n4581["GRIP-250 reactor sealing"]
-    n4582["GRIP-500p reactor sealing"]
     n8313["Standart Landmine Detector"]
-    n8314["Named1 Landmine Detector"]
-    n8316["Named2 Landmine Detector"]
-    n8318["Named3 Landmine Detector"]
+    n8314["T2 Landmine Detector"]
+    n8316["T3 Landmine Detector"]
+    n8318["T4 Landmine Detector"]
     n8324["Standard Assault Remote Controller"]
-    n8325["Named1 Assault Remote Controller"]
-    n8326["Named2 Assault Remote Controller"]
-    n8327["Named3 Assault Remote Controller"]
+    n8325["T2 Assault Remote Controller"]
+    n8326["T3 Assault Remote Controller"]
+    n8327["T4 Assault Remote Controller"]
     n8340["Sentry Turret Unit"]
     n8348["Spectator"]
     n8560["Standard Tactical Remote Controller"]
-    n8561["Named1 Tactical Remote Controller"]
-    n8563["Named2 Tactical Remote Controller"]
-    n8565["Named3 Tactical Remote Controller"]
+    n8561["T2 Tactical Remote Controller"]
+    n8563["T3 Tactical Remote Controller"]
+    n8565["T4 Tactical Remote Controller"]
     n8571["Standard Industrial Remote Controller"]
-    n8572["Named1 Industrial Remote Controller"]
-    n8574["Named2 Industrial Remote Controller"]
-    n8576["Named3 Industrial Remote Controller"]
+    n8572["T2 Industrial Remote Controller"]
+    n8574["T3 Industrial Remote Controller"]
+    n8576["T4 Industrial Remote Controller"]
     n8582["Standard Support Remote Controller"]
-    n8583["Named1 Support Remote Controller"]
-    n8585["Named2 Support Remote Controller"]
-    n8587["Named3 Support Remote Controller"]
+    n8583["T2 Support Remote Controller"]
+    n8585["T3 Support Remote Controller"]
+    n8587["T4 Support Remote Controller"]
     n8598["Syndicate Assault Drone Unit"]
     n8604["Nuimqol Assault Drone Unit"]
     n8610["Thelodica Assault Drone Unit"]
@@ -156,69 +284,31 @@ graph TD
     n8646["Mining Industrial Drone Unit"]
     n8652["Harvesting Industrial Drone Unit"]
     n8658["Repair Support Drone Unit"]
-    n8799["Standard Dreadnought Module"]
-    n8801["Named1 Dreadnought Module"]
-    n8804["Named2 Dreadnought Module"]
-    n8807["Named3 Dreadnought Module"]
-    n8819["Standard Excavator Module"]
-    n8821["Named1 Excavator Module"]
-    n8824["Named2 Excavator Module"]
-    n8827["Named3 Excavator Module"]
     n8831["Standard Remote Command Translator"]
-    n8833["Named1 Remote Command Translator"]
-    n8836["Named2 Remote Command Translator"]
-    n8839["Named3 Remote Command Translator"]
+    n8833["T2 Remote Command Translator"]
+    n8836["T3 Remote Command Translator"]
+    n8839["T4 Remote Command Translator"]
     n8876["Beholder"]
     n8970["Standard Self Destruct Module"]
     n8977["Standard Hunter Remote Controller"]
     n8978["Standard Hunter Drone Rcu Pve"]
     n8979["Standard Hunter Drone Rcu Pvp"]
-    n8980["Named1 Self Destruct Module"]
-    n8983["Named2 Self Destruct Module"]
-    n8986["Named3 Self Destruct Module"]
-    n8990["Named1 Hunter Remote Controller"]
-    n8993["Named2 Hunter Remote Controller"]
-    n8996["Named3 Hunter Remote Controller"]
+    n8980["T2 Self Destruct Module"]
+    n8983["T3 Self Destruct Module"]
+    n8986["T4 Self Destruct Module"]
+    n8990["T2 Hunter Remote Controller"]
+    n8993["T3 Hunter Remote Controller"]
+    n8996["T4 Hunter Remote Controller"]
     n9009["Standard Engineering Remote Controller"]
-    n9010["Named1 Engineering Remote Controller"]
-    n9012["Named2 Engineering Remote Controller"]
-    n9014["Named3 Engineering Remote Controller"]
-    n765 --> n32
-    n735 --> n33
-    n735 --> n35
-    n744 --> n36
-    n42 --> n41
+    n9010["T2 Engineering Remote Controller"]
+    n9012["T3 Engineering Remote Controller"]
+    n9014["T4 Engineering Remote Controller"]
     n48 --> n43
     n43 --> n44
     n777 --> n45
     n48 --> n46
     n769 --> n49
     n48 --> n52
-    n762 --> n645
-    n813 --> n646
-    n646 --> n647
-    n762 --> n648
-    n822 --> n649
-    n649 --> n650
-    n648 --> n664
-    n32 --> n735
-    n735 --> n736
-    n736 --> n737
-    n33 --> n738
-    n738 --> n739
-    n739 --> n740
-    n35 --> n744
-    n744 --> n745
-    n745 --> n746
-    n36 --> n747
-    n747 --> n748
-    n748 --> n749
-    n41 --> n762
-    n762 --> n763
-    n763 --> n764
-    n42 --> n765
-    n765 --> n766
-    n766 --> n767
     n43 --> n768
     n768 --> n769
     n769 --> n770
@@ -240,24 +330,6 @@ graph TD
     n52 --> n795
     n795 --> n796
     n796 --> n797
-    n645 --> n813
-    n813 --> n814
-    n814 --> n815
-    n646 --> n816
-    n816 --> n817
-    n817 --> n818
-    n647 --> n819
-    n819 --> n820
-    n820 --> n821
-    n648 --> n822
-    n822 --> n823
-    n823 --> n824
-    n649 --> n825
-    n825 --> n826
-    n826 --> n827
-    n650 --> n828
-    n828 --> n829
-    n829 --> n830
     n2896 --> n913
     n913 --> n936
     n936 --> n937
@@ -286,10 +358,6 @@ graph TD
     n3514 --> n3515
     n3515 --> n3516
     n3516 --> n3517
-    n765 --> n4576
-    n4576 --> n4580
-    n4580 --> n4581
-    n4581 --> n4582
     n2847 --> n8313
     n8313 --> n8314
     n8314 --> n8316
@@ -323,12 +391,6 @@ graph TD
     n8571 --> n8646
     n8571 --> n8652
     n8582 --> n8658
-    n8799 --> n8801
-    n8801 --> n8804
-    n8804 --> n8807
-    n8819 --> n8821
-    n8821 --> n8824
-    n8824 --> n8827
     n48 --> n8831
     n8831 --> n8833
     n8833 --> n8836
@@ -348,12 +410,6 @@ graph TD
     n9009 --> n9010
     n9010 --> n9012
     n9012 --> n9014
-    click n32 "/content/techtree/nodes/standard-small-energy-transfer/" "Standard small energy transferer"
-    click n33 "/content/techtree/nodes/standard-medium-energy-transfer/" "Standard medium energy transferer"
-    click n35 "/content/techtree/nodes/standard-small-energy-vampire/" "Standard small energy drainer"
-    click n36 "/content/techtree/nodes/standard-medium-energy-vampire/" "Standard medium energy drainer"
-    click n41 "/content/techtree/nodes/standard-core-recharger/" "Standard accumulator recharger"
-    click n42 "/content/techtree/nodes/standard-powergrid-upgrades/" "Standard coreactor"
     click n43 "/content/techtree/nodes/standard-sensor-booster/" "Standard sensor amplifier"
     click n44 "/content/techtree/nodes/standard-remote-sensor-booster/" "Standard remote sensor amplifier"
     click n45 "/content/techtree/nodes/standard-cargo-scanner/" "Standard cargo scanner"
@@ -361,31 +417,6 @@ graph TD
     click n48 "/content/techtree/nodes/standard-cpu-upgrade/" "Standard coprocessor"
     click n49 "/content/techtree/nodes/standard-webber/" "Standard S-demobilizer"
     click n52 "/content/techtree/nodes/standard-eccm/" "Standard ECCM"
-    click n645 "/content/techtree/nodes/standard-small-core-battery/" "Standard small auxiliary accumulator"
-    click n646 "/content/techtree/nodes/standard-medium-core-battery/" "Standard medium auxiliary accumulator"
-    click n647 "/content/techtree/nodes/standard-large-core-battery/" "Standard large auxiliary accumulator"
-    click n648 "/content/techtree/nodes/standard-small-core-booster/" "Standard small energy injector"
-    click n649 "/content/techtree/nodes/standard-medium-core-booster/" "Standard medium energy injector"
-    click n650 "/content/techtree/nodes/standard-large-core-booster/" "Standard large energy injector"
-    click n664 "/content/techtree/nodes/corebooster-ammo/" "Standard energy injector charge"
-    click n735 "/content/techtree/nodes/named1-small-energy-transfer/" "Uysta small energy transferer"
-    click n736 "/content/techtree/nodes/named2-small-energy-transfer/" "Bithom small energy transferer"
-    click n737 "/content/techtree/nodes/named3-small-energy-transfer/" "Livostid PT3 small energy transferer"
-    click n738 "/content/techtree/nodes/named1-medium-energy-transfer/" "CDC-Yamp medium energy transferer"
-    click n739 "/content/techtree/nodes/named2-medium-energy-transfer/" "Avit-Microfloss medium energy transferer"
-    click n740 "/content/techtree/nodes/named3-medium-energy-transfer/" "Livostid PT-VI medium energy transferer"
-    click n744 "/content/techtree/nodes/named1-small-energy-vampire/" "Portio I. small energy drainer"
-    click n745 "/content/techtree/nodes/named2-small-energy-vampire/" "Ekcept small energy drainer"
-    click n746 "/content/techtree/nodes/named3-small-energy-vampire/" "Io-trail SVU small energy drainer"
-    click n747 "/content/techtree/nodes/named1-medium-energy-vampire/" "Portio II. medium energy drainer"
-    click n748 "/content/techtree/nodes/named2-medium-energy-vampire/" "V90-Quadres medium energy drainer"
-    click n749 "/content/techtree/nodes/named3-medium-energy-vampire/" "Filch-AM medium energy drainer"
-    click n762 "/content/techtree/nodes/named1-core-recharger/" "Basis Ionostator accumulator recharger"
-    click n763 "/content/techtree/nodes/named2-core-recharger/" "Duobar 300xs-'Othys' accumulator recharger"
-    click n764 "/content/techtree/nodes/named3-core-recharger/" "Nyhna Filler accumulator recharger"
-    click n765 "/content/techtree/nodes/named1-powergrid-upgrades/" "Y-type 'Connector' coreactor"
-    click n766 "/content/techtree/nodes/named2-powergrid-upgrades/" "Palp coreactor"
-    click n767 "/content/techtree/nodes/named3-powergrid-upgrades/" "E-set 15VaW coreactor"
     click n768 "/content/techtree/nodes/named1-sensor-booster/" "Bullz-I 6601 sensor amplifier"
     click n769 "/content/techtree/nodes/named2-sensor-booster/" "Desenspure sensor amplifier"
     click n770 "/content/techtree/nodes/named3-sensor-booster/" "Ambassador SU-I sensor amplifier"
@@ -407,24 +438,6 @@ graph TD
     click n795 "/content/techtree/nodes/named1-eccm/" "Wallex ECCM"
     click n796 "/content/techtree/nodes/named2-eccm/" "Deshrud-QW ECCM"
     click n797 "/content/techtree/nodes/named3-eccm/" "Braviar ECCM"
-    click n813 "/content/techtree/nodes/named1-small-core-battery/" "Co-Fuse small auxiliary accumulator"
-    click n814 "/content/techtree/nodes/named2-small-core-battery/" "Ovostec-Ghioc small auxiliary accumulator"
-    click n815 "/content/techtree/nodes/named3-small-core-battery/" "Pheter Charge-S small auxiliary accumulator"
-    click n816 "/content/techtree/nodes/named1-medium-core-battery/" "Ovostec-gpc7000 medium auxiliary accumulator"
-    click n817 "/content/techtree/nodes/named2-medium-core-battery/" "Sistolox medium auxiliary accumulator"
-    click n818 "/content/techtree/nodes/named3-medium-core-battery/" "Pheter Charge-M medium auxiliary accumulator"
-    click n819 "/content/techtree/nodes/named1-large-core-battery/" "Ovostec-gxc9000 large auxiliary accumulator"
-    click n820 "/content/techtree/nodes/named2-large-core-battery/" "Nibott-I large auxiliary accumulator"
-    click n821 "/content/techtree/nodes/named3-large-core-battery/" "Pheter Charge-L large auxiliary accumulator"
-    click n822 "/content/techtree/nodes/named1-small-core-booster/" "CC25-Veo small energy injector"
-    click n823 "/content/techtree/nodes/named2-small-core-booster/" "Joffret-Refiller small energy injector"
-    click n824 "/content/techtree/nodes/named3-small-core-booster/" "Cerepter I. small energy injector"
-    click n825 "/content/techtree/nodes/named1-medium-core-booster/" "Shoxit Parter I. medium energy injector"
-    click n826 "/content/techtree/nodes/named2-medium-core-booster/" "Follypsos medium energy injector"
-    click n827 "/content/techtree/nodes/named3-medium-core-booster/" "Cerepter II. medium energy injector"
-    click n828 "/content/techtree/nodes/named1-large-core-booster/" "Shoxit Parter II. large energy injector"
-    click n829 "/content/techtree/nodes/named2-large-core-booster/" "CC90-Tensio large energy injector"
-    click n830 "/content/techtree/nodes/named3-large-core-booster/" "Rymur DTTO large energy injector"
     click n913 "/content/techtree/nodes/standard-tracking-upgrade/" "Standard range extender"
     click n936 "/content/techtree/nodes/named1-tracking-upgrade/" "Opaletrak range extender"
     click n937 "/content/techtree/nodes/named2-tracking-upgrade/" "Unotron 60s-'Crack shot' range extender"
@@ -453,32 +466,28 @@ graph TD
     click n3515 "/content/techtree/nodes/named1-longrange-webber/" "Venom L-demobilizer"
     click n3516 "/content/techtree/nodes/named2-longrange-webber/" "GLOO L-demobilizer"
     click n3517 "/content/techtree/nodes/named3-longrange-webber/" "TDR25 L-demobilizer"
-    click n4576 "/content/techtree/nodes/standard-reactor-sealing/" "Standard reactor sealing"
-    click n4580 "/content/techtree/nodes/named1-reactor-sealing/" "Tortoise reactor sealing"
-    click n4581 "/content/techtree/nodes/named2-reactor-sealing/" "GRIP-250 reactor sealing"
-    click n4582 "/content/techtree/nodes/named3-reactor-sealing/" "GRIP-500p reactor sealing"
     click n8313 "/content/techtree/nodes/standart-landmine-detector/" "Standart Landmine Detector"
-    click n8314 "/content/techtree/nodes/named1-landmine-detector/" "Named1 Landmine Detector"
-    click n8316 "/content/techtree/nodes/named2-landmine-detector/" "Named2 Landmine Detector"
-    click n8318 "/content/techtree/nodes/named3-landmine-detector/" "Named3 Landmine Detector"
+    click n8314 "/content/techtree/nodes/named1-landmine-detector/" "T2 Landmine Detector"
+    click n8316 "/content/techtree/nodes/named2-landmine-detector/" "T3 Landmine Detector"
+    click n8318 "/content/techtree/nodes/named3-landmine-detector/" "T4 Landmine Detector"
     click n8324 "/content/techtree/nodes/standard-assault-remote-controller/" "Standard Assault Remote Controller"
-    click n8325 "/content/techtree/nodes/named1-assault-remote-controller/" "Named1 Assault Remote Controller"
-    click n8326 "/content/techtree/nodes/named2-assault-remote-controller/" "Named2 Assault Remote Controller"
-    click n8327 "/content/techtree/nodes/named3-assault-remote-controller/" "Named3 Assault Remote Controller"
+    click n8325 "/content/techtree/nodes/named1-assault-remote-controller/" "T2 Assault Remote Controller"
+    click n8326 "/content/techtree/nodes/named2-assault-remote-controller/" "T3 Assault Remote Controller"
+    click n8327 "/content/techtree/nodes/named3-assault-remote-controller/" "T4 Assault Remote Controller"
     click n8340 "/content/techtree/nodes/sentry-turret-unit/" "Sentry Turret Unit"
     click n8348 "/content/techtree/nodes/spectator/" "Spectator"
     click n8560 "/content/techtree/nodes/standard-tactical-remote-controller/" "Standard Tactical Remote Controller"
-    click n8561 "/content/techtree/nodes/named1-tactical-remote-controller/" "Named1 Tactical Remote Controller"
-    click n8563 "/content/techtree/nodes/named2-tactical-remote-controller/" "Named2 Tactical Remote Controller"
-    click n8565 "/content/techtree/nodes/named3-tactical-remote-controller/" "Named3 Tactical Remote Controller"
+    click n8561 "/content/techtree/nodes/named1-tactical-remote-controller/" "T2 Tactical Remote Controller"
+    click n8563 "/content/techtree/nodes/named2-tactical-remote-controller/" "T3 Tactical Remote Controller"
+    click n8565 "/content/techtree/nodes/named3-tactical-remote-controller/" "T4 Tactical Remote Controller"
     click n8571 "/content/techtree/nodes/standard-industrial-remote-controller/" "Standard Industrial Remote Controller"
-    click n8572 "/content/techtree/nodes/named1-industrial-remote-controller/" "Named1 Industrial Remote Controller"
-    click n8574 "/content/techtree/nodes/named2-industrial-remote-controller/" "Named2 Industrial Remote Controller"
-    click n8576 "/content/techtree/nodes/named3-industrial-remote-controller/" "Named3 Industrial Remote Controller"
+    click n8572 "/content/techtree/nodes/named1-industrial-remote-controller/" "T2 Industrial Remote Controller"
+    click n8574 "/content/techtree/nodes/named2-industrial-remote-controller/" "T3 Industrial Remote Controller"
+    click n8576 "/content/techtree/nodes/named3-industrial-remote-controller/" "T4 Industrial Remote Controller"
     click n8582 "/content/techtree/nodes/standard-support-remote-controller/" "Standard Support Remote Controller"
-    click n8583 "/content/techtree/nodes/named1-support-remote-controller/" "Named1 Support Remote Controller"
-    click n8585 "/content/techtree/nodes/named2-support-remote-controller/" "Named2 Support Remote Controller"
-    click n8587 "/content/techtree/nodes/named3-support-remote-controller/" "Named3 Support Remote Controller"
+    click n8583 "/content/techtree/nodes/named1-support-remote-controller/" "T2 Support Remote Controller"
+    click n8585 "/content/techtree/nodes/named2-support-remote-controller/" "T3 Support Remote Controller"
+    click n8587 "/content/techtree/nodes/named3-support-remote-controller/" "T4 Support Remote Controller"
     click n8598 "/content/techtree/nodes/syndicate-assault-drone-unit/" "Syndicate Assault Drone Unit"
     click n8604 "/content/techtree/nodes/nuimqol-assault-drone-unit/" "Nuimqol Assault Drone Unit"
     click n8610 "/content/techtree/nodes/thelodica-assault-drone-unit/" "Thelodica Assault Drone Unit"
@@ -490,36 +499,70 @@ graph TD
     click n8646 "/content/techtree/nodes/mining-industrial-drone-unit/" "Mining Industrial Drone Unit"
     click n8652 "/content/techtree/nodes/harvesting-industrial-drone-unit/" "Harvesting Industrial Drone Unit"
     click n8658 "/content/techtree/nodes/repair-support-drone-unit/" "Repair Support Drone Unit"
-    click n8799 "/content/techtree/nodes/standard-dreadnought-module/" "Standard Dreadnought Module"
-    click n8801 "/content/techtree/nodes/named1-dreadnought-module/" "Named1 Dreadnought Module"
-    click n8804 "/content/techtree/nodes/named2-dreadnought-module/" "Named2 Dreadnought Module"
-    click n8807 "/content/techtree/nodes/named3-dreadnought-module/" "Named3 Dreadnought Module"
-    click n8819 "/content/techtree/nodes/standard-excavator-module/" "Standard Excavator Module"
-    click n8821 "/content/techtree/nodes/named1-excavator-module/" "Named1 Excavator Module"
-    click n8824 "/content/techtree/nodes/named2-excavator-module/" "Named2 Excavator Module"
-    click n8827 "/content/techtree/nodes/named3-excavator-module/" "Named3 Excavator Module"
     click n8831 "/content/techtree/nodes/standard-remote-command-translator/" "Standard Remote Command Translator"
-    click n8833 "/content/techtree/nodes/named1-remote-command-translator/" "Named1 Remote Command Translator"
-    click n8836 "/content/techtree/nodes/named2-remote-command-translator/" "Named2 Remote Command Translator"
-    click n8839 "/content/techtree/nodes/named3-remote-command-translator/" "Named3 Remote Command Translator"
+    click n8833 "/content/techtree/nodes/named1-remote-command-translator/" "T2 Remote Command Translator"
+    click n8836 "/content/techtree/nodes/named2-remote-command-translator/" "T3 Remote Command Translator"
+    click n8839 "/content/techtree/nodes/named3-remote-command-translator/" "T4 Remote Command Translator"
     click n8876 "/content/techtree/nodes/beholder/" "Beholder"
     click n8970 "/content/techtree/nodes/standard-self-destruct-module/" "Standard Self Destruct Module"
     click n8977 "/content/techtree/nodes/standard-hunter-remote-controller/" "Standard Hunter Remote Controller"
     click n8978 "/content/techtree/nodes/standard-hunter-drone-rcu-pve/" "Standard Hunter Drone Rcu Pve"
     click n8979 "/content/techtree/nodes/standard-hunter-drone-rcu-pvp/" "Standard Hunter Drone Rcu Pvp"
-    click n8980 "/content/techtree/nodes/named1-self-destruct-module/" "Named1 Self Destruct Module"
-    click n8983 "/content/techtree/nodes/named2-self-destruct-module/" "Named2 Self Destruct Module"
-    click n8986 "/content/techtree/nodes/named3-self-destruct-module/" "Named3 Self Destruct Module"
-    click n8990 "/content/techtree/nodes/named1-hunter-remote-controller/" "Named1 Hunter Remote Controller"
-    click n8993 "/content/techtree/nodes/named2-hunter-remote-controller/" "Named2 Hunter Remote Controller"
-    click n8996 "/content/techtree/nodes/named3-hunter-remote-controller/" "Named3 Hunter Remote Controller"
+    click n8980 "/content/techtree/nodes/named1-self-destruct-module/" "T2 Self Destruct Module"
+    click n8983 "/content/techtree/nodes/named2-self-destruct-module/" "T3 Self Destruct Module"
+    click n8986 "/content/techtree/nodes/named3-self-destruct-module/" "T4 Self Destruct Module"
+    click n8990 "/content/techtree/nodes/named1-hunter-remote-controller/" "T2 Hunter Remote Controller"
+    click n8993 "/content/techtree/nodes/named2-hunter-remote-controller/" "T3 Hunter Remote Controller"
+    click n8996 "/content/techtree/nodes/named3-hunter-remote-controller/" "T4 Hunter Remote Controller"
     click n9009 "/content/techtree/nodes/standard-engineering-remote-controller/" "Standard Engineering Remote Controller"
-    click n9010 "/content/techtree/nodes/named1-engineering-remote-controller/" "Named1 Engineering Remote Controller"
-    click n9012 "/content/techtree/nodes/named2-engineering-remote-controller/" "Named2 Engineering Remote Controller"
-    click n9014 "/content/techtree/nodes/named3-engineering-remote-controller/" "Named3 Engineering Remote Controller"
+    click n9010 "/content/techtree/nodes/named1-engineering-remote-controller/" "T2 Engineering Remote Controller"
+    click n9012 "/content/techtree/nodes/named2-engineering-remote-controller/" "T3 Engineering Remote Controller"
+    click n9014 "/content/techtree/nodes/named3-engineering-remote-controller/" "T4 Engineering Remote Controller"
 ```
 
-## Nodes
+<a id="line-8799"></a>
+
+## Standard Dreadnought Module
+
+**4 nodes** — everything that descends from [Standard Dreadnought Module](/content/techtree/nodes/standard-dreadnought-module/).
+
+```mermaid
+graph TD
+    n8799["Standard Dreadnought Module"]
+    n8801["T2 Dreadnought Module"]
+    n8804["T3 Dreadnought Module"]
+    n8807["T4 Dreadnought Module"]
+    n8799 --> n8801
+    n8801 --> n8804
+    n8804 --> n8807
+    click n8799 "/content/techtree/nodes/standard-dreadnought-module/" "Standard Dreadnought Module"
+    click n8801 "/content/techtree/nodes/named1-dreadnought-module/" "T2 Dreadnought Module"
+    click n8804 "/content/techtree/nodes/named2-dreadnought-module/" "T3 Dreadnought Module"
+    click n8807 "/content/techtree/nodes/named3-dreadnought-module/" "T4 Dreadnought Module"
+```
+
+<a id="line-8819"></a>
+
+## Standard Excavator Module
+
+**4 nodes** — everything that descends from [Standard Excavator Module](/content/techtree/nodes/standard-excavator-module/).
+
+```mermaid
+graph TD
+    n8819["Standard Excavator Module"]
+    n8821["T2 Excavator Module"]
+    n8824["T3 Excavator Module"]
+    n8827["T4 Excavator Module"]
+    n8819 --> n8821
+    n8821 --> n8824
+    n8824 --> n8827
+    click n8819 "/content/techtree/nodes/standard-excavator-module/" "Standard Excavator Module"
+    click n8821 "/content/techtree/nodes/named1-excavator-module/" "T2 Excavator Module"
+    click n8824 "/content/techtree/nodes/named2-excavator-module/" "T3 Excavator Module"
+    click n8827 "/content/techtree/nodes/named3-excavator-module/" "T4 Excavator Module"
+```
+
+## Nodes (all)
 
 | Unlocks item | Parent node | Enabler extension | Point prices |
 |---|---|---|---|
@@ -642,54 +685,54 @@ graph TD
 | [Tortoise reactor sealing](/content/techtree/nodes/named1-reactor-sealing/) | [Standard reactor sealing](/content/techtree/nodes/standard-reactor-sealing/) | – | common=12.8k |
 | [GRIP-250 reactor sealing](/content/techtree/nodes/named2-reactor-sealing/) | [Tortoise reactor sealing](/content/techtree/nodes/named1-reactor-sealing/) | – | common=25k |
 | [GRIP-500p reactor sealing](/content/techtree/nodes/named3-reactor-sealing/) | [GRIP-250 reactor sealing](/content/techtree/nodes/named2-reactor-sealing/) | – | common=21.6k; hitech=10.8k |
-| [Named1 Landmine Detector](/content/techtree/nodes/named1-landmine-detector/) | [Standart Landmine Detector](/content/techtree/nodes/standart-landmine-detector/) | – | common=43.2k |
-| [Named2 Landmine Detector](/content/techtree/nodes/named2-landmine-detector/) | [Named1 Landmine Detector](/content/techtree/nodes/named1-landmine-detector/) | – | common=68.6k |
-| [Named3 Landmine Detector](/content/techtree/nodes/named3-landmine-detector/) | [Named2 Landmine Detector](/content/techtree/nodes/named2-landmine-detector/) | – | common=51.2k; hitech=25.6k |
-| [Named1 Assault Remote Controller](/content/techtree/nodes/named1-assault-remote-controller/) | [Standard Assault Remote Controller](/content/techtree/nodes/standard-assault-remote-controller/) | – | common=50k |
+| [T2 Landmine Detector](/content/techtree/nodes/named1-landmine-detector/) | [Standart Landmine Detector](/content/techtree/nodes/standart-landmine-detector/) | – | common=43.2k |
+| [T3 Landmine Detector](/content/techtree/nodes/named2-landmine-detector/) | [T2 Landmine Detector](/content/techtree/nodes/named1-landmine-detector/) | – | common=68.6k |
+| [T4 Landmine Detector](/content/techtree/nodes/named3-landmine-detector/) | [T3 Landmine Detector](/content/techtree/nodes/named2-landmine-detector/) | – | common=51.2k; hitech=25.6k |
+| [T2 Assault Remote Controller](/content/techtree/nodes/named1-assault-remote-controller/) | [Standard Assault Remote Controller](/content/techtree/nodes/standard-assault-remote-controller/) | – | common=50k |
 | [Spectator](/content/techtree/nodes/spectator/) | [Standard Assault Remote Controller](/content/techtree/nodes/standard-assault-remote-controller/) | – | common=256k; nuimqol=100k; pelistal=100k; thelodica=100k |
 | [Syndicate Assault Drone Unit](/content/techtree/nodes/syndicate-assault-drone-unit/) | [Standard Assault Remote Controller](/content/techtree/nodes/standard-assault-remote-controller/) | – | common=75k; hitech=40k |
-| [Named2 Assault Remote Controller](/content/techtree/nodes/named2-assault-remote-controller/) | [Named1 Assault Remote Controller](/content/techtree/nodes/named1-assault-remote-controller/) | – | common=75k |
-| [Named3 Assault Remote Controller](/content/techtree/nodes/named3-assault-remote-controller/) | [Named2 Assault Remote Controller](/content/techtree/nodes/named2-assault-remote-controller/) | – | common=100k; hitech=50k |
-| [Named1 Tactical Remote Controller](/content/techtree/nodes/named1-tactical-remote-controller/) | [Standard Tactical Remote Controller](/content/techtree/nodes/standard-tactical-remote-controller/) | – | common=50k |
+| [T3 Assault Remote Controller](/content/techtree/nodes/named2-assault-remote-controller/) | [T2 Assault Remote Controller](/content/techtree/nodes/named1-assault-remote-controller/) | – | common=75k |
+| [T4 Assault Remote Controller](/content/techtree/nodes/named3-assault-remote-controller/) | [T3 Assault Remote Controller](/content/techtree/nodes/named2-assault-remote-controller/) | – | common=100k; hitech=50k |
+| [T2 Tactical Remote Controller](/content/techtree/nodes/named1-tactical-remote-controller/) | [Standard Tactical Remote Controller](/content/techtree/nodes/standard-tactical-remote-controller/) | – | common=50k |
 | [Syndicate Attack Drone Unit](/content/techtree/nodes/syndicate-attack-drone-unit/) | [Standard Tactical Remote Controller](/content/techtree/nodes/standard-tactical-remote-controller/) | – | common=50k; hitech=40k |
 | [Beholder](/content/techtree/nodes/beholder/) | [Standard Tactical Remote Controller](/content/techtree/nodes/standard-tactical-remote-controller/) | – | common=75k; hitech=75k |
-| [Named2 Tactical Remote Controller](/content/techtree/nodes/named2-tactical-remote-controller/) | [Named1 Tactical Remote Controller](/content/techtree/nodes/named1-tactical-remote-controller/) | – | common=75k |
-| [Named3 Tactical Remote Controller](/content/techtree/nodes/named3-tactical-remote-controller/) | [Named2 Tactical Remote Controller](/content/techtree/nodes/named2-tactical-remote-controller/) | – | common=100k; hitech=50k |
-| [Named1 Industrial Remote Controller](/content/techtree/nodes/named1-industrial-remote-controller/) | [Standard Industrial Remote Controller](/content/techtree/nodes/standard-industrial-remote-controller/) | – | common=50k |
+| [T3 Tactical Remote Controller](/content/techtree/nodes/named2-tactical-remote-controller/) | [T2 Tactical Remote Controller](/content/techtree/nodes/named1-tactical-remote-controller/) | – | common=75k |
+| [T4 Tactical Remote Controller](/content/techtree/nodes/named3-tactical-remote-controller/) | [T3 Tactical Remote Controller](/content/techtree/nodes/named2-tactical-remote-controller/) | – | common=100k; hitech=50k |
+| [T2 Industrial Remote Controller](/content/techtree/nodes/named1-industrial-remote-controller/) | [Standard Industrial Remote Controller](/content/techtree/nodes/standard-industrial-remote-controller/) | – | common=50k |
 | [Mining Industrial Drone Unit](/content/techtree/nodes/mining-industrial-drone-unit/) | [Standard Industrial Remote Controller](/content/techtree/nodes/standard-industrial-remote-controller/) | – | hitech=40k; industrial=50k |
 | [Harvesting Industrial Drone Unit](/content/techtree/nodes/harvesting-industrial-drone-unit/) | [Standard Industrial Remote Controller](/content/techtree/nodes/standard-industrial-remote-controller/) | – | hitech=40k; industrial=50k |
-| [Named2 Industrial Remote Controller](/content/techtree/nodes/named2-industrial-remote-controller/) | [Named1 Industrial Remote Controller](/content/techtree/nodes/named1-industrial-remote-controller/) | – | common=75k |
-| [Named3 Industrial Remote Controller](/content/techtree/nodes/named3-industrial-remote-controller/) | [Named2 Industrial Remote Controller](/content/techtree/nodes/named2-industrial-remote-controller/) | – | common=100k; hitech=50k |
-| [Named1 Support Remote Controller](/content/techtree/nodes/named1-support-remote-controller/) | [Standard Support Remote Controller](/content/techtree/nodes/standard-support-remote-controller/) | – | common=50k |
+| [T3 Industrial Remote Controller](/content/techtree/nodes/named2-industrial-remote-controller/) | [T2 Industrial Remote Controller](/content/techtree/nodes/named1-industrial-remote-controller/) | – | common=75k |
+| [T4 Industrial Remote Controller](/content/techtree/nodes/named3-industrial-remote-controller/) | [T3 Industrial Remote Controller](/content/techtree/nodes/named2-industrial-remote-controller/) | – | common=100k; hitech=50k |
+| [T2 Support Remote Controller](/content/techtree/nodes/named1-support-remote-controller/) | [Standard Support Remote Controller](/content/techtree/nodes/standard-support-remote-controller/) | – | common=50k |
 | [Repair Support Drone Unit](/content/techtree/nodes/repair-support-drone-unit/) | [Standard Support Remote Controller](/content/techtree/nodes/standard-support-remote-controller/) | – | hitech=40k; industrial=50k |
-| [Named2 Support Remote Controller](/content/techtree/nodes/named2-support-remote-controller/) | [Named1 Support Remote Controller](/content/techtree/nodes/named1-support-remote-controller/) | – | common=75k |
-| [Named3 Support Remote Controller](/content/techtree/nodes/named3-support-remote-controller/) | [Named2 Support Remote Controller](/content/techtree/nodes/named2-support-remote-controller/) | – | common=100k; hitech=50k |
+| [T3 Support Remote Controller](/content/techtree/nodes/named2-support-remote-controller/) | [T2 Support Remote Controller](/content/techtree/nodes/named1-support-remote-controller/) | – | common=75k |
+| [T4 Support Remote Controller](/content/techtree/nodes/named3-support-remote-controller/) | [T3 Support Remote Controller](/content/techtree/nodes/named2-support-remote-controller/) | – | common=100k; hitech=50k |
 | [Nuimqol Assault Drone Unit](/content/techtree/nodes/nuimqol-assault-drone-unit/) | [Syndicate Assault Drone Unit](/content/techtree/nodes/syndicate-assault-drone-unit/) | – | hitech=40k; nuimqol=75k |
 | [Thelodica Assault Drone Unit](/content/techtree/nodes/thelodica-assault-drone-unit/) | [Syndicate Assault Drone Unit](/content/techtree/nodes/syndicate-assault-drone-unit/) | – | hitech=40k; thelodica=75k |
 | [Pelistal Assault Drone Unit](/content/techtree/nodes/pelistal-assault-drone-unit/) | [Syndicate Assault Drone Unit](/content/techtree/nodes/syndicate-assault-drone-unit/) | – | hitech=40k; pelistal=75k |
 | [Nuimqol Attack Drone Unit](/content/techtree/nodes/nuimqol-attack-drone-unit/) | [Syndicate Attack Drone Unit](/content/techtree/nodes/syndicate-attack-drone-unit/) | – | hitech=40k; nuimqol=50k |
 | [Thelodica Attack Drone Unit](/content/techtree/nodes/thelodica-attack-drone-unit/) | [Syndicate Attack Drone Unit](/content/techtree/nodes/syndicate-attack-drone-unit/) | – | hitech=40k; thelodica=50k |
 | [Pelistal Attack Drone Unit](/content/techtree/nodes/pelistal-attack-drone-unit/) | [Syndicate Attack Drone Unit](/content/techtree/nodes/syndicate-attack-drone-unit/) | – | hitech=40k; pelistal=50k |
-| [Named1 Dreadnought Module](/content/techtree/nodes/named1-dreadnought-module/) | [Standard Dreadnought Module](/content/techtree/nodes/standard-dreadnought-module/) | – | common=51.2k; hitech=51.2k |
-| [Named2 Dreadnought Module](/content/techtree/nodes/named2-dreadnought-module/) | [Named1 Dreadnought Module](/content/techtree/nodes/named1-dreadnought-module/) | – | common=72.9k; hitech=72.9k |
-| [Named3 Dreadnought Module](/content/techtree/nodes/named3-dreadnought-module/) | [Named2 Dreadnought Module](/content/techtree/nodes/named2-dreadnought-module/) | – | hitech=150k |
-| [Named1 Excavator Module](/content/techtree/nodes/named1-excavator-module/) | [Standard Excavator Module](/content/techtree/nodes/standard-excavator-module/) | – | common=51.2k; hitech=51.2k |
-| [Named2 Excavator Module](/content/techtree/nodes/named2-excavator-module/) | [Named1 Excavator Module](/content/techtree/nodes/named1-excavator-module/) | – | common=72.9k; hitech=72.9k |
-| [Named3 Excavator Module](/content/techtree/nodes/named3-excavator-module/) | [Named2 Excavator Module](/content/techtree/nodes/named2-excavator-module/) | – | hitech=150k |
-| [Named1 Remote Command Translator](/content/techtree/nodes/named1-remote-command-translator/) | [Standard Remote Command Translator](/content/techtree/nodes/standard-remote-command-translator/) | – | common=50k |
-| [Named2 Remote Command Translator](/content/techtree/nodes/named2-remote-command-translator/) | [Named1 Remote Command Translator](/content/techtree/nodes/named1-remote-command-translator/) | – | common=75k |
-| [Named3 Remote Command Translator](/content/techtree/nodes/named3-remote-command-translator/) | [Named2 Remote Command Translator](/content/techtree/nodes/named2-remote-command-translator/) | – | common=100k; hitech=50k |
+| [T2 Dreadnought Module](/content/techtree/nodes/named1-dreadnought-module/) | [Standard Dreadnought Module](/content/techtree/nodes/standard-dreadnought-module/) | – | common=51.2k; hitech=51.2k |
+| [T3 Dreadnought Module](/content/techtree/nodes/named2-dreadnought-module/) | [T2 Dreadnought Module](/content/techtree/nodes/named1-dreadnought-module/) | – | common=72.9k; hitech=72.9k |
+| [T4 Dreadnought Module](/content/techtree/nodes/named3-dreadnought-module/) | [T3 Dreadnought Module](/content/techtree/nodes/named2-dreadnought-module/) | – | hitech=150k |
+| [T2 Excavator Module](/content/techtree/nodes/named1-excavator-module/) | [Standard Excavator Module](/content/techtree/nodes/standard-excavator-module/) | – | common=51.2k; hitech=51.2k |
+| [T3 Excavator Module](/content/techtree/nodes/named2-excavator-module/) | [T2 Excavator Module](/content/techtree/nodes/named1-excavator-module/) | – | common=72.9k; hitech=72.9k |
+| [T4 Excavator Module](/content/techtree/nodes/named3-excavator-module/) | [T3 Excavator Module](/content/techtree/nodes/named2-excavator-module/) | – | hitech=150k |
+| [T2 Remote Command Translator](/content/techtree/nodes/named1-remote-command-translator/) | [Standard Remote Command Translator](/content/techtree/nodes/standard-remote-command-translator/) | – | common=50k |
+| [T3 Remote Command Translator](/content/techtree/nodes/named2-remote-command-translator/) | [T2 Remote Command Translator](/content/techtree/nodes/named1-remote-command-translator/) | – | common=75k |
+| [T4 Remote Command Translator](/content/techtree/nodes/named3-remote-command-translator/) | [T3 Remote Command Translator](/content/techtree/nodes/named2-remote-command-translator/) | – | common=100k; hitech=50k |
 | [Standard Hunter Remote Controller](/content/techtree/nodes/standard-hunter-remote-controller/) | [Standard Self Destruct Module](/content/techtree/nodes/standard-self-destruct-module/) | – | common=25k |
-| [Named1 Self Destruct Module](/content/techtree/nodes/named1-self-destruct-module/) | [Standard Self Destruct Module](/content/techtree/nodes/standard-self-destruct-module/) | – | common=50k |
+| [T2 Self Destruct Module](/content/techtree/nodes/named1-self-destruct-module/) | [Standard Self Destruct Module](/content/techtree/nodes/standard-self-destruct-module/) | – | common=50k |
 | [Standard Hunter Drone Rcu Pve](/content/techtree/nodes/standard-hunter-drone-rcu-pve/) | [Standard Hunter Remote Controller](/content/techtree/nodes/standard-hunter-remote-controller/) | – | common=50k; hitech=40k |
 | [Standard Hunter Drone Rcu Pvp](/content/techtree/nodes/standard-hunter-drone-rcu-pvp/) | [Standard Hunter Remote Controller](/content/techtree/nodes/standard-hunter-remote-controller/) | – | common=50k; hitech=40k |
-| [Named1 Hunter Remote Controller](/content/techtree/nodes/named1-hunter-remote-controller/) | [Standard Hunter Remote Controller](/content/techtree/nodes/standard-hunter-remote-controller/) | – | common=50k |
-| [Named2 Self Destruct Module](/content/techtree/nodes/named2-self-destruct-module/) | [Named1 Self Destruct Module](/content/techtree/nodes/named1-self-destruct-module/) | – | common=75k |
-| [Named3 Self Destruct Module](/content/techtree/nodes/named3-self-destruct-module/) | [Named2 Self Destruct Module](/content/techtree/nodes/named2-self-destruct-module/) | – | common=100k; hitech=50k |
-| [Named2 Hunter Remote Controller](/content/techtree/nodes/named2-hunter-remote-controller/) | [Named1 Hunter Remote Controller](/content/techtree/nodes/named1-hunter-remote-controller/) | – | common=75k |
-| [Named3 Hunter Remote Controller](/content/techtree/nodes/named3-hunter-remote-controller/) | [Named2 Hunter Remote Controller](/content/techtree/nodes/named2-hunter-remote-controller/) | – | common=100k; hitech=50k |
+| [T2 Hunter Remote Controller](/content/techtree/nodes/named1-hunter-remote-controller/) | [Standard Hunter Remote Controller](/content/techtree/nodes/standard-hunter-remote-controller/) | – | common=50k |
+| [T3 Self Destruct Module](/content/techtree/nodes/named2-self-destruct-module/) | [T2 Self Destruct Module](/content/techtree/nodes/named1-self-destruct-module/) | – | common=75k |
+| [T4 Self Destruct Module](/content/techtree/nodes/named3-self-destruct-module/) | [T3 Self Destruct Module](/content/techtree/nodes/named2-self-destruct-module/) | – | common=100k; hitech=50k |
+| [T3 Hunter Remote Controller](/content/techtree/nodes/named2-hunter-remote-controller/) | [T2 Hunter Remote Controller](/content/techtree/nodes/named1-hunter-remote-controller/) | – | common=75k |
+| [T4 Hunter Remote Controller](/content/techtree/nodes/named3-hunter-remote-controller/) | [T3 Hunter Remote Controller](/content/techtree/nodes/named2-hunter-remote-controller/) | – | common=100k; hitech=50k |
 | [Sentry Turret Unit](/content/techtree/nodes/sentry-turret-unit/) | [Standard Engineering Remote Controller](/content/techtree/nodes/standard-engineering-remote-controller/) | – | common=75k; hitech=40k |
-| [Named1 Engineering Remote Controller](/content/techtree/nodes/named1-engineering-remote-controller/) | [Standard Engineering Remote Controller](/content/techtree/nodes/standard-engineering-remote-controller/) | – | common=50k |
-| [Named2 Engineering Remote Controller](/content/techtree/nodes/named2-engineering-remote-controller/) | [Named1 Engineering Remote Controller](/content/techtree/nodes/named1-engineering-remote-controller/) | – | common=75k |
-| [Named3 Engineering Remote Controller](/content/techtree/nodes/named3-engineering-remote-controller/) | [Named2 Engineering Remote Controller](/content/techtree/nodes/named2-engineering-remote-controller/) | – | common=100k; hitech=50k |
+| [T2 Engineering Remote Controller](/content/techtree/nodes/named1-engineering-remote-controller/) | [Standard Engineering Remote Controller](/content/techtree/nodes/standard-engineering-remote-controller/) | – | common=50k |
+| [T3 Engineering Remote Controller](/content/techtree/nodes/named2-engineering-remote-controller/) | [T2 Engineering Remote Controller](/content/techtree/nodes/named1-engineering-remote-controller/) | – | common=75k |
+| [T4 Engineering Remote Controller](/content/techtree/nodes/named3-engineering-remote-controller/) | [T3 Engineering Remote Controller](/content/techtree/nodes/named2-engineering-remote-controller/) | – | common=100k; hitech=50k |
 

@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T1"
 | Tier line | **Standard remote sensor amplifier CT** (T1) → [Occul remote sensor amplifier CT](/content/items/named1-remote-sensor-booster-cprg/) (T2) → [Da Gama-PLS10 remote sensor amplifier CT](/content/items/named2-remote-sensor-booster-cprg/) (T3) → [Ambassador-RU2 remote sensor amplifier CT](/content/items/named3-remote-sensor-booster-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

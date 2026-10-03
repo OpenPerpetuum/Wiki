@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard small miner module CT** (T1) → [Biroter 5050 small miner module CT](/content/items/named1-small-driller-cprg/) (T2) → [Sublimator Low-D small miner module CT](/content/items/named2-small-driller-cprg/) (T3) → [Scraper-990 small miner module CT](/content/items/named3-small-driller-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -15,7 +15,7 @@ This node of the [Common (first set)](/content/techtree/groups/common1/) researc
 | Category | [Common (first set)](/content/techtree/groups/common1/) |
 | Unlocks | [Standard Hell Cannon](/content/items/standard-hell-cannon/) |
 | Parent node | [.5s Hastex medium machine gun](/content/techtree/nodes/named2-medium-autocannon/) |
-| Unlocks next | [Ammo Hell Cannon A](/content/techtree/nodes/ammo-hell-cannon-a/), [Named1 Hell Cannon](/content/techtree/nodes/named1-hell-cannon/) |
+| Unlocks next | [Ammo Hell Cannon A](/content/techtree/nodes/ammo-hell-cannon-a/), [T2 Hell Cannon](/content/techtree/nodes/named1-hell-cannon/) |
 | Enabler extension | – |
 | Point prices | common=68.6k |
 

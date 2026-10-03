@@ -15,7 +15,7 @@ This node of the [Common (second set)](/content/techtree/groups/common2/) resear
 | Category | [Common (second set)](/content/techtree/groups/common2/) |
 | Unlocks | [Standard Self Destruct Module](/content/items/standard-self-destruct-module/) |
 | Parent node | [Standard coprocessor](/content/techtree/nodes/standard-cpu-upgrade/) |
-| Unlocks next | [Standard Hunter Remote Controller](/content/techtree/nodes/standard-hunter-remote-controller/), [Named1 Self Destruct Module](/content/techtree/nodes/named1-self-destruct-module/) |
+| Unlocks next | [Standard Hunter Remote Controller](/content/techtree/nodes/standard-hunter-remote-controller/), [T2 Self Destruct Module](/content/techtree/nodes/named1-self-destruct-module/) |
 | Enabler extension | – |
 | Point prices | common=25k |
 

@@ -16,8 +16,6 @@ description: "Modules / Harvesting, tier T1"
 | Volume | 0.01 |
 | Mass | 0.1 |
 | Category | Modules / Harvesting |
-| Tier line | **Standard Large Harvester Cprg** (T1) → [Named1 Large Harvester Cprg](/content/items/named1-large-harvester-cprg/) (T2) → [Named2 Large Harvester Cprg](/content/items/named2-large-harvester-cprg/) (T3) → [Named3 Large Harvester Cprg](/content/items/named3-large-harvester-cprg/) (T4) |
+| Tier line | **Standard Large Harvester Cprg** (T1) → [T2 Large Harvester Cprg](/content/items/named1-large-harvester-cprg/) (T2) → [T3 Large Harvester Cprg](/content/items/named2-large-harvester-cprg/) (T3) → [T4 Large Harvester Cprg](/content/items/named3-large-harvester-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -22,5 +22,3 @@ description: "Ammo / Other ammo"
 | Field | Value |
 |---|---|
 | mining_probe_artifact_range | 100 |
-
-[All items](/content/items/)

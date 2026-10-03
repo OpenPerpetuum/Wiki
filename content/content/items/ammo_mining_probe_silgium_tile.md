@@ -23,5 +23,3 @@ description: "Ammo / Mining"
 | Field | Value |
 |---|---|
 | tile_based_mining_probe_radius | 10 |
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Armor, tier T3"
 | Tier line | [Standard seismic armor CT](/content/items/standard-exp-armor-hardener-cprg/) (T1) → [Ballistris I. seismic armor CT](/content/items/named1-exp-armor-hardener-cprg/) (T2) → **Formantel-DVU seismic armor CT** (T3) → [Sheltor seismic armor CT](/content/items/named3-exp-armor-hardener-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

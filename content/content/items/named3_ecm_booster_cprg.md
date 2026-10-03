@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T4"
 | Tier line | [Standard ECM tuning CT](/content/items/standard-ecm-booster-cprg/) (T1) → [Distortio ECM tuning CT](/content/items/named1-ecm-booster-cprg/) (T2) → [Hodge ECM tuning CT](/content/items/named2-ecm-booster-cprg/) (T3) → **Sludge ECM tuning CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

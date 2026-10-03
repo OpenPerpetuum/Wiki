@@ -19,5 +19,3 @@ description: "Modules / Sensors & scanning, tier T4"
 | Tier line | [Standard chassis scanner CT](/content/items/standard-chassis-scanner-cprg/) (T1) → [Distalfrisk-MDO2 chassis scanner CT](/content/items/named1-chassis-scanner-cprg/) (T2) → [Stalis CS3 chassis scanner CT](/content/items/named2-chassis-scanner-cprg/) (T3) → **sy-D-930 chassis scanner CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -31,5 +31,3 @@ description: "Robot parts / Heads"
 | locking_time | 5k |
 | sensor_strength | 200 |
 | stealth_strength | 100 |
-
-[All items](/content/items/)

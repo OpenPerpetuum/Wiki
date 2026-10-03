@@ -19,5 +19,3 @@ description: "Modules / Enhancements, tier T1"
 | Tier line | **Standard coprocessor CT** (T1) → [Parallelyt-C300 coprocessor CT](/content/items/named1-cpu-upgrade-cprg/) (T2) → [Cerebellum-1000 coprocessor CT](/content/items/named2-cpu-upgrade-cprg/) (T3) → [Processyt-C1000 coprocessor CT](/content/items/named3-cpu-upgrade-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

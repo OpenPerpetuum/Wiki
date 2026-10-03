@@ -16,7 +16,7 @@ description: "Modules / Harvesting, tier T1"
 | Volume | 2.5 |
 | Mass | 2000 |
 | Category | Modules / Harvesting |
-| Tier line | **Standard Excavator Module** (T1) → [Named1 Excavator Module](/content/items/named1-excavator-module/) (T2) → [Named2 Excavator Module](/content/items/named2-excavator-module/) (T3) → [Named3 Excavator Module](/content/items/named3-excavator-module/) (T4) |
+| Tier line | **Standard Excavator Module** (T1) → [T2 Excavator Module](/content/items/named1-excavator-module/) (T2) → [T3 Excavator Module](/content/items/named2-excavator-module/) (T3) → [T4 Excavator Module](/content/items/named3-excavator-module/) (T4) |
 
 ## Stats
 
@@ -35,18 +35,10 @@ description: "Modules / Harvesting, tier T1"
 
 **Produced from 2 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Standard Excavator Module"]:::current
-    b["Cryoperine ×1.6k"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Titanium ×2.4k"]:::comp
-    c --> a
-    click c "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>1.6k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>2.4k</b></div></div>
+</div>
 ## Used in production
 
 **Component of 2 items** — everything that uses it in production:
@@ -54,15 +46,13 @@ graph LR
 ```mermaid
 graph LR
     a["Standard Excavator Module"]:::current
-    b["Named1 Excavator Module"]:::prod
+    b["T2 Excavator Module"]:::prod
     a --> b
-    click b "/content/items/named1-excavator-module/" "Named1 Excavator Module"
-    c["Named1 Excavator Module Pr"]:::prod
+    click b "/content/items/named1-excavator-module/" "T2 Excavator Module"
+    c["T2 Excavator Module Pr"]:::prod
     a --> c
-    click c "/content/items/named1-excavator-module-pr/" "Named1 Excavator Module Pr"
+    click c "/content/items/named1-excavator-module-pr/" "T2 Excavator Module Pr"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8
 ```
-
-[All items](/content/items/)

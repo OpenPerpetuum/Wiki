@@ -31,20 +31,8 @@ description: "Ammo / Missiles"
 
 **Produced from 3 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Ammo Longrange Cruisemissile D Pr"]:::current
-    b["Phlobotil ×300"]:::comp
-    b --> a
-    click b "/content/items/phlobotil/" "Phlobotil"
-    c["Specimen Sap Item Flux ×2"]:::comp
-    c --> a
-    click c "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    d["Titanium ×75"]:::comp
-    d --> a
-    click d "/content/items/titanium/" "Titanium"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/phlobotil/">Phlobotil</a></div><div class="prod-card-body">required: <b>300</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>2</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>75</b></div></div>
+</div>

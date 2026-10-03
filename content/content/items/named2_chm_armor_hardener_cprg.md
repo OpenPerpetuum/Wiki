@@ -19,5 +19,3 @@ description: "Modules / Armor, tier T3"
 | Tier line | [Standard chemical armor CT](/content/items/standard-chm-armor-hardener-cprg/) (T1) → [Delloy s2s chemical armor CT](/content/items/named1-chm-armor-hardener-cprg/) (T2) → **RePro I. chemical armor CT** (T3) → [Impetar chemical armor CT](/content/items/named3-chm-armor-hardener-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous"
 | Note | regi, test, nincs hasznalva |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

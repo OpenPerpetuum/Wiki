@@ -19,5 +19,3 @@ description: "Special & other / Miscellaneous, tier T2"
 | Note | Pink Arkhe Reward for Pre-alpha participation |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

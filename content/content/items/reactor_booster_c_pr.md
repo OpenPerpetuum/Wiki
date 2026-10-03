@@ -25,38 +25,14 @@ _No stats — this item carries no aggregate values._
 
 **Produced from 9 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
 
-```mermaid
-graph LR
-    a["Reactor Booster C Pr"]:::current
-    b["Cryoperine ×1.1k"]:::comp
-    b --> a
-    click b "/content/items/axicol/" "Cryoperine"
-    c["Chollonin ×1.1k"]:::comp
-    c --> a
-    click c "/content/items/chollonin/" "Chollonin"
-    d["Espitium ×1.1k"]:::comp
-    d --> a
-    click d "/content/items/espitium/" "Espitium"
-    e["Tiraizin ×75"]:::comp
-    e --> a
-    click e "/content/items/gamma-energyblock/" "Tiraizin"
-    f["Prilumium ×1.1k"]:::comp
-    f --> a
-    click f "/content/items/prilumium/" "Prilumium"
-    g["Specimen Sap Item Flux ×20"]:::comp
-    g --> a
-    click g "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
-    h["Titanium ×225"]:::comp
-    h --> a
-    click h "/content/items/titanium/" "Titanium"
-    i["Briochit ×225"]:::comp
-    i --> a
-    click i "/content/items/unimetal/" "Briochit"
-    j["Vitricyl ×1.1k"]:::comp
-    j --> a
-    click j "/content/items/vitricyl/" "Vitricyl"
-    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
-    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
-```
-
-[All items](/content/items/)
+<div class="prod-cards">
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/axicol/">Cryoperine</a></div><div class="prod-card-body">required: <b>1.1k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/chollonin/">Chollonin</a></div><div class="prod-card-body">required: <b>1.1k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/espitium/">Espitium</a></div><div class="prod-card-body">required: <b>1.1k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/gamma-energyblock/">Tiraizin</a></div><div class="prod-card-body">required: <b>75</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/prilumium/">Prilumium</a></div><div class="prod-card-body">required: <b>1.1k</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/specimen-sap-item-flux/">Specimen Sap Item Flux</a></div><div class="prod-card-body">required: <b>20</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/titanium/">Titanium</a></div><div class="prod-card-body">required: <b>225</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/unimetal/">Briochit</a></div><div class="prod-card-body">required: <b>225</b></div></div>
+<div class="prod-card"><div class="prod-card-head"><svg class="prod-card-icon" aria-hidden="true"><use href="#mi-grid"/></svg><a class="prod-card-name" href="/content/items/vitricyl/">Vitricyl</a></div><div class="prod-card-body">required: <b>1.1k</b></div></div>
+</div>

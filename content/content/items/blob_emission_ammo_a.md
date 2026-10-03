@@ -26,5 +26,3 @@ description: "Special & other / Miscellaneous"
 | blob_emission_radius | 15 |
 | despawn_time | 300k |
 | signature_radius | 1 |
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Special & other / Fit capsules & programs"
 | Note | syndicate bot CT |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

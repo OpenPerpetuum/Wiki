@@ -19,5 +19,3 @@ description: "Modules / Power, tier T3"
 | Tier line | [Standard accumulator recharger CT](/content/items/standard-core-recharger-cprg/) (T1) → [Basis Ionostator accumulator recharger CT](/content/items/named1-core-recharger-cprg/) (T2) → **Duobar 300xs-'Othys' accumulator recharger CT** (T3) → [Nyhna Filler accumulator recharger CT](/content/items/named3-core-recharger-cprg/) (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

@@ -19,5 +19,3 @@ description: "Modules / Weapons, tier T4"
 | Tier line | [Standard light autocannon CT](/content/items/standard-small-autocannon-cprg/) (T1) → [Malleus light autocannon CT](/content/items/named1-small-autocannon-cprg/) (T2) → [Senner Carbine light autocannon CT](/content/items/named2-small-autocannon-cprg/) (T3) → **Astoc M45 light autocannon CT** (T4) |
 
 _No stats — this item carries no aggregate values._
-
-[All items](/content/items/)

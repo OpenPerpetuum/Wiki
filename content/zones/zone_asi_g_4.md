@@ -52,17 +52,4 @@ pie showData
     "gammaterial" : 345
 ```
 
-
-## Connections
-
-**Teleports out** (TP columns from this zone):
-
-- → [Hokkogaros](/zones/zone-asi-a-real/) (2 TP points)
-- → [Rhaoshan](/zones/zone-asi-g-1/) (1 TP point)
-
-**Teleports in** (other zones with a TP column to this one):
-
-- ← [Hokkogaros](/zones/zone-asi-a-real/) (2 TP points)
-- ← [Rhaoshan](/zones/zone-asi-g-1/) (2 TP points)
-
 [Zone index](/zones/zone-index/) · [World map](/zones/map/#beta) · [Protection levels](/zones/protection/)
