@@ -9,6 +9,24 @@ A persistent-universe MMO: you pilot **robots** across a galaxy of zones, gather
 resources, build and defend **power base stations (PBS)**, contest **intrusion sites**,
 trade, and research your way up from a starter bot to a fully fitted war machine.
 
+<div class="home-cards">
+  <a class="home-card home-card-map" href="/zones/map/">
+    <img src="/world-map-thumb.png" alt="" width="600" height="886" loading="lazy">
+    <span class="home-card-overlay">World Map</span>
+  </a>
+  <a class="home-card" href="/features/movement/"><span class="home-card-name">Movement &amp; zones</span><span class="home-card-desc">Teleports, interzones, docking, zone types</span></a>
+  <a class="home-card" href="/features/gathering/"><span class="home-card-name">Gathering</span><span class="home-card-desc">Ores, plants, nodes — the foundation of the economy</span></a>
+  <a class="home-card" href="/features/missions/"><span class="home-card-name">Missions</span><span class="home-card-desc">Repeatable jobs for credits, items and EP</span></a>
+  <a class="home-card" href="/features/combat/"><span class="home-card-name">Combat</span><span class="home-card-desc">PvP and NPC combat, damage types, loot, insurance</span></a>
+  <a class="home-card" href="/features/pbs/"><span class="home-card-name">Power base stations</span><span class="home-card-desc">Reactors, production, defense, docking</span></a>
+  <a class="home-card" href="/features/intrusion/"><span class="home-card-name">Intrusion</span><span class="home-card-desc">Contest sites with SAPs, raise stability, unlock facilities</span></a>
+  <a class="home-card" href="/features/production/"><span class="home-card-name">Production</span><span class="home-card-desc">Reverse engineering, the mill, prototypes, items</span></a>
+  <a class="home-card" href="/features/research/"><span class="home-card-name">Research</span><span class="home-card-desc">Extensions and the tech tree</span></a>
+  <a class="home-card" href="/features/market/"><span class="home-card-name">Market</span><span class="home-card-desc">Buy, sell and trade with other players</span></a>
+  <a class="home-card" href="/features/robots/"><span class="home-card-name">Robots &amp; fitting</span><span class="home-card-desc">Bodies, classes and per-model stats</span></a>
+  <a class="home-card" href="/features/sparks/"><span class="home-card-name">Sparks</span><span class="home-card-desc">Your agent&rsquo;s nanobot and its ability bonuses</span></a>
+</div>
+
 ## Get the game
 
 Perpetuum is free on [Steam](https://store.steampowered.com/app/223410/Perpetuum/).

@@ -346,17 +346,25 @@ main p, main li, main blockquote, main dt, main dd {
         background: rgba(4, 10, 20, 0.6);
         z-index: 44;
     }
+    /* The hamburger floats over the content (bottom left) instead of taking
+       a slot in the topbar — the topbar stays brand + icons. */
     .sidenav-toggle {
         display: inline-flex; align-items: center; justify-content: center;
-        width: 2.4rem; height: 2.4rem; flex: none;
-        font-size: 1.1rem; line-height: 1;
+        position: fixed; left: 0.9rem; bottom: 0.9rem;
+        z-index: 46; /* above the backdrop (44); the drawer (45) is on the
+                         left, the button floats in the corner — no overlap */
+        width: 2.6rem; height: 2.6rem; flex: none;
+        font-size: 1.15rem; line-height: 1;
         color: var(--chrome-fg);
-        background: rgba(255, 255, 255, 0.05);
+        background: rgba(10, 16, 26, 0.88);
+        backdrop-filter: blur(6px);
         border: 1px solid var(--neon-dim);
-        border-radius: 8px;
+        border-radius: 10px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
     }
+    body.sidenav-open .sidenav-toggle { transform: scale(0.9); opacity: 0.4; }
     .sidenav-toggle:hover, .sidenav-toggle:focus-visible {
         border-color: var(--neon); color: var(--neon); outline: none;
     }
@@ -371,7 +379,7 @@ main p, main li, main blockquote, main dt, main dd {
     .topbar-main { gap: 0.5rem; }
     /* row 1 must fit a phone: keep the title short enough for the icons */
     .brand { font-size: 0.72rem; letter-spacing: 0.08em; white-space: nowrap; }
-    .sidenav-toggle, .theme-toggle, .palette-toggle { width: 34px; height: 34px; }
+    .theme-toggle, .palette-toggle { width: 34px; height: 34px; }
     #wiki-search { min-width: 0; }
 }
 
@@ -783,7 +791,7 @@ html[data-theme="light"][data-cb="achro"] {
 .zonemap-tp { stroke-width: 1.1; stroke-opacity: 0.65; stroke-dasharray: 5 4; }
 .zonemap-tp:hover { stroke-opacity: 1; stroke-width: 2; }
 @media (hover: hover) and (pointer: fine) {
-  .zonemap-tp { stroke-opacity: 0.07; transition: stroke-opacity 0.15s; }
+  .zonemap-tp { stroke-opacity: 0.25; transition: stroke-opacity 0.15s; }
   .zonemap-tp.zm-tp-on { stroke-opacity: 0.9; stroke-width: 1.6; }
   .zonemap-tp:hover { stroke-opacity: 1; stroke-width: 2; }
 }
@@ -964,6 +972,89 @@ footer {
     font-size: 0.92em;
     border-top: 1px solid var(--border);
 }
+
+/* Home page "at a glance": high-level game topic cards (OSRS main-page
+   style). The first card is the world map: a low-resolution render of the
+   real map with "World" centered over it; the rest are name + one-line
+   description. Card names are bright against the dim card body on purpose. */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 0.8rem;
+    margin: 1.1rem 0 1.6rem;
+}
+.home-card {
+    display: flex; flex-direction: column; gap: 0.4rem;
+    padding: 0.6rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.home-card:hover, .home-card:focus-visible {
+    border-color: var(--neon); outline: none;
+    transform: translateY(-1px);
+}
+.home-card-img {
+    position: relative;
+    display: block;
+    width: 100%; aspect-ratio: 600 / 886;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #0a0e15;
+}
+.home-card-img img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    opacity: 0.92;
+    transition: opacity 0.15s ease, transform 0.3s ease;
+}
+.home-card:hover .home-card-img img, .home-card:focus-visible .home-card-img img {
+    opacity: 1;
+    transform: scale(1.03);
+}
+.home-card-overlay {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fg);
+    background: rgba(7, 12, 20, 0.55);
+    transition: background 0.15s ease;
+}
+.home-card:hover .home-card-overlay, .home-card:focus-visible .home-card-overlay {
+    background: rgba(7, 12, 20, 0.35);
+}
+/* The World Map card takes a line to itself: a wide banner (full grid
+   width) with the low-res map cover-fitted and "World Map" centered. */
+.home-card-map {
+    grid-column: 1 / -1;
+    position: relative;
+    display: block;
+    height: 230px;
+    padding: 0;
+    overflow: hidden;
+}
+@media (max-width: 640px) { .home-card-map { height: 170px; } }
+.home-card-map img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center;
+    display: block;
+}
+.home-card-map .home-card-overlay {
+    font-size: 1.7rem;
+}
+.home-card-name {
+    color: var(--fg); /* high contrast on the dim card body */
+    font-weight: 650;
+    font-size: 1.02rem;
+    line-height: 1.25;
+}
+.home-card:hover .home-card-name, .home-card:focus-visible .home-card-name {
+    color: var(--accent);
+}
+.home-card-desc { color: var(--muted); font-size: 0.83rem; line-height: 1.35; }
 
 /* ============ missions catalog: per-type tier cards ============ */
 .mission-index { line-height: 2; margin: 0.8rem 0; }

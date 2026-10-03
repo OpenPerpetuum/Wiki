@@ -33,10 +33,12 @@ test('map page loads without script errors', async ({ page, baseURL }) => {
 
 test('zones are drawn with coastline thumbnails and inter-zone TPs are dashed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
-  // every zone node carries its coastline thumbnail (thumb.png) — the same
-  // design as the index cards below the map
+  // every plotted zone node carries its coastline thumbnail (thumb.png);
+  // zones without any TP connection are not plotted at all
   const imgs = page.locator('.zonemap image[href$="thumb.png"]');
-  expect(await imgs.count()).toBeGreaterThanOrEqual(80);
+  expect(await imgs.count()).toBeGreaterThanOrEqual(55);
+  const nodes = await page.locator('.zonemap a > g').count();
+  expect(nodes).toBe(await imgs.count());
   const first = await imgs.first().getAttribute('href');
   const r = await page.request.get(first);
   expect(r.ok()).toBe(true);
@@ -102,7 +104,9 @@ test('TP lines draw OVER the islands and anchor at the real column/landing spots
 
 test('TP lines are nearly invisible at rest and fade in near the cursor (desktop)', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
-  // point on the first TP line, in screen coordinates (CTM handles zoom/pan)
+  // A point ON the first TP line, in screen coordinates (CTM handles
+  // zoom/pan). The map is taller than the viewport, so scroll the line into
+  // view first — a pointer event at y > viewport never fires.
   const pt = await page.evaluate(() => {
     const line = document.querySelector('.zonemap-tp');
     const svg = document.querySelector('.zonemap');
@@ -110,19 +114,23 @@ test('TP lines are nearly invisible at rest and fade in near the cursor (desktop
     p.x = (+line.getAttribute('x1') + +line.getAttribute('x2')) / 2;
     p.y = (+line.getAttribute('y1') + +line.getAttribute('y2')) / 2;
     const s = p.matrixTransform(svg.getScreenCTM());
-    return { x: s.x, y: s.y };
+    window.scrollTo(0, window.scrollY + s.y - innerHeight / 2);
+    const s2 = p.matrixTransform(svg.getScreenCTM());
+    return { x: s2.x, y: s2.y };
   });
+  await page.waitForTimeout(150); // let the scroll settle before the pointer moves
   const op = () => page.evaluate(() => getComputedStyle(document.querySelector('.zonemap-tp')).strokeOpacity);
-  // at rest: almost invisible
-  expect(parseFloat(await op())).toBeLessThan(0.15);
+  // at rest: faded to 0.25 (faint, but visible)
+  expect(parseFloat(await op())).toBeGreaterThan(0.2);
+  expect(parseFloat(await op())).toBeLessThan(0.35);
   // cursor on the line: it lights up
   await page.mouse.move(pt.x, pt.y);
   await page.waitForTimeout(300);
   expect(parseFloat(await op())).toBeGreaterThan(0.8);
-  // cursor far away: back to nearly invisible
+  // cursor far away: back to the faded state
   await page.mouse.move(5, 5);
   await page.waitForTimeout(400);
-  expect(parseFloat(await op())).toBeLessThan(0.15);
+  expect(parseFloat(await op())).toBeLessThan(0.35);
 });
 
 test('wheel over the map zooms the map and does not scroll the page', async ({ page, baseURL }) => {

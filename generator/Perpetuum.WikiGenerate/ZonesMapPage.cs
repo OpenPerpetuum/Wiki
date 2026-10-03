@@ -50,7 +50,11 @@ public static class ZonesMapPage
         const double padFrac = 0.10; // extra room: islands have extent and labels sit outside
         var vbH = vbW * (h + 2 * padFrac * h) / (w + 2 * padFrac * w);
         double Px(double x) => (x - minX + padFrac * w) / (w + 2 * padFrac * w) * vbW;
-        double Py(double y) => vbH - (y - minY + padFrac * h) / (h + 2 * padFrac * h) * vbH; // y grows upward
+        // The game's grid coordinates grow downward (the zone teleport maps
+        // plot them directly on the terrain PNGs and everything aligns), so
+        // the world map must NOT flip the axis: gamma sits at the top of the
+        // map, the starter islands (TM/ASI/ICS + training) at the bottom.
+        double Py(double y) => (y - minY + padFrac * h) / (h + 2 * padFrac * h) * vbH;
 
         // Known gate connections from the DB: stronghold/arena exits and their
         // destinations (grouped — a zone can have several exit configs to the same
@@ -100,15 +104,15 @@ public static class ZonesMapPage
         sb.Append(Md.Header("World", "Every zone drawn with its real terrain at its grid position, outlined by galaxy, with the teleport and gate connections from the database.",
             "zones (x/y, width, protected, terraformable), teleportdescriptions, zoneentities, strongholdexitconfig + riftconfigs + riftdestinations"));
         sb.Append("\n\n# World\n\n");
-        sb.Append("All zones of the server, drawn at their real grid coordinates — each island outlined by " +
-                  "galaxy family and sized to its real width in tiles (the legend below the map shows the " +
-                  "sizes). The dashed lines are the inter-zone teleport columns recorded in the database, " +
+        sb.Append("Every zone with an inter-zone teleport connection, drawn at its real grid coordinates — " +
+                  "each island outlined by galaxy family and sized to its real width in tiles (the legend below " +
+                  "the map shows the sizes). The dashed lines are the teleport columns recorded in the database, " +
                   "colored from the source island's family color to the destination's, drawn over the islands " +
                   "and touching the real column/landing spots inside them (the count per pair is in the line " +
-                  "tooltip); the light dashed lines are the stronghold/PvP-arena exit gates. **Scroll over the " +
-                  "map to zoom** (no key needed), **drag to pan**, and click an island to open its page (islands " +
-                  "without a dedicated page go to the [zone index](/zones/zone-index/)). Hover an island for its " +
-                  "name, protection level and coordinates.\n\n");
+                  "tooltip). Zones without any teleport connection (strongholds, the PvP arena, dead-end gate " +
+                  "islands) are left off the map. **Scroll over the map to zoom** (no key needed), **drag to pan**, " +
+                  "and click an island to open its page (islands without a dedicated page go to the [zone index](/zones/zone-index/)). " +
+                  "Hover an island for its name, protection level and coordinates.\n\n");
 
         sb.Append("<div class=\"zonemap-wrap\">\n");
         sb.Append("<button type=\"button\" class=\"zonemap-reset\" title=\"Reset the zoom\">⟲</button>\n");
@@ -289,8 +293,16 @@ public static class ZonesMapPage
         }
 
         var sb = new StringBuilder();
-        sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones at their grid positions, coastline outlines colored by galaxy family, with the teleport and exit-gate connections between them\" class=\"zonemap\" xmlns=\"http://www.w3.org/2000/svg\">\n");
-        sb.Append("  <title>Map of all game zones at their grid positions, with the teleport and exit-gate connections between them</title>\n");
+        // Zones without any inter-zone teleport connection (the strongholds,
+        // the PvP arena, dead-end gate islands) are left off the map: they add
+        // noise without a line. A zone stays if it is a TP source or target.
+        var connected = new HashSet<string>(
+            tps.Select(t => t.Src).Concat(tps.Select(t => t.Dst)),
+            StringComparer.Ordinal);
+        var plotted = all.Where(z => connected.Contains(z.Name)).ToList();
+        var plottedSet = new HashSet<string>(plotted.Select(z => z.Name), StringComparer.Ordinal);
+        sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones with teleport connections, at their grid positions, coastline outlines colored by galaxy family\" class=\"zonemap\" xmlns=\"http://www.w3.org/2000/svg\">\n");
+        sb.Append("  <title>Map of all game zones with teleport connections, at their grid positions</title>\n");
         // Inter-zone TP lines, dashed and gradient-colored from the source
         // island's family color to the destination's (one gradient per line,
         // anchored in userSpace so the gradient follows the line direction).
@@ -298,6 +310,7 @@ public static class ZonesMapPage
         for (var i = 0; i < tps.Count; i++)
         {
             var l = tps[i];
+            if (!plottedSet.Contains(l.Src) || !plottedSet.Contains(l.Dst)) continue;
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
             var (ax, ay) = End(s, l.Sx, l.Sy);
             var (bx, by) = End(d, l.Tx, l.Ty);
@@ -310,7 +323,7 @@ public static class ZonesMapPage
         // Small islands first so the big-island labels draw on top. The
         // connection lines come AFTER the nodes: they run over the islands and
         // touch the columns'/landing spots' real positions inside them.
-        foreach (var z in all.OrderBy(z => Size(z.W)).ThenBy(z => z.Name, StringComparer.Ordinal))
+        foreach (var z in plotted.OrderBy(z => Size(z.W)).ThenBy(z => z.Name, StringComparer.Ordinal))
         {
             var f = Family(z.Name);
             var size = Size(z.W);
@@ -334,14 +347,17 @@ public static class ZonesMapPage
         for (var i = 0; i < tps.Count; i++)
         {
             var l = tps[i];
+            if (!plottedSet.Contains(l.Src) || !plottedSet.Contains(l.Dst)) continue;
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
             var (ax, ay) = End(s, l.Sx, l.Sy);
             var (bx, by) = End(d, l.Tx, l.Ty);
             sb.Append($"  <line x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\" class=\"zonemap-tp\" stroke=\"url(#tpg{i})\">" +
                       $"<title>{l.Src} — {l.Dst} ({l.Tps} TP point{(l.Tps > 1 ? "s" : "")})</title></line>\n");
         }
+        // Gate links only where the source island is on the map at all.
         foreach (var l in links)
         {
+            if (!plottedSet.Contains(l.Src) || !plottedSet.Contains(l.Dst)) continue;
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
             var (ax, ay) = End(s, l.Gx, l.Gy);
             var (bx, by) = End(d, null, null);
