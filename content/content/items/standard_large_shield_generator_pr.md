@@ -16,6 +16,7 @@ description: "Modules / Shield"
 | Volume | 1 |
 | Mass | 800 |
 | Category | Modules / Shield |
+| Tier line | [Standard large shield generator](/content/items/standard-large-shield-generator/) (T1) → **Standard Large Shield Generator Pr** () → [AVA-Spintarge large shield generator](/content/items/named1-large-shield-generator/) (T2) → [Gegel Ioner large shield generator](/content/items/named2-large-shield-generator/) (T3) → [Umbeler large shield generator](/content/items/named3-large-shield-generator/) (T4) |
 | Note | large module |
 
 ## Stats

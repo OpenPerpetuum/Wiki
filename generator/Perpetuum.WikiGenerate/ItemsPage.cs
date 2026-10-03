@@ -116,8 +116,11 @@ public static class ItemsPage
             "entitydefaults (enabled, non-hidden items), aggregatevalues via aggregatefields"));
         sb.Append("\n\n# Items\n\n");
         sb.Append("Every item the game offers players, grouped into categories and sub-categories — " +
-                  "**each item has its own page** with its full stats. Tier: 1 = normal, 2 = prototype, " +
-                  "3 = special. What a stat value means and how big it is in context is in the " +
+                  "**each item has its own page** with its full stats. Tier: **T1–T5** are the production " +
+                  "tiers (higher tiers are built from a specimen of the previous tier — an item page's " +
+                  "**tier line** row links the whole chain, see [Production — tier progression](/features/production/#tier-progression)), " +
+                  "**prototype** marks prototype variants and **special** the elite/artifact/faction lines. " +
+                  "What a stat value means and how big it is in context is in the " +
                   "[Stat reference](/content/stat-reference/); what a stat field actually does is in [Formats](/formats/).\n\n");
 
         foreach (var (cat, blurb, subs) in Categories)
@@ -150,6 +153,53 @@ public static class ItemsPage
 
     /// <summary>Sort key for catalog listings: tier 0-5 ascending, untyped items last.</summary>
     private static int TierSortKey(DefRow d) => d.TierType == 0 || d.TierLevel is null ? int.MaxValue : d.TierLevel.Value;
+
+    /// <summary>
+    /// The "tier line" row of an item page: every item of the same production
+    /// line — the same base name across the tier prefixes standard_ / named1_ /
+    /// named2_ / named3_ / elitet4_ / artifact_ — ordered by tier (T1 → T4).
+    /// This makes the tier progression visible from any item page: the higher
+    /// tiers consume a specimen of the previous tier (see the tier-progression
+    /// section on the production page).
+    /// </summary>
+    private static readonly (string Pfx, int Order)[] TierPrefixes =
+    {
+        ("def_standard_", 0), ("def_named1_", 1), ("def_named2_", 2),
+        ("def_named3_", 3), ("def_elitet4_", 4), ("def_artifact_", 5),
+    };
+
+    private static string? TierLine(DefRow d, Dictionary<int, DefRow> defs, Func<DefRow, string> name)
+    {
+        var Prefixes = TierPrefixes;
+        var n = d.Name.EndsWith("_pr") ? d.Name[..^3] : d.Name;
+        var hit = Prefixes.FirstOrDefault(p => n.StartsWith(p.Pfx) && n.Length > p.Pfx.Length);
+        if (hit.Pfx is null) return null;
+        int OrderOf(DefRow s)
+        {
+            var m = s.Name.EndsWith("_pr") ? s.Name[..^3] : s.Name;
+            for (var i = 0; i < Prefixes.Length; i++)
+                if (m.StartsWith(Prefixes[i].Pfx))
+                    return Prefixes[i].Order * 10 + (s.Name.EndsWith("_pr") ? 5 : 0);
+            return int.MaxValue;
+        }
+        var baseName = n[hit.Pfx.Length..];
+        var siblings = defs.Values
+            .Where(s => s.Enabled && !s.Hidden && s.Definition != d.Definition
+                        && TierPrefixes.Any(p => s.Name.StartsWith(p.Pfx) && s.Name[p.Pfx.Length..] == baseName)
+                        && IsItem(s))
+            .ToList();
+        if (siblings.Count == 0) return null;
+        static string TierCell(string defName, int t, int? l)
+        {
+            var s = Md.Tier(t, l);
+            return defName.EndsWith("_pr") && s.EndsWith(" (prototype)") ? s[..^12] : s;
+        }
+        var chain = siblings.Concat(new[] { d }).OrderBy(OrderOf)
+            .Select(s => s.Definition == d.Definition
+                ? $"**{name(s)}** ({TierCell(s.Name, s.TierType, s.TierLevel)})"
+                : $"[{name(s)}](/content/items/{Slug(s.Name)}/) ({TierCell(s.Name, s.TierType, s.TierLevel)})");
+        return string.Join(" → ", chain);
+    }
 
     public static bool IsItem(DefRow d)
     {
@@ -295,6 +345,9 @@ public static class ItemsPage
             new[] { "Mass", Md.Cell(d.Mass) },
             new[] { "Category", category },
         };
+        var tierLine = TierLine(d, defs, s =>
+            dupes.Contains(Md.DisplayName(s.Name)) ? Md.DisplayName(s.Name, true) : Md.DisplayName(s.Name));
+        if (tierLine is not null) rows.Add(new[] { "Tier line", tierLine });
         if (!string.IsNullOrEmpty(d.Note)) rows.Add(new[] { "Note", d.Note });
         Md.WriteTable(sb, new[] { "", "" }, rows.ToArray());
         sb.Append('\n');

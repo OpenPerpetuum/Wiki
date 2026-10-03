@@ -16,6 +16,7 @@ description: "Modules / Enhancements"
 | Volume | 2 |
 | Mass | 1600 |
 | Category | Modules / Enhancements |
+| Tier line | [Standard large energy injector](/content/items/standard-large-core-booster/) (T1) → **Standard Large Core Booster Pr** () → [Shoxit Parter II. large energy injector](/content/items/named1-large-core-booster/) (T2) → [CC90-Tensio large energy injector](/content/items/named2-large-core-booster/) (T3) → [Rymur DTTO large energy injector](/content/items/named3-large-core-booster/) (T4) |
 | Note | large module |
 
 ## Stats

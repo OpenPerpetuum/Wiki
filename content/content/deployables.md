@@ -45,18 +45,18 @@ Deployables are items that can be **placed in the terrain** to act on the zone �
 | def_mobile_world_teleport_capsule | – | 100 | 8 | 50000 | armor_max=500; despawn_time=600k; mobile_teleport_cooldown=25k; resist_chemical=50; resist_explosive=50; resist_kinetic=50; resist_thermal=50; signature_radius=20; stealth_strength=50 | ez lesz a kont?neredben, jobbeg?r-use es csinal mobile world teleportot |
 | def_mobile_world_teleporter_basic | – | 100 | 1 | 1 | armor_max=500; despawn_time=600k; mobile_teleport_cooldown=25k; resist_chemical=50; resist_explosive=50; resist_kinetic=50; resist_thermal=50; signature_radius=20; stealth_strength=50 | – |
 | def_npc_egg_2ndyear_capsule | – | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_medium_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_medium_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_medium_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_medium_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_medium_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_medium_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_small_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_small_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_small_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_small_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_small_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_industrial_small_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_medium_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_medium_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_medium_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_medium_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_medium_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_medium_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_small_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_small_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_small_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_small_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_small_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_industrial_small_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
 | def_npc_egg_mission_level03_asi_type_1_capsule | – | 100 | 0.1 | 1000 | – | – |
 | def_npc_egg_mission_level03_asi_type_2_capsule | – | 100 | 0.1 | 1000 | – | – |
 | def_npc_egg_mission_level03_ics_type_1_capsule | – | 100 | 0.1 | 1000 | – | – |
@@ -90,129 +90,129 @@ Deployables are items that can be **placed in the terrain** to act on the zone �
 | def_npc_egg_mission_tutorial_asi_type_1_capsule | – | 100 | 0.1 | 1000 | – | – |
 | def_npc_egg_mission_tutorial_ics_type_1_capsule | – | 100 | 0.1 | 1000 | – | – |
 | def_npc_egg_mission_tutorial_tm_type_1_capsule | – | 100 | 0.1 | 1000 | – | – |
-| def_npc_egg_nuimqol_medium_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_medium_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_medium_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_medium_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_medium_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_medium_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_small_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_small_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_small_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_small_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_small_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_nuimqol_small_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_medium_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_medium_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_medium_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_medium_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_medium_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_medium_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_small_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_small_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_small_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_small_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_small_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_pelistal_small_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_medium_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_medium_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_medium_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_medium_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_medium_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_medium_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_small_advanced_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_small_basic_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_small_expert_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_small_miniboss1_capsule | 1 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_small_miniboss2_capsule | 2 | 100 | 0.1 | 5000 | – | – |
-| def_npc_egg_thelodica_small_miniboss3_capsule | 3 | 100 | 0.1 | 5000 | – | – |
-| def_pbs_armor_repairer_large_capsule | 3 | 100 | 50 | 50000 | armor_max=75k; core_max=6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_armor_repairer_large_capsule_pr | 3 | 100 | 50 | 50000 | armor_max=75k; core_max=6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
-| def_pbs_armor_repairer_medium_capsule | 2 | 100 | 37.5 | 37500 | armor_max=65k; core_max=5.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_armor_repairer_medium_capsule_pr | 2 | 100 | 37.5 | 37500 | armor_max=65k; core_max=5.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
-| def_pbs_armor_repairer_small_capsule | 1 | 100 | 25 | 25000 | armor_max=50k; core_max=5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
-| def_pbs_armor_repairer_small_capsule_pr | 1 | 100 | 25 | 25000 | armor_max=50k; core_max=5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
-| def_pbs_aura_emitter_large_capsule | 3 | 100 | 10 | 10000 | armor_max=75k; core_max=45k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_aura_emitter_medium_capsule | 2 | 100 | 10 | 10000 | armor_max=65k; core_max=41.25k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_aura_emitter_small_capsule | 1 | 100 | 10 | 10000 | armor_max=50k; core_max=37.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
-| def_pbs_calibration_forge_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_calibration_forge_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_calibration_forge_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_control_tower_large_capsule | 3 | 100 | 20 | 20000 | armor_max=75k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_control_tower_medium_capsule | 2 | 100 | 15 | 15000 | armor_max=65k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_control_tower_small_capsule | 1 | 100 | 10 | 10000 | armor_max=50k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
-| def_pbs_core_battery_large_capsule | 3 | 100 | 250 | 250000 | armor_max=75k; core_max=19.152M; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=60; stealth_strength=50 | – |
-| def_pbs_core_battery_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=65k; core_max=16.128M; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_core_battery_small_capsule | 1 | 100 | 125 | 125000 | armor_max=50k; core_max=14.112M; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=40; stealth_strength=50 | – |
-| def_pbs_core_transmitter_large_capsule | 3 | 100 | 25 | 25000 | armor_max=30k; core_max=24k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_core_transmitter_medium_capsule | 2 | 100 | 25 | 25000 | armor_max=25k; core_max=21k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_core_transmitter_small_capsule | 1 | 100 | 25 | 25000 | armor_max=20k; core_max=18k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
-| def_pbs_docking_base_large_capsule | 3 | 100 | 500 | 500000 | armor_max=750k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=150; stealth_strength=50 | – |
-| def_pbs_docking_base_medium_capsule | 2 | 100 | 375 | 375000 | armor_max=650k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=125; stealth_strength=50 | – |
-| def_pbs_docking_base_small_capsule | 1 | 100 | 250 | 250000 | armor_max=500k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=100; stealth_strength=50 | – |
+| def_npc_egg_nuimqol_medium_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_medium_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_medium_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_medium_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_medium_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_medium_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_small_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_small_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_small_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_small_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_small_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_nuimqol_small_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_medium_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_medium_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_medium_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_medium_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_medium_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_medium_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_small_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_small_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_small_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_small_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_small_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_pelistal_small_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_medium_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_medium_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_medium_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_medium_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_medium_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_medium_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_small_advanced_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_small_basic_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_small_expert_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_small_miniboss1_capsule | T1 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_small_miniboss2_capsule | T2 | 100 | 0.1 | 5000 | – | – |
+| def_npc_egg_thelodica_small_miniboss3_capsule | T3 | 100 | 0.1 | 5000 | – | – |
+| def_pbs_armor_repairer_large_capsule | T3 | 100 | 50 | 50000 | armor_max=75k; core_max=6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_armor_repairer_large_capsule_pr | T3 (prototype) | 100 | 50 | 50000 | armor_max=75k; core_max=6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
+| def_pbs_armor_repairer_medium_capsule | T2 | 100 | 37.5 | 37500 | armor_max=65k; core_max=5.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_armor_repairer_medium_capsule_pr | T2 (prototype) | 100 | 37.5 | 37500 | armor_max=65k; core_max=5.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
+| def_pbs_armor_repairer_small_capsule | T1 | 100 | 25 | 25000 | armor_max=50k; core_max=5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_armor_repairer_small_capsule_pr | T1 (prototype) | 100 | 25 | 25000 | armor_max=50k; core_max=5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
+| def_pbs_aura_emitter_large_capsule | T3 | 100 | 10 | 10000 | armor_max=75k; core_max=45k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_aura_emitter_medium_capsule | T2 | 100 | 10 | 10000 | armor_max=65k; core_max=41.25k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_aura_emitter_small_capsule | T1 | 100 | 10 | 10000 | armor_max=50k; core_max=37.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_calibration_forge_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_calibration_forge_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_calibration_forge_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_control_tower_large_capsule | T3 | 100 | 20 | 20000 | armor_max=75k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_control_tower_medium_capsule | T2 | 100 | 15 | 15000 | armor_max=65k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_control_tower_small_capsule | T1 | 100 | 10 | 10000 | armor_max=50k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_core_battery_large_capsule | T3 | 100 | 250 | 250000 | armor_max=75k; core_max=19.152M; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=60; stealth_strength=50 | – |
+| def_pbs_core_battery_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=65k; core_max=16.128M; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_core_battery_small_capsule | T1 | 100 | 125 | 125000 | armor_max=50k; core_max=14.112M; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=40; stealth_strength=50 | – |
+| def_pbs_core_transmitter_large_capsule | T3 | 100 | 25 | 25000 | armor_max=30k; core_max=24k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_core_transmitter_medium_capsule | T2 | 100 | 25 | 25000 | armor_max=25k; core_max=21k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_core_transmitter_small_capsule | T1 | 100 | 25 | 25000 | armor_max=20k; core_max=18k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_docking_base_large_capsule | T3 | 100 | 500 | 500000 | armor_max=750k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=150; stealth_strength=50 | – |
+| def_pbs_docking_base_medium_capsule | T2 | 100 | 375 | 375000 | armor_max=650k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=125; stealth_strength=50 | – |
+| def_pbs_docking_base_small_capsule | T1 | 100 | 250 | 250000 | armor_max=500k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=100; stealth_strength=50 | – |
 | def_pbs_effect_supplier_capsule | – | 100 | 1 | 1 | – | – |
-| def_pbs_effect_supplier_large_capsule | 3 | 100 | 20 | 20000 | armor_max=45k; core_max=3.75k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_effect_supplier_large_capsule_pr | 3 | 100 | 20 | 20000 | armor_max=45k; core_max=750; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
-| def_pbs_effect_supplier_medium_capsule | 2 | 100 | 15 | 15000 | armor_max=37.5k; core_max=3.125k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_effect_supplier_medium_capsule_pr | 2 | 100 | 15 | 15000 | armor_max=37.5k; core_max=3.125k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
-| def_pbs_effect_supplier_small_capsule | 1 | 100 | 10 | 10000 | armor_max=30k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
-| def_pbs_effect_supplier_small_capsule_pr | 1 | 100 | 10 | 10000 | armor_max=30k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
-| def_pbs_energywell_large_capsule | 3 | 100 | 300 | 300000 | armor_max=30k; core_max=25M; core_recharge_time=345.6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_energywell_medium_capsule | 2 | 100 | 225 | 225000 | armor_max=25k; core_max=20M; core_recharge_time=345.6k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_energywell_small_capsule | 1 | 100 | 150 | 150000 | armor_max=20k; core_max=17.5M; core_recharge_time=345.6k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_effect_supplier_large_capsule | T3 | 100 | 20 | 20000 | armor_max=45k; core_max=3.75k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_effect_supplier_large_capsule_pr | T3 (prototype) | 100 | 20 | 20000 | armor_max=45k; core_max=750; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
+| def_pbs_effect_supplier_medium_capsule | T2 | 100 | 15 | 15000 | armor_max=37.5k; core_max=3.125k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_effect_supplier_medium_capsule_pr | T2 (prototype) | 100 | 15 | 15000 | armor_max=37.5k; core_max=3.125k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
+| def_pbs_effect_supplier_small_capsule | T1 | 100 | 10 | 10000 | armor_max=30k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_effect_supplier_small_capsule_pr | T1 (prototype) | 100 | 10 | 10000 | armor_max=30k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | PBS CAPSULE PROTOTYPE DEF |
+| def_pbs_energywell_large_capsule | T3 | 100 | 300 | 300000 | armor_max=30k; core_max=25M; core_recharge_time=345.6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_energywell_medium_capsule | T2 | 100 | 225 | 225000 | armor_max=25k; core_max=20M; core_recharge_time=345.6k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_energywell_small_capsule | T1 | 100 | 150 | 150000 | armor_max=20k; core_max=17.5M; core_recharge_time=345.6k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
 | def_pbs_expiring_docking_base_capsule | – | 100 | 150 | 200000 | armor_max=250k; resist_chemical=50; resist_explosive=50; resist_kinetic=50; resist_thermal=50; signature_radius=100; stealth_strength=80 | Staging base! |
-| def_pbs_highwaynode_large_capsule | 3 | 100 | 30 | 300000 | armor_max=15k; core_max=4.5k; core_recharge_time=345.6k; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; signature_radius=75; stealth_strength=50 | – |
-| def_pbs_highwaynode_medium_capsule | 2 | 100 | 25 | 225000 | armor_max=12.5k; core_max=3.75k; core_recharge_time=345.6k; resist_chemical=225; resist_explosive=225; resist_kinetic=225; resist_thermal=225; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_highwaynode_small_capsule | 1 | 100 | 20 | 150000 | armor_max=10k; core_max=3k; core_recharge_time=345.6k; resist_chemical=150; resist_explosive=150; resist_kinetic=150; resist_thermal=150; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_maskertower_large_capsule | 3 | 100 | 50 | 50000 | armor_max=75k; core_max=30k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_maskertower_medium_capsule | 2 | 100 | 37 | 37000 | armor_max=65k; core_max=27.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_maskertower_small_capsule | 1 | 100 | 25 | 25000 | armor_max=50k; core_max=25k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
-| def_pbs_mill_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_mill_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_mill_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_mining_tower_large_capsule | 3 | 100 | 20 | 20000 | armor_max=150k; core_max=30k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=45; stealth_strength=50 | – |
-| def_pbs_mining_tower_medium_capsule | 2 | 100 | 15 | 15000 | armor_max=125k; core_max=27.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=37.5; stealth_strength=50 | – |
-| def_pbs_mining_tower_small_capsule | 1 | 100 | 10 | 10000 | armor_max=100k; core_max=25k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_production_upgrade_large_capsule | 3 | 100 | 20 | 20000 | armor_max=45k; core_max=750; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_production_upgrade_medium_capsule | 2 | 100 | 15 | 15000 | armor_max=37.5k; core_max=625; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_production_upgrade_small_capsule | 1 | 100 | 10 | 10000 | armor_max=30k; core_max=500; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
-| def_pbs_prototyper_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_prototyper_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_prototyper_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_reactor_large_capsule | 3 | 100 | 300 | 300000 | armor_max=150k; core_max=25M; core_recharge_time=345.6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=75; stealth_strength=50 | – |
-| def_pbs_reactor_medium_capsule | 2 | 100 | 225 | 225000 | armor_max=125k; core_max=20M; core_recharge_time=345.6k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_reactor_small_capsule | 1 | 100 | 150 | 150000 | armor_max=100k; core_max=17.5M; core_recharge_time=345.6k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_refinery_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_refinery_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_refinery_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_repair_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_repair_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_repair_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_reprocessor_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_reprocessor_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_reprocessor_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_research_kit_forge_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_research_kit_forge_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_research_kit_forge_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
-| def_pbs_research_lab_large_capsule | 3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
-| def_pbs_research_lab_medium_capsule | 2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
-| def_pbs_research_lab_small_capsule | 1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_highwaynode_large_capsule | T3 | 100 | 30 | 300000 | armor_max=15k; core_max=4.5k; core_recharge_time=345.6k; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; signature_radius=75; stealth_strength=50 | – |
+| def_pbs_highwaynode_medium_capsule | T2 | 100 | 25 | 225000 | armor_max=12.5k; core_max=3.75k; core_recharge_time=345.6k; resist_chemical=225; resist_explosive=225; resist_kinetic=225; resist_thermal=225; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_highwaynode_small_capsule | T1 | 100 | 20 | 150000 | armor_max=10k; core_max=3k; core_recharge_time=345.6k; resist_chemical=150; resist_explosive=150; resist_kinetic=150; resist_thermal=150; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_maskertower_large_capsule | T3 | 100 | 50 | 50000 | armor_max=75k; core_max=30k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_maskertower_medium_capsule | T2 | 100 | 37 | 37000 | armor_max=65k; core_max=27.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_maskertower_small_capsule | T1 | 100 | 25 | 25000 | armor_max=50k; core_max=25k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_mill_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_mill_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_mill_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_mining_tower_large_capsule | T3 | 100 | 20 | 20000 | armor_max=150k; core_max=30k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=45; stealth_strength=50 | – |
+| def_pbs_mining_tower_medium_capsule | T2 | 100 | 15 | 15000 | armor_max=125k; core_max=27.5k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=37.5; stealth_strength=50 | – |
+| def_pbs_mining_tower_small_capsule | T1 | 100 | 10 | 10000 | armor_max=100k; core_max=25k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_production_upgrade_large_capsule | T3 | 100 | 20 | 20000 | armor_max=45k; core_max=750; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_production_upgrade_medium_capsule | T2 | 100 | 15 | 15000 | armor_max=37.5k; core_max=625; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_production_upgrade_small_capsule | T1 | 100 | 10 | 10000 | armor_max=30k; core_max=500; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_prototyper_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_prototyper_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_prototyper_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_reactor_large_capsule | T3 | 100 | 300 | 300000 | armor_max=150k; core_max=25M; core_recharge_time=345.6k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=75; stealth_strength=50 | – |
+| def_pbs_reactor_medium_capsule | T2 | 100 | 225 | 225000 | armor_max=125k; core_max=20M; core_recharge_time=345.6k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_reactor_small_capsule | T1 | 100 | 150 | 150000 | armor_max=100k; core_max=17.5M; core_recharge_time=345.6k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_refinery_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_refinery_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_refinery_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_repair_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_repair_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_repair_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_reprocessor_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_reprocessor_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_reprocessor_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_research_kit_forge_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_research_kit_forge_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_research_kit_forge_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
+| def_pbs_research_lab_large_capsule | T3 | 100 | 250 | 250000 | armor_max=300k; core_max=3k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=120; stealth_strength=50 | – |
+| def_pbs_research_lab_medium_capsule | T2 | 100 | 187 | 187000 | armor_max=250k; core_max=2.75k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=65; stealth_strength=50 | – |
+| def_pbs_research_lab_small_capsule | T1 | 100 | 125 | 125000 | armor_max=200k; core_max=2.5k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=50; stealth_strength=50 | – |
 | def_pbs_turret_capsule | – | 100 | 1 | 1 | – | – |
-| def_pbs_turret_ew_large_capsule | 3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=135; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
-| def_pbs_turret_ew_medium_capsule | 2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=1; damage_modifier=0.6; detection_strength=135; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=0.9; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
-| def_pbs_turret_ew_small_capsule | 1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=1; damage_modifier=0.4; detection_strength=135; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=0.85; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
-| def_pbs_turret_laser_large_capsule | 3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=125; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
-| def_pbs_turret_laser_medium_capsule | 2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=0.7; damage_modifier=0.6; detection_strength=125; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=1; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
-| def_pbs_turret_laser_small_capsule | 1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=0.6; damage_modifier=0.4; detection_strength=125; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=1; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
-| def_pbs_turret_missile_large_capsule | 3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=125; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
-| def_pbs_turret_missile_medium_capsule | 2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=0.7; damage_modifier=0.6; detection_strength=125; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=1; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
-| def_pbs_turret_missile_small_capsule | 1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=0.6; damage_modifier=0.4; detection_strength=125; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=1; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
-| def_pbs_turret_rail_large_capsule | 3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=125; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
-| def_pbs_turret_rail_medium_capsule | 2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=0.7; damage_modifier=0.6; detection_strength=125; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=1; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
-| def_pbs_turret_rail_small_capsule | 1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=0.6; damage_modifier=0.4; detection_strength=125; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=1; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
-| def_pbs_XL_core_transmitter_large_capsule | 3 | 100 | 50 | 50000 | armor_max=45k; core_max=120k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
-| def_pbs_XL_core_transmitter_medium_capsule | 2 | 100 | 50 | 50000 | armor_max=37.5k; core_max=105k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
-| def_pbs_XL_core_transmitter_small_capsule | 1 | 100 | 50 | 50000 | armor_max=30k; core_max=90k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
+| def_pbs_turret_ew_large_capsule | T3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=135; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
+| def_pbs_turret_ew_medium_capsule | T2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=1; damage_modifier=0.6; detection_strength=135; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=0.9; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
+| def_pbs_turret_ew_small_capsule | T1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=1; damage_modifier=0.4; detection_strength=135; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=0.85; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
+| def_pbs_turret_laser_large_capsule | T3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=125; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
+| def_pbs_turret_laser_medium_capsule | T2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=0.7; damage_modifier=0.6; detection_strength=125; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=1; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
+| def_pbs_turret_laser_small_capsule | T1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=0.6; damage_modifier=0.4; detection_strength=125; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=1; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
+| def_pbs_turret_missile_large_capsule | T3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=125; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
+| def_pbs_turret_missile_medium_capsule | T2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=0.7; damage_modifier=0.6; detection_strength=125; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=1; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
+| def_pbs_turret_missile_small_capsule | T1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=0.6; damage_modifier=0.4; detection_strength=125; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=1; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
+| def_pbs_turret_rail_large_capsule | T3 | 100 | 10 | 10000 | armor_max=75k; core_max=2.5k; cycle_time=1; damage_modifier=1; detection_strength=125; ecm_strength_modifier=1; energy_neutralized_amount_modifier=1; ew_optimal_range_modifier=1; falloff_modifier=2; locking_range_modifier=1.5; missile_falloff_modifier=2; optimal_range_modifier=1; resist_chemical=300; resist_explosive=300; resist_kinetic=300; resist_thermal=300; sensor_strength=200; signature_radius=30; stealth_strength=80; turret_fallof_modifier=2 | – |
+| def_pbs_turret_rail_medium_capsule | T2 | 100 | 7 | 7000 | armor_max=67.5k; core_max=2.5k; cycle_time=0.7; damage_modifier=0.6; detection_strength=125; ecm_strength_modifier=0.9; energy_neutralized_amount_modifier=0.7; ew_optimal_range_modifier=0.9; falloff_modifier=1.8; locking_range_modifier=1.425; missile_falloff_modifier=1.8; optimal_range_modifier=1; resist_chemical=240; resist_explosive=240; resist_kinetic=240; resist_thermal=240; sensor_strength=180; signature_radius=18; stealth_strength=80; turret_fallof_modifier=1.8 | – |
+| def_pbs_turret_rail_small_capsule | T1 | 100 | 5 | 5000 | armor_max=45k; core_max=2.5k; cycle_time=0.6; damage_modifier=0.4; detection_strength=125; ecm_strength_modifier=0.85; energy_neutralized_amount_modifier=0.5; ew_optimal_range_modifier=0.85; falloff_modifier=1.6; locking_range_modifier=1.35; missile_falloff_modifier=1.6; optimal_range_modifier=1; resist_chemical=180; resist_explosive=180; resist_kinetic=180; resist_thermal=180; sensor_strength=160; signature_radius=12; stealth_strength=80; turret_fallof_modifier=1.6 | – |
+| def_pbs_XL_core_transmitter_large_capsule | T3 | 100 | 50 | 50000 | armor_max=45k; core_max=120k; resist_chemical=120; resist_explosive=120; resist_kinetic=120; resist_thermal=120; signature_radius=30; stealth_strength=50 | – |
+| def_pbs_XL_core_transmitter_medium_capsule | T2 | 100 | 50 | 50000 | armor_max=37.5k; core_max=105k; resist_chemical=75; resist_explosive=75; resist_kinetic=75; resist_thermal=75; signature_radius=25; stealth_strength=50 | – |
+| def_pbs_XL_core_transmitter_small_capsule | T1 | 100 | 50 | 50000 | armor_max=30k; core_max=90k; resist_chemical=30; resist_explosive=30; resist_kinetic=30; resist_thermal=30; signature_radius=20; stealth_strength=50 | – |
 | def_plant_bomb_capsule | – | 100 | 4 | 1000 | armor_max=50; signature_radius=2; stealth_strength=120 | area bomba test |
 | def_plant_seed_bonsai | – | 100 | 1 | 1 | – | ez lesz amit a marketen veszel es a cargodbol deployolod    bonsai-t ultet |
 | def_plant_seed_coppertree | – | 100 | 0 | 1 | – | ez lesz amit a marketen veszel es a cargodbol deployolod    Coppertree-t ultet |
@@ -231,8 +231,8 @@ Deployables are items that can be **placed in the terrain** to act on the zone �
 | def_terraform_buoy_capsule | – | 100 | 1 | 1 | – | – |
 | def_test_speed_booster | – | 100 | 0.1 | 0 | – | – |
 | def_visibility_probe_capsule | – | 100 | 1.5 | 1000 | armor_max=150; blob_emission=10; blob_emission_radius=50; blob_level_high=70; blob_level_low=25; core_max=150; core_recharge_time=86.4k; despawn_time=28.8M; detection_strength=45; signature_radius=2; stealth_strength=275 | ez van a cargodban |
-| def_wall_bomb_a_capsule | 1 | 100 | 2 | 2500 | armor_max=50; signature_radius=2; stealth_strength=25 | anti-wall bomb |
-| def_wall_bomb_b_capsule | 2 | 100 | 2 | 2500 | armor_max=500; signature_radius=2; stealth_strength=200 | anti-wall bomb |
+| def_wall_bomb_a_capsule | T1 | 100 | 2 | 2500 | armor_max=50; signature_radius=2; stealth_strength=25 | anti-wall bomb |
+| def_wall_bomb_b_capsule | T2 | 100 | 2 | 2500 | armor_max=500; signature_radius=2; stealth_strength=200 | anti-wall bomb |
 | def_wall_healer_large_capsule | – | 100 | 0.25 | 1000 | – | – |
 | def_wall_healer_medium_capsule | – | 100 | 0.25 | 1000 | – | – |
 | def_wall_healer_small_capsule | – | 100 | 0.25 | 1000 | – | – |

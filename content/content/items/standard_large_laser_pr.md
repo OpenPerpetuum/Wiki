@@ -16,6 +16,7 @@ description: "Modules / Weapons"
 | Volume | 1.5 |
 | Mass | 1000 |
 | Category | Modules / Weapons |
+| Tier line | [Standard heavy LCL laser](/content/items/standard-large-laser/) (T1) → **Standard Large Laser Pr** () → [Thelotec-Etequitor heavy LCL laser](/content/items/named1-large-laser/) (T2) → [Thelotec-Apocalyptor heavy LCL laser](/content/items/named2-large-laser/) (T3) → [Kauska Heatpin II. heavy LCL laser](/content/items/named3-large-laser/) (T4) |
 | Note | large weapon module |
 
 ## Stats

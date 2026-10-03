@@ -16,6 +16,7 @@ description: "Modules / Weapons"
 | Volume | 1.5 |
 | Mass | 1000 |
 | Category | Modules / Weapons |
+| Tier line | [Standard heavy missile launcher](/content/items/standard-cruisemissile-launcher/) (T1) → **Standard Cruisemissile Launcher Pr** () → [Aqwit Imperator heavy missile launcher](/content/items/named1-cruisemissile-launcher/) (T2) → [Teppes heavy missile launcher](/content/items/named2-cruisemissile-launcher/) (T3) → [Pelistec-TR500 heavy missile launcher](/content/items/named3-cruisemissile-launcher/) (T4) |
 | Note | large weapon module |
 
 ## Stats

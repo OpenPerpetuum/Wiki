@@ -16,6 +16,7 @@ description: "Modules / Repair"
 | Volume | 3 |
 | Mass | 1500 |
 | Category | Modules / Repair |
+| Tier line | [Standard large armor repairer](/content/items/standard-large-armor-repairer/) (T1) → **Standard Large Armor Repairer Pr** () → [Stesodenn large armor repairer](/content/items/named1-large-armor-repairer/) (T2) → [FO-330 'Reconstructor' large armor repairer](/content/items/named2-large-armor-repairer/) (T3) → [Pandegris large armor repairer](/content/items/named3-large-armor-repairer/) (T4) |
 | Note | large module |
 
 ## Stats

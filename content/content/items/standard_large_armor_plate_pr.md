@@ -16,6 +16,7 @@ description: "Modules / Armor"
 | Volume | 4 |
 | Mass | 9000 |
 | Category | Modules / Armor |
+| Tier line | [Standard large armor plate](/content/items/standard-large-armor-plate/) (T1) → **Standard Large Armor Plate Pr** () → [Vorbol p113 heavy armor plate](/content/items/named1-large-armor-plate/) (T2) → [Invigor III. heavy armor plate](/content/items/named2-large-armor-plate/) (T3) → [Halc heavy armor plate](/content/items/named3-large-armor-plate/) (T4) |
 | Note | large module |
 
 ## Stats

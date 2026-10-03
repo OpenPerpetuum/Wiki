@@ -16,6 +16,7 @@ description: "Modules / Power"
 | Volume | 3 |
 | Mass | 3000 |
 | Category | Modules / Power |
+| Tier line | [Standard large auxiliary accumulator](/content/items/standard-large-core-battery/) (T1) → **Standard Large Core Battery Pr** () → [Ovostec-gxc9000 large auxiliary accumulator](/content/items/named1-large-core-battery/) (T2) → [Nibott-I large auxiliary accumulator](/content/items/named2-large-core-battery/) (T3) → [Pheter Charge-L large auxiliary accumulator](/content/items/named3-large-core-battery/) (T4) |
 | Note | large module |
 
 ## Stats

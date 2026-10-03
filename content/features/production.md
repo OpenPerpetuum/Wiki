@@ -94,6 +94,31 @@ Item creation is a loop of three connected facilities:
    prototype item is what unlocks the next tier) — or used on the robot when the
    item is too rare to drop and too expensive on the market.
 
+## Tier progression
+
+Most modules and robots come in **tiers T1 → T4** (the client's tier badge; the
+`standard → named1 → named2 → named3` definition lines, then the `elitet4`/
+`artifact` special lines). The rules:
+
+- **Each tier is a separate item with its own tech-tree node.** Unlocking a
+  node costs research points (researched from kernels) and requires the
+  **parent node** — so tiers must be unlocked in order. You can only
+  **prototype** (or mass-produce) an item whose node is already unlocked:
+  there is no way to make a higher tier without the research.
+- **Each higher tier consumes one specimen of the previous tier** as a
+  component (plus materials and robot shards). A T1 item therefore can never
+  be "turned in" for a T3 — the T3 prototype needs a **T2** item, and the
+  specimen is **consumed**, not converted: the output is a brand-new item.
+- Every item page shows its **tier line** — the whole `T1 → T2 → T3 → T4`
+  chain as links — and the [tech tree node pages](/content/techtree/) show
+  each tier's parent/next node and point prices.
+
+Example, the small miner module line: [standard small miner (T1)](/content/items/standard-small-driller/) →
+[Biroter 5050 small miner module (T2)](/content/items/named1-small-driller/) →
+[Sublimator Low-D small miner module (T3)](/content/items/named2-small-driller/) →
+[Scraper-990 small miner module (T4)](/content/items/named3-small-driller/) —
+and the same pattern for every module/robot family.
+
 ## Prototypes & research kits
 
 - **Prototype** — produce a prototype item (start + query). One prototype per

@@ -16,6 +16,7 @@ description: "Modules / Weapons"
 | Volume | 1.5 |
 | Mass | 1000 |
 | Category | Modules / Weapons |
+| Tier line | [Standard heavy Gauss gun](/content/items/standard-large-railgun/) (T1) → **Standard Large Railgun Pr** () → [Iskio-Magnetor II. heavy Gauss gun](/content/items/named1-large-railgun/) (T2) → [Nuimtec-Gaule heavy Gauss gun](/content/items/named2-large-railgun/) (T3) → [Pentack-Nailer dd550 heavy Gauss gun](/content/items/named3-large-railgun/) (T4) |
 | Note | large weapon module |
 
 ## Stats

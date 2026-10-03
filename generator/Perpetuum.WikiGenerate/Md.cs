@@ -32,10 +32,22 @@ public static class Md
         }
     }
 
+    /// <summary>
+    /// The tier column: the game's tierlevel shown as T1–T5 (the client's
+    /// convention — def_elitet4_* is tierlevel 4, def_elitet2_* is 2), plus a
+    /// series marker: prototype variants (tiertype 2) and special lines
+    /// (tiertype 3: elite/artifact/faction lines).
+    /// </summary>
     public static string Tier(int tierType, int? tierLevel)
     {
-        if (tierLevel is null || tierLevel == 0) return tierType == 2 ? "prototype" : "";
-        return tierLevel.ToString();
+        if (tierLevel is null || tierLevel == 0)
+            return tierType switch { 2 => "prototype", 3 => "special", _ => "" };
+        return tierType switch
+        {
+            2 => $"T{tierLevel} (prototype)",
+            3 => $"T{tierLevel} (special)",
+            _ => $"T{tierLevel}"
+        };
     }
 
     /// <summary>Standard page header. Provenance is a developer comment (invisible in the wiki).</summary>
