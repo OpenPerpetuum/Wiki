@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Scraper-990 small miner module ×1, Material Boss Gamma Pelistal ×67, Material Boss Gamma Nuimqol ×67, Material Boss Gamma Thelodica ×67 |
+| Production cost | Material Boss Gamma Nuimqol ×67, Material Boss Gamma Pelistal ×67, Material Boss Gamma Thelodica ×67, Scraper-990 small miner module ×1 |
 | Output | [Elitet4 Gamma Small Driller](/content/items/elitet4-gamma-small-driller/) |
 
 ```mermaid

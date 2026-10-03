@@ -32,4 +32,34 @@ description: "Special & other / Miscellaneous, tier 1"
 | signature_radius | 50 |
 | stealth_strength | 50 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Reactor Small Capsule Pr"]:::current
+    b["Alligior ×3.5k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×15.0k"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×15.0k"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Plasteosine ×3.5k"]:::comp
+    e --> a
+    click e "/content/items/plasteosine/" "Plasteosine"
+    f["Titanium ×5.0k"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    g["Briochit ×5.0k"]:::comp
+    g --> a
+    click g "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

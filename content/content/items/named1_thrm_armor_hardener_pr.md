@@ -28,4 +28,40 @@ description: "Modules / Armor, tier 2"
 | powergrid_usage | 4 |
 | resist_thermal | 25 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Lava-3T thermal armor prototype"]:::current
+    b["Cryoperine ×50"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Isopropentol ×125"]:::comp
+    c --> a
+    click c "/content/items/isopropentol/" "Isopropentol"
+    d["Plasteosine ×125"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Damaged common fragment ×15"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Damaged nuimqol fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    g["Standard thermal armor ×1"]:::comp
+    g --> a
+    click g "/content/items/standard-thrm-armor-hardener/" "Standard thermal armor"
+    h["Titanium ×100"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Vitricyl ×50"]:::comp
+    i --> a
+    click i "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

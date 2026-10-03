@@ -41,4 +41,31 @@ graph LR
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ammo Medium Projectile T"]:::current
+    b["Axicoline ×200"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Phlobotil ×200"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Polynitrocol ×200"]:::comp
+    d --> a
+    click d "/content/items/polynitrocol/" "Polynitrocol"
+    e["Polynucleit ×200"]:::comp
+    e --> a
+    click e "/content/items/polynucleit/" "Polynucleit"
+    f["Titanium ×200"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

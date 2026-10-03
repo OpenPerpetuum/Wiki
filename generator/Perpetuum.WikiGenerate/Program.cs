@@ -71,6 +71,14 @@ public static class Program
         var (catSvg, catCount, catEdges) = ExtensionsCategories.Build(db);
         File.WriteAllText(Path.Combine(wikiRoot, "static", "extensions-categories.svg"), catSvg);
         Console.WriteLine($"wrote static/extensions-categories.svg ({catCount} categories, {catEdges} edges)");
+        // Recipe data cache (tools/recipes_data.json) for the Python one-shot
+        // tools — the DB is the source of truth, the committed JSON is a
+        // snapshot of the `components` + `itemresearchlevels` tables.
+        WriteRecipesData(wikiRoot, db, defs);
+        // Spark connection tree SVG (static/sparks-tree.svg) for the sparks page.
+        var (sparksSvg, sparkCount, sparkEdges) = SparksTree.Build(db);
+        File.WriteAllText(Path.Combine(wikiRoot, "static", "sparks-tree.svg"), sparksSvg);
+        Console.WriteLine($"wrote static/sparks-tree.svg ({sparkCount} sparks, {sparkEdges} bundle entries)");
         var pages = new List<(string File, string Content)>
         {
             ("ores.md", OresPage.Build(db, defs).Index),
@@ -217,6 +225,69 @@ public static class Program
     }
 
     private static string FormatStat(double v) => Md.Num(v);
+
+    /// <summary>
+    /// tools/recipes_data.json: { recipes: { def: { components: [[def, qty]],
+    /// research: "N" | "–" }, items, ores } — consumed by the Python tools
+    /// (gen_production_pages.py reads the recipes part when the old table is
+    /// gone). Component order matches the pages (definition-name order).
+    /// </summary>
+    private static void WriteRecipesData(string wikiRoot, Db db, Dictionary<int, DefRow> defs)
+    {
+        var comps = db.Query("SELECT definition, componentdefinition, componentamount FROM components");
+        var research = db.Query("SELECT definition, MAX(researchlevel) AS lvl FROM itemresearchlevels GROUP BY definition")
+            .ToDictionary(r => r.Int("definition"), r => r.Int("lvl"));
+        string NameOf(int def) => defs.TryGetValue(def, out var d) ? d.Name : def.ToString();
+        var byResult = comps
+            .GroupBy(c => c.Int("definition"))
+            .OrderBy(g => NameOf(g.Key), StringComparer.Ordinal)
+            .ToDictionary(
+                g => NameOf(g.Key),
+                g => g.OrderBy(c => NameOf(c.Int("componentdefinition")), StringComparer.Ordinal)
+                      .Select(c => (Name: NameOf(c.Int("componentdefinition")), Amt: c.Int("componentamount")))
+                      .ToList());
+
+        string LabelOf(DefRow d)
+        {
+            if (d.Name.EndsWith("_bot")) return Md.DisplayName(d.Name, forceDerived: true) + " Bot";
+            if ((d.CatFlags & Flags.CfOre) == Flags.CfOre)
+                return Md.DisplayName(d.Name.StartsWith("def_", StringComparison.Ordinal) ? d.Name["def_".Length..] : d.Name);
+            return Md.DisplayName(d.Name);
+        }
+        var sb = new StringBuilder();
+        sb.Append("{\n \"recipes\": {\n");
+        var first = true;
+        foreach (var (res, parts) in byResult)
+        {
+            if (!first) sb.Append(",\n");
+            first = false;
+            var rl = research.TryGetValue(
+                defs.First(kv => kv.Value.Name == res).Key, out var lvl) ? lvl.ToString() : "\u2013";
+            sb.Append($"  \"{res}\": {{\"components\": [");
+            for (var i = 0; i < parts.Count; i++)
+            {
+                if (i > 0) sb.Append(", ");
+                sb.Append($"[\"{parts[i].Name}\", {parts[i].Amt}]");
+            }
+            sb.Append($"], \"research\": \"{rl}\"}}");
+        }
+        sb.Append("\n },\n \"names\": {\n");
+        first = true;
+        foreach (var kv in defs.OrderBy(kv => kv.Value.Name, StringComparer.Ordinal))
+        {
+            if (!first) sb.Append(",\n");
+            first = false;
+            sb.Append($"  \"{kv.Value.Name}\": \"{EscapeJson(LabelOf(kv.Value))}\"");
+        }
+        sb.Append("\n },\n \"items\": {},\n \"ores\": {}\n}\n");
+        var path = Path.Combine(wikiRoot, "tools", "recipes_data.json");
+        Directory.CreateDirectory(Path.GetDirectoryName(path)!);
+        File.WriteAllText(path, sb.ToString());
+        Console.WriteLine($"wrote tools/recipes_data.json ({byResult.Count} recipes)");
+    }
+
+    private static string EscapeJson(string s)
+        => s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
 
     private static void PrintHelp() => Console.Error.WriteLine(
         "wiki-generate --connection <cs> --plantrules <dir> --out <dir> [--zones-out <dir>]");

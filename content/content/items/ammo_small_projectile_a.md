@@ -26,4 +26,28 @@ description: "Ammo / Projectiles"
 | damage_toxic | 3 |
 | optimal_range_modifier | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Small armor-piercing bullet"]:::current
+    b["Axicoline ×50"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Phlobotil ×10"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Polynitrocol ×10"]:::comp
+    d --> a
+    click d "/content/items/polynitrocol/" "Polynitrocol"
+    e["Titanium ×25"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

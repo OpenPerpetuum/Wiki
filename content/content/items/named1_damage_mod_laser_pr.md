@@ -25,4 +25,40 @@ description: "Modules / Weapons, tier 2"
 | damage_laser_modifier | 0.15 |
 | powergrid_usage | 9 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Reflexis II. laser tuning prototype"]:::current
+    b["Cryoperine ×100"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×50"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Polynucleit ×50"]:::comp
+    d --> a
+    click d "/content/items/polynucleit/" "Polynucleit"
+    e["Prilumium ×100"]:::comp
+    e --> a
+    click e "/content/items/prilumium/" "Prilumium"
+    f["Damaged common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Damaged thelodica fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    h["Standard laser tuning ×1"]:::comp
+    h --> a
+    click h "/content/items/standard-damage-mod-laser/" "Standard laser tuning"
+    i["Titanium ×50"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

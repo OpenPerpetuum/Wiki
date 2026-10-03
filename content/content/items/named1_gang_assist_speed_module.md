@@ -32,6 +32,34 @@ description: "Modules / Enhancements, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 6 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Jubatus velocity NEXUS module"]:::current
+    b["Cryoperine ×300"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Chollonin ×300"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Damaged nuimqol fragment ×15"]:::comp
+    d --> a
+    click d "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    e["Damaged pelistal fragment ×15"]:::comp
+    e --> a
+    click e "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    f["Standard velocity NEXUS module ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-gang-assist-speed-module/" "Standard velocity NEXUS module"
+    g["Titanium ×50"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

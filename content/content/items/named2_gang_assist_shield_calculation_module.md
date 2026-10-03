@@ -32,6 +32,46 @@ description: "Modules / Shield, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 10 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Stasis-Gen shield NEXUS module"]:::current
+    b["Alligior ×50"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×250"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×50"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Bomitar I. shield NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-gang-assist-shield-calculation-module/" "Bomitar I. shield NEXUS module"
+    f["Functional pelistal fragment ×10"]:::comp
+    f --> a
+    click f "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    g["Damaged pelistal fragment ×10"]:::comp
+    g --> a
+    click g "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    h["Functional thelodica fragment ×10"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    i["Damaged thelodica fragment ×10"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    j["Titanium ×50"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    k["Vitricyl ×250"]:::comp
+    k --> a
+    click k "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

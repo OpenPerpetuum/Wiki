@@ -20,4 +20,40 @@ description: "Materials, tier 2"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Reactor Booster B Pr"]:::current
+    b["Cryoperine ×750"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Chollonin ×750"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×750"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Tiraizin ×50"]:::comp
+    e --> a
+    click e "/content/items/gamma-energyblock/" "Tiraizin"
+    f["Prilumium ×750"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Titanium ×150"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Briochit ×150"]:::comp
+    h --> a
+    click h "/content/items/unimetal/" "Briochit"
+    i["Vitricyl ×750"]:::comp
+    i --> a
+    click i "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

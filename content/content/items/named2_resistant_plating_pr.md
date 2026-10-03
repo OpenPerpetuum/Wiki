@@ -28,4 +28,52 @@ description: "Modules / Enhancements, tier 3"
 | resist_kinetic | 33 |
 | resist_thermal | 33 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["UNI300pls universal armor prototype"]:::current
+    b["Alligior ×150"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×50"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×50"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Metachropin ×150"]:::comp
+    e --> a
+    click e "/content/items/metachropin/" "Metachropin"
+    f["Diverter universal armor ×1"]:::comp
+    f --> a
+    click f "/content/items/named1-resistant-plating/" "Diverter universal armor"
+    g["Prilumium ×50"]:::comp
+    g --> a
+    click g "/content/items/prilumium/" "Prilumium"
+    h["Functional common fragment ×10"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    i["Damaged common fragment ×10"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    j["Functional thelodica fragment ×10"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    k["Damaged thelodica fragment ×10"]:::comp
+    k --> a
+    click k "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    l["Statichnol ×50"]:::comp
+    l --> a
+    click l "/content/items/statichnol/" "Statichnol"
+    m["Titanium ×100"]:::comp
+    m --> a
+    click m "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

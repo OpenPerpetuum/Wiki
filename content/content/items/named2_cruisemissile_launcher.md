@@ -32,6 +32,43 @@ description: "Modules / Weapons, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 9 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Teppes heavy missile launcher"]:::current
+    b["Hydrobenol ×150"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Aqwit Imperator heavy missile launcher ×1"]:::comp
+    c --> a
+    click c "/content/items/named1-cruisemissile-launcher/" "Aqwit Imperator heavy missile launcher"
+    d["Phlobotil ×150"]:::comp
+    d --> a
+    click d "/content/items/phlobotil/" "Phlobotil"
+    e["Functional common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×30"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Functional pelistal fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    h["Damaged pelistal fragment ×30"]:::comp
+    h --> a
+    click h "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    i["Specimen Sap Item Flux ×25"]:::comp
+    i --> a
+    click i "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    j["Titanium ×150"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

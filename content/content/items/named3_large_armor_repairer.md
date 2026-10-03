@@ -27,4 +27,46 @@ description: "Modules / Repair, tier 4"
 | cycle_time | 12k |
 | powergrid_usage | 1.1k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pandegris large armor repairer"]:::current
+    b["Alligior ×600"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×150"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×150"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["FO-330 'Reconstructor' large armor repairer ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-large-armor-repairer/" "FO-330 'Reconstructor' large armor repairer"
+    f["Functional common fragment ×90"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×45"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×135"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Specimen Sap Item Flux ×60"]:::comp
+    i --> a
+    click i "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    j["Statichnol ×600"]:::comp
+    j --> a
+    click j "/content/items/statichnol/" "Statichnol"
+    k["Briochit ×300"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

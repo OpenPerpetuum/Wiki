@@ -33,6 +33,40 @@ description: "Special & other / Miscellaneous, tier 1"
 <!-- production:generated -->
 ## Production
 
+**Produced from 8 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Research Kit Forge Small Capsule"]:::current
+    b["Alligior ×2.5k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×2.5k"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Axicoline ×2.5k"]:::comp
+    d --> a
+    click d "/content/items/axicoline/" "Axicoline"
+    e["Espitium ×2.5k"]:::comp
+    e --> a
+    click e "/content/items/espitium/" "Espitium"
+    f["Hydrobenol ×2.5k"]:::comp
+    f --> a
+    click f "/content/items/hydrobenol/" "Hydrobenol"
+    g["Plasteosine ×2.5k"]:::comp
+    g --> a
+    click g "/content/items/plasteosine/" "Plasteosine"
+    h["Titanium ×5.0k"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Briochit ×5.0k"]:::comp
+    i --> a
+    click i "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

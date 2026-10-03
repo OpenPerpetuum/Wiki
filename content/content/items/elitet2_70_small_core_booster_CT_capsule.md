@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | CC25-Veo small energy injector ×1, Material Boss Z70 ×150 |
+| Production cost | Material Boss Z70 ×150, CC25-Veo small energy injector ×1 |
 | Output | [Elitet2 70 Small Core Booster](/content/items/elitet2-70-small-core-booster/) |
 
 ```mermaid

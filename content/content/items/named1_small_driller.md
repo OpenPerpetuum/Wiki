@@ -30,6 +30,28 @@ description: "Modules / Enhancements, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 4 components, research level 2** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Biroter 5050 small miner module"]:::current
+    b["Cryoperine ×50"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Damaged common fragment ×30"]:::comp
+    c --> a
+    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    d["Standard small miner module ×1"]:::comp
+    d --> a
+    click d "/content/items/standard-small-driller/" "Standard small miner module"
+    e["Titanium ×150"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

@@ -50,4 +50,22 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 |---|---|---|---|
 | Daoden outpost | ∞ | 5k | 750M |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 2 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Elitet4 70 Medium Armor Repairer"]:::current
+    b["Material Boss Z70 ×400"]:::comp
+    b --> a
+    click b "/content/items/material-boss-z70/" "Material Boss Z70"
+    c["CRC40 medium armor repairer ×1"]:::comp
+    c --> a
+    click c "/content/items/named3-medium-armor-repairer/" "CRC40 medium armor repairer"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

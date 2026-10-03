@@ -22,6 +22,28 @@ _No stats — this item carries no aggregate values._
 <!-- production:generated -->
 ## Production
 
+**Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Biotichrin"]:::current
+    b["HDT ×25"]:::comp
+    b --> a
+    click b "/content/items/crude/" "HDT"
+    c["Helioptris ×25"]:::comp
+    c --> a
+    click c "/content/items/helioptris/" "Helioptris"
+    d["Prismocitae ×25"]:::comp
+    d --> a
+    click d "/content/items/prismocitae/" "Prismocitae"
+    e["Triandlus ×25"]:::comp
+    e --> a
+    click e "/content/items/triandlus/" "Triandlus"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 41 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
 
 ```mermaid

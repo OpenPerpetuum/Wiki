@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Arachnid-type S-demobilizer ×1, Material Boss Z70 ×300 |
+| Production cost | Material Boss Z70 ×300, Arachnid-type S-demobilizer ×1 |
 | Output | [Elitet2 70 Webber](/content/items/elitet2-70-webber/) |
 
 ```mermaid

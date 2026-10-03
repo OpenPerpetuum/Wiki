@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Titanium ×200, Phlobotil ×200, Polynucleit ×200, Polynitrocol ×200, Axicoline ×200 |
+| Production cost | Axicoline ×200, Phlobotil ×200, Polynitrocol ×200, Polynucleit ×200, Titanium ×200 |
 | Output | [Ammo Medium Projectile T](/content/items/ammo-medium-projectile-t/) |
 
 ```mermaid

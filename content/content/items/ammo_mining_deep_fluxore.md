@@ -19,4 +19,28 @@ description: "Ammo / Mining"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ammo Mining Deep Fluxore"]:::current
+    b["Isopropentol ×90"]:::comp
+    b --> a
+    click b "/content/items/isopropentol/" "Isopropentol"
+    c["Metachropin ×90"]:::comp
+    c --> a
+    click c "/content/items/metachropin/" "Metachropin"
+    d["Statichnol ×90"]:::comp
+    d --> a
+    click d "/content/items/statichnol/" "Statichnol"
+    e["Briochit ×90"]:::comp
+    e --> a
+    click e "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -28,6 +28,58 @@ description: "Modules / Enhancements, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 14 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named2 Adaptive Alloy"]:::current
+    b["Alligior ×250"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×100"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Chollonin ×25"]:::comp
+    d --> a
+    click d "/content/items/chollonin/" "Chollonin"
+    e["Espitium ×100"]:::comp
+    e --> a
+    click e "/content/items/espitium/" "Espitium"
+    f["Isopropentol ×65"]:::comp
+    f --> a
+    click f "/content/items/isopropentol/" "Isopropentol"
+    g["Metachropin ×65"]:::comp
+    g --> a
+    click g "/content/items/metachropin/" "Metachropin"
+    h["Named1 Adaptive Alloy ×1"]:::comp
+    h --> a
+    click h "/content/items/named1-adaptive-alloy/" "Named1 Adaptive Alloy"
+    i["Plasteosine ×250"]:::comp
+    i --> a
+    click i "/content/items/plasteosine/" "Plasteosine"
+    j["Prilumium ×25"]:::comp
+    j --> a
+    click j "/content/items/prilumium/" "Prilumium"
+    k["Functional common fragment ×20"]:::comp
+    k --> a
+    click k "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    l["Damaged common fragment ×20"]:::comp
+    l --> a
+    click l "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    m["Statichnol ×65"]:::comp
+    m --> a
+    click m "/content/items/statichnol/" "Statichnol"
+    n["Titanium ×200"]:::comp
+    n --> a
+    click n "/content/items/titanium/" "Titanium"
+    o["Vitricyl ×25"]:::comp
+    o --> a
+    click o "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

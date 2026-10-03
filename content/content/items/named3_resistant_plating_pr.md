@@ -28,4 +28,58 @@ description: "Modules / Enhancements, tier 4"
 | resist_kinetic | 36 |
 | resist_thermal | 36 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 14 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Aegis UAP-10XL universal armor prototype"]:::current
+    b["Alligior ×300"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×100"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Metachropin ×300"]:::comp
+    e --> a
+    click e "/content/items/metachropin/" "Metachropin"
+    f["UNI300pls universal armor ×1"]:::comp
+    f --> a
+    click f "/content/items/named2-resistant-plating/" "UNI300pls universal armor"
+    g["Prilumium ×100"]:::comp
+    g --> a
+    click g "/content/items/prilumium/" "Prilumium"
+    h["Functional common fragment ×15"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    i["Damaged common fragment ×7"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    j["Perfect common fragment ×22"]:::comp
+    j --> a
+    click j "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    k["Functional thelodica fragment ×15"]:::comp
+    k --> a
+    click k "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    l["Damaged thelodica fragment ×7"]:::comp
+    l --> a
+    click l "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    m["Perfect thelodica fragment ×22"]:::comp
+    m --> a
+    click m "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    n["Statichnol ×100"]:::comp
+    n --> a
+    click n "/content/items/statichnol/" "Statichnol"
+    o["Briochit ×200"]:::comp
+    o --> a
+    click o "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

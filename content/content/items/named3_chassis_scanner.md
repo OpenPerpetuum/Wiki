@@ -28,4 +28,40 @@ description: "Modules / Sensors & scanning, tier 4"
 | optimal_range | 35 |
 | powergrid_usage | 6 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["sy-D-930 chassis scanner"]:::current
+    b["Cryoperine ×250"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×250"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Stalis CS3 chassis scanner ×1"]:::comp
+    d --> a
+    click d "/content/items/named2-chassis-scanner/" "Stalis CS3 chassis scanner"
+    e["Functional common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×45"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Titanium ×50"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Briochit ×50"]:::comp
+    i --> a
+    click i "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

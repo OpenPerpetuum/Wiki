@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Znatvoy-Berjiar-IA medium autocannon ×1, Material Boss Gamma Syndicate ×400 |
+| Production cost | Material Boss Gamma Syndicate ×400, Znatvoy-Berjiar-IA medium autocannon ×1 |
 | Output | [Elitet4 Gamma Longrange Medium Autocannon](/content/items/elitet4-gamma-longrange-medium-autocannon/) |
 
 ```mermaid

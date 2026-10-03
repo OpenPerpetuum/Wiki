@@ -27,4 +27,46 @@ description: "Modules / Sensors & scanning, tier 4"
 | effect_enhancer_sensor_dampener_locking_time_modifier | 1.175 |
 | powergrid_usage | 20 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["DDX700-Mist sensor suppressor tuning prototype"]:::current
+    b["Espitium ×300"]:::comp
+    b --> a
+    click b "/content/items/espitium/" "Espitium"
+    c["Radiocor sensor suppressor tuning ×1"]:::comp
+    c --> a
+    click c "/content/items/named2-sensor-supressor-booster/" "Radiocor sensor suppressor tuning"
+    d["Prilumium ×300"]:::comp
+    d --> a
+    click d "/content/items/prilumium/" "Prilumium"
+    e["Functional common fragment ×15"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×7"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×22"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Functional thelodica fragment ×15"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    i["Damaged thelodica fragment ×7"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    j["Perfect thelodica fragment ×22"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    k["Briochit ×100"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

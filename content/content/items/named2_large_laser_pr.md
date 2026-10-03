@@ -31,4 +31,43 @@ description: "Modules / Weapons, tier 3"
 | optimal_range | 23.5 |
 | powergrid_usage | 394 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named2 Large Laser Pr"]:::current
+    b["Hydrobenol ×150"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Thelotec-Etequitor heavy LCL laser ×1"]:::comp
+    c --> a
+    click c "/content/items/named1-large-laser/" "Thelotec-Etequitor heavy LCL laser"
+    d["Polynucleit ×150"]:::comp
+    d --> a
+    click d "/content/items/polynucleit/" "Polynucleit"
+    e["Functional common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×30"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Functional thelodica fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    h["Damaged thelodica fragment ×30"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    i["Specimen Sap Item Flux ×25"]:::comp
+    i --> a
+    click i "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    j["Titanium ×150"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

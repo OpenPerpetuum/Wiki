@@ -28,4 +28,52 @@ description: "Modules / Armor, tier 4"
 | powergrid_usage | 6 |
 | resist_thermal | 25 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Hephaistos-TSS thermal armor prototype"]:::current
+    b["Alligior ×250"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×250"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Thermoflake thermal armor ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-thrm-armor-hardener/" "Thermoflake thermal armor"
+    f["Functional common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×7"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×22"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Functional nuimqol fragment ×15"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    j["Damaged nuimqol fragment ×7"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    k["Perfect nuimqol fragment ×22"]:::comp
+    k --> a
+    click k "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    l["Briochit ×200"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    m["Vitricyl ×100"]:::comp
+    m --> a
+    click m "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

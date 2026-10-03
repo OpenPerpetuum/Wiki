@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | SBA-200 Forebrace small shield generator ×1, Material Boss Z71 ×200 |
+| Production cost | Material Boss Z71 ×200, SBA-200 Forebrace small shield generator ×1 |
 | Output | [Elitet4 71 Small Shield Generator](/content/items/elitet4-71-small-shield-generator/) |
 
 ```mermaid

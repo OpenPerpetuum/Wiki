@@ -35,7 +35,7 @@ public static class RecipesPage
         // What a card (title or component row) can link to.
         bool IsCatalog(int def, out DefRow row)
         {
-            if (!defs.TryGetValue(def, out var d)) { row = null!; return false; }
+            if (!defs.TryGetValue(def, out var d) || !d.Enabled || d.Hidden) { row = null!; return false; }
             row = d;
             return ItemsPage.IsItem(d);
         }
@@ -69,7 +69,11 @@ public static class RecipesPage
             if (!groups.TryGetValue(key, out var list)) groups[key] = list = new List<int>();
             list.Add(g.Def);
         }
-        int TopRank(string t) => CatOrder.Contains(t) ? CatOrder.IndexOf(t) : CatOrder.Length;
+        int TopRank(string t)
+        {
+            var i = Array.IndexOf(CatOrder, t);
+            return i < 0 ? CatOrder.Length : i;
+        }
         var order = groups
             .OrderBy(kv => TopRank(kv.Key.Top))
             .ThenBy(kv => kv.Key.Top == "Other")
@@ -81,6 +85,10 @@ public static class RecipesPage
         sb.Append(Md.Header("Recipes", "Every craftable item, grouped by category, with its components and research level.",
             "components, itemresearchlevels (joined to entitydefaults)"));
         sb.Append("\n\n# Recipes\n\n");
+        // The marker keeps the Python one-shot (tools/gen_recipes_cards.py)
+        // idempotent over this page: when the generator has already written
+        // the cards, the tool leaves the page alone.
+        sb.Append("<!-- recipes:generated -->\n\n");
         sb.Append("Component requirements for every item that is assembled from other items, grouped by category " +
                   "(see [Production](/features/production/) in the features section). **Research level** is the maximum " +
                   "research level the item has — higher levels change yield/calibration, not the component list. " +
@@ -103,7 +111,7 @@ public static class RecipesPage
             if (sub.Length > 0)
                 sb.Append($"\n### {sub} ({list.Count})\n");
             sb.Append("\n<div class=\"mission-cards\">\n");
-            foreach (var def in list.OrderBy(x => x, StringComparer.Ordinal))
+            foreach (var def in list) // 'grouped' is already in definition order
             {
                 var parts = grouped.Single(g => g.Def == def).Parts;
                 sb.Append("<div class=\"mission-card\">\n");
@@ -124,14 +132,23 @@ public static class RecipesPage
         return sb.ToString();
     }
 
-    /// <summary>Heading anchor (same scheme Zola uses for the generated headings).</summary>
+    /// <summary>Heading anchor (same scheme Zola uses for the generated headings):
+    /// lowercase, runs of non-alphanumerics collapse to a single dash.</summary>
     private static string Anchor(string s)
     {
         var sb = new StringBuilder();
         foreach (var c in s.ToLowerInvariant())
-            sb.Append(char.IsLetterOrDigit(c) ? c : '-');
-        var t = sb.ToString().Trim('-');
-        return t.Replace("--", "-");
+        {
+            if (char.IsLetterOrDigit(c))
+            {
+                sb.Append(c);
+            }
+            else if (sb.Length > 0 && sb[^1] != '-')
+            {
+                sb.Append('-');
+            }
+        }
+        return sb.ToString().TrimEnd('-');
     }
 
     private static string Escape(string s) => s.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");

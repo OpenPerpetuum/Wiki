@@ -26,4 +26,46 @@ description: "Modules / Enhancements, tier 4"
 | cpu_usage | 53 |
 | powergrid_usage | 25 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Self Destruct Module Pr"]:::current
+    b["Cryoperine ×250"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×200"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×400"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×200"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Named2 Self Destruct Module ×1"]:::comp
+    f --> a
+    click f "/content/items/named2-self-destruct-module/" "Named2 Self Destruct Module"
+    g["Functional common fragment ×120"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×60"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Perfect common fragment ×180"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    j["Titanium ×200"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    k["Briochit ×200"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

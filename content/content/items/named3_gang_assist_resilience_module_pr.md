@@ -29,4 +29,37 @@ description: "Modules / Enhancements, tier 4"
 | effect_enhancer_aura_radius_modifier | 1.2 |
 | powergrid_usage | 38 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Gang Assist Resilience Module Pr"]:::current
+    b["Named2 Gang Assist Resilience Module ×1"]:::comp
+    b --> a
+    click b "/content/items/named2-gang-assist-resilience-module/" "Named2 Gang Assist Resilience Module"
+    c["Functional pelistal fragment ×15"]:::comp
+    c --> a
+    click c "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    d["Damaged pelistal fragment ×7"]:::comp
+    d --> a
+    click d "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    e["Perfect pelistal fragment ×22"]:::comp
+    e --> a
+    click e "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    f["Functional thelodica fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    g["Damaged thelodica fragment ×7"]:::comp
+    g --> a
+    click g "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    h["Perfect thelodica fragment ×22"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

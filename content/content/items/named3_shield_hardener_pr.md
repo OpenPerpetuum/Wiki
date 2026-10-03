@@ -25,4 +25,52 @@ description: "Modules / Shield, tier 4"
 | powergrid_usage | 22 |
 | shield_absorbtion_modifier | 1.3 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Guardian shield hardener prototype"]:::current
+    b["Alligior ×300"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×400"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×300"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Patronus shield hardener ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-shield-hardener/" "Patronus shield hardener"
+    f["Functional common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×7"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×22"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Functional pelistal fragment ×15"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    j["Damaged pelistal fragment ×7"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    k["Perfect pelistal fragment ×22"]:::comp
+    k --> a
+    click k "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    l["Briochit ×100"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    m["Vitricyl ×400"]:::comp
+    m --> a
+    click m "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

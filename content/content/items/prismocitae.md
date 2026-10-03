@@ -20,7 +20,7 @@ description: "Materials"
 _No stats — this item carries no aggregate values._
 
 <!-- production:generated -->
-## Production
+## Used in production
 
 **Component of 10 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
 

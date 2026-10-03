@@ -29,4 +29,40 @@ description: "Modules / Enhancements, tier 3"
 | effect_enhancer_aura_radius_modifier | 1.2 |
 | powergrid_usage | 34 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["EE-D220 industrial NEXUS module prototype"]:::current
+    b["Alligior ×50"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×250"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×250"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Thobys industrial NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-gang-assist-industry-module/" "Thobys industrial NEXUS module"
+    f["Plasteosine ×50"]:::comp
+    f --> a
+    click f "/content/items/plasteosine/" "Plasteosine"
+    g["Functional common fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×20"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Titanium ×50"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

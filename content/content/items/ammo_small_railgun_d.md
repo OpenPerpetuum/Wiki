@@ -24,4 +24,22 @@ description: "Ammo / Cannon"
 | damage_kinetic | 24 |
 | optimal_range_modifier | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 2 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Small compositecore slug"]:::current
+    b["Polynitrocol ×100"]:::comp
+    b --> a
+    click b "/content/items/polynitrocol/" "Polynitrocol"
+    c["Titanium ×25"]:::comp
+    c --> a
+    click c "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

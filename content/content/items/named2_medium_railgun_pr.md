@@ -31,4 +31,40 @@ description: "Modules / Weapons, tier 3"
 | optimal_range | 16.5 |
 | powergrid_usage | 157 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Nuimtec-Midion AMS medium Gauss gun prototype"]:::current
+    b["Hydrobenol ×100"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Iskio-Magnetor medium Gauss gun ×1"]:::comp
+    c --> a
+    click c "/content/items/named1-medium-railgun/" "Iskio-Magnetor medium Gauss gun"
+    d["Polynitrocol ×100"]:::comp
+    d --> a
+    click d "/content/items/polynitrocol/" "Polynitrocol"
+    e["Functional common fragment ×20"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Functional nuimqol fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    h["Damaged nuimqol fragment ×20"]:::comp
+    h --> a
+    click h "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    i["Titanium ×100"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

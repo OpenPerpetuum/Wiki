@@ -27,4 +27,43 @@ description: "Modules / Repair, tier 4"
 | cycle_time | 12k |
 | powergrid_usage | 26 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Microforge Aestolar small armor repairer prototype"]:::current
+    b["Alligior ×200"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×50"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×50"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Quissot's small armor repairer ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-small-armor-repairer/" "Quissot's small armor repairer"
+    f["Functional common fragment ×30"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×45"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Statichnol ×200"]:::comp
+    i --> a
+    click i "/content/items/statichnol/" "Statichnol"
+    j["Briochit ×100"]:::comp
+    j --> a
+    click j "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -19,4 +19,19 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Produced from 1 component** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Opacit"]:::current
+    b["Stermonit ×100"]:::comp
+    b --> a
+    click b "/content/ores/stermonit/" "Stermonit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -32,6 +32,37 @@ description: "Modules / Shield, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 7 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Parsvaal-IP small shield generator"]:::current
+    b["Cryoperine ×100"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Isopropentol ×200"]:::comp
+    c --> a
+    click c "/content/items/isopropentol/" "Isopropentol"
+    d["Plasteosine ×200"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Damaged common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Standard small shield generator ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-small-shield-generator/" "Standard small shield generator"
+    g["Titanium ×100"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Vitricyl ×100"]:::comp
+    h --> a
+    click h "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 4 items** — everything that uses it in production:
 
 ```mermaid

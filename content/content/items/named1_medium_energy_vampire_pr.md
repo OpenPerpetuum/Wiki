@@ -30,4 +30,34 @@ description: "Modules / Shield, tier 2"
 | optimal_range | 25 |
 | powergrid_usage | 157 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Portio II. medium energy drainer prototype"]:::current
+    b["Cryoperine ×400"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×200"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Damaged common fragment ×30"]:::comp
+    d --> a
+    click d "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    e["Damaged pelistal fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    f["Standard medium energy drainer ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-medium-energy-vampire/" "Standard medium energy drainer"
+    g["Titanium ×200"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -22,6 +22,25 @@ _No stats — this item carries no aggregate values._
 <!-- production:generated -->
 ## Production
 
+**Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Bochilum"]:::current
+    b["HDT ×100"]:::comp
+    b --> a
+    click b "/content/items/crude/" "HDT"
+    c["Epriton ×25"]:::comp
+    c --> a
+    click c "/content/items/epriton/" "Epriton"
+    d["Gammaterial ×50"]:::comp
+    d --> a
+    click d "/content/ores/gammaterial/" "Gammaterial"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 61 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
 
 ```mermaid

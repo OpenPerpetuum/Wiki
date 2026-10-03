@@ -33,6 +33,37 @@ description: "Modules / Weapons, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Thelotec-Etequitor heavy LCL laser"]:::current
+    b["Axicoline ×150"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Polynucleit ×150"]:::comp
+    c --> a
+    click c "/content/items/polynucleit/" "Polynucleit"
+    d["Damaged common fragment ×45"]:::comp
+    d --> a
+    click d "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    e["Damaged thelodica fragment ×45"]:::comp
+    e --> a
+    click e "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    f["Specimen Sap Item Flux ×10"]:::comp
+    f --> a
+    click f "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    g["Standard heavy LCL laser ×1"]:::comp
+    g --> a
+    click g "/content/items/standard-large-laser/" "Standard heavy LCL laser"
+    h["Titanium ×150"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

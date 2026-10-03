@@ -20,33 +20,33 @@ description: "Materials"
 _No stats — this item carries no aggregate values._
 
 <!-- production:generated -->
-## Production
+## Used in production
 
 **Component of 14 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
 
 ```mermaid
 graph LR
     a["Niani heavy mech CPU cortex"]:::current
-    b["Gropho Chassis mk2"]:::prod
+    b["Gropho Mk2 chassis"]:::prod
     a --> b
-    c["Gropho mk2 Bot"]:::prod
+    c["Gropho MK2 Bot"]:::prod
     a --> c
-    click c "/content/robots/" "Gropho mk2 Bot"
-    d["Lithus Chassis mk2"]:::prod
+    click c "/content/robots/" "Gropho MK2 Bot"
+    d["Lithus Mk2 chassis"]:::prod
     a --> d
-    e["Lithus mk2 Bot"]:::prod
+    e["Lithus MK2 Bot"]:::prod
     a --> e
-    click e "/content/robots/" "Lithus mk2 Bot"
-    f["Mesmer Chassis mk2"]:::prod
+    click e "/content/robots/" "Lithus MK2 Bot"
+    f["Mesmer Mk2 chassis"]:::prod
     a --> f
-    g["Mesmer mk2 Bot"]:::prod
+    g["Mesmer MK2 Bot"]:::prod
     a --> g
-    click g "/content/robots/" "Mesmer mk2 Bot"
-    h["Riveler Chassis mk2"]:::prod
+    click g "/content/robots/" "Mesmer MK2 Bot"
+    h["Riveler Mk2 chassis"]:::prod
     a --> h
-    i["Riveler mk2 Bot"]:::prod
+    i["Riveler MK2 Bot"]:::prod
     a --> i
-    click i "/content/robots/" "Riveler mk2 Bot"
+    click i "/content/robots/" "Riveler MK2 Bot"
     j["+6 more"]:::more
     a --> j
     click j "/content/recipes/" "All recipes"

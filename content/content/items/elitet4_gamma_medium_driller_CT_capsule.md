@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Ovostec-Edger medium miner module ×1, Material Boss Gamma Pelistal ×134, Material Boss Gamma Nuimqol ×134, Material Boss Gamma Thelodica ×134 |
+| Production cost | Material Boss Gamma Nuimqol ×134, Material Boss Gamma Pelistal ×134, Material Boss Gamma Thelodica ×134, Ovostec-Edger medium miner module ×1 |
 | Output | [Elitet4 Gamma Medium Driller](/content/items/elitet4-gamma-medium-driller/) |
 
 ```mermaid

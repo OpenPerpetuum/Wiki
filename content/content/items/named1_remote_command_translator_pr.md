@@ -34,4 +34,34 @@ description: "Modules / Remote control, tier 2"
 | remote_control_lifetime_modifier | 60k |
 | remote_control_operational_range_modifier | 10 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named1 Remote Command Translator Pr"]:::current
+    b["Cryoperine ×250"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×200"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×200"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Damaged common fragment ×120"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Standard Remote Command Translator ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-remote-command-translator/" "Standard Remote Command Translator"
+    g["Titanium ×200"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | R4S-S evasive module ×1, Material Boss Z71 ×300 |
+| Production cost | Material Boss Z71 ×300, R4S-S evasive module ×1 |
 | Output | [Elitet2 71 Maneuvering Upgrade](/content/items/elitet2-71-maneuvering-upgrade/) |
 
 ```mermaid

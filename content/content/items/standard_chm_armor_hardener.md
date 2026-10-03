@@ -31,6 +31,25 @@ description: "Modules / Armor, tier 1"
 <!-- production:generated -->
 ## Production
 
+**Produced from 3 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Standard chemical armor"]:::current
+    b["Cryoperine ×100"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Plasteosine ×250"]:::comp
+    c --> a
+    click c "/content/items/plasteosine/" "Plasteosine"
+    d["Titanium ×100"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

@@ -33,6 +33,43 @@ description: "Modules / Weapons, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 9 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named2 Raven Cannon"]:::current
+    b["Cryoperine ×100"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Biotichrin ×250"]:::comp
+    c --> a
+    click c "/content/items/biotichrin/" "Biotichrin"
+    d["Espitium ×100"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×100"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Named1 Raven Cannon ×1"]:::comp
+    f --> a
+    click f "/content/items/named1-raven-cannon/" "Named1 Raven Cannon"
+    g["Functional common fragment ×60"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×60"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Specimen Sap Item Flux ×25"]:::comp
+    i --> a
+    click i "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    j["Titanium ×100"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

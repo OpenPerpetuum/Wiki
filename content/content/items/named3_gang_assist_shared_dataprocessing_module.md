@@ -29,4 +29,43 @@ description: "Modules / Enhancements, tier 4"
 | effect_locking_time_modifier | 0.925 |
 | powergrid_usage | 40 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["JPS-Greeneye lock booster NEXUS module"]:::current
+    b["Espitium ×500"]:::comp
+    b --> a
+    click b "/content/items/espitium/" "Espitium"
+    c["Hydrobenol ×100"]:::comp
+    c --> a
+    click c "/content/items/hydrobenol/" "Hydrobenol"
+    d["Tersung lock booster NEXUS module ×1"]:::comp
+    d --> a
+    click d "/content/items/named2-gang-assist-shared-dataprocessing-module/" "Tersung lock booster NEXUS module"
+    e["Phlobotil ×100"]:::comp
+    e --> a
+    click e "/content/items/phlobotil/" "Phlobotil"
+    f["Functional common fragment ×30"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×45"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Briochit ×100"]:::comp
+    i --> a
+    click i "/content/items/unimetal/" "Briochit"
+    j["Vitricyl ×500"]:::comp
+    j --> a
+    click j "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

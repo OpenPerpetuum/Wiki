@@ -34,6 +34,40 @@ description: "Modules / Weapons, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 8 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Kauska Heatpin I. medium LCL laser"]:::current
+    b["Hydrobenol ×100"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Thelotec-Grazier medium LCL laser ×1"]:::comp
+    c --> a
+    click c "/content/items/named1-medium-laser/" "Thelotec-Grazier medium LCL laser"
+    d["Polynucleit ×100"]:::comp
+    d --> a
+    click d "/content/items/polynucleit/" "Polynucleit"
+    e["Functional common fragment ×20"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Functional thelodica fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    h["Damaged thelodica fragment ×20"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    i["Titanium ×100"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

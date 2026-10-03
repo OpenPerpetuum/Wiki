@@ -26,4 +26,40 @@ description: "Modules / Enhancements, tier 4"
 | cycle_time | 17k |
 | powergrid_usage | 57 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Cerepter I. small energy injector prototype"]:::current
+    b["Cryoperine ×100"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Joffret-Refiller small energy injector ×1"]:::comp
+    d --> a
+    click d "/content/items/named2-small-core-booster/" "Joffret-Refiller small energy injector"
+    e["Functional common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×45"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Titanium ×100"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Briochit ×100"]:::comp
+    i --> a
+    click i "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

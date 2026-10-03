@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Diathel-Subperis firearm tuning ×1, Material Boss Z72 ×300 |
+| Production cost | Material Boss Z72 ×300, Diathel-Subperis firearm tuning ×1 |
 | Output | [Elitet2 72 Damage Mod Projectile](/content/items/elitet2-72-damage-mod-projectile/) |
 
 ```mermaid

@@ -30,4 +30,49 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 42 |
 | powergrid_usage | 342 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 11 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Raven Cannon Pr"]:::current
+    b["Cryoperine ×200"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×200"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Biotichrin ×500"]:::comp
+    d --> a
+    click d "/content/items/biotichrin/" "Biotichrin"
+    e["Espitium ×120"]:::comp
+    e --> a
+    click e "/content/items/espitium/" "Espitium"
+    f["Hydrobenol ×200"]:::comp
+    f --> a
+    click f "/content/items/hydrobenol/" "Hydrobenol"
+    g["Named2 Raven Cannon ×1"]:::comp
+    g --> a
+    click g "/content/items/named2-raven-cannon/" "Named2 Raven Cannon"
+    h["Functional common fragment ×90"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    i["Damaged common fragment ×30"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    j["Perfect common fragment ×120"]:::comp
+    j --> a
+    click j "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    k["Specimen Sap Item Flux ×50"]:::comp
+    k --> a
+    click k "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    l["Briochit ×300"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

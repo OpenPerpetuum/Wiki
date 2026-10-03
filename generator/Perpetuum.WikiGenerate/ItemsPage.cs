@@ -49,7 +49,12 @@ public static class ItemsPage
             .ToDictionary(r => r.Int("definition"), r => r.Int("lvl"));
         var components = db.Query("SELECT definition, componentdefinition, componentamount FROM components")
             .GroupBy(r => r.Int("definition"))
-            .ToDictionary(g => g.Key, g => g.Select(r => (Comp: r.Int("componentdefinition"), Amt: r.Int("componentamount"))).ToList());
+            // Components in definition-name order (matches the Python tool
+            // and the old recipe table).
+            .ToDictionary(g => g.Key, g => g
+                .OrderBy(r => defs.TryGetValue(r.Int("componentdefinition"), out var dr) ? dr.Name : "", StringComparer.Ordinal)
+                .Select(r => (Comp: r.Int("componentdefinition"), Amt: r.Int("componentamount")))
+                .ToList());
         // Reverse: which products take each component (for the "Production" section
         // — what can be built with this item).
         var usedIn = new Dictionary<int, List<int>>();
@@ -94,9 +99,13 @@ public static class ItemsPage
             var ct = defsByName.TryGetValue(d.Name + "_CT_capsule", out var ctRow) && ctRow.Enabled && !ctRow.Hidden
                 ? ctRow
                 : null;
+            // The production recipe of this item (components -> this item), when it
+            // is assembled from other items.
+            var parts = components.TryGetValue(d.Definition, out var recipe) ? recipe : null;
             pages.Add((ItemPath(d.Name), ItemPage(d, ShowName(d), cs, stats, production, ct,
                 whereToBuy.TryGetValue(d.Definition, out var vendors) ? vendors : null,
-                usedIn.TryGetValue(d.Definition, out var users) ? users : null, defs)));
+                usedIn.TryGetValue(d.Definition, out var users) ? users : null, defs,
+                parts, research.TryGetValue(d.Definition, out var rl) ? rl : 0, dupes)));
             if (!byCat.TryGetValue(cs.Cat, out var list)) byCat[cs.Cat] = list = new List<(DefRow, (string, string))>();
             list.Add((d, cs));
         }
@@ -268,7 +277,8 @@ public static class ItemsPage
     private static string ItemPage(DefRow d, string showName, (string Cat, string Sub) cs, List<string> stats,
         (int Def, string Name, string Url, int? Research, string Cost)? production, DefRow? ct,
         List<(ShopPage.Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit)>? vendors,
-        List<int>? users, Dictionary<int, DefRow> defs)
+        List<int>? users, Dictionary<int, DefRow> defs,
+        List<(int Comp, int Amt)>? parts, int researchLvl, HashSet<string> dupes)
     {
         var tier = Md.Tier(d.TierType, d.TierLevel);
         var category = cs.Sub == "General" || cs.Sub == cs.Cat ? cs.Cat : $"{cs.Cat} / {cs.Sub}";
@@ -340,14 +350,58 @@ public static class ItemsPage
             var trimmed = ShopPage.TrimColumns(header, cells);
             Md.WriteTable(sb, trimmed.Header, trimmed.Cells);
         }
+        var hasProdSection = parts is { Count: > 0 }
+                             || (production is not { } && users is { Count: > 0 });
+        if (hasProdSection)
+        {
+            // Not a CT-capsule page (those already carry a payload "Production"
+            // table). The marker keeps the Python post-processor
+            // (tools/gen_production_pages.py) idempotent over this page.
+            // Format matches the tool's item_section() exactly.
+            sb.Append("\n<!-- production:generated -->\n");
+        }
+        if (parts is { Count: > 0 })
+        {
+            sb.Append("## Production\n\n");
+            sb.Append(ProductionRecipeSection(showName, parts, defs, dupes, researchLvl));
+        }
         if (production is not { } && users is { Count: > 0 } u)
         {
-            // Not a CT-capsule page (those already carry a payload "Production" table).
-            sb.Append("\n## Production\n\n");
-            sb.Append(ProductionSection(showName, u, defs));
+            sb.Append((parts is { Count: > 0 } ? "\n" : "") + "## Used in production\n\n");
+            sb.Append(ProductionSection(showName, u, defs, dupes));
         }
-        sb.Append("\n[All items](/content/items/)\n");
+        sb.Append(hasProdSection ? "\n\n[All items](/content/items/)\n" : "\n[All items](/content/items/)\n");
         return sb.ToString();
+    }
+
+    /// <summary>
+    /// "How this item is produced": a mermaid tree with the components on the
+    /// left (display name + required amount, linked when they have a page) and
+    /// this item on the right in green. Mirrors the recipes page cards — keep
+    /// both in sync.
+    /// </summary>
+    private static string ProductionRecipeSection(string selfDisplay, List<(int Comp, int Amt)> parts, Dictionary<int, DefRow> defs, HashSet<string> dupes, int researchLvl)
+    {
+        var intro = $"**Produced from {Num(parts.Count)} component{(parts.Count == 1 ? "" : "s")}" +
+                    (researchLvl > 0 ? $", research level {researchLvl}" : "") +
+                    "** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):\n\n";
+        var lines = new List<string> { "```mermaid", "graph LR" };
+        lines.Add($"    a[\"{MermaidLabel(selfDisplay)}\"]:::current");
+        for (var i = 0; i < parts.Count; i++)
+        {
+            var (comp, amt) = parts[i];
+            var letter = ((char)('b' + i)).ToString();
+            var (name, url) = TargetLabel(comp, defs, dupes);
+            var label = $"{MermaidLabel(name)} ×{Num(amt)}";
+            lines.Add($"    {letter}[\"{label}\"]:::comp");
+            lines.Add($"    {letter} --> a");
+            if (url is not null)
+                lines.Add($"    click {letter} \"{url}\" \"{MermaidLabel(name)}\"");
+        }
+        lines.Add("    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff");
+        lines.Add("    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff");
+        lines.Add("```");
+        return intro + string.Join("\n", lines);
     }
 
     private const int MaxProducts = 8;
@@ -358,7 +412,7 @@ public static class ItemsPage
     /// materials point at the recipes page for the rest). Mirrors the Python
     /// tool tools/gen_production_pages.py — keep in sync.
     /// </summary>
-    private static string ProductionSection(string selfDisplay, List<int> users, Dictionary<int, DefRow> defs)
+    private static string ProductionSection(string selfDisplay, List<int> users, Dictionary<int, DefRow> defs, HashSet<string> dupes)
     {
         var intro = users.Count > MaxProducts
             ? $"**Component of {Num(users.Count)} items** — a sample of what can be " +
@@ -366,8 +420,17 @@ public static class ItemsPage
             : $"**Component of {Num(users.Count)} items** — everything that uses it in production:\n\n";
         // Stable order; the capped sample prefers products with their own page
         // over internal definitions (robot parts, bot fits) without one.
-        var withPage = users.Where(u => TargetLabel(u, defs).Url is not null).OrderBy(u => u).ToList();
-        var rest = users.Where(u => TargetLabel(u, defs).Url is null).OrderBy(u => u).ToList();
+        // Definition-name order (matches the Python tool). Products with an
+        // item or ore page come first; bots (overview link only) and internal
+        // definitions trail.
+        static string DefName(int u, Dictionary<int, DefRow> d) => d.TryGetValue(u, out var r) ? r.Name : u.ToString();
+        static bool InCatalog(int u, Dictionary<int, DefRow> d)
+            => d.TryGetValue(u, out var r) && r.Enabled && !r.Hidden
+               && (IsItem(r) || (r.CatFlags & Flags.CfOre) == Flags.CfOre);
+        var withPage = users.Where(u => InCatalog(u, defs))
+                            .OrderBy(u => DefName(u, defs), StringComparer.Ordinal).ToList();
+        var rest = users.Where(u => !InCatalog(u, defs))
+                        .OrderBy(u => DefName(u, defs), StringComparer.Ordinal).ToList();
         var all = withPage.Concat(rest).ToList();
         var shown = all.Take(MaxProducts).ToList();
         var extra = all.Count - shown.Count;
@@ -376,7 +439,7 @@ public static class ItemsPage
         for (var i = 0; i < shown.Count; i++)
         {
             var letter = ((char)('b' + i)).ToString();
-            var (name, url) = TargetLabel(shown[i], defs);
+            var (name, url) = TargetLabel(shown[i], defs, dupes);
             lines.Add($"    {letter}[\"{MermaidLabel(name)}\"]:::prod");
             lines.Add($"    a --> {letter}");
             if (url is not null)
@@ -397,16 +460,28 @@ public static class ItemsPage
     }
 
     /// <summary>Display name + page URL of a product definition (item/ore page, else no link).</summary>
-    private static (string Name, string? Url) TargetLabel(int def, Dictionary<int, DefRow> defs)
+    private static (string Name, string? Url) TargetLabel(int def, Dictionary<int, DefRow> defs, HashSet<string> dupes)
     {
         if (!defs.TryGetValue(def, out var d)) return (def.ToString(), null);
-        if (d.Name.EndsWith("_bot")) return (Md.DisplayName(d.Name), null);
-        if (IsItem(d)) return (Md.DisplayName(d.Name), "/content/items/" + Slug(d.Name) + "/");
-        if ((d.CatFlags & Flags.CfOre) == Flags.CfOre) return (Md.DisplayName(d.Name), "/content/ores/" + Slug(d.Name) + "/");
+        // Only visible catalog entries get a page — linking a disabled or
+        // hidden definition would 404.
+        var visible = d.Enabled && !d.Hidden;
+        // Same display-name rule as the pages themselves (shared client
+        // strings fall back to the derived name).
+        static string PageName(DefRow d, HashSet<string> dupes)
+            => dupes.Contains(Md.DisplayName(d.Name)) ? Md.DisplayName(d.Name, true) : Md.DisplayName(d.Name);
+        if (d.Name.EndsWith("_bot"))
+            return (Md.DisplayName(d.Name, forceDerived: true) + " Bot", "/content/robots/");
+        if (visible && IsItem(d)) return (PageName(d, dupes), "/content/items/" + Slug(d.Name) + "/");
+        // Ore pages are titled from the minerals-table name (no def_ prefix) —
+        // match that so the label agrees with the page title.
+        if (visible && (d.CatFlags & Flags.CfOre) == Flags.CfOre)
+            return (Md.DisplayName(d.Name.StartsWith("def_", StringComparison.Ordinal) ? d.Name["def_".Length..] : d.Name),
+                    "/content/ores/" + Slug(d.Name) + "/");
         return (Md.DisplayName(d.Name), null);
     }
 
-    private static string MermaidLabel(string s) => s.Replace('\"', '\'').Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");
+    private static string MermaidLabel(string s) => s.Replace("\\", "\\\\").Replace('\"', '\'').Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");
     private static string Num(int n) => n >= 1_000_000 ? $"{n / 1_000_000.0:F1}M" : n >= 1_000 ? $"{n / 1_000.0:F1}k" : n.ToString();
 
     /// <summary>Two-node transport diagram: the current page's item (green) points at the

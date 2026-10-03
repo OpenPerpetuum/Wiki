@@ -25,4 +25,46 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 85 |
 | reactor_radiation_modifier | 0.65 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["GRIP-500p reactor sealing"]:::current
+    b["Alligior ×250"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×150"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×150"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["GRIP-250 reactor sealing ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-reactor-sealing/" "GRIP-250 reactor sealing"
+    f["Plasteosine ×250"]:::comp
+    f --> a
+    click f "/content/items/plasteosine/" "Plasteosine"
+    g["Functional common fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×15"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Perfect common fragment ×45"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    j["Titanium ×100"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    k["Briochit ×100"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

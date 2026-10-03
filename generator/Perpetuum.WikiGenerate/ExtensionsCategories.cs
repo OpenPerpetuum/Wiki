@@ -3,10 +3,13 @@ namespace Perpetuum.WikiGenerate;
 /// <summary>
 /// Main-categories overview SVG (static/extensions-categories.svg) for the
 /// extensions page: one box per extension category (extension count, entry
-/// points without prerequisites, rank range), three columns by starting
-/// rank, and an arrow for every cross-category prerequisite (which
-/// categories open up which, without the full detail tree). Mirrors the
-/// Python tool tools/gen_extension_categories.py — keep the two in sync.
+/// points without prerequisites, rank range), the columns ordered left to
+/// right by the starting rank (the progression reads left to right), and an
+/// arrow for every cross-category prerequisite (which categories open up
+/// which, without the full detail tree). The spark-extension category sits
+/// outside this diagram (no prerequisites of its own) — it has its own
+/// diagram on the sparks page (SparksTree). Mirrors the Python tool
+/// tools/gen_extension_categories.py — keep the two in sync.
 /// </summary>
 public static class ExtensionsCategories
 {
@@ -35,8 +38,12 @@ public static class ExtensionsCategories
         var cat = new Dictionary<int, (int Count, int Roots, int MinR, int MaxR)>();
         foreach (var r in exts)
         {
-            var d = cat.TryGetValue(r.Int("category"), out var v) ? v : (0, 0, 99, 0);
-            cat[r.Int("category")] = (d.Count + 1, d.Roots, Math.Min(d.MinR, r.Int("rank")), Math.Max(d.MaxR, r.Int("rank")));
+            var c = r.Int("category");
+            var rank = r.Int("rank");
+            if (!cat.TryGetValue(c, out var d))
+                cat[c] = (1, 0, rank, rank);
+            else
+                cat[c] = (d.Count + 1, d.Roots, Math.Min(d.MinR, rank), Math.Max(d.MaxR, rank));
         }
         foreach (var r in exts)
         {
@@ -60,15 +67,20 @@ public static class ExtensionsCategories
             list.Add((id2name[fromId], id2name.GetValueOrDefault(toId, toId.ToString()), p.Int("requiredlevel")));
         }
 
-        // Columns by starting rank: 1 -> foundation, 2..9 -> advanced, 10 -> spark.
-        var col0 = cats.Keys.Where(c => cat[c].MinR <= 1).OrderBy(c => c).ToList();
-        var col1 = cats.Keys.Where(c => cat[c].MinR is >= 2 and < 10).OrderBy(c => c).ToList();
-        var col2 = cats.Keys.Where(c => cat[c].MinR >= 10).OrderBy(c => c).ToList();
+        // The spark category has its own diagram (sparks page): excluded here.
+        var sparkCats = cats.Where(kv => kv.Value.StartsWith("extcat_spark", StringComparison.Ordinal)).Select(kv => kv.Key).ToHashSet();
+        // Categories with no active extensions (retired ids) have no stats: skip.
+        var laid = cats.Keys.Where(c => cat.ContainsKey(c) && !sparkCats.Contains(c)).ToList();
+        // Columns ordered left to right by the starting rank: the progression
+        // (rank 1 skills -> rank 2+ -> rank 4+ skills) reads left to right.
+        var col0 = laid.Where(c => cat[c].MinR <= 1).OrderBy(c => cat[c].MinR).ThenBy(c => cats[c], StringComparer.Ordinal).ToList();
+        var col1 = laid.Where(c => cat[c].MinR is >= 2 and <= 3).OrderBy(c => cat[c].MinR).ThenBy(c => cats[c], StringComparer.Ordinal).ToList();
+        var col2 = laid.Where(c => cat[c].MinR is >= 4 and < 10).OrderBy(c => cat[c].MinR).ThenBy(c => cats[c], StringComparer.Ordinal).ToList();
         var cols = new[] { col0, col1, col2 };
-        var colTitles = new[] { "Starting at rank 1", "Building on the core skills", "Spark extensions" };
+        var colTitles = new[] { "Starting at rank 1", "Building on rank 2", "Building on rank 4+" };
 
         const int BW = 250, BH = 74, GX = 70, GY = 26, MX = 24, MY = 46;
-        var ncol = cols.Max(c => c.Count);
+        var ncol = Math.Max(1, cols.Max(c => c.Count));
         var W = MX * 2 + 3 * BW + 2 * GX;
         var H = MY * 2 + ncol * BH + (ncol - 1) * GY;
         var pos = new Dictionary<int, (int X, int Y)>();
@@ -80,15 +92,17 @@ public static class ExtensionsCategories
                 pos[cols[ci][ri]] = (MX + ci * (BW + GX), y0 + ri * (BH + GY));
         }
 
+        // Color assignment by display name over the categories that actually
+        // have active extensions (matches the Python tool).
         var color = new Dictionary<int, string>();
         var pi = 0;
-        foreach (var c in cats.Keys.OrderBy(c => c))
+        foreach (var c in cat.Keys.OrderBy(k => Md.DisplayName(cats[k]), StringComparer.Ordinal))
             color[c] = Palette[pi++ % Palette.Length];
 
         var sb = new StringBuilder();
         sb.Append($"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 {W} {H}\" width=\"1280\" " +
                   $"height=\"{(int)(1280.0 * H / W)}\" role=\"img\" " +
-                  $"aria-label=\"Extension categories: {cats.Count} categories with cross-category prerequisite edges\">\n");
+                  $"aria-label=\"Extension categories: {cat.Count} categories with cross-category prerequisite edges\">\n");
         sb.Append($"  <rect x=\"0\" y=\"0\" width=\"{W}\" height=\"{H}\" fill=\"#10151f\" stroke=\"#39445a\" stroke-width=\"1\"/>\n");
         for (var ci = 0; ci < 3; ci++)
             sb.Append($"  <text x=\"{MX + ci * (BW + GX) + BW / 2}\" y=\"{MY - 16}\" font-size=\"13\" fill=\"#8b93a5\" " +
@@ -97,11 +111,18 @@ public static class ExtensionsCategories
                   "markerHeight=\"7\" orient=\"auto-start-reverse\">" +
                   "<path d=\"M 0 0 L 10 5 L 0 10 z\" fill=\"#8b93a5\"/></marker></defs>\n");
         // Edges (under the boxes): the requiring category points at the required one.
-        foreach (var ((fc, tc), detail) in edges.OrderBy(e => e.Key))
+        foreach (var ((fc, tc), detail) in edges
+            .OrderBy(e => Md.DisplayName(cats[e.Key.From]), StringComparer.Ordinal)
+            .ThenBy(e => Md.DisplayName(cats[e.Key.To]), StringComparer.Ordinal))
         {
-            if (!pos.TryGetValue(fc, out var (fx, fy)) || !pos.TryGetValue(tc, out var (tx, ty)))
+            if (!pos.TryGetValue(fc, out var fp) || !pos.TryGetValue(tc, out var tp))
                 continue;
-            var tip = string.Join("; ", detail.Select(d => $"{d.Ext} requires {d.Req} \u2265{d.Lvl}"));
+            var (fx, fy) = fp;
+            var (tx, ty) = tp;
+            var tip = string.Join("; ", detail
+                .OrderBy(d => Md.DisplayName(d.Req), StringComparer.Ordinal)
+                .ThenBy(d => Md.DisplayName(d.Ext), StringComparer.Ordinal)
+                .Select(d => $"{Md.DisplayName(d.Ext)} requires {Md.DisplayName(d.Req)} \u2265{d.Lvl}"));
             string d;
             double lx, ly;
             if (fx == tx)
@@ -140,13 +161,12 @@ public static class ExtensionsCategories
             sb.Append($"  <text x=\"{lx}\" y=\"{ly}\" font-size=\"11\" fill=\"{color[fc]}\" " +
                       $"text-anchor=\"middle\" font-family=\"sans-serif\">{detail.Count}×</text>\n");
         }
-        // Category boxes.
-        foreach (var c in cats.Keys.OrderBy(k => k))
+        // Category boxes (only the laid-out ones; retired/spark categories have no box).
+        foreach (var c in pos.Keys.OrderBy(k => Md.DisplayName(cats[k]), StringComparer.Ordinal))
         {
             var d = cat[c];
             var (x, y) = pos[c];
-            var raw = cats[c];
-            var label = (raw.StartsWith("extcat_") ? raw["extcat_".Length..] : raw).Replace('_', ' ');
+            var label = Md.DisplayName(cats[c]);
             sb.Append($"  <g><title>{Escape(label)}: {d.Count} extensions, {d.Roots} entry points, " +
                       $"rank {d.MinR}–{d.MaxR}</title>");
             sb.Append($"<rect x=\"{x}\" y=\"{y}\" width=\"{BW}\" height=\"{BH}\" rx=\"8\" fill=\"#1a2233\" " +
@@ -160,7 +180,9 @@ public static class ExtensionsCategories
             sb.Append("</g>\n");
         }
         sb.Append("</svg>\n");
-        return (sb.ToString(), cats.Count, edges.Values.Sum(v => v.Count));
+        // Count the categories that actually have active extensions (the table
+        // also carries retired category ids), sparks included.
+        return (sb.ToString(), cat.Count, edges.Values.Sum(v => v.Count));
     }
 
     private static string Escape(string s)

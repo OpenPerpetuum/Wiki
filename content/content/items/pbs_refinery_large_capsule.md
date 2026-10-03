@@ -30,4 +30,43 @@ description: "Special & other / Miscellaneous, tier 3"
 | signature_radius | 120 |
 | stealth_strength | 50 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Refinery Large Capsule"]:::current
+    b["Alligior ×2.5k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×2.5k"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Coalimin ×5.0k"]:::comp
+    d --> a
+    click d "/content/items/gamma-buildblock/" "Coalimin"
+    e["Bochilum ×2.5k"]:::comp
+    e --> a
+    click e "/content/items/gamma-defblock/" "Bochilum"
+    f["Tiraizin ×2.5k"]:::comp
+    f --> a
+    click f "/content/items/gamma-energyblock/" "Tiraizin"
+    g["Turilium ×2.5k"]:::comp
+    g --> a
+    click g "/content/items/gamma-offenseblock/" "Turilium"
+    h["Hydrobenol ×2.5k"]:::comp
+    h --> a
+    click h "/content/items/hydrobenol/" "Hydrobenol"
+    i["Pbs Refinery Medium Capsule ×1"]:::comp
+    i --> a
+    click i "/content/items/pbs-refinery-medium-capsule/" "Pbs Refinery Medium Capsule"
+    j["Briochit ×5.0k"]:::comp
+    j --> a
+    click j "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

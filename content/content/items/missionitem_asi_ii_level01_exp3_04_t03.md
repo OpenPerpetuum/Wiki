@@ -19,4 +19,22 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Produced from 2 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["TRS-Modulator [Persepolis IV]"]:::current
+    b["Modulator casing [Persepolis IV/1] ×1"]:::comp
+    b --> a
+    click b "/content/items/missionitem-asi-ii-level01-exp3-04-t01/" "Modulator casing [Persepolis IV/1]"
+    c["Modulator emitter [Persepolis IV/2] ×1"]:::comp
+    c --> a
+    click c "/content/items/missionitem-asi-ii-level01-exp3-04-t02/" "Modulator emitter [Persepolis IV/2]"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

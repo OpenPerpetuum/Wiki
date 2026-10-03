@@ -25,4 +25,34 @@ description: "Artifacts, tier 3"
 | powergrid_usage | 19 |
 | sensor_strength | 65 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Niani ECCM"]:::current
+    b["Alligior ×25"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×75"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×75"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Plasteosine ×25"]:::comp
+    e --> a
+    click e "/content/items/plasteosine/" "Plasteosine"
+    f["Titanium ×25"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    g["Briochit ×25"]:::comp
+    g --> a
+    click g "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

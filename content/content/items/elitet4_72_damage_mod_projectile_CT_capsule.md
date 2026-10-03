@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | DVT-800g firearm tuning ×1, Material Boss Z72 ×400 |
+| Production cost | Material Boss Z72 ×400, DVT-800g firearm tuning ×1 |
 | Output | [Elitet4 72 Damage Mod Projectile](/content/items/elitet4-72-damage-mod-projectile/) |
 
 ```mermaid

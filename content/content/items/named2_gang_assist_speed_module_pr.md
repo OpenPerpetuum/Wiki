@@ -29,4 +29,40 @@ description: "Modules / Enhancements, tier 3"
 | effect_speed_max_modifier | 1.05 |
 | powergrid_usage | 34 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Iopis-II velocity NEXUS module prototype"]:::current
+    b["Chollonin ×300"]:::comp
+    b --> a
+    click b "/content/items/chollonin/" "Chollonin"
+    c["Espitium ×300"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Jubatus velocity NEXUS module ×1"]:::comp
+    d --> a
+    click d "/content/items/named1-gang-assist-speed-module/" "Jubatus velocity NEXUS module"
+    e["Functional nuimqol fragment ×10"]:::comp
+    e --> a
+    click e "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    f["Damaged nuimqol fragment ×10"]:::comp
+    f --> a
+    click f "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    g["Functional pelistal fragment ×10"]:::comp
+    g --> a
+    click g "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    h["Damaged pelistal fragment ×10"]:::comp
+    h --> a
+    click h "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    i["Titanium ×50"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

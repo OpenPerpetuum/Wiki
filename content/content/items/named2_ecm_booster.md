@@ -29,6 +29,40 @@ description: "Modules / Enhancements, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 8 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Hodge ECM tuning"]:::current
+    b["Chollonin ×150"]:::comp
+    b --> a
+    click b "/content/items/chollonin/" "Chollonin"
+    c["Espitium ×150"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Distortio ECM tuning ×1"]:::comp
+    d --> a
+    click d "/content/items/named1-ecm-booster/" "Distortio ECM tuning"
+    e["Functional common fragment ×10"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×10"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Functional nuimqol fragment ×10"]:::comp
+    g --> a
+    click g "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    h["Damaged nuimqol fragment ×10"]:::comp
+    h --> a
+    click h "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    i["Titanium ×50"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

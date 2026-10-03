@@ -27,4 +27,34 @@ description: "Modules / Armor, tier 3"
 | powergrid_usage | 13 |
 | signature_radius | 0.35 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Invigor I. light armor plate prototype"]:::current
+    b["Alligior ×175"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Wobost-Titangrip light armor plate ×1"]:::comp
+    c --> a
+    click c "/content/items/named1-small-armor-plate/" "Wobost-Titangrip light armor plate"
+    d["Plasteosine ×175"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Functional common fragment ×20"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Titanium ×250"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

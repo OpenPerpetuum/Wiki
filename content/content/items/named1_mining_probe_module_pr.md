@@ -27,4 +27,28 @@ description: "Modules / Enhancements, tier 2"
 | mining_probe_accuracy | 0.5 |
 | powergrid_usage | 43 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components, research level 2** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ovostec-Chisomel geoscanner prototype"]:::current
+    b["Cryoperine ×350"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Damaged common fragment ×30"]:::comp
+    c --> a
+    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    d["Standard geoscanner ×1"]:::comp
+    d --> a
+    click d "/content/items/standard-mining-probe-module/" "Standard geoscanner"
+    e["Titanium ×50"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

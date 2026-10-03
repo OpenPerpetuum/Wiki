@@ -38,4 +38,37 @@ description: "Special & other / Miscellaneous"
 | resist_kinetic | 45 |
 | resist_thermal | 45 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Syndicate Assault Drone Unit"]:::current
+    b["Axicoline ×1.0k"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Phlobotil ×1.0k"]:::comp
+    d --> a
+    click d "/content/items/phlobotil/" "Phlobotil"
+    e["Polynitrocol ×1.0k"]:::comp
+    e --> a
+    click e "/content/items/polynitrocol/" "Polynitrocol"
+    f["Polynucleit ×1.0k"]:::comp
+    f --> a
+    click f "/content/items/polynucleit/" "Polynucleit"
+    g["Titanium ×1.0k"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Briochit ×50"]:::comp
+    h --> a
+    click h "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

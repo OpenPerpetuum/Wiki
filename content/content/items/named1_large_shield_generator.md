@@ -31,6 +31,40 @@ description: "Modules / Shield, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 8 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["AVA-Spintarge large shield generator"]:::current
+    b["Cryoperine ×300"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Isopropentol ×600"]:::comp
+    c --> a
+    click c "/content/items/isopropentol/" "Isopropentol"
+    d["Plasteosine ×600"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Damaged common fragment ×90"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Specimen Sap Item Flux ×25"]:::comp
+    f --> a
+    click f "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    g["Standard large shield generator ×1"]:::comp
+    g --> a
+    click g "/content/items/standard-large-shield-generator/" "Standard large shield generator"
+    h["Titanium ×300"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Vitricyl ×300"]:::comp
+    i --> a
+    click i "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

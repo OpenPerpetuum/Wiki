@@ -31,4 +31,49 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 24 |
 | powergrid_usage | 437.5 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 11 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Large Laser Pr"]:::current
+    b["Hydrobenol ×300"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Thelotec-Apocalyptor heavy LCL laser ×1"]:::comp
+    c --> a
+    click c "/content/items/named2-large-laser/" "Thelotec-Apocalyptor heavy LCL laser"
+    d["Polynucleit ×300"]:::comp
+    d --> a
+    click d "/content/items/polynucleit/" "Polynucleit"
+    e["Functional common fragment ×45"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×23"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×68"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Functional thelodica fragment ×45"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    i["Damaged thelodica fragment ×23"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    j["Perfect thelodica fragment ×68"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    k["Specimen Sap Item Flux ×50"]:::comp
+    k --> a
+    click k "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    l["Briochit ×300"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

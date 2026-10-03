@@ -27,4 +27,40 @@ description: "Modules / Enhancements, tier 3"
 | powergrid_usage | 3 |
 | speed_max_modifier | 1.2 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Eizbiogh-dfg20 lightweight frame prototype"]:::current
+    b["Alligior ×175"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×25"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×25"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["MR1000-Boogey lightweight frame ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-mass-reductor/" "MR1000-Boogey lightweight frame"
+    f["Plasteosine ×175"]:::comp
+    f --> a
+    click f "/content/items/plasteosine/" "Plasteosine"
+    g["Functional common fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×20"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Titanium ×200"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

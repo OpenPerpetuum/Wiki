@@ -29,4 +29,40 @@ description: "Modules / Enhancements, tier 3"
 | effect_ew_optimal_range_modifier | 1.05 |
 | powergrid_usage | 34 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Hidmuns EW NEXUS module prototype"]:::current
+    b["Cryoperine ×250"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×50"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×250"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×50"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Yzla-1500 EW NEXUS module ×1"]:::comp
+    f --> a
+    click f "/content/items/named1-gang-assist-ewar-range-module/" "Yzla-1500 EW NEXUS module"
+    g["Functional common fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×20"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Titanium ×50"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

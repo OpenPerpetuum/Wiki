@@ -29,4 +29,55 @@ description: "Modules / Enhancements, tier 4"
 | effect_signature_radius_modifier | -0.25 |
 | powergrid_usage | 40 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 13 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["R4S-A evasive NEXUS module"]:::current
+    b["Alligior ×100"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×500"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×500"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Pareduit evasive NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-gang-assist-coordinated-maneuvering-module/" "Pareduit evasive NEXUS module"
+    f["Plasteosine ×100"]:::comp
+    f --> a
+    click f "/content/items/plasteosine/" "Plasteosine"
+    g["Functional nuimqol fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    h["Damaged nuimqol fragment ×7"]:::comp
+    h --> a
+    click h "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    i["Perfect nuimqol fragment ×22"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    j["Functional pelistal fragment ×15"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    k["Damaged pelistal fragment ×7"]:::comp
+    k --> a
+    click k "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    l["Perfect pelistal fragment ×22"]:::comp
+    l --> a
+    click l "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    m["Titanium ×50"]:::comp
+    m --> a
+    click m "/content/items/titanium/" "Titanium"
+    n["Briochit ×50"]:::comp
+    n --> a
+    click n "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

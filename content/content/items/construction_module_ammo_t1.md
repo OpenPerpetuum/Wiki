@@ -25,4 +25,40 @@ description: "Special & other / Miscellaneous, tier 1"
 | construction_charge_amount | 1 |
 | construction_charge_techmax | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Construction Module Ammo T1"]:::current
+    b["Alligior ×25"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×10"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Axicoline ×5"]:::comp
+    d --> a
+    click d "/content/items/axicoline/" "Axicoline"
+    e["Espitium ×10"]:::comp
+    e --> a
+    click e "/content/items/espitium/" "Espitium"
+    f["Hydrobenol ×5"]:::comp
+    f --> a
+    click f "/content/items/hydrobenol/" "Hydrobenol"
+    g["Plasteosine ×10"]:::comp
+    g --> a
+    click g "/content/items/plasteosine/" "Plasteosine"
+    h["Titanium ×25"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Briochit ×25"]:::comp
+    i --> a
+    click i "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

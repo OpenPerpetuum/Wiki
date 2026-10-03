@@ -19,4 +19,25 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Produced from 3 components, research level 2** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["RX-Modulator [Persepolis VII]"]:::current
+    b["Modulator casing [Persepolis VII/1] ×1"]:::comp
+    b --> a
+    click b "/content/items/missionitem-asi-ii-level01-exp3-07-t01/" "Modulator casing [Persepolis VII/1]"
+    c["Modulator emitter [Persepolis VII/2] ×1"]:::comp
+    c --> a
+    click c "/content/items/missionitem-asi-ii-level01-exp3-07-t02/" "Modulator emitter [Persepolis VII/2]"
+    d["Modulator processor [Persepolis VII/3] ×1"]:::comp
+    d --> a
+    click d "/content/items/missionitem-asi-ii-level01-exp3-07-t03/" "Modulator processor [Persepolis VII/3]"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

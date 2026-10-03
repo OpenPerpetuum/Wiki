@@ -31,4 +31,49 @@ description: "Modules / Weapons, tier 3"
 | optimal_range | 45.5 |
 | powergrid_usage | 411 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 11 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named2 Longrange Large Laser Pr"]:::current
+    b["Espitium ×75"]:::comp
+    b --> a
+    click b "/content/items/espitium/" "Espitium"
+    c["Hydrobenol ×150"]:::comp
+    c --> a
+    click c "/content/items/hydrobenol/" "Hydrobenol"
+    d["Named1 Longrange Large Laser ×1"]:::comp
+    d --> a
+    click d "/content/items/named1-longrange-large-laser/" "Named1 Longrange Large Laser"
+    e["Polynucleit ×150"]:::comp
+    e --> a
+    click e "/content/items/polynucleit/" "Polynucleit"
+    f["Prilumium ×75"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Functional common fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×30"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Functional thelodica fragment ×30"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    j["Damaged thelodica fragment ×30"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    k["Specimen Sap Item Flux ×25"]:::comp
+    k --> a
+    click k "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    l["Titanium ×150"]:::comp
+    l --> a
+    click l "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

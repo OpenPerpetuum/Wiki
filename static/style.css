@@ -941,6 +941,46 @@ a:hover > .mission-type-chip { border-color: var(--neon); color: var(--accent); 
 .mission-card-title { font-weight: 600; }
 .mission-card-sub { font-size: 0.88em; color: var(--muted); }
 .mission-card-rewards { display: flex; flex-direction: column; gap: 0.35rem; }
+.ext-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+  margin: 10px 0 26px;
+}
+
+.ext-card {
+  border: 1px solid var(--line, #2a3242);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #121926;
+  font-size: 13px;
+}
+
+.ext-card-name {
+  font-weight: 600;
+  font-size: 13.5px;
+  color: #e8ecf4;
+}
+
+.ext-card-meta {
+  color: var(--muted, #8b93a5);
+  font-size: 12px;
+  margin: 3px 0 7px;
+}
+
+.ext-card-bonus {
+  color: #cdd5e4;
+  font-size: 12.5px;
+  line-height: 1.5;
+  margin: 0 0 7px;
+}
+
+.ext-card-prereq {
+  color: var(--muted, #8b93a5);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .reward-box {
     display: flex; align-items: center; gap: 0.5rem;
     border: 1px solid var(--border); border-radius: 6px;

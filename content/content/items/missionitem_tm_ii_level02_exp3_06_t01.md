@@ -20,7 +20,7 @@ description: "Mission items"
 _No stats — this item carries no aggregate values._
 
 <!-- production:generated -->
-## Production
+## Used in production
 
 **Component of 1 items** — everything that uses it in production:
 

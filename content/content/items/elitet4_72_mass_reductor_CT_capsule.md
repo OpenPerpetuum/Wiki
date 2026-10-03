@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | MRE 3000 lightweight frame ×1, Material Boss Z72 ×400 |
+| Production cost | Material Boss Z72 ×400, MRE 3000 lightweight frame ×1 |
 | Output | [Elitet4 72 Mass Reductor](/content/items/elitet4-72-mass-reductor/) |
 
 ```mermaid

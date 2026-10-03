@@ -49,4 +49,28 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 |---|---|---|---|
 | Daoden outpost | ∞ | 500M | 25k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Elitet4 Gamma Medium Driller"]:::current
+    b["Material Boss Gamma Nuimqol ×134"]:::comp
+    b --> a
+    click b "/content/items/material-boss-gamma-nuimqol/" "Material Boss Gamma Nuimqol"
+    c["Material Boss Gamma Pelistal ×134"]:::comp
+    c --> a
+    click c "/content/items/material-boss-gamma-pelistal/" "Material Boss Gamma Pelistal"
+    d["Material Boss Gamma Thelodica ×134"]:::comp
+    d --> a
+    click d "/content/items/material-boss-gamma-thelodica/" "Material Boss Gamma Thelodica"
+    e["Ovostec-Edger medium miner module ×1"]:::comp
+    e --> a
+    click e "/content/items/named3-medium-driller/" "Ovostec-Edger medium miner module"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

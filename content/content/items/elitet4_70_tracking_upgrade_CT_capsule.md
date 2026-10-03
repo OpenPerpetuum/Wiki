@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | ATCS-gh50 range extender ×1, Material Boss Z70 ×400 |
+| Production cost | Material Boss Z70 ×400, ATCS-gh50 range extender ×1 |
 | Output | [Elitet4 70 Tracking Upgrade](/content/items/elitet4-70-tracking-upgrade/) |
 
 ```mermaid

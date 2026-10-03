@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Vautrell medium armor repairer ×1, Material Boss Z70 ×300 |
+| Production cost | Material Boss Z70 ×300, Vautrell medium armor repairer ×1 |
 | Output | [Elitet2 70 Medium Armor Repairer](/content/items/elitet2-70-medium-armor-repairer/) |
 
 ```mermaid

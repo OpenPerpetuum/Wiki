@@ -29,4 +29,46 @@ description: "Modules / Weapons, tier 4"
 | module_missile_range_modifier | 1.2 |
 | powergrid_usage | 162 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pelistec-TR250 medium missile launcher prototype"]:::current
+    b["Hydrobenol ×200"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Vollert medium missile launcher ×1"]:::comp
+    c --> a
+    click c "/content/items/named2-missile-launcher/" "Vollert medium missile launcher"
+    d["Phlobotil ×200"]:::comp
+    d --> a
+    click d "/content/items/phlobotil/" "Phlobotil"
+    e["Functional common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×45"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Functional pelistal fragment ×30"]:::comp
+    h --> a
+    click h "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    i["Damaged pelistal fragment ×15"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    j["Perfect pelistal fragment ×45"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    k["Briochit ×200"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

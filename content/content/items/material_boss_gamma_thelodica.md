@@ -21,7 +21,7 @@ description: "Materials"
 _No stats — this item carries no aggregate values._
 
 <!-- production:generated -->
-## Production
+## Used in production
 
 **Component of 8 items** — everything that uses it in production:
 

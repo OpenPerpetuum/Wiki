@@ -33,4 +33,25 @@ description: "Special & other / Miscellaneous, tier 3"
 | resist_thermal | 150 |
 | signature_radius | 8.25 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 3 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named2 Pelistal Combat Drone Unit"]:::current
+    b["Espitium ×10"]:::comp
+    b --> a
+    click b "/content/items/espitium/" "Espitium"
+    c["Phlobotil ×3.0k"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Titanium ×1.5k"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

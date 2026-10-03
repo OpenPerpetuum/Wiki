@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Protrim V-II medium harvester ×1, Material Boss Gamma Pelistal ×134, Material Boss Gamma Nuimqol ×134, Material Boss Gamma Thelodica ×134 |
+| Production cost | Material Boss Gamma Nuimqol ×134, Material Boss Gamma Pelistal ×134, Material Boss Gamma Thelodica ×134, Protrim V-II medium harvester ×1 |
 | Output | [Elitet4 Gamma Medium Harvester](/content/items/elitet4-gamma-medium-harvester/) |
 
 ```mermaid

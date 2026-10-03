@@ -30,4 +30,55 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 48 |
 | powergrid_usage | 300 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 13 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Longrange Large Railgun"]:::current
+    b["Chollonin ×150"]:::comp
+    b --> a
+    click b "/content/items/chollonin/" "Chollonin"
+    c["Espitium ×150"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Hydrobenol ×300"]:::comp
+    d --> a
+    click d "/content/items/hydrobenol/" "Hydrobenol"
+    e["Named2 Longrange Large Railgun ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-longrange-large-railgun/" "Named2 Longrange Large Railgun"
+    f["Polynitrocol ×300"]:::comp
+    f --> a
+    click f "/content/items/polynitrocol/" "Polynitrocol"
+    g["Functional common fragment ×45"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×23"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Perfect common fragment ×68"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    j["Functional nuimqol fragment ×45"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    k["Damaged nuimqol fragment ×23"]:::comp
+    k --> a
+    click k "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    l["Perfect nuimqol fragment ×68"]:::comp
+    l --> a
+    click l "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    m["Specimen Sap Item Flux ×50"]:::comp
+    m --> a
+    click m "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    n["Briochit ×300"]:::comp
+    n --> a
+    click n "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

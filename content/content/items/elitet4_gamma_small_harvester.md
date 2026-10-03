@@ -49,4 +49,28 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 |---|---|---|---|
 | Daoden outpost | ∞ | 500M | 25k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Elitet4 Gamma Small Harvester"]:::current
+    b["Material Boss Gamma Nuimqol ×67"]:::comp
+    b --> a
+    click b "/content/items/material-boss-gamma-nuimqol/" "Material Boss Gamma Nuimqol"
+    c["Material Boss Gamma Pelistal ×67"]:::comp
+    c --> a
+    click c "/content/items/material-boss-gamma-pelistal/" "Material Boss Gamma Pelistal"
+    d["Material Boss Gamma Thelodica ×67"]:::comp
+    d --> a
+    click d "/content/items/material-boss-gamma-thelodica/" "Material Boss Gamma Thelodica"
+    e["Protrim FDV-30 small harvester ×1"]:::comp
+    e --> a
+    click e "/content/items/named3-small-harvester/" "Protrim FDV-30 small harvester"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

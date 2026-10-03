@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Parsvaal-IIX medium shield generator ×1, Material Boss Z71 ×300 |
+| Production cost | Material Boss Z71 ×300, Parsvaal-IIX medium shield generator ×1 |
 | Output | [Elitet2 71 Medium Shield Generator](/content/items/elitet2-71-medium-shield-generator/) |
 
 ```mermaid

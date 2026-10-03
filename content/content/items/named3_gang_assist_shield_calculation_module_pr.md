@@ -29,4 +29,52 @@ description: "Modules / Shield, tier 4"
 | effect_shield_absorbtion_modifier | 1.075 |
 | powergrid_usage | 38 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Bomitar II. shield NEXUS module prototype"]:::current
+    b["Alligior ×100"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×500"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×100"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Stasis-Gen shield NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-gang-assist-shield-calculation-module/" "Stasis-Gen shield NEXUS module"
+    f["Functional pelistal fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    g["Damaged pelistal fragment ×7"]:::comp
+    g --> a
+    click g "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    h["Perfect pelistal fragment ×22"]:::comp
+    h --> a
+    click h "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    i["Functional thelodica fragment ×15"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    j["Damaged thelodica fragment ×7"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    k["Perfect thelodica fragment ×22"]:::comp
+    k --> a
+    click k "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    l["Briochit ×100"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    m["Vitricyl ×500"]:::comp
+    m --> a
+    click m "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

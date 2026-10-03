@@ -26,4 +26,34 @@ description: "Special & other / Miscellaneous, tier 4"
 | remote_control_bandwidth_usage | 4 |
 | remote_control_lifetime | 300k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Mining Turret Unit"]:::current
+    b["Axicoline ×1.0k"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Material Boss Gamma Syndicate ×1"]:::comp
+    d --> a
+    click d "/content/items/material-boss-gamma-syndicate/" "Material Boss Gamma Syndicate"
+    e["Specimen Sap Item Flux ×10"]:::comp
+    e --> a
+    click e "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    f["Titanium ×1.0k"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    g["Briochit ×50"]:::comp
+    g --> a
+    click g "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

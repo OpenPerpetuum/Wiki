@@ -25,4 +25,61 @@ description: "Modules / Enhancements, tier 4"
 | cpu_usage | 43 |
 | powergrid_usage | 14 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 15 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Adaptive Alloy"]:::current
+    b["Alligior ×500"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×100"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Chollonin ×50"]:::comp
+    d --> a
+    click d "/content/items/chollonin/" "Chollonin"
+    e["Espitium ×200"]:::comp
+    e --> a
+    click e "/content/items/espitium/" "Espitium"
+    f["Isopropentol ×125"]:::comp
+    f --> a
+    click f "/content/items/isopropentol/" "Isopropentol"
+    g["Metachropin ×125"]:::comp
+    g --> a
+    click g "/content/items/metachropin/" "Metachropin"
+    h["Named2 Adaptive Alloy ×1"]:::comp
+    h --> a
+    click h "/content/items/named2-adaptive-alloy/" "Named2 Adaptive Alloy"
+    i["Plasteosine ×2.5k"]:::comp
+    i --> a
+    click i "/content/items/plasteosine/" "Plasteosine"
+    j["Prilumium ×50"]:::comp
+    j --> a
+    click j "/content/items/prilumium/" "Prilumium"
+    k["Functional common fragment ×30"]:::comp
+    k --> a
+    click k "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    l["Damaged common fragment ×15"]:::comp
+    l --> a
+    click l "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    m["Perfect common fragment ×45"]:::comp
+    m --> a
+    click m "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    n["Statichnol ×125"]:::comp
+    n --> a
+    click n "/content/items/statichnol/" "Statichnol"
+    o["Titanium ×200"]:::comp
+    o --> a
+    click o "/content/items/titanium/" "Titanium"
+    p["Vitricyl ×50"]:::comp
+    p --> a
+    click p "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

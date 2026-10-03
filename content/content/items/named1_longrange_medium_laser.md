@@ -34,6 +34,40 @@ description: "Modules / Weapons, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 8 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Tertzer medium HCL laser"]:::current
+    b["Cryoperine ×50"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×100"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Standard medium HCL laser ×1"]:::comp
+    d --> a
+    click d "/content/items/longrange-standard-medium-laser/" "Standard medium HCL laser"
+    e["Polynucleit ×100"]:::comp
+    e --> a
+    click e "/content/items/polynucleit/" "Polynucleit"
+    f["Prilumium ×50"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Damaged common fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Damaged thelodica fragment ×30"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    i["Titanium ×100"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

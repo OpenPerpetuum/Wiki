@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Parsvaal-IP small shield generator ×1, Material Boss Z71 ×150 |
+| Production cost | Material Boss Z71 ×150, Parsvaal-IP small shield generator ×1 |
 | Output | [Elitet2 71 Small Shield Generator](/content/items/elitet2-71-small-shield-generator/) |
 
 ```mermaid

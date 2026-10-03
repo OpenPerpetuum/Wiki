@@ -30,4 +30,28 @@ description: "Artifacts, tier 3"
 | optimal_range | 30 |
 | powergrid_usage | 9 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Niani remote sensor amplifier"]:::current
+    b["Cryoperine ×200"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×200"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Titanium ×50"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    e["Briochit ×50"]:::comp
+    e --> a
+    click e "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

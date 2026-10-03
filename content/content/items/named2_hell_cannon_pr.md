@@ -30,4 +30,40 @@ description: "Modules / Weapons, tier 3"
 | optimal_range | 16.5 |
 | powergrid_usage | 203.775 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named2 Hell Cannon Pr"]:::current
+    b["Biotichrin ×250"]:::comp
+    b --> a
+    click b "/content/items/biotichrin/" "Biotichrin"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Hydrobenol ×100"]:::comp
+    d --> a
+    click d "/content/items/hydrobenol/" "Hydrobenol"
+    e["Named1 Hell Cannon ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-hell-cannon/" "Named1 Hell Cannon"
+    f["Functional common fragment ×60"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×60"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Specimen Sap Item Flux ×25"]:::comp
+    h --> a
+    click h "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    i["Titanium ×100"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -29,4 +29,31 @@ description: "Modules / Enhancements, tier 2"
 | effect_locking_range_modifier | 1.02 |
 | powergrid_usage | 29 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Gecko D-1500 farlock NEXUS module prototype"]:::current
+    b["Cryoperine ×300"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Prilumium ×300"]:::comp
+    c --> a
+    click c "/content/items/prilumium/" "Prilumium"
+    d["Damaged common fragment ×30"]:::comp
+    d --> a
+    click d "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    e["Standard farlock NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/standard-gang-assist-information-module/" "Standard farlock NEXUS module"
+    f["Titanium ×50"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

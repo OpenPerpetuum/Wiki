@@ -27,4 +27,37 @@ description: "Modules / Repair, tier 2"
 | cycle_time | 15k |
 | powergrid_usage | 17 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["A150 small armor repairer prototype"]:::current
+    b["Cryoperine ×25"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Chollonin ×25"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Plasteosine ×100"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Damaged common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Standard small armor repairer ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-small-armor-repairer/" "Standard small armor repairer"
+    g["Statichnol ×100"]:::comp
+    g --> a
+    click g "/content/items/statichnol/" "Statichnol"
+    h["Titanium ×50"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

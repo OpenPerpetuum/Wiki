@@ -14,15 +14,15 @@ const VISIBLE_LINKS = () =>
 const COLLAPSED = (sel) =>
   [...document.querySelectorAll(sel)].map((g) => g.classList.contains('collapsed'));
 const GROUPS = '.sidenav .nav-group'; // Start, World, Play, Systems, Reference
-const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Item shop, Character, Content, Zones
+const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: Gamma, Research, Character, Item shop, Content, Zones
 
 test('home: groups open, 2nd-level sub-lists closed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
   expect(await page.locator('.nav-quick a').getAttribute('href')).toBe('/');
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true]);
-  // Home + 5 group headers + Start(3) + World(5) + Play(12) + Systems(10) + Reference(7)
-  expect(await page.evaluate(VISIBLE_LINKS)).toBe(43);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true, true]);
+  // Home + 5 group headers + Start(3) + World(6) + Play(12) + Systems(9) + Reference(6)
+  expect(await page.evaluate(VISIBLE_LINKS)).toBe(42);
 });
 
 test('caret buttons collapse and re-open groups', async ({ page, baseURL }) => {
@@ -30,16 +30,16 @@ test('caret buttons collapse and re-open groups', async ({ page, baseURL }) => {
   const carets = page.locator(`${GROUPS} > .nav-group-head .nav-caret`);
   await carets.nth(2).click(); // Play
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, true, false, false]);
-  expect(await page.evaluate(VISIBLE_LINKS)).toBe(43 - 12);
+  expect(await page.evaluate(VISIBLE_LINKS)).toBe(42 - 12);
   await carets.nth(2).click();
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(VISIBLE_LINKS)).toBe(43);
+  expect(await page.evaluate(VISIBLE_LINKS)).toBe(42);
 });
 
 test('World anchors visible by default, Gamma tiers expand on demand', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
-  // Training, Starter islands, Beta, Gamma, Protection levels
-  expect(await page.locator(`${GROUPS} >> nth=1 >> .nav-items > li`).count()).toBe(5);
+  // Lore, Training, Starter islands, Beta, Gamma, Protection levels
+  expect(await page.locator(`${GROUPS} >> nth=1 >> .nav-items > li`).count()).toBe(6);
   const gammaCaret = page.locator('.sidenav .nav-has-sub:has(a[href="/zones/map/#t1"]) > .nav-sub-head .nav-caret');
   expect(await page.locator('.map-sub-deep a:visible').count()).toBe(0);
   await gammaCaret.click();
@@ -51,7 +51,7 @@ test('World anchors visible by default, Gamma tiers expand on demand', async ({ 
 test('feature page: all groups stay open, current page highlighted', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/features/combat/`);
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true]);
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual([true, true, true, true, true, true]);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Combat');
 });
 
@@ -116,7 +116,7 @@ test('gamma anchor hash: Gamma sub-list auto-opens', async ({ page, baseURL }) =
 test('content sub-page: Content tables auto-opens, section highlighted and in view', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/content/ores/crude/`);
   const contentSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/content/"]) > .nav-sub');
-  expect(await contentSub.locator('a:visible').count()).toBe(9);
+  expect(await contentSub.locator('a:visible').count()).toBe(8);
   const active = page.locator('.sidenav a.active');
   expect(await active.textContent()).toBe('Ores');
   const ar = await active.boundingBox();
@@ -134,8 +134,15 @@ test('zone data page: Zones sub-list auto-opens', async ({ page, baseURL }) => {
 test('extensions page: Character sub-list auto-opens, Extensions highlighted', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/content/extensions/`);
   const charSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/features/character/"]) > .nav-sub');
-  expect(await charSub.locator('a:visible').count()).toBe(1);
+  expect(await charSub.locator('a:visible').count()).toBe(2);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Extensions');
+});
+
+test('tech tree page: Research sub-list auto-opens, Tech tree highlighted', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/content/techtree/`);
+  const researchSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/features/research/"]) > .nav-sub');
+  expect(await researchSub.locator('a:visible').count()).toBe(1);
+  expect(await page.locator('.sidenav a.active').textContent()).toBe('Tech tree');
 });
 
 // --- sidenav scroll position across navigation ---

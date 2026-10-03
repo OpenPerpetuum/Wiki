@@ -29,4 +29,25 @@ description: "Artifacts, tier 3"
 | module_missile_range_modifier | 1.1 |
 | powergrid_usage | 175 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Niani medium missile launcher"]:::current
+    b["Hydrobenol ×100"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Phlobotil ×100"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Briochit ×100"]:::comp
+    d --> a
+    click d "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

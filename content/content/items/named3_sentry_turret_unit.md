@@ -38,4 +38,43 @@ description: "Special & other / Miscellaneous, tier 4"
 | resist_kinetic | 90 |
 | resist_thermal | 90 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Sentry Turret Unit"]:::current
+    b["Axicoline ×1.0k"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Material Boss Gamma Syndicate ×1"]:::comp
+    d --> a
+    click d "/content/items/material-boss-gamma-syndicate/" "Material Boss Gamma Syndicate"
+    e["Phlobotil ×1.0k"]:::comp
+    e --> a
+    click e "/content/items/phlobotil/" "Phlobotil"
+    f["Polynitrocol ×1.0k"]:::comp
+    f --> a
+    click f "/content/items/polynitrocol/" "Polynitrocol"
+    g["Polynucleit ×1.0k"]:::comp
+    g --> a
+    click g "/content/items/polynucleit/" "Polynucleit"
+    h["Specimen Sap Item Flux ×10"]:::comp
+    h --> a
+    click h "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    i["Titanium ×1.0k"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    j["Briochit ×50"]:::comp
+    j --> a
+    click j "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

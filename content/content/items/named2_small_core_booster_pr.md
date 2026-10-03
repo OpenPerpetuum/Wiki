@@ -26,4 +26,34 @@ description: "Modules / Enhancements, tier 3"
 | cycle_time | 18k |
 | powergrid_usage | 52 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Joffret-Refiller small energy injector prototype"]:::current
+    b["Cryoperine ×50"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×50"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["CC25-Veo small energy injector ×1"]:::comp
+    d --> a
+    click d "/content/items/named1-small-core-booster/" "CC25-Veo small energy injector"
+    e["Functional common fragment ×20"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Titanium ×100"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

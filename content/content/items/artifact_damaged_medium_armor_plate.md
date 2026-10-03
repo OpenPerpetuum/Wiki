@@ -27,4 +27,31 @@ description: "Artifacts"
 | powergrid_usage | 75 |
 | signature_radius | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Flawed medium armor plate"]:::current
+    b["Alligior ×350"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Plasteosine ×350"]:::comp
+    c --> a
+    click c "/content/items/plasteosine/" "Plasteosine"
+    d["Specimen Sap Item Flux ×4"]:::comp
+    d --> a
+    click d "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    e["Titanium ×250"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    f["Briochit ×250"]:::comp
+    f --> a
+    click f "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -50,4 +50,22 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 |---|---|---|---|
 | Daoden outpost | ∞ | 500M | 25k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 2 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Elitet4 72 Mass Reductor"]:::current
+    b["Material Boss Z72 ×400"]:::comp
+    b --> a
+    click b "/content/items/material-boss-z72/" "Material Boss Z72"
+    c["MRE 3000 lightweight frame ×1"]:::comp
+    c --> a
+    click c "/content/items/named3-mass-reductor/" "MRE 3000 lightweight frame"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

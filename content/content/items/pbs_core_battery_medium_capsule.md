@@ -33,6 +33,37 @@ description: "Special & other / Miscellaneous, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Core Battery Medium Capsule"]:::current
+    b["Cryoperine ×2.5k"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×5.0k"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Coalimin ×1.0k"]:::comp
+    d --> a
+    click d "/content/items/gamma-buildblock/" "Coalimin"
+    e["Tiraizin ×2.5k"]:::comp
+    e --> a
+    click e "/content/items/gamma-energyblock/" "Tiraizin"
+    f["Pbs Core Battery Small Capsule ×1"]:::comp
+    f --> a
+    click f "/content/items/pbs-core-battery-small-capsule/" "Pbs Core Battery Small Capsule"
+    g["Titanium ×1.0k"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Briochit ×2.0k"]:::comp
+    h --> a
+    click h "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

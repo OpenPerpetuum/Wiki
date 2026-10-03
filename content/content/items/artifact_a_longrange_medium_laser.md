@@ -31,4 +31,31 @@ description: "Artifacts, tier 3"
 | optimal_range | 33.5 |
 | powergrid_usage | 260 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Niani medium HCL laser"]:::current
+    b["Espitium ×50"]:::comp
+    b --> a
+    click b "/content/items/espitium/" "Espitium"
+    c["Hydrobenol ×100"]:::comp
+    c --> a
+    click c "/content/items/hydrobenol/" "Hydrobenol"
+    d["Polynucleit ×100"]:::comp
+    d --> a
+    click d "/content/items/polynucleit/" "Polynucleit"
+    e["Prilumium ×50"]:::comp
+    e --> a
+    click e "/content/items/prilumium/" "Prilumium"
+    f["Briochit ×100"]:::comp
+    f --> a
+    click f "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

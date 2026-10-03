@@ -30,6 +30,34 @@ description: "Modules / Harvesting, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 6 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Agraar-I small harvester"]:::current
+    b["Cryoperine ×25"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×25"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["MHA 400-'Avalon' small harvester ×1"]:::comp
+    d --> a
+    click d "/content/items/named1-small-harvester/" "MHA 400-'Avalon' small harvester"
+    e["Functional common fragment ×20"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Titanium ×150"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

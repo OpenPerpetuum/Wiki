@@ -29,4 +29,52 @@ description: "Modules / Enhancements, tier 4"
 | effect_repair_amount_modifier | 1.075 |
 | powergrid_usage | 38 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["ACF-9900 repairer NEXUS module prototype"]:::current
+    b["Alligior ×300"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×300"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×300"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Pawish repairer NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-gang-assist-maintance-module/" "Pawish repairer NEXUS module"
+    f["Functional nuimqol fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    g["Damaged nuimqol fragment ×7"]:::comp
+    g --> a
+    click g "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    h["Perfect nuimqol fragment ×22"]:::comp
+    h --> a
+    click h "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    i["Functional pelistal fragment ×15"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    j["Damaged pelistal fragment ×7"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    k["Perfect pelistal fragment ×22"]:::comp
+    k --> a
+    click k "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    l["Statichnol ×300"]:::comp
+    l --> a
+    click l "/content/items/statichnol/" "Statichnol"
+    m["Briochit ×100"]:::comp
+    m --> a
+    click m "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

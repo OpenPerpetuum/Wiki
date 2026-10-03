@@ -28,4 +28,31 @@ description: "Artifacts, tier 3"
 | shield_absorbtion | 2.2 |
 | shield_radius | 12 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Niani medium shield generator"]:::current
+    b["Alligior ×400"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×200"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×400"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Briochit ×200"]:::comp
+    e --> a
+    click e "/content/items/unimetal/" "Briochit"
+    f["Vitricyl ×200"]:::comp
+    f --> a
+    click f "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

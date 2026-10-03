@@ -33,6 +33,55 @@ description: "Special & other / Miscellaneous, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 13 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Prototyper Medium Capsule"]:::current
+    b["Alligior ×2.5k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×1.2k"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Axicoline ×1.2k"]:::comp
+    d --> a
+    click d "/content/items/axicoline/" "Axicoline"
+    e["Espitium ×2.5k"]:::comp
+    e --> a
+    click e "/content/items/espitium/" "Espitium"
+    f["Coalimin ×2.5k"]:::comp
+    f --> a
+    click f "/content/items/gamma-buildblock/" "Coalimin"
+    g["Bochilum ×1.2k"]:::comp
+    g --> a
+    click g "/content/items/gamma-defblock/" "Bochilum"
+    h["Tiraizin ×1.2k"]:::comp
+    h --> a
+    click h "/content/items/gamma-energyblock/" "Tiraizin"
+    i["Turilium ×1.2k"]:::comp
+    i --> a
+    click i "/content/items/gamma-offenseblock/" "Turilium"
+    j["Hydrobenol ×2.5k"]:::comp
+    j --> a
+    click j "/content/items/hydrobenol/" "Hydrobenol"
+    k["Pbs Prototyper Small Capsule ×1"]:::comp
+    k --> a
+    click k "/content/items/pbs-prototyper-small-capsule/" "Pbs Prototyper Small Capsule"
+    l["Plasteosine ×1.2k"]:::comp
+    l --> a
+    click l "/content/items/plasteosine/" "Plasteosine"
+    m["Titanium ×2.5k"]:::comp
+    m --> a
+    click m "/content/items/titanium/" "Titanium"
+    n["Briochit ×5.0k"]:::comp
+    n --> a
+    click n "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

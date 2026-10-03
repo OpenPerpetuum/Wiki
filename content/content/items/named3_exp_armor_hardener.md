@@ -28,4 +28,52 @@ description: "Modules / Armor, tier 4"
 | powergrid_usage | 6 |
 | resist_explosive | 25 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Sheltor seismic armor"]:::current
+    b["Alligior ×250"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×100"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×100"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Formantel-DVU seismic armor ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-exp-armor-hardener/" "Formantel-DVU seismic armor"
+    f["Functional common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×7"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×22"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Functional thelodica fragment ×15"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    j["Damaged thelodica fragment ×7"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    k["Perfect thelodica fragment ×22"]:::comp
+    k --> a
+    click k "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    l["Statichnol ×250"]:::comp
+    l --> a
+    click l "/content/items/statichnol/" "Statichnol"
+    m["Briochit ×200"]:::comp
+    m --> a
+    click m "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

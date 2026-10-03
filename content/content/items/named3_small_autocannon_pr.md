@@ -31,4 +31,31 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 8.5 |
 | powergrid_usage | 17 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Astoc M45 light autocannon prototype"]:::current
+    b["Axicoline ×100"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Hydrobenol ×100"]:::comp
+    c --> a
+    click c "/content/items/hydrobenol/" "Hydrobenol"
+    d["Senner Carbine light autocannon ×1"]:::comp
+    d --> a
+    click d "/content/items/named2-small-autocannon/" "Senner Carbine light autocannon"
+    e["Titanium ×50"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    f["Briochit ×100"]:::comp
+    f --> a
+    click f "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

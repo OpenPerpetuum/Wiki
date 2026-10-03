@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Thelotec-Stroyar light HCL laser ×1, Material Boss Gamma Thelodica ×200 |
+| Production cost | Material Boss Gamma Thelodica ×200, Thelotec-Stroyar light HCL laser ×1 |
 | Output | [Elitet4 Gamma Small Laser](/content/items/elitet4-gamma-small-laser/) |
 
 ```mermaid

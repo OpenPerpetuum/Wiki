@@ -28,4 +28,46 @@ description: "Modules / Enhancements, tier 2"
 | resist_kinetic | 31 |
 | resist_thermal | 31 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Diverter universal armor prototype"]:::current
+    b["Cryoperine ×50"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Isopropentol ×50"]:::comp
+    c --> a
+    click c "/content/items/isopropentol/" "Isopropentol"
+    d["Metachropin ×150"]:::comp
+    d --> a
+    click d "/content/items/metachropin/" "Metachropin"
+    e["Plasteosine ×150"]:::comp
+    e --> a
+    click e "/content/items/plasteosine/" "Plasteosine"
+    f["Prilumium ×50"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Damaged common fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Damaged thelodica fragment ×15"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    i["Standard universal armor ×1"]:::comp
+    i --> a
+    click i "/content/items/standard-resistant-plating/" "Standard universal armor"
+    j["Statichnol ×50"]:::comp
+    j --> a
+    click j "/content/items/statichnol/" "Statichnol"
+    k["Titanium ×100"]:::comp
+    k --> a
+    click k "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

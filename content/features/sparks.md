@@ -15,7 +15,7 @@ Each character has a **default spark** given at creation. Beyond that, sparks
 come in families — per-faction combat/industrial/social lines (three levels
 each), paid Syndicate lines, and special limited lines — and a spark's exact
 bonuses are just a bundle of fixed skill levels you can see on the
-[extensions page](/features/research/).
+[extensions page](/content/extensions/).
 
 ## Unlocking (authorizing) a spark
 
@@ -39,6 +39,18 @@ stateDiagram-v2
     Active --> Cooldown: switch (costs NIC, per-spark)
     Cooldown --> Active: after 1 hour (new spark's bonuses apply to all robots)
 ```
+
+## Spark connection tree
+
+Which spark grants which extension levels — all 47 sparks (grouped by family,
+left) and the extension bundles they carry (right). The arrows are labeled
+with the granted level; hover a spark for its unlock requirement. **Scroll
+over the diagram to zoom**, drag to pan, and use the ⟲ button to reset.
+
+<div class="map-zoom-wrap">
+<button type="button" class="zoommap-reset" title="Reset the zoom">⟲</button>
+<img class="zoommap" src="/sparks-tree.svg" alt="Spark connection tree: 47 sparks and the extension bundles they carry" loading="lazy">
+</div>
 
 ## Switching sparks
 

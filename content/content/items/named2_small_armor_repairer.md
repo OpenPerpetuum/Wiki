@@ -31,6 +31,40 @@ description: "Modules / Repair, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 8 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Quissot's small armor repairer"]:::current
+    b["Alligior ×100"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×25"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×25"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["A150 small armor repairer ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-small-armor-repairer/" "A150 small armor repairer"
+    f["Functional common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Statichnol ×100"]:::comp
+    h --> a
+    click h "/content/items/statichnol/" "Statichnol"
+    i["Titanium ×50"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

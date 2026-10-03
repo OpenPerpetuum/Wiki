@@ -31,6 +31,31 @@ description: "Modules / Repair, tier 1"
 <!-- production:generated -->
 ## Production
 
+**Produced from 5 components, research level 2** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Standard small armor repairer"]:::current
+    b["Cryoperine ×25"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Chollonin ×25"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Plasteosine ×100"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Statichnol ×100"]:::comp
+    e --> a
+    click e "/content/items/statichnol/" "Statichnol"
+    f["Titanium ×50"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

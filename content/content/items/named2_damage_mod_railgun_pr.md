@@ -25,4 +25,46 @@ description: "Modules / Weapons, tier 3"
 | damage_railgun_modifier | 0.2 |
 | powergrid_usage | 5 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["RSU-Magnitcore magnetic weapon tuning prototype"]:::current
+    b["Chollonin ×100"]:::comp
+    b --> a
+    click b "/content/items/chollonin/" "Chollonin"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Hydrobenol ×50"]:::comp
+    d --> a
+    click d "/content/items/hydrobenol/" "Hydrobenol"
+    e["Nuimtec-Spilster magnetic weapon tuning ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-damage-mod-railgun/" "Nuimtec-Spilster magnetic weapon tuning"
+    f["Polynitrocol ×50"]:::comp
+    f --> a
+    click f "/content/items/polynitrocol/" "Polynitrocol"
+    g["Functional common fragment ×10"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×10"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Functional nuimqol fragment ×10"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    j["Damaged nuimqol fragment ×10"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    k["Titanium ×50"]:::comp
+    k --> a
+    click k "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

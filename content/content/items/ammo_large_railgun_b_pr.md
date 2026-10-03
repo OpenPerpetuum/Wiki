@@ -25,4 +25,28 @@ description: "Ammo / Cannon"
 | damage_kinetic | 42 |
 | optimal_range_modifier | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ammo Large Railgun B Pr"]:::current
+    b["Axicoline ×150"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Polynitrocol ×150"]:::comp
+    c --> a
+    click c "/content/items/polynitrocol/" "Polynitrocol"
+    d["Specimen Sap Item Flux ×2"]:::comp
+    d --> a
+    click d "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    e["Titanium ×75"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

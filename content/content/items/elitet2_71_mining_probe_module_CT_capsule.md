@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Ovostec-Chisomel geoscanner ×1, Material Boss Z71 ×300 |
+| Production cost | Material Boss Z71 ×300, Ovostec-Chisomel geoscanner ×1 |
 | Output | [Elitet2 71 Mining Probe Module](/content/items/elitet2-71-mining-probe-module/) |
 
 ```mermaid

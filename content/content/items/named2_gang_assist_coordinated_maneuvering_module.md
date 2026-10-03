@@ -32,6 +32,46 @@ description: "Modules / Enhancements, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 10 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pareduit evasive NEXUS module"]:::current
+    b["Alligior ×50"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×250"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×250"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Oshbo evasive NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-gang-assist-coordinated-maneuvering-module/" "Oshbo evasive NEXUS module"
+    f["Plasteosine ×50"]:::comp
+    f --> a
+    click f "/content/items/plasteosine/" "Plasteosine"
+    g["Functional nuimqol fragment ×10"]:::comp
+    g --> a
+    click g "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    h["Damaged nuimqol fragment ×10"]:::comp
+    h --> a
+    click h "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    i["Functional pelistal fragment ×10"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    j["Damaged pelistal fragment ×10"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    k["Titanium ×50"]:::comp
+    k --> a
+    click k "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

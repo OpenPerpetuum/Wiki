@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Phisker 30PW medium HCL laser ×1, Material Boss Gamma Thelodica ×400 |
+| Production cost | Material Boss Gamma Thelodica ×400, Phisker 30PW medium HCL laser ×1 |
 | Output | [Elitet4 Gamma Longrange Medium Laser](/content/items/elitet4-gamma-longrange-medium-laser/) |
 
 ```mermaid

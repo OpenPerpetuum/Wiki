@@ -30,4 +30,46 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 17.5 |
 | powergrid_usage | 234 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Hell Cannon"]:::current
+    b["Axicoline ×200"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Biotichrin ×500"]:::comp
+    c --> a
+    click c "/content/items/biotichrin/" "Biotichrin"
+    d["Espitium ×120"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×200"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Named2 Hell Cannon ×1"]:::comp
+    f --> a
+    click f "/content/items/named2-hell-cannon/" "Named2 Hell Cannon"
+    g["Functional common fragment ×90"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×30"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Perfect common fragment ×120"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    j["Specimen Sap Item Flux ×50"]:::comp
+    j --> a
+    click j "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    k["Briochit ×300"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

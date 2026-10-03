@@ -28,4 +28,43 @@ description: "Modules / Armor, tier 4"
 | powergrid_usage | 1.19k |
 | signature_radius | 3 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Large Armor Plate Pr"]:::current
+    b["Alligior ×1.1k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Invigor III. heavy armor plate ×1"]:::comp
+    c --> a
+    click c "/content/items/named2-large-armor-plate/" "Invigor III. heavy armor plate"
+    d["Plasteosine ×1.1k"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Functional common fragment ×90"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×45"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×135"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Specimen Sap Item Flux ×100"]:::comp
+    h --> a
+    click h "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    i["Titanium ×750"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    j["Briochit ×750"]:::comp
+    j --> a
+    click j "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

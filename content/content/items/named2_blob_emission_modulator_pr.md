@@ -29,4 +29,40 @@ description: "Modules / Enhancements, tier 3"
 | optimal_range | 35 |
 | powergrid_usage | 150 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Bandoler IV-500 interference module prototype"]:::current
+    b["Cryoperine ×125"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×50"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×125"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×50"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Bandoler IU-250 interference module ×1"]:::comp
+    f --> a
+    click f "/content/items/named1-blob-emission-modulator/" "Bandoler IU-250 interference module"
+    g["Functional common fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×20"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Titanium ×50"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

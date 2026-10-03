@@ -28,4 +28,52 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 19 |
 | thermal_damage_to_core_modifier | 0.15 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 9** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Emerolyte kinetic ERP prototype"]:::current
+    b["Alligior ×200"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×400"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Metachropin ×200"]:::comp
+    d --> a
+    click d "/content/items/metachropin/" "Metachropin"
+    e["Solitex-990 kinetic ERP ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-kinetic-kers/" "Solitex-990 kinetic ERP"
+    f["Prilumium ×400"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Functional common fragment ×3"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×2"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Perfect common fragment ×4"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    j["Functional thelodica fragment ×3"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    k["Damaged thelodica fragment ×2"]:::comp
+    k --> a
+    click k "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    l["Perfect thelodica fragment ×4"]:::comp
+    l --> a
+    click l "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    m["Briochit ×400"]:::comp
+    m --> a
+    click m "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -27,4 +27,34 @@ description: "Modules / Sensors & scanning, tier 2"
 | effect_enhancer_sensor_dampener_locking_time_modifier | 1.15 |
 | powergrid_usage | 18 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["DDX200-Veil sensor suppressor tuning prototype"]:::current
+    b["Cryoperine ×150"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Prilumium ×150"]:::comp
+    c --> a
+    click c "/content/items/prilumium/" "Prilumium"
+    d["Damaged common fragment ×15"]:::comp
+    d --> a
+    click d "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    e["Damaged thelodica fragment ×15"]:::comp
+    e --> a
+    click e "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    f["Standard sensor suppressor tuning ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-sensor-supressor-booster/" "Standard sensor suppressor tuning"
+    g["Titanium ×50"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

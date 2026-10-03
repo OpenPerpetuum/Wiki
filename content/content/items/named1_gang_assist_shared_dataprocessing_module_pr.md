@@ -29,4 +29,37 @@ description: "Modules / Enhancements, tier 2"
 | effect_locking_time_modifier | 0.98 |
 | powergrid_usage | 29 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["JPS-Redeye lock booster NEXUS module prototype"]:::current
+    b["Cryoperine ×250"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×50"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Phlobotil ×50"]:::comp
+    d --> a
+    click d "/content/items/phlobotil/" "Phlobotil"
+    e["Damaged common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Standard lock booster NEXUS module ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-gang-assist-shared-dataprocessing-module/" "Standard lock booster NEXUS module"
+    g["Titanium ×50"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Vitricyl ×250"]:::comp
+    h --> a
+    click h "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

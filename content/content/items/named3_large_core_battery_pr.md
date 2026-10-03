@@ -26,4 +26,43 @@ description: "Modules / Power, tier 4"
 | cpu_usage | 460 |
 | powergrid_usage | 872 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Large Core Battery Pr"]:::current
+    b["Cryoperine ×600"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×600"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Nibott-I large auxiliary accumulator ×1"]:::comp
+    d --> a
+    click d "/content/items/named2-large-core-battery/" "Nibott-I large auxiliary accumulator"
+    e["Functional common fragment ×90"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×45"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×135"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Specimen Sap Item Flux ×50"]:::comp
+    h --> a
+    click h "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    i["Titanium ×300"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    j["Briochit ×300"]:::comp
+    j --> a
+    click j "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

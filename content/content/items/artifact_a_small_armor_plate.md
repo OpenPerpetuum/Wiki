@@ -27,4 +27,28 @@ description: "Artifacts, tier 3"
 | powergrid_usage | 18 |
 | signature_radius | 0.35 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Niani light armor plate"]:::current
+    b["Alligior ×175"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Plasteosine ×175"]:::comp
+    c --> a
+    click c "/content/items/plasteosine/" "Plasteosine"
+    d["Titanium ×125"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    e["Briochit ×125"]:::comp
+    e --> a
+    click e "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

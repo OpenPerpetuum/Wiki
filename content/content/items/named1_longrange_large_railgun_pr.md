@@ -31,4 +31,43 @@ description: "Modules / Weapons, tier 2"
 | optimal_range | 46 |
 | powergrid_usage | 277.5 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named1 Longrange Large Railgun Pr"]:::current
+    b["Cryoperine ×75"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×150"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Chollonin ×75"]:::comp
+    d --> a
+    click d "/content/items/chollonin/" "Chollonin"
+    e["Longrange Standard Large Railgun ×1"]:::comp
+    e --> a
+    click e "/content/items/longrange-standard-large-railgun/" "Longrange Standard Large Railgun"
+    f["Polynitrocol ×150"]:::comp
+    f --> a
+    click f "/content/items/polynitrocol/" "Polynitrocol"
+    g["Damaged common fragment ×45"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Damaged nuimqol fragment ×45"]:::comp
+    h --> a
+    click h "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    i["Specimen Sap Item Flux ×10"]:::comp
+    i --> a
+    click i "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    j["Titanium ×150"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

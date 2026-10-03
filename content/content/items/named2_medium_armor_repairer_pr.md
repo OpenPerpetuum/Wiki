@@ -27,4 +27,40 @@ description: "Modules / Repair, tier 3"
 | cycle_time | 13.5k |
 | powergrid_usage | 105 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["FO-150 'Reparator' medium armor repairer prototype"]:::current
+    b["Alligior ×200"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×50"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×50"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Vautrell medium armor repairer ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-medium-armor-repairer/" "Vautrell medium armor repairer"
+    f["Functional common fragment ×40"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×40"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Statichnol ×200"]:::comp
+    h --> a
+    click h "/content/items/statichnol/" "Statichnol"
+    i["Titanium ×100"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

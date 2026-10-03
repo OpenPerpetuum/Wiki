@@ -26,4 +26,34 @@ description: "Modules / Enhancements, tier 2"
 | ecm_strength_modifier | 1.25 |
 | powergrid_usage | 22 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Distortio ECM tuning prototype"]:::current
+    b["Cryoperine ×150"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Chollonin ×150"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Damaged common fragment ×15"]:::comp
+    d --> a
+    click d "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    e["Damaged nuimqol fragment ×15"]:::comp
+    e --> a
+    click e "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    f["Standard ECM tuning ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-ecm-booster/" "Standard ECM tuning"
+    g["Titanium ×50"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

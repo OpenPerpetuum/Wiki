@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Thermodissector medium LCL laser ×1, Material Boss Gamma Thelodica ×400 |
+| Production cost | Material Boss Gamma Thelodica ×400, Thermodissector medium LCL laser ×1 |
 | Output | [Elitet4 Gamma Medium Laser](/content/items/elitet4-gamma-medium-laser/) |
 
 ```mermaid

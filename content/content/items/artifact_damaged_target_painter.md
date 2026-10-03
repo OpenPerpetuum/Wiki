@@ -28,4 +28,37 @@ description: "Artifacts"
 | optimal_range | 50 |
 | powergrid_usage | 20 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Flawed target marker"]:::current
+    b["Cryoperine ×225"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×25"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×225"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×25"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Specimen Sap Item Flux ×4"]:::comp
+    f --> a
+    click f "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    g["Titanium ×100"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Briochit ×100"]:::comp
+    h --> a
+    click h "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

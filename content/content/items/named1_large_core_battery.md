@@ -28,6 +28,31 @@ description: "Modules / Power, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 5 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ovostec-gxc9000 large auxiliary accumulator"]:::current
+    b["Cryoperine ×600"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Damaged common fragment ×90"]:::comp
+    c --> a
+    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    d["Specimen Sap Item Flux ×10"]:::comp
+    d --> a
+    click d "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    e["Standard large auxiliary accumulator ×1"]:::comp
+    e --> a
+    click e "/content/items/standard-large-core-battery/" "Standard large auxiliary accumulator"
+    f["Titanium ×300"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 1 items** — everything that uses it in production:
 
 ```mermaid

@@ -12,10 +12,16 @@ and then:
 
   1. writes tools/recipes_data.json (the parsed recipe table + registry) —
      consumed by tools/gen_recipes_cards.py
-  2. inserts a "## Production" section into every item page that is a
-     component of other items: a mermaid tree of what can be produced with
-     it (capped at 8 products + a "+N more" node into the recipes page for
-     high-fan-out materials), each product linked to its page
+  2. inserts the production sections into every item page that can be
+     produced or used in production:
+       "## Production"          — a mermaid tree of the components (left,
+                                 with required amounts) that build this item
+                                 (right, in green), when it is a recipe
+                                 product
+       "## Used in production"  — a mermaid tree of what can be produced
+                                 with it (capped at 8 products + a "+N more"
+                                 node into the recipes page for high-fan-out
+                                 materials), each product linked to its page
 
 Ore pages already carry a complete "Made from it" table from the generator
 (OresPage.cs), so they are left alone.
@@ -54,16 +60,18 @@ def derived_name(definition: str) -> str:
     return " ".join(w.capitalize() if w.isalpha() else w for w in words)
 
 
-def product_info(definition, registry, ores):
+def product_info(definition, registry, ores, names):
     """(display name, url or None) for a produced item — bots and hidden
-    items have no item page; bot definitions link to the robot overview."""
+    items have no item page; bot definitions link to the robot overview.
+    Display names come from the generator's names map (client strings),
+    falling back to the derived name."""
     if definition in registry:
         return registry[definition][0], registry[definition][2]
     if definition in ores:
         return ores[definition][0], ores[definition][1]
     if definition.endswith("_bot"):
-        return derived_name(definition), "/content/robots/"
-    return derived_name(definition), None
+        return names.get(definition, derived_name(definition)), "/content/robots/"
+    return names.get(definition, derived_name(definition)), None
 
 
 def load_registry():
@@ -97,15 +105,18 @@ def load_registry():
 def load_recipes():
     """definition -> ([(component definition, qty), ...], research level str).
     Parses the committed table; when the table is gone (the card layout has
-    replaced it) falls back to the data cache."""
+    replaced it) falls back to the data cache. Also returns the display-name
+    map the .NET generator wrote (client strings for definitions that have
+    no page of their own)."""
     has_table = any(
         line.startswith("| def_")
         for line in open(RECIPES, encoding="utf-8"))
     if not has_table and os.path.isfile(DATA):
         data = json.load(open(DATA, encoding="utf-8"))
         if data.get("recipes"):
-            return {k: ([(c, q) for c, q in v["components"]], v["research"])
-                    for k, v in data["recipes"].items()}
+            return ({k: ([(c, q) for c, q in v["components"]], v["research"])
+                     for k, v in data["recipes"].items()},
+                    data.get("names", {}))
     recipes = {}
     for line in open(RECIPES, encoding="utf-8"):
         if not line.startswith("|"):
@@ -118,7 +129,7 @@ def load_recipes():
                 if m:
                     comps.append((m.group(1), int(m.group(2))))
             recipes[cells[0]] = (comps, cells[2])
-    return recipes
+    return recipes, {}
 
 
 def num(n: int) -> str:
@@ -129,7 +140,28 @@ def num(n: int) -> str:
     return str(n)
 
 
-def production_section(name: str, users, registry, ores):
+def recipe_section(name: str, comps, research, registry, ores, names):
+    """Mermaid tree: the components (left, with amounts) -> this item (right, green)."""
+    rl = int(research) if str(research).isdigit() else 0
+    intro = (f"**Produced from {num(len(comps))} component{'s' if len(comps) != 1 else ''}"
+             + (f", research level {rl}" if rl > 0 else "")
+             + "** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):\n\n")
+    lines = ["```mermaid", "graph LR"]
+    lines.append(f'    a["{esc(name)}"]:::current')
+    for i, (comp, amt) in enumerate(comps):
+        letter = chr(ord("b") + i)
+        cname, url = product_info(comp, registry, ores, names)
+        lines.append(f'    {letter}["{esc(cname)} ×{num(amt)}"]:::comp')
+        lines.append(f"    {letter} --> a")
+        if url:
+            lines.append(f'    click {letter} "{url}" "{esc(cname)}"')
+    lines.append("    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff")
+    lines.append("    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff")
+    lines.append("```")
+    return intro + "\n".join(lines)
+
+
+def production_section(name: str, users, registry, ores, names):
     """Mermaid tree: this item -> what can be produced with it."""
     # Stable order; the capped sample prefers products with their own page
     # over internal definitions (robot parts, bot fits) that only exist in
@@ -143,7 +175,7 @@ def production_section(name: str, users, registry, ores):
     lines.append(f'    a["{esc(name)}"]:::current')
     for i, u in enumerate(shown):
         letter = chr(ord("b") + i)
-        uname, url = product_info(u, registry, ores)
+        uname, url = product_info(u, registry, ores, names)
         lines.append(f'    {letter}["{esc(uname)}"]:::prod')
         lines.append(f"    a --> {letter}")
         if url:
@@ -188,19 +220,30 @@ def intro_text(n: int, sample: bool) -> str:
     return f"**Component of {num(n)} items** — everything that uses it in production:\n\n"
 
 
-def item_section(name, users, registry, ores):
-    return (MARKER + "\n## Production\n\n"
-            + intro_text(len(users), len(users) > MAX_PRODUCTS)
-            + production_section(name, users, registry, ores) + "\n")
+def item_section(name, comps, research, users, registry, ores, names):
+    """The marked production area: the recipe tree (when this item is a recipe
+    product) and the end-products tree (when it is a component of others) —
+    same sections, same order, as ItemsPage.cs."""
+    parts = []
+    if comps:
+        parts.append("## Production\n\n" + recipe_section(name, comps, research, registry, ores, names))
+    if users:
+        parts.append("## Used in production\n\n"
+                     + intro_text(len(users), len(users) > MAX_PRODUCTS)
+                     + production_section(name, users, registry, ores, names))
+    if not parts:
+        return None
+    return MARKER + "\n" + "\n".join(parts) + "\n"
 
 
 def main():
     registry, ores = load_registry()
-    recipes = load_recipes()
+    recipes, names = load_recipes()
     json.dump(
         {
             "recipes": {k: {"components": [[c, q] for c, q in v[0]], "research": v[1]}
                         for k, v in recipes.items()},
+            "names": names,
             "items": {k: {"name": v[0], "category": v[1], "url": v[2]} for k, v in registry.items()},
             "ores": {k: {"name": v[0], "url": v[1]} for k, v in ores.items()},
         },
@@ -215,18 +258,22 @@ def main():
             users.setdefault(comp, set()).add(item)
 
     done = 0
-    for comp, who in sorted(users.items()):
-        who = sorted(who)
-        if comp not in registry:
+    for item_def in sorted(set(users) | set(recipes)):
+        if item_def not in registry:
             continue  # ores keep their "Made from it" table; bots/parts have no page
-        name, _cat, _url = registry[comp]
-        fname = comp[len("def_"):] + ".md"
-        if fname.endswith("_CT_capsule.md"):
+        if item_def.endswith("_CT_capsule"):
             continue  # capsule pages already carry a payload "Production" table
+        fname = item_def[len("def_"):] + ".md"
         path = os.path.join(ITEMS, fname)
         if not os.path.isfile(path):
             continue
-        insert_section(path, item_section(name, who, registry, ores), "[All items]")
+        name, _cat, _url = registry[item_def]
+        comps, research = recipes.get(item_def, ([], "–"))
+        who = sorted(users.get(item_def, ()))
+        section = item_section(name, comps, research, who, registry, ores, names)
+        if section is None:
+            continue
+        insert_section(path, section, "[All items]")
         done += 1
     print(f"production sections: {done} pages updated")
 

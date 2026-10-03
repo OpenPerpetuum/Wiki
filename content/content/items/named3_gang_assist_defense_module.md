@@ -29,4 +29,52 @@ description: "Modules / Enhancements, tier 4"
 | effect_armor_max_modifier | 1.075 |
 | powergrid_usage | 40 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["TSP-Hindoo armor NEXUS module"]:::current
+    b["Alligior ×100"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×500"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Metachropin ×100"]:::comp
+    d --> a
+    click d "/content/items/metachropin/" "Metachropin"
+    e["Paternis armor NEXUS module ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-gang-assist-defense-module/" "Paternis armor NEXUS module"
+    f["Prilumium ×500"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Functional pelistal fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    h["Damaged pelistal fragment ×7"]:::comp
+    h --> a
+    click h "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    i["Perfect pelistal fragment ×22"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    j["Functional thelodica fragment ×15"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    k["Damaged thelodica fragment ×7"]:::comp
+    k --> a
+    click k "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    l["Perfect thelodica fragment ×22"]:::comp
+    l --> a
+    click l "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    m["Briochit ×100"]:::comp
+    m --> a
+    click m "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -28,4 +28,43 @@ description: "Modules / Shield, tier 4"
 | shield_absorbtion | 2 |
 | shield_radius | 6 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 9 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["SBA-200 Forebrace small shield generator prototype"]:::current
+    b["Alligior ×400"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×200"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×400"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Ovostec-Yellowray small shield generator ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-small-shield-generator/" "Ovostec-Yellowray small shield generator"
+    f["Functional common fragment ×30"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×45"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Briochit ×200"]:::comp
+    i --> a
+    click i "/content/items/unimetal/" "Briochit"
+    j["Vitricyl ×200"]:::comp
+    j --> a
+    click j "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

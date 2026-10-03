@@ -28,4 +28,31 @@ description: "Modules / Armor, tier 2"
 | powergrid_usage | 840 |
 | signature_radius | 3 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named1 Large Armor Plate Pr"]:::current
+    b["Plasteosine ×1.1k"]:::comp
+    b --> a
+    click b "/content/items/plasteosine/" "Plasteosine"
+    c["Damaged common fragment ×90"]:::comp
+    c --> a
+    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    d["Specimen Sap Item Flux ×15"]:::comp
+    d --> a
+    click d "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    e["Standard large armor plate ×1"]:::comp
+    e --> a
+    click e "/content/items/standard-large-armor-plate/" "Standard large armor plate"
+    f["Titanium ×750"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Prompt medium Gauss gun ×1, Material Boss Gamma Nuimqol ×400 |
+| Production cost | Material Boss Gamma Nuimqol ×400, Prompt medium Gauss gun ×1 |
 | Output | [Elitet4 Gamma Medium Railgun](/content/items/elitet4-gamma-medium-railgun/) |
 
 ```mermaid

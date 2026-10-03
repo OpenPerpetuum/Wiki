@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | 5.5-Glipler medium EM-gun ×1, Material Boss Gamma Nuimqol ×400 |
+| Production cost | Material Boss Gamma Nuimqol ×400, 5.5-Glipler medium EM-gun ×1 |
 | Output | [Elitet4 Gamma Longrange Medium Railgun](/content/items/elitet4-gamma-longrange-medium-railgun/) |
 
 ```mermaid

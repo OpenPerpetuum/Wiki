@@ -27,4 +27,28 @@ description: "Special & other / Miscellaneous"
 | remote_control_bandwidth_usage | 5 |
 | remote_control_lifetime | 300k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Repair Support Drone Unit"]:::current
+    b["Axicoline ×1.0k"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Titanium ×1.0k"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    e["Briochit ×50"]:::comp
+    e --> a
+    click e "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

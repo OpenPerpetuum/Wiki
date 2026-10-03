@@ -30,6 +30,25 @@ description: "Modules / Armor, tier 1"
 <!-- production:generated -->
 ## Production
 
+**Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Standard large armor plate"]:::current
+    b["Plasteosine ×1.1k"]:::comp
+    b --> a
+    click b "/content/items/plasteosine/" "Plasteosine"
+    c["Specimen Sap Item Flux ×15"]:::comp
+    c --> a
+    click c "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    d["Titanium ×750"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

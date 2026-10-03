@@ -24,4 +24,37 @@ description: "Special & other / Miscellaneous, tier 1"
 |---|---|
 | remote_control_bandwidth_usage | 1 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Standard Hunter Drone Rcu Pvp"]:::current
+    b["Axicoline ×500"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Espitium ×50"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Phlobotil ×500"]:::comp
+    d --> a
+    click d "/content/items/phlobotil/" "Phlobotil"
+    e["Polynitrocol ×500"]:::comp
+    e --> a
+    click e "/content/items/polynitrocol/" "Polynitrocol"
+    f["Polynucleit ×500"]:::comp
+    f --> a
+    click f "/content/items/polynucleit/" "Polynucleit"
+    g["Titanium ×500"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Briochit ×25"]:::comp
+    h --> a
+    click h "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

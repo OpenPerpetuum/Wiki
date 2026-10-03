@@ -22,6 +22,22 @@ _No stats — this item carries no aggregate values._
 <!-- production:generated -->
 ## Production
 
+**Produced from 2 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Cryoperine"]:::current
+    b["HDT ×50"]:::comp
+    b --> a
+    click b "/content/items/crude/" "HDT"
+    c["Liquizit ×25"]:::comp
+    c --> a
+    click c "/content/items/liquizit/" "Liquizit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 1.1k items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
 
 ```mermaid

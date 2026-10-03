@@ -33,4 +33,46 @@ description: "Special & other / Miscellaneous, tier 2"
 | signature_radius | 12.5 |
 | stealth_strength | 100 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Turret Laser Medium Capsule Pr"]:::current
+    b["Cryoperine ×250"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×375"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×500"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Coalimin ×50"]:::comp
+    e --> a
+    click e "/content/items/gamma-buildblock/" "Coalimin"
+    f["Tiraizin ×250"]:::comp
+    f --> a
+    click f "/content/items/gamma-energyblock/" "Tiraizin"
+    g["Turilium ×375"]:::comp
+    g --> a
+    click g "/content/items/gamma-offenseblock/" "Turilium"
+    h["Hydrobenol ×750"]:::comp
+    h --> a
+    click h "/content/items/hydrobenol/" "Hydrobenol"
+    i["Pbs Turret Laser Small Capsule ×1"]:::comp
+    i --> a
+    click i "/content/items/pbs-turret-laser-small-capsule/" "Pbs Turret Laser Small Capsule"
+    j["Titanium ×50"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    k["Briochit ×100"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

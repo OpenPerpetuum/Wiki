@@ -30,4 +30,52 @@ description: "Modules / Shield, tier 4"
 | optimal_range | 27.5 |
 | powergrid_usage | 214 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Sicado I. medium energy neutralizer prototype"]:::current
+    b["Espitium ×400"]:::comp
+    b --> a
+    click b "/content/items/espitium/" "Espitium"
+    c["Hydrobenol ×200"]:::comp
+    c --> a
+    click c "/content/items/hydrobenol/" "Hydrobenol"
+    d["1300RFX-Spasm medium energy neutralizer ×1"]:::comp
+    d --> a
+    click d "/content/items/named2-medium-energy-neutralizer/" "1300RFX-Spasm medium energy neutralizer"
+    e["Phlobotil ×200"]:::comp
+    e --> a
+    click e "/content/items/phlobotil/" "Phlobotil"
+    f["Functional common fragment ×30"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×15"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×45"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Functional pelistal fragment ×30"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    j["Damaged pelistal fragment ×15"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    k["Perfect pelistal fragment ×45"]:::comp
+    k --> a
+    click k "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    l["Briochit ×200"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    m["Vitricyl ×400"]:::comp
+    m --> a
+    click m "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

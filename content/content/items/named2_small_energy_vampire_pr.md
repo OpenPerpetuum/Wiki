@@ -30,4 +30,46 @@ description: "Modules / Shield, tier 3"
 | optimal_range | 14 |
 | powergrid_usage | 35 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ekcept small energy drainer prototype"]:::current
+    b["Cryoperine ×100"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×50"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×100"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×50"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Portio I. small energy drainer ×1"]:::comp
+    f --> a
+    click f "/content/items/named1-small-energy-vampire/" "Portio I. small energy drainer"
+    g["Functional common fragment ×10"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×10"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Functional pelistal fragment ×10"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    j["Damaged pelistal fragment ×10"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    k["Titanium ×100"]:::comp
+    k --> a
+    click k "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

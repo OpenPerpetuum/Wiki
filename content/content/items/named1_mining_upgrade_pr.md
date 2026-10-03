@@ -26,4 +26,28 @@ description: "Modules / Enhancements, tier 2"
 | mining_amount_modifier | 1.05 |
 | powergrid_usage | 17 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Piog Forgekit AI industrial tuning prototype"]:::current
+    b["Cryoperine ×200"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Damaged common fragment ×30"]:::comp
+    c --> a
+    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    d["Standard industrial tuning ×1"]:::comp
+    d --> a
+    click d "/content/items/standard-mining-upgrade/" "Standard industrial tuning"
+    e["Titanium ×50"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

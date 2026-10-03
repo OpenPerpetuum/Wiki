@@ -26,4 +26,25 @@ description: "Ammo / Missiles"
 | falloff | 3 |
 | optimal_range | 18 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 3 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ammo Cruisemissile D Pr"]:::current
+    b["Phlobotil ×300"]:::comp
+    b --> a
+    click b "/content/items/phlobotil/" "Phlobotil"
+    c["Specimen Sap Item Flux ×2"]:::comp
+    c --> a
+    click c "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    d["Titanium ×75"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

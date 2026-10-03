@@ -29,4 +29,34 @@ description: "Modules / Enhancements, tier 2"
 | effect_signature_radius_modifier | -0.1 |
 | powergrid_usage | 29 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Oshbo evasive NEXUS module prototype"]:::current
+    b["Cryoperine ×500"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Plasteosine ×100"]:::comp
+    c --> a
+    click c "/content/items/plasteosine/" "Plasteosine"
+    d["Damaged nuimqol fragment ×15"]:::comp
+    d --> a
+    click d "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    e["Damaged pelistal fragment ×15"]:::comp
+    e --> a
+    click e "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    f["Standard evasive NEXUS module ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-gang-assist-coordinated-maneuvering-module/" "Standard evasive NEXUS module"
+    g["Titanium ×50"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

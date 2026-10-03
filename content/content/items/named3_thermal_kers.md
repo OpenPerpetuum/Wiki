@@ -28,4 +28,52 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 20 |
 | thermal_damage_to_core_modifier | 0.7 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Dyoriva thermal ERP"]:::current
+    b["Alligior ×200"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×400"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×200"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["DE-melt thermal ERP ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-thermal-kers/" "DE-melt thermal ERP"
+    f["Functional common fragment ×3"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×2"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×4"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Functional pelistal fragment ×3"]:::comp
+    i --> a
+    click i "/content/items/robotshard-pelistal-advanced/" "Functional pelistal fragment"
+    j["Damaged pelistal fragment ×2"]:::comp
+    j --> a
+    click j "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    k["Perfect pelistal fragment ×4"]:::comp
+    k --> a
+    click k "/content/items/robotshard-pelistal-expert/" "Perfect pelistal fragment"
+    l["Briochit ×400"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    m["Vitricyl ×400"]:::comp
+    m --> a
+    click m "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

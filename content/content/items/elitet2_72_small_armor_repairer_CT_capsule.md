@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | A150 small armor repairer ×1, Material Boss Z72 ×150 |
+| Production cost | Material Boss Z72 ×150, A150 small armor repairer ×1 |
 | Output | [Elitet2 72 Small Armor Repairer](/content/items/elitet2-72-small-armor-repairer/) |
 
 ```mermaid

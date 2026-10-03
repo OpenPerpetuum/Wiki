@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Eksplor-q3000 geoscanner ×1, Material Boss Z71 ×400 |
+| Production cost | Material Boss Z71 ×400, Eksplor-q3000 geoscanner ×1 |
 | Output | [Elitet4 71 Mining Probe Module](/content/items/elitet4-71-mining-probe-module/) |
 
 ```mermaid

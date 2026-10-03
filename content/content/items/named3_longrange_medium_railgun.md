@@ -34,6 +34,52 @@ description: "Modules / Weapons, tier 4"
 <!-- production:generated -->
 ## Production
 
+**Produced from 12 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["5.5-Glipler medium EM-gun"]:::current
+    b["Chollonin ×100"]:::comp
+    b --> a
+    click b "/content/items/chollonin/" "Chollonin"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Hydrobenol ×200"]:::comp
+    d --> a
+    click d "/content/items/hydrobenol/" "Hydrobenol"
+    e["Nuimtec-Accolon LRS medium EM-gun ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-longrange-medium-railgun/" "Nuimtec-Accolon LRS medium EM-gun"
+    f["Polynitrocol ×200"]:::comp
+    f --> a
+    click f "/content/items/polynitrocol/" "Polynitrocol"
+    g["Functional common fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×15"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Perfect common fragment ×45"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    j["Functional nuimqol fragment ×30"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    k["Damaged nuimqol fragment ×15"]:::comp
+    k --> a
+    click k "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    l["Perfect nuimqol fragment ×45"]:::comp
+    l --> a
+    click l "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    m["Briochit ×200"]:::comp
+    m --> a
+    click m "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 1 items** — everything that uses it in production:
 
 ```mermaid

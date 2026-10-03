@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Yridan RCD evasive module ×1, Material Boss Z71 ×400 |
+| Production cost | Material Boss Z71 ×400, Yridan RCD evasive module ×1 |
 | Output | [Elitet4 71 Maneuvering Upgrade](/content/items/elitet4-71-maneuvering-upgrade/) |
 
 ```mermaid

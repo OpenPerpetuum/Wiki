@@ -29,4 +29,25 @@ description: "Modules / Enhancements, tier 2"
 | effect_enhancer_aura_radius_modifier | 1.2 |
 | powergrid_usage | 29 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 3 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named1 Gang Assist Resilience Module Pr"]:::current
+    b["Damaged pelistal fragment ×15"]:::comp
+    b --> a
+    click b "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    c["Damaged thelodica fragment ×15"]:::comp
+    c --> a
+    click c "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    d["Standard Gang Assist Resilience Module ×1"]:::comp
+    d --> a
+    click d "/content/items/standard-gang-assist-resilience-module/" "Standard Gang Assist Resilience Module"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

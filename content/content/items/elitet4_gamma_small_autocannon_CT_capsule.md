@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Astoc M45 light autocannon ×1, Material Boss Gamma Syndicate ×200 |
+| Production cost | Material Boss Gamma Syndicate ×200, Astoc M45 light autocannon ×1 |
 | Output | [Elitet4 Gamma Small Autocannon](/content/items/elitet4-gamma-small-autocannon/) |
 
 ```mermaid

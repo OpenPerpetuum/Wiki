@@ -28,4 +28,40 @@ description: "Modules / Enhancements, tier 2"
 | powergrid_usage | 9 |
 | thermal_damage_to_core_modifier | 0.1 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["SER-250 'Eruptico' seismic ERP prototype"]:::current
+    b["Cryoperine ×200"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Chollonin ×200"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Plasteosine ×100"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Damaged common fragment ×2"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Damaged nuimqol fragment ×2"]:::comp
+    f --> a
+    click f "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    g["Standard seismic ERP ×1"]:::comp
+    g --> a
+    click g "/content/items/standard-explosive-kers/" "Standard seismic ERP"
+    h["Statichnol ×100"]:::comp
+    h --> a
+    click h "/content/items/statichnol/" "Statichnol"
+    i["Titanium ×200"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -31,6 +31,37 @@ description: "Modules / Enhancements, tier 1"
 <!-- production:generated -->
 ## Production
 
+**Produced from 7 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Standard universal armor"]:::current
+    b["Cryoperine ×50"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Isopropentol ×50"]:::comp
+    c --> a
+    click c "/content/items/isopropentol/" "Isopropentol"
+    d["Metachropin ×150"]:::comp
+    d --> a
+    click d "/content/items/metachropin/" "Metachropin"
+    e["Plasteosine ×150"]:::comp
+    e --> a
+    click e "/content/items/plasteosine/" "Plasteosine"
+    f["Prilumium ×50"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Statichnol ×50"]:::comp
+    g --> a
+    click g "/content/items/statichnol/" "Statichnol"
+    h["Titanium ×100"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

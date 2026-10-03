@@ -31,4 +31,37 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 24 |
 | powergrid_usage | 143 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Znatvoy-Berjiar-IA medium autocannon prototype"]:::current
+    b["Cryoperine ×100"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×200"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×100"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Hydrobenol ×200"]:::comp
+    e --> a
+    click e "/content/items/hydrobenol/" "Hydrobenol"
+    f["Astoc M75 medium autocannon ×1"]:::comp
+    f --> a
+    click f "/content/items/named2-longrange-medium-autocannon/" "Astoc M75 medium autocannon"
+    g["Titanium ×100"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Briochit ×200"]:::comp
+    h --> a
+    click h "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

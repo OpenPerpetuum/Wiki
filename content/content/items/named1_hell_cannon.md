@@ -33,6 +33,37 @@ description: "Modules / Weapons, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named1 Hell Cannon"]:::current
+    b["Alligior ×100"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Biotichrin ×100"]:::comp
+    c --> a
+    click c "/content/items/biotichrin/" "Biotichrin"
+    d["Espitium ×50"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Damaged common fragment ×90"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Specimen Sap Item Flux ×10"]:::comp
+    f --> a
+    click f "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    g["Standard Hell Cannon ×1"]:::comp
+    g --> a
+    click g "/content/items/standard-hell-cannon/" "Standard Hell Cannon"
+    h["Titanium ×100"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

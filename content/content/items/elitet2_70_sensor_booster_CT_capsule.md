@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Bullz-I 6601 sensor amplifier ×1, Material Boss Z70 ×300 |
+| Production cost | Material Boss Z70 ×300, Bullz-I 6601 sensor amplifier ×1 |
 | Output | [Elitet2 70 Sensor Booster](/content/items/elitet2-70-sensor-booster/) |
 
 ```mermaid

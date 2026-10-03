@@ -26,4 +26,40 @@ description: "Modules / Enhancements, tier 4"
 | cycle_time | 10k |
 | powergrid_usage | 1.458k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 8 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Large Driller Pr"]:::current
+    b["Cryoperine ×800"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×800"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Sublimator Hi-D large miner module ×1"]:::comp
+    d --> a
+    click d "/content/items/named2-large-driller/" "Sublimator Hi-D large miner module"
+    e["Functional common fragment ×120"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×60"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×180"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Titanium ×2.4k"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Briochit ×2.4k"]:::comp
+    i --> a
+    click i "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

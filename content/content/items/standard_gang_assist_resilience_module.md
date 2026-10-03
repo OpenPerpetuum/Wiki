@@ -30,7 +30,7 @@ description: "Modules / Enhancements, tier 1"
 | powergrid_usage | 35 |
 
 <!-- production:generated -->
-## Production
+## Used in production
 
 **Component of 2 items** — everything that uses it in production:
 

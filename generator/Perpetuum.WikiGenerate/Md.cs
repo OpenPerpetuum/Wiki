@@ -113,6 +113,8 @@ public static class Md
     private static string Derive(string name)
     {
         if (name.StartsWith("def_")) name = name[4..];
+        if (name.StartsWith("extcat_")) name = name[7..];
+        if (name.StartsWith("ext_")) name = name[4..];
         if (name.EndsWith("_bot")) name = name[..^4];
         name = name.Replace("_mk2", " MK2").Replace("_reward1", " (reward)").Replace("_CT_capsule", " (CT capsule)");
         var tokens = name.Split('_', StringSplitOptions.RemoveEmptyEntries);

@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | CRC40 medium armor repairer ×1, Material Boss Z72 ×400 |
+| Production cost | Material Boss Z72 ×400, CRC40 medium armor repairer ×1 |
 | Output | [Elitet4 72 Medium Armor Repairer](/content/items/elitet4-72-medium-armor-repairer/) |
 
 ```mermaid

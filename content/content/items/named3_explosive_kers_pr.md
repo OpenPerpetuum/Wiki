@@ -28,4 +28,52 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 19 |
 | thermal_damage_to_core_modifier | 0.15 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 9** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["365p-CSD seismic ERP prototype"]:::current
+    b["Alligior ×200"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×400"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×400"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["SER-300 'Devactico' seismic ERP ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-explosive-kers/" "SER-300 'Devactico' seismic ERP"
+    f["Functional common fragment ×3"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×2"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×4"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Functional nuimqol fragment ×3"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    j["Damaged nuimqol fragment ×2"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    k["Perfect nuimqol fragment ×4"]:::comp
+    k --> a
+    click k "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    l["Statichnol ×200"]:::comp
+    l --> a
+    click l "/content/items/statichnol/" "Statichnol"
+    m["Briochit ×400"]:::comp
+    m --> a
+    click m "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

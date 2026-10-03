@@ -26,4 +26,52 @@ description: "Modules / Repair, tier 4"
 | cpu_usage | 38 |
 | powergrid_usage | 29 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 12 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Apogenion armor repairer tuning prototype"]:::current
+    b["Alligior ×300"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Chollonin ×100"]:::comp
+    c --> a
+    click c "/content/items/chollonin/" "Chollonin"
+    d["Espitium ×100"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["WPG3000 armor repairer tuning ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-armor-repairer-upgrade/" "WPG3000 armor repairer tuning"
+    f["Functional common fragment ×15"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×7"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×22"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Functional nuimqol fragment ×15"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    j["Damaged nuimqol fragment ×7"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    k["Perfect nuimqol fragment ×22"]:::comp
+    k --> a
+    click k "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    l["Statichnol ×300"]:::comp
+    l --> a
+    click l "/content/items/statichnol/" "Statichnol"
+    m["Briochit ×200"]:::comp
+    m --> a
+    click m "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

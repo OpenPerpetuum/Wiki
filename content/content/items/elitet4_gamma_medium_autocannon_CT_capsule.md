@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Torrex-G17 medium machine gun ×1, Material Boss Gamma Syndicate ×400 |
+| Production cost | Material Boss Gamma Syndicate ×400, Torrex-G17 medium machine gun ×1 |
 | Output | [Elitet4 Gamma Medium Autocannon](/content/items/elitet4-gamma-medium-autocannon/) |
 
 ```mermaid

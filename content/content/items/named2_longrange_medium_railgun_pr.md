@@ -31,4 +31,46 @@ description: "Modules / Weapons, tier 3"
 | optimal_range | 30 |
 | powergrid_usage | 176 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Nuimtec-Accolon LRS medium EM-gun prototype"]:::current
+    b["Chollonin ×50"]:::comp
+    b --> a
+    click b "/content/items/chollonin/" "Chollonin"
+    c["Espitium ×50"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Hydrobenol ×100"]:::comp
+    d --> a
+    click d "/content/items/hydrobenol/" "Hydrobenol"
+    e["Condor-SPP medium EM-gun ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-longrange-medium-railgun/" "Condor-SPP medium EM-gun"
+    f["Polynitrocol ×100"]:::comp
+    f --> a
+    click f "/content/items/polynitrocol/" "Polynitrocol"
+    g["Functional common fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×20"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Functional nuimqol fragment ×20"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    j["Damaged nuimqol fragment ×20"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    k["Titanium ×100"]:::comp
+    k --> a
+    click k "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

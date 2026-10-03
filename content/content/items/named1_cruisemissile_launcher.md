@@ -31,6 +31,37 @@ description: "Modules / Weapons, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 7 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Aqwit Imperator heavy missile launcher"]:::current
+    b["Axicoline ×150"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Phlobotil ×150"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Damaged common fragment ×45"]:::comp
+    d --> a
+    click d "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    e["Damaged pelistal fragment ×45"]:::comp
+    e --> a
+    click e "/content/items/robotshard-pelistal-basic/" "Damaged pelistal fragment"
+    f["Specimen Sap Item Flux ×10"]:::comp
+    f --> a
+    click f "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    g["Standard heavy missile launcher ×1"]:::comp
+    g --> a
+    click g "/content/items/standard-cruisemissile-launcher/" "Standard heavy missile launcher"
+    h["Titanium ×150"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Opaletrak range extender ×1, Material Boss Z70 ×300 |
+| Production cost | Material Boss Z70 ×300, Opaletrak range extender ×1 |
 | Output | [Elitet2 70 Tracking Upgrade](/content/items/elitet2-70-tracking-upgrade/) |
 
 ```mermaid

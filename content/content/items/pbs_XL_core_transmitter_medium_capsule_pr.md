@@ -31,4 +31,37 @@ description: "Special & other / Miscellaneous, tier 2"
 | signature_radius | 25 |
 | stealth_strength | 50 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 7 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs XL Core Transmitter Medium Capsule Pr"]:::current
+    b["Cryoperine ×200"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×400"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Coalimin ×100"]:::comp
+    d --> a
+    click d "/content/items/gamma-buildblock/" "Coalimin"
+    e["Tiraizin ×200"]:::comp
+    e --> a
+    click e "/content/items/gamma-energyblock/" "Tiraizin"
+    f["Pbs XL Core Transmitter Small Capsule ×1"]:::comp
+    f --> a
+    click f "/content/items/pbs-xl-core-transmitter-small-capsule/" "Pbs XL Core Transmitter Small Capsule"
+    g["Titanium ×100"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    h["Briochit ×200"]:::comp
+    h --> a
+    click h "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

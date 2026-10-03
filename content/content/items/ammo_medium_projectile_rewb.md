@@ -39,4 +39,31 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 | Daoden (zone_ASI) | ∞ | – | – | 600 | 1.2M | 600 |
 | Daoden outpost | ∞ | – | – | – | 1.2M | 600 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Medium 'Flechette' bullet"]:::current
+    b["Axicoline ×50"]:::comp
+    b --> a
+    click b "/content/items/axicoline/" "Axicoline"
+    c["Phlobotil ×20"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Polynitrocol ×35"]:::comp
+    d --> a
+    click d "/content/items/polynitrocol/" "Polynitrocol"
+    e["Polynucleit ×20"]:::comp
+    e --> a
+    click e "/content/items/polynucleit/" "Polynucleit"
+    f["Titanium ×50"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

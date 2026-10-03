@@ -34,6 +34,46 @@ description: "Modules / Weapons, tier 4"
 <!-- production:generated -->
 ## Production
 
+**Produced from 10 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Thelotec-Stroyar light HCL laser"]:::current
+    b["Hydrobenol ×100"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Pikolo light HCL laser ×1"]:::comp
+    c --> a
+    click c "/content/items/named2-small-laser/" "Pikolo light HCL laser"
+    d["Polynucleit ×100"]:::comp
+    d --> a
+    click d "/content/items/polynucleit/" "Polynucleit"
+    e["Functional common fragment ×15"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×7"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×22"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Functional thelodica fragment ×15"]:::comp
+    h --> a
+    click h "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    i["Damaged thelodica fragment ×7"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    j["Perfect thelodica fragment ×22"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-expert/" "Perfect thelodica fragment"
+    k["Briochit ×100"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 1 items** — everything that uses it in production:
 
 ```mermaid

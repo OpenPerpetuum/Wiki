@@ -33,6 +33,34 @@ description: "Special & other / Miscellaneous, tier 1"
 <!-- production:generated -->
 ## Production
 
+**Produced from 6 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Mining Tower Small Capsule"]:::current
+    b["Alligior ×2.5k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×1.2k"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×1.2k"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Plasteosine ×2.5k"]:::comp
+    e --> a
+    click e "/content/items/plasteosine/" "Plasteosine"
+    f["Titanium ×2.5k"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    g["Briochit ×2.5k"]:::comp
+    g --> a
+    click g "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

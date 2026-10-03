@@ -27,6 +27,22 @@ description: "Modules / Power, tier 1"
 <!-- production:generated -->
 ## Production
 
+**Produced from 2 components, research level 3** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Standard coreactor"]:::current
+    b["Cryoperine ×300"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Titanium ×200"]:::comp
+    c --> a
+    click c "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

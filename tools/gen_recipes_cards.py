@@ -46,7 +46,13 @@ def slug_of(definition: str) -> str:
     return definition[len("def_"):].lower().replace("_", "-")
 
 
+MARKER = "<!-- recipes:generated -->"
+
+
 def main():
+    if os.path.isfile(RECIPES) and MARKER in open(RECIPES, encoding="utf-8").read():
+        print("recipes.md already carries the generated cards (generator output) — nothing to do")
+        return 0
     data = json.load(open(DATA, encoding="utf-8"))
     recipes = {k: ([(c, q) for c, q in v["components"]], v["research"])
                for k, v in data["recipes"].items()}

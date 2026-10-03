@@ -30,4 +30,49 @@ description: "Modules / Weapons, tier 4"
 | optimal_range | 22.5 |
 | powergrid_usage | 270 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 11 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pentack-Nailer dd550 heavy Gauss gun"]:::current
+    b["Hydrobenol ×300"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Nuimtec-Gaule heavy Gauss gun ×1"]:::comp
+    c --> a
+    click c "/content/items/named2-large-railgun/" "Nuimtec-Gaule heavy Gauss gun"
+    d["Polynitrocol ×300"]:::comp
+    d --> a
+    click d "/content/items/polynitrocol/" "Polynitrocol"
+    e["Functional common fragment ×45"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×23"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Perfect common fragment ×68"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    h["Functional nuimqol fragment ×45"]:::comp
+    h --> a
+    click h "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    i["Damaged nuimqol fragment ×23"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    j["Perfect nuimqol fragment ×68"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-expert/" "Perfect nuimqol fragment"
+    k["Specimen Sap Item Flux ×50"]:::comp
+    k --> a
+    click k "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    l["Briochit ×300"]:::comp
+    l --> a
+    click l "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

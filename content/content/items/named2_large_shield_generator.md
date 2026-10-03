@@ -31,6 +31,43 @@ description: "Modules / Shield, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 9 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Gegel Ioner large shield generator"]:::current
+    b["Alligior ×600"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×300"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×600"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["AVA-Spintarge large shield generator ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-large-shield-generator/" "AVA-Spintarge large shield generator"
+    f["Functional common fragment ×60"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×60"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Specimen Sap Item Flux ×75"]:::comp
+    h --> a
+    click h "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    i["Titanium ×300"]:::comp
+    i --> a
+    click i "/content/items/titanium/" "Titanium"
+    j["Vitricyl ×300"]:::comp
+    j --> a
+    click j "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

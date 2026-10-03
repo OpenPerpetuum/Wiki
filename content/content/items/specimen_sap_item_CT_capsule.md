@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Titan ore ×10000, HDT ×40000, Liquizit ×20000, Silgium ×10000, Stermonit ×10000, Imentium ×10000, Helioptris ×10000, Triandlus ×10000, Prismocitae ×10000, Specimen Sap Item Flux ×1 |
+| Production cost | HDT ×40000, Helioptris ×10000, Imentium ×10000, Liquizit ×20000, Prismocitae ×10000, Silgium ×10000, Specimen Sap Item Flux ×1, Stermonit ×10000, Titan ore ×10000, Triandlus ×10000 |
 | Output | [Specimen Sap Item](/content/items/specimen-sap-item/) |
 
 ```mermaid

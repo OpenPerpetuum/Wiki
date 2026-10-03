@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Pelistec-TR250 medium missile launcher ×1, Material Boss Gamma Pelistal ×400 |
+| Production cost | Material Boss Gamma Pelistal ×400, Pelistec-TR250 medium missile launcher ×1 |
 | Output | [Elitet4 Gamma Missile Launcher](/content/items/elitet4-gamma-missile-launcher/) |
 
 ```mermaid

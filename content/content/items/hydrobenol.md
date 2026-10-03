@@ -22,6 +22,25 @@ _No stats — this item carries no aggregate values._
 <!-- production:generated -->
 ## Production
 
+**Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Hydrobenol"]:::current
+    b["Epriton ×50"]:::comp
+    b --> a
+    click b "/content/items/epriton/" "Epriton"
+    c["Liquizit ×75"]:::comp
+    c --> a
+    click c "/content/items/liquizit/" "Liquizit"
+    d["Titan ×50"]:::comp
+    d --> a
+    click d "/content/ores/titan/" "Titan"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 511 items** — a sample of what can be produced with it (the full list is in [Recipes](/content/recipes/)).
 
 ```mermaid

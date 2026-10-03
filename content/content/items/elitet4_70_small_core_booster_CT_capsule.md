@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Cerepter I. small energy injector ×1, Material Boss Z70 ×200 |
+| Production cost | Material Boss Z70 ×200, Cerepter I. small energy injector ×1 |
 | Output | [Elitet4 70 Small Core Booster](/content/items/elitet4-70-small-core-booster/) |
 
 ```mermaid

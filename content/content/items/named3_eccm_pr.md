@@ -25,4 +25,46 @@ description: "Modules / Enhancements, tier 4"
 | powergrid_usage | 16 |
 | sensor_strength | 77.5 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Braviar ECCM prototype"]:::current
+    b["Alligior ×50"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×150"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×150"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Deshrud-QW ECCM ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-eccm/" "Deshrud-QW ECCM"
+    f["Plasteosine ×50"]:::comp
+    f --> a
+    click f "/content/items/plasteosine/" "Plasteosine"
+    g["Functional common fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×15"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Perfect common fragment ×45"]:::comp
+    i --> a
+    click i "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    j["Titanium ×50"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    k["Briochit ×50"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

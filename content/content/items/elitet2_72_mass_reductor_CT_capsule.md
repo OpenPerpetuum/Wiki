@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | MR1000-Boogey lightweight frame ×1, Material Boss Z72 ×300 |
+| Production cost | Material Boss Z72 ×300, MR1000-Boogey lightweight frame ×1 |
 | Output | [Elitet2 72 Mass Reductor](/content/items/elitet2-72-mass-reductor/) |
 
 ```mermaid

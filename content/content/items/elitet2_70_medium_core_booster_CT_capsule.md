@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Shoxit Parter I. medium energy injector ×1, Material Boss Z70 ×300 |
+| Production cost | Material Boss Z70 ×300, Shoxit Parter I. medium energy injector ×1 |
 | Output | [Elitet2 70 Medium Core Booster](/content/items/elitet2-70-medium-core-booster/) |
 
 ```mermaid

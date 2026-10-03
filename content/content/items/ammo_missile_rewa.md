@@ -41,4 +41,25 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 | Daoden (zone_ASI) | ∞ | 600 | 1.2M |
 | Daoden outpost | ∞ | 600 | 1.2M |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 3 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Medium 'Smite' compact missile"]:::current
+    b["Hydrobenol ×50"]:::comp
+    b --> a
+    click b "/content/items/hydrobenol/" "Hydrobenol"
+    c["Phlobotil ×100"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Titanium ×50"]:::comp
+    d --> a
+    click d "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Wallex ECCM ×1, Material Boss Z70 ×300 |
+| Production cost | Material Boss Z70 ×300, Wallex ECCM ×1 |
 | Output | [Elitet2 70 Eccm](/content/items/elitet2-70-eccm/) |
 
 ```mermaid

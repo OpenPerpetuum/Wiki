@@ -19,4 +19,22 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Produced from 2 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Mobile fusion reactor [Horus - III]"]:::current
+    b["Fusion cells [Horus - III] ×1"]:::comp
+    b --> a
+    click b "/content/items/missionitem-tm-i-level05-exp3-03-t04/" "Fusion cells [Horus - III]"
+    c["Inductor [Horus - III] ×1"]:::comp
+    c --> a
+    click c "/content/items/missionitem-tm-i-level05-exp3-03-t05/" "Inductor [Horus - III]"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

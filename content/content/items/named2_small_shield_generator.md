@@ -32,6 +32,40 @@ description: "Modules / Shield, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 8 components, research level 4** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ovostec-Yellowray small shield generator"]:::current
+    b["Alligior ×200"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×100"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×200"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Parsvaal-IP small shield generator ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-small-shield-generator/" "Parsvaal-IP small shield generator"
+    f["Functional common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×20"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Titanium ×100"]:::comp
+    h --> a
+    click h "/content/items/titanium/" "Titanium"
+    i["Vitricyl ×100"]:::comp
+    i --> a
+    click i "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

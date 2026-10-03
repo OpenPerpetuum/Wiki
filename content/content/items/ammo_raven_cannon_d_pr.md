@@ -26,4 +26,31 @@ description: "Ammo / Cannon"
 | damage_kinetic | 48 |
 | damage_toxic | 24 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 5 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Ammo Raven Cannon D Pr"]:::current
+    b["Biotichrin ×200"]:::comp
+    b --> a
+    click b "/content/items/biotichrin/" "Biotichrin"
+    c["Phlobotil ×100"]:::comp
+    c --> a
+    click c "/content/items/phlobotil/" "Phlobotil"
+    d["Plasteosine ×50"]:::comp
+    d --> a
+    click d "/content/items/plasteosine/" "Plasteosine"
+    e["Specimen Sap Item Flux ×2"]:::comp
+    e --> a
+    click e "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    f["Titanium ×75"]:::comp
+    f --> a
+    click f "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

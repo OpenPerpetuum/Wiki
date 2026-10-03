@@ -14,7 +14,7 @@ Building and upgrading: robots, what they carry, and how your character and gear
 
 - **[Robots & fitting](/features/robots/)** — Selecting your active robot, fitting modules and ammo, presets, and tints.
 - **[Production](/features/production/)** — Turning components into items: production lines, refine, repair, reprocess, prototypes, and insurance.
-- **[Research](/features/research/)** — The two progression systems: the extension tree (character skills) and the tech tree (unlocks bought with research).
+- **[Research](/features/research/)** — The progression bought with research: the [tech tree](/content/techtree/) of per-character and per-corp unlocks (character skills are extensions — see [Character](/features/character/)).
 - **[Character](/features/character/)** — The character window: the extensions tab (skill tree) and sparks; the full catalog is in [Extensions](/content/extensions/).
 - **[Items & inventory](/features/items/)** — Your inventory: containers, packing, stacking, renaming, and special items like redeemables and goodie packs.
 - **[Modules & fitting](/features/modules/)** — The module families (weapons, armor, energy, electronics, EWar, EnWar, industrial, NEXUS) and the rules of thumb.

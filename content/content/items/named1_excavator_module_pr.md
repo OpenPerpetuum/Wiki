@@ -29,4 +29,28 @@ description: "Modules / Harvesting, tier 2"
 | effect_excavator_stealth_strength_modifier | -30 |
 | powergrid_usage | 1.152k |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components, research level 6** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named1 Excavator Module Pr"]:::current
+    b["Cryoperine ×1.6k"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Damaged common fragment ×120"]:::comp
+    c --> a
+    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    d["Standard Excavator Module ×1"]:::comp
+    d --> a
+    click d "/content/items/standard-excavator-module/" "Standard Excavator Module"
+    e["Titanium ×2.4k"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

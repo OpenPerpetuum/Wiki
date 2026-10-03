@@ -50,4 +50,22 @@ Fixed-price vendors that sell this item (see the [Item shop](/content/shop/) for
 |---|---|---|---|
 | Daoden outpost | ∞ | 5k | 750M |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 2 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Elitet4 72 Small Armor Repairer"]:::current
+    b["Material Boss Z72 ×200"]:::comp
+    b --> a
+    click b "/content/items/material-boss-z72/" "Material Boss Z72"
+    c["Microforge Aestolar small armor repairer ×1"]:::comp
+    c --> a
+    click c "/content/items/named3-small-armor-repairer/" "Microforge Aestolar small armor repairer"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

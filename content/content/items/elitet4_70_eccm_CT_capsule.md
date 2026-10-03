@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Braviar ECCM ×1, Material Boss Z70 ×400 |
+| Production cost | Material Boss Z70 ×400, Braviar ECCM ×1 |
 | Output | [Elitet4 70 Eccm](/content/items/elitet4-70-eccm/) |
 
 ```mermaid

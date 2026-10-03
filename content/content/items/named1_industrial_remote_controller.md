@@ -40,6 +40,34 @@ description: "Modules / Remote control, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 6 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named1 Industrial Remote Controller"]:::current
+    b["Cryoperine ×250"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Axicoline ×100"]:::comp
+    c --> a
+    click c "/content/items/axicoline/" "Axicoline"
+    d["Espitium ×50"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Damaged common fragment ×30"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    f["Standard Industrial Remote Controller ×1"]:::comp
+    f --> a
+    click f "/content/items/standard-industrial-remote-controller/" "Standard Industrial Remote Controller"
+    g["Titanium ×50"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

@@ -20,33 +20,33 @@ description: "Materials"
 _No stats — this item carries no aggregate values._
 
 <!-- production:generated -->
-## Production
+## Used in production
 
 **Component of 8 items** — everything that uses it in production:
 
 ```mermaid
 graph LR
     a["Niani assault robot CPU cortex"]:::current
-    b["Arbalest Chassis mk2"]:::prod
+    b["Arbalest Mk2 chassis"]:::prod
     a --> b
-    c["Arbalest mk2 Bot"]:::prod
+    c["Arbalest MK2 Bot"]:::prod
     a --> c
-    click c "/content/robots/" "Arbalest mk2 Bot"
-    d["Baphomet mk2 Bot"]:::prod
+    click c "/content/robots/" "Arbalest MK2 Bot"
+    d["Baphomet MK2 Bot"]:::prod
     a --> d
-    click d "/content/robots/" "Baphomet mk2 Bot"
-    e["Baphomet mk2 Chassis"]:::prod
+    click d "/content/robots/" "Baphomet MK2 Bot"
+    e["Baphomet Mk2 chassis"]:::prod
     a --> e
-    f["Sequer Chassis mk2"]:::prod
+    f["Sequer Mk2 chassis"]:::prod
     a --> f
-    g["Sequer mk2 Bot"]:::prod
+    g["Sequer MK2 Bot"]:::prod
     a --> g
-    click g "/content/robots/" "Sequer mk2 Bot"
-    h["Waspish Chassis mk2"]:::prod
+    click g "/content/robots/" "Sequer MK2 Bot"
+    h["Waspish Mk2 chassis"]:::prod
     a --> h
-    i["Waspish mk2 Bot"]:::prod
+    i["Waspish MK2 Bot"]:::prod
     a --> i
-    click i "/content/robots/" "Waspish mk2 Bot"
+    click i "/content/robots/" "Waspish MK2 Bot"
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef prod fill:#3b6ea5,stroke:#274a75,color:#ffffff
     classDef more fill:#39445a,stroke:#54658a,color:#d5dbe8

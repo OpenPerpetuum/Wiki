@@ -30,4 +30,34 @@ description: "Modules / Sensors & scanning, tier 3"
 | optimal_range | 30 |
 | powergrid_usage | 7 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 6 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Da Gama-PLS10 remote sensor amplifier prototype"]:::current
+    b["Cryoperine ×200"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Espitium ×200"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Occul remote sensor amplifier ×1"]:::comp
+    d --> a
+    click d "/content/items/named1-remote-sensor-booster/" "Occul remote sensor amplifier"
+    e["Functional common fragment ×20"]:::comp
+    e --> a
+    click e "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    f["Damaged common fragment ×20"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    g["Titanium ×100"]:::comp
+    g --> a
+    click g "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

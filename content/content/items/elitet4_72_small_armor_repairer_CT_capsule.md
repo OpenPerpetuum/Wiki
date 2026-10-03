@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Microforge Aestolar small armor repairer ×1, Material Boss Z72 ×200 |
+| Production cost | Material Boss Z72 ×200, Microforge Aestolar small armor repairer ×1 |
 | Output | [Elitet4 72 Small Armor Repairer](/content/items/elitet4-72-small-armor-repairer/) |
 
 ```mermaid

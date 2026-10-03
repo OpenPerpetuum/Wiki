@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Ambassador SU-I sensor amplifier ×1, Material Boss Z70 ×400 |
+| Production cost | Material Boss Z70 ×400, Ambassador SU-I sensor amplifier ×1 |
 | Output | [Elitet4 70 Sensor Booster](/content/items/elitet4-70-sensor-booster/) |
 
 ```mermaid

@@ -33,6 +33,49 @@ description: "Modules / Weapons, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 11 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named2 Longrange Large Railgun"]:::current
+    b["Chollonin ×75"]:::comp
+    b --> a
+    click b "/content/items/chollonin/" "Chollonin"
+    c["Espitium ×75"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Hydrobenol ×150"]:::comp
+    d --> a
+    click d "/content/items/hydrobenol/" "Hydrobenol"
+    e["Named1 Longrange Large Railgun ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-longrange-large-railgun/" "Named1 Longrange Large Railgun"
+    f["Polynitrocol ×150"]:::comp
+    f --> a
+    click f "/content/items/polynitrocol/" "Polynitrocol"
+    g["Functional common fragment ×30"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×30"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Functional nuimqol fragment ×30"]:::comp
+    i --> a
+    click i "/content/items/robotshard-nuimqol-advanced/" "Functional nuimqol fragment"
+    j["Damaged nuimqol fragment ×30"]:::comp
+    j --> a
+    click j "/content/items/robotshard-nuimqol-basic/" "Damaged nuimqol fragment"
+    k["Specimen Sap Item Flux ×25"]:::comp
+    k --> a
+    click k "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    l["Titanium ×150"]:::comp
+    l --> a
+    click l "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

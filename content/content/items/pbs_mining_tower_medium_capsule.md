@@ -33,6 +33,46 @@ description: "Special & other / Miscellaneous, tier 2"
 <!-- production:generated -->
 ## Production
 
+**Produced from 10 components** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Pbs Mining Tower Medium Capsule"]:::current
+    b["Alligior ×2.5k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Cryoperine ×625"]:::comp
+    c --> a
+    click c "/content/items/axicol/" "Cryoperine"
+    d["Espitium ×1.2k"]:::comp
+    d --> a
+    click d "/content/items/espitium/" "Espitium"
+    e["Coalimin ×1.2k"]:::comp
+    e --> a
+    click e "/content/items/gamma-buildblock/" "Coalimin"
+    f["Bochilum ×1.2k"]:::comp
+    f --> a
+    click f "/content/items/gamma-defblock/" "Bochilum"
+    g["Tiraizin ×625"]:::comp
+    g --> a
+    click g "/content/items/gamma-energyblock/" "Tiraizin"
+    h["Pbs Mining Tower Small Capsule ×1"]:::comp
+    h --> a
+    click h "/content/items/pbs-mining-tower-small-capsule/" "Pbs Mining Tower Small Capsule"
+    i["Plasteosine ×1.2k"]:::comp
+    i --> a
+    click i "/content/items/plasteosine/" "Plasteosine"
+    j["Titanium ×1.2k"]:::comp
+    j --> a
+    click j "/content/items/titanium/" "Titanium"
+    k["Briochit ×2.5k"]:::comp
+    k --> a
+    click k "/content/items/unimetal/" "Briochit"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid

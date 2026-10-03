@@ -29,4 +29,46 @@ description: "Modules / Shield, tier 4"
 | shield_absorbtion | 2.105 |
 | shield_radius | 33 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 10 components, research level 8** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Named3 Large Shield Generator Pr"]:::current
+    b["Alligior ×1.2k"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×600"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Isopropentol ×1.2k"]:::comp
+    d --> a
+    click d "/content/items/isopropentol/" "Isopropentol"
+    e["Gegel Ioner large shield generator ×1"]:::comp
+    e --> a
+    click e "/content/items/named2-large-shield-generator/" "Gegel Ioner large shield generator"
+    f["Functional common fragment ×90"]:::comp
+    f --> a
+    click f "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    g["Damaged common fragment ×45"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    h["Perfect common fragment ×135"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-expert/" "Perfect common fragment"
+    i["Specimen Sap Item Flux ×150"]:::comp
+    i --> a
+    click i "/content/items/specimen-sap-item-flux/" "Specimen Sap Item Flux"
+    j["Briochit ×600"]:::comp
+    j --> a
+    click j "/content/items/unimetal/" "Briochit"
+    k["Vitricyl ×600"]:::comp
+    k --> a
+    click k "/content/items/vitricyl/" "Vitricyl"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

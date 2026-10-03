@@ -19,4 +19,22 @@ description: "Mission items"
 
 _No stats — this item carries no aggregate values._
 
+<!-- production:generated -->
+## Production
+
+**Produced from 2 components, research level 1** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Compressor [T-M Industry V]"]:::current
+    b["Compressor valve [T-M Industry V] ×1"]:::comp
+    b --> a
+    click b "/content/items/missionitem-tm-i-tutorial-exp3-05-t02/" "Compressor valve [T-M Industry V]"
+    c["Compressor casket [T-M Industry V] ×1"]:::comp
+    c --> a
+    click c "/content/items/missionitem-tm-i-tutorial-exp3-05-t03/" "Compressor casket [T-M Industry V]"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

@@ -29,4 +29,28 @@ description: "Modules / Enhancements, tier 2"
 | optimal_range | 30 |
 | powergrid_usage | 133 |
 
+<!-- production:generated -->
+## Production
+
+**Produced from 4 components, research level 5** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["CDC-Yamp medium energy transferer prototype"]:::current
+    b["Cryoperine ×500"]:::comp
+    b --> a
+    click b "/content/items/axicol/" "Cryoperine"
+    c["Damaged common fragment ×60"]:::comp
+    c --> a
+    click c "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    d["Standard medium energy transferer ×1"]:::comp
+    d --> a
+    click d "/content/items/standard-medium-energy-transfer/" "Standard medium energy transferer"
+    e["Titanium ×200"]:::comp
+    e --> a
+    click e "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+
 [All items](/content/items/)

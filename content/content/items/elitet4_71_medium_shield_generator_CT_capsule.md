@@ -27,7 +27,7 @@ The item this capsule carries, and how it is produced (see [Recipes](/content/re
 |  |  |
 |---|---|
 | Research level | – |
-| Production cost | Penik medium shield generator ×1, Material Boss Z71 ×400 |
+| Production cost | Material Boss Z71 ×400, Penik medium shield generator ×1 |
 | Output | [Elitet4 71 Medium Shield Generator](/content/items/elitet4-71-medium-shield-generator/) |
 
 ```mermaid

@@ -31,6 +31,46 @@ description: "Modules / Enhancements, tier 3"
 <!-- production:generated -->
 ## Production
 
+**Produced from 10 components, research level 7** — assemble the components to build it (see [Recipes](/content/recipes/) for the full list):
+
+```mermaid
+graph LR
+    a["Solitex-990 kinetic ERP"]:::current
+    b["Alligior ×100"]:::comp
+    b --> a
+    click b "/content/items/alligior/" "Alligior"
+    c["Espitium ×200"]:::comp
+    c --> a
+    click c "/content/items/espitium/" "Espitium"
+    d["Metachropin ×100"]:::comp
+    d --> a
+    click d "/content/items/metachropin/" "Metachropin"
+    e["Hegatex-1000 kinetic ERP ×1"]:::comp
+    e --> a
+    click e "/content/items/named1-kinetic-kers/" "Hegatex-1000 kinetic ERP"
+    f["Prilumium ×200"]:::comp
+    f --> a
+    click f "/content/items/prilumium/" "Prilumium"
+    g["Functional common fragment ×3"]:::comp
+    g --> a
+    click g "/content/items/robotshard-common-advanced/" "Functional common fragment"
+    h["Damaged common fragment ×2"]:::comp
+    h --> a
+    click h "/content/items/robotshard-common-basic/" "Damaged common fragment"
+    i["Functional thelodica fragment ×3"]:::comp
+    i --> a
+    click i "/content/items/robotshard-thelodica-advanced/" "Functional thelodica fragment"
+    j["Damaged thelodica fragment ×2"]:::comp
+    j --> a
+    click j "/content/items/robotshard-thelodica-basic/" "Damaged thelodica fragment"
+    k["Titanium ×200"]:::comp
+    k --> a
+    click k "/content/items/titanium/" "Titanium"
+    classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
+    classDef comp fill:#3b6ea5,stroke:#274a75,color:#ffffff
+```
+## Used in production
+
 **Component of 2 items** — everything that uses it in production:
 
 ```mermaid
