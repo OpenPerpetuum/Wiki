@@ -76,7 +76,9 @@ test("sparks page: family boxes link to per-family card sections", async ({ page
     const r = el.getBoundingClientRect();
     return r.top;
   });
-  // below the sticky topbar (~112px) with room to spare
-  expect(pos).toBeGreaterThan(110);
-  expect(pos).toBeLessThan(400);
+  // below the sticky topbar with room to spare (one row on desktop ~60px,
+  // two rows on mobile ~112px — this suite runs desktop viewports)
+  const topbarH = await page.locator('.topbar').evaluate((el) => el.getBoundingClientRect().height);
+  expect(pos).toBeGreaterThan(topbarH - 5);
+  expect(pos).toBeLessThan(topbarH + 300);
 });

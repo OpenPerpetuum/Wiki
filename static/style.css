@@ -81,9 +81,18 @@ pre code { background: none; padding: 0; }
 }
 .topbar-main { display: flex; align-items: center; gap: 0.8rem; width: 100%; }
 .topbar-main .palette-wrap { margin-left: auto; }
-/* row 2: the search bar — wide, centered */
-.topbar-search { display: flex; justify-content: center; width: 100%; }
-.topbar-search #wiki-search { flex: 1; max-width: 900px; }
+/* The search bar sits on the right of the SAME row (desktop): brand left,
+   search + chrome icons right. Mobile keeps its own row below. */
+.topbar-search { display: none; }
+.topbar-search #wiki-search { width: 340px; }
+@media (min-width: 801px) {
+    .topbar { flex-direction: row; align-items: center; gap: 1rem; padding-bottom: 0.55rem; }
+    .topbar-main { flex: 1; min-width: 0; }
+    /* one row: brand … chrome icons, then the search bar at the right end */
+    .topbar-main .palette-wrap { margin-left: auto; }
+    .topbar-search { display: flex; flex: 0 1 560px; min-width: 200px; }
+    .topbar-search #wiki-search { width: 100%; }
+}
 .brand {
     font-weight: 700; font-size: 1.02rem; color: #eaf6ff;
     letter-spacing: 0.14em; text-transform: uppercase;
@@ -169,7 +178,7 @@ pre code { background: none; padding: 0; }
 #wiki-search::placeholder { color: var(--chrome-muted); }
 #wiki-search:focus { outline: none; border-color: var(--neon); box-shadow: 0 0 10px var(--neon-faint); }
 
-/* just below the search row (row 2 of the two-row topbar), centered over
+/* just below the sticky topbar, centered over
    it like the search bar itself */
 .search-results {
     position: fixed; top: 96px; left: 50%; transform: translateX(-50%);
@@ -189,11 +198,11 @@ pre code { background: none; padding: 0; }
     display: flex; align-items: stretch; gap: 1.2rem;
     margin: 1.4rem 1.2rem 1.6rem;
 }
-.content-col { flex: 1; min-width: 0; }
+.content-col { flex: 1 1 auto; min-width: 0; }
 .sidenav {
-    position: sticky; top: 6.2rem;
+    position: sticky; top: 4.4rem; /* one-row topbar + margin */
     flex: 0 0 230px;
-    max-height: calc(100vh - 7.8rem); overflow-y: auto;
+    max-height: calc(100vh - 5.6rem); overflow-y: auto;
     background: linear-gradient(180deg, var(--chrome-bg2), var(--chrome-bg));
     border: 1px solid var(--neon-dim);
     border-radius: 10px;
@@ -294,12 +303,19 @@ pre code { background: none; padding: 0; }
 }
 
 /* ============ content panel (dark, lighter than chrome) ============ */
-/* same width and alignment as the footer panel below (1050px, shared left
-   edge) so the content border lines up with the footer's */
+/* The CONTENT column (main + footer) is the centered element on wide
+   screens — .content-col is the grid column that centers it, the sidenav
+   sits to its left and is NOT part of the centered block. main and the
+   footer share the 1050px max width so their borders line up. */
+.content-col {
+    display: grid;
+    grid-template-columns: minmax(0, 1050px);
+    justify-content: center;
+}
 main {
     margin: 0;
-    max-width: 1050px;
     width: 100%;
+    min-width: 0;
     background:
         linear-gradient(var(--grid-line) 1px, transparent 1px),
         linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
@@ -339,6 +355,11 @@ main p, main li, main blockquote, main dt, main dd {
     }
     body.sidenav-open .sidenav { transform: translateX(0); }
     body.sidenav-open { overflow: hidden; } /* scroll lock behind the drawer */
+    /* while the drawer has the user's attention the chrome icons (language,
+       palette, theme) are hidden — they sit in the top-right corner the
+       drawer overlays, and the drawer itself is what matters now */
+    body.sidenav-open .palette-toggle,
+    body.sidenav-open #theme-toggle { display: none; }
     /* dim backdrop behind the drawer (a tap on it closes, via JS) */
     body.sidenav-open::before {
         content: "";
@@ -346,25 +367,17 @@ main p, main li, main blockquote, main dt, main dd {
         background: rgba(4, 10, 20, 0.6);
         z-index: 44;
     }
-    /* The hamburger floats over the content (bottom left) instead of taking
-       a slot in the topbar — the topbar stays brand + icons. */
     .sidenav-toggle {
         display: inline-flex; align-items: center; justify-content: center;
-        position: fixed; left: 0.9rem; bottom: 0.9rem;
-        z-index: 46; /* above the backdrop (44); the drawer (45) is on the
-                         left, the button floats in the corner — no overlap */
-        width: 2.6rem; height: 2.6rem; flex: none;
-        font-size: 1.15rem; line-height: 1;
+        width: 2.4rem; height: 2.4rem; flex: none;
+        font-size: 1.1rem; line-height: 1;
         color: var(--chrome-fg);
-        background: rgba(10, 16, 26, 0.88);
-        backdrop-filter: blur(6px);
+        background: rgba(255, 255, 255, 0.05);
         border: 1px solid var(--neon-dim);
-        border-radius: 10px;
-        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+        border-radius: 8px;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
     }
-    body.sidenav-open .sidenav-toggle { transform: scale(0.9); opacity: 0.4; }
     .sidenav-toggle:hover, .sidenav-toggle:focus-visible {
         border-color: var(--neon); color: var(--neon); outline: none;
     }
@@ -379,7 +392,7 @@ main p, main li, main blockquote, main dt, main dd {
     .topbar-main { gap: 0.5rem; }
     /* row 1 must fit a phone: keep the title short enough for the icons */
     .brand { font-size: 0.72rem; letter-spacing: 0.08em; white-space: nowrap; }
-    .theme-toggle, .palette-toggle { width: 34px; height: 34px; }
+    .sidenav-toggle, .theme-toggle, .palette-toggle { width: 34px; height: 34px; }
     #wiki-search { min-width: 0; }
 }
 
@@ -831,9 +844,10 @@ html[data-theme="light"][data-cb="achro"] {
 .zone-card-name { color: var(--fg); font-weight: 600; font-size: 0.95rem; line-height: 1.2; }
 .zone-card-meta { color: var(--muted); font-size: 0.82rem; }
 /* anchor jumps (category boxes on the extensions page, the side-menu map
-   anchors, …) land below the two-row sticky topbar so the section heading
-   stays visible */
-main [id] { scroll-margin-top: 7rem; }
+   anchors, …) land below the sticky topbar so the section heading stays
+   visible — one row on desktop, two rows on mobile */
+main [id] { scroll-margin-top: 4.2rem; }
+@media (max-width: 800px) { main [id] { scroll-margin-top: 7rem; } }
 .zonemap-label { fill: var(--fg); opacity: 0.85; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .zonemap circle, .zonemap rect { stroke: rgba(0, 0, 0, 0.35); stroke-width: 1; }
 .zonemap a:hover circle, .zonemap a:hover rect { stroke: var(--neon); stroke-width: 2.5; }
@@ -900,7 +914,7 @@ main [id] { scroll-margin-top: 7rem; }
 footer {
     clear: both;
     margin: 1.6rem 0 0;
-    max-width: 1050px;
+    /* sits in the same centered 1050px grid column as main (see .content-col) */
     padding: 0.9rem 1.2rem 1.6rem;
     background:
         linear-gradient(180deg, var(--chrome-bg) 0%, var(--chrome-bg2) 100%);
