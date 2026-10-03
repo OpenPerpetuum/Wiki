@@ -2,20 +2,20 @@
   <rect x="0" y="0" width="512" height="512" rx="4.0" fill="#10151f" stroke="#39445a" stroke-width="0.5"/>
   <image id="zm-height" x="0" y="0" width="512" height="512" href="/zonemaps/zone-strghld-70/height.png" preserveAspectRatio="none"/>
   <image id="zm-color" x="0" y="0" width="512" height="512" href="/zonemaps/zone-strghld-70/color.png" preserveAspectRatio="none" style="display:none"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
-  <line stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="64" y1="0" x2="64" y2="512" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="0" y1="64" x2="512" y2="64" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="128" y1="0" x2="128" y2="512" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="0" y1="128" x2="512" y2="128" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="192" y1="0" x2="192" y2="512" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="0" y1="192" x2="512" y2="192" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="256" y1="0" x2="256" y2="512" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="0" y1="256" x2="512" y2="256" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="320" y1="0" x2="320" y2="512" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="0" y1="320" x2="512" y2="320" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="384" y1="0" x2="384" y2="512" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="0" y1="384" x2="512" y2="384" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="448" y1="0" x2="448" y2="512" stroke="#1d2534" stroke-width="0.25"/>
+  <line x1="0" y1="448" x2="512" y2="448" stroke="#1d2534" stroke-width="0.25"/>
   <a href="/zones/zone-tm-pve/" title="exit → Hershfield">
   <path d="M 487 392.2 L 491.8 397 L 487 401.8 L 482.2 397 Z" fill="#f5a05a" stroke="#10151f" stroke-width="0.62"/>
   <text x="487" y="408.3" font-size="6.76" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="2.03" stroke-linejoin="round">exit → Hershfield</text>

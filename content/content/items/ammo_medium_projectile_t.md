@@ -41,7 +41,6 @@ graph LR
     classDef current fill:#2f9e6f,stroke:#1f6f4a,color:#ffffff
     classDef finished fill:#3b6ea5,stroke:#274a75,color:#ffffff
 ```
-
 <!-- production:generated -->
 ## Production
 

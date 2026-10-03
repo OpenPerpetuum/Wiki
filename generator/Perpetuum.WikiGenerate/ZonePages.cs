@@ -83,11 +83,15 @@ public static class ZonePages
         var myConfigs = configs.Where(c => c.ZoneId == z.Id).ToList();
         var oreCount = myConfigs.Count;
 
+        // The family tag (alpha/beta/gamma) lets the nav highlight the matching
+        // family-listing entry while the reader is on any zone page of the family.
         var sb = new StringBuilder();
         sb.Append(Md.Header(title, $"{type} {ProWord(protection)} zone: " +
             $"{(oreCount > 0 ? oreCount + " ore types, " : "")}" +
             $"{(species.TryGetValue(z.Ruleset, out var sp) ? sp + " plant species" : "no plant rules")}, {z.W}×{z.H} tiles.",
-            "zones, mineralconfigs, plantrules, teleportdescriptions, strongholdexitconfig"));
+            "zones, mineralconfigs, plantrules, teleportdescriptions, strongholdexitconfig",
+            name == "zone_training" ? null : $"family: {protection}")
+        );
         sb.Append($"\n# {title}\n\n");
 
         // Teleport map first: the zone's own extent with its TP columns/landing

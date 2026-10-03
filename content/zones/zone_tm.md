@@ -2,6 +2,8 @@
 title: "New Virginia (worked example)"
 description: "A protected PvE starter zone: 3 ore types, 15 basic plant species, fertility 20."
 weight: 30
+extra:
+  family: alpha
 ---
 
 # New Virginia (zone_TM) — worked example

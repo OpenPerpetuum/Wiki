@@ -28,7 +28,7 @@
     <script src="/zone-map.js"></script>
     <script src="/mermaid.min.js" defer></script>
 </head>
-<body>
+<body{% if page and page.extra | get(key="family", default=null) %} data-zone-family="{{ page.extra | get(key="family", default=null) }}"{% endif %}>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
         <symbol id="mi-start" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
@@ -122,23 +122,23 @@
             </div>
             <ul class="nav-items">
                 <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
-                <li><a href="/zones/map/#training" data-mapanchor="1">{{ config.extra.ui.nav_map_training }}</a></li>
-                <li><a href="/zones/map/#alpha" data-mapanchor="1">{{ config.extra.ui.nav_map_alpha }}</a></li>
-                <li><a href="/zones/map/#beta" data-mapanchor="1">{{ config.extra.ui.nav_map_beta }}</a></li>
+                <li><a href="/zones/zone-training/">{{ config.extra.ui.nav_map_training }}</a></li>
+                <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
+                <li><a href="/zones/alpha/">{{ config.extra.ui.nav_map_alpha }}</a></li>
+                <li><a href="/zones/beta/">{{ config.extra.ui.nav_map_beta }}</a></li>
                 <li class="nav-has-sub">
                     <div class="nav-sub-head">
-                        <a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma }}</a>
+                        <a href="/zones/gamma/">{{ config.extra.ui.nav_map_gamma }}</a>
                         <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
                     </div>
                     <ul class="map-sub map-sub-deep">
-                        <li><a href="/zones/map/#t0" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t0 }}</a></li>
-                        <li><a href="/zones/map/#t1" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t1 }}</a></li>
-                        <li><a href="/zones/map/#t2" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t2 }}</a></li>
-                        <li><a href="/zones/map/#t3" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t3 }}</a></li>
-                        <li><a href="/zones/map/#t4" data-mapanchor="1">{{ config.extra.ui.nav_map_gamma_t4 }}</a></li>
+                        <li><a href="/zones/gamma/#t0">{{ config.extra.ui.nav_map_gamma_t0 }}</a></li>
+                        <li><a href="/zones/gamma/#t1">{{ config.extra.ui.nav_map_gamma_t1 }}</a></li>
+                        <li><a href="/zones/gamma/#t2">{{ config.extra.ui.nav_map_gamma_t2 }}</a></li>
+                        <li><a href="/zones/gamma/#t3">{{ config.extra.ui.nav_map_gamma_t3 }}</a></li>
+                        <li><a href="/zones/gamma/#t4">{{ config.extra.ui.nav_map_gamma_t4 }}</a></li>
                     </ul>
                 </li>
-                <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
             </ul>
         </li>
         <li class="nav-group">
@@ -555,7 +555,24 @@
         function selectActive() {
             var hash = document.location.hash;
             var best = null;
-            if (hash.length > 1) {
+            // Zone pages belong to a family (the body carries data-zone-family
+            // from the page's front matter): highlight the family-listing entry
+            // (Alpha / Beta / Gamma) instead of the plain "/zones/" prefix,
+            // and open Gamma's tier sub-list so the entry is reachable.
+            var fam = document.body.getAttribute("data-zone-family");
+            if (fam && path.indexOf("/zones/zone-") === 0) {
+                var famLink = document.querySelector('.sidenav a[href="' + "/zones/" + fam + "/" + '"]');
+                if (famLink) {
+                    var sub = famLink.closest("li.nav-has-sub");
+                    if (sub && sub.classList.contains("collapsed")) {
+                        sub.classList.remove("collapsed");
+                        var btn = sub.querySelector(".nav-caret");
+                        if (btn) btn.setAttribute("aria-expanded", "true");
+                    }
+                }
+                best = famLink;
+            }
+            if (!best && hash.length > 1) {
                 document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
                     if (a.getAttribute("href") === path + hash) best = a;
                 });

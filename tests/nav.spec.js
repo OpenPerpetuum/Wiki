@@ -52,11 +52,21 @@ test('Systems: Production sub-list carries the recipes page', async ({ page, bas
   expect(await prodSub.locator('a').first().getAttribute('href')).toBe('/content/recipes/');
 });
 
-test('World anchors visible by default, Gamma tiers expand on demand', async ({ page, baseURL }) => {
+test('World entries visible by default, Gamma tiers expand on demand', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
-  // Lore, Training, Alpha, Beta, Gamma, Protection levels
+  // Lore, Training, Protection levels, Alpha, Beta, Gamma (zone listings on
+  // their own pages; the zone-type entries sit below Protection levels)
   expect(await page.locator(`${GROUPS} >> nth=1 >> .nav-items > li`).count()).toBe(6);
-  const gammaCaret = page.locator('.sidenav .nav-has-sub:has(a[href="/zones/map/#t1"]) > .nav-sub-head .nav-caret');
+  const worldHrefs = await page.evaluate((sel) => {
+    const g = document.querySelectorAll(sel)[1];
+    return [...g.querySelectorAll('.nav-items > li > a, .nav-items > li .nav-sub-head > a')]
+      .map((a) => a.getAttribute('href'));
+  }, GROUPS);
+  expect(worldHrefs).toEqual([
+    '/features/lore/', '/zones/zone-training/', '/zones/protection/',
+    '/zones/alpha/', '/zones/beta/', '/zones/gamma/',
+  ]);
+  const gammaCaret = page.locator('.sidenav .nav-has-sub:has(a[href="/zones/gamma/"]) > .nav-sub-head .nav-caret');
   expect(await page.locator('.map-sub-deep a:visible').count()).toBe(0);
   await gammaCaret.click();
   expect(await page.locator('.map-sub-deep a:visible').count()).toBe(5);
@@ -84,21 +94,11 @@ test('zones map: top-level World header is active', async ({ page, baseURL }) =>
   expect(await page.locator('.sidenav a.active').textContent()).toBe('World');
 });
 
-test('world anchor click: the anchor itself is highlighted, not World', async ({ page, baseURL }) => {
-  await page.goto(`${baseURL}/zones/map/`);
-  await page.locator('.sidenav a[href="/zones/map/#training"]').click();
-  // the highlight follows the hashchange event, which fires asynchronously
-  await page.waitForFunction(
-    () => {
-      const actives = document.querySelectorAll('.sidenav a.active');
-      return actives.length === 1 && actives[0].getAttribute('href') === '/zones/map/#training';
-    },
-    null,
-    { timeout: 5000 }
-  );
-  const actives = page.locator('.sidenav a.active');
-  expect(await actives.count()).toBe(1);
-  expect(await actives.getAttribute('href')).toBe('/zones/map/#training');
+test('gamma anchor hash: Gamma sub-list auto-opens, anchor highlighted', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/gamma/#t2`);
+  expect(await page.locator('.map-sub-deep a:visible').count()).toBe(5);
+  // the T2 anchor itself is highlighted (the hash matches its full href)
+  expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/gamma/#t2');
 });
 
 test('active selection box spans the whole row, ending after the caret', async ({ page, baseURL }) => {
@@ -132,10 +132,7 @@ test('shop category page: sub-list auto-opens, active link scrolled into view', 
   expect(ar.y >= nr.y - 1 && ar.y + ar.height <= nr.y + nr.height + 1).toBe(true);
 });
 
-test('gamma anchor hash: Gamma sub-list auto-opens', async ({ page, baseURL }) => {
-  await page.goto(`${baseURL}/zones/map/#t2`);
-  expect(await page.locator('.map-sub-deep a:visible').count()).toBe(5);
-});
+
 
 test('content sub-page: Content tables auto-opens, section highlighted and in view', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/content/ores/crude/`);
@@ -150,11 +147,41 @@ test('content sub-page: Content tables auto-opens, section highlighted and in vi
   expect(ar.y >= nr.y - 1 && ar.y + ar.height <= nr.y + nr.height + 1).toBe(true);
 });
 
-test('zone data page: Zones sub-list auto-opens', async ({ page, baseURL }) => {
+test('zone data page: Zones sub-list auto-opens, family entry highlighted', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/zones/zone-asi/`);
   const zonesSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/zones/"]) > .nav-sub');
   expect(await zonesSub.locator('a:visible').count()).toBe(2);
-  expect(await page.locator('.sidenav a.active').textContent()).toBe('Zones');
+  // zone_ASI is protected: the Alpha family-listing entry is the active one
+  expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/alpha/');
+});
+
+test('zone page: the family-listing entry (not Zones) is highlighted', async ({ page, baseURL }) => {
+  // zone_ASI is alpha (protected): Alpha lights up, the plain /zones/ prefix does not
+  await page.goto(`${baseURL}/zones/zone-asi/`);
+  expect(await page.locator('.sidenav a.active').count()).toBe(1);
+  expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/alpha/');
+  // a generated beta zone page (open-PvP twin) highlights Beta
+  await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
+  expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/beta/');
+  // a gamma zone page highlights Gamma AND opens its tier sub-list
+  await page.goto(`${baseURL}/zones/zone-gamma-z120/`);
+  expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/gamma/');
+  expect(await page.locator('.map-sub-deep a:visible').count()).toBe(5);
+});
+
+test('family-listing pages list their zones as cards', async ({ page, baseURL }) => {
+  for (const [fam, min] of [['alpha', 6], ['beta', 10], ['gamma', 30]]) {
+    await page.goto(`${baseURL}/zones/${fam}/`);
+    const cards = page.locator('.zone-cards a.zone-card');
+    expect(await cards.count(), fam).toBeGreaterThanOrEqual(min);
+    // every card links to a zone page
+    const href = await cards.first().getAttribute('href');
+    expect(href).toMatch(/^\/zones\/zone-/);
+  }
+  // the gamma page carries the T0–T4 sections
+  await page.goto(`${baseURL}/zones/gamma/`);
+  for (const t of ['t0', 't1', 't2', 't3', 't4'])
+    expect(await page.locator('#' + t).count(), t).toBe(1);
 });
 
 test('extensions page: Character sub-list auto-opens, Extensions highlighted', async ({ page, baseURL }) => {

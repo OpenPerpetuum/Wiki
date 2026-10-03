@@ -174,6 +174,10 @@ public static class Program
             var zoneMap = ZonesMapPage.Build(db);
             File.WriteAllText(Path.Combine(zonesOutDir, "map.md"), zoneMap);
             Console.WriteLine($"wrote zones-out/map.md ({zoneMap.Length / 1024} KB)");
+            // Per-family zone-listing pages (alpha.md / beta.md / gamma.md).
+            foreach (var (file, content) in ZonesMapPage.FamilyPages(db))
+                File.WriteAllText(Path.Combine(zonesOutDir, file), content);
+            Console.WriteLine("wrote zones-out family pages (alpha/beta/gamma)");
             var (zonePages, zoneMaps) = ZonePages.BuildAll(db);
             foreach (var (file, content) in zonePages)
                 File.WriteAllText(Path.Combine(zonesOutDir, file), content);

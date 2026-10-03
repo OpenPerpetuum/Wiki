@@ -16,6 +16,10 @@ public static class ZonesMapPage
 {
     private sealed record Zone(string Name, int Type, double X, double Y, int W, int H, bool Protected, bool Terraformable);
 
+    /// <summary>Nullable double read (AVG over an all-NULL column is NULL).</summary>
+    private static object? NulDbl(Dictionary<string, object?> r, string k)
+        => r.TryGetValue(k, out var v) && v is not null ? Convert.ToDouble(v) : null;
+
     private sealed record Group(string Id, string Label, string Blurb, List<Zone> Zones);
 
     public static string Build(Db db)
@@ -50,16 +54,20 @@ public static class ZonesMapPage
 
         // Known gate connections from the DB: stronghold/arena exits and their
         // destinations (grouped — a zone can have several exit configs to the same
-        // destination).
+        // destination). The gate positions (se.x/se.y) anchor the line to the
+        // gate's real spot in the source zone.
         var links = db.Query("""
-            SELECT sz.name AS src, dz.name AS dst, rc.name AS rift
+            SELECT sz.name AS src, dz.name AS dst, rc.name AS rift,
+                   AVG(se.x) AS gx, AVG(se.y) AS gy
             FROM strongholdexitconfig se
             JOIN zones sz ON sz.id = se.zoneid
             JOIN riftconfigs rc ON rc.id = se.riftConfigId
             JOIN riftdestinations rd ON rd.groupId = rc.destinationGroupId
             JOIN zones dz ON dz.id = rd.zoneId
+            GROUP BY sz.name, dz.name, rc.name
             """)
-            .Select(r => (Src: r.Str("src"), Dst: r.Str("dst"), Rift: r.Str("rift")))
+            .Select(r => (Src: r.Str("src"), Dst: r.Str("dst"), Rift: r.Str("rift"),
+                Gx: (double?)NulDbl(r, "gx"), Gy: (double?)NulDbl(r, "gy")))
             .GroupBy(l => (l.Src, l.Dst))
             .Select(g => g.First())
             .OrderBy(l => l.Src).ThenBy(l => l.Dst)
@@ -67,34 +75,40 @@ public static class ZonesMapPage
 
         // Inter-zone teleport points: teleportdescriptions records every TP column
         // (sourcezone -> targetzone); most of the 365 rows are intra-zone, the
-        // inter-zone ones (1-4 per zone pair) are the real travel network.
+        // inter-zone ones (1-4 per zone pair) are the real travel network. The
+        // column positions (zoneentities x/y) and the landing spots
+        // (targetx/targety) anchor each line to the REAL spots in both zones,
+        // not their centers.
         var tps = db.Query("""
-            SELECT zs.name AS src, zd.name AS dst, COUNT(*) AS tps
+            SELECT zs.name AS src, zd.name AS dst, COUNT(*) AS tps,
+                   AVG(ze.x) AS sx, AVG(ze.y) AS sy,
+                   AVG(td.targetx) AS tx, AVG(td.targety) AS ty
             FROM teleportdescriptions td
             JOIN zones zs ON zs.id = td.sourcezone
             JOIN zones zd ON zd.id = td.targetzone
+            JOIN zoneentities ze ON ze.eid = td.sourcecolumn
             WHERE td.sourcezone <> td.targetzone AND td.active = 1
             GROUP BY zs.name, zd.name
             """)
-            .Select(r => (Src: r.Str("src"), Dst: r.Str("dst"), Tps: r.Int("tps")))
+            .Select(r => (Src: r.Str("src"), Dst: r.Str("dst"), Tps: r.Int("tps"),
+                Sx: (double?)NulDbl(r, "sx"), Sy: (double?)NulDbl(r, "sy"),
+                Tx: (double?)NulDbl(r, "tx"), Ty: (double?)NulDbl(r, "ty")))
             .OrderBy(l => l.Src).ThenBy(l => l.Dst)
             .ToList();
-
-        var groups = Groups(all);
 
         var sb = new StringBuilder();
         sb.Append(Md.Header("World", "Every zone drawn with its real terrain at its grid position, outlined by galaxy, with the teleport and gate connections from the database.",
             "zones (x/y, width, protected, terraformable), teleportdescriptions, zoneentities, strongholdexitconfig + riftconfigs + riftdestinations"));
         sb.Append("\n\n# World\n\n");
-        sb.Append("All zones of the server, drawn at their real grid coordinates — each island in the same " +
-                  "design as its index card below (the coastline outline in the galaxy family color, sized to " +
-                  "its real width in tiles, the legend below the map shows the sizes). The dashed lines are the " +
-                  "inter-zone teleport columns recorded in the database, colored from the source island's " +
-                  "family color to the destination's (the count per pair is in the line tooltip); the light " +
-                  "dashed lines are the stronghold/PvP-arena exit gates. **Scroll over the map to zoom** (no " +
-                  "key needed), **drag to pan**, and click an island to open its page (islands without a " +
-                  "dedicated page go to the [zone index](/zones/zone-index/)). Hover an island for its name, " +
-                  "protection level and coordinates.\n\n");
+        sb.Append("All zones of the server, drawn at their real grid coordinates — each island outlined by " +
+                  "galaxy family and sized to its real width in tiles (the legend below the map shows the " +
+                  "sizes). The dashed lines are the inter-zone teleport columns recorded in the database, " +
+                  "colored from the source island's family color to the destination's, drawn over the islands " +
+                  "and touching the real column/landing spots inside them (the count per pair is in the line " +
+                  "tooltip); the light dashed lines are the stronghold/PvP-arena exit gates. **Scroll over the " +
+                  "map to zoom** (no key needed), **drag to pan**, and click an island to open its page (islands " +
+                  "without a dedicated page go to the [zone index](/zones/zone-index/)). Hover an island for its " +
+                  "name, protection level and coordinates.\n\n");
 
         sb.Append("<div class=\"zonemap-wrap\">\n");
         sb.Append("<button type=\"button\" class=\"zonemap-reset\" title=\"Reset the zoom\">⟲</button>\n");
@@ -107,28 +121,85 @@ public static class ZonesMapPage
             sb.Append($"<span class=\"legend-isle\" style=\"{style}\"></span> {lab};&ensp; ");
         }
         sb.Append("</div>\n\n");
+        // The per-family zone listings live on their own pages (see
+        // FamilyPages) — the map page only links to them.
+        sb.Append("Zone listings: [Alpha](/zones/alpha/) · [Beta](/zones/beta/) · [Gamma](/zones/gamma/) — ");
+        sb.Append("[Zone index](/zones/zone-index/) · [Protection levels](/zones/protection/)\n");
+        return sb.ToString();
+    }
 
-        // Sub-category sections (also the side-menu anchors under "World"): a
-        // card per zone, thumbnail = the zone's coastline-only map (thumb.png,
-        // generated by tools/gen_zone_teleport_maps.py) — bold island border,
-        // no points of interest.
-        foreach (var g in groups)
+    /// <summary>The per-family zone-listing pages (/zones/alpha/, /zones/beta/,
+    /// /zones/gamma/). Each family gets its own page with the card grid that
+    /// used to be a section at the bottom of the world map page — the world
+    /// map stays the map, the listings get a URL of their own (and the nav
+    /// highlights the matching entry on every zone page of that family).
+    /// The gamma page splits the frontier belt into its T0–T4 sections.
+    /// (filename, markdown) pairs, ready to write next to map.md.</summary>
+    public static List<(string File, string Md)> FamilyPages(Db db)
+    {
+        var zones = db.Query("SELECT id, name, zonetype, x, y, width, height, protected, terraformable, enabled FROM zones ORDER BY id")
+            .Select(r => new Zone(r.Str("name"), r.Int("zonetype"), r.Dbl("x"), r.Dbl("y"),
+                r.Int("width"), r.Int("height"), r.Bit("protected"), r.Bit("terraformable")))
+            .ToList();
+        var byName = zones.GroupBy(z => z.Name).ToDictionary(g => g.Key, g => g.First());
+        var all = byName.Values.ToList();
+        var groups = Groups(all);
+
+        var pages = new List<(string, string)>();
+        foreach (var g in groups.Where(g => g.Id != "training"))
         {
-            sb.Append($"<a id=\"{g.Id}\"></a>\n\n## {g.Label}\n\n{g.Blurb}\n\n");
-            sb.Append("<div class=\"zone-cards\">\n");
-            foreach (var z in g.Zones)
+            var sb = new StringBuilder();
+            var gamma = g.Id.StartsWith("t", StringComparison.Ordinal);
+            var title = gamma ? "Gamma" : g.Label;
+            var file = (gamma ? "gamma" : g.Id) + ".md";
+            var desc = gamma
+                ? "Every frontier-belt zone: the tc transit zones and the T1–T4 tier islands, each with its page."
+                : $"Every {g.Id} zone — {(g.Id == "alpha" ? "the protected main islands and their PvE companions" : "the open-PvP islands")}, each with its own page.";
+            sb.Append(Md.Header(title, desc, "zones (name, zonetype, width, height, protected, terraformable)",
+                "family: " + (gamma ? "gamma" : g.Id)));
+            sb.Append($"\n# {title}\n\n");
+            if (gamma)
             {
-                var slug = z.Name.ToLowerInvariant().Replace("_", "-");
-                sb.Append($"<a class=\"zone-card\" href=\"/zones/{slug}/\">\n");
-                sb.Append($"<img class=\"zone-card-thumb\" src=\"/zonemaps/{slug}/thumb.png\" alt=\"\" loading=\"lazy\">\n");
-                sb.Append($"<span class=\"zone-card-name\">{Escape(ZoneName(z.Name))}</span>\n");
-                sb.Append($"<span class=\"zone-card-meta\">{TypeLabel(z.Type)} · {z.W}×{z.H}</span>\n");
-                sb.Append("</a>\n");
+                sb.Append("The frontier belt, split by the server-recorded tier (zones.note): the six tc transit zones (T0) and the tier islands T1–T4 — open PvP and terraformable, see [Protection levels](/zones/protection/).\n\n");
             }
-            sb.Append("</div>\n\n");
+            else
+            {
+                sb.Append(g.Blurb + "\n\n");
+            }
+            if (gamma)
+            {
+                foreach (var t in groups.Where(x => x.Id.StartsWith("t", StringComparison.Ordinal)))
+                {
+                    sb.Append($"<a id=\"{t.Id}\"></a>\n\n## {t.Label}\n\n{t.Blurb}\n\n");
+                    sb.Append(Cards(t.Zones));
+                }
+            }
+            else
+            {
+                sb.Append(Cards(g.Zones));
+            }
+            sb.Append("\n[World map](/zones/map/) · [Zone index](/zones/zone-index/) · [Protection levels](/zones/protection/)\n");
+            pages.Add((file, sb.ToString()));
         }
+        return pages;
+    }
 
-        sb.Append("[Zones overview](/zones/) · [Zone index](/zones/zone-index/) · [Protection levels](/zones/protection/)\n");
+    /// <summary>A zone-card grid (thumb.png per zone) — the same cards the index
+    /// page uses.</summary>
+    private static string Cards(List<Zone> zones)
+    {
+        var sb = new StringBuilder();
+        sb.Append("<div class=\"zone-cards\">\n");
+        foreach (var z in zones)
+        {
+            var slug = z.Name.ToLowerInvariant().Replace("_", "-");
+            sb.Append($"<a class=\"zone-card\" href=\"/zones/{slug}/\">\n");
+            sb.Append($"<img class=\"zone-card-thumb\" src=\"/zonemaps/{slug}/thumb.png\" alt=\"\" loading=\"lazy\">\n");
+            sb.Append($"<span class=\"zone-card-name\">{Escape(ZoneName(z.Name))}</span>\n");
+            sb.Append($"<span class=\"zone-card-meta\">{TypeLabel(z.Type)} · {z.W}×{z.H}</span>\n");
+            sb.Append("</a>\n");
+        }
+        sb.Append("</div>\n\n");
         return sb.ToString();
     }
 
@@ -201,10 +272,22 @@ public static class ZonesMapPage
     private static string Svg(
         List<Zone> all,
         Dictionary<string, Zone> byName,
-        List<(string Src, string Dst, string Rift)> links,
-        List<(string Src, string Dst, int Tps)> tps,
+        List<(string Src, string Dst, string Rift, double? Gx, double? Gy)> links,
+        List<(string Src, string Dst, int Tps, double? Sx, double? Sy, double? Tx, double? Ty)> tps,
         double vbW, double vbH, Func<double, double> Px, Func<double, double> Py)
     {
+        // A connection line's endpoint sits at the real spot in the zone —
+        // the TP column's / landing's tile position mapped into the island
+        // node's rectangle (zone-local y grows downward, like the screen).
+        (double X, double Y) End(Zone z, double? tx, double? ty)
+        {
+            var size = Size(z.W);
+            var cx = Px(z.X);
+            var cy = Py(z.Y);
+            if (tx is null || ty is null || z.W == 0 || z.H == 0) return (cx, cy);
+            return (cx + (tx.Value / z.W - 0.5) * size, cy + (ty.Value / z.H - 0.5) * size);
+        }
+
         var sb = new StringBuilder();
         sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones at their grid positions, coastline outlines colored by galaxy family, with the teleport and exit-gate connections between them\" class=\"zonemap\" xmlns=\"http://www.w3.org/2000/svg\">\n");
         sb.Append("  <title>Map of all game zones at their grid positions, with the teleport and exit-gate connections between them</title>\n");
@@ -216,26 +299,17 @@ public static class ZonesMapPage
         {
             var l = tps[i];
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
-            sb.Append($"    <linearGradient id=\"tpg{i}\" gradientUnits=\"userSpaceOnUse\" x1=\"{Px(s.X):0.#}\" y1=\"{Py(s.Y):0.#}\" x2=\"{Px(d.X):0.#}\" y2=\"{Py(d.Y):0.#}\">\n");
+            var (ax, ay) = End(s, l.Sx, l.Sy);
+            var (bx, by) = End(d, l.Tx, l.Ty);
+            sb.Append($"    <linearGradient id=\"tpg{i}\" gradientUnits=\"userSpaceOnUse\" x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\">\n");
             sb.Append($"      <stop offset=\"0\" stop-color=\"{FamilyColor(l.Src)}\"/>\n");
             sb.Append($"      <stop offset=\"1\" stop-color=\"{FamilyColor(l.Dst)}\"/>\n");
             sb.Append("    </linearGradient>\n");
         }
         sb.Append("  </defs>\n");
-        for (var i = 0; i < tps.Count; i++)
-        {
-            var l = tps[i];
-            if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
-            sb.Append($"  <line x1=\"{Px(s.X):0.#}\" y1=\"{Py(s.Y):0.#}\" x2=\"{Px(d.X):0.#}\" y2=\"{Py(d.Y):0.#}\" class=\"zonemap-tp\" stroke=\"url(#tpg{i})\">" +
-                      $"<title>{l.Src} — {l.Dst} ({l.Tps} TP point{(l.Tps > 1 ? "s" : "")})</title></line>\n");
-        }
-        foreach (var l in links)
-        {
-            if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
-            sb.Append($"  <line x1=\"{Px(s.X):0.#}\" y1=\"{Py(s.Y):0.#}\" x2=\"{Px(d.X):0.#}\" y2=\"{Py(d.Y):0.#}\" class=\"zonemap-link\">" +
-                      $"<title>{l.Src} — {l.Dst} (exit gate `{l.Rift}`)</title></line>\n");
-        }
-        // Small islands first so the big-island labels draw on top.
+        // Small islands first so the big-island labels draw on top. The
+        // connection lines come AFTER the nodes: they run over the islands and
+        // touch the columns'/landing spots' real positions inside them.
         foreach (var z in all.OrderBy(z => Size(z.W)).ThenBy(z => z.Name, StringComparer.Ordinal))
         {
             var f = Family(z.Name);
@@ -256,6 +330,23 @@ public static class ZonesMapPage
             var text = $"<text x=\"{x1 + size / 2 + 3:0.#}\" y=\"{y1 + label / 3:0.#}\" font-size=\"{label}\" class=\"zonemap-label\">{shortName}</text>";
             var href = PageLink(z.Name);
             sb.Append($"  <a href=\"{href}\"><g>{shape}{image}{text}</g></a>\n");
+        }
+        for (var i = 0; i < tps.Count; i++)
+        {
+            var l = tps[i];
+            if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
+            var (ax, ay) = End(s, l.Sx, l.Sy);
+            var (bx, by) = End(d, l.Tx, l.Ty);
+            sb.Append($"  <line x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\" class=\"zonemap-tp\" stroke=\"url(#tpg{i})\">" +
+                      $"<title>{l.Src} — {l.Dst} ({l.Tps} TP point{(l.Tps > 1 ? "s" : "")})</title></line>\n");
+        }
+        foreach (var l in links)
+        {
+            if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
+            var (ax, ay) = End(s, l.Gx, l.Gy);
+            var (bx, by) = End(d, null, null);
+            sb.Append($"  <line x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\" class=\"zonemap-link\">" +
+                      $"<title>{l.Src} — {l.Dst} (exit gate `{l.Rift}`)</title></line>\n");
         }
         sb.Append("</svg>\n");
         return sb.ToString();

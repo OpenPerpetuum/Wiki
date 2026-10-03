@@ -2,23 +2,23 @@
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="#10151f" stroke="#39445a" stroke-width="2.0"/>
   <image id="zm-height" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-tm-pvp/height.png" preserveAspectRatio="none"/>
   <image id="zm-color" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-tm-pvp/color.png" preserveAspectRatio="none" style="display:none"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line class="ltp-line" data-ltp="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
-  <line class="ltp-line" data-ltp="1" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
-  <line class="ltp-line" data-ltp="2" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="ltp-line" data-ltp="0" x1="938.5" y1="515.5" x2="1856.5" y2="857.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="1" x1="938.5" y1="515.5" x2="496.5" y2="1187.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line" data-ltp="2" x1="1856.5" y1="857.5" x2="496.5" y2="1187.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-tm-pvp/" title="from Alsbale">
   <circle cx="903" cy="517" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="903" y="478" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Alsbale</text>
@@ -35,14 +35,8 @@
   <circle cx="306.5" cy="974.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="306.5" y="943.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Emperth, Norhoop</text>
   </a>
-  <a href="/zones/zone-tm-pvp/" title="Alsbale">
   <circle cx="496.5" cy="1187.5" r="18" data-ltp="1 2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <text x="496.5" y="1156.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale</text>
-  </a>
-  <a href="/zones/zone-tm-pvp/" title="Alsbale">
   <circle cx="938.5" cy="515.5" r="18" data-ltp="0 1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <text x="938.5" y="484.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale</text>
-  </a>
   <a href="/zones/zone-ics-a-real/" title="Domhalarn">
   <circle cx="1207.5" cy="296.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1207.5" y="265.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
@@ -55,9 +49,9 @@
   <circle cx="1742.5" cy="1242.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1742.5" y="1211.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Emperth, Norhoop</text>
   </a>
-  <a href="/zones/zone-tm-pvp/" title="Alsbale, zone_gamma_tc_z100">
+  <a href="/zones/zone-gamma-tc-z100/" title="zone_gamma_tc_z100">
   <circle cx="1856.5" cy="857.5" r="18" data-ltp="0 2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <text x="1856.5" y="826.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale, zone_gamma_tc_z100</text>
+  <text x="1856.5" y="826.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z100</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
 </svg>

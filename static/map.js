@@ -245,6 +245,7 @@
         }, true);
 
         attachLtp(wrap);
+        attachTpLines(wrap);
         ensureReset(wrap);
         applyWrap(wrap);
     }
@@ -305,6 +306,71 @@
                     pairs[i].line.classList.remove('ltp-on');
                 }
             }
+        });
+    }
+
+    // World map only (the zone teleport maps have no .zonemap-tp lines):
+    // the inter-zone TP lines are almost invisible at rest and fade in while
+    // the cursor is near the line itself (distance to the segment, in
+    // viewBox units — unaffected by the zoom transform). Desktop pointers
+    // only: the CSS keeps the lines at normal opacity on touch layouts, and
+    // this handler stays inert there (matchMedia).
+    var TP_SHOW = 26, TP_KEEP = 46; // viewBox units (show / keep-lit)
+    var tpFine = null;
+    try { tpFine = window.matchMedia('(hover: hover) and (pointer: fine)'); } catch (e) {}
+    function attachTpLines(wrap) {
+        var svg = wrap.querySelector('svg.zonemap');
+        var lines = svg ? svg.querySelectorAll('line.zonemap-tp') : [];
+        if (!lines.length) return;
+        var segs = [];
+        for (var i = 0; i < lines.length; i++) {
+            segs.push({
+                el: lines[i], on: false,
+                x1: parseFloat(lines[i].getAttribute('x1')),
+                y1: parseFloat(lines[i].getAttribute('y1')),
+                x2: parseFloat(lines[i].getAttribute('x2')),
+                y2: parseFloat(lines[i].getAttribute('y2'))
+            });
+        }
+        var pt = null;
+        try { pt = document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGPoint(); } catch (e) {}
+        if (!pt) return;
+        function dist(s, px, py) {
+            var vx = s.x2 - s.x1, vy = s.y2 - s.y1;
+            var wx = px - s.x1, wy = py - s.y1;
+            var l2 = vx * vx + vy * vy;
+            var t = l2 ? (wx * vx + wy * vy) / l2 : 0;
+            t = Math.max(0, Math.min(1, t));
+            var dx = px - (s.x1 + t * vx), dy = py - (s.y1 + t * vy);
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+        var raf = 0, mx = 0, my = 0;
+        function update() {
+            raf = 0;
+            if (!(tpFine && tpFine.matches)) return;
+            var m = svg.getScreenCTM();
+            if (!m) return;
+            pt.x = mx; pt.y = my;
+            var p = pt.matrixTransform(m.inverse());
+            for (var i = 0; i < segs.length; i++) {
+                var s = segs[i];
+                var d = dist(s, p.x, p.y);
+                var on = d < TP_SHOW ? true : (s.on ? d <= TP_KEEP : false);
+                if (on !== s.on) {
+                    s.on = on;
+                    if (on) s.el.classList.add('zm-tp-on');
+                    else s.el.classList.remove('zm-tp-on');
+                }
+            }
+        }
+        wrap.addEventListener('pointermove', function (e) {
+            if (!(tpFine && tpFine.matches)) return;
+            mx = e.clientX; my = e.clientY;
+            if (!raf) raf = requestAnimationFrame(update);
+        });
+        wrap.addEventListener('pointerleave', function () {
+            for (var i = 0; i < segs.length; i++)
+                if (segs[i].on) { segs[i].on = false; segs[i].el.classList.remove('zm-tp-on'); }
         });
     }
 

@@ -776,9 +776,17 @@ html[data-theme="light"][data-cb="achro"] {
     vertical-align: middle;
 }
 /* inter-zone teleports: dashed lines, the stroke set per line as a gradient
-   from the source family color to the destination's (see ZonesMapPage.cs) */
+   from the source family color to the destination's (see ZonesMapPage.cs).
+   Desktop pointers: almost invisible at rest — map.js fades the line in
+   while the cursor is near it (.zm-tp-on); touch layouts keep them plainly
+   visible (no mouse to "approach" with). */
 .zonemap-tp { stroke-width: 1.1; stroke-opacity: 0.65; stroke-dasharray: 5 4; }
 .zonemap-tp:hover { stroke-opacity: 1; stroke-width: 2; }
+@media (hover: hover) and (pointer: fine) {
+  .zonemap-tp { stroke-opacity: 0.07; transition: stroke-opacity 0.15s; }
+  .zonemap-tp.zm-tp-on { stroke-opacity: 0.9; stroke-width: 1.6; }
+  .zonemap-tp:hover { stroke-opacity: 1; stroke-width: 2; }
+}
 .zonemap-link { stroke: var(--accent); stroke-width: 1.6; stroke-opacity: 0.85; stroke-dasharray: 5 3; }
 .zonemap-link:hover { stroke: var(--neon); stroke-width: 2.2; }
 /* local (in-zone) teleports on the zone maps: the dashed lines between a

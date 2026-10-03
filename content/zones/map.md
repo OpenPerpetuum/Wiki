@@ -8,873 +8,698 @@ description: "Every zone drawn with its real terrain at its grid position, outli
 
 # World
 
-All zones of the server, drawn at their real grid coordinates — each island in the same design as its index card below (the coastline outline in the galaxy family color, sized to its real width in tiles, the legend below the map shows the sizes). The dashed lines are the inter-zone teleport columns recorded in the database, colored from the source island's family color to the destination's (the count per pair is in the line tooltip); the light dashed lines are the stronghold/PvP-arena exit gates. **Scroll over the map to zoom** (no key needed), **drag to pan**, and click an island to open its page (islands without a dedicated page go to the [zone index](/zones/zone-index/)). Hover an island for its name, protection level and coordinates.
+All zones of the server, drawn at their real grid coordinates — each island outlined by galaxy family and sized to its real width in tiles (the legend below the map shows the sizes). The dashed lines are the inter-zone teleport columns recorded in the database, colored from the source island's family color to the destination's, drawn over the islands and touching the real column/landing spots inside them (the count per pair is in the line tooltip); the light dashed lines are the stronghold/PvP-arena exit gates. **Scroll over the map to zoom** (no key needed), **drag to pan**, and click an island to open its page (islands without a dedicated page go to the [zone index](/zones/zone-index/)). Hover an island for its name, protection level and coordinates.
 
 <div class="zonemap-wrap">
 <button type="button" class="zonemap-reset" title="Reset the zoom">⟲</button>
 <svg viewBox="0 0 1000 1477" role="img" aria-label="Map of all game zones at their grid positions, coastline outlines colored by galaxy family, with the teleport and exit-gate connections between them" class="zonemap" xmlns="http://www.w3.org/2000/svg">
   <title>Map of all game zones at their grid positions, with the teleport and exit-gate connections between them</title>
   <defs>
-    <linearGradient id="tpg0" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="367.5" y2="716.8">
+    <linearGradient id="tpg0" gradientUnits="userSpaceOnUse" x1="405" y1="554.5" x2="367.5" y2="716.8">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg1" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="404.6" y2="484.9">
+    <linearGradient id="tpg1" gradientUnits="userSpaceOnUse" x1="405" y1="554.5" x2="404.6" y2="484.9">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg2" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="329.7" y2="921.6">
+    <linearGradient id="tpg2" gradientUnits="userSpaceOnUse" x1="395.2" y1="535.5" x2="329.7" y2="921.6">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg3" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="478.8" y2="568.4">
+    <linearGradient id="tpg3" gradientUnits="userSpaceOnUse" x1="401.6" y1="533.1" x2="478.8" y2="568.4">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg4" gradientUnits="userSpaceOnUse" x1="404.6" y1="540.6" x2="460.3" y2="512.7">
+    <linearGradient id="tpg4" gradientUnits="userSpaceOnUse" x1="412.2" y1="540.6" x2="460.3" y2="512.7">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg5" gradientUnits="userSpaceOnUse" x1="130.4" y1="575.8" x2="367.5" y2="716.8">
+    <linearGradient id="tpg5" gradientUnits="userSpaceOnUse" x1="130.2" y1="575.3" x2="367.5" y2="716.8">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg6" gradientUnits="userSpaceOnUse" x1="130.4" y1="575.8" x2="404.6" y2="484.9">
+    <linearGradient id="tpg6" gradientUnits="userSpaceOnUse" x1="144" y1="571.5" x2="404.6" y2="484.9">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg7" gradientUnits="userSpaceOnUse" x1="367.5" y1="716.8" x2="404.6" y2="540.6">
+    <linearGradient id="tpg7" gradientUnits="userSpaceOnUse" x1="372.2" y1="706.7" x2="404.6" y2="540.6">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg8" gradientUnits="userSpaceOnUse" x1="367.5" y1="716.8" x2="130.4" y2="575.8">
+    <linearGradient id="tpg8" gradientUnits="userSpaceOnUse" x1="351.4" y1="715.5" x2="130.4" y2="575.8">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg9" gradientUnits="userSpaceOnUse" x1="355.1" y1="512.7" x2="531.3" y2="435.4">
+    <linearGradient id="tpg9" gradientUnits="userSpaceOnUse" x1="363.9" y1="524.7" x2="531.3" y2="435.4">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg10" gradientUnits="userSpaceOnUse" x1="355.1" y1="512.7" x2="528.4" y2="590.1">
+    <linearGradient id="tpg10" gradientUnits="userSpaceOnUse" x1="358.2" y1="497.9" x2="528.4" y2="590.1">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg11" gradientUnits="userSpaceOnUse" x1="355.1" y1="512.7" x2="460.3" y2="512.7">
+    <linearGradient id="tpg11" gradientUnits="userSpaceOnUse" x1="365.5" y1="506.4" x2="460.3" y2="512.7">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg12" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="404.6" y2="540.6">
+    <linearGradient id="tpg12" gradientUnits="userSpaceOnUse" x1="406.3" y1="486.4" x2="404.6" y2="540.6">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg13" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="130.4" y2="575.8">
+    <linearGradient id="tpg13" gradientUnits="userSpaceOnUse" x1="406.3" y1="486.4" x2="130.4" y2="575.8">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg14" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="319.6" y2="1090.3">
+    <linearGradient id="tpg14" gradientUnits="userSpaceOnUse" x1="395.5" y1="492.4" x2="319.6" y2="1090.3">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg15" gradientUnits="userSpaceOnUse" x1="404.6" y1="484.9" x2="478.8" y2="457.1">
+    <linearGradient id="tpg15" gradientUnits="userSpaceOnUse" x1="412.8" y1="493.7" x2="478.8" y2="457.1">
       <stop offset="0" stop-color="#f5a05a"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg16" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="700" y2="1013.4">
+    <linearGradient id="tpg16" gradientUnits="userSpaceOnUse" x1="673.9" y1="1075.1" x2="700" y2="1013.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg17" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="556.2" y2="1117.1">
+    <linearGradient id="tpg17" gradientUnits="userSpaceOnUse" x1="673.9" y1="1075.1" x2="556.2" y2="1117.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg18" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="761.1" y2="1122.7">
+    <linearGradient id="tpg18" gradientUnits="userSpaceOnUse" x1="673.9" y1="1075.1" x2="761.1" y2="1122.7">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg19" gradientUnits="userSpaceOnUse" x1="673.4" y1="1075" x2="553" y2="484.9">
+    <linearGradient id="tpg19" gradientUnits="userSpaceOnUse" x1="673.9" y1="1075.1" x2="553" y2="484.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg20" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="556.2" y2="1117.1">
+    <linearGradient id="tpg20" gradientUnits="userSpaceOnUse" x1="510.3" y1="1169.8" x2="556.2" y2="1117.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg21" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="363.2" y2="1156.5">
+    <linearGradient id="tpg21" gradientUnits="userSpaceOnUse" x1="510.3" y1="1169.8" x2="363.2" y2="1156.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg22" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="567.4" y2="1320.5">
+    <linearGradient id="tpg22" gradientUnits="userSpaceOnUse" x1="510.3" y1="1169.8" x2="567.4" y2="1320.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg23" gradientUnits="userSpaceOnUse" x1="511.7" y1="1171.4" x2="478.8" y2="457.1">
+    <linearGradient id="tpg23" gradientUnits="userSpaceOnUse" x1="510.3" y1="1169.8" x2="478.8" y2="457.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg24" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="404.6" y2="484.9">
+    <linearGradient id="tpg24" gradientUnits="userSpaceOnUse" x1="317.5" y1="1091.1" x2="404.6" y2="484.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg25" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="363.2" y2="1156.5">
+    <linearGradient id="tpg25" gradientUnits="userSpaceOnUse" x1="317.5" y1="1091.1" x2="363.2" y2="1156.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg26" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="258.7" y2="1023.9">
+    <linearGradient id="tpg26" gradientUnits="userSpaceOnUse" x1="317.5" y1="1091.1" x2="258.7" y2="1023.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg27" gradientUnits="userSpaceOnUse" x1="319.6" y1="1090.3" x2="247.5" y2="1178.2">
+    <linearGradient id="tpg27" gradientUnits="userSpaceOnUse" x1="317.5" y1="1091.1" x2="247.5" y2="1178.2">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg28" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="404.6" y2="540.6">
+    <linearGradient id="tpg28" gradientUnits="userSpaceOnUse" x1="328.4" y1="921.3" x2="404.6" y2="540.6">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg29" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="397" y2="906.5">
+    <linearGradient id="tpg29" gradientUnits="userSpaceOnUse" x1="328.4" y1="921.3" x2="397" y2="906.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg30" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="258.7" y2="1023.9">
+    <linearGradient id="tpg30" gradientUnits="userSpaceOnUse" x1="328.4" y1="921.3" x2="258.7" y2="1023.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg31" gradientUnits="userSpaceOnUse" x1="329.7" y1="921.6" x2="206.5" y2="945.1">
+    <linearGradient id="tpg31" gradientUnits="userSpaceOnUse" x1="328.4" y1="921.3" x2="206.5" y2="945.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg32" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="397" y2="906.5">
+    <linearGradient id="tpg32" gradientUnits="userSpaceOnUse" x1="537.2" y1="771.2" x2="397" y2="906.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg33" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="639" y2="949.1">
+    <linearGradient id="tpg33" gradientUnits="userSpaceOnUse" x1="537.2" y1="771.2" x2="639" y2="949.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg34" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="561" y2="711.1">
+    <linearGradient id="tpg34" gradientUnits="userSpaceOnUse" x1="537.2" y1="771.2" x2="561" y2="711.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg35" gradientUnits="userSpaceOnUse" x1="537.2" y1="773" x2="478.8" y2="568.4">
-      <stop offset="0" stop-color="#a78bfa"/>
-      <stop offset="1" stop-color="#6ee7a0"/>
-    </linearGradient>
-    <linearGradient id="tpg36" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="639" y2="949.1">
-      <stop offset="0" stop-color="#a78bfa"/>
-      <stop offset="1" stop-color="#a78bfa"/>
-    </linearGradient>
-    <linearGradient id="tpg37" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="700" y2="1013.4">
-      <stop offset="0" stop-color="#a78bfa"/>
-      <stop offset="1" stop-color="#a78bfa"/>
-    </linearGradient>
-    <linearGradient id="tpg38" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="815" y2="962.8">
-      <stop offset="0" stop-color="#a78bfa"/>
-      <stop offset="1" stop-color="#a78bfa"/>
-    </linearGradient>
-    <linearGradient id="tpg39" gradientUnits="userSpaceOnUse" x1="743.7" y1="929" x2="553" y2="540.6">
+    <linearGradient id="tpg35" gradientUnits="userSpaceOnUse" x1="537.2" y1="771.2" x2="478.8" y2="568.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg40" gradientUnits="userSpaceOnUse" x1="566.6" y1="1033.5" x2="495.9" y2="1003">
+    <linearGradient id="tpg36" gradientUnits="userSpaceOnUse" x1="741.8" y1="929" x2="639" y2="949.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg41" gradientUnits="userSpaceOnUse" x1="566.6" y1="1033.5" x2="700" y2="1013.4">
+    <linearGradient id="tpg37" gradientUnits="userSpaceOnUse" x1="741.8" y1="929" x2="700" y2="1013.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg42" gradientUnits="userSpaceOnUse" x1="495.9" y1="1003" x2="566.6" y2="1033.5">
+    <linearGradient id="tpg38" gradientUnits="userSpaceOnUse" x1="741.8" y1="929" x2="815" y2="962.8">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg43" gradientUnits="userSpaceOnUse" x1="495.9" y1="1003" x2="381.7" y2="1021.9">
+    <linearGradient id="tpg39" gradientUnits="userSpaceOnUse" x1="741.8" y1="929" x2="553" y2="540.6">
       <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#6ee7a0"/>
+    </linearGradient>
+    <linearGradient id="tpg40" gradientUnits="userSpaceOnUse" x1="551.1" y1="1043" x2="495.9" y2="1003">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg41" gradientUnits="userSpaceOnUse" x1="579.1" y1="1021" x2="700" y2="1013.4">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg42" gradientUnits="userSpaceOnUse" x1="509.6" y1="1006.1" x2="566.6" y2="1033.5">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tpg43" gradientUnits="userSpaceOnUse" x1="482.2" y1="1006.1" x2="381.7" y2="1021.9">
+      <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg44" gradientUnits="userSpaceOnUse" x1="381.7" y1="1021.9" x2="495.9" y2="1003">
+    <linearGradient id="tpg44" gradientUnits="userSpaceOnUse" x1="396.5" y1="1018.8" x2="495.9" y2="1003">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg45" gradientUnits="userSpaceOnUse" x1="381.7" y1="1021.9" x2="258.7" y2="1023.9">
+    <linearGradient id="tpg45" gradientUnits="userSpaceOnUse" x1="373.9" y1="1034.3" x2="258.7" y2="1023.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg46" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="329.7" y2="921.6">
+    <linearGradient id="tpg46" gradientUnits="userSpaceOnUse" x1="396.1" y1="893.7" x2="329.7" y2="921.6">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg47" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="537.2" y2="773">
+    <linearGradient id="tpg47" gradientUnits="userSpaceOnUse" x1="398.6" y1="919.4" x2="537.2" y2="773">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg48" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="524" y2="888">
+    <linearGradient id="tpg48" gradientUnits="userSpaceOnUse" x1="409.9" y1="902.4" x2="524" y2="888">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg49" gradientUnits="userSpaceOnUse" x1="397" y1="906.5" x2="401.8" y2="822.1">
+    <linearGradient id="tpg49" gradientUnits="userSpaceOnUse" x1="382.7" y1="904.5" x2="401.8" y2="822.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg50" gradientUnits="userSpaceOnUse" x1="524" y1="888" x2="397" y2="906.5">
+    <linearGradient id="tpg50" gradientUnits="userSpaceOnUse" x1="509.9" y1="891.3" x2="397" y2="906.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg51" gradientUnits="userSpaceOnUse" x1="524" y1="888" x2="639" y2="949.1">
+    <linearGradient id="tpg51" gradientUnits="userSpaceOnUse" x1="536.8" y1="890.4" x2="639" y2="949.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg52" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="537.2" y2="773">
+    <linearGradient id="tpg52" gradientUnits="userSpaceOnUse" x1="625.3" y1="954.5" x2="537.2" y2="773">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg53" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="743.7" y2="929">
+    <linearGradient id="tpg53" gradientUnits="userSpaceOnUse" x1="654.8" y1="946.8" x2="743.7" y2="929">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg54" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="524" y2="888">
+    <linearGradient id="tpg54" gradientUnits="userSpaceOnUse" x1="631.4" y1="935.9" x2="524" y2="888">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg55" gradientUnits="userSpaceOnUse" x1="639" y1="949.1" x2="663.9" y2="849.4">
+    <linearGradient id="tpg55" gradientUnits="userSpaceOnUse" x1="646.2" y1="964.4" x2="663.9" y2="849.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg56" gradientUnits="userSpaceOnUse" x1="700" y1="1013.4" x2="673.4" y2="1075">
+    <linearGradient id="tpg56" gradientUnits="userSpaceOnUse" x1="710.3" y1="998.1" x2="673.4" y2="1075">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg57" gradientUnits="userSpaceOnUse" x1="700" y1="1013.4" x2="743.7" y2="929">
+    <linearGradient id="tpg57" gradientUnits="userSpaceOnUse" x1="706.4" y1="1018" x2="743.7" y2="929">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg58" gradientUnits="userSpaceOnUse" x1="700" y1="1013.4" x2="566.6" y2="1033.5">
+    <linearGradient id="tpg58" gradientUnits="userSpaceOnUse" x1="688.2" y1="998.8" x2="566.6" y2="1033.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg59" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="673.4" y2="1075">
+    <linearGradient id="tpg59" gradientUnits="userSpaceOnUse" x1="563.4" y1="1131.6" x2="673.4" y2="1075">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg60" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="511.7" y2="1171.4">
+    <linearGradient id="tpg60" gradientUnits="userSpaceOnUse" x1="557" y1="1104.6" x2="511.7" y2="1171.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg61" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="429.2" y2="1115.5">
+    <linearGradient id="tpg61" gradientUnits="userSpaceOnUse" x1="543.5" y1="1125.6" x2="429.2" y2="1115.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg62" gradientUnits="userSpaceOnUse" x1="556.2" y1="1117.1" x2="587.5" y2="1209.6">
+    <linearGradient id="tpg62" gradientUnits="userSpaceOnUse" x1="569.3" y1="1114" x2="587.5" y2="1209.6">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg63" gradientUnits="userSpaceOnUse" x1="429.2" y1="1115.5" x2="556.2" y2="1117.1">
+    <linearGradient id="tpg63" gradientUnits="userSpaceOnUse" x1="440.6" y1="1126.3" x2="556.2" y2="1117.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg64" gradientUnits="userSpaceOnUse" x1="429.2" y1="1115.5" x2="363.2" y2="1156.5">
+    <linearGradient id="tpg64" gradientUnits="userSpaceOnUse" x1="418.8" y1="1105.9" x2="363.2" y2="1156.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg65" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="511.7" y2="1171.4">
+    <linearGradient id="tpg65" gradientUnits="userSpaceOnUse" x1="375.8" y1="1153.9" x2="511.7" y2="1171.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg66" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="319.6" y2="1090.3">
+    <linearGradient id="tpg66" gradientUnits="userSpaceOnUse" x1="350.3" y1="1161.9" x2="319.6" y2="1090.3">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg67" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="429.2" y2="1115.5">
+    <linearGradient id="tpg67" gradientUnits="userSpaceOnUse" x1="376.9" y1="1170.1" x2="429.2" y2="1115.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg68" gradientUnits="userSpaceOnUse" x1="363.2" y1="1156.5" x2="418.7" y2="1281.9">
+    <linearGradient id="tpg68" gradientUnits="userSpaceOnUse" x1="361.5" y1="1142.4" x2="418.7" y2="1281.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg69" gradientUnits="userSpaceOnUse" x1="258.7" y1="1023.9" x2="319.6" y2="1090.3">
+    <linearGradient id="tpg69" gradientUnits="userSpaceOnUse" x1="257.8" y1="1014.8" x2="319.6" y2="1090.3">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg70" gradientUnits="userSpaceOnUse" x1="258.7" y1="1023.9" x2="329.7" y2="921.6">
+    <linearGradient id="tpg70" gradientUnits="userSpaceOnUse" x1="265.8" y1="1039.7" x2="329.7" y2="921.6">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg71" gradientUnits="userSpaceOnUse" x1="258.7" y1="1023.9" x2="381.7" y2="1021.9">
+    <linearGradient id="tpg71" gradientUnits="userSpaceOnUse" x1="275" y1="1024.3" x2="381.7" y2="1021.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg72" gradientUnits="userSpaceOnUse" x1="206.5" y1="945.1" x2="329.7" y2="921.6">
+    <linearGradient id="tpg72" gradientUnits="userSpaceOnUse" x1="213.9" y1="933.3" x2="329.7" y2="921.6">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg73" gradientUnits="userSpaceOnUse" x1="206.5" y1="945.1" x2="171.1" y2="858.3">
+    <linearGradient id="tpg73" gradientUnits="userSpaceOnUse" x1="202.5" y1="953.1" x2="171.1" y2="858.3">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg74" gradientUnits="userSpaceOnUse" x1="206.5" y1="945.1" x2="152.5" y2="1085.8">
+    <linearGradient id="tpg74" gradientUnits="userSpaceOnUse" x1="192.7" y1="930.7" x2="152.5" y2="1085.8">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg75" gradientUnits="userSpaceOnUse" x1="171.1" y1="858.3" x2="206.5" y2="945.1">
+    <linearGradient id="tpg75" gradientUnits="userSpaceOnUse" x1="175.2" y1="844.4" x2="206.5" y2="945.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg76" gradientUnits="userSpaceOnUse" x1="171.1" y1="858.3" x2="253.1" y2="824.5">
+    <linearGradient id="tpg76" gradientUnits="userSpaceOnUse" x1="167.7" y1="872.8" x2="253.1" y2="824.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg77" gradientUnits="userSpaceOnUse" x1="152.5" y1="1085.8" x2="206.5" y2="945.1">
+    <linearGradient id="tpg77" gradientUnits="userSpaceOnUse" x1="144.3" y1="1097.1" x2="206.5" y2="945.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg78" gradientUnits="userSpaceOnUse" x1="152.5" y1="1085.8" x2="247.5" y2="1178.2">
+    <linearGradient id="tpg78" gradientUnits="userSpaceOnUse" x1="160" y1="1075.7" x2="247.5" y2="1178.2">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg79" gradientUnits="userSpaceOnUse" x1="247.5" y1="1178.2" x2="319.6" y2="1090.3">
+    <linearGradient id="tpg79" gradientUnits="userSpaceOnUse" x1="257.2" y1="1185.4" x2="319.6" y2="1090.3">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg80" gradientUnits="userSpaceOnUse" x1="247.5" y1="1178.2" x2="152.5" y2="1085.8">
+    <linearGradient id="tpg80" gradientUnits="userSpaceOnUse" x1="233.2" y1="1185" x2="152.5" y2="1085.8">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg81" gradientUnits="userSpaceOnUse" x1="247.5" y1="1178.2" x2="265.2" y2="1264.2">
+    <linearGradient id="tpg81" gradientUnits="userSpaceOnUse" x1="237" y1="1164.2" x2="265.2" y2="1264.2">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg82" gradientUnits="userSpaceOnUse" x1="265.2" y1="1264.2" x2="247.5" y2="1178.2">
+    <linearGradient id="tpg82" gradientUnits="userSpaceOnUse" x1="254.3" y1="1277.5" x2="247.5" y2="1178.2">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg83" gradientUnits="userSpaceOnUse" x1="265.2" y1="1264.2" x2="332.7" y2="1312.5">
+    <linearGradient id="tpg83" gradientUnits="userSpaceOnUse" x1="276.3" y1="1252.7" x2="332.7" y2="1312.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg84" gradientUnits="userSpaceOnUse" x1="332.7" y1="1312.5" x2="265.2" y2="1264.2">
+    <linearGradient id="tpg84" gradientUnits="userSpaceOnUse" x1="320.6" y1="1305" x2="265.2" y2="1264.2">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg85" gradientUnits="userSpaceOnUse" x1="332.7" y1="1312.5" x2="418.7" y2="1281.9">
+    <linearGradient id="tpg85" gradientUnits="userSpaceOnUse" x1="344.3" y1="1324.5" x2="418.7" y2="1281.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg86" gradientUnits="userSpaceOnUse" x1="418.7" y1="1281.9" x2="363.2" y2="1156.5">
+    <linearGradient id="tpg86" gradientUnits="userSpaceOnUse" x1="406.8" y1="1296.4" x2="363.2" y2="1156.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg87" gradientUnits="userSpaceOnUse" x1="418.7" y1="1281.9" x2="332.7" y2="1312.5">
+    <linearGradient id="tpg87" gradientUnits="userSpaceOnUse" x1="404.6" y1="1271.2" x2="332.7" y2="1312.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg88" gradientUnits="userSpaceOnUse" x1="418.7" y1="1281.9" x2="489.4" y2="1354.2">
+    <linearGradient id="tpg88" gradientUnits="userSpaceOnUse" x1="428.9" y1="1269.4" x2="489.4" y2="1354.2">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg89" gradientUnits="userSpaceOnUse" x1="489.4" y1="1354.2" x2="418.7" y2="1281.9">
+    <linearGradient id="tpg89" gradientUnits="userSpaceOnUse" x1="475.7" y1="1358.5" x2="418.7" y2="1281.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg90" gradientUnits="userSpaceOnUse" x1="489.4" y1="1354.2" x2="567.4" y2="1320.5">
+    <linearGradient id="tpg90" gradientUnits="userSpaceOnUse" x1="503.7" y1="1352" x2="567.4" y2="1320.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg91" gradientUnits="userSpaceOnUse" x1="567.4" y1="1320.5" x2="511.7" y2="1171.4">
+    <linearGradient id="tpg91" gradientUnits="userSpaceOnUse" x1="555.5" y1="1325.2" x2="511.7" y2="1171.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg92" gradientUnits="userSpaceOnUse" x1="567.4" y1="1320.5" x2="489.4" y2="1354.2">
+    <linearGradient id="tpg92" gradientUnits="userSpaceOnUse" x1="562.4" y1="1305.8" x2="489.4" y2="1354.2">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg93" gradientUnits="userSpaceOnUse" x1="567.4" y1="1320.5" x2="652.6" y2="1298.9">
+    <linearGradient id="tpg93" gradientUnits="userSpaceOnUse" x1="581.3" y1="1318" x2="652.6" y2="1298.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg94" gradientUnits="userSpaceOnUse" x1="652.6" y1="1298.9" x2="567.4" y2="1320.5">
+    <linearGradient id="tpg94" gradientUnits="userSpaceOnUse" x1="650" y1="1284.8" x2="567.4" y2="1320.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg95" gradientUnits="userSpaceOnUse" x1="652.6" y1="1298.9" x2="587.5" y2="1209.6">
+    <linearGradient id="tpg95" gradientUnits="userSpaceOnUse" x1="656.4" y1="1309.3" x2="587.5" y2="1209.6">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg96" gradientUnits="userSpaceOnUse" x1="587.5" y1="1209.6" x2="556.2" y2="1117.1">
+    <linearGradient id="tpg96" gradientUnits="userSpaceOnUse" x1="575" y1="1222.4" x2="556.2" y2="1117.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg97" gradientUnits="userSpaceOnUse" x1="587.5" y1="1209.6" x2="652.6" y2="1298.9">
+    <linearGradient id="tpg97" gradientUnits="userSpaceOnUse" x1="603" y1="1201.4" x2="652.6" y2="1298.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg98" gradientUnits="userSpaceOnUse" x1="587.5" y1="1209.6" x2="674.3" y2="1179">
+    <linearGradient id="tpg98" gradientUnits="userSpaceOnUse" x1="597.1" y1="1218" x2="674.3" y2="1179">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg99" gradientUnits="userSpaceOnUse" x1="674.3" y1="1179" x2="587.5" y2="1209.6">
+    <linearGradient id="tpg99" gradientUnits="userSpaceOnUse" x1="662.3" y1="1164.5" x2="587.5" y2="1209.6">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg100" gradientUnits="userSpaceOnUse" x1="674.3" y1="1179" x2="764.4" y2="1190.3">
+    <linearGradient id="tpg100" gradientUnits="userSpaceOnUse" x1="689.4" y1="1169.6" x2="764.4" y2="1190.3">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg101" gradientUnits="userSpaceOnUse" x1="764.4" y1="1190.3" x2="674.3" y2="1179">
+    <linearGradient id="tpg101" gradientUnits="userSpaceOnUse" x1="749.7" y1="1194.9" x2="674.3" y2="1179">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg102" gradientUnits="userSpaceOnUse" x1="764.4" y1="1190.3" x2="761.1" y2="1122.7">
+    <linearGradient id="tpg102" gradientUnits="userSpaceOnUse" x1="773.3" y1="1203.5" x2="761.1" y2="1122.7">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg103" gradientUnits="userSpaceOnUse" x1="761.1" y1="1122.7" x2="673.4" y2="1075">
+    <linearGradient id="tpg103" gradientUnits="userSpaceOnUse" x1="753.3" y1="1130.6" x2="673.4" y2="1075">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg104" gradientUnits="userSpaceOnUse" x1="761.1" y1="1122.7" x2="764.4" y2="1190.3">
+    <linearGradient id="tpg104" gradientUnits="userSpaceOnUse" x1="773.2" y1="1110.7" x2="764.4" y2="1190.3">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg105" gradientUnits="userSpaceOnUse" x1="761.1" y1="1122.7" x2="818.3" y2="1052.8">
+    <linearGradient id="tpg105" gradientUnits="userSpaceOnUse" x1="774" y1="1132.2" x2="818.3" y2="1052.8">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg106" gradientUnits="userSpaceOnUse" x1="818.3" y1="1052.8" x2="761.1" y2="1122.7">
+    <linearGradient id="tpg106" gradientUnits="userSpaceOnUse" x1="808.1" y1="1042.3" x2="761.1" y2="1122.7">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg107" gradientUnits="userSpaceOnUse" x1="818.3" y1="1052.8" x2="815" y2="962.8">
+    <linearGradient id="tpg107" gradientUnits="userSpaceOnUse" x1="832.4" y1="1055.4" x2="815" y2="962.8">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg108" gradientUnits="userSpaceOnUse" x1="815" y1="962.8" x2="743.7" y2="929">
+    <linearGradient id="tpg108" gradientUnits="userSpaceOnUse" x1="800.2" y1="967.6" x2="743.7" y2="929">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg109" gradientUnits="userSpaceOnUse" x1="815" y1="962.8" x2="818.3" y2="1052.8">
+    <linearGradient id="tpg109" gradientUnits="userSpaceOnUse" x1="808.7" y1="948.3" x2="818.3" y2="1052.8">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg110" gradientUnits="userSpaceOnUse" x1="815" y1="962.8" x2="826.3" y2="876">
+    <linearGradient id="tpg110" gradientUnits="userSpaceOnUse" x1="828.8" y1="972.4" x2="826.3" y2="876">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg111" gradientUnits="userSpaceOnUse" x1="826.3" y1="876" x2="815" y2="962.8">
+    <linearGradient id="tpg111" gradientUnits="userSpaceOnUse" x1="840.3" y1="872.9" x2="815" y2="962.8">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg112" gradientUnits="userSpaceOnUse" x1="826.3" y1="876" x2="761.9" y2="823.7">
+    <linearGradient id="tpg112" gradientUnits="userSpaceOnUse" x1="812.5" y1="889" x2="761.9" y2="823.7">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg113" gradientUnits="userSpaceOnUse" x1="761.9" y1="823.7" x2="826.3" y2="876">
+    <linearGradient id="tpg113" gradientUnits="userSpaceOnUse" x1="776.5" y1="820.2" x2="826.3" y2="876">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg114" gradientUnits="userSpaceOnUse" x1="761.9" y1="823.7" x2="663.9" y2="849.4">
+    <linearGradient id="tpg114" gradientUnits="userSpaceOnUse" x1="748.2" y1="822.9" x2="663.9" y2="849.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg115" gradientUnits="userSpaceOnUse" x1="663.9" y1="849.4" x2="639" y2="949.1">
+    <linearGradient id="tpg115" gradientUnits="userSpaceOnUse" x1="654.7" y1="838.2" x2="639" y2="949.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg116" gradientUnits="userSpaceOnUse" x1="663.9" y1="849.4" x2="761.9" y2="823.7">
+    <linearGradient id="tpg116" gradientUnits="userSpaceOnUse" x1="678.9" y1="853.4" x2="761.9" y2="823.7">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg117" gradientUnits="userSpaceOnUse" x1="663.9" y1="849.4" x2="689.6" y2="740.9">
+    <linearGradient id="tpg117" gradientUnits="userSpaceOnUse" x1="666.4" y1="863.5" x2="689.6" y2="740.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg118" gradientUnits="userSpaceOnUse" x1="689.6" y1="740.9" x2="663.9" y2="849.4">
+    <linearGradient id="tpg118" gradientUnits="userSpaceOnUse" x1="686.7" y1="730.2" x2="663.9" y2="849.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg119" gradientUnits="userSpaceOnUse" x1="689.6" y1="740.9" x2="561" y2="711.1">
+    <linearGradient id="tpg119" gradientUnits="userSpaceOnUse" x1="676.8" y1="740.2" x2="561" y2="711.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg120" gradientUnits="userSpaceOnUse" x1="561" y1="711.1" x2="537.2" y2="773">
+    <linearGradient id="tpg120" gradientUnits="userSpaceOnUse" x1="560.3" y1="700.5" x2="537.2" y2="773">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg121" gradientUnits="userSpaceOnUse" x1="561" y1="711.1" x2="689.6" y2="740.9">
+    <linearGradient id="tpg121" gradientUnits="userSpaceOnUse" x1="571.9" y1="710.4" x2="689.6" y2="740.9">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg122" gradientUnits="userSpaceOnUse" x1="561" y1="711.1" x2="410.7" y2="755.4">
+    <linearGradient id="tpg122" gradientUnits="userSpaceOnUse" x1="545.5" y1="711.7" x2="410.7" y2="755.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg123" gradientUnits="userSpaceOnUse" x1="410.7" y1="755.4" x2="561" y2="711.1">
+    <linearGradient id="tpg123" gradientUnits="userSpaceOnUse" x1="421.4" y1="754.6" x2="561" y2="711.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg124" gradientUnits="userSpaceOnUse" x1="410.7" y1="755.4" x2="401.8" y2="822.1">
+    <linearGradient id="tpg124" gradientUnits="userSpaceOnUse" x1="413.5" y1="742.1" x2="401.8" y2="822.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg125" gradientUnits="userSpaceOnUse" x1="401.8" y1="822.1" x2="397" y2="906.5">
+    <linearGradient id="tpg125" gradientUnits="userSpaceOnUse" x1="398.7" y1="808.2" x2="397" y2="906.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg126" gradientUnits="userSpaceOnUse" x1="401.8" y1="822.1" x2="410.7" y2="755.4">
+    <linearGradient id="tpg126" gradientUnits="userSpaceOnUse" x1="404.5" y1="835" x2="410.7" y2="755.4">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg127" gradientUnits="userSpaceOnUse" x1="401.8" y1="822.1" x2="253.1" y2="824.5">
+    <linearGradient id="tpg127" gradientUnits="userSpaceOnUse" x1="389.1" y1="826" x2="253.1" y2="824.5">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg128" gradientUnits="userSpaceOnUse" x1="253.1" y1="824.5" x2="171.1" y2="858.3">
+    <linearGradient id="tpg128" gradientUnits="userSpaceOnUse" x1="241.8" y1="811.4" x2="171.1" y2="858.3">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg129" gradientUnits="userSpaceOnUse" x1="253.1" y1="824.5" x2="401.8" y2="822.1">
+    <linearGradient id="tpg129" gradientUnits="userSpaceOnUse" x1="261.7" y1="831" x2="401.8" y2="822.1">
       <stop offset="0" stop-color="#a78bfa"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg130" gradientUnits="userSpaceOnUse" x1="531.3" y1="435.4" x2="355.1" y2="512.7">
+    <linearGradient id="tpg130" gradientUnits="userSpaceOnUse" x1="524.2" y1="443.6" x2="355.1" y2="512.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg131" gradientUnits="userSpaceOnUse" x1="531.3" y1="435.4" x2="528.4" y2="590.1">
+    <linearGradient id="tpg131" gradientUnits="userSpaceOnUse" x1="541.1" y1="429.5" x2="528.4" y2="590.1">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg132" gradientUnits="userSpaceOnUse" x1="531.3" y1="435.4" x2="460.3" y2="512.7">
+    <linearGradient id="tpg132" gradientUnits="userSpaceOnUse" x1="518.5" y1="433.4" x2="460.3" y2="512.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg133" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="743.7" y2="929">
+    <linearGradient id="tpg133" gradientUnits="userSpaceOnUse" x1="560.3" y1="538.9" x2="743.7" y2="929">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg134" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="563.1" y2="889.7">
+    <linearGradient id="tpg134" gradientUnits="userSpaceOnUse" x1="548.5" y1="530" x2="563.1" y2="889.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg135" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="478.8" y2="568.4">
+    <linearGradient id="tpg135" gradientUnits="userSpaceOnUse" x1="548.5" y1="530" x2="478.8" y2="568.4">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg136" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="460.3" y2="512.7">
+    <linearGradient id="tpg136" gradientUnits="userSpaceOnUse" x1="547.8" y1="545.9" x2="460.3" y2="512.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg137" gradientUnits="userSpaceOnUse" x1="553" y1="540.6" x2="553" y2="484.9">
+    <linearGradient id="tpg137" gradientUnits="userSpaceOnUse" x1="562.4" y1="552" x2="553" y2="484.9">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg138" gradientUnits="userSpaceOnUse" x1="563.1" y1="889.7" x2="553" y2="540.6">
+    <linearGradient id="tpg138" gradientUnits="userSpaceOnUse" x1="558.7" y1="884.1" x2="553" y2="540.6">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg139" gradientUnits="userSpaceOnUse" x1="563.1" y1="889.7" x2="478.8" y2="679.7">
+    <linearGradient id="tpg139" gradientUnits="userSpaceOnUse" x1="572.9" y1="875.8" x2="478.8" y2="679.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg140" gradientUnits="userSpaceOnUse" x1="478.8" y1="679.7" x2="563.1" y2="889.7">
+    <linearGradient id="tpg140" gradientUnits="userSpaceOnUse" x1="473" y1="671.4" x2="563.1" y2="889.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg141" gradientUnits="userSpaceOnUse" x1="478.8" y1="679.7" x2="478.8" y2="568.4">
+    <linearGradient id="tpg141" gradientUnits="userSpaceOnUse" x1="473.2" y1="684.4" x2="478.8" y2="568.4">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg142" gradientUnits="userSpaceOnUse" x1="528.4" y1="590.1" x2="355.1" y2="512.7">
+    <linearGradient id="tpg142" gradientUnits="userSpaceOnUse" x1="514.4" y1="589.2" x2="355.1" y2="512.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg143" gradientUnits="userSpaceOnUse" x1="528.4" y1="590.1" x2="531.3" y2="435.4">
+    <linearGradient id="tpg143" gradientUnits="userSpaceOnUse" x1="544.8" y1="589.7" x2="531.3" y2="435.4">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg144" gradientUnits="userSpaceOnUse" x1="528.4" y1="590.1" x2="460.3" y2="512.7">
+    <linearGradient id="tpg144" gradientUnits="userSpaceOnUse" x1="526.9" y1="601.8" x2="460.3" y2="512.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg145" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="404.6" y2="540.6">
+    <linearGradient id="tpg145" gradientUnits="userSpaceOnUse" x1="464.1" y1="570.8" x2="404.6" y2="540.6">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg146" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="537.2" y2="773">
+    <linearGradient id="tpg146" gradientUnits="userSpaceOnUse" x1="482.8" y1="559.7" x2="537.2" y2="773">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg147" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="553" y2="540.6">
+    <linearGradient id="tpg147" gradientUnits="userSpaceOnUse" x1="479.4" y1="568.3" x2="553" y2="540.6">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg148" gradientUnits="userSpaceOnUse" x1="478.8" y1="568.4" x2="478.8" y2="679.7">
+    <linearGradient id="tpg148" gradientUnits="userSpaceOnUse" x1="479.4" y1="568.3" x2="478.8" y2="679.7">
       <stop offset="0" stop-color="#6ee7a0"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg149" gradientUnits="userSpaceOnUse" x1="497.4" y1="512.7" x2="460.3" y2="512.7">
+    <linearGradient id="tpg149" gradientUnits="userSpaceOnUse" x1="486.7" y1="512.6" x2="460.3" y2="512.7">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg150" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="404.6" y2="484.9">
+    <linearGradient id="tpg150" gradientUnits="userSpaceOnUse" x1="467.1" y1="457.3" x2="404.6" y2="484.9">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg151" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="511.7" y2="1171.4">
+    <linearGradient id="tpg151" gradientUnits="userSpaceOnUse" x1="468.4" y1="461" x2="511.7" y2="1171.4">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg152" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="800" y2="428.6">
+    <linearGradient id="tpg152" gradientUnits="userSpaceOnUse" x1="491.1" y1="461" x2="800" y2="428.6">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg153" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="460.3" y2="512.7">
+    <linearGradient id="tpg153" gradientUnits="userSpaceOnUse" x1="474.7" y1="454.9" x2="460.3" y2="512.7">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg154" gradientUnits="userSpaceOnUse" x1="478.8" y1="457.1" x2="553" y2="484.9">
+    <linearGradient id="tpg154" gradientUnits="userSpaceOnUse" x1="491.1" y1="461" x2="553" y2="484.9">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg155" gradientUnits="userSpaceOnUse" x1="590.2" y1="716.8" x2="800" y2="428.6">
+    <linearGradient id="tpg155" gradientUnits="userSpaceOnUse" x1="598.8" y1="718.4" x2="800" y2="428.6">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg156" gradientUnits="userSpaceOnUse" x1="590.2" y1="716.8" x2="553" y2="484.9">
+    <linearGradient id="tpg156" gradientUnits="userSpaceOnUse" x1="578.1" y1="714.9" x2="553" y2="484.9">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg157" gradientUnits="userSpaceOnUse" x1="800" y1="428.6" x2="478.8" y2="457.1">
+    <linearGradient id="tpg157" gradientUnits="userSpaceOnUse" x1="794.1" y1="434.8" x2="478.8" y2="457.1">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg158" gradientUnits="userSpaceOnUse" x1="800" y1="428.6" x2="590.2" y2="716.8">
+    <linearGradient id="tpg158" gradientUnits="userSpaceOnUse" x1="794.1" y1="434.8" x2="590.2" y2="716.8">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg159" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="404.6" y2="540.6">
+    <linearGradient id="tpg159" gradientUnits="userSpaceOnUse" x1="447" y1="501.4" x2="404.6" y2="540.6">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg160" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="355.1" y2="512.7">
+    <linearGradient id="tpg160" gradientUnits="userSpaceOnUse" x1="447.8" y1="504" x2="355.1" y2="512.7">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#f5a05a"/>
     </linearGradient>
-    <linearGradient id="tpg161" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="531.3" y2="435.4">
+    <linearGradient id="tpg161" gradientUnits="userSpaceOnUse" x1="471.5" y1="519.4" x2="531.3" y2="435.4">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg162" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="553" y2="540.6">
+    <linearGradient id="tpg162" gradientUnits="userSpaceOnUse" x1="467" y1="497.3" x2="553" y2="540.6">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg163" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="528.4" y2="590.1">
+    <linearGradient id="tpg163" gradientUnits="userSpaceOnUse" x1="467" y1="497.3" x2="528.4" y2="590.1">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg164" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="497.4" y2="512.7">
+    <linearGradient id="tpg164" gradientUnits="userSpaceOnUse" x1="471.5" y1="519.4" x2="497.4" y2="512.7">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg165" gradientUnits="userSpaceOnUse" x1="460.3" y1="512.7" x2="478.8" y2="457.1">
+    <linearGradient id="tpg165" gradientUnits="userSpaceOnUse" x1="447" y1="526.4" x2="478.8" y2="457.1">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg166" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="673.4" y2="1075">
+    <linearGradient id="tpg166" gradientUnits="userSpaceOnUse" x1="568.5" y1="481.8" x2="673.4" y2="1075">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#a78bfa"/>
     </linearGradient>
-    <linearGradient id="tpg167" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="553" y2="540.6">
+    <linearGradient id="tpg167" gradientUnits="userSpaceOnUse" x1="561.2" y1="473.7" x2="553" y2="540.6">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#6ee7a0"/>
     </linearGradient>
-    <linearGradient id="tpg168" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="478.8" y2="457.1">
+    <linearGradient id="tpg168" gradientUnits="userSpaceOnUse" x1="553.1" y1="486.5" x2="478.8" y2="457.1">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg169" gradientUnits="userSpaceOnUse" x1="553" y1="484.9" x2="590.2" y2="716.8">
+    <linearGradient id="tpg169" gradientUnits="userSpaceOnUse" x1="553.1" y1="486.5" x2="590.2" y2="716.8">
       <stop offset="0" stop-color="#41d3ff"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
-    <linearGradient id="tpg170" gradientUnits="userSpaceOnUse" x1="636.5" y1="355" x2="497.4" y2="512.7">
+    <linearGradient id="tpg170" gradientUnits="userSpaceOnUse" x1="630" y1="362.7" x2="498.5" y2="509.1">
       <stop offset="0" stop-color="#c8d2e0"/>
       <stop offset="1" stop-color="#41d3ff"/>
     </linearGradient>
   </defs>
-  <line x1="404.6" y1="540.6" x2="367.5" y2="716.8" class="zonemap-tp" stroke="url(#tpg0)"><title>zone_ASI_A_real — zone_asi_g_4 (2 TP points)</title></line>
-  <line x1="404.6" y1="540.6" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg1)"><title>zone_ASI_A_real — zone_ASI_pvp (2 TP points)</title></line>
-  <line x1="404.6" y1="540.6" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg2)"><title>zone_ASI_A_real — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="404.6" y1="540.6" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg3)"><title>zone_ASI_A_real — zone_ICS_pvp (2 TP points)</title></line>
-  <line x1="404.6" y1="540.6" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg4)"><title>zone_ASI_A_real — zone_TM_pve (3 TP points)</title></line>
-  <line x1="130.4" y1="575.8" x2="367.5" y2="716.8" class="zonemap-tp" stroke="url(#tpg5)"><title>zone_asi_g_1 — zone_asi_g_4 (2 TP points)</title></line>
-  <line x1="130.4" y1="575.8" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg6)"><title>zone_asi_g_1 — zone_ASI_pvp (2 TP points)</title></line>
-  <line x1="367.5" y1="716.8" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg7)"><title>zone_asi_g_4 — zone_ASI_A_real (2 TP points)</title></line>
-  <line x1="367.5" y1="716.8" x2="130.4" y2="575.8" class="zonemap-tp" stroke="url(#tpg8)"><title>zone_asi_g_4 — zone_asi_g_1 (1 TP point)</title></line>
-  <line x1="355.1" y1="512.7" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg9)"><title>zone_ASI_pve — zone_ICS (1 TP point)</title></line>
-  <line x1="355.1" y1="512.7" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg10)"><title>zone_ASI_pve — zone_ICS_pve (1 TP point)</title></line>
-  <line x1="355.1" y1="512.7" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg11)"><title>zone_ASI_pve — zone_TM_pve (1 TP point)</title></line>
-  <line x1="404.6" y1="484.9" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg12)"><title>zone_ASI_pvp — zone_ASI_A_real (2 TP points)</title></line>
-  <line x1="404.6" y1="484.9" x2="130.4" y2="575.8" class="zonemap-tp" stroke="url(#tpg13)"><title>zone_ASI_pvp — zone_asi_g_1 (2 TP points)</title></line>
-  <line x1="404.6" y1="484.9" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg14)"><title>zone_ASI_pvp — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="404.6" y1="484.9" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg15)"><title>zone_ASI_pvp — zone_TM_A_real (2 TP points)</title></line>
-  <line x1="673.4" y1="1075" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg16)"><title>zone_gamma_tc_z100 — zone_gamma_z112 (1 TP point)</title></line>
-  <line x1="673.4" y1="1075" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg17)"><title>zone_gamma_tc_z100 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="673.4" y1="1075" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg18)"><title>zone_gamma_tc_z100 — zone_gamma_z130 (1 TP point)</title></line>
-  <line x1="673.4" y1="1075" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg19)"><title>zone_gamma_tc_z100 — zone_TM_pvp (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg20)"><title>zone_gamma_tc_z101 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg21)"><title>zone_gamma_tc_z101 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg22)"><title>zone_gamma_tc_z101 — zone_gamma_z125 (1 TP point)</title></line>
-  <line x1="511.7" y1="1171.4" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg23)"><title>zone_gamma_tc_z101 — zone_TM_A_real (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg24)"><title>zone_gamma_tc_z102 — zone_ASI_pvp (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg25)"><title>zone_gamma_tc_z102 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg26)"><title>zone_gamma_tc_z102 — zone_gamma_z116 (1 TP point)</title></line>
-  <line x1="319.6" y1="1090.3" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg27)"><title>zone_gamma_tc_z102 — zone_gamma_z120 (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg28)"><title>zone_gamma_tc_z103 — zone_ASI_A_real (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg29)"><title>zone_gamma_tc_z103 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg30)"><title>zone_gamma_tc_z103 — zone_gamma_z116 (1 TP point)</title></line>
-  <line x1="329.7" y1="921.6" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg31)"><title>zone_gamma_tc_z103 — zone_gamma_z117 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg32)"><title>zone_gamma_tc_z104 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg33)"><title>zone_gamma_tc_z104 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg34)"><title>zone_gamma_tc_z104 — zone_gamma_z137 (1 TP point)</title></line>
-  <line x1="537.2" y1="773" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg35)"><title>zone_gamma_tc_z104 — zone_ICS_pvp (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg36)"><title>zone_gamma_tc_z105 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg37)"><title>zone_gamma_tc_z105 — zone_gamma_z112 (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg38)"><title>zone_gamma_tc_z105 — zone_gamma_z132 (1 TP point)</title></line>
-  <line x1="743.7" y1="929" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg39)"><title>zone_gamma_tc_z105 — zone_ICS_A_real (1 TP point)</title></line>
-  <line x1="566.6" y1="1033.5" x2="495.9" y2="1003" class="zonemap-tp" stroke="url(#tpg40)"><title>zone_gamma_z106 — zone_gamma_z107 (1 TP point)</title></line>
-  <line x1="566.6" y1="1033.5" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg41)"><title>zone_gamma_z106 — zone_gamma_z112 (1 TP point)</title></line>
-  <line x1="495.9" y1="1003" x2="566.6" y2="1033.5" class="zonemap-tp" stroke="url(#tpg42)"><title>zone_gamma_z107 — zone_gamma_z106 (1 TP point)</title></line>
-  <line x1="495.9" y1="1003" x2="381.7" y2="1021.9" class="zonemap-tp" stroke="url(#tpg43)"><title>zone_gamma_z107 — zone_gamma_z108 (1 TP point)</title></line>
-  <line x1="381.7" y1="1021.9" x2="495.9" y2="1003" class="zonemap-tp" stroke="url(#tpg44)"><title>zone_gamma_z108 — zone_gamma_z107 (1 TP point)</title></line>
-  <line x1="381.7" y1="1021.9" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg45)"><title>zone_gamma_z108 — zone_gamma_z116 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg46)"><title>zone_gamma_z109 — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg47)"><title>zone_gamma_z109 — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="524" y2="888" class="zonemap-tp" stroke="url(#tpg48)"><title>zone_gamma_z109 — zone_gamma_z110 (1 TP point)</title></line>
-  <line x1="397" y1="906.5" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg49)"><title>zone_gamma_z109 — zone_gamma_z139 (1 TP point)</title></line>
-  <line x1="524" y1="888" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg50)"><title>zone_gamma_z110 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="524" y1="888" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg51)"><title>zone_gamma_z110 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg52)"><title>zone_gamma_z111 — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg53)"><title>zone_gamma_z111 — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="524" y2="888" class="zonemap-tp" stroke="url(#tpg54)"><title>zone_gamma_z111 — zone_gamma_z110 (1 TP point)</title></line>
-  <line x1="639" y1="949.1" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg55)"><title>zone_gamma_z111 — zone_gamma_z135 (1 TP point)</title></line>
-  <line x1="700" y1="1013.4" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg56)"><title>zone_gamma_z112 — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="700" y1="1013.4" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg57)"><title>zone_gamma_z112 — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="700" y1="1013.4" x2="566.6" y2="1033.5" class="zonemap-tp" stroke="url(#tpg58)"><title>zone_gamma_z112 — zone_gamma_z106 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg59)"><title>zone_gamma_z113 — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg60)"><title>zone_gamma_z113 — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="429.2" y2="1115.5" class="zonemap-tp" stroke="url(#tpg61)"><title>zone_gamma_z113 — zone_gamma_z114 (1 TP point)</title></line>
-  <line x1="556.2" y1="1117.1" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg62)"><title>zone_gamma_z113 — zone_gamma_z127 (1 TP point)</title></line>
-  <line x1="429.2" y1="1115.5" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg63)"><title>zone_gamma_z114 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="429.2" y1="1115.5" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg64)"><title>zone_gamma_z114 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg65)"><title>zone_gamma_z115 — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg66)"><title>zone_gamma_z115 — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="429.2" y2="1115.5" class="zonemap-tp" stroke="url(#tpg67)"><title>zone_gamma_z115 — zone_gamma_z114 (1 TP point)</title></line>
-  <line x1="363.2" y1="1156.5" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg68)"><title>zone_gamma_z115 — zone_gamma_z123 (1 TP point)</title></line>
-  <line x1="258.7" y1="1023.9" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg69)"><title>zone_gamma_z116 — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="258.7" y1="1023.9" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg70)"><title>zone_gamma_z116 — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="258.7" y1="1023.9" x2="381.7" y2="1021.9" class="zonemap-tp" stroke="url(#tpg71)"><title>zone_gamma_z116 — zone_gamma_z108 (1 TP point)</title></line>
-  <line x1="206.5" y1="945.1" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg72)"><title>zone_gamma_z117 — zone_gamma_tc_z103 (1 TP point)</title></line>
-  <line x1="206.5" y1="945.1" x2="171.1" y2="858.3" class="zonemap-tp" stroke="url(#tpg73)"><title>zone_gamma_z117 — zone_gamma_z118 (1 TP point)</title></line>
-  <line x1="206.5" y1="945.1" x2="152.5" y2="1085.8" class="zonemap-tp" stroke="url(#tpg74)"><title>zone_gamma_z117 — zone_gamma_z119 (1 TP point)</title></line>
-  <line x1="171.1" y1="858.3" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg75)"><title>zone_gamma_z118 — zone_gamma_z117 (1 TP point)</title></line>
-  <line x1="171.1" y1="858.3" x2="253.1" y2="824.5" class="zonemap-tp" stroke="url(#tpg76)"><title>zone_gamma_z118 — zone_gamma_z140 (1 TP point)</title></line>
-  <line x1="152.5" y1="1085.8" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg77)"><title>zone_gamma_z119 — zone_gamma_z117 (1 TP point)</title></line>
-  <line x1="152.5" y1="1085.8" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg78)"><title>zone_gamma_z119 — zone_gamma_z120 (1 TP point)</title></line>
-  <line x1="247.5" y1="1178.2" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg79)"><title>zone_gamma_z120 — zone_gamma_tc_z102 (1 TP point)</title></line>
-  <line x1="247.5" y1="1178.2" x2="152.5" y2="1085.8" class="zonemap-tp" stroke="url(#tpg80)"><title>zone_gamma_z120 — zone_gamma_z119 (1 TP point)</title></line>
-  <line x1="247.5" y1="1178.2" x2="265.2" y2="1264.2" class="zonemap-tp" stroke="url(#tpg81)"><title>zone_gamma_z120 — zone_gamma_z121 (1 TP point)</title></line>
-  <line x1="265.2" y1="1264.2" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg82)"><title>zone_gamma_z121 — zone_gamma_z120 (1 TP point)</title></line>
-  <line x1="265.2" y1="1264.2" x2="332.7" y2="1312.5" class="zonemap-tp" stroke="url(#tpg83)"><title>zone_gamma_z121 — zone_gamma_z122 (1 TP point)</title></line>
-  <line x1="332.7" y1="1312.5" x2="265.2" y2="1264.2" class="zonemap-tp" stroke="url(#tpg84)"><title>zone_gamma_z122 — zone_gamma_z121 (1 TP point)</title></line>
-  <line x1="332.7" y1="1312.5" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg85)"><title>zone_gamma_z122 — zone_gamma_z123 (1 TP point)</title></line>
-  <line x1="418.7" y1="1281.9" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg86)"><title>zone_gamma_z123 — zone_gamma_z115 (1 TP point)</title></line>
-  <line x1="418.7" y1="1281.9" x2="332.7" y2="1312.5" class="zonemap-tp" stroke="url(#tpg87)"><title>zone_gamma_z123 — zone_gamma_z122 (1 TP point)</title></line>
-  <line x1="418.7" y1="1281.9" x2="489.4" y2="1354.2" class="zonemap-tp" stroke="url(#tpg88)"><title>zone_gamma_z123 — zone_gamma_z124 (1 TP point)</title></line>
-  <line x1="489.4" y1="1354.2" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg89)"><title>zone_gamma_z124 — zone_gamma_z123 (1 TP point)</title></line>
-  <line x1="489.4" y1="1354.2" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg90)"><title>zone_gamma_z124 — zone_gamma_z125 (1 TP point)</title></line>
-  <line x1="567.4" y1="1320.5" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg91)"><title>zone_gamma_z125 — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="567.4" y1="1320.5" x2="489.4" y2="1354.2" class="zonemap-tp" stroke="url(#tpg92)"><title>zone_gamma_z125 — zone_gamma_z124 (1 TP point)</title></line>
-  <line x1="567.4" y1="1320.5" x2="652.6" y2="1298.9" class="zonemap-tp" stroke="url(#tpg93)"><title>zone_gamma_z125 — zone_gamma_z126 (1 TP point)</title></line>
-  <line x1="652.6" y1="1298.9" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg94)"><title>zone_gamma_z126 — zone_gamma_z125 (1 TP point)</title></line>
-  <line x1="652.6" y1="1298.9" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg95)"><title>zone_gamma_z126 — zone_gamma_z127 (1 TP point)</title></line>
-  <line x1="587.5" y1="1209.6" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg96)"><title>zone_gamma_z127 — zone_gamma_z113 (1 TP point)</title></line>
-  <line x1="587.5" y1="1209.6" x2="652.6" y2="1298.9" class="zonemap-tp" stroke="url(#tpg97)"><title>zone_gamma_z127 — zone_gamma_z126 (1 TP point)</title></line>
-  <line x1="587.5" y1="1209.6" x2="674.3" y2="1179" class="zonemap-tp" stroke="url(#tpg98)"><title>zone_gamma_z127 — zone_gamma_z128 (1 TP point)</title></line>
-  <line x1="674.3" y1="1179" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg99)"><title>zone_gamma_z128 — zone_gamma_z127 (1 TP point)</title></line>
-  <line x1="674.3" y1="1179" x2="764.4" y2="1190.3" class="zonemap-tp" stroke="url(#tpg100)"><title>zone_gamma_z128 — zone_gamma_z129 (1 TP point)</title></line>
-  <line x1="764.4" y1="1190.3" x2="674.3" y2="1179" class="zonemap-tp" stroke="url(#tpg101)"><title>zone_gamma_z129 — zone_gamma_z128 (1 TP point)</title></line>
-  <line x1="764.4" y1="1190.3" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg102)"><title>zone_gamma_z129 — zone_gamma_z130 (1 TP point)</title></line>
-  <line x1="761.1" y1="1122.7" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg103)"><title>zone_gamma_z130 — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="761.1" y1="1122.7" x2="764.4" y2="1190.3" class="zonemap-tp" stroke="url(#tpg104)"><title>zone_gamma_z130 — zone_gamma_z129 (1 TP point)</title></line>
-  <line x1="761.1" y1="1122.7" x2="818.3" y2="1052.8" class="zonemap-tp" stroke="url(#tpg105)"><title>zone_gamma_z130 — zone_gamma_z131 (1 TP point)</title></line>
-  <line x1="818.3" y1="1052.8" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg106)"><title>zone_gamma_z131 — zone_gamma_z130 (1 TP point)</title></line>
-  <line x1="818.3" y1="1052.8" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg107)"><title>zone_gamma_z131 — zone_gamma_z132 (1 TP point)</title></line>
-  <line x1="815" y1="962.8" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg108)"><title>zone_gamma_z132 — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="815" y1="962.8" x2="818.3" y2="1052.8" class="zonemap-tp" stroke="url(#tpg109)"><title>zone_gamma_z132 — zone_gamma_z131 (1 TP point)</title></line>
-  <line x1="815" y1="962.8" x2="826.3" y2="876" class="zonemap-tp" stroke="url(#tpg110)"><title>zone_gamma_z132 — zone_gamma_z133 (1 TP point)</title></line>
-  <line x1="826.3" y1="876" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg111)"><title>zone_gamma_z133 — zone_gamma_z132 (1 TP point)</title></line>
-  <line x1="826.3" y1="876" x2="761.9" y2="823.7" class="zonemap-tp" stroke="url(#tpg112)"><title>zone_gamma_z133 — zone_gamma_z134 (1 TP point)</title></line>
-  <line x1="761.9" y1="823.7" x2="826.3" y2="876" class="zonemap-tp" stroke="url(#tpg113)"><title>zone_gamma_z134 — zone_gamma_z133 (1 TP point)</title></line>
-  <line x1="761.9" y1="823.7" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg114)"><title>zone_gamma_z134 — zone_gamma_z135 (1 TP point)</title></line>
-  <line x1="663.9" y1="849.4" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg115)"><title>zone_gamma_z135 — zone_gamma_z111 (1 TP point)</title></line>
-  <line x1="663.9" y1="849.4" x2="761.9" y2="823.7" class="zonemap-tp" stroke="url(#tpg116)"><title>zone_gamma_z135 — zone_gamma_z134 (1 TP point)</title></line>
-  <line x1="663.9" y1="849.4" x2="689.6" y2="740.9" class="zonemap-tp" stroke="url(#tpg117)"><title>zone_gamma_z135 — zone_gamma_z136 (1 TP point)</title></line>
-  <line x1="689.6" y1="740.9" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg118)"><title>zone_gamma_z136 — zone_gamma_z135 (1 TP point)</title></line>
-  <line x1="689.6" y1="740.9" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg119)"><title>zone_gamma_z136 — zone_gamma_z137 (1 TP point)</title></line>
-  <line x1="561" y1="711.1" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg120)"><title>zone_gamma_z137 — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="561" y1="711.1" x2="689.6" y2="740.9" class="zonemap-tp" stroke="url(#tpg121)"><title>zone_gamma_z137 — zone_gamma_z136 (1 TP point)</title></line>
-  <line x1="561" y1="711.1" x2="410.7" y2="755.4" class="zonemap-tp" stroke="url(#tpg122)"><title>zone_gamma_z137 — zone_gamma_z138 (1 TP point)</title></line>
-  <line x1="410.7" y1="755.4" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg123)"><title>zone_gamma_z138 — zone_gamma_z137 (1 TP point)</title></line>
-  <line x1="410.7" y1="755.4" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg124)"><title>zone_gamma_z138 — zone_gamma_z139 (1 TP point)</title></line>
-  <line x1="401.8" y1="822.1" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg125)"><title>zone_gamma_z139 — zone_gamma_z109 (1 TP point)</title></line>
-  <line x1="401.8" y1="822.1" x2="410.7" y2="755.4" class="zonemap-tp" stroke="url(#tpg126)"><title>zone_gamma_z139 — zone_gamma_z138 (1 TP point)</title></line>
-  <line x1="401.8" y1="822.1" x2="253.1" y2="824.5" class="zonemap-tp" stroke="url(#tpg127)"><title>zone_gamma_z139 — zone_gamma_z140 (1 TP point)</title></line>
-  <line x1="253.1" y1="824.5" x2="171.1" y2="858.3" class="zonemap-tp" stroke="url(#tpg128)"><title>zone_gamma_z140 — zone_gamma_z118 (1 TP point)</title></line>
-  <line x1="253.1" y1="824.5" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg129)"><title>zone_gamma_z140 — zone_gamma_z139 (1 TP point)</title></line>
-  <line x1="531.3" y1="435.4" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg130)"><title>zone_ICS — zone_ASI_pve (1 TP point)</title></line>
-  <line x1="531.3" y1="435.4" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg131)"><title>zone_ICS — zone_ICS_pve (1 TP point)</title></line>
-  <line x1="531.3" y1="435.4" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg132)"><title>zone_ICS — zone_TM_pve (1 TP point)</title></line>
-  <line x1="553" y1="540.6" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg133)"><title>zone_ICS_A_real — zone_gamma_tc_z105 (1 TP point)</title></line>
-  <line x1="553" y1="540.6" x2="563.1" y2="889.7" class="zonemap-tp" stroke="url(#tpg134)"><title>zone_ICS_A_real — zone_ics_g_3 (2 TP points)</title></line>
-  <line x1="553" y1="540.6" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg135)"><title>zone_ICS_A_real — zone_ICS_pvp (2 TP points)</title></line>
-  <line x1="553" y1="540.6" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg136)"><title>zone_ICS_A_real — zone_TM_pve (3 TP points)</title></line>
-  <line x1="553" y1="540.6" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg137)"><title>zone_ICS_A_real — zone_TM_pvp (2 TP points)</title></line>
-  <line x1="563.1" y1="889.7" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg138)"><title>zone_ics_g_3 — zone_ICS_A_real (2 TP points)</title></line>
-  <line x1="563.1" y1="889.7" x2="478.8" y2="679.7" class="zonemap-tp" stroke="url(#tpg139)"><title>zone_ics_g_3 — zone_ics_g_8 (2 TP points)</title></line>
-  <line x1="478.8" y1="679.7" x2="563.1" y2="889.7" class="zonemap-tp" stroke="url(#tpg140)"><title>zone_ics_g_8 — zone_ics_g_3 (2 TP points)</title></line>
-  <line x1="478.8" y1="679.7" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg141)"><title>zone_ics_g_8 — zone_ICS_pvp (2 TP points)</title></line>
-  <line x1="528.4" y1="590.1" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg142)"><title>zone_ICS_pve — zone_ASI_pve (1 TP point)</title></line>
-  <line x1="528.4" y1="590.1" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg143)"><title>zone_ICS_pve — zone_ICS (1 TP point)</title></line>
-  <line x1="528.4" y1="590.1" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg144)"><title>zone_ICS_pve — zone_TM_pve (1 TP point)</title></line>
-  <line x1="478.8" y1="568.4" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg145)"><title>zone_ICS_pvp — zone_ASI_A_real (2 TP points)</title></line>
-  <line x1="478.8" y1="568.4" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg146)"><title>zone_ICS_pvp — zone_gamma_tc_z104 (1 TP point)</title></line>
-  <line x1="478.8" y1="568.4" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg147)"><title>zone_ICS_pvp — zone_ICS_A_real (2 TP points)</title></line>
-  <line x1="478.8" y1="568.4" x2="478.8" y2="679.7" class="zonemap-tp" stroke="url(#tpg148)"><title>zone_ICS_pvp — zone_ics_g_8 (2 TP points)</title></line>
-  <line x1="497.4" y1="512.7" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg149)"><title>zone_TM — zone_TM_pve (2 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg150)"><title>zone_TM_A_real — zone_ASI_pvp (2 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg151)"><title>zone_TM_A_real — zone_gamma_tc_z101 (1 TP point)</title></line>
-  <line x1="478.8" y1="457.1" x2="800" y2="428.6" class="zonemap-tp" stroke="url(#tpg152)"><title>zone_TM_A_real — zone_tm_g_6 (2 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg153)"><title>zone_TM_A_real — zone_TM_pve (3 TP points)</title></line>
-  <line x1="478.8" y1="457.1" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg154)"><title>zone_TM_A_real — zone_TM_pvp (2 TP points)</title></line>
-  <line x1="590.2" y1="716.8" x2="800" y2="428.6" class="zonemap-tp" stroke="url(#tpg155)"><title>zone_tm_g_3 — zone_tm_g_6 (2 TP points)</title></line>
-  <line x1="590.2" y1="716.8" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg156)"><title>zone_tm_g_3 — zone_TM_pvp (2 TP points)</title></line>
-  <line x1="800" y1="428.6" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg157)"><title>zone_tm_g_6 — zone_TM_A_real (2 TP points)</title></line>
-  <line x1="800" y1="428.6" x2="590.2" y2="716.8" class="zonemap-tp" stroke="url(#tpg158)"><title>zone_tm_g_6 — zone_tm_g_3 (2 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg159)"><title>zone_TM_pve — zone_ASI_A_real (3 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg160)"><title>zone_TM_pve — zone_ASI_pve (1 TP point)</title></line>
-  <line x1="460.3" y1="512.7" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg161)"><title>zone_TM_pve — zone_ICS (1 TP point)</title></line>
-  <line x1="460.3" y1="512.7" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg162)"><title>zone_TM_pve — zone_ICS_A_real (3 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg163)"><title>zone_TM_pve — zone_ICS_pve (1 TP point)</title></line>
-  <line x1="460.3" y1="512.7" x2="497.4" y2="512.7" class="zonemap-tp" stroke="url(#tpg164)"><title>zone_TM_pve — zone_TM (2 TP points)</title></line>
-  <line x1="460.3" y1="512.7" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg165)"><title>zone_TM_pve — zone_TM_A_real (3 TP points)</title></line>
-  <line x1="553" y1="484.9" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg166)"><title>zone_TM_pvp — zone_gamma_tc_z100 (1 TP point)</title></line>
-  <line x1="553" y1="484.9" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg167)"><title>zone_TM_pvp — zone_ICS_A_real (2 TP points)</title></line>
-  <line x1="553" y1="484.9" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg168)"><title>zone_TM_pvp — zone_TM_A_real (2 TP points)</title></line>
-  <line x1="553" y1="484.9" x2="590.2" y2="716.8" class="zonemap-tp" stroke="url(#tpg169)"><title>zone_TM_pvp — zone_tm_g_3 (2 TP points)</title></line>
-  <line x1="636.5" y1="355" x2="497.4" y2="512.7" class="zonemap-tp" stroke="url(#tpg170)"><title>zone_training — zone_TM (6 TP points)</title></line>
-  <line x1="682.9" y1="308.7" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_pvp_arena — zone_TM_pve (exit gate `stronghold_default_exit`)</title></line>
-  <line x1="868.5" y1="123.1" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_strghld_70 — zone_TM_pve (exit gate `stronghold_default_exit`)</title></line>
-  <line x1="775.7" y1="308.7" x2="497.4" y2="512.7" class="zonemap-link"><title>zone_strghld_71 — zone_TM (exit gate `stronghold_z71_exit`)</title></line>
-  <line x1="775.7" y1="290.1" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_strghld_72 — zone_TM_pve (exit gate `stronghold_z72_exit`)</title></line>
   <a href="/zones/zone-gamma-tc-z100/"><g><rect x="668.4" y="1070" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z100 — open (beta) · PvP (9488 / -31302)</title></rect><image href="/zonemaps/zone-gamma-tc-z100/thumb.png" x="668.4" y="1070" width="10" height="10" preserveAspectRatio="none"/><text x="681.4" y="1078.5" font-size="10.5" class="zonemap-label">gamma_tc_z100</text></g></a>
   <a href="/zones/zone-gamma-tc-z101/"><g><rect x="506.7" y="1166.4" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z101 — open (beta) · PvP (774 / -36500)</title></rect><image href="/zonemaps/zone-gamma-tc-z101/thumb.png" x="506.7" y="1166.4" width="10" height="10" preserveAspectRatio="none"/><text x="519.7" y="1174.9" font-size="10.5" class="zonemap-label">gamma_tc_z101</text></g></a>
   <a href="/zones/zone-gamma-tc-z102/"><g><rect x="314.6" y="1085.3" width="10" height="10" rx="3" fill="#10151f" class="mapfam-gamma zonemap-node-gamma"><title>zone_gamma_tc_z102 — open (beta) · PvP (-9582 / -32128)</title></rect><image href="/zonemaps/zone-gamma-tc-z102/thumb.png" x="314.6" y="1085.3" width="10" height="10" preserveAspectRatio="none"/><text x="327.6" y="1093.8" font-size="10.5" class="zonemap-label">gamma_tc_z102</text></g></a>
@@ -957,496 +782,184 @@ All zones of the server, drawn at their real grid coordinates — each island in
   <a href="/zones/zone-tm-g-6/"><g><rect x="781" y="409.6" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_6 — open (gamma) · PvP (16311 / 3533)</title></rect><image href="/zonemaps/zone-tm-g-6/thumb.png" x="781" y="409.6" width="38" height="38" preserveAspectRatio="none"/><text x="822" y="433" font-size="13" class="zonemap-label">tm_g_6</text></g></a>
   <a href="/zones/zone-tm-g-7/"><g><rect x="802.6" y="281.8" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_7 — open (gamma) · PvP (17474 / 10423)</title></rect><image href="/zonemaps/zone-tm-g-7/thumb.png" x="802.6" y="281.8" width="38" height="38" preserveAspectRatio="none"/><text x="843.6" y="305.1" font-size="13" class="zonemap-label">tm_g_7</text></g></a>
   <a href="/zones/zone-tm-g-8/"><g><rect x="895.5" y="639.2" width="38" height="38" rx="11.4" fill="#10151f" class="mapfam-tm zonemap-node-tm"><title>zone_tm_g_8 — open (gamma) · PvP (22479 / -8837)</title></rect><image href="/zonemaps/zone-tm-g-8/thumb.png" x="895.5" y="639.2" width="38" height="38" preserveAspectRatio="none"/><text x="936.5" y="662.5" font-size="13" class="zonemap-label">tm_g_8</text></g></a>
+  <line x1="405" y1="554.5" x2="367.5" y2="716.8" class="zonemap-tp" stroke="url(#tpg0)"><title>zone_ASI_A_real — zone_asi_g_4 (2 TP points)</title></line>
+  <line x1="405" y1="554.5" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg1)"><title>zone_ASI_A_real — zone_ASI_pvp (2 TP points)</title></line>
+  <line x1="395.2" y1="535.5" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg2)"><title>zone_ASI_A_real — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="401.6" y1="533.1" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg3)"><title>zone_ASI_A_real — zone_ICS_pvp (2 TP points)</title></line>
+  <line x1="412.2" y1="540.6" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg4)"><title>zone_ASI_A_real — zone_TM_pve (3 TP points)</title></line>
+  <line x1="130.2" y1="575.3" x2="367.5" y2="716.8" class="zonemap-tp" stroke="url(#tpg5)"><title>zone_asi_g_1 — zone_asi_g_4 (2 TP points)</title></line>
+  <line x1="144" y1="571.5" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg6)"><title>zone_asi_g_1 — zone_ASI_pvp (2 TP points)</title></line>
+  <line x1="372.2" y1="706.7" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg7)"><title>zone_asi_g_4 — zone_ASI_A_real (2 TP points)</title></line>
+  <line x1="351.4" y1="715.5" x2="130.4" y2="575.8" class="zonemap-tp" stroke="url(#tpg8)"><title>zone_asi_g_4 — zone_asi_g_1 (1 TP point)</title></line>
+  <line x1="363.9" y1="524.7" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg9)"><title>zone_ASI_pve — zone_ICS (1 TP point)</title></line>
+  <line x1="358.2" y1="497.9" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg10)"><title>zone_ASI_pve — zone_ICS_pve (1 TP point)</title></line>
+  <line x1="365.5" y1="506.4" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg11)"><title>zone_ASI_pve — zone_TM_pve (1 TP point)</title></line>
+  <line x1="406.3" y1="486.4" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg12)"><title>zone_ASI_pvp — zone_ASI_A_real (2 TP points)</title></line>
+  <line x1="406.3" y1="486.4" x2="130.4" y2="575.8" class="zonemap-tp" stroke="url(#tpg13)"><title>zone_ASI_pvp — zone_asi_g_1 (2 TP points)</title></line>
+  <line x1="395.5" y1="492.4" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg14)"><title>zone_ASI_pvp — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="412.8" y1="493.7" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg15)"><title>zone_ASI_pvp — zone_TM_A_real (2 TP points)</title></line>
+  <line x1="673.9" y1="1075.1" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg16)"><title>zone_gamma_tc_z100 — zone_gamma_z112 (1 TP point)</title></line>
+  <line x1="673.9" y1="1075.1" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg17)"><title>zone_gamma_tc_z100 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="673.9" y1="1075.1" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg18)"><title>zone_gamma_tc_z100 — zone_gamma_z130 (1 TP point)</title></line>
+  <line x1="673.9" y1="1075.1" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg19)"><title>zone_gamma_tc_z100 — zone_TM_pvp (1 TP point)</title></line>
+  <line x1="510.3" y1="1169.8" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg20)"><title>zone_gamma_tc_z101 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="510.3" y1="1169.8" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg21)"><title>zone_gamma_tc_z101 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="510.3" y1="1169.8" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg22)"><title>zone_gamma_tc_z101 — zone_gamma_z125 (1 TP point)</title></line>
+  <line x1="510.3" y1="1169.8" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg23)"><title>zone_gamma_tc_z101 — zone_TM_A_real (1 TP point)</title></line>
+  <line x1="317.5" y1="1091.1" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg24)"><title>zone_gamma_tc_z102 — zone_ASI_pvp (1 TP point)</title></line>
+  <line x1="317.5" y1="1091.1" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg25)"><title>zone_gamma_tc_z102 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="317.5" y1="1091.1" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg26)"><title>zone_gamma_tc_z102 — zone_gamma_z116 (1 TP point)</title></line>
+  <line x1="317.5" y1="1091.1" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg27)"><title>zone_gamma_tc_z102 — zone_gamma_z120 (1 TP point)</title></line>
+  <line x1="328.4" y1="921.3" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg28)"><title>zone_gamma_tc_z103 — zone_ASI_A_real (1 TP point)</title></line>
+  <line x1="328.4" y1="921.3" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg29)"><title>zone_gamma_tc_z103 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="328.4" y1="921.3" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg30)"><title>zone_gamma_tc_z103 — zone_gamma_z116 (1 TP point)</title></line>
+  <line x1="328.4" y1="921.3" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg31)"><title>zone_gamma_tc_z103 — zone_gamma_z117 (1 TP point)</title></line>
+  <line x1="537.2" y1="771.2" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg32)"><title>zone_gamma_tc_z104 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="537.2" y1="771.2" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg33)"><title>zone_gamma_tc_z104 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="537.2" y1="771.2" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg34)"><title>zone_gamma_tc_z104 — zone_gamma_z137 (1 TP point)</title></line>
+  <line x1="537.2" y1="771.2" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg35)"><title>zone_gamma_tc_z104 — zone_ICS_pvp (1 TP point)</title></line>
+  <line x1="741.8" y1="929" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg36)"><title>zone_gamma_tc_z105 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="741.8" y1="929" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg37)"><title>zone_gamma_tc_z105 — zone_gamma_z112 (1 TP point)</title></line>
+  <line x1="741.8" y1="929" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg38)"><title>zone_gamma_tc_z105 — zone_gamma_z132 (1 TP point)</title></line>
+  <line x1="741.8" y1="929" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg39)"><title>zone_gamma_tc_z105 — zone_ICS_A_real (1 TP point)</title></line>
+  <line x1="551.1" y1="1043" x2="495.9" y2="1003" class="zonemap-tp" stroke="url(#tpg40)"><title>zone_gamma_z106 — zone_gamma_z107 (1 TP point)</title></line>
+  <line x1="579.1" y1="1021" x2="700" y2="1013.4" class="zonemap-tp" stroke="url(#tpg41)"><title>zone_gamma_z106 — zone_gamma_z112 (1 TP point)</title></line>
+  <line x1="509.6" y1="1006.1" x2="566.6" y2="1033.5" class="zonemap-tp" stroke="url(#tpg42)"><title>zone_gamma_z107 — zone_gamma_z106 (1 TP point)</title></line>
+  <line x1="482.2" y1="1006.1" x2="381.7" y2="1021.9" class="zonemap-tp" stroke="url(#tpg43)"><title>zone_gamma_z107 — zone_gamma_z108 (1 TP point)</title></line>
+  <line x1="396.5" y1="1018.8" x2="495.9" y2="1003" class="zonemap-tp" stroke="url(#tpg44)"><title>zone_gamma_z108 — zone_gamma_z107 (1 TP point)</title></line>
+  <line x1="373.9" y1="1034.3" x2="258.7" y2="1023.9" class="zonemap-tp" stroke="url(#tpg45)"><title>zone_gamma_z108 — zone_gamma_z116 (1 TP point)</title></line>
+  <line x1="396.1" y1="893.7" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg46)"><title>zone_gamma_z109 — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="398.6" y1="919.4" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg47)"><title>zone_gamma_z109 — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="409.9" y1="902.4" x2="524" y2="888" class="zonemap-tp" stroke="url(#tpg48)"><title>zone_gamma_z109 — zone_gamma_z110 (1 TP point)</title></line>
+  <line x1="382.7" y1="904.5" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg49)"><title>zone_gamma_z109 — zone_gamma_z139 (1 TP point)</title></line>
+  <line x1="509.9" y1="891.3" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg50)"><title>zone_gamma_z110 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="536.8" y1="890.4" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg51)"><title>zone_gamma_z110 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="625.3" y1="954.5" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg52)"><title>zone_gamma_z111 — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="654.8" y1="946.8" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg53)"><title>zone_gamma_z111 — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="631.4" y1="935.9" x2="524" y2="888" class="zonemap-tp" stroke="url(#tpg54)"><title>zone_gamma_z111 — zone_gamma_z110 (1 TP point)</title></line>
+  <line x1="646.2" y1="964.4" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg55)"><title>zone_gamma_z111 — zone_gamma_z135 (1 TP point)</title></line>
+  <line x1="710.3" y1="998.1" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg56)"><title>zone_gamma_z112 — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="706.4" y1="1018" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg57)"><title>zone_gamma_z112 — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="688.2" y1="998.8" x2="566.6" y2="1033.5" class="zonemap-tp" stroke="url(#tpg58)"><title>zone_gamma_z112 — zone_gamma_z106 (1 TP point)</title></line>
+  <line x1="563.4" y1="1131.6" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg59)"><title>zone_gamma_z113 — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="557" y1="1104.6" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg60)"><title>zone_gamma_z113 — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="543.5" y1="1125.6" x2="429.2" y2="1115.5" class="zonemap-tp" stroke="url(#tpg61)"><title>zone_gamma_z113 — zone_gamma_z114 (1 TP point)</title></line>
+  <line x1="569.3" y1="1114" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg62)"><title>zone_gamma_z113 — zone_gamma_z127 (1 TP point)</title></line>
+  <line x1="440.6" y1="1126.3" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg63)"><title>zone_gamma_z114 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="418.8" y1="1105.9" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg64)"><title>zone_gamma_z114 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="375.8" y1="1153.9" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg65)"><title>zone_gamma_z115 — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="350.3" y1="1161.9" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg66)"><title>zone_gamma_z115 — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="376.9" y1="1170.1" x2="429.2" y2="1115.5" class="zonemap-tp" stroke="url(#tpg67)"><title>zone_gamma_z115 — zone_gamma_z114 (1 TP point)</title></line>
+  <line x1="361.5" y1="1142.4" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg68)"><title>zone_gamma_z115 — zone_gamma_z123 (1 TP point)</title></line>
+  <line x1="257.8" y1="1014.8" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg69)"><title>zone_gamma_z116 — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="265.8" y1="1039.7" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg70)"><title>zone_gamma_z116 — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="275" y1="1024.3" x2="381.7" y2="1021.9" class="zonemap-tp" stroke="url(#tpg71)"><title>zone_gamma_z116 — zone_gamma_z108 (1 TP point)</title></line>
+  <line x1="213.9" y1="933.3" x2="329.7" y2="921.6" class="zonemap-tp" stroke="url(#tpg72)"><title>zone_gamma_z117 — zone_gamma_tc_z103 (1 TP point)</title></line>
+  <line x1="202.5" y1="953.1" x2="171.1" y2="858.3" class="zonemap-tp" stroke="url(#tpg73)"><title>zone_gamma_z117 — zone_gamma_z118 (1 TP point)</title></line>
+  <line x1="192.7" y1="930.7" x2="152.5" y2="1085.8" class="zonemap-tp" stroke="url(#tpg74)"><title>zone_gamma_z117 — zone_gamma_z119 (1 TP point)</title></line>
+  <line x1="175.2" y1="844.4" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg75)"><title>zone_gamma_z118 — zone_gamma_z117 (1 TP point)</title></line>
+  <line x1="167.7" y1="872.8" x2="253.1" y2="824.5" class="zonemap-tp" stroke="url(#tpg76)"><title>zone_gamma_z118 — zone_gamma_z140 (1 TP point)</title></line>
+  <line x1="144.3" y1="1097.1" x2="206.5" y2="945.1" class="zonemap-tp" stroke="url(#tpg77)"><title>zone_gamma_z119 — zone_gamma_z117 (1 TP point)</title></line>
+  <line x1="160" y1="1075.7" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg78)"><title>zone_gamma_z119 — zone_gamma_z120 (1 TP point)</title></line>
+  <line x1="257.2" y1="1185.4" x2="319.6" y2="1090.3" class="zonemap-tp" stroke="url(#tpg79)"><title>zone_gamma_z120 — zone_gamma_tc_z102 (1 TP point)</title></line>
+  <line x1="233.2" y1="1185" x2="152.5" y2="1085.8" class="zonemap-tp" stroke="url(#tpg80)"><title>zone_gamma_z120 — zone_gamma_z119 (1 TP point)</title></line>
+  <line x1="237" y1="1164.2" x2="265.2" y2="1264.2" class="zonemap-tp" stroke="url(#tpg81)"><title>zone_gamma_z120 — zone_gamma_z121 (1 TP point)</title></line>
+  <line x1="254.3" y1="1277.5" x2="247.5" y2="1178.2" class="zonemap-tp" stroke="url(#tpg82)"><title>zone_gamma_z121 — zone_gamma_z120 (1 TP point)</title></line>
+  <line x1="276.3" y1="1252.7" x2="332.7" y2="1312.5" class="zonemap-tp" stroke="url(#tpg83)"><title>zone_gamma_z121 — zone_gamma_z122 (1 TP point)</title></line>
+  <line x1="320.6" y1="1305" x2="265.2" y2="1264.2" class="zonemap-tp" stroke="url(#tpg84)"><title>zone_gamma_z122 — zone_gamma_z121 (1 TP point)</title></line>
+  <line x1="344.3" y1="1324.5" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg85)"><title>zone_gamma_z122 — zone_gamma_z123 (1 TP point)</title></line>
+  <line x1="406.8" y1="1296.4" x2="363.2" y2="1156.5" class="zonemap-tp" stroke="url(#tpg86)"><title>zone_gamma_z123 — zone_gamma_z115 (1 TP point)</title></line>
+  <line x1="404.6" y1="1271.2" x2="332.7" y2="1312.5" class="zonemap-tp" stroke="url(#tpg87)"><title>zone_gamma_z123 — zone_gamma_z122 (1 TP point)</title></line>
+  <line x1="428.9" y1="1269.4" x2="489.4" y2="1354.2" class="zonemap-tp" stroke="url(#tpg88)"><title>zone_gamma_z123 — zone_gamma_z124 (1 TP point)</title></line>
+  <line x1="475.7" y1="1358.5" x2="418.7" y2="1281.9" class="zonemap-tp" stroke="url(#tpg89)"><title>zone_gamma_z124 — zone_gamma_z123 (1 TP point)</title></line>
+  <line x1="503.7" y1="1352" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg90)"><title>zone_gamma_z124 — zone_gamma_z125 (1 TP point)</title></line>
+  <line x1="555.5" y1="1325.2" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg91)"><title>zone_gamma_z125 — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="562.4" y1="1305.8" x2="489.4" y2="1354.2" class="zonemap-tp" stroke="url(#tpg92)"><title>zone_gamma_z125 — zone_gamma_z124 (1 TP point)</title></line>
+  <line x1="581.3" y1="1318" x2="652.6" y2="1298.9" class="zonemap-tp" stroke="url(#tpg93)"><title>zone_gamma_z125 — zone_gamma_z126 (1 TP point)</title></line>
+  <line x1="650" y1="1284.8" x2="567.4" y2="1320.5" class="zonemap-tp" stroke="url(#tpg94)"><title>zone_gamma_z126 — zone_gamma_z125 (1 TP point)</title></line>
+  <line x1="656.4" y1="1309.3" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg95)"><title>zone_gamma_z126 — zone_gamma_z127 (1 TP point)</title></line>
+  <line x1="575" y1="1222.4" x2="556.2" y2="1117.1" class="zonemap-tp" stroke="url(#tpg96)"><title>zone_gamma_z127 — zone_gamma_z113 (1 TP point)</title></line>
+  <line x1="603" y1="1201.4" x2="652.6" y2="1298.9" class="zonemap-tp" stroke="url(#tpg97)"><title>zone_gamma_z127 — zone_gamma_z126 (1 TP point)</title></line>
+  <line x1="597.1" y1="1218" x2="674.3" y2="1179" class="zonemap-tp" stroke="url(#tpg98)"><title>zone_gamma_z127 — zone_gamma_z128 (1 TP point)</title></line>
+  <line x1="662.3" y1="1164.5" x2="587.5" y2="1209.6" class="zonemap-tp" stroke="url(#tpg99)"><title>zone_gamma_z128 — zone_gamma_z127 (1 TP point)</title></line>
+  <line x1="689.4" y1="1169.6" x2="764.4" y2="1190.3" class="zonemap-tp" stroke="url(#tpg100)"><title>zone_gamma_z128 — zone_gamma_z129 (1 TP point)</title></line>
+  <line x1="749.7" y1="1194.9" x2="674.3" y2="1179" class="zonemap-tp" stroke="url(#tpg101)"><title>zone_gamma_z129 — zone_gamma_z128 (1 TP point)</title></line>
+  <line x1="773.3" y1="1203.5" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg102)"><title>zone_gamma_z129 — zone_gamma_z130 (1 TP point)</title></line>
+  <line x1="753.3" y1="1130.6" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg103)"><title>zone_gamma_z130 — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="773.2" y1="1110.7" x2="764.4" y2="1190.3" class="zonemap-tp" stroke="url(#tpg104)"><title>zone_gamma_z130 — zone_gamma_z129 (1 TP point)</title></line>
+  <line x1="774" y1="1132.2" x2="818.3" y2="1052.8" class="zonemap-tp" stroke="url(#tpg105)"><title>zone_gamma_z130 — zone_gamma_z131 (1 TP point)</title></line>
+  <line x1="808.1" y1="1042.3" x2="761.1" y2="1122.7" class="zonemap-tp" stroke="url(#tpg106)"><title>zone_gamma_z131 — zone_gamma_z130 (1 TP point)</title></line>
+  <line x1="832.4" y1="1055.4" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg107)"><title>zone_gamma_z131 — zone_gamma_z132 (1 TP point)</title></line>
+  <line x1="800.2" y1="967.6" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg108)"><title>zone_gamma_z132 — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="808.7" y1="948.3" x2="818.3" y2="1052.8" class="zonemap-tp" stroke="url(#tpg109)"><title>zone_gamma_z132 — zone_gamma_z131 (1 TP point)</title></line>
+  <line x1="828.8" y1="972.4" x2="826.3" y2="876" class="zonemap-tp" stroke="url(#tpg110)"><title>zone_gamma_z132 — zone_gamma_z133 (1 TP point)</title></line>
+  <line x1="840.3" y1="872.9" x2="815" y2="962.8" class="zonemap-tp" stroke="url(#tpg111)"><title>zone_gamma_z133 — zone_gamma_z132 (1 TP point)</title></line>
+  <line x1="812.5" y1="889" x2="761.9" y2="823.7" class="zonemap-tp" stroke="url(#tpg112)"><title>zone_gamma_z133 — zone_gamma_z134 (1 TP point)</title></line>
+  <line x1="776.5" y1="820.2" x2="826.3" y2="876" class="zonemap-tp" stroke="url(#tpg113)"><title>zone_gamma_z134 — zone_gamma_z133 (1 TP point)</title></line>
+  <line x1="748.2" y1="822.9" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg114)"><title>zone_gamma_z134 — zone_gamma_z135 (1 TP point)</title></line>
+  <line x1="654.7" y1="838.2" x2="639" y2="949.1" class="zonemap-tp" stroke="url(#tpg115)"><title>zone_gamma_z135 — zone_gamma_z111 (1 TP point)</title></line>
+  <line x1="678.9" y1="853.4" x2="761.9" y2="823.7" class="zonemap-tp" stroke="url(#tpg116)"><title>zone_gamma_z135 — zone_gamma_z134 (1 TP point)</title></line>
+  <line x1="666.4" y1="863.5" x2="689.6" y2="740.9" class="zonemap-tp" stroke="url(#tpg117)"><title>zone_gamma_z135 — zone_gamma_z136 (1 TP point)</title></line>
+  <line x1="686.7" y1="730.2" x2="663.9" y2="849.4" class="zonemap-tp" stroke="url(#tpg118)"><title>zone_gamma_z136 — zone_gamma_z135 (1 TP point)</title></line>
+  <line x1="676.8" y1="740.2" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg119)"><title>zone_gamma_z136 — zone_gamma_z137 (1 TP point)</title></line>
+  <line x1="560.3" y1="700.5" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg120)"><title>zone_gamma_z137 — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="571.9" y1="710.4" x2="689.6" y2="740.9" class="zonemap-tp" stroke="url(#tpg121)"><title>zone_gamma_z137 — zone_gamma_z136 (1 TP point)</title></line>
+  <line x1="545.5" y1="711.7" x2="410.7" y2="755.4" class="zonemap-tp" stroke="url(#tpg122)"><title>zone_gamma_z137 — zone_gamma_z138 (1 TP point)</title></line>
+  <line x1="421.4" y1="754.6" x2="561" y2="711.1" class="zonemap-tp" stroke="url(#tpg123)"><title>zone_gamma_z138 — zone_gamma_z137 (1 TP point)</title></line>
+  <line x1="413.5" y1="742.1" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg124)"><title>zone_gamma_z138 — zone_gamma_z139 (1 TP point)</title></line>
+  <line x1="398.7" y1="808.2" x2="397" y2="906.5" class="zonemap-tp" stroke="url(#tpg125)"><title>zone_gamma_z139 — zone_gamma_z109 (1 TP point)</title></line>
+  <line x1="404.5" y1="835" x2="410.7" y2="755.4" class="zonemap-tp" stroke="url(#tpg126)"><title>zone_gamma_z139 — zone_gamma_z138 (1 TP point)</title></line>
+  <line x1="389.1" y1="826" x2="253.1" y2="824.5" class="zonemap-tp" stroke="url(#tpg127)"><title>zone_gamma_z139 — zone_gamma_z140 (1 TP point)</title></line>
+  <line x1="241.8" y1="811.4" x2="171.1" y2="858.3" class="zonemap-tp" stroke="url(#tpg128)"><title>zone_gamma_z140 — zone_gamma_z118 (1 TP point)</title></line>
+  <line x1="261.7" y1="831" x2="401.8" y2="822.1" class="zonemap-tp" stroke="url(#tpg129)"><title>zone_gamma_z140 — zone_gamma_z139 (1 TP point)</title></line>
+  <line x1="524.2" y1="443.6" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg130)"><title>zone_ICS — zone_ASI_pve (1 TP point)</title></line>
+  <line x1="541.1" y1="429.5" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg131)"><title>zone_ICS — zone_ICS_pve (1 TP point)</title></line>
+  <line x1="518.5" y1="433.4" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg132)"><title>zone_ICS — zone_TM_pve (1 TP point)</title></line>
+  <line x1="560.3" y1="538.9" x2="743.7" y2="929" class="zonemap-tp" stroke="url(#tpg133)"><title>zone_ICS_A_real — zone_gamma_tc_z105 (1 TP point)</title></line>
+  <line x1="548.5" y1="530" x2="563.1" y2="889.7" class="zonemap-tp" stroke="url(#tpg134)"><title>zone_ICS_A_real — zone_ics_g_3 (2 TP points)</title></line>
+  <line x1="548.5" y1="530" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg135)"><title>zone_ICS_A_real — zone_ICS_pvp (2 TP points)</title></line>
+  <line x1="547.8" y1="545.9" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg136)"><title>zone_ICS_A_real — zone_TM_pve (3 TP points)</title></line>
+  <line x1="562.4" y1="552" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg137)"><title>zone_ICS_A_real — zone_TM_pvp (2 TP points)</title></line>
+  <line x1="558.7" y1="884.1" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg138)"><title>zone_ics_g_3 — zone_ICS_A_real (2 TP points)</title></line>
+  <line x1="572.9" y1="875.8" x2="478.8" y2="679.7" class="zonemap-tp" stroke="url(#tpg139)"><title>zone_ics_g_3 — zone_ics_g_8 (2 TP points)</title></line>
+  <line x1="473" y1="671.4" x2="563.1" y2="889.7" class="zonemap-tp" stroke="url(#tpg140)"><title>zone_ics_g_8 — zone_ics_g_3 (2 TP points)</title></line>
+  <line x1="473.2" y1="684.4" x2="478.8" y2="568.4" class="zonemap-tp" stroke="url(#tpg141)"><title>zone_ics_g_8 — zone_ICS_pvp (2 TP points)</title></line>
+  <line x1="514.4" y1="589.2" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg142)"><title>zone_ICS_pve — zone_ASI_pve (1 TP point)</title></line>
+  <line x1="544.8" y1="589.7" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg143)"><title>zone_ICS_pve — zone_ICS (1 TP point)</title></line>
+  <line x1="526.9" y1="601.8" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg144)"><title>zone_ICS_pve — zone_TM_pve (1 TP point)</title></line>
+  <line x1="464.1" y1="570.8" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg145)"><title>zone_ICS_pvp — zone_ASI_A_real (2 TP points)</title></line>
+  <line x1="482.8" y1="559.7" x2="537.2" y2="773" class="zonemap-tp" stroke="url(#tpg146)"><title>zone_ICS_pvp — zone_gamma_tc_z104 (1 TP point)</title></line>
+  <line x1="479.4" y1="568.3" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg147)"><title>zone_ICS_pvp — zone_ICS_A_real (2 TP points)</title></line>
+  <line x1="479.4" y1="568.3" x2="478.8" y2="679.7" class="zonemap-tp" stroke="url(#tpg148)"><title>zone_ICS_pvp — zone_ics_g_8 (2 TP points)</title></line>
+  <line x1="486.7" y1="512.6" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg149)"><title>zone_TM — zone_TM_pve (2 TP points)</title></line>
+  <line x1="467.1" y1="457.3" x2="404.6" y2="484.9" class="zonemap-tp" stroke="url(#tpg150)"><title>zone_TM_A_real — zone_ASI_pvp (2 TP points)</title></line>
+  <line x1="468.4" y1="461" x2="511.7" y2="1171.4" class="zonemap-tp" stroke="url(#tpg151)"><title>zone_TM_A_real — zone_gamma_tc_z101 (1 TP point)</title></line>
+  <line x1="491.1" y1="461" x2="800" y2="428.6" class="zonemap-tp" stroke="url(#tpg152)"><title>zone_TM_A_real — zone_tm_g_6 (2 TP points)</title></line>
+  <line x1="474.7" y1="454.9" x2="460.3" y2="512.7" class="zonemap-tp" stroke="url(#tpg153)"><title>zone_TM_A_real — zone_TM_pve (3 TP points)</title></line>
+  <line x1="491.1" y1="461" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg154)"><title>zone_TM_A_real — zone_TM_pvp (2 TP points)</title></line>
+  <line x1="598.8" y1="718.4" x2="800" y2="428.6" class="zonemap-tp" stroke="url(#tpg155)"><title>zone_tm_g_3 — zone_tm_g_6 (2 TP points)</title></line>
+  <line x1="578.1" y1="714.9" x2="553" y2="484.9" class="zonemap-tp" stroke="url(#tpg156)"><title>zone_tm_g_3 — zone_TM_pvp (2 TP points)</title></line>
+  <line x1="794.1" y1="434.8" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg157)"><title>zone_tm_g_6 — zone_TM_A_real (2 TP points)</title></line>
+  <line x1="794.1" y1="434.8" x2="590.2" y2="716.8" class="zonemap-tp" stroke="url(#tpg158)"><title>zone_tm_g_6 — zone_tm_g_3 (2 TP points)</title></line>
+  <line x1="447" y1="501.4" x2="404.6" y2="540.6" class="zonemap-tp" stroke="url(#tpg159)"><title>zone_TM_pve — zone_ASI_A_real (3 TP points)</title></line>
+  <line x1="447.8" y1="504" x2="355.1" y2="512.7" class="zonemap-tp" stroke="url(#tpg160)"><title>zone_TM_pve — zone_ASI_pve (1 TP point)</title></line>
+  <line x1="471.5" y1="519.4" x2="531.3" y2="435.4" class="zonemap-tp" stroke="url(#tpg161)"><title>zone_TM_pve — zone_ICS (1 TP point)</title></line>
+  <line x1="467" y1="497.3" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg162)"><title>zone_TM_pve — zone_ICS_A_real (3 TP points)</title></line>
+  <line x1="467" y1="497.3" x2="528.4" y2="590.1" class="zonemap-tp" stroke="url(#tpg163)"><title>zone_TM_pve — zone_ICS_pve (1 TP point)</title></line>
+  <line x1="471.5" y1="519.4" x2="497.4" y2="512.7" class="zonemap-tp" stroke="url(#tpg164)"><title>zone_TM_pve — zone_TM (2 TP points)</title></line>
+  <line x1="447" y1="526.4" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg165)"><title>zone_TM_pve — zone_TM_A_real (3 TP points)</title></line>
+  <line x1="568.5" y1="481.8" x2="673.4" y2="1075" class="zonemap-tp" stroke="url(#tpg166)"><title>zone_TM_pvp — zone_gamma_tc_z100 (1 TP point)</title></line>
+  <line x1="561.2" y1="473.7" x2="553" y2="540.6" class="zonemap-tp" stroke="url(#tpg167)"><title>zone_TM_pvp — zone_ICS_A_real (2 TP points)</title></line>
+  <line x1="553.1" y1="486.5" x2="478.8" y2="457.1" class="zonemap-tp" stroke="url(#tpg168)"><title>zone_TM_pvp — zone_TM_A_real (2 TP points)</title></line>
+  <line x1="553.1" y1="486.5" x2="590.2" y2="716.8" class="zonemap-tp" stroke="url(#tpg169)"><title>zone_TM_pvp — zone_tm_g_3 (2 TP points)</title></line>
+  <line x1="630" y1="362.7" x2="498.5" y2="509.1" class="zonemap-tp" stroke="url(#tpg170)"><title>zone_training — zone_TM (6 TP points)</title></line>
+  <line x1="683.1" y1="308.5" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_pvp_arena — zone_TM_pve (exit gate `stronghold_default_exit`)</title></line>
+  <line x1="868.6" y1="122.1" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_strghld_70 — zone_TM_pve (exit gate `stronghold_default_exit`)</title></line>
+  <line x1="771.5" y1="310.5" x2="497.4" y2="512.7" class="zonemap-link"><title>zone_strghld_71 — zone_TM (exit gate `stronghold_z71_exit`)</title></line>
+  <line x1="779.2" y1="286.2" x2="460.3" y2="512.7" class="zonemap-link"><title>zone_strghld_72 — zone_TM_pve (exit gate `stronghold_z72_exit`)</title></line>
 </svg>
 </div>
 
 <div class="zonemap-legend">Island sizes (tiles): <span class="legend-isle" style="width:19px;min-width:6px"></span> 2048 (main islands);&ensp; <span class="legend-isle" style="width:12px;min-width:6px"></span> 1024 (training);&ensp; <span class="legend-isle" style="width:7.5px;min-width:6px"></span> 512 (stronghold);&ensp; <span class="legend-isle" style="width:5px;min-width:6px"></span> 256 (tc zones);&ensp; </div>
 
-<a id="training"></a>
-
-## Training
-
-The virtual [training island](/zones/zone-training/) — where new characters start and learn the basics before entering the main galaxies.
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-training/">
-<img class="zone-card-thumb" src="/zonemaps/zone-training/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Virtual Training Grounds</span>
-<span class="zone-card-meta">Training · 1024×1024</span>
-</a>
-</div>
-
-<a id="alpha"></a>
-
-## Alpha
-
-The main protected islands and their second-wave PvE companions — the safe starter economy (see [Protection levels](/zones/protection/)).
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-asi/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Daoden</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-pve/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-pve/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Shinjalar</span>
-<span class="zone-card-meta">PvE · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Attalica</span>
-<span class="zone-card-meta">PvE · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-pve/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-pve/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Tellesis</span>
-<span class="zone-card-meta">PvE · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">New Virginia</span>
-<span class="zone-card-meta">PvE · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-pve/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-pve/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Hershfield</span>
-<span class="zone-card-meta">PvE · 2048×2048</span>
-</a>
-</div>
-
-<a id="beta"></a>
-
-## Beta
-
-The open-PvP islands: the three main islands' PvP twins (the "_real" names), the eight gate islands of each galaxy, and the special zones (the [PvP arena](/zones/zone-pvp-arena/) and the strongholds — protected instances, listed here for completeness).
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-asi/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Daoden</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-a-real/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-a-real/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Hokkogaros</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-pvp/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-pvp/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Kentagura</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-a-real/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-a-real/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Domhalarn</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-pvp/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-pvp/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Novastrov</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-a-real/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-a-real/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Norhoop</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-pvp/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-pvp/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Alsbale</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-1/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-1/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Rhaoshan</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-2/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-2/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Changowa</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-3/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-3/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Mhenosha</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-4/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-4/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Xiantor</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-5/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-5/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Nirayon</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-6/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-6/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Shuzhon</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-7/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-7/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Imidero</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-asi-g-8/">
-<img class="zone-card-thumb" src="/zonemaps/zone-asi-g-8/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Yuraion Ro</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-1/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-1/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Novaya Trava</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-2/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-2/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Neuhorn</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-3/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-3/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Kraslovsk</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-4/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-4/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Langruhm</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-5/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-5/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Berger's Island</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-6/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-6/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Clandrais</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-7/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-7/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Bleumon</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-ics-g-8/">
-<img class="zone-card-thumb" src="/zonemaps/zone-ics-g-8/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Chalydor</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-pvp-arena/">
-<img class="zone-card-thumb" src="/zonemaps/zone-pvp-arena/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Omega</span>
-<span class="zone-card-meta">Stronghold · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-strghld-70/">
-<img class="zone-card-thumb" src="/zonemaps/zone-strghld-70/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">strghld_70</span>
-<span class="zone-card-meta">Stronghold · 512×512</span>
-</a>
-<a class="zone-card" href="/zones/zone-strghld-71/">
-<img class="zone-card-thumb" src="/zonemaps/zone-strghld-71/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">strghld_71</span>
-<span class="zone-card-meta">Stronghold · 256×256</span>
-</a>
-<a class="zone-card" href="/zones/zone-strghld-72/">
-<img class="zone-card-thumb" src="/zonemaps/zone-strghld-72/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">strghld_72</span>
-<span class="zone-card-meta">Stronghold · 256×256</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-1/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-1/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Davis Barrier</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-2/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-2/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Gravehills</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-3/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-3/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Emperth</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-4/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-4/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Guthraw</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-5/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-5/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Landers Bridge</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-6/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-6/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Solarfield</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-7/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-7/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Blackpoint</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-tm-g-8/">
-<img class="zone-card-thumb" src="/zonemaps/zone-tm-g-8/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Greensward</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-</div>
-
-<a id="t0"></a>
-
-## Gamma T0 — tc transit
-
-The six small (256-tile) transit zones of the frontier belt. No ore configuration — pure travel nodes between the main galaxies and the belt.
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-gamma-tc-z100/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-tc-z100/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_tc_z100</span>
-<span class="zone-card-meta">PvP · 256×256</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-tc-z101/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-tc-z101/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_tc_z101</span>
-<span class="zone-card-meta">PvP · 256×256</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-tc-z102/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-tc-z102/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_tc_z102</span>
-<span class="zone-card-meta">PvP · 256×256</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-tc-z103/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-tc-z103/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_tc_z103</span>
-<span class="zone-card-meta">PvP · 256×256</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-tc-z104/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-tc-z104/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_tc_z104</span>
-<span class="zone-card-meta">PvP · 256×256</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-tc-z105/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-tc-z105/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_tc_z105</span>
-<span class="zone-card-meta">PvP · 256×256</span>
-</a>
-</div>
-
-<a id="t1"></a>
-
-## Gamma T1
-
-Frontier belt islands with the server-recorded tier **T1** (zones.note). Open PvP and terraformable — see [Protection levels](/zones/protection/). Each island's page has its ore configuration and TP connections.
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-gamma-z106/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z106/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z106</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z107/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z107/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z107</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z108/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z108/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z108</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z109/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z109/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z109</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z110/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z110/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z110</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z111/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z111/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z111</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z112/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z112/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z112</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z113/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z113/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z113</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z114/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z114/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z114</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-</div>
-
-<a id="t2"></a>
-
-## Gamma T2
-
-Frontier belt islands with the server-recorded tier **T2** (zones.note). Open PvP and terraformable — see [Protection levels](/zones/protection/). Each island's page has its ore configuration and TP connections.
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-gamma-z115/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z115/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z115</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z116/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z116/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z116</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z117/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z117/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z117</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z118/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z118/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z118</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z119/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z119/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z119</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z120/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z120/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z120</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z121/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z121/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z121</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z122/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z122/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z122</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z123/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z123/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z123</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-</div>
-
-<a id="t3"></a>
-
-## Gamma T3
-
-Frontier belt islands with the server-recorded tier **T3** (zones.note). Open PvP and terraformable — see [Protection levels](/zones/protection/). Each island's page has its ore configuration and TP connections.
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-gamma-z124/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z124/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z124</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z125/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z125/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z125</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z126/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z126/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z126</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z127/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z127/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z127</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z128/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z128/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z128</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z129/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z129/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z129</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z130/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z130/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z130</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z131/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z131/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z131</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z132/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z132/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z132</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-</div>
-
-<a id="t4"></a>
-
-## Gamma T4
-
-Frontier belt islands with the server-recorded tier **T4** (zones.note). Open PvP and terraformable — see [Protection levels](/zones/protection/). Each island's page has its ore configuration and TP connections.
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-gamma-z133/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z133/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z133</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z134/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z134/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z134</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z135/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z135/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z135</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z136/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z136/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z136</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z137/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z137/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z137</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z138/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z138/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z138</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z139/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z139/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z139</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-<a class="zone-card" href="/zones/zone-gamma-z140/">
-<img class="zone-card-thumb" src="/zonemaps/zone-gamma-z140/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">gamma_z140</span>
-<span class="zone-card-meta">PvP · 2048×2048</span>
-</a>
-</div>
-
-[Zones overview](/zones/) · [Zone index](/zones/zone-index/) · [Protection levels](/zones/protection/)
+Zone listings: [Alpha](/zones/alpha/) · [Beta](/zones/beta/) · [Gamma](/zones/gamma/) — [Zone index](/zones/zone-index/) · [Protection levels](/zones/protection/)

@@ -189,7 +189,11 @@ public static class ZoneMapSvg
         }
         foreach (var c in cols.OrderBy(c => c.Enabled ? 0 : 1).ThenBy(c => c.X).ThenBy(c => c.Y))
         {
-            var dests = c.Dests.Select(Disp).Distinct(StringComparer.Ordinal).ToList();
+            // local (in-zone) teleport endpoints point at the zone itself —
+            // labeling them would just repeat the page title, so the label
+            // lists only destinations in OTHER zones (the color keeps using
+            // the full destination list).
+            var dests = c.Dests.Where(d => d != name).Select(Disp).Distinct(StringComparer.Ordinal).ToList();
             var label = dests.Count == 0 ? "" :
                 dests.Count <= 2 ? string.Join(", ", dests) : dests[0] + ", " + dests[1] + "…";
             var color = c.Enabled ? ColorFor(label, c.Dests) : "#5b6478";

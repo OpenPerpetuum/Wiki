@@ -52,18 +52,77 @@ test('zones are drawn with coastline thumbnails and inter-zone TPs are dashed', 
   expect(await page.locator('.zonemap .ltp-dot').count()).toBe(0);
 });
 
-test('world map sub-sections use zone cards with coastline thumbnails', async ({ page, baseURL }) => {
+test('the map page links to the family-listing pages (no card sections of its own)', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
-  const cards = page.locator('.zone-card');
-  expect(await cards.count()).toBeGreaterThanOrEqual(80);
-  const first = cards.first();
-  expect(await first.getAttribute('href')).toMatch(/^\/zones\/[^/]+\/$/);
-  const thumb = first.locator('img.zone-card-thumb');
-  expect(await thumb.getAttribute('src')).toMatch(/^\/zonemaps\/[^/]+\/thumb\.png$/);
-  const r = await page.request.get(await thumb.getAttribute('src'));
-  expect(r.ok()).toBe(true);
-  // no flat-rectangle fallback: the old overview tables are gone
-  expect(await page.locator('.zonemap-wrap').count()).toBeGreaterThanOrEqual(1);
+  // the per-family card grids moved to /zones/alpha|beta|gamma/ — the map
+  // page only carries the map + legend + links
+  expect(await page.locator('.zone-card').count()).toBe(0);
+  for (const fam of ['alpha', 'beta', 'gamma'])
+    expect(await page.locator('a[href=\'/zones/' + fam + '/\']').count(), fam).toBeGreaterThan(0);
+});
+
+test('TP lines draw OVER the islands and anchor at the real column/landing spots', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
+  const info = await page.evaluate(() => {
+    const svg = document.querySelector('.zonemap');
+    const nodes = [...svg.querySelectorAll('a > g')];
+    const lines = [...svg.querySelectorAll('line.zonemap-tp')];
+    // 1) the lines come after every node in document order (drawn on top)
+    const lastNode = nodes[nodes.length - 1];
+    const firstLine = lines[0];
+    const onTop = lastNode.compareDocumentPosition(firstLine) & Node.DOCUMENT_POSITION_FOLLOWING;
+    // 2) at least one line's endpoint is offset from its zone node's center
+    //    (the column/landing's real position inside the zone), not all of
+    //    them run center-to-center
+    const center = (n) => {
+      const s = n.querySelector('rect, circle');
+      return s && s.tagName === 'rect'
+        ? { x: parseFloat(s.getAttribute('x')) + s.getAttribute('width') / 2, y: parseFloat(s.getAttribute('y')) + s.getAttribute('height') / 2 }
+        : { x: parseFloat(s.getAttribute('cx')), y: parseFloat(s.getAttribute('cy')) };
+    };
+    const byHref = {};
+    nodes.forEach((n) => { byHref[n.closest('a').getAttribute('href')] = center(n); });
+    let anchored = 0, total = 0;
+    lines.forEach((l) => {
+      const t = l.querySelector('title').textContent;
+      const [src] = t.split(' — ');
+      const c = byHref['/zones/' + src.toLowerCase().replace(/_/g, '-') + '/'];
+      if (!c) return;
+      total++;
+      const dx = Math.abs(parseFloat(l.getAttribute('x1')) - c.x);
+      const dy = Math.abs(parseFloat(l.getAttribute('y1')) - c.y);
+      if (dx > 0.5 || dy > 0.5) anchored++;
+    });
+    return { onTop: !!onTop, anchored, total, lines: lines.length };
+  });
+  expect(info.onTop).toBe(true);
+  expect(info.total).toBeGreaterThan(0);
+  expect(info.anchored).toBeGreaterThan(0);
+});
+
+test('TP lines are nearly invisible at rest and fade in near the cursor (desktop)', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${MAP}`, { waitUntil: 'networkidle' });
+  // point on the first TP line, in screen coordinates (CTM handles zoom/pan)
+  const pt = await page.evaluate(() => {
+    const line = document.querySelector('.zonemap-tp');
+    const svg = document.querySelector('.zonemap');
+    const p = svg.createSVGPoint();
+    p.x = (+line.getAttribute('x1') + +line.getAttribute('x2')) / 2;
+    p.y = (+line.getAttribute('y1') + +line.getAttribute('y2')) / 2;
+    const s = p.matrixTransform(svg.getScreenCTM());
+    return { x: s.x, y: s.y };
+  });
+  const op = () => page.evaluate(() => getComputedStyle(document.querySelector('.zonemap-tp')).strokeOpacity);
+  // at rest: almost invisible
+  expect(parseFloat(await op())).toBeLessThan(0.15);
+  // cursor on the line: it lights up
+  await page.mouse.move(pt.x, pt.y);
+  await page.waitForTimeout(300);
+  expect(parseFloat(await op())).toBeGreaterThan(0.8);
+  // cursor far away: back to nearly invisible
+  await page.mouse.move(5, 5);
+  await page.waitForTimeout(400);
+  expect(parseFloat(await op())).toBeLessThan(0.15);
 });
 
 test('wheel over the map zooms the map and does not scroll the page', async ({ page, baseURL }) => {
@@ -90,7 +149,7 @@ test('wheel over the map zooms the map and does not scroll the page', async ({ p
 
 test('wheel outside the map still scrolls the page', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`);
-  const section = page.locator('h2#training');
+  const section = page.locator('.zonemap-legend');
   await section.scrollIntoViewIfNeeded();
   await page.waitForTimeout(100);
   const box = await section.boundingBox();
@@ -98,7 +157,19 @@ test('wheel outside the map still scrolls the page', async ({ page, baseURL }) =
   const y0 = await page.evaluate(() => window.scrollY);
   await page.mouse.wheel(0, 300);
   await page.waitForTimeout(50);
-  const y1 = await page.evaluate(() => window.scrollY);
+  let y1 = await page.evaluate(() => window.scrollY);
+  // the map page is short: if the wheel lands at the bottom of the document
+  // there is nothing left to scroll — scroll back to the top and retry
+  if (y1 === y0) {
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.waitForTimeout(100);
+    await page.mouse.move(box.x + 10, Math.max(10, box.y + 10));
+    await page.mouse.wheel(0, 300);
+    await page.waitForTimeout(50);
+    y1 = await page.evaluate(() => window.scrollY);
+    expect(y1).toBeGreaterThan(0);
+    return;
+  }
   expect(y1).toBeGreaterThan(y0);
 });
 

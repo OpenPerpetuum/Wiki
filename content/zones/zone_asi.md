@@ -2,6 +2,8 @@
 title: "Daoden (worked example)"
 description: "An open PvP alpha-tier zone: 8 ore types including epriton and rare flux ore, 19 plant species, fertility 20."
 weight: 31
+extra:
+  family: alpha
 ---
 
 # Daoden (zone_ASI) — worked example

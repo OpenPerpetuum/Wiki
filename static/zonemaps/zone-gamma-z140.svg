@@ -2,20 +2,20 @@
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="#10151f" stroke="#39445a" stroke-width="2.0"/>
   <image id="zm-height" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-gamma-z140/height.png" preserveAspectRatio="none"/>
   <image id="zm-color" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-gamma-z140/color.png" preserveAspectRatio="none" style="display:none"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
-  <line stroke="#1d2534" stroke-width="1"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
   <a href="/zones/zone-gamma-z118/" title="zone_gamma_z118">
   <circle cx="411.5" cy="314.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="411.5" y="283.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z118</text>

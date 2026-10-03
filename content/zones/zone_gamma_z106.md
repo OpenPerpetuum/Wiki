@@ -2,6 +2,8 @@
 title: "zone_gamma_z106 (worked example)"
 description: "A terraformable high-tier PvP zone: reduced ore nodes, fertility 15, tier-2 plant mix."
 weight: 32
+extra:
+  family: gamma
 ---
 
 # zone_gamma_z106 — worked example

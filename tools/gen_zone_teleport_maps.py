@@ -551,7 +551,7 @@ def heightmap_png(zone_name, size=512):
 
 # ------------------------------------------------------------ svg rewrite
 
-ATTR = re.compile(r'([a-z-]+)="([^"]*)"')
+ATTR = re.compile(r'([a-zA-Z][a-zA-Z0-9_.:-]*)="([^"]*)"')  # names may carry digits: x1/y1/x2/y2
 ITEM = re.compile(r"<(rect|line|circle|path)\b([^>]*?)/>|<text\b([^>]*?)>(.*?)</text>", re.S)
 
 

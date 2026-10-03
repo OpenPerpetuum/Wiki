@@ -98,6 +98,15 @@ test('local teleport lines are visible and light up near their endpoint columns'
   for (let i = 0; i < await lines.count(); i++) {
     expect(parseFloat(await lines.nth(i).evaluate((el) => getComputedStyle(el).opacity))).toBeGreaterThan(0.5);
   }
+  // regression: every line carries real coordinates — the Python post-processor
+  // once dropped digit-bearing attribute names (x1/y1/x2/y2), leaving
+  // zero-length lines that rendered as nothing (2026-10-03, zone_TM)
+  const degenerate = await lines.evaluateAll((ls) => ls.filter((l) => {
+    const a = [l.getAttribute('x1'), l.getAttribute('y1'), l.getAttribute('x2'), l.getAttribute('y2')];
+    return a.some((v) => v === null || v === '') ||
+      (parseFloat(a[0]) === parseFloat(a[2]) && parseFloat(a[1]) === parseFloat(a[3]));
+  }).length);
+  expect(degenerate).toBe(0);
   // hovering near one of the endpoint columns brightens the line further
   const anchor = page.locator('.zonetp-wrap circle[data-ltp]').first();
   const b = await anchor.boundingBox();
