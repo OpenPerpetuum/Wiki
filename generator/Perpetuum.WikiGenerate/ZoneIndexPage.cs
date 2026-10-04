@@ -1,73 +1,63 @@
 namespace Perpetuum.WikiGenerate;
 
+/// <summary>
+/// The zone index: every zone with an inter-zone teleport point, as family
+/// sections of zone cards (the same design as the family pages — alpha/beta/
+/// gamma). Zones without any TP connection to another zone (strongholds,
+/// the PvP arena, dead-end gate islands) are left off, exactly like the
+/// world map.
+/// </summary>
 public static class ZoneIndexPage
 {
-    // ZoneType enum (src/Perpetuum/Zones/ZoneType.cs)
-    private static readonly string[] ZoneTypes = { "Undefined", "PvE", "PvP", "Training", "Stronghold" };
-
-    /// <summary>Link to a zone's own page — every zone has one (the three worked
-    /// examples are hand-written, the rest generated; same slug scheme).</summary>
-    private static string ZoneLink(string name)
-    {
-        var label = Md.ClientStrings.TryGetValue(name, out var d) && d != name ? d : name;
-        return $"[{label}](/zones/{name.ToLowerInvariant().Replace("_", "-")}/)";
-    }
-
     public static string Build(Db db)
     {
-        var species = db.Query("SELECT rulesetid, COUNT(*) AS n FROM plantrules GROUP BY rulesetid")
-            .ToDictionary(r => r.Int("rulesetid"), r => r.Int("n"));
+        var zones = db.Query("SELECT id, name, zonetype, x, y, width, height, protected, terraformable, enabled FROM zones ORDER BY id")
+            .Select(r => new ZonesMapPage.Zone(r.Str("name"), r.Int("zonetype"), r.Dbl("x"), r.Dbl("y"),
+                r.Int("width"), r.Int("height"), r.Bit("protected"), r.Bit("terraformable")))
+            .ToList();
 
-        var mineralStats = db.Query("""
-            SELECT zoneId, COUNT(*) AS minerals, SUM(maxnodes) AS totalNodes, SUM(totalamountpernode) AS totalAmount
-            FROM mineralconfigs GROUP BY zoneId
-            """).ToDictionary(r => r.Int("zoneId"), r => (minerals: r.Int("minerals"), totalNodes: r.Lng("totalNodes"), totalAmount: r.Lng("totalAmount")));
+        // The zones table can hold several rows with the same name (sentinel
+        // rows at 50000/51000) — one entry per zone name, lowest id first.
+        var byName = zones.GroupBy(z => z.Name).ToDictionary(g => g.Key, g => g.First());
+        var all = byName.Values.ToList();
 
-        var zones = db.Query("""
-            SELECT id, name, x, y, width, height, zonetype, protected, fertility, plantruleset,
-                   terraformable, pbsTechLimit, timeLimitMinutes, PlantsGrowthTimerOverrideMin
-            FROM zones ORDER BY id
-            """).ToList();
+        // The same connection set as the world map: a zone stays on the
+        // index only if it is a source or a target of an active inter-zone
+        // teleport point (teleportdescriptions).
+        var names = db.Query("""
+            SELECT DISTINCT zs.name FROM teleportdescriptions td
+            JOIN zones zs ON zs.id = td.sourcezone
+            JOIN zones zd ON zd.id = td.targetzone
+            WHERE td.sourcezone <> td.targetzone AND td.active = 1
+            UNION
+            SELECT DISTINCT zd.name FROM teleportdescriptions td
+            JOIN zones zs ON zs.id = td.sourcezone
+            JOIN zones zd ON zd.id = td.targetzone
+            WHERE td.sourcezone <> td.targetzone AND td.active = 1
+            """).Select(r => r.Str("name")).ToList();
+        var connected = new HashSet<string>(names, StringComparer.Ordinal);
+        var listed = new HashSet<string>(all.Where(z => connected.Contains(z.Name)).Select(z => z.Name), StringComparer.Ordinal);
+
+        var groups = ZonesMapPage.Groups(all);
 
         var sb = new StringBuilder();
-        sb.Append(Md.Header("Zone index", "Every zone: type, protection, fertility, size, plant species count, and ore configuration.",
-            "zones, mineralconfigs, plantrules"));
+        sb.Append(Md.Header("Zone index", "Every zone with a teleport connection to another zone, grouped by family.",
+            "zones, teleportdescriptions"));
         sb.Append("\n\n# Zone index\n\n");
-        sb.Append("All zones on the server — the name links to the zone's own page. **Type**: PvE (peaceful), PvP (open combat), Training, or Stronghold. " +
-                  "**Fertility** is the zone's plant coverage target (percent of ground tiles). **Ore nodes** is the " +
-                  "sum of `maxnodes` across the zone's `mineralconfigs` rows — the total number of ore nodes the zone " +
-                  "maintains per material type combined. Zones without an ore configuration (–) have no ore layers " +
-                  "(arenas, training zones, strongholds, gamma tc zones). See [Generation](/zones/generation/) for how these " +
-                  "numbers are used. The *Protection* column is the zone's [protection level](/zones/protection/) (alpha = protected, beta = open with standard terrain, gamma = open and terraformable). The binary layer files that make up a zone are documented in [Zone files](/formats/zone-files/).\n\n");
-
-        // Display name from the client string dictionary where the client has one
-        // (gamma zones and similar have none and keep their internal name).
-        string ZoneName(string n) => Md.ClientStrings.TryGetValue(n, out var d) && d != n ? $"{d} ({n})" : n;
-
-        var rows = zones.Select(z =>
+        sb.Append($"All {listed.Count} zones that have at least one teleport point to ANOTHER zone, grouped by family " +
+                  "(the same grouping as the [world map](/zones/map/)) — the card links to the zone's page. Zones without any " +
+                  "inter-zone teleport point (the strongholds, the PvP arena, dead-end gate islands) are left off; they are " +
+                  "still reachable from the world map's gate lines. The per-family pages — [Alpha](/zones/alpha/) · " +
+                  "[Beta](/zones/beta/) · [Gamma](/zones/gamma/) — list every zone of the family regardless of TPs.\n\n");
+        foreach (var g in groups)
         {
-            var type = z.Int("zonetype") >= 0 && z.Int("zonetype") < ZoneTypes.Length ? ZoneTypes[z.Int("zonetype")] : "?";
-            var speciesCount = species.TryGetValue(z.Int("plantruleset"), out var n) ? n.ToString() : "–";
-            mineralStats.TryGetValue(z.Int("id"), out var ms);
-            return new[]
-            {
-                z.Int("id").ToString(),
-                ZoneLink(z.Str("name")),
-                type,
-                z.Bit("protected") ? "[protected](/zones/protection/)" :
-                    z.Bit("terraformable") ? "[open (gamma)](/zones/protection/)" : "[open (beta)](/zones/protection/)",
-                z.Int("fertility").ToString(),
-                $"{z.Int("width")}×{z.Int("height")}",
-                speciesCount,
-                ms.minerals > 0 ? ms.minerals.ToString() : "–",
-                ms.minerals > 0 ? ms.totalNodes.ToString() : "–"
-            };
-        }).ToArray();
-        Md.WriteTable(sb, new[]
-        {
-            "Id", "Name", "Type", "Protection", "Fertility", "Size", "Plant species", "Ore materials", "Ore nodes (total)"
-        }, rows);
-
+            var zs = g.Zones.Where(z => listed.Contains(z.Name)).ToList();
+            if (zs.Count == 0) continue;
+            sb.Append($"<a id=\"{g.Id}\"></a>\n\n## {g.Label}\n\n");
+            if (!ZonesMapPage.IsTier(g)) sb.Append(g.Blurb + "\n\n");
+            sb.Append(ZonesMapPage.Cards(zs));
+        }
+        sb.Append("\n[World map](/zones/map/) · [Protection levels](/zones/protection/)\n");
         return sb.ToString();
     }
 }

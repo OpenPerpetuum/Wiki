@@ -25,15 +25,15 @@
   <line class="ltp-line" data-ltp="1" x1="183.5" y1="662.5" x2="337.5" y2="937.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
   <circle cx="183.5" cy="662.5" r="18" data-eid="1716" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-asi-g-4/" title="Xiantor">
-  <circle cx="337.5" cy="937.5" r="18" data-eid="1717" data-ltp="1" data-dests="zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="337.5" cy="937.5" r="18" data-eid="1717" data-ltp="1" data-dests="Xiantor|zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="337.5" y="906.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Xiantor</text>
   </a>
   <a href="/zones/zone-asi-g-4/" title="Xiantor">
-  <circle cx="1692.5" cy="1047.5" r="18" data-eid="1715" data-ltp="0" data-dests="zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1692.5" cy="1047.5" r="18" data-eid="1715" data-ltp="0" data-dests="Xiantor|zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1692.5" y="1016.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Xiantor</text>
   </a>
   <a href="/zones/zone-asi-pvp/" title="Kentagura">
-  <circle cx="1755.5" cy="787.5" r="18" data-eid="1714" data-ltp="0" data-dests="zone_ASI_pvp" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1755.5" cy="787.5" r="18" data-eid="1714" data-ltp="0" data-dests="Kentagura|zone_ASI_pvp" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1755.5" y="756.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Kentagura</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

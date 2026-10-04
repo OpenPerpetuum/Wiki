@@ -14,13 +14,13 @@ namespace Perpetuum.WikiGenerate;
 /// </summary>
 public static class ZonesMapPage
 {
-    private sealed record Zone(string Name, int Type, double X, double Y, int W, int H, bool Protected, bool Terraformable);
+    internal sealed record Zone(string Name, int Type, double X, double Y, int W, int H, bool Protected, bool Terraformable);
 
     /// <summary>Nullable double read (AVG over an all-NULL column is NULL).</summary>
     private static object? NulDbl(Dictionary<string, object?> r, string k)
         => r.TryGetValue(k, out var v) && v is not null ? Convert.ToDouble(v) : null;
 
-    private sealed record Group(string Id, string Label, string Blurb, List<Zone> Zones);
+    internal sealed record Group(string Id, string Label, string Blurb, List<Zone> Zones);
 
     public static string Build(Db db)
     {
@@ -172,7 +172,9 @@ public static class ZonesMapPage
             }
             if (gamma)
             {
-                foreach (var t in groups.Where(x => x.Id.StartsWith("t", StringComparison.Ordinal)))
+                // the tier groups are exactly the two-letter "t0"-"t4" ids —
+                // "training" also starts with "t" and must NOT be a tier
+                foreach (var t in groups.Where(IsTier))
                 {
                     sb.Append($"<a id=\"{t.Id}\"></a>\n\n## {t.Label}\n\n{t.Blurb}\n\n");
                     sb.Append(Cards(t.Zones));
@@ -188,9 +190,13 @@ public static class ZonesMapPage
         return pages;
     }
 
-    /// <summary>A zone-card grid (thumb.png per zone) — the same cards the index
-    /// page uses.</summary>
-    private static string Cards(List<Zone> zones)
+    /// <summary>A tier group (the gamma page's T0–T4 split). "training" starts
+    /// with "t" too — it is not a tier.</summary>
+    internal static bool IsTier(Group g) => g.Id.Length == 2 && g.Id[0] == 't';
+
+    /// <summary>A zone-card grid (thumb.png per zone) — the same cards the
+    /// family pages and the zone index use.</summary>
+    internal static string Cards(List<Zone> zones)
     {
         var sb = new StringBuilder();
         sb.Append("<div class=\"zone-cards\">\n");
@@ -228,7 +234,7 @@ public static class ZonesMapPage
     /// The gamma frontier belt is split into T0 (the tc transit zones) and T1–T4
     /// by zone number (the server stores no per-zone tier field; the split is a
     /// navigation grouping, noted on the page).</summary>
-    private static List<Group> Groups(List<Zone> all)
+    internal static List<Group> Groups(List<Zone> all)
     {
         bool Is(string n, params string[] parts) =>
             parts.Any(p => n.Contains(p, System.StringComparison.OrdinalIgnoreCase));
@@ -301,16 +307,6 @@ public static class ZonesMapPage
             StringComparer.Ordinal);
         var plotted = all.Where(z => connected.Contains(z.Name)).ToList();
         var plottedSet = new HashSet<string>(plotted.Select(z => z.Name), StringComparer.Ordinal);
-        // Outgoing destinations per island (the selector's data): an island
-        // with two or more destinations gets a data-dests attribute, and
-        // static/map.js opens a destination selector on hover/tap instead of
-        // letting a tap guess a destination. Each TP line carries data-tpd
-        // with its destination so the selector can emphasise it.
-        var destsBySrc = tps.Where(t => plottedSet.Contains(t.Src) && plottedSet.Contains(t.Dst))
-            .GroupBy(t => t.Src)
-            .ToDictionary(g => g.Key,
-                g => g.Select(t => t.Dst).Distinct(StringComparer.Ordinal).OrderBy(d => d, StringComparer.Ordinal).ToList(),
-                StringComparer.Ordinal);
         sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones with teleport connections, at their grid positions, coastline outlines colored by galaxy family\" class=\"zonemap\" xmlns=\"http://www.w3.org/2000/svg\">\n");
         sb.Append("  <title>Map of all game zones with teleport connections, at their grid positions</title>\n");
         // Inter-zone TP lines, dashed and gradient-colored from the source
@@ -356,12 +352,7 @@ public static class ZonesMapPage
             if (fontSize < 0.9) fontSize = 0.9;
             var text = $"<text x=\"{x1:0.#}\" y=\"{y1 - size / 2 - 1.2:0.#}\" text-anchor=\"middle\" font-size=\"{fontSize:0.##}\" class=\"zonemap-label\">{displayName}</text>";
             var href = PageLink(z.Name);
-            var destsJoined = destsBySrc.TryGetValue(z.Name, out var dd) && dd.Count > 0 ? string.Join(' ', dd) : null;
-            var destsAttr = destsJoined is null ? "" : $" data-dests=\"{destsJoined}\"";
-            // data-zn: this island's zone name — the selector only
-            // emphasises TP lines that START at the hovered island (two
-            // islands may share a destination)
-            sb.Append($"  <a href=\"{href}\" data-zn=\"{z.Name}\"{destsAttr}><g>{shape}{image}{text}</g></a>\n");
+            sb.Append($"  <a href=\"{href}\"><g>{shape}{image}{text}</g></a>\n");
         }
         for (var i = 0; i < tps.Count; i++)
         {
@@ -370,7 +361,7 @@ public static class ZonesMapPage
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
             var (ax, ay) = End(s, l.Sx, l.Sy);
             var (bx, by) = End(d, l.Tx, l.Ty);
-            sb.Append($"  <line x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\" class=\"zonemap-tp\" data-tps=\"{l.Src}\" data-tpd=\"{l.Dst}\" stroke=\"url(#tpg{i})\">" +
+            sb.Append($"  <line x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\" class=\"zonemap-tp\" stroke=\"url(#tpg{i})\">" +
                       $"<title>{l.Src} — {l.Dst} ({l.Tps} TP point{(l.Tps > 1 ? "s" : "")})</title></line>\n");
         }
         // Gate links only where the source island is on the map at all.
@@ -456,7 +447,7 @@ public static class ZonesMapPage
         _ => "Undefined",
     };
 
-    private static string ZoneName(string n)
+    internal static string ZoneName(string n)
     {
         if (Md.ClientStrings.TryGetValue(n, out var d) && d != n) return d;
         return n.StartsWith("zone_", StringComparison.Ordinal) ? n[5..] : n;

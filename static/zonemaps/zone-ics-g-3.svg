@@ -20,15 +20,15 @@
   <line class="exi-line" data-tps="1691" data-tpd="zone_ICS_A_real" x1="1294.5" y1="1130.5" x2="1268.2" y2="2048" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <line class="exi-line" data-tps="1698" data-tpd="zone_ICS_A_real" x1="278.5" y1="314.5" x2="228.7" y2="2048" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <a href="/zones/zone-ics-a-real/" title="Domhalarn">
-  <circle cx="278.5" cy="314.5" r="18" data-eid="1698" data-dests="zone_ICS_A_real" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="278.5" cy="314.5" r="18" data-eid="1698" data-dests="Domhalarn|zone_ICS_A_real" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="278.5" y="283.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
   <a href="/zones/zone-ics-a-real/" title="Domhalarn">
-  <circle cx="1294.5" cy="1130.5" r="18" data-eid="1691" data-dests="zone_ICS_A_real" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1294.5" cy="1130.5" r="18" data-eid="1691" data-dests="Domhalarn|zone_ICS_A_real" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1294.5" y="1099.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
   <a href="/zones/zone-ics-g-8/" title="Chalydor">
-  <circle cx="1553.5" cy="278.5" r="18" data-eid="1690" data-dests="zone_ics_g_8" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1553.5" cy="278.5" r="18" data-eid="1690" data-dests="Chalydor|zone_ics_g_8" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1553.5" y="247.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Chalydor</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

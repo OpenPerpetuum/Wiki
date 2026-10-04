@@ -20,7 +20,7 @@
   <line class="exi-line" data-tps="5606" data-tpd="zone_gamma_z112" x1="78.5" y1="127.5" x2="12.6" y2="0" stroke="#a78bfa" stroke-width="0.375" stroke-dasharray="2 1.5" opacity="0.6"/>
   <line class="exi-line" data-tps="5606" data-tpd="zone_gamma_z132" x1="78.5" y1="127.5" x2="256" y2="43.4" stroke="#a78bfa" stroke-width="0.375" stroke-dasharray="2 1.5" opacity="0.6"/>
   <line class="exi-line" data-tps="5606" data-tpd="zone_ICS_A_real" x1="78.5" y1="127.5" x2="15.4" y2="256" stroke="#6ee7a0" stroke-width="0.375" stroke-dasharray="2 1.5" opacity="0.6"/>
-  <circle cx="78.5" cy="127.5" r="2.25" data-eid="5606" data-dests="zone_ICS_A_real zone_gamma_z111 zone_gamma_z112 zone_gamma_z132" fill="#a78bfa" stroke="#10151f" stroke-width="0.31" opacity="1"/>
+  <circle cx="78.5" cy="127.5" r="2.25" data-eid="5606" data-dests="Domhalarn|zone_ICS_A_real;zone_gamma_z111|zone_gamma_z111;zone_gamma_z112|zone_gamma_z112;zone_gamma_z132|zone_gamma_z132" fill="#a78bfa" stroke="#10151f" stroke-width="0.31" opacity="1"/>
   <text x="78.5" y="123.65" font-size="4.16" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="1.25" stroke-linejoin="round">zone_gamma_z111, zone_gamma_z112…</text>
   <rect x="0" y="0" width="256" height="256" rx="2.0" fill="none" stroke="#54658a" stroke-width="0.5"/>
 </svg>

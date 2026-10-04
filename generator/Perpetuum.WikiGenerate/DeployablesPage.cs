@@ -56,9 +56,17 @@ public static class DeployablesPage
         sb.Append(Md.Header("Deployables", "Deployable structures and placeable items: one card per deployable, one page per deployable.",
             "entitydefaults (cf_deployable_structure / deployable attribute flag), aggregatevalues"));
         sb.Append("\n\n# Deployables\n\n");
-        sb.Append($"Deployables are items that can be **placed in the terrain** to act on the zone — PBS structures, effect suppliers, repairers, turrets, and similar. Placing one is a corporation/privilege-gated action (see [Power base stations](/features/pbs/) in the features section). {rows.Count} deployables, one page each: **click a card to open it.** How deployables are identified, paired capsule↔object, and which stat fields drive them is in [Deployable fields](/formats/deployable-fields/).\n\n");
+        var listedCount = rows.Count(d => Classify(d.Name).Cat != "Power base stations");
+        sb.Append($"Deployables are items that can be **placed in the terrain** to act on the zone — effect suppliers, repairers, turrets, teleports, and similar. Placing one is a corporation/privilege-gated action. The {listedCount} non-PBS deployables are listed below, one page each: **click a card to open it.** The PBS structures are documented on the [Power base stations](/features/pbs/) page. How deployables are identified, paired capsule↔object, and which stat fields drive them is in [Deployable fields](/formats/deployable-fields/).\n\n");
 
-        var groups = rows.GroupBy(d => Classify(d.Name).Cat).OrderBy(g => OrderOf(g.Key)).ToList();
+        // The Power base stations category is NOT listed here: the PBS page
+        // (/features/pbs/) already documents those structures, and listing
+        // 87 of them here only buries the rest. Their per-deployable pages
+        // are still generated (BuildPages) and linked from the PBS page.
+        var groups = rows
+            .Where(d => Classify(d.Name).Cat != "Power base stations")
+            .GroupBy(d => Classify(d.Name).Cat)
+            .OrderBy(g => OrderOf(g.Key)).ToList();
         foreach (var g in groups)
         {
             var blurb = Classify(g.First().Name).Blurb;

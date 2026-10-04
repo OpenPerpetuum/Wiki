@@ -181,12 +181,18 @@ test('multi-destination column: hover opens the destination selector', async ({ 
   await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
   await expect(page.locator('svg.zonemap')).toBeVisible();
   const info = await page.evaluate(() => {
+    // data-dests: ;-separated "display name|zone name" pairs
+    const parse = (a) => (a || '').split(';').filter(Boolean).map(t => {
+      const i = t.lastIndexOf('|');
+      return i < 0 ? { d: t, n: t } : { d: t.slice(i + 1), n: t.slice(0, i) };
+    });
     const els = [...document.querySelectorAll('svg.zonemap circle[data-dests]')];
-    const el = els.find(c => (c.getAttribute('data-dests') || '').split(/\s+/).filter(Boolean).length >= 2);
+    const el = els.find(c => parse(c.getAttribute('data-dests')).length >= 2);
     if (!el) return null;
     el.scrollIntoView({ block: 'center' });
     const b = el.getBoundingClientRect();
-    return { x: b.left + b.width / 2, y: b.top + b.height / 2, dests: el.getAttribute('data-dests').split(/\s+/).filter(Boolean), wrapped: !!el.closest('a') };
+    const dests = parse(el.getAttribute('data-dests'));
+    return { x: b.left + b.width / 2, y: b.top + b.height / 2, dests: dests.map(x => x.d), names: dests.map(x => x.n), wrapped: !!el.closest('a') };
   });
   expect(info).toBeTruthy();
   // a multi-destination column is NOT wrapped in an <a>: a click must never
@@ -197,6 +203,10 @@ test('multi-destination column: hover opens the destination selector', async ({ 
   await expect(pop).toBeVisible();
   const entries = pop.locator('.tp-sel-item');
   expect(await entries.count()).toBe(info.dests.length);
+  // the selector entries carry the DESTINATION names — the same display
+  // names the column label shows on the map
+  const texts = await entries.evaluateAll(els => els.map(e => e.textContent));
+  expect(texts).toEqual(info.names);
   // all exit lines to this column's destinations are emphasised while open
   const onAll = await page.evaluate(() => [...document.querySelectorAll('svg.zonemap line.tp-sel-on')].map(l => l.getAttribute('data-tpd')).sort());
   expect(onAll).toEqual(info.dests.slice().sort());
@@ -210,13 +220,33 @@ test('multi-destination column: hover opens the destination selector', async ({ 
   expect(page.url()).toContain('/zones/' + info.dests[1].toLowerCase().replace(/_/g, '-') + '/');
 });
 
+test('hovering the column LABEL (the destination names) also opens the selector', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
+  await expect(page.locator('svg.zonemap')).toBeVisible();
+  const r = await page.evaluate(() => {
+    const parse = (a) => (a || '').split(';').filter(Boolean);
+    const els = [...document.querySelectorAll('svg.zonemap circle[data-dests]')];
+    const el = els.find(c => parse(c.getAttribute('data-dests')).length >= 2);
+    if (!el) return null;
+    const lbl = el.nextElementSibling;
+    if (!lbl || lbl.tagName !== 'text') return null;
+    lbl.scrollIntoView({ block: 'center' });
+    const b = lbl.getBoundingClientRect();
+    return { x: b.left + b.width / 2, y: b.top + b.height / 2 };
+  });
+  expect(r).toBeTruthy();
+  await page.mouse.move(r.x, r.y);
+  await expect(page.locator('.tp-sel')).toBeVisible();
+});
+
 test('single-destination columns keep their plain link', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
   await expect(page.locator('svg.zonemap')).toBeVisible();
   const check = await page.evaluate(() => {
     const links = [...document.querySelectorAll('svg.zonemap a[href*="/zones/"] circle[data-dests]')];
     if (!links.length) return null;
-    return links.every(el => (el.getAttribute('data-dests') || '').split(/\s+/).filter(Boolean).length === 1);
+    // one ;-separated "display|zone" pair each
+    return links.every(el => (el.getAttribute('data-dests') || '').split(';').filter(Boolean).length === 1);
   });
   expect(check).toBe(true);
 });

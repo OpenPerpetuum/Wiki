@@ -11,20 +11,6 @@ extra:
 
 The frontier belt, split by the server-recorded tier (zones.note): the six tc transit zones (T0) and the tier islands T1–T4 — open PvP and terraformable, see [Protection levels](/zones/protection/).
 
-<a id="training"></a>
-
-## Training
-
-The virtual [training island](/zones/zone-training/) — where new characters start and learn the basics before entering the main galaxies.
-
-<div class="zone-cards">
-<a class="zone-card" href="/zones/zone-training/">
-<img class="zone-card-thumb" src="/zonemaps/zone-training/thumb.png" alt="" loading="lazy">
-<span class="zone-card-name">Virtual Training Grounds</span>
-<span class="zone-card-meta">Training · 1024×1024</span>
-</a>
-</div>
-
 <a id="t0"></a>
 
 ## Gamma T0 — tc transit

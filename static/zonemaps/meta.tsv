@@ -1,0 +1,82 @@
+zone_TM	New Virginia	zone-tm	0	2048	2048
+zone_ICS	Attalica	zone-ics	1	2048	2048
+zone_ASI	Daoden	zone-asi	2	2048	2048
+zone_ICS_A_real	Domhalarn	zone-ics-a-real	3	2048	2048
+zone_ASI_A_real	Hokkogaros	zone-asi-a-real	4	2048	2048
+zone_TM_A_real	Norhoop	zone-tm-a-real	5	2048	2048
+zone_ICS_pve	Tellesis	zone-ics-pve	6	2048	2048
+zone_ASI_pve	Shinjalar	zone-asi-pve	7	2048	2048
+zone_TM_pve	Hershfield	zone-tm-pve	8	2048	2048
+zone_ASI_pvp	Kentagura	zone-asi-pvp	9	2048	2048
+zone_TM_pvp	Alsbale	zone-tm-pvp	10	2048	2048
+zone_ICS_pvp	Novastrov	zone-ics-pvp	11	2048	2048
+zone_pvp_arena	Omega	zone-pvp-arena	16	2048	2048
+zone_tm_g_1	Davis Barrier	zone-tm-g-1	20	2048	2048
+zone_tm_g_2	Gravehills	zone-tm-g-2	21	2048	2048
+zone_tm_g_3	Emperth	zone-tm-g-3	22	2048	2048
+zone_tm_g_4	Guthraw	zone-tm-g-4	23	2048	2048
+zone_tm_g_5	Landers Bridge	zone-tm-g-5	24	2048	2048
+zone_tm_g_6	Solarfield	zone-tm-g-6	25	2048	2048
+zone_tm_g_7	Blackpoint	zone-tm-g-7	26	2048	2048
+zone_tm_g_8	Greensward	zone-tm-g-8	27	2048	2048
+zone_ics_g_1	Novaya Trava	zone-ics-g-1	28	2048	2048
+zone_ics_g_2	Neuhorn	zone-ics-g-2	29	2048	2048
+zone_ics_g_3	Kraslovsk	zone-ics-g-3	30	2048	2048
+zone_ics_g_4	Langruhm	zone-ics-g-4	31	2048	2048
+zone_ics_g_5	Berger's Island	zone-ics-g-5	32	2048	2048
+zone_ics_g_6	Clandrais	zone-ics-g-6	33	2048	2048
+zone_ics_g_7	Bleumon	zone-ics-g-7	34	2048	2048
+zone_ics_g_8	Chalydor	zone-ics-g-8	35	2048	2048
+zone_asi_g_1	Rhaoshan	zone-asi-g-1	36	2048	2048
+zone_asi_g_2	Changowa	zone-asi-g-2	37	2048	2048
+zone_asi_g_3	Mhenosha	zone-asi-g-3	38	2048	2048
+zone_asi_g_4	Xiantor	zone-asi-g-4	39	2048	2048
+zone_asi_g_5	Nirayon	zone-asi-g-5	40	2048	2048
+zone_asi_g_6	Shuzhon	zone-asi-g-6	41	2048	2048
+zone_asi_g_7	Imidero	zone-asi-g-7	42	2048	2048
+zone_asi_g_8	Yuraion Ro	zone-asi-g-8	43	2048	2048
+zone_training	Virtual Training Grounds	zone-training	45	1024	1024
+zone_strghld_70	zone_strghld_70	zone-strghld-70	70	512	512
+zone_strghld_71	zone_strghld_71	zone-strghld-71	71	256	256
+zone_strghld_72	zone_strghld_72	zone-strghld-72	72	256	256
+zone_gamma_tc_z100	zone_gamma_tc_z100	zone-gamma-tc-z100	100	256	256
+zone_gamma_tc_z101	zone_gamma_tc_z101	zone-gamma-tc-z101	101	256	256
+zone_gamma_tc_z102	zone_gamma_tc_z102	zone-gamma-tc-z102	102	256	256
+zone_gamma_tc_z103	zone_gamma_tc_z103	zone-gamma-tc-z103	103	256	256
+zone_gamma_tc_z104	zone_gamma_tc_z104	zone-gamma-tc-z104	104	256	256
+zone_gamma_tc_z105	zone_gamma_tc_z105	zone-gamma-tc-z105	105	256	256
+zone_gamma_z106	zone_gamma_z106	zone-gamma-z106	106	2048	2048
+zone_gamma_z107	zone_gamma_z107	zone-gamma-z107	107	2048	2048
+zone_gamma_z108	zone_gamma_z108	zone-gamma-z108	108	2048	2048
+zone_gamma_z109	zone_gamma_z109	zone-gamma-z109	109	2048	2048
+zone_gamma_z110	zone_gamma_z110	zone-gamma-z110	110	2048	2048
+zone_gamma_z111	zone_gamma_z111	zone-gamma-z111	111	2048	2048
+zone_gamma_z112	zone_gamma_z112	zone-gamma-z112	112	2048	2048
+zone_gamma_z113	zone_gamma_z113	zone-gamma-z113	113	2048	2048
+zone_gamma_z114	zone_gamma_z114	zone-gamma-z114	114	2048	2048
+zone_gamma_z115	zone_gamma_z115	zone-gamma-z115	115	2048	2048
+zone_gamma_z116	zone_gamma_z116	zone-gamma-z116	116	2048	2048
+zone_gamma_z117	zone_gamma_z117	zone-gamma-z117	117	2048	2048
+zone_gamma_z118	zone_gamma_z118	zone-gamma-z118	118	2048	2048
+zone_gamma_z119	zone_gamma_z119	zone-gamma-z119	119	2048	2048
+zone_gamma_z120	zone_gamma_z120	zone-gamma-z120	120	2048	2048
+zone_gamma_z121	zone_gamma_z121	zone-gamma-z121	121	2048	2048
+zone_gamma_z122	zone_gamma_z122	zone-gamma-z122	122	2048	2048
+zone_gamma_z123	zone_gamma_z123	zone-gamma-z123	123	2048	2048
+zone_gamma_z124	zone_gamma_z124	zone-gamma-z124	124	2048	2048
+zone_gamma_z125	zone_gamma_z125	zone-gamma-z125	125	2048	2048
+zone_gamma_z126	zone_gamma_z126	zone-gamma-z126	126	2048	2048
+zone_gamma_z127	zone_gamma_z127	zone-gamma-z127	127	2048	2048
+zone_gamma_z128	zone_gamma_z128	zone-gamma-z128	128	2048	2048
+zone_gamma_z129	zone_gamma_z129	zone-gamma-z129	129	2048	2048
+zone_gamma_z130	zone_gamma_z130	zone-gamma-z130	130	2048	2048
+zone_gamma_z131	zone_gamma_z131	zone-gamma-z131	131	2048	2048
+zone_gamma_z132	zone_gamma_z132	zone-gamma-z132	132	2048	2048
+zone_gamma_z133	zone_gamma_z133	zone-gamma-z133	133	2048	2048
+zone_gamma_z134	zone_gamma_z134	zone-gamma-z134	134	2048	2048
+zone_gamma_z135	zone_gamma_z135	zone-gamma-z135	135	2048	2048
+zone_gamma_z136	zone_gamma_z136	zone-gamma-z136	136	2048	2048
+zone_gamma_z137	zone_gamma_z137	zone-gamma-z137	137	2048	2048
+zone_gamma_z138	zone_gamma_z138	zone-gamma-z138	138	2048	2048
+zone_gamma_z139	zone_gamma_z139	zone-gamma-z139	139	2048	2048
+zone_gamma_z140	zone_gamma_z140	zone-gamma-z140	140	2048	2048

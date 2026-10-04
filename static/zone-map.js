@@ -20,10 +20,28 @@
     function setMode(m) {
         try { localStorage.setItem(MODE_KEY, m); } catch (err) { /* private mode */ }
     }
+    // The color render is bright terrain: the teleport lines get extra
+    // contrast there — CSS (the zm-color class on the wrap) darkens them,
+    // and their stroke-width is multiplied a bit while the mode is on.
+    // The original widths are remembered in data-sw0 and restored on exit.
+    function applyLineEmphasis(svg, on) {
+        if (!svg) return;
+        Array.prototype.forEach.call(svg.querySelectorAll('.ltp-line, .exi-line'), function (l) {
+            if (l.getAttribute('data-sw0') === null) l.setAttribute('data-sw0', l.getAttribute('stroke-width') || '0');
+            var w = parseFloat(l.getAttribute('data-sw0')) || 0;
+            l.setAttribute('stroke-width', (on ? w * 1.7 : w).toString());
+        });
+    }
+
     function applyMode(hImg, cImg, mode, bar) {
         if (mode !== 'color') mode = 'height';
         hImg.style.display = mode === 'height' ? '' : 'none';
         cImg.style.display = mode === 'color' ? '' : 'none';
+        var wrap = hImg.closest ? hImg.closest('.zonetp-wrap') : null;
+        if (wrap) {
+            wrap.classList.toggle('zm-color', mode === 'color');
+            applyLineEmphasis(wrap.querySelector('svg.zonemap'), mode === 'color');
+        }
         if (bar) {
             Array.prototype.forEach.call(bar.querySelectorAll('.zonemap-mode'), function (x) {
                 x.setAttribute('aria-pressed', x.getAttribute('data-mode') === mode ? 'true' : 'false');
@@ -79,8 +97,10 @@
                 });
                 wrap.appendChild(bar);
             }
-            if (hImg && cImg) applyMode(hImg, cImg, getMode(), bar); // remembered choice
             wrap.appendChild(svg);
+            // after the SVG is in its wrap, so the remembered choice can also
+            // toggle the wrap's zm-color class / line emphasis
+            if (hImg && cImg) applyMode(hImg, cImg, getMode(), bar);
 
             // the <img> sits alone in a <p>; replace that paragraph so a
             // <div> is not nested in <p>

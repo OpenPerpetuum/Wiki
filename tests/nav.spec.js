@@ -14,13 +14,13 @@ const VISIBLE_LINKS = () =>
 const COLLAPSED = (sel) =>
   [...document.querySelectorAll(sel)].map((g) => g.classList.contains('collapsed'));
 const GROUPS = '.sidenav .nav-group'; // Start, World, Play, Systems (+ Dev, hidden outside dev mode)
-const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: World(2) + Play(8, incl. nested PBS/Deployables) + Systems(7, incl. nested shop) = 17
+const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: World(2) + Play(7, incl. nested Deployables) + Systems(7, incl. nested shop) = 16
 
 test('home: groups open, 2nd-level sub-lists closed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
   expect(await page.locator('.nav-quick a').getAttribute('href')).toBe('/');
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual(Array(17).fill(true));
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual(Array(16).fill(true));
   // Home + Start(1 header + 4) + World(1 + 6) + Play(1 + 6 sub-heads)
   // + Systems(1 + 6 sub-heads); the Dev group is hidden in play mode and
   // every 2nd-level sub-list (incl. the nested PBS/Deployables ones) starts
@@ -39,11 +39,13 @@ test('caret buttons collapse and re-open groups', async ({ page, baseURL }) => {
   expect(await page.evaluate(VISIBLE_LINKS)).toBe(27);
 });
 
-test('Play: Missions sub-list carries the mission data page', async ({ page, baseURL }) => {
+test('Play: Mission list sub-list carries the mission data page', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/features/missions/`);
   const missSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/features/missions/"]) > .nav-sub');
   expect(await missSub.locator('a:visible').count()).toBe(1);
   expect(await missSub.locator('a').first().getAttribute('href')).toBe('/content/missions/');
+  // the group entry itself is labelled "Mission list"
+  expect(await page.locator('.sidenav li.nav-has-sub:has(a[href="/features/missions/"]) .nav-sub-head a').first().textContent()).toBe('Mission list');
 });
 
 test('Systems: Production sub-list carries the recipes page', async ({ page, baseURL }) => {
@@ -81,7 +83,7 @@ test('feature page: all groups stay open, current page highlighted', async ({ pa
   await page.goto(`${baseURL}/features/combat/`);
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
   // only the Combat sub-list auto-opens (it carries the current page); the
-  // other 16 2nd-level sub-lists stay collapsed
+  // other 15 2nd-level sub-lists stay collapsed
   const states = await page.evaluate(COLLAPSED, SUBS);
   expect(states.filter((s) => !s)).toEqual([false]);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Combat');
@@ -164,22 +166,37 @@ test('zone data page: family entry highlighted, zone generation under How it wor
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Zone generation');
 });
 
-test('Bases & sites: PBS carries the PBS deployables category, Deployables its main categories', async ({ page, baseURL }) => {
+test('Bases & sites: Deployables lists its main categories, PBS stays a plain entry', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
   // the Bases & sites group entry (its head link is the PBS page) has four
-  // direct children: PBS, Outposts, Intrusion, Deployables
+  // direct children: PBS (plain link), Outposts, Intrusion, Deployables
   const basesLi = page.locator('.sidenav ul.nav-items > li.nav-has-sub:has(> .nav-sub-head > a[href="/features/pbs/"])');
   expect(await basesLi.locator('> .nav-sub > li').count()).toBe(4);
+  const pbsEntry = basesLi.locator('> .nav-sub > li').first();
+  expect(await pbsEntry.locator('.nav-sub').count()).toBe(0); // no sub-list
   // on the deployables index: the Deployables sub-list auto-opens with its
-  // 10 main categories (the PBS category lives under PBS instead)
+  // main categories — Power base stations is NOT among them (the PBS page
+  // documents those)
   await page.goto(`${baseURL}/content/deployables/`);
   const depLi = page.locator('.sidenav ul.nav-sub > li.nav-has-sub:has(> .nav-sub-head > a[href="/content/deployables/"])');
-  expect(await depLi.locator('> .nav-sub a:visible').count()).toBe(10);
+  const depHrefs = await depLi.locator('> .nav-sub a').evaluateAll(as => as.map(a => a.textContent));
+  expect(depHrefs.length).toBe(10);
+  expect(depHrefs.join(', ')).not.toContain('Power base stations');
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Deployables');
-  // the PBS sub-list carries the Power base stations category link
-  const pbsLi = page.locator('.sidenav ul.nav-sub > li.nav-has-sub:has(> .nav-sub-head > a[href="/features/pbs/"])');
-  expect(await pbsLi.locator('> .nav-sub > li').count()).toBe(1);
-  expect(await pbsLi.locator('> .nav-sub > li a').getAttribute('href')).toBe('/content/deployables/#power-base-stations-87');
+});
+
+test('a gamma zone page highlights its tier entry, not the Gamma head', async ({ page, baseURL }) => {
+  // z106 is the first T1 island (z106–z114 = T1, see the nav labels)
+  await page.goto(`${baseURL}/zones/zone-gamma-z106/`);
+  const active = page.locator('.sidenav a.active');
+  expect(await active.count()).toBe(1);
+  expect(await active.getAttribute('href')).toBe('/zones/gamma/#t1');
+  expect((await active.textContent()).startsWith('T1')).toBe(true);
+  // the Gamma entry is NOT the active one, and the tier entry (which sits in
+  // the World group's list, not under the Gamma entry) is visible
+  const gammaHead = page.locator('.sidenav a[href="/zones/gamma/"]');
+  expect(await gammaHead.evaluate(el => el.classList.contains('active'))).toBe(false);
+  expect(await active.isVisible()).toBe(true);
 });
 
 test('zone page: the family-listing entry (not Zones) is highlighted', async ({ page, baseURL }) => {
@@ -190,9 +207,10 @@ test('zone page: the family-listing entry (not Zones) is highlighted', async ({ 
   // a generated beta zone page (open-PvP twin) highlights Beta
   await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
   expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/beta/');
-  // a gamma zone page highlights Gamma AND opens its tier sub-list
+  // a gamma zone page highlights its TIER (z120 is in T2, z115–z123) and
+  // opens the Gamma tier sub-list
   await page.goto(`${baseURL}/zones/zone-gamma-z120/`);
-  expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/gamma/');
+  expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/gamma/#t2');
   expect(await page.locator('.map-sub-deep a:visible').count()).toBe(5);
 });
 

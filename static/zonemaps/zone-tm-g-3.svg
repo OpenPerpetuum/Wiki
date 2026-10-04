@@ -21,19 +21,19 @@
   <line class="exi-line" data-tps="1870" data-tpd="zone_tm_g_6" x1="1644.5" y1="414.5" x2="2048" y2="968.6" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <line class="exi-line" data-tps="2556" data-tpd="zone_TM_pvp" x1="256.5" y1="1621.5" x2="188.3" y2="2048" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <a href="/zones/zone-tm-pvp/" title="Alsbale">
-  <circle cx="256.5" cy="1621.5" r="18" data-eid="2556" data-dests="zone_TM_pvp" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="256.5" cy="1621.5" r="18" data-eid="2556" data-dests="Alsbale|zone_TM_pvp" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="256.5" y="1590.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale</text>
   </a>
   <a href="/zones/zone-tm-pvp/" title="Alsbale">
-  <circle cx="493.5" cy="219.5" r="18" data-eid="1869" data-dests="zone_TM_pvp" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="493.5" cy="219.5" r="18" data-eid="1869" data-dests="Alsbale|zone_TM_pvp" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="493.5" y="188.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Alsbale</text>
   </a>
   <a href="/zones/zone-tm-g-6/" title="Solarfield">
-  <circle cx="1332.5" cy="1800.5" r="18" data-eid="1866" data-dests="zone_tm_g_6" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1332.5" cy="1800.5" r="18" data-eid="1866" data-dests="Solarfield|zone_tm_g_6" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1332.5" y="1769.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Solarfield</text>
   </a>
   <a href="/zones/zone-tm-g-6/" title="Solarfield">
-  <circle cx="1644.5" cy="414.5" r="18" data-eid="1870" data-dests="zone_tm_g_6" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1644.5" cy="414.5" r="18" data-eid="1870" data-dests="Solarfield|zone_tm_g_6" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1644.5" y="383.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Solarfield</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

@@ -486,6 +486,9 @@
     function attachTpSelector(wrap) {
         var svg = wrap.querySelector('svg.zonemap');
         if (!svg) return;
+        // zone maps only: the world map keeps its plain island links
+        // (no destination selector there)
+        if (svg.querySelector('line.zonemap-tp')) return;
         var items = svg.querySelectorAll('[data-dests]');
         if (!items.length) return;
         var lines = Array.prototype.slice.call(svg.querySelectorAll('line[data-tpd]'));
@@ -500,23 +503,20 @@
         var cur = null, closeTimer = 0, inPop = false;
 
         // mirror of the generator's DisplayName (zone_asi_a_real -> "ASI A Real")
-        function nameOf(n) {
-            var s = n.replace(/^zone_/, '');
-            return s.split('_').filter(Boolean).map(function (tok) {
-                var m = tok.match(/^[a-zA-Z]+/);
-                var l = m ? m[0] : '';
-                if (!l) return tok;
-                var rest = tok.slice(l.length);
-                if (l === l.toUpperCase() && l !== l.toLowerCase()) return l + rest;
-                if (l.length <= 3) return l.toUpperCase() + rest;
-                return l.charAt(0).toUpperCase() + l.slice(1).toLowerCase() + rest;
-            }).join(' ');
-        }
         function hrefOf(n) { return '/zones/' + n.toLowerCase().replace(/_/g, '-') + '/'; }
-        function destsOf(item) { return (item.getAttribute('data-dests') || '').split(/\s+/).filter(Boolean); }
+        // data-dests: ;-separated "display name|zone name" pairs — the
+        // display name is the same string the column label shows (so the
+        // selector entries read like the map), the zone name drives the line
+        // matching (data-tpd) and the navigation.
+        function destsOf(item) {
+            return (item.getAttribute('data-dests') || '').split(';').filter(Boolean).map(function (t) {
+                var i = t.lastIndexOf('|');
+                return i < 0 ? { d: t, n: t } : { d: t.slice(i + 1), n: t.slice(0, i) };
+            });
+        }
         function linesFor(item) {
             var want = {};
-            destsOf(item).forEach(function (d) { want[d] = 1; });
+            destsOf(item).forEach(function (d) { want[d.d] = 1; });
             // only lines that START at this item (data-tps: the column's eid
             // on zone maps, the island's zone name on the world map) —
             // another column/island may point at the same destination
@@ -556,12 +556,12 @@
                 var b = document.createElement('button');
                 b.type = 'button';
                 b.className = 'tp-sel-item';
-                b.textContent = nameOf(d);
+                b.textContent = d.n;
                 b.addEventListener('pointerenter', function () {
                     // emphasise ONLY this route while the entry is hovered
-                    myLines.forEach(function (l) { setOn(l, l.getAttribute('data-tpd') === d); });
+                    myLines.forEach(function (l) { setOn(l, l.getAttribute('data-tpd') === d.d); });
                 });
-                b.addEventListener('click', function () { window.location.href = hrefOf(d); });
+                b.addEventListener('click', function () { window.location.href = hrefOf(d.d); });
                 pop.appendChild(b);
             });
             pop.style.display = 'block';
@@ -580,21 +580,31 @@
         }
         Array.prototype.forEach.call(items, function (item) {
             if (destsOf(item).length < 2) return;
+            // the selector opens when the pointer is on the column OR on its
+            // label (the destination names under it — the label is the text
+            // element right after the circle in the SVG)
+            var targets = [item];
+            var lbl = item.nextElementSibling;
+            if (lbl && lbl.tagName === 'text') targets.push(lbl);
             if (!coarse) {
-                item.addEventListener('pointerenter', function (e) {
-                    if (e.pointerType && e.pointerType !== 'mouse') return;
-                    cancelClose();
-                    open(item);
+                targets.forEach(function (el) {
+                    el.addEventListener('pointerenter', function (e) {
+                        if (e.pointerType && e.pointerType !== 'mouse') return;
+                        cancelClose();
+                        open(item);
+                    });
+                    el.addEventListener('pointerleave', scheduleClose);
                 });
-                item.addEventListener('pointerleave', scheduleClose);
             } else {
                 // touch: first tap opens the selector (no navigation),
                 // a second tap on the same item closes it
-                item.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    if (cur === item) close();
-                    else open(item);
+                targets.forEach(function (el) {
+                    el.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if (cur === item) close();
+                        else open(item);
+                    });
                 });
             }
         });

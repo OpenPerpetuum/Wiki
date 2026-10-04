@@ -831,6 +831,10 @@ html[data-theme="light"][data-cb="achro"] {
    readable on the bright color-mode terrain. Neither kind of helper may
    eat pointer events (the columns and spots are the clickable elements). */
 .zonetp-wrap .exi-line { pointer-events: none; opacity: 0.75; transition: opacity 0.15s; }
+/* the color render is bright terrain: the teleport lines get extra contrast
+   there — darkened (zone-map.js also thickens them while the mode is on,
+   via the zm-color class on the wrap). */
+.zonetp-wrap.zm-color .ltp-line, .zonetp-wrap.zm-color .exi-line { filter: brightness(0.5) saturate(1.15); }
 .zonetp-wrap .zm-casing { pointer-events: none; }
 /* the destination selector (map.js): while it is open the dashed lines of
    the hovered/tapped item are emphasised — .tp-sel-on on the exit lines

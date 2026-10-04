@@ -251,8 +251,13 @@ public static class ZoneMapSvg
                 ? $" data-ltp=\"{string.Join(" ", toks)}\""
                 : "";
             // data-dests: the destinations in OTHER zones, one per exit line
-            // (data-tpd). With two or more, static/map.js opens a destination
-            // selector on hover/tap instead of a plain link — and the Python
+            // (data-tpd), as "display name|zone name" pairs — the display
+            // name is the SAME string the column label shows (the client
+            // string, falling back to the internal name), so the selector
+            // entries read exactly like the map labels; the zone name is what
+            // the exit lines and the navigation use. With two or more
+            // destinations, static/map.js opens a destination selector on
+            // hover/tap instead of a plain link — and the Python
             // post-processor then leaves the column UNLINKED (no <a>), so a
             // click never reloads to a guessed destination. LTP endpoints
             // (no external destination) carry no data-dests at all: no link,
@@ -261,7 +266,10 @@ public static class ZoneMapSvg
                 .Distinct(StringComparer.Ordinal)
                 .OrderBy(d => d, StringComparer.Ordinal)
                 .ToList();
-            var destsJoined = extDests.Count > 0 ? string.Join(' ', extDests.Select(Escape)) : null;
+            // pairs are ;-separated (display names may contain spaces)
+            var destsJoined = extDests.Count > 0
+                ? string.Join(';', extDests.Select(d => Escape(Disp(d)) + "|" + Escape(d)))
+                : null;
             var destsAttr = destsJoined is null ? "" : $" data-dests=\"{destsJoined}\"";
             sb.Append($"  <circle cx=\"{Fx(c.X)}\" cy=\"{Fx(c.Y)}\" r=\"{Fx(r)}\" data-eid=\"{c.Eid}\"{ltpAttr}{destsAttr} fill=\"{color}\" stroke=\"#10151f\" stroke-width=\"{2 * f}\" opacity=\"{(c.Enabled ? 1 : 0.55)}\"/>\n");
             if (label.Length > 0)

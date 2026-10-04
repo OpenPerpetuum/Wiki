@@ -77,15 +77,36 @@ ASSETS = os.environ.get("OP_ASSETS_DIR",
 
 # ---------------------------------------------------------------- name map
 
+META_TSV = os.path.join(ROOT, "static", "zonemaps", "meta.tsv")
 _ROW = re.compile(
     r"\|\s*(\d+)\s*\|\s*\[([^\]]+)\]\((/zones/[^/]+)/\)\s*\|[^|]*\|[^|]*\|[^|]*\|\s*(\d+)×(\d+)\s*\|")
 
 
 def load_zone_meta():
-    """From the zone index table: name -> /zones/<slug>/ and
-    slug -> (zone_id, width, height)."""
-    text = open(ZONE_INDEX, encoding="utf-8").read()
+    """name -> /zones/<slug>/ and slug -> (zone_id, width, height).
+
+    Primary source: static/zonemaps/meta.tsv, written by the C# generator
+    (make generate) — the zone index is a card grid now and no longer
+    carries the table the old regex parsed. The table fallback keeps the
+    script working against an older checkout. Both the zone's INTERNAL name
+    and its client display name map to the slug (map labels use either).
+    """
     name2slug, slug2id, slug2size = {}, {}, {}
+    if os.path.exists(META_TSV):
+        for line in open(META_TSV, encoding="utf-8"):
+            parts = line.rstrip("\n").split("\t")
+            if len(parts) != 6:
+                continue
+            name, disp, slug, zid, w, h = parts
+            url = "/zones/" + slug + "/"  # Zola pages are /zones/<slug>/
+            name2slug.setdefault(name, url)
+            if disp != name:
+                name2slug.setdefault(disp, url)
+            slug2id.setdefault(slug + "/", int(zid))
+            slug2size.setdefault(slug + "/", (int(w), int(h)))
+        if name2slug:
+            return name2slug, slug2id, slug2size
+    text = open(ZONE_INDEX, encoding="utf-8").read()
     for zid, name, slug, w, h in _ROW.findall(text):
         # the table links carry the trailing slash; the regex group stops
         # before it, so put it back — Zola pages are /zones/<slug>/
@@ -726,7 +747,9 @@ def rebuild(path, name2slug, slug2id, slug2size):
                 at["r"] = _fmt(float(at["r"]) + growth)
             if not already and kind in ("circle", "path") and "stroke-width" in at:
                 at["stroke-width"] = _fmt(float(at["stroke-width"]) * 1.25)
-            multidest = kind == "circle" and len(at.get("data-dests", "").split()) >= 2
+            # data-dests is ;-separated "display|zone" pairs (display names
+            # may contain spaces)
+            multidest = kind == "circle" and at.get("data-dests", "").count("|") >= 2
             last_shape = (shape_kind, markup(kind, at), growth, multidest)
 
     if last_shape is not None:

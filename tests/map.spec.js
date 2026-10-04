@@ -320,36 +320,3 @@ test('zoomed in: panning keeps at least 25% of the viewport covered', async ({ p
   expect(p.ty).toBeLessThan(-20);
   expect(await coverage(page)).toBeGreaterThanOrEqual(0.249);
 });
-
-// World map islands that can reach MORE THAN ONE other zone carry
-// data-dests: hovering opens a destination selector whose entries map 1:1
-// to the inter-zone TP lines (data-tpd) — hovering an entry emphasises only
-// that line, clicking it navigates to the destination.
-test('world map: multi-destination island opens the destination selector', async ({ page, baseURL }) => {
-  await page.goto(`${baseURL}/zones/map/`, { waitUntil: 'networkidle' });
-  const n = await page.evaluate(() => {
-    const els = [...document.querySelectorAll('svg.zonemap a[data-dests]')];
-    const a = els.find(x => (x.getAttribute('data-dests') || '').split(/\s+/).filter(Boolean).length >= 2);
-    if (!a) return null;
-    a.scrollIntoView({ block: 'center' });
-    const b = a.getBoundingClientRect();
-    return { x: b.left + b.width / 2, y: b.top + b.height / 2, ds: a.getAttribute('data-dests').split(/\s+/).filter(Boolean) };
-  });
-  expect(n).toBeTruthy();
-  await page.mouse.move(n.x, n.y);
-  const pop = page.locator('.tp-sel');
-  await expect(pop).toBeVisible();
-  const entries = pop.locator('.tp-sel-item');
-  expect(await entries.count()).toBe(n.ds.length);
-  // while open, every line to this island's destinations is emphasised
-  const onAll = await page.evaluate(() => [...document.querySelectorAll('svg.zonemap line.zonemap-tp.tp-sel-on')].map(l => l.getAttribute('data-tpd')).sort());
-  expect(onAll).toEqual(n.ds.slice().sort());
-  // hovering one entry emphasises ONLY that line
-  await entries.nth(0).hover();
-  const onOne = await page.evaluate(() => [...document.querySelectorAll('svg.zonemap line.zonemap-tp.tp-sel-on')].map(l => l.getAttribute('data-tpd')));
-  expect(onOne).toEqual([n.ds[0]]);
-  // clicking an entry navigates to the destination's zone page
-  await entries.nth(1).click();
-  await page.waitForURL(/\/zones\/.+\//);
-  expect(page.url()).toContain(n.ds[1].toLowerCase().replace(/_/g, '-') + '/');
-});

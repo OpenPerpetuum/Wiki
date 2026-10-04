@@ -33,26 +33,26 @@
   <line class="ltp-line ltp-casing zm-casing" x1="261.5" y1="1203.5" x2="517.5" y2="748.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="261.5" y1="1203.5" x2="517.5" y2="748.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-ics-pvp/" title="Novastrov">
-  <circle cx="234.5" cy="263.5" r="18" data-eid="91" data-ltp="0" data-dests="zone_ICS_pvp" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="234.5" cy="263.5" r="18" data-eid="91" data-ltp="0" data-dests="Novastrov|zone_ICS_pvp" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="234.5" y="232.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Novastrov</text>
   </a>
   <circle cx="261.5" cy="1203.5" r="18" data-eid="1428" data-ltp="2" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-gamma-tc-z103/" title="zone_gamma_tc_z103">
-  <circle cx="517.5" cy="748.5" r="18" data-eid="5600" data-ltp="2" data-dests="zone_gamma_tc_z103" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="517.5" cy="748.5" r="18" data-eid="5600" data-ltp="2" data-dests="zone_gamma_tc_z103|zone_gamma_tc_z103" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="517.5" y="717.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z103</text>
   </a>
-  <circle cx="660.5" cy="1635.5" r="18" data-eid="313" data-dests="zone_ASI_pvp zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="660.5" cy="1635.5" r="18" data-eid="313" data-dests="Kentagura|zone_ASI_pvp;Xiantor|zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="660.5" y="1604.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Xiantor, Kentagura</text>
   <circle cx="896.5" cy="612.5" r="18" data-eid="1430" data-ltp="0" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <circle cx="923.5" cy="1096.5" r="18" data-eid="316" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-tm-pve/" title="Hershfield">
-  <circle cx="1377.5" cy="181.5" r="18" data-eid="317" data-dests="zone_TM_pve" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1377.5" cy="181.5" r="18" data-eid="317" data-dests="Hershfield|zone_TM_pve" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1377.5" y="150.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield</text>
   </a>
   <circle cx="1410.5" cy="1646.5" r="18" data-eid="1427" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <circle cx="1430.5" cy="1915.5" r="18" data-eid="90" data-dests="zone_ASI_pvp zone_TM_pve zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1430.5" cy="1915.5" r="18" data-eid="90" data-dests="Kentagura|zone_ASI_pvp;Hershfield|zone_TM_pve;Xiantor|zone_asi_g_4" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1430.5" y="1884.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Xiantor, Hershfield…</text>
-  <circle cx="1483.5" cy="982.5" r="18" data-eid="312" data-dests="zone_ICS_pvp zone_TM_pve" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1483.5" cy="982.5" r="18" data-eid="312" data-dests="Novastrov|zone_ICS_pvp;Hershfield|zone_TM_pve" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1483.5" y="951.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hershfield, Novastrov</text>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
 </svg>

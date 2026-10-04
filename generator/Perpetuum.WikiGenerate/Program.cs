@@ -171,6 +171,23 @@ public static class Program
             var zoneIndex = ZoneIndexPage.Build(db);
             File.WriteAllText(Path.Combine(zonesOutDir, "zone-index.md"), zoneIndex);
             Console.WriteLine($"wrote zones-out/zone-index.md ({zoneIndex.Length / 1024} KB)");
+            // Zone meta for tools/gen_zone_teleport_maps.py (name -> slug,
+            // sizes, ids): the zone index is a card grid now, so the tool
+            // reads this TSV instead of parsing the old index table.
+            var meta = db.Query("SELECT id, name, width, height FROM zones ORDER BY id")
+                .GroupBy(r => r.Str("name"))
+                .Select(g => g.First())
+                .Select(r => {
+                    var name = r.Str("name");
+                    var disp = Md.ClientStrings.TryGetValue(name, out var d) && d != name ? d : name;
+                    var slug = name.ToLowerInvariant().Replace("_", "-");
+                    var id = r.Int("id");
+                    var zw = r.Int("width");
+                    var zh = r.Int("height");
+                    return $"{name}\t{disp}\t{slug}\t{id}\t{zw}\t{zh}";
+                });
+            File.WriteAllText(Path.Combine(wikiRoot, "static", "zonemaps", "meta.tsv"), string.Join("\n", meta) + "\n");
+            Console.WriteLine($"wrote static/zonemaps/meta.tsv ({meta.Count()} zones)");
             var zoneMap = ZonesMapPage.Build(db);
             File.WriteAllText(Path.Combine(zonesOutDir, "map.md"), zoneMap);
             Console.WriteLine($"wrote zones-out/map.md ({zoneMap.Length / 1024} KB)");
