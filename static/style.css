@@ -1279,3 +1279,66 @@ a.prod-card-name:hover { color: var(--neon, #41d3ff); }
 @media (prefers-reduced-motion: reduce) {
     .update-toast { animation: none; }
 }
+
+/* ------------------------------------------------------------------ */
+/* Play / Dev mode toggle (top bar) + dev-mode visibility              */
+/* ------------------------------------------------------------------ */
+.mode-toggle {
+    display: inline-flex; align-items: center; gap: 1px;
+    padding: 2px;
+    border: 1px solid var(--neon-dim); border-radius: 999px;
+    background: var(--chrome-bg2); color: var(--chrome-muted);
+    font: 600 0.7rem/1.3 system-ui, sans-serif; letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+}
+.mode-toggle:hover, .mode-toggle:focus-visible { border-color: var(--neon); outline: none; }
+.mode-opt { padding: 2px 8px; border-radius: 999px; opacity: 0.55; transition: opacity 0.15s ease; }
+html:not([data-mode="dev"]) .mode-opt[data-mode-opt="play"],
+html[data-mode="dev"] .mode-opt[data-mode-opt="dev"] {
+    opacity: 1; color: var(--neon);
+    background: var(--neon-faint);
+    box-shadow: 0 0 8px var(--neon-faint);
+}
+/* the Dev sidenav group is hidden outside dev mode */
+.nav-dev { display: none; }
+html[data-mode="dev"] .nav-dev { display: block; }
+
+/* ------------------------------------------------------------------ */
+/* Dev mode: "the matrix" — near-black, everything glows bright green */
+/* (placed after the light-mode rules so it wins when both are set)    */
+/* ------------------------------------------------------------------ */
+html[data-mode="dev"] {
+    --fg: #8affb0;
+    --muted: #3ddc74;
+    --accent: #00ff41;
+    --bg: #020a04;
+    --bg-soft: #041507;
+    --bg-top: #03130a;
+    --bg-bottom: #010703;
+    --border: #16c24f;
+    --code-bg: #04190b;
+    --grid-line: rgba(0, 255, 65, 0.06);
+    --th-bg: #062b12;
+    --th-fg: #aaffc6;
+    --th-edge: rgba(0, 255, 65, 0.5);
+    --chrome-bg: #010502;
+    --chrome-bg2: #03130a;
+    --chrome-fg: #7dffb2;
+    --chrome-muted: #35b568;
+    --neon: #00ff41;
+    --neon-dim: rgba(0, 255, 65, 0.45);
+    --neon-faint: rgba(0, 255, 65, 0.13);
+    --glow-a: rgba(0, 255, 65, 0.08);
+    --glow-b: rgba(0, 255, 65, 0.06);
+}
+html[data-mode="dev"] body {
+    background:
+        radial-gradient(1100px 500px at 85% -10%, rgba(0, 255, 65, 0.07), transparent 60%),
+        radial-gradient(900px 420px at 8% 108%, rgba(0, 255, 65, 0.05), transparent 60%),
+        #010502;
+    text-shadow: 0 0 6px rgba(0, 255, 65, 0.30);
+}
+html[data-mode="dev"] a { text-shadow: 0 0 8px rgba(0, 255, 65, 0.50); }
+html[data-mode="dev"] .brand { color: #00ff41; text-shadow: 0 0 10px rgba(0, 255, 65, 0.7); }
+html[data-mode="dev"] h1 { color: #b4ffc9; text-shadow: 0 0 12px rgba(0, 255, 65, 0.45); }

@@ -15,6 +15,8 @@
                 var cb = localStorage.getItem("wiki-cb");
                 if (cb && cb !== "none")
                     document.documentElement.setAttribute("data-cb", cb);
+                if (localStorage.getItem("wiki-mode") === "dev")
+                    document.documentElement.setAttribute("data-mode", "dev");
             } catch (e) { /* storage unavailable: stay on the defaults */ }
         })();
     </script>
@@ -83,6 +85,11 @@
             <button type="button" role="menuitem" data-cb="achro">{{ config.extra.ui.cb_achro }}</button>
         </div>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="{{ config.extra.ui.aria_theme_toggle }}" title="{{ config.extra.ui.aria_theme_toggle }}">☾</button>
+        <!-- Play / Dev mode knob: Dev = matrix theme + the Dev sidenav group.
+             The active side is highlighted by html[data-mode] in the CSS. -->
+        <button id="mode-toggle" class="mode-toggle" type="button" aria-pressed="false" aria-label="{{ config.extra.ui.aria_mode_toggle }}" title="{{ config.extra.ui.aria_mode_toggle }}">
+            <span class="mode-opt" data-mode-opt="play">{{ config.extra.ui.nav_mode_play }}</span><span class="mode-opt" data-mode-opt="dev">{{ config.extra.ui.nav_mode_dev }}</span>
+        </button>
         </div>
     </div>
     <!-- Row 2: the search bar (wide, centered). -->
@@ -92,13 +99,16 @@
 </header>
 <div id="search-results" class="search-results" hidden></div>
 <div class="layout">
-<!-- Sidenav: the Home quick link on top, then the main items — Start, World,
-     Play, Systems, Reference. Groups are open by default (root -> sub always
-     visible); 2nd-level sub-lists (Gamma's tiers, item-shop categories,
-     content tables, zones) start collapsed unless the current page lives
-     inside them. Caret buttons
-     collapse/expand any section; World's anchors are its sub-items. Group
-     headers (except World) link to their overview page under /menu/. -->
+<!-- Sidenav: the Home quick link on top, then the main items — Start,
+     World, Play, Systems (+ Dev, only visible in dev mode, see the top-bar
+     mode toggle). Groups are open by default (root -> sub always visible);
+     2nd-level sub-lists (Gamma's tiers, "How it works", the Play and
+     Systems sub-tables) start collapsed unless the current page lives
+     inside them. Caret buttons collapse/expand any section; World's
+     anchors are its sub-items. Group headers (except World) link to their
+     overview page under /menu/ (Dev's links to the developer home).
+     Dev mode (html[data-mode=dev]) shows the Dev group and switches the
+     site to the matrix theme. -->
 <nav class="sidenav" id="sidenav" aria-label="Sections">
     <ul>
         <li class="nav-quick">
@@ -112,6 +122,7 @@
             <ul class="nav-items">
                 <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
                 <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
+                <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
                 <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
             </ul>
         </li>
@@ -121,9 +132,17 @@
                 <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
             </div>
             <ul class="nav-items">
-                <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
                 <li><a href="/zones/zone-training/">{{ config.extra.ui.nav_map_training }}</a></li>
-                <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/zones/protection/">{{ config.extra.ui.nav_how_it_works }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
+                        <li><a href="/zones/generation/">{{ config.extra.ui.nav_zones_generation }}</a></li>
+                    </ul>
+                </li>
                 <li><a href="/zones/alpha/">{{ config.extra.ui.nav_map_alpha }}</a></li>
                 <li><a href="/zones/beta/">{{ config.extra.ui.nav_map_beta }}</a></li>
                 <li class="nav-has-sub">
@@ -139,6 +158,7 @@
                         <li><a href="/zones/gamma/#t4">{{ config.extra.ui.nav_map_gamma_t4 }}</a></li>
                     </ul>
                 </li>
+                <li><a href="/zones/zone-index/">{{ config.extra.ui.nav_all_zones }}</a></li>
             </ul>
         </li>
         <li class="nav-group">
@@ -157,7 +177,15 @@
                         <li><a href="/content/plants/">{{ config.extra.ui.nav_content_plants }}</a></li>
                     </ul>
                 </li>
-                <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/features/npcs/">{{ config.extra.ui.nav_npcs }}</a></li>
+                    </ul>
+                </li>
                 <li class="nav-has-sub">
                     <div class="nav-sub-head">
                         <a href="/features/missions/">{{ config.extra.ui.nav_missions }}</a>
@@ -167,15 +195,38 @@
                         <li><a href="/content/missions/">{{ config.extra.ui.nav_content_missions }}</a></li>
                     </ul>
                 </li>
-                <li><a href="/features/movement/">{{ config.extra.ui.nav_movement }}</a></li>
-                <li><a href="/features/npcs/">{{ config.extra.ui.nav_npcs }}</a></li>
-                <li><a href="/features/exploration/">{{ config.extra.ui.nav_exploration }}</a></li>
-                <li><a href="/features/probes/">{{ config.extra.ui.nav_probes }}</a></li>
-                <li><a href="/features/pbs/">{{ config.extra.ui.nav_pbs }}</a></li>
-                <li><a href="/features/outposts/">{{ config.extra.ui.nav_outposts }}</a></li>
-                <li><a href="/features/intrusion/">{{ config.extra.ui.nav_intrusion }}</a></li>
-                <li><a href="/features/groups/">{{ config.extra.ui.nav_groups }}</a></li>
-                <li><a href="/features/social/">{{ config.extra.ui.nav_social }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/movement/">{{ config.extra.ui.nav_movement }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/features/exploration/">{{ config.extra.ui.nav_exploration }}</a></li>
+                        <li><a href="/features/probes/">{{ config.extra.ui.nav_probes }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/pbs/">{{ config.extra.ui.nav_bases_sites }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/features/pbs/">{{ config.extra.ui.nav_pbs }}</a></li>
+                        <li><a href="/features/outposts/">{{ config.extra.ui.nav_outposts }}</a></li>
+                        <li><a href="/features/intrusion/">{{ config.extra.ui.nav_intrusion }}</a></li>
+                        <li><a href="/content/deployables/">{{ config.extra.ui.nav_content_deployables }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/groups/">{{ config.extra.ui.nav_with_others }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/features/groups/">{{ config.extra.ui.nav_groups }}</a></li>
+                        <li><a href="/features/social/">{{ config.extra.ui.nav_social }}</a></li>
+                    </ul>
+                </li>
             </ul>
         </li>
         <li class="nav-group">
@@ -184,7 +235,15 @@
                 <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
             </div>
             <ul class="nav-items">
-                <li><a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/robots/">{{ config.extra.ui.nav_content_robots }}</a></li>
+                    </ul>
+                </li>
                 <li class="nav-has-sub">
                     <div class="nav-sub-head">
                         <a href="/features/production/">{{ config.extra.ui.nav_production }}</a>
@@ -213,16 +272,29 @@
                         <li><a href="/features/sparks/">{{ config.extra.ui.nav_sparks }}</a></li>
                     </ul>
                 </li>
-                <li><a href="/features/items/">{{ config.extra.ui.nav_items }}</a></li>
-                <li><a href="/features/modules/">{{ config.extra.ui.nav_modules }}</a></li>
-                <li><a href="/features/market/">{{ config.extra.ui.nav_market }}</a></li>
-                <li><a href="/features/transport/">{{ config.extra.ui.nav_transport }}</a></li>
                 <li class="nav-has-sub">
                     <div class="nav-sub-head">
-                        <a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a>
+                        <a href="/features/items/">{{ config.extra.ui.nav_items }}</a>
                         <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
                     </div>
-                    <ul class="shop-sub">
+                    <ul class="nav-sub">
+                        <li><a href="/features/modules/">{{ config.extra.ui.nav_modules }}</a></li>
+                        <li><a href="/content/stat-reference/">{{ config.extra.ui.nav_content_statref }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/market/">{{ config.extra.ui.nav_market }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/features/transport/">{{ config.extra.ui.nav_transport }}</a></li>
+                        <li class="nav-has-sub">
+                            <div class="nav-sub-head">
+                                <a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a>
+                                <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                            </div>
+                            <ul class="shop-sub">
                         <li><a href="/content/shop/ammo/">Ammo</a></li>
                         <li><a href="/content/shop/bots/">Bots</a></li>
                         <li><a href="/content/shop/paint/">Paint</a></li>
@@ -238,35 +310,13 @@
                 </li>
             </ul>
         </li>
-        <li class="nav-group">
+        <li class="nav-group nav-dev">
             <div class="nav-group-head">
-                <a class="nav-group-link" href="/menu/reference/"><svg class="navicon" aria-hidden="true"><use href="#mi-crystal"/></svg>{{ config.extra.ui.nav_reference }}</a>
+                <a class="nav-group-link" href="/features/architecture/"><svg class="navicon" aria-hidden="true"><use href="#mi-tree"/></svg>{{ config.extra.ui.nav_dev }}</a>
                 <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
             </div>
             <ul class="nav-items">
-                <li class="nav-has-sub">
-                    <div class="nav-sub-head">
-                        <a href="/content/">{{ config.extra.ui.nav_content }}</a>
-                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
-                    </div>
-                    <ul class="nav-sub">
-                        <li><a href="/content/deployables/">{{ config.extra.ui.nav_content_deployables }}</a></li>
-                        <li><a href="/content/robots/">{{ config.extra.ui.nav_content_robots }}</a></li>
-                        <li><a href="/content/stat-reference/">{{ config.extra.ui.nav_content_statref }}</a></li>
-                    </ul>
-                </li>
-                <li class="nav-has-sub">
-                    <div class="nav-sub-head">
-                        <a href="/zones/">{{ config.extra.ui.nav_zones }}</a>
-                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
-                    </div>
-                    <ul class="nav-sub">
-                        <li><a href="/zones/generation/">{{ config.extra.ui.nav_zones_generation }}</a></li>
-                        <li><a href="/zones/zone-index/">{{ config.extra.ui.nav_zones_index }}</a></li>
-                    </ul>
-                </li>
-                <li><a class="nav-item-icon" href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a></li>
-                <li><a href="/features/abbreviations/">{{ config.extra.ui.nav_abbreviations }}</a></li>
+                <li><a href="/features/architecture/">{{ config.extra.ui.nav_dev_home }}</a></li>
                 <li><a href="/features/server/">{{ config.extra.ui.nav_server }}</a></li>
                 <li><a href="/formats/">{{ config.extra.ui.nav_formats }}</a></li>
             </ul>
@@ -339,6 +389,24 @@
             try { localStorage.setItem("wiki-theme", isLight() ? "light" : "dark"); } catch (e) {}
             btn.textContent = isLight() ? "☀" : "☾";
             refreshMermaid(isLight() ? "neutral" : "dark");
+        });
+    })();
+    // Play / Dev mode knob: dev = matrix theme + the Dev sidenav group
+    // (the early head script restores the saved mode before first paint).
+    (function () {
+        var btn = document.getElementById("mode-toggle");
+        if (!btn) return;
+        var root = document.documentElement;
+        function apply(mode) {
+            if (mode === "dev") root.setAttribute("data-mode", "dev");
+            else root.removeAttribute("data-mode");
+            btn.setAttribute("aria-pressed", mode === "dev" ? "true" : "false");
+        }
+        apply(root.getAttribute("data-mode") === "dev" ? "dev" : "play");
+        btn.addEventListener("click", function () {
+            var next = root.getAttribute("data-mode") === "dev" ? "play" : "dev";
+            apply(next);
+            try { localStorage.setItem("wiki-mode", next); } catch (e) {}
         });
     })();
     // Accent palette: pick one of four sci-fi accents (cyan is the default).

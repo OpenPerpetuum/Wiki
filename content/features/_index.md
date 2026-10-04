@@ -48,8 +48,7 @@ flowchart LR
 | Outposts & SAP | [outposts](/features/outposts/) | outpost ownership, stability, the four SAP types |
 | Proximity probes | [probes](/features/probes/) | zone surveillance probes |
 | Server & reference | [server](/features/server/) | server info, high scores, reference data, purchases |
-| FAQ | [faq](/features/faq/) | the tutorial, faction choice, first steps |
-| Abbreviations | [abbreviations](/features/abbreviations/) | the game's jargon |
+| FAQ | [faq](/features/faq/) | the tutorial, faction choice, first steps, the jargon |
 | Lore | [lore](/features/lore/) | the setting: Nia, the Nians, the Syndicate |
 | Client & PC setup | [client-setup](/features/client-setup/) | running the client, multi-boxing, UI scaling |
 

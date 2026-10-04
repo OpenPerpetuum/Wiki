@@ -1,28 +1,26 @@
 ---
 title: "Play"
-description: "Everything that happens out in the zones: resources, fights, missions, movement, corporate play, and playing with others."
+description: "Everything that happens out in the zones: gathering, combat, missions, movement, bases, and playing with others."
 ---
 
 # Play
 
 Everything that happens out in the zones: what you gather and fight, how you
-get around, and how you play with (or against) other players.
+get around, how you hold territory — and how you play with (or against)
+other players.
 
 ## In the field
 
-- **[Gathering](/features/gathering/)** — Scanning, harvesting ore and plants, and collecting resources from zones.
-- **[Combat](/features/combat/)** — Fighting, damage types, interference, alarms, kill reports, and SOS.
-- **[Missions](/features/missions/)** — Field missions, agents, and terminals.
-- **[Movement & zones](/features/movement/)** — Zones, docking, queues, teleports, spark jumps, and gates.
-- **[NPCs & PVE hunting](/features/npcs/)** — NPC ranks and factions, weaknesses, spawn types, TAPs, and hunting tactics.
-- **[Exploration](/features/exploration/)** — Artifacts and relics.
-- **[Proximity probes](/features/probes/)** — Zone surveillance probes.
+- **[Gathering](/features/gathering/)** — Scanning, harvesting ore and plants, and collecting resources from zones. Catalogs: [Ores](/content/ores/) · [Plants](/content/plants/).
+- **[Combat](/features/combat/)** — Fighting, damage types, interference, alarms, kill reports, and SOS. Also: [NPCs & PVE hunting](/features/npcs/) — ranks, weaknesses, spawn types, TAPs, tactics.
+- **[Missions](/features/missions/)** — Field missions, agents, and terminals. Full table: [Missions](/content/missions/).
+- **[Movement & zones](/features/movement/)** — Zones, docking, queues, teleports, spark jumps, and gates. Also: [Exploration](/features/exploration/) (artifacts and relics) and [Proximity probes](/features/probes/).
 
-## Big play
+## Bases & sites
 
 Corporate and endgame play: holding territory, outposts, and the intrusion mode.
 
-- **[Power base stations](/features/pbs/)** — PBS structures: deployment, connections, territories, effects, and feeding.
+- **[Power base stations](/features/pbs/)** — PBS structures: deployment, connections, territories, effects, and feeding. What you can deploy: [Deployables](/content/deployables/).
 - **[Outposts & SAP](/features/outposts/)** — Outpost ownership, stability, and the four SAP activity types in open-PvP space.
 - **[Intrusion](/features/intrusion/)** — The intrusion mode: NPC sites, SAP items, defense thresholds, facility upgrades, and stability.
 

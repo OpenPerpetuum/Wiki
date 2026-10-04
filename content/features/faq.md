@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: "Answers to the most common early-game questions: the tutorial, picking a faction, and what to do after training."
+description: "Answers to the most common early-game questions — the tutorial, picking a faction, what to do after training — plus the jargon (EP, NIC, CT, EWar)."
 weight: 8
 ---
 
@@ -81,6 +81,30 @@ No. The training zone is for new characters and there is no re-entry once you've
 left it. The Rookie Checklist stays available in the Help menu if you want to
 re-read the objectives, and you can always create another character and leave it
 in the tutorial as a test sandbox.
+
+## Abbreviations
+
+Common shorthand in chat, market listings and fits. Most terms have a page of
+their own (linked where useful) — the item names resolve in the site search.
+
+| Term | Meaning |
+|---|---|
+| **EP** | [Extension Points](/features/research/#ep-sources) — the account-level skill currency spent on upgrading [extensions](/features/character/#extensions) (the earning rules are in the [research page](/features/research/#ep-sources)). |
+| **NIC** | Nian Credit — the in-game currency (the `credit` balance on your character). |
+| **CT** | [CPRG — Calibration Program](/features/production/#cprg-calibration-programs) — the program a mill line is calibrated with before it produces (one per item, with material/time efficiencies). |
+| **Proto** | A prototype item — the high-tier variant of a module/robot, made at the [prototype facility](/features/production/#the-item-lifecycle-the-circular-process) (consumes a specimen of the previous tier; see [tier progression](/features/production/#tier-progression)). |
+| **LWF** | Lightweight frame — a mass-reducing armor module (the client names them "… lightweight frame", e.g. *Niani lightweight frame*). Makes a robot lighter, at the cost of armor. |
+| **TP / tele** | [Teleport](/features/movement/) — fast travel between fixed points, or to a deployed mobile teleport device. |
+| **SAP** | Service Access Point — the outpost [stability](/features/outposts/) activity. |
+| **Stab** | Weapon Stabilizer — raises a weapon's hit accuracy. |
+| **Demob** | Demobilizer — a module that slows another robot (and its modules). |
+| **EWar** | Electronic Warfare modules (jamming, sensor suppression, stealth). |
+| **EnWar** | Energy Warfare modules (core injectors, drainers, neutralizers, transfers). |
+| **Tuning** | The client's name for the upgrade modules that enhance other modules — damage modifiers for weapons, *industrial tuning* for miners and harvesters, armor-repairer tuning, and so on. |
+| **MK2** | An upgraded variant of a robot (`_mk2` frames) — higher capacities, its own research line. |
+
+Robot classes follow the in-client groupings — see the note under
+[Robot classes](/content/robots/#robot-classes).
 
 <!--
 Written from scratch against the server backend, 2026-09-27:

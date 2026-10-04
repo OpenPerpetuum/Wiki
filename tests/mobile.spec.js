@@ -17,7 +17,7 @@ const PAGES = [
   '/features/market/',
   '/features/items/',
   '/features/robots/',
-  '/features/abbreviations/',       // wide table
+  '/features/faq/',                 // wide table (incl. abbreviations)
   '/content/missions/',             // mission cards + reward links
   '/content/stat-reference/',       // large tables
   '/content/ores/',

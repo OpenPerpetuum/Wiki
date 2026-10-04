@@ -76,8 +76,7 @@ trade, and research your way up from a starter bot to a fully fitted war machine
 - [Social](/features/social/) — mail, channels, friends, standings
 
 **<span class="menuhead"><svg class="menuicon" aria-hidden="true"><use href="#mi-crystal"/></svg> Knowledge</span>**
-- [FAQ](/features/faq/) — early-game questions
-- [Abbreviations](/features/abbreviations/) — the jargon (EP, NIC, CT, TAP, …)
+- [FAQ](/features/faq/) — early-game questions and the jargon (EP, NIC, CT, EWar…)
 - [Lore](/features/lore/) — the setting: Nia, the Nians, the Syndicate
 - [Client & PC setup](/features/client-setup/) — running the client, multi-boxing rules,
   UI scaling
@@ -89,5 +88,6 @@ trade, and research your way up from a starter bot to a fully fitted war machine
 - [**Zones**](/zones/) — the full zone index, resource-generation rules and the
   [world map](/zones/map/)
   (every zone on the grid with its teleport links)
-- [**Formats**](/formats/) — developer reference: stat fields and zone file formats
-- [**Server & reference**](/features/server/) — server info, high scores, reference data
+
+Developer pages (file formats, server internals) live in **Dev mode** —
+toggle it from the top bar.

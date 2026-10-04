@@ -16,118 +16,69 @@ Legend: `[existing]` page exists today · `[planned]` page to be written later �
 ## Top-level menu
 
 The sidenav has the **Home** quick link on top, then the main items: Start,
-World, Play, Systems, Reference. Groups are **open by default** (root -> sub
-always visible); 2nd-level sub-lists (Gamma's tiers, item-shop categories,
-Content tables' sections, Zones' pages) start collapsed, unless the current
-page lives inside them (e.g. an item-shop category page opens Item shop,
-a tech-tree node page opens Content tables). Caret buttons collapse/expand
-any section; on load the sidenav is scrolled so the active entry is visible.
-Group headers (except World) link to their overview page under `/menu/`.
-Labels live in `config.toml` (`extra.ui.nav_*`), overview pages in
+World, Play, Systems — plus a **Dev** group that is only visible in **dev
+mode** (the Play/Dev knob in the top bar; dev mode also switches the site
+to the "matrix" theme: near-black, glowing bright green). Groups are
+**open by default** (root -> sub always visible); 2nd-level sub-lists
+start collapsed, unless the current page lives inside them (e.g. a
+shop category page opens Item shop, a tech-tree node page opens Tech
+tree). Caret buttons collapse/expand any section; on load the sidenav is
+scrolled so the active entry is visible. Group headers (except World)
+link to their overview page under `/menu/` (Dev's links to the developer
+home). Labels live in `config.toml` (`extra.ui.nav_*`), overview pages in
 `content/menu/`.
 
 0. **Home** — quick link to `/`, above all groups `[existing]`
 
 1. **Start** (`/menu/start/`)
    - Getting started `[existing]`
-   - First hours (survival guide) `[planned]`
-   - FAQ `[existing]`
+   - FAQ `[existing]` — includes the abbreviations table (merged in; the
+     standalone Abbreviations page is gone)
+   - Lore `[existing]`
    - Client & PC setup `[existing]`
-     - Linux setup `[planned] (sub)`
-     - UI scaling `[planned] (sub)`
-     - Multi-boxing `[planned] (sub)`
-     - Reshader `[planned] (sub)`
-   - Home base (respawn / declared terminal) `[planned]`
 
 2. **World** (zone map `/zones/map/`) — 2nd top-level item, styled like a
    group; sub-items are the map anchors (training, starter islands, beta,
    protection), and the 2nd-level *Gamma* sub-list (T0–T4) starts collapsed
    `[existing]`
+   - Training
+   - How it works `(sub)` — Protection levels, Zone generation
+   - Alpha, Beta, Gamma (T0–T4 sub-list)
+   - All zones (zone index)
 
-3. **Play** (`/menu/play/`) — merges the old *In the field*, *Big play*, and
-   *With others* groups
-   - Gathering `[existing]`
-   - Combat `[existing]`
-     - Damage & application `[planned] (sub)`
-     - Resistances `[planned] (sub)`
-   - Missions `[existing]`
-   - Movement `[existing]`
-   - NPCs `[existing]`
-     - NPC ranks `[planned] (sub)`
-     - Tactics `[planned] (sub)`
-     - Bosses `[planned] (sub)`
-   - Exploration `[existing]`
-   - Probes `[existing]`
-   - PBS `[existing]`
-   - Outposts `[existing]`
-   - SAP `[planned]`
-   - Intrusion `[existing]`
-   - Relations / territorial warfare `[planned]`
-   - Groups (corps / alliances) `[existing]`
-     - Creation & management `[planned] (sub)`
-     - CEO takeover / logo editor `[planned] (sub)`
-   - Squads (NEXUS) `[planned]`
-   - Social `[existing]`
-   - Field guides (combat / exploration / industry) `[planned]`
+3. **Play** (`/menu/play/`)
+   - Gathering `(sub)` — Ores, Plants
+   - Combat `(sub)` — NPCs & PVE hunting
+   - Missions `(sub)` — Mission table
+   - Movement & zones `(sub)` — Exploration, Proximity probes
+   - Bases & sites `(sub)` — PBS, Outposts & SAP, Intrusion, Deployables
+   - With others `(sub)` — Groups, Social
 
-4. **Systems** (`/menu/systems/`) — merges the old *Industry & progress* and
-   *Trade* groups
-   - Robots `[existing]` — to become a per-robot catalog `[planned (catalog)]`
-     (one generated page per robot: class, chassis stats, extension requirements &
-     bonuses, where to buy; prose descriptions written originally)
-   - Production `[existing]`
-   - Research `[existing]`
-   - Items & inventory `[existing]`
-   - Modules `[existing]` — to become per-family pages `[planned]`
-     (weapons, armor, shield, energy, electronics, EWar, industrial, NEXUS, special)
-   - Sparks `[existing]`
-   - Calibration / prototyping `[planned]`
-   - Reverse engineering `[planned]`
-   - Market `[existing]`
-   - Transport (CT capsules) `[existing]`
-   - Item shop `[existing]` — 11 category pages `[existing (catalog)]`
+4. **Systems** (`/menu/systems/`)
+   - Robots & fitting `(sub)` — Robot stat tables
+   - Production `(sub)` — Recipes
+   - Research `(sub)` — Tech tree
+   - Character `(sub)` — Extensions, Sparks
+   - Items & inventory `(sub)` — Modules, Stat reference
+   - Market & trade `(sub)` — Transport, Item shop (11 category pages,
+     3rd-level sub-list)
 
-5. **Reference** (`/menu/reference/`) — merges the old *Knowledge* and
-   *Data reference* groups
-   - Content tables `[existing]` — 2nd-level sub-list: Items, Ores, Plants,
-     Deployables, Robots, Missions, Recipes, Tech tree, Stat reference
-   - Zones (data) `[existing]` — 2nd-level sub-list: Generation, Zone index
-   - All features (full system list `/features/`) `[existing]`
-   - Extension tree `[existing]`
-   - Extensions `[existing]`
-   - Stat reference `[existing]` *(added to the menu — currently only linked from
-     the item catalog)*
-   - Abbreviations `[existing]`
-   - Lore `[existing]`
-     - Nia / Discovery of Nia `[planned]`
-     - Syndicate `[planned]`
-   - Zone guides (per-zone prose alongside the generated zone data pages) `[planned]`
-   - Server `[existing]`
-   - Formats (developer) `[existing]`
-
-**How it works** — *new group* (all planned; the group goes live when its
-first pages exist; insert between **Play** and **Systems**):
-   - Damage & application `[planned]`
-   - Fitting `[planned]`
-   - Powergrid `[planned]`
-   - Energy (core) `[planned]`
-   - Resistances `[planned]`
-   - Detection & stealth (EWAR) `[planned]`
-   - Range & falloff `[planned]`
-   - Speed `[planned]`
-   - Remote assistance `[planned]`
-   - Forms `[planned]`
-   - NEXUS / squad bonuses `[planned]`
+5. **Dev** (developer home `/features/architecture/`) — visible **only in
+   dev mode** (top-bar knob; matrix theme)
+   - Developer home — high-level architecture of the open reimplementation
+   - Server & reference (DB schema / SQL)
+   - Formats (file formats)
 
 ## Implementation notes
 
-- The 4-group menu is live: the sidenav groups are collapsible and the old 8
-  groups were merged into the 4 overview pages (the former `/menu/` pages for
-  *in-the-field*, *industry*, *trade*, *big-play*, *with-others*, *knowledge*,
-  and *data-reference* were replaced by `/menu/start|play|systems|reference/`).
-- When the first "How it works" pages land, add the group to the sidenav
-  between **Play** and **Systems** (new `nav_*` string + `/menu/` page +
-  search-index regen).
+- The 4-group menu (Start, World, Play, Systems) plus the hidden Dev group
+  is live: the sidenav groups are collapsible and the former `/menu/` pages
+  were merged into `/menu/start|play|systems/` (`/menu/reference/` was
+  deleted with the Reference group).
+- Dev mode is a client-side toggle (`html[data-mode=dev]`, persisted in
+  `localStorage` under `wiki-mode`): it reveals the Dev sidenav group and
+  applies the matrix theme (all in `static/style.css`, the knob in
+  `templates/base.html`).
 - Per-robot pages and module family pages are generator work (P1/P3 of the
   reorganisation plan); everything else is original prose.
 - Left menu, `/menu/<slug>/` overview pages and the search index all follow the
