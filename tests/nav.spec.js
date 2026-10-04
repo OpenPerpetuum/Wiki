@@ -14,16 +14,17 @@ const VISIBLE_LINKS = () =>
 const COLLAPSED = (sel) =>
   [...document.querySelectorAll(sel)].map((g) => g.classList.contains('collapsed'));
 const GROUPS = '.sidenav .nav-group'; // Start, World, Play, Systems (+ Dev, hidden outside dev mode)
-const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: World(2) + Play(6) + Systems(7, incl. nested shop) = 15
+const SUBS = '.sidenav li li.nav-has-sub'; // 2nd level: World(2) + Play(8, incl. nested PBS/Deployables) + Systems(7, incl. nested shop) = 17
 
 test('home: groups open, 2nd-level sub-lists closed', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/`);
   expect(await page.locator('.nav-quick a').getAttribute('href')).toBe('/');
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
-  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual(Array(15).fill(true));
+  expect(await page.evaluate(COLLAPSED, SUBS)).toEqual(Array(17).fill(true));
   // Home + Start(1 header + 4) + World(1 + 6) + Play(1 + 6 sub-heads)
   // + Systems(1 + 6 sub-heads); the Dev group is hidden in play mode and
-  // every 2nd-level sub-list starts collapsed.
+  // every 2nd-level sub-list (incl. the nested PBS/Deployables ones) starts
+  // collapsed.
   expect(await page.evaluate(VISIBLE_LINKS)).toBe(27);
 });
 
@@ -80,7 +81,7 @@ test('feature page: all groups stay open, current page highlighted', async ({ pa
   await page.goto(`${baseURL}/features/combat/`);
   expect(await page.evaluate(COLLAPSED, GROUPS)).toEqual([false, false, false, false, false]);
   // only the Combat sub-list auto-opens (it carries the current page); the
-  // other 14 2nd-level sub-lists stay collapsed
+  // other 16 2nd-level sub-lists stay collapsed
   const states = await page.evaluate(COLLAPSED, SUBS);
   expect(states.filter((s) => !s)).toEqual([false]);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Combat');
@@ -154,11 +155,31 @@ test('zone data page: family entry highlighted, zone generation under How it wor
   await page.goto(`${baseURL}/zones/zone-asi/`);
   // zone_ASI is protected: the Alpha family-listing entry is the active one
   expect(await page.locator('.sidenav a.active').getAttribute('href')).toBe('/zones/alpha/');
-  // zone generation moved from Reference into World > How it works
+  // zone generation moved from Reference into World > How it works (the
+  // protection-levels entry is the "How it works" head link itself, so the
+  // sub-list carries only the generation page)
   await page.goto(`${baseURL}/zones/generation/`);
   const hiw = page.locator('.sidenav li.nav-has-sub .nav-sub:has(a[href="/zones/generation/"])');
-  expect(await hiw.locator('a:visible').count()).toBe(2); // protection + generation
+  expect(await hiw.locator('a:visible').count()).toBe(1);
   expect(await page.locator('.sidenav a.active').textContent()).toBe('Zone generation');
+});
+
+test('Bases & sites: PBS carries the PBS deployables category, Deployables its main categories', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/`);
+  // the Bases & sites group entry (its head link is the PBS page) has four
+  // direct children: PBS, Outposts, Intrusion, Deployables
+  const basesLi = page.locator('.sidenav ul.nav-items > li.nav-has-sub:has(> .nav-sub-head > a[href="/features/pbs/"])');
+  expect(await basesLi.locator('> .nav-sub > li').count()).toBe(4);
+  // on the deployables index: the Deployables sub-list auto-opens with its
+  // 10 main categories (the PBS category lives under PBS instead)
+  await page.goto(`${baseURL}/content/deployables/`);
+  const depLi = page.locator('.sidenav ul.nav-sub > li.nav-has-sub:has(> .nav-sub-head > a[href="/content/deployables/"])');
+  expect(await depLi.locator('> .nav-sub a:visible').count()).toBe(10);
+  expect(await page.locator('.sidenav a.active').textContent()).toBe('Deployables');
+  // the PBS sub-list carries the Power base stations category link
+  const pbsLi = page.locator('.sidenav ul.nav-sub > li.nav-has-sub:has(> .nav-sub-head > a[href="/features/pbs/"])');
+  expect(await pbsLi.locator('> .nav-sub > li').count()).toBe(1);
+  expect(await pbsLi.locator('> .nav-sub > li a').getAttribute('href')).toBe('/content/deployables/#power-base-stations-87');
 });
 
 test('zone page: the family-listing entry (not Zones) is highlighted', async ({ page, baseURL }) => {

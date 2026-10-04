@@ -343,6 +343,7 @@
 
         attachLtp(wrap);
         attachTpLines(wrap);
+        attachTpSelector(wrap);
         ensureReset(wrap);
         initContentZoom(wrap);
         applyWrap(wrap);
@@ -469,6 +470,142 @@
         wrap.addEventListener('pointerleave', function () {
             for (var i = 0; i < segs.length; i++)
                 if (segs[i].on) { segs[i].on = false; segs[i].el.classList.remove('zm-tp-on'); }
+        });
+    }
+
+    // Teleport destination selector. An item that can reach MORE THAN ONE
+    // other zone — a zone-map TP column (circle[data-dests]) or a world-map
+    // island (a[data-dests]) — opens a small selector on hover (desktop)
+    // or tap (touch): one entry per destination. While it is open, the
+    // dashed exit lines to this item's destinations are emphasised; hovering
+    // an entry emphasises ONLY that line, so the route is unambiguous; clicking
+    // an entry navigates to the destination's zone page.
+    // Single-destination items keep their plain <a> (click = navigate);
+    // LTP endpoints carry no data-dests at all — no link, no selector,
+    // no click action (a local teleport never reloads the page).
+    function attachTpSelector(wrap) {
+        var svg = wrap.querySelector('svg.zonemap');
+        if (!svg) return;
+        var items = svg.querySelectorAll('[data-dests]');
+        if (!items.length) return;
+        var lines = Array.prototype.slice.call(svg.querySelectorAll('line[data-tpd]'));
+        if (!lines.length) return;
+        var coarse = false;
+        try { coarse = window.matchMedia('(hover: none), (pointer: coarse)').matches; } catch (e) {}
+
+        var pop = document.createElement('div');
+        pop.className = 'tp-sel';
+        wrap.appendChild(pop);
+
+        var cur = null, closeTimer = 0, inPop = false;
+
+        // mirror of the generator's DisplayName (zone_asi_a_real -> "ASI A Real")
+        function nameOf(n) {
+            var s = n.replace(/^zone_/, '');
+            return s.split('_').filter(Boolean).map(function (tok) {
+                var m = tok.match(/^[a-zA-Z]+/);
+                var l = m ? m[0] : '';
+                if (!l) return tok;
+                var rest = tok.slice(l.length);
+                if (l === l.toUpperCase() && l !== l.toLowerCase()) return l + rest;
+                if (l.length <= 3) return l.toUpperCase() + rest;
+                return l.charAt(0).toUpperCase() + l.slice(1).toLowerCase() + rest;
+            }).join(' ');
+        }
+        function hrefOf(n) { return '/zones/' + n.toLowerCase().replace(/_/g, '-') + '/'; }
+        function destsOf(item) { return (item.getAttribute('data-dests') || '').split(/\s+/).filter(Boolean); }
+        function linesFor(item) {
+            var want = {};
+            destsOf(item).forEach(function (d) { want[d] = 1; });
+            // only lines that START at this item (data-tps: the column's eid
+            // on zone maps, the island's zone name on the world map) —
+            // another column/island may point at the same destination
+            var src = item.getAttribute('data-eid') || item.getAttribute('data-zn');
+            return lines.filter(function (l) {
+                if (!want[l.getAttribute('data-tpd')]) return false;
+                var s = l.getAttribute('data-tps');
+                return !src || !s || s === src;
+            });
+        }
+        function setOn(l, on) { l.classList[on ? 'add' : 'remove']('tp-sel-on'); }
+        function cancelClose() { if (closeTimer) { clearTimeout(closeTimer); closeTimer = 0; } }
+        function close() {
+            cancelClose();
+            if (!cur) return;
+            linesFor(cur).forEach(function (l) { setOn(l, false); });
+            cur = null;
+            pop.style.display = 'none';
+        }
+        function scheduleClose() {
+            if (inPop) return;
+            cancelClose();
+            closeTimer = setTimeout(close, 180);
+        }
+        function open(item) {
+            var dests = destsOf(item);
+            if (dests.length < 2) return;
+            if (cur !== item) close();
+            cur = item;
+            while (pop.firstChild) pop.removeChild(pop.firstChild);
+            var head = document.createElement('div');
+            head.className = 'tp-sel-head';
+            head.textContent = 'Teleport to';
+            pop.appendChild(head);
+            var myLines = linesFor(item);
+            dests.forEach(function (d) {
+                var b = document.createElement('button');
+                b.type = 'button';
+                b.className = 'tp-sel-item';
+                b.textContent = nameOf(d);
+                b.addEventListener('pointerenter', function () {
+                    // emphasise ONLY this route while the entry is hovered
+                    myLines.forEach(function (l) { setOn(l, l.getAttribute('data-tpd') === d); });
+                });
+                b.addEventListener('click', function () { window.location.href = hrefOf(d); });
+                pop.appendChild(b);
+            });
+            pop.style.display = 'block';
+            myLines.forEach(function (l) { setOn(l, true); });
+            // position beside the item, kept inside the wrap
+            var wr = wrap.getBoundingClientRect();
+            var ir = item.getBoundingClientRect();
+            var pw = pop.offsetWidth, ph = pop.offsetHeight;
+            var x = ir.right - wr.left + 10;
+            if (x + pw > wr.width - 6) x = ir.left - wr.left - pw - 10;
+            if (x < 6) x = 6;
+            var y = ir.top - wr.top + ir.height / 2 - ph / 2;
+            y = Math.max(6, Math.min(y, Math.max(6, wr.height - ph - 6)));
+            pop.style.left = x + 'px';
+            pop.style.top = y + 'px';
+        }
+        Array.prototype.forEach.call(items, function (item) {
+            if (destsOf(item).length < 2) return;
+            if (!coarse) {
+                item.addEventListener('pointerenter', function (e) {
+                    if (e.pointerType && e.pointerType !== 'mouse') return;
+                    cancelClose();
+                    open(item);
+                });
+                item.addEventListener('pointerleave', scheduleClose);
+            } else {
+                // touch: first tap opens the selector (no navigation),
+                // a second tap on the same item closes it
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (cur === item) close();
+                    else open(item);
+                });
+            }
+        });
+        pop.addEventListener('pointerenter', function () { inPop = true; cancelClose(); });
+        pop.addEventListener('pointerleave', function () { inPop = false; scheduleClose(); });
+        wrap.addEventListener('pointerleave', function () { if (!inPop) close(); });
+        // touch: a tap outside the item and the selector dismisses it
+        document.addEventListener('pointerdown', function (e) {
+            if (!coarse || !cur) return;
+            if (pop.contains(e.target) || (cur.contains && cur.contains(e.target))) return;
+            close();
         });
     }
 

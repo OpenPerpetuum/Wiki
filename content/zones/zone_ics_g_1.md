@@ -9,6 +9,13 @@ extra:
      Do not edit by hand; regenerate instead. -->
 # Novaya Trava (zone_ics_g_1)
 
+<div class="worldmap-card">
+  <a href="/zones/map/">
+    <img src="/world-map-thumb.png" alt="" loading="lazy">
+    <span class="worldmap-card-body"><strong>World map</strong> — where this zone sits among all the others, with the teleport connections. Open the full map.</span>
+  </a>
+</div>
+
 ![Teleport columns in Novaya Trava (zone_ics_g_1)](/zonemaps/zone-ics-g-1.svg)
 
 Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where the column is currently switched off), the landing spots of teleports arriving from other zones (dashed circles), and the exit gates (diamonds) where one exists. Positions are the tile coordinates the server records.

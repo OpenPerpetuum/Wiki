@@ -16,13 +16,13 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
-  <line class="exi-line" x1="1207.5" y1="296.5" x2="1207.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1723.5" y1="540.5" x2="1723.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1856.5" y1="857.5" x2="2031.4" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="306.5" y1="974.5" x2="462.4" y2="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="306.5" y1="974.5" x2="0" y2="1089.4" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1742.5" y1="1242.5" x2="1941.3" y2="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1742.5" y1="1242.5" x2="0" y2="1895.9" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="122" data-tpd="zone_ICS_A_real" x1="1207.5" y1="296.5" x2="1207.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="124" data-tpd="zone_ICS_A_real" x1="1723.5" y1="540.5" x2="1723.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="125" data-tpd="zone_gamma_tc_z100" x1="1856.5" y1="857.5" x2="2031.4" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="126" data-tpd="zone_tm_g_3" x1="306.5" y1="974.5" x2="462.4" y2="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="126" data-tpd="zone_TM_A_real" x1="306.5" y1="974.5" x2="0" y2="1089.4" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="128" data-tpd="zone_tm_g_3" x1="1742.5" y1="1242.5" x2="1941.3" y2="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="128" data-tpd="zone_TM_A_real" x1="1742.5" y1="1242.5" x2="0" y2="1895.9" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <line class="ltp-line ltp-casing zm-casing" x1="938.5" y1="515.5" x2="1856.5" y2="857.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="938.5" y1="515.5" x2="1856.5" y2="857.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
   <line class="ltp-line ltp-casing zm-casing" x1="938.5" y1="515.5" x2="496.5" y2="1187.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
@@ -44,26 +44,22 @@
   <circle cx="1850" cy="888" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="1850" y="849" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Alsbale</text>
   </a>
-  <a href="/zones/zone-tm-g-3/" title="Emperth, Norhoop">
-  <circle cx="306.5" cy="974.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="306.5" cy="974.5" r="18" data-eid="126" data-dests="zone_TM_A_real zone_tm_g_3" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="306.5" y="943.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Emperth, Norhoop</text>
-  </a>
-  <circle cx="496.5" cy="1187.5" r="18" data-ltp="1 2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <circle cx="938.5" cy="515.5" r="18" data-ltp="0 1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="496.5" cy="1187.5" r="18" data-eid="127" data-ltp="1 2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="938.5" cy="515.5" r="18" data-eid="123" data-ltp="0 1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-ics-a-real/" title="Domhalarn">
-  <circle cx="1207.5" cy="296.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1207.5" cy="296.5" r="18" data-eid="122" data-dests="zone_ICS_A_real" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1207.5" y="265.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
   <a href="/zones/zone-ics-a-real/" title="Domhalarn">
-  <circle cx="1723.5" cy="540.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1723.5" cy="540.5" r="18" data-eid="124" data-dests="zone_ICS_A_real" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1723.5" y="509.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn</text>
   </a>
-  <a href="/zones/zone-tm-g-3/" title="Emperth, Norhoop">
-  <circle cx="1742.5" cy="1242.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1742.5" cy="1242.5" r="18" data-eid="128" data-dests="zone_TM_A_real zone_tm_g_3" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1742.5" y="1211.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Emperth, Norhoop</text>
-  </a>
   <a href="/zones/zone-gamma-tc-z100/" title="zone_gamma_tc_z100">
-  <circle cx="1856.5" cy="857.5" r="18" data-ltp="0 2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1856.5" cy="857.5" r="18" data-eid="125" data-ltp="0 2" data-dests="zone_gamma_tc_z100" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1856.5" y="826.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z100</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

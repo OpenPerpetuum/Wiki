@@ -301,6 +301,16 @@ public static class ZonesMapPage
             StringComparer.Ordinal);
         var plotted = all.Where(z => connected.Contains(z.Name)).ToList();
         var plottedSet = new HashSet<string>(plotted.Select(z => z.Name), StringComparer.Ordinal);
+        // Outgoing destinations per island (the selector's data): an island
+        // with two or more destinations gets a data-dests attribute, and
+        // static/map.js opens a destination selector on hover/tap instead of
+        // letting a tap guess a destination. Each TP line carries data-tpd
+        // with its destination so the selector can emphasise it.
+        var destsBySrc = tps.Where(t => plottedSet.Contains(t.Src) && plottedSet.Contains(t.Dst))
+            .GroupBy(t => t.Src)
+            .ToDictionary(g => g.Key,
+                g => g.Select(t => t.Dst).Distinct(StringComparer.Ordinal).OrderBy(d => d, StringComparer.Ordinal).ToList(),
+                StringComparer.Ordinal);
         sb.Append($"<svg viewBox=\"0 0 {vbW:0} {vbH:0}\" role=\"img\" aria-label=\"Map of all game zones with teleport connections, at their grid positions, coastline outlines colored by galaxy family\" class=\"zonemap\" xmlns=\"http://www.w3.org/2000/svg\">\n");
         sb.Append("  <title>Map of all game zones with teleport connections, at their grid positions</title>\n");
         // Inter-zone TP lines, dashed and gradient-colored from the source
@@ -346,7 +356,12 @@ public static class ZonesMapPage
             if (fontSize < 0.9) fontSize = 0.9;
             var text = $"<text x=\"{x1:0.#}\" y=\"{y1 - size / 2 - 1.2:0.#}\" text-anchor=\"middle\" font-size=\"{fontSize:0.##}\" class=\"zonemap-label\">{displayName}</text>";
             var href = PageLink(z.Name);
-            sb.Append($"  <a href=\"{href}\"><g>{shape}{image}{text}</g></a>\n");
+            var destsJoined = destsBySrc.TryGetValue(z.Name, out var dd) && dd.Count > 0 ? string.Join(' ', dd) : null;
+            var destsAttr = destsJoined is null ? "" : $" data-dests=\"{destsJoined}\"";
+            // data-zn: this island's zone name — the selector only
+            // emphasises TP lines that START at the hovered island (two
+            // islands may share a destination)
+            sb.Append($"  <a href=\"{href}\" data-zn=\"{z.Name}\"{destsAttr}><g>{shape}{image}{text}</g></a>\n");
         }
         for (var i = 0; i < tps.Count; i++)
         {
@@ -355,7 +370,7 @@ public static class ZonesMapPage
             if (!byName.TryGetValue(l.Src, out var s) || !byName.TryGetValue(l.Dst, out var d)) continue;
             var (ax, ay) = End(s, l.Sx, l.Sy);
             var (bx, by) = End(d, l.Tx, l.Ty);
-            sb.Append($"  <line x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\" class=\"zonemap-tp\" stroke=\"url(#tpg{i})\">" +
+            sb.Append($"  <line x1=\"{ax:0.#}\" y1=\"{ay:0.#}\" x2=\"{bx:0.#}\" y2=\"{by:0.#}\" class=\"zonemap-tp\" data-tps=\"{l.Src}\" data-tpd=\"{l.Dst}\" stroke=\"url(#tpg{i})\">" +
                       $"<title>{l.Src} — {l.Dst} ({l.Tps} TP point{(l.Tps > 1 ? "s" : "")})</title></line>\n");
         }
         // Gate links only where the source island is on the map at all.

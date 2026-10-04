@@ -686,7 +686,7 @@ def rebuild(path, name2slug, slug2id, slug2size):
             if last_shape is None:
                 out.append("  " + markup("text", at, txt))
                 continue
-            kind_name, shape_mup, growth = last_shape  # already classified
+            kind_name, shape_mup, growth, multidest = last_shape  # already classified
             # labels sit above their point: lift them by the radius growth
             if not already and growth and "y" in at:
                 at["y"] = _fmt(float(at["y"]) - growth)
@@ -701,7 +701,11 @@ def rebuild(path, name2slug, slug2id, slug2size):
                 at["stroke-linejoin"] = "round"
             if at.get("fill") == "#d5dbe8":
                 at["fill"] = "#eef4fd"  # brighter over the new backgrounds
-            href = resolve(label_names(kind_name, txt), name2slug)
+            # A multi-destination column (data-dests with 2+ names) is NOT
+            # wrapped in an <a>: static/map.js opens a destination selector
+            # on hover/tap and a click must never guess a destination (the
+            # single-destination case keeps its plain link).
+            href = None if multidest else resolve(label_names(kind_name, txt), name2slug)
             if href:
                 out.append(f'  <a href="{href}" title="{esc(txt)}">')
             out.append("  " + shape_mup)
@@ -722,7 +726,8 @@ def rebuild(path, name2slug, slug2id, slug2size):
                 at["r"] = _fmt(float(at["r"]) + growth)
             if not already and kind in ("circle", "path") and "stroke-width" in at:
                 at["stroke-width"] = _fmt(float(at["stroke-width"]) * 1.25)
-            last_shape = (shape_kind, markup(kind, at), growth)
+            multidest = kind == "circle" and len(at.get("data-dests", "").split()) >= 2
+            last_shape = (shape_kind, markup(kind, at), growth, multidest)
 
     if last_shape is not None:
         out.append("  " + last_shape[1])

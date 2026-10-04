@@ -99,6 +99,14 @@ public static class ZonePages
         if (maps.TryGetValue(name, out var svg))
         {
             var slug = name.ToLowerInvariant().Replace("_", "-");
+            // A small horizontal card above the map linking to the world map
+            // (the zone's place in the galaxy + the inter-zone connections).
+            sb.Append("<div class=\"worldmap-card\">\n");
+            sb.Append("  <a href=\"/zones/map/\">\n");
+            sb.Append("    <img src=\"/world-map-thumb.png\" alt=\"\" loading=\"lazy\">\n");
+            sb.Append("    <span class=\"worldmap-card-body\"><strong>World map</strong> — where this zone sits among all the others, with the teleport connections. Open the full map.</span>\n");
+            sb.Append("  </a>\n");
+            sb.Append("</div>\n\n");
             sb.Append($"![Teleport columns in {title}](/zonemaps/{slug}.svg)\n\n");
             sb.Append(MapCaption(svg.Contains("ltp-line")));
         }

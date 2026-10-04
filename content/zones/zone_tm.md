@@ -8,6 +8,13 @@ extra:
 
 # New Virginia (zone_TM) — worked example
 
+<div class="worldmap-card">
+  <a href="/zones/map/">
+    <img src="/world-map-thumb.png" alt="" loading="lazy">
+    <span class="worldmap-card-body"><strong>World map</strong> — where this zone sits among all the others, with the teleport connections. Open the full map.</span>
+  </a>
+</div>
+
 ![Teleport columns in New Virginia](/zonemaps/zone-tm.svg)
 
 Where this zone's teleport columns stand (dots, labelled with the destination — dimmed where

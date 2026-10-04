@@ -75,7 +75,9 @@ test('teleport elements are clickable and lead to the right zone page', async ({
   await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
   await page.locator('.zonetp-wrap').waitFor({ state: 'visible', timeout: 10000 });
   const links = page.locator('.zonetp-wrap svg a');
-  expect(await links.count()).toBeGreaterThanOrEqual(5);
+  // single-destination columns are plain links (multi-destination columns
+  // carry no <a> at all — the destination selector handles them instead)
+  expect(await links.count()).toBeGreaterThan(0);
   const hrefs = await links.evaluateAll((as) => as.map((a) => a.getAttribute('href')));
   for (const h of hrefs) expect(h).toMatch(/^\/zones\/[^/]+\/$/);
 
@@ -169,4 +171,74 @@ test('wheel over the zone map zooms it, not the page', async ({ page, baseURL })
   const t = await wrap.locator('svg.zonemap').evaluate((el) => el.style.transform);
   expect(y1).toBe(y0); // page did not scroll
   expect(t).toMatch(/scale\((1\.[1-9]|[2-9])/);
+});
+
+// A teleport column that reaches MORE THAN ONE other zone is not a plain
+// link: hovering (or tapping) it opens a destination selector, hovering an
+// entry emphasises only the dashed exit line to that destination, and
+// clicking an entry navigates to the destination's zone page.
+test('multi-destination column: hover opens the destination selector', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
+  await expect(page.locator('svg.zonemap')).toBeVisible();
+  const info = await page.evaluate(() => {
+    const els = [...document.querySelectorAll('svg.zonemap circle[data-dests]')];
+    const el = els.find(c => (c.getAttribute('data-dests') || '').split(/\s+/).filter(Boolean).length >= 2);
+    if (!el) return null;
+    el.scrollIntoView({ block: 'center' });
+    const b = el.getBoundingClientRect();
+    return { x: b.left + b.width / 2, y: b.top + b.height / 2, dests: el.getAttribute('data-dests').split(/\s+/).filter(Boolean), wrapped: !!el.closest('a') };
+  });
+  expect(info).toBeTruthy();
+  // a multi-destination column is NOT wrapped in an <a>: a click must never
+  // guess a destination (single-destination columns keep their plain link)
+  expect(info.wrapped).toBe(false);
+  await page.mouse.move(info.x, info.y);
+  const pop = page.locator('.tp-sel');
+  await expect(pop).toBeVisible();
+  const entries = pop.locator('.tp-sel-item');
+  expect(await entries.count()).toBe(info.dests.length);
+  // all exit lines to this column's destinations are emphasised while open
+  const onAll = await page.evaluate(() => [...document.querySelectorAll('svg.zonemap line.tp-sel-on')].map(l => l.getAttribute('data-tpd')).sort());
+  expect(onAll).toEqual(info.dests.slice().sort());
+  // hovering one entry emphasises ONLY that line
+  await entries.nth(0).hover();
+  const onOne = await page.evaluate(() => [...document.querySelectorAll('svg.zonemap line.tp-sel-on')].map(l => l.getAttribute('data-tpd')));
+  expect(onOne).toEqual([info.dests[0]]);
+  // clicking an entry navigates to the destination's zone page
+  await entries.nth(1).click();
+  await page.waitForURL(/\/zones\/.+\//);
+  expect(page.url()).toContain('/zones/' + info.dests[1].toLowerCase().replace(/_/g, '-') + '/');
+});
+
+test('single-destination columns keep their plain link', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
+  await expect(page.locator('svg.zonemap')).toBeVisible();
+  const check = await page.evaluate(() => {
+    const links = [...document.querySelectorAll('svg.zonemap a[href*="/zones/"] circle[data-dests]')];
+    if (!links.length) return null;
+    return links.every(el => (el.getAttribute('data-dests') || '').split(/\s+/).filter(Boolean).length === 1);
+  });
+  expect(check).toBe(true);
+});
+
+test('LTP endpoints: no link, no selector, no click action', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
+  await expect(page.locator('svg.zonemap')).toBeVisible();
+  const r = await page.evaluate(() => {
+    const el = [...document.querySelectorAll('svg.zonemap circle[data-ltp]:not([data-dests])')].find(c => c.getAttribute('opacity') !== '0.55');
+    if (!el) return null;
+    el.scrollIntoView({ block: 'center' });
+    const b = el.getBoundingClientRect();
+    return { x: b.left + b.width / 2, y: b.top + b.height / 2 };
+  });
+  expect(r).toBeTruthy();
+  await page.mouse.move(r.x, r.y);
+  await page.waitForTimeout(250);
+  // a local (in-zone) teleport never opens the selector...
+  expect(await page.locator('.tp-sel').isVisible()).toBe(false);
+  // ...and a click on the column does not navigate
+  const before = page.url();
+  await page.mouse.click(r.x, r.y);
+  await page.waitForTimeout(200);
+  expect(page.url()).toBe(before);
 });

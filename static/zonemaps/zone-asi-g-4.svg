@@ -16,19 +16,19 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
-  <line class="exi-line" x1="156.5" y1="952.5" x2="0" y2="1045.6" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1710.5" y1="785.5" x2="1976.3" y2="2048" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="845.5" y1="172.5" x2="1240.3" y2="2048" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="1730" data-tpd="zone_asi_g_1" x1="156.5" y1="952.5" x2="0" y2="1045.6" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="1731" data-tpd="zone_ASI_A_real" x1="1710.5" y1="785.5" x2="1976.3" y2="2048" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="2558" data-tpd="zone_ASI_A_real" x1="845.5" y1="172.5" x2="1240.3" y2="2048" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <a href="/zones/zone-asi-g-1/" title="Rhaoshan">
-  <circle cx="156.5" cy="952.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="156.5" cy="952.5" r="18" data-eid="1730" data-dests="zone_asi_g_1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="156.5" y="921.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Rhaoshan</text>
   </a>
   <a href="/zones/zone-asi-a-real/" title="Hokkogaros">
-  <circle cx="845.5" cy="172.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="845.5" cy="172.5" r="18" data-eid="2558" data-dests="zone_ASI_A_real" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="845.5" y="141.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hokkogaros</text>
   </a>
   <a href="/zones/zone-asi-a-real/" title="Hokkogaros">
-  <circle cx="1710.5" cy="785.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1710.5" cy="785.5" r="18" data-eid="1731" data-dests="zone_ASI_A_real" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1710.5" y="754.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hokkogaros</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

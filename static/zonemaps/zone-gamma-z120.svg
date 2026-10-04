@@ -16,20 +16,20 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
-  <line class="exi-line" x1="460.5" y1="270.5" x2="516.1" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1547.5" y1="1408.5" x2="2048" y2="2018.9" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="254.5" y1="1387.5" x2="-0" y2="1635.2" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="5657" data-tpd="zone_gamma_z121" x1="460.5" y1="270.5" x2="516.1" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="5659" data-tpd="zone_gamma_tc_z102" x1="1547.5" y1="1408.5" x2="2048" y2="2018.9" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="5660" data-tpd="zone_gamma_z119" x1="254.5" y1="1387.5" x2="-0" y2="1635.2" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <a href="/zones/zone-gamma-z119/" title="zone_gamma_z119">
-  <circle cx="254.5" cy="1387.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="254.5" cy="1387.5" r="18" data-eid="5660" data-dests="zone_gamma_z119" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="254.5" y="1356.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z119</text>
   </a>
   <a href="/zones/zone-gamma-z121/" title="zone_gamma_z121">
-  <circle cx="460.5" cy="270.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="460.5" cy="270.5" r="18" data-eid="5657" data-dests="zone_gamma_z121" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="460.5" y="239.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z121</text>
   </a>
-  <circle cx="1531.5" cy="321.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1531.5" cy="321.5" r="18" data-eid="5658" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-gamma-tc-z102/" title="zone_gamma_tc_z102">
-  <circle cx="1547.5" cy="1408.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1547.5" cy="1408.5" r="18" data-eid="5659" data-dests="zone_gamma_tc_z102" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1547.5" y="1377.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z102</text>
   </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>

@@ -181,7 +181,10 @@ public static class ZoneMapSvg
                     if (dy > 1e-9) t = Math.Min(t, (h - c.Y) / dy);
                     else if (dy < -1e-9) t = Math.Min(t, -c.Y / dy);
                     if (t == double.MaxValue || t <= 0) continue;
-                    sb.Append($"  <line class=\"exi-line\" x1=\"{Fx(c.X)}\" y1=\"{Fx(c.Y)}\" x2=\"{Fx(c.X + dx * t)}\" y2=\"{Fx(c.Y + dy * t)}\" " +
+                    // data-tps: this column's entity id — the selector only
+                    // emphasises lines that START at the hovered column
+                    // (two columns may share a destination)
+                    sb.Append($"  <line class=\"exi-line\" data-tps=\"{c.Eid}\" data-tpd=\"{Escape(dest)}\" x1=\"{Fx(c.X)}\" y1=\"{Fx(c.Y)}\" x2=\"{Fx(c.X + dx * t)}\" y2=\"{Fx(c.Y + dy * t)}\" " +
                               $"stroke=\"{FamilyColor(dest)}\" stroke-width=\"{3 * f}\" stroke-dasharray=\"{Fx(16 * f)} {Fx(12 * f)}\" opacity=\"0.6\"/>\n");
                 }
             }
@@ -247,7 +250,20 @@ public static class ZoneMapSvg
             var ltpAttr = ltpByEid.TryGetValue(c.Eid, out var toks) && toks.Count > 0
                 ? $" data-ltp=\"{string.Join(" ", toks)}\""
                 : "";
-            sb.Append($"  <circle cx=\"{Fx(c.X)}\" cy=\"{Fx(c.Y)}\" r=\"{Fx(r)}\"{ltpAttr} fill=\"{color}\" stroke=\"#10151f\" stroke-width=\"{2 * f}\" opacity=\"{(c.Enabled ? 1 : 0.55)}\"/>\n");
+            // data-dests: the destinations in OTHER zones, one per exit line
+            // (data-tpd). With two or more, static/map.js opens a destination
+            // selector on hover/tap instead of a plain link — and the Python
+            // post-processor then leaves the column UNLINKED (no <a>), so a
+            // click never reloads to a guessed destination. LTP endpoints
+            // (no external destination) carry no data-dests at all: no link,
+            // no selector, no action.
+            var extDests = c.Dests.Where(d => d != name)
+                .Distinct(StringComparer.Ordinal)
+                .OrderBy(d => d, StringComparer.Ordinal)
+                .ToList();
+            var destsJoined = extDests.Count > 0 ? string.Join(' ', extDests.Select(Escape)) : null;
+            var destsAttr = destsJoined is null ? "" : $" data-dests=\"{destsJoined}\"";
+            sb.Append($"  <circle cx=\"{Fx(c.X)}\" cy=\"{Fx(c.Y)}\" r=\"{Fx(r)}\" data-eid=\"{c.Eid}\"{ltpAttr}{destsAttr} fill=\"{color}\" stroke=\"#10151f\" stroke-width=\"{2 * f}\" opacity=\"{(c.Enabled ? 1 : 0.55)}\"/>\n");
             if (label.Length > 0)
                 sb.Append($"  <text x=\"{Fx(c.X)}\" y=\"{Fx(ty)}\" font-size=\"{Fx(fs)}\" fill=\"#d5dbe8\" text-anchor=\"middle\" font-family=\"sans-serif\" opacity=\"{(c.Enabled ? 1 : 0.55)}\">{Escape(label)}</text>\n");
         }

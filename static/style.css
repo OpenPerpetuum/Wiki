@@ -832,6 +832,52 @@ html[data-theme="light"][data-cb="achro"] {
    eat pointer events (the columns and spots are the clickable elements). */
 .zonetp-wrap .exi-line { pointer-events: none; opacity: 0.75; transition: opacity 0.15s; }
 .zonetp-wrap .zm-casing { pointer-events: none; }
+/* the destination selector (map.js): while it is open the dashed lines of
+   the hovered/tapped item are emphasised — .tp-sel-on on the exit lines
+   (zone maps) and the inter-zone TP lines (world map); hovering one entry
+   in the selector keeps only THAT line emphasised. */
+.zonetp-wrap .exi-line.tp-sel-on { opacity: 1; }
+.zonemap-tp.tp-sel-on { stroke-opacity: 1; stroke-width: 1.8; }
+/* the destination-selector popover (inside the map wrap, absolute) */
+.tp-sel {
+    position: absolute; z-index: 40; display: none;
+    min-width: 132px; max-width: 230px;
+    background: rgba(7, 12, 22, 0.96);
+    border: 1px solid var(--neon-dim);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    font-size: 0.78rem; line-height: 1.35;
+    color: var(--chrome-fg);
+}
+.tp-sel-head {
+    padding: 2px 8px 4px;
+    font-size: 0.66rem; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--chrome-muted);
+}
+.tp-sel-item {
+    display: block; width: 100%; text-align: left;
+    padding: 4px 8px; margin: 1px 0;
+    background: none; border: 0; border-radius: 6px;
+    color: var(--chrome-fg); font: inherit; cursor: pointer;
+}
+.tp-sel-item:hover, .tp-sel-item:focus-visible {
+    background: var(--neon-faint); color: var(--neon); outline: none;
+}
+/* world-map card: the small horizontal link to /zones/map/ that every
+   zone page carries above its own teleport map */
+.worldmap-card { margin: 0.4rem 0 0.7rem; }
+.worldmap-card a {
+    display: flex; align-items: center; gap: 0.8rem;
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 0.45rem 0.65rem;
+    background: var(--bg-soft);
+    transition: border-color 0.15s ease;
+}
+.worldmap-card a:hover { border-color: var(--neon-dim); }
+.worldmap-card img { height: 56px; width: auto; border-radius: 4px; display: block; flex: none; }
+.worldmap-card-body { font-size: 0.85rem; color: var(--muted); }
+.worldmap-card-body strong { color: var(--fg); }
 /* world map sub-sections: zone cards (thumbnail = the coastline-only
    thumb.png), small enough for 3-4 per row */
 .zone-cards {

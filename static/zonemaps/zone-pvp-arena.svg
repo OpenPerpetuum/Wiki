@@ -24,7 +24,7 @@
   <path d="M 942 973.8 L 961.2 993 L 942 1012.2 L 922.8 993 Z" fill="#f5a05a" stroke="#10151f" stroke-width="2.5"/>
   <text x="942" y="1038.2" font-size="27.04" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">exit → Hershfield</text>
   </a>
-  <circle cx="1108" cy="1048" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <circle cx="1108" cy="1048" r="18" fill="#5b6478" stroke="#10151f" stroke-width="2.5" opacity="0.55"/>
+  <circle cx="1108" cy="1048" r="18" data-eid="50000" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1108" cy="1048" r="18" data-eid="2557" fill="#5b6478" stroke="#10151f" stroke-width="2.5" opacity="0.55"/>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
 </svg>

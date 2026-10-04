@@ -16,13 +16,13 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
-  <line class="exi-line" x1="1778.5" y1="539.5" x2="151.6" y2="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1778.5" y1="539.5" x2="1778.5" y2="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1746.5" y1="1303.5" x2="2048" y2="1416.6" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="532.5" y1="1425.5" x2="332.3" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="449.5" y1="1663.5" x2="0" y2="1514.4" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="449.5" y1="1663.5" x2="449.5" y2="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
-  <line class="exi-line" x1="1178.5" y1="1689.5" x2="2048" y2="2015.6" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="114" data-tpd="zone_asi_g_1" x1="1778.5" y1="539.5" x2="151.6" y2="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="114" data-tpd="zone_ASI_A_real" x1="1778.5" y1="539.5" x2="1778.5" y2="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="117" data-tpd="zone_TM_A_real" x1="1746.5" y1="1303.5" x2="2048" y2="1416.6" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="118" data-tpd="zone_gamma_tc_z102" x1="532.5" y1="1425.5" x2="332.3" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="120" data-tpd="zone_asi_g_1" x1="449.5" y1="1663.5" x2="0" y2="1514.4" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="120" data-tpd="zone_ASI_A_real" x1="449.5" y1="1663.5" x2="449.5" y2="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="121" data-tpd="zone_TM_A_real" x1="1178.5" y1="1689.5" x2="2048" y2="2015.6" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <line class="ltp-line ltp-casing zm-casing" x1="598.5" y1="733.5" x2="1504.5" y2="858.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="598.5" y1="733.5" x2="1504.5" y2="858.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
   <line class="ltp-line ltp-casing zm-casing" x1="598.5" y1="733.5" x2="1418.5" y2="1484.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
@@ -49,28 +49,24 @@
   <circle cx="1515" cy="889" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="1515" y="850" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Kentagura</text>
   </a>
-  <a href="/zones/zone-asi-g-1/" title="Rhaoshan, Hokkogaros">
-  <circle cx="449.5" cy="1663.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="449.5" cy="1663.5" r="18" data-eid="120" data-dests="zone_ASI_A_real zone_asi_g_1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="449.5" y="1632.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Rhaoshan, Hokkogaros</text>
-  </a>
   <a href="/zones/zone-gamma-tc-z102/" title="zone_gamma_tc_z102">
-  <circle cx="532.5" cy="1425.5" r="18" data-ltp="2" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="532.5" cy="1425.5" r="18" data-eid="118" data-ltp="2" data-dests="zone_gamma_tc_z102" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="532.5" y="1394.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z102</text>
   </a>
-  <circle cx="598.5" cy="733.5" r="18" data-ltp="0 1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="598.5" cy="733.5" r="18" data-eid="115" data-ltp="0 1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-tm-a-real/" title="Norhoop">
-  <circle cx="1178.5" cy="1689.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1178.5" cy="1689.5" r="18" data-eid="121" data-dests="zone_TM_A_real" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1178.5" y="1658.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
   </a>
-  <circle cx="1418.5" cy="1484.5" r="18" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
-  <circle cx="1504.5" cy="858.5" r="18" data-ltp="0 2" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1418.5" cy="1484.5" r="18" data-eid="119" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1504.5" cy="858.5" r="18" data-eid="116" data-ltp="0 2" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-tm-a-real/" title="Norhoop">
-  <circle cx="1746.5" cy="1303.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1746.5" cy="1303.5" r="18" data-eid="117" data-dests="zone_TM_A_real" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1746.5" y="1272.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
   </a>
-  <a href="/zones/zone-asi-g-1/" title="Rhaoshan, Hokkogaros">
-  <circle cx="1778.5" cy="539.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1778.5" cy="539.5" r="18" data-eid="114" data-dests="zone_ASI_A_real zone_asi_g_1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="1778.5" y="508.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Rhaoshan, Hokkogaros</text>
-  </a>
   <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
 </svg>
