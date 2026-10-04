@@ -780,12 +780,16 @@ def main():
     print(f"name map: {len(name2slug)} zones, {len(slug2id)} with ids")
     print(f"assets: {os.path.abspath(ASSETS)}")
     files = sorted(f for f in os.listdir(ZONEMAPS) if f.endswith(".svg"))
-    # zones on the world map (ZonesMapPage.cs) without their own teleport map
-    # (the strongholds: no teleport columns inside them) — the world map and
-    # the zone cards still need their world.png/thumb.png
-    world_slugs = set(re.findall(r'/zonemaps/([a-z0-9-]+)/thumb\.png',
-                                 open(os.path.join(ROOT, "content", "zones", "map.md"), encoding="utf-8").read()))
-    for slug in sorted(world_slugs - {f[:-4] + "/" for f in files}):
+    # zones without their own teleport map (the strongholds have no teleport
+    # columns inside them, and some islands are off the world map) — the
+    # family-page cards still need their world.png/thumb.png. meta.tsv is
+    # the full zone list; the old map.md scan is kept as fallback.
+    svgs = {f[:-4] + "/" for f in files}
+    meta_slugs = {u.rstrip("/").split("/")[-1] + "/" for u in name2slug.values() if u != "/"}
+    if not meta_slugs:
+        meta_slugs = set(re.findall(r'/zonemaps/([a-z0-9-]+)/thumb\.png',
+                                    open(os.path.join(ROOT, "content", "zones", "map.md"), encoding="utf-8").read()))
+    for slug in sorted(meta_slugs - svgs):
         d = os.path.join(ZONEMAPS, slug.rstrip("/"))
         os.makedirs(d, exist_ok=True)
         world, thumb = fbm_world_thumb(slug.rstrip("/"))
