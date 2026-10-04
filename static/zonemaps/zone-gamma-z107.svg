@@ -16,6 +16,8 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="1761.5" y1="1192.5" x2="2048" y2="1068.8" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="288.5" y1="1190.5" x2="0" y2="1142.7" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
   <a href="/zones/zone-gamma-z108/" title="zone_gamma_z108">
   <circle cx="288.5" cy="1190.5" r="18" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <text x="288.5" y="1159.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z108</text>

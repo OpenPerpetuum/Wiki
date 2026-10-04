@@ -16,10 +16,17 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="502.5" y1="1416.5" x2="0" y2="1416.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="393.5" y1="614.5" x2="0" y2="614.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="592.5" y1="1628.5" x2="1026.5" y2="989.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="592.5" y1="1628.5" x2="1026.5" y2="989.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1116.5" y1="699.5" x2="1547.5" y2="445.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="1116.5" y1="699.5" x2="1547.5" y2="445.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1452.5" y1="1262.5" x2="1201.5" y2="1001.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="1452.5" y1="1262.5" x2="1201.5" y2="1001.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="943.5" y1="858.5" x2="639.5" y2="591.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="3" x1="943.5" y1="858.5" x2="639.5" y2="591.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <circle class="zm-casing" cx="1082" cy="828" r="30.6" fill="none" stroke="#0a0f18" stroke-width="6.25" stroke-dasharray="7 5" opacity="0.55"/>
   <a href="/zones/zone-training/" title="from Virtual Training Grounds">
   <circle cx="1082" cy="828" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="1082" y="789" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Virtual Training Grounds</text>

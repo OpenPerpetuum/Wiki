@@ -80,32 +80,41 @@
     }
 
     // Zoom about an arbitrary screen point (the cursor, or the midpoint of
-    // two touch fingers). The CSS transform is translate(tx,ty) scale(s)
-    // about the element center; with rc the *transformed* element center
-    // (getBoundingClientRect includes the transform) and E0 = rc - t the
-    // untransformed one, a content point p sits at E0 + t + s*p. Keeping the
-    // point under the screen point C fixed: p = (C - rc)/s and
-    // t' = C - E0 - ns*p = C - rc + t - ns*p.
-    // The transform is applied about the ELEMENT center (transform-origin),
-    // which is the element box's center — getBoundingClientRect includes the
-    // transform, so its center is exactly that point in any state. The
-    // letterboxed content is centered in the element, so the content's
-    // screen center is this point; content point p (px) lands at
-    // (rect center) + (t) + s*p.
+    // two touch fingers) — the point under the mouse stays under the mouse.
+    //
+    // The CSS transform is translate(tx,ty) scale(s) with the default
+    // transform-origin: the ELEMENT box center. So with C0 the element
+    // center at the IDENTITY transform, a content point p (screen coords
+    // at identity) lands at:
+    //
+    //     screen(p) = C0 + t + s * (p - C0)          (1)
+    //
+    // getBoundingClientRect includes the transform, and scaling about the
+    // center leaves the center fixed, so the rect center is C0 + t — which
+    // gives C0 = rectCenter - t. The content point currently under the
+    // screen point C (from (1)):
+    //
+    //     p - C0 = (C - C0 - t) / s                  (2)
+    //
+    // For the new scale s' to keep that point under C, solve (1) for t':
+    //
+    //     t' = C - C0 - s' * (p - C0)               (3)
+    //
+    // (Earlier code anchored (C - C0)/s instead of (2) — off by t/s in
+    // content space, so after any pan the wheel zoom drifted toward the
+    // map center instead of following the cursor.)
     function zoomAt(wrap, clientX, clientY, factor) {
         var svg = wrap._zoomSvg, st = stateOf(wrap);
         var rect = svg.getBoundingClientRect();
-        var rcx = rect.left + rect.width / 2;
-        var rcy = rect.top + rect.height / 2;
+        var c0x = rect.left + rect.width / 2 - st.tx;  // identity center
+        var c0y = rect.top + rect.height / 2 - st.ty;
         var cap = wrap._zmPrezoomed ? MAX : Math.min(MAX, INITIAL_MAX);
         var ns = Math.min(cap, Math.max(MIN, st.s * factor));
         if (ns === st.s) return;
-        // E0 (the untransformed content center) = rc - (tx, ty); keep the
-        // content point under the cursor fixed: t' = C - E0 - ns*p.
-        var contentX = (clientX - (rcx - st.tx)) / st.s;
-        var contentY = (clientY - (rcy - st.ty)) / st.s;
-        st.tx = st.tx + clientX - rcx - ns * contentX;
-        st.ty = st.ty + clientY - rcy - ns * contentY;
+        var qx = (clientX - c0x - st.tx) / st.s;  // (2), relative to C0
+        var qy = (clientY - c0y - st.ty) / st.s;
+        st.tx = clientX - c0x - ns * qx;          // (3)
+        st.ty = clientY - c0y - ns * qy;
         st.s = ns;
         clamp(wrap);
         applyWrap(wrap);

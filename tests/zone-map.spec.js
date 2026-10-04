@@ -127,6 +127,33 @@ test('local teleport lines are visible and light up near their endpoint columns'
   }, { timeout: 3000 }).toBe(true);
 });
 
+test('exit teleports point at the map edge toward their world-map direction', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
+  await page.locator('.zonetp-wrap').waitFor({ state: 'visible', timeout: 10000 });
+  const info = await page.evaluate(() => {
+    const svg = document.querySelector('.zonetp-wrap svg.zonemap');
+    const vb = svg.viewBox.baseVal;
+    const vw = vb.width, vh = vb.height;
+    const fams = ['#41d3ff', '#6ee7a0', '#f5a05a', '#a78bfa', '#c8d2e0'];
+    const lines = [...svg.querySelectorAll('line.exi-line')];
+    return {
+      count: lines.length,
+      colorsOk: lines.every((l) => fams.includes(l.getAttribute('stroke'))),
+      onBorder: lines.filter((l) => {
+        const x = parseFloat(l.getAttribute('x2')), y = parseFloat(l.getAttribute('y2'));
+        return Math.abs(x) < 0.01 || Math.abs(y) < 0.01 ||
+               Math.abs(x - vw) < 0.01 || Math.abs(y - vh) < 0.01;
+      }).length,
+      casings: svg.querySelectorAll('.ltp-casing').length,
+      ltps: svg.querySelectorAll('.ltp-line[data-ltp]').length,
+    };
+  });
+  expect(info.count).toBeGreaterThan(0);
+  expect(info.colorsOk).toBe(true);
+  expect(info.onBorder).toBe(info.count); // every line reaches the map edge
+  expect(info.casings).toBe(info.ltps); // one dark casing per local line
+});
+
 test('wheel over the zone map zooms it, not the page', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${ZONE}`, { waitUntil: 'networkidle' });
   const wrap = page.locator('.zonetp-wrap');

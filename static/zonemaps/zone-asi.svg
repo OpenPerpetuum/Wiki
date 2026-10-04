@@ -16,9 +16,13 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1394.5" y1="789.5" x2="833.5" y2="1162.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="1394.5" y1="789.5" x2="833.5" y2="1162.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="455.5" y1="411.5" x2="556.5" y2="1263.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="455.5" y1="411.5" x2="556.5" y2="1263.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1655.5" y1="1540.5" x2="803.5" y2="1382.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="1655.5" y1="1540.5" x2="803.5" y2="1382.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="712.5" y1="1162.5" x2="1065.5" y2="516.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="3" x1="712.5" y1="1162.5" x2="1065.5" y2="516.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
   <circle cx="455.5" cy="411.5" r="18" data-ltp="1" fill="#5b6478" stroke="#10151f" stroke-width="2.5" opacity="0.55"/>
   <circle cx="556.5" cy="1263.5" r="18" data-ltp="1" fill="#5b6478" stroke="#10151f" stroke-width="2.5" opacity="0.55"/>

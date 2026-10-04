@@ -155,6 +155,34 @@ test('wheel over the map zooms the map and does not scroll the page', async ({ p
   expect(out.scale).toBeLessThan(in_.scale);
 });
 
+test('wheel zoom keeps the point under the cursor fixed (mouse-anchored)', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${MAP}`);
+  const wrap = page.locator('.zonemap-wrap');
+  await wrap.scrollIntoViewIfNeeded();
+  await page.waitForTimeout(100);
+  const box = await wrap.boundingBox();
+  const px = box.x + box.width * 0.62, py = box.y + box.height * 0.4;
+  // content (viewBox) coordinates under the cursor, via the svg's screen CTM
+  // (which includes the CSS transform)
+  const underCursor = () => page.evaluate(([x, y]) => {
+    const svg = document.querySelector('.zonemap');
+    const p = new DOMPoint(x, y).matrixTransform(svg.getScreenCTM().inverse());
+    return { x: p.x, y: p.y };
+  }, [px, py]);
+  await page.mouse.move(px, py);
+  const a0 = await underCursor();
+  await page.mouse.wheel(0, -300);
+  await page.waitForTimeout(80);
+  const a1 = await underCursor();
+  await page.mouse.wheel(0, -300); // again — the drift bug only shows once t != 0
+  await page.waitForTimeout(80);
+  const a2 = await underCursor();
+  for (const [name, pt] of [['first zoom', a1], ['second zoom', a2]]) {
+    expect(Math.abs(a0.x - pt.x), name + ' x').toBeLessThan(0.75);
+    expect(Math.abs(a0.y - pt.y), name + ' y').toBeLessThan(0.75);
+  }
+});
+
 test('wheel outside the map still scrolls the page', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}${MAP}`);
   const section = page.locator('.zonemap-legend');

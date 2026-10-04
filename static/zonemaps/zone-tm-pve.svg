@@ -16,9 +16,20 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="1388.5" y1="193.5" x2="2033.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1388.5" y1="193.5" x2="1558.8" y2="-0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="307.5" y1="1758.5" x2="404" y2="2048" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="308.5" y1="412.5" x2="0" y2="258.2" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1626.5" y1="1381.5" x2="2048" y2="1381.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1626.5" y1="1381.5" x2="2048" y2="1840.9" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="350.5" y1="554.5" x2="0" y2="554.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="950.5" y1="891.5" x2="509.5" y2="1793.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="950.5" y1="891.5" x2="509.5" y2="1793.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1042.5" y1="788.5" x2="1359.5" y2="1395.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="1042.5" y1="788.5" x2="1359.5" y2="1395.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="484.5" y1="603.5" x2="829.5" y2="782.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="484.5" y1="603.5" x2="829.5" y2="782.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1272.5" y1="256.5" x2="947.5" y2="682.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="3" x1="1272.5" y1="256.5" x2="947.5" y2="682.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-tm-a-real/" title="Norhoop">
   <circle cx="307.5" cy="1758.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>

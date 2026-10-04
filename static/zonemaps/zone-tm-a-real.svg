@@ -16,8 +16,21 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="597.5" y1="341.5" x2="483.7" y2="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="597.5" y1="341.5" x2="0" y2="117.4" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1620.5" y1="652.5" x2="2048" y2="690.4" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1620.5" y1="652.5" x2="1403" y2="0" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1620.5" y1="652.5" x2="2048" y2="492.2" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1751.5" y1="1816.5" x2="2048" y2="1842.8" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1751.5" y1="1816.5" x2="2048" y2="1705.3" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="461.5" y1="1232.5" x2="518.3" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="188.5" y1="1725.5" x2="0" y2="1160" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="188.5" y1="1725.5" x2="0" y2="1654.8" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="461.5" y1="1232.5" x2="1066.5" y2="1542.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="461.5" y1="1232.5" x2="1066.5" y2="1542.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1558.5" y1="1648.5" x2="1377.5" y2="927.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="1558.5" y1="1648.5" x2="1377.5" y2="927.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1198.5" y1="793.5" x2="596.5" y2="628.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="1198.5" y1="793.5" x2="596.5" y2="628.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-tm-pve/" title="Hershfield, Kentagura">
   <circle cx="188.5" cy="1725.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>

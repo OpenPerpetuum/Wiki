@@ -16,7 +16,19 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="1416.5" y1="933.5" x2="1874.7" y2="-0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="376.5" y1="558.5" x2="392.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="376.5" y1="558.5" x2="0" y2="671.4" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="376.5" y1="558.5" x2="0" y2="417.3" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1181.5" y1="350.5" x2="1191.6" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1181.5" y1="350.5" x2="246.8" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="504.5" y1="1527.5" x2="0" y2="1678.8" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1703.5" y1="1445.5" x2="1703.5" y2="2048" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1347.5" y1="1838.5" x2="649.2" y2="2048" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1347.5" y1="1838.5" x2="1347.5" y2="2048" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="408.5" y1="772.5" x2="1122.5" y2="803.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="408.5" y1="772.5" x2="1122.5" y2="803.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1082.5" y1="1342.5" x2="560.5" y2="1387.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="1082.5" y1="1342.5" x2="560.5" y2="1387.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-ics-g-3/" title="Kraslovsk, Hershfield…">
   <circle cx="376.5" cy="558.5" r="18" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>

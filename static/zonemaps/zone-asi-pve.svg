@@ -16,10 +16,18 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="1191.5" y1="226.5" x2="1698.8" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1585.5" y1="684.5" x2="2048" y2="684.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1501.5" y1="1666.5" x2="2048" y2="1906.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="887.5" y1="489.5" x2="925.5" y2="966.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="887.5" y1="489.5" x2="925.5" y2="966.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1713.5" y1="494.5" x2="1112.5" y2="951.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="1713.5" y1="494.5" x2="1112.5" y2="951.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1498.5" y1="1481.5" x2="1125.5" y2="1170.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="1498.5" y1="1481.5" x2="1125.5" y2="1170.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="515.5" y1="1639.5" x2="994.5" y2="1194.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="3" x1="515.5" y1="1639.5" x2="994.5" y2="1194.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="933.5" y1="1047.5" x2="511.5" y2="723.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="4" x1="933.5" y1="1047.5" x2="511.5" y2="723.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
   <circle cx="304.5" cy="1565.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <circle cx="446.5" cy="537.5" r="18" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>

@@ -16,8 +16,14 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="334.5" y1="918.5" x2="0" y2="553.9" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1553.5" y1="708.5" x2="1540.2" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="644.5" y1="1466.5" x2="0" y2="1183.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="861.5" y1="1093.5" x2="546.5" y2="1268.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="861.5" y1="1093.5" x2="546.5" y2="1268.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1418.5" y1="1395.5" x2="1011.5" y2="1074.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="1418.5" y1="1395.5" x2="1011.5" y2="1074.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1324.5" y1="721.5" x2="896.5" y2="842.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="1324.5" y1="721.5" x2="896.5" y2="842.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-tm-pve/" title="Hershfield">
   <circle cx="334.5" cy="918.5" r="18" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>

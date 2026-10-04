@@ -16,9 +16,16 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="270.5" y1="975.5" x2="0" y2="1096.3" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1911.5" y1="1000.5" x2="1931.1" y2="2048" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="945.5" y1="1654.5" x2="599.2" y2="2048" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="976.5" y1="1448.5" x2="1098.5" y2="1157.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="976.5" y1="1448.5" x2="1098.5" y2="1157.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="433.5" y1="750.5" x2="847.5" y2="1014.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="433.5" y1="750.5" x2="847.5" y2="1014.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1778.5" y1="1099.5" x2="1223.5" y2="935.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="1778.5" y1="1099.5" x2="1223.5" y2="935.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="983.5" y1="912.5" x2="1448.5" y2="446.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="3" x1="983.5" y1="912.5" x2="1448.5" y2="446.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
   <a href="/zones/zone-asi-pve/" title="Shinjalar">
   <circle cx="270.5" cy="975.5" r="18" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>

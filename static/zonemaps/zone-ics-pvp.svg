@@ -16,17 +16,30 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="1140.5" y1="264.5" x2="1140.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1140.5" y1="264.5" x2="2048" y2="604.8" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1236.5" y1="554.5" x2="1394.8" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="215.5" y1="623.5" x2="0" y2="704.3" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="241.5" y1="1680.5" x2="-0" y2="1771.1" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="968.5" y1="1766.5" x2="968.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="968.5" y1="1766.5" x2="1719.2" y2="2048" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1236.5" y1="554.5" x2="1141.5" y2="1495.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="1236.5" y1="554.5" x2="1141.5" y2="1495.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1236.5" y1="554.5" x2="600.5" y2="1498.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="1236.5" y1="554.5" x2="600.5" y2="1498.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1141.5" y1="1495.5" x2="600.5" y2="1498.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="2" x1="1141.5" y1="1495.5" x2="600.5" y2="1498.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <circle class="zm-casing" cx="564" cy="1500" r="30.6" fill="none" stroke="#0a0f18" stroke-width="6.25" stroke-dasharray="7 5" opacity="0.55"/>
   <a href="/zones/zone-ics-pvp/" title="from Novastrov">
   <circle cx="564" cy="1500" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="564" y="1461" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Novastrov</text>
   </a>
+  <circle class="zm-casing" cx="1204" cy="576" r="30.6" fill="none" stroke="#0a0f18" stroke-width="6.25" stroke-dasharray="7 5" opacity="0.55"/>
   <a href="/zones/zone-ics-pvp/" title="from Novastrov">
   <circle cx="1204" cy="576" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="1204" y="537" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Novastrov</text>
   </a>
+  <circle class="zm-casing" cx="1141" cy="1533" r="30.6" fill="none" stroke="#0a0f18" stroke-width="6.25" stroke-dasharray="7 5" opacity="0.55"/>
   <a href="/zones/zone-ics-pvp/" title="from Novastrov">
   <circle cx="1141" cy="1533" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
   <text x="1141" y="1494" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Novastrov</text>

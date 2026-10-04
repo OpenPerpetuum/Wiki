@@ -31,6 +31,14 @@ public static class ZoneMapSvg
             .GroupBy(r => r.Str("name"))
             .ToDictionary(g => g.Key, g => { var r = g.First(); return (W: r.Int("width"), H: r.Int("height")); });
 
+        // World-grid position of every zone (the same x/y the world map plots
+        // each island at): the exit lines of a zone map point toward the
+        // destination's position ON THE WORLD MAP. Sentinel rows (50000+) are
+        // the duplicate placeholders — excluded, like in ZonesMapPage.
+        var worldPos = db.Query("SELECT name, x, y FROM zones WHERE id < 49000 AND x < 49000 AND y < 49000")
+            .GroupBy(r => r.Str("name"))
+            .ToDictionary(g => g.Key, g => { var r = g.First(); return (X: r.Dbl("x"), Y: r.Dbl("y")); });
+
         // Teleport columns that exist as enabled zone entities.
         var cols = db.Query("""
             SELECT zn.name, e.eid, z.x, z.y, z.enabled
@@ -125,12 +133,15 @@ public static class ZoneMapSvg
             var gateList = gates.Where(g => g.Str("name") == name).Select(g => new Gate(g.Dbl("x"), g.Dbl("y"), g.Str("dst"))).ToList();
             if (colList.Count == 0 && spotList.Count == 0 && gateList.Count == 0) continue;
             var ltpList = localByZone.TryGetValue(name, out var l) ? l : new List<LocalTp>();
-            result[name] = Svg(name, sz.W, sz.H, colList, spotList, gateList, ltpList);
+            result[name] = Svg(name, sz.W, sz.H, colList, spotList, gateList, ltpList,
+                worldPos.TryGetValue(name, out var selfPos) ? selfPos : default,
+                worldPos);
         }
         return result;
     }
 
-    private static string Svg(string name, int w, int h, List<Col> cols, List<Spot> spots, List<Gate> gates, List<LocalTp> localTps)
+    private static string Svg(string name, int w, int h, List<Col> cols, List<Spot> spots, List<Gate> gates, List<LocalTp> localTps,
+        (double X, double Y) selfPos, Dictionary<string, (double X, double Y)> worldPos)
     {
         var f = (double)w / 2048.0; // scale font/radii with the zone size
         var r = 12 * f;
@@ -146,15 +157,48 @@ public static class ZoneMapSvg
             sb.Append($"  <line x1=\"{Fx(gx)}\" y1=\"0\" x2=\"{Fx(gx)}\" y2=\"{h}\" stroke=\"#1d2534\" stroke-width=\"{1 * f}\"/>\n");
             sb.Append($"  <line x1=\"0\" y1=\"{Fx(gy)}\" x2=\"{w}\" y2=\"{Fx(gy)}\" stroke=\"#1d2534\" stroke-width=\"{1 * f}\"/>\n");
         }
-        // local (in-zone) teleport pairs: a hidden dashed line per pair —
-        // static/map.js lights it up while the cursor is near one of the two
-        // endpoint columns (the circles below carry the same data-ltp token).
+        // Exit teleports: every column whose destination sits in ANOTHER zone
+        // gets a dashed line from the column to the map edge, pointing the
+        // way the destination lies on the WORLD MAP (world-grid delta, same
+        // y-down orientation), colored like that destination's island there
+        // (the family color scheme). The line leaves the map area — that is
+        // the point: this column does not land inside this zone.
+        if (selfPos.X != 0 || selfPos.Y != 0)
+        {
+            foreach (var c in cols.Where(c => c.Enabled))
+            {
+                foreach (var dest in c.Dests.Where(d => d != name).Distinct(StringComparer.Ordinal))
+                {
+                    if (!worldPos.TryGetValue(dest, out var dp)) continue;
+                    double dx = dp.X - selfPos.X, dy = dp.Y - selfPos.Y;
+                    var len = Math.Sqrt(dx * dx + dy * dy);
+                    if (len < 1e-6) continue; // same spot on the world map
+                    dx /= len; dy /= len;
+                    // ray from the column to the zone-rect border
+                    var t = double.MaxValue;
+                    if (dx > 1e-9) t = Math.Min(t, (w - c.X) / dx);
+                    else if (dx < -1e-9) t = Math.Min(t, -c.X / dx);
+                    if (dy > 1e-9) t = Math.Min(t, (h - c.Y) / dy);
+                    else if (dy < -1e-9) t = Math.Min(t, -c.Y / dy);
+                    if (t == double.MaxValue || t <= 0) continue;
+                    sb.Append($"  <line class=\"exi-line\" x1=\"{Fx(c.X)}\" y1=\"{Fx(c.Y)}\" x2=\"{Fx(c.X + dx * t)}\" y2=\"{Fx(c.Y + dy * t)}\" " +
+                              $"stroke=\"{FamilyColor(dest)}\" stroke-width=\"{3 * f}\" stroke-dasharray=\"{Fx(16 * f)} {Fx(12 * f)}\" opacity=\"0.6\"/>\n");
+                }
+            }
+        }
+        // local (in-zone) teleport pairs: a dashed line per pair, over a dark
+        // casing line so the dashes read on the bright color-mode terrain —
+        // static/map.js lights the colored line up while the cursor is near
+        // one of the two endpoint columns (the circles below carry the same
+        // data-ltp token).
         for (var i = 0; i < localTps.Count; i++)
         {
             var l = localTps[i];
             // self-closing (no <title> child): tools/gen_zone_teleport_maps.py
             // passes self-closing <line> elements through, but a line with
             // children would fall through its item parser and be dropped
+            sb.Append($"  <line class=\"ltp-line ltp-casing zm-casing\" x1=\"{Fx(l.Ax)}\" y1=\"{Fx(l.Ay)}\" x2=\"{Fx(l.Bx)}\" y2=\"{Fx(l.By)}\" " +
+                      $"stroke=\"#0a0f18\" stroke-width=\"{6 * f}\" stroke-dasharray=\"{Fx(12 * f)} {Fx(9 * f)}\" opacity=\"0.55\"/>\n");
             sb.Append($"  <line class=\"ltp-line\" data-ltp=\"{i}\" x1=\"{Fx(l.Ax)}\" y1=\"{Fx(l.Ay)}\" x2=\"{Fx(l.Bx)}\" y2=\"{Fx(l.By)}\" " +
                       $"stroke=\"{FamilyColor(name)}\" stroke-width=\"{3 * f}\" stroke-dasharray=\"{Fx(12 * f)} {Fx(9 * f)}\"/>\n");
         }
@@ -166,6 +210,7 @@ public static class ZoneMapSvg
             var y = g.Key.Item2;
             var from = g.Select(s => Disp(s.From)).Distinct(StringComparer.Ordinal).ToList();
             var label = from.Count <= 2 ? string.Join(", ", from) : string.Join(", ", from.Take(2)) + "…";
+            sb.Append($"  <circle class=\"zm-casing\" cx=\"{Fx(x)}\" cy=\"{Fx(y)}\" r=\"{Fx(r * 1.7)}\" fill=\"none\" stroke=\"#0a0f18\" stroke-width=\"{5 * f}\" stroke-dasharray=\"{Fx(7 * f)} {Fx(5 * f)}\" opacity=\"0.55\"/>\n");
             sb.Append($"  <circle cx=\"{Fx(x)}\" cy=\"{Fx(y)}\" r=\"{Fx(r * 1.7)}\" fill=\"none\" stroke=\"#c8d2e0\" stroke-width=\"{2 * f}\" stroke-dasharray=\"{Fx(7 * f)} {Fx(5 * f)}\" opacity=\"0.85\"/>\n");
             sb.Append($"  <text x=\"{Fx(x)}\" y=\"{Fx(y - r * 2.4)}\" font-size=\"{Fx(fs * 0.8)}\" fill=\"#8b93a5\" text-anchor=\"middle\" font-family=\"sans-serif\">from {Escape(label)}</text>\n");
         }

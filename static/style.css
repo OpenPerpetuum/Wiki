@@ -825,6 +825,13 @@ html[data-theme="light"][data-cb="achro"] {
 .zonetp-wrap .ltp-line { opacity: 0.85; transition: opacity 0.15s; pointer-events: none; }
 .zonetp-wrap .ltp-line.ltp-on { opacity: 1; }
 .zonetp-wrap .ltp-dot { pointer-events: none; stroke: rgba(0, 0, 0, 0.5); stroke-width: 1; }
+/* exit teleports: a dashed line from the column to the map edge, pointing
+   the way the destination zone lies on the world map (family color stroke).
+   Dark casings under the ltp lines / landing-spot circles keep the dashes
+   readable on the bright color-mode terrain. Neither kind of helper may
+   eat pointer events (the columns and spots are the clickable elements). */
+.zonetp-wrap .exi-line { pointer-events: none; opacity: 0.75; transition: opacity 0.15s; }
+.zonetp-wrap .zm-casing { pointer-events: none; }
 /* world map sub-sections: zone cards (thumbnail = the coastline-only
    thumb.png), small enough for 3-4 per row */
 .zone-cards {

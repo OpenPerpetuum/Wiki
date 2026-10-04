@@ -16,6 +16,10 @@
   <line x1="0" y1="192" x2="256" y2="192" stroke="#1d2534" stroke-width="0.125"/>
   <line x1="224" y1="0" x2="224" y2="256" stroke="#1d2534" stroke-width="0.125"/>
   <line x1="0" y1="224" x2="256" y2="224" stroke="#1d2534" stroke-width="0.125"/>
+  <line class="exi-line" x1="139.5" y1="131.5" x2="193.4" y2="256" stroke="#a78bfa" stroke-width="0.375" stroke-dasharray="2 1.5" opacity="0.6"/>
+  <line class="exi-line" x1="139.5" y1="131.5" x2="0" y2="81.4" stroke="#a78bfa" stroke-width="0.375" stroke-dasharray="2 1.5" opacity="0.6"/>
+  <line class="exi-line" x1="139.5" y1="131.5" x2="256" y2="68" stroke="#a78bfa" stroke-width="0.375" stroke-dasharray="2 1.5" opacity="0.6"/>
+  <line class="exi-line" x1="139.5" y1="131.5" x2="114.1" y2="256" stroke="#41d3ff" stroke-width="0.375" stroke-dasharray="2 1.5" opacity="0.6"/>
   <a href="/zones/zone-gamma-z112/" title="zone_gamma_z112, zone_gamma_z113…">
   <circle cx="139.5" cy="131.5" r="2.25" fill="#a78bfa" stroke="#10151f" stroke-width="0.31" opacity="1"/>
   <text x="139.5" y="127.65" font-size="4.16" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="1.25" stroke-linejoin="round">zone_gamma_z112, zone_gamma_z113…</text>

@@ -134,12 +134,14 @@ test('shop category page: sub-list auto-opens, active link scrolled into view', 
 
 
 
-test('content sub-page: Content tables auto-opens, section highlighted and in view', async ({ page, baseURL }) => {
+test('content sub-page: ores live under Gathering, highlighted and in view', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/content/ores/crude/`);
+  const gatheringSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/features/gathering/"]) > .nav-sub');
+  expect(await gatheringSub.locator('a:visible').count()).toBe(2); // ores + plants
   const contentSub = page.locator('.sidenav li.nav-has-sub:has(a[href="/content/"]) > .nav-sub');
-  // missions and recipes moved out (to Play and Production) and the items
-  // catalog index is gone: 5 entries
-  expect(await contentSub.locator('a:visible').count()).toBe(5);
+  // ores/plants moved to Gathering, missions/recipes moved out, items index
+  // gone: 3 entries
+  expect(await contentSub.locator('a:visible').count()).toBe(3);
   const active = page.locator('.sidenav a.active');
   expect(await active.textContent()).toBe('Ores');
   const ar = await active.boundingBox();

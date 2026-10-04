@@ -147,7 +147,16 @@
                 <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
             </div>
             <ul class="nav-items">
-                <li><a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/ores/">{{ config.extra.ui.nav_content_ores }}</a></li>
+                        <li><a href="/content/plants/">{{ config.extra.ui.nav_content_plants }}</a></li>
+                    </ul>
+                </li>
                 <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
                 <li class="nav-has-sub">
                     <div class="nav-sub-head">
@@ -241,8 +250,6 @@
                         <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
                     </div>
                     <ul class="nav-sub">
-                        <li><a href="/content/ores/">{{ config.extra.ui.nav_content_ores }}</a></li>
-                        <li><a href="/content/plants/">{{ config.extra.ui.nav_content_plants }}</a></li>
                         <li><a href="/content/deployables/">{{ config.extra.ui.nav_content_deployables }}</a></li>
                         <li><a href="/content/robots/">{{ config.extra.ui.nav_content_robots }}</a></li>
                         <li><a href="/content/stat-reference/">{{ config.extra.ui.nav_content_statref }}</a></li>

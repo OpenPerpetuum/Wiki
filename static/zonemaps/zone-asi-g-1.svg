@@ -16,7 +16,12 @@
   <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
   <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
   <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" x1="1755.5" y1="787.5" x2="2048" y2="884.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="1692.5" y1="1047.5" x2="2048" y2="836.1" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" x1="337.5" y1="937.5" x2="1914.1" y2="0" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1755.5" y1="787.5" x2="1692.5" y2="1047.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="0" x1="1755.5" y1="787.5" x2="1692.5" y2="1047.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="183.5" y1="662.5" x2="337.5" y2="937.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
   <line class="ltp-line" data-ltp="1" x1="183.5" y1="662.5" x2="337.5" y2="937.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="12 9"/>
   <circle cx="183.5" cy="662.5" r="18" data-ltp="1" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
   <a href="/zones/zone-asi-g-4/" title="Xiantor">
