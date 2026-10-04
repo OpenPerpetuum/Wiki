@@ -150,7 +150,7 @@ test('sidenav drawer: hamburger opens, backdrop/link/swipe/Escape close', async 
 });
 
 test('video embed fits its card on click-to-play', async ({ page, baseURL }) => {
-  await page.goto(`${baseURL}/`, { waitUntil: 'networkidle' });
+  await page.goto(`${baseURL}/features/getting-started/`, { waitUntil: 'networkidle' });
   const card = page.locator('.video-card').first();
   await card.click();
   const iframe = card.locator('iframe');

@@ -11,7 +11,7 @@ trade, and research your way up from a starter bot to a fully fitted war machine
 
 <div class="home-cards">
   <a class="home-card home-card-map" href="/zones/map/">
-    <img src="/world-map-thumb.png" alt="" width="600" height="886" loading="lazy">
+    <img src="/world-map-thumb.png" alt="" width="977" height="252" loading="lazy">
     <span class="home-card-overlay">World Map</span>
   </a>
   <a class="home-card" href="/features/movement/"><span class="home-card-name">Movement &amp; zones</span><span class="home-card-desc">Teleports, interzones, docking, zone types</span></a>
@@ -26,71 +26,6 @@ trade, and research your way up from a starter bot to a fully fitted war machine
   <a class="home-card" href="/features/robots/"><span class="home-card-name">Robots &amp; fitting</span><span class="home-card-desc">Bodies, classes and per-model stats</span></a>
   <a class="home-card" href="/features/sparks/"><span class="home-card-name">Sparks</span><span class="home-card-desc">Your agent&rsquo;s nanobot and its ability bonuses</span></a>
 </div>
-
-## Get the game
-
-Perpetuum is free on [Steam](https://store.steampowered.com/app/223410/Perpetuum/).
-
-<div class="steam-card">
-  <a class="steam-card-link" href="https://store.steampowered.com/app/223410/Perpetuum/" target="_blank" rel="noopener">
-    <img src="https://cdn.akamai.steamstatic.com/steam/apps/223410/header.jpg"
-         alt="Perpetuum on the Steam store" class="steam-card-img" width="460" height="215" loading="lazy">
-    <span class="steam-card-label">Perpetuum on Steam — free to play</span>
-  </a>
-</div>
-
-## Watch first
-
-Guides from the Open Perpetuum Project. Click a card to play it here.
-
-<div class="video-grid">
-  <div class="video-card" role="button" tabindex="0" aria-label="Play video: Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more." data-id="mHd3nOHvEuM" data-title="Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more.">
-    <img src="https://i.ytimg.com/vi/mHd3nOHvEuM/hqdefault.jpg" alt="Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more."
-         width="480" height="270" referrerpolicy="origin">
-    <span class="video-play" aria-hidden="true">&#9654;</span>
-    <div class="video-title">Perpetuum Online Tutorial Walkthrough. + Extension Advice and lots more.</div>
-  </div>
-  <div class="video-card" role="button" tabindex="0" aria-label="Play video: Syndicate Careers Help - Artifacting" data-id="lQgrO6RNBSg" data-title="Syndicate Careers Help - Artifacting">
-    <img src="https://i.ytimg.com/vi/lQgrO6RNBSg/hqdefault.jpg" alt="Syndicate Careers Help - Artifacting"
-         width="480" height="270" referrerpolicy="origin">
-    <span class="video-play" aria-hidden="true">&#9654;</span>
-    <div class="video-title">Syndicate Careers Help — Artifacting</div>
-  </div>
-  <div class="video-card" role="button" tabindex="0" aria-label="Play video: Open Perpetuum Tutorial - How to run multiple clients" data-id="sRBouSF8Gu4" data-title="Open Perpetuum Tutorial - How to run multiple clients">
-    <img src="https://i.ytimg.com/vi/sRBouSF8Gu4/hqdefault.jpg" alt="Open Perpetuum Tutorial - How to run multiple clients"
-         width="480" height="270" referrerpolicy="origin">
-    <span class="video-play" aria-hidden="true">&#9654;</span>
-    <div class="video-title">Open Perpetuum Tutorial — How to run multiple clients</div>
-  </div>
-</div>
-
-<script>
-    // Click-to-play: swap the thumbnail card for the YouTube embed on demand
-    // (keeps the home page light until a video is actually wanted).
-    (function () {
-        var cards = document.querySelectorAll(".video-card");
-        function activate(card) {
-            if (card.querySelector("iframe")) return;
-            var f = document.createElement("iframe");
-            f.src = "https://www.youtube.com/embed/" + card.getAttribute("data-id") + "?autoplay=1&rel=0";
-            f.title = card.getAttribute("data-title");
-            f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-            f.allowFullscreen = true;
-            card.innerHTML = "";
-            card.appendChild(f);
-            card.removeAttribute("tabindex");
-            card.removeAttribute("role");
-            card.removeAttribute("aria-label");
-            card.style.cursor = "default";
-        }
-        cards.forEach(function (card) {
-            card.addEventListener("click", function () { activate(card); });
-            card.addEventListener("keydown", function (e) {
-                if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activate(card); }
-            });
-        });
-    })();
-</script>
 
 ## New here?
 

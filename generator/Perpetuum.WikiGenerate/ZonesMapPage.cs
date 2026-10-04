@@ -329,7 +329,6 @@ public static class ZonesMapPage
             var size = Size(z.W);
             var x1 = Px(z.X);
             var y1 = Py(z.Y);
-            var shortName = z.Name.StartsWith("zone_", StringComparison.Ordinal) ? z.Name[5..] : z.Name;
             var tip = $"{z.Name} — {ProtectionLabel(z)} · {TypeLabel(z.Type)} ({z.X:0} / {z.Y:0})";
             var slug = z.Name.ToLowerInvariant().Replace("_", "-");
             // Same design as the index cards: the coastline-only thumbnail
@@ -339,8 +338,13 @@ public static class ZonesMapPage
                 ? $"<circle cx=\"{x1:0.#}\" cy=\"{y1:0.#}\" r=\"{size / 2}\" fill=\"#10151f\" class=\"mapfam-{f} zonemap-node-{f}\"><title>{tip}</title></circle>"
                 : $"<rect x=\"{x1 - size / 2:0.#}\" y=\"{y1 - size / 2:0.#}\" width=\"{size:0.#}\" height=\"{size:0.#}\" rx=\"{size * 0.3:0.#}\" fill=\"#10151f\" class=\"mapfam-{f} zonemap-node-{f}\"><title>{tip}</title></rect>";
             var image = $"<image href=\"/zonemaps/{slug}/thumb.png\" x=\"{x1 - size / 2:0.#}\" y=\"{y1 - size / 2:0.#}\" width=\"{size:0.#}\" height=\"{size:0.#}\" preserveAspectRatio=\"none\"/>";
-            var label = f == "gamma" ? 10.5 : 13;
-            var text = $"<text x=\"{x1 + size / 2 + 3:0.#}\" y=\"{y1 + label / 3:0.#}\" font-size=\"{label}\" class=\"zonemap-label\">{shortName}</text>";
+            // Label ABOVE the island, centered, scaled down so it never
+            // overhangs the island's own width (the map stays readable at
+            // rest; zoom in for the small islands).
+            var displayName = DisplayName(z.Name);
+            var fontSize = Math.Min(7, size / (0.62 * displayName.Length));
+            if (fontSize < 0.9) fontSize = 0.9;
+            var text = $"<text x=\"{x1:0.#}\" y=\"{y1 - size / 2 - 1.2:0.#}\" text-anchor=\"middle\" font-size=\"{fontSize:0.##}\" class=\"zonemap-label\">{displayName}</text>";
             var href = PageLink(z.Name);
             sb.Append($"  <a href=\"{href}\"><g>{shape}{image}{text}</g></a>\n");
         }
@@ -388,7 +392,36 @@ public static class ZonesMapPage
             _ => "#c8d2e0",
         };
 
-    private static string Escape(string s) => s.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt;");
+    private static string Escape(string s) => s.Replace("&", "&amp;").Replace("<", "&lt;").Replace(">", "&gt>");
+
+    /// <summary>Human form of a zone definition name for the map labels —
+    /// the DB carries no client display names, so derive one: tokens are
+    /// space-joined, short tokens uppercased (tc, pve, z, g), the rest
+    /// title-cased, existing acronyms kept (ASI, TM). zone_gamma_tc_z106
+    /// -> "Gamma TC Z106"; zone_asi_a_real -> "ASI A Real".</summary>
+    private static string DisplayName(string name)
+    {
+        var n = name.StartsWith("zone_", StringComparison.Ordinal) ? name[5..] : name;
+        var sb = new System.Text.StringBuilder();
+        foreach (var token in n.Split('_'))
+        {
+            if (token.Length == 0) continue;
+            int letters = 0;
+            while (letters < token.Length && char.IsLetter(token[letters])) letters++;
+            var letterPart = token[..letters];
+            var rest = token[letters..];
+            string part;
+            if (letterPart == letterPart.ToUpperInvariant())
+                part = letterPart; // already an acronym (ASI, TM, ICS)
+            else if (letterPart.Length <= 3)
+                part = letterPart.ToUpperInvariant(); // tc -> TC, pve -> PVE, z -> Z
+            else
+                part = char.ToUpperInvariant(letterPart[0]) + letterPart[1..].ToLowerInvariant();
+            if (sb.Length > 0) sb.Append(' ');
+            sb.Append(part).Append(rest);
+        }
+        return sb.ToString();
+    }
 
     /// <summary>Protection level straight from the zones flags
     /// (ZoneConfiguration.IsAlpha/IsBeta/IsGamma): alpha = protected,

@@ -25,6 +25,8 @@ smart_punctuation = false
 # into Zola [translations]); the chrome reads `config.extra.ui`, and the
 # inline JS receives it via window.WIKI_UI.
 [extra.ui]
+# The topbar brand (short; the full site name stays the page <title>).
+brand = "OP Wiki"
 # Top-level sidenav links (always visible) and main-menu group names (high
 # level; each group expands in the sidenav and has an overview page under
 # /menu/).

@@ -10,8 +10,11 @@
     // s = 1 is "max zoom out": the whole map/diagram is visible. MAX keeps
     // zoom-in useful. MIN_VISIBLE: panning may show empty space, but at
     // least this share of the viewport stays covered by content (overlap
-    // area, shared between both axes).
-    var MIN = 1, MAX = 8, MIN_VISIBLE = 0.25;
+    // area, shared between both axes). The world map starts above s = 1
+    // (INITIAL_MAX): at s = 1 its islands — a dense cluster at one end of a
+    // tall canvas — are a handful of pixels lost in empty space, so it
+    // opens pre-zoomed onto the cluster (initContentZoom, below).
+    var MIN = 1, MAX = 8, INITIAL_MAX = 3, MIN_VISIBLE = 0.25;
 
     function limit(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
 
@@ -35,10 +38,10 @@
     }
 
     // Rendered size of the content inside the svg element. The SVG is
-    // letterboxed (preserveAspectRatio meet) inside its box.
+    // letterboxed (preserveAspectRatio meet) inside its box. clientWidth is
+    // the LAYOUT (untransformed) size — getBoundingClientRect would include
+    // the zoom scale, which clamp() needs to know as st.s, not bake in.
     function contentSize(wrap) {
-        // clientWidth/Height are the layout (untransformed) element sizes —
-        // getBoundingClientRect would include the current scale.
         var svg = wrap._zoomSvg;
         var st = window.getComputedStyle(svg);
         var vw = svg.clientWidth - parseFloat(st.paddingLeft) - parseFloat(st.paddingRight);
@@ -83,15 +86,24 @@
     // untransformed one, a content point p sits at E0 + t + s*p. Keeping the
     // point under the screen point C fixed: p = (C - rc)/s and
     // t' = C - E0 - ns*p = C - rc + t - ns*p.
+    // The transform is applied about the ELEMENT center (transform-origin),
+    // which is the element box's center — getBoundingClientRect includes the
+    // transform, so its center is exactly that point in any state. The
+    // letterboxed content is centered in the element, so the content's
+    // screen center is this point; content point p (px) lands at
+    // (rect center) + (t) + s*p.
     function zoomAt(wrap, clientX, clientY, factor) {
         var svg = wrap._zoomSvg, st = stateOf(wrap);
         var rect = svg.getBoundingClientRect();
         var rcx = rect.left + rect.width / 2;
         var rcy = rect.top + rect.height / 2;
-        var ns = Math.min(MAX, Math.max(MIN, st.s * factor));
+        var cap = wrap._zmPrezoomed ? MAX : Math.min(MAX, INITIAL_MAX);
+        var ns = Math.min(cap, Math.max(MIN, st.s * factor));
         if (ns === st.s) return;
-        var contentX = (clientX - rcx) / st.s;
-        var contentY = (clientY - rcy) / st.s;
+        // E0 (the untransformed content center) = rc - (tx, ty); keep the
+        // content point under the cursor fixed: t' = C - E0 - ns*p.
+        var contentX = (clientX - (rcx - st.tx)) / st.s;
+        var contentY = (clientY - (rcy - st.ty)) / st.s;
         st.tx = st.tx + clientX - rcx - ns * contentX;
         st.ty = st.ty + clientY - rcy - ns * contentY;
         st.s = ns;
@@ -136,10 +148,86 @@
             reset.setAttribute('data-zr-bound', '1');
             reset.addEventListener('click', function () {
                 var st = stateOf(wrap);
-                st.s = 1; st.tx = 0; st.ty = 0;
+                if (wrap._zmPrezoomed) {
+                    // Back to the pre-zoomed resting state, not s = 1 —
+                    // s = 1 on the world map is the lost-in-empty-space view.
+                    initContentZoom(wrap);
+                } else {
+                    st.s = 1; st.tx = 0; st.ty = 0;
+                }
                 applyWrap(wrap);
             });
         }
+    }
+
+    // The world map opens pre-zoomed onto its content: compute the bounding
+    // box of the plotted islands (+ a margin) in viewBox coordinates, scale
+    // it up to ~88% of the letterboxed content area, and center it. The
+    // islands sit at one end of a tall canvas (the rest is empty grid), so
+    // s = 1 shows them as a small cluster in a sea of nothing; this starts
+    // where the interest actually is. Zooming out to s = 1 afterwards is
+    // still possible (INITIAL_MAX only caps the wheel, not the state).
+    // The screen mapping under transform (t, s) — verified against the
+    // browser: screen(p) = (rc - t) + s * P, where P is the content point's
+    // screen position at the IDENTITY transform and rc is the svg element's
+    // (transformed) bounding-box center (the transform-origin). So to put
+    // the content point at screen position C: t = C - rc - s*P... measured
+    // at identity, P is relative to the identity element box, whose center
+    // is also the letterbox content center — giving t = (C - rc0) - s*P0
+    // where rc0/P0 are both identity-frame positions.
+    function initContentZoom(wrap) {
+        var svg = wrap._zoomSvg, st = stateOf(wrap);
+        if (!svg || !svg.querySelector('.zonemap-tp')) return; // zone maps: no
+        var ns, tx = 0, ty = 0;
+        try {
+            var nodes = svg.querySelectorAll('a > g rect, a > g circle');
+            if (nodes.length) {
+                var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+                for (var i = 0; i < nodes.length; i++) {
+                    var el = nodes[i], b;
+                    try { b = el.getBBox(); } catch (e) { continue; }
+                    if (b.x < minX) minX = b.x;
+                    if (b.y < minY) minY = b.y;
+                    if (b.x + b.width > maxX) maxX = b.x + b.width;
+                    if (b.y + b.height > maxY) maxY = b.y + b.height;
+                }
+                // Identity-frame geometry: the svg currently carries the
+                // previous state; measure with it cleared first.
+                var prev = svg.style.transform;
+                svg.style.transform = '';
+                var rc0 = svg.getBoundingClientRect(); // identity element box
+                var rcx0 = rc0.left + rc0.width / 2;
+                var rcy0 = rc0.top + rc0.height / 2;
+                var m0 = svg.getScreenCTM(); // identity user->screen map
+                var boxCx0 = m0.a * (minX + maxX) / 2 + m0.c * (minY + maxY) / 2 + m0.e;
+                var boxCy0 = m0.d * (minY + maxY) / 2 + m0.b * (minX + maxX) / 2 + m0.f;
+                svg.style.transform = prev;
+                var wrapRect = wrap.getBoundingClientRect();
+                var cW = wrapRect.width, cH = wrapRect.height; // wrap ≈ element at identity
+                var contentW = rc0.width - 32, contentH = rc0.height - 32; // minus 2*1rem padding
+                var vb = svg.viewBox.baseVal;
+                var u = Math.min(contentW / vb.width, contentH / vb.height); // px per unit at identity
+                var margin = 26; // viewBox units of breathing room
+                var s = Math.min(INITIAL_MAX,
+                    0.88 / Math.max((maxX - minX + 2 * margin) * u / contentW,
+                                    (maxY - minY + 2 * margin) * u / contentH));
+                if (s > 1.05) {
+                    // C = wrap center (the target); P = box center at identity
+                    // (boxCx0, boxCy0); rc at the NEW transform = rc0 (the
+                    // element box is the same; the transform scales ABOUT its
+                    // center, so the center stays at rc0's center + t).
+                    ns = s;
+                    var txTarget = wrapRect.left + wrapRect.width / 2;
+                    var tyTarget = wrapRect.top + wrapRect.height / 2;
+                    tx = txTarget - rcx0 - s * (boxCx0 - rcx0);
+                    ty = tyTarget - rcy0 - s * (boxCy0 - rcy0);
+                }
+            }
+        } catch (e) { /* fall through: stay at s = 1 */ }
+        if (typeof ns === 'undefined') return;
+        st.s = ns; st.tx = tx; st.ty = ty;
+        wrap._zmPrezoomed = true;
+        clamp(wrap);
     }
 
     function attach(wrap) {
@@ -247,6 +335,7 @@
         attachLtp(wrap);
         attachTpLines(wrap);
         ensureReset(wrap);
+        initContentZoom(wrap);
         applyWrap(wrap);
     }
 

@@ -233,11 +233,31 @@ test('panning may show empty space, but at least 25% of the viewport stays cover
   p = await transform(page);
   expect(p.tx + p.ty).toBeGreaterThan(100); // it did pan as far as the limit allows
 
+  // reset returns to the INITIAL (pre-zoomed) state, not the s = 1
+  // whole-canvas view — that is the lost-in-empty-space one
+  const init = await transform(page);
+  await page.mouse.move(cx, cy);
+  await page.mouse.wheel(0, -300);
+  await page.waitForTimeout(50);
+  const z = await transform(page);
+  expect(z.scale).toBeGreaterThan(init.scale); // the wheel zoomed in first
   await page.locator('.zonemap-reset').click();
   const r = await transform(page);
-  expect(r.scale).toBe(1);
-  expect(r.tx).toBe(0);
-  expect(r.ty).toBe(0);
+  expect(r.scale).toBeGreaterThan(1.1); // back to the pre-zoomed resting zoom
+  expect(r.scale).toBeLessThan(z.scale); // ...and not the zoomed-in state
+});
+
+test('world map opens pre-zoomed onto the islands (not lost in empty space)', async ({ page, baseURL }) => {
+  await page.goto(`${baseURL}${MAP}`);
+  const t = await transform(page);
+  expect(t.scale).toBeGreaterThan(1.1); // closer than the whole-canvas view
+  expect(t.scale).toBeLessThanOrEqual(3.01);
+  // and the user can still wheel out to the full canvas
+  const wrap = page.locator('.zonemap-wrap');
+  const box = await wrap.boundingBox();
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  for (let i = 0; i < 8; i++) { await page.mouse.wheel(0, 300); await page.waitForTimeout(30); }
+  expect((await transform(page)).scale).toBeCloseTo(1, 2);
 });
 
 test('zoomed in: panning keeps at least 25% of the viewport covered', async ({ page, baseURL }) => {
