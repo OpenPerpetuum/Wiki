@@ -1,0 +1,11 @@
+{
+  "name": "openperpetuum-wiki",
+  "private": true,
+  "description": "Browser tests for the wiki (Playwright). The site itself is built by Zola (see Makefile); this only runs the tests in tests/.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}

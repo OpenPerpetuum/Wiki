@@ -1,0 +1,10 @@
+public/
+node_modules/
+test-results/
+playwright-report/
+memory.md
+generator/**/bin/
+generator/**/obj/
+tools/__pycache__/
+static/zonemaps/*/
+.assets/

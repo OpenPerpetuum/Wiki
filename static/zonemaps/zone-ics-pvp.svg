@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_ICS_pvp" data-zm-v2="1">
+  <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="#10151f" stroke="#39445a" stroke-width="2.0"/>
+  <image id="zm-height" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-ics-pvp/height.png" preserveAspectRatio="none"/>
+  <image id="zm-color" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-ics-pvp/color.png" preserveAspectRatio="none" style="display:none"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" data-tps="129" data-tpd="zone_ics_g_8" x1="1140.5" y1="264.5" x2="1140.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="129" data-tpd="zone_ICS_A_real" x1="1140.5" y1="264.5" x2="2048" y2="604.8" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="130" data-tpd="zone_gamma_tc_z104" x1="1236.5" y1="554.5" x2="1394.8" y2="0" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="131" data-tpd="zone_ASI_A_real" x1="215.5" y1="623.5" x2="0" y2="704.3" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="137" data-tpd="zone_ASI_A_real" x1="241.5" y1="1680.5" x2="-0" y2="1771.1" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="138" data-tpd="zone_ics_g_8" x1="968.5" y1="1766.5" x2="968.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="138" data-tpd="zone_ICS_A_real" x1="968.5" y1="1766.5" x2="1719.2" y2="2048" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1236.5" y1="554.5" x2="1141.5" y2="1495.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
+  <line class="ltp-line" data-ltp="0" x1="1236.5" y1="554.5" x2="1141.5" y2="1495.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1236.5" y1="554.5" x2="600.5" y2="1498.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
+  <line class="ltp-line" data-ltp="1" x1="1236.5" y1="554.5" x2="600.5" y2="1498.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1141.5" y1="1495.5" x2="600.5" y2="1498.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
+  <line class="ltp-line" data-ltp="2" x1="1141.5" y1="1495.5" x2="600.5" y2="1498.5" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="12 9"/>
+  <circle class="zm-casing" cx="564" cy="1500" r="30.6" fill="none" stroke="#0a0f18" stroke-width="6.25" stroke-dasharray="7 5" opacity="0.55"/>
+  <a href="/zones/zone-ics-pvp/" title="from Novastrov">
+  <circle cx="564" cy="1500" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
+  <text x="564" y="1461" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Novastrov</text>
+  </a>
+  <circle class="zm-casing" cx="1204" cy="576" r="30.6" fill="none" stroke="#0a0f18" stroke-width="6.25" stroke-dasharray="7 5" opacity="0.55"/>
+  <a href="/zones/zone-ics-pvp/" title="from Novastrov">
+  <circle cx="1204" cy="576" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
+  <text x="1204" y="537" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Novastrov</text>
+  </a>
+  <circle class="zm-casing" cx="1141" cy="1533" r="30.6" fill="none" stroke="#0a0f18" stroke-width="6.25" stroke-dasharray="7 5" opacity="0.55"/>
+  <a href="/zones/zone-ics-pvp/" title="from Novastrov">
+  <circle cx="1141" cy="1533" r="30.6" fill="none" stroke="#c8d2e0" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
+  <text x="1141" y="1494" font-size="27.04" fill="#8b93a5" text-anchor="middle" font-family="sans-serif" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="8.11" stroke-linejoin="round">from Novastrov</text>
+  </a>
+  <a href="/zones/zone-asi-a-real/" title="Hokkogaros">
+  <circle cx="215.5" cy="623.5" r="18" data-eid="131" data-dests="Hokkogaros|zone_ASI_A_real" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="215.5" y="592.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hokkogaros</text>
+  </a>
+  <a href="/zones/zone-asi-a-real/" title="Hokkogaros">
+  <circle cx="241.5" cy="1680.5" r="18" data-eid="137" data-dests="Hokkogaros|zone_ASI_A_real" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="241.5" y="1649.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hokkogaros</text>
+  </a>
+  <circle cx="600.5" cy="1498.5" r="18" data-eid="136" data-ltp="1 2" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="968.5" cy="1766.5" r="18" data-eid="138" data-dests="Domhalarn|zone_ICS_A_real;Chalydor|zone_ics_g_8" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="968.5" y="1735.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Chalydor, Domhalarn</text>
+  <circle cx="1140.5" cy="264.5" r="18" data-eid="129" data-dests="Domhalarn|zone_ICS_A_real;Chalydor|zone_ics_g_8" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="1140.5" y="233.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Chalydor, Domhalarn</text>
+  <circle cx="1141.5" cy="1495.5" r="18" data-eid="132" data-ltp="0 2" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <a href="/zones/zone-gamma-tc-z104/" title="zone_gamma_tc_z104">
+  <circle cx="1236.5" cy="554.5" r="18" data-eid="130" data-ltp="0 1" data-dests="zone_gamma_tc_z104|zone_gamma_tc_z104" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="1236.5" y="523.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_tc_z104</text>
+  </a>
+  <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
+</svg>

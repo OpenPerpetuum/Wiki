@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/OpenPerpetuum/PerpetuumServer2.git

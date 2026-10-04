@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_gamma_z106" data-zm-v2="1">
+  <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="#10151f" stroke="#39445a" stroke-width="2.0"/>
+  <image id="zm-height" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-gamma-z106/height.png" preserveAspectRatio="none"/>
+  <image id="zm-color" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-gamma-z106/color.png" preserveAspectRatio="none" style="display:none"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" data-tps="5609" data-tpd="zone_gamma_z112" x1="1695.5" y1="348.5" x2="2048" y2="401.6" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="5610" data-tpd="zone_gamma_z107" x1="187.5" y1="1536.5" x2="0" y2="1617.5" stroke="#a78bfa" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <a href="/zones/zone-gamma-z107/" title="zone_gamma_z107">
+  <circle cx="187.5" cy="1536.5" r="18" data-eid="5610" data-dests="zone_gamma_z107|zone_gamma_z107" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="187.5" y="1505.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z107</text>
+  </a>
+  <circle cx="289.5" cy="468.5" r="18" data-eid="5607" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1390.5" cy="1829.5" r="18" data-eid="5608" fill="#8b93a5" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <a href="/zones/zone-gamma-z112/" title="zone_gamma_z112">
+  <circle cx="1695.5" cy="348.5" r="18" data-eid="5609" data-dests="zone_gamma_z112|zone_gamma_z112" fill="#a78bfa" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="1695.5" y="317.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">zone_gamma_z112</text>
+  </a>
+  <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
+</svg>

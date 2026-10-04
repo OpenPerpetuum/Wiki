@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="640" height="640" role="img" aria-label="Teleport map of zone_TM_pve" data-zm-v2="1">
+  <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="#10151f" stroke="#39445a" stroke-width="2.0"/>
+  <image id="zm-height" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-tm-pve/height.png" preserveAspectRatio="none"/>
+  <image id="zm-color" x="0" y="0" width="2048" height="2048" href="/zonemaps/zone-tm-pve/color.png" preserveAspectRatio="none" style="display:none"/>
+  <line x1="256" y1="0" x2="256" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="256" x2="2048" y2="256" stroke="#1d2534" stroke-width="1"/>
+  <line x1="512" y1="0" x2="512" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="512" x2="2048" y2="512" stroke="#1d2534" stroke-width="1"/>
+  <line x1="768" y1="0" x2="768" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="768" x2="2048" y2="768" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1024" y1="0" x2="1024" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1024" x2="2048" y2="1024" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1280" y1="0" x2="1280" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1280" x2="2048" y2="1280" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1536" y1="0" x2="1536" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1536" x2="2048" y2="1536" stroke="#1d2534" stroke-width="1"/>
+  <line x1="1792" y1="0" x2="1792" y2="2048" stroke="#1d2534" stroke-width="1"/>
+  <line x1="0" y1="1792" x2="2048" y2="1792" stroke="#1d2534" stroke-width="1"/>
+  <line class="exi-line" data-tps="108" data-tpd="zone_ICS_A_real" x1="1388.5" y1="193.5" x2="2033.5" y2="0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="108" data-tpd="zone_ICS_pve" x1="1388.5" y1="193.5" x2="1558.8" y2="-0" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="112" data-tpd="zone_TM_A_real" x1="307.5" y1="1758.5" x2="404" y2="2048" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="113" data-tpd="zone_ASI_A_real" x1="308.5" y1="412.5" x2="0" y2="258.2" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="248" data-tpd="zone_TM" x1="1626.5" y1="1381.5" x2="2048" y2="1381.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="248" data-tpd="zone_ICS" x1="1626.5" y1="1381.5" x2="2048" y2="1840.9" stroke="#6ee7a0" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="exi-line" data-tps="250" data-tpd="zone_ASI_pve" x1="350.5" y1="554.5" x2="0" y2="554.5" stroke="#f5a05a" stroke-width="3" stroke-dasharray="16 12" opacity="0.6"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="950.5" y1="891.5" x2="509.5" y2="1793.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
+  <line class="ltp-line" data-ltp="0" x1="950.5" y1="891.5" x2="509.5" y2="1793.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1042.5" y1="788.5" x2="1359.5" y2="1395.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
+  <line class="ltp-line" data-ltp="1" x1="1042.5" y1="788.5" x2="1359.5" y2="1395.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="484.5" y1="603.5" x2="829.5" y2="782.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
+  <line class="ltp-line" data-ltp="2" x1="484.5" y1="603.5" x2="829.5" y2="782.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <line class="ltp-line ltp-casing zm-casing" x1="1272.5" y1="256.5" x2="947.5" y2="682.5" stroke="#0a0f18" stroke-width="6" stroke-dasharray="12 9" opacity="0.55"/>
+  <line class="ltp-line" data-ltp="3" x1="1272.5" y1="256.5" x2="947.5" y2="682.5" stroke="#41d3ff" stroke-width="3" stroke-dasharray="12 9"/>
+  <a href="/zones/zone-tm-a-real/" title="Norhoop">
+  <circle cx="307.5" cy="1758.5" r="18" data-eid="112" data-dests="Norhoop|zone_TM_A_real" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="307.5" y="1727.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Norhoop</text>
+  </a>
+  <a href="/zones/zone-asi-a-real/" title="Hokkogaros">
+  <circle cx="308.5" cy="412.5" r="18" data-eid="113" data-dests="Hokkogaros|zone_ASI_A_real" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="308.5" y="381.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Hokkogaros</text>
+  </a>
+  <a href="/zones/zone-asi-pve/" title="Shinjalar">
+  <circle cx="350.5" cy="554.5" r="18" data-eid="250" data-dests="Shinjalar|zone_ASI_pve" fill="#f5a05a" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="350.5" y="523.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Shinjalar</text>
+  </a>
+  <circle cx="484.5" cy="603.5" r="18" data-eid="110" data-ltp="2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="509.5" cy="1793.5" r="18" data-eid="111" data-ltp="0" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="829.5" cy="782.5" r="18" data-eid="251" data-ltp="2" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="947.5" cy="682.5" r="18" data-eid="255" data-ltp="3" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="950.5" cy="891.5" r="18" data-eid="1" data-ltp="0" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1042.5" cy="788.5" r="18" data-eid="109" data-ltp="1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1272.5" cy="256.5" r="18" data-eid="249" data-ltp="3" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1359.5" cy="1395.5" r="18" data-eid="246" data-ltp="1" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <circle cx="1388.5" cy="193.5" r="18" data-eid="108" data-dests="Domhalarn|zone_ICS_A_real;Tellesis|zone_ICS_pve" fill="#6ee7a0" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="1388.5" y="162.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">Domhalarn, Tellesis</text>
+  <circle cx="1626.5" cy="1381.5" r="18" data-eid="248" data-dests="Attalica|zone_ICS;New Virginia|zone_TM" fill="#41d3ff" stroke="#10151f" stroke-width="2.5" opacity="1"/>
+  <text x="1626.5" y="1350.5" font-size="33.8" fill="#eef4fd" text-anchor="middle" font-family="sans-serif" opacity="1" paint-order="stroke" stroke="#070c14" stroke-opacity="0.85" stroke-width="10.14" stroke-linejoin="round">New Virginia, Attalica</text>
+  <circle cx="1563.5" cy="1547.5" r="18" data-eid="1894" fill="#5b6478" stroke="#10151f" stroke-width="2.5" opacity="0.55"/>
+  <rect x="0" y="0" width="2048" height="2048" rx="16.0" fill="none" stroke="#54658a" stroke-width="4.0"/>
+</svg>
