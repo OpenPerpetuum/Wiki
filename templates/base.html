@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="{{ config.default_language | default(value="en") }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // Apply the saved theme before first paint (no flash of wrong theme).
+        (function () {
+            try {
+                if (localStorage.getItem("wiki-theme") === "light")
+                    document.documentElement.setAttribute("data-theme", "light");
+                var p = localStorage.getItem("wiki-palette");
+                if (p && p !== "cyan")
+                    document.documentElement.setAttribute("data-palette", p);
+                var cb = localStorage.getItem("wiki-cb");
+                if (cb && cb !== "none")
+                    document.documentElement.setAttribute("data-cb", cb);
+            } catch (e) { /* storage unavailable: stay on the defaults */ }
+        })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/img/placeholder.svg">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+    {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    <link rel="stylesheet" href="/style.css">
+    <script src="/search.js"></script>
+    <script src="/map.js"></script>
+    <script src="/zone-map.js"></script>
+    <script src="/mermaid.min.js" defer></script>
+</head>
+<body{% if page and page.extra | get(key="family", default=null) %} data-zone-family="{{ page.extra | get(key="family", default=null) }}"{% endif %}>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+        <symbol id="mi-start" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
+        <symbol id="mi-radar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.6"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8"/></symbol>
+        <symbol id="mi-arm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21h14M5 21l2.5-3h9L19 21M9 18l-1.5-4L12 10l1-4 3 .8-.8 4-3.2 3.4L11 18"/></symbol>
+        <symbol id="mi-panel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="1.5"/><path d="M12 6.5v6M9.5 8.5h5M12 12.5l-1.8 4.5M12 12.5l1.8 4.5"/></symbol>
+        <symbol id="mi-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 14.2 9.8 21.5 12 14.2 14.2 12 21.5 9.8 14.2 2.5 12 9.8 9.8Z"/></symbol>
+        <symbol id="mi-robots" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="6.5" height="9" rx="1"/><path d="M7.2 9V6.2h0.1M7.2 6.2a1 1 0 1 0 .1 0M4 12H2.2M10.5 12H12.3"/><rect x="13.5" y="9" width="6.5" height="9" rx="1"/><path d="M16.8 9V6.2h0.1M16.8 6.2a1 1 0 1 0 .1 0M13.5 12h-1.8M19.5 12h1.8"/></symbol>
+        <symbol id="mi-crystal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 19 12l-7 9.5L5 12Z"/><path d="M5 12h14M12 2.5 9 12l3 9.5"/></symbol>
+        <symbol id="mi-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"/><circle cx="5.5" cy="19" r="2.2"/><circle cx="18.5" cy="19" r="2.2"/><path d="M12 7.2v3.6m0 0c0 2.4-6.5 2.4-6.5 4.6m6.5-4.6c0 2.4 6.5 2.4 6.5 4.6"/></symbol>
+<symbol id="mi-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="1.5"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 4v16"/></symbol>
+        <symbol id="mi-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4ZM9 4v14M15 6v14"/></symbol>
+        <symbol id="mi-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></symbol>
+    </defs>
+</svg>
+<div id="wiki-ui-strings" hidden
+    data-search-no-results="{{ config.extra.ui.search_no_results }}"
+    data-search-unavailable="{{ config.extra.ui.search_unavailable }}"
+    data-pages-found-one="{{ config.extra.ui.search_pages_found_one }}"
+    data-pages-found-many="{{ config.extra.ui.search_pages_found_many }}"
+    data-update-available="{{ config.extra.ui.update_available }}"
+    data-zonemap-mode-height="{{ config.extra.ui.zonemap_mode_height }}"
+    data-zonemap-mode-color="{{ config.extra.ui.zonemap_mode_color }}"
+></div>
+<header class="topbar">
+    <!-- Row 1: the wiki title (left) and the chrome icons (right).
+         The hamburger (mobile only) opens the sidenav drawer. -->
+    <div class="topbar-main">
+        <button id="sidenav-toggle" class="sidenav-toggle" type="button" aria-label="Open the menu" aria-controls="sidenav" aria-expanded="false">☰</button>
+        <a class="brand" href="/"><span class="brand-logo" aria-hidden="true"></span>{{ config.extra.ui.brand }}</a>
+        <div class="palette-wrap">
+        <button id="lang-toggle" class="palette-toggle" type="button" aria-label="{{ config.extra.ui.aria_language }}" title="{{ config.extra.ui.aria_language }}" aria-haspopup="true" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.4 3.8 5.6 3.8 9S14.5 18.6 12 21c-2.5-2.4-3.8-5.6-3.8-9S9.5 5.4 12 3Z"/></svg>
+        </button>
+        <div id="lang-menu" class="palette-menu" role="menu">
+            <button type="button" role="menuitem" data-lang="en" aria-pressed="true">EN - English</button>
+        </div>
+        <button id="palette-toggle" class="palette-toggle" type="button" aria-label="{{ config.extra.ui.aria_palette }}" title="{{ config.extra.ui.aria_palette }}" aria-haspopup="true" aria-expanded="false">
+            <span class="palette-swatch"></span>
+        </button>
+        <div id="palette-menu" class="palette-menu" role="menu">
+            <div class="palette-group">{{ config.extra.ui.menu_palette_group }}</div>
+            <button type="button" role="menuitem" data-palette="cyan" aria-pressed="true"><span class="palette-dot" aria-hidden="true" style="background:#41d3ff"></span>{{ config.extra.ui.palette_cyan }}</button>
+            <button type="button" role="menuitem" data-palette="violet" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#a78bfa"></span>{{ config.extra.ui.palette_violet }}</button>
+            <button type="button" role="menuitem" data-palette="green" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#4ade80"></span>{{ config.extra.ui.palette_phosphor }}</button>
+            <button type="button" role="menuitem" data-palette="amber" aria-pressed="false"><span class="palette-dot" aria-hidden="true" style="background:#fbbf24"></span>{{ config.extra.ui.palette_amber }}</button>
+            <div class="palette-group">{{ config.extra.ui.menu_cb_group }}</div>
+            <button type="button" role="menuitem" data-cb="none" aria-pressed="true">{{ config.extra.ui.cb_default }}</button>
+            <button type="button" role="menuitem" data-cb="deutan">{{ config.extra.ui.cb_deutan }}</button>
+            <button type="button" role="menuitem" data-cb="protan">{{ config.extra.ui.cb_protan }}</button>
+            <button type="button" role="menuitem" data-cb="tritan">{{ config.extra.ui.cb_tritan }}</button>
+            <button type="button" role="menuitem" data-cb="achro">{{ config.extra.ui.cb_achro }}</button>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="{{ config.extra.ui.aria_theme_toggle }}" title="{{ config.extra.ui.aria_theme_toggle }}">☾</button>
+        </div>
+    </div>
+    <!-- Row 2: the search bar (wide, centered). -->
+    <div class="topbar-search">
+        <input type="search" id="wiki-search" placeholder="{{ config.extra.ui.search_placeholder }}" autocomplete="off" spellcheck="false">
+    </div>
+</header>
+<div id="search-results" class="search-results" hidden></div>
+<div class="layout">
+<!-- Sidenav: the Home quick link on top, then the main items — Start, World,
+     Play, Systems, Reference. Groups are open by default (root -> sub always
+     visible); 2nd-level sub-lists (Gamma's tiers, item-shop categories,
+     content tables, zones) start collapsed unless the current page lives
+     inside them. Caret buttons
+     collapse/expand any section; World's anchors are its sub-items. Group
+     headers (except World) link to their overview page under /menu/. -->
+<nav class="sidenav" id="sidenav" aria-label="Sections">
+    <ul>
+        <li class="nav-quick">
+            <a href="/"><svg class="navicon" aria-hidden="true"><use href="#mi-home"/></svg>{{ config.extra.ui.nav_home }}</a>
+        </li>
+        <li class="nav-group">
+            <div class="nav-group-head">
+                <a class="nav-group-link" href="/menu/start/"><svg class="navicon" aria-hidden="true"><use href="#mi-start"/></svg>{{ config.extra.ui.nav_start }}</a>
+                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
+            </div>
+            <ul class="nav-items">
+                <li><a href="/features/getting-started/">{{ config.extra.ui.nav_getting_started }}</a></li>
+                <li><a href="/features/faq/">{{ config.extra.ui.nav_faq }}</a></li>
+                <li><a href="/features/client-setup/">{{ config.extra.ui.nav_client_setup }}</a></li>
+            </ul>
+        </li>
+        <li class="nav-group">
+            <div class="nav-group-head">
+                <a class="nav-group-link" href="/zones/map/"><svg class="navicon" aria-hidden="true"><use href="#mi-map"/></svg>{{ config.extra.ui.nav_zone_map }}</a>
+                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
+            </div>
+            <ul class="nav-items">
+                <li><a href="/features/lore/">{{ config.extra.ui.nav_lore }}</a></li>
+                <li><a href="/zones/zone-training/">{{ config.extra.ui.nav_map_training }}</a></li>
+                <li><a href="/zones/protection/">{{ config.extra.ui.nav_map_protection }}</a></li>
+                <li><a href="/zones/alpha/">{{ config.extra.ui.nav_map_alpha }}</a></li>
+                <li><a href="/zones/beta/">{{ config.extra.ui.nav_map_beta }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/zones/gamma/">{{ config.extra.ui.nav_map_gamma }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="map-sub map-sub-deep">
+                        <li><a href="/zones/gamma/#t0">{{ config.extra.ui.nav_map_gamma_t0 }}</a></li>
+                        <li><a href="/zones/gamma/#t1">{{ config.extra.ui.nav_map_gamma_t1 }}</a></li>
+                        <li><a href="/zones/gamma/#t2">{{ config.extra.ui.nav_map_gamma_t2 }}</a></li>
+                        <li><a href="/zones/gamma/#t3">{{ config.extra.ui.nav_map_gamma_t3 }}</a></li>
+                        <li><a href="/zones/gamma/#t4">{{ config.extra.ui.nav_map_gamma_t4 }}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-group">
+            <div class="nav-group-head">
+                <a class="nav-group-link" href="/menu/play/"><svg class="navicon" aria-hidden="true"><use href="#mi-radar"/></svg>{{ config.extra.ui.nav_play }}</a>
+                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
+            </div>
+            <ul class="nav-items">
+                <li><a href="/features/gathering/">{{ config.extra.ui.nav_gathering }}</a></li>
+                <li><a href="/features/combat/">{{ config.extra.ui.nav_combat }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/missions/">{{ config.extra.ui.nav_missions }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/missions/">{{ config.extra.ui.nav_content_missions }}</a></li>
+                    </ul>
+                </li>
+                <li><a href="/features/movement/">{{ config.extra.ui.nav_movement }}</a></li>
+                <li><a href="/features/npcs/">{{ config.extra.ui.nav_npcs }}</a></li>
+                <li><a href="/features/exploration/">{{ config.extra.ui.nav_exploration }}</a></li>
+                <li><a href="/features/probes/">{{ config.extra.ui.nav_probes }}</a></li>
+                <li><a href="/features/pbs/">{{ config.extra.ui.nav_pbs }}</a></li>
+                <li><a href="/features/outposts/">{{ config.extra.ui.nav_outposts }}</a></li>
+                <li><a href="/features/intrusion/">{{ config.extra.ui.nav_intrusion }}</a></li>
+                <li><a href="/features/groups/">{{ config.extra.ui.nav_groups }}</a></li>
+                <li><a href="/features/social/">{{ config.extra.ui.nav_social }}</a></li>
+            </ul>
+        </li>
+        <li class="nav-group">
+            <div class="nav-group-head">
+                <a class="nav-group-link" href="/menu/systems/"><svg class="navicon" aria-hidden="true"><use href="#mi-arm"/></svg>{{ config.extra.ui.nav_systems }}</a>
+                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
+            </div>
+            <ul class="nav-items">
+                <li><a href="/features/robots/">{{ config.extra.ui.nav_robots }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/production/">{{ config.extra.ui.nav_production }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/recipes/">{{ config.extra.ui.nav_content_recipes }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/research/">{{ config.extra.ui.nav_research }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/techtree/">{{ config.extra.ui.nav_content_techtree }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/features/character/">{{ config.extra.ui.nav_character }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/extensions/">{{ config.extra.ui.nav_extensions }}</a></li>
+                        <li><a href="/features/sparks/">{{ config.extra.ui.nav_sparks }}</a></li>
+                    </ul>
+                </li>
+                <li><a href="/features/items/">{{ config.extra.ui.nav_items }}</a></li>
+                <li><a href="/features/modules/">{{ config.extra.ui.nav_modules }}</a></li>
+                <li><a href="/features/market/">{{ config.extra.ui.nav_market }}</a></li>
+                <li><a href="/features/transport/">{{ config.extra.ui.nav_transport }}</a></li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/content/shop/">{{ config.extra.ui.nav_shop }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="shop-sub">
+                        <li><a href="/content/shop/ammo/">Ammo</a></li>
+                        <li><a href="/content/shop/bots/">Bots</a></li>
+                        <li><a href="/content/shop/paint/">Paint</a></li>
+                        <li><a href="/content/shop/modules-equipment/">Modules &amp; equipment</a></li>
+                        <li><a href="/content/shop/remote-commands/">Remote commands</a></li>
+                        <li><a href="/content/shop/ep-boosters/">EP boosters</a></li>
+                        <li><a href="/content/shop/mission-coins/">Mission coins</a></li>
+                        <li><a href="/content/shop/teleports/">Teleports</a></li>
+                        <li><a href="/content/shop/npc-eggs/">NPC eggs</a></li>
+                        <li><a href="/content/shop/sap-items/">SAP items</a></li>
+                        <li><a href="/content/shop/other/">Other</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-group">
+            <div class="nav-group-head">
+                <a class="nav-group-link" href="/menu/reference/"><svg class="navicon" aria-hidden="true"><use href="#mi-crystal"/></svg>{{ config.extra.ui.nav_reference }}</a>
+                <button type="button" class="nav-caret" aria-expanded="true" aria-label="{{ config.extra.ui.nav_collapse }}" title="{{ config.extra.ui.nav_collapse }}">▾</button>
+            </div>
+            <ul class="nav-items">
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/content/">{{ config.extra.ui.nav_content }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/content/ores/">{{ config.extra.ui.nav_content_ores }}</a></li>
+                        <li><a href="/content/plants/">{{ config.extra.ui.nav_content_plants }}</a></li>
+                        <li><a href="/content/deployables/">{{ config.extra.ui.nav_content_deployables }}</a></li>
+                        <li><a href="/content/robots/">{{ config.extra.ui.nav_content_robots }}</a></li>
+                        <li><a href="/content/stat-reference/">{{ config.extra.ui.nav_content_statref }}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-has-sub">
+                    <div class="nav-sub-head">
+                        <a href="/zones/">{{ config.extra.ui.nav_zones }}</a>
+                        <button type="button" class="nav-caret" aria-expanded="false" aria-label="{{ config.extra.ui.nav_expand }}" title="{{ config.extra.ui.nav_expand }}">▾</button>
+                    </div>
+                    <ul class="nav-sub">
+                        <li><a href="/zones/generation/">{{ config.extra.ui.nav_zones_generation }}</a></li>
+                        <li><a href="/zones/zone-index/">{{ config.extra.ui.nav_zones_index }}</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-item-icon" href="/features/"><svg class="navicon" aria-hidden="true"><use href="#mi-grid"/></svg>{{ config.extra.ui.nav_all_features }}</a></li>
+                <li><a href="/features/abbreviations/">{{ config.extra.ui.nav_abbreviations }}</a></li>
+                <li><a href="/features/server/">{{ config.extra.ui.nav_server }}</a></li>
+                <li><a href="/formats/">{{ config.extra.ui.nav_formats }}</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div class="content-col">
+<main>
+    {% block content %}{% endblock content %}
+</main>
+<footer>
+    <!-- Bottom section: static links; the JS at the end of the body marks the
+         section this page belongs to (bold section name + page title in parentheses). -->
+    <nav class="footnav">
+        <a href="/">{{ config.extra.ui.foot_home }}</a>
+        <a href="/features/" data-section="features">{{ config.extra.ui.foot_features }}</a>
+        <a href="/content/" data-section="content">{{ config.extra.ui.foot_content }}</a>
+        <a href="/zones/" data-section="zones">{{ config.extra.ui.foot_zones }}</a>
+    </nav>
+    <div class="footlinks">
+        <a href="https://github.com/OpenPerpetuum" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+        </a>
+        <a href="https://x.com/openperpetuum" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41Z"/></svg>
+            @openperpetuum
+        </a>
+        <a href="https://www.youtube.com/@openperpetuumproject583" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z"/></svg>
+            YouTube
+        </a>
+        <a href="https://www.facebook.com/share/1DCrCYBAQr/?mibextid=wwXIfr" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.026 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.971h-1.514c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            Facebook
+        </a>
+    </div>
+    <p class="footcredit">{{ config.extra.ui.foot_credit | safe }}
+    <span class="attr">{{ config.extra.ui.foot_attribution | safe }}</span>
+    </p>
+</footer>
+</div>
+</div>
+<script>
+    // i18n seam: UI strings for the client-side code (search results).
+    // Collected from the #wiki-ui-strings element in the body (one
+    // data-<key> attribute per string; Zola 0.23 has no JSON filter).
+    window.WIKI_UI = (function () {
+            var el = document.getElementById("wiki-ui-strings");
+            if (!el) return {};
+            var out = {};
+            for (var i = 0; i < el.attributes.length; i++) {
+                var a = el.attributes[i];
+                if (a.name.indexOf("data-") === 0)
+                    out[a.name.slice(5).replace(/-([a-z])/g, function (m, c) { return c.toUpperCase(); })] = a.value;
+            }
+            return out;
+        })();
+    // Light/dark toggle: the whole site (chrome + content) switches.
+    // The icon shows the currently selected mode.
+    (function () {
+        var btn = document.getElementById("theme-toggle");
+        if (!btn) return;
+        var root = document.documentElement;
+        function isLight() { return root.getAttribute("data-theme") === "light"; }
+        btn.textContent = isLight() ? "☀" : "☾";
+        btn.addEventListener("click", function () {
+            if (isLight()) root.removeAttribute("data-theme");
+            else root.setAttribute("data-theme", "light");
+            try { localStorage.setItem("wiki-theme", isLight() ? "light" : "dark"); } catch (e) {}
+            btn.textContent = isLight() ? "☀" : "☾";
+            refreshMermaid(isLight() ? "neutral" : "dark");
+        });
+    })();
+    // Accent palette: pick one of four sci-fi accents (cyan is the default).
+    (function () {
+        var btn = document.getElementById("palette-toggle");
+        var menu = document.getElementById("palette-menu");
+        if (!btn || !menu) return;
+        var root = document.documentElement;
+        var items = Array.prototype.slice.call(menu.querySelectorAll("button[data-palette]"));
+        function current() {
+            var p = root.getAttribute("data-palette") || "cyan";
+            items.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-palette") === p ? "true" : "false"); });
+            return p;
+        }
+        function setOpen(open) {
+            menu.classList.toggle("open", open);
+            btn.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+        btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            setOpen(!menu.classList.contains("open"));
+            current();
+        });
+        items.forEach(function (b) {
+            b.addEventListener("click", function () {
+                var p = b.getAttribute("data-palette");
+                if (p === "cyan") root.removeAttribute("data-palette");
+                else root.setAttribute("data-palette", p);
+                try { localStorage.setItem("wiki-palette", p); } catch (e2) {}
+                current();
+            });
+        });
+        // Colorblind modes: independent of the accent palette; they retint the
+        // zone-map family colors and the accent. "Default" removes the mode.
+        var cbItems = Array.prototype.slice.call(menu.querySelectorAll("button[data-cb]"));
+        function cbCurrent() {
+            var c = root.getAttribute("data-cb") || "none";
+            cbItems.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-cb") === c ? "true" : "false"); });
+        }
+        cbItems.forEach(function (b) {
+            b.addEventListener("click", function () {
+                var c = b.getAttribute("data-cb");
+                if (c === "none") root.removeAttribute("data-cb");
+                else root.setAttribute("data-cb", c);
+                try { localStorage.setItem("wiki-cb", c); } catch (e3) {}
+                cbCurrent();
+                setOpen(false);
+            });
+        });
+        cbCurrent();
+        document.addEventListener("click", function (e) {
+            if (menu.contains(e.target) || e.target === btn) return;
+            setOpen(false);
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") setOpen(false);
+        });
+        current();
+    })();
+    // Language menu: opens from the globe button; currently English only.
+    (function () {
+        var btn = document.getElementById("lang-toggle");
+        var menu = document.getElementById("lang-menu");
+        if (!btn || !menu) return;
+        function setOpen(open) {
+            menu.classList.toggle("open", open);
+            btn.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+        btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            setOpen(!menu.classList.contains("open"));
+        });
+        Array.prototype.forEach.call(menu.querySelectorAll("button[data-lang]"), function (b) {
+            b.addEventListener("click", function () {
+                try { localStorage.setItem("wiki-lang", b.getAttribute("data-lang")); } catch (e2) {}
+                setOpen(false);
+            });
+        });
+        document.addEventListener("click", function (e) {
+            if (menu.contains(e.target) || e.target === btn) return;
+            setOpen(false);
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") setOpen(false);
+        });
+    })();
+    // Keyboard: Ctrl+F / Cmd+F focuses the wiki search; Esc unfocuses it.
+    (function () {
+        var input = document.getElementById("wiki-search");
+        var box = document.getElementById("search-results");
+        if (!input) return;
+        document.addEventListener("keydown", function (e) {
+            if ((e.ctrlKey || e.metaKey) && !e.shiftKey && !e.altKey &&
+                (e.key === "f" || e.key === "F")) {
+                e.preventDefault();
+                input.focus();
+                input.select();
+            } else if (e.key === "Escape" && document.activeElement === input) {
+                input.blur();
+                input.value = "";
+                if (box) { box.hidden = true; box.innerHTML = ""; }
+            }
+        });
+    })();
+    // Re-render the transport diagrams with the theme matching the content area.
+    function refreshMermaid(theme) {
+        if (!window.mermaid) return;
+        var divs = document.querySelectorAll(".mermaid[data-src]");
+        if (!divs.length) return;
+        divs.forEach(function (d) {
+            d.removeAttribute("data-processed");
+            d.textContent = d.getAttribute("data-src");
+        });
+        window.mermaid.initialize({ startOnLoad: false, theme: theme,
+                themeVariables: { fontSize: '18px' } });
+        window.mermaid.run({ querySelector: ".mermaid" });
+    }
+    // Sidenav drawer (mobile): the hamburger (top left) opens the off-canvas
+    // drawer; tap the backdrop to close, tap a link to navigate + close,
+    // swipe the drawer left to close, Escape closes.
+    (function () {
+        var btn = document.getElementById("sidenav-toggle");
+        var nav = document.getElementById("sidenav");
+        if (!btn || !nav) return;
+        function isOpen() { return document.body.classList.contains("sidenav-open"); }
+        function open(v) {
+            if (v === isOpen()) return;
+            document.body.classList.toggle("sidenav-open", v);
+            btn.setAttribute("aria-expanded", v ? "true" : "false");
+            btn.setAttribute("aria-label", v ? "Close the menu" : "Open the menu");
+            btn.textContent = v ? "\u2715" : "\u2630"; // ✕ / ☰
+        }
+        btn.addEventListener("click", function () { open(!isOpen()); });
+        // a tap anywhere outside the drawer (the dimmed backdrop) closes it —
+        // except the hamburger itself, whose click toggles (its bubble would
+        // otherwise close the drawer the instant it opens)
+        document.addEventListener("click", function (e) {
+            if (!isOpen()) return;
+            if (e.target.closest && e.target.closest("#sidenav, #sidenav-toggle")) return;
+            open(false);
+        });
+        // tapping a link navigates and closes (the caret buttons do not)
+        nav.addEventListener("click", function (e) {
+            if (isOpen() && e.target.closest && e.target.closest("a[href]")) open(false);
+        });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && isOpen()) open(false);
+        });
+        // swipe the drawer left to close (touch only)
+        var sx = null;
+        nav.addEventListener("touchstart", function (e) {
+            if (e.touches.length === 1) sx = e.touches[0].clientX;
+        }, { passive: true });
+        nav.addEventListener("touchmove", function (e) {
+            if (sx === null || e.touches.length !== 1) return;
+            if (sx - e.touches[0].clientX > 70) { open(false); sx = null; }
+        }, { passive: true });
+        nav.addEventListener("touchend", function () { sx = null; }, { passive: true });
+    })();
+    // Sidenav: every caret button collapses/expands its own section — a
+    // top-level group (.nav-group) or a sub-list (.nav-has-sub). Groups and
+    // their items (root -> sub) are open by default. 2nd-level sub-lists
+    // (nested inside another item: Gamma's tiers, the item-shop categories)
+    // start collapsed — except when the current page lives inside them
+    // (e.g. an item-shop category page opens Item shop, a gamma anchor
+    // opens Gamma), so the active entry is visible on load.
+    (function () {
+        function setCollapsed(target, collapsed) {
+            target.classList.toggle("collapsed", collapsed);
+            var head = target.querySelector(".nav-group-head, .nav-sub-head");
+            var btn = head ? head.querySelector(".nav-caret") : null;
+            if (btn) btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
+        }
+        Array.prototype.slice.call(document.querySelectorAll(".sidenav .nav-caret")).forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                var target = btn.closest(".nav-group, .nav-has-sub");
+                if (target) setCollapsed(target, !target.classList.contains("collapsed"));
+            });
+        });
+        var path = document.location.pathname;
+        var hash = document.location.hash;
+        function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
+        // Does this link point at the current page? Hash links only count
+        // when the URL carries that hash (hash anchors share the page path
+        // with their parent entry); plain links count by exact or prefix
+        // path match (sub-pages like /content/shop/ammo/ under /content/shop/).
+        function linkInside(href) {
+            var hash = document.location.hash;
+            var i = href.indexOf("#");
+            var h = i === -1 ? href : href.slice(0, i);
+            if (h.length < 2) return false;
+            if (h[h.length - 1] !== "/") h += "/";
+            var linkHash = i === -1 ? "" : href.slice(i);
+            if (hash) return (linkHash === hash || !linkHash) && h === norm(path);
+            return !linkHash && (h === norm(path) || (h.length < path.length && path.indexOf(h) === 0));
+        }
+        // Open the 2nd-level sub-list that contains the current page (the rest
+        // stay collapsed). Re-run on same-page hash navigation — that is not
+        // a page load, so load-only code would miss it.
+        function syncLists() {
+            Array.prototype.slice.call(document.querySelectorAll(".sidenav li li.nav-has-sub")).forEach(function (el) {
+                var inside = Array.prototype.slice.call(el.querySelectorAll("a[href]"))
+                    .some(function (a) { return linkInside(a.getAttribute("href")); });
+                setCollapsed(el, !inside);
+            });
+        }
+        syncLists();
+        window.addEventListener("hashchange", syncLists);
+    })();
+    // Current-page selection: bold + outlined in both the left menu and the
+    // bottom menu.
+    (function () {
+        var path = document.location.pathname;
+        function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
+        // Left menu selection: same-page anchors (e.g. /zones/map/#training)
+        // use an exact full-href match (path + hash), so the selected anchor
+        // is highlighted instead of its parent entry (World); otherwise the
+        // longest matching entry wins — the page itself, or the deepest menu
+        // entry that is an ancestor of it (so a generated sub-page like an
+        // item page highlights "Content", a shop category its entry).
+        function selectActive() {
+            var hash = document.location.hash;
+            var best = null;
+            // Zone pages belong to a family (the body carries data-zone-family
+            // from the page's front matter): highlight the family-listing entry
+            // (Alpha / Beta / Gamma) instead of the plain "/zones/" prefix,
+            // and open Gamma's tier sub-list so the entry is reachable.
+            var fam = document.body.getAttribute("data-zone-family");
+            if (fam && path.indexOf("/zones/zone-") === 0) {
+                var famLink = document.querySelector('.sidenav a[href="' + "/zones/" + fam + "/" + '"]');
+                if (famLink) {
+                    var sub = famLink.closest("li.nav-has-sub");
+                    if (sub && sub.classList.contains("collapsed")) {
+                        sub.classList.remove("collapsed");
+                        var btn = sub.querySelector(".nav-caret");
+                        if (btn) btn.setAttribute("aria-expanded", "true");
+                    }
+                }
+                best = famLink;
+            }
+            if (!best && hash.length > 1) {
+                document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
+                    if (a.getAttribute("href") === path + hash) best = a;
+                });
+            }
+            if (!best) {
+                var bestLen = -1;
+                document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
+                    var href = a.getAttribute("href");
+                    if (!href || href === "/") return;
+                    var h = href[href.length - 1] === "/" ? href : href + "/";
+                    var hit = h === norm(path) || (path.startsWith(h) && path.length > h.length);
+                    if (hit && h.length > bestLen) { best = a; bestLen = h.length; }
+                });
+            }
+            document.querySelectorAll(".sidenav a.active").forEach(function (a) {
+                a.classList.remove("active");
+            });
+            document.querySelectorAll(".sidenav .row-active").forEach(function (r) {
+                r.classList.remove("row-active");
+            });
+            if (best) {
+                best.classList.add("active");
+                // entries with an open/close caret: the selection box spans
+                // the whole row (it ends after the caret button)
+                var row = best.closest(".nav-group-head, .nav-sub-head");
+                if (row) row.classList.add("row-active");
+            }
+        }
+        selectActive();
+        // same-page anchor clicks change only the hash (no page load) —
+        // re-run the selection so the clicked anchor is highlighted
+        window.addEventListener("hashchange", selectActive);
+        // Keep the browser's own scroll restoration on: navigating away and
+        // back must restore the page position (e.g. back from a zone page).
+        try { if (window.history && history.scrollRestoration) history.scrollRestoration = "auto"; } catch (e) {}
+        // same-page anchors (e.g. /zones/map/#training): on a fresh menu click
+        // the browser scrolls to the section natively; a plain page load (or
+        // the back button) of a URL that still carries a menu sub-anchor must
+        // NOT re-jump — the browser restores the scroll position instead. The
+        // highlight for the current hash is handled by selectActive() above.
+        var hash = document.location.hash;
+        var freshAnchorClick = false;
+        try {
+            var entry = document.querySelector('.sidenav a[data-mapanchor][href$="' + hash + '"]');
+            if (entry && document.activeElement === entry) freshAnchorClick = true;
+        } catch (e) {}
+        if (hash.length > 1 && freshAnchorClick) {
+            var target = document.getElementById(hash.substring(1));
+            if (target) {
+                target.scrollIntoView();
+            }
+        }
+        // bottom menu: section
+        var sections = ["/features/", "/content/", "/zones/"];
+        var here = null;
+        for (var i = 0; i < sections.length; i++)
+            if (path.startsWith(sections[i])) { here = sections[i]; break; }
+        if (!here && path !== "/") return;
+        var link = document.querySelector('.footnav a[href="' + (here || "/") + '"]');
+        if (!link) return;
+        link.classList.add("active");
+    })();
+    // Left-menu scroll: restore the last position after navigation and make
+    // sure the highlighted entry is visible (a reset scroll must not hide the
+    // current category/sub-category).
+    (function () {
+        var nav = document.querySelector(".sidenav");
+        if (!nav) return;
+        var KEY = "wiki-sidenav-scroll";
+        var saved = null;
+        try { saved = sessionStorage.getItem(KEY); } catch (e) {}
+        if (saved !== null) nav.scrollTop = parseInt(saved, 10) || 0;
+        // Keep the highlighted entry visible: only scroll when it is actually
+        // off-screen (a reset scroll must not hide the current category). On
+        // same-page hash navigation the saved position is kept as-is and the
+        // entry is re-centered only when it is not visible at that position.
+        function centerActive() {
+            var active = nav.querySelector("a.active");
+            if (!active) return;
+            var nr = nav.getBoundingClientRect();
+            var ar = active.getBoundingClientRect();
+            if (ar.top < nr.top || ar.bottom > nr.bottom)
+                nav.scrollTop += (ar.top - nr.top) - (nr.height / 2) + (ar.height / 2);
+        }
+        centerActive();
+        window.addEventListener("hashchange", centerActive);
+        var t = null;
+        nav.addEventListener("scroll", function () {
+            clearTimeout(t);
+            t = setTimeout(function () {
+                try { sessionStorage.setItem(KEY, String(nav.scrollTop)); } catch (e) {}
+            }, 100);
+        }, { passive: true });
+    })();
+    // Render ```mermaid fences as diagrams (mermaid.min.js loads deferred).
+    document.addEventListener("DOMContentLoaded", function () {
+        var blocks = document.querySelectorAll("pre code[data-lang=mermaid]");
+        if (!blocks.length) return;
+        blocks.forEach(function (el) {
+            var div = document.createElement("div");
+            div.className = "mermaid";
+            div.setAttribute("data-src", el.textContent);
+            div.textContent = el.textContent;
+            el.closest("pre").replaceWith(div);
+        });
+        if (window.mermaid) {
+            var theme = document.documentElement.getAttribute("data-theme") === "light" ? "neutral" : "dark";
+            window.mermaid.initialize({ startOnLoad: false, theme: theme,
+                themeVariables: { fontSize: '18px' } });
+            window.mermaid.run({ querySelector: ".mermaid" });
+        } else {
+            // mermaid.min.js loads deferred; wait for it instead of dropping the diagrams.
+            var t0 = Date.now();
+            var timer = setInterval(function () {
+                if (window.mermaid) {
+                    clearInterval(timer);
+                    var theme = document.documentElement.getAttribute("data-theme") === "light" ? "neutral" : "dark";
+                    window.mermaid.initialize({ startOnLoad: false, theme: theme,
+                themeVariables: { fontSize: '18px' } });
+                    window.mermaid.run({ querySelector: ".mermaid" });
+                } else if (Date.now() - t0 > 10000) {
+                    clearInterval(timer);
+                    document.querySelectorAll(".mermaid").forEach(function (el) {
+                        el.textContent = el.getAttribute("data-src") || "";
+                        el.removeAttribute("class");
+                    });
+                }
+            }, 200);
+        }
+    });
+</script>
+<!-- synchronous on purpose: update-check.js snapshots the pristine
+     <main> while the document is still parsing, before any other script
+     has mutated the DOM -->
+<script src="/update-check.js"></script>
+</body>
+</html>

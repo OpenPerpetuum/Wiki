@@ -1,0 +1,124 @@
+# i18n: default language. Adding a language = add a [translations.<lang>]
+# block (or per-locale content under content/<lang>/), fill ui.* for that
+# locale, and regenerate the search index for it (see generator README).
+default_language = "en"
+title = "Open Perpetuum Wiki"
+description = "Player and developer reference for the Open Perpetuum server: what you can do in the game, entity stats, zone generation, and stat field semantics."
+# GitHub Pages: set the repo Pages URL once the site is published, e.g.
+# base_url = "https://<user>.github.io/<repo>/wiki"
+base_url = "/"
+generate_feeds = false
+# Search is a lightweight client-side script (search.js + search_index.json
+# template) instead of the elasticlunr index.
+build_search_index = false
+generate_sitemap = true
+
+[markdown]
+smart_punctuation = false
+
+
+[extra]
+# reserved (e.g. server name, build date injected by CI)
+
+# UI strings live here so the templates contain no hardcoded copy — the
+# i18n seam. A new language adds a parallel ui_<lang> table (or moves this
+# into Zola [translations]); the chrome reads `config.extra.ui`, and the
+# inline JS receives it via window.WIKI_UI.
+[extra.ui]
+# The topbar brand (short; the full site name stays the page <title>).
+brand = "OP Wiki"
+# Top-level sidenav links (always visible) and main-menu group names (high
+# level; each group expands in the sidenav and has an overview page under
+# /menu/).
+nav_home = "Home"
+nav_start = "Start"
+nav_play = "Play"
+nav_systems = "Systems"
+nav_reference = "Reference"
+nav_collapse = "Collapse section"
+nav_expand = "Expand section"
+nav_getting_started = "Getting started"
+nav_gathering = "Gathering"
+nav_combat = "Combat"
+nav_missions = "Missions"
+nav_movement = "Movement & zones"
+nav_npcs = "NPCs & PVE hunting"
+nav_exploration = "Exploration"
+nav_probes = "Proximity probes"
+nav_robots = "Robots & fitting"
+nav_production = "Production"
+nav_research = "Research"
+nav_items = "Items & inventory"
+nav_modules = "Modules & fitting"
+nav_sparks = "Sparks"
+nav_market = "Market & trade"
+nav_transport = "Transport"
+nav_shop = "Item shop"
+nav_pbs = "Power base stations"
+nav_outposts = "Outposts & SAP"
+nav_intrusion = "Intrusion"
+nav_groups = "Groups"
+nav_social = "Social"
+nav_faq = "FAQ"
+nav_abbreviations = "Abbreviations"
+nav_lore = "Lore"
+nav_client_setup = "Client & PC setup"
+nav_zone_map = "World"
+nav_map_training = "Training"
+nav_map_alpha = "Alpha"
+nav_character = "Character"
+nav_extensions = "Extensions"
+nav_map_beta = "Beta"
+nav_map_gamma = "Gamma"
+nav_map_gamma_t0 = "T0 — tc transit"
+nav_map_gamma_t1 = "T1 (z106–z114)"
+nav_map_gamma_t2 = "T2 (z115–z123)"
+nav_map_gamma_t3 = "T3 (z124–z132)"
+nav_map_gamma_t4 = "T4 (z133–z140)"
+nav_map_protection = "Protection levels"
+nav_content = "Content tables"
+nav_content_items = "Items"
+nav_content_ores = "Ores"
+nav_content_plants = "Plants"
+nav_content_deployables = "Deployables"
+nav_content_robots = "Robots"
+nav_content_missions = "Missions"
+nav_content_recipes = "Recipes"
+nav_content_techtree = "Tech tree"
+nav_content_statref = "Stat reference"
+nav_zones = "Zones"
+nav_zones_generation = "Generation"
+nav_zones_index = "Zone index"
+nav_all_features = "All features"
+nav_server = "Server & reference"
+nav_formats = "Formats (dev)"
+search_placeholder = "Search the wiki…  (Ctrl+F)"
+search_no_results = "No pages match"
+search_unavailable = "Search is unavailable"
+search_pages_found_one = "1 page found"
+search_pages_found_many = "{n} pages found"
+update_available = "A new update is available, click here to refresh."
+zonemap_mode_height = "Height"
+zonemap_mode_color = "Color"
+aria_theme_toggle = "Toggle light/dark mode"
+aria_palette = "Choose accent color"
+aria_language = "Choose language"
+menu_palette_group = "Accent"
+menu_cb_group = "Colorblind"
+cb_default = "Default"
+cb_deutan = "Deuteranopia"
+cb_protan = "Protanopia"
+cb_tritan = "Tritanopia"
+cb_achro = "Grayscale"
+palette_cyan = "Cyan"
+palette_violet = "Violet"
+palette_phosphor = "Phosphor"
+palette_amber = "Amber"
+foot_home = "Home"
+foot_features = "Features"
+foot_content = "Content"
+foot_zones = "Zones"
+foot_formats = "Formats (dev)"
+# These two are raw HTML (rendered with `| safe`); keep the links when translating.
+foot_credit = "Open Perpetuum wiki — generated with <a href=\"https://www.getzola.org/\">Zola</a>. Content tables are generated from the live game database (<code>tools/generate</code>)."
+foot_attribution = "Wiki content is licensed under the Apache License 2.0, except where noted."

@@ -1,0 +1,6 @@
+# CodeQL configuration for the wiki repo.
+name: codeql-config
+query-pack: codeql/default
+paths-ignore:
+  # Vendored third-party minified bundle — not our code.
+  - 'static/mermaid.min.js'

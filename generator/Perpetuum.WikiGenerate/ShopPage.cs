@@ -1,0 +1,299 @@
+namespace Perpetuum.WikiGenerate;
+
+/// <summary>One itemshop row (a vendor preset selling one item).</summary>
+public record ShopSale(int Preset, int Def, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit);
+
+public static class ShopPage
+{
+    public sealed record Location(string? Zone, string Name, string Short, string Area, string Note, int[] Presets);
+
+    /// <summary>Shop locations, derived from itemshoppresets, ordered by protection
+    /// area (starter → main → beta, then the coin-exchange outposts). The main
+    /// galaxy presets come in PvE/PvP variants; preset 3 (dev_test) is internal
+    /// tooling and is not shown.</summary>
+    public static readonly Location[] Locations =
+    {
+        new("zone_TM", "New Virginia (zone_TM)", "TM zone", "Starter area",
+            "The New Virginia (TM) galaxy's shop — sold at bases in its PvE and PvP zones.", new[] { 1, 6 }),
+        new("zone_ICS", "Attalica (zone_ICS)", "ICS zone", "Main",
+            "The Attalica (ICS) galaxy's shop — sold at bases in its PvE and PvP zones.", new[] { 4, 7 }),
+        new(null, "Attalica outpost", "Attalica outpost", "Main",
+            "Vendor at the Attalica (ICS) outpost.", new[] { 13 }),
+        new("zone_ASI", "Daoden (zone_ASI)", "ASI zone", "Beta",
+            "The Daoden (ASI) galaxy's shop — sold at bases in its PvE and PvP zones.", new[] { 5, 8 }),
+        new(null, "Daoden outpost", "Daoden outpost", "Beta",
+            "Vendor at the Daoden (ASI) outpost — the largest shop catalog.", new[] { 14 }),
+        new(null, "Outpost: Bellicha", "Bellicha", "Outpost",
+            "Mission coin exchange outpost (sells the other galaxies' mission coins and the universal coin).", new[] { 10 }),
+        new(null, "Outpost: Cadavaria", "Cadavaria", "Outpost",
+            "Mission coin exchange outpost (sells the other galaxies' mission coins and the universal coin).", new[] { 11 }),
+        new(null, "Outpost: Lenworth", "Lenworth", "Outpost",
+            "Mission coin exchange outpost (sells the other galaxies' mission coins and the universal coin).", new[] { 12 }),
+    };
+
+    public static List<ShopSale> Load(Db db) => db.Query("""
+        SELECT s.presetid, s.targetdefinition, s.targetamount, s.tmcoin, s.icscoin, s.asicoin,
+               s.credit, s.unicoin, s.standing, s.globallimit
+        FROM itemshop s ORDER BY s.presetid, s.targetdefinition
+        """).Select(r => new ShopSale(r.Int("presetid"), r.Int("targetdefinition"), r.Int("targetamount"),
+        r.Lng("tmcoin"), r.Lng("icscoin"), r.Lng("asicoin"), r.Lng("credit"), r.Lng("unicoin"), r.Dbl("standing"),
+        r.TryGetValue("globallimit", out var gl) && gl is null ? null : (int?)Convert.ToInt32(gl!)))
+        .ToList();
+
+    /// <summary>Best terms of one item at one location (lowest price per currency,
+    /// lowest qty, lowest standing) across the location's presets.</summary>
+    public static (int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit) BestFor(
+        List<ShopSale> sales, Location loc, int def)
+    {
+        var rows = sales.Where(s => s.Def == def && loc.Presets.Contains(s.Preset)).ToList();
+        if (rows.Count == 0) return (0, 0, 0, 0, 0, 0, 0, null);
+        // A null global limit means the vendor never runs out; a numeric limit
+        // only applies when every preset has one (server: ItemShopEntry.CheckGlobalLimit).
+        var limits = rows.Select(r => r.Limit).ToList();
+        var limit = limits.Any(l => l is null) ? null : limits.Min();
+        return (rows.Min(r => r.Qty),
+            Min(rows, r => r.Tm), Min(rows, r => r.Ics), Min(rows, r => r.Asi),
+            Min(rows, r => r.Credit), Min(rows, r => r.Uni), rows.Min(r => r.Standing), limit);
+    }
+
+    /// <summary>Per-purchase quantity with the stock situation: "∞" when the vendor
+    /// has no global limit, "240 · stock 600" when it does.</summary>
+    public static string QtyText(int qty, int? limit) => limit is null ? "∞" : $"{Md.Num(qty)} · stock {Md.Num(limit.Value)}";
+
+    private static long Min(List<ShopSale> rows, Func<ShopSale, long> f)
+    {
+        var v = rows.Select(f).Where(x => x > 0).ToList();
+        return v.Count > 0 ? v.Min() : 0;
+    }
+
+    public static string Coin(long v) => v > 0 ? Md.Num(v) : "–";
+
+    /// <summary>Drop columns (after the first two) that carry no value in the table.</summary>
+    public static (string[] Header, string[][] Cells) TrimColumns(string[] header, string[][] cells)
+    {
+        var keep = Enumerable.Range(0, header.Length)
+            .Where(i => i <= 1 || cells.Any(c => c[i] != "–"))
+            .ToArray();
+        return (keep.Select(i => header[i]).ToArray(),
+                cells.Select(c => keep.Select(i => c[i]).ToArray()).ToArray());
+    }
+
+    // Item categories shown inside the catalog, in this order.
+    // Classification is by name shape (CT-capsule variants are classified by their
+    // payload) plus the module equipment category flag — the raw flags do not
+    // separate paint/coins/eggs etc.
+    internal static readonly (string Name, string Slug, Func<string, long, bool> Match)[] Categories =
+    {
+        ("Ammo",          "ammo",          (n, f) => n.StartsWith("def_ammo_")),
+        ("Bots",          "bots",          (n, f) => n.EndsWith("_bot")),
+        ("Paint",         "paint",         (n, f) => n.StartsWith("def_paint_")),
+        ("Modules & equipment", "modules-equipment", (n, f) => (f & Flags.CfRobotEquipment) == Flags.CfRobotEquipment),
+        ("Remote commands", "remote-commands", (n, f) => n.EndsWith("_remote_command")),
+        ("EP boosters",   "ep-boosters",   (n, f) => n.Contains("boost")),
+        ("Mission coins", "mission-coins", (n, f) => n.Contains("mission_coin")),
+        ("Teleports",     "teleports",     (n, f) => n.Contains("teleport")),
+        ("NPC eggs",      "npc-eggs",      (n, f) => n.Contains("npc_egg")),
+        ("SAP items",     "sap-items",     (n, f) => n.Contains("sap_item")),
+        ("Other",         "other",         (n, f) => true),
+    };
+
+    /// <summary>One-line description per catalog category (shown on the index page).</summary>
+    private static readonly Dictionary<string, string> CategoryBlurb = new(StringComparer.Ordinal)
+    {
+        ["Ammo"] = "Weapon ammo and scanner/industrial charges, in fixed stacks.",
+        ["Bots"] = "Ready-to-pilot robots and named fits, straight from the vendor.",
+        ["Paint"] = "Robot paint and tint items.",
+        ["Modules & equipment"] = "Fitted modules: weapons, armor, shields, energy and industrial equipment.",
+        ["Remote commands"] = "Items that control your robots remotely.",
+        ["EP boosters"] = "Temporary extension-point gain boosters.",
+        ["Mission coins"] = "The per-galaxy mission currencies and their exchange.",
+        ["Teleports"] = "Teleport charges and travel items.",
+        ["NPC eggs"] = "Spawn-capsule items used by content and events.",
+        ["SAP items"] = "Items consumed by outpost (SAP) activities.",
+        ["Other"] = "Everything the vendors sell that fits no other category.",
+    };
+
+    public static string Build(Db db, List<ShopSale> sales)
+    {
+        var defs = db.Query("SELECT definition, definitionname, enabled, hidden FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => (r.Str("definitionname"), r.Bit("enabled"), r.Bit("hidden")));
+        var cats = db.Query("SELECT definition, categoryflags FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => r.Lng("categoryflags"));
+        var defByName = defs.ToDictionary(kv => kv.Value.Item1, kv => kv.Key);
+
+        // CT-capsule items are classified by their payload (name + category flags).
+        (string Name, long Flags) Payload(int def)
+        {
+            var dn = defs.TryGetValue(def, out var n) ? n.Item1 : $"def_{def}";
+            var payload = dn.EndsWith("_CT_capsule") ? dn[..^11] : dn;
+            return (payload, defByName.TryGetValue(payload, out var p) ? cats.GetValueOrDefault(p, 0) : cats.GetValueOrDefault(def, 0));
+        }
+
+        string? ItemLink(int def)
+        {
+            if (!defs.TryGetValue(def, out var d)) return null;
+            var (name, enabled, hidden) = d;
+            if (!enabled || hidden) return null;
+            if (name.EndsWith("_bot")) return Md.RobotAnchorUrl(name);
+            if (name.StartsWith("def_npc_") || name.EndsWith("_bot_pr")) return null;
+            var flags = cats.GetValueOrDefault(def, 0);
+            if ((flags & Flags.CfOre) == Flags.CfOre) return null;
+            if ((flags & Flags.CfDeployableStructure) == Flags.CfDeployableStructure) return null;
+            return "/content/items/" + name["def_".Length..].ToLowerInvariant().Replace('_', '-') + "/";
+        }
+
+        string ItemCell(int def)
+        {
+            var name = defs.TryGetValue(def, out var dd) ? dd.Item1 : $"def_{def}";
+            var display = Md.DisplayName(name);
+            var url = ItemLink(def);
+            return url is null ? display : $"[{display}]({url})";
+        }
+
+        var allDefs = sales.Select(s => s.Def).Distinct().OrderBy(d => d).ToList();
+
+        var sb = new StringBuilder();
+        sb.Append(Md.Header("Item shop", "The fixed-price vendor catalog: what each vendor sells, at what price, and in which protection area.",
+            "itemshop + itemshoppresets (joined to entitydefaults)"));
+        sb.Append("\n\n# Item shop\n\n");
+        sb.Append("Fixed-price vendor items, separate from the player-driven [market](/features/market/). " +
+                  "The same item can be sold at several vendors — the catalog below lists every item once, " +
+                  "with the best price across all vendors; each item's own page lists every vendor that sells " +
+                  "it (robots link to the [robot catalog](/content/robots/)).\n\n");
+        sb.Append("**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency " +
+                  "(each shop sells for all three coins where offered); **Credits**: the common currency; " +
+                  "**UniCoin**: a premium currency. **Qty ∞** means the vendor has no stock limit.\n\n");
+
+        // ---- vendors overview, ordered by protection area ----
+        sb.Append("## Vendors\n\n");
+        var vendorHeader = new[] { "Area", "Vendor", "Sold where", "Items" };
+        var vendorCells = Locations
+            .Select(loc =>
+            {
+                var count = allDefs.Count(def => BestFor(sales, loc, def).Qty > 0);
+                return new[]
+                {
+                    loc.Area,
+                    Title(loc),
+                    loc.Zone is null ? "Outpost vendor" : "Bases in the zone's PvE and PvP zones",
+                    count > 0 ? count.ToString() : "–",
+                };
+            })
+            .ToArray();
+        Md.WriteTable(sb, vendorHeader, vendorCells);
+        sb.Append('\n');
+
+        // ---- catalog: one reference row per category; the tables live on
+        // dedicated pages (shop/<category>/) so this index stays light ----
+        var byCategory = allDefs
+            .GroupBy(def => Categories.First(c => c.Match(Payload(def).Name, Payload(def).Flags)).Name)
+            .ToDictionary(g => g.Key, g => g.ToList());
+        sb.Append("## Catalog\n\n");
+        sb.Append("Each category is its own page; best price across all vendors, one row per item.\n\n");
+        var rows = new List<string[]>();
+        foreach (var (cat, slug, _) in Categories)
+        {
+            if (!byCategory.TryGetValue(cat, out var catDefs) || catDefs.Count == 0) continue;
+            rows.Add(new[]
+            {
+                $"[{cat}](/content/shop/{slug}/)",
+                catDefs.Count.ToString(),
+                CategoryBlurb.GetValueOrDefault(cat, ""),
+            });
+        }
+        Md.WriteTable(sb, new[] { "Category", "Items", "What it is" }, rows.ToArray());
+        sb.Append('\n');
+
+        return sb.ToString();
+    }
+
+    /// <summary>One catalog category page: shop/&lt;slug&gt;/index.md</summary>
+    public static string BuildCategoryPage(Db db, List<ShopSale> sales, string slug)
+    {
+        var cat = Categories.First(c => c.Slug == slug);
+        var defByName = db.Query("SELECT definition, definitionname FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => r.Str("definitionname"));
+        var defs = db.Query("SELECT definition, definitionname, enabled, hidden FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => (r.Str("definitionname"), r.Bit("enabled"), r.Bit("hidden")));
+        var cats = db.Query("SELECT definition, categoryflags FROM entitydefaults")
+            .ToDictionary(r => r.Int("definition"), r => r.Lng("categoryflags"));
+
+        (string Name, long Flags) Payload(int def)
+        {
+            var dn = defByName.TryGetValue(def, out var n) ? n : $"def_{def}";
+            var payload = dn.EndsWith("_CT_capsule") ? dn[..^11] : dn;
+            var pf = cats.TryGetValue(def, out var dv) ? dv : 0L;
+            return (payload, pf);
+        }
+        string? ItemLink(int def)
+        {
+            if (!defs.TryGetValue(def, out var d)) return null;
+            var (name, enabled, hidden) = d;
+            if (!enabled || hidden) return null;
+            if (name.EndsWith("_bot")) return Md.RobotAnchorUrl(name);
+            if (name.StartsWith("def_npc_") || name.EndsWith("_bot_pr")) return null;
+            var flags = cats.GetValueOrDefault(def, 0);
+            if ((flags & Flags.CfOre) == Flags.CfOre) return null;
+            if ((flags & Flags.CfDeployableStructure) == Flags.CfDeployableStructure) return null;
+            return "/content/items/" + name["def_".Length..].ToLowerInvariant().Replace('_', '-') + "/";
+        }
+        string ItemCell(int def)
+        {
+            var name = defs.TryGetValue(def, out var dd) ? dd.Item1 : $"def_{def}";
+            var display = Md.DisplayName(name);
+            var url = ItemLink(def);
+            return url is null ? display : $"[{display}]({url})";
+        }
+
+        var allDefs = sales.Select(s => s.Def).Distinct()
+            .Where(def => Categories.First(c => c.Match(Payload(def).Name, Payload(def).Flags)).Slug == slug)
+            .OrderBy(def => def).ToList();
+
+        var sb = new StringBuilder();
+        sb.Append(Md.Header($"Shop — {cat.Name}", $"Fixed-price vendor items: {cat.Name.ToLowerInvariant()}. Best price across all vendors.",
+            "itemshop + itemshoppresets (joined to entitydefaults)"));
+        sb.Append($"\n\n# {cat.Name}\n\n");
+        sb.Append($"[Item shop](/content/shop/) → {cat.Name}. {CategoryBlurb.GetValueOrDefault(cat.Name, "")}\n\n");
+        sb.Append("**Currencies** — **TM Coin / ICS Coin / ASI Coin**: the per-galaxy shop currency; " +
+                  "**Credits**: the common currency; **UniCoin**: a premium currency. " +
+                  "Each row shows the best terms across all vendors that sell the item. " +
+                  "**Qty ∞** means the vendor has no stock limit.\n\n");
+        var header = new[] { "Item", "Qty", "TM Coin", "ICS Coin", "ASI Coin", "Credits", "UniCoin", "Vendors" };
+        var cells = allDefs.Select(def =>
+        {
+            var selling = Locations.Where(loc => BestFor(sales, loc, def).Qty > 0).ToList();
+            var best = selling.Select(loc => BestFor(sales, loc, def)).ToList();
+            return new[]
+            {
+                ItemCell(def),
+                QtyText(best.Min(b => b.Qty), best.Min(b => b.Limit!)),
+                Coin(best.Min(b => b.Tm)), Coin(best.Min(b => b.Ics)), Coin(best.Min(b => b.Asi)),
+                Coin(best.Min(b => b.Credit)), Coin(best.Min(b => b.Uni)),
+                string.Join(" · ", selling.Select(loc => loc.Short)),
+            };
+        }).ToArray();
+        var trimmed = TrimColumns(header, cells);
+        Md.WriteTable(sb, trimmed.Header, trimmed.Cells);
+        sb.Append('\n');
+        return sb.ToString();
+    }
+
+    /// <summary>The per-vendor rows of one item (one row per location that sells it,
+    /// PvE/PvP presets merged to the best terms). Empty when the item is not shop stock.</summary>
+    public static List<(Location Loc, int Qty, long Tm, long Ics, long Asi, long Credit, long Uni, double Standing, int? Limit)>
+        VendorsFor(List<ShopSale> sales, int def) =>
+        Locations
+            .Select(loc => (Loc: loc, Best: BestFor(sales, loc, def)))
+            .Where(x => x.Best.Qty > 0)
+            .Select(x => (x.Loc, x.Best.Qty, x.Best.Tm, x.Best.Ics, x.Best.Asi, x.Best.Credit, x.Best.Uni, x.Best.Standing, x.Best.Limit))
+            .ToList();
+
+    /// <summary>"New Virginia (zone_TM)" for the galaxy shops, plain name elsewhere.
+    /// Falls back to the plain location name when the client dictionary is not loaded.</summary>
+    public static string Title(Location l)
+    {
+        if (l.Zone is null) return l.Name;
+        var n = Md.ZoneName(l.Zone);
+        return n == l.Zone ? n : $"{n} ({l.Zone})";
+    }
+}
