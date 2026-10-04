@@ -252,6 +252,9 @@ test('dev mode: knob switches to the matrix theme, reveals the Dev group, persis
   await page.click('#mode-toggle');
   expect(await page.locator('html').getAttribute('data-mode')).toBe('dev');
   expect(await page.locator('.nav-dev').isVisible()).toBe(true);
+  // dev mode hides every other menu entry: only the Dev group remains
+  const visibleTop = await page.locator('.sidenav > ul > li:visible').evaluateAll((lis) => lis.map((li) => li.className));
+  expect(visibleTop).toEqual(['nav-group nav-dev']);
   const devLinks = await page.locator('.nav-dev a').evaluateAll((as) => as.map((a) => a.getAttribute('href')));
   expect(devLinks).toEqual(['/features/architecture/', '/features/architecture/', '/features/server/', '/formats/']);
   // the matrix theme: bright green neon on near-black

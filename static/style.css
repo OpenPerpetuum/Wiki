@@ -1353,6 +1353,9 @@ html[data-mode="dev"] .mode-opt[data-mode-opt="dev"] {
 /* the Dev sidenav group is hidden outside dev mode */
 .nav-dev { display: none; }
 html[data-mode="dev"] .nav-dev { display: block; }
+/* dev mode: the menu shows ONLY the Dev group — the Home quick link and
+   every play-mode group are hidden */
+html[data-mode="dev"] .sidenav > ul > li:not(.nav-dev) { display: none; }
 
 /* ------------------------------------------------------------------ */
 /* Dev mode: "the matrix" — near-black, everything glows bright green */
