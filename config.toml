@@ -4,8 +4,10 @@
 default_language = "en"
 title = "Open Perpetuum Wiki"
 description = "Player and developer reference for the Open Perpetuum server: what you can do in the game, entity stats, zone generation, and stat field semantics."
-# GitHub Pages: set the repo Pages URL once the site is published, e.g.
-# base_url = "https://<user>.github.io/<repo>/wiki"
+# Local/test base: the site lives at the domain root. The CI DEPLOY build
+# rewrites this to the GitHub Pages project URL (a subpath —
+# openperpetuum.github.io/Wiki/), see .github/workflows/wiki.yml; Zola 0.23
+# has no config env-var expansion, so the override happens in the pipeline.
 base_url = "/"
 generate_feeds = false
 # Search is a lightweight client-side script (search.js + search_index.json
