@@ -16,6 +16,19 @@
     // opens pre-zoomed onto the cluster (initContentZoom, below).
     var MIN = 1, MAX = 8, INITIAL_MAX = 3, MIN_VISIBLE = 0.25;
 
+    // Deploy base (body[data-root] = config.base_url): "/" locally, the full
+    // GitHub Pages URL on the project site (subpath /Wiki/). The static
+    // builder (plus the CI rewrite pass) prefixes HTML links with the path
+    // part, but JS-built URLs and fetched-SVG links keep the site-absolute
+    // form — withRoot() prefixes them the same way.
+    var ROOT = (document.body && document.body.getAttribute('data-root')) || '/';
+    var ROOT_PATH = ROOT.replace(/^https?:\/\/[^/]+/, '').replace(/\/+$/, ''); // "" | "/Wiki"
+    function withRoot(h) {
+        if (!h || h.charAt(0) !== '/') return h;          // not site-absolute
+        if (ROOT_PATH && h.indexOf(ROOT_PATH + '/') === 0) return h; // already
+        return ROOT_PATH + h;
+    }
+
     function limit(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
 
     // Overlap length of [0, len] with the content span centered at offset t.
@@ -248,6 +261,14 @@
         if (wrap.getAttribute('data-zoom-init')) return;
         wrap.setAttribute('data-zoom-init', '1');
         wrap._zoomSvg = svg;
+
+        // The static builder rewrites HTML links but not SVG <image href>
+        // (the world-map node thumbnails) — prefix the deploy base for
+        // subpath deployments (no-op when the base is "/").
+        Array.prototype.forEach.call(svg.querySelectorAll('image'), function (im) {
+            var h = im.getAttribute('href') || im.getAttribute('xlink:href');
+            if (h) im.setAttribute('href', withRoot(h));
+        });
 
         // Wheel = zoom (no key needed). The listener is non-passive so the
         // page scroll is suppressed while the pointer is over the map.
@@ -503,7 +524,7 @@
         var cur = null, closeTimer = 0, inPop = false;
 
         // mirror of the generator's DisplayName (zone_asi_a_real -> "ASI A Real")
-        function hrefOf(n) { return '/zones/' + n.toLowerCase().replace(/_/g, '-') + '/'; }
+        function hrefOf(n) { return withRoot('/zones/' + n.toLowerCase().replace(/_/g, '-') + '/'); }
         // data-dests: ;-separated "display name|zone name" pairs — the
         // display name is the same string the column label shows (so the
         // selector entries read like the map), the zone name drives the line

@@ -49,6 +49,18 @@
         }
     }
 
+    // Deploy base (body[data-root]): the SVG files carry SITE-ABSOLUTE
+    // links and image hrefs (written by the generator; fetched as plain
+    // files, so nothing rewrites them) — prefix with the base's PATH part
+    // for subpath deploys (no-op when the base is "/").
+    var ROOT = (document.body && document.body.getAttribute('data-root')) || '/';
+    var ROOT_PATH = ROOT.replace(/^https?:\/\/[^/]+/, '').replace(/\/+$/, ''); // "" | "/Wiki"
+    function withRoot(h) {
+        if (!h || h.charAt(0) !== '/') return h;
+        if (ROOT_PATH && h.indexOf(ROOT_PATH + '/') === 0) return h;
+        return ROOT_PATH + h;
+    }
+
     function upgrade(img) {
         var src = img.getAttribute('src');
         fetch(src, { credentials: 'same-origin' }).then(function (r) {
@@ -63,6 +75,14 @@
             svg.classList.add('zonemap');
             svg.removeAttribute('width');
             svg.removeAttribute('height');
+            // teleport links + terrain <image>s: prefix the deploy base
+            Array.prototype.forEach.call(svg.querySelectorAll('a[href]'), function (a) {
+                a.setAttribute('href', withRoot(a.getAttribute('href')));
+            });
+            Array.prototype.forEach.call(svg.querySelectorAll('image'), function (im) {
+                var h = im.getAttribute('href') || im.getAttribute('xlink:href');
+                if (h) im.setAttribute('href', withRoot(h));
+            });
 
             var wrap = document.createElement('div');
             wrap.className = 'zonemap-wrap zonetp-wrap';
@@ -112,7 +132,7 @@
     }
 
     function scan() {
-        var imgs = document.querySelectorAll('img[src^="/zonemaps/"]');
+        var imgs = document.querySelectorAll('img[src*="/zonemaps/"]');
         for (var i = 0; i < imgs.length; i++) {
             if (imgs[i].getAttribute('data-zonetp-init')) continue;
             imgs[i].setAttribute('data-zonetp-init', '1');

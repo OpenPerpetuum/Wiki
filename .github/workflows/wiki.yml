@@ -173,10 +173,23 @@ jobs:
           echo "$GITHUB_WORKSPACE/tools" >> "$GITHUB_PATH"
           zola --version
 
+      - name: Point base_url at the Pages URL
+        # The Pages project site is served under the /Wiki/ subpath, so this
+        # build (and only this one — the test job keeps the local root base)
+        # compiles with the full Pages URL. Zola 0.23 has no config
+        # env-var expansion, so the value is rewritten in the pipeline.
+        run: sed -i 's|^base_url = .*|base_url = "https://openperpetuum.github.io/Wiki"|' config.toml
+
       - name: Build
         # Zola 0.23 builds from the current directory (no -d flag); the
         # default working directory is the repo root where config.toml lives.
         run: zola build --force -o public
+
+      - name: Prefix links with the Pages path
+        # The source targets the domain root (base_url "/", so local and the
+        # test job share the output); Zola 0.23 does not rewrite
+        # site-absolute links, so prefix them with the /Wiki path here.
+        run: python3 tools/rewrite_site_base.py public https://openperpetuum.github.io/Wiki
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # ratchet:actions/upload-pages-artifact@v3

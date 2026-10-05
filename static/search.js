@@ -18,18 +18,30 @@ function wikiSearchInit() {
         });
     }
 
-    // Relative path from the current page back to the site root (works under a
-    // subpath deployment too). The index lists site-absolute paths ('/features/x/'),
-    // so the root is derived from where the index itself was fetched from.
-    function relToRoot() {
+    // Site root, from the deploy base (body[data-root] = config.base_url):
+    // "/" locally, the full GitHub Pages URL on the project site. Only the
+    // PATH part matters — the site always lives on the CURRENT origin under
+    // that path — so both the index fetch and the result links are built
+    // origin-relative (a full-URL fetch would leave the origin).
+    var baseRoot = (document.body && document.body.getAttribute('data-root')) || '';
+    function rootInfo() {
+        if (baseRoot) {
+            var p = baseRoot.replace(/^https?:\/\/[^/]+/, '').replace(/\/+$/, ''); // "" | "/Wiki"
+            return { fetch: p + '/search_index.json', path: p || '/' };
+        }
+        // no data-root (older build): climb out of the current path
         var parts = location.pathname.replace(/\/+$/, '').split('/').filter(Boolean);
-        return parts.map(function () { return '..'; }).concat('search_index.json').join('/');
+        return {
+            fetch: parts.map(function () { return '..'; }).concat('search_index.json').join('/'),
+            path: new URL(parts.map(function () { return '..'; }).join('/') + '/', location.href).pathname
+        };
     }
 
     function loadIndex() {
         if (pages) return Promise.resolve(pages);
-        rootPath = new URL(relToRoot(), location.href).pathname.replace(/search_index\.json$/, '');
-        return fetch(relToRoot(), { cache: 'force-cache' })
+        var ri = rootInfo();
+        rootPath = ri.path;
+        return fetch(ri.fetch, { cache: 'force-cache' })
             .then(function (r) {
                 if (!r.ok) throw new Error('HTTP ' + r.status);
                 return r.json();
@@ -38,7 +50,11 @@ function wikiSearchInit() {
                 pages = data.map(function (p) {
                     var t = p.t || '';
                     var d = p.d || '';
-                    var u = rootPath + (p.u || '/').replace(/^\//, '');
+                    // p.u is site-absolute ("/content/x/"); rootPath is "" for
+                    // "/" (no change) or the base path ("/Wiki") to prepend.
+                    var u = p.u || '/';
+                    if (rootPath && rootPath !== '/' && u.indexOf(rootPath + '/') !== 0)
+                        u = rootPath + (u.charAt(0) === '/' ? u : '/' + u);
                     return {
                         t: t, d: d, u: u,
                         tl: t.toLowerCase(), dl: (d + ' ' + u).toLowerCase()

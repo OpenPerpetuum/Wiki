@@ -30,7 +30,7 @@
     <script src="/zone-map.js"></script>
     <script src="/mermaid.min.js" defer></script>
 </head>
-<body{% if page and page.extra | get(key="family", default=null) %} data-zone-family="{{ page.extra | get(key="family", default=null) }}"{% endif %}>
+<body data-root="{{ config.base_url }}"{% if page and page.extra | get(key="family", default=null) %} data-zone-family="{{ page.extra | get(key="family", default=null) }}"{% endif %}>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
         <symbol id="mi-start" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></symbol>
@@ -638,6 +638,18 @@
     // bottom menu.
     (function () {
         var path = document.location.pathname;
+        // Deploy base (config.base_url, e.g. "/" locally or the full GitHub
+        // Pages URL). Zola rewrites every menu href to carry it, so menu
+        // matching compares against the pathname part and strips the origin.
+        var ROOT = document.body.getAttribute("data-root") || "/";
+        // the base's path part as a prefix: "" at the domain root, "/Wiki"
+        // under the Pages subpath ("" — not "/" — so concatenating
+        // rootPath + "/zones/..." never produces a double slash)
+        var rootPath = ROOT.replace(/^https?:\/\/[^/]+/, "").replace(/\/+$/, "");
+        function stripOrigin(h) {
+            var o = location.origin;
+            return h && h.indexOf(o) === 0 ? (h.slice(o.length) || "/") : h;
+        }
         function norm(p) { return p.length > 1 && p[p.length - 1] === "/" ? p : p + "/"; }
         // Left menu selection: same-page anchors (e.g. /zones/map/#training)
         // use an exact full-href match (path + hash), so the selected anchor
@@ -653,8 +665,8 @@
             // (Alpha / Beta / Gamma) instead of the plain "/zones/" prefix,
             // and open Gamma's tier sub-list so the entry is reachable.
             var fam = document.body.getAttribute("data-zone-family");
-            if (fam && path.indexOf("/zones/zone-") === 0) {
-                var famLink = document.querySelector('.sidenav a[href="' + "/zones/" + fam + "/" + '"]');
+            if (fam && path.indexOf(rootPath + "/zones/zone-") === 0) {
+                var famLink = document.querySelector('.sidenav a[href="' + rootPath + "/zones/" + fam + "/" + '"]');
                 if (famLink) {
                     var sub = famLink.closest("li.nav-has-sub");
                     if (sub && sub.classList.contains("collapsed")) {
@@ -667,7 +679,7 @@
                 // a gamma zone page highlights its TIER (T1–T4), not the
                 // Gamma head — the number ranges must stay in sync with
                 // ZonesMapPage.GammaTier (the nav labels carry them too).
-                var gm = /^\/zones\/zone-gamma-z(\d+)\/?$/.exec(path);
+                var gm = new RegExp("^" + rootPath + "/zones/zone-gamma-z(\\d+)/?$").exec(path);
                 if (gm) {
                     var n = parseInt(gm[1], 10);
                     if (n >= 106 && n <= 140) {
@@ -680,13 +692,13 @@
             }
             if (!best && hash.length > 1) {
                 document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
-                    if (a.getAttribute("href") === path + hash) best = a;
+                    if (stripOrigin(a.getAttribute("href")) === path + hash) best = a;
                 });
             }
             if (!best) {
                 var bestLen = -1;
                 document.querySelectorAll(".sidenav a[href]").forEach(function (a) {
-                    var href = a.getAttribute("href");
+                    var href = stripOrigin(a.getAttribute("href"));
                     if (!href || href === "/") return;
                     var h = href[href.length - 1] === "/" ? href : href + "/";
                     var hit = h === norm(path) || (path.startsWith(h) && path.length > h.length);
@@ -731,15 +743,14 @@
                 target.scrollIntoView();
             }
         }
-        // bottom menu: section
-        var sections = ["/features/", "/content/", "/zones/"];
-        var here = null;
-        for (var i = 0; i < sections.length; i++)
-            if (path.startsWith(sections[i])) { here = sections[i]; break; }
-        if (!here && path !== "/") return;
-        var link = document.querySelector('.footnav a[href="' + (here || "/") + '"]');
-        if (!link) return;
-        link.classList.add("active");
+        // bottom menu: section (match on the pathname relative to the
+        // deploy base; the links carry data-section, so no href guessing)
+        var rel = path.indexOf(rootPath) === 0 ? path.slice(rootPath.length) : path;
+        var sec = (rel.match(/^\/(features|content|zones)\//) || [])[1];
+        var foot = sec
+            ? document.querySelector('.footnav a[data-section="' + sec + '"]')
+            : (rel === "/" || rel === "" ? document.querySelector('.footnav a:not([data-section])') : null);
+        if (foot) foot.classList.add("active");
     })();
     // Left-menu scroll: restore the last position after navigation and make
     // sure the highlighted entry is visible (a reset scroll must not hide the
