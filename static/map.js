@@ -523,8 +523,13 @@
 
         var cur = null, closeTimer = 0, inPop = false;
 
-        // mirror of the generator's DisplayName (zone_asi_a_real -> "ASI A Real")
-        function hrefOf(n) { return withRoot('/zones/' + n.toLowerCase().replace(/_/g, '-') + '/'); }
+        // mirror of the generator's DisplayName (zone_asi_a_real -> "ASI A Real").
+        // Whitelist only slug characters so a tampered data-dests value can
+        // never produce a non-zone path or a scheme switch (js/xss-through-dom).
+        function hrefOf(n) {
+            var slug = String(n).toLowerCase().replace(/_/g, '-').replace(/[^a-z0-9-]/g, '');
+            return withRoot('/zones/' + slug + '/');
+        }
         // data-dests: ;-separated "display name|zone name" pairs — the
         // display name is the same string the column label shows (so the
         // selector entries read like the map), the zone name drives the line

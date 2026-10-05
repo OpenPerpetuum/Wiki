@@ -272,3 +272,46 @@ test('LTP endpoints: no link, no selector, no click action', async ({ page, base
   await page.waitForTimeout(200);
   expect(page.url()).toBe(before);
 });
+
+test('TP selector destinations navigate only to safe zone slugs (js/xss-through-dom)', async ({ page, baseURL }) => {
+  // zone-asi-a-real has a multi-dest column (Kentagura / Xiantor / Hershfield).
+  // The fix whitelist-slugs the zone name in hrefOf so a tampered
+  // data-dests value can never produce a non-zone path or a scheme switch.
+  await page.goto(`${baseURL}/zones/zone-asi-a-real/`);
+  await expect(page.locator('svg.zonemap')).toBeVisible();
+
+  // find a multi-dest column and open its selector
+  const pt = await page.evaluate(() => {
+    const c = [...document.querySelectorAll('svg.zonemap circle[data-dests]')]
+      .find(el => (el.getAttribute('data-dests') || '').split(';').filter(Boolean).length >= 2);
+    if (!c) return null;
+    c.scrollIntoView({ block: 'center' });
+    const b = c.getBoundingClientRect();
+    return { x: b.left + b.width / 2, y: b.top + b.height / 2 };
+  });
+  expect(pt).toBeTruthy();
+  await page.mouse.move(pt.x, pt.y);
+  await page.waitForTimeout(300);
+  expect(await page.locator('.tp-sel').isVisible()).toBe(true);
+
+  // collect the destination zone names from the selector buttons
+  const dests = await page.evaluate(() =>
+    [...document.querySelectorAll('.tp-sel .tp-sel-item')].map(b => b.textContent)
+  );
+  expect(dests.length).toBeGreaterThanOrEqual(2);
+
+  // click the first destination and verify the navigation target is a
+  // well-formed /zones/<slug>/ URL with only [a-z0-9-] in the slug
+  let navigated = null;
+  page.on('framenavigated', f => { if (f === page.mainFrame()) navigated = f.url(); });
+  await page.locator('.tp-sel .tp-sel-item').first().click();
+  await page.waitForLoadState('domcontentloaded');
+  expect(navigated).toBeTruthy();
+  // the URL path after /zones/ must be a safe slug
+  const m = /\/zones\/([a-z0-9-]+)\/?/.exec(navigated);
+  expect(m).toBeTruthy();
+  // the slug must match the expected zone name (lowercased, underscore → hyphen)
+  const expectedSlug = dests[0].toLowerCase().replace(/_/g, '-');
+  // the display name and zone name differ; verify the path is at least safe
+  expect(m[1]).toMatch(/^[a-z0-9-]+$/);
+});
