@@ -6,7 +6,7 @@ title = "Open Perpetuum Wiki"
 description = "Player and developer reference for the Open Perpetuum server: what you can do in the game, entity stats, zone generation, and stat field semantics."
 # Local/test base: the site lives at the domain root. The CI DEPLOY build
 # rewrites this to the GitHub Pages project URL (a subpath —
-# openperpetuum.github.io/Wiki/), see .github/workflows/wiki.yml; Zola 0.23
+# openperpetuum.github.io/wiki/), see .github/workflows/wiki.yml; Zola 0.23
 # has no config env-var expansion, so the override happens in the pipeline.
 base_url = "/"
 generate_feeds = false
